@@ -1,0 +1,6 @@
+public/
+themes/*/src/dist/
+.DS_Store
+node_modules/
+.wrangler/
+__pycache__/

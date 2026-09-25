@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>中国菜系演化图谱</title>
+<meta name="description" content="以食材、器具、技法、口味四条线索，把先秦到当代十个时期的中国饮食变迁映射到今天的 34 个省级行政区：交互地图、时间轴与各地菜系沿革。">
+<meta name="author" content="Tianjie Sun">
+<meta name="theme-color" content="#f3f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16181b" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://tianjie.me/t/cuisine-atlas/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="中国菜系演化图谱">
+<meta property="og:description" content="以食材、器具、技法、口味四条线索，把先秦到当代十个时期的中国饮食变迁映射到今天的 34 个省级行政区：交互地图、时间轴与各地菜系沿革。">
+<meta property="og:url" content="https://tianjie.me/t/cuisine-atlas/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b5432c'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Noto Serif SC,Songti SC,serif' font-weight='900' fill='%23fff'%3E味%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('cuisine-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap"></noscript>
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+:root{
+  --bg:#f3f4ef; --surface:#fbfbf8; --surface-2:#eceee6; --ink:#1c1e1a; --ink-2:#4c4f49; --muted:#7d817a;
+  --line:#d8dad2; --line-2:#c5c8bf; --accent:#b5432c; --accent-soft:#f1d9d2; --accent-ink:#ffffff;
+  --sea:#e4e9ec; --map-border:#fbfbf8; --map-dim:#d5d8d0; --halo:#fbfbf8; --shadow:0 12px 32px rgba(28,30,26,.14);
+  --dim-food:#8a6b2a; --dim-tool:#5d6b7a; --dim-tech:#3f7b6a; --dim-taste:#b5432c;
+  --fam-A:#418ad1;--fam-B:#eebc4a;--fam-C:#b8445a;--fam-D:#115629;--fam-E:#b69d80;--fam-F:#a763ab;--fam-G:#566d27;--fam-H:#b2bbe5;--fam-I:#fa6a57;--fam-J:#12a7a7;--fam-K:#f89dc9;--fam-L:#3ca17b;--fam-M:#68559b;--fam-N:#e87e42;--taste-xian:#683b18;--taste-tian:#ffa7d6;--taste-suan:#77b868;--taste-xinxiang:#faca4b;--taste-mala:#d33a3c;--taste-la:#ff8051;--taste-qing:#008b9e;--taste-nai:#a295cb;--staple-su:#f2cf3b;--staple-mai:#9c5313;--staple-dao:#4a9a5e;--staple-qingke:#ceb6fc;--staple-rou:#4576b4;--staple-shu:#ef7d88;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16181b; --surface:#1e2125; --surface-2:#262a2f; --ink:#ecebe4; --ink-2:#b9bbb3; --muted:#8b8e88;
+    --line:#33373c; --line-2:#444950; --accent:#e2694f; --accent-soft:#3b2622; --accent-ink:#1a1a1a;
+    --sea:#1b2024; --map-border:#16181b; --map-dim:#2a2e33; --halo:#16181b; --shadow:0 12px 32px rgba(0,0,0,.5);
+    --dim-food:#d1a955; --dim-tool:#9fb1c4; --dim-tech:#6fbba5; --dim-taste:#e2694f;
+    --fam-A:#286cab;--fam-B:#c79e41;--fam-C:#9f3d4f;--fam-D:#0d4a22;--fam-E:#947b60;--fam-F:#854888;--fam-G:#3d5010;--fam-H:#8d96be;--fam-I:#c04637;--fam-J:#007475;--fam-K:#cb7ba2;--fam-L:#248160;--fam-M:#4c3b77;--fam-N:#a9531e;--taste-xian:#532d0f;--taste-tian:#e38ab5;--taste-suan:#558a49;--taste-xinxiang:#c69f32;--taste-mala:#ac1922;--taste-la:#d6673f;--taste-qing:#006574;--taste-nai:#8378a6;--staple-su:#ba9c13;--staple-mai:#753b07;--staple-dao:#2b7440;--staple-qingke:#a18cc8;--staple-rou:#2e598f;--staple-shu:#bd5f69;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16181b; --surface:#1e2125; --surface-2:#262a2f; --ink:#ecebe4; --ink-2:#b9bbb3; --muted:#8b8e88;
+  --line:#33373c; --line-2:#444950; --accent:#e2694f; --accent-soft:#3b2622; --accent-ink:#1a1a1a;
+  --sea:#1b2024; --map-border:#16181b; --map-dim:#2a2e33; --halo:#16181b; --shadow:0 12px 32px rgba(0,0,0,.5);
+  --dim-food:#d1a955; --dim-tool:#9fb1c4; --dim-tech:#6fbba5; --dim-taste:#e2694f;
+  --fam-A:#286cab;--fam-B:#c79e41;--fam-C:#9f3d4f;--fam-D:#0d4a22;--fam-E:#947b60;--fam-F:#854888;--fam-G:#3d5010;--fam-H:#8d96be;--fam-I:#c04637;--fam-J:#007475;--fam-K:#cb7ba2;--fam-L:#248160;--fam-M:#4c3b77;--fam-N:#a9531e;--taste-xian:#532d0f;--taste-tian:#e38ab5;--taste-suan:#558a49;--taste-xinxiang:#c69f32;--taste-mala:#ac1922;--taste-la:#d6673f;--taste-qing:#006574;--taste-nai:#8378a6;--staple-su:#ba9c13;--staple-mai:#753b07;--staple-dao:#2b7440;--staple-qingke:#a18cc8;--staple-rou:#2e598f;--staple-shu:#bd5f69;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(16px,3vw,36px);padding-block:8px 64px}
+h1,h2,h3{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;text-wrap:balance;margin:0}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+/* masthead */
+.masthead{padding-block:28px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:20px 32px;align-items:end}
+.seal{writing-mode:vertical-rl;font-family:"Noto Serif SC",serif;font-weight:900;font-size:15px;letter-spacing:.35em;color:var(--accent-ink);background:var(--accent);padding:14px 8px;line-height:1;border-radius:2px;align-self:start}
+.masthead h1{font-size:clamp(30px,4.2vw,46px);font-weight:900;letter-spacing:.06em;line-height:1.2}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.lede{max-width:62ch;color:var(--ink-2);margin:10px 0 0;font-size:15px}
+.theme-btn{float:right;margin-left:12px;letter-spacing:.05em;text-transform:none;font-size:12px;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:2px 10px;background:var(--surface)}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+.lede b{color:var(--ink);font-weight:500}
+
+/* timeline */
+.timeline{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px 6px;margin-top:4px}
+.tl-scroll{overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.tl{display:grid;grid-template-columns:repeat(10,minmax(96px,1fr));min-width:max-content;width:100%;position:relative;gap:0}
+.tl::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:var(--line-2)}
+.tl-item{position:relative;padding:22px 8px 6px;text-align:left;border-radius:6px;transition:background .2s}
+.tl-item::before{content:"";position:absolute;left:8px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--line-2);transition:all .25s}
+.tl-item .n{display:block;font-family:"Noto Serif SC",serif;font-weight:700;font-size:16px;line-height:1.3;color:var(--ink)}
+.tl-item .y{display:block;font-size:11.5px;color:var(--muted);letter-spacing:.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl-item:hover{background:var(--surface-2)}
+.tl-item[aria-pressed="true"]::before{background:var(--accent);border-color:var(--accent);transform:scale(1.25)}
+.tl-item[aria-pressed="true"] .n{color:var(--accent)}
+.tl-item.past::before{background:var(--line-2)}
+.tl-fill{position:absolute;left:0;top:9px;height:2px;background:var(--accent);width:0;transition:width .4s}
+@media (prefers-reduced-motion: reduce){ .tl-fill,.tl-item::before,.tl-item{transition:none} }
+
+/* atlas */
+.atlas{display:grid;grid-template-columns:minmax(0,7fr) minmax(300px,5fr);gap:28px;margin-top:20px;align-items:start}
+.map-col{min-width:0}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:10px}
+.seg{display:inline-flex;border:1px solid var(--line-2);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{padding:6px 14px;border-radius:999px;font-size:13.5px;color:var(--ink-2);font-weight:500}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.play{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px solid var(--line-2);font-size:13.5px;background:var(--surface);color:var(--ink-2)}
+.play .dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.play[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.map-wrap{position:relative;background:var(--sea);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.map-wrap svg{display:block;width:100%;height:auto;max-width:100%}
+.prov{stroke:var(--map-border);stroke-width:.8;stroke-linejoin:round;transition:fill .5s,opacity .3s;cursor:pointer}
+.prov:hover,.prov.hi{stroke:var(--ink);stroke-width:1.6;filter:brightness(1.05)}
+.prov.dim{opacity:.35}
+.lbl{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;font-size:13px;font-weight:500;pointer-events:none;paint-order:stroke;stroke:var(--halo);stroke-width:3px;stroke-linejoin:round;fill:var(--ink);letter-spacing:.04em}
+.lbl.on-dark{fill:#ffffff;stroke:rgba(0,0,0,.45)}
+.jd{fill:var(--accent);stroke:var(--accent);stroke-width:1.2}
+.isl{fill:var(--ink-2)}
+.inset-box{fill:var(--sea);stroke:var(--ink-2);stroke-width:1.2}
+.inset-title{font-size:11px;fill:var(--ink-2);font-family:"Noto Sans SC",sans-serif}
+.map-note{font-size:11.5px;fill:var(--muted);font-family:"Noto Sans SC",sans-serif}
+@media (prefers-reduced-motion: reduce){ .prov{transition:none} }
+@media (max-width:640px){ .lbl{display:none} }
+
+.infobar{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;margin-top:10px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-height:62px}
+.infobar .sw{width:14px;height:34px;border-radius:3px;background:var(--map-dim)}
+.infobar .t{min-width:0}
+.infobar .t b{font-family:"Noto Serif SC",serif;font-size:16px;font-weight:700}
+.infobar .t .r{font-size:13px;color:var(--ink-2);margin-left:8px}
+.infobar .t p{margin:2px 0 0;font-size:13px;color:var(--ink-2);line-height:1.55}
+.infobar .go{padding:6px 12px;border:1px solid var(--line-2);border-radius:999px;font-size:13px;white-space:nowrap;color:var(--ink-2)}
+.infobar .go:hover{border-color:var(--accent);color:var(--accent)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:13px}
+.legend .it{display:inline-flex;align-items:center;gap:7px;color:var(--ink-2);padding:2px 4px;border-radius:4px;cursor:default}
+.legend .it:hover{background:var(--surface-2);color:var(--ink)}
+.legend .sw{width:14px;height:14px;border-radius:3px;flex:none;border:1px solid rgba(0,0,0,.08)}
+.legend .cnt{color:var(--muted);font-size:11.5px;font-variant-numeric:tabular-nums}
+.legend-note{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.6}
+
+/* period panel */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px 8px;position:relative}
+.panel .kicker{font-size:12px;letter-spacing:.2em;color:var(--muted)}
+.panel h2{font-size:30px;font-weight:900;letter-spacing:.04em;line-height:1.2;margin-top:2px}
+.panel .years{font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.panel .years span{color:var(--muted);margin-left:8px}
+.panel .summary{margin:12px 0 4px;color:var(--ink-2);font-size:14.5px;line-height:1.75}
+.dims{display:grid;gap:0}
+.dim{border-top:1px solid var(--line);padding:12px 0 10px}
+.dim h3{font-size:14px;font-weight:700;letter-spacing:.12em;display:flex;align-items:center;gap:8px;font-family:"Noto Sans SC",sans-serif}
+.dim h3 i{width:9px;height:9px;border-radius:50%;background:var(--dc);display:inline-block}
+.dim h3 small{font-weight:400;color:var(--muted);letter-spacing:.05em;font-size:12px}
+.dim ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:7px}
+.dim li{font-size:13.5px;line-height:1.65;color:var(--ink-2);padding-left:14px;position:relative;border-radius:6px;transition:background .3s}
+.dim li::before{content:"";position:absolute;left:2px;top:.75em;width:5px;height:5px;border-radius:50%;background:var(--dc)}
+.dim li b{color:var(--ink);font-weight:500;margin-right:4px}
+.dim li .src{display:inline-block;font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-left:5px;line-height:1.5;vertical-align:1px;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.dim li.hit{background:var(--accent-soft)}
+.dim.food{--dc:var(--dim-food)} .dim.tool{--dc:var(--dim-tool)} .dim.tech{--dc:var(--dim-tech)} .dim.taste{--dc:var(--dim-taste)}
+
+/* sections */
+.section{margin-top:56px}
+.section-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:14px}
+.section-head h2{font-size:24px;font-weight:900;letter-spacing:.06em}
+.section-head p{margin:0;color:var(--muted);font-size:13.5px}
+
+/* matrix */
+.matrix-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table.matrix{border-collapse:separate;border-spacing:0;min-width:1180px;width:100%;font-size:12.5px}
+.matrix th,.matrix td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);vertical-align:top;padding:8px 8px}
+.matrix th{font-family:"Noto Serif SC",serif;font-weight:700;text-align:left;background:var(--surface);position:sticky;top:0}
+.matrix thead th{cursor:pointer;font-size:14px}
+.matrix thead th small{display:block;font-family:"Noto Sans SC",sans-serif;font-weight:400;color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.matrix tbody th{position:sticky;left:0;z-index:2;width:74px;min-width:74px;font-size:14px;letter-spacing:.1em;background:var(--surface)}
+.matrix tbody th i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--dc);margin-right:6px}
+.matrix td.act,.matrix thead th.act{background:var(--accent-soft)}
+.chip{display:block;width:100%;text-align:left;padding:3px 7px;margin:2px 0;border-radius:5px;background:var(--surface-2);color:var(--ink-2);line-height:1.45;font-size:12.5px;border:1px solid transparent}
+.chip:hover{border-color:var(--accent);color:var(--ink)}
+.matrix tr.food{--dc:var(--dim-food)} .matrix tr.tool{--dc:var(--dim-tool)} .matrix tr.tech{--dc:var(--dim-tech)} .matrix tr.taste{--dc:var(--dim-taste)}
+
+/* province cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 14px 12px;display:grid;gap:8px;cursor:pointer;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card .top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.card .nm{font-family:"Noto Serif SC",serif;font-size:19px;font-weight:900}
+.card .nm small{font-family:"Noto Sans SC",sans-serif;font-weight:400;font-size:12.5px;color:var(--muted);margin-left:6px}
+.card .cu{font-size:13px;color:var(--ink-2);white-space:nowrap}
+.strip{display:grid;grid-template-columns:repeat(10,1fr);gap:2px;height:14px}
+.strip i{display:block;border-radius:2px;background:var(--map-dim)}
+.card .ts{font-size:12.5px;color:var(--ink-2);display:flex;gap:6px;align-items:center}
+.card .ts .sw{width:10px;height:10px;border-radius:2px;flex:none}
+.card .dishes{font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:50;display:grid;grid-template-columns:1fr min(560px,100%)}
+.drawer .bd{background:rgba(20,22,20,.45)}
+.drawer .pn{background:var(--surface);overflow-y:auto;padding:22px 26px 40px;box-shadow:var(--shadow);border-left:1px solid var(--line);padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+.drawer .hd{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.drawer h2{font-size:30px;font-weight:900;letter-spacing:.04em}
+.drawer h2 small{font-family:"Noto Sans SC",sans-serif;font-size:14px;font-weight:400;color:var(--muted);margin-left:8px}
+.drawer .close{width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);font-size:18px;line-height:1;flex:none}
+.drawer .cu{font-size:16px;color:var(--ink);margin-top:2px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:999px;font-size:12.5px;background:var(--surface-2);color:var(--ink-2)}
+.pill .sw{width:9px;height:9px;border-radius:50%}
+.drawer .story{margin:12px 0 0;color:var(--ink-2);font-size:14px;line-height:1.75}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin-top:14px;font-size:13.5px}
+.kv dt{color:var(--muted);letter-spacing:.1em;font-size:12px;padding-top:2px}
+.kv dd{margin:0;color:var(--ink-2)}
+.kv dd.dishes{color:var(--ink);font-weight:500}
+.drawer h3{font-size:14px;letter-spacing:.14em;margin-top:22px;padding-bottom:6px;border-bottom:2px solid var(--ink);font-family:"Noto Sans SC",sans-serif;font-weight:700}
+.hist{list-style:none;margin:8px 0 0;padding:0}
+.hist li{display:grid;grid-template-columns:12px 84px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px;align-items:start}
+.hist li i{width:12px;height:12px;border-radius:3px;margin-top:5px}
+.hist li .p{font-family:"Noto Serif SC",serif;font-weight:700;color:var(--ink)}
+.hist li .p small{display:block;font-family:"Noto Sans SC",sans-serif;font-weight:400;color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.hist li .r b{color:var(--ink);font-weight:500;margin-right:6px}
+.hist li .r{color:var(--ink-2);line-height:1.6}
+.hist li .r .tt{display:inline-block;font-size:11.5px;color:var(--muted);margin-left:6px}
+.hist li .r .pn2{display:block;color:var(--accent);font-size:12.5px;margin-top:2px}
+.hist li.cur .p{color:var(--accent)}
+
+/* refs */
+.refs ol{margin:0;padding-left:1.4em;columns:2;column-gap:32px;font-size:13.5px;color:var(--ink-2)}
+.refs li{break-inside:avoid;margin-bottom:6px}
+.note{font-size:12.5px;color:var(--muted);line-height:1.7;margin-top:14px;max-width:80ch}
+
+@media (max-width:980px){
+  .atlas{grid-template-columns:1fr}
+  .masthead{grid-template-columns:1fr}
+  .seal{writing-mode:horizontal-tb;letter-spacing:.3em;padding:8px 12px;width:max-content}
+  .refs ol{columns:1}
+}
+@media (max-width:640px){
+  .drawer{grid-template-columns:1fr;grid-template-rows:1fr auto}
+  .drawer .pn{border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;max-height:88vh}
+  .infobar{grid-template-columns:auto 1fr;}
+  .infobar .go{grid-column:2}
+  .panel h2{font-size:26px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="seal">食·器·技·味</div>
+    <div>
+      <div class="eyebrow">Atlas of Chinese Regional Cuisines · 先秦—当代<button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></div>
+      <h1>中国菜系演化图谱</h1>
+      <p class="lede">以<b>食材、器具、技法、口味</b>四条线索，把先秦到当代十个时期的饮食变迁映射到今天的 34 个省级行政区。选一个时期，看地图上的风味分区、口味主调与主食怎样流转；点一个省，读它的沿革。</p>
+    </div>
+  </header>
+
+  <nav class="timeline" aria-label="时期">
+    <div class="tl-scroll"><div class="tl" id="tl"><div class="tl-fill" id="tlfill"></div></div></div>
+  </nav>
+
+  <section class="atlas">
+    <div class="map-col">
+      <div class="toolbar">
+        <div class="seg" role="group" aria-label="地图着色方式" id="modes">
+          <button data-mode="fam" aria-pressed="true">风味分区</button>
+          <button data-mode="taste" aria-pressed="false">口味主调</button>
+          <button data-mode="staple" aria-pressed="false">主食</button>
+        </div>
+        <button class="play" id="play" aria-pressed="false"><span class="dot"></span><span id="playtxt">播放演化</span></button>
+      </div>
+      <div class="map-wrap" id="mapwrap"></div>
+      <div class="infobar" id="infobar">
+        <div class="sw" id="ib-sw"></div>
+        <div class="t"><b id="ib-name">把鼠标移到省份上</b><span class="r" id="ib-region"></span><p id="ib-note">或在手机上点按省份，查看它在当前时期所属的风味分区。</p></div>
+        <button class="go" id="ib-go" hidden>查看沿革 →</button>
+      </div>
+      <div class="legend" id="legend"></div>
+      <div class="legend-note" id="legendnote"></div>
+    </div>
+    <aside class="panel" id="panel"></aside>
+  </section>
+
+  <section class="section" id="scroll">
+    <div class="section-head"><h2>四维长卷</h2><p>四条线索在十个时期里的关键节点——点任一格切换时期，右栏（手机上为地图下方）会展开详情与出处。</p></div>
+    <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
+  </section>
+
+  <section class="section" id="regions">
+    <div class="section-head"><h2>各地菜系沿革</h2><p>34 个省级行政区。每张卡片的色带是它在十个时期中所属的风味分区（同色 = 同一菜系家族），点卡片读完整沿革。</p></div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="section refs" id="refs">
+    <div class="section-head"><h2>主要参考</h2></div>
+    <ol id="refs-list"></ol>
+    <p class="note" id="mapnote"></p>
+  </section>
+</div>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="bd" id="drawer-bd"></div>
+  <div class="pn" id="drawer-pn" role="dialog" aria-modal="true" aria-labelledby="dr-title"></div>
+</div>
+
+<script>
+const DATA = { periods: [], provinces: {}, families: {}, tastes: {}, staples: {}, provNotes: {}, modern: {}, refs: [] };
+
+// 34 省级行政区：name 全称简写、short 简称、label 地图标签、dx/dy 标签偏移（相对几何中心）
+DATA.provinces = {
+  BJ:{name:'北京', short:'京', label:'北京', dx:-14, dy:-16},
+  TJ:{name:'天津', short:'津', label:'天津', dx:24, dy:13},
+  HE:{name:'河北', short:'冀', label:'河北', dx:-4, dy:22},
+  SX:{name:'山西', short:'晋', label:'山西', dx:0, dy:0},
+  NM:{name:'内蒙古', short:'蒙', label:'内蒙古', dx:0, dy:0},
+  LN:{name:'辽宁', short:'辽', label:'辽宁', dx:0, dy:0},
+  JL:{name:'吉林', short:'吉', label:'吉林', dx:0, dy:0},
+  HL:{name:'黑龙江', short:'黑', label:'黑龙江', dx:0, dy:0},
+  SH:{name:'上海', short:'沪', label:'上海', dx:22, dy:4},
+  JS:{name:'江苏', short:'苏', label:'江苏', dx:0, dy:0},
+  ZJ:{name:'浙江', short:'浙', label:'浙江', dx:0, dy:0},
+  AH:{name:'安徽', short:'皖', label:'安徽', dx:0, dy:0},
+  FJ:{name:'福建', short:'闽', label:'福建', dx:0, dy:0},
+  JX:{name:'江西', short:'赣', label:'江西', dx:0, dy:0},
+  SD:{name:'山东', short:'鲁', label:'山东', dx:0, dy:0},
+  HA:{name:'河南', short:'豫', label:'河南', dx:0, dy:0},
+  HB:{name:'湖北', short:'鄂', label:'湖北', dx:0, dy:0},
+  HN:{name:'湖南', short:'湘', label:'湖南', dx:0, dy:0},
+  GD:{name:'广东', short:'粤', label:'广东', dx:-6, dy:-6},
+  GX:{name:'广西', short:'桂', label:'广西', dx:0, dy:0},
+  HI:{name:'海南', short:'琼', label:'海南', dx:0, dy:0},
+  CQ:{name:'重庆', short:'渝', label:'重庆', dx:0, dy:0},
+  SC:{name:'四川', short:'川', label:'四川', dx:0, dy:0},
+  GZ:{name:'贵州', short:'黔', label:'贵州', dx:0, dy:0},
+  YN:{name:'云南', short:'滇', label:'云南', dx:0, dy:0},
+  XZ:{name:'西藏', short:'藏', label:'西藏', dx:0, dy:0},
+  SN:{name:'陕西', short:'陕', label:'陕西', dx:0, dy:0},
+  GS:{name:'甘肃', short:'甘', label:'甘肃', dx:0, dy:0},
+  QH:{name:'青海', short:'青', label:'青海', dx:0, dy:0},
+  NX:{name:'宁夏', short:'宁', label:'宁夏', dx:0, dy:0},
+  XJ:{name:'新疆', short:'新', label:'新疆', dx:0, dy:0},
+  TW:{name:'台湾', short:'台', label:'台湾', dx:0, dy:0},
+  HK:{name:'香港', short:'港', label:'香港', dx:20, dy:10},
+  MO:{name:'澳门', short:'澳', label:'澳门', dx:-16, dy:12}
+};
+
+// 14 个“菜系家族”——同一家族在各时期使用同一色相，便于看出传承与分合
+DATA.families = {
+  A:{name:'齐鲁—鲁菜', core:['SD']},
+  B:{name:'中原—豫晋陕', core:['HA','SX','SN']},
+  C:{name:'燕赵—京津冀', core:['BJ','TJ','HE']},
+  D:{name:'东北', core:['LN','JL','HL']},
+  E:{name:'草原—蒙', core:['NM']},
+  F:{name:'西域—新疆', core:['XJ']},
+  G:{name:'河陇—甘宁青', core:['GS','NX','QH']},
+  H:{name:'青藏—藏', core:['XZ']},
+  I:{name:'巴蜀—川渝', core:['SC','CQ']},
+  J:{name:'滇黔—西南', core:['YN','GZ']},
+  K:{name:'荆楚—湘鄂赣', core:['HB','HN','JX']},
+  L:{name:'吴越江南—苏浙沪皖', core:['JS','ZJ','SH','AH']},
+  M:{name:'闽—闽台', core:['FJ','TW']},
+  N:{name:'岭南—粤桂琼港澳', core:['GD','GX','HI','HK','MO']}
+};
+
+// 口味主调
+DATA.tastes = {
+  xian:{name:'咸鲜·酱香', desc:'盐、酱、豉、酱油带来的发酵咸鲜，黄河流域与京鲁的底色'},
+  tian:{name:'鲜甜', desc:'糖与蜜入菜，甜与鲜并举，江南与闽台的标志'},
+  suan:{name:'酸香', desc:'醋、酸菜、酸汤、梅子等发酵与果酸主导'},
+  xinxiang:{name:'辛香（椒·姜·茱萸）', desc:'辣椒到来之前的“辣”：花椒、姜、茱萸、葱蒜'},
+  mala:{name:'麻辣', desc:'辣椒与花椒相遇后的川渝复合味'},
+  la:{name:'香辣·酸辣（辣椒）', desc:'辣椒为主的辣味带：湘、黔、赣、桂、滇等'},
+  qing:{name:'清鲜·本味', desc:'轻调味、重食材本味与汤鲜，粤闽浙琼台的审美'},
+  nai:{name:'奶膻·肉香', desc:'牧区与高原：羊肉、牛肉、奶酪、酥油、孜然'}
+};
+
+// 主食
+DATA.staples = {
+  su:{name:'粟黍（小米·黄米）', desc:'华北最古老的主粮，汉唐以后逐渐让位于麦'},
+  mai:{name:'麦（面食）', desc:'石磨普及后北方的主食：饼、面、馒头、馕'},
+  dao:{name:'稻（米饭）', desc:'长江流域及以南的主食，宋以后占城稻推动双季稻'},
+  daomai:{name:'稻麦兼作', desc:'江淮、汉水与淮河流域的过渡带'},
+  qingke:{name:'青稞', desc:'青藏高原的耐寒大麦，糌粑的原料'},
+  rou:{name:'肉奶·渔猎', desc:'草原与林海：肉、乳、鱼为主，谷物为辅'},
+  shu:{name:'玉米·薯类·杂粮', desc:'明清美洲作物落户山区后的新主食，东北曾以高粱杂粮为主'}
+};
+
+DATA.periods.push({
+  id:'xq', name:'先秦', years:'约前2070—前221', sub:'夏 · 商 · 周 · 春秋战国',
+  summary:'中国饮食的“底层系统”在此成形：北粟南稻的主食格局、鼎鬲甑的蒸煮传统、以盐梅酒醢为核心的“五味调和”观念，以及以周礼为骨架的宴饮制度。地域风味已初见分野——《楚辞·招魂》开列的楚宫菜单与中原的“八珍”，已经是两套口味。',
+  dims:{
+    food:[
+      {h:'北粟南稻', t:'黄河流域以粟（小米）、黍为主粮，长江流域以稻为主。小麦约在四千多年前自西亚传入，但要等到石磨出现才真正流行。', src:'裴李岗、河姆渡、二里头等遗址考古'},
+      {h:'五谷六畜', t:'稻、黍、稷、麦、菽与马、牛、羊、鸡、犬、豕成为基本食谱；蔬菜以葵、韭、藿（豆叶）、菘（白菜前身）为主。', src:'《周礼》《孟子》'},
+      {h:'盐梅调和', t:'调味基本盘是盐、梅（酸）、饴与蜜（甜）、酒、醢（肉酱）；辛味来自花椒、姜、葱、蓼、茱萸、芥——此时没有辣椒，也没有蔗糖。', src:'《尚书·说命》“若作和羹，尔惟盐梅”'},
+      {h:'楚宫菜单', t:'《楚辞·招魂》列出胹鳖炮羔、露鸡臛蠵、蜜饵粔籹等菜点，“大苦咸酸，辛甘行些”，可视为最早的一份南方风味清单。', src:'《楚辞·招魂》（约前3世纪）'}
+    ],
+    tool:[
+      {h:'陶器：釜鬲甑', t:'釜（煮）、鼎（煮羹）、鬲（三足空心速煮）、甑与甗（蒸）在新石器晚期成熟，“蒸”从此成为中国独有的基本技法。', src:'河姆渡、仰韶、龙山遗址出土炊具'},
+      {h:'青铜列鼎', t:'商周的鼎、簋、鬲、甗、豆、俎既是炊具也是礼器，“列鼎而食”规定了贵族餐桌的等级配置。', src:'《周礼》《仪礼》、殷墟与周原出土器物'},
+      {h:'一人一案', t:'席地而坐、一人一案一俎的分餐制，要到唐宋才逐渐被合食制取代。', src:'《史记·项羽本纪》鸿门宴座次'},
+      {h:'铁器初现', t:'春秋晚期铁器出现，战国铁釜开始进入厨房，但普及要到汉代。', src:'战国铁器考古'}
+    ],
+    tech:[
+      {h:'炙燔炮', t:'炙（直火烤）、燔（烧）、炮（裹泥烤）是最古老的火烹三法；水烹则有煮与羹（带汁炖煮）。', src:'《礼记·礼运》'},
+      {h:'蒸', t:'借甑与甗，中国是世界上最早把“蒸”作为主流炊法的地区。', src:'新石器甑甗出土'},
+      {h:'脍与菹醢', t:'脍是生切鱼肉薄片（“脍不厌细”），菹是腌渍蔬菜，醢是发酵肉酱——生食与发酵并存。', src:'《论语·乡党》'},
+      {h:'周代八珍', t:'淳熬、淳母、炮豚、炮牂、捣珍、渍、熬、肝膋，涵盖煎、炮、捣、渍、腊等技法，是最早的成套烹饪工艺记录。', src:'《周礼·天官》《礼记·内则》'}
+    ],
+    taste:[
+      {h:'五味调和', t:'酸苦甘辛咸相济成为核心审美，伊尹“说汤以至味”讲的正是火候与调味的分寸。', src:'《吕氏春秋·本味》（前239年）'},
+      {h:'辛≠辣', t:'酸靠梅、甜靠饴蜜、咸靠盐与醢、辛靠椒姜——古人的“辣”指姜椒之辛，与后世辣椒之辣无关。', src:'《说文解字》“辣，辛也”'},
+      {h:'南北初分', t:'中原以羹醢为正统；楚地“大苦咸酸”；齐享鱼盐之利、以海味见长；巴蜀“尚滋味，好辛香”。', src:'《楚辞·招魂》《史记·货殖列传》《华阳国志》'}
+    ]
+  },
+  regions:[
+    {id:'zhongyuan', fam:'B', name:'中原·周礼食统', provs:['HA','SX'], taste:'xian', staple:'su', note:'周王畿与三晋所在，鼎食礼制的发源地。粟黍为主粮，羹、醢、脍为正宗，饮食讲究等级与仪节。'},
+    {id:'qinlong', fam:'G', name:'秦·关陇', provs:['SN','GS','NX'], taste:'xian', staple:'su', note:'秦人居关中，粟麦并作，重牛羊。郑国渠灌溉关中沃野，“粟”的储备是秦统一的物质基础。'},
+    {id:'qilu', fam:'A', name:'齐鲁', provs:['SD'], taste:'xian', staple:'su', note:'齐“通鱼盐”而富，鲁承周礼；“食不厌精，脍不厌细”出自鲁人孔子——这是后世鲁菜的精神源头。'},
+    {id:'yanzhao', fam:'C', name:'燕赵', provs:['HE','BJ','TJ'], taste:'xian', staple:'su', note:'农牧交错地带，粟黍为主，兼有渔盐；燕地近东胡，饮食带有游牧色彩。'},
+    {id:'chu', fam:'K', name:'楚·荆湘', provs:['HB','HN','JX','AH'], taste:'suan', staple:'dao', note:'稻作与水产之乡。《招魂》菜单里的鳖、羔、鹄、鸿、鹑、蜜饵，是华夏最早的南方风味清单。'},
+    {id:'wuyue', fam:'L', name:'吴越', provs:['JS','ZJ','SH'], taste:'qing', staple:'dao', note:'饭稻羹鱼，善治鱼脍；吴越的青铜食器与铸剑齐名，“吴人善鲙”的传统一直延续到后世苏浙菜。'},
+    {id:'bashu', fam:'I', name:'巴蜀', provs:['SC','CQ'], taste:'xinxiang', staple:'dao', note:'盆地稻粟并作；李冰凿广都盐井得井盐，加上本地蜀椒，奠定“尚滋味、好辛香”的底色。'},
+    {id:'lingnan', fam:'N', name:'百越·岭南', provs:['GD','GX','HI','HK','MO'], taste:'qing', staple:'dao', note:'饭稻羹鱼，蛇虫蛤蚌皆入馔，与中原饮食差异极大。'},
+    {id:'minyue', fam:'M', name:'闽越', provs:['FJ'], taste:'qing', staple:'dao', note:'闽越属百越系统，稻作与海产为生，善舟楫。'},
+    {id:'xinan', fam:'J', name:'西南夷·滇黔', provs:['YN','GZ'], taste:'suan', staple:'dao', note:'滇、夜郎等方国，稻、芋与畜牧并存；滇国青铜贮贝器上留下了宴饮与祭祀的场景。'},
+    {id:'caoyuan', fam:'E', name:'北狄·草原', provs:['NM'], taste:'nai', staple:'rou', note:'游牧为生，食肉饮酪，与农耕区形成“食谷—食肉”的分野。'},
+    {id:'xiyu', fam:'F', name:'西域', provs:['XJ'], taste:'nai', staple:'mai', note:'绿洲农业已种小麦、粟与葡萄（小河墓地出土小麦与粟），饮食与中亚相通。'},
+    {id:'gaoyuan', fam:'H', name:'羌戎·青藏', provs:['QH','XZ'], taste:'nai', staple:'qingke', note:'青稞驯化于高原，牧牛羊、饮乳酪；昌都卡若遗址已见粟作。'},
+    {id:'dongbei', fam:'D', name:'肃慎·东胡', provs:['LN','JL','HL'], taste:'xian', staple:'rou', note:'渔猎与粟作并存；燕国势力到辽东后带来中原农耕。'},
+    {id:'taiwan', fam:'M', name:'海岛·南岛', provs:['TW'], taste:'qing', staple:'su', note:'原住民属南岛语族，以小米、芋头与渔猎为生。'}
+  ]
+});
+
+DATA.periods.push({
+  id:'qh', name:'秦汉', years:'前221—220', sub:'秦 · 西汉 · 东汉',
+  summary:'大一统与丝绸之路改写了餐桌：旋转石磨让小麦从“粒食”变成“粉食”，饼与面从此成为北方主食；张骞通西域带回一批“胡”字头的食材；铁釜、炉灶与酱、醋、豉等酿造调味普及，中国式厨房的雏形出现。',
+  dims:{
+    food:[
+      {h:'面食时代', t:'战国末出现的旋转石磨在汉代普及，小麦得以磨粉，“饼”（汤饼、蒸饼、胡饼）成为北方主食，麦逐渐取代粟的地位。', src:'汉代画像石、崔寔《四民月令》'},
+      {h:'胡字头食材', t:'张骞通西域（前139年出使，一说前138年）之后，葡萄、苜蓿、石榴、胡桃、胡麻（芝麻）、胡瓜、胡蒜、胡荽等陆续传入。', src:'《史记·大宛列传》及历代本草'},
+      {h:'酱醋豉', t:'豆酱、豉、醯（醋）、酒在汉代已是家常，“酱千甔”“醯酱千瓨”被列为致富之业。', src:'《史记·货殖列传》'},
+      {h:'豆腐传说', t:'相传淮南王刘安发明豆腐，但可靠文字记载晚至五代宋初，汉墓画像的“豆腐作坊”解读尚有争议。', src:'《清异录》、打虎亭汉墓画像石'}
+    ],
+    tool:[
+      {h:'铁釜普及', t:'汉武帝盐铁官营（前119年）后铁器大量生产，铁釜取代陶釜与青铜鼎成为主力炊具。', src:'《史记·平准书》'},
+      {h:'灶成为中心', t:'汉墓陶灶明器有多个火眼与烟囱，釜甑配套，“灶”成为厨房的中心。', src:'汉墓出土陶灶明器'},
+      {h:'磨碓筛', t:'石磨、碓、筛让谷物加工机械化，是面食流行的物质前提。', src:'汉代磨、碓出土及画像'},
+      {h:'漆器食具', t:'漆器与陶瓷食具流行，青铜礼器退出日常餐桌；仍是分餐，一人一案。', src:'马王堆汉墓漆器'}
+    ],
+    tech:[
+      {h:'画像石庖厨', t:'山东、河南汉画像石的“庖厨图”可见烤肉串、宰牲、切脍、蒸煮的全套流程。', src:'诸城前凉台、密县打虎亭画像石'},
+      {h:'面点技法', t:'揉、擀、蒸、烙、煮，汤饼（面片汤）是面条的祖先。', src:'《释名·释饮食》'},
+      {h:'脯腊菹醢', t:'保存性技法成熟，《四民月令》按月记录制酱、酿酒、做酱菜的农家食事。', src:'崔寔《四民月令》（东汉）'},
+      {h:'炒的萌芽', t:'铁釜与动物油、芝麻油的出现，为“炒”准备了条件，但正式记载要到南北朝。', src:'—'}
+    ],
+    taste:[
+      {h:'酱定基调', t:'酱与豉带来的发酵咸鲜成为北方主调，“酱”从此是中国味觉的基石。', src:'《急就篇》'},
+      {h:'胡风初染', t:'胡麻油、胡蒜、胡荽的香气进入中原饮食；胡椒此时尚未流行。', src:'—'},
+      {h:'甜靠饴蜜', t:'蔗糖尚未普及，甜味仍靠饴糖与蜂蜜；南方保持酸鲜、鱼鲜传统。', src:'马王堆遣策'}
+    ]
+  },
+  regions:[
+    {id:'guanzhong', fam:'B', name:'关中·京畿', provs:['SN'], taste:'xian', staple:'mai', note:'长安所在，丝路起点，胡食传入的第一站；石磨面食最先在此普及。'},
+    {id:'zhongyuan', fam:'B', name:'中原', provs:['HA','SX'], taste:'xian', staple:'su', note:'农业核心区，粟麦并重，酱、豉、醋的酿造业发达。'},
+    {id:'qilu', fam:'A', name:'齐鲁', provs:['SD'], taste:'xian', staple:'su', note:'海盐、鱼鲜与面食；诸城画像石“庖厨图”完整呈现烤串与切脍。'},
+    {id:'youji', fam:'C', name:'幽冀·燕赵', provs:['HE','BJ','TJ'], taste:'xian', staple:'su', note:'边郡农牧兼营，粟黍面食，与匈奴、乌桓互市。'},
+    {id:'longyou', fam:'G', name:'陇右·河西', provs:['GS','NX'], taste:'nai', staple:'mai', note:'河西四郡设立后，丝路走廊上农耕与游牧交汇，麦作与畜牧并行。'},
+    {id:'jingchu', fam:'K', name:'荆楚·江淮', provs:['HB','HN','JX','AH'], taste:'suan', staple:'dao', note:'稻作扩展，楚风延续；马王堆汉墓遣策记录了上百种菜肴与调味。'},
+    {id:'wuyue', fam:'L', name:'吴越·江东', provs:['JS','ZJ','SH'], taste:'qing', staple:'dao', note:'稻鱼之乡，海盐、鱼脍；会稽、吴郡渐成鱼米富庶之地。'},
+    {id:'bashu', fam:'I', name:'巴蜀', provs:['SC','CQ'], taste:'xinxiang', staple:'dao', note:'天府之国，井盐与蜀椒；成都平原的庖厨画像砖显示宴饮富庶。'},
+    {id:'nanyue', fam:'N', name:'南越·岭南', provs:['GD','GX','HI','HK','MO'], taste:'qing', staple:'dao', note:'南越国融合楚汉与百越，广州南越王墓出土大量炊具与海产遗骸。'},
+    {id:'minyue', fam:'M', name:'闽越', provs:['FJ'], taste:'qing', staple:'dao', note:'闽越国稻作与海产，越人风俗。'},
+    {id:'xinan', fam:'J', name:'西南夷', provs:['YN','GZ'], taste:'suan', staple:'dao', note:'滇、夜郎，稻作、畜牧与青铜文化。'},
+    {id:'xiongnu', fam:'E', name:'匈奴·草原', provs:['NM'], taste:'nai', staple:'rou', note:'食肉饮酪，以互市换取汉地粮谷。'},
+    {id:'xiyu', fam:'F', name:'西域诸国', provs:['XJ'], taste:'nai', staple:'mai', note:'丝路枢纽，麦、葡萄、瓜果，胡食的源头。'},
+    {id:'qiang', fam:'H', name:'羌·青藏', provs:['QH','XZ'], taste:'nai', staple:'qingke', note:'青稞与畜牧。'},
+    {id:'dongbei', fam:'D', name:'辽东·夫余', provs:['LN','JL','HL'], taste:'xian', staple:'su', note:'辽东郡农耕，夫余、高句丽“善藏酿”。'},
+    {id:'taiwan', fam:'M', name:'海岛', provs:['TW'], taste:'qing', staple:'su', note:'南岛语族社会，小米与渔猎。'}
+  ]
+});
+
+DATA.periods.push({
+  id:'wj', name:'魏晋南北朝', years:'220—589', sub:'三国 · 两晋 · 南北朝',
+  summary:'南北分立、民族大迁徙，把“胡食”与“乳酪”带进北方，把“茶”与“鱼米”留给南方。贾思勰《齐民要术》第一次系统记录了酿造、腌渍与“炒”法，是中国饮食史上的第一部百科全书。',
+  dims:{
+    food:[
+      {h:'北方乳酪化', t:'鲜卑、匈奴等入主中原，酥、酪、乳腐进入北方日常；南朝士人则以茶为饮、以鱼米自矜（“茗饮”与“酪浆”之争）。', src:'《洛阳伽蓝记》王肃故事'},
+      {h:'食材大全', t:'《齐民要术》记录麦、稻、粟、黍、豆、瓜果、菜蔬近百种，以及胡饼、胡羹等胡食。', src:'贾思勰《齐民要术》（约533—544年）'},
+      {h:'茶成日饮', t:'茶从药饮变成日常饮料，江南、巴蜀率先流行。', src:'《广雅》《荆楚岁时记》'},
+      {h:'面食花样', t:'馄饨、水引饼（面条）、髓饼与“形如偃月”的饺子雏形都已见记载。', src:'《齐民要术》《广雅》'}
+    ],
+    tool:[
+      {h:'铁铛与油', t:'铁铛（平底浅锅）用于煎、炒；芝麻油与动物脂更充裕。', src:'《齐民要术》'},
+      {h:'胡床传入', t:'坐姿开始抬高，为后来的合食制埋下伏笔。', src:'《后汉书·五行志》'},
+      {h:'青瓷食具', t:'越窑青瓷碗盘取代部分漆器，南方瓷业兴起。', src:'越窑考古'},
+      {h:'水碓水磨', t:'碓、磨、碾成套，水碓、水磨出现，谷物加工规模化。', src:'《晋书》《齐民要术》'}
+    ],
+    tech:[
+      {h:'“炒”首见', t:'《齐民要术》记“炒鸡子法”：打破鸡蛋入铜铛，加葱白、盐、豉汁“麻油炒之”——这是炒法的最早明确记载。', src:'《齐民要术·养鸡》'},
+      {h:'酿造大全', t:'制曲、酿酒、作酱、作醋（“作酢法”二十余种）、作豉，以及腌菜、腊肉、鱼鲊——发酵技术全面成熟。', src:'《齐民要术》卷七至卷九'},
+      {h:'炙法二十余', t:'羹、臛、蒸、缹、炙、脍、脯等分类记载，仅炙法就有二十余种。', src:'《齐民要术·炙法》'},
+      {h:'酪酥工艺', t:'作酪、作酥、抨酪，记载乳酸发酵与酥油提取。', src:'《齐民要术·养羊》'}
+    ],
+    taste:[
+      {h:'北：咸鲜加乳膻', t:'胡饼、羊肉、酥酪成为北朝风味。', src:'《洛阳伽蓝记》'},
+      {h:'南：清鲜甘淡', t:'莼羹鲈脍、鱼鲊、蟹酱，形成“南食”的审美——“千里莼羹，未下盐豉”。', src:'《世说新语》'},
+      {h:'胡椒登场', t:'西域来的胡椒开始用于肉食调味（“胡炮肉”用胡椒），是后世辛香料贸易的先声。', src:'《齐民要术》“胡炮肉法”'}
+    ]
+  },
+  regions:[
+    {id:'beichao', fam:'B', name:'北朝·胡汉交融', provs:['HE','SX','HA','SD','SN','GS','NX','BJ','TJ','LN'], taste:'xian', staple:'mai', note:'鲜卑等政权下，乳酪、羊肉、胡饼与中原酱豉面食并存；《齐民要术》在此成书（贾思勰曾任高阳太守，今山东境内）。'},
+    {id:'caoyuan', fam:'E', name:'柔然·草原', provs:['NM'], taste:'nai', staple:'rou', note:'游牧，肉乳为主。'},
+    {id:'xiyu', fam:'F', name:'西域·高昌', provs:['XJ'], taste:'nai', staple:'mai', note:'高昌等绿洲国，馕与葡萄酒，佛教素食传统。'},
+    {id:'gaoyuan', fam:'H', name:'吐谷浑·青藏', provs:['QH','XZ'], taste:'nai', staple:'qingke', note:'青稞、牦牛与畜牧。'},
+    {id:'nanchao', fam:'L', name:'南朝·江南', provs:['JS','ZJ','SH','AH','JX','HB','HN'], taste:'qing', staple:'dao', note:'以建康为中心，稻米、鱼鲜、茶与莼菜，士族饮食精致。'},
+    {id:'bashu', fam:'I', name:'巴蜀', provs:['SC','CQ'], taste:'xinxiang', staple:'dao', note:'蜀汉之后先属晋、南朝，后归北周，饮食保留辛香传统。'},
+    {id:'min', fam:'M', name:'闽', provs:['FJ'], taste:'qing', staple:'dao', note:'建安、晋安郡，稻作与海产，晋室南渡后移民渐增。'},
+    {id:'lingnan', fam:'N', name:'岭南', provs:['GD','GX','HI','HK','MO'], taste:'qing', staple:'dao', note:'广州港南海贸易带来香料与海味；旧题嵇含《南方草木状》记岭南物产。'},
+    {id:'xinan', fam:'J', name:'爨·西南夷', provs:['YN','GZ'], taste:'suan', staple:'dao', note:'爨氏据滇，稻作、畜牧。'},
+    {id:'dongbei', fam:'D', name:'高句丽·勿吉', provs:['JL','HL'], taste:'xian', staple:'su', note:'粟豆与渔猎，善酿。'},
+    {id:'taiwan', fam:'M', name:'夷洲', provs:['TW'], taste:'qing', staple:'su', note:'三国吴称夷洲。'}
+  ]
+});
+
+DATA.periods.push({
+  id:'st', name:'隋唐五代', years:'581—960', sub:'隋 · 唐 · 五代十国',
+  summary:'大运河贯通南北，长安、洛阳、扬州、广州成为国际都会，“胡食”成为时尚，茶成为国饮，蔗糖工艺从印度引进；宫廷盛宴（烧尾宴）与市井食肆并盛，“南食”“北食”的分野被清楚地记录下来。',
+  dims:{
+    food:[
+      {h:'胡食风尚', t:'胡饼、毕罗、羊肉、葡萄酒风靡长安，“贵人御馔，尽供胡食”。', src:'《旧唐书·舆服志》'},
+      {h:'蔗糖引进', t:'唐太宗遣使赴摩揭陀学熬糖法（贞观二十一年，647年），中国从此有了成规模的沙糖生产。', src:'《新唐书·西域传》'},
+      {h:'菠菜与西瓜', t:'菠菜（波棱菜）自尼泊尔传入；西瓜稍后于五代由回纥传入中原。', src:'《唐会要》《新五代史·四夷附录》'},
+      {h:'茶经', t:'陆羽《茶经》（约760—780年）确立煎茶法，茶成为南北通饮，“茶马互市”开始。', src:'陆羽《茶经》'},
+      {h:'海上香料', t:'广州蕃坊聚居阿拉伯、波斯商人，胡椒、丁香、乳香与海产贸易兴盛。', src:'《唐国史补》'}
+    ],
+    tool:[
+      {h:'南青北白', t:'瓷器全面取代漆器：邢窑白瓷“类银类雪”，越窑青瓷“类玉类冰”。', src:'陆羽《茶经·四之器》'},
+      {h:'围桌而坐', t:'高足桌椅逐渐流行，晚唐至五代，合食制开始取代一人一案的分餐制。', src:'唐墓壁画宴饮图、《韩熙载夜宴图》'},
+      {h:'茶具二十四器', t:'陆羽列风炉、釜、碾、罗等成套茶具，饮茶成为器物系统。', src:'陆羽《茶经》'},
+      {h:'石炭与铁锅', t:'北方城市开始用煤（“石炭”），铁锅铸造增多，为宋代炒菜的爆发准备燃料与器具。', src:'《酉阳杂俎》'}
+    ],
+    tech:[
+      {h:'烧尾宴', t:'韦巨源献给唐中宗的烧尾宴留下58道菜名，涵盖蒸、煮、烤、炸、酿、脍、羹，如“光明虾炙”“金铃炙”“御黄王母饭”。', src:'韦巨源《烧尾宴食单》（709年），见《清异录》'},
+      {h:'鱼脍鼎盛', t:'唐人食生鱼片风气冠绝历代，“斫脍”名手众多，配以橙、蒜、盐调成的“金齑”。', src:'《砍脍书》（佚，见《酉阳杂俎》）'},
+      {h:'冷淘与牢丸', t:'过水凉面（槐叶冷淘）与“汤中牢丸”（水饺汤圆类）见于诗文。', src:'杜甫《槐叶冷淘》'},
+      {h:'馕坑式烤炉', t:'蒸饼、胡饼、饆饠的炉烤技术随胡食流行。', src:'唐代西域出土面食'}
+    ],
+    taste:[
+      {h:'尚羊尚胡', t:'长安贵羊肉、贵胡食；胡椒昂贵到成为财富象征——宰相元载抄家时有胡椒八百石。', src:'《新唐书·元载传》'},
+      {h:'甜味升级', t:'沙糖与蜂蜜并用，“糖霜”“蜜煎”出现。', src:'《千金要方》'},
+      {h:'南食北食', t:'“南食”重鱼鲜、稻米，“北食”重面食、羊肉与酪，分野被记录。', src:'《南部新书》'}
+    ]
+  },
+  regions:[
+    {id:'liangjing', fam:'B', name:'两京·关中河洛', provs:['SN','HA'], taste:'xian', staple:'mai', note:'长安与洛阳，胡食风尚的中心，烧尾宴与宫廷菜在此登场。'},
+    {id:'hebei', fam:'C', name:'河北·河东', provs:['HE','SX','BJ','TJ'], taste:'xian', staple:'mai', note:'河朔藩镇，面食与酱，胡汉杂处。'},
+    {id:'qilu', fam:'A', name:'齐鲁', provs:['SD'], taste:'xian', staple:'mai', note:'面食、海味、盐场；登州港通新罗、日本。'},
+    {id:'longyou', fam:'G', name:'陇右·河西', provs:['GS','NX'], taste:'nai', staple:'mai', note:'丝路走廊，胡食与茶马互市；安史之乱后一度为吐蕃所据。'},
+    {id:'tubo', fam:'H', name:'吐蕃', provs:['XZ','QH'], taste:'nai', staple:'qingke', note:'青稞、牦牛、酥油茶；文成公主入藏（641年）后茶入吐蕃。'},
+    {id:'xiyu', fam:'F', name:'安西·西域', provs:['XJ'], taste:'nai', staple:'mai', note:'高昌、龟兹，馕与葡萄酒；吐鲁番出土唐代饺子、馄饨实物。'},
+    {id:'huihe', fam:'E', name:'突厥·回纥', provs:['NM'], taste:'nai', staple:'rou', note:'草原游牧，与唐互市马匹换茶绢。'},
+    {id:'jianghuai', fam:'L', name:'江淮·扬州', provs:['JS','SH','AH'], taste:'qing', staple:'daomai', note:'“扬一益二”，运河枢纽，盐、糖、海鲜，淮扬风味的雏形。'},
+    {id:'liangzhe', fam:'L', name:'两浙', provs:['ZJ'], taste:'qing', staple:'dao', note:'越窑青瓷，顾渚紫笋贡茶，鱼米之乡。'},
+    {id:'jingchu', fam:'K', name:'荆楚·江西', provs:['HB','HN','JX'], taste:'qing', staple:'dao', note:'稻作扩张，茶产区，鱼米。'},
+    {id:'jiannan', fam:'I', name:'剑南·巴蜀', provs:['SC','CQ'], taste:'xinxiang', staple:'dao', note:'“扬一益二”的益州，饮食奢华，蒙顶茶与蜀椒；前后蜀宫廷菜。'},
+    {id:'min', fam:'M', name:'闽', provs:['FJ'], taste:'qing', staple:'dao', note:'五代闽国，福州、泉州港崛起，海产与佛教素食。'},
+    {id:'lingnan', fam:'N', name:'岭南·广州', provs:['GD','GX','HI','HK','MO'], taste:'qing', staple:'dao', note:'蕃坊与香料；刘恂《岭表录异》记岭南异味：蛇、蛤、蚝、槟榔。'},
+    {id:'nanzhao', fam:'J', name:'南诏', provs:['YN','GZ'], taste:'suan', staple:'dao', note:'大理地区，稻、茶（普洱茶的先声）。'},
+    {id:'bohai', fam:'D', name:'渤海·契丹', provs:['LN','JL','HL'], taste:'xian', staple:'su', note:'渤海国“海东盛国”，粟、豆、渔猎；契丹兴起。'},
+    {id:'taiwan', fam:'M', name:'流求', provs:['TW'], taste:'qing', staple:'su', note:'隋书称流求。'}
+  ]
+});
+
+DATA.periods.push({
+  id:'song', name:'两宋', years:'960—1279', sub:'北宋 · 南宋（辽 · 西夏 · 金）',
+  summary:'宋代是中国饮食的“近代化”时刻：煤炭与铁锅普及，“炒”成为主流技法；占城稻推广、豆腐与蔗糖普及；汴京、临安的夜市与食店按“南食”“北食”“川饭”分帮经营，地方风味的商业分化第一次被清楚地写进书里。',
+  dims:{
+    food:[
+      {h:'占城稻', t:'1012年宋真宗自福建取占城稻种三万斛推广到江淮两浙，早熟耐旱，双季稻扩大，南方人口与稻米产量激增。', src:'《宋史·食货志》'},
+      {h:'豆腐普及', t:'豆腐有“小宰羊”之称，苏轼等文人诗中常见；素菜仿荤（面筋、豆制品）成熟。', src:'陶谷《清异录》'},
+      {h:'糖霜谱', t:'王灼《糖霜谱》（1154年）专记遂宁糖霜；蜜饯、糖水成为市井小食。', src:'王灼《糖霜谱》'},
+      {h:'羊贵猪贱', t:'北宋宫廷“御厨止用羊肉”，猪肉为平民之食；南宋临安鱼虾海鲜大盛。', src:'《宋会要辑稿》《梦粱录》'},
+      {h:'点茶', t:'从煎茶转向点茶，建州北苑龙团凤饼贡茶。', src:'蔡襄《茶录》、赵佶《大观茶论》'}
+    ],
+    tool:[
+      {h:'铁锅+石炭', t:'汴京“数百万家，尽仰石炭，无一家燃薪者”，猛火与铁锅结合，炒法大兴。', src:'庄绰《鸡肋编》'},
+      {h:'合食制定型', t:'高桌高椅普及，围桌共食成为常态。', src:'宋代绘画《清明上河图》'},
+      {h:'五大名窑', t:'汝、官、哥、钧、定与景德镇青白瓷，成套餐具供应酒楼与家庭。', src:'宋瓷考古'},
+      {h:'食店分帮', t:'《东京梦华录》记汴京有“川饭店”“南食店”，并分“北食”“南食”名店，另有专营羹、饼、素食的店铺，正店七十二家，并有外卖。', src:'孟元老《东京梦华录》（序作于1147年）'}
+    ],
+    tech:[
+      {h:'炒爆熘煎炸', t:'技法名目成型，《山家清供》《中馈录》等食谱记录家常做法。', src:'林洪《山家清供》、浦江吴氏《中馈录》'},
+      {h:'涮：拨霞供', t:'林洪记武夷山涮兔肉，是火锅涮食的早期明确记载。', src:'《山家清供》“拨霞供”'},
+      {h:'面食开花', t:'汤饼、馄饨、包子、馒头、角子（饺子）与冷淘，临安面店“各色面”上百种。', src:'吴自牧《梦粱录》'},
+      {h:'腌腊糟醉', t:'金华火腿、糟鱼、醉蟹等江南名产在南宋已具规模。', src:'《梦粱录》《武林旧事》'}
+    ],
+    taste:[
+      {h:'北甜南咸', t:'“大抵南人嗜咸，北人嗜甘，鱼蟹加糖蜜，盖便于北俗也”——沈括记录了与今日相反的甜咸地理。', src:'沈括《梦溪笔谈》卷二十四'},
+      {h:'川饭辛香', t:'以花椒、姜、茱萸为“三香”，汴京川饭店的辛香独树一帜——这是没有辣椒的川味。', src:'《东京梦华录》'},
+      {h:'酱油与清鲜', t:'“酱油”一词见于《山家清供》，开始取代豉汁；临安的海鲜河鲜与清汤奠定后世“清鲜”审美。', src:'《山家清供》'}
+    ]
+  },
+  regions:[
+    {id:'beishi', fam:'B', name:'北食·中原河北', provs:['HA','HE','SX','BJ','TJ'], taste:'tian', staple:'mai', note:'汴京所在，羊肉面食、口味偏甜；北宋后期入金，饮食延续。北京、天津时属辽南京道，后为金中都。'},
+    {id:'qilu', fam:'A', name:'齐鲁', provs:['SD'], taste:'xian', staple:'mai', note:'北食一系，面食、海味与酱。'},
+    {id:'guanzhong', fam:'B', name:'关中', provs:['SN'], taste:'xian', staple:'mai', note:'羊肉面食，与西夏对峙的前线。'},
+    {id:'xixia', fam:'G', name:'西夏·河陇', provs:['GS','NX'], taste:'nai', staple:'mai', note:'党项人的西夏：麦、羊、奶。'},
+    {id:'tubo', fam:'H', name:'吐蕃诸部', provs:['QH','XZ'], taste:'nai', staple:'qingke', note:'唃厮啰等部，茶马贸易更盛。'},
+    {id:'nanshi', fam:'L', name:'南食·两浙江淮', provs:['JS','ZJ','SH','AH'], taste:'xian', staple:'dao', note:'临安、平江、扬州：鱼鲜蟹醉、糖蜜点心、素菜与面食，宋代餐饮业最繁盛处；“南人嗜咸”。'},
+    {id:'chuanfan', fam:'I', name:'川饭·巴蜀', provs:['SC','CQ'], taste:'xinxiang', staple:'dao', note:'汴京“川饭店”的家乡，花椒、姜、茱萸的辛香。'},
+    {id:'jinghu', fam:'K', name:'荆湖·江西', provs:['HB','HN','JX'], taste:'xian', staple:'dao', note:'稻米大宗；江西景德镇瓷器与茶叶。'},
+    {id:'fujian', fam:'M', name:'福建·建州', provs:['FJ'], taste:'qing', staple:'dao', note:'北苑贡茶、荔枝（蔡襄《荔枝谱》，1059年）、泉州港香料贸易。'},
+    {id:'lingnan', fam:'N', name:'岭南', provs:['GD','GX','HI','HK','MO'], taste:'qing', staple:'dao', note:'广州市舶司，海味与糖；周去非《岭外代答》（1178年）记岭南饮食。'},
+    {id:'dali', fam:'J', name:'大理', provs:['YN','GZ'], taste:'suan', staple:'dao', note:'大理国，稻作与畜牧，茶马古道。'},
+    {id:'liaojin', fam:'D', name:'辽金·东北', provs:['LN','JL','HL'], taste:'nai', staple:'rou', note:'契丹、女真：肉食、乳酪、渔猎与“冻梨”“炙肉”；金朝汉化后面食与酱并行。'},
+    {id:'caoyuan', fam:'E', name:'辽·草原', provs:['NM'], taste:'nai', staple:'rou', note:'契丹游牧，“捺钵”四时渔猎。'},
+    {id:'xiyu', fam:'F', name:'回鹘·喀喇汗', provs:['XJ'], taste:'nai', staple:'mai', note:'高昌回鹘与喀喇汗王朝，馕与抓饭的前身。'},
+    {id:'taiwan', fam:'M', name:'流求·澎湖', provs:['TW'], taste:'qing', staple:'su', note:'南宋时澎湖已隶属泉州晋江县。'}
+  ]
+});
+
+DATA.periods.push({
+  id:'yuan', name:'元', years:'1271—1368', sub:'蒙古 · 大元',
+  summary:'蒙古帝国把草原饮食与西域清真饮食带进中原：羊肉、奶食、烤炙成为宫廷主流，回回饮食随色目人扎根西北与云南，蒸馏烧酒兴起。《饮膳正要》是第一部宫廷营养食谱。',
+  dims:{
+    food:[
+      {h:'羊与奶酪', t:'宫廷“诈马宴”整羊烤炙；日常“秃秃麻食”（面片）、“搠罗脱因”等蒙古—回回食品见于食谱。', src:'忽思慧《饮膳正要》（1330年）'},
+      {h:'回回食材', t:'回回豆（鹰嘴豆）、回回葱、咱夫兰（藏红花）、马思答吉（乳香）；清真饮食成型，回族在元代形成。', src:'《饮膳正要》《回回药方》'},
+      {h:'胡萝卜', t:'“胡萝卜”之名见于元代，西瓜广泛种植。', src:'《饮膳正要》《王祯农书》'},
+      {h:'烧酒', t:'李时珍称“烧酒非古法也，自元时始创其法”；元代蒸馏酒（阿剌吉）确已流行。', src:'《本草纲目·谷部》'}
+    ],
+    tool:[
+      {h:'蒸馏器', t:'“阿剌吉”蒸馏器传入，白酒工艺的起点之一。', src:'《饮膳正要》《居家必用事类全集》'},
+      {h:'三种饭馆', t:'大都的汉、蒙、回三种饮食并存，饭馆按族群分设。', src:'《析津志》'},
+      {h:'王祯农书', t:'系统记录水磨、水碾等农产加工机械。', src:'王祯《农书》（1313年）'}
+    ],
+    tech:[
+      {h:'烤全羊', t:'烤炙与整只烹饪：烤全羊、炙肉、羊肚等草原技法进入宫廷。', src:'《饮膳正要》'},
+      {h:'秃秃麻食', t:'蒙古面片与回回“卷煎饼”，面食技法进一步与中亚交流。', src:'《饮膳正要》《居家必用事类全集》'},
+      {h:'食疗体系', t:'《饮膳正要》首次以“食疗”“食补”体系统合烹饪，养生饮食观念官方化。', src:'《饮膳正要》'}
+    ],
+    taste:[
+      {h:'肉膻奶香', t:'成为北方上层主调；清真的咸香与孜然、胡椒、藏红花等香料进入西北与云南。', src:'—'},
+      {h:'江南延续', t:'甜、鲜、糟醉；倪瓒《云林堂饮食制度集》记录苏南文人精致菜。', src:'倪瓒《云林堂饮食制度集》'}
+    ]
+  },
+  regions:[
+    {id:'dadu', fam:'C', name:'大都·燕京', provs:['BJ','TJ','HE'], taste:'nai', staple:'mai', note:'元大都，蒙、汉、回三种饮食并存，宫廷羊肉与奶食。'},
+    {id:'zhongyuan', fam:'B', name:'腹里·中原', provs:['HA','SX'], taste:'xian', staple:'mai', note:'中书省直辖“腹里”，面食与酱豉延续。'},
+    {id:'qilu', fam:'A', name:'齐鲁', provs:['SD'], taste:'xian', staple:'mai', note:'属腹里，海盐与面食。'},
+    {id:'caoyuan', fam:'E', name:'岭北·草原', provs:['NM'], taste:'nai', staple:'rou', note:'蒙古本部，肉乳为主。'},
+    {id:'xibei', fam:'G', name:'陕西·甘肃行省', provs:['SN','GS','NX'], taste:'xian', staple:'mai', note:'回回聚居，清真饮食形成（牛羊肉、面食）。'},
+    {id:'xiyu', fam:'F', name:'察合台·西域', provs:['XJ'], taste:'nai', staple:'mai', note:'察合台汗国，馕与烤肉。'},
+    {id:'tubo', fam:'H', name:'宣政院辖地', provs:['XZ','QH'], taste:'nai', staple:'qingke', note:'元设宣政院；酥油茶、糌粑。'},
+    {id:'jiangzhe', fam:'L', name:'江浙行省', provs:['JS','ZJ','SH','AH'], taste:'qing', staple:'dao', note:'宋风延续，倪瓒等文人菜；安徽南部属江浙行省。'},
+    {id:'fujian', fam:'M', name:'福建·泉州', provs:['FJ'], taste:'qing', staple:'dao', note:'泉州为元代最大港口之一，海外香料与蕃商饮食。'},
+    {id:'huguang', fam:'K', name:'湖广·江西行省', provs:['HB','HN','JX'], taste:'xian', staple:'dao', note:'稻米大宗。'},
+    {id:'sichuan', fam:'I', name:'四川行省', provs:['SC','CQ'], taste:'xinxiang', staple:'dao', note:'宋元战争后人口锐减，饮食传统受挫，等待明清移民重建。'},
+    {id:'yunnan', fam:'J', name:'云南行省', provs:['YN','GZ'], taste:'suan', staple:'dao', note:'赛典赤治滇，回族与汉人移民带来清真与中原饮食。'},
+    {id:'lingnan', fam:'N', name:'岭南', provs:['GD','GX','HI','HK','MO'], taste:'qing', staple:'dao', note:'广东属江西行省，广西属湖广行省；广州港延续海贸。'},
+    {id:'liaoyang', fam:'D', name:'辽阳行省', provs:['LN','JL','HL'], taste:'xian', staple:'su', note:'女真、汉人，渔猎与粟豆。'},
+    {id:'taiwan', fam:'M', name:'澎湖巡检司', provs:['TW'], taste:'qing', staple:'su', note:'元代设澎湖巡检司。'}
+  ]
+});
+
+DATA.periods.push({
+  id:'ming', name:'明', years:'1368—1644', sub:'大明',
+  summary:'美洲作物经海路登陆——辣椒、玉米、番薯、马铃薯、花生、南瓜、番茄——这是中国餐桌的“新大陆时刻”，但辣椒此时还是观赏花卉。江南富庶带来甜、精、雅的文人饮食，徽商、晋商、盐商让菜随商走，“菜系”的地理格局开始成型。',
+  dims:{
+    food:[
+      {h:'辣椒登陆', t:'目前所见最早的记载是高濂《遵生八笺》（1591年刊行，“番椒”条见于稍后的翻刻修订本）：“番椒丛生白花，子俨秃笔头，味辣色红，甚可观”——作为观赏植物。', src:'高濂《遵生八笺·燕闲清赏笺》'},
+      {h:'番薯玉米', t:'1593年陈振龙从吕宋携薯藤回福建；玉米约16世纪中叶传入（《平凉府志》1560年记“番麦”）；花生（《常熟县志》1503年）、马铃薯、南瓜、番茄（“番柿”，观赏）陆续登陆。', src:'《金薯传习录》《平凉府志》《群芳谱》'},
+      {h:'白糖工艺', t:'《天工开物》（1637年）记“黄泥水淋法”制白糖，福建、广东成为糖业中心，糖价下降。', src:'宋应星《天工开物·甘嗜》'},
+      {h:'猪肉上位', t:'明代猪肉取代羊肉成为汉地主要肉食。', src:'《本草纲目·兽部》'},
+      {h:'胡椒折俸', t:'郑和下西洋带回大量胡椒，一度用作官俸发放。', src:'《明史·食货志》'}
+    ],
+    tool:[
+      {h:'佛山铁锅', t:'“广锅”行销全国甚至海外，铸铁锅质量与产量空前。', src:'《天工开物·冶铸》'},
+      {h:'紫砂与散茶', t:'朱元璋罢团茶（1391年）后散茶冲泡成为主流，宜兴紫砂壶随之兴起。', src:'《明会典》、周高起《阳羡茗壶系》'},
+      {h:'青花餐具', t:'景德镇青花成套餐具走进富户，八仙桌、圆桌合食制完全定型。', src:'明代景德镇窑址'},
+      {h:'锅台风箱', t:'多火眼大灶、风箱与“锅台”成为北方民居标准。', src:'《天工开物》'}
+    ],
+    tech:[
+      {h:'术语系统化', t:'炒、爆、熘、煎、炸、烹、烧、焖、炖、煨、蒸、烩、烤、涮、卤、酱、腌、糟、醉等技法名目基本齐备。', src:'宋诩《宋氏养生部》（1504年）、《易牙遗意》'},
+      {h:'食谱专业化', t:'《宋氏养生部》《遵生八笺》《竹屿山房杂部》记录数百道菜的具体做法。', src:'同上'},
+      {h:'地方技法定型', t:'徽州臭鳜鱼、江南糟醉、山东爆炒、福建红糟等地方技法定型。', src:'—'},
+      {h:'御膳鲁厨', t:'光禄寺、尚膳监规模化，宫廷菜以山东厨师为主力，鲁菜进入宫廷。', src:'《明宫史》'}
+    ],
+    taste:[
+      {h:'南甜北咸', t:'江南糖价下降、富庶精致，“甜”成为苏杭标志；北方以酱、盐为主——甜咸地理与宋代倒转。', src:'《遵生八笺》《宋氏养生部》'},
+      {h:'辣椒仍在门外', t:'明人吃辣靠花椒、姜、茱萸、胡椒、芥末。', src:'—'},
+      {h:'菜随商走', t:'徽商与晋商把家乡口味带到扬州、北京，商帮饮食成为“菜系”流动的推手。', src:'《扬州画舫录》追述'}
+    ]
+  },
+  regions:[
+    {id:'jingshi', fam:'C', name:'京师·北直隶', provs:['BJ','TJ','HE'], taste:'xian', staple:'mai', note:'永乐迁都后，宫廷与官府菜集中；南京传来的片皮鸭落户北京（便宜坊传承自1416年）。'},
+    {id:'shandong', fam:'A', name:'山东', provs:['SD'], taste:'xian', staple:'mai', note:'鲁菜雏形：胶东海鲜与济南菜，爆、扒、汤，进入宫廷。'},
+    {id:'zhongyuan', fam:'B', name:'河南·山西·陕西', provs:['HA','SX','SN'], taste:'xian', staple:'mai', note:'面食王国，晋商、陕商；山西醋，河南“扒”“烧”。'},
+    {id:'xibei', fam:'G', name:'甘肃·宁夏·青海', provs:['GS','NX','QH'], taste:'xian', staple:'mai', note:'河西走廊，回族清真牛羊面食。'},
+    {id:'jiangnan', fam:'L', name:'江南·苏松杭', provs:['JS','ZJ','SH'], taste:'tian', staple:'dao', note:'甜、鲜、精，文人饮食（高濂是杭州人），苏帮菜、杭帮菜成型。'},
+    {id:'huizhou', fam:'L', name:'徽州·安徽', provs:['AH'], taste:'xian', staple:'daomai', note:'徽商崛起，徽菜随商路传播，重油重色、火腿与臭鳜鱼。'},
+    {id:'huguang', fam:'K', name:'湖广·江西', provs:['HB','HN','JX'], taste:'suan', staple:'dao', note:'“湖广熟，天下足”，稻作中心；江西瓷都景德镇。'},
+    {id:'sichuan', fam:'I', name:'四川', provs:['SC','CQ'], taste:'xinxiang', staple:'dao', note:'明初移民（“湖广填四川”第一波），饮食重建。'},
+    {id:'fujian', fam:'M', name:'福建', provs:['FJ'], taste:'qing', staple:'dao', note:'番薯登陆（1593年），闽菜、红糟，海禁与走私并存的海洋饮食。'},
+    {id:'lingnan', fam:'N', name:'广东·广西', provs:['GD','GX','HI','HK','MO'], taste:'qing', staple:'dao', note:'澳门开埠（1557年），美洲作物与番茄、辣椒的海路入口；广州糖业。'},
+    {id:'yungui', fam:'J', name:'云南·贵州', provs:['YN','GZ'], taste:'suan', staple:'dao', note:'明代大规模屯军移民，贵州建省（1413年）；玉米、辣椒后来在此扎根。'},
+    {id:'wusizang', fam:'H', name:'乌思藏', provs:['XZ'], taste:'nai', staple:'qingke', note:'酥油茶、糌粑。'},
+    {id:'xiyu', fam:'F', name:'叶尔羌·吐鲁番', provs:['XJ'], taste:'nai', staple:'mai', note:'馕、抓饭、葡萄干。'},
+    {id:'menggu', fam:'E', name:'蒙古', provs:['NM'], taste:'nai', staple:'rou', note:'蒙古诸部，肉乳为主。'},
+    {id:'dongbei', fam:'D', name:'辽东·女真', provs:['LN','JL','HL'], taste:'xian', staple:'su', note:'辽东都司汉人农耕，女真渔猎，粟、豆、猪。'},
+    {id:'taiwan', fam:'M', name:'台湾', provs:['TW'], taste:'qing', staple:'dao', note:'明末荷兰、西班牙据台，闽南移民开始，稻蔗种植。'}
+  ],
+  overrides:{ SX:{taste:'suan'} }
+});
+
+DATA.periods.push({
+  id:'qing', name:'清', years:'1644—1912', sub:'大清',
+  summary:'辣椒从观赏走上餐桌，先在贵州“代盐”，再席卷湖南、四川，酸辣、香辣、麻辣的现代辣味格局在乾隆至光绪年间定型；满汉全席集大成，袁枚《随园食单》把饮食写成美学；清末民初，京师、山东、四川、广东、福建、江宁、苏州、扬州等“各省特色肴馔”已成常识，为后来的“菜系”划分打下基础。',
+  dims:{
+    food:[
+      {h:'辣椒上桌', t:'康熙《思州府志》（约1721年编成、1722年刻本）记贵州“海椒，俗名辣火，土苗用以代盐”，是现存最早的食用辣椒记录；乾隆年间湘、黔普遍食辣，四川方志最早见于乾隆十四年（1749年）《大邑县志》“秦椒，又名海椒”，嘉庆年间种植食用迅速扩展，同治年间“山野遍种”，光绪以后川人“每饭每菜，非辣不可”。', src:'《思州府志》《大邑县志》、徐心余《蜀游闻见录》'},
+      {h:'人口与薯麦', t:'番薯、玉米、马铃薯在山区大规模推广，支撑清代人口从1亿到4亿的增长；番茄晚清才开始食用。', src:'何炳棣《美洲作物的引进、传播及其对中国粮食生产的影响》'},
+      {h:'山珍海味', t:'燕窝、鱼翅、海参、鲍鱼成为宴席等级标志，“海参席”“燕窝席”见于食单。', src:'《随园食单》《调鼎集》'},
+      {h:'调味品牌', t:'蚝油（李锦记，1888年）、六必居酱菜、郫县豆瓣、镇江香醋等地方调味品牌化。', src:'—'},
+      {h:'京师烤鸭', t:'便宜坊焖炉与全聚德（1864年）挂炉烤鸭。', src:'—'}
+    ],
+    tool:[
+      {h:'火锅', t:'清宫火锅盛行，嘉庆元年千叟宴（1796年）动用火锅一千五百余只；北方铜锅涮肉、川渝铁锅麻辣火锅（清末重庆码头）起源。', src:'清宫御膳档案'},
+      {h:'砂锅汽锅', t:'砂锅、汽锅（云南建水）、瓦罐（江西）、蒸笼（粤式点心）等器具与地方菜互相塑造。', src:'—'},
+      {h:'炒锅分化', t:'北方双耳生铁锅、南方单柄薄锅，广式“镬”配猛火灶讲究“镬气”。', src:'—'},
+      {h:'餐馆业成熟', t:'北京“八大楼”“八大居”，扬州盐商家厨，广州茶楼“一盅两件”。', src:'《扬州画舫录》《清稗类钞》'}
+    ],
+    tech:[
+      {h:'满汉全席', t:'满洲烧烤与汉族名菜合一，宴席程式化。', src:'李斗《扬州画舫录》（1795年）'},
+      {h:'随园食单', t:'袁枚提出“须知单”“戒单”，讲火候、配搭、本味，是中国饮食美学的经典。', src:'袁枚《随园食单》（1792年）'},
+      {h:'吊汤', t:'鲁菜清汤奶汤、淮扬清炖、粤菜上汤——“唱戏的腔，厨子的汤”。', src:'—'},
+      {h:'复合味定型', t:'川菜麻辣、鱼香、怪味、家常等味型在清末民初成形，“一菜一格，百菜百味”。', src:'—'}
+    ],
+    taste:[
+      {h:'辣椒走廊', t:'黔（酸辣）、湘（香辣）、川渝（麻辣）、赣鄂（辣）形成辣味带；粤、江南、京鲁基本不辣。', src:'蓝勇《中国饮食辛辣口味的地理分布及其成因研究》'},
+      {h:'各省特色肴馔', t:'咸鲜（鲁、京）、鲜甜（苏、锡、杭、沪）、清鲜（粤、闽）、麻辣（川）四大风味区成形；徐珂总结“肴馔之有特色者，为京师、山东、四川、广东、福建、江宁、苏州、镇江、扬州、淮安”——“菜系”这个词本身要到20世纪50—70年代才出现。', src:'徐珂《清稗类钞·饮食类》（1916年）'},
+      {h:'南甜北咸', t:'甜咸地理最终倒转为“南甜北咸”，与宋代记载相反。', src:'—'}
+    ]
+  },
+  regions:[
+    {id:'jingshi', fam:'C', name:'京师·直隶', provs:['BJ','TJ','HE'], taste:'xian', staple:'mai', note:'满汉全席、烤鸭、涮羊肉、宫廷与官府菜，鲁菜厨师为骨干；天津码头菜“八大碗”。'},
+    {id:'lu', fam:'A', name:'鲁', provs:['SD'], taste:'xian', staple:'mai', note:'鲁菜成熟：济南（爆、汤）与胶东（海鲜）两大流派，是宫廷菜与京菜的母本；闯关东把鲁菜带到东北。'},
+    {id:'yujinshaan', fam:'B', name:'豫·晋·陕', provs:['HA','SX','SN'], taste:'xian', staple:'mai', note:'面食核心区；山西陈醋、陕西羊肉泡馍、河南烩面的前身。'},
+    {id:'xibei', fam:'G', name:'甘·宁·青', provs:['GS','NX','QH'], taste:'xian', staple:'mai', note:'清真牛羊面食；兰州牛肉面据传起于清末民初。'},
+    {id:'huaiyang', fam:'L', name:'苏·淮扬', provs:['JS','SH'], taste:'tian', staple:'dao', note:'扬州盐商菜、苏州船菜，刀工与火候，随园所在的江宁也在此；上海开埠（1843年）后本帮菜萌芽。'},
+    {id:'zhe', fam:'L', name:'浙', provs:['ZJ'], taste:'qing', staple:'dao', note:'杭帮、宁波、绍兴三路，鱼鲜、糟醉、黄酒。'},
+    {id:'hui', fam:'L', name:'徽', provs:['AH'], taste:'xian', staple:'daomai', note:'徽商鼎盛，徽菜在扬州、汉口、上海开馆；重油、重色、重火功。'},
+    {id:'min', fam:'M', name:'闽', provs:['FJ'], taste:'qing', staple:'dao', note:'闽菜（福州佛跳墙、闽南沙茶）、红糟、海味；下南洋带回沙茶等南洋风味。'},
+    {id:'yue', fam:'N', name:'粤', provs:['GD','HK','MO'], taste:'qing', staple:'dao', note:'一口通商（1757—1842年）、十三行，粤菜融合海味、野味与西式技法；茶楼点心；香港（1842年）、澳门成为中西饮食交汇处。'},
+    {id:'gui', fam:'N', name:'桂', provs:['GX'], taste:'la', staple:'dao', note:'桂北酸辣、桂南清淡，米粉。'},
+    {id:'qiong', fam:'N', name:'琼', provs:['HI'], taste:'qing', staple:'dao', note:'海南四大名菜（文昌鸡等）雏形，椰、海鲜。'},
+    {id:'xiang', fam:'K', name:'湘', provs:['HN'], taste:'la', staple:'dao', note:'辣椒普及，湘菜香辣、腊味、酸；湘军将领把湘菜带到各地。'},
+    {id:'chuan', fam:'I', name:'川·渝', provs:['SC','CQ'], taste:'mala', staple:'dao', note:'“湖广填四川”后饮食重建；辣椒乾隆年间见于方志，嘉庆以后与花椒相遇，麻辣川菜在光绪年间（清末）定型；陈麻婆豆腐（1862年）。'},
+    {id:'e', fam:'K', name:'鄂', provs:['HB'], taste:'xian', staple:'dao', note:'汉口码头，鱼米之乡，武昌鱼、热干面前身；辣味居中。'},
+    {id:'gan', fam:'K', name:'赣', provs:['JX'], taste:'la', staple:'dao', note:'辣椒进入江西，瓦罐汤、赣南客家菜。'},
+    {id:'dian', fam:'J', name:'滇', provs:['YN'], taste:'la', staple:'shu', note:'过桥米线、汽锅鸡、宣威火腿、菌子，多民族饮食。'},
+    {id:'qian', fam:'J', name:'黔', provs:['GZ'], taste:'la', staple:'shu', note:'最早食辣之地，酸汤、糟辣，苗侗饮食。'},
+    {id:'zang', fam:'H', name:'藏', provs:['XZ'], taste:'nai', staple:'qingke', note:'酥油茶、糌粑、牦牛肉。'},
+    {id:'xinjiang', fam:'F', name:'新疆', provs:['XJ'], taste:'nai', staple:'mai', note:'1884年建省，馕、抓饭、烤肉，回、汉移民。'},
+    {id:'meng', fam:'E', name:'蒙', provs:['NM'], taste:'nai', staple:'rou', note:'蒙古族奶食肉食，晋商“走西口”带来面食与烧麦。'},
+    {id:'dongbei', fam:'D', name:'东北', provs:['LN','JL','HL'], taste:'xian', staple:'shu', note:'满族饮食（萨其马、酸菜、白肉血肠）与闯关东的山东、河北移民融合，高粱、大豆。'},
+    {id:'tai', fam:'M', name:'台', provs:['TW'], taste:'qing', staple:'dao', note:'1683年后闽粤移民大规模入台，米食、卤肉、担仔面前身；1895年后受日本影响。'}
+  ],
+  overrides:{ SX:{taste:'suan'} }
+});
+
+DATA.periods.push({
+  id:'mg', name:'民国', years:'1912—1949', sub:'中华民国',
+  summary:'城市化与战争推动地方菜流动：上海成为“海派”融合场，北京“八大楼”“八大居”云集各帮，抗战内迁把川菜带到大后方并反向输出；味精、罐头、西餐进入日常。餐饮业按“帮口”分类——京帮、苏帮、锡帮、宁帮、徽帮、粤帮、川帮——这是“菜系”概念的前身。',
+  dims:{
+    food:[
+      {h:'味精', t:'日本“味の素”1909年上市，吴蕴初1923年在上海创办天厨味精厂，鲜味工业化。', src:'—'},
+      {h:'番菜西点', t:'西餐（“番菜”）在上海、天津、哈尔滨流行，面包、咖啡、罐头进入城市；哈尔滨红肠、大列巴受俄侨影响。', src:'—'},
+      {h:'洋菜普及', t:'番茄、洋葱、卷心菜等“洋”菜普及，番茄炒蛋成为家常。', src:'—'},
+      {h:'战时杂粮', t:'抗战时期粮食统制，杂粮与番薯保障了大后方。', src:'—'}
+    ],
+    tool:[
+      {h:'煤炉洋铁', t:'煤炉、洋铁（马口铁）壶锅、搪瓷器具进入家庭；煤气灶在上海租界出现。', src:'—'},
+      {h:'餐馆黄金期', t:'北京八大楼（以鲁菜为主），上海本帮馆（老正兴）、川菜馆，广州“四大酒家”。', src:'—'},
+      {h:'冰箱制冰', t:'电冰箱与制冰厂让海鲜与冷饮走得更远。', src:'—'}
+    ],
+    tech:[
+      {h:'川菜定型', t:'成都荣乐园（1912年）等名馆与蓝光鉴等名厨确立“一菜一格，百菜百味”的现代川菜体系。', src:'—'},
+      {h:'食在广州', t:'“食在广州”口号（1920年代），点心、烧腊、汤品体系完成，并随华侨走向世界。', src:'—'},
+      {h:'海派融合', t:'本帮浓油赤酱吸收苏锡、宁波、粤、川与西餐，形成融合风格。', src:'—'},
+      {h:'烹饪写作', t:'现代食谱与烹饪教育萌芽。', src:'—'}
+    ],
+    taste:[
+      {h:'帮口分类', t:'上海餐饮业分京帮、苏帮、锡帮、宁帮、徽帮、粤帮、川帮等“帮口”；“菜系”一词要到1950—60年代才出现，“四大菜系”（鲁、川、粤、淮扬）在1970—80年代才成为通行说法。', src:'民国报刊、《中国菜谱》丛书（1975年起）'},
+      {h:'麻辣出川', t:'抗战期间重庆、成都聚集全国人口，战后川菜随人流散到各地。', src:'—'},
+      {h:'制造的鲜', t:'味精、酱油厂让“鲜”脱离高汤，成为工业味觉。', src:'—'}
+    ]
+  },
+  regions:[
+    {id:'jing', fam:'C', name:'京·津·冀', provs:['BJ','TJ','HE'], taste:'xian', staple:'mai', note:'八大楼、八大居，鲁菜为骨；天津租界西餐与津味小吃。'},
+    {id:'lu', fam:'A', name:'鲁', provs:['SD'], taste:'xian', staple:'mai', note:'鲁菜为北方菜系正宗，青岛开埠带来啤酒。'},
+    {id:'yujinshaan', fam:'B', name:'豫·晋·陕', provs:['HA','SX','SN'], taste:'xian', staple:'mai', note:'面食核心区。'},
+    {id:'xibei', fam:'G', name:'甘·宁·青', provs:['GS','NX','QH'], taste:'xian', staple:'mai', note:'兰州牛肉面（马保子，1915年）成名。'},
+    {id:'hu', fam:'L', name:'沪·海派', provs:['SH'], taste:'tian', staple:'dao', note:'本帮浓油赤酱与各帮、西餐融合，“海派”形成。'},
+    {id:'su', fam:'L', name:'苏·淮扬', provs:['JS'], taste:'tian', staple:'dao', note:'淮扬菜为“国宴”基底之一。'},
+    {id:'zhe', fam:'L', name:'浙', provs:['ZJ'], taste:'qing', staple:'dao', note:'杭帮、甬帮进入上海。'},
+    {id:'hui', fam:'L', name:'徽', provs:['AH'], taste:'xian', staple:'daomai', note:'徽菜馆在上海一度多达数百家。'},
+    {id:'min', fam:'M', name:'闽', provs:['FJ'], taste:'qing', staple:'dao', note:'闽菜与南洋华侨饮食往来。'},
+    {id:'yue', fam:'N', name:'粤·港·澳', provs:['GD','HK','MO'], taste:'qing', staple:'dao', note:'“食在广州”，粤菜随华侨走向世界。'},
+    {id:'gui', fam:'N', name:'桂', provs:['GX'], taste:'la', staple:'dao', note:'桂林米粉、南宁老友粉。'},
+    {id:'qiong', fam:'N', name:'琼', provs:['HI'], taste:'qing', staple:'dao', note:'海南鸡饭随琼籍华侨传到南洋。'},
+    {id:'xiang', fam:'K', name:'湘', provs:['HN'], taste:'la', staple:'dao', note:'湘菜名馆在长沙兴起。'},
+    {id:'chuan', fam:'I', name:'川·渝', provs:['SC','CQ'], taste:'mala', staple:'dao', note:'陪都重庆汇聚全国人口，川菜大众化并外传。'},
+    {id:'e', fam:'K', name:'鄂', provs:['HB'], taste:'xian', staple:'dao', note:'武汉三镇码头饮食，热干面（1930年代）。'},
+    {id:'gan', fam:'K', name:'赣', provs:['JX'], taste:'la', staple:'dao', note:'赣菜香辣。'},
+    {id:'dian', fam:'J', name:'滇', provs:['YN'], taste:'la', staple:'shu', note:'抗战时昆明汇聚各地饮食。'},
+    {id:'qian', fam:'J', name:'黔', provs:['GZ'], taste:'la', staple:'shu', note:'酸辣黔菜。'},
+    {id:'zang', fam:'H', name:'藏', provs:['XZ'], taste:'nai', staple:'qingke', note:'酥油茶、糌粑。'},
+    {id:'xinjiang', fam:'F', name:'新疆', provs:['XJ'], taste:'nai', staple:'mai', note:'馕、抓饭、烤肉。'},
+    {id:'meng', fam:'E', name:'蒙', provs:['NM'], taste:'nai', staple:'rou', note:'奶食肉食。'},
+    {id:'dongbei', fam:'D', name:'东北', provs:['LN','JL','HL'], taste:'xian', staple:'shu', note:'哈尔滨俄式饮食、锅包肉（1900年代）等东北菜定型。'},
+    {id:'tai', fam:'M', name:'台', provs:['TW'], taste:'qing', staple:'dao', note:'日据时期日式饮食影响，米食与小吃。'}
+  ],
+  overrides:{ SX:{taste:'suan'} }
+});
+
+DATA.periods.push({
+  id:'dd', name:'当代', years:'1949—今', sub:'中华人民共和国',
+  summary:'1980年《人民日报》一篇文章让“八大菜系”成为通行说法；改革开放后粤菜北上、川菜全国化、湘菜崛起，火锅与外卖重塑餐桌；东北大米、新疆大盘鸡、兰州拉面、沙县小吃、螺蛳粉这些“新地方味”都是近四十年的产物。菜系仍在演化——今天的中国味觉比历史上任何时候都更“麻辣”，也更“融合”。',
+  dims:{
+    food:[
+      {h:'主食版图重绘', t:'东北由杂粮区变为最大的粳稻产区（朝鲜族移民引入水稻，1950年代后大规模开发北大荒），玉米转为饲料，肉蛋奶消费激增。', src:'—'},
+      {h:'调味品工业', t:'鸡精、蚝油、生抽老抽、郫县豆瓣、老干妈（1996年）、火锅底料把地方味标准化并全国流通。', src:'—'},
+      {h:'冷链与反季', t:'反季节蔬菜与冷链（1990年代起）松动了地理对“时令”的约束，海鲜与热带水果走向内陆。', src:'—'},
+      {h:'新食材', t:'西兰花、生菜、牛油果、三文鱼、小龙虾（1990年代盱眙起）等常态化。', src:'—'}
+    ],
+    tool:[
+      {h:'家庭厨房电气化', t:'燃气灶（1980—90年代城市普及）、电饭煲（1980年代引进）、高压锅、电磁炉、微波炉、空气炸锅（2020年前后）。', src:'—'},
+      {h:'商用与中央厨房', t:'猛火灶、万能蒸烤箱与中央厨房；连锁餐饮（海底捞1994年）与预制菜（2020年代）。', src:'—'},
+      {h:'外卖平台', t:'2010年代外卖平台与冷链把“堂食”变成“到家”。', src:'—'}
+    ],
+    tech:[
+      {h:'教育与标准化', t:'1980年代烹饪专业进入职业教育，各菜系技法编成教材；中国烹饪协会1987年成立。', src:'—'},
+      {h:'新派与融合', t:'新派川菜、新派粤菜、创意淮扬与融合菜；米其林指南进入上海（2016年）、广州（2018年）、北京（2019年）。', src:'—'},
+      {h:'火锅化', t:'麻辣火锅从重庆走向全国（1990年代起），成为最大单一餐饮品类。', src:'—'},
+      {h:'小吃连锁化', t:'沙县小吃（1990年代起）、兰州拉面（青海化隆人自1980年代在全国开店）、螺蛳粉（2010年代网红化）。', src:'—'}
+    ],
+    taste:[
+      {h:'麻辣全国化', t:'川湘菜馆遍布南北，辣味从“辣椒走廊”扩散到全国，年轻人口味嗜辣。', src:'—'},
+      {h:'南甜北咸东辣西酸', t:'成为民间口诀，但现实是各地口味互相渗透。', src:'—'},
+      {h:'鲜甜辣并进', t:'粤菜清鲜（1980—90年代北上）、江浙甜鲜、川湘麻辣三种审美并存；奶茶等“甜饮”成为新味觉。', src:'—'},
+      {h:'地方复兴', t:'淮扬、本帮、潮汕、云南、新疆、贵州菜“出圈”，淄博烧烤（2023年）式的城市饮食IP。', src:'—'}
+    ]
+  },
+  regions:[
+    {id:'jing', fam:'C', name:'京菜', provs:['BJ'], taste:'xian', staple:'mai', note:'宫廷菜、官府菜（谭家菜）、清真菜与鲁菜四流汇合；烤鸭、涮羊肉、炸酱面。'},
+    {id:'jin', fam:'C', name:'津菜', provs:['TJ'], taste:'xian', staple:'mai', note:'河海两鲜，“八大碗”“四大扒”，狗不理、煎饼馃子。'},
+    {id:'ji', fam:'C', name:'冀菜', provs:['HE'], taste:'xian', staple:'mai', note:'直隶官府菜、塞外野味、沿海海鲜三派，驴肉火烧。'},
+    {id:'lu', fam:'A', name:'鲁菜', provs:['SD'], taste:'xian', staple:'mai', note:'八大菜系之首：济南、胶东、孔府三派；爆、扒、烧、塌与清汤奶汤。'},
+    {id:'jinshanxi', fam:'B', name:'晋菜', provs:['SX'], taste:'suan', staple:'mai', note:'面食之乡，老陈醋，过油肉。'},
+    {id:'shaan', fam:'B', name:'陕菜', provs:['SN'], taste:'xian', staple:'mai', note:'羊肉泡馍、肉夹馍、凉皮、油泼面。'},
+    {id:'yu', fam:'B', name:'豫菜', provs:['HA'], taste:'xian', staple:'mai', note:'烩面、胡辣汤、鲤鱼焙面，“五味调和”。'},
+    {id:'long', fam:'G', name:'陇菜', provs:['GS'], taste:'xian', staple:'mai', note:'兰州牛肉面、手抓羊肉、浆水面。'},
+    {id:'ning', fam:'G', name:'宁夏菜', provs:['NX'], taste:'xian', staple:'mai', note:'清真手抓、羊杂碎、八宝茶。'},
+    {id:'qinghai', fam:'G', name:'青海菜', provs:['QH'], taste:'nai', staple:'mai', note:'手抓、酸奶、尕面片；化隆人把“兰州拉面”开遍全国。'},
+    {id:'xinjiang', fam:'F', name:'新疆菜', provs:['XJ'], taste:'nai', staple:'mai', note:'馕、抓饭、烤肉串、大盘鸡（1980年代沙湾）、拉条子。'},
+    {id:'meng', fam:'E', name:'蒙餐', provs:['NM'], taste:'nai', staple:'rou', note:'手把肉、烤全羊、奶茶、奶豆腐、烧麦。'},
+    {id:'zang', fam:'H', name:'藏餐', provs:['XZ'], taste:'nai', staple:'qingke', note:'糌粑、酥油茶、青稞酒、牦牛肉。'},
+    {id:'dongbei', fam:'D', name:'东北菜', provs:['LN','JL','HL'], taste:'xian', staple:'dao', note:'锅包肉、猪肉炖粉条、酸菜白肉、小鸡炖蘑菇、延边冷面；东北大米。'},
+    {id:'hu', fam:'L', name:'本帮·海派', provs:['SH'], taste:'tian', staple:'dao', note:'浓油赤酱：红烧肉、生煎、南翔小笼。'},
+    {id:'su', fam:'L', name:'苏菜', provs:['JS'], taste:'tian', staple:'dao', note:'淮扬、金陵、苏锡、徐海四派；狮子头、文思豆腐、松鼠鳜鱼。'},
+    {id:'zhe', fam:'L', name:'浙菜', provs:['ZJ'], taste:'qing', staple:'dao', note:'杭州、宁波、绍兴、温州；西湖醋鱼、东坡肉、龙井虾仁。'},
+    {id:'hui', fam:'L', name:'徽菜', provs:['AH'], taste:'xian', staple:'daomai', note:'臭鳜鱼、毛豆腐、火腿炖甲鱼；重油重色重火功。'},
+    {id:'min', fam:'M', name:'闽菜', provs:['FJ'], taste:'qing', staple:'dao', note:'福州、闽南、闽西；佛跳墙、红糟、沙茶、沙县小吃。'},
+    {id:'tai', fam:'M', name:'台菜', provs:['TW'], taste:'tian', staple:'dao', note:'闽南底色加眷村各省菜与日式影响；卤肉饭、牛肉面、珍珠奶茶（1980年代）。'},
+    {id:'gan', fam:'K', name:'赣菜', provs:['JX'], taste:'la', staple:'dao', note:'瓦罐汤、三杯鸡、莲花血鸭。'},
+    {id:'e', fam:'K', name:'鄂菜（楚菜）', provs:['HB'], taste:'xian', staple:'dao', note:'武昌鱼、热干面、排骨藕汤、沔阳三蒸。'},
+    {id:'xiang', fam:'K', name:'湘菜', provs:['HN'], taste:'la', staple:'dao', note:'剁椒鱼头、小炒肉、腊味合蒸、口味虾（1990年代长沙）。'},
+    {id:'yue', fam:'N', name:'粤菜', provs:['GD'], taste:'qing', staple:'dao', note:'广府、潮汕、客家三派；白切鸡、烧鹅、老火汤、早茶点心、潮汕牛肉火锅。'},
+    {id:'hk', fam:'N', name:'港式', provs:['HK'], taste:'qing', staple:'dao', note:'茶餐厅（1950年代起）、烧腊、云吞面、丝袜奶茶。'},
+    {id:'mo', fam:'N', name:'澳门菜', provs:['MO'], taste:'qing', staple:'dao', note:'土生葡菜：葡国鸡、非洲鸡、猪扒包、葡挞。'},
+    {id:'gui', fam:'N', name:'桂菜', provs:['GX'], taste:'la', staple:'dao', note:'桂林米粉、柳州螺蛳粉、南宁老友粉、柠檬鸭。'},
+    {id:'qiong', fam:'N', name:'琼菜', provs:['HI'], taste:'qing', staple:'dao', note:'文昌鸡、加积鸭、东山羊、和乐蟹，海南鸡饭。'},
+    {id:'chuan', fam:'I', name:'川菜（川渝）', provs:['SC','CQ'], taste:'mala', staple:'dao', note:'回锅肉、麻婆豆腐、宫保鸡丁、水煮鱼、重庆火锅、小面；24个味型。'},
+    {id:'qian', fam:'J', name:'黔菜', provs:['GZ'], taste:'la', staple:'dao', note:'酸汤鱼、辣子鸡、肠旺面、折耳根、糟辣椒。'},
+    {id:'dian', fam:'J', name:'滇菜', provs:['YN'], taste:'la', staple:'dao', note:'过桥米线、汽锅鸡、菌子、鲜花饼、傣味、乳扇。'}
+  ]
+});
+
+// 当代 34 个省级行政区的菜系卡片
+DATA.modern = {
+  BJ:{cuisine:'京菜', taste:'咸鲜醇厚，酱香突出', food:['鸭','羊肉','黄酱','芝麻酱','大白菜','豆汁'], tool:['挂炉与焖炉','铜火锅','炙子'], tech:['烤','涮','爆','酱','熘'], dishes:['北京烤鸭','涮羊肉','炸酱面','豆汁焦圈','卤煮火烧','谭家菜黄焖鱼翅'], story:'元大都、明清帝都八百年，宫廷菜、官府菜（谭家菜）、清真菜与鲁菜四流汇合。烤鸭随永乐迁都自南京北来，涮羊肉承自草原，炸酱面是北方酱食传统的家常版。'},
+  TJ:{cuisine:'津菜', taste:'咸鲜微甜，清淡爽口', food:['河海两鲜','面粉','虾酱','冬菜'], tool:['扒锅','煎饼鏊子'], tech:['扒','烧','熘','煎'], dishes:['狗不理包子','煎饼馃子','罾蹦鲤鱼','锅巴菜','十八街麻花','八大碗'], story:'漕运码头与九国租界造就了津菜：河海两鲜是本钱，“八大碗”“四大扒”是市井宴席，狗不理（1858年）、煎饼馃子是街头名片。'},
+  HE:{cuisine:'冀菜', taste:'咸香醇厚', food:['驴肉','海鲜（唐山）','野味（承德）','小麦'], tool:['火烧炉','铁锅'], tech:['烧','炖','熘','烤'], dishes:['驴肉火烧','直隶官府菜','承德烤全羊','唐山棋子烧饼','李鸿章烩菜'], story:'冀菜分三派：冀中南的直隶官府菜（保定）、塞外承德的宫廷野味、沿海唐山的海鲜。地处京师周边，长期为京菜输送食材与厨师。'},
+  SX:{cuisine:'晋菜', taste:'咸酸，重醋', food:['小麦','莜麦','高粱','老陈醋','土豆'], tool:['削面刀','莜面栲栳','大锅'], tech:['过油','蒸','烩','削'], dishes:['刀削面','过油肉','头脑','莜面栲栳栳','太谷饼','平遥牛肉'], story:'“世界面食在中国，中国面食在山西”。晋商把面食与醋带到塞北、京津；老陈醋（清徐）是山西味觉的核心，酸而不涩。'},
+  NM:{cuisine:'蒙餐', taste:'咸香奶膻', food:['羊肉','牛肉','奶食','莜面','黄米'], tool:['铜锅','奶桶','烤炉'], tech:['煮','烤','晾晒','酸奶发酵'], dishes:['手把肉','烤全羊','奶茶','奶豆腐','烧麦（呼和浩特）','焖面'], story:'草原饮食以“红食”（肉）与“白食”（奶）为纲；清代晋商“走西口”带来烧麦与面食，呼和浩特成为蒙汉饮食交汇处。'},
+  LN:{cuisine:'东北菜（辽）', taste:'咸鲜浓郁，酸菜酱香', food:['猪肉','酸菜','大豆','海鲜（大连）','粉条'], tool:['大铁锅','酱缸','酸菜缸'], tech:['炖','酱','熘','烀'], dishes:['锅包肉','猪肉炖粉条','酸菜白肉','小鸡炖蘑菇','沈阳鸡架','大连海鲜'], story:'满族饮食底色加上闯关东的山东、河北移民，形成炖菜与酱食为主的东北菜；辽菜受鲁菜影响最深，大连海鲜自成一格。'},
+  JL:{cuisine:'东北菜（吉）', taste:'咸鲜，兼有朝鲜族的辣与酸', food:['大米','猪肉','人参','狗肉','辣白菜'], tool:['大铁锅','冷面压机'], tech:['炖','拌','腌'], dishes:['延边冷面','锅包肉','酱骨','参鸡汤','打糕'], story:'长白山物产与延边朝鲜族饮食（冷面、辣白菜、打糕）让吉林在东北菜中独具一格；朝鲜族移民也是东北水稻种植的先驱。'},
+  HL:{cuisine:'东北菜（黑）', taste:'咸鲜，俄式风味', food:['大米','大豆','猪肉','冷水鱼','红肠'], tool:['大铁锅','烤炉'], tech:['炖','熏','烤','冻'], dishes:['锅包肉（哈尔滨）','哈尔滨红肠','大列巴','得莫利炖鱼','杀猪菜','马迭尔冰棍'], story:'北大荒开发让黑龙江从渔猎与杂粮之地变成中国最大的粳稻产区；哈尔滨的俄侨留下红肠、大列巴与啤酒，锅包肉则是清末为俄国客人改良的东北菜。'},
+  SH:{cuisine:'本帮菜·海派', taste:'浓油赤酱，甜鲜', food:['猪肉','河鲜','酱油','冰糖','草头'], tool:['砂锅','平底锅（生煎）'], tech:['红烧','糟','熏','煎'], dishes:['红烧肉','草头圈子','生煎','南翔小笼','本帮熏鱼','腌笃鲜'], story:'1843年开埠后，上海从松江府的渔村饮食变成“海派”：本帮浓油赤酱吸收苏锡甜、宁波咸鲜、粤菜精细与西餐，是近代中国融合菜的典型。'},
+  JS:{cuisine:'苏菜', taste:'咸甜适中，淮扬清鲜，苏锡偏甜', food:['长鱼（鳝）','鳜鱼','河蟹','鸭','豆腐'], tool:['砂锅','蒸笼','厨刀'], tech:['炖','焖','煨','刀工','清蒸'], dishes:['狮子头','文思豆腐','软兜长鱼','盐水鸭','松鼠鳜鱼','无锡酱排骨'], story:'八大菜系之一，分淮扬、金陵、苏锡、徐海四派。淮扬菜以扬州盐商与文人饮食为源，讲究刀工、火候与本味，是国宴的重要基底。'},
+  ZJ:{cuisine:'浙菜', taste:'清鲜脆嫩，糟醉微甜', food:['西湖鱼虾','龙井茶','黄酒','海鲜（宁波）','霉干菜'], tool:['砂锅','酒坛','蒸笼'], tech:['清炒','醋熘','糟醉','蒸'], dishes:['西湖醋鱼','东坡肉','龙井虾仁','宁波汤圆','绍兴醉鸡','温州鱼丸'], story:'八大菜系之一，杭州、宁波、绍兴、温州四路。南宋定都临安留下的“南食”传统，与黄酒糟醉、东海海鲜合为浙菜。'},
+  AH:{cuisine:'徽菜', taste:'咸鲜醇厚，重油重色重火功', food:['臭鳜鱼','毛豆腐','火腿','笋','山珍'], tool:['炭火砂锅','木甑'], tech:['炖','烧','蒸','腌臭'], dishes:['臭鳜鱼','毛豆腐','火腿炖甲鱼','黄山炖鸽','符离集烧鸡','李鸿章大杂烩'], story:'八大菜系之一，源于徽州山区。明清徽商把徽菜开到扬州、汉口、上海，鼎盛时上海徽菜馆数以百计；山珍、火腿与“臭”味发酵是其特色。'},
+  FJ:{cuisine:'闽菜', taste:'清鲜、酸甜、糟香', food:['海鲜','红糟','沙茶','笋','番薯'], tool:['汤煲','酒坛','蒸笼'], tech:['汤菜','糟','醉','爆炒'], dishes:['佛跳墙','荔枝肉','沙茶面','土笋冻','沙县小吃','闽西客家菜'], story:'八大菜系之一，福州、闽南、闽西三派。海洋、山地与南洋往来塑造闽菜：佛跳墙是清末福州的宴席顶点，沙茶来自南洋，番薯自1593年在此登陆中国。'},
+  JX:{cuisine:'赣菜', taste:'香辣、咸鲜', food:['鄱阳湖鱼','鸭','米粉','辣椒','南丰蜜橘'], tool:['瓦罐','大铁锅'], tech:['煨','炒','蒸','腌'], dishes:['瓦罐汤','三杯鸡','莲花血鸭','鄱阳湖鱼头','南昌拌粉','赣南小炒鱼'], story:'介于湘、闽、徽之间，清代辣椒进入后与湖南同属“辣椒走廊”；瓦罐煨汤与米粉是日常，景德镇则为全国餐桌供应瓷器上千年。'},
+  SD:{cuisine:'鲁菜', taste:'咸鲜纯正，葱香酱香', food:['海参','鲍鱼','大葱','大蒜','小麦','花生'], tool:['双耳铁锅','汤锅','炙子'], tech:['爆','扒','烧','塌','清汤奶汤'], dishes:['九转大肠','糖醋鲤鱼','葱烧海参','扒原壳鲍鱼','德州扒鸡','孔府一品锅'], story:'八大菜系之首，分济南、胶东、孔府三派。从齐鲁的鱼盐之利、孔子的“食不厌精”，到《齐民要术》的酿造与“炒”，再到明清宫廷御膳与北京八大楼，鲁菜是北方菜的母本。'},
+  HA:{cuisine:'豫菜', taste:'咸鲜适中，“五味调和”', food:['小麦','黄河鲤鱼','山药','羊肉','粉条'], tool:['大锅','汤锅','鏊子'], tech:['扒','烧','烩','炸'], dishes:['烩面','胡辣汤','鲤鱼焙面','道口烧鸡','洛阳水席','汴京烤鸭'], story:'中原是鼎食礼制与北宋汴京饮食的故乡，《东京梦华录》所记食店与今日豫菜的扒、烧一脉相承；烩面与胡辣汤是近百年的市井创造。'},
+  HB:{cuisine:'鄂菜（楚菜）', taste:'咸鲜微辣，重汤', food:['武昌鱼','莲藕','米','鸭脖','豆皮'], tool:['蒸笼','煨罐','铫子'], tech:['蒸','煨','烧','卤'], dishes:['清蒸武昌鱼','热干面','排骨藕汤','沔阳三蒸','三鲜豆皮','周黑鸭'], story:'楚地“鱼米之乡”，蒸菜与煨汤是主线；汉口码头造就了热干面（1930年代）与早点文化，鸭脖卤味是1990年代以来的新名片。'},
+  HN:{cuisine:'湘菜', taste:'香辣、酸辣、腊香', food:['辣椒','腊肉','鱼头','豆豉','米'], tool:['铁锅','熏房','蒸笼'], tech:['小炒','煨','蒸','腊','剁椒'], dishes:['剁椒鱼头','毛氏红烧肉','腊味合蒸','口味虾','辣椒炒肉','长沙臭豆腐'], story:'八大菜系之一，湘江、洞庭、湘西三派。楚地的酸与辛在清代遇上辣椒，形成“无辣不欢”的湘味；2000年以来湘菜馆随川菜之后席卷全国。'},
+  GD:{cuisine:'粤菜', taste:'清鲜本味，讲究镬气', food:['海鲜','鸡','烧腊','干货','时蔬'], tool:['镬（猛火灶）','砂煲','蒸笼','烧腊炉'], tech:['蒸','炒','焗','煲','烧腊'], dishes:['白切鸡','烧鹅','老火汤','早茶点心','潮汕牛肉火锅','客家酿豆腐'], story:'八大菜系之一，广府、潮汕、客家三派。从南越王墓的海产遗骸、唐宋广州港的香料，到清代一口通商与茶楼，粤菜以“清鲜”与开放著称，并随华侨成为世界上传播最广的中国菜。'},
+  GX:{cuisine:'桂菜', taste:'酸辣与清淡并存', food:['米粉','螺蛳','酸笋','柠檬','巴马香猪'], tool:['米粉榨机','砂锅'], tech:['煮','酸腌','炒'], dishes:['桂林米粉','柳州螺蛳粉','南宁老友粉','柠檬鸭','荔浦芋扣肉','北海海鲜'], story:'桂北受湘黔影响酸辣，桂南与粤菜相通清淡；米粉是共同语言，螺蛳粉从1980年代柳州夜市走到2010年代的全国网红。'},
+  HI:{cuisine:'琼菜', taste:'清鲜原味，椰香', food:['文昌鸡','海鲜','椰子','黎族山兰米','斋菜'], tool:['砂煲','蒸笼'], tech:['白切','蒸','煲','椰汁烹'], dishes:['文昌鸡','加积鸭','东山羊','和乐蟹','海南鸡饭','清补凉'], story:'“四大名菜”以白切、清蒸见长，是岭南清鲜审美的海岛版本；海南鸡饭随琼籍华侨传到新马，成为东南亚名菜。'},
+  CQ:{cuisine:'川菜（渝派）', taste:'麻辣厚重，江湖气', food:['牛油','辣椒','花椒','毛肚','小面'], tool:['九宫格铁锅','大铁锅'], tech:['涮','干煸','水煮','爆'], dishes:['重庆火锅','辣子鸡','毛血旺','小面','酸辣粉','万州烤鱼'], story:'清末民初长江码头的毛肚火锅发展为重庆火锅；抗战陪都汇聚全国口味，1990年代火锅与“江湖菜”从重庆走向全国。'},
+  SC:{cuisine:'川菜', taste:'麻辣为魂，一菜一格，百菜百味', food:['辣椒','花椒','郫县豆瓣','猪肉','豆腐'], tool:['铁锅','泡菜坛','蒸笼'], tech:['炒','烧','干煸','水煮','泡'], dishes:['回锅肉','麻婆豆腐','宫保鸡丁','鱼香肉丝','水煮鱼','夫妻肺片'], story:'八大菜系之一。从巴蜀“尚滋味，好辛香”、宋代汴京的“川饭店”，到清代“湖广填四川”后辣椒与花椒相遇，麻辣川菜在清末民初定型，1990年代起成为全国最流行的菜系。'},
+  GZ:{cuisine:'黔菜', taste:'酸辣、糟辣、香辣', food:['辣椒','酸汤','折耳根','糯米','木姜子'], tool:['酸汤坛','辣椒钵'], tech:['酸汤','糟辣','烧烤','蘸水'], dishes:['酸汤鱼','辣子鸡','肠旺面','丝娃娃','花溪牛肉粉','老干妈'], story:'中国最早食用辣椒的地区——康熙年间“土苗用以代盐”。苗侗酸汤与糟辣椒是黔味之本，老干妈（1996年）把贵州辣酱送上全世界的餐桌。'},
+  YN:{cuisine:'滇菜', taste:'鲜、酸辣，多民族', food:['菌子','火腿','米线','鲜花','乳扇'], tool:['汽锅','土锅','烤炉'], tech:['汽蒸','舂','烤','酸腌'], dishes:['过桥米线','汽锅鸡','宣威火腿','野生菌火锅','傣味撒撇','鲜花饼'], story:'南诏、大理与元明移民层叠出多民族饮食；建水汽锅、蒙自米线、大理乳扇各有来历，菌子季是当代滇菜最大的“出圈”标签。'},
+  XZ:{cuisine:'藏餐', taste:'咸香奶香', food:['青稞','牦牛肉','酥油','奶渣','羊肉'], tool:['酥油茶桶','铜锅'], tech:['炒面','风干','煮','烤'], dishes:['糌粑','酥油茶','青稞酒','风干牦牛肉','藏面','甜茶'], story:'青稞驯化于高原，酥油茶自唐代茶马贸易后成为日常；藏餐是高原环境的直接产物，牧区“肉奶”与农区“糌粑”并行。'},
+  SN:{cuisine:'陕菜', taste:'酸辣咸香', food:['小麦','羊肉','辣椒面','醋','石榴'], tool:['大碗','馍炉','面案'], tech:['烩','泡','油泼','煨'], dishes:['羊肉泡馍','肉夹馍','凉皮','biangbiang面','葫芦鸡','油泼面'], story:'周秦汉唐的都城所在，胡食风尚的第一站；今日关中面食的“油泼”“泡馍”与唐代的胡饼、羊肉一脉相承，陕北杂粮、陕南稻米各成一派。'},
+  GS:{cuisine:'陇菜', taste:'咸香微酸', food:['牛肉','羊肉','小麦','浆水','百合'], tool:['拉面案','烤炉'], tech:['拉','手抓','烤','浆水发酵'], dishes:['兰州牛肉面','手抓羊肉','酿皮','浆水面','河西烤肉','敦煌驴肉黄面'], story:'河西走廊是丝路饮食的走廊，清真牛羊面食是主线；兰州牛肉面（1915年马保子）以“一清二白三红四绿”成为全国最普及的地方小吃之一。'},
+  QH:{cuisine:'青海菜', taste:'咸香奶香', food:['牛羊肉','青稞','酸奶','菜籽油','枸杞'], tool:['铜锅','拉面案'], tech:['手抓','拉','酸奶发酵'], dishes:['手抓羊肉','酸奶','尕面片','羊肠面','青海老酸奶','狗浇尿'], story:'河湟谷地是农牧交界，汉、回、藏、撒拉饮食并存；化隆人自1980年代在全国开出数万家“兰州拉面”店。'},
+  NX:{cuisine:'宁夏菜（清真）', taste:'咸香', food:['滩羊','枸杞','小麦','土豆','辣椒'], tool:['铜锅','烤炉'], tech:['手抓','烩','烤'], dishes:['手抓羊肉','羊杂碎','八宝茶','辣糊糊','蒿子面','盐池滩羊'], story:'回族聚居区，清真牛羊肉与面食是主线；元代回回聚居西北的历史在此留下最深的饮食印记。'},
+  XJ:{cuisine:'新疆菜', taste:'咸香孜然', food:['羊肉','小麦','孜然','葡萄','馕'], tool:['馕坑','抓饭锅','烤炉'], tech:['烤','抓饭焖','拉','烤包'], dishes:['馕','抓饭','烤羊肉串','大盘鸡','拉条子','烤包子'], story:'西域绿洲饮食自小河墓地的小麦、汉唐的胡食延续至今；1884年建省后各族移民汇聚，大盘鸡（1980年代沙湾）是新疆菜里最年轻的名菜。'},
+  TW:{cuisine:'台菜', taste:'鲜甜清淡', food:['米','猪肉','海鲜','蚵仔','茶'], tool:['小炒锅','卤锅'], tech:['卤','煎','炖','小炒'], dishes:['卤肉饭','担仔面','蚵仔煎','牛肉面','珍珠奶茶','凤梨酥'], story:'闽南、客家移民饮食打底，日据时期日式影响，1949年后各省菜汇聚为“眷村菜”；珍珠奶茶（1980年代）是台湾饮食最成功的输出。'},
+  HK:{cuisine:'港式', taste:'清鲜为本，中西合璧', food:['烧腊','海鲜','奶茶','云吞','菠萝包'], tool:['烧腊炉','镬','奶茶袋'], tech:['烧腊','炒','煲','焗'], dishes:['茶餐厅','烧腊','云吞面','菠萝油','丝袜奶茶','避风塘炒蟹'], story:'1842年开埠后，广府饮食与英式茶餐融合出茶餐厅（1950年代）；港式茶餐厅文化与烧腊、点心一起反向影响内地。'},
+  MO:{cuisine:'澳门菜', taste:'咸鲜，土生葡式', food:['咸鱼','椰奶','葡肠','猪扒','蛋挞'], tool:['烤箱','镬'], tech:['焗','烤','炒'], dishes:['葡国鸡','非洲鸡','猪扒包','葡挞','水蟹粥','杏仁饼'], story:'1557年葡人居留以来，澳门是美洲作物与葡式饮食的海路入口；土生葡菜把非洲、印度、东南亚香料与广府技法合于一炉。'}
+};
+
+// 各省在特定时期的专属注记（补充所属分区的说明）
+DATA.provNotes = {
+  SD:{wj:'贾思勰任高阳太守，《齐民要术》在此地写就。', ming:'鲁菜厨师主导明代御膳。', qing:'济南、胶东两派成熟；闯关东把鲁菜带到东北。', dd:'1980年“八大菜系”之首。'},
+  SC:{xq:'李冰开广都盐井，井盐与蜀椒奠定“尚滋味”。', song:'汴京有“川饭店”，辛香靠花椒、姜、茱萸。', yuan:'宋元战争后人口锐减。', qing:'“湖广填四川”后重建；辣椒1749年见于《大邑县志》，嘉庆以后普及，光绪年间麻辣川菜定型。', dd:'1990年代起川菜全国化，火锅成为最大餐饮品类。'},
+  CQ:{qing:'长江码头的毛肚火锅是重庆火锅的起点。', mg:'陪都时期汇聚全国口味。', dd:'1997年直辖，火锅与江湖菜走向全国。'},
+  GZ:{qing:'康熙《思州府志》：海椒“土苗用以代盐”——现存最早的食辣记录。', dd:'老干妈（1996年）让贵州辣酱走向世界。'},
+  HN:{xq:'《楚辞·招魂》记录楚宫菜单。', qing:'乾隆年间辣椒普及，湘菜香辣定型。', dd:'2000年代湘菜馆席卷全国。'},
+  HB:{qh:'马王堆遣策（长沙）与楚地饮食同源。', mg:'热干面在武汉出现（1930年代）。'},
+  JS:{st:'“扬一益二”，扬州盐、糖、海鲜。', qing:'扬州盐商与《随园食单》（袁枚居江宁）。'},
+  SH:{qing:'1843年开埠，本帮菜萌芽。', mg:'“海派”融合形成。'},
+  ZJ:{song:'南宋定都临安，“南食”传统的顶峰。'},
+  AH:{ming:'徽商崛起，徽菜随商路外传。', qing:'徽菜馆遍布扬州、汉口、上海。'},
+  FJ:{ming:'1593年陈振龙自吕宋引进番薯。', qing:'佛跳墙成于清末福州。', dd:'沙县小吃自1990年代连锁化。'},
+  GD:{qh:'南越王墓出土大量炊具与海产遗骸。', st:'广州蕃坊，香料与海味贸易。', qing:'一口通商（1757—1842年），茶楼兴起。', mg:'“食在广州”，粤菜随华侨出海。', dd:'1980—90年代粤菜北上，引领全国餐饮。'},
+  HK:{qing:'1842年开埠。', dd:'茶餐厅（1950年代起）。'},
+  MO:{ming:'1557年葡人居留，美洲作物海路入口。'},
+  TW:{ming:'荷兰、西班牙据台，闽南移民开始。', qing:'1683年后闽粤移民大规模入台。', mg:'日据时期日式饮食影响。', dd:'眷村菜与珍珠奶茶（1980年代）。'},
+  XJ:{xq:'小河墓地出土小麦。', st:'吐鲁番出土唐代饺子、馄饨实物。', qing:'1884年建省。', dd:'大盘鸡（1980年代沙湾）。'},
+  XZ:{st:'文成公主入藏（641年），茶入吐蕃。'},
+  NM:{qing:'“走西口”带来晋味面食与烧麦。'},
+  HL:{mg:'哈尔滨俄侨留下红肠与大列巴。', dd:'北大荒开发，成为最大粳稻产区。'},
+  LN:{qing:'闯关东移民带来鲁菜与酱食。'},
+  JL:{dd:'延边朝鲜族饮食与水稻种植。'},
+  BJ:{yuan:'元大都：蒙、汉、回三种饮食并存。', ming:'永乐迁都，烤鸭自南京北来。', qing:'满汉全席、八大楼。', dd:'京菜四流汇合。'},
+  HA:{xq:'周王畿，鼎食礼制发源地。', song:'汴京：川饭店、南食店、北食店分帮经营。'},
+  SN:{qh:'长安，丝路起点与胡食第一站。', st:'烧尾宴与胡食风尚。'},
+  SX:{ming:'晋商与老陈醋。'},
+  GS:{qh:'河西四郡，丝路走廊。', mg:'兰州牛肉面成名（1915年）。'},
+  QH:{dd:'化隆人开遍全国的“兰州拉面”。'},
+  YN:{st:'南诏，普洱茶先声。', yuan:'赛典赤治滇，回族移民。', dd:'菌子季与滇菜“出圈”。'},
+  GX:{dd:'螺蛳粉2010年代网红化。'},
+  HI:{mg:'海南鸡饭随华侨传到南洋。'},
+  JX:{song:'景德镇瓷器供应全国餐桌。'},
+  TJ:{qing:'漕运码头与租界，津菜成型。'},
+  HE:{qing:'直隶官府菜与承德宫廷野味。'}
+};
+
+DATA.refs = [
+  '贾思勰《齐民要术》（北魏）',
+  '孟元老《东京梦华录》（1147）；吴自牧《梦粱录》（约1274）',
+  '林洪《山家清供》（南宋）；沈括《梦溪笔谈》',
+  '忽思慧《饮膳正要》（1330）',
+  '高濂《遵生八笺》（1591）；宋应星《天工开物》（1637）',
+  '袁枚《随园食单》（1792）；李斗《扬州画舫录》（1795）',
+  '徐珂《清稗类钞·饮食类》（1916）',
+  '汪绍铨《我国的八大菜系》，《人民日报》1980年6月20日',
+  '何炳棣《美洲作物的引进、传播及其对中国粮食生产的影响》',
+  '蓝勇《中国饮食辛辣口味的地理分布及其成因研究》（2001）',
+  '曹雨《中国食辣史》（2019）',
+  '赵荣光《中国饮食文化史》；王仁湘《饮食与中国文化》'
+];
+
+
+const MAP = {"w":1000.0,"h":845.0,"prov":{"BJ":{"name":"北京市","d":"M751.2 322.2l-0.7 0l-0.5 -1.3l-0.5 0.3l-1.2 -1.9l-0.2 0l0 -1.1l0.4 -0.6l-1.1 -1.3l0.9 -0.3l-0.4 -0.6l0.3 -0.5l1.3 -0.7l0.8 0.4l0.6 -0.4l-0.4 -0.6l0.8 -1.2l0.6 0.3l0.2 -0.6l-0.4 -0.3l-1.5 -0.1l-1.1 0.5l-0.3 0.4l-0.7 -0.1l-1.3 -0.5l-1.5 0l-0.1 -0.1l-1.6 0.5l-0.9 -0.3l-0.7 -0.7l-0.1 -0.7l-1.4 -1.3l-0.7 -0.1l-1 -0.9l-0.8 -0.3l0.1 -0.4l-0.8 -0.9l0.2 -1.2l-0.3 -0.5l-0.7 -0.3l-0.5 0.2l0.2 0.7l-0.3 1.1l-0.5 -0.3l-0.8 0.3l-1.1 0.2l0 0.6l0.6 1.2l-1.3 0l-0.6 -0.8l-0.5 0.4l0 0.5l2 1.8l0.6 0.9l-0.2 0.2l-2.3 0.2l-0.7 0.3l-0.5 -0.6l-0.4 1.1l-0.2 0.1l-0.5 1.1l0 0.8l-0.5 -0.1l-0.5 0.9l-1.4 1.2l-0.7 -0.3l-1.1 -0.2l-0.3 0.5l-0.9 0.3l-0.1 0.6l-0.6 0.1l-0.4 0.5l-0.3 0.9l0.8 0.1l0 1.2l1.8 1.7l0.9 0l0.7 1.6l0.4 0.4l-1.2 0.8l-0.6 2.1l-0.7 -0.1l-0.6 -0.5l-0.3 0.8l-2.5 0.8l-0.1 0.6l-1 0.6l-0.6 0.9l-0.5 0.2l0 0.9l-0.4 0.2l0.1 0.8l0.9 0.2l0.8 0.8l0 1.4l1 0.4l-0.2 0.5l-0.8 0.4l-0.4 -0.3l-0.6 0.3l0 0.8l0.8 0.1l0.3 1.7l-0.2 0.4l0.8 0.2l1.2 1l1.3 -0.7l1 1.2l0.1 0.3l0.3 0.1l0.3 0.5l0.9 0l0.3 -0.7l0.6 -0.2l0.8 -0.9l0.7 0.4l0.6 -0.4l0.7 0l1.1 -0.2l0.5 0.1l0.4 -0.4l0.7 -0.2l0.8 0.5l0.5 1.4l0.8 0.2l0.7 0.7l1.6 0.1l0.3 -0.3l-0.2 -0.6l-0.6 0l-0.2 -1l1.2 -0.3l0.5 -0.4l0.2 -1.1l1 -0.7l0.6 0.4l0.7 -0.2l1 0.2l-0.3 -0.6l0.7 -0.1l0.8 0.5l0.3 -0.5l0.5 -1.3l0.9 -0.5l-0.5 -0.9l0.5 -0.1l-0.3 -0.8l0.7 -0.4l-0.8 -1.1l-0.7 -0.2l-1.1 -0.9l-0.4 0l-0.2 -1.3l-0.5 -0.4l0.2 -1.6l0.7 0.1l0.1 -0.6l0.6 0.2l1 -0.4l0.4 0.2l1.3 0.1l0.4 -0.7l0.9 -0.4l0.6 0.1l0.3 -0.3l0.8 -0.2l0.7 -0.9l0.3 0.2l0.5 -0.8l0.7 -0.1l0.2 -0.8l0.2 -0.4l0 -0.9z","c":[735.0,325.0]},"TJ":{"name":"天津市","d":"M759.9 340.2l1.4 -0.4l0.4 -0.1l-0.2 -1l0.5 -0.5l0.1 -1l-0.2 -0.4l0.4 -0.9l-1.2 -0.4l-0.6 0.2l-1.1 0l-0.2 1.2l-0.5 0.4l-0.3 -1l-0.4 -0.2l-0.5 0.4l-0.3 -0.7l0.3 -0.8l0 -0.7l-0.8 -0.7l-0.9 -0.4l-0.7 -1.1l0.2 -0.6l-1.2 -2.2l0 -1l0.3 -0.2l0.1 -1.1l0.8 0l0.4 0.5l1 -0.1l0.3 -0.3l1.1 0.3l0.4 -0.1l0.1 -0.9l-0.9 -0.9l0.5 -0.3l-0.5 -0.5l-1.3 0.2l-0.5 -0.9l-0.7 -0.7l-0.7 -0.4l-0.2 -0.9l-0.4 -0.3l-0.8 0.3l-1 -0.5l-0.5 0.1l-0.4 0.6l0 0.9l-0.2 0.4l-0.2 0.8l-0.7 0.1l-0.5 0.8l-0.3 -0.2l-0.7 0.9l-0.3 0.4l0.3 1.6l-0.6 1.2l0.4 1.5l1.1 0.4l-1.1 1l0.1 0.5l0.9 0.6l-0.7 0.4l0.6 2.4l-0.4 0.5l-0.7 0.1l-1.7 -0.5l-0.8 0.4l-0.5 -1.2l-0.6 0.3l-0.9 0.5l-0.5 1.3l0 0.9l-0.3 0.5l0.6 0.6l0.2 1l-0.6 0.5l0.9 0.5l0.3 1.3l-0.4 0.2l0.3 0.8l0.7 -0.6l0.3 0.5l-0.1 1.1l0.3 1.4l-0.4 0.3l0.4 1.4l0.7 0l0.2 0.9l-0.6 1.3l-1.5 0.3l-0.4 0.4l0.1 0.7l-0.4 0.7l-0.3 1.1l0.4 0.7l0.1 1l0.6 0.5l-0.1 1.1l0.2 0.6l0.8 0.2l1.1 -0.1l0.5 1.3l1.2 -0.3l0.1 0l-0.1 0l0.1 0l1.5 -0.2l0.5 0.1l-0.1 1l0.3 0.7l0.8 0.4l0.6 -0.8l0.6 -0.1l0.4 -0.5l0.9 0.6l-0.3 0.7l0.3 0.5l2 -0.5l1 -0.9l0.7 -0.5l1.4 -0.1l1.3 -0.5l0.2 -0.8l1.2 -0.6l0.2 -0.4l-0.2 -1.3l-1.2 -0.2l-0.5 -0.4l-0.1 -0.9l1.7 -0.6l0.4 -0.6l1.2 0.2l0.3 -1.6l0.3 -0.6l-0.7 -0.2l-0.6 -2.2l0.4 -1.5l1.4 -1.4l0.1 -0.8l0.9 -0.4l0.5 -0.3l-0.1 -0.6l-0.5 -0.1l-0.2 -0.6l-0.8 -0.1l-0.3 -0.3l-0.8 0l-0.6 -0.2l-0.5 0.1l-0.1 0l0.1 0l-0.1 0l-0.1 -0.8l-0.7 0.3l-0.1 -0.4l-0.4 0l-0.6 0.6l-1.3 0l0.1 0.9l-1.3 -0.5l-1 0.4l-0.3 -0.4l0.7 -1.2l1.7 -0.4l1.6 0.1zM760.7 340.7l0.8 -0.3l-0.2 -0.6l-1.4 0.4l0.4 0.5l0.4 0z","c":[753.2,343.6]},"HE":{"name":"河北省","d":"M724.9 341l-1.1 -1.5l-1.3 0.7l-1.8 -1.6l-0.3 -1.7l1 -1.3l-0.8 -2.3l-1.7 -1l0.3 -1.9l2.2 -2.3l4.1 -1l0.6 -2.1l1.2 -0.8l-1.1 -2l-0.9 0l-1.8 -1.7l-0.5 -2.2l2.3 -2l1.8 0.5l1.4 -1.2l1.7 -2.8l1.6 -0.8l2.3 -0.2l-0.4 -1.1l-2 -1.8l2.4 -0.1l-0.6 -1.8l1.9 -0.5l1.8 -1.4l0.1 1.7l2.5 2.5l2.1 1.4l0.8 1.4l2.5 -0.2l2.9 0.6l2.1 -0.8l0.3 1.9l-2.3 1.3l0.1 4.4l1.2 1.9l1.7 1l0.9 -0.7l2.2 0.5l0.2 0.9l1.9 2l2.2 1.5l-2.9 1.1l-1.2 -0.5l-0.4 2.3l1.7 3.9l1.7 1.1l0 2.2l1.9 -0.8l2.9 0.2l-0.3 2.3l-0.7 1.6l-0.6 0.9l0.9 0.9l0.1 0l-0.1 0l0.1 0l1.9 0.1l1.8 1.1l-0.4 0.9l1.7 0.6l2.1 3.2l1.7 0.3l3.3 1.9l1.7 -1.7l-1.6 -2.5l1.6 -1.8l2.1 0.3l1.6 -0.9l1.3 0.7l2.5 -3.1l1.2 -2.5l1.4 -0.7l0.5 -1.8l-1 -1.2l0.8 -5.6l2.3 -2.8l0.2 -1.1l1.6 -1.1l2.3 -1l1 -1l-2.4 -2.3l0.3 -0.8l-3.4 -4.1l-0.3 -2.7l-2 -2l-3.2 1l-1.5 -1.5l-3.1 -1l-3 -1.6l-1 -1.4l1.2 -6.1l1.2 0.1l2.1 -3.4l0.4 -2.7l-2.3 0.8l-4.3 -0.5l-5.2 0.4l-1.9 0.8l-1.7 -2.5l-0.7 -2.2l-1.6 -0.8l-0.3 -1.2l-1.5 -1.8l0.5 -1.9l2 0.7l0.5 -2.4l-0.8 -1.4l-0.5 -2.7l-1 -0.6l-2.4 0l0 -1.5l-2.3 -1.1l1.1 -1.7l-0.9 -1l-0.4 -1.5l-2.3 -1.9l-1.9 -2.2l-1.7 1l-1.1 -0.3l-2.7 0.7l0 2.6l-2.3 0.1l-4.1 1.1l-1.9 2.3l0.9 3l-0.9 1.8l0.8 1.4l0.1 1.7l-2.4 1.8l-2.8 0.9l-1.6 -0.2l-1.5 -1.4l-2.3 2.1l-0.3 1.6l-1.1 0.2l-0.2 2l-1.6 -0.3l0 -0.1l0 0.1l0 -0.1l-1.8 -3.1l-1.7 0.9l-2.4 2.2l-3.4 2.6l-1.3 0.6l0.7 2.4l-2.8 1l-1.8 -1l-3.4 0l-0.3 -2.9l0.3 -1.4l-0.8 -4.3l-1.5 -2.7l-2.8 1l-2.3 0.2l-0.5 2l0.3 1.7l-2.1 0.7l-2.1 3.4l1.1 6.2l-2.2 -0.4l-2.7 1.5l-0.9 1.7l1.3 0.4l-0.3 2.3l1.3 0.4l0.3 1.8l-1.3 0.5l-0.6 2.5l3.2 3.2l0.2 1.9l1.7 2l3.1 4l-0.3 1.8l1 2.3l2.1 -0.2l1.6 0.4l-0.9 1.9l-2.9 1.1l-0.8 0.9l-2.7 0.9l0.6 1.5l-0.8 1.1l-0.2 1.6l0.8 1.4l2.6 1.2l3.1 -0.5l0.6 4.9l0.5 0.9l2.4 0.7l-1.3 4.1l-0.2 3.2l0.7 1l-1.4 1l-0.5 2.4l-4 0.9l-1.1 -1.8l-2.5 1.8l-2 2.6l0.3 1.7l1.4 1.2l-1.1 2.8l-1.1 1.5l-1.6 0.2l-0.8 3.6l0.7 0.7l-0.8 1.9l0.5 2.5l1.8 0.7l1.4 1.2l1.4 0.2l1.6 2.3l4 7.3l1.3 1l-0.1 1.9l-1.3 2.4l-0.2 1.6l-1.7 2.8l-0.2 1.7l-0.8 1.7l-1 0.4l-0.1 1.8l0.8 1.9l-0.5 0.8l0.4 2.3l-1.7 0.1l0.2 1.5l-2.2 1.1l-1.1 2.3l1.3 0.7l0.9 1.6l0.1 2l2.2 0.7l0.6 1.3l1.5 0.6l2.6 -0.7l2.3 1.7l2.3 -0.3l3.6 0.8l3.3 1.6l3.3 0l2.5 -0.6l0.3 2l1.4 -0.5l0.7 -2.2l1.2 -1.2l2.2 0.2l1.5 2.2l1 -1l1.8 -0.7l-0.6 -2.9l-1.8 -0.6l-0.7 -1.9l-0.8 -0.3l-0.6 -1.9l1.3 -3l1.3 -2l0.4 -1.4l3.5 -1.4l1 -2.3l0.1 -2.1l1.3 -1.7l0.5 -3.5l1 -0.8l-0.1 -2.3l3.2 -1.4l1.9 -2.5l1.4 -1.1l0.1 0l-0.1 0l0.1 0l1 1l4.3 -6.7l1.1 -2.6l3.9 -0.1l0.8 -0.4l3.5 -0.3l0.7 -0.6l2.1 0l1 -2.2l1 -3.1l2 -0.4l1.3 -3.7l1.3 -1.8l0.5 -2.1l-2.7 0.7l-2 -2.1l-0.9 -1.5l-0.3 -1.9l-2.7 0.6l-1.7 1.4l-2 0.5l-0.9 -1.8l-1.6 1.4l-1 -2.1l-2 0.1l-0.1 0l0.1 0l-0.1 0l-1.2 0.3l-0.5 -1.3l-1.9 -0.1l-0.1 -1.7l-1.1 -2.2l1 -2.9l1.5 -0.3l0.6 -1.3l-0.9 -0.9l-0.2 -4.2l-0.9 -0.9l-1.1 -5.3l-1.5 0.7l-3.3 0.3l-0.2 1.1l-1.7 0.7l0.7 1.9l-1.6 -0.1l-1.5 -0.9l-1.3 -1.9l-1.6 0.5l-3.1 0.2l-1.7 1.8l-1.2 -0.5l-0.3 -0.1zM748.6 325.9l-1.7 0.4l-1.3 1.1l-1.7 -0.3l-2.4 0.7l-0.2 1.6l1.1 1.7l1.8 1.1l0.4 3.3l1.1 0.9l2.5 0.1l1.1 -0.6l-1.3 -6.8l0.6 -1.2l0 -2zM760.3 340.7l-0.4 -0.5l-3.3 0.3l0.6 1.2l2.5 -0.4l0.6 -0.6z","c":[707.5,377.3]},"SX":{"name":"山西省","d":"M640.2 461.6l1.9 -0.3l0.9 0.5l1.4 -0.6l1.8 0l0.6 -1.2l1.4 0.8l1.1 -0.7l0.5 -2l1.1 0.5l2.5 -1.3l0.4 -1.2l1.6 0.3l2 -1.1l4 -0.5l1.5 -3.4l2.5 -1.3l0 -0.7l2.2 -0.6l2.4 0.5l0 -3.8l-0.4 -1.3l2.9 0.4l1.3 0.6l1.8 -0.5l2.3 0.3l2.2 -0.4l2.4 0.2l0.8 -1.2l1.2 0.3l1.8 -1.4l0 -1.5l2.4 0.5l0.9 -2.8l2.1 0.4l1.4 -2l1.9 -0.7l1.2 -2.5l0.2 -3.8l1.1 -5.4l-0.6 -1.9l0.7 -0.4l-0.7 -2l0.5 -1.1l0.1 -2.3l-0.6 -1.3l-2.2 -0.7l-0.1 -2l-0.9 -1.6l-1.3 -0.7l1.1 -2.3l2.2 -1.1l-0.2 -1.5l1.7 -0.1l-0.4 -2.3l0.5 -0.8l-0.8 -1.9l0.1 -1.8l1 -0.4l0.8 -1.7l0.2 -1.7l1.7 -2.8l0.2 -1.6l1.3 -2.4l0.1 -1.9l-1.3 -1l-4 -7.3l-1.6 -2.3l-1.4 -0.2l-1.4 -1.2l-1.8 -0.7l-0.5 -2.5l0.8 -1.9l-0.7 -0.7l0.8 -3.6l1.6 -0.2l1.1 -1.5l1.1 -2.8l-1.4 -1.2l-0.3 -1.7l2 -2.6l2.5 -1.8l1.1 1.8l4 -0.9l0.5 -2.4l1.4 -1l-0.7 -1l0.2 -3.2l1.3 -4.1l-2.4 -0.7l-0.5 -0.9l-0.6 -4.9l-3.1 0.5l-2.6 -1.2l-0.8 -1.4l0.2 -1.6l0.8 -1.1l-0.6 -1.5l2.7 -0.9l0.8 -0.9l2.9 -1.1l0.9 -1.9l-1.6 -0.4l-2.1 0.2l-1 -2.3l0.3 -1.8l-3.1 -4l-0.8 0.3l-0.5 2.8l0.5 1.8l-1.8 0.5l-1.6 1.4l-1.5 -0.2l-1.2 0.7l-1.9 2.5l-4.1 1l-1.2 -2.1l-5.8 2.4l-0.6 2.9l-1.7 1l-2.1 -1.4l-3 -1.2l-1.7 1.1l-1.9 2.1l0.1 0.8l-3.2 7.3l-0.7 0.8l-0.3 4l-1.6 0.1l-0.9 0.8l-2.2 -1l-2.3 -0.4l-1.4 0.6l-0.2 2.4l-1.3 2.8l-2.8 0.1l-0.7 1.3l2.2 1.4l-1.3 3.5l-0.3 2l-2.6 2.4l0.7 2.7l-1.9 5.2l0.7 1l-0.6 3l-1.6 0.4l-0.5 1.7l-1.4 1.4l-1.4 0.4l-0.1 1.9l-1 0.5l0 2.2l0.6 3.2l1.3 0.7l1.6 3l1 0.4l0.8 2l0.6 2.8l-0.9 2.5l-1.6 0.4l-0.2 1.5l1.2 0.4l-0.7 2.2l-3 5.1l-1.4 0.6l0.8 1.2l0 4.4l0.7 0.8l-0.3 1.9l1.4 1.6l0.2 2.2l-0.6 3.7l0.4 1.8l-0.4 1.9l0.5 2.1l1.7 4.4l0.7 4l0.7 1.6l-1.2 2.8l-1.3 4.3l-1.2 1.8l0.1 2.7l-0.8 3l-1.5 2.9l0.4 2.1l-0.2 2.2l1.3 1.8l1.6 0.2z","c":[670.0,390.3]},"NM":{"name":"内蒙古自治区","d":"M414.7 271.5l2.6 8l6.5 18.8l-4.2 3.8l0.2 0.8l5.1 8.3l4.4 3.9l1.4 0.6l-0.4 8l5 -2.2l-0.9 -1.6l1.7 -0.5l0.2 1.8l1.8 2.1l-0.1 -2.3l3.4 -1.5l0.8 2.1l1 0.4l1.3 -1.5l0.2 -2.6l6.5 0.7l1.9 -1.9l6.4 0.9l0.8 0.8l2 3.7l0 2.3l-1.3 1.7l-0.3 6l-2.8 1.6l-1 1.1l-0.6 2l-1.5 1.1l-2.2 0.8l-3.1 1.7l2.3 0.2l2.5 0.8l1.3 1.7l2.3 0.8l1.4 1.3l2.1 0.5l1 1.9l0.1 2.2l2.9 0.8l-0.1 1.8l1.9 0.4l4 -0.2l-0.2 4.7l0.3 2.1l-0.6 1.9l2.2 0.5l0 1.4l2.6 -0.6l1.4 0.8l0.7 1.9l1.5 0.4l-0.1 1.6l4 1.6l0.6 1.4l1.2 -0.8l1.8 0.7l3 -3.3l2.3 -1.8l-2.5 -2.6l-1.5 -2l1.2 -0.5l6.5 -1.6l3 -1.4l2.8 1.9l6.7 1.8l3.1 -2.6l2.7 -2.6l4.3 -1.2l4.5 -1.6l1.7 0.1l2.3 0.9l-0.8 2.8l2.1 3.1l0.7 1.8l-0.7 3.2l-2.2 1.1l-3.2 5.7l-7.8 5.4l1.6 2.9l0.4 2.8l-2.9 1.5l-0.2 1.2l0.8 4.1l4.8 1.9l4.3 4.8l4.3 3.8l1.8 -0.4l2.2 -0.9l0.4 -1.1l6.5 -0.5l1.1 -0.7l2.9 -0.3l1.4 -1.2l3.6 -1.6l4.9 0.1l0.4 -1.8l2.5 -0.6l0.7 -1.4l-0.1 -1.8l0.7 -1.5l-1.1 -1.8l-0.1 -2.3l1.6 -2.6l-0.8 -1.6l0.9 -5.2l-0.4 -1.1l0.7 -1.2l0.2 -2.2l1.5 -1.6l-0.4 -1.1l1.5 -1.4l0.6 -2.7l0.8 -1.6l1.8 0.5l0.8 -0.8l-0.3 -2.2l2.1 -0.7l1.9 0.4l1.5 -2.4l1.4 0.4l1.1 -0.5l1 1.4l-0.2 2.4l1.2 2.4l1.9 1.2l-0.2 2.6l-2 2.2l-2.1 3l-0.8 2.7l-0.2 3l-0.8 1.8l-2 1.7l1.3 1.2l3.9 2.1l4 1.1l2.2 -1l3.4 1.6l1.2 1.6l0.3 1.6l1.4 0l2.8 1.8l3.4 0.7l2.5 0.9l0.6 2.7l2.1 1l2 -1.1l0.9 0.6l2.2 -0.3l1.8 -1l1.7 0.8l2.9 -1.2l-0.1 -5.4l1.4 -1.9l1 2.1l1.4 -1.2l0.7 -2.8l-1.8 -1.3l-0.5 -1.2l1.8 -5.3l2 -2l2.6 -4.3l1.1 -0.5l1.8 -2.7l1.9 -0.6l0.7 -1.7l-0.1 -1.2l3 -3.4l1.8 -1.7l4.3 -2.2l-1.8 -3.4l2.1 0.1l2.5 2.5l2.3 -1.8l1.9 2.5l1.3 -0.2l0.5 -1.8l2 -3.4l2.5 -1.5l2.3 -0.5l-1.3 3.9l1.1 0.7l0.7 -1.3l2.8 -0.1l1.3 -2.8l0.2 -2.4l1.4 -0.6l2.3 0.4l2.2 1l0.9 -0.8l1.6 -0.1l0.3 -4l0.7 -0.8l3.2 -7.3l-0.1 -0.8l1.9 -2.1l1.7 -1.1l3 1.2l2.1 1.4l1.7 -1l0.6 -2.9l5.8 -2.4l1.2 2.1l4.1 -1l1.9 -2.5l1.2 -0.7l1.5 0.2l1.6 -1.4l1.8 -0.5l-0.5 -1.8l0.5 -2.8l0.8 -0.3l-1.7 -2l-0.2 -1.9l-3.2 -3.2l0.6 -2.5l1.3 -0.5l-0.3 -1.8l-1.3 -0.4l0.3 -2.3l-1.3 -0.4l0.9 -1.7l2.7 -1.5l2.2 0.4l-1.1 -6.2l2.1 -3.4l2.1 -0.7l-0.3 -1.7l0.5 -2l2.3 -0.2l2.8 -1l1.5 2.7l0.8 4.3l-0.3 1.4l0.3 2.9l3.4 0l1.8 1l2.8 -1l-0.7 -2.4l1.3 -0.6l3.4 -2.6l2.4 -2.2l1.7 -0.9l1.8 3.1l0 0.1l1.6 0.3l0.2 -2l1.1 -0.2l0.3 -1.6l2.3 -2.1l1.5 1.4l1.6 0.2l2.8 -0.9l2.4 -1.8l-0.1 -1.7l-0.8 -1.4l0.9 -1.8l-0.9 -3l1.9 -2.3l4.1 -1.1l2.3 -0.1l0 -2.6l2.7 -0.7l1.1 0.3l1.7 -1l1.9 2.2l2.3 1.9l0.4 1.5l0.9 1l-1.1 1.7l2.3 1.1l0 1.5l2.4 0l1 0.6l0.5 2.7l0.8 1.4l-0.5 2.4l-2 -0.7l-0.5 1.9l1.5 1.8l0.3 1.2l1.6 0.8l0.7 2.2l1.7 2.5l1.9 -0.8l5.2 -0.4l4.3 0.5l2.3 -0.8l0.9 -0.4l1 -2.4l0.3 -1.9l-2.2 -3.2l-0.4 -3.4l0.3 -6.6l-1.3 -0.5l-0.8 -1.4l-0.2 -1.7l2.3 -1.6l0.9 -1.8l1.3 1l-0.4 1l3.6 1.4l1.6 -0.3l0.5 2.6l0.5 0.4l1.8 3.3l0.7 0.5l2.4 4.3l0.3 -1.8l3.2 -5.7l1.3 -0.7l-0.2 -2l2.4 -1.5l1.8 -1.9l2.8 -1.7l1.7 0.5l3.6 -3.9l0.1 -1.1l1.2 -1.1l3.5 -1.1l1.2 1.1l2.2 -1.9l0.9 -1.4l0.3 -3.1l2.1 -0.8l1.5 0.3l1.6 -0.5l1.3 0.3l1.7 -2.2l-1.6 -0.2l0.8 -1.7l2 0l1.3 1l1.7 -0.6l2.2 1.3l0.3 -1.4l2.8 -0.5l1.4 -2.3l0 -1.6l0.9 -1.7l3.2 -1.7l1.2 0.6l1.1 -2.1l0.3 -4.4l-0.3 -2.2l-1.5 0.4l-2.3 -1.4l-0.7 0.3l-2.2 -0.8l-0.4 -1.3l1.6 -1.4l1.5 -0.2l0.2 -1l-2 -4.7l-2.9 -3.5l0.3 -3.1l-1 -0.2l-2.7 -3.3l-1.2 -0.3l-0.6 -3.2l-1.5 0.6l-2.3 2.6l-1.4 1l-1 2.1l-2.8 1.6l-2.6 0.5l-0.7 -1.6l-0.7 -3.7l-1 0.1l-0.8 -1.7l-1.1 -0.2l-0.8 -2.1l0.7 -1.4l-1.1 -1l-1.3 -2.8l0.4 -3.7l-0.4 -1.6l1.6 -1.8l-0.1 -1.5l-1.5 -0.2l-0.2 -3.3l-2.9 -1.1l-0.9 -1.9l-0.3 -2.1l-1.7 -0.3l-0.7 0.8l-1.6 0l-1.2 -1l1.5 -1.2l0.7 -2l-0.6 -3.3l3.7 0.9l1.1 1.5l3.5 1l0.5 -2.5l1.3 -0.2l1 1.2l2.5 1.5l0.8 1.5l1.1 -0.3l0.5 -1.5l-0.9 -1.4l0.9 -1.9l-1.2 -3.5l3.7 -1.3l1.5 -3.7l-3.4 -3.7l-0.7 -3l2.6 -1.4l2.5 -1.9l3.6 -1l0.2 -0.9l-0.5 -2.6l-2.2 0.4l0.3 -2.3l-1.6 0.5l-0.3 2.3l-2.4 0.1l-0.4 2.6l-2.6 0l-1.6 -0.7l-0.8 -3.4l-1.5 0.7l-0.4 -1.3l0.4 -1.5l-2.2 -0.3l-2.7 -1.9l-2.3 -3l1.1 -1.4l0.8 -3.5l2.3 -1.9l1 -1.6l4.2 -3.2l0.6 -1.1l0.8 -3.1l3.2 -2.1l2.4 -4.5l1.4 -2l2.5 -4.2l2.2 -2.7l1 0.6l0.7 3.3l2 2l0.2 1.4l1.8 -0.8l0.1 -2.2l-1.3 -1.6l0.2 -2.1l-0.9 -1.8l0.7 -1.1l0.2 -2.4l-0.4 -1l0.8 -2.3l0.3 -2.9l0.6 -1.3l-0.4 -2.1l1.1 -1.8l3.3 0.7l1.2 -1.7l-0.5 -1.9l0.5 -1.2l-1.2 -3.5l-1.5 -6.7l0 -1.7l-1.2 -1.7l1.3 -1.5l-0.8 -2.4l2.1 -2.5l-0.2 -1.7l0.9 -1.7l-0.5 -0.9l1.3 -1.1l2.3 -3.2l-1.8 -3.8l1.6 -1.7l0.5 -2.2l1.1 -0.8l-0.3 -2.6l-3.3 -1.6l-0.5 -1.5l-1.5 -0.7l-3.7 -3.7l-3.6 -2.9l-3.2 0.4l-0.8 1l0.1 1.5l-1.5 1l0.4 1.1l-0.8 1.7l-1.2 -0.1l-1 1.6l-3.1 -0.5l-0.7 2.6l-2.1 -0.4l-0.6 -0.7l-2.2 1l-2.6 0.5l-2.9 -1.2l-0.3 1.8l-5 2.4l-3.4 -0.9l-0.9 0.4l-0.8 -1.5l-2 -1.7l-0.5 -2.8l-2 -2.8l-1.2 -4.9l-1 -0.3l-1 -2.9l1.8 -1.3l-0.5 -1.8l-2.4 0.4l-1.6 -0.3l-0.1 -1l-2.3 -1.2l-0.6 -1.3l-2.5 0l-1.9 4.7l-1.5 0.6l-1.9 -0.5l-1.5 -2.5l-1.7 0l-1.6 -0.7l-1.5 -1.4l-2.1 -0.2l2.4 -2.2l1.1 -2.2l1.4 -1.4l1.1 -4l1.1 -1.6l-1.2 -1.7l-1.3 -0.3l0 -1.5l-2.9 -1.7l-2.1 0.7l-1.4 1.2l-1.9 -0.3l-2.9 0.8l-2.2 2.9l-0.4 1.6l-2.4 2.5l-1 2.5l-2 2.5l-2 1l0.8 1.4l-0.3 1.3l0.7 1.3l1.7 -0.1l1.2 -1.2l2.3 -0.9l3.5 1.6l0.4 2.6l-0.5 2.4l2 1.1l0.8 2.1l-1 5.3l-2.3 1.3l-1.4 2.4l-2.3 2.8l-1.2 0.2l-0.9 4l0.4 0.9l-0.4 2.3l-2.2 3.6l0.4 2.6l-2 2.7l-1.2 2.6l0.6 2.5l-0.6 1.6l-1.9 2l-0.2 3.8l-1.6 1.6l1.1 0.7l1.9 -0.4l0.5 1.1l-0.1 3.2l-0.8 2l-1.8 2.3l-1.9 0.2l-3.1 1.4l-2.4 0.6l-2.4 2.7l0.1 1l-2.2 1.5l-1.7 2.7l-3.1 1l-0.6 1.7l-5.1 -1.9l-3 0.3l-3.3 -0.9l-5.5 -2.7l-3.2 9.7l-4.2 12.9l0.6 1.1l-3.4 7.3l1 5.7l-4.2 2.8l1.3 5.1l6 4.7l2.3 -3.1l2.2 -1.8l2.9 0.6l3.1 -1.6l3.2 -0.4l3.4 1.1l4.9 3.6l1.3 -2.8l4.1 -6.4l2.2 -0.2l4 -1.2l0.8 0.6l2.1 -0.4l2.2 0.2l3.8 4.5l5.8 1.6l0.6 2.7l3.5 1l-0.5 1.2l1.9 0.8l4.8 3.5l1.8 2.9l0 0.9l1.3 2l1.1 0.2l0.7 4.2l-0.2 1l-1.5 0.3l-0.3 1l-5.4 0.5l-0.8 0.9l-1.8 -0.8l-3 -0.2l-1.2 -1.4l-2.6 -0.2l-0.6 2l-5.3 0.4l-2.1 -0.5l-3.8 2.9l-1.9 0.8l-0.5 1.4l-2.5 1.1l-1.9 -1.8l-2.6 0.9l0.5 1.1l-0.6 1.6l0 2.3l-4.3 0.6l-3.4 0l-1.9 1.3l-2.4 1.1l-1.8 3.7l-0.4 0.2l-1.8 4l-0.2 2.1l0.9 2.1l-1.5 2.2l-2.1 0.3l-1.4 1.4l-3.3 4.3l-5.1 2l-2.9 0.3l-3 0.6l-3.9 -0.9l-2.9 1.4l-0.3 2.4l-2.3 4l-2.3 2.1l-1.8 2.5l-2.4 0.6l-4 4.3l-2.1 -0.6l-6.2 0l-2.9 -0.7l-1.4 0.1l-4.1 -1.7l-1 -1.5l-1.7 -1.5l-5.2 0.3l-1.7 -0.2l-3.6 3l-1.9 4.4l-0.9 3.1l0.3 1.6l-1.3 2.1l-0.8 3l1.5 1.3l1 2.8l1.9 2.4l3.5 2.5l1.6 2.5l0.1 3l-2.5 0.6l-3.5 4.4l-1.7 0l-1.6 1.5l-2.7 1.1l-2.5 1.6l-3.8 5.5l-0.5 0.3l-1.5 3.6l-2.5 2.3l-0.4 1.4l-4.8 2.6l-0.4 0.8l-3.3 0.3l-3.6 1.9l-2.2 2.1l-4.1 1l-4.4 -0.3l-2.9 1.6l-5.1 -0.9l-3.9 0.2l-1 -0.5l-3.5 0.8l-1.3 0.7l-6 -0.1l-1.8 -1l-2.6 1.2l-0.5 1.1l-3.6 1.1l-4.4 0.7l-2.8 1.2l-9.8 4.9l-4.5 1.9l-2.5 1.4l-4.9 3.2l-1 0l-3.7 3.8l-1.4 -1.6l-3.9 0.2l-2.7 -0.4l0.1 -4.9l-7.5 1.6l-3.5 0l-7.4 -1.9l-6.5 -3.5l-5 -2.9l-2.8 -0.3l-1.5 0.4l-6.2 -2.2l-4.2 -6.3l-4 -0.8l-11.2 -3.6l-8.8 -0.8l-0.9 1.1l-5 -0.5l-7.5 1.5l-15.7 -2.6l-5.7 -0.7l-16.4 -4.5z","c":[687.0,235.0]},"LN":{"name":"辽宁省","d":"M793.3 321.9l1.4 -1.4l5.1 -2.8l1.5 -1.3l1.9 -0.9l0.3 -3l1 -1l-0.1 -2.2l2.9 -3.6l0.3 -2.2l2.8 -1l-0.6 -1.6l1.5 -2.2l0.9 -0.3l4.5 0.3l0.8 -1.3l1.4 0.7l1.8 -0.1l1.9 -1.8l0.7 1.3l1.7 0.5l0.7 2.6l2.9 0.1l0.8 1.4l1.8 1.3l-0.6 2.4l0.4 0.8l-1.2 1.8l-1.2 0.1l0.1 1.7l-1.3 4.2l-1.6 2l-0.1 1.4l-1.3 0.3l-1 1.5l-1.5 0.9l-0.8 2.6l0.9 0.9l-0.6 1.9l-3 1.3l-0.4 1.7l0.8 2.9l3.3 0.2l1 1.2l2.3 -1.1l-0.3 1.6l0.6 2.1l0 2.1l-2.4 1.5l-1.1 -0.5l-1.3 2.2l-1.1 0.9l-1.3 -0.2l-0.6 1l1.6 4.3l1 -0.1l0.8 -1.6l1.6 -1.1l2.6 -0.4l0.7 -1.4l1.9 0l0.5 -1.5l-1.1 -0.4l0 -1.5l3.5 1l1.3 -2.3l2.4 -3l-0.5 -1.6l1.9 -1.5l0.4 -1.4l1.9 -2.4l2 -0.5l0.7 -1.2l3.4 -2.8l0.7 -1.2l1.9 -0.6l0.4 -1l1.4 -0.8l1.9 -0.1l0.7 -2.1l3.4 -0.5l3.3 -2.1l1.9 -0.9l5.1 0.3l1.7 -3.9l1.5 -1.7l-0.4 -2l1.4 -2.6l2.3 -3.1l1.4 -1l0.1 -1.2l2.3 -3l3.9 -3.8l1.3 -0.5l2.8 -1.9l1.3 -1.5l0.4 -1.5l1.6 -2.1l-1.5 -1.5l0.9 -2.8l-0.3 -4.1l-2 -0.3l-0.5 -1.8l-1.7 -0.9l-0.6 -1.7l-1.9 -2.4l-1.1 -2l-1 0.7l-0.6 -2.1l-0.9 -1.1l-0.6 -3.4l2.3 -4.3l-0.6 -0.4l-2.4 0.8l-0.8 -3.2l-2.1 0l-0.3 -2.7l-2.4 -2l0 -2l-1.4 0l-1.1 -1.9l-0.2 -1.8l-2 -0.1l-0.4 -3.1l-0.8 -1.5l0.2 -2.4l-1.5 0.7l-1.3 1.8l-0.1 1.8l-0.8 1.8l-1.7 1.7l-1.6 -1.2l0.4 -1.6l-1.6 -0.2l1.2 -2l-2.9 -1.8l-0.2 -1.3l-2.7 0.2l-1.4 -0.5l-3.4 -2.2l-0.1 -1.2l-1.8 0l-0.3 2.4l0.3 2.2l-0.3 4.4l-1.1 2.1l-1.2 -0.6l-3.2 1.7l-0.9 1.7l0 1.6l-1.4 2.3l-2.8 0.5l-0.3 1.4l-2.2 -1.3l-1.7 0.6l-1.3 -1l-2 0l-0.8 1.7l1.6 0.2l-1.7 2.2l-1.3 -0.3l-1.6 0.5l-1.5 -0.3l-2.1 0.8l-0.3 3.1l-0.9 1.4l-2.2 1.9l-1.2 -1.1l-3.5 1.1l-1.2 1.1l-0.1 1.1l-3.6 3.9l-1.7 -0.5l-2.8 1.7l-1.8 1.9l-2.4 1.5l0.2 2l-1.3 0.7l-3.2 5.7l-0.3 1.8l-2.4 -4.3l-0.7 -0.5l-1.8 -3.3l-0.5 -0.4l-0.5 -2.6l-1.6 0.3l-3.6 -1.4l0.4 -1l-1.3 -1l-0.9 1.8l-2.3 1.6l0.2 1.7l0.8 1.4l1.3 0.5l-0.3 6.6l0.4 3.4l2.2 3.2l-0.3 1.9l-1 2.4l-0.9 0.4l-0.4 2.7l-2.1 3.4l-1.2 -0.1l-1.2 6.1l1 1.4l3 1.6l3.1 1l1.5 1.5l3.2 -1l2 2l0.3 2.7l3.4 4.1l-0.3 0.8l2.4 2.3z","c":[834.0,284.8]},"JL":{"name":"吉林省","d":"M886.8 284.6l2.6 -1.6l1.5 0.3l2.6 -6l1.5 -1.6l0.2 -1.6l1.9 -4.4l0.5 -6.3l1.7 -1.3l1.2 -0.1l1 -2.3l1 -0.5l2 2.5l2 1.4l0 1.4l2.1 0l2.2 0.7l2.7 -0.6l2.1 0.8l3.8 -1.7l1.9 -0.3l0.9 0.9l2.6 -1l0.1 -2.1l0.7 -1.2l-0.4 -1.9l-2.7 -1.6l-1.2 -1.4l-1.6 -5l6 -1.4l0.7 0.3l3.1 -1.2l0.4 -0.8l2.8 0.1l0.5 -1.7l2.3 -1.9l1.2 -1.9l-0.6 -1.8l0.1 -2l1.2 -1.8l1.8 -0.5l1.9 1.4l0.6 -1.4l1.6 -0.7l0.4 -1.1l-1 -5.3l0.2 -2.2l-0.2 -3.6l0.4 -1.3l2.2 0.3l1.2 -0.9l0.9 1.8l1.9 -0.5l0.7 3.7l3.1 2.4l1.4 -0.9l1.8 1.2l0.7 -1.3l-1 -1.3l-2.2 0.1l-1.1 -0.7l0.7 -1.1l2.7 -2.5l3.5 -1.1l0.8 -0.7l1.6 -0.1l-0.6 -1.5l1.7 -0.6l-1.2 -1.7l1 -2.8l-0.6 -2.4l0.6 -0.8l-0.3 -2.4l0.5 -0.6l-0.9 -2.4l-2 2.4l-2.3 -1.4l-1.5 2.2l-5.4 -3l-3.5 0.2l-1.2 -2.6l-0.8 -2.9l-1 -1.1l-1.9 0.9l-1.4 3l-1.4 -0.9l-0.3 -1.6l-1.4 -1.2l-1.2 0.7l-0.7 1.3l0 1.7l-1.9 0.9l-2.8 0.7l-1.5 2.1l-1.5 -0.1l-0.5 1l1.3 4.1l-3 2.4l-2.2 0.2l-0.9 -0.9l-2.7 -4.5l0 -1.2l-3.4 -2.3l-0.5 -1.2l-2.8 -3l-0.4 -3.9l-0.6 -1.2l-1.8 -1.5l-2.1 2.5l-0.1 2l-1.9 0.4l0.7 2.1l0.7 0.3l0.3 2.2l-2.4 2.2l-2.1 0.3l-3.8 -2.8l0.3 -1.2l-2.8 -2.4l-0.7 -1.6l0.9 -2.3l-2.8 -0.7l-3.3 0.5l-1.9 1.6l-0.6 -2.6l-1.5 -2.3l0.2 -1.8l0.9 -1.3l-2.5 -2.3l-0.4 -1.3l-4.6 -0.3l-2.1 -1.1l-2.4 1.3l-0.6 0.9l-2.6 1.8l-3 -0.7l-1.2 0.2l-2.8 -1.6l-1.3 -1.2l-0.4 -2.8l-0.5 -0.7l-3.6 1.9l-0.8 1.8l-1.9 -0.2l-2.7 1l-1.1 -1.9l-1.9 -0.6l-1.4 2.5l-1.7 0l-2 1.4l-1.2 -0.8l-1.2 0.6l-2.1 -1.9l-1.4 -1.9l-3.1 -2.1l-0.5 -3l-1.7 -0.9l0 -4.1l-2.1 -2.8l-1.2 -0.8l-1 1.1l-4.2 0.8l-2.1 1.1l-1.8 -0.6l-0.9 0.7l-1.5 3.7l-3.7 1.3l1.2 3.5l-0.9 1.9l0.9 1.4l-0.5 1.5l-1.1 0.3l-0.8 -1.5l-2.5 -1.5l-1 -1.2l-1.3 0.2l-0.5 2.5l-3.5 -1l-1.1 -1.5l-3.7 -0.9l0.6 3.3l-0.7 2l-1.5 1.2l1.2 1l1.6 0l0.7 -0.8l1.7 0.3l0.3 2.1l0.9 1.9l2.9 1.1l0.2 3.3l1.5 0.2l0.1 1.5l-1.6 1.8l0.4 1.6l-0.4 3.7l1.3 2.8l1.1 1l-0.7 1.4l0.8 2.1l1.1 0.2l0.8 1.7l1 -0.1l0.7 3.7l0.7 1.6l2.6 -0.5l2.8 -1.6l1 -2.1l1.4 -1l2.3 -2.6l1.5 -0.6l0.6 3.2l1.2 0.3l2.7 3.3l1 0.2l-0.3 3.1l2.9 3.5l2 4.7l-0.2 1l-1.5 0.2l-1.6 1.4l0.4 1.3l2.2 0.8l0.7 -0.3l2.3 1.4l1.5 -0.4l0.3 -2.4l1.8 0l0.1 1.2l3.4 2.2l1.4 0.5l2.7 -0.2l0.2 1.3l2.9 1.8l-1.2 2l1.6 0.2l-0.4 1.6l1.6 1.2l1.7 -1.7l0.8 -1.8l0.1 -1.8l1.3 -1.8l1.5 -0.7l-0.2 2.4l0.8 1.5l0.4 3.1l2 0.1l0.2 1.8l1.1 1.9l1.4 0l0 2l2.4 2l0.3 2.7l2.1 0l0.8 3.2l2.4 -0.8l0.6 0.4l-2.3 4.3l0.6 3.4l0.9 1.1l0.6 2.1l1 -0.7l1.1 2l1.9 2.4l0.6 1.7l1.7 0.9l0.5 1.8l2 0.3l0.3 4.1l-0.9 2.8l1.5 1.5z","c":[880.7,219.6]},"HL":{"name":"黑龙江省","d":"M823 172.4l0.9 -0.7l1.8 0.6l2.1 -1.1l4.2 -0.8l1 -1.1l1.2 0.8l2.1 2.8l0 4.1l1.7 0.9l0.5 3l3.1 2.1l1.4 1.9l2.1 1.9l1.2 -0.6l1.2 0.8l2 -1.4l1.7 0l1.4 -2.5l1.9 0.6l1.1 1.9l2.7 -1l1.9 0.2l0.8 -1.8l3.6 -1.9l0.5 0.7l0.4 2.8l1.3 1.2l2.8 1.6l1.2 -0.2l3 0.7l2.6 -1.8l0.6 -0.9l2.4 -1.3l2.1 1.1l4.6 0.3l0.4 1.3l2.5 2.3l-0.9 1.3l-0.2 1.8l1.5 2.3l0.6 2.6l1.9 -1.6l3.3 -0.5l2.8 0.7l-0.9 2.3l0.7 1.6l2.8 2.4l-0.3 1.2l3.8 2.8l2.1 -0.3l2.4 -2.2l-0.3 -2.2l-0.7 -0.3l-0.7 -2.1l1.9 -0.4l0.1 -2l2.1 -2.5l1.8 1.5l0.6 1.2l0.4 3.9l2.8 3l0.5 1.2l3.4 2.3l0 1.2l2.7 4.5l0.9 0.9l2.2 -0.2l3 -2.4l-1.3 -4.1l0.5 -1l1.5 0.1l1.5 -2.1l2.8 -0.7l1.9 -0.9l0 -1.7l0.7 -1.3l1.2 -0.7l1.4 1.2l0.3 1.6l1.4 0.9l1.4 -3l1.9 -0.9l1 1.1l0.8 2.9l1.2 2.6l3.5 -0.2l5.4 3l1.5 -2.2l2.3 1.4l2 -2.4l-1.8 -0.2l-0.2 -3.2l-1.3 -3.6l0.2 -1.4l-0.6 -3.1l0.6 -0.5l-7 -13.7l-1.2 -1.5l-1.9 -1l1.6 -1.1l0.9 -1.8l0.9 0.5l1.8 -2.2l1.9 -0.7l1.8 -2.4l0.6 -1.5l-0.7 -1.7l1.4 -1.1l0.3 -1.6l2.9 0.5l6.5 0.3l7.8 0.1l1.6 0.5l1.1 -1l0.6 -1.9l-0.2 -2l-1 -1.4l0.2 -2l-0.4 -1.4l0.4 -2.1l2.8 -2.5l0.5 -1.2l-0.5 -2.4l-0.9 -2l0.3 -1.3l1.5 -0.8l0.8 -4.3l-1.2 -1.1l1.9 -2.2l0.6 -1.3l-1.2 -2.2l0.8 -1.2l-1.9 -1.2l0.2 -2.9l1.1 -1.3l-1.1 -5.5l0.1 -4.9l1.1 -0.6l-0.4 -1.7l-1.5 -1.1l-0.2 -1.8l1.6 -3.1l2.2 -0.8l1.8 -3.9l-0.2 -1.1l0.8 -2.1l-0.4 -1l-1.7 -0.8l-1.7 -1.6l-1.6 -2.4l0.7 -1.8l-0.3 -3.5l2.1 -2.5l1.9 -1.4l0.8 -1.9l-2.5 0.5l-1.1 2.1l-1.8 -0.1l-3 0.6l-1.7 1.3l-2.4 0.7l-1.7 1.6l-4.2 3.2l-0.2 1.7l-1.4 0.2l-0.3 1.8l-2 0.5l-1.4 0.9l-2.7 0.1l-1 0.8l-0.4 1.9l-1.4 1.2l-0.5 1.6l-1.6 -0.1l0 1.8l-0.9 4.1l-3.6 0.1l-0.9 1.4l-3.6 1l-0.1 0.9l-2.2 0.5l-2.2 -0.1l-1.2 1.5l-1.1 -1.5l-1.4 0.1l-3.1 1.2l-1.5 1.4l-2.5 -0.3l-0.6 -2.1l-1.6 -1.9l-3.5 -1.7l-0.8 -1.8l1 -1.6l0.5 -2.7l-2 -1.9l-0.3 -2.3l-2.1 0.8l-0.8 -2.1l-1.1 -0.1l0.6 -6.4l-2.5 1l-1.6 -0.5l-1.7 1.4l-5.9 -2.5l-2 -2.7l-1.5 -0.3l-1.3 -1.7l-2 0.5l-0.7 -2l-1.7 -0.7l-0.6 1.9l-2.5 -0.1l-0.8 1.1l-1.3 -0.1l-1.1 -1.6l-2.3 -0.2l-1 0.7l-1.6 -1.8l-2.7 -0.2l-2.1 0.8l-2.7 1.8l-2.9 -0.5l-2.7 0.6l-2.5 -1.8l-0.4 -1.4l-2.3 -0.9l-0.4 -2.6l-1.2 -2.3l0.8 -2l-0.3 -2.3l-3.5 -0.4l-0.8 -0.9l0 -2.2l-1.2 -0.3l0.5 -2.8l-1.4 -1.5l-0.5 -2l-1 -0.3l-1.9 -2.5l-3.8 -2.6l-1 -2.9l0.6 -2.2l-1.5 -2.3l-2 -0.5l0.4 -2l-2.2 -0.5l0.3 -1.5l-4.5 -5.3l-1.4 -2.1l0.9 -0.4l0.3 -1.9l-1.1 -0.6l-2.9 -0.4l-0.2 -4.1l-3.7 -3.3l-2.7 -0.7l1.1 -1.6l-3.8 -3.1l-1.2 -0.4l-0.9 -2l-1.7 -1.1l-5.8 -1.5l-1.6 -0.1l-2.4 0.7l-1.6 1.4l-1.4 0.2l-1 -1.1l-2.5 0.5l-1.9 -0.8l-0.9 -1.4l-1.4 -0.8l-1.5 1l-1.1 -1l-3 -1.3l-2.3 0.2l-1.3 -0.9l-2.2 0.7l-2.1 -0.1l-2.1 1.7l-1.2 0.1l-2 1.3l-5.4 1.1l-0.8 0.4l-1.4 -1.1l-3 2.3l-3.2 0.6l-4.9 2.7l2.9 1.7l0 1.5l1.3 0.3l1.2 1.7l-1.1 1.6l-1.1 4l-1.4 1.4l-1.1 2.2l-2.4 2.2l2.1 0.2l1.5 1.4l1.6 0.7l1.7 0l1.5 2.5l1.9 0.5l1.5 -0.6l1.9 -4.7l2.5 0l0.6 1.3l2.3 1.2l0.1 1l1.6 0.3l2.4 -0.4l0.5 1.8l-1.8 1.3l1 2.9l1 0.3l1.2 4.9l2 2.8l0.5 2.8l2 1.7l0.8 1.5l0.9 -0.4l3.4 0.9l5 -2.4l0.3 -1.8l2.9 1.2l2.6 -0.5l2.2 -1l0.6 0.7l2.1 0.4l0.7 -2.6l3.1 0.5l1 -1.6l1.2 0.1l0.8 -1.7l-0.4 -1.1l1.5 -1l-0.1 -1.5l0.8 -1l3.2 -0.4l3.6 2.9l3.7 3.7l1.5 0.7l0.5 1.5l3.3 1.6l0.3 2.6l-1.1 0.8l-0.5 2.2l-1.6 1.7l1.8 3.8l-2.3 3.2l-1.3 1.1l0.5 0.9l-0.9 1.7l0.2 1.7l-2.1 2.5l0.8 2.4l-1.3 1.5l1.2 1.7l0 1.7l1.5 6.7l1.2 3.5l-0.5 1.2l0.5 1.9l-1.2 1.7l-3.3 -0.7l-1.1 1.8l0.4 2.1l-0.6 1.3l-0.3 2.9l-0.8 2.3l0.4 1l-0.2 2.4l-0.7 1.1l0.9 1.8l-0.2 2.1l1.3 1.6l-0.1 2.2l-1.8 0.8l-0.2 -1.4l-2 -2l-0.7 -3.3l-1 -0.6l-2.2 2.7l-2.5 4.2l-1.4 2l-2.4 4.5l-3.2 2.1l-0.8 3.1l-0.6 1.1l-4.2 3.2l-1 1.6l-2.3 1.9l-0.8 3.5l-1.1 1.4l2.3 3l2.7 1.9l2.2 0.3l-0.4 1.5l0.4 1.3l1.5 -0.7l0.8 3.4l1.6 0.7l2.6 0l0.4 -2.6l2.4 -0.1l0.3 -2.3l1.6 -0.5l-0.3 2.3l2.2 -0.4l0.5 2.6l-0.2 0.9l-3.6 1l-2.5 1.9l-2.6 1.4l0.7 3l3.4 3.7z","c":[882.4,118.8]},"SH":{"name":"上海市","d":"M843.6 522.1l0.8 0l0.1 -0.5l0.8 0.3l0.5 1.7l0 1.1l0.6 0.3l-0.4 0.9l0.9 0.3l0.3 -0.7l0.7 -0.4l0.9 0.6l-0.1 1.1l1 0l0.7 -0.5l0.4 0.6l0.9 0.7l0.2 1l1.6 -0.3l1 -1.4l1.6 -1.3l1.5 -0.9l1.4 -0.6l4.2 -0.6l0.9 0.7l0.5 -0.3l-0.5 -0.8l0.6 -1l-0.4 -2.3l-0.5 -1.1l-0.8 -1l-3 -2.5l-2.1 -2.1l-2.5 -1.2l-1.6 -0.2l-2.5 -1.6l-1.2 -0.5l-1.7 1.1l-0.2 -0.4l-1 1.2l-0.4 1.4l-0.5 0.5l0.4 0.6l0.5 1.5l-1 -0.2l-0.4 1.2l0.6 1.9l-1 0.7l-1.7 0.1l-0.9 0.3l-0.3 0.8l0.6 0.1l0.5 1.7zM861.4 505.2l-5 -0.4l-1.5 -0.3l-0.8 0l-2 -0.8l-1.4 -0.2l-1.1 -1.3l-1.2 -0.6l-1.1 0.3l-1.1 0.8l-1.2 2l0.5 0l3.2 2.7l1.7 1.1l0.4 -0.7l0.7 -0.3l2.3 1l1.6 0.4l1.1 0.1l2.7 0.7l1.4 0l1.6 -1.1l0.1 -0.7l-0.9 -2.7zM859.2 512.2l-0.2 -0.7l-1.1 -0.8l-3.1 -0.6l-0.4 -0.6l-1 -0.1l-0.1 0.3l1.3 0.9l3.2 1.3l0.9 0.8l0.5 -0.5zM859.2 511.6l0.2 0.6l0.8 0.7l1.7 0l1.6 -0.3l1.6 0.3l0.3 -1.2l-0.2 -0.3l-1.4 0.2l-1.7 0l-2.1 -0.5l-1 0.1l0.2 0.4zM862.4 514.3l0.5 1.3l0.7 -0.2l0 -1.4l-1.1 0l-0.1 0.3zM861.2 514l0.6 0.9l0.2 -0.9l-0.8 0z","c":[853.5,519.2]},"JS":{"name":"江苏省","d":"M800.3 434.7l-0.5 -0.8l-2.6 0.8l-0.3 1l-1.6 0.2l-2.8 1.1l0.2 1.9l-2.2 6.4l-2.7 -0.2l-1.4 1.3l-0.4 1.5l0.5 1.9l-0.4 1.9l-3.3 1l-1.8 -1.6l0.8 -1.5l-2 -0.3l0.5 -1.1l-3.1 -1.1l-0.8 0.9l-2 0.1l0.5 3l-2.2 -0.4l-1.4 2.2l-2.4 -0.2l-1.9 -2.1l-1.8 1.4l-0.1 1.9l-1.4 0.6l-0.6 -2.8l-1.9 -3.4l-2 -1.1l-1.2 -2.7l-1.2 -0.6l-1.4 0.4l-1.9 -0.2l-4.1 1.4l-0.5 1.1l-0.1 4.9l1.9 0.4l0.4 0.9l3.4 1.9l2 0.2l1.2 1.4l1.4 -0.7l1.1 0.4l0.3 2.3l1.7 1.3l-0.3 1.3l1.9 0.6l1.4 1.2l2.2 -0.2l1.7 0.6l2 -0.9l1.2 1.6l1.8 -0.4l0.2 1.3l1.8 1.2l-0.1 2.6l3.1 0.5l3.8 -1.5l0.9 0.5l0.3 1.7l-0.8 1.2l0.3 3.2l-1.1 -0.3l0 2.8l-0.7 2.3l0.5 2.2l1.1 0.9l3.1 -1.7l1.1 4.3l1 1l-1 0.9l1.7 2.8l5.2 0.8l1.2 -0.8l1.3 0.4l0.2 -3.1l1.2 -0.2l0.4 -2.4l1.6 0.2l1.6 -0.6l0.9 1.7l1.2 1l1.3 -0.2l0.9 2.6l0.6 2.9l-2.1 3.2l-1 -1.3l-1.2 0.4l-1.1 -1l-0.1 0l0.1 0l-0.1 0l-3.9 -0.8l-1.5 1l-0.4 2.3l1.8 0l0.7 3.2l-0.7 0.7l0 2.1l-2.4 0.7l0 1.7l-1.8 1.3l-0.2 3.4l2.9 1.6l-0.2 1.5l0.9 0.7l2.2 -0.6l1.2 0.9l-0.9 1.5l3.1 0.3l1.1 -0.2l0.8 2.3l0 0.4l-0.2 2.5l-2.3 1.9l1.7 1.9l1.4 -0.4l4.4 -0.5l0.8 -1.5l2.2 0.7l2 -0.5l0.6 1.9l2.7 -0.1l1.8 0.4l0.9 -1l1.9 -0.5l2.7 -0.2l2 3l3.1 1.6l1.4 0l2.7 -0.9l1.1 0.9l2.1 3l1.2 -2.4l1.3 0l1 -1.1l-0.6 -1.9l1.2 -0.8l1.8 -0.1l0.6 -0.7l-0.8 -2.6l2.6 -0.4l1 -0.7l-0.6 -1.9l0.5 -3.1l0.9 -1.9l2.9 -1.9l0.3 -1.1l-4.9 -3.8l0.7 -2l2.2 -1.1l2.3 1.9l3.4 1l7.3 0.7l-0.5 -2.3l-3 -4.9l-2.2 -2.1l-4.6 -1l-1.9 -3l-1.1 -3.3l-1.5 -0.8l-1.5 0.1l-2.3 -0.7l-3.6 -1.9l-0.8 -1.7l0 -3.3l-1.5 -3.2l-1.2 -0.8l-0.2 -1l-1.8 -4.6l-1.5 -0.5l-1.7 -4l-2.3 -3.1l-5.5 -8.9l-1.7 -4.7l-6.9 -2.5l-2.8 -0.2l-0.6 -0.6l-2.7 -0.8l-3.5 -1.9l0.8 -1.6l-1.6 -0.6l-1.1 0.3l-2.6 -0.4l-1 -2l0.1 -3.7l1.2 -0.8z","c":[810.5,481.7]},"ZJ":{"name":"浙江省","d":"M805.5 590.6l0.4 0.7l2.7 -1l3.3 0.2l1.4 2.9l-1.5 1.5l0.5 2l1.9 1l2.8 6.4l-0.6 1.9l1 1.7l1 0.1l1.1 -1.3l2.7 1.3l2.4 -0.3l1.5 -2.5l2.1 -0.4l0.2 -2.8l2.8 -0.8l0 1.9l1.8 1.3l-0.3 1.8l1.4 1.5l2.2 1.1l1.8 -0.9l1.2 -1.3l1 0.7l1.3 -2.1l1.7 -0.2l2.6 0.9l2.1 2.1l-0.3 1.3l1.3 1.2l1.6 -0.6l0.1 -3.8l1.6 -1.1l0.3 -2.8l-1.6 -1.7l1 -2.9l2.2 -2.1l1 -2.6l1.2 -0.7l1.2 1l2.3 0.7l1 -1l-0.9 -1.8l-2.1 0.5l-1.4 -0.9l0.8 -3.5l1.1 -0.8l0.7 2l2.3 -0.4l1 -2.5l2.5 -4.2l2.8 0.6l0.7 -3.7l-1.7 -3.3l-1.8 -1.6l2.3 -2.1l-0.6 -3.2l1.7 -0.3l-1.9 -3.5l-1.1 -0.5l-0.2 -1.3l1.6 -0.7l4.5 1.2l0.2 -1.4l-1.4 -4.9l-0.6 -1.1l0.8 -1.7l-0.7 -1.3l0.3 -1.6l-0.8 -1.1l-2.6 0l1.6 -2.5l1.2 -0.5l0.5 -1.5l1.7 -1.5l-2.7 0.1l-1.7 -0.4l-2.9 -1.2l-1.2 0.3l-1.9 -1.5l-3.3 -3.8l-3.8 -2.6l-1.9 0.2l-2.9 -2.1l-0.9 -1l1.6 -1.1l2.1 -2.1l-1.5 -2.3l-1.7 0.5l-0.8 -1.7l-1 1.1l-0.9 -0.3l-0.7 -4l-1.7 0.2l-0.6 0.7l-1.8 0.1l-1.2 0.8l0.6 1.9l-1 1.1l-1.3 0l-1.2 2.4l-2.1 -3l-1.1 -0.9l-2.7 0.9l-1.4 0l-3.1 -1.6l-2 -3l-2.7 0.2l-1.9 0.5l-0.9 1l0.6 2.5l-0.9 1.4l0 3.2l-1.2 1.4l0.3 1.6l-1.7 0.6l-1.1 1.5l-1.5 0.7l0.1 1.4l1.8 0.1l1.2 3.2l-2.8 2.6l-2.7 0l-2.2 -0.9l-1.3 1.2l0.8 2.1l-0.8 1.3l1.3 3l0.2 2.1l-2.6 3.2l0.4 1.7l-1.6 2.4l-1.4 0.3l-1.2 1.6l0.1 1.3l-2.2 0.6l-1 2l-1.3 0l-1 0.9l0.4 1.2l-1.1 1.5l-1.2 0l-0.4 1.9l0.2 2.5l1.5 2.1l1.3 0.1l2.2 1.3l0.9 2l1.3 0.1l1.6 2.8l0.1 2.9l1.5 1.6l-0.1 2.2l0.6 1.2l-0.8 1zM871.3 541.2l2.4 0.8l0.8 -0.2l0.1 -1.9l-1.2 -1.6l-2.8 0.1l-4 -0.9l0.9 2.7l1.3 1.4l2.5 -0.4zM870 533.6l-1.8 1.1l2 0.8l1.5 0l0 -1.6l-1.7 -0.3zM874.7 530.9l-0.1 -0.8l-3 -0.1l0.3 1.2l2.8 -0.3zM873 548.7l0.4 -1l-1.4 -1.1l-0.9 0.9l1.9 1.2zM865.4 542.5l1.5 -0.7l-0.3 -1.2l-1.7 -0.9l0.5 2.8zM871.3 541.6l0 -0.4l-0.1 0.4l0.1 0z","c":[835.1,565.8]},"AH":{"name":"安徽省","d":"M745.8 453.3l-0.4 2.8l4.3 3.9l2.6 -1l1.2 2.8l-0.5 1.2l2.4 3l0.3 1.9l-3.7 1.5l0.1 1.1l-2.1 0.9l-0.9 1.1l-1.9 0.6l-2 -1.9l-0.1 -1.3l-1.6 -1.1l-0.6 -2l-2 0.2l-0.9 -1.2l-1.4 -0.2l-2.2 1.3l-0.7 3.7l1.6 0l-0.1 4.8l0.9 1.6l-2.3 1l-1.6 0.1l-1.3 1.4l-0.4 1.7l1.2 2l-0.9 3.2l0.2 1.2l-2 0.9l-0.4 0.7l-2.3 0.3l-1.6 -1.2l-1.1 0.5l1.2 4.4l3.7 0.4l1.2 0.9l0 3l0.7 3l2 0.7l1.9 -0.1l2.1 1.6l2.3 1.2l0.8 -0.2l0.5 -2l1.6 0.4l1 -0.8l1.2 2.4l0.7 3.7l0.7 1.3l0.2 5.6l-0.3 3.4l-3.9 0.4l-3.1 2.7l-1.9 4.3l0.2 2l0.1 1.3l1.4 0l0.7 1.7l1.4 0.6l1 2l1.2 -1.7l0.9 0.1l1.7 1.9l1.6 -1l1.6 2.1l2.3 0.5l0.4 1.3l-1.7 0.8l-2 1.7l0 2.5l-1.3 0.2l-0.2 1.6l1.3 1.9l1.1 0.2l0.8 1.4l-0.1 3.2l0.5 1.4l1.6 0.4l1.8 1.8l0.9 3.7l-0.2 1.6l1.3 1.5l0.3 1.7l2.9 0.4l3.3 -2.8l1.6 -0.5l0.2 -3.2l1.5 -0.9l1.6 0.3l3.2 2.1l-0.2 1.3l-1.6 2.5l-1.9 2.1l0.2 0.7l-0.4 1l2.7 1.2l3.8 -3l2.1 -0.9l0.3 -1.5l-1.3 -1.2l1.6 -2.2l1.4 0l0.4 1.8l2.5 -0.5l1.6 1.9l0.2 1.4l2 2l1.9 -0.8l1 1.2l2 -0.6l2.7 0.1l1.2 -0.8l3 1.6l0.1 1.7l1.1 0.3l1 -0.9l1.3 0l1 -2l2.2 -0.6l-0.1 -1.3l1.2 -1.6l1.4 -0.3l1.6 -2.4l-0.4 -1.7l2.6 -3.2l-0.2 -2.1l-1.3 -3l0.8 -1.3l-0.8 -2.1l1.3 -1.2l2.2 0.9l2.7 0l2.8 -2.6l-1.2 -3.2l-1.8 -0.1l-0.1 -1.4l1.5 -0.7l1.1 -1.5l1.7 -0.6l-0.3 -1.6l1.2 -1.4l0 -3.2l0.9 -1.4l-0.6 -2.5l-1.8 -0.4l-2.7 0.1l-0.6 -1.9l-2 0.5l-2.2 -0.7l-0.8 1.5l-4.4 0.5l-1.4 0.4l-1.7 -1.9l2.3 -1.9l0.2 -2.5l0 -0.4l-0.8 -2.3l-1.1 0.2l-3.1 -0.3l0.9 -1.5l-1.2 -0.9l-2.2 0.6l-0.9 -0.7l0.2 -1.5l-2.9 -1.6l0.2 -3.4l1.8 -1.3l0 -1.7l2.4 -0.7l0 -2.1l0.7 -0.7l-0.7 -3.2l-1.8 0l0.4 -2.3l1.5 -1l3.9 0.8l0.1 0l-0.1 0l0.1 0l1.1 1l1.2 -0.4l1 1.3l2.1 -3.2l-0.6 -2.9l-0.9 -2.6l-1.3 0.2l-1.2 -1l-0.9 -1.7l-1.6 0.6l-1.6 -0.2l-0.4 2.4l-1.2 0.2l-0.2 3.1l-1.3 -0.4l-1.2 0.8l-5.2 -0.8l-1.7 -2.8l1 -0.9l-1 -1l-1.1 -4.3l-3.1 1.7l-1.1 -0.9l-0.5 -2.2l0.7 -2.3l0 -2.8l1.1 0.3l-0.3 -3.2l0.8 -1.2l-0.3 -1.7l-0.9 -0.5l-3.8 1.5l-3.1 -0.5l0.1 -2.6l-1.8 -1.2l-0.2 -1.3l-1.8 0.4l-1.2 -1.6l-2 0.9l-1.7 -0.6l-2.2 0.2l-1.4 -1.2l-1.9 -0.6l0.3 -1.3l-1.7 -1.3l-0.3 -2.3l-1.1 -0.4l-1.4 0.7l-1.2 -1.4l-2 -0.2l-3.4 -1.9l-0.4 -0.9l-1.9 -0.4l-3 1.8z","c":[772.0,513.1]},"FJ":{"name":"福建省","d":"M794.4 699.6l2 -0.5l2 0.1l1.5 -0.8l0.5 -2.8l2 -0.2l1 -2.1l0 -2l1.8 -0.4l1.8 -2.9l0.9 -0.3l0.2 -2l1.5 -2.4l1.8 -1l0.8 -1l-1.9 -2.9l-0.8 -0.1l0.4 -2.6l0.6 -1l1 0.1l1.7 0.9l2.6 -0.9l1.2 -2l1.4 0l2.3 1.6l1.2 -1.5l0.2 -1.9l1.3 -2.7l-2.8 -0.4l4 -2.3l2.3 -2.3l-2.3 -2.4l2.6 -1.4l2.6 1.5l0.1 -2.1l2 -0.6l2 -2.3l-1.9 -1.5l-3.3 -0.9l1.6 -1.5l2.5 0.4l-0.4 -1.4l2.2 -0.7l0.3 0.9l3.1 2.2l1 -0.4l0.5 -2.3l1.5 0l1.9 -1.2l0.1 -1.7l-2.1 -1.2l-1.8 0.2l0.7 2.3l-1.5 1l-0.7 -1.7l-3.2 -2l2.5 -0.9l0.4 -0.9l-0.5 -3.3l1.3 -0.9l0.2 -2.5l-1.2 -0.2l-1.7 -3l1.1 -0.9l0 -1.4l1.8 -0.8l2.2 -1.9l-1.4 -1.6l-1.5 -3.2l-3.5 -1l0.6 -1.8l1.1 0.7l3.7 -0.7l0.5 -2.1l2.2 -0.4l-0.9 1.6l-0.6 2.3l-1.8 1l0.6 1.8l3.4 -3.2l0.7 -1.6l-0.6 -3l0.3 -2.1l2 -0.1l0.4 -4.2l2.2 -0.1l1.1 -1.6l-1.3 -1.2l0.3 -1.3l-2.1 -2.1l-2.6 -0.9l-1.7 0.2l-1.3 2.1l-1 -0.7l-1.2 1.3l-1.8 0.9l-2.2 -1.1l-1.4 -1.5l0.3 -1.8l-1.8 -1.3l0 -1.9l-2.8 0.8l-0.2 2.8l-2.1 0.4l-1.5 2.5l-2.4 0.3l-2.7 -1.3l-1.1 1.3l-1 -0.1l-1 -1.7l0.6 -1.9l-2.8 -6.4l-1.9 -1l-0.5 -2l1.5 -1.5l-1.4 -2.9l-3.3 -0.2l-2.7 1l-0.4 -0.7l-2.1 1.8l1.1 1.3l0.1 1.5l-3.8 1.2l-1 1.5l-2.4 1.2l-2.1 0.7l-1.2 1.3l-0.7 2.2l-2.7 -1l-1.3 -2.2l-2.7 2l-2.5 0.8l0.6 2.4l-2.1 2.2l-2.6 0.5l-0.6 1.1l0.4 1.4l1.8 0.4l0.6 4.6l1.4 0.7l-0.3 1.2l-1.8 2.4l0.3 1l-3.8 2.5l-0.6 -0.1l-2.7 1.2l-2.2 3.4l0.3 1.5l-0.7 1.3l1.2 1.5l-0.3 2.1l1.7 1.6l0.1 2.4l-2 0.5l-1.6 1.6l-0.1 2.9l1.7 -0.2l0.4 1.3l-1.9 2.1l-1.3 2.6l-2.5 0.9l-0.7 1.7l-0.2 2.8l-1.1 1.9l0.6 1.3l-1 1.8l0.5 1.2l-0.5 1.4l0.5 1.2l-1.2 0.7l-0.2 1.3l-1.5 0.8l0.2 1l1.7 2.4l-1 0.8l0.6 1.8l3.7 1.6l1.8 -0.2l0.7 -0.7l1.3 1.7l1.9 -1l2.4 2.3l0.7 -0.2l1.3 2.5l2.6 -1.6l2.2 -0.7l0.8 0.5l-0.8 2.5l1.6 1l0.3 1.2l1.5 1.4l0.9 1.9l0.1 1.4l1.5 0.7l-1.2 1.4l0.1 1.4l1.2 1.3l0.4 3.2l1.6 2l0.3 1.4l3 1.1l0.2 1.5zM816.6 675.2l-0.9 2.3l2.5 -0.8l-1.6 -1.5zM812.4 675.9l-1.4 -1.1l-1 0.6l-0.2 1.8l1.6 0.8l1 -2.1z","c":[803.8,641.5]},"JX":{"name":"江西省","d":"M797.5 566.2l-1.1 -0.3l-0.1 -1.7l-3 -1.6l-1.2 0.8l-2.7 -0.1l-2 0.6l-1 -1.2l-1.9 0.8l-2 -2l-0.2 -1.4l-1.6 -1.9l-2.5 0.5l-0.4 -1.8l-1.4 0l-1.6 2.2l1.3 1.2l-0.3 1.5l-2.1 0.9l-3.8 3l-2.7 -1.2l0.4 -1l-0.2 -0.7l1.9 -2.1l1.6 -2.5l0.2 -1.3l-3.2 -2.1l-1.6 -0.3l-1.5 0.9l-0.2 3.2l-1.6 0.5l-3.3 2.8l-2.9 -0.4l-3 2.5l-2.5 -0.2l-3.5 -2l-3 0.6l-0.6 2.3l-2 2.3l-1.2 0.9l-0.8 -0.9l-2 0.5l0.5 3.1l-3.1 -1.1l-2.5 2.4l0.6 0.9l-1.3 1.3l-2.7 0l-2.8 1.9l-1.6 -0.3l-1.9 0.5l-1.6 -0.2l0.1 2.5l-3.6 1l-0.5 1.3l-1.4 1.5l-0.1 1l0.8 2.4l2.2 2.2l1.5 0l0.2 1.5l-0.4 3.2l-0.5 1.5l2.7 1.5l-0.8 1.2l1.7 0.7l0.1 1.7l-1 0.8l-2.3 2.9l-1.4 0.4l0.8 1.7l-2 2.3l-1 -0.3l-2.1 1.8l0.5 3.1l-2.7 4.2l-0.3 2.3l1 4l1.7 0.1l3.3 -1.5l-0.2 3.7l-1.2 2.1l1.1 2.2l2.2 1.8l-1.5 3.3l0.8 3.2l1.1 1l1.7 -0.1l2.3 0.8l-0.5 2.1l0.4 1.6l-0.8 3.3l-1.5 1.8l2.9 0.3l1.7 -1.3l1.3 1.3l-0.9 0.8l-2.8 1.3l-0.6 1.4l0.6 2.8l-1 1.3l-0.9 3.2l1.6 2.1l-0.4 3.7l2.3 1.5l-0.5 2.1l1.9 -0.8l3.6 -0.3l1.8 -0.6l3 -2.5l1.2 0.6l0.9 1.3l1.6 0l0.6 2l-0.9 1.3l1.2 1l-1.9 1.3l-1.6 0.1l-0.9 1.8l-2.2 1.3l0.3 1.6l-1.1 1.7l0 1.4l-2.7 2.3l1.4 0.2l1 1.3l1.9 0.2l0.9 1.7l2 -1.9l1.2 0.4l1.4 -1.2l0.9 1.2l1.4 -2.1l1.9 1l1.3 -2.1l2.2 -1.5l1.1 0.7l3.9 -2.4l1.1 0.4l1 -1.4l1.3 0.5l1.8 1.6l0.5 1.4l2.1 0.1l0.5 1.3l1.3 -0.1l1.7 -1.1l-1 -0.9l-1.1 -2.6l0.9 -3.7l1.4 -0.8l-0.6 -1.8l1 -0.8l-1.7 -2.4l-0.2 -1l1.5 -0.8l0.2 -1.3l1.2 -0.7l-0.5 -1.2l0.5 -1.4l-0.5 -1.2l1 -1.8l-0.6 -1.3l1.1 -1.9l0.2 -2.8l0.7 -1.7l2.5 -0.9l1.3 -2.6l1.9 -2.1l-0.4 -1.3l-1.7 0.2l0.1 -2.9l1.6 -1.6l2 -0.5l-0.1 -2.4l-1.7 -1.6l0.3 -2.1l-1.2 -1.5l0.7 -1.3l-0.3 -1.5l2.2 -3.4l2.7 -1.2l0.6 0.1l3.8 -2.5l-0.3 -1l1.8 -2.4l0.3 -1.2l-1.4 -0.7l-0.6 -4.6l-1.8 -0.4l-0.4 -1.4l0.6 -1.1l2.6 -0.5l2.1 -2.2l-0.6 -2.4l2.5 -0.8l2.7 -2l1.3 2.2l2.7 1l0.7 -2.2l1.2 -1.3l2.1 -0.7l2.4 -1.2l1 -1.5l3.8 -1.2l-0.1 -1.5l-1.1 -1.3l2.1 -1.8l0.8 -1l-0.6 -1.2l0.1 -2.2l-1.5 -1.6l-0.1 -2.9l-1.6 -2.8l-1.3 -0.1l-0.9 -2l-2.2 -1.3l-1.3 -0.1l-1.5 -2.1l-0.2 -2.5l0.4 -1.9l1.2 0l1.1 -1.5l-0.4 -1.2z","c":[754.4,611.7]},"SD":{"name":"山东省","d":"M748.8 451.5l0.1 -4.9l0.5 -1.1l4.1 -1.4l1.9 0.2l1.4 -0.4l1.2 0.6l1.2 2.7l2 1.1l1.9 3.4l0.6 2.8l1.4 -0.6l0.1 -1.9l1.8 -1.4l1.9 2.1l2.4 0.2l1.4 -2.2l2.2 0.4l-0.5 -3l2 -0.1l0.8 -0.9l3.1 1.1l-0.5 1.1l2 0.3l-0.8 1.5l1.8 1.6l3.3 -1l0.4 -1.9l-0.5 -1.9l0.4 -1.5l1.4 -1.3l2.7 0.2l2.2 -6.4l-0.2 -1.9l2.8 -1.1l1.6 -0.2l0.3 -1l2.6 -0.8l0.5 0.8l1.2 -0.2l0.1 -3.6l1.2 -2.2l1.6 -1.4l0.6 -4.5l0.8 -1.4l2.7 -0.2l1.1 -3.7l1.1 0.9l0.4 -3.8l1.8 -0.6l2.2 -3l-1.6 -0.4l-2.5 -1.8l1 -2l3.2 0.2l-0.8 3.1l2.5 -0.6l0.6 -0.8l3 -1.1l0.8 -1.1l-1.2 -2.6l0.3 -2.7l0.8 -1.8l1.2 -0.3l1.2 2.1l1.2 -2.5l0.1 -1.9l2.7 -2.8l1.5 -0.8l3.2 -2.4l3.6 0.1l-0.6 -1.7l1.5 -0.9l0.5 -1.2l3.9 -2.7l1 1.2l2.2 -0.1l0.9 0.9l2.3 0l2.9 -2.2l0.2 -1.6l-1.7 -1.8l-0.2 -1.6l2.2 -1.8l-1.3 -2.2l0.9 -2.4l-3 -0.5l-1.1 0.7l-2.4 0l-0.7 -0.7l-1.3 0.9l-0.9 -1.3l0.1 -1.3l-2.2 0.9l-1.4 1.6l-4.4 0.8l-1.5 1l-1.8 -0.5l-0.5 -1l-2 -1.4l-0.9 0.5l-2.3 0l-1.1 -2.7l-1.7 0.3l-1.9 -1.2l-0.2 -0.8l-3.6 0.3l-2.2 2l-2.3 0.5l-1.3 1.6l-2.4 0.4l0 1.7l0.8 1.4l-1.5 2l-4.9 3.1l1.3 2.5l-2.2 3.3l-1.2 -0.4l-1.7 1l-3.7 0.6l-1.3 -1.5l-2.1 -1.1l-2.4 0.4l-1.1 -1.3l-1.8 -4.6l1.1 -2.8l3.7 -0.8l0.6 -1l0.1 -2.6l-1.4 -1.5l-1.2 1.5l-1.2 -2.2l-2.1 -1.4l-0.8 -2.1l-1.3 -0.9l-1.7 -0.2l-5.1 1.7l-5.1 0l-2 -1.3l-1.6 0.4l-2.4 -1.9l-1.3 1.8l-1.3 3.7l-2 0.4l-1 3.1l-1 2.2l-2.1 0l-0.7 0.6l-3.5 0.3l-0.8 0.4l-3.9 0.1l-1.1 2.6l-4.3 6.7l-1 -1l-0.1 0l0.1 0l-0.1 0l-1.4 1.1l-1.9 2.5l-3.2 1.4l0.1 2.3l-1 0.8l-0.5 3.5l-1.3 1.7l-0.1 2.1l-1 2.3l-3.5 1.4l-0.4 1.4l-1.3 2l-1.3 3l0.6 1.9l0.8 0.3l0.7 1.9l1.8 0.6l0.6 2.9l-0.3 3.2l-1.4 1l-0.1 4.1l0.6 0.3l2 -2.5l0.4 -0.3l2.3 -1l0.8 -1.1l2 -1.3l3 -1l1.8 -1.8l-0.6 3.4l-2.4 0.5l-0.3 1.9l-1.9 0.8l-1.2 2.4l-2.9 0.8l-0.7 0.6l-1.5 3.4l-0.3 1.8l-1.9 1.8l-2.6 0.4l-2.1 3.8l-0.3 1.5l-1.5 1.2l0.1 1.7l0.9 1.6l2.8 0.5l1.7 -1l2.7 3.4l1.1 -0.4l2.1 1l1 3.8l1.1 1.1l2 0l1.3 -0.6l2.6 0.4l4.6 -1.5l1.9 0.5l3 -1.8z","c":[776.3,408.0]},"HA":{"name":"河南省","d":"M686.6 510l0.4 0l2.2 -1.1l2.5 0.2l0.6 -1.1l1.8 1l1.6 -1.4l3.3 2.8l1.1 0.5l3.4 -2.4l0.4 -1.2l1.6 -0.1l0.8 2.5l-0.3 0.6l0.8 2l-0.8 2.4l1.3 1l1.6 4.3l1 -0.9l1.7 2.7l1.8 -0.8l0.7 -1.5l2 0l1.2 1.8l2.9 0.2l2.6 -1l-0.4 3.2l0.4 1.4l1.4 -0.6l1.2 1.2l1.5 0l1.1 1.3l3.5 -2l1.4 0.3l0.4 -2.1l1.7 0.8l0.3 2.6l1.8 1.2l1.3 -0.7l-0.2 -2l1.9 -4.3l3.1 -2.7l3.9 -0.4l0.3 -3.4l-0.2 -5.6l-0.7 -1.3l-0.7 -3.7l-1.2 -2.4l-1 0.8l-1.6 -0.4l-0.5 2l-0.8 0.2l-2.3 -1.2l-2.1 -1.6l-1.9 0.1l-2 -0.7l-0.7 -3l0 -3l-1.2 -0.9l-3.7 -0.4l-1.2 -4.4l1.1 -0.5l1.6 1.2l2.3 -0.3l0.4 -0.7l2 -0.9l-0.2 -1.2l0.9 -3.2l-1.2 -2l0.4 -1.7l1.3 -1.4l1.6 -0.1l2.3 -1l-0.9 -1.6l0.1 -4.8l-1.6 0l0.7 -3.7l2.2 -1.3l1.4 0.2l0.9 1.2l2 -0.2l0.6 2l1.6 1.1l0.1 1.3l2 1.9l1.9 -0.6l0.9 -1.1l2.1 -0.9l-0.1 -1.1l3.7 -1.5l-0.3 -1.9l-2.4 -3l0.5 -1.2l-1.2 -2.8l-2.6 1l-4.3 -3.9l0.4 -2.8l-1.9 -0.5l-4.6 1.5l-2.6 -0.4l-1.3 0.6l-2 0l-1.1 -1.1l-1 -3.8l-2.1 -1l-1.1 0.4l-2.7 -3.4l-1.7 1l-2.8 -0.5l-0.9 -1.6l-0.1 -1.7l1.5 -1.2l0.3 -1.5l2.1 -3.8l2.6 -0.4l1.9 -1.8l0.3 -1.8l1.5 -3.4l0.7 -0.6l2.9 -0.8l1.2 -2.4l1.9 -0.8l0.3 -1.9l2.4 -0.5l0.6 -3.4l-1.8 1.8l-3 1l-2 1.3l-0.8 1.1l-2.3 1l-0.4 0.3l-2 2.5l-0.6 -0.3l0.1 -4.1l1.4 -1l0.3 -3.2l-1.8 0.7l-1 1l-1.5 -2.2l-2.2 -0.2l-1.2 1.2l-0.7 2.2l-1.4 0.5l-0.3 -2l-2.5 0.6l-3.3 0l-3.3 -1.6l-3.6 -0.8l-2.3 0.3l-2.3 -1.7l-2.6 0.7l-1.5 -0.6l-0.1 2.3l-0.5 1.1l0.7 2l-0.7 0.4l0.6 1.9l-1.1 5.4l-0.2 3.8l-1.2 2.5l-1.9 0.7l-1.4 2l-2.1 -0.4l-0.9 2.8l-2.4 -0.5l0 1.5l-1.8 1.4l-1.2 -0.3l-0.8 1.2l-2.4 -0.2l-2.2 0.4l-2.3 -0.3l-1.8 0.5l-1.3 -0.6l-2.9 -0.4l0.4 1.3l0 3.8l-2.4 -0.5l-2.2 0.6l0 0.7l-2.5 1.3l-1.5 3.4l-4 0.5l-2 1.1l-1.6 -0.3l-0.4 1.2l-2.5 1.3l-1.1 -0.5l-0.5 2l-1.1 0.7l-1.4 -0.8l-0.6 1.2l-1.8 0l-1.4 0.6l-0.9 -0.5l-1.9 0.3l-0.3 1.9l0.9 1.9l1.3 0.9l0.6 1.2l-1 2.2l3.8 1.7l-0.8 1.4l1.6 3l-1.4 1.9l0.5 0.8l3.1 1.1l2 3.6l2.4 1.1l0.6 2.3l0 0.2l-0.5 0.8l0.7 2.4l-0.7 1.7l1.2 1.2l0.1 0.7l0.7 -0.3l3.4 3.8l-0.1 1.8l1 1.5l1.6 0.6l0.8 1.6l2 1.8l1.3 1.8l2.5 -0.5l1.9 1.5l1.5 0.6l1.1 -0.4l1.3 1.5l2.8 1.4l0.9 -0.4l2.4 1.5l1.1 -1.2l3.7 -0.5l2.4 0.3z","c":[700.4,473.4]},"HB":{"name":"湖北省","d":"M654.3 493.6l-0.1 -0.7l-1.2 -1.2l-1.1 1.3l-1.7 0.1l-2.2 2.6l-1 -1.4l-1.1 -0.1l-1.1 -2l-1.2 2l-1.8 -0.2l-0.6 0.6l-2.2 0l-1.1 -1l-2.4 0.6l-3.4 -1.1l-2.2 0.4l-0.8 -0.5l-3.3 0.6l-1.3 2l2.6 0.8l2.1 -0.2l2 1l-0.4 3.7l0.5 0.6l2.2 -0.6l3.8 1.4l1 1.5l0.1 1.9l1 1.1l-1 0.9l-2.4 1.2l-2.1 -0.9l-1.7 0.4l-1.7 -0.6l-1.8 0.3l0.2 1.3l-1.2 0.8l-1.2 2.8l0 2l2.5 4.3l-0.4 2.2l0.8 1.1l-0.5 1.8l0.7 1.8l-0.8 1.9l2.7 0.4l0.4 2.3l4.3 1.9l1.8 2.1l1.2 0l0.9 2.1l0.6 4.4l-1.1 0.8l0.8 4l-1.2 2.6l-1.2 -0.6l-0.3 -1.2l-2.2 -0.3l-2.1 1.3l-2.8 3.5l-1.7 0.9l-3.2 2.8l-1.3 -1.8l-2.8 2.6l-0.8 -1l-0.3 -0.3l0.3 -0.7l-1.3 -1l-1.3 0.7l-2.4 3l-1.9 0.2l-1.8 -0.9l-1.5 1.6l-1.1 -0.7l-1.6 0.3l-0.4 2.7l1.1 0.3l2.4 2.3l-0.7 4.7l-0.2 3.8l-1.6 0.1l0.2 3.2l1.3 0.2l1.7 -3.1l1.2 0.2l0.7 3.7l1.2 0.9l1.8 -0.3l1.4 1.9l-0.6 0.8l0.2 2.2l0.8 0.1l0 2.5l2.2 -0.9l1.5 0l0.1 3.2l2.4 2.2l0.8 -2l1.4 -1.9l-0.2 -1.9l2.6 -4.3l0.4 -1.7l3.6 -0.4l1.1 -1.3l0.3 -1.5l1.7 -0.5l3 0l1.7 -0.6l2.1 0.9l3.1 2.4l3.5 -2l1.5 -1.5l-0.9 -1.4l-1 -0.2l-1 -1.4l0.3 -1.1l-0.5 -2.1l1.9 -0.1l1 -0.6l1.2 0.9l0.6 -1.8l2 -0.4l1.4 0.2l0.2 1.1l6 0.2l0.5 0.6l3.4 1.6l1.7 0l0.6 0.7l2.9 -0.1l1 -0.8l2.1 1.3l2 0.5l-0.1 0.8l2.4 1l-0.1 1.5l2.2 0.4l3.9 2.3l1.2 -2.2l4.9 0.4l1.7 -2l0 -1.2l1.9 -1.3l0.6 0.4l0 3.6l1 3l2 -1.3l1.8 1.5l1.4 -2.2l2.6 -3.9l3.5 -3.6l-0.1 3.9l2.2 -0.4l1.6 2.3l-1 1.6l1.6 1.4l-1.4 1.4l-1 3.3l1.7 1.1l0.1 1.8l2.5 0l1.7 1.6l0.9 -0.5l0.1 -1l1.4 -1.5l0.5 -1.3l3.6 -1l-0.1 -2.5l1.6 0.2l1.9 -0.5l1.6 0.3l2.8 -1.9l2.7 0l1.3 -1.3l-0.6 -0.9l2.5 -2.4l3.1 1.1l-0.5 -3.1l2 -0.5l0.8 0.9l1.2 -0.9l2 -2.3l0.6 -2.3l3 -0.6l3.5 2l2.5 0.2l3 -2.5l-0.3 -1.7l-1.3 -1.5l0.2 -1.6l-0.9 -3.7l-1.8 -1.8l-1.6 -0.4l-0.5 -1.4l0.1 -3.2l-0.8 -1.4l-1.1 -0.2l-1.3 -1.9l0.2 -1.6l1.3 -0.2l0 -2.5l2 -1.7l1.7 -0.8l-0.4 -1.3l-2.3 -0.5l-1.6 -2.1l-1.6 1l-1.7 -1.9l-0.9 -0.1l-1.2 1.7l-1 -2l-1.4 -0.6l-0.7 -1.7l-1.4 0l-0.1 -1.3l-1.3 0.7l-1.8 -1.2l-0.3 -2.6l-1.7 -0.8l-0.4 2.1l-1.4 -0.3l-3.5 2l-1.1 -1.3l-1.5 0l-1.2 -1.2l-1.4 0.6l-0.4 -1.4l0.4 -3.2l-2.6 1l-2.9 -0.2l-1.2 -1.8l-2 0l-0.7 1.5l-1.8 0.8l-1.7 -2.7l-1 0.9l-1.6 -4.3l-1.3 -1l0.8 -2.4l-0.8 -2l0.3 -0.6l-0.8 -2.5l-1.6 0.1l-0.4 1.2l-3.4 2.4l-1.1 -0.5l-3.3 -2.8l-1.6 1.4l-1.8 -1l-0.6 1.1l-2.5 -0.2l-2.2 1.1l-0.4 0l-2.4 -0.3l-3.7 0.5l-1.1 1.2l-2.4 -1.5l-0.9 0.4l-2.8 -1.4l-1.3 -1.5l-1.1 0.4l-1.5 -0.6l-1.9 -1.5l-2.5 0.5l-1.3 -1.8l-2 -1.8l-0.8 -1.6l-1.6 -0.6l-1 -1.5l0.1 -1.8l-3.4 -3.8l-0.7 0.3zM620.8 554.8l-0.1 -0.2l0.1 0.2z","c":[680.6,541.9]},"HN":{"name":"湖南省","d":"M685.9 683.5l0.1 -0.7l2.6 -2.1l0.1 -1.6l-1.2 -0.7l0.6 -1.5l0.4 -3.5l2.4 0.4l1.2 -0.9l4.1 1.2l2 -0.3l1.1 1l0.2 1.3l1.6 2.8l1.9 -0.2l2.4 -0.8l-0.5 -2.4l0.4 -1.3l-0.8 -1.7l0.2 -1.8l-2.5 0.1l-0.4 -1.9l1.6 0.1l2.8 -1.5l0.7 -1.5l2.5 -1.7l1.3 0.4l1.5 1.8l1.6 0.9l1.7 -0.4l1.6 0.8l2.8 -1l1.4 0.6l2.4 -2.7l0.4 -3.7l-1.6 -2.1l0.9 -3.2l1 -1.3l-0.6 -2.8l0.6 -1.4l2.8 -1.3l0.9 -0.8l-1.3 -1.3l-1.7 1.3l-2.9 -0.3l1.5 -1.8l0.8 -3.3l-0.4 -1.6l0.5 -2.1l-2.3 -0.8l-1.7 0.1l-1.1 -1l-0.8 -3.2l1.5 -3.3l-2.2 -1.8l-1.1 -2.2l1.2 -2.1l0.2 -3.7l-3.3 1.5l-1.7 -0.1l-1 -4l0.3 -2.3l2.7 -4.2l-0.5 -3.1l2.1 -1.8l1 0.3l2 -2.3l-0.8 -1.7l1.4 -0.4l2.3 -2.9l1 -0.8l-0.1 -1.7l-1.7 -0.7l0.8 -1.2l-2.7 -1.5l0.5 -1.5l0.4 -3.2l-0.2 -1.5l-1.5 0l-2.2 -2.2l-0.8 -2.4l-0.9 0.5l-1.7 -1.6l-2.5 0l-0.1 -1.8l-1.7 -1.1l1 -3.3l1.4 -1.4l-1.6 -1.4l1 -1.6l-1.6 -2.3l-2.2 0.4l0.1 -3.9l-3.5 3.6l-2.6 3.9l-1.4 2.2l-1.8 -1.5l-2 1.3l-1 -3l0 -3.6l-0.6 -0.4l-1.9 1.3l0 1.2l-1.7 2l-4.9 -0.4l-1.2 2.2l-3.9 -2.3l-2.2 -0.4l0.1 -1.5l-2.4 -1l0.1 -0.8l-2 -0.5l-2.1 -1.3l-1 0.8l-2.9 0.1l-0.6 -0.7l-1.7 0l-3.4 -1.6l-0.5 -0.6l-6 -0.2l-0.2 -1.1l-1.4 -0.2l-2 0.4l-0.6 1.8l-1.2 -0.9l-1 0.6l-1.9 0.1l0.5 2.1l-0.3 1.1l1 1.4l1 0.2l0.9 1.4l-1.5 1.5l-3.5 2l-3.1 -2.4l-2.1 -0.9l-1.7 0.6l-3 0l-1.7 0.5l-0.3 1.5l-1.1 1.3l-3.6 0.4l-0.4 1.7l-2.6 4.3l0.2 1.9l-1.4 1.9l-0.8 2l1.8 1.6l-1.5 3.7l0.2 2.4l1.2 0.7l-2 2.6l0.2 0.8l2.1 -0.6l0.3 0.9l-0.8 2l0.2 4.1l1.8 1.3l-0.9 3.5l1.4 1.5l-1.5 1.8l0.8 3.9l1.7 1.2l1.2 2.2l-0.4 1l-2.8 2.6l0 1.2l-2 -0.5l-1.1 0.7l-0.7 1.9l-2.3 1.7l-1.5 1.5l0.4 0.9l-0.9 1.3l-1.7 0.6l1.8 1.4l3 -2.1l1.9 -0.5l0.8 1.3l1.9 -1.6l3 -0.6l0.8 1.9l1.4 0.1l0.8 2.5l-2.3 1.4l0.3 0.7l1.5 2.4l0.2 0.2l-0.2 -0.2l-0.7 -0.2l-0.8 0.1l-1.7 2.3l1.1 2.8l-0.4 1.8l-1.2 0.9l-0.6 2.8l3.2 1.1l1.4 3.2l-0.3 1.5l0.6 0.7l1.5 -0.5l2.9 0.5l-0.8 2.5l2.8 -0.8l-1 -1.9l1.7 -0.8l0.6 -2.5l1.3 -1.4l2.6 0.5l-0.5 2.7l0.7 0.6l3 0.1l1.6 0.7l0.8 -2.6l1.3 -1.5l1.1 -0.4l1 -2.7l1.1 -1.2l2.3 0.8l0.8 1l3.6 -1.1l0 -2l3 1.3l2.3 0l1.5 0.6l0.4 1.1l-0.6 1.6l0.2 1.3l-1.3 3.3l1.3 1.9l1.9 -1.1l1.8 1.3l0.3 1.7l-2.6 1.3l0.1 1.7l0.8 0.9l-0.2 1.8l-0.9 2.3l-1.8 1.4l-1.6 1.9l0.3 1.6l-2.2 1.4l-0.8 2.7l1.3 2.6l1.9 -0.6l-0.1 -2l1.9 -1l1.4 -1.9l1 1l1.1 -0.6l1.3 0.7l-0.4 1.1l1.3 2.6l-0.3 1.6l0.7 1.3l-0.8 2.5l2.9 0.8l2.6 -3.4l3.4 0.5l1.6 -0.4l1.5 0.5zM632.9 641.4l-0.2 -0.2l0.2 0.2z","c":[675.1,618.9]},"GD":{"name":"广东省","d":"M722.1 737.5l0.6 -2.1l1.3 -2.6l-1 -0.5l2.3 -2.3l-0.7 -2.4l-1 -1.7l1.1 -0.4l1.8 3.1l1.2 1.1l0.9 2.1l1.6 -1.7l1.2 0.1l2.7 -1.5l1.4 0.3l1.8 -1.3l2.2 -0.2l2 3.2l2.1 -1.2l-0.1 -1.4l-1.3 -0.7l0.9 -1.4l-0.3 -2l1.8 -1l1.2 0l-0.2 2.5l0.6 1.5l2.4 -0.5l1.3 -0.7l2.1 -2.3l0.6 -1.8l3.2 -1.1l0 1.1l2.2 -0.3l1.2 2l1.8 -0.5l2 0.1l0.7 -1.6l-0.7 -1.7l1.4 -0.9l2.3 0.4l1.6 2.1l1.1 -1.3l1.6 -0.5l1.8 -1.2l1.1 0.5l2.5 -2.6l1.2 -0.9l1.8 0.6l2.5 -0.6l0.6 -1.5l0.1 -3.1l2 -0.8l1.5 -1.5l1.3 0.2l-0.8 -2.5l1.6 -2.5l0.9 -2.6l1.7 0.4l3.6 -1.8l-0.2 -1.5l-3 -1.1l-0.3 -1.4l-1.6 -2l-0.4 -3.2l-1.2 -1.3l-0.1 -1.4l1.2 -1.4l-1.5 -0.7l-0.1 -1.4l-0.9 -1.9l-1.5 -1.4l-0.3 -1.2l-1.6 -1l0.8 -2.5l-0.8 -0.5l-2.2 0.7l-2.6 1.6l-1.3 -2.5l-0.7 0.2l-2.4 -2.3l-1.9 1l-1.3 -1.7l-0.7 0.7l-1.8 0.2l-3.7 -1.6l-1.4 0.8l-0.9 3.7l1.1 2.6l1 0.9l-1.7 1.1l-1.3 0.1l-0.5 -1.3l-2.1 -0.1l-0.5 -1.4l-1.8 -1.6l-1.3 -0.5l-1 1.4l-1.1 -0.4l-3.9 2.4l-1.1 -0.7l-2.2 1.5l-1.3 2.1l-1.9 -1l-1.4 2.1l-0.9 -1.2l-1.4 1.2l-1.2 -0.4l-2 1.9l-0.9 -1.7l-1.9 -0.2l-1 -1.3l-1.4 -0.2l2.7 -2.3l0 -1.4l1.1 -1.7l-0.3 -1.6l2.2 -1.3l0.9 -1.8l1.6 -0.1l1.9 -1.3l-1.2 -1l0.9 -1.3l-0.6 -2l-1.6 0l-0.9 -1.3l-1.2 -0.6l-3 2.5l-1.8 0.6l-3.6 0.3l-1.9 0.8l0.5 -2.1l-2.3 -1.5l-2.4 2.7l-1.4 -0.6l-2.8 1l-1.6 -0.8l-1.7 0.4l-1.6 -0.9l-1.5 -1.8l-1.3 -0.4l-2.5 1.7l-0.7 1.5l-2.8 1.5l-1.6 -0.1l0.4 1.9l2.5 -0.1l-0.2 1.8l0.8 1.7l-0.4 1.3l0.5 2.4l-2.4 0.8l-1.9 0.2l-1.6 -2.8l-0.2 -1.3l-1.1 -1l-2 0.3l-4.1 -1.2l-1.2 0.9l-2.4 -0.4l-0.4 3.5l-0.6 1.5l1.2 0.7l-0.1 1.6l-2.6 2.1l-0.1 0.7l-1.2 0.6l-0.4 2.8l1.6 1.3l-0.4 1.5l1.6 1.7l-0.4 2.1l-2.3 1.8l-0.5 2.6l1.5 2.6l-1.7 1.1l-0.8 1.4l0.1 1.8l-3.3 -0.4l-0.5 1l0 3l-2.6 0.9l0 2.1l-1.6 1.5l-0.7 4.2l0.8 1.6l0 2.9l1.2 0.9l-1.4 1.6l0.1 1.8l-2.8 3.3l-2 0.2l-1.2 2.3l-3.2 1.4l-3.1 1l0.3 0.8l-0.9 1.8l0.4 3.2l-1.5 1.8l-0.3 1.6l-1.6 -0.9l-1 1.2l-2 -1.3l-1.2 2.5l1.1 4.5l-3.5 0.4l-2 -0.3l-1.6 1.1l-1.1 -0.5l-1.1 0.9l-0.5 3.9l-3.6 1.4l1.1 3.5l2.6 0.4l-0.7 1.5l-2.4 0.5l0.3 2.7l-1.8 2.1l-0.2 4.6l0.3 1.5l1.5 3.1l0.4 2.2l1.1 0l1.1 2.8l1.3 1.3l-0.7 1.1l1.2 1.3l0 1.8l3.7 -0.7l0.8 0.8l2.1 -0.8l2.8 -0.3l2.1 -1.3l1.8 -2.5l0.1 -1.2l-2 -4.5l-1.3 -1l-0.4 -1.9l-1.5 -0.6l-1.2 0.2l-1.9 -1l-0.2 -2l0.5 -1.6l3.8 -1.8l0.6 -1.5l1.7 -0.7l2.6 -0.1l1.7 -2.3l1.7 -1.5l2.8 -0.1l2.2 -1.6l5.2 -1.3l0.1 1.4l2 -1.8l1.2 -0.5l2.5 0l2.5 -0.7l0.2 -1.3l2.1 -0.7l2 0.6l2.9 -1.4l-1.6 -0.6l0 -1l1.6 -1.2l3.2 -0.9l1.1 1.9l2.4 -0.3l1.3 -0.7l0.5 -1.6l2 1l2.4 -0.3l2.7 -3.9l1.1 0l1.2 1.6l2 -0.8l1 -2l0.8 -2.5l1.4 1.8l2.6 2.2l1.2 -2.1l2.2 -1.3l2.2 -2.3l-0.1 -2.4zM791.3 702.8l2.5 0.5l-0.1 -1.3l-1.8 -0.1l-0.6 0.9zM708.1 749.2l-0.3 -0.7l-2.4 1.4l1.3 1l-0.9 1.4l1 1l1.3 -4.1zM701.6 753.2l2.7 -1.5l-0.1 -1.6l-1.5 0.6l-1.1 2.5zM657.8 765.3l3.2 1.5l0.9 -2.6l-4.1 1.1zM659.7 767.2l-1.2 0.5l-1.4 -0.7l-1.9 0.3l-1.9 2.3l-0.2 1.1l3.1 -1.2l2.6 -0.1l1.5 1.3l0.3 -3.1l-0.9 -0.4zM662.6 770.3l-1.3 -0.2l-0.8 0.9l1.4 1l0.7 -1.7zM774.7 757.3l1.2 1.2l1.6 -0.3l-0.7 -1.4l-2.1 0.5z","c":[717.3,712.8]},"GX":{"name":"广西壮族自治区","d":"M632.7 657.5l-1.5 1.5l-0.1 1.5l-1.9 4.3l-3 -0.5l-1.1 -1.4l-1.9 1l1.6 0.9l-0.9 2.1l0.5 1.4l-0.5 1.3l-1.6 -1l-2.4 0.3l-1 -1.7l-1.9 1l-1.5 2.2l-0.1 1.3l0.6 2.2l-3.3 -2.7l-1 0.4l-1.5 -2l-1.4 1.3l-2.3 0.8l-0.2 2.8l-0.6 2.6l-2.3 0.3l-3.3 1.9l-1 -0.8l-1 -1.9l-1 0.5l-1.3 -2l-2.4 2.3l-0.5 -1.5l-1.2 -0.2l-1.2 -2.8l-2.3 -2.9l-1.6 -0.7l-2.5 0.4l-2 2.8l1.1 3.7l-1.6 0.6l-0.9 1.5l-3.2 0.5l-0.8 -0.3l-2 2l-3 1.6l-2.8 1.1l-2.3 0.5l0.3 2.3l-0.6 2l-2.6 1.8l-0.4 1.1l-1.8 -2l-3.5 0.1l-1.3 -1.1l-4.3 -0.9l-1.4 -2.7l-3.3 0.1l-1.1 -1.5l-2.4 1.5l-0.3 0.2l-0.8 1l-0.2 2l-2.7 0.7l-1.2 1.8l-2.8 0.6l-1.5 -0.3l-0.7 -1.1l-1.4 -0.5l-0.8 1.8l0.6 2.6l1.2 2.5l1.3 1.3l1.3 -1.2l2.7 -0.6l2.9 0.8l1.3 -0.7l1.4 0.6l1.8 2l-0.7 0.9l1.1 1.6l-0.7 1.1l0.4 1.4l2.7 0.2l1.5 1.2l1.8 0.6l0.9 -2.6l1.9 0.1l0.5 2.1l2.3 -1l1.6 1l1.1 -0.2l0.5 -1.9l2.7 0.7l0.1 0.9l1.5 2.1l1.4 2.9l-1.1 0.7l0.4 1.6l-0.7 2.7l0.4 0.8l-2.9 2.7l-0.3 -0.9l-1.9 -0.8l-1.6 0.5l-6 6.1l0.4 1.1l0.6 2.7l1.6 -0.3l4 2l1.1 1.1l2.1 0l0.5 -1.2l3.9 0.2l1.7 2.5l1.7 0.2l2.9 -1.3l2.1 -0.3l1.4 0.7l3.1 2.7l-1 0.7l-1.2 3.7l-2 -0.6l-1.1 3.3l0.6 1.8l1.6 0.9l0.9 2.8l-0.2 1.6l0.3 2.5l6.2 1.6l1.3 0.7l-0.8 2.1l1.6 0.3l3.2 2.2l1.4 -0.7l1 1.4l0.2 1.5l2.4 -1.4l1.5 1.6l3.5 -0.7l2 -0.9l1.2 0l2 2.6l1.6 -0.4l1.6 0.8l2 -2l1 0.8l3.1 0.5l2 -0.6l2 -2.8l3.1 1l2.1 0.3l1 -0.4l1.2 0.8l4.3 0.3l0.1 1.3l-2.1 1.2l2.2 1.5l2.2 -0.9l3.6 -0.5l2.6 -0.7l1.3 -1.3l2.2 1.2l1.7 0.1l-1.1 -3.5l3.6 -1.4l0.5 -3.9l1.1 -0.9l1.1 0.5l1.6 -1.1l2 0.3l3.5 -0.4l-1.1 -4.5l1.2 -2.5l2 1.3l1 -1.2l1.6 0.9l0.3 -1.6l1.5 -1.8l-0.4 -3.2l0.9 -1.8l-0.3 -0.8l3.1 -1l3.2 -1.4l1.2 -2.3l2 -0.2l2.8 -3.3l-0.1 -1.8l1.4 -1.6l-1.2 -0.9l0 -2.9l-0.8 -1.6l0.7 -4.2l1.6 -1.5l0 -2.1l2.6 -0.9l0 -3l0.5 -1l3.3 0.4l-0.1 -1.8l0.8 -1.4l1.7 -1.1l-1.5 -2.6l0.5 -2.6l2.3 -1.8l0.4 -2.1l-1.6 -1.7l0.4 -1.5l-1.6 -1.3l0.4 -2.8l1.2 -0.6l-1.5 -0.5l-1.6 0.4l-3.4 -0.5l-2.6 3.4l-2.9 -0.8l0.8 -2.5l-0.7 -1.3l0.3 -1.6l-1.3 -2.6l0.4 -1.1l-1.3 -0.7l-1.1 0.6l-1 -1l-1.4 1.9l-1.9 1l0.1 2l-1.9 0.6l-1.3 -2.6l0.8 -2.7l2.2 -1.4l-0.3 -1.6l1.6 -1.9l1.8 -1.4l0.9 -2.3l0.2 -1.8l-0.8 -0.9l-0.1 -1.7l2.6 -1.3l-0.3 -1.7l-1.8 -1.3l-1.9 1.1l-1.3 -1.9l1.3 -3.3l-0.2 -1.3l0.6 -1.6l-0.4 -1.1l-1.5 -0.6l-2.3 0l-3 -1.3l0 2l-3.6 1.1l-0.8 -1l-2.3 -0.8l-1.1 1.2l-1 2.7l-1.1 0.4l-1.3 1.5l-0.8 2.6l-1.6 -0.7l-3 -0.1l-0.7 -0.6l0.5 -2.7l-2.6 -0.5l-1.3 1.4l-0.6 2.5l-1.7 0.8l1 1.9l-2.8 0.8l0.8 -2.5l-2.9 -0.5l-1.5 0.5l-0.6 -0.7z","c":[620.7,707.5]},"HI":{"name":"海南省","d":"M652.1 791l-1.3 0.9l-1 0.3l-0.7 -0.3l-1.4 0.1l-0.9 0.2l-0.9 -0.1l-1.1 0.3l-1.1 -0.8l-1.2 0.2l-1.5 0.6l-1.2 1.1l-0.6 1.5l-1.9 -0.4l-1.3 0l-1.1 -0.3l-0.9 0.4l0 0.7l-0.5 0.1l-1.5 1.7l0.3 1.2l-0.5 0.7l-1.1 0.4l-0.9 1.6l-1.2 0.7l-1.4 1.5l-1.5 1.3l-1 0.4l-0.9 1.1l-1.5 0.4l-1.1 0.9l-0.7 1.6l-0.2 3l0.2 1.9l0.7 1.1l0.2 1.7l-0.8 1.2l0 1.4l1.3 1.5l0.3 1.4l-0.4 2.4l0.1 1.8l1 0.8l2 0l2.3 0.5l0.5 0.6l1 1.6l1.3 -0.3l2.2 -0.1l0.7 1.2l0.8 0.2l2.5 -0.2l1.5 1l1.9 0.3l0.6 0.5l1.3 0l1.3 0.5l1.7 -0.7l1.4 -0.2l0.5 -0.3l0.6 -3.3l2.9 -0.9l2.3 0.2l1 -0.4l0.4 -0.5l0.5 -2.4l2 -1.7l0.7 -0.7l1.8 -0.8l0.8 0.2l2.9 -0.6l-0.2 -2.2l1.7 -0.8l0.2 -1.3l-0.1 -0.9l0.4 -6l1 -3l0.6 -0.8l0.5 -1.3l1.2 -0.5l1.1 -1.2l0.9 -1.6l0.7 -0.8l1.8 -1.2l1.1 -0.3l0.2 -0.4l-0.8 -2.9l-0.7 -1.9l-1.3 -3.6l-0.5 -0.2l-1.5 0.4l-1.4 -0.4l-0.7 -0.7l-0.7 -0.1l-0.7 -1.6l-0.6 -0.3l-0.7 0.7l-2 0.7l-0.7 0.8l-0.7 0l-2.3 -0.7l-1.5 0.2l-0.6 1.2l-1 -0.5l-2.1 0.2l-0.8 1.1zM715.1 799.1l1 -0.2l0.1 -0.6l-0.4 -0.5l-0.8 0.2l-0.2 0.6l0.3 0.5zM733.8 804.5l1 0.1l0.8 -0.6l0 -1.1l-1 -0.2l-1.4 0.4l-0.1 0.6l0.7 0.8z","c":[645.5,809.9]},"CQ":{"name":"重庆市","d":"M569.2 602.8l0.6 -1l1.4 0.9l0.5 -3l-0.9 -2.2l0.3 -1.7l2.8 3.2l0.4 1.5l-0.4 1.7l-0.9 0.6l3.5 1.2l-0.4 -1.1l0.6 -2l2.1 -0.5l0 -1.5l-0.9 -1.5l3.7 -2.9l2.5 -0.2l1.5 2.6l3.2 -1.8l1.1 -2.2l-0.9 -1.1l0.2 -2.3l-0.2 -2l1.6 0.2l1.6 -1.1l0.8 1.2l1.8 0.5l0.9 -1.4l1.3 1.4l-0.5 2.1l0.5 1.4l1.2 0.5l1.1 -1.6l1.9 -0.3l0.9 -1.1l1.5 0.7l0.9 -0.4l2 0.5l1.3 3.4l0 1.8l0.6 1l-0.9 2.1l2.1 1l2.6 -0.7l1.2 0.8l-1.1 2.1l1.4 1.7l1.1 -0.6l1.6 1.2l-0.2 2.7l1.2 1.3l3.7 1.8l0.4 -1.4l1.7 -1.3l0.6 -3.2l0.7 -1.3l1.6 -0.6l0.8 -2l-0.3 -0.9l-2.1 0.6l-0.2 -0.8l2 -2.6l-1.2 -0.7l-0.2 -2.4l1.5 -3.7l-1.8 -1.6l-2.4 -2.2l-0.1 -3.2l-1.5 0l-2.2 0.9l0 -2.5l-0.8 -0.1l-0.2 -2.2l0.6 -0.8l-1.4 -1.9l-1.8 0.3l-1.2 -0.9l-0.7 -3.7l-1.2 -0.2l-1.7 3.1l-1.3 -0.2l-0.2 -3.2l1.6 -0.1l0.2 -3.8l0.7 -4.7l-2.4 -2.3l-1.1 -0.3l0.4 -2.7l1.6 -0.3l1.1 0.7l1.5 -1.6l1.8 0.9l1.9 -0.2l2.4 -3l1.3 -0.7l1.3 1l-0.1 0.7l0.1 0.2l0 0.1l0.8 1l2.8 -2.6l1.3 1.8l3.2 -2.8l1.7 -0.9l2.8 -3.5l2.1 -1.3l2.2 0.3l0.3 1.2l1.2 0.6l1.2 -2.6l-0.8 -4l1.1 -0.8l-0.6 -4.4l-0.9 -2.1l-1.2 0l-1.8 -2.1l-4.3 -1.9l-0.4 -2.3l-2.7 -0.4l-3.9 0.6l-1.9 -0.2l-0.1 -1.8l-5.7 -4l-1.6 0l-2.2 -1.4l-1 -1.3l-1.1 0.2l-1.8 -1.5l-1.4 -0.7l-2.6 0.8l1.6 1.8l-1.5 0.4l0 2l-2 0.5l1.6 2.4l3.2 2.8l0.3 1.6l-2.4 1.7l-0.8 1.9l-2.9 0.5l0.6 1.9l-0.5 1.7l-1.7 1.6l-0.1 1.5l-1.1 2l0 1.3l-1.2 4.1l-1.9 2.1l-1.3 -0.6l-0.9 -1.4l-1.8 1.5l-2.5 -0.7l-1.6 2.6l1.8 2.1l-2.8 4.1l-0.5 1.9l-0.9 1.2l-1.3 2.8l-3 4l-0.1 0l-1.4 -1l-0.1 0.1l-1.2 1.3l-3.5 0.1l-1.1 -3l-1.3 -1.8l0 -1.3l-3.3 -0.3l-0.2 1.3l-2.3 0.4l-0.8 0.6l-0.1 0.3l-1.6 -0.8l-0.2 -1.6l-1.9 -0.7l-0.7 -0.9l-1.7 0.1l-0.9 -0.8l-2.1 -0.4l-1.3 3.9l-1.9 0.5l-1.1 1.1l-0.2 0.1l0.4 1.2l0.2 0.1l1.1 0.5l0.9 1.4l1.3 0.5l-1 2.1l0.1 1.9l-2.4 0.6l-0.1 1.7l-1.9 1.6l-1.1 -0.4l-0.8 1.4l-1.6 1.3l0.8 2.6l2 1.3l-0.4 2l0.8 0.5l4.6 0l0.2 2.6l1 2.4l0.1 1.8l1.8 1.4l1.1 0.2l1.2 -1.1l1.4 0.2l1.2 1.3l1.3 -0.5l1.9 1.7l-0.4 0.6l1.2 2.6l0 1.2l1.4 2.8zM620.7 554.6l0.1 -0.7l-0.3 0.7l0.2 0zM620.7 554.6l-0.2 0l0.3 0.3l0 -0.1l-0.1 -0.2z","c":[597.8,567.1]},"SC":{"name":"四川省","d":"M427.9 583.8l-0.3 1.3l0.3 4.9l-0.7 2.4l0.2 3.3l1 2.5l0 2.2l-0.6 1.5l2.5 4.7l1.3 1.1l1.5 -4.9l-0.6 -1l0.1 -2.3l1.2 -0.1l2 -3.5l1.2 -0.6l0.3 -1.7l1 0.2l1.4 2.5l1.5 1.8l1.6 0.7l1.2 1.6l0 1.2l1.6 1.3l-0.4 1.3l2.3 1.1l0.2 1.6l-0.8 1l-2.4 0.4l-0.2 0.9l1.2 2.7l2 2.2l0.2 1.4l1.9 0.4l-0.1 3.1l2.8 -3.1l1.9 1.4l2.8 -2.5l0.7 1.5l-0.3 1.3l1 0.8l0.4 1.8l1.3 0.5l0.1 1.1l1.7 4.5l1.3 2.2l0.3 2.5l0.6 0.7l1.9 0l-0.8 3.9l2.5 1.6l0 1.2l2 0.5l0.6 1l-0.9 1.6l1.5 0.7l0.5 3.1l-1.4 0.2l1.2 2.3l1 -0.1l2.5 2.6l0 1.6l-1.1 0.8l0.8 1.3l2.2 0.2l1.1 2.4l1.2 1.5l0.9 -1.1l2.4 0.2l1.7 0.6l2.9 -3.1l2.1 -0.7l4.5 -2.6l1.4 1.3l-0.8 1.3l2.2 1l0.6 -1.4l5.2 -2.2l-0.1 -2.5l1.3 -0.7l-0.5 -3.4l-1.1 -3.9l-1.4 -1.7l-0.4 -2.6l0.9 -2.4l-0.5 -2.9l1.2 -3.3l0.9 0.9l3.1 -1.8l3 -4.1l4 -3.6l0.4 -1.1l0.2 -2.8l-0.6 -1.5l-1.1 -0.3l0.8 -1.8l2.1 -2.4l1.4 -0.6l2.5 0.6l2.1 -1.9l-0.9 -3.2l-0.9 -1.5l1 -1.8l2.4 0.1l4.2 -0.9l2.8 0.6l0.8 1.4l-1.8 0.4l-0.2 3l1.2 2.2l1.5 0.4l1.4 1.1l-1.1 1.6l-0.1 1.8l-0.8 1.8l0.7 1.4l3.4 2.6l3.4 -1.4l2 0l4.3 -4.4l2.1 0.5l0.3 1.7l1.7 0l0.3 1.4l-1 0.9l1.5 4.3l0.9 -1l3 -0.4l2.3 2.3l1.9 -0.4l1 -0.8l1.6 0.2l1.4 -0.9l2 0l1.9 -0.8l1.5 0.6l2.2 -1.3l0.6 -1.1l-1.5 -4.7l-1.2 -1.5l-2.2 -0.7l-2.3 1.3l-1.6 -0.2l-0.7 -0.9l0.6 -1.8l-2.1 -2.2l-1.9 1.2l-1 -1l0.1 -2.4l-0.4 -1.9l1.1 -0.4l1.2 -1.9l2.8 0.5l0.1 -1.8l0.9 -0.3l0.6 -1.7l1.2 1.5l2.3 1.1l0.8 1.2l3.2 2.6l0.5 -1.2l-1.4 -2.8l0 -1.2l-1.2 -2.6l0.4 -0.6l-1.9 -1.7l-1.3 0.5l-1.2 -1.3l-1.4 -0.2l-1.2 1.1l-1.1 -0.2l-1.8 -1.4l-0.1 -1.8l-1 -2.4l-0.2 -2.6l-4.6 0l-0.8 -0.5l0.4 -2l-2 -1.3l-0.8 -2.6l1.6 -1.3l0.8 -1.4l1.1 0.4l1.9 -1.6l0.1 -1.7l2.4 -0.6l-0.1 -1.9l1 -2.1l-1.3 -0.5l-0.9 -1.4l-1.1 -0.5l-0.2 -0.1l-0.4 -1.2l0.2 -0.1l1.1 -1.1l1.9 -0.5l1.3 -3.9l2.1 0.4l0.9 0.8l1.7 -0.1l0.7 0.9l1.9 0.7l0.2 1.6l1.6 0.8l0.1 -0.3l0.8 -0.6l2.3 -0.4l0.2 -1.3l3.3 0.3l0 1.3l1.3 1.8l1.1 3l3.5 -0.1l1.2 -1.3l0.1 -0.1l1.4 1l0.1 0l3 -4l1.3 -2.8l0.9 -1.2l0.5 -1.9l2.8 -4.1l-1.8 -2.1l1.6 -2.6l2.5 0.7l1.8 -1.5l0.9 1.4l1.3 0.6l1.9 -2.1l1.2 -4.1l0 -1.3l1.1 -2l0.1 -1.5l1.7 -1.6l0.5 -1.7l-0.6 -1.9l2.9 -0.5l0.8 -1.9l2.4 -1.7l-0.3 -1.6l-3.2 -2.8l-1.6 -2.4l2 -0.5l0 -2l1.5 -0.4l-1.6 -1.8l2.6 -0.8l-0.8 -1.5l-3 1l-1.3 -1l-1.1 1.3l-1.8 -0.2l-1.2 0.5l-0.7 1.5l-1.1 -1.1l-1.1 -0.1l-2.2 -3.1l-1.4 -1.3l-1.5 -0.3l-1.3 0.8l-2.8 -3.6l-1.3 1.2l-0.9 2l-1.4 -1.5l-1.2 -0.3l-0.9 -1.3l0.3 -2.5l-1.6 -1.6l-1.9 0.5l-3.3 -0.8l-1.2 1l-4.1 0.9l-0.5 1l-1.4 -1.2l-3.2 -0.6l-2 -1.3l0 -0.2l0.4 -1.4l-0.9 -0.9l-3.6 1.1l-0.5 1.1l-1.9 0.3l-2.3 1.4l-1.9 -4.9l-1.5 -0.2l-0.7 1l1.3 3.3l-1.9 1.2l-4.4 2l-1.5 -1.3l-2.7 1.2l-0.7 -1.3l-2 0.5l-1.8 -0.7l-1.1 -1.3l-2.3 -0.6l-1.8 -1.8l-1.3 -0.3l-0.1 -2.4l1.7 -0.2l0 -3.6l-1.9 -6.5l-0.9 -0.3l-1.2 -3.2l0.4 -1.3l-2.4 -2l-1.2 0.4l-2.2 -0.3l-1.5 0.5l-2.5 -1.2l-1.8 -0.3l-0.5 -2l-1.5 1.3l-1.5 0.1l-3.7 -1.7l0.6 -1.9l-1.1 -1.2l0.7 -1.1l-0.6 -3.7l-2.7 -1.1l0.1 -1l-1.2 -1.5l-3.4 1.7l-1.4 1.6l-0.7 1.5l-2.7 0.6l-1.5 2.2l-1.4 -0.5l-1.6 0.7l-1.7 -0.1l2.1 2.4l1.5 3.2l-0.5 1.3l0.6 1.4l1.7 0.8l0.3 1.6l-1.3 2.2l-2.5 -0.2l-1.3 1.7l0.4 2l-1.8 -1l-1.2 2.3l-2.2 0l-1.4 1.8l-0.4 -1.8l-1.2 -2l2 -1l0.2 -1.6l1.2 -1.3l-0.8 -0.9l-0.3 -2.2l-2.1 0.8l-0.1 1.9l-1.4 0.5l-0.9 2.5l1.5 1l-2 4l-2.6 -2.9l-1.6 0l-0.4 1.6l-1.5 -2.6l-2.1 -0.2l-1.3 1.7l0.9 2.2l-0.8 2.5l-0.2 1.8l1 0.4l1 1.6l-0.3 2.3l-1.3 1.4l-1.5 -0.6l-2.8 1.8l-1.7 -1.2l-2.3 0l-1 0.6l-0.1 1.6l-2.1 -0.6l-0.5 -1.4l-2 -3l-1.2 0.8l-1.5 -0.6l-0.6 2.1l-2.3 0.1l0.7 -1.9l-0.2 -2.6l-1.5 -2.2l-2.9 -1.6l-1.7 2.5l-0.7 2.5l-3.2 -0.6l-0.5 -1.2l-3.3 -1.5l-2 0.3l-1.1 -3.6l-1.9 -1.1l-2.2 -0.6l-2 -1.3l-1.7 -3l0.5 -2.2l-0.7 -0.8l0.2 -1.7l-1.7 -1.7l-0.9 -4.2l-0.8 -0.4l-1.2 -2.5l-1 -0.5l0.8 -2.5l-0.6 -2.4l-3.5 -0.3l-2 -1l-1.2 -0.1l-1.3 -1.6l-2.6 -0.6l-0.9 1.1l-1.9 0.6l0.6 2.1l-0.9 1.7l-3.8 1.3l-1.2 -0.1l0.4 4.8l-0.5 1.7l1.9 0.8l-0.3 1.3l0.6 1.3l1.4 0.2l2.3 1.4l-1.6 1.4l-1 0l-0.4 1.7l-2.4 2l0.8 3.1l-3.2 1.6l-0.1 4l1.6 3l4.4 3.3l3.8 1.3l3.3 2.1l1.7 1.4l0.1 1.9l1.1 3.3l2.3 2.7l-0.7 4l2.3 2.8l0.1 1.3l2.8 3.7l2.4 1.9l0.7 1.3l-2.3 2.7l-1.5 -2l-0.9 -0.1l-0.8 1.8l-0.2 1.4l2 1.9l0.4 1.6l1.2 1.3l-0.7 1.9l1.3 1.5l2 2.9l-1.1 0.6l0.3 4l0.5 1.7l0.2 3.9l-0.2 2.9l1 1.7l0.2 3.4l-0.9 1.9l-0.9 3.8l1 2.7l-0.2 0.9l0.4 4.7l0.6 2.2z","c":[498.2,553.6]},"GZ":{"name":"贵州省","d":"M626.1 601.9l-1.6 0.6l-0.7 1.3l-0.6 3.2l-1.7 1.3l-0.4 1.4l-3.7 -1.8l-1.2 -1.3l0.2 -2.7l-1.6 -1.2l-1.1 0.6l-1.4 -1.7l1.1 -2.1l-1.2 -0.8l-2.6 0.7l-2.1 -1l0.9 -2.1l-0.6 -1l0 -1.8l-1.3 -3.4l-2 -0.5l-0.9 0.4l-1.5 -0.7l-0.9 1.1l-1.9 0.3l-1.1 1.6l-1.2 -0.5l-0.5 -1.4l0.5 -2.1l-1.3 -1.4l-0.9 1.4l-1.8 -0.5l-0.8 -1.2l-1.6 1.1l-1.6 -0.2l0.2 2l-0.2 2.3l0.9 1.1l-1.1 2.2l-3.2 1.8l-1.5 -2.6l-2.5 0.2l-3.7 2.9l0.9 1.5l0 1.5l-2.1 0.5l-0.6 2l0.4 1.1l-3.5 -1.2l0.9 -0.6l0.4 -1.7l-0.4 -1.5l-2.8 -3.2l-0.3 1.7l0.9 2.2l-0.5 3l-1.4 -0.9l-0.6 1l-0.5 1.2l-3.2 -2.6l-0.8 -1.2l-2.3 -1.1l-1.2 -1.5l-0.6 1.7l-0.9 0.3l-0.1 1.8l-2.8 -0.5l-1.2 1.9l-1.1 0.4l0.4 1.9l-0.1 2.4l1 1l1.9 -1.2l2.1 2.2l-0.6 1.8l0.7 0.9l1.6 0.2l2.3 -1.3l2.2 0.7l1.2 1.5l1.5 4.7l-0.6 1.1l-2.2 1.3l-1.5 -0.6l-1.9 0.8l-2 0l-1.4 0.9l-1.6 -0.2l-1 0.8l-1.9 0.4l-2.3 -2.3l-3 0.4l-0.9 1l-0.1 2.2l-1.4 1.4l0 2.5l-1 1l-2.3 -0.6l-3.1 2.1l-1.7 -0.6l-4.3 1.1l-1.4 -0.5l-0.8 -2l-2.7 -1.2l-1.3 2.1l-2.5 2.5l-4.3 -3.7l-1 0.9l-0.8 2.3l-2.3 1.6l-1.1 1.9l-1.3 0.1l-0.2 1.9l1.6 -0.3l1.5 4l-1.2 0.5l-0.3 1.3l1.3 1.8l-0.2 3l2 1.6l4.1 0l0 -1.3l1.1 -1.5l2 0.4l2.6 0.1l1.4 -2l1.3 2.9l1.4 -0.2l2.1 3.5l-0.1 2.2l-1.3 0.4l-1 1.5l-0.3 3.1l-1.9 4.2l0.1 1.4l-0.9 2.4l-1.4 0l-0.4 2.5l0.4 1.1l2 0.6l1.1 1.8l1.5 -0.7l-0.3 2.8l2.1 1l-0.2 1.4l3.6 0.8l-1.3 1l-1.1 2.1l-0.3 1.6l0.6 1.3l-3.6 4.1l-0.2 1.8l1.4 0.5l0.7 1.1l1.5 0.3l2.8 -0.6l1.2 -1.8l2.7 -0.7l0.2 -2l0.8 -1l0.3 -0.2l2.4 -1.5l1.1 1.5l3.3 -0.1l1.4 2.7l4.3 0.9l1.3 1.1l3.5 -0.1l1.8 2l0.4 -1.1l2.6 -1.8l0.6 -2l-0.3 -2.3l2.3 -0.5l2.8 -1.1l3 -1.6l2 -2l0.8 0.3l3.2 -0.5l0.9 -1.5l1.6 -0.6l-1.1 -3.7l2 -2.8l2.5 -0.4l1.6 0.7l2.3 2.9l1.2 2.8l1.2 0.2l0.5 1.5l2.4 -2.3l1.3 2l1 -0.5l1 1.9l1 0.8l3.3 -1.9l2.3 -0.3l0.6 -2.6l0.2 -2.8l2.3 -0.8l1.4 -1.3l1.5 2l1 -0.4l3.3 2.7l-0.6 -2.2l0.1 -1.3l1.5 -2.2l1.9 -1l1 1.7l2.4 -0.3l1.6 1l0.5 -1.3l-0.5 -1.4l0.9 -2.1l-1.6 -0.9l1.9 -1l1.1 1.4l3 0.5l1.9 -4.3l0.1 -1.5l1.5 -1.5l0.3 -1.5l-1.4 -3.2l-3.2 -1.1l0.6 -2.8l1.2 -0.9l0.4 -1.8l-1.1 -2.8l1.7 -2.3l0.8 -0.1l-0.8 -2.2l-0.3 -0.7l2.3 -1.4l-0.8 -2.5l-1.4 -0.1l-0.8 -1.9l-3 0.6l-1.9 1.6l-0.8 -1.3l-1.9 0.5l-3 2.1l-1.8 -1.4l1.7 -0.6l0.9 -1.3l-0.4 -0.9l1.5 -1.5l2.3 -1.7l0.7 -1.9l1.1 -0.7l2 0.5l0 -1.2l2.8 -2.6l0.4 -1l-1.2 -2.2l-1.7 -1.2l-0.8 -3.9l1.5 -1.8l-1.4 -1.5l0.9 -3.5l-1.8 -1.3l-0.2 -4.1zM631.2 638.8l0.8 2.2l0.7 0.2l-1.5 -2.4z","c":[579.9,641.2]},"YN":{"name":"云南省","d":"M548.4 621.6l-1.5 -4.3l1 -0.9l-0.3 -1.4l-1.7 0l-0.3 -1.7l-2.1 -0.5l-4.3 4.4l-2 0l-3.4 1.4l-3.4 -2.6l-0.7 -1.4l0.8 -1.8l0.1 -1.8l1.1 -1.6l-1.4 -1.1l-1.5 -0.4l-1.2 -2.2l0.2 -3l1.8 -0.4l-0.8 -1.4l-2.8 -0.6l-4.2 0.9l-2.4 -0.1l-1 1.8l0.9 1.5l0.9 3.2l-2.1 1.9l-2.5 -0.6l-1.4 0.6l-2.1 2.4l-0.8 1.8l1.1 0.3l0.6 1.5l-0.2 2.8l-0.4 1.1l-4 3.6l-3 4.1l-3.1 1.8l-0.9 -0.9l-1.2 3.3l0.5 2.9l-0.9 2.4l0.4 2.6l1.4 1.7l1.1 3.9l0.5 3.4l-1.3 0.7l0.1 2.5l-5.2 2.2l-0.6 1.4l-2.2 -1l0.8 -1.3l-1.4 -1.3l-4.5 2.6l-2.1 0.7l-2.9 3.1l-1.7 -0.6l-2.4 -0.2l-0.9 1.1l-1.2 -1.5l-1.1 -2.4l-2.2 -0.2l-0.8 -1.3l1.1 -0.8l0 -1.6l-2.5 -2.6l-1 0.1l-1.2 -2.3l1.4 -0.2l-0.5 -3.1l-1.5 -0.7l0.9 -1.6l-0.6 -1l-2 -0.5l0 -1.2l-2.5 -1.6l0.8 -3.9l-1.9 0l-0.6 -0.7l-0.3 -2.5l-1.3 -2.2l-1.7 -4.5l-0.1 -1.1l-1.3 -0.5l-0.4 -1.8l-1 -0.8l0.3 -1.3l-0.7 -1.5l-2.8 2.5l-1.9 -1.4l-2.8 3.1l0.1 -3.1l-1.9 -0.4l-0.2 -1.4l-2 -2.2l-1.2 -2.7l0.2 -0.9l2.4 -0.4l0.8 -1l-0.2 -1.6l-2.3 -1.1l0.4 -1.3l-1.6 -1.3l0 -1.2l-1.2 -1.6l-1.6 -0.7l-1.5 -1.8l-1.4 -2.5l-1 -0.2l-0.3 1.7l-1.2 0.6l-2 3.5l-1.2 0.1l-0.1 2.3l0.6 1l-1.5 4.9l-1.3 -1.1l-2.5 -4.7l0.6 -1.5l0 -2.2l-1 -2.5l-0.2 -3.3l0.7 -2.4l-0.3 -4.9l0.3 -1.3l-2.6 0.2l-0.5 0.9l0.9 3l-1.8 1.2l-0.3 2.1l1 1.3l-1.2 0.6l-1.6 -0.6l0 -2.2l-0.6 -1.8l-1.7 0.6l-1 1.2l-0.2 2.1l0.5 1.8l-1.8 1.5l0.7 2.7l1.7 4.8l-0.8 2.6l-1.7 1.4l-1.3 -0.5l-2.7 1.6l-0.8 -0.3l0 -3l-1.3 -3.2l-1.8 0.5l0.9 2.7l-1.9 0.7l-0.7 1.4l0.3 0.9l-0.7 2.5l1.3 2.4l0.2 4.5l1 0.9l0.4 3.1l2.3 -0.5l0.1 -2.4l3.1 1.7l2.3 0.9l-0.3 4.4l0.6 0.7l-1 2.7l0.7 9.4l-0.5 2.2l0.6 1.8l-1.3 6l-1.1 0.9l-0.3 1.6l1.2 1.3l-0.4 1.3l-1.3 -0.4l-1.6 0.4l0.5 3.4l1.4 1.1l0.3 1.6l-1.4 1.2l-1.7 -1.2l-1.6 1.4l-0.5 2.1l-1 0.4l-0.3 1.6l-1.6 0.5l-1.5 -1.1l-2.5 2.1l0.4 1.2l-0.5 1.7l-1.5 1.4l-2.7 2l-2 -1.4l-1.1 2.5l-1.2 1.7l-0.7 2.2l0.2 1.6l1.1 0.8l-0.5 1.2l-1.8 -0.2l-2.3 1.2l-0.3 3.6l-0.5 2.5l0.6 1.3l1.7 -0.3l0.8 2.2l-1.1 0.4l2 1.9l-0.8 0.7l-0.2 2.5l-2 1.4l-2.5 2.5l3.1 1.4l1.7 -0.6l3.1 -2.2l4 -1.3l2.6 -0.5l2.6 0.5l4.2 -0.3l0.9 1.1l2.6 -0.9l3.3 -0.3l0.3 1.2l-2.6 1.5l-2 2.6l0.1 2.7l1.8 0.1l0.7 1.3l0.4 2.2l0.6 0.8l-1.6 1.2l2 2.7l0.4 2.6l-1.1 2.2l2.2 1.2l2.1 1.8l1.7 -0.2l1.4 0.6l2 -1.1l0.6 0.7l3.1 1l-0.3 1.3l0.8 1.8l-0.7 0.6l-1.7 -0.9l0.2 2l-1.3 0.4l-0.4 1.4l-1.2 0.1l1 4.1l-0.2 1.8l-1.9 1.7l-1.5 2.5l0 1l-1.8 1.9l1.3 1.2l3.8 0.5l1.8 -0.6l3.4 0.8l1 0.8l3.6 0.2l2.2 0.4l0.5 1.9l-1 1.4l-0.4 1.9l0.9 2.6l1.2 0.9l0.9 -0.7l1.6 0.9l-1.4 1.7l0.4 1.8l2.2 1l1.3 -0.2l1.1 -1.1l1.9 0l0.9 1.7l2 0.2l3.3 -1.3l1.7 -2l2 -1.6l2.5 -0.4l1.6 -1.4l0.5 1.9l0.8 0.5l0.3 1.8l0.8 0.7l-0.4 3l-1.2 0.3l0.8 1.7l1.3 0.7l-0.5 1.5l1.4 1.3l2.1 -1l3.1 -0.4l2.9 1.4l0.6 1.1l1.3 0l1.6 -2.3l-1.9 -1.1l0.1 -4.1l1.4 -2.1l-1.1 -3.4l0.6 -2.3l-2.2 -2.3l-1.8 -4.1l0.5 -1l-0.9 -1.8l1.6 -0.9l1.1 -2l0.1 -2.3l2.1 -0.6l1.8 2.7l1 -1l1.5 0.2l1.4 -0.6l1.8 0.6l2.6 -0.5l1.5 -2.1l1.7 -1.7l1.2 -2.9l1.1 -0.2l3.7 1.7l2.3 1.9l1.6 0.7l1.1 2.4l2 1l0.9 -1.1l2.4 -1.5l0.3 -2l1.8 -0.6l0.9 -2.3l1.1 -0.3l1.4 0.9l0.3 2.2l1.5 1.5l1 -1.7l-0.2 -0.8l1.6 -2l2.5 2.4l1.2 1.6l3 2.6l0.9 -1.6l0.8 -3.4l1.5 -1.8l3.3 -0.4l-0.4 1.2l2.5 1.9l4.6 -3.5l1.7 0.7l1.3 -0.2l0.7 -1.6l1.6 -0.7l0.2 -1l-1.1 -3.1l6 -3.4l1.8 -0.4l1.2 0.4l1.8 -2.9l1 1.7l1.5 0.5l1.2 2l0.9 0.4l-0.4 -1.1l6 -6.1l1.6 -0.5l1.9 0.8l0.3 0.9l2.9 -2.7l-0.4 -0.8l0.7 -2.7l-0.4 -1.6l1.1 -0.7l-1.4 -2.9l-1.5 -2.1l-0.1 -0.9l-2.7 -0.7l-0.5 1.9l-1.1 0.2l-1.6 -1l-2.3 1l-0.5 -2.1l-1.9 -0.1l-0.9 2.6l-1.8 -0.6l-1.5 -1.2l-2.7 -0.2l-0.4 -1.4l0.7 -1.1l-1.1 -1.6l0.7 -0.9l-1.8 -2l-1.4 -0.6l-1.3 0.7l-2.9 -0.8l-2.7 0.6l-1.3 1.2l-1.3 -1.3l-1.2 -2.5l-0.6 -2.6l0.8 -1.8l0.2 -1.8l3.6 -4.1l-0.6 -1.3l0.3 -1.6l1.1 -2.1l1.3 -1l-3.6 -0.8l0.2 -1.4l-2.1 -1l0.3 -2.8l-1.5 0.7l-1.1 -1.8l-2 -0.6l-0.4 -1.1l0.4 -2.5l1.4 0l0.9 -2.4l-0.1 -1.4l1.9 -4.2l0.3 -3.1l1 -1.5l1.3 -0.4l0.1 -2.2l-2.1 -3.5l-1.4 0.2l-1.3 -2.9l-1.4 2l-2.6 -0.1l-2 -0.4l-1.1 1.5l0 1.3l-4.1 0l-2 -1.6l0.2 -3l-1.3 -1.8l0.3 -1.3l1.2 -0.5l-1.5 -4l-1.6 0.3l0.2 -1.9l1.3 -0.1l1.1 -1.9l2.3 -1.6l0.8 -2.3l1 -0.9l4.3 3.7l2.5 -2.5l1.3 -2.1l2.7 1.2l0.8 2l1.4 0.5l4.3 -1.1l1.7 0.6l3.1 -2.1l2.3 0.6l1 -1l0 -2.5l1.4 -1.4l0.1 -2.2z","c":[470.6,681.3]},"XZ":{"name":"西藏自治区","d":"M270.2 409l-3.6 -1.9l-1.8 -2l-1.4 -0.3l-5.5 -3l-0.5 -1.1l-2.3 0.2l-0.8 1l-1 -2l-1.1 -0.6l-0.6 -1.8l-1.7 -0.8l-2 0.3l-2.1 -0.7l-2.1 0.7l-2.2 -0.5l-1.7 0.6l-3.3 -0.4l-3 0.4l-1.7 -0.5l0.1 -1.3l-1.3 -0.3l-1.9 0.9l-1.8 -0.1l-0.9 1l-2.7 -0.7l-1.3 0.8l-3.1 -1.2l-1 0.9l-5.6 -0.2l-0.7 0.8l-1.4 -0.3l-1.8 0.5l-0.4 1.5l-2.4 3.9l-2.9 1.8l-2.4 -0.5l-3 0.5l-1.1 1.7l-4 -2l-1.4 -2.3l-2.4 0.6l-1.6 -0.6l-6.3 2l-3 0l-2.3 0.4l-0.3 1.7l-2.4 0.9l-4.4 0.3l-1.3 -1.7l-1.8 0l-0.6 0.8l-3.7 -0.7l-2.5 -0.1l-1.4 -1.3l-2.9 -1l-2.7 -0.6l-0.7 -1.6l-1.1 -0.8l-0.1 -1.5l0.5 -2.7l-2.9 -1.2l-1.4 0.9l-1.5 -1.6l-3.5 -1.3l-2.5 3l-5.7 1.2l-0.2 2.4l-2.6 1.2l-3.4 -0.6l-1 0.4l-3.1 -0.7l-0.7 -2.5l-1.3 -0.8l-2.7 0.2l-2.4 -2.6l-1 1.9l-3 -1.5l-2.8 -0.6l-0.2 -1.3l-2.5 -0.6l-1.1 -0.9l-2.3 0.1l-1.5 1.8l1.2 2.4l-1.9 -0.4l-0.8 1.1l-2.4 1.4l-1.7 0.3l-0.7 2.9l-2 1.4l-1.4 1.8l-0.1 1.1l-3 4.1l-2.4 0l-3 -0.9l-4.9 -0.3l-1.2 -1l-2.9 0.2l0.1 1.6l-1.1 0.1l-2 3.3l-2.3 -0.1l-1.4 0.7l-1.4 -0.3l-0.4 1.2l1.2 1.1l0 2.1l-0.8 2.6l0 1.4l-1.9 0.8l0.2 3l1.1 3.4l2.5 3l0.3 2.4l1.3 1.8l-0.7 0.9l-0.2 2.5l1.2 1.9l-0.8 1.1l-0.7 2.3l1.1 1.6l-0.8 1l0.2 1.9l-1.5 1.6l-2.4 0.4l-1.2 2.1l-1.7 -0.6l-0.9 0.8l-2.3 -3.1l-0.1 -3.1l0.6 -0.8l-1.3 -2.1l-1.3 0.8l-2.1 0l-2.7 1.1l0.8 2.5l-0.6 1.1l0.4 2.1l-2 1.9l0.3 1.6l1 0.6l0.9 2.4l2.3 2.5l-0.8 1.2l-1.5 0.4l0.7 4.5l1.1 1.7l-2.3 1.2l0.3 2.4l-1.1 1.6l0.4 1.4l2 1.8l0.8 2.3l-0.6 0.8l0.2 1.8l1.3 1.6l1.7 -0.1l0.4 1.7l2.1 0l0 -1.1l1.9 -0.8l0.1 1.3l1.5 0.2l1.1 2.7l1.3 -0.4l1.7 0.9l1 2.3l1.8 2.3l-0.3 2l0.9 2.1l1.6 1.5l1.5 -0.3l1.8 1l0.5 1.1l1.3 0.5l1.8 2l1.6 0.2l1.4 1.4l1.3 2.5l1.6 0.8l0.3 0.9l1.8 0.9l0.3 2.4l-0.3 2.2l0.5 1l1.7 0.7l2.8 -2.7l1.4 -0.9l0.8 -1.4l0.5 -3l1 0l1.6 1.4l0.5 -1.3l1.3 -0.1l2.1 2l2.1 0.7l1.9 1.7l2.3 -0.1l0.3 1.1l-0.8 1.6l1.3 2.3l0.4 1.8l2.8 2l1.3 1.8l1.2 0.1l0.5 1.7l1.6 1.3l0.7 3l0.9 1.1l2.3 0.1l2.2 2.9l2.4 0.6l1.5 2.6l1.6 5.4l1.2 2.3l1.9 1.2l1.7 -1.5l1.4 0.2l0.6 -0.9l1.9 -0.3l1.5 1.1l2.2 0.6l0.9 4.1l-0.6 1.6l1 0.5l-0.8 1.7l1.5 2.5l1.5 0.4l0.9 2.9l2.6 0.7l1 2.5l2.8 2.1l2.4 0l1.9 -1.6l1.3 0.2l1.1 1.4l-0.4 1.8l-2 1.5l0 2l2.4 2.6l2.9 -0.3l2 0.3l2.4 1.5l1 -2l0.7 0.3l0 3.3l1.7 1.6l0.4 2.8l1.2 1.9l-0.8 0.9l1.9 1.2l1.5 -0.2l-0.4 -2.3l2.7 -2.9l0 4.4l3.9 2.3l1.5 -0.8l1.2 -1.9l3 -0.7l0.8 1.8l2 0.6l1.1 1.7l1.9 0.6l1.2 2.6l2 1l1.8 0l2.8 0.7l2.5 -0.5l0.1 1.1l2.5 0.7l2.4 -2.5l2.9 1.5l2.8 -0.2l0.9 -0.8l1.8 0.7l2.2 -0.7l0.8 0.4l3.6 -1.9l1.6 -0.3l0.5 1l1.7 0.3l1.3 1.6l0.3 3.8l-0.6 0.7l-0.8 3.1l-1.9 2.1l0.1 3.7l1.1 0.7l0.5 2.6l1.2 1.6l1.7 -0.4l0.4 -1l1.6 -0.5l0.7 -1.1l-1.3 -2.5l0.5 -1.4l1.2 -0.7l-0.4 -1.4l1.2 -0.7l1.5 -2.6l1.2 -1l1.7 -0.4l1.7 -1.8l0.5 -1.4l3.3 -2.5l2.3 0.2l1.5 -1.4l2 1.7l1.5 0l0.9 1.4l1.4 0.1l0.6 -1.1l1.9 1.4l1.3 0l1.4 2.3l2.5 0.4l1.4 1.1l2.4 -0.9l1.8 1.1l1.5 2.3l2.3 2.4l1.7 0.5l0.9 -1l0.4 -1.6l1.8 0.2l1.4 -1.8l2.8 1.6l0.2 1.6l2.3 1.3l0.3 2.9l-0.6 1.6l-1.2 0.8l0 2.5l3 2.2l1.8 -0.3l2 0.8l1.3 -0.1l1.7 4.9l-1.2 0.6l-1 1.5l-0.1 2.6l1.4 2.3l-0.6 2.3l3.6 -0.4l2.3 0.1l3 -0.5l2.7 0.2l2.2 1.5l2.2 -0.2l3.9 1.2l2.5 -0.3l6.7 0.1l5.7 -1.8l0.5 -2.8l2.7 -2.8l6.7 -5.5l5 0.2l4.1 -1.6l3.3 -1l2.8 -1.7l1 -0.1l4.5 -1.9l1.6 -2.1l0.5 -1.5l1.4 -1.1l1.8 -0.3l3 -1.3l4 -0.6l2.1 2.4l5.6 -0.2l0.3 2.1l1.3 0.6l1.3 -0.9l1.2 2.3l0.8 -0.2l1.6 1.3l1.2 1.9l1.8 0.5l1.1 1.4l2.4 0.5l0.6 1.3l1.9 0.7l1.3 -0.6l1.8 -1.7l2.4 -0.1l1 -2.4l-1.8 -1l1.1 -3.2l0.9 -1.8l2.4 -0.9l-0.6 -1.4l0.9 -2.4l1.1 -1l2.2 0.7l0.9 1.3l-0.1 1.5l1.1 1.7l2.2 -0.7l4.2 5.4l0.7 -1.4l1.9 -0.7l-0.9 -2.7l1.8 -0.5l1.3 3.2l0 3l0.8 0.3l2.7 -1.6l1.3 0.5l1.7 -1.4l0.8 -2.6l-1.7 -4.8l-0.7 -2.7l1.8 -1.5l-0.5 -1.8l0.2 -2.1l1 -1.2l1.7 -0.6l0.6 1.8l0 2.2l1.6 0.6l1.2 -0.6l-1 -1.3l0.3 -2.1l1.8 -1.2l-0.9 -3l0.5 -0.9l2.6 -0.2l-0.6 -2.2l-0.4 -4.7l0.2 -0.9l-1 -2.7l0.9 -3.8l0.9 -1.9l-0.2 -3.4l-1 -1.7l0.2 -2.9l-0.2 -3.9l-0.5 -1.7l-0.3 -4l1.1 -0.6l-2 -2.9l-1.3 -1.5l0.7 -1.9l-1.2 -1.3l-0.4 -1.6l-2 -1.9l0.2 -1.4l0.8 -1.8l0.9 0.1l1.5 2l2.3 -2.7l-0.7 -1.3l-2.4 -1.9l-2.8 -3.7l-0.1 -1.3l-2.3 -2.8l0.7 -4l-2.3 -2.7l-1.1 -3.3l-0.1 -1.9l-1.7 -1.4l-3.3 -2.1l-3.8 -1.3l-1.2 0.1l-3.1 -0.5l-0.9 -1.4l-1.3 1.9l-0.1 1.7l0.5 2.4l-1.1 1.1l-1.3 -0.6l-0.9 2.5l0.9 1.2l-2 1.9l-5.2 -0.6l-0.9 0.8l-2.8 0l0 1.3l1 1.3l-1 0.7l1.3 3.3l-1.3 0.9l-3.9 -1.2l-2.3 -2.1l-0.6 -2.9l-3.2 0.1l-1.1 2.9l1.2 1.8l-1 2.2l-0.9 -0.2l0 -1.9l-1.5 -0.9l-1.3 -1.6l-1.6 -0.9l-1.7 3l-0.7 -1.6l-2.7 -1l-1.7 0.8l-1.6 -1.6l-1.4 -3.8l2 -2.1l-0.1 -2.2l-2.4 -0.1l-0.7 -1.1l-0.4 -2.2l-2.5 0.4l0 -1.4l1.8 -0.1l0.6 -1.4l-2.6 0l-1.6 -1l-1.5 0l-2.5 -2.8l-0.3 -1.4l-1.7 -1.5l-2.3 0.9l-2.4 -0.3l-0.6 1.6l-3.2 -0.2l-0.6 1.4l-2.7 -0.2l-1.2 -0.9l-1.9 0.2l-0.5 -2l-1.8 -0.9l-1.3 0l-0.7 1.1l-2.1 0.8l-0.7 -1.9l-1.6 0.5l-2.3 -3.4l-3.3 0.4l-0.9 -2.7l-2.6 0.6l-0.7 -0.8l-2.5 -1.1l-1 0.9l-5.1 -1.7l-2 0.8l-0.9 -0.9l0.7 -1.5l-1.3 -1.6l-3.7 1l-0.8 -2.1l-5.4 -3.7l-1.4 -1.9l-1.2 0.8l-3.6 -2.2l-1.7 1.4l-1.3 -1.2l-4.9 -0.7l-1.7 -0.7l-3.5 -3.5l-1.6 -0.2l-1.2 -1.3l-1.2 -2.8l-2.4 -1.2l-0.2 -1.5l-1.2 -0.9l-0.3 -1.4l0.7 -1.6l-1.7 -1.5l0.1 -1.5l-1.7 -1.6l-1.6 -2.5l-0.6 -2.2l0.5 -1l2 -0.3l1.2 -0.9l1.4 -3.3l-0.9 -1.9l0.6 -1.2l0.2 -4l-1.2 -1l0.3 -1.5l1.3 -0.1l1.4 -1.4l-0.5 -2.2l-2 -0.7l-0.7 0.6l-1.6 -0.4l-0.2 -1l0.9 -2.6l0.1 -1.4l-1.1 -0.5l-0.6 -2l1.3 -2.5l-0.2 -0.8l3.5 -0.7l1.1 -1l-0.4 -1.9l1.4 -1l0.2 -3.5l1.3 -2l-2.6 -0.5l-3.8 -2.2l1.2 -2.2l2.4 0l2 -1z","c":[229.6,507.6]},"SN":{"name":"陕西省","d":"M640.2 461.6l-1.6 -0.2l-1.3 -1.8l0.2 -2.2l-0.4 -2.1l1.5 -2.9l0.8 -3l-0.1 -2.7l1.2 -1.8l1.3 -4.3l1.2 -2.8l-0.7 -1.6l-0.7 -4l-1.7 -4.4l-0.5 -2.1l0.4 -1.9l-0.4 -1.8l0.6 -3.7l-0.2 -2.2l-1.4 -1.6l0.3 -1.9l-0.7 -0.8l0 -4.4l-0.8 -1.2l1.4 -0.6l3 -5.1l0.7 -2.2l-1.2 -0.4l0.2 -1.5l1.6 -0.4l0.9 -2.5l-0.6 -2.8l-0.8 -2l-1 -0.4l-1.6 -3l-1.3 -0.7l-0.6 -3.2l0 -2.2l1 -0.5l0.1 -1.9l1.4 -0.4l1.4 -1.4l0.5 -1.7l1.6 -0.4l0.6 -3l-0.7 -1l1.9 -5.2l-0.7 -2.7l2.6 -2.4l0.3 -2l1.3 -3.5l-2.2 -1.4l-1.1 -0.7l1.3 -3.9l-2.3 0.5l-2.5 1.5l-2 3.4l-0.5 1.8l-1.3 0.2l-1.9 -2.5l-2.3 1.8l-2.5 -2.5l-2.1 -0.1l1.8 3.4l-4.3 2.2l-1.8 1.7l-3 3.4l0.1 1.2l-0.7 1.7l-1.9 0.6l-1.8 2.7l-1.1 0.5l-2.6 4.3l-2 2l-1.8 5.3l0.5 1.2l1.8 1.3l-0.7 2.8l-1.4 1.2l-1 -2.1l-1.4 1.9l0.1 5.4l-2.9 1.2l-1.7 -0.8l-1.8 1l-2.2 0.3l-0.9 -0.6l-2 1.1l-2.1 -1l-0.6 -2.7l-2.5 -0.9l-3.4 -0.7l-0.5 2l-2.1 0.3l-0.2 1.4l-1.1 1l-1.2 3.3l-1.1 0.9l-0.4 3.3l1 2.3l0.5 2.3l-1.1 0.9l0.8 4.3l3 0l1.1 1.8l2.3 -0.2l0.9 0.7l3.3 1.1l0.7 1.3l2.2 2.2l3.6 0.9l1.4 -0.3l1.2 2.3l3.8 0.4l0.6 1.1l0 3l1.3 2.6l-0.9 4.5l-1 -0.1l-1.7 1.9l0.6 1.1l-0.1 2.8l0.5 2.2l1.4 1l0.4 3.2l-0.3 2.1l-2.2 1.3l-2.3 0l-2.2 0.6l-1.2 -1.1l-2.2 1.2l-3.3 0.1l-2.2 -1.2l-1.4 1.3l2 4.3l1.7 1.5l-2.1 1.1l-3.3 -0.3l-0.7 1.4l-2.2 -0.5l-2.1 0.1l-0.6 1.2l-3 -2.2l-0.1 -1l-3.3 -1.6l-1.2 0.4l-2.3 -0.5l-1.7 0.7l-1.3 -0.2l-1 2.3l1.7 4.8l-1.3 0.6l-1.5 2.4l-1.9 1.5l0.4 1.4l2.2 -0.4l2.8 1.8l0.6 1.4l1.4 0.5l-0.6 2.6l-1.7 0.1l0 2.4l-1.5 1l-0.5 3.1l-1.1 1.4l1.5 1.7l-0.6 1l0.5 1.9l0.9 0.3l0.9 2.7l-0.7 1.5l-1.6 -0.5l-0.2 -1.8l-2.6 0.2l-2.1 1.4l-1.5 -0.5l-0.4 -1.1l-2.1 0.1l-2.4 2.8l-0.2 2.6l-2.2 -0.1l0.8 2.1l2 1.3l1.9 0.7l0.1 1.1l-1 2l0.1 1.7l-3.4 2l-2.7 0.7l-1.7 -0.8l1.9 4.9l2.3 -1.4l1.9 -0.3l0.5 -1.1l3.6 -1.1l0.9 0.9l-0.4 1.4l0 0.2l2 1.3l3.2 0.6l1.4 1.2l0.5 -1l4.1 -0.9l1.2 -1l3.3 0.8l1.9 -0.5l1.6 1.6l-0.3 2.5l0.9 1.3l1.2 0.3l1.4 1.5l0.9 -2l1.3 -1.2l2.8 3.6l1.3 -0.8l1.5 0.3l1.4 1.3l2.2 3.1l1.1 0.1l1.1 1.1l0.7 -1.5l1.2 -0.5l1.8 0.2l1.1 -1.3l1.3 1l3 -1l0.8 1.5l1.4 0.7l1.8 1.5l1.1 -0.2l1 1.3l2.2 1.4l1.6 0l5.7 4l0.1 1.8l1.9 0.2l3.9 -0.6l0.8 -1.9l-0.7 -1.8l0.5 -1.8l-0.8 -1.1l0.4 -2.2l-2.5 -4.3l0 -2l1.2 -2.8l1.2 -0.8l-0.2 -1.3l1.8 -0.3l1.7 0.6l1.7 -0.4l2.1 0.9l2.4 -1.2l1 -0.9l-1 -1.1l-0.1 -1.9l-1 -1.5l-3.8 -1.4l-2.2 0.6l-0.5 -0.6l0.4 -3.7l-2 -1l-2.1 0.2l-2.6 -0.8l1.3 -2l3.3 -0.6l0.8 0.5l2.2 -0.4l3.4 1.1l2.4 -0.6l1.1 1l2.2 0l0.6 -0.6l1.8 0.2l1.2 -2l1.1 2l1.1 0.1l1 1.4l2.2 -2.6l1.7 -0.1l1.1 -1.3l0.7 -1.7l-0.7 -2.4l0.5 -0.8l0 -0.2l-0.6 -2.3l-2.4 -1.1l-2 -3.6l-3.1 -1.1l-0.5 -0.8l1.4 -1.9l-1.6 -3l0.8 -1.4l-3.8 -1.7l1 -2.2l-0.6 -1.2l-1.3 -0.9l-0.9 -1.9l0.3 -1.9z","c":[612.4,447.7]},"GS":{"name":"甘肃省","d":"M569.3 438l-0.3 0.1l-1 1l0.5 1l-0.3 2.7l1.2 2.6l-0.6 2.4l-1 0.8l-1.7 0.3l-1.5 -2.2l0 -1.1l-1.2 -0.7l-1.6 0.4l-0.2 -0.6l-0.1 -0.2l0.1 -0.1l-0.4 0.2l-2.8 0.9l0 -0.8l2.7 -0.9l0 -0.2l-3.2 -1l-2.8 -2.5l-0.9 -2.2l-1.2 0.8l-2.1 -0.3l-2 -2.7l-0.8 -2.2l0.3 -2.1l3.1 -2.6l-2.1 -5.1l-0.1 -1.4l-1.3 -2.4l-1.8 -2.2l-0.1 -2.3l1.8 -0.3l0.3 -1.3l-1.6 -2.2l-1.2 0.1l-0.2 -2.4l-3.7 -1l-1.8 -3.9l-1.4 -0.8l-2.4 1l-0.2 -2.2l1.5 -0.7l-0.6 -1.8l-2.7 -0.7l-2.8 0.4l-1.4 -0.2l-1.8 0.4l-4.3 -3.8l-4.3 -4.8l-4.8 -1.9l-0.8 -4.1l0.2 -1.2l2.9 -1.5l-0.4 -2.8l-1.6 -2.9l7.8 -5.4l3.2 -5.7l2.2 -1.1l0.7 -3.2l-0.7 -1.8l-2.1 -3.1l0.8 -2.8l-2.3 -0.9l-1.7 -0.1l-4.5 1.6l-4.3 1.2l-2.7 2.6l-3.1 2.6l-6.7 -1.8l-2.8 -1.9l-3 1.4l-6.5 1.6l-1.2 0.5l1.5 2l2.5 2.6l-2.3 1.8l-3 3.3l-1.8 -0.7l-1.2 0.8l-0.6 -1.4l-4 -1.6l0.1 -1.6l-1.5 -0.4l-0.7 -1.9l-1.4 -0.8l-2.6 0.6l0 -1.4l-2.2 -0.5l0.6 -1.9l-0.3 -2.1l0.2 -4.7l-4 0.2l-1.9 -0.4l0.1 -1.8l-2.9 -0.8l-0.1 -2.2l-1 -1.9l-2.1 -0.5l-1.4 -1.3l-2.3 -0.8l-1.3 -1.7l-2.5 -0.8l-2.3 -0.2l3.1 -1.7l2.2 -0.8l1.5 -1.1l0.6 -2l1 -1.1l2.8 -1.6l0.3 -6l1.3 -1.7l0 -2.3l-2 -3.7l-0.8 -0.8l-6.4 -0.9l-1.9 1.9l-6.5 -0.7l-0.2 2.6l-1.3 1.5l-1 -0.4l-0.8 -2.1l-3.4 1.5l0.1 2.3l-1.8 -2.1l-0.2 -1.8l-1.7 0.5l0.9 1.6l-5 2.2l0.4 -8l-1.4 -0.6l-4.4 -3.9l-5.1 -8.3l-0.2 -0.8l4.2 -3.8l-6.5 -18.8l-2.6 -8l-3.4 0.7l-3.7 -0.4l-5.8 0.2l-6.3 3.7l-1 2.3l1.4 0.7l-0.6 1.9l2 2.7l-1.8 1.4l0.9 2.3l-0.5 1.5l-2.2 1.6l-2.4 1.1l-3.3 0.2l-1.5 0.6l-5.8 3.6l-1.4 -3.8l-4.8 1.9l-2.1 2.8l-3.7 0.3l-6.4 4.8l-3.2 3.2l-4 5l0 1.9l-1.3 2.9l-4.3 -0.2l-9.9 0.6l-1.1 5.9l-2.3 3.4l-1.6 6.3l-2.8 7.9l-2.4 3l-3.5 2.6l-0.1 4.1l0.7 0.6l1.6 -1.2l2.9 0.1l3.6 -0.2l1.3 -0.6l3.1 1.8l1 1.6l-0.7 2.7l1.6 0.8l3.1 0l4.7 0.3l2.4 2.5l-1.9 -0.1l-0.1 1.2l1.8 1.3l8.4 0l1.6 7.5l0.1 1.8l2.6 -0.2l2.4 0.3l2.9 -0.7l2.5 0.5l2.1 2.9l1 -0.3l3.5 0.9l2.8 -1.9l2.8 1.3l1.5 2.6l2.1 1.6l0.8 -0.2l2.6 1.2l2.2 -2.9l1.5 0.2l3.4 1.3l-0.5 -2.9l1.4 -1.4l0.3 -1.9l2.6 -1.9l1.9 1.1l1.7 -0.7l0.2 -1.8l-0.8 -0.8l-0.1 -3.8l-0.7 -0.9l0.8 -4.4l0.9 -0.9l-0.8 -1.3l4.4 0.4l2.1 0.8l2.6 2.3l2.8 1.7l0.3 1.1l2.2 0.9l3 1.9l1.3 1.7l2.7 -2l0.9 -3.3l1.8 0.1l1.1 1.8l2.1 0.7l3 -3.4l2.4 1.2l1 1.3l2.7 1l-0.8 1.2l2.5 2.6l2.3 1.8l1.4 2.7l3.4 3.7l2.8 2l3 1.4l3 2.3l-1.3 -4.3l-1.6 -1.5l1.2 -1.1l3 1.9l0.2 1.7l3.4 2.5l1.4 0.5l1.3 -0.4l2.3 0.7l1.2 1.9l1.6 -0.4l0 2.2l0.7 1.7l2.5 2.2l0.7 1.2l2.1 0.8l1.4 1.1l1.8 -1.6l2.4 0.9l1.2 1.8l2.1 1.4l0.3 0.9l2.4 -1.6l1.5 1l0 1.4l1.6 1.9l-0.2 1.4l1.3 1.5l3.9 2.7l0.5 1.4l2.5 1.7l-0.3 1.6l-1.7 0.6l0.3 1.3l-1.1 1.2l2 1.1l2.2 3.4l-1.6 1.5l0.4 1.3l2.3 2l-0.1 1l1.2 3.7l0.1 0.4l3.4 2.1l-1.6 3.5l-1.1 0.5l1.6 2l-1.1 3.4l-2.3 -0.4l-1.8 2l0.3 1.6l1.8 3.3l-1.3 1.5l-0.8 -0.8l-2.2 -0.5l-0.7 -0.8l-2.3 3.9l-1.7 -0.6l-0.5 1.6l0.4 1.9l1.5 2.4l-1.7 1.1l-0.3 1.3l-3.7 1.8l-0.9 1.7l-2.4 0.8l-0.1 5.8l1.4 2l1.7 0.1l2 3l-1.1 3l-1.5 -0.5l-0.2 1.5l-2 2.7l-1 -0.6l-4.2 0.4l-0.9 -1.6l-1.5 -0.8l-2.2 -0.5l-4.2 -2.3l-2.3 -0.1l-1.2 -1.2l-1.7 -0.1l-1.4 1.2l-1.1 3.2l0.7 0.5l1.2 2.8l1 1.1l1 2.3l2.9 1.2l0.6 1.2l-0.3 2.5l1.1 0l2.7 1l2.2 -1.2l1.5 0.7l0.5 1.8l0 2.2l1.8 0.2l1 -1l2.1 -0.8l0.3 2.2l0.8 0.9l-1.2 1.3l-0.2 1.6l-2 1l1.2 2l0.4 1.8l1.4 -1.8l2.2 0l1.2 -2.3l1.8 1l-0.4 -2l1.3 -1.7l2.5 0.2l1.3 -2.2l-0.3 -1.6l-1.7 -0.8l-0.6 -1.4l0.5 -1.3l-1.5 -3.2l-2.1 -2.4l1.7 0.1l1.6 -0.7l1.4 0.5l1.5 -2.2l2.7 -0.6l0.7 -1.5l1.4 -1.6l3.4 -1.7l1.2 1.5l-0.1 1l2.7 1.1l0.6 3.7l-0.7 1.1l1.1 1.2l-0.6 1.9l3.7 1.7l1.5 -0.1l1.5 -1.3l0.5 2l1.8 0.3l2.5 1.2l1.5 -0.5l2.2 0.3l1.2 -0.4l2.4 2l-0.4 1.3l1.2 3.2l0.9 0.3l1.9 6.5l0 3.6l-1.7 0.2l0.1 2.4l1.3 0.3l1.8 1.8l2.3 0.6l1.1 1.3l1.8 0.7l2 -0.5l0.7 1.3l2.7 -1.2l1.5 1.3l4.4 -2l1.9 -1.2l-1.3 -3.3l0.7 -1l1.5 0.2l1.7 0.8l2.7 -0.7l3.4 -2l-0.1 -1.7l1 -2l-0.1 -1.1l-1.9 -0.7l-2 -1.3l-0.8 -2.1l2.2 0.1l0.2 -2.6l2.4 -2.8l2.1 -0.1l0.4 1.1l1.5 0.5l2.1 -1.4l2.6 -0.2l0.2 1.8l1.6 0.5l0.7 -1.5l-0.9 -2.7l-0.9 -0.3l-0.5 -1.9l0.6 -1l-1.5 -1.7l1.1 -1.4l0.5 -3.1l1.5 -1l0 -2.4l1.7 -0.1l0.6 -2.6l-1.4 -0.5l-0.6 -1.4l-2.8 -1.8l-2.2 0.4l-0.4 -1.4l1.9 -1.5l1.5 -2.4l1.3 -0.6l-1.7 -4.8l1 -2.3l1.3 0.2l1.7 -0.7l2.3 0.5l1.2 -0.4l3.3 1.6l0.1 1l3 2.2l0.6 -1.2l2.1 -0.1l2.2 0.5l0.7 -1.4l3.3 0.3l2.1 -1.1l-1.7 -1.5l-2 -4.3l1.4 -1.3l2.2 1.2l3.3 -0.1l2.2 -1.2l1.2 1.1l2.2 -0.6l2.3 0l2.2 -1.3l0.3 -2.1l-0.4 -3.2l-1.4 -1l-0.5 -2.2l0.1 -2.8l-0.6 -1.1l1.7 -1.9l1 0.1l0.9 -4.5l-1.3 -2.6l0 -3l-0.6 -1.1l-3.8 -0.4l-1.2 -2.3l-1.4 0.3l-3.6 -0.9l-2.2 -2.2l-0.7 -1.3l-3.3 -1.1l-0.9 -0.7l-2.3 0.2l-1.1 -1.8l-3 0l-0.8 -4.3l-1.6 -1l-5.1 1.2l-2.1 -0.5l-2.9 -0.1l1.1 2.5l-0.7 2.9l0.6 1.6l-0.5 1.6l-2 0.8l-0.8 3.1l-1.2 0.8l2.2 1.8l-0.2 4.7l0.9 -0.7l3.9 1.8l1 -0.4l2.3 3.1l-0.7 3.7l-1.1 1l1.4 1.8l-1 1.7l-2.1 1.1l-3.3 -1.1l-1.1 0.1zM561.1 443.6l0 0.2l0.1 0.8l0.4 -0.2l-0.5 -0.8z","c":[521.2,430.7]},"QH":{"name":"青海省","d":"M503.6 423.4l-1.2 -3.7l0.1 -1l-2.3 -2l-0.4 -1.3l1.6 -1.5l-2.2 -3.4l-2 -1.1l1.1 -1.2l-0.3 -1.3l1.7 -0.6l0.3 -1.6l-2.5 -1.7l-0.5 -1.4l-3.9 -2.7l-1.3 -1.5l0.2 -1.4l-1.6 -1.9l0 -1.4l-1.5 -1l-2.4 1.6l-0.3 -0.9l-2.1 -1.4l-1.2 -1.8l-2.4 -0.9l-1.8 1.6l-1.4 -1.1l-2.1 -0.8l-0.7 -1.2l-2.5 -2.2l-0.7 -1.7l0 -2.2l-1.6 0.4l-1.2 -1.9l-2.3 -0.7l-1.3 0.4l-1.4 -0.5l-3.4 -2.5l-0.2 -1.7l-3 -1.9l-1.2 1.1l1.6 1.5l1.3 4.3l-3 -2.3l-3 -1.4l-2.8 -2l-3.4 -3.7l-1.4 -2.7l-2.3 -1.8l-2.5 -2.6l0.8 -1.2l-2.7 -1l-1 -1.3l-2.4 -1.2l-3 3.4l-2.1 -0.7l-1.1 -1.8l-1.8 -0.1l-0.9 3.3l-2.7 2l-1.3 -1.7l-3 -1.9l-2.2 -0.9l-0.3 -1.1l-2.8 -1.7l-2.6 -2.3l-2.1 -0.8l-4.4 -0.4l0.8 1.3l-0.9 0.9l-0.8 4.4l0.7 0.9l0.1 3.8l0.8 0.8l-0.2 1.8l-1.7 0.7l-1.9 -1.1l-2.6 1.9l-0.3 1.9l-1.4 1.4l0.5 2.9l-3.4 -1.3l-1.5 -0.2l-2.2 2.9l-2.6 -1.2l-0.8 0.2l-2.1 -1.6l-1.5 -2.6l-2.8 -1.3l-2.8 1.9l-3.5 -0.9l-1 0.3l-2.1 -2.9l-2.5 -0.5l-2.9 0.7l-2.4 -0.3l-2.6 0.2l-0.1 -1.8l-1.6 -7.5l-8.4 0l-1.8 -1.3l0.1 -1.2l1.9 0.1l-2.4 -2.5l-4.7 -0.3l-3.1 0l-1.6 -0.8l0.7 -2.7l-1 -1.6l-3.1 -1.8l-1.3 0.6l-3.6 0.2l-2.9 -0.1l-1.6 1.2l-0.6 0.8l-2 -0.3l-1.6 0.7l-3.7 0.2l-2.9 1l-6.3 0.5l-2.7 1.2l-11.5 0.9l-2.3 1.4l-1.1 0l-0.9 1.3l-5 -0.8l-0.6 1.7l0.2 1.8l2.1 2.7l1.2 0.3l0.4 -1.5l2.9 0l-0.6 2.5l-1.5 10.8l4.2 2.6l1.6 1.9l-0.5 1l1.5 1.4l1.1 -0.2l1.2 1.2l0.2 2.9l0.9 1.3l-0.3 1.5l1.5 1.2l-0.1 3.5l-2.1 -0.6l-1.1 0.9l-1.4 0.1l-1.3 1.1l-2.3 -0.4l-2.4 1.7l-1 3.7l0.4 1.8l5 2l-0.1 2.2l-0.8 2.5l0.8 0.6l0.3 4.3l-0.9 0.5l-1.7 -0.6l-1.3 1.6l-1.3 0.1l-1.1 -1.8l-1.9 -1.4l-2.1 -0.6l-2 0l-3.2 -1.1l-3.4 -2.7l-0.8 1.9l-1.8 1.8l-2.6 -0.3l-1 -0.6l-2 1l-2.4 0l-1.2 2.2l3.8 2.2l2.6 0.5l-1.3 2l-0.2 3.5l-1.4 1l0.4 1.9l-1.1 1l-3.5 0.7l0.2 0.8l-1.3 2.5l0.6 2l1.1 0.5l-0.1 1.4l-0.9 2.6l0.2 1l1.6 0.4l0.7 -0.6l2 0.7l0.5 2.2l-1.4 1.4l-1.3 0.1l-0.3 1.5l1.2 1l-0.2 4l-0.6 1.2l0.9 1.9l-1.4 3.3l-1.2 0.9l-2 0.3l-0.5 1l0.6 2.2l1.6 2.5l1.7 1.6l-0.1 1.5l1.7 1.5l-0.7 1.6l0.3 1.4l1.2 0.9l0.2 1.5l2.4 1.2l1.2 2.8l1.2 1.3l1.6 0.2l3.5 3.5l1.7 0.7l4.9 0.7l1.3 1.2l1.7 -1.4l3.6 2.2l1.2 -0.8l1.4 1.9l5.4 3.7l0.8 2.1l3.7 -1l1.3 1.6l-0.7 1.5l0.9 0.9l2 -0.8l5.1 1.7l1 -0.9l2.5 1.1l0.7 0.8l2.6 -0.6l0.9 2.7l3.3 -0.4l2.3 3.4l1.6 -0.5l0.7 1.9l2.1 -0.8l0.7 -1.1l1.3 0l1.8 0.9l0.5 2l1.9 -0.2l1.2 0.9l2.7 0.2l0.6 -1.4l3.2 0.2l0.6 -1.6l2.4 0.3l2.3 -0.9l1.7 1.5l0.3 1.4l2.5 2.8l1.5 0l1.6 1l2.6 0l-0.6 1.4l-1.8 0.1l0 1.4l2.5 -0.4l0.4 2.2l0.7 1.1l2.4 0.1l0.1 2.2l-2 2.1l1.4 3.8l1.6 1.6l1.7 -0.8l2.7 1l0.7 1.6l1.7 -3l1.6 0.9l1.3 1.6l1.5 0.9l0 1.9l0.9 0.2l1 -2.2l-1.2 -1.8l1.1 -2.9l3.2 -0.1l0.6 2.9l2.3 2.1l3.9 1.2l1.3 -0.9l-1.3 -3.3l1 -0.7l-1 -1.3l0 -1.3l2.8 0l0.9 -0.8l5.2 0.6l2 -1.9l-0.9 -1.2l0.9 -2.5l1.3 0.6l1.1 -1.1l-0.5 -2.4l0.1 -1.7l1.3 -1.9l0.9 1.4l3.1 0.5l1.2 -0.1l-4.4 -3.3l-1.6 -3l0.1 -4l3.2 -1.6l-0.8 -3.1l2.4 -2l0.4 -1.7l1 0l1.6 -1.4l-2.3 -1.4l-1.4 -0.2l-0.6 -1.3l0.3 -1.3l-1.9 -0.8l0.5 -1.7l-0.4 -4.8l1.2 0.1l3.8 -1.3l0.9 -1.7l-0.6 -2.1l1.9 -0.6l0.9 -1.1l2.6 0.6l1.3 1.6l1.2 0.1l2 1l3.5 0.3l0.6 2.4l-0.8 2.5l1 0.5l1.2 2.5l0.8 0.4l0.9 4.2l1.7 1.7l-0.2 1.7l0.7 0.8l-0.5 2.2l1.7 3l2 1.3l2.2 0.6l1.9 1.1l1.1 3.6l2 -0.3l3.3 1.5l0.5 1.2l3.2 0.6l0.7 -2.5l1.7 -2.5l2.9 1.6l1.5 2.2l0.2 2.6l-0.7 1.9l2.3 -0.1l0.6 -2.1l1.5 0.6l1.2 -0.8l2 3l0.5 1.4l2.1 0.6l0.1 -1.6l1 -0.6l2.3 0l1.7 1.2l2.8 -1.8l1.5 0.6l1.3 -1.4l0.3 -2.3l-1 -1.6l-1 -0.4l0.2 -1.8l0.8 -2.5l-0.9 -2.2l1.3 -1.7l2.1 0.2l1.5 2.6l0.4 -1.6l1.6 0l2.6 2.9l2 -4l-1.5 -1l0.9 -2.5l1.4 -0.5l0.1 -1.9l-1 1l-1.8 -0.2l0 -2.2l-0.5 -1.8l-1.5 -0.7l-2.2 1.2l-2.7 -1l-1.1 0l0.3 -2.5l-0.6 -1.2l-2.9 -1.2l-1 -2.3l-1 -1.1l-1.2 -2.8l-0.7 -0.5l1.1 -3.2l1.4 -1.2l1.7 0.1l1.2 1.2l2.3 0.1l4.2 2.3l2.2 0.5l1.5 0.8l0.9 1.6l4.2 -0.4l1 0.6l2 -2.7l0.2 -1.5l1.5 0.5l1.1 -3l-2 -3l-1.7 -0.1l-1.4 -2l0.1 -5.8l2.4 -0.8l0.9 -1.7l3.7 -1.8l0.3 -1.3l1.7 -1.1l-1.5 -2.4l-0.4 -1.9l0.5 -1.6l1.7 0.6l2.3 -3.9l0.7 0.8l2.2 0.5l0.8 0.8l1.3 -1.5l-1.8 -3.3l-0.3 -1.6l1.8 -2l2.3 0.4l1.1 -3.4l-1.6 -2l1.1 -0.5l1.6 -3.5l-3.4 -2.1l-0.1 -0.4z","c":[381.7,431.2]},"NX":{"name":"宁夏回族自治区","d":"M582.3 406.5l1.1 -0.9l-0.5 -2.3l-1 -2.3l0.4 -3.3l1.1 -0.9l1.2 -3.3l1.1 -1l0.2 -1.4l2.1 -0.3l0.5 -2l-2.8 -1.8l-1.4 0l-0.3 -1.6l-1.2 -1.6l-3.4 -1.6l-2.2 1l-4 -1.1l-3.9 -2.1l-1.3 -1.2l2 -1.7l0.8 -1.8l0.2 -3l0.8 -2.7l2.1 -3l2 -2.2l0.2 -2.6l-1.9 -1.2l-1.2 -2.4l0.2 -2.4l-1 -1.4l-1.1 0.5l-1.4 -0.4l-1.5 2.4l-1.9 -0.4l-2.1 0.7l0.3 2.2l-0.8 0.8l-1.8 -0.5l-0.8 1.6l-0.6 2.7l-1.5 1.4l0.4 1.1l-1.5 1.6l-0.2 2.2l-0.7 1.2l0.4 1.1l-0.9 5.2l0.8 1.6l-1.6 2.6l0.1 2.3l1.1 1.8l-0.7 1.5l0.1 1.8l-0.7 1.4l-2.5 0.6l-0.4 1.8l-4.9 -0.1l-3.6 1.6l-1.4 1.2l-2.9 0.3l-1.1 0.7l-6.5 0.5l-0.4 1.1l-2.2 0.9l1.4 0.2l2.8 -0.4l2.7 0.7l0.6 1.8l-1.5 0.7l0.2 2.2l2.4 -1l1.4 0.8l1.8 3.9l3.7 1l0.2 2.4l1.2 -0.1l1.6 2.2l-0.3 1.3l-1.8 0.3l0.1 2.3l1.8 2.2l1.3 2.4l0.1 1.4l2.1 5.1l-3.1 2.6l-0.3 2.1l0.8 2.2l2 2.7l2.1 0.3l1.2 -0.8l0.9 2.2l2.8 2.5l3.2 1l0.5 0.8l-0.1 0.1l0.1 0.2l0.2 0.6l1.6 -0.4l1.2 0.7l0 1.1l1.5 2.2l1.7 -0.3l1 -0.8l0.6 -2.4l-1.2 -2.6l0.3 -2.7l-0.5 -1l1 -1l0.3 -0.1l1.1 -0.1l3.3 1.1l2.1 -1.1l1 -1.7l-1.4 -1.8l1.1 -1l0.7 -3.7l-2.3 -3.1l-1 0.4l-3.9 -1.8l-0.9 0.7l0.2 -4.7l-2.2 -1.8l1.2 -0.8l0.8 -3.1l2 -0.8l0.5 -1.6l-0.6 -1.6l0.7 -2.9l-1.1 -2.5l2.9 0.1l2.1 0.5l5.1 -1.2l1.6 1zM561.1 443.8l-2.7 0.9l0 0.8l2.8 -0.9l-0.1 -0.8z","c":[562.8,402.4]},"XJ":{"name":"新疆维吾尔自治区","d":"M401.8 272l-0.1 -4l-6.5 -8.1l-0.5 -1.2l-0.1 -3.1l-1.6 -4.3l-1.2 -6l-1.2 -3.6l-3.2 -0.8l1.2 -4.4l0.8 -1.5l-6.7 0.3l-0.8 -0.9l-3.4 -1.5l-1.6 -2.6l-2 -1.6l-1.7 -0.4l-0.3 -1.5l-1.6 -2.1l-7.3 -5.4l0 -0.6l-3.1 -2.1l-5.1 -1.6l-3.8 -0.6l-2.3 -1l-4.5 0.6l-2.9 -1l-1.2 0.1l-2 -1.7l-4.6 -0.7l-1.8 0.2l-2 -0.5l-1.6 -2.1l-1.2 0.9l-2.1 -0.9l-1.5 -2l-1.9 -0.3l-1.6 -1l-0.8 -1.3l-0.5 -3.1l-1.4 -1.4l1.4 -5.3l3.4 -4l2.4 -1.9l0.2 -2.2l-1.2 -4.6l1.4 -1.2l2.1 -3.9l-0.9 -0.6l1 -3l-1.3 -2.6l-0.2 -3.1l-2 -1l-2.4 -5.3l-0.8 -2.6l0.8 -1.3l-0.8 -0.7l0.3 -2l-0.9 -1.3l-0.5 -3.1l-2.8 -1.4l-0.7 -1.3l0.4 -2l-2 0.2l-3 -0.3l-0.1 -1.4l-1.3 -0.5l-0.7 -3l-2.8 -0.6l-2.5 1.1l-2.3 -0.5l-1.6 -3.2l-1.7 -0.1l-1.6 -1.9l-0.9 -0.3l-0.6 -2.2l0.7 -1.2l-1.3 -2l-1 0.3l-0.9 -1.7l-2.3 -1.1l-1.1 -1.4l-1.9 -1l2.2 -2.3l-0.7 -1.4l-2.8 -1.6l-0.5 -2.9l1.8 -0.3l0.5 -3.5l-0.5 -1.5l-4.5 -0.2l-0.3 1l-3.9 -1l-1.7 -1.3l-3.4 -0.1l-1.1 1.7l-1.7 0.9l0 2.3l0.7 1.1l-1.2 1.3l0.1 1.2l-2.5 1.9l-1.2 1.8l-2.7 0.8l-1.6 -0.5l-1.4 1.1l-4.5 -1l-2 0l-1.7 1.6l-0.6 1.4l-1.7 1.4l-1.4 3.1l0 0.8l-0.9 10.3l-0.3 1.2l0.8 2.7l-1 3.5l-1.8 1.5l-0.9 1.8l-3.4 -0.4l-0.6 -0.7l-3.5 2.3l-1.6 0.2l-1 1l-0.9 -2.3l-1.2 -1.5l-3.8 0.1l-4.6 -1.7l-1.8 0.5l-1.1 -0.8l-1.2 0.2l-2.2 -1.8l-2.7 -1.3l-2.5 -3.3l-1.7 -0.3l-1.3 -1.7l-2 0l-1.2 3.2l-1.1 0.9l-1.9 4l-0.9 1l-3 5.7l-4.8 6.8l-1.8 3.6l-2 0.6l-0.9 3.6l-1 1l-0.9 2.1l-0.2 1.8l3.5 3.4l0.4 2l-0.8 2.6l-1.7 0.6l-2.7 -2.1l-3 0.1l-0.6 -1.2l-2.2 0.1l-1.2 -3.8l-3.4 0.3l-2.2 1.1l-2.1 -0.4l-3.5 0.1l-1.7 0.9l-2.1 0.3l-2.4 -1.3l-2.3 0.6l-2.4 -0.4l-0.9 0.9l-1.6 -0.8l-1 0.6l-1.3 -1l-4.8 2.3l1.1 1l-0.1 2l3 -0.5l-0.1 2.1l1.5 1.5l0.9 2.6l-1.6 2.4l-0.2 5.1l-1.1 3l0.6 1.3l-0.4 2.1l0.4 1.9l-0.3 2l1.8 8.1l-0.1 1l-1.8 2.2l1.3 1l-0.3 2.9l-1 0.5l-2.6 -0.3l-4 1.4l1.3 2.3l1.5 0.9l-3.4 1.3l-2 -0.6l-1.6 2.5l-1.4 1.6l0.4 2.4l-0.9 2.2l0 1.7l0.7 1l-0.5 2l-2.1 0.2l-0.6 2.3l-1.5 0.8l-2.7 -0.6l-1.3 0.3l-1.9 2.4l-2.2 -0.4l-1.7 0.8l-1.4 -0.7l-2.4 0.3l-2.2 1.4l-1.3 -0.3l-2.2 0.9l-1.1 -0.1l-2.6 1.4l-1.5 -0.3l-1.9 1.6l-1 -0.6l-2.5 1l-4.8 -0.7l-1.5 3.3l-2.9 0.5l-1 -0.6l-1.8 0.7l-0.2 1.8l-1 0.5l-5 -0.8l-1.6 -1.5l-1.3 0.5l-2 -0.7l-0.9 -1.5l-1.4 -0.6l-2.2 0.4l-0.8 1l-1.6 0.1l-1.4 2.8l-1.7 0.9l0.1 1.5l-0.8 1.6l-2.2 1.2l-1.5 2.3l-3.4 1l-0.3 -1.8l-5 -0.7l-2.1 1.1l-2.5 -0.5l-0.7 -1.8l1.8 -2.1l-1.1 -1.3l0.5 -2.4l-1.2 -1l-2.5 1.3l-1.4 0.2l-2.4 1.4l-2.3 -0.5l-2.1 -1.3l-0.8 -1.3l-1.2 -0.3l-0.8 1.3l1.1 2.8l-3.3 -1.2l-0.9 1.3l-1.7 -0.1l-1 1l-3.7 1.6l-1.3 -1.2l-4.1 -0.4l-2.9 2.7l-0.5 1.3l-1.3 0.6l-0.6 1.6l1.1 1.2l-0.4 2.8l-2.2 2.1l-2.1 -0.2l-2.2 -0.8l-1.7 2.3l-0.4 2.6l0.8 0.6l0.5 2.9l-0.1 1.8l1.3 0.2l-0.1 1.9l-2.8 0.7l0.2 2.9l-0.6 1.2l0.2 2.1l1.3 2.8l2.7 0.7l1.9 -2.6l3.2 1.5l2.9 2.1l1.5 0.7l0.9 1.6l1 0.4l1 1.6l-0.5 1.8l-1.8 1.3l-1 5.1l0.5 3.4l-0.7 2.7l1 2.1l-2.7 1.6l0.1 2.7l1.2 1.8l0.8 0l0.6 2.5l-1.1 1.8l-3.6 0l-0.6 0.9l-1.7 -0.2l-1 -1.9l-4 -0.2l-1.4 1.8l0.9 3l2.8 -0.3l0.1 1.3l2.8 2.1l2.5 0.1l2.8 1.9l2.8 1.1l-1 3.9l0.2 1.5l1.6 -0.8l3 1.5l2 2.6l0.8 2l0.3 4.5l-1.2 1l0.5 2.5l-1.3 1.7l-1.5 0.3l-0.2 1.5l1 1.6l1.2 0.2l0.4 2.8l-0.6 1.9l2.5 0.3l1 0.7l2.2 -0.8l2.2 0.4l-1 1.5l0.2 1.2l1.5 1.1l0.7 2.4l1.5 0.1l0.7 1.5l1.5 0.5l2.8 3l2.1 0.1l1.1 2l2.2 0.3l2.8 1.6l2.6 -0.9l1.4 1.6l1.8 -0.1l2.2 0.6l-0.9 1.1l-2 1.1l-0.8 3.1l0.4 1.2l-0.3 1.5l1 0.4l-0.5 1.6l1.1 4l-1.4 3.5l0.8 0.5l-0.2 1.9l4.3 2.3l0.2 1.8l1.2 -0.5l1.2 0.7l2.3 4.6l2.4 1.1l-0.1 -1.6l2.9 -0.2l1.2 1l4.9 0.3l3 0.9l2.4 0l3 -4.1l0.1 -1.1l1.4 -1.8l2 -1.4l0.7 -2.9l1.7 -0.3l2.4 -1.4l0.8 -1.1l1.9 0.4l-1.2 -2.4l1.5 -1.8l2.3 -0.1l1.1 0.9l2.5 0.6l0.2 1.3l2.8 0.6l3 1.5l1 -1.9l2.4 2.6l2.7 -0.2l1.3 0.8l0.7 2.5l3.1 0.7l1 -0.4l3.4 0.6l2.6 -1.2l0.2 -2.4l5.7 -1.2l2.5 -3l3.5 1.3l1.5 1.6l1.4 -0.9l2.9 1.2l-0.5 2.7l0.1 1.5l1.1 0.8l0.7 1.6l2.7 0.6l2.9 1l1.4 1.3l2.5 0.1l3.7 0.7l0.6 -0.8l1.8 0l1.3 1.7l4.4 -0.3l2.4 -0.9l0.3 -1.7l2.3 -0.4l3 0l6.3 -2l1.6 0.6l2.4 -0.6l1.4 2.3l4 2l1.1 -1.7l3 -0.5l2.4 0.5l2.9 -1.8l2.4 -3.9l0.4 -1.5l1.8 -0.5l1.4 0.3l0.7 -0.8l5.6 0.2l1 -0.9l3.1 1.2l1.3 -0.8l2.7 0.7l0.9 -1l1.8 0.1l1.9 -0.9l1.3 0.3l-0.1 1.3l1.7 0.5l3 -0.4l3.3 0.4l1.7 -0.6l2.2 0.5l2.1 -0.7l2.1 0.7l2 -0.3l1.7 0.8l0.6 1.8l1.1 0.6l1 2l0.8 -1l2.3 -0.2l0.5 1.1l5.5 3l1.4 0.3l1.8 2l3.6 1.9l1 0.6l2.6 0.3l1.8 -1.8l0.8 -1.9l3.4 2.7l3.2 1.1l2 0l2.1 0.6l1.9 1.4l1.1 1.8l1.3 -0.1l1.3 -1.6l1.7 0.6l0.9 -0.5l-0.3 -4.3l-0.8 -0.6l0.8 -2.5l0.1 -2.2l-5 -2l-0.4 -1.8l1 -3.7l2.4 -1.7l2.3 0.4l1.3 -1.1l1.4 -0.1l1.1 -0.9l2.1 0.6l0.1 -3.5l-1.5 -1.2l0.3 -1.5l-0.9 -1.3l-0.2 -2.9l-1.2 -1.2l-1.1 0.2l-1.5 -1.4l0.5 -1l-1.6 -1.9l-4.2 -2.6l1.5 -10.8l0.6 -2.5l-2.9 0l-0.4 1.5l-1.2 -0.3l-2.1 -2.7l-0.2 -1.8l0.6 -1.7l5 0.8l0.9 -1.3l1.1 0l2.3 -1.4l11.5 -0.9l2.7 -1.2l6.3 -0.5l2.9 -1l3.7 -0.2l1.6 -0.7l2 0.3l0.6 -0.8l-0.7 -0.6l0.1 -4.1l3.5 -2.6l2.4 -3l2.8 -7.9l1.6 -6.3l2.3 -3.4l1.1 -5.9l9.9 -0.6l4.3 0.2l1.3 -2.9l0 -1.9l4 -5l3.2 -3.2l6.4 -4.8l3.7 -0.3l2.1 -2.8l4.8 -1.9l1.4 3.8l5.8 -3.6l1.5 -0.6l3.3 -0.2l2.4 -1.1l2.2 -1.6l0.5 -1.5l-0.9 -2.3l1.8 -1.4l-2 -2.7l0.6 -1.9l-1.4 -0.7l1 -2.3l6.3 -3.7z","c":[216.4,276.6]},"TW":{"name":"台湾省","d":"M865 715l1.7 0.5l1.2 0.9l1.9 2.4l0.7 1.8l0.4 1.9l-0.1 0.8l0.5 1.1l0.9 1.1l0.9 0.1l0.8 -0.3l1.6 0.7l0.4 -0.4l-0.5 -1.9l0.7 -1.2l-0.1 -1.2l-0.3 -0.9l-0.4 -3.9l0.6 -5.2l0.5 -1.3l0.1 -1.6l0.9 -0.5l1.7 -1.5l0.6 -1.2l0.4 -1.5l0.6 -1.1l0.8 -1.6l0.3 -1.6l0.1 -1.7l0.7 -0.5l0.3 -0.8l-0.5 -1.3l0.2 -1.8l0.7 -1.2l0 -2.2l0.2 -1.5l-0.2 -1.2l0.5 -5.2l0.1 -3.6l0.5 -2.1l-0.6 -1.2l-0.1 -0.7l0.6 -0.9l0 -1l1.9 -4l0 -2l0.6 -1.3l0.2 -1.2l-0.2 -2l-0.8 -1.1l-0.7 -1.3l-0.3 -2.3l1.4 -2.5l1.3 -1.7l-0.7 -0.6l-0.7 0.1l-1 -2.2l-1.5 0.3l-1.3 -0.3l-0.7 0l-0.9 -0.5l-0.3 -0.7l-0.9 -0.2l-0.9 -1.1l-0.8 -0.2l-1 0.2l-1.7 1.1l-0.5 0.9l-0.5 1.9l-1 0.5l-2.2 0.7l-1.3 1.4l-0.6 0.1l-1.5 1.1l-0.1 1l-0.8 1.4l-0.7 1.8l-0.1 2.3l-1.1 1.9l-1.1 0.9l-1.3 1.5l-0.5 2.6l-0.9 1.5l-0.7 1.5l-0.3 1.4l-0.8 1.7l-0.1 1.4l-1 1.6l-1.1 3.2l-0.6 1.4l-0.3 2l-1.4 1l-1.1 2.5l0.2 2.6l0.9 1.7l0.2 3.7l-0.3 1.2l-0.6 5l0.3 0.5l2.3 0.8l0.7 2.2l1.7 3.7l2 3.3l0.6 0.6l3.3 1.5zM934.5 623.7l0.8 -0.3l-0.5 -0.7l-0.3 1zM913.5 631.8l0.5 0.2l0.8 -0.3l-0.1 -0.8l-0.7 -0.1l-0.6 0.5l0.1 0.5zM844.9 693l0.9 -0.1l-0.5 -1.1l-1.4 0.1l0 0.7l-0.8 -0.1l0.1 1.2l0.4 0.6l0.6 -0.2l0.7 -1.1zM842.7 690.7l1.2 0.9l0 -1l-0.7 -0.2l-0.5 0.3zM885.4 706.4l0.3 0.7l0.8 0.1l-0.1 -1l-1 0.2zM888.5 719.2l0 0.9l0.7 0.5l1.3 0.3l0.2 -0.6l-0.7 -0.2l-0.2 -1l-1.3 0.1z","c":[871.3,684.4]},"HK":{"name":"香港特别行政区","d":"M731.4 730.2l-0.6 0.3l-0.4 0.8l-1.2 1l0.2 1.1l0.6 0.2l0.6 -0.3l1 0.3l-1.1 0.7l-1.5 0.5l-0.1 0.8l-0.9 1l0.2 0.9l1 -0.7l0.8 0.2l1.4 -0.9l0.5 -0.6l0 -0.8l0.7 -0.7l1 0.1l0.6 0.4l-0.5 0.6l1.1 1l0.7 -0.2l0.1 0.5l1.3 0l-0.5 -1.6l0.3 -0.4l0.5 0.6l0.6 -0.1l0 -0.7l0 -0.1l-0.9 -0.5l0 -1.3l0.8 -0.1l0.1 0.1l0.7 0.9l0.8 -0.6l-0.6 -1.6l-1.1 -0.9l-0.9 1.1l-1.2 0.3l-0.4 -0.5l0.6 -0.4l0.4 0.4l1.1 -1.2l-1.1 -1.1l-0.6 0.3l-0.2 -0.3l-1.2 0l-0.2 0.3l-1.2 0.4l-0.3 0.5l-1 0.3zM734.3 736.4l-0.4 0.8l0.8 0l0.1 -0.7l-0.5 -0.1zM737.7 732.3l0.1 0l-0.1 -0.1l0 0.1z","c":[733.8,732.8]},"MO":{"name":"澳门特别行政区","d":"M722.2 739.9l1 -0.7l-0.7 -1.3l-0.4 -0.4l-0.4 0.1l0 0.8l0.4 0.7l0.1 0.8z","c":[722.4,738.7]}},"jd":"M904 685.4l1.3 -25.6l-0.1 -0.1l0 -0.1l-0.1 -0.1l-0.1 0l-0.1 0l0 0.1l0 0.1l-0.1 0l-1.2 25.6l0 0.1l0 0.1l0.1 0l0 0.1l0.1 0l0.1 -0.1l0.1 -0.1zM886 748.5l12.2 -21.9l0.1 -0.1l0 -0.1l-0.1 -0.1l-0.1 0l-0.1 0l-0.1 0l0 0.1l-12.2 21.9l0 0.1l-0.1 0l0.1 0.1l0 0.1l0.1 0l0.1 0l0.1 0l0 -0.1zM859.2 815.2l8.6 -23.9l0 -0.1l0 -0.1l-0.1 0l0 -0.1l-0.1 0l-0.1 0l0 0.1l-0.1 0l0 0.1l-8.6 23.9l0 0.1l0 0.1l0.1 0l0.1 0.1l0.1 -0.1l0.1 -0.1zM859.6 880.5l-3.1 -21.6l0 -0.1l-0.1 0l-0.1 0l-0.1 0l-0.1 0l0 0.1l0 0.1l3 21.5l0.1 0.8l0.1 0l0 0.1l0.1 0l0.1 0l0.1 0l0.1 -0.1l0 -0.1l-0.1 -0.7zM862.3 963.4l-3 6.3l0 0.1l0 0.1l0.1 0.1l0.1 0l0.1 0l0.1 0l0 -0.1l0.1 0l2.9 -6.3l2.7 -9.5l0 -0.1l1.5 -8.3l0 -0.1l0 -0.1l-0.1 0l-0.1 0l-0.1 0l-0.1 0l0 0.1l-1.5 8.4l-2.7 9.4zM798.1 1056.6l15.1 -19l0 -0.1l0.1 0l-0.1 -0.1l0 -0.1l-0.1 0l-0.1 0l-0.1 0l-0.1 0.1l-15.1 19l0 0.1l0 0.1l0 0.1l0.1 0l0.1 0l0.1 0l0.1 0l0 -0.1zM725.2 1137.4l-12.9 3.3l-0.1 0l0 0.1l-0.1 0.1l0.1 0l0 0.1l0.1 0.1l0.1 0l0.1 0l12.8 -3.3l5.2 -1.7l8 -3.7l0 -0.1l0.1 0l0 -0.1l0 -0.1l-0.1 -0.1l-0.1 0l-0.1 0l-0.1 0l-7.9 3.7l-5.1 1.7zM622.2 1090.7l0.8 1.6l0.1 0.1l0.1 0l0.1 0l0.1 0l0 -0.1l0.1 0l0 -0.1l0 -0.1l-0.8 -1.5l-0.7 -2.7l-1.1 -6.4l-0.3 -8.4l0.6 -2.6l0 -0.1l-0.1 -0.1l-0.1 -0.1l-0.1 0l-0.1 0l0 0.1l-0.1 0l0 0.1l-0.6 2.6l0.3 8.6l1.1 6.4l0.7 2.7zM662.3 978.6l-1.6 2.6l0 0.1l0 0.1l0.1 0l0.1 0.1l0.1 0l0.1 -0.1l1.6 -2.6l1.3 -2.7l1.1 -2.6l0.8 -3.9l0.1 0l0.3 -3.5l-0.1 -4.1l0 -0.1l-0.1 -2l0 -0.1l-0.1 -0.1l-0.1 0l-0.1 0l-0.1 0l-0.1 0.1l0 0.1l0.2 2.1l0.1 4.1l-0.4 3.5l-0.9 3.8l-1 2.6l-1.3 2.6zM651.3 896.3l0.4 1.6l0.1 0.1l0.1 0.1l0.1 0l0.1 -0.1l0.1 -0.1l0 -0.1l-0.5 -1.6l-1.5 -4.7l-0.1 0l-2.4 -4.7l-2.4 -3.4l-1.4 -1.8l-5.3 -6l-0.1 -0.1l-0.1 0l-0.1 0.1l-0.1 0.1l0 0.1l0.1 0.1l5.2 5.9l1.4 1.8l2.4 3.4l2.4 4.7l1.6 4.6z","islands":[[722.9,1130.5],[742.6,1040.0],[717.8,1131.5],[686.3,853.8],[829.6,881.7],[693.6,872.0],[765.6,1047.6],[757.9,1025.1],[699.0,869.4],[692.9,866.4],[714.7,1028.1],[755.7,1056.1],[702.9,854.9],[771.4,992.2],[800.2,1002.3],[770.7,1000.6],[754.8,1050.9],[655.6,1061.0],[812.2,1018.7],[710.6,875.3],[723.6,1028.2],[766.1,981.9],[708.8,869.6],[814.2,987.3],[687.6,867.7],[791.9,999.5],[775.5,1036.9],[788.0,1032.4],[757.5,1043.2],[790.9,1010.6],[815.7,1012.4],[749.4,1022.9],[767.3,968.7],[775.4,980.5],[663.0,1052.1],[816.4,963.2],[751.9,1000.1],[816.6,1000.3],[785.5,994.0],[821.3,983.9],[760.0,867.4],[803.4,1011.0],[776.4,1049.6],[842.7,974.4],[761.3,994.9],[675.0,1046.3],[697.9,1036.4],[755.6,981.4],[831.8,985.8],[749.5,871.5],[794.9,1028.9],[701.1,1056.4],[674.7,1053.0],[710.2,1045.1],[755.0,880.9],[803.8,994.1],[832.2,977.8],[781.1,1056.9],[729.9,1026.2],[727.6,1091.2],[772.6,1023.3],[733.3,1036.1],[751.4,1065.3],[803.4,859.4],[731.9,1105.3],[703.2,1049.0],[733.2,1048.1],[729.6,1096.4],[779.4,914.1],[745.8,996.8],[742.0,884.6],[738.2,1106.3],[704.7,882.4],[743.5,1079.3],[807.5,1004.6],[783.6,1050.7],[743.1,876.9],[822.1,1014.2],[796.2,987.3],[721.4,1013.6],[830.2,970.6],[760.8,1013.8]],"inset":{"x0":562.6,"y0":671.4,"x1":1058.5,"y1":1121.5}};
+const PALMETA = {"light":{"fam-C":true,"fam-D":true,"fam-G":true,"fam-M":true,"taste-xian":true,"staple-mai":true,"staple-rou":true},"dark":{"fam-A":true,"fam-C":true,"fam-D":true,"fam-F":true,"fam-G":true,"fam-I":true,"fam-J":true,"fam-L":true,"fam-M":true,"fam-N":true,"taste-xian":true,"taste-mala":true,"taste-qing":true,"staple-mai":true,"staple-dao":true,"staple-rou":true}};
+(function(){
+  const $ = (s, el=document) => el.querySelector(s);
+  const PER = DATA.periods, PROV = DATA.provinces;
+  const state = { p: 0, mode: 'fam', prov: null, playing: false, timer: null };
+  const DIMS = [['food','食材','ingredients'],['tool','器具','utensils'],['tech','技法','techniques'],['taste','口味','flavors']];
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  // ---------- lookups ----------
+  const regionOf = (pi, code) => PER[pi].regions.find(r => r.provs.includes(code));
+  function keyOf(pi, code){
+    const r = regionOf(pi, code); if (!r) return null;
+    const ov = (PER[pi].overrides||{})[code] || {};
+    if (state.mode === 'fam') return { key: r.fam, css: 'fam-' + r.fam, name: r.name, note: r.note, region: r };
+    if (state.mode === 'taste'){ const k = ov.taste || r.taste; return { key: k, css: 'taste-' + k, name: DATA.tastes[k].name, note: r.note, region: r }; }
+    const k = ov.staple || r.staple; return { key: k, css: 'staple-' + k, name: DATA.staples[k].name, note: r.note, region: r };
+  }
+  function isDark(){ const t = document.documentElement.getAttribute('data-theme'); if (t) return t === 'dark'; return matchMedia('(prefers-color-scheme: dark)').matches; }
+  const fillOf = css => css === 'staple-daomai' ? 'url(#hatch)' : `var(--${css})`;
+  const needsLight = css => !!(PALMETA[isDark() ? 'dark' : 'light'][css]);
+
+  // ---------- timeline ----------
+  const tl = $('#tl');
+  PER.forEach((p, i) => {
+    const b = document.createElement('button');
+    b.className = 'tl-item'; b.id = 'tl-' + p.id; b.setAttribute('aria-pressed', 'false');
+    b.innerHTML = `<span class="n">${esc(p.name)}</span><span class="y">${esc(p.years)}</span>`;
+    b.addEventListener('click', () => setPeriod(i));
+    tl.appendChild(b);
+  });
+  function paintTimeline(){
+    [...tl.querySelectorAll('.tl-item')].forEach((b, i) => { b.setAttribute('aria-pressed', String(i === state.p)); b.classList.toggle('past', i < state.p); });
+    const items = tl.querySelectorAll('.tl-item'); const it = items[state.p];
+    $('#tlfill').style.width = (it.offsetLeft + 14) + 'px';
+    if (it.scrollIntoView) it.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+  }
+
+  // ---------- map ----------
+  const wrap = $('#mapwrap');
+  const W = MAP.w, H = MAP.h + 46, ins = MAP.inset;
+  const iw = ins.x1 - ins.x0, ih = ins.y1 - ins.y0, isc = 172 / iw, bw = 172, bh = ih * isc, bx = W - bw - 8, by = H - bh - 8;
+  let svg = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="中国省级行政区地图，按所选时期着色">
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="var(--staple-dao)"/><rect width="4" height="8" fill="var(--staple-mai)"/></pattern>
+    <clipPath id="ic"><rect x="${ins.x0}" y="${ins.y0}" width="${iw}" height="${ih}"/></clipPath>
+  </defs>
+  <g id="layers">`;
+  for (const [c, v] of Object.entries(MAP.prov)) svg += `<path class="prov" id="p-${c}" data-code="${c}" d="${v.d}" tabindex="0" role="button" aria-label="${esc(PROV[c].name)}"/>`;
+  svg += `<path class="jd" d="${MAP.jd}"/>`;
+  svg += MAP.islands.map(([x, y]) => `<circle class="isl" cx="${x}" cy="${y}" r="1.6"/>`).join('');
+  svg += `</g><g id="labels">`;
+  for (const [c, v] of Object.entries(MAP.prov)){ const p = PROV[c]; svg += `<text class="lbl" id="l-${c}" x="${v.c[0] + p.dx}" y="${v.c[1] + p.dy}" text-anchor="middle" dominant-baseline="middle">${esc(p.label)}</text>`; }
+  svg += `</g>
+  <g transform="translate(${bx} ${by}) scale(${isc}) translate(${-ins.x0} ${-ins.y0})" clip-path="url(#ic)" pointer-events="none"><rect class="inset-box" x="${ins.x0}" y="${ins.y0}" width="${iw}" height="${ih}" style="stroke-width:${(1.2 / isc).toFixed(2)}"/><use href="#layers"/></g>
+  <text class="inset-title" x="${bx + 6}" y="${by + 14}">南海诸岛</text>
+  <text class="map-note" x="12" y="${H - 12}">按现行省级行政区划 · 各时期分区为饮食文化区示意</text>
+  </svg>`;
+  wrap.innerHTML = svg;
+  const paths = {}; const labels = {};
+  for (const c of Object.keys(MAP.prov)) { paths[c] = $('#p-' + c); labels[c] = $('#l-' + c); }
+  // inset clones can't be interactive; the main paths are.
+  const hoverable = matchMedia('(hover: hover)').matches;
+  for (const [c, el] of Object.entries(paths)){
+    el.addEventListener('pointerenter', () => { if (hoverable) showInfo(c); highlightSame(c); });
+    el.addEventListener('pointerleave', () => { clearHighlight(); });
+    el.addEventListener('click', () => { if (hoverable) openDrawer(c); else { showInfo(c); } });
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openDrawer(c); } });
+    el.addEventListener('focus', () => showInfo(c));
+  }
+  function highlightSame(code){
+    const k = keyOf(state.p, code); if (!k) return;
+    for (const c of Object.keys(paths)){ const kk = keyOf(state.p, c); const same = kk && (state.mode === 'fam' ? kk.region.id === k.region.id : kk.key === k.key); paths[c].classList.toggle('hi', same && c !== code); }
+  }
+  function clearHighlight(){ for (const c of Object.keys(paths)) paths[c].classList.remove('hi','dim'); }
+  function paintMap(){
+    for (const c of Object.keys(paths)){
+      const k = keyOf(state.p, c);
+      paths[c].style.fill = k ? fillOf(k.css) : 'var(--map-dim)';
+      labels[c].classList.toggle('on-dark', k ? needsLight(k.css) : false);
+    }
+    wrap.querySelector('svg').dataset.mode = state.mode;
+  }
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', paintMap);
+  new MutationObserver(paintMap).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  // ---------- info bar ----------
+  function showInfo(code){
+    state.prov = code;
+    const k = keyOf(state.p, code); const p = PROV[code];
+    $('#ib-name').textContent = p.name;
+    $('#ib-region').textContent = k ? (state.mode === 'fam' ? k.name : `${k.region.name} · ${k.name}`) : '';
+    const pn = (DATA.provNotes[code]||{})[PER[state.p].id];
+    $('#ib-note').textContent = (k ? k.note : '') + (pn ? ' ' + pn : '');
+    $('#ib-sw').style.background = k ? fillOf(k.css) : 'var(--map-dim)';
+    const go = $('#ib-go'); go.hidden = false; go.onclick = () => openDrawer(code);
+  }
+
+  // ---------- legend ----------
+  function paintLegend(){
+    const lg = $('#legend'); lg.innerHTML = '';
+    const P = PER[state.p];
+    if (state.mode === 'fam'){
+      P.regions.forEach(r => {
+        const d = document.createElement('div'); d.className = 'it';
+        d.innerHTML = `<span class="sw" style="background:var(--fam-${r.fam})"></span>${esc(r.name)} <span class="cnt">${r.provs.map(c => PROV[c].short).join('')}</span>`;
+        d.addEventListener('pointerenter', () => { for (const c of Object.keys(paths)) paths[c].classList.toggle('dim', !r.provs.includes(c)); });
+        d.addEventListener('pointerleave', clearHighlight);
+        lg.appendChild(d);
+      });
+      $('#legendnote').textContent = '同一色相 = 同一菜系家族（如巴蜀→川饭→川菜始终为朱红）；分区随时期分合，反映“南北分立→多元分化”的过程。';
+    } else {
+      const dict = state.mode === 'taste' ? DATA.tastes : DATA.staples;
+      const used = new Map();
+      for (const c of Object.keys(paths)){ const k = keyOf(state.p, c); if (k) used.set(k.key, (used.get(k.key)||0) + 1); }
+      Object.keys(dict).forEach(k => { if (!used.has(k)) return;
+        const d = document.createElement('div'); d.className = 'it'; d.title = dict[k].desc;
+        const sw = (state.mode === 'staple' && k === 'daomai') ? `<span class="sw" style="background:repeating-linear-gradient(45deg,var(--staple-dao) 0 3px,var(--staple-mai) 3px 6px)"></span>` : `<span class="sw" style="background:var(--${state.mode}-${k})"></span>`;
+        d.innerHTML = `${sw}${esc(dict[k].name)} <span class="cnt">${used.get(k)}</span>`;
+        d.addEventListener('pointerenter', () => { for (const c of Object.keys(paths)){ const kk = keyOf(state.p, c); paths[c].classList.toggle('dim', !(kk && kk.key === k)); } });
+        d.addEventListener('pointerleave', clearHighlight);
+        lg.appendChild(d);
+      });
+      $('#legendnote').textContent = state.mode === 'taste' ? '口味主调为该分区在此时期最有代表性的味觉基调（辣椒直到清代才真正上桌，此前的“辣”是花椒、姜、茱萸的辛）。' : '主食按各区域当时的主要谷物/食物类型标注；稻麦兼作以斜纹表示，明清以后玉米薯类进入山区。';
+    }
+  }
+
+  // ---------- period panel ----------
+  function paintPanel(hit){
+    const P = PER[state.p];
+    let h = `<div class="kicker">第 ${state.p + 1} / ${PER.length} 期</div><h2>${esc(P.name)}</h2><div class="years">${esc(P.years)}<span>${esc(P.sub)}</span></div><p class="summary">${esc(P.summary)}</p><div class="dims">`;
+    for (const [k, nm, en] of DIMS){
+      h += `<section class="dim ${k}"><h3><i></i>${nm}<small>${en}</small></h3><ul>`;
+      P.dims[k].forEach((it, i) => { h += `<li id="d-${k}-${i}"${hit === k + '-' + i ? ' class="hit"' : ''}><b>${esc(it.h)}</b>${esc(it.t)}${it.src && it.src !== '—' ? `<span class="src" title="${esc(it.src)}">${esc(it.src)}</span>` : ''}</li>`; });
+      h += `</ul></section>`;
+    }
+    $('#panel').innerHTML = h + '</div>';
+  }
+
+  // ---------- matrix ----------
+  function buildMatrix(){
+    const t = $('#matrix');
+    let h = '<thead><tr><th></th>' + PER.map((p, i) => `<th data-i="${i}">${esc(p.name)}<small>${esc(p.years)}</small></th>`).join('') + '</tr></thead><tbody>';
+    for (const [k, nm] of DIMS){
+      h += `<tr class="${k}"><th><i></i>${nm}</th>` + PER.map((p, i) => `<td data-i="${i}">` + p.dims[k].map((it, j) => `<button class="chip" data-i="${i}" data-k="${k}" data-j="${j}" title="${esc(it.t)}">${esc(it.h)}</button>`).join('') + '</td>').join('') + '</tr>';
+    }
+    t.innerHTML = h + '</tbody>';
+    t.addEventListener('click', e => {
+      const chip = e.target.closest('.chip'); const th = e.target.closest('thead th');
+      if (chip){ setPeriod(+chip.dataset.i, chip.dataset.k + '-' + chip.dataset.j); scrollToAtlas(chip.dataset.k, chip.dataset.j); }
+      else if (th && th.dataset.i){ setPeriod(+th.dataset.i); scrollToAtlas(); }
+    });
+  }
+  function paintMatrix(){ $('#matrix').querySelectorAll('[data-i]').forEach(el => el.classList.toggle('act', +el.dataset.i === state.p)); }
+  function scrollToAtlas(k, j){
+    const target = (k != null) ? $('#d-' + k + '-' + j) : $('#panel');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // ---------- cards ----------
+  function buildCards(){
+    const box = $('#cards'); let h = '';
+    for (const c of Object.keys(PROV)){
+      const m = DATA.modern[c]; const cur = keyOf(PER.length - 1, c); const tk = ((PER[PER.length - 1].overrides||{})[c]||{}).taste || cur.region.taste;
+      h += `<div class="card" data-code="${c}" role="button" tabindex="0"><div class="top"><span class="nm">${esc(PROV[c].name)}<small>${esc(PROV[c].short)}</small></span><span class="cu">${esc(m.cuisine)}</span></div>
+      <div class="strip">${PER.map((p, i) => { const r = regionOf(i, c); return `<i style="background:var(--fam-${r.fam})" title="${esc(p.name)}：${esc(r.name)}"></i>`; }).join('')}</div>
+      <div class="ts"><span class="sw" style="background:var(--taste-${tk})"></span>${esc(m.taste)}</div>
+      <div class="dishes">${esc(m.dishes.slice(0, 4).join(' · '))}</div></div>`;
+    }
+    box.innerHTML = h;
+    box.addEventListener('click', e => { const card = e.target.closest('.card'); if (card) openDrawer(card.dataset.code); });
+    box.addEventListener('keydown', e => { const card = e.target.closest('.card'); if (card && (e.key === 'Enter' || e.key === ' ')){ e.preventDefault(); openDrawer(card.dataset.code); } });
+  }
+
+  // ---------- drawer ----------
+  const drawer = $('#drawer'); let lastFocus = null;
+  function openDrawer(code){
+    const p = PROV[code], m = DATA.modern[code]; const tk = ((PER[PER.length - 1].overrides||{})[code]||{}).taste || regionOf(PER.length - 1, code).taste;
+    let h = `<div class="hd"><h2 id="dr-title">${esc(p.name)}<small>${esc(p.short)}</small></h2><button class="close" id="dr-close" aria-label="关闭">×</button></div>
+    <div class="cu">${esc(m.cuisine)}<span class="pill"><span class="sw" style="background:var(--taste-${tk})"></span>${esc(DATA.tastes[tk].name)}</span></div>
+    <p class="story">${esc(m.story)}</p>
+    <dl class="kv"><dt>代表菜</dt><dd class="dishes">${esc(m.dishes.join('、'))}</dd><dt>口味</dt><dd>${esc(m.taste)}</dd><dt>食材</dt><dd>${esc(m.food.join('、'))}</dd><dt>器具</dt><dd>${esc(m.tool.join('、'))}</dd><dt>技法</dt><dd>${esc(m.tech.join('、'))}</dd></dl>
+    <h3>沿革 · 十个时期</h3><ul class="hist">`;
+    PER.forEach((per, i) => {
+      const r = regionOf(i, code); const ov = (per.overrides||{})[code]||{}; const tk2 = ov.taste || r.taste, sk = ov.staple || r.staple;
+      const pn = (DATA.provNotes[code]||{})[per.id];
+      h += `<li${i === state.p ? ' class="cur"' : ''}><i style="background:var(--fam-${r.fam})"></i><span class="p">${esc(per.name)}<small>${esc(per.years)}</small></span><span class="r"><b>${esc(r.name)}</b>${esc(r.note)}<span class="tt">口味：${esc(DATA.tastes[tk2].name)} · 主食：${esc(DATA.staples[sk].name)}</span>${pn ? `<span class="pn2">${esc(pn)}</span>` : ''}</span></li>`;
+    });
+    $('#drawer-pn').innerHTML = h + '</ul>';
+    lastFocus = document.activeElement; drawer.hidden = false; document.body.style.overflow = 'hidden';
+    $('#dr-close').addEventListener('click', closeDrawer); $('#dr-close').focus();
+  }
+  function closeDrawer(){ drawer.hidden = true; document.body.style.overflow = ''; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+  $('#drawer-bd').addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !drawer.hidden) closeDrawer(); if (drawer.hidden && !e.target.closest('input,textarea')){ if (e.key === 'ArrowRight') setPeriod(Math.min(PER.length - 1, state.p + 1)); if (e.key === 'ArrowLeft') setPeriod(Math.max(0, state.p - 1)); } });
+
+  // ---------- modes / play ----------
+  $('#modes').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; state.mode = b.dataset.mode; $('#modes').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); paintMap(); paintLegend(); if (state.prov) showInfo(state.prov); try{ localStorage.setItem('cuisine-mode', state.mode); }catch(e){} });
+  const playBtn = $('#play');
+  playBtn.addEventListener('click', () => { if (state.playing) stopPlay(); else startPlay(); });
+  function startPlay(){ state.playing = true; playBtn.setAttribute('aria-pressed', 'true'); $('#playtxt').textContent = '停止'; if (state.p === PER.length - 1) setPeriod(0); state.timer = setInterval(() => { if (state.p >= PER.length - 1) stopPlay(); else setPeriod(state.p + 1); }, 2600); }
+  function stopPlay(){ state.playing = false; playBtn.setAttribute('aria-pressed', 'false'); $('#playtxt').textContent = '播放演化'; clearInterval(state.timer); }
+
+  function setPeriod(i, hit){
+    state.p = i; paintTimeline(); paintMap(); paintLegend(); paintPanel(hit); paintMatrix(); if (state.prov) showInfo(state.prov);
+    try{ localStorage.setItem('cuisine-period', String(i)); }catch(e){}
+  }
+
+  // ---------- refs ----------
+  $('#refs-list').innerHTML = DATA.refs.map(r => `<li>${esc(r)}</li>`).join('');
+  $('#mapnote').textContent = '地图底图：省级行政区边界数据来自阿里云 DataV GeoAtlas（含南海诸岛与十段线），经拓扑简化后按 Albers 等积圆锥投影绘制。各时期的“风味分区”是饮食文化区的示意划分，以今天的省级行政区为最小单位近似表示，不代表历史政区边界；同一省份内部（如陕北/陕南、桂北/桂南）的差异未在图上区分。年代与出处以正文标注为准，若有争议之处（如辣椒首载版本、《南方草木状》真伪）已在文字中说明。';
+
+  // ---------- init ----------
+  
+  (function(){ const root=document.documentElement, btn=$('#themebtn'); if(!btn) return;
+    const label=()=>{ const t=root.getAttribute('data-theme'); btn.textContent = t==='dark' ? '☀ 浅色' : t==='light' ? '☾ 深色' : '◐ 深浅色'; };
+    btn.addEventListener('click',()=>{ const dark = root.getAttribute('data-theme')==='dark' || (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+      root.setAttribute('data-theme', dark ? 'light' : 'dark'); try{ localStorage.setItem('cuisine-theme', root.getAttribute('data-theme')); }catch(e){} label(); });
+    label(); })();
+  if (!hoverable){ $('#ib-name').textContent = '点按一个省份'; $('#ib-note').textContent = '查看它在当前时期所属的风味分区、口味与主食，再点“查看沿革”读完整故事。'; }
+  buildMatrix(); buildCards();
+  let p0 = 0, m0 = 'fam';
+  try{ const sp = localStorage.getItem('cuisine-period'); if (sp !== null && PER[+sp]) p0 = +sp; const sm = localStorage.getItem('cuisine-mode'); if (sm && ['fam','taste','staple'].includes(sm)) m0 = sm; }catch(e){}
+  state.mode = m0; $('#modes').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.mode === m0)));
+  setPeriod(p0);
+  window.addEventListener('resize', paintTimeline);
+})();
+</script>
+
+</body>
+</html>

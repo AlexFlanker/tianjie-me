@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>军服示意图测试画廊</title>
+<style>
+  body { margin: 0; padding: 16px; background: #f7f6f1; color: #2a2a26; font: 13px/1.4 system-ui, sans-serif; }
+  h2 { font-size: 15px; margin: 18px 0 8px; }
+  .grid { display: flex; flex-wrap: wrap; gap: 10px; }
+  .cell { text-align: center; }
+  .cell svg { display: block; }
+  .cell div { font: 12px/1.3 ui-monospace, monospace; margin-top: 3px; }
+</style>
+</head>
+<body>
+<h2>PRESETS（150×330）</h2>
+<div class="grid" id="presets"></div>
+<h2>缩略图（72×160）</h2>
+<div class="grid" id="thumbs"></div>
+<h2>headgear.type</h2>
+<div class="grid" id="hats"></div>
+<h2>coat.cut</h2>
+<div class="grid" id="cuts"></div>
+<h2>camo.type</h2>
+<div class="grid" id="camos"></div>
+<h2>其它参数（aiguillette / sash / epaulettes / gloves / stripe / rifle / assault / plate / flaps / nvg）</h2>
+<div class="grid" id="extras"></div>
+<script src="uniform-fig.js"></script>
+<script>
+  var U = window.UniformFig;
+  function add(box, key, p, w, h, sub) {
+    var d = document.createElement('div');
+    d.className = 'cell';
+    d.innerHTML = U.svg(p, { id: box + '-' + key, title: key, width: w, height: h }) + '<div>' + key + (sub ? '<br>' + sub : '') + '</div>';
+    document.getElementById(box).appendChild(d);
+  }
+  Object.keys(U.PRESETS).forEach(function (k) {
+    add('presets', k, U.PRESETS[k], 150, 330, U.PRESETS[k].coat.cut);
+    add('thumbs', k, U.PRESETS[k], 72, 160);
+  });
+  var hatColors = { kepi: '#2d3a63', peaked: '#3b4a33', sidecap: '#7b7454', budenovka: '#6f6a4c', cap: '#5d6a3c', cap8: '#5a5f45', boonie: '#b5a57a', campaign: '#8a7650', beret: '#6b1f2a' };
+  U.HEADGEAR.forEach(function (t) {
+    var star = /sidecap|budenovka|cap8|ushanka|ssh40|cap$/.test(t) ? 'star' : (t === 'peaked' ? '#c9a646' : null);
+    add('hats', t, { headgear: { type: t, color: hatColors[t], badge: star, band: t === 'peaked' ? '#b22222' : null }, coat: { cut: 'field', color: '#6a654a' } }, 90, 198);
+  });
+  var cutColors = ['#b0282e', '#1f2e5c', '#6f7462', '#2d3a63', '#253357', '#7b7454', '#7a6a45', '#3b4a33', '#6b5f45', '#6a654a', '#7a7a52', '#2b3b5c'];
+  U.CUTS.forEach(function (c, i) {
+    add('cuts', c, { coat: { cut: c, color: cutColors[i] }, headgear: { type: 'none' }, trousers: { color: '#8a8c8e' }, buttons: {} }, 90, 198);
+  });
+  var camoCols = {
+    brush: ['#b4a07a', '#5d6b3d', '#6b4a30', '#1e1e1a'], lizard: ['#6b7a4a', '#5a4a33', '#2f3b25'], tiger: ['#8a8f63', '#4a5a32', '#1e1e1a'],
+    woodland: ['#5b6b3a', '#5a4632', '#b19b73', '#1e1e1a'], flora: ['#b4ab85', '#6b7a4a', '#8a5a3a'], digital: ['#6f7d4f', '#3f4f2e', '#5c4a33', '#1f211b'],
+    multi: ['#b9a57e', '#7a7a52', '#6e5a3e', '#3e3325'], splinter: ['#8a8f6a', '#5a6a3a', '#6b4a30', '#2a2a22']
+  };
+  U.CAMO_TYPES.forEach(function (t, i) {
+    add('camos', t, { coat: { cut: 'combat-shirt' }, camo: { type: t, colors: camoCols[t], seed: i + 1 }, headgear: { type: 'boonie', cover: 'camo' }, trousers: { style: 'bloused' } }, 90, 198);
+  });
+  var EX = {
+    'guard-epaulettes': { headgear: { type: 'peaked', color: '#1d2a57', band: '#b22222', badge: 'star' }, coat: { cut: 'tunic', color: '#1d2a57' }, shoulder: 'epaulettes', shoulderColor: '#c9a646', aiguillette: '#e0c060', sash: '#c9a646', gloves: '#ffffff', trousers: { color: '#1d2a57', stripe: '#b22222' }, weapon: 'rifle' },
+    'uk1900-hsh': { headgear: { type: 'hsh' }, coat: { cut: 'tunic', color: '#b0282e' }, collarColor: '#1d2a57', cuffs: '#1d2a57', facing: '#f2efe6', belt: '#f2efe6', trousers: { color: '#1d2a57', stripe: '#b0282e' }, weapon: 'rifle' },
+    'ru1919-budenovka': { headgear: { type: 'budenovka', color: '#6f6a4c', band: '#b22234' }, coat: { cut: 'blouse', color: '#6f6a4c', pockets: 2 }, belt: '#5a3d24', trousers: { color: '#6f6a4c', style: 'boots', flare: true } },
+    'ru1942-ushanka': { headgear: { type: 'ushanka', color: '#6e6a58', badge: 'star', flaps: 'down' }, coat: { cut: 'blouse', color: '#7b7454' }, belt: '#5a3d24', trousers: { color: '#7b7454', style: 'boots' } },
+    'plate-assault': { headgear: { type: 'modern', color: '#6b6a55', nvg: false }, coat: { cut: 'combat-shirt' }, camo: { type: 'splinter', colors: ['#8a8f6a', '#5a6a3a', '#6b4a30', '#2a2a22'], seed: 9 }, armor: 'plate', armorColor: '#5f5f4c', weapon: 'assault', trousers: { style: 'bloused' } },
+    'fr1805-bicorne': { headgear: { type: 'bicorne', plume: '#c8322a' }, coat: { cut: 'coatee', color: '#1f2e5c' }, facing: '#f2efe6', collarColor: '#c0302a', cuffs: '#c0302a', turnbacks: '#f2efe6', shoulder: 'epaulettes', shoulderColor: '#c0302a', trousers: { color: '#f2efe6', style: 'breeches-gaiters' }, gaiters: '#1d1b19', weapon: 'musket' },
+    'tiger-campaign': { headgear: { type: 'campaign', color: '#8a7650' }, coat: { cut: 'field' }, camo: { type: 'tiger', colors: ['#8a8f63', '#4a5a32', '#1e1e1a'], seed: 2 }, trousers: { style: 'bloused' } },
+    'flora-cap8': { headgear: { type: 'cap8', color: '#5a5f45', badge: 'star' }, coat: { cut: 'field' }, camo: { type: 'flora', colors: ['#b4ab85', '#6b7a4a', '#8a5a3a'], seed: 6 }, trousers: { style: 'bloused' } }
+  };
+  Object.keys(EX).forEach(function (k) { add('extras', k, EX[k], 120, 264); });
+</script>
+</body>
+</html>

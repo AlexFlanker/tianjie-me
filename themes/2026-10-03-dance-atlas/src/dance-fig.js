@@ -123,24 +123,32 @@ function beatLabel(t, loop, names){ var n = names.length; var idx = Math.floor((
 function mountDanceFig(svg, opts){
   opts = opts || {}; var NS = 'http://www.w3.org/2000/svg';
   var move = opts.move || 'shan', sex = opts.sex || (move === 'dou' ? 'm' : 'f'), style = opts.style || 'ink', props = opts.props !== false;
-  var ink = '#171717', red = '#a2302a';
-  function mk(parent, tag, attrs){ var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; }
+  // 颜色全部走 CSS 令牌（深色模式下随 --ink / --red / --wash 一起反转）；没有令牌的页面退回宣纸白皮肤的默认值
+  var ink = 'var(--fig-ink, var(--ink, #171717))', red = 'var(--fig-red, var(--red, #a2302a))';
+  var washFill = 'var(--fig-wash, var(--wash, rgba(23,23,23,.13)))', washStroke = 'var(--fig-wash-2, var(--wash, rgba(23,23,23,.18)))';
+  var redSoft = 'var(--fig-red-soft, color-mix(in srgb, var(--red, #a2302a) 20%, transparent))';
+  function mk(parent, tag, attrs){
+    var e = document.createElementNS(NS, tag), st = '';
+    for (var k in attrs){ var v = attrs[k]; if ((k === 'fill' || k === 'stroke') && String(v).indexOf('var(') === 0) st += k + ':' + v + ';'; else e.setAttribute(k, v); }
+    if (st) e.setAttribute('style', st);
+    parent.appendChild(e); return e;
+  }
   var W = style === 'ink' ? { neck:5.2, th:9.5, sh:7.5, ft:5, ua:7.2, fa:5.6, hd:4 } : style === 'wash' ? { neck:1.7, th:2.4, sh:2, ft:1.7, ua:2.1, fa:1.8, hd:1.5 } : { neck:2.2, th:3.2, sh:2.6, ft:2.2, ua:2.8, fa:2.4, hd:2 };
   if (opts.filter !== false && style === 'ink' && !document.getElementById('dance-ink')){
     var defs = mk(svg, 'defs', {}); defs.innerHTML = '<filter id="dance-ink" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.5" xChannelSelector="R" yChannelSelector="G"/></filter>';
   }
   var g = mk(svg, 'g', (opts.filter !== false && style === 'ink') ? { filter: 'url(#dance-ink)' } : {});
-  var bodyAttrs = style === 'ink' ? { fill: ink } : style === 'wash' ? { fill: 'rgba(23,23,23,.13)', stroke: ink, 'stroke-width': 1.8 } : { fill: 'none', stroke: ink, 'stroke-width': 2.2 };
+  var bodyAttrs = style === 'ink' ? { fill: ink } : style === 'wash' ? { fill: washFill, stroke: ink, 'stroke-width': 1.8 } : { fill: 'none', stroke: ink, 'stroke-width': 2.2 };
   var line = function(w, col){ return { fill:'none', stroke: col || ink, 'stroke-width': w, 'stroke-linecap':'round', 'stroke-linejoin':'round' }; };
   var E = { body: mk(g, 'path', bodyAttrs), head: mk(g, 'ellipse', Object.assign({ rx: sex === 'm' ? 12.5 : 12, ry: 15 }, bodyAttrs)) };
   if (sex === 'f') E.bun = mk(g, 'circle', { r: 5.2, fill: ink });
   var segs = ['neck','thL','shL','ftL','thR','shR','ftR','uaR','faR','hdR','uaL','faL','hdL'], wk = { neck:'neck', thL:'th', shL:'sh', ftL:'ft', thR:'th', shR:'sh', ftR:'ft', uaR:'ua', faR:'fa', hdR:'hd', uaL:'ua', faL:'fa', hdL:'hd' };
   var washEls = {};
-  if (style === 'wash') segs.forEach(function(k){ washEls[k] = mk(g, 'path', line(W[wk[k]]*3, 'rgba(23,23,23,.18)')); });
+  if (style === 'wash') segs.forEach(function(k){ washEls[k] = mk(g, 'path', line(W[wk[k]]*3, washStroke)); });
   segs.forEach(function(k){ E[k] = mk(g, 'path', line(W[wk[k]])); });
   var P = {};
-  if (props && sex === 'f'){ P.fan = mk(svg, 'path', { fill: style === 'line' ? 'none' : 'rgba(162,48,42,.18)', stroke: red, 'stroke-width': 1.6, 'stroke-linejoin': 'round' }); P.ribs = mk(svg, 'path', { fill:'none', stroke: red, 'stroke-width': .8 }); }
-  if (props && sex === 'm'){ P.drum = mk(svg, 'circle', { r: 14, fill: style === 'line' ? 'none' : 'rgba(162,48,42,.18)', stroke: red, 'stroke-width': 2 }); P.stick = mk(svg, 'path', line(style === 'line' ? 2 : 3)); P.knob = mk(svg, 'circle', { r: 3.5, fill: red }); }
+  if (props && sex === 'f'){ P.fan = mk(svg, 'path', { fill: style === 'line' ? 'none' : redSoft, stroke: red, 'stroke-width': 1.6, 'stroke-linejoin': 'round' }); P.ribs = mk(svg, 'path', { fill:'none', stroke: red, 'stroke-width': .8 }); }
+  if (props && sex === 'm'){ P.drum = mk(svg, 'circle', { r: 14, fill: style === 'line' ? 'none' : redSoft, stroke: red, 'stroke-width': 2 }); P.stick = mk(svg, 'path', line(style === 'line' ? 2 : 3)); P.knob = mk(svg, 'circle', { r: 3.5, fill: red }); }
   var ribEl = (opts.ribbon !== false && sex === 'f') ? mk(svg, 'path', line(style === 'line' ? 2.2 : 3.4, red)) : null;
   var ribbon = new Ribbon(6, 0.36*H), seq = SEQ[move] || SEQ.shan;
   function draw(t){

@@ -5,6 +5,7 @@
   python3 tools/cover.py themes/<dir> --focus ".map-wrap" --scheme light
 
 meta.json 里可以写 "cover_focus": "<css selector>"（截图前把该元素滚到视口中央）和 "cover_scheme": "light|dark"。
+页面里给元素加 data-cover-hide 属性（比如深浅色切换按钮），截图时会隐藏。
 """
 import sys, os, json, argparse
 from playwright.sync_api import sync_playwright
@@ -17,6 +18,7 @@ focus = a.focus or meta.get('cover_focus'); scheme = a.scheme or meta.get('cover
 with sync_playwright() as p:
     b = p.chromium.launch(); ctx = b.new_context(viewport={'width': 1200, 'height': 630}, device_scale_factor=1, color_scheme=scheme)
     pg = ctx.new_page(); pg.goto('file://' + os.path.join(d, 'index.html')); pg.wait_for_timeout(1800)
+    pg.add_style_tag(content='[data-cover-hide]{display:none !important}')  # 主题页里标了 data-cover-hide 的元素（如深浅色按钮）不进封面
     if focus:
         pg.evaluate("sel => { const el = document.querySelector(sel); if (el) el.scrollIntoView({block:'center'}); }", focus); pg.wait_for_timeout(500)
     pg.screenshot(path=out); b.close()

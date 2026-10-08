@@ -1,0 +1,3612 @@
+{
+ "agent": "B",
+ "status": "三座装置、四张候补卡、旁栏均已填；未核项见各处 todo 与 notes",
+ "machines": [
+  {
+   "id": "spps",
+   "prize": {
+    "year": 1984,
+    "laureates": [
+     {
+      "zh": "卡洛·鲁比亚",
+      "en": "Carlo Rubbia",
+      "life": "1934–",
+      "share": "1/2",
+      "role": "1976 年提出把现成的质子加速器改成质子–反质子对撞机，说服 CERN 立项，并领导 UA1 实验"
+     },
+     {
+      "zh": "西蒙·范德梅尔",
+      "en": "Simon van der Meer",
+      "life": "1925–2011",
+      "share": "1/2",
+      "role": "发明随机冷却，并与 Roy Billinge 共同主持反质子积累环，让反质子束攒得起来"
+     }
+    ],
+    "citation_en": "for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction",
+    "citation_zh": "表彰他们对一个大型项目的决定性贡献，这个项目导致发现了传递弱相互作用的场粒子 W 和 Z",
+    "citation_source": {
+     "t": "瑞典皇家科学院 kva.se：Carlo Rubbia 得主页",
+     "u": "https://www.kva.se/en/prize-laureate/carlo-rubbia-2"
+    }
+   },
+   "apparatus": {
+    "zh": "SPS 质子–反质子对撞机（含反质子积累环与 UA1、UA2 探测器）",
+    "en": "CERN SPS Proton–Antiproton Collider (SppS), with the Antiproton Accumulator, UA1 and UA2",
+    "years": "1976 提案 / 1978 批准 / 1981 首次对撞 / 1983 发现 W、Z / 1990 关机",
+    "place_zh": "欧洲核子研究中心（CERN），日内瓦近郊，瑞士与法国边境",
+    "lat": 46.23,
+    "lon": 6.05
+   },
+   "claim": "格拉肖、温伯格、萨拉姆 1961–68 年的电弱理论预言，弱相互作用由 W⁺、W⁻、Z⁰ 三种粒子传递；1973 年发现中性流后，理论给出质量约 80 和 90 GeV，近质子的 100 倍。1976 年没有哪台加速器的对撞能量够得着。装置要回答：这三种粒子在不在，质量对不对。",
+   "brief": [
+    "质心能量要到 500 GeV 以上：两束各 270 GeV 的质子与反质子对撞，得 540 GeV；用固定靶达到同样的能量，束流要 150,000 GeV。",
+    "亮度要到 10^29 cm⁻² s⁻¹ 量级，才有每天约 10 个 W、1 个 Z；设计值定在 10^30。",
+    "反质子每天至少要攒 3×10^10 个：每 100 万个 26 GeV 质子打靶只换来约 1 个可用的反质子，相空间密度要压缩 10^8 倍以上。",
+    "束流要在环里存十几个小时：SPS 的真空必须比做固定靶时好得多。1979 年的设计文章说平均真空改善 10 倍可得约 24 小时的亮度寿命；后来的综述说实际改善了近三个数量级。",
+    "一轮运行约 10^9 次对撞里只有十来个 W：探测器要认得出高能电子，还要靠能量不平衡算出看不见的中微子。"
+   ],
+   "scale": [
+    {
+     "k": "SPS 周长",
+     "v": "近 7 公里（约 6.9 公里）",
+     "note": "CERN 官方页写「nearly 7 km」；环是 1976 年投产的 400 GeV 固定靶加速器，没有新挖隧道",
+     "f": [
+      10
+     ]
+    },
+    {
+     "k": "对撞能量",
+     "v": "270 + 270 GeV（1981–83），1984 年起 315 + 315 GeV",
+     "note": "常规磁铁连续通电的上限；实际质心能量 546 GeV 与 630 GeV",
+     "f": [
+      10
+     ]
+    },
+    {
+     "k": "反质子产额",
+     "v": "每脉冲 10^13 个质子换约 10^7 个反质子，约百万分之一",
+     "note": "PS 的 26 GeV/c 质子打靶，收集 3.5 GeV/c 的反质子，每 2.4 秒一个脉冲；1984 年实测转换率 0.6×10^-6",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "反质子积累环（AA）",
+     "v": "周长 157 米，一天攒 10^11 量级的反质子",
+     "note": "设计 6×10^11 个 / 24 小时；1984 年实测 1.7×10^11 个 / 24 小时，最大堆积 2.8×10^11 个",
+     "f": [
+      8,
+      9
+     ]
+    },
+    {
+     "k": "冷却",
+     "v": "相空间密度提高 8–9 个数量级",
+     "note": "随机冷却加堆积，从靶到堆芯；1984 年实测 5.4×10^8 倍",
+     "f": [
+      8
+     ]
+    },
+    {
+     "k": "真空",
+     "v": "比固定靶时期好 10 倍到近三个数量级（来源不一）",
+     "note": "1979 年设计文章：平均真空改善 10 倍，亮度寿命约 24 小时；维基百科转引 Evans、Jones、Koziol（1989）：原设计 2×10^-7 托，改善近三个数量级。具体数值未核到一手来源，置信度中",
+     "f": [
+      11
+     ]
+    },
+    {
+     "k": "UA1",
+     "v": "约 10 × 6 × 6 米，约 2,000 吨，约 130 位物理学家",
+     "note": "13 家机构（一说 12 家）；其中磁铁 800 吨、0.7 T；中心漂移室长 5.8 米、直径 2.3 米",
+     "f": [
+      13
+     ]
+    },
+    {
+     "k": "UA2",
+     "v": "约 200 吨，50–60 位物理学家",
+     "note": "6 家机构；没有中心磁场；造价约为 UA1 的三分之一",
+     "f": [
+      14
+     ]
+    },
+    {
+     "k": "造价",
+     "v": "改造 SPS 的估价 2 亿瑞士法郎",
+     "note": "1978 年批准时的数字，见 Physics Today 1983 年 4 月与 1985 年 1 月两篇报道，都没说明是否含探测器与积累环；UA1 探测器约 3,000 万瑞士法郎",
+     "f": [
+      4,
+      13
+     ]
+    }
+   ],
+   "approach": [
+    "改造，不新建。SPS 1976 年才作为 400 GeV 固定靶加速器投产，1978 年就决定改成储存环：质子和反质子电荷相反，可以共用同一套磁铁和真空管反向运行。代价是常规磁铁连续通电只能到 270 GeV。",
+    "最没把握的一环先在小环上验。随机冷却 1974 年在 ISR 上只测到每小时约 2% 的效果。CERN 1977 年用 g-2 实验的旧磁铁拼出 ICE 环，1978 年年中证明三个方向都能冷却，理事会随后才批准项目。",
+    "用反馈压束流。拾取电极测出一小段束流的电荷中心偏了多少，信号放大后沿弦抄近路赶到环的另一侧，把这个偏离纠回去；每圈纠一点，样本不断重新混合，积少成多。布德克尔 1966 年提出的电子冷却是另一条路。",
+    "两台探测器走两条路。UA1 是带 0.7 T 磁场、几乎 4π 覆盖的通用探测器，约 2,000 吨；UA2 不要中心磁场，押在细分的量能器上，造价约为 UA1 的三分之一。W 和 Z 都由两家各自独立看到。"
+   ],
+   "history": [
+    {
+     "d": "1968",
+     "t": "范德梅尔在 ISR 上想到随机冷却，觉得想法太离奇，没有发表"
+    },
+    {
+     "d": "1972-08",
+     "t": "写成内部报告 CERN/ISR-PO/72-31"
+    },
+    {
+     "d": "1974",
+     "t": "ISR 上做原理验证：竖直方向每小时冷却约 2%"
+    },
+    {
+     "d": "1976-06",
+     "t": "亚琛中微子会议上，鲁比亚、McIntyre、Cline 提出把现有质子加速器改成质子–反质子对撞机"
+    },
+    {
+     "d": "1977",
+     "t": "用 g-2 环的旧磁铁建成 ICE 小环"
+    },
+    {
+     "d": "1978-05/06",
+     "t": "ICE 证明三维冷却可行；CERN 批准改造 SPS（5 月 28 日，一说 6 月）；6 月 29 日 UA1 获批"
+    },
+    {
+     "d": "1978-12-14",
+     "t": "UA2 获批"
+    },
+    {
+     "d": "1980-07-03",
+     "t": "反质子积累环启动，当晚有束流"
+    },
+    {
+     "d": "1981-07-09",
+     "t": "SPS 内首次质子–反质子对撞，名义质心能量 540 GeV（另一说 7 月 10 日）"
+    },
+    {
+     "d": "1982",
+     "t": "UA1 在安装中被污染，拆开清洗；10–12 月的运行里两个实验记到首批 W 候选事例"
+    },
+    {
+     "d": "1983-01-20",
+     "t": "鲁比亚在 CERN 报告 UA1 的 W 事例，随后 UA2 报告；1 月 25 日开新闻发布会"
+    },
+    {
+     "d": "1983-06-01",
+     "t": "CERN 宣布 UA1 发现 Z；7 月 15 日 UA2 报告"
+    },
+    {
+     "d": "1984",
+     "t": "对撞能量升到 315 + 315 GeV；10 月，鲁比亚与范德梅尔获诺贝尔奖"
+    },
+    {
+     "d": "1986–87",
+     "t": "在积累环外加建反质子收集环（AC），积累率提高约 10 倍"
+    },
+    {
+     "d": "1990",
+     "t": "对撞机年底关机（维基百科写 1991 年底）"
+    }
+   ],
+   "people": [
+    {
+     "zh": "",
+     "en": "Peter McIntyre、David Cline",
+     "r": "1976 年提案的另两位作者"
+    },
+    {
+     "zh": "",
+     "en": "Roy Billinge",
+     "r": "与范德梅尔共同主持反质子积累环的建造"
+    },
+    {
+     "zh": "",
+     "en": "Lars Thorndahl",
+     "r": "提出更快的动量冷却办法，使单环积累可行"
+    },
+    {
+     "zh": "",
+     "en": "Pierre Darriulat",
+     "r": "UA2 发言人（1978–85）"
+    },
+    {
+     "zh": "",
+     "en": "Luigi Di Lella",
+     "r": "UA2 第二任发言人；1983 年 1 月报告 UA2 的 W 事例"
+    },
+    {
+     "zh": "",
+     "en": "John Adams、Léon Van Hove",
+     "r": "1976–80 年 CERN 的两位总干事，任内批准项目"
+    },
+    {
+     "zh": "林恩·埃文斯",
+     "en": "Lyn Evans",
+     "r": "SPS 对撞机的机器物理学家，后来主持建造 LHC"
+    },
+    {
+     "zh": "",
+     "en": "Peter Jenni",
+     "r": "UA2 的 CERN 组负责人，后来任 ATLAS 发言人"
+    },
+    {
+     "zh": "布德克尔",
+     "en": "Gersh Budker",
+     "r": "1966 年提出电子冷却，是随机冷却之外的另一条路"
+    },
+    {
+     "zh": "格拉肖、萨拉姆、温伯格",
+     "en": "Sheldon Glashow, Abdus Salam, Steven Weinberg",
+     "r": "电弱理论的提出者，1979 年获诺贝尔奖"
+    }
+   ],
+   "awards": [
+    "1979 年诺贝尔物理学奖：格拉肖、萨拉姆、温伯格，奖给预言 W、Z 的电弱理论；当时这两种粒子还没被看到",
+    "1982 年英国物理学会 Duddell 奖章：范德梅尔，表彰他构思、设计和建造的多种高能物理实验装置，特别是随机冷却",
+    "1984 年的奖是第一个授予在 CERN 完成的工作的诺贝尔奖（Physics Today 1985 年 1 月的说法）"
+   ],
+   "anecdotes": [
+    {
+     "t": "范德梅尔 1972 年那份内部报告里写着：这项工作是 1968 年做的，当时觉得想法太离奇，不值得发表。",
+     "kind": "当事人自述",
+     "f": [
+      5
+     ]
+    },
+    {
+     "t": "1976 年的提案论文投给《Physical Review Letters》，被以「不适合本刊」退稿，后来收进亚琛中微子会议的文集。",
+     "kind": "著作",
+     "f": [
+      2
+     ]
+    },
+    {
+     "t": "诺贝尔委员会的 Gösta Ekspong 这样概括两位得主：西蒙让它成为可能，卡洛让它成为现实（Simon made it possible, Carlo made it happen）。",
+     "kind": "著作",
+     "f": [
+      19
+     ]
+    },
+    {
+     "t": "ICE 小环里存过 240 个反质子，四天后还有 80 个在转，顺手把反质子寿命的实验下限提高了 9 个数量级。",
+     "kind": "官方史",
+     "f": [
+      6
+     ]
+    },
+    {
+     "t": "UA2 在 1982 年 12 月就记到一个像 Z 的事例，决定等更干净的再说；UA1 在 1983 年春天看到后先宣布。",
+     "kind": "著作",
+     "f": [
+      16
+     ]
+    },
+    {
+     "t": "范德梅尔后来写道，自己「略带业余的物理路子，加上大量实际经验」反而是长处。CERN 前研究主任 Jos Engelen 说，他算不上科学家，倒是「最好意义上的工程师」。",
+     "kind": "当事人自述",
+     "f": [
+      19
+     ]
+    },
+    {
+     "t": "鲁比亚这样形容约 2,000 吨的 UA1：「一头巨兽，说白了就是一层套一层的盒子。」UA1 找 W 的办法是从 14 万个触发事例里筛到 39 个，再一个个用眼睛看。",
+     "kind": "当事人自述",
+     "f": [
+      13,
+      15
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "CERN 没有新建机器，把刚投产的 SPS 改成对撞机；最没把握的随机冷却先在 ISR（1974）和旧磁铁拼的 ICE 小环（1977–78）上验过，才批 2 亿瑞士法郎的改造。",
+    "principle": "最大的风险，先花小钱在小装置上验掉。",
+    "engineer": "方案里最没把握的那一环，先做一个便宜的原型单独验证，过关了再决定整个项目上不上；能改现成的就不新建。",
+    "public": "做大决定之前先小规模试一次：先租后买，先试讲再开课；手头现成的东西改一改，常常比另起炉灶快。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "范德梅尔的冷却与积累技术后来用在费米实验室 Tevatron 的反质子源上（1985 年首次对撞，1995 年发现顶夸克）；SPS 今天是 LHC 的注入器；主持 LHC 建造的 Lyn Evans 和 ATLAS 的 Peter Jenni 都出自这台对撞机。",
+   "metrics": {
+    "size_m": 6900,
+    "size_what": "SPS 周长（约 6.9 公里；CERN 官方页写近 7 公里）",
+    "mass_t": 2000,
+    "mass_what": "UA1 探测器总质量（约）；UA2 约 200 吨",
+    "depth_m": null,
+    "temp_K": null,
+    "cost": {
+     "amount": 200000000,
+     "currency": "CHF",
+     "year": 1978,
+     "what": "把 SPS 改成对撞机的估价（1978 年批准时）；出自 Physics Today 1983 年 4 月与 1985 年 1 月两篇报道，是否含探测器与积累环不详"
+    },
+    "people": {
+     "n": 130,
+     "what": "UA1 合作组物理学家人数（约，13 家机构）；UA2 另有 50–60 人"
+    },
+    "t_idea": 1976,
+    "t_build": 1978,
+    "t_first": 1981,
+    "t_result": 1983,
+    "t_prize": 1984
+   },
+   "drawing": [
+    {
+     "what": "SPS 环周长",
+     "value": 6.9,
+     "unit": "公里",
+     "note": "CERN 官方页写「近 7 公里」，维基百科写 6.9 公里；精确到米的数字未核",
+     "f": [
+      10
+     ]
+    },
+    {
+     "what": "PS（质子同步加速器）环周长",
+     "value": 628,
+     "unit": "米",
+     "note": "反质子的来源：PS 的 26 GeV/c 质子打靶",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "反质子积累环（AA）周长",
+     "value": 157,
+     "unit": "米",
+     "note": "PS 的四分之一",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "反质子收集环（AC，1987 年加建，套在 AA 外面）周长",
+     "value": 187,
+     "unit": "米",
+     "note": "",
+     "f": [
+      21
+     ]
+    },
+    {
+     "what": "UA1 探测器外形（长 × 宽 × 高）",
+     "value": "10 × 6 × 6",
+     "unit": "米",
+     "note": "约数，约 2,000 吨",
+     "f": [
+      13
+     ]
+    },
+    {
+     "what": "UA1 中心漂移室（长 × 直径）",
+     "value": "5.8 × 2.3",
+     "unit": "米",
+     "note": "",
+     "f": [
+      13
+     ]
+    },
+    {
+     "what": "费米实验室主环 / Tevatron 隧道周长（对照）",
+     "value": 6.3,
+     "unit": "公里",
+     "note": "CERN Courier 写 6.4 公里",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "SPS 隧道在 LSS4（UA2 所在处）的深度",
+     "value": 60,
+     "unit": "米",
+     "note": "1979 年设计文章；全环深度不一，未查",
+     "f": [
+      22
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "1984 年诺贝尔物理学奖颁奖词：「for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction」。奖金约 19.3 万美元，两人平分。科学院的说明是：鲁比亚提出并发展了这个想法，范德梅尔的发明使它可行。",
+     "sources": [
+      {
+       "t": "kva.se：Carlo Rubbia 得主页",
+       "u": "https://www.kva.se/en/prize-laureate/carlo-rubbia-2"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月：Nobel prize to Rubbia and van der Meer for finding W and Z",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "nobelprize.org 未打开；kva.se 页面把 communicators of weak interaction 排成了第二行"
+    },
+    {
+     "n": 2,
+     "text": "1976 年 6 月 8–12 日亚琛国际中微子会议上，鲁比亚、Peter McIntyre、David Cline 提出给现有的 400 GeV 质子加速器（费米实验室或 CERN 的）加一个反质子源，改成质子–反质子对撞机。论文题为「Producing Massive Neutral Intermediate Vector Bosons with Existing Accelerators」，投《Physical Review Letters》被以不适合该刊退稿，1977 年刊于会议文集。",
+     "sources": [
+      {
+       "t": "CERN 时间线：The SPS: From accelerator to collider",
+       "u": "https://timeline-upgrade.web.cern.ch/node/487"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN Courier 2023：Remembering the W discovery",
+       "u": "https://cerncourier.com/a/remembering-the-w-discovery/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 3,
+     "text": "提案同时交给了费米实验室和 CERN，只有 CERN 批准。费米实验室当时在造超导的 Tevatron，1978 年决定质子–反质子对撞放到 Tevatron 上做，不改 400 GeV 的主环，时间表慢得多；它的反质子源 1982 年获批，1985 年 10 月 13 日才有首次对撞。",
+     "sources": [
+      {
+       "t": "L. Di Lella, The Discovery of the W and Z Bosons at the CERN Proton-Antiproton Collider, Highlights in High-Energy Physics 1(1), 8 (2025)",
+       "u": "https://inspirehep.net/files/0671142c9a3dc830634cf94e39ea9432"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "Holmes, Moore, Shiltsev, Overview of the Tevatron Collider Complex (arXiv:1106.0909)",
+       "u": "https://www.arxiv.org/pdf/1106.0909"
+      },
+      {
+       "t": "Shiltsev 等，Remembering the Tevatron: The Machine(s) (arXiv:1109.2937)",
+       "u": "https://arxiv.org/pdf/1109.2937"
+      }
+     ],
+     "confidence": "高",
+     "note": "各来源的说法是「只有 CERN 批准」「费米实验室决定放到 Tevatron 上做」；「费米实验室拒绝」这个说法本次没有找到一手出处，见 disputes"
+    },
+    {
+     "n": 4,
+     "text": "CERN 在 1978 年批准把 SPS 改成既能做固定靶、又能做质子–反质子对撞的机器，估价 2 亿瑞士法郎。Di Lella 写批准日期是 1978 年 5 月 28 日，Physics Today 写理事会 6 月批准。UA1 于 1978 年 6 月 29 日由研究委员会批准，UA2 于同年 12 月 14 日批准。",
+     "sources": [
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "Physics Today 1983 年 4 月：W 发现的报道",
+       "u": "https://aip.brightspotcdn.com/PTO.v36.i4.17_1.online.pdf"
+      },
+      {
+       "t": "L. Di Lella 2025",
+       "u": "https://inspirehep.net/files/0671142c9a3dc830634cf94e39ea9432"
+      },
+      {
+       "t": "CERN 时间线：UA1 experiment approved",
+       "u": "https://timeline-upgrade.web.cern.ch/node/488"
+      },
+      {
+       "t": "CERN：UA2",
+       "u": "https://home.cern/science/experiments/ua2"
+      }
+     ],
+     "confidence": "中",
+     "note": "2 亿瑞士法郎见 Physics Today 1983 年 4 月与 1985 年 1 月两篇报道，都没有说明含不含探测器与积累环；别的来源没有查到。批准日期各家略有出入，见 disputes"
+    },
+    {
+     "n": 5,
+     "text": "随机冷却：范德梅尔 1968 年在 ISR 工作时想到，1972 年 8 月才写成内部报告 CERN/ISR-PO/72-31，报告里说明这项工作做于 1968 年、当时觉得太离奇不值得发表。ISR 上 1973 年 11 月第一次记录到阻尼信号，1974 年的验证实验测到竖直方向每小时约 2% 的冷却率，结果 1975 年发表。原理：拾取电极测出一小段束流电荷中心的偏离，信号放大后沿环的弦抄近路送到下游的校正器，把偏离减小；粒子不断重新混合，逐圈累积。",
+     "sources": [
+      {
+       "t": "CERN Courier 2011：Simon van der Meer: a quiet giant of engineering and physics",
+       "u": "https://cerncourier.com/a/simon-van-der-meer-a-quiet-giant-of-engineering-and-physics/"
+      },
+      {
+       "t": "V. Chohan, Simon van der Meer and his legacy to CERN and particle accelerators (arXiv:1212.4320)",
+       "u": "https://arxiv.org/pdf/1212.4320"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "Physics Today 讣告：Simon van der Meer（Caspers、Möhl）",
+       "u": "https://physicstoday.aip.org/obituaries/simon-van-der-meer"
+      }
+     ],
+     "confidence": "高",
+     "note": "ISR 验证的年份：1973-11 首次记录、1974 实验、1975 发表，三种写法都有依据"
+    },
+    {
+     "n": 6,
+     "text": "ICE（Initial Cooling Experiment，初始冷却实验）1977 年用 μ 子 g-2 实验的储存环磁铁很快建成；1978 年年中证明横向两个方向和动量方向都能冷却，束流在 15 秒内冷却、动量密度提高 20 倍。ICE 里存过 240 个反质子，四天后仍有 80 个，把反质子静止寿命的下限定到 32 小时，比原有结果提高 9 个数量级。",
+     "sources": [
+      {
+       "t": "Fifty years of the CERN Proton Synchrotron: Volume 2（CERN-2013-005，arXiv:1309.6923）",
+       "u": "https://arxiv.org/pdf/1309.6923"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN Courier 2004：P. Darriulat, The W and Z particles: a personal recollection",
+       "u": "https://cerncourier.com/a/the-w-and-z-particles-a-personal-recollection/"
+      }
+     ],
+     "confidence": "高",
+     "note": "Darriulat 写 ICE 的成功在 1978 年 6 月得到证明，UA1 随即获批"
+    },
+    {
+     "n": 7,
+     "text": "反质子的来源：PS 把约 10^13 个质子加速到 26 GeV/c，每 2.4 秒一个脉冲打在靶上，收集动量 3.5 GeV/c 的反质子，每个脉冲约 10^7 个，即每 100 万个质子换约 1 个反质子。1984 年的实测值：每脉冲注入 6.7×10^6 个，转换率约 0.6×10^-6。",
+     "sources": [
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN Courier：When CERN saw the end of the alphabet",
+       "u": "https://cerncourier.com/a/when-cern-saw-the-end-of-the-alphabet/"
+      },
+      {
+       "t": "Fifty years of the CERN Proton Synchrotron: Volume 2",
+       "u": "https://arxiv.org/pdf/1309.6923"
+      }
+     ],
+     "confidence": "高",
+     "note": "Physics Today 1982 年 2 月写「每百万个质子约得两个可用的反质子」"
+    },
+    {
+     "n": 8,
+     "text": "反质子积累环（Antiproton Accumulator，AA）周长 157 米，是 PS（628 米）的四分之一，磁场恒定。1978 年获准建造，1980 年 7 月 3 日启动、当晚就有束流；Roy Billinge 与范德梅尔共同任项目负责人。从靶到堆芯，反质子的相空间密度要提高 8–9 个数量级，1984 年实测 5.4×10^8 倍。",
+     "sources": [
+      {
+       "t": "Fifty years of the CERN Proton Synchrotron: Volume 2",
+       "u": "https://arxiv.org/pdf/1309.6923"
+      },
+      {
+       "t": "CERN Courier 2011：Simon van der Meer",
+       "u": "https://cerncourier.com/a/simon-van-der-meer-a-quiet-giant-of-engineering-and-physics/"
+      },
+      {
+       "t": "Billinge、Crowley-Milling, The CERN Proton-Antiproton Colliding Beam Facilities, IEEE Trans. Nucl. Sci. NS-26 (1979)",
+       "u": "https://epaper.kek.jp/p79/PDF/PAC1979_2974.PDF"
+      }
+     ],
+     "confidence": "高",
+     "note": "PS 史写「1979 年开工」，CERN Courier 写「1978 年获准并开工」"
+    },
+    {
+     "n": 9,
+     "text": "积累速度的几个口径：实验每天至少需要约 3×10^10 个反质子；1979 年的设计值是 24 小时攒 6×10^11 个；1981 年 12 月实际约每小时 5×10^9 个，环里最多存到 2×10^10 个；1984 年实测 24 小时 1.7×10^11 个，最大堆积 2.8×10^11 个。Physics Today 1985 的描述是 120 小时后环里有 10^12 个，其中 6×10^10 个集中在堆芯。攒够一次对撞用的反质子，大约要一天到几天。",
+     "sources": [
+      {
+       "t": "L. Di Lella 2025",
+       "u": "https://inspirehep.net/files/0671142c9a3dc830634cf94e39ea9432"
+      },
+      {
+       "t": "Billinge、Crowley-Milling 1979",
+       "u": "https://epaper.kek.jp/p79/PDF/PAC1979_2974.PDF"
+      },
+      {
+       "t": "Physics Today 1982 年 2 月：CERN SPS now running as 540-GeV pp collider",
+       "u": "https://aip.brightspotcdn.com/PTO.v35.i2.17_1.online.pdf"
+      },
+      {
+       "t": "Fifty years of the CERN Proton Synchrotron: Volume 2",
+       "u": "https://arxiv.org/pdf/1309.6923"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "种子写「一天攒约 3×10^10 个」，这个数在 Di Lella 文中是每天的需求量，在维基百科里也写作每天的产率；1984 年的实测产率高出约 5 倍"
+    },
+    {
+     "n": 10,
+     "text": "SPS 周长近 7 公里，1976 年 6 月 17 日首次把质子加速到 400 GeV，原本只做固定靶实验。作为储存环连续通电，磁铁只能撑到每束 270 GeV，质心能量名义 540 GeV（实际 546 GeV）；1984 年升到每束 315 GeV（630 GeV）；1985 年起还做过脉冲运行，短时到 900 GeV。固定靶要达到 540 GeV 的质心能量，需要 150,000 GeV 的束流。",
+     "sources": [
+      {
+       "t": "CERN：The Super Proton Synchrotron",
+       "u": "https://home.cern/science/accelerators/super-proton-synchrotron"
+      },
+      {
+       "t": "Physics Today 1982 年 2 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v35.i2.17_1.online.pdf"
+      },
+      {
+       "t": "L. Di Lella 2025",
+       "u": "https://inspirehep.net/files/0671142c9a3dc830634cf94e39ea9432"
+      },
+      {
+       "t": "CERN Courier 2001：Super Proton Synchrotron marks its 25th birthday",
+       "u": "https://cerncourier.com/a/super-proton-synchrotron-marks-its-25th-birthday/"
+      },
+      {
+       "t": "维基百科：Super Proton Synchrotron",
+       "u": "https://en.wikipedia.org/wiki/Super_Proton_Synchrotron"
+      }
+     ],
+     "confidence": "高",
+     "note": "周长：CERN 官方页写 nearly 7 km，维基百科写 6.9 km；精确到米的数字（通行 6,911 米）没有核到。900 GeV 脉冲运行只见于维基百科转引 Lauckner 1985"
+    },
+    {
+     "n": 11,
+     "text": "SPS 的真空：1979 年 Billinge 与 Crowley-Milling 的设计文章写，SPS 的平均真空改善 10 倍，270 GeV 下的亮度寿命约为 24 小时。维基百科转引 Evans、Jones、Koziol（1989）的说法是：SPS 原设计真空为 2×10^-7 托，要让束流储存 15–20 小时，真空须改善近三个数量级。1982 年初 Physics Today 报道称实际真空比原先预期的好得多，亮度寿命已接近 24 小时的设计值；1983 年实测平均亮度寿命约 17 小时。",
+     "sources": [
+      {
+       "t": "Billinge、Crowley-Milling, The CERN Proton-Antiproton Colliding Beam Facilities, IEEE Trans. Nucl. Sci. NS-26 (1979)",
+       "u": "https://epaper.kek.jp/p79/PDF/PAC1979_2974.PDF"
+      },
+      {
+       "t": "维基百科：Super Proton–Antiproton Synchrotron（转引 Evans、Jones、Koziol 1989）",
+       "u": "https://en.wikipedia.org/wiki/Super_Proton%E2%80%93Antiproton_Synchrotron"
+      },
+      {
+       "t": "Physics Today 1982 年 2 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v35.i2.17_1.online.pdf"
+      },
+      {
+       "t": "Evans、Gareyte, IEEE Trans. Nucl. Sci. NS-30 (1983)",
+       "u": "https://epaper.kek.jp/p83/PDF/PAC1983_2397.PDF"
+      }
+     ],
+     "confidence": "中",
+     "note": "「10 倍」与「近三个数量级」两种说法并存：前者是 1979 年的设计要求，后者是事后综述的说法（原文未打开）。种子写「近三个数量级」"
+    },
+    {
+     "n": 12,
+     "text": "1981 年 4 月反质子先送进 ISR，实现了第一次质子–反质子对撞；SPS 内的首次对撞在 1981 年 7 月 9 日（PS 史写 7 月 10 日）。亮度：1981 年 12 月约 2×10^27 cm⁻² s⁻¹；1982 年 11–12 月峰值 5×10^28，UA1 积累 18 nb⁻¹；设计值 10^30 到 1987–90 年才超过（3×10^30）。亮度寿命约 17 小时。",
+     "sources": [
+      {
+       "t": "CERN Courier：When CERN saw the end of the alphabet",
+       "u": "https://cerncourier.com/a/when-cern-saw-the-end-of-the-alphabet/"
+      },
+      {
+       "t": "Fifty years of the CERN Proton Synchrotron: Volume 2",
+       "u": "https://arxiv.org/pdf/1309.6923"
+      },
+      {
+       "t": "Physics Today 1982 年 2 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v35.i2.17_1.online.pdf"
+      },
+      {
+       "t": "Evans、Gareyte, Beam-Beam and Single Beam Effects in the SPS Proton-Antiproton Collider, IEEE Trans. Nucl. Sci. NS-30 (1983)",
+       "u": "https://epaper.kek.jp/p83/PDF/PAC1983_2397.PDF"
+      },
+      {
+       "t": "L. Di Lella 2025",
+       "u": "https://inspirehep.net/files/0671142c9a3dc830634cf94e39ea9432"
+      }
+     ],
+     "confidence": "高",
+     "note": "首次对撞日期相差一天，见 disputes"
+    },
+    {
+     "n": 13,
+     "text": "UA1（Underground Area 1）：约 10 × 6 × 6 米、约 2,000 吨，可以沿轨道退出束流线；约 130 位物理学家（Physics Today 1983 年写 135 人）来自 13 家机构，发言人鲁比亚；他自己形容它是「一头巨兽，说白了就是一层套一层的盒子」。800 吨的常规偶极磁铁在 85 立方米内产生 0.7 T 磁场；中心漂移室长 5.8 米、直径 2.3 米，有 6,125 根信号丝，是当时最大的成像漂移室；除束流方向的小锥角外接近 4π 覆盖。探测器造价约 3,000 万瑞士法郎。1982 年安装时探测器被污染，拆开清洗，主要取数推迟到当年 10 月。",
+     "sources": [
+      {
+       "t": "CERN Courier：When CERN saw the end of the alphabet",
+       "u": "https://cerncourier.com/a/when-cern-saw-the-end-of-the-alphabet/"
+      },
+      {
+       "t": "CERN：UA1",
+       "u": "https://home.cern/science/experiments/ua1"
+      },
+      {
+       "t": "CERN 时间线：UA1 experiment approved",
+       "u": "https://timeline-upgrade.web.cern.ch/node/488"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN 档案：UA1 合作组",
+       "u": "https://archives.web.cern.ch/CERN_archive/guide/experimental_physics/SPS/isaua1/"
+      },
+      {
+       "t": "Physics Today 1983 年 4 月：W 发现的报道",
+       "u": "https://aip.brightspotcdn.com/PTO.v36.i4.17_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "机构数 13（CERN 时间线、Physics Today）或 12（CERN Courier）；信号丝 6,125（CERN 官方页）或 6,176（CERN Courier）；CERN 档案写「1982 年初两次事故」"
+    },
+    {
+     "n": 14,
+     "text": "UA2：约 200 吨，起初 50–60 位物理学家（Physics Today 1983 年写 51 人）来自 6 家机构（伯尔尼、CERN、哥本哈根、奥赛、帕维亚、萨克莱），发言人 Pierre Darriulat（1978–85）、Luigi Di Lella（1986 起）。没有中心磁场，也没有 μ 子探测器，核心是 240 个单元的中心量能器（24 瓣，每瓣 4 吨），前后向各有一组环形磁铁。造价约为 UA1 的三分之一。1981 年 12 月开始取数，1985–87 年升级后约 100 人，1990 年结束。",
+     "sources": [
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN Courier 2004：P. Darriulat",
+       "u": "https://cerncourier.com/a/the-w-and-z-particles-a-personal-recollection/"
+      },
+      {
+       "t": "L. Di Lella 2025",
+       "u": "https://inspirehep.net/files/0671142c9a3dc830634cf94e39ea9432"
+      },
+      {
+       "t": "CERN：UA2",
+       "u": "https://home.cern/science/experiments/ua2"
+      },
+      {
+       "t": "CERN 档案：UA2 合作组",
+       "u": "https://archives.web.cern.ch/CERN_archive/guide/experimental_physics/SPS/isaua2/"
+      },
+      {
+       "t": "Physics Today 1983 年 4 月：W 发现的报道",
+       "u": "https://aip.brightspotcdn.com/PTO.v36.i4.17_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "人数：Physics Today 写 50，CERN Courier 与 Di Lella 写约 60；「每瓣 4 吨」出自维基百科；整机外形尺寸没有查到"
+    },
+    {
+     "n": 15,
+     "text": "W 的发现：1982 年 12 月结束的 30 天运行里，对撞机交付 26 nb⁻¹，每个实验各筛查约 10^9 次对撞、记录约 10^6 次。UA1 从 14 万个触发事例里筛到 2,125 个，再到 39 个逐个过目，最后剩 5 个 W→eν 事例（另有 1 个后来认定为 W→τν），UA2 得到 4 个。1983 年 1 月 13 日先在罗马的研讨会上报告；1 月 20 日鲁比亚在 CERN 报告，次日 UA2 报告；1 月 25 日 CERN 开新闻发布会，1 月 26 日两组又在纽约的美国物理学会会议上报告。UA1 给出的质量是 81 ± 5 GeV，理论预言 82 ± 2.4 GeV。",
+     "sources": [
+      {
+       "t": "Physics Today 1983 年 4 月：W 发现的报道",
+       "u": "https://aip.brightspotcdn.com/PTO.v36.i4.17_1.online.pdf"
+      },
+      {
+       "t": "CERN Courier 2023：Remembering the W discovery",
+       "u": "https://cerncourier.com/a/remembering-the-w-discovery/"
+      },
+      {
+       "t": "CERN Courier：When CERN saw the end of the alphabet",
+       "u": "https://cerncourier.com/a/when-cern-saw-the-end-of-the-alphabet/"
+      },
+      {
+       "t": "CERN：UA2",
+       "u": "https://home.cern/science/experiments/ua2"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "UA2 报告的日期：CERN Courier 与 Di Lella 写 1 月 21 日，CERN 官方 UA2 页写 1 月 22 日"
+    },
+    {
+     "n": 16,
+     "text": "Z 的发现：1983 年 4 月初到 7 月 3 日的运行，积分亮度约为上一轮的 6 倍。UA1 在 4 月 30 日记录到第一个 Z 事例，CERN 于 6 月 1 日正式宣布；UA1 共 5 个事例（4 个 e⁺e⁻、1 个 μ⁺μ⁻），质量 95.6 ± 1.5 GeV（仅统计误差，绝对标度另有约 3%）。UA2 于 7 月 15 日报告 8 个事例，91.2 ± 1.7 GeV。计入辐射修正的理论值是 94.0 ± 2.5 GeV。UA2 在 1982 年 12 月已有一个候选事例，选择等更清楚的事例再发表。当时的估计是：这台对撞机一年只得到十来个 Z，而在建的 LEP 每天可得约 10,000 个。",
+     "sources": [
+      {
+       "t": "Physics Today 1983 年 11 月：Discovery of the Z° at CERN also yields anomalous events",
+       "u": "https://aip.brightspotcdn.com/PTO.v36.i11.17_1.online.pdf"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN 档案：UA1 合作组",
+       "u": "https://archives.web.cern.ch/CERN_archive/guide/experimental_physics/SPS/isaua1/"
+      },
+      {
+       "t": "CERN 时间线：W and Z particles discovered",
+       "u": "https://timeline-upgrade.web.cern.ch/node/391"
+      },
+      {
+       "t": "CERN Courier 2023：Remembering the W discovery",
+       "u": "https://cerncourier.com/a/remembering-the-w-discovery/"
+      }
+     ],
+     "confidence": "高",
+     "note": "UA1 的 Z 质量：95.6 ± 1.5（Physics Today 1983-11）、95.2 ± 2.5（Physics Today 1985-01）、95.5 ± 2.5（CERN Courier）；今天的测量值约 91.19 GeV（未在本次来源中核）"
+    },
+    {
+     "n": 17,
+     "text": "理论预言：格拉肖（1961）、温伯格（1967）、萨拉姆（1968）的电弱规范理论含 W⁺、W⁻、Z⁰ 和光子四种规范玻色子，三人获 1979 年诺贝尔奖。1973 年 Gargamelle 发现中性流、第一次测出弱混合角后，理论给出 W 质量 60–80 GeV、Z 质量 75–95 GeV；到 1980 年代初，计入辐射修正的预言是 W 82 ± 2.4 GeV、Z 94.0 ± 2.5 GeV。",
+     "sources": [
+      {
+       "t": "CERN Courier 2023：Remembering the W discovery",
+       "u": "https://cerncourier.com/a/remembering-the-w-discovery/"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "Physics Today 1983 年 4 月：W 发现的报道",
+       "u": "https://aip.brightspotcdn.com/PTO.v36.i4.17_1.online.pdf"
+      },
+      {
+       "t": "Physics Today 1983 年 11 月：Discovery of the Z° at CERN also yields anomalous events",
+       "u": "https://aip.brightspotcdn.com/PTO.v36.i11.17_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "Darriulat 回忆 1976 年前后的估计是约 65 和 80 GeV"
+    },
+    {
+     "n": 18,
+     "text": "从发现到获奖：W 于 1983 年 1 月 25 日宣布，Z 于 1983 年 6 月 1 日宣布，诺贝尔奖在 1984 年 10 月公布，相隔约 16–21 个月。这是第一个授予在 CERN 完成的工作的诺贝尔奖。",
+     "sources": [
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN Courier：When CERN saw the end of the alphabet",
+       "u": "https://cerncourier.com/a/when-cern-saw-the-end-of-the-alphabet/"
+      },
+      {
+       "t": "CERN 时间线：W and Z particles discovered",
+       "u": "https://timeline-upgrade.web.cern.ch/node/391"
+      }
+     ],
+     "confidence": "高",
+     "note": "公布的具体日期（通行说法 10 月 17 日）本次未核"
+    },
+    {
+     "n": 19,
+     "text": "范德梅尔 1925 年 11 月 24 日生于海牙，2011 年 3 月 4 日在日内瓦去世。1945 年进代尔夫特工学院读技术物理，1952 年取得工程师学位，随后在埃因霍温的飞利浦研究实验室做高压设备和电子显微镜的电子学，1956 年到 CERN，先后负责 PS 的磁极面绕组、中微子束用的磁号角、ISR 和 SPS 的磁铁电源。他在自传里说自己「略带业余的物理路子，加上大量实际经验」是长处。鲁比亚在《自然》讣告的题记里称他为工程师；CERN 前研究主任 Jos Engelen 说他算不上科学家，倒是「最好意义上的工程师」（原文：no scientist but rather an engineer in the best positive meaning of the word）。诺贝尔委员会的 Gösta Ekspong 的概括是「Simon made it possible, Carlo made it happen」。",
+     "sources": [
+      {
+       "t": "Physics Today 讣告：Simon van der Meer",
+       "u": "https://physicstoday.aip.org/obituaries/simon-van-der-meer"
+      },
+      {
+       "t": "CERN Courier 2011：Simon van der Meer",
+       "u": "https://cerncourier.com/a/simon-van-der-meer-a-quiet-giant-of-engineering-and-physics/"
+      },
+      {
+       "t": "TU Delft Delta 2011-03-30：Simon van der Meer (1925–2011)",
+       "u": "https://delta.tudelft.nl/?p=105181"
+      },
+      {
+       "t": "C. Rubbia, Nature 472, 170 (2011)",
+       "u": "https://www.nature.com/articles/472170a"
+      }
+     ],
+     "confidence": "高",
+     "note": "学科写法不一：CERN Courier 与代尔夫特写技术物理，Physics Today 讣告写电气工程，Physics Today 1985 写 physical engineering 文凭。退休时间：1990 年 12 月（Chohan、代尔夫特）或 1991 年（CERN Courier）。他获奖当天的原话没有查到"
+    },
+    {
+     "n": 20,
+     "text": "鲁比亚 1934 年 3 月 31 日生于意大利戈里齐亚，1961 年起在 CERN，1970 年起兼任哈佛大学教授，1989–93 年任 CERN 总干事。记者 Gary Taubes 1986 年出版的《Nobel Dreams》（Random House）写了 UA1 内部的竞争和他强势的作风；Alan Lightman 在《The Scientist》的书评里转述书中的说法是「受人钦佩，也招人反感」（admired but detested）。Darriulat 的回忆则强调，是他在不利的气氛里不知疲倦地推动了这个项目。",
+     "sources": [
+      {
+       "t": "The Scientist 1987 年 6 月：A. Lightman, Rubbia and His Team's Tricks of The Trade",
+       "u": "https://www.the-scientist.com/rubbia-and-his-teams-tricks-of-the-trade-63710"
+      },
+      {
+       "t": "CERN Courier 2004：P. Darriulat",
+       "u": "https://cerncourier.com/a/the-w-and-z-particles-a-personal-recollection/"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "维基百科：Carlo Rubbia",
+       "u": "https://en.wikipedia.org/wiki/Carlo_Rubbia"
+      }
+     ],
+     "confidence": "中",
+     "note": "Taubes 原书未见，只引了书评；出生日期与总干事任期出自维基百科"
+    },
+    {
+     "n": 21,
+     "text": "后续：1986–87 年在 AA 外面加建周长 187 米的反质子收集环（AC），积累率提高约 10 倍，1994 年达到 24 小时 1.1×10^12 个；对撞机 1987–90 年峰值亮度 3×10^30。UA1、UA2 取数到 1990 年，对撞机当年年底关机。AC 在 2000 年改成反质子减速器（AD）。费米实验室的反质子源同样全部采用随机冷却，Tevatron 上的 CDF 与 DZero 在 1995 年宣布发现顶夸克。",
+     "sources": [
+      {
+       "t": "Fifty years of the CERN Proton Synchrotron: Volume 2",
+       "u": "https://arxiv.org/pdf/1309.6923"
+      },
+      {
+       "t": "L. Di Lella 2025",
+       "u": "https://inspirehep.net/files/0671142c9a3dc830634cf94e39ea9432"
+      },
+      {
+       "t": "CERN Courier 2011：Simon van der Meer",
+       "u": "https://cerncourier.com/a/simon-van-der-meer-a-quiet-giant-of-engineering-and-physics/"
+      },
+      {
+       "t": "Fermilab：A Brief History of Fermilab",
+       "u": "https://history.fnal.gov/documents/A_Brief_History_of_Fermilab.pdf"
+      },
+      {
+       "t": "Shiltsev 等，Remembering the Tevatron: The Machine(s)",
+       "u": "https://arxiv.org/pdf/1109.2937"
+      }
+     ],
+     "confidence": "高",
+     "note": "关机年份见 disputes（维基百科写 1991 年底）"
+    },
+    {
+     "n": 22,
+     "text": "当时的其他选项：CERN 内部有人提过在 ISR 隧道里改装超导磁铁（到 240 GeV），后来放弃；美国布鲁克海文在建的质子–质子对撞机 ISABELLE 于 1983 年年中取消，很大程度上是因为 CERN 已经成功。SPS 改造施工时拆装了约 400 块主磁铁（总数的一半），搬动 8,000 吨设备，停机 7 个月。1979 年的计划是 SPS 自 1980 年年中停机约 8 个月来施工；UA2 所在的 LSS4 处隧道在地表下 60 米，要另挖两口竖井，UA1 所在的 LSS5 处按最重 1,000 吨的实验来设计洞室。",
+     "sources": [
+      {
+       "t": "CERN Courier 2023：Remembering the W discovery",
+       "u": "https://cerncourier.com/a/remembering-the-w-discovery/"
+      },
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN Courier 2001：Super Proton Synchrotron marks its 25th birthday",
+       "u": "https://cerncourier.com/a/super-proton-synchrotron-marks-its-25th-birthday/"
+      },
+      {
+       "t": "Billinge、Crowley-Milling, The CERN Proton-Antiproton Colliding Beam Facilities, IEEE Trans. Nucl. Sci. NS-26 (1979)",
+       "u": "https://epaper.kek.jp/p79/PDF/PAC1979_2974.PDF"
+      }
+     ],
+     "confidence": "中",
+     "note": "「拆装约 400 块主磁铁、8,000 吨、停机 7 个月」出自 SPS 25 周年一文，抓取摘要没有说明是哪一次施工，引用前请再核原文"
+    }
+   ],
+   "disputes": [
+    "批准时间：Di Lella（2025）写项目于 1978 年 5 月 28 日批准；CERN Courier 2023 写 1978 年 5 月；Physics Today 1985 写理事会 6 月批准；CERN 时间线「W and Z particles discovered」一条写 1979 年批准。UA1：CERN 时间线与 Physics Today 写 1978 年 6 月 29 日（6 月底），CERN Courier「end of the alphabet」写 1978 年年中提交、1979 年批准。",
+    "首次对撞：CERN Courier 两篇文章写 1981 年 7 月 9 日；《PS 五十年》写 7 月 10 日、2 × 273 GeV。",
+    "费米实验室的态度：种子写「费米实验室拒绝」。Di Lella 写提案交给两家、只有 CERN 批准；Physics Today 1985 与费米实验室自己的综述写费米实验室 1978 年决定在 Tevatron 上做质子–反质子对撞，不改主环，时间表更慢。没有找到写明「拒绝」及其经过的一手来源（Taubes 的书和 Krige 的 CERN 史未能打开）。",
+    "反质子积累速度：种子与维基百科写每天约 3×10^10 个；Di Lella 把这个数写作每天的需求量；设计值 6×10^11 / 24 小时；1984 年实测 1.7×10^11 / 24 小时；CERN Courier 写「每天几乘 10^11」。",
+    "攒一束要多久：《PS 五十年》写大约一天攒出几乘 10^11 的堆芯；维基百科写可能要几天；Physics Today 1985 描述 120 小时攒到 10^12。",
+    "对撞机关机：Di Lella 写 1990 年完成运行、年底关机，CERN 官方页写 UA1、UA2 运行到 1990 年；维基百科写运行到 1991 年底；CERN 时间线一处写 UA1 取数到 1993 年（应有误）。种子写「运行到 1991 年」。",
+    "UA2 在 CERN 报告 W 的日期：Physics Today 1983、CERN Courier 2023 与 Di Lella 写 1 月 21 日（UA1 报告的次日），CERN 官方 UA2 页写 1 月 22 日。罗马研讨会上报告的日期：Physics Today 写 1 月 13 日，CERN Courier 写会期 1 月 12–14 日。",
+    "UA1 人数与机构：约 130 人、13 家机构（CERN 时间线、Physics Today 1985）；135 人（Physics Today 1983）；约 130 人、12 家机构（CERN Courier）；Physics Today 1982 写 100 多人。UA2：50 人（Physics Today 1985）、51 人（Physics Today 1983）或约 60 人（CERN Courier、Di Lella）。",
+    "范德梅尔的专业：技术物理（CERN Courier、代尔夫特）、电气工程（Physics Today 讣告）、physical engineering 文凭（Physics Today 1985）。",
+    "SPS 真空改善的幅度：1979 年的设计文章（Billinge、Crowley-Milling）写平均真空改善 10 倍；维基百科转引 Evans、Jones、Koziol（1989）写原设计 2×10^-7 托、改善近三个数量级。种子用的是后一种。"
+   ],
+   "todo": [
+    "SPS 真空改造前后的具体数值：1979 年设计文章只说要改善 10 倍，维基百科转引的「近三个数量级」原文（Evans、Jones、Koziol 1989；Schmidt 2016）没有打开，World Scientific 的章节 PDF 返回 403。",
+    "2 亿瑞士法郎的口径（哪年币值、是否含探测器与积累环）只见于 Physics Today 的两篇报道（1983-04、1985-01）；Krige 的 CERN 史第三卷可核。",
+    "UA2 的整机外形尺寸没有查到；SPS 隧道的深度没有查。",
+    "范德梅尔获奖当天的表态没有查到原话；现有的是他自传里的话和同事的评价。",
+    "Taubes《Nobel Dreams》原书未见，目前只引书评；诺贝尔奖公布的具体日期（通行说法 1984-10-17）未核。",
+    "CERN 官方时间线 timeline.web.cern.ch 需要登录，改用了 timeline-upgrade.web.cern.ch 的同名条目；cds.cern.ch 有防爬页面打不开。",
+    "SPS 周长精确到米的数字（通行 6,911 米）没有核到；官方页写近 7 公里，维基百科写 6.9 公里。"
+   ]
+  },
+  {
+   "id": "cobe",
+   "prize": {
+    "year": 2006,
+    "laureates": [
+     {
+      "zh": "约翰·马瑟",
+      "en": "John C. Mather",
+      "life": "1946–",
+      "share": "1/2",
+      "role": "COBE 项目科学家，统筹整个项目，并任测黑体谱的 FIRAS 仪器的首席科学家"
+     },
+     {
+      "zh": "乔治·斯穆特",
+      "en": "George F. Smoot",
+      "life": "1945–2025",
+      "share": "1/2",
+      "role": "测温度起伏的 DMR 仪器的首席科学家"
+     }
+    ],
+    "citation_en": "for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation",
+    "citation_zh": "表彰他们发现了宇宙微波背景辐射的黑体形式和各向异性",
+    "citation_source": {
+     "t": "瑞典皇家科学院 kva.se：The Nobel Prize in Physics 2006",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2006-2/"
+    }
+   },
+   "apparatus": {
+    "zh": "宇宙背景探测器（COBE）卫星",
+    "en": "Cosmic Background Explorer (COBE)",
+    "years": "1974 提案 / 1982 获批研制 / 1989-11-18 发射 / 1993-12-23 停止观测",
+    "place_zh": "美国国家航空航天局戈达德航天中心（马里兰州格林贝尔特）自行研制；加州范登堡空军基地发射；900 公里太阳同步轨道",
+    "lat": 38.99,
+    "lon": -76.85
+   },
+   "claim": "热大爆炸理论说，宇宙早期的光今天应当冷成一层布满全天的微波，1964 年彭齐亚斯和威尔逊测到了它。理论还有两条推论：它的谱是近乎完美的黑体；各方向的温度有极小的起伏，那是星系的种子。1987 年一次火箭实验报告过亚毫米波段有超出，起伏则一直没找到。COBE 要回答这两件事。",
+   "brief": [
+    "谱：在 0.1–10 毫米波段把天空和一个黑体逐点相减，看偏差有没有；仪器指标是千分之一，最终做到均方根偏差小于峰值的十万分之五。",
+    "起伏：在 31.5、53、90 GHz 三个频率上比较相隔 60° 的两块天区，要分辨十万分之一的温差，约 30 微开。",
+    "低温：FIRAS 和 DIRBE 泡在 650 升超流氦里，工作在 1.6 K 以下；氦要撑过至少 6 个月的一次全天扫描，目标 1 年。",
+    "轨道：900 公里高、倾角 99° 的晨昏太阳同步轨道，每分钟自转 0.8 圈，仪器始终背对地球、侧对太阳，6 个月扫完全天。",
+    "1986 年新加的约束：塞进直径 2.44 米的 Delta 整流罩，总重压到火箭运力 5,125 磅（约 2.3 吨）以内，从接到指令到具备发射条件 29 个月。"
+   ],
+   "scale": [
+    {
+     "k": "卫星尺寸",
+     "v": "长 5.49 米，收拢直径 2.44 米，太阳翼展开后 8.53 米",
+     "note": "NASA LAMBDA 档案页的数字",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "发射质量",
+     "v": "2,270 公斤",
+     "note": "LAMBDA；JPL 任务库写 2,265 公斤，NSSDC 写 2,206 公斤",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "重新设计",
+     "v": "约 10,000 磅、5.5 × 4.6 米 → 4,828 磅、直径 2.44 米",
+     "note": "航天飞机方案 → Delta 方案；即约 4.5 吨 → 约 2.2 吨。出自 1990 年戈达德的工程总结",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "轨道",
+     "v": "900 公里，倾角 99°，周期 103 分钟",
+     "note": "晨昏太阳同步圆轨道，每天 14 圈",
+     "f": [
+      8
+     ]
+    },
+    {
+     "k": "杜瓦",
+     "v": "650 升超流氦，氦箱在轨 1.40 K",
+     "note": "1989-11-18 发射，1990-09-21 氦耗尽，撑了 10 个月（目标 12 个月）",
+     "f": [
+      9
+     ]
+    },
+    {
+     "k": "黑体谱（FIRAS）",
+     "v": "2.725 ± 0.002 K，偏差均方根小于峰值的十万分之五",
+     "note": "首个结果只用了 9 分钟数据：2.735 ± 0.06 K，1% 精度内看不出偏离",
+     "f": [
+      12
+     ]
+    },
+    {
+     "k": "各向异性（DMR）",
+     "v": "十万分之一，约 30 微开",
+     "note": "两年数据：7° 尺度 36 ± 5 微开，平滑到 10° 为 30.5 ± 2.7 微开",
+     "f": [
+      15
+     ]
+    },
+    {
+     "k": "寿命",
+     "v": "计划 1 年，最低要求 6 个月；实际观测 4 年 1 个月",
+     "note": "最低要求：FIRAS、DIRBE 6 个月，DMR 12 个月；DMR 一直测到 1993-12-23",
+     "f": [
+      10
+     ]
+    },
+    {
+     "k": "团队与造价",
+     "v": "约 1,500 人；约 1.5–1.6 亿美元",
+     "note": "人数：马瑟与 Gruber 基金会写约 1,500，瑞典皇家科学院写 1,000 多。造价是 1989、1992 年两家媒体的数字，未说明是否含发射，NASA 官方数字没有查到",
+     "f": [
+      18,
+      19
+     ]
+    }
+   ],
+   "approach": [
+    "把标尺带上天。FIRAS 是一台偏振迈克尔逊干涉仪，不直接量天空的绝对亮度，只量天空与机内参考黑体之差，再用一个发射率高于 0.9999、可以挡进喇叭口的外部黑体定标器标定。要比的东西和尺子在同一台仪器里。",
+    "只测差值。DMR 的每台辐射计用一对相隔 60° 的喇叭同时看两块天，只记两者之差；三个频率各做两路，互相核对并分辨银河系的前景。研制中砍掉了一个频段，省下的钱用来给接收机降温。",
+    "约束变了就重做设计。挑战者号之后航天飞机的西海岸发射取消，团队把卫星从约 4.5 吨、直径 4.6 米改到约 2.2 吨、2.44 米：去掉推进系统，重做主结构，遮阳罩、太阳翼和天线改成入轨后展开。三台仪器都保住了。",
+    "自己造。1979 年前后决定不外包，由戈达德的工程师动手（氦杜瓦除外）；马瑟的理由是这些仪器要做的事没法写进合同。挑战者号之后，副项目经理 McCarthy 把人集中到一处，按「臭鼬工厂」的办法干。"
+   ],
+   "history": [
+    {
+     "d": "1974",
+     "t": "NASA 征集卫星方案；戈达德（马瑟等）、伯克利（Alvarez、斯穆特等）、JPL 各交一份测宇宙背景辐射的提案"
+    },
+    {
+     "d": "1976-03",
+     "t": "NASA 从三个提案组抽人组成 6 人研究组：Gulkis、Hauser、马瑟、斯穆特、Weiss、Wilkinson"
+    },
+    {
+     "d": "1977-07",
+     "t": "进入方案定义阶段"
+    },
+    {
+     "d": "约 1979",
+     "t": "决定由戈达德航天中心自己造"
+    },
+    {
+     "d": "1982-07",
+     "t": "NASA 总部批准研制；11 月把目标定为 1988 年秋用航天飞机从范登堡发射"
+    },
+    {
+     "d": "1986-01",
+     "t": "挑战者号事故；2 月开始研究别的发射办法，随后按 Delta 火箭重新设计"
+    },
+    {
+     "d": "1989-11-18",
+     "t": "Delta 火箭（5920 型）从范登堡发射"
+    },
+    {
+     "d": "1990-01",
+     "t": "马瑟在美国天文学会会议上公布 9 分钟数据得出的黑体谱"
+    },
+    {
+     "d": "1990-09-21",
+     "t": "液氦耗尽，FIRAS 停止工作，DIRBE 只剩近红外波段"
+    },
+    {
+     "d": "1992-04-23",
+     "t": "斯穆特在华盛顿的美国物理学会会议上宣布 DMR 测到各向异性"
+    },
+    {
+     "d": "1993-12-23",
+     "t": "仪器停止观测；卫星次年 1 月移交 Wallops 作测试卫星"
+    },
+    {
+     "d": "2001-06-30",
+     "t": "后继卫星 WMAP 发射，后以 2002 年去世的 Wilkinson 命名"
+    },
+    {
+     "d": "2006",
+     "t": "8 月 COBE 团队获 Gruber 宇宙学奖；10 月马瑟与斯穆特获诺贝尔奖"
+    }
+   ],
+   "people": [
+    {
+     "zh": "",
+     "en": "Mike Hauser",
+     "r": "DIRBE（弥漫红外背景实验）首席科学家"
+    },
+    {
+     "zh": "莱纳·韦斯",
+     "en": "Rainer Weiss",
+     "r": "1974 年戈达德提案成员，COBE 科学工作组主席；2017 年因 LIGO 获诺奖"
+    },
+    {
+     "zh": "",
+     "en": "David Wilkinson",
+     "r": "1974 年提案成员、科学工作组成员；WMAP 的发起人，卫星以他命名"
+    },
+    {
+     "zh": "",
+     "en": "Nancy Boggess",
+     "r": "NASA 总部项目科学家，后任 COBE 副项目科学家"
+    },
+    {
+     "zh": "",
+     "en": "Charles Bennett",
+     "r": "DMR 副首席科学家，后来主持 WMAP"
+    },
+    {
+     "zh": "",
+     "en": "Pat Thaddeus",
+     "r": "马瑟的博士后导师，1974 年催他写提案"
+    },
+    {
+     "zh": "",
+     "en": "Roger Mattson",
+     "r": "项目经理"
+    },
+    {
+     "zh": "",
+     "en": "Dennis McCarthy",
+     "r": "副项目经理，挑战者号之后带队重新设计"
+    },
+    {
+     "zh": "",
+     "en": "Sam Gulkis、Mike Janssen",
+     "r": "JPL 提案的作者，后为科学工作组成员"
+    },
+    {
+     "zh": "路易斯·阿尔瓦雷茨",
+     "en": "Luis Alvarez",
+     "r": "伯克利提案的领衔者之一，斯穆特出自他的组"
+    },
+    {
+     "zh": "",
+     "en": "Dale Fixsen、Rick Shafer",
+     "r": "FIRAS 数据的最终拟合；FIRAS 副首席科学家"
+    }
+   ],
+   "awards": [
+    "2006 年 Gruber 宇宙学奖：马瑟与 COBE 团队，金质奖章加 25 万美元；马瑟得一半，科学工作组另外 18 人分另一半",
+    "1993 年 Dannie Heineman 天体物理奖、1996 年 Rumford 奖、1999 年 Benjamin Franklin 物理奖章：马瑟（据维基百科的获奖列表）",
+    "2017 年诺贝尔物理学奖：COBE 科学工作组主席 Rainer Weiss，因 LIGO 获奖（与 COBE 无直接关系，可作传承线索）"
+   ],
+   "anecdotes": [
+    {
+     "t": "1990 年 1 月的美国天文学会会议上，马瑟放出只用 9 分钟数据得到的谱，数据点全落在黑体曲线上。Physics Today 当年的报道写「挤满人的报告厅爆发出持久的掌声」，瑞典皇家科学院 2006 年的材料写的是起立鼓掌。",
+     "kind": "官方史",
+     "f": [
+      13
+     ]
+    },
+    {
+     "t": "1992 年 4 月 23 日的记者会上斯穆特说：「如果你信教，这就像看见了上帝。」媒体后来传成「上帝的脸」。他事后解释，提到上帝是因为那是人人都懂的文化符号。",
+     "kind": "当事人自述",
+     "f": [
+      16
+     ]
+    },
+    {
+     "t": "霍金称 DMR 的结果是「本世纪的发现，甚至是有史以来的发现」（the discovery of the century, if not of all time）；瑞典皇家科学院的材料注明出自 1992 年《泰晤士报》的访谈。",
+     "kind": "官方史",
+     "f": [
+      16
+     ]
+    },
+    {
+     "t": "公布之前，斯穆特让团队花了约一年排查系统误差，并悬赏：谁能挑出错，就送两张去世界任何地方的机票。",
+     "kind": "著作",
+     "f": [
+      16
+     ]
+    },
+    {
+     "t": "马瑟说，他从没指望 1974 年那份提案会被选中；COBE 起初在戈达德排在最末，挑战者号之后总部一句「现在就干」，优先级升到仅次于哈勃。",
+     "kind": "当事人自述",
+     "f": [
+      5,
+      20
+     ]
+    },
+    {
+     "t": "观测台经理 Tony Fragomeni 开会时手里拿一根塑料球棒，用来确保该说话的人都说了。",
+     "kind": "当事人自述",
+     "f": [
+      20
+     ]
+    },
+    {
+     "t": "DMR 的结果公布之前压了好几个月。科学工作组主席 Weiss 的说法是：「19 个成员都信了，我们才能对外公布。」",
+     "kind": "当事人自述",
+     "f": [
+      15
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "挑战者号之后，COBE 从 4.5 吨、直径 4.6 米改到 2.2 吨、2.44 米，29 个月具备发射条件，三台仪器都保住；FIRAS 把黑体定标器带上天，只测天空与它的差。",
+    "principle": "约束变了就重做设计；把标尺带到现场。",
+    "engineer": "平台、预算或工期变了，别硬撑原方案，回到指标重新分配重量和体积；测量系统自带参考源，用差值代替绝对值。",
+    "public": "计划被打乱时，先分清哪些是目的、哪些只是手段，手段可以全换；量东西时，带一把信得过的尺子一起去。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "FIRAS 是偏振迈克尔逊干涉仪，马瑟的讲稿里直接标着「Michelson Interferometer (Nobel 1907)」；科学工作组主席 Weiss 后来因 LIGO 获 2017 年诺奖；伯克利那份提案出自 1968 年得主阿尔瓦雷茨的组；后继者是 WMAP（2001）和普朗克卫星。",
+   "metrics": {
+    "size_m": 5.49,
+    "size_what": "卫星长度（收拢直径 2.44 米，太阳翼展开后 8.53 米）",
+    "mass_t": 2.27,
+    "mass_what": "发射质量（LAMBDA；另有 2,265、2,206 公斤两种写法）",
+    "depth_m": null,
+    "temp_K": 1.4,
+    "cost": {
+     "amount": 160000000,
+     "currency": "USD",
+     "year": 1992,
+     "what": "媒体口径：Newsweek 1992 年写 1.6 亿美元，Christian Science Monitor 1989 年写 1.5 亿美元；都没说明是否含发射与数据分析。NASA 官方数字未查到，置信度低"
+    },
+    "people": {
+     "n": 1500,
+     "what": "参与项目的总人数（马瑟 2018、Gruber 基金会 2006：约 1,500；瑞典皇家科学院：1,000 多）；科学工作组 19–20 人"
+    },
+    "t_idea": 1974,
+    "t_build": 1982,
+    "t_first": 1989,
+    "t_result": 1990,
+    "t_prize": 2006
+   },
+   "drawing": [
+    {
+     "what": "COBE 卫星长度（沿自转轴）",
+     "value": 5.49,
+     "unit": "米",
+     "note": "",
+     "f": [
+      7
+     ]
+    },
+    {
+     "what": "COBE 收拢状态直径（遮阳罩与太阳翼折叠）",
+     "value": 2.44,
+     "unit": "米",
+     "note": "等于 Delta 火箭 8 英尺整流罩的直径",
+     "f": [
+      6,
+      7
+     ]
+    },
+    {
+     "what": "COBE 太阳翼展开后的跨度",
+     "value": 8.53,
+     "unit": "米",
+     "note": "3 片翼、9 块板",
+     "f": [
+      6,
+      7
+     ]
+    },
+    {
+     "what": "航天飞机方案的外形（长 × 直径）",
+     "value": "5.5 × 4.6",
+     "unit": "米",
+     "note": "原文 18 × 15 英尺",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "轨道高度",
+     "value": 900,
+     "unit": "公里",
+     "note": "倾角 99°，周期 103 分钟",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "FIRAS 与 DMR 的视场（波束宽度）",
+     "value": 7,
+     "unit": "度",
+     "note": "DMR 每对喇叭夹角 60°；DIRBE 视场 0.7°",
+     "f": [
+      11,
+      14,
+      17
+     ]
+    },
+    {
+     "what": "杜瓦容积",
+     "value": 650,
+     "unit": "升",
+     "note": "超流氦，装氦约 95.7 公斤",
+     "f": [
+      9
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "2006 年诺贝尔物理学奖颁奖词：「for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation」。奖金 1,000 万瑞典克朗，马瑟（1946 年生，NASA 戈达德航天中心）与斯穆特（1945 年生，加州大学伯克利分校）平分。科学院写明马瑟统筹全局并主要负责测出黑体谱的实验，斯穆特主要负责测温度起伏的仪器。",
+     "sources": [
+      {
+       "t": "kva.se：The Nobel Prize in Physics 2006",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2006-2/"
+      },
+      {
+       "t": "kva.se：2006 年物理学奖科学背景（PDF）",
+       "u": "https://www.kva.se/app/uploads/2006/10/globalassets-priser-nobel-2006-scibackfyen06.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 2,
+     "text": "1974 年 NASA 发布探索者卫星的机会公告（7 月发布，11 月截止）。其中三份提案针对宇宙背景辐射：戈达德 / MIT / 普林斯顿一份（Hauser、马瑟、Muehlner、Silverberg、Thaddeus、Weiss、Wilkinson），伯克利一份（Alvarez、斯穆特等，测各向异性），JPL 一份（Gulkis、Janssen 等，测各向异性）。马瑟当时刚拿到博士学位，是导师 Pat Thaddeus 催他找朋友一起写的。",
+     "sources": [
+      {
+       "t": "J. Mather 讲稿：Physics UVA 2007（NASA 戈达德存档）",
+       "u": "https://lhea.gsfc.nasa.gov/archive/mather/presentations/Physics_UVA_2007.pdf"
+      },
+      {
+       "t": "LBL：COBE history",
+       "u": "https://aether.lbl.gov/cobehistory.html"
+      },
+      {
+       "t": "NASA：J. Mather, Measuring the Big Bang with the COBE Satellite（2018）",
+       "u": "https://science.nasa.gov/missions/explorer/measuring-the-big-bang-with-the-cobe-satellite"
+      }
+     ],
+     "confidence": "高",
+     "note": "收到的提案总数各家不同：马瑟讲稿写约 150 份，LBL 写 175 + 1 份，维基百科写 121 份"
+    },
+    {
+     "n": 3,
+     "text": "1976 年 3 月 NASA 总部从三个提案组抽人，组成 6 人的任务定义研究组（Sam Gulkis、Mike Hauser、马瑟、斯穆特、Rainer Weiss、Dave Wilkinson），Nancy Boggess 任总部项目科学家；首席科学家是之后才定的。1977 年 7 月进入定义阶段，约 1979 年决定由戈达德自己造，1982 年 7 月总部批准研制，同年 11 月把目标提前到 1988 年秋发射。",
+     "sources": [
+      {
+       "t": "LBL：COBE history",
+       "u": "https://aether.lbl.gov/cobehistory.html"
+      },
+      {
+       "t": "NASA GSFC：COBE On-Orbit Engineering Performance, Vol. I（1990 年 3 月，NTRS 19920008877）",
+       "u": "https://ntrs.nasa.gov/api/citations/19920008877/downloads/19920008877.pdf"
+      },
+      {
+       "t": "J. Mather 讲稿：Physics UVA 2007",
+       "u": "https://lhea.gsfc.nasa.gov/archive/mather/presentations/Physics_UVA_2007.pdf"
+      },
+      {
+       "t": "J. Mather 诺奖演讲摘要，Rev. Mod. Phys. 79, 1331",
+       "u": "https://link.aps.org/doi/10.1103/RevModPhys.79.1331"
+      },
+      {
+       "t": "Physics Today 2006 年 12 月：B. Schwarzschild, Mather and Smoot share Nobel physics prize",
+       "u": "https://aip.brightspotcdn.com/PTO.v59.i12.18_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书里说的「1976–77 年 NASA 合并三个团队」：1976 年组研究组（Physics Today 2006 的说法是「两年后 NASA 把这几份提案合并，组成 COBE 团队」），1977 年该组提出极轨的 COBE 方案"
+    },
+    {
+     "n": 4,
+     "text": "分工：马瑟任 COBE 项目科学家兼 FIRAS 首席科学家，斯穆特任 DMR 首席科学家，Mike Hauser 任 DIRBE 首席科学家，Rainer Weiss（MIT）任科学工作组主席。NASA 档案页列出的科学工作组共 20 人，其中有 David Wilkinson（普林斯顿）、Charles Bennett（DMR 副首席科学家）、Nancy Boggess（副项目科学家）。",
+     "sources": [
+      {
+       "t": "NASA LAMBDA：COBE Science Working Group",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/swg.html"
+      },
+      {
+       "t": "kva.se：2006 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2006/10/globalassets-priser-nobel-2006-scibackfyen06.pdf"
+      },
+      {
+       "t": "Gruber 基金会：2006 Gruber Cosmology Prize Press Release",
+       "u": "https://gruber.yale.edu/press/2006-gruber-cosmology-prize-press-release"
+      },
+      {
+       "t": "NASA：COBE Press Kit（1989 年发射前的新闻资料）",
+       "u": "https://science.nasa.gov/wp-content/uploads/2024/06/cobe-press-kit.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "种子标「待核」的 Weiss 任科学工作组主席，属实：NASA 1989 年的新闻资料和 LAMBDA 名单都这样写。Gruber 奖按 19 人计（马瑟加 18 人）"
+    },
+    {
+     "n": 5,
+     "text": "COBE 由戈达德航天中心自己研制，是该中心当时做过的最大的自研项目；氦杜瓦由 Ball Aerospace 提供，Delta 火箭由 McDonnell Douglas 制造。项目经理 Roger Mattson，副项目经理 Dennis McCarthy。马瑟说自己从没指望提案被选中，不外包的理由是找不到办法把这些仪器要做的事写成合同。",
+     "sources": [
+      {
+       "t": "J. Mather 诺奖演讲摘要，Rev. Mod. Phys. 79, 1331",
+       "u": "https://link.aps.org/doi/10.1103/RevModPhys.79.1331"
+      },
+      {
+       "t": "NASA：J. Mather 2018",
+       "u": "https://science.nasa.gov/missions/explorer/measuring-the-big-bang-with-the-cobe-satellite"
+      },
+      {
+       "t": "NASA ASK Magazine 第 28 期：Interview with John Mather（spacegrant.org 镜像）",
+       "u": "https://spacese.spacegrant.org/SEModules/Management/NASA_APPEL_ASK_28i_interview_Mather.pdf"
+      },
+      {
+       "t": "NASA：COBE Press Kit（1989）",
+       "u": "https://science.nasa.gov/wp-content/uploads/2024/06/cobe-press-kit.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "两位经理的职务见 NASA 1989 年新闻资料（R. Mattson，COBE Project Manager；D.K. McCarthy，Deputy）。appel.nasa.gov 上的原文与 COBE 案例研究被重定向，打不开，用了镜像"
+    },
+    {
+     "n": 6,
+     "text": "重新设计：原方案由航天飞机从范登堡发射，卫星约 10,000 磅（上报约翰逊航天中心的控制重量 11,500 磅）、长 18 英尺、直径 15 英尺，自带推进系统升到工作轨道。1986 年 1 月挑战者号事故后，2 月开始研究别的发射方式，改用 8 英尺整流罩的 Delta 火箭：卫星总重 4,828 磅，火箭运力 5,125 磅，余量 297 磅。改动包括取消推进系统（省得最多）、新做轻型主结构、遮阳罩和太阳翼（3 片翼 9 块板）及天线改为可展开、电池由 50 安时换成 20 安时；三台 DMR 挪到杜瓦外壁，DMR 一度险些被删。从总部下指令到具备发射条件 29 个月。",
+     "sources": [
+      {
+       "t": "NASA GSFC：COBE On-Orbit Engineering Performance, Vol. I（NTRS 19920008877）",
+       "u": "https://ntrs.nasa.gov/api/citations/19920008877/downloads/19920008877.pdf"
+      },
+      {
+       "t": "NASA GSFC：C. Mosier, Thermal Design Case Study（2015，NTRS 20160001368）",
+       "u": "https://ntrs.nasa.gov/api/citations/20160001368/downloads/20160001368.pdf"
+      },
+      {
+       "t": "NASA LAMBDA：COBE Mission Design, Spacecraft and Orbit",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/spacecraft_description.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书里的「约 4,990 公斤减到约 2,270 公斤」对应 11,000 磅 → 5,000 磅的整数说法，本次没有找到写这组数字的一手来源；一手文件的数字是 10,000 磅（控制重量 11,500 磅）→ 4,828 磅"
+    },
+    {
+     "n": 7,
+     "text": "最终的卫星：总质量 2,270 公斤，长 5.49 米，遮阳罩和太阳翼折叠时直径 2.44 米，太阳翼展开后 8.53 米；六棱柱形的平台上方是杜瓦和锥形的遮阳罩（挡太阳、地球的辐射和射频干扰）。星上功率负载 542 瓦。",
+     "sources": [
+      {
+       "t": "NASA LAMBDA：COBE Mission Design, Spacecraft and Orbit",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/spacecraft_description.html"
+      },
+      {
+       "t": "JPL Mission and Spacecraft Library：COBE Quicklook",
+       "u": "https://space.jpl.nasa.gov/msl/QuickLooks/cobeQL.html"
+      },
+      {
+       "t": "NASA NSSDC：COBE (1989-089A)",
+       "u": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1989-089A"
+      }
+     ],
+     "confidence": "高",
+     "note": "质量：LAMBDA 2,270 公斤，JPL 2,265 公斤，NSSDC 2,206 公斤，瑞典皇家科学院写 2,300 公斤，NASA 1989 年新闻资料写 5,000 磅；种子写「约 2.2 吨」。长度：LAMBDA 写 5.49 米，1989 年新闻资料写 16 英尺（约 4.9 米）、太阳翼展开后直径 28 英尺（约 8.5 米）"
+    },
+    {
+     "n": 8,
+     "text": "发射与轨道：1989 年 11 月 18 日 14:34（世界时）由第 189 号 Delta 火箭（5920 型）从加州范登堡空军基地发射，进入 900 公里高、倾角 99° 的晨昏太阳同步圆轨道，周期 103 分钟。卫星每分钟自转约 0.8 圈，自转轴背对地球、与太阳方向成约 94°，6 个月扫完一遍全天。",
+     "sources": [
+      {
+       "t": "NASA LAMBDA：COBE Mission Design, Spacecraft and Orbit",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/spacecraft_description.html"
+      },
+      {
+       "t": "NASA GSFC：COBE On-Orbit Engineering Performance",
+       "u": "https://ntrs.nasa.gov/api/citations/19920008877/downloads/19920008877.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "实测轨道 900.5 × 899.3 公里。火箭编号：LAMBDA 写第 189 号 Delta，NASA 1989 年新闻资料写「第 184 枚、也是最后一枚 NASA 自有的 Delta」；原定 11 月 17 日发射，实际是 18 日"
+    },
+    {
+     "n": 9,
+     "text": "杜瓦：650 升超流氦（装氦约 95.7 公斤），沿用红外天文卫星 IRAS 的设计；氦箱在轨 1.40 K，FIRAS 和 DIRBE 的光学部分要求 1.6 K 以下。发射后第 3 天抛掉杜瓦盖开始观测，1990 年 9 月 21 日 09:36（世界时）氦耗尽，共约 10 个月，比 12 个月的目标短；原因是线缆漏热和没算进去的地球临边辐射。",
+     "sources": [
+      {
+       "t": "NASA LAMBDA：COBE Mission Design, Spacecraft and Orbit",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/spacecraft_description.html"
+      },
+      {
+       "t": "JPL：COBE Quicklook",
+       "u": "https://space.jpl.nasa.gov/msl/QuickLooks/cobeQL.html"
+      },
+      {
+       "t": "NASA GSFC：Thermal Design Case Study",
+       "u": "https://ntrs.nasa.gov/api/citations/20160001368/downloads/20160001368.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "仪器温度的写法不一：LAMBDA 的 FIRAS 页写 1.5 K，任务页写约 1.6 K，瑞典皇家科学院写 1.8 K；任务书写的「约 1.5 K」可用"
+    },
+    {
+     "n": 10,
+     "text": "寿命：计划任务期 1 年；最低要求是 FIRAS、DIRBE 工作 6 个月（完成一遍全天），DMR 工作 12 个月。实际上 FIRAS 工作到氦耗尽（把天空扫了 1.6 遍），DIRBE 的近红外波段和 DMR 一直工作到 1993 年 12 月 23 日，共 4 年 1 个月；1994 年 1 月卫星移交 Wallops 作测试卫星。",
+     "sources": [
+      {
+       "t": "NASA GSFC：COBE On-Orbit Engineering Performance",
+       "u": "https://ntrs.nasa.gov/api/citations/19920008877/downloads/19920008877.pdf"
+      },
+      {
+       "t": "NASA NSSDC：COBE",
+       "u": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1989-089A"
+      },
+      {
+       "t": "NASA LAMBDA：About DMR",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/about_dmr.html"
+      },
+      {
+       "t": "NASA：COBE Press Kit（1989）",
+       "u": "https://science.nasa.gov/wp-content/uploads/2024/06/cobe-press-kit.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "种子写「设计寿命 6 个月」，那是最低要求；计划寿命是 1 年。NASA 1989 年新闻资料的写法是：名义任务期 12 个月，计划在发射后运行 24 个月"
+    },
+    {
+     "n": 11,
+     "text": "FIRAS（远红外绝对分光光度计）是一台偏振迈克尔逊干涉仪，覆盖 0.1–10 毫米，视场 7°，冷到约 1.5 K；它差分工作，量的是天空与机内参考源之差，并用一个外部黑体定标器标定：这个定标器与理想黑体相差不到 0.01%（发射率优于 0.9999），可以移过来盖住喇叭口。地面测试时发现它在水平姿态下卡不稳喇叭口，原因是 3 K 以下线缆和导热带变硬。",
+     "sources": [
+      {
+       "t": "NASA LAMBDA：About FIRAS",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/about_firas.html"
+      },
+      {
+       "t": "Physics Today 1990 年 3 月：B. Schwarzschild, COBE satellite finds no hint of excess in the cosmic microwave spectrum（PDF）",
+       "u": "https://aip.brightspotcdn.com/PTO.v43.i3.17_1.online.pdf"
+      },
+      {
+       "t": "kva.se：2006 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2006/10/globalassets-priser-nobel-2006-scibackfyen06.pdf"
+      },
+      {
+       "t": "NASA GSFC：Thermal Design Case Study",
+       "u": "https://ntrs.nasa.gov/api/citations/20160001368/downloads/20160001368.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "马瑟讲稿把它标为「Michelson Interferometer (Nobel 1907)」"
+    },
+    {
+     "n": 12,
+     "text": "FIRAS 的结果：1990 年 1 月公布的第一条谱只用了对着银河系北极方向的 9 分钟数据，从 1 厘米到 0.5 毫米的 68 个波长点都落在 2.735 ± 0.06 K 的黑体曲线上，1% 精度内看不出偏离；1987 年名古屋大学与伯克利合作的火箭实验报告过的短波超出没有出现。1994 年：2.726 ± 0.010 K，最大偏差小于峰值的 0.03%。最终：2.725 ± 0.002 K（Mather 等 1999；后来的再分析给 ± 0.001 K），偏离黑体的上限为峰值的十万分之五（50 ppm）。",
+     "sources": [
+      {
+       "t": "Physics Today 1990 年 3 月：B. Schwarzschild, COBE satellite finds no hint of excess in the cosmic microwave spectrum（PDF）",
+       "u": "https://aip.brightspotcdn.com/PTO.v43.i3.17_1.online.pdf"
+      },
+      {
+       "t": "NASA LAMBDA：About FIRAS",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/about_firas.html"
+      },
+      {
+       "t": "Physics Today 2006 年 12 月：B. Schwarzschild, Mather and Smoot share Nobel physics prize",
+       "u": "https://aip.brightspotcdn.com/PTO.v59.i12.18_1.online.pdf"
+      },
+      {
+       "t": "J. Mather 讲稿：Physics UVA 2007",
+       "u": "https://lhea.gsfc.nasa.gov/archive/mather/presentations/Physics_UVA_2007.pdf"
+      },
+      {
+       "t": "NASA：J. Mather 2018",
+       "u": "https://science.nasa.gov/missions/explorer/measuring-the-big-bang-with-the-cobe-satellite"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 13,
+     "text": "1990 年 1 月美国天文学会在华盛顿开会，马瑟公布 FIRAS 的谱，此时距发射 8 周。Physics Today 的 Bertram Schwarzschild 当年 3 月写的是「挤满人的报告厅爆发出持久的掌声」，同一位作者 2006 年 12 月写的是听众起立鼓掌（standing ovation）；瑞典皇家科学院 2006 年的科普材料和 Symmetry 杂志也写起立鼓掌。",
+     "sources": [
+      {
+       "t": "Physics Today 1990 年 3 月：B. Schwarzschild, COBE satellite finds no hint of excess in the cosmic microwave spectrum（PDF）",
+       "u": "https://aip.brightspotcdn.com/PTO.v43.i3.17_1.online.pdf"
+      },
+      {
+       "t": "Physics Today 2006 年 12 月：B. Schwarzschild, Mather and Smoot share Nobel physics prize",
+       "u": "https://aip.brightspotcdn.com/PTO.v59.i12.18_1.online.pdf"
+      },
+      {
+       "t": "kva.se：2006 年物理学奖科普材料（PDF）",
+       "u": "https://www.kva.se/app/uploads/2006/10/globalassets-priser-nobel-2006-popfyen06.pdf"
+      },
+      {
+       "t": "Symmetry 2006 年 10/11 月：Logbook: cosmic microwave background",
+       "u": "https://www.symmetrymagazine.org/article/octobernovember-2006/cosmic-microwave-background"
+      }
+     ],
+     "confidence": "高",
+     "note": "种子标「待核」的起立鼓掌有出处。具体日期通行说法是 1 月 13 日，本次打开的来源只写到月份"
+    },
+    {
+     "n": 14,
+     "text": "DMR（差分微波辐射计）共 6 台辐射计，31.5、53、90 GHz 三个频率各两路；每台用一对喇叭比较相隔 60° 的两块天区，波束宽 7°，装在杜瓦外面，不靠液氦。1982 年改了方案，给接收机降温以提高灵敏度；研制中为省钱砍掉了一个频段。马瑟说，要不是这样就找不到那些起伏。",
+     "sources": [
+      {
+       "t": "NASA LAMBDA：About DMR",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/about_dmr.html"
+      },
+      {
+       "t": "LBL：COBE history",
+       "u": "https://aether.lbl.gov/cobehistory.html"
+      },
+      {
+       "t": "NASA ASK Magazine：Interview with John Mather",
+       "u": "https://spacese.spacegrant.org/SEModules/Management/NASA_APPEL_ASK_28i_interview_Mather.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 15,
+     "text": "DMR 的结果：1992 年 4 月 23 日，斯穆特在华盛顿的美国物理学会会议上宣布，第一年的全天图（每台辐射计约 6,300 万个数据点）上有十万分之一量级的温度起伏：10° 尺度上均方根 30 ± 5 微开，四极矩 13 ± 4 微开，谱指数 1.15 ± 0.6，与尺度不变谱相符。信号再小三到五倍就测不到了。此前的实验做到千分之一都没看到起伏。团队花了好几个月反复核对；科学工作组主席 Weiss 说：「19 个成员都信了，我们才能对外公布。」两年数据给出 7° 尺度 36 ± 5 微开、平滑到 10° 为 30.5 ± 2.7 微开。",
+     "sources": [
+      {
+       "t": "Physics Today 1992 年 6 月：B. G. Levi, COBE Measures Anisotropy in Cosmic Microwave Background Radiation",
+       "u": "https://aip.brightspotcdn.com/PTO.v45.i6.17_1.online.pdf"
+      },
+      {
+       "t": "Christian Science Monitor 1992-04-27：Cosmologists Enter Exciting New Era of Galaxy Exploration",
+       "u": "https://www.csmonitor.com/layout/set/amphtml/1992/0427/27082.html"
+      },
+      {
+       "t": "NASA LAMBDA：About DMR",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/about_dmr.html"
+      },
+      {
+       "t": "kva.se：2006 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2006/10/globalassets-priser-nobel-2006-scibackfyen06.pdf"
+      },
+      {
+       "t": "LBL：COBE history",
+       "u": "https://aether.lbl.gov/cobehistory.html"
+      },
+      {
+       "t": "Physics Today 2006 年 12 月：B. Schwarzschild, Mather and Smoot share Nobel physics prize",
+       "u": "https://aip.brightspotcdn.com/PTO.v59.i12.18_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 16,
+     "text": "两句流传最广的话：斯穆特在 1992 年 4 月 23 日正式宣布之后的记者会上说「If you're religious, it's like seeing God」（如果你信教，这就像看见了上帝），后来他解释提到上帝是因为那是人人都懂的文化符号；霍金称之为「the discovery of the century, if not of all time」，瑞典皇家科学院注明出自 1992 年 4 月 29 日《泰晤士报》的访谈。OMNI 的访谈导语还记了一件事：公布前斯穆特悬赏两张去任何地方的机票，奖给能挑出错的人。",
+     "sources": [
+      {
+       "t": "OMNI 访谈：George Smoot: Birth of the Universe（1994 年 3 月，LBL 存档）",
+       "u": "https://aether.lbl.gov/www/personnel/OMNIinterviewSmMarch93.html"
+      },
+      {
+       "t": "UC Berkeley News 2025-09-29：Nobelist George Smoot ... dies at 80",
+       "u": "https://news.berkeley.edu/2025/09/29/nobelist-george-smoot-whose-satellite-experiments-validated-the-big-bang-theory-dies-at-80/"
+      },
+      {
+       "t": "kva.se：2006 年物理学奖科普材料",
+       "u": "https://www.kva.se/app/uploads/2006/10/globalassets-priser-nobel-2006-popfyen06.pdf"
+      },
+      {
+       "t": "Physics Today 2006 年 12 月：B. Schwarzschild, Mather and Smoot share Nobel physics prize",
+       "u": "https://aip.brightspotcdn.com/PTO.v59.i12.18_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "「上帝的脸」（face of God）不是斯穆特的原话；Physics Today 2006 记的是「If you're religious, this is like seeing God」，与 OMNI 的记法只差一个词。1992 年 Newsweek 的标题「The Handwriting of God」出自天体物理学家 Joel Primack。霍金一句的措辞各处略有出入（瑞典皇家科学院：the greatest discovery of the century, if not of all times）"
+    },
+    {
+     "n": 17,
+     "text": "DIRBE（弥漫红外背景实验）在 1.25–240 微米的 10 个波段做全天绝对亮度图，视场 0.7° 见方；低温观测从 1989 年 11 月 24 日到 1990 年 9 月 21 日。它和 FIRAS 一起在 140、240 微米首次探测到宇宙红外背景，即早期星系发出、被尘埃再辐射的光，主要结果发表于 1998 年。",
+     "sources": [
+      {
+       "t": "NASA LAMBDA：About DIRBE",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/about_dirbe.html"
+      },
+      {
+       "t": "NASA LAMBDA：COBE 总览",
+       "u": "https://lambda.gsfc.nasa.gov/product/cobe/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 18,
+     "text": "团队规模：瑞典皇家科学院写「1,000 多名研究人员、工程师和其他参与者」；马瑟 2018 年的文章和 Gruber 基金会 2006 年的新闻稿都写约 1,500 人，科学团队 19 人，分散在全美各地；伯克利 2025 年的讣告写整个项目约 1,000 人，其中斯穆特在伯克利的组 40 多人。",
+     "sources": [
+      {
+       "t": "kva.se：The Nobel Prize in Physics 2006",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2006-2/"
+      },
+      {
+       "t": "NASA：J. Mather 2018",
+       "u": "https://science.nasa.gov/missions/explorer/measuring-the-big-bang-with-the-cobe-satellite"
+      },
+      {
+       "t": "Gruber 基金会 2006",
+       "u": "https://gruber.yale.edu/press/2006-gruber-cosmology-prize-press-release"
+      },
+      {
+       "t": "UC Berkeley News 2025-09-29",
+       "u": "https://news.berkeley.edu/2025/09/29/nobelist-george-smoot-whose-satellite-experiments-validated-the-big-bang-theory-dies-at-80/"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书提到的「1,600 人」口径没有找到出处"
+    },
+    {
+     "n": 19,
+     "text": "造价：没有查到 NASA 官方的总数。媒体口径有两个：Christian Science Monitor 1989 年 11 月写「1.5 亿美元的卫星」，Newsweek 1992 年 5 月写「1.6 亿美元的卫星」，都没说明是否含发射和数据分析。维基百科称 1977 年立项时的条件是不含火箭和数据分析的费用控制在 3,000 万美元以内；戈达德 1990 年的工程总结承认仪器的费用和工期比最初估计翻了一倍。",
+     "sources": [
+      {
+       "t": "Christian Science Monitor 1989-11-15：Satellite Set to Measure Energy From Big Bang",
+       "u": "https://csmonitor.com/1989/1115/aspace.html"
+      },
+      {
+       "t": "Newsweek 1992-05-03：The Handwriting of God",
+       "u": "https://www.newsweek.com/handwriting-god-198918"
+      },
+      {
+       "t": "维基百科：Cosmic Background Explorer",
+       "u": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer"
+      },
+      {
+       "t": "NASA GSFC：COBE On-Orbit Engineering Performance",
+       "u": "https://ntrs.nasa.gov/api/citations/19920008877/downloads/19920008877.pdf"
+      }
+     ],
+     "confidence": "低",
+     "note": "只有媒体数字，口径不明；引用时请写「当时媒体报道约 1.5–1.6 亿美元」"
+    },
+    {
+     "n": 20,
+     "text": "管理上的几件事（马瑟自述）：COBE 起初在戈达德优先级最低，被他称作一个「培训项目」，有人只拿十分之一的工时来做，他的评语是「十分之一等于零」；挑战者号之后总部说「现在就干」，优先级升到仅次于哈勃；副项目经理 Dennis McCarthy 把团队集中办公，按「臭鼬工厂」方式运作；观测台经理 Tony Fragomeni 开会时拿一根塑料球棒。他总结的教训包括：让人全职投入、测试就是要把东西试坏、不可能第一次就设计对。",
+     "sources": [
+      {
+       "t": "NASA ASK Magazine：Interview with John Mather（spacegrant.org 镜像）",
+       "u": "https://spacese.spacegrant.org/SEModules/Management/NASA_APPEL_ASK_28i_interview_Mather.pdf"
+      },
+      {
+       "t": "NASA GSFC：COBE On-Orbit Engineering Performance",
+       "u": "https://ntrs.nasa.gov/api/citations/19920008877/downloads/19920008877.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "主要是马瑟一人的回忆"
+    },
+    {
+     "n": 21,
+     "text": "David Wilkinson（普林斯顿）是 1974 年提案的发起人之一、COBE 科学工作组成员，2002 年 9 月去世，享年 67 岁。后继卫星 WMAP 于 2001 年 6 月 30 日发射，由 DMR 副首席科学家 Charles Bennett 主持，角分辨率约 1°，后以 Wilkinson 命名（Wilkinson Microwave Anisotropy Probe），运行到 2010 年。",
+     "sources": [
+      {
+       "t": "Princeton University 2006-10-03：Nobel awarded to leaders of the COBE science team",
+       "u": "https://www.princeton.edu/index%2Ephp/news/2006/10/03/nobel-awarded-leaders-cobe-science-team"
+      },
+      {
+       "t": "kva.se：2006 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2006/10/globalassets-priser-nobel-2006-scibackfyen06.pdf"
+      },
+      {
+       "t": "维基百科：Cosmic Background Explorer",
+       "u": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer"
+      }
+     ],
+     "confidence": "高",
+     "note": "WMAP 发射日期与运行年限出自维基百科"
+    },
+    {
+     "n": 22,
+     "text": "2006 年 Gruber 宇宙学奖授予马瑟和 COBE 团队：金质奖章加 25 万美元，马瑟得一半，科学工作组的另外 18 人（含已故的 Wilkinson，以及斯穆特、Weiss、Hauser）分另一半；2006 年 8 月 15 日在布拉格的国际天文学联合会大会开幕式上颁发。",
+     "sources": [
+      {
+       "t": "Gruber 基金会：2006 Gruber Cosmology Prize Press Release",
+       "u": "https://gruber.yale.edu/press/2006-gruber-cosmology-prize-press-release"
+      },
+      {
+       "t": "Princeton University 2006-10-03",
+       "u": "https://www.princeton.edu/index%2Ephp/news/2006/10/03/nobel-awarded-leaders-cobe-science-team"
+      }
+     ],
+     "confidence": "高",
+     "note": "这是把奖发给整个科学团队的一个早期例子，可用于「奖最多发三个人」旁栏"
+    },
+    {
+     "n": 23,
+     "text": "两位得主：马瑟 1946 年 8 月 7 日生于弗吉尼亚州罗阿诺克，1974 年在伯克利获博士学位（导师 Paul Richards，论文就是远红外波段的宇宙背景谱），1995–2023 年任詹姆斯·韦布空间望远镜的高级项目科学家，是第一位获诺贝尔奖的 NASA 雇员。斯穆特 1945 年 2 月 20 日生于佛罗里达州 Yukon，2025 年 9 月 18 日在巴黎去世；1970 年代曾把差分辐射计装上 U-2 飞机，测出银河系相对背景辐射的运动；2007 年拿出 50 万美元奖金创办伯克利宇宙学物理中心。",
+     "sources": [
+      {
+       "t": "UC Berkeley News 2025-09-29",
+       "u": "https://news.berkeley.edu/2025/09/29/nobelist-george-smoot-whose-satellite-experiments-validated-the-big-bang-theory-dies-at-80/"
+      },
+      {
+       "t": "维基百科：John C. Mather",
+       "u": "https://en.wikipedia.org/wiki/John_C._Mather"
+      },
+      {
+       "t": "Samuel J. Heyman Service to America Medals：John Mather",
+       "u": "https://servicetoamericamedals.org/honorees/john-mather/"
+      }
+     ],
+     "confidence": "中",
+     "note": "马瑟的生日、导师与韦布任期出自维基百科"
+    }
+   ],
+   "disputes": [
+    "重新设计前后的质量：任务书与一些二手材料写约 4,990 公斤 → 约 2,270 公斤（即 11,000 磅 → 5,000 磅）；戈达德 1990 年的工程总结写航天飞机方案 10,000 磅（控制重量 11,500 磅）、Delta 方案 4,828 磅（运力 5,125 磅）。最终发射质量：LAMBDA 2,270 公斤，JPL 2,265 公斤，NSSDC 与维基百科 2,206 公斤。",
+    "设计寿命：种子写 6 个月；工程总结写计划寿命 1 年、最低要求 6 个月（DMR 12 个月）；JPL 任务库写设计寿命 1 年；NASA 1989 年新闻资料写名义任务期 12 个月、计划运行 24 个月；戈达德的热设计讲稿里另有一处写杜瓦寿命要求 2 年。",
+    "1990 年 1 月会场的反应：Physics Today 1990 年 3 月写「持久的掌声」；同一位作者在 Physics Today 2006 年 12 月写「起立鼓掌」，瑞典皇家科学院与 Symmetry 也写起立鼓掌。两种说法不矛盾，卡片可写起立鼓掌并注出处。",
+    "团队人数：1,000 多（瑞典皇家科学院）、约 1,000（伯克利 2025）、约 1,500（马瑟 2018、Gruber 基金会 2006）。",
+    "斯穆特的原话是「like seeing God」，不是「face of God」；霍金那句的措辞各处略有不同。",
+    "仪器工作温度：1.40 K（氦箱）、1.5 K（LAMBDA FIRAS 页）、约 1.6 K（LAMBDA 任务页、NSSDC）、1.8 K（瑞典皇家科学院）、2 K（维基百科写 DIRBE）。",
+    "结束时间：NSSDC 写仪器 1993-12-23 停止工作，马瑟讲稿的大事记写「1994 年结束运行」（工程运行到 1994 年 1 月）。",
+    "1974 年提案总数：约 150（马瑟）、175 + 1（LBL）、121（维基百科）。",
+    "自转速率：0.8 转 / 分（LAMBDA、JPL）与 1 转 / 分（NSSDC）。"
+   ],
+   "todo": [
+    "造价没有官方数字：只查到 1989、1992 年两家媒体的 1.5 亿、1.6 亿美元；NASA 1989 年的新闻资料里没有写造价。马瑟与 Boslough《The Very First Light》或 NASA 的 COBE 案例研究（appel.nasa.gov，打不开）里应有。",
+    "「4,990 公斤」这个数没有找到一手出处。",
+    "1990 年美国天文学会报告的具体日期（通行说法 1 月 13 日，地点常写作弗吉尼亚州水晶城）本次只核到「1990 年 1 月、华盛顿」（Physics Today 两篇）。",
+    "「重新设计没有动科学指标」这句话没有找到原话；能查实的是三台仪器都保留、DMR 一度险些被删、改动集中在卫星平台。",
+    "霍金那句话的最早出处：瑞典皇家科学院写的是 1992-04-29《泰晤士报》访谈，原报未见。",
+    "马瑟诺奖演讲全文（Rev. Mod. Phys. 79, 1331）只读到摘要；nobelprize.org 上的版本按规定未打开。"
+   ]
+  },
+  {
+   "id": "lhc",
+   "prize": {
+    "year": 2013,
+    "laureates": [
+     {
+      "zh": "弗朗索瓦·恩格勒",
+      "en": "François Englert",
+      "life": "1932–2026",
+      "share": "1/2",
+      "role": "1964 年与 Robert Brout 提出让规范玻色子获得质量的机制"
+     },
+     {
+      "zh": "彼得·希格斯",
+      "en": "Peter W. Higgs",
+      "life": "1929–2024",
+      "share": "1/2",
+      "role": "1964 年独立提出同一机制，并指出应当存在一个有质量的标量粒子"
+     }
+    ],
+    "citation_en": "for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider",
+    "citation_zh": "表彰他们从理论上发现了一种机制，它有助于我们理解亚原子粒子质量的起源；这一机制最近得到证实，因为欧洲核子研究中心大型强子对撞机上的 ATLAS 与 CMS 实验发现了它所预言的基本粒子",
+    "citation_source": {
+     "t": "瑞典皇家科学院 kva.se：The Nobel Prize in Physics 2013",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2013-2/"
+    }
+   },
+   "apparatus": {
+    "zh": "大型强子对撞机（LHC）与 ATLAS、CMS 探测器",
+    "en": "Large Hadron Collider (LHC), with the ATLAS and CMS detectors",
+    "years": "1984 设想 / 1994 批准 / 2008 启动 / 2012 发现",
+    "place_zh": "欧洲核子研究中心（CERN），日内瓦近郊，瑞士与法国边境地下",
+    "lat": 46.23,
+    "lon": 6.05
+   },
+   "claim": "1964 年，恩格勒与 Brout、希格斯、Guralnik 等三组人各自提出：真空里布满一种场，规范玻色子靠它获得质量。希格斯还写明，这种场对应一个有质量、自旋为零的粒子。理论没说它多重；LEP 找到 114.4 GeV 也没找到。LHC 要回答：它在不在，多重。",
+   "brief": [
+    "能量：两束质子各 7 TeV（设计值）在 26.7 公里的旧隧道里对撞；每秒 4,000 万次束团交叉、约 10 亿次质子碰撞，值得细看的不到十亿分之一。",
+    "磁铁：要把 7 TeV 的质子在这条隧道里拐过弯，需要 1,232 块 15 米长的偶极磁铁，磁场 8.33 T、电流 11,850 A；用常规磁铁，环得有 120 公里长。",
+    "低温：磁铁工作在 1.9 K，比外太空冷；27 公里里约 23 公里要冷下来，冷质量 36,000 吨，用氦约 120 吨。",
+    "真空：束流管里的气压约为海平面大气压的十万亿分之一（10^-13）。",
+    "数据：两台独立设计的探测器各自从每秒 4,000 万次交叉里挑出约 1,000 个事例存盘，交给分布在 40 多个国家、170 多个站点的计算网格。"
+   ],
+   "scale": [
+    {
+     "k": "环",
+     "v": "周长 26,659 米，地下 50–175 米（平均约 100 米）",
+     "note": "隧道内径 3.8 米，原是 LEP 的；深度范围出自维基百科，CERN 官方页只写约 100 米",
+     "f": [
+      4,
+      5
+     ]
+    },
+    {
+     "k": "主偶极磁铁",
+     "v": "1,232 块，各长 15 米、约 35 吨，8.33 T，11,850 A",
+     "note": "磁长 14.3 米；每块约 50 万瑞士法郎；全环磁铁共 9,593 块",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "低温",
+     "v": "1.9 K，氦约 120 吨，冷质量 36,000 吨",
+     "note": "CERN 低温页的数字；维基百科写约 96 吨超流氦，两个数口径不同",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "超导线",
+     "v": "约 25 万公里",
+     "note": "铌钛线，每根线里 6,300 根细丝；Symmetry 2006 年的数字",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "ATLAS",
+     "v": "46 × 25 × 25 米，7,000 吨",
+     "note": "体积最大的对撞机探测器；瑞典皇家科学院的背景材料写长 44 米",
+     "f": [
+      9
+     ]
+    },
+    {
+     "k": "CMS",
+     "v": "21 × 15 × 15 米，14,000 吨，螺线管磁场约 4 T",
+     "note": "在地面分 15 段造好再吊到地下；磁铁线圈和铁轭占 12,500 吨",
+     "f": [
+      10
+     ]
+    },
+    {
+     "k": "人",
+     "v": "2013 年 ATLAS、CMS 各约 3,000 人；2022 年各约 5,500 人",
+     "note": "2025 年突破奖认定四个实验的 Run 2 论文作者共 13,508 人",
+     "f": [
+      9,
+      10,
+      22
+     ]
+    },
+    {
+     "k": "造价",
+     "v": "机器与实验区 37.56 亿瑞士法郎；连同 CERN 分担的探测器和计算共 43.32 亿",
+     "note": "CERN 官方口径，不含人工；全部探测器另约 15 亿瑞士法郎；含人工与实物贡献接近 100 亿美元；常见的「75 亿欧元」是 2010 年媒体口径",
+     "f": [
+      8
+     ]
+    },
+    {
+     "k": "2008 年事故",
+     "v": "1 处接头故障，53 块磁铁受损，约 6 吨氦泄漏，耽误约 14 个月",
+     "note": "出事的接头电阻约 220 nΩ，规格是 0.6 nΩ 以下、量产平均 0.2 nΩ；全环这样的接头约 10,000 个",
+     "f": [
+      15,
+      16
+     ]
+    }
+   ],
+   "approach": [
+    "借旧隧道。LEP 的隧道 1985–88 年开挖时，按日后再放一圈超导环的尺寸做大了。不挖新隧道省钱省工期，也把周长锁死在 26.7 公里，能量只能靠磁场：两束共用一个铁轭的「二合一」磁铁，8.33 T、1.9 K。",
+    "分步批准，拉外援。1994 年 12 月理事会批的是先少装三分之一磁铁的方案，给管理层两年去找钱；日本出 3 亿瑞士法郎、美国约 5 亿美元等非成员国的贡献落实之后，1996 年 12 月才批准一步建成。",
+    "降额换时间。2008 年事故后排查上万个接头，10–15% 的铜稳定体没焊实。CERN 没有停机返工，先以每束 3.5 TeV（设计值的一半）运行；发现希格斯粒子后，才在 2013–15 年给每个接头焊上分流片。",
+    "两台探测器有意做得不一样。ATLAS 用 8 个大线圈的环形磁铁，个头最大；CMS 押在一个约 4 T 的大螺线管上，小而重。目标相同，技术路线不同。CERN 的说法是：两台独立设计的探测器，是新发现能互相确认的前提。"
+   ],
+   "history": [
+    {
+     "d": "1964",
+     "t": "三组六位理论家先后投出对称性破缺的论文（6 月 26 日、7 月 27 日与 8 月 31 日、10 月 12 日）"
+    },
+    {
+     "d": "1984-03",
+     "t": "洛桑与日内瓦的研讨会（3 月 21–27 日）讨论在 LEP 隧道里放一台强子对撞机"
+    },
+    {
+     "d": "1985–88",
+     "t": "三台掘进机挖出 27 公里的 LEP 隧道；1989 年 7 月 14 日 LEP 首束"
+    },
+    {
+     "d": "1993-10",
+     "t": "美国国会终止超导超级对撞机 SSC"
+    },
+    {
+     "d": "1994-12",
+     "t": "CERN 理事会批准 LHC，先按少装三分之一磁铁的方案；1996 年 12 月批准一步建成"
+    },
+    {
+     "d": "2000-11-02",
+     "t": "LEP 关机，隧道腾给 LHC"
+    },
+    {
+     "d": "2001-09",
+     "t": "成本超支公开：机器超 4.8 亿瑞士法郎（约 18%）；完工从 2005 年推到 2007 年"
+    },
+    {
+     "d": "2006-11-27",
+     "t": "最后一块偶极磁铁到货，比计划晚约 5 个月"
+    },
+    {
+     "d": "2008-09-10",
+     "t": "首束绕环一周"
+    },
+    {
+     "d": "2008-09-19",
+     "t": "3-4 区段通电测试时一处偶极与四极磁铁之间的母线接头故障，53 块磁铁受损，约 6 吨氦泄漏"
+    },
+    {
+     "d": "2009-11-20",
+     "t": "束流重新注入；11 月 30 日每束 1.18 TeV，超过 Tevatron 的纪录"
+    },
+    {
+     "d": "2010-03-30",
+     "t": "首次 7 TeV 对撞（每束 3.5 TeV，设计值的一半）"
+    },
+    {
+     "d": "2011-12-13",
+     "t": "ATLAS 与 CMS 在 CERN 报告 125 GeV 附近的初步迹象"
+    },
+    {
+     "d": "2012-07-04",
+     "t": "CERN 宣布发现一个质量约 125–126 GeV 的新粒子，两个实验都超过 5 个标准差"
+    },
+    {
+     "d": "2013-02-14",
+     "t": "第一次长停机（LS1）开始，加固全环的磁铁接头"
+    },
+    {
+     "d": "2013-10-08",
+     "t": "恩格勒与希格斯获诺贝尔奖"
+    },
+    {
+     "d": "2015",
+     "t": "5 月 20 日首次 13 TeV 对撞，6 月 3 日恢复物理取数"
+    },
+    {
+     "d": "2022-07-05",
+     "t": "第三轮运行开始，对撞能量 13.6 TeV"
+    },
+    {
+     "d": "2026-06-27",
+     "t": "第三轮运行结束；6 月 29 日进入第三次长停机，高亮度 LHC 预计 2030 年年中运行"
+    }
+   ],
+   "people": [
+    {
+     "zh": "林恩·埃文斯",
+     "en": "Lyn Evans",
+     "r": "LHC 项目负责人（1994–2008），此前做 SPS 对撞机"
+    },
+    {
+     "zh": "",
+     "en": "Giorgio Brianti",
+     "r": "1985 年提出两束共用一个磁铁的「二合一」设计"
+    },
+    {
+     "zh": "卢乔·罗西",
+     "en": "Lucio Rossi",
+     "r": "2001–11 年领导 LHC 的磁铁、超导体与低温恒温器组"
+    },
+    {
+     "zh": "",
+     "en": "Steve Myers",
+     "r": "2008 年事故后主持修复和重新启动"
+    },
+    {
+     "zh": "",
+     "en": "Peter Jenni",
+     "r": "ATLAS 首任发言人（1995–2009），出自 UA2"
+    },
+    {
+     "zh": "法比奥拉·贾诺蒂",
+     "en": "Fabiola Gianotti",
+     "r": "ATLAS 发言人（2009–13），2012 年 7 月 4 日报告 ATLAS 结果"
+    },
+    {
+     "zh": "",
+     "en": "Michel Della Negra",
+     "r": "CMS 首任发言人（1992–2006），出自鲁比亚的 UA1 组"
+    },
+    {
+     "zh": "",
+     "en": "Tejinder (Jim) Virdee",
+     "r": "CMS 发言人（2007 年起三年），主张用钨酸铅晶体量能器"
+    },
+    {
+     "zh": "",
+     "en": "Guido Tonelli",
+     "r": "CMS 发言人（2010–11），2011 年 12 月报告初步迹象"
+    },
+    {
+     "zh": "",
+     "en": "Joe Incandela",
+     "r": "CMS 发言人（2012–13），2012 年 7 月 4 日报告 CMS 结果"
+    },
+    {
+     "zh": "",
+     "en": "Robert Brout",
+     "r": "与恩格勒合写 1964 年论文，2011 年 5 月 3 日去世"
+    },
+    {
+     "zh": "",
+     "en": "Gerald Guralnik、C. R. Hagen、Tom Kibble",
+     "r": "1964 年第三篇论文的三位作者，未获奖"
+    },
+    {
+     "zh": "",
+     "en": "Chris Llewellyn Smith、Luciano Maiani",
+     "r": "两任总干事：前者任内获批，后者处理 2001 年超支"
+    }
+   ],
+   "awards": [
+    "2013 年基础物理学特别突破奖（2012 年 12 月 11 日公布，300 万美元）：Lyn Evans、Peter Jenni、Fabiola Gianotti、Michel Della Negra、Tejinder Virdee、Guido Tonelli、Joe Incandela 七人",
+    "2013 年欧洲物理学会高能与粒子物理奖：ATLAS 与 CMS 两个合作组，以及 Della Negra、Jenni、Virdee（据维基百科）",
+    "2025 年基础物理学突破奖（300 万美元）：ATLAS、CMS、ALICE、LHCb 四个合作组的 13,508 位论文作者，奖金全部捐给 CERN & Society 基金会资助博士生",
+    "理论一方：2004 年沃尔夫奖（Brout、恩格勒、希格斯），2010 年 Sakurai 奖（1964 年三篇论文的全部六位作者）"
+   ],
+   "anecdotes": [
+    {
+     "t": "希格斯讲机制的那篇稿子先被《Physics Letters》退回。他补了一段，点明理论预言一个有质量的标量粒子，改投别处。他后来说，要是原稿被收了，这一段「根本不会印出来」。2012 年 7 月 4 日他在 CERN 的报告厅里抹了眼泪。",
+     "kind": "当事人自述",
+     "f": [
+      2,
+      3
+     ]
+    },
+    {
+     "t": "2009 年 11 月初重启前，81 区段从 1.9 K 升到近 8 K。机器协调人 Mike Lamont 对记者说，地面供电设备的母线上有「一小块法棍」，「可能是鸟丢的」。当时没有束流，几天后恢复。",
+     "kind": "当事人自述",
+     "f": [
+      23
+     ]
+    },
+    {
+     "t": "2016 年 4 月 29 日一只小动物弄坏地面的高压电气设备，LHC 连夜停机；CERN 新闻负责人说「大概是只黄鼠狼」，内部简报写的是貂。同年 11 月 21 日又来一只，这第二只被做成标本，进了鹿特丹自然历史博物馆。",
+     "kind": "著作",
+     "f": [
+      24
+     ]
+    },
+    {
+     "t": "2008 年 3 月 21 日，Walter Wagner 和 Luis Sancho 在夏威夷的联邦地区法院起诉 CERN、美国能源部等，要求叫停 LHC，理由是可能造出黑洞；9 月 26 日法院以无管辖权驳回。",
+     "kind": "著作",
+     "f": [
+      25
+     ]
+    },
+    {
+     "t": "2001 年曝出超支时的总干事 Luciano Maiani 在口述史里说：「我要为此道歉，并说明我承担全部责任。」",
+     "kind": "当事人自述",
+     "f": [
+      14
+     ]
+    },
+    {
+     "t": "诺奖公布那天希格斯出门躲记者，他没有手机，是回家路上一位旧邻居告诉他得奖的。他后来对 BBC 说，奖只发两个人，等于承认 Brout 是那个没法再领奖的第三人。",
+     "kind": "著作",
+     "f": [
+      3
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "2008 年，约一万个接头里有一个电阻 220 nΩ（规格 0.6 nΩ 以下），烧毁后 53 块磁铁受损，停 14 个月。CERN 先以一半能量运行，五年后给每个接头加分流片。",
+    "principle": "同类零件成千上万，就按统计来管。",
+    "engineer": "数量最多、最不起眼的连接件要逐个可测、可追溯；查出系统性缺陷时，先降额运行拿到结果，再排停机窗口整改。",
+    "public": "出事的常常是最不起眼的接头：插线板、水管接口、备份硬盘。数量多的小东西定期查一遍，比事后修便宜。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "隧道来自 LEP（1989–2000），注入器是 1959 年的 PS 和 1976 年的 SPS；项目负责人 Evans、ATLAS 的 Jenni、CMS 的 Della Negra 与 Virdee 分别出自 SPS 对撞机、UA2 和 UA1。奖给了 1964 年的理论，颁奖词点名的是 2012 年的两个实验。",
+   "metrics": {
+    "size_m": 26659,
+    "size_what": "环周长",
+    "mass_t": 14000,
+    "mass_what": "CMS 探测器质量（ATLAS 7,000 吨；加速器冷质量 36,000 吨）",
+    "depth_m": 100,
+    "temp_K": 1.9,
+    "cost": {
+     "amount": 4332000000,
+     "currency": "CHF",
+     "year": 2009,
+     "what": "CERN 官方口径（不含人工）：机器与实验区 37.56 亿 + CERN 分担的探测器 4.93 亿 + 计算 0.83 亿瑞士法郎；年份按 Physics Today 所说的「2009 年超过 43 亿」。其他口径：全部探测器约 15 亿瑞士法郎；含人工与实物贡献接近 100 亿美元；媒体常写 75 亿欧元"
+    },
+    "people": {
+     "n": 13508,
+     "what": "2025 年突破奖认定的 ATLAS、CMS、ALICE、LHCb 四个实验 Run 2 论文作者数；其中 ATLAS 5,345、CMS 4,550。2013 年获奖时 ATLAS、CMS 各约 3,000 人"
+    },
+    "t_idea": 1984,
+    "t_build": 1994,
+    "t_first": 2008,
+    "t_result": 2012,
+    "t_prize": 2013
+   },
+   "drawing": [
+    {
+     "what": "LHC 环周长",
+     "value": 26659,
+     "unit": "米",
+     "note": "约 26.7 公里，直径约 8.5 公里",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "隧道深度",
+     "value": "50–175",
+     "unit": "米",
+     "note": "平均约 100 米；隧道内径 3.8 米",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "SSC 设计周长（反例，对照）",
+     "value": 87.1,
+     "unit": "公里",
+     "note": "终止时已挖约 23 公里（14.5 英里）",
+     "f": [
+      26,
+      28
+     ]
+    },
+    {
+     "what": "SPS 周长（LHC 的注入器，对照）",
+     "value": 6.9,
+     "unit": "公里",
+     "note": "官方页写近 7 公里",
+     "f": []
+    },
+    {
+     "what": "LHC 主偶极磁铁长度",
+     "value": 15,
+     "unit": "米",
+     "note": "磁长 14.3 米，约 35 吨",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "ATLAS 探测器（长 × 直径）",
+     "value": "46 × 25",
+     "unit": "米",
+     "note": "7,000 吨；洞室在地下约 100 米",
+     "f": [
+      9
+     ]
+    },
+    {
+     "what": "CMS 探测器（长 × 高 × 宽）",
+     "value": "21 × 15 × 15",
+     "unit": "米",
+     "note": "14,000 吨；螺线管长 13 米、直径 6 米",
+     "f": [
+      10
+     ]
+    }
+   ],
+   "counter": {
+    "name": "超导超级对撞机（Superconducting Super Collider，SSC）",
+    "summary": "美国 1980 年代设计的质子对撞机：周长 87.1 公里（54 英里），每束 20 TeV，建在得克萨斯州 Waxahachie 的一块空地上。1987 年批准时报价 44 亿美元，1989 年 59 亿，1991 年 83 亿，1993 年看到至少 110 亿。1993 年 10 月国会终止拨款，这时已花掉约 20 亿美元，挖了约 23 公里隧道和 17 口竖井，2,100 人在岗。",
+    "numbers": [
+     {
+      "k": "周长",
+      "v": "87.1 公里（54 英里），约为 LHC 的三倍",
+      "f": [
+       26
+      ]
+     },
+     {
+      "k": "设计能量",
+      "v": "20 + 20 TeV，质心 40 TeV；设计亮度约为 LHC 的十分之一",
+      "f": [
+       26
+      ]
+     },
+     {
+      "k": "选址",
+      "v": "得克萨斯州 Waxahachie，达拉斯以南约 48 公里，白地新建",
+      "f": [
+       26
+      ]
+     },
+     {
+      "k": "1987 年报价",
+      "v": "44 亿美元（里根批准时；加上探测器为 53 亿）",
+      "f": [
+       27
+      ]
+     },
+     {
+      "k": "1989 年",
+      "v": "59 亿美元",
+      "f": [
+       27
+      ]
+     },
+     {
+      "k": "1991 年",
+      "v": "83 亿美元（一作 82.5 亿）",
+      "f": [
+       27
+      ]
+     },
+     {
+      "k": "1993 年",
+      "v": "至少 110 亿美元；能源部基线验证报告 115 亿；也有估到 120 亿的",
+      "f": [
+       27
+      ]
+     },
+     {
+      "k": "已花",
+      "v": "联邦 16 亿加得州 4.09 亿，约 20 亿美元；另拨 6.4 亿用于收尾",
+      "f": [
+       28
+      ]
+     },
+     {
+      "k": "已挖隧道",
+      "v": "约 14.5 英里（约 23 公里），17 口竖井，地下工程完成约 20%",
+      "f": [
+       28
+      ]
+     },
+     {
+      "k": "终止",
+      "v": "1993 年 10 月国会终止拨款，10 月 30 日克林顿签署法案",
+      "f": [
+       28
+      ]
+     },
+     {
+      "k": "人",
+      "v": "在岗 2,100 人，近 2,000 人收到解聘通知；其中高能物理学家约 150 人",
+      "f": [
+       28
+      ]
+     },
+     {
+      "k": "外援",
+      "v": "1990 年众议院要求 20% 的钱来自国外；实际只有印度承诺 5,000 万美元，俄、中、印另供了部分设备与材料",
+      "f": [
+       29
+      ]
+     }
+    ],
+    "why": [
+     "报价一再上涨：44 亿（1987）→ 59 亿（1989）→ 83 亿（1991）→ 至少 110 亿美元（1993）；能源部后来的报告还发现探测器约 5 亿、建成前的运行费约 4 亿等没有算进去。［27］",
+     "没有国际伙伴：项目先被宣传成美国领先地位的象征，再去找外国出钱；众议院 1990 年要求 20% 来自国外，结果只有印度承诺了 5,000 万美元，美国从未正式邀请日本入伙，1993 年向日本要 10 亿美元的提议没有送出。［29］",
+     "白地新建：没有现成的加速器、隧道和成建制的队伍，连管理班子都从零搭起。Riordan 等估计，不建在费米实验室旁边多花了约 20 亿美元的基础设施；选址还被国会里的人看作「分肥」。［29］",
+     "管理：起初没有成本与进度控制系统，物理学家与军工出身的工程师冲突；审计总署和能源部监察长的报告点名管理不善，国会认定项目已经失控。［29］",
+     "大环境：冷战结束，财政赤字加衰退，新当选的议员要拿它做削减开支的象征；与国际空间站争预算；物理学界内部公开反对，Philip Anderson 等在国会作证说它挤占别的研究。［29］",
+     "Riordan 的总判断：对单个国家来说太大、太贵，借 Panofsky 的话是「a bridge too far」；40 TeV 这个指标「被说成科学上的必需，其实主要是政治选择」。Burton Richter 则认为，先定死设计参数再去要钱是严重的错误。［29］"
+    ],
+    "contrast": [
+     "国际伙伴：CERN 由欧洲各国政府按国民生产总值比例出资，LHC 在 1996 年获批前已拿到 20 多个国家的承诺，日本（3 亿瑞士法郎）、美国（约 5 亿美元）这些非成员国也出了钱；SSC 打算由美国一家出钱，外国出资只有印度承诺的 5,000 万美元。［13、29、30］",
+     "旧设施：LHC 用 LEP 留下的 27 公里隧道，PS、SPS 做注入器，实验室和队伍是现成的；SSC 要在空地上新挖 87 公里隧道，注入器、厂房和管理班子都从零建。［5、29、30］",
+     "管理与报价：LHC 也超支（1996 年估 28 亿瑞士法郎，2001 年曝出机器超约 18%，2009 年超过 43 亿），但靠内部调整、向欧洲投资银行借 3 亿欧元和把完工推后两年消化掉了；Riordan 的说法是，CERN 理事会基本按共识决策，把科学家与直接的政治干预隔开。SSC 在 1991、1992、1993 年连续三年面对众议院的拨款表决，估价从 44 亿涨到 110 多亿。［8、14、27、28、30］",
+     "代价：LHC 的设计能量只有 SSC 的约三分之一（14 对 40 TeV），靠约 10 倍的亮度弥补；发现希格斯粒子时用的还只是设计能量的一半左右。［26、30］"
+    ]
+   },
+   "facts": [
+    {
+     "n": 1,
+     "text": "2013 年诺贝尔物理学奖颁奖词：「for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider」。奖金 800 万瑞典克朗，恩格勒（1932 年生于比利时 Etterbeek，布鲁塞尔自由大学）与希格斯（1929 年生于英国纽卡斯尔，爱丁堡大学）平分。恩格勒已于 2026 年 6 月 18 日在布鲁塞尔的 Uccle 去世，享年 93 岁；希格斯 2024 年 4 月 8 日去世。",
+     "sources": [
+      {
+       "t": "kva.se：The Nobel Prize in Physics 2013",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2013-2/"
+      },
+      {
+       "t": "kva.se：2013 年物理学奖科学背景（PDF）",
+       "u": "https://www.kva.se/app/uploads/2013/10/globalassets-priser-nobel-2013-fysik-scibackfy13.pdf"
+      },
+      {
+       "t": "CERN Courier：François Englert 1932–2026",
+       "u": "https://cerncourier.com/a/francois-englert-1932-2026/"
+      }
+     ],
+     "confidence": "高",
+     "note": "颁奖词由抓取工具分三段给出，逗号位置请以 kva.se 页面为准"
+    },
+    {
+     "n": 2,
+     "text": "1964 年的论文：恩格勒与 Brout 一篇（Phys. Rev. Lett. 13, 321，6 月 26 日投稿）；希格斯两篇（Phys. Lett. 12, 132，7 月 27 日投稿；Phys. Rev. Lett. 13, 508，8 月 31 日投稿，写出了剩下的那个标量场的方程和质量，粒子因此得名）；Guralnik、Hagen、Kibble 一篇（Phys. Rev. Lett. 13, 585，10 月 12 日投稿）。三组人前后相差约十周。希格斯讲机制的那篇稿子先被《Physics Letters》退回，他补写了一段，点明这类理论有实验上可查的后果，即一个有质量的标量玻色子，改投 Physical Review Letters；审稿人南部阳一郎提醒他已有恩格勒与 Brout 的论文，他加了脚注。希格斯后来说，要是 Physics Letters 收了原稿，那一段「根本不会印出来」。",
+     "sources": [
+      {
+       "t": "kva.se：2013 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2013/10/globalassets-priser-nobel-2013-fysik-scibackfy13.pdf"
+      },
+      {
+       "t": "Physics Today 2013 年 12 月：B. Schwarzschild, Englert and Higgs are awarded the Nobel Prize in Physics",
+       "u": "https://aip.brightspotcdn.com/PTO.v66.i12.10_1.online.pdf"
+      },
+      {
+       "t": "维基百科：Peter Higgs（引《卫报》）",
+       "u": "https://en.wikipedia.org/wiki/Peter_Higgs"
+      },
+      {
+       "t": "维基百科：1964 PRL symmetry breaking papers",
+       "u": "https://en.wikipedia.org/wiki/1964_PRL_symmetry_breaking_papers"
+      },
+      {
+       "t": "CERN Courier：Peter Higgs 1929–2024",
+       "u": "https://cerncourier.com/a/peter-higgs-1929-2024/"
+      }
+     ],
+     "confidence": "高",
+     "note": "退稿理由三处措辞不同：维基百科引《卫报》作「与物理没有明显关系」，CERN Courier 讣告作「没有实际意义」，Physics Today 2013 作「不属于需要快速发表的那类结果」。被退的是哪一篇，抓取到的 Physics Today 摘要与另两处说法不完全一致，卡片上只写「讲机制的那篇先被退稿」即可"
+    },
+    {
+     "n": 3,
+     "text": "Robert Brout 1928 年 6 月 14 日生于纽约，2011 年 5 月 3 日在布鲁塞尔南郊 Linkebeek 去世，没有等到 2012 年的发现和 2013 年的奖；瑞典皇家科学院的新闻稿称他为恩格勒「已故的同事」。希格斯 2024 年 4 月 8 日在爱丁堡去世，享年 94 岁；2012 年 7 月 4 日他在 CERN 的报告会现场抹了眼泪，说没想到有生之年能看到。2004 年沃尔夫奖授予 Brout、恩格勒、希格斯三人，2010 年 Sakurai 奖授予三篇论文的全部六位作者。希格斯 2014 年对 BBC 说，奖只发给两个人，等于承认 Brout 是那位没法再领奖的第三人。",
+     "sources": [
+      {
+       "t": "kva.se：The Nobel Prize in Physics 2013",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2013-2/"
+      },
+      {
+       "t": "维基百科：Robert Brout",
+       "u": "https://en.wikipedia.org/wiki/Robert_Brout"
+      },
+      {
+       "t": "维基百科：Peter Higgs",
+       "u": "https://en.wikipedia.org/wiki/Peter_Higgs"
+      },
+      {
+       "t": "CERN Courier：François Englert 1932–2026",
+       "u": "https://cerncourier.com/a/francois-englert-1932-2026/"
+      },
+      {
+       "t": "CERN Courier：Peter Higgs 1929–2024",
+       "u": "https://cerncourier.com/a/peter-higgs-1929-2024/"
+      }
+     ],
+     "confidence": "中",
+     "note": "Brout、希格斯的生卒日期与奖项出自维基百科；恩格勒去世（2026-06-18）见 CERN Courier 讣告与维基百科。到 2026 年，1964 年论文的六位作者中 Brout、Guralnik、Kibble、希格斯、恩格勒均已去世（Guralnik、Kibble 的卒年本次未核）"
+    },
+    {
+     "n": 4,
+     "text": "LHC 环周长 26,659 米（常写作 27 公里或 26.7 公里），隧道在地下约 100 米；维基百科给出的深度范围是 50–175 米（为少挖汝拉山下的岩石而有意倾斜），隧道内径 3.8 米。",
+     "sources": [
+      {
+       "t": "CERN：Facts and figures about the LHC",
+       "u": "https://home.cern/resources/faqs/facts-and-figures-about-lhc"
+      },
+      {
+       "t": "CERN：The Large Hadron Collider",
+       "u": "https://home.cern/science/accelerators/large-hadron-collider"
+      },
+      {
+       "t": "维基百科：Large Hadron Collider",
+       "u": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "50–175 米与 3.8 米只见于维基百科"
+    },
+    {
+     "n": 5,
+     "text": "隧道原是为大型正负电子对撞机 LEP 挖的：三台掘进机 1985 年 2 月开挖，1988 年完成，是英法海底隧道之前欧洲最大的土建工程；LEP 1989 年 7 月 14 日首束，2000 年 11 月 2 日关机，把隧道让给 LHC。挖的时候隧道就比 LEP 需要的大，为的是日后能再放一圈超导质子环（放得下一圈，放不下两圈）。",
+     "sources": [
+      {
+       "t": "CERN：The Large Electron-Positron Collider",
+       "u": "https://home.cern/science/accelerators/large-electron-positron-collider"
+      },
+      {
+       "t": "L. Maiani 口述史：The LHC Timeline: A Personal Recollection (1980–2012)（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      }
+     ],
+     "confidence": "高",
+     "note": "种子和维基百科写「1983–88 年」，那是从 LEP 土建开工算起；CERN 官方页写掘进机 1985 年 2 月开挖"
+    },
+    {
+     "n": 6,
+     "text": "主偶极磁铁 1,232 块，每块长 15 米（磁长 14.3 米）、约 35 吨，在 7 TeV 时磁场 8.33 T、电流 11,850 A，工作在 1.9 K，每块约 50 万瑞士法郎；两束质子的两个孔径做在同一块磁铁里。每个区段的 154 块偶极串联在一起，由一台 13 kA 电源供电，全环 8 个主回路。另有 392 块主四极磁铁（各长 5–7 米）；大型双孔径超导磁铁共 1,734 块，小的校正磁铁 7,724 块，CERN 的统计是各类磁铁合计 9,593 块。超导线为铌钛合金，全机约 25 万公里，每根线含 6,300 根细丝。磁铁储能约 9–11 GJ，单块偶极失超时要泄放约 7 MJ。质子每秒绕环 11,245 圈。",
+     "sources": [
+      {
+       "t": "CERN：Facts and figures about the LHC",
+       "u": "https://home.cern/resources/faqs/facts-and-figures-about-lhc"
+      },
+      {
+       "t": "CERN LHC Machine Outreach：Magnets",
+       "u": "https://lhc-machine-outreach.web.cern.ch/components/magnets.htm"
+      },
+      {
+       "t": "Symmetry 2006 年 8 月：Deconstruction: LHC dipole",
+       "u": "https://www.symmetrymagazine.org/sites/default/files/legacy/pdfs/200608/deconstruction.pdf"
+      },
+      {
+       "t": "CERN：Pulling together: Superconducting electromagnets",
+       "u": "https://home.cern/science/engineering/pulling-together-superconducting-electromagnets"
+      },
+      {
+       "t": "CERN Courier 2010 年 9 月：L. Rossi, The subtle side of superconductivity",
+       "u": "https://cerncourier.com/a/the-subtle-side-of-superconductivity/"
+      }
+     ],
+     "confidence": "高",
+     "note": "电流：11,850 A（设计值，7 TeV）与 11,080 A（CERN 磁铁页，对应 6.5 TeV）；磁场常简写为 8.3 T；储能：Rossi 写约 9,000 MJ，LHC 机器科普页写 11 GJ"
+    },
+    {
+     "n": 7,
+     "text": "低温与真空：主磁铁工作在 1.9 K（−271.3 °C）；27 公里中约 23 公里是冷的，冷质量 36,000 吨；降温分三步（液氮把氦预冷到 80 K，透平膨胀到 4.5 K，再到 1.9 K），用氦 120 吨、液氮 10,000 吨，整个过程要几周。2.17 K 以下氦成为超流体，导热极好。束流管内气压约 10^-13 大气压。",
+     "sources": [
+      {
+       "t": "CERN：Cryogenics: Low temperatures, high performance",
+       "u": "https://home.cern/science/engineering/cryogenics-low-temperatures-high-performance"
+      },
+      {
+       "t": "CERN：The Large Hadron Collider",
+       "u": "https://home.cern/science/accelerators/large-hadron-collider"
+      },
+      {
+       "t": "CERN：Facts and figures about the LHC",
+       "u": "https://home.cern/resources/faqs/facts-and-figures-about-lhc"
+      },
+      {
+       "t": "维基百科：Large Hadron Collider",
+       "u": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "氦的总量：CERN 低温页写 120 吨；维基百科写约 96 吨超流氦-4（另有 470 吨铌钛超导体）。种子用的是 96 吨"
+    },
+    {
+     "n": 8,
+     "text": "造价的几种口径。CERN 官方 FAQ（材料费，不含人工）：机器与实验区 37.56 亿瑞士法郎，CERN 分担的探测器与探测器区 4.93 亿，CERN 分担的计算 0.83 亿，合计 43.32 亿；全部 LHC 探测器合计约 15 亿瑞士法郎。Physics Today：1996 年估 28 亿瑞士法郎（当时约 23 亿美元），2009 年超过 43 亿，算上人工与各国的实物贡献接近 100 亿美元。Maiani：2002 年的全口径估算 48.02 亿瑞士法郎，2009 年 CERN 的最终花费 65.39 亿瑞士法郎。维基百科：1995 年批准时机器 26 亿加实验 2.1 亿瑞士法郎；媒体常引的总预算是 75 亿欧元（2010 年 6 月约合 90 亿美元）。",
+     "sources": [
+      {
+       "t": "CERN：Facts and figures about the LHC",
+       "u": "https://home.cern/resources/faqs/facts-and-figures-about-lhc"
+      },
+      {
+       "t": "M. Riordan, A bridge too far: The demise of the Superconducting Super Collider, Physics Today 2016 年 10 月",
+       "u": "https://physicstoday.aip.org/features/a-bridge-too-far-the-demise-of-the-superconducting-super-collider"
+      },
+      {
+       "t": "L. Maiani 口述史（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      },
+      {
+       "t": "维基百科：Large Hadron Collider",
+       "u": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "各口径年份、币种、含不含人工都不同，不能直接相加或互换；种子写的「约 75 亿欧元」是媒体口径"
+    },
+    {
+     "n": 9,
+     "text": "ATLAS：长 46 米、高和宽各 25 米（圆柱形，直径 25 米），7,000 吨，洞室在地下约 100 米，是体积最大的对撞机探测器。磁铁系统是 2 T 的中心螺线管加 8 个大线圈组成的桶部环形磁铁和两个端盖环形磁铁。人数：2013 年约 3,000 人；2022 年 3 月 5,500 多名科学家，来自 42 个国家的 245 家机构（维基百科另记成员 6,003 人，其中物理学家 3,822 人）；2025 年突破奖认定的论文作者 5,345 人。1992 年由 EAGLE、ASCOT 两个方案合并而成，1995 年获资助，2003 年起在地下组装，2008 年完工。",
+     "sources": [
+      {
+       "t": "CERN：ATLAS",
+       "u": "https://home.cern/science/experiments/atlas"
+      },
+      {
+       "t": "ATLAS 官网：Detector & Technology",
+       "u": "https://atlas.cern/Discover/Detector"
+      },
+      {
+       "t": "kva.se：2013 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2013/10/globalassets-priser-nobel-2013-fysik-scibackfy13.pdf"
+      },
+      {
+       "t": "维基百科：ATLAS experiment",
+       "u": "https://en.wikipedia.org/wiki/ATLAS_experiment"
+      }
+     ],
+     "confidence": "高",
+     "note": "瑞典皇家科学院写长 44 米，CERN 与 ATLAS 官网写 46 米"
+    },
+    {
+     "n": 10,
+     "text": "CMS：长 21 米、宽和高各 15 米，约 14,000 吨，其中磁铁线圈和回流铁轭占 12,500 吨；超导螺线管长 13 米、直径 6 米，设计磁场 4 T（实际运行在 3.8 T），电流 18,500 A。探测器在地面分 15 段造好，再吊进法国 Cessy 附近的地下洞室组装。人数：2013 年约 3,000 人；2022 年 5 月约 5,500 人，来自 54 个国家的 241 家机构；2025 年突破奖认定的论文作者 4,550 人。",
+     "sources": [
+      {
+       "t": "CERN：CMS",
+       "u": "https://home.cern/science/experiments/cms"
+      },
+      {
+       "t": "CMS 官网：Detector",
+       "u": "https://cms.cern/detector"
+      },
+      {
+       "t": "维基百科：Compact Muon Solenoid",
+       "u": "https://en.wikipedia.org/wiki/Compact_Muon_Solenoid"
+      },
+      {
+       "t": "kva.se：The Nobel Prize in Physics 2013",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2013-2/"
+      }
+     ],
+     "confidence": "高",
+     "note": "螺线管尺寸与 3.8 T 出自维基百科"
+    },
+    {
+     "n": 11,
+     "text": "两台探测器为什么不一样：CERN 的官方表述是，ATLAS 和 CMS 都是通用探测器，覆盖尽可能宽的物理目标；「两台独立设计的探测器，对交叉确认任何新发现至关重要」。CMS 的科学目标与 ATLAS 相同，但采用不同的技术方案和不同的磁铁系统设计。2012 年两家各自独立给出超过 5 个标准差的信号。",
+     "sources": [
+      {
+       "t": "CERN：Experiments",
+       "u": "https://home.cern/science/experiments"
+      },
+      {
+       "t": "CERN：CMS",
+       "u": "https://home.cern/science/experiments/cms"
+      },
+      {
+       "t": "kva.se：2013 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2013/10/globalassets-priser-nobel-2013-fysik-scibackfy13.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 12,
+     "text": "数据与计算：束团每 25 纳秒交叉一次，即每秒 4,000 万次；ATLAS、CMS 里每秒约 10–15 亿次质子碰撞。ATLAS 的硬件触发把 4,000 万赫兹降到 10 万赫兹，软件触发再降到每秒约 1,000 个事例存盘，约百万分之一。全球 LHC 计算网格（WLCG）有 170 多个站点、分布在 42 个国家，约 140 万个计算核、1.5 EB 存储，每天跑 200 多万个任务，用户是 12,000 多名物理学家；CERN 自己约占资源的 20%。",
+     "sources": [
+      {
+       "t": "CERN：The Worldwide LHC Computing Grid",
+       "u": "https://home.cern/science/computing/grid"
+      },
+      {
+       "t": "CERN：Storage",
+       "u": "https://home.cern/science/computing/storage"
+      },
+      {
+       "t": "ATLAS 官网：Detector & Technology",
+       "u": "https://atlas.cern/Discover/Detector"
+      },
+      {
+       "t": "维基百科：ATLAS experiment",
+       "u": "https://en.wikipedia.org/wiki/ATLAS_experiment"
+      },
+      {
+       "t": "CERN：Facts and figures about the LHC",
+       "u": "https://home.cern/resources/faqs/facts-and-figures-about-lhc"
+      }
+     ],
+     "confidence": "高",
+     "note": "WLCG 的数字是 CERN 网页 2026 年 10 月显示的现值，页面没有标注统计日期；碰撞率 CERN 两处分别写「约 10 亿」和「15 亿」"
+    },
+    {
+     "n": 13,
+     "text": "立项：1984 年 3 月 21–27 日 ECFA 与 CERN 在洛桑和日内瓦开研讨会，讨论在 LEP 隧道里放强子对撞机；1985 年 Giorgio Brianti 提出二合一磁铁设计；1992 年理事会宣布 LHC 是 CERN 的下一台装置；1994 年底第一台 11 米二合一样机（CERN、INFN、Ansaldo）交付；1994 年 12 月理事会批准「缺磁铁」的两步方案，1996 年 12 月批准一步建成。非成员国出资：日本 3 亿瑞士法郎，美国约 5 亿美元（1997 年 12 月 8 日签约，其中约 2 亿是给机器的四极磁铁等），俄罗斯提供常规磁铁。",
+     "sources": [
+      {
+       "t": "L. Maiani 口述史（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      },
+      {
+       "t": "CERN：Facts and figures about the LHC",
+       "u": "https://home.cern/resources/faqs/facts-and-figures-about-lhc"
+      },
+      {
+       "t": "Physics Today 2016 年 10 月（Riordan）",
+       "u": "https://physicstoday.aip.org/features/a-bridge-too-far-the-demise-of-the-superconducting-super-collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "Riordan 写 CERN 在 1996 年批准前已得到 20 多个国家的出资承诺"
+    },
+    {
+     "n": 14,
+     "text": "超支与延期：2001 年 9 月 CERN 公开机器超支 4.8 亿瑞士法郎（比计划高约 18%），加上其他项目共约 8.5 亿，计入后续项目超过 10 亿；完工日期从 2005 年推到 2007 年 4 月。2002 年 12 月 19 日 CERN 向欧洲投资银行借款 3 亿欧元。超流氦输送管线不合格、由 CERN 自己重做，又耽误约一年。最后一块偶极磁铁 2006 年 11 月 27 日到货。时任总干事 Maiani 在口述史里为超支道歉并表示承担全部责任。",
+     "sources": [
+      {
+       "t": "L. Maiani 口述史（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      },
+      {
+       "t": "维基百科：Large Hadron Collider",
+       "u": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 15,
+     "text": "2008 年 9 月 10 日首束绕环成功。9 月 19 日中午前后，在没有束流的情况下给 3-4 区段的主偶极回路做通电测试，电流升向 9.3 kA、走到约 8.7 kA 时，一块偶极磁铁与一块四极磁铁之间的母线接头出了问题：这个接头的电阻约 220 nΩ，而规格是 0.6 nΩ 以下、量产样品平均 0.2 nΩ。当时的失超探测要到 1 V 才动作，而接头上的电压只有约 2 mV，等于看不见。电弧击穿氦容器，氦涌进真空夹层，泄压装置来不及泄压，四极磁铁的低温恒温器挣断地脚螺栓并移位，受损段长约 750 米。约 6 吨氦泄漏（约 2 吨爆发式喷出，其后又漏约 4 吨），共 53 块磁铁受损，在冬季停机期间修复或更换；无人受伤。CERN 最初估计修两个月，实际从事故到束流重新注入约 14 个月。",
+     "sources": [
+      {
+       "t": "Symmetry Breaking 2008-10-16：CERN releases analysis of LHC incident（转发 CERN 新闻稿）",
+       "u": "https://www.symmetrymagazine.org/breaking/2008/10/16/cern-releases-analysis-of-lhc-incident"
+      },
+      {
+       "t": "CERN Courier 2010 年 9 月：L. Rossi, The subtle side of superconductivity",
+       "u": "https://cerncourier.com/a/the-subtle-side-of-superconductivity/"
+      },
+      {
+       "t": "CERN：The Large Hadron Collider",
+       "u": "https://home.cern/science/accelerators/large-hadron-collider"
+      },
+      {
+       "t": "维基百科：Large Hadron Collider",
+       "u": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+      },
+      {
+       "t": "L. Maiani 口述史（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      }
+     ],
+     "confidence": "高",
+     "note": "接头位置：CERN 2008-10-16 的分析写偶极与四极之间；Maiani 的回忆写两块偶极之间、约 50 块磁铁。电流：CERN 新闻稿写约 9 kA，Rossi 写 8.7 kA。CERN 原新闻稿页面已下线归档，用了 Symmetry 的转发。受损磁铁的细分（通行说法 39 块偶极加 14 块四极）本次没有核到"
+    },
+    {
+     "n": 16,
+     "text": "恢复运行：3-4 区段约 6 个月修好。全环约 10,000 个 13 kA 接头（每处磁铁互连 6 个）逐一排查：新装的母线失超探测系统灵敏度 0.3 mV，能发现 1 nΩ 以上的接头，查到的最差的约 3 nΩ；另在三块磁铁内部发现 100、50、25 nΩ 的坏接头。更麻烦的是接头外面的铜稳定体：在升温检修的区段里有 10–15% 的接头铜没有焊实，没升温的区段无法排除更大的缺陷。于是把磁场限在 4.5 T，即每束 3.5 TeV。2009 年 11 月 20 日束流重新注入，11 月 23 日首次对撞（每束 450 GeV），11 月 30 日每束 1.18 TeV，超过 Tevatron；2010 年 3 月 30 日首次 7 TeV 对撞；2012 年 4 月 5 日起每束 4 TeV（8 TeV）。Steve Myers 主持了修复与重启。",
+     "sources": [
+      {
+       "t": "CERN Courier 2010 年 9 月：L. Rossi, The subtle side of superconductivity",
+       "u": "https://cerncourier.com/a/the-subtle-side-of-superconductivity/"
+      },
+      {
+       "t": "F. Bordry 等，The First Long Shutdown (LS1) for the LHC，IPAC2013",
+       "u": "https://proceedings.jacow.org/IPAC2013/papers/mozb202.pdf"
+      },
+      {
+       "t": "维基百科：Large Hadron Collider",
+       "u": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+      },
+      {
+       "t": "L. Maiani 口述史（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      }
+     ],
+     "confidence": "高",
+     "note": "逐日日期出自维基百科"
+    },
+    {
+     "n": 17,
+     "text": "发现：2011 年 12 月 13 日 Gianotti 和 Tonelli 在 CERN 报告 125 GeV 附近的初步迹象。2012 年 7 月 4 日 CERN 宣布发现一个新粒子，由 Gianotti（ATLAS）和 Incandela（CMS）报告，两家都超过 5 个标准差，质量 125–126 GeV（CMS：125.3 ± 0.4 ± 0.5 GeV；ATLAS：125.5 GeV），恩格勒和希格斯都在场。所用数据：2011 年每个实验约 4.7 fb⁻¹（7 TeV），2012 年到 6 月底约 5.6 fb⁻¹（8 TeV）。此前 LEP 四个实验 2003 年给出的下限是 114.4 GeV。按 Physics Today 的估算，每 10^10 次质子碰撞约产生 1 个 125 GeV 的希格斯粒子，其中只有约 0.2% 衰变成两个光子；到宣布时，每台探测器里发生过约 10^15 次碰撞。",
+     "sources": [
+      {
+       "t": "kva.se：2013 年物理学奖科学背景",
+       "u": "https://www.kva.se/app/uploads/2013/10/globalassets-priser-nobel-2013-fysik-scibackfy13.pdf"
+      },
+      {
+       "t": "L. Maiani 口述史（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      },
+      {
+       "t": "维基百科：Guido Tonelli",
+       "u": "https://en.wikipedia.org/wiki/Guido_Tonelli"
+      },
+      {
+       "t": "Physics Today 2012 年 9 月：J. Miller 关于发现类希格斯粒子的报道",
+       "u": "https://aip.brightspotcdn.com/PTO.v65.i9.12_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 18,
+     "text": "第一次长停机（LS1）自 2013 年 2 月 14 日起：给全环约 10,000 个大电流接头逐个焊上铜分流片（共 27,000 多个分流片），重做其中 1,000–1,500 个接头，更换 18 块磁铁（15 块偶极、3 块四极），补装直径 200 毫米的泄压阀；高峰时现场约 1,600 人，其中接头加固一项约 260 人。之后 2015 年 5 月 20 日首次 13 TeV 对撞，6 月 3 日恢复物理取数；第二次长停机（2018 年 12 月 10 日至 2022 年 4 月）后，2022 年 7 月 5 日以 13.6 TeV 开始第三轮运行。",
+     "sources": [
+      {
+       "t": "F. Bordry 等，IPAC2013",
+       "u": "https://proceedings.jacow.org/IPAC2013/papers/mozb202.pdf"
+      },
+      {
+       "t": "CERN Courier 2010 年 9 月：L. Rossi, The subtle side of superconductivity",
+       "u": "https://cerncourier.com/a/the-subtle-side-of-superconductivity/"
+      },
+      {
+       "t": "CERN：The Large Hadron Collider",
+       "u": "https://home.cern/science/accelerators/large-hadron-collider"
+      },
+      {
+       "t": "维基百科：Large Hadron Collider",
+       "u": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书里的「全部约 10,170 处接头」：Rossi 2010 写每处互连 6 个 13 kA 接头、共约 10,000 个，都要加铜分流片；10,170 这个精确数本次没有核到"
+    },
+    {
+     "n": 19,
+     "text": "2026 年的最新口径（CERN 第三次长停机专页）：第三轮运行的最后一次对撞在 2026 年 6 月 27 日（周六）早上 6 点；LHC 的第三次长停机（LS3）于 6 月 29 日开始，预计最长四年，CERN 其余加速器运行到 8 月底后也进入停机；加速器复合体从 2028 年年中起逐步恢复，LHC 以高亮度 LHC（HL-LHC）的面貌在 2030 年年中重新运行。HL-LHC 的目标是把积分亮度提高到 LHC 设计值的 10 倍，土建 2018 年 4 月开工。",
+     "sources": [
+      {
+       "t": "CERN：Long Shutdown 3",
+       "u": "https://home.cern/science/long-shutdown-3/"
+      },
+      {
+       "t": "CERN：High-Luminosity LHC",
+       "u": "https://home.cern/science/accelerators/high-luminosity-lhc"
+      },
+      {
+       "t": "CERN：The Large Hadron Collider",
+       "u": "https://home.cern/science/accelerators/large-hadron-collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "维基百科的时间表写「2026 年 7 月」结束、「2026 年 6 月」开始停机，以 CERN 专页为准；展望部分里「HL-LHC 2030 年起」的写法与此一致"
+    },
+    {
+     "n": 20,
+     "text": "人：Lyn Evans，1945 年生于威尔士，1994 年起参与规划，任 LHC 项目负责人至 2008 年，2012 年起任直线对撞机合作组主任。Lucio Rossi，1955 年生，米兰大学教授，2001–11 年领导 LHC 的磁铁、超导体与低温恒温器组（这一块约 17 亿欧元，占机器预算的一半），之后主持高亮度 LHC 项目。ATLAS：Peter Jenni 1995 年当选发言人，2009 年 2 月卸任，由 Fabiola Gianotti 接任；Gianotti 2016–25 年任 CERN 总干事。CMS：Michel Della Negra（1992–2006）、Tejinder Virdee（2007 年 1 月起三年）、Guido Tonelli（2010–11）、Joe Incandela（2011 年当选，2014 年 1 月由 Tiziano Camporesi 接任）。",
+     "sources": [
+      {
+       "t": "维基百科：Lyn Evans",
+       "u": "https://en.wikipedia.org/wiki/Lyn_Evans"
+      },
+      {
+       "t": "维基百科：Lucio Rossi",
+       "u": "https://en.wikipedia.org/wiki/Lucio_Rossi"
+      },
+      {
+       "t": "维基百科：Peter Jenni",
+       "u": "https://en.wikipedia.org/wiki/Peter_Jenni"
+      },
+      {
+       "t": "维基百科：Michel Della Negra",
+       "u": "https://en.wikipedia.org/wiki/Michel_Della_Negra"
+      },
+      {
+       "t": "维基百科：Tejinder Virdee",
+       "u": "https://en.wikipedia.org/wiki/Tejinder_Virdee"
+      },
+      {
+       "t": "Breakthrough Prize：Jenni and Gianotti Launch ATLAS PhD Scholarship Program",
+       "u": "https://breakthroughprize.org/News/5"
+      }
+     ],
+     "confidence": "中",
+     "note": "任期多出自维基百科人物条目；Gianotti 的 ATLAS 任期由突破奖网站佐证（2009–2013）"
+    },
+    {
+     "n": 21,
+     "text": "2013 年基础物理学特别突破奖（2012 年 12 月 11 日公布，300 万美元）授予七位领导者：Peter Jenni、Fabiola Gianotti（ATLAS），Michel Della Negra、Tejinder Singh Virdee、Guido Tonelli、Joe Incandela（CMS），Lyn Evans（LHC），理由是他们在发现新的类希格斯粒子的科学事业中的领导作用。Jenni 与 Gianotti 把奖金全部捐出，设立了 ATLAS 博士生奖学金。",
+     "sources": [
+      {
+       "t": "Breakthrough Prize：2013 Special Breakthrough Prize 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P4/Y2013"
+      },
+      {
+       "t": "Breakthrough Prize：Jenni and Gianotti Launch ATLAS PhD Scholarship Program",
+       "u": "https://breakthroughprize.org/News/5"
+      },
+      {
+       "t": "维基百科：Breakthrough Prize in Fundamental Physics",
+       "u": "https://en.wikipedia.org/wiki/Breakthrough_Prize_in_Fundamental_Physics"
+      }
+     ],
+     "confidence": "高",
+     "note": "同一页还列着另获特别奖的霍金；七人之间如何分配奖金没有查到"
+    },
+    {
+     "n": 22,
+     "text": "2025 年基础物理学突破奖（2025 年 4 月 5 日公布，300 万美元）授予 ATLAS、CMS、ALICE、LHCb 四个合作组，获奖者是 2015 年至 2024 年 7 月 15 日之间发表的 Run 2 数据论文的 13,508 位作者：ATLAS 5,345 人、CMS 4,550 人、ALICE 1,869 人、LHCb 1,744 人，来自 70 多个国家。奖金按 100 万、100 万、50 万、50 万美元分给四个合作组，全部捐给 CERN & Society 基金会，用来资助成员机构的博士生到 CERN 做研究。",
+     "sources": [
+      {
+       "t": "Breakthrough Prize：2025 年得主公告",
+       "u": "https://breakthroughprize.org/News/91"
+      },
+      {
+       "t": "Breakthrough Prize：2025 Fundamental Physics 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P1/Y2025"
+      }
+     ],
+     "confidence": "高",
+     "note": "种子标「待核」的人数：13,508 属实"
+    },
+    {
+     "n": 23,
+     "text": "面包事件：2009 年 11 月初（按报道推算是 11 月 3 日周二凌晨），重启前的 LHC 81 区段温度从 1.9 K 升到近 8 K。LHC 机器协调人 Mike Lamont 对 The Register 说，故障出在地面设备，原因是「母线上有一小块法棍」，「可能是鸟丢的」。当时没有束流，温度随后回落；他估计这类事件后机器大约三天可以恢复。",
+     "sources": [
+      {
+       "t": "The Register 2009-11-05：L. Page 的报道",
+       "u": "https://www.theregister.com/2009/11/05/lhc_bread_bomb_dump_incident/"
+      },
+      {
+       "t": "NPR 2016-04-29：Weasel Shuts Down World's Most Powerful Particle Collider",
+       "u": "https://www.npr.org/sections/thetwo-way/2016/04/29/476154494/weasel-shuts-down-world-s-most-powerful-particle-collider"
+      }
+     ],
+     "confidence": "中",
+     "note": "出处是媒体转述 CERN 工作人员的话，措辞本身带「可能」；没有查到 CERN 的正式书面说明。它没有造成停机，只是延迟了降温"
+    },
+    {
+     "n": 24,
+     "text": "貂事件：2016 年 4 月 29 日，一只小动物弄坏了地面的高压电气设备，LHC 连夜停机，现场发现烧焦的残骸；CERN 新闻负责人 Arnaud Marsollier 说「大概是只黄鼠狼」，内部简报写的是貂（石貂），修复预计几天、完全恢复再要一两周。维基百科记载两起：2016 年 4 月 29 日与 11 月 21 日，各有一只石貂爬上 18–66 千伏的变压器（分别在 LHCb 和 ALICE 附近）；第二只被制成标本，在鹿特丹自然历史博物馆展出。",
+     "sources": [
+      {
+       "t": "NPR 2016-04-29",
+       "u": "https://www.npr.org/sections/thetwo-way/2016/04/29/476154494/weasel-shuts-down-world-s-most-powerful-particle-collider"
+      },
+      {
+       "t": "维基百科：Beech marten（引 CERN Bulletin 与《卫报》2017）",
+       "u": "https://en.wikipedia.org/wiki/Beech_marten"
+      }
+     ],
+     "confidence": "中",
+     "note": "进博物馆的是 11 月那一只，不是 4 月那一只；《卫报》原文被拦截未打开；NPR 说的是咬电缆，维基百科说的是爬上变压器"
+    },
+    {
+     "n": 25,
+     "text": "安全争议：CERN 2007 年成立 LHC 安全评估组（LSAG：John Ellis、Gian Giudice、Michelangelo Mangano、Igor Tkachev、Urs Wiedemann），报告《Review of the Safety of LHC Collisions》2008 年 6 月 20 日公布、9 月发表于 Journal of Physics G。结论：LHC 的碰撞能量低于已经轰击地球几十亿年的一部分宇宙线，天体至今安然无恙；即使造出微型黑洞也会因霍金辐射而衰变；奇异子、真空泡、磁单极同样构不成危险。CERN 科学政策委员会一致认可。官司：Walter Wagner 与 Luis Sancho 2008 年 3 月 21 日在夏威夷的联邦地区法院起诉 CERN、美国能源部、国家科学基金会和费米实验室；法院 9 月 26 日以对 LHC 没有管辖权驳回，2010 年 8 月 24 日上诉被驳回。",
+     "sources": [
+      {
+       "t": "Ellis 等，Review of the Safety of LHC Collisions（arXiv:0806.3414）",
+       "u": "https://arxiv.org/abs/0806.3414"
+      },
+      {
+       "t": "维基百科：Safety of high-energy particle collision experiments",
+       "u": "https://en.wikipedia.org/wiki/Safety_of_high-energy_particle_collision_experiments"
+      }
+     ],
+     "confidence": "高",
+     "note": "诉讼细节出自维基百科（引法院文件与媒体）；CERN 官网的安全专页打不开"
+    },
+    {
+     "n": 26,
+     "text": "SSC 的设计：环周长 87.1 公里（54.1 英里），每束质子 20 TeV、质心能量 40 TeV，约 8,600 块超导磁铁，设计亮度约为 LHC 的十分之一；选址得克萨斯州 Waxahachie，达拉斯以南约 48 公里，是一块没有任何既有设施的新址。1983 年高能物理顾问委员会的小组建议建造，1987 年能源部向国会提交方案，1991 年开工。",
+     "sources": [
+      {
+       "t": "维基百科：Superconducting Super Collider",
+       "u": "https://en.wikipedia.org/wiki/Superconducting_Super_Collider"
+      },
+      {
+       "t": "Scientific American 2013-10：The Supercollider That Never Was",
+       "u": "https://www.scientificamerican.com/article/the-supercollider-that-never-was/"
+      },
+      {
+       "t": "APS News 2013 年 10 月：This Month in Physics History",
+       "u": "https://www.aps.org/publications/apsnews/201310/physicshistory.cfm"
+      },
+      {
+       "t": "Physics Today 2016 年 10 月（Riordan）",
+       "u": "https://physicstoday.aip.org/features/a-bridge-too-far-the-demise-of-the-superconducting-super-collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "APS News 写周长 53 英里"
+    },
+    {
+     "n": 27,
+     "text": "SSC 的估价：1987 年里根批准时 44 亿美元（加上探测器为 53 亿）；两年后 59 亿；再两年后 83 亿（一作 82.5 亿，1992 年夏众议院第一次表决要砍时就是这个数）；1993 年 3 月《纽约时报》估 84 亿；到 1993 年秋，至少 110 亿美元的前景成了被砍的主要理由，能源部的基线验证报告为 115 亿，也有估到 120 亿的。能源部后来的报告指出，探测器约 5 亿、建成前的运行约 4 亿、土地 6,000 万、能源部项目管理 1.18 亿美元没有计入。",
+     "sources": [
+      {
+       "t": "Physics Today 1994 年 2 月：I. Goodwin, After Agonizing Death in the Family, Particle Physics Faces Grim Future",
+       "u": "https://aip.brightspotcdn.com/PTO.v47.i2.87_1.online.pdf"
+      },
+      {
+       "t": "Scientific American 2013-10",
+       "u": "https://www.scientificamerican.com/article/the-supercollider-that-never-was/"
+      },
+      {
+       "t": "APS News 2013 年 10 月",
+       "u": "https://www.aps.org/publications/apsnews/201310/physicshistory.cfm"
+      },
+      {
+       "t": "维基百科：Superconducting Super Collider",
+       "u": "https://en.wikipedia.org/wiki/Superconducting_Super_Collider"
+      },
+      {
+       "t": "Physics Today 2016 年 10 月（Riordan）",
+       "u": "https://physicstoday.aip.org/features/a-bridge-too-far-the-demise-of-the-superconducting-super-collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "种子的「44 亿 → 84 亿 → 120 亿」与维基百科一致；Physics Today 1994 的四级台阶是 44 亿（1987）→ 59 亿（1989）→ 83 亿（1991）→ 至少 110 亿（1993）"
+    },
+    {
+     "n": 28,
+     "text": "SSC 的终止：1991 年众议院一次取消的动议以 165 比 251 未过；1992 年众议院以 231 比 181 反对拨款，参议院保住；1993 年 10 月众议院再次否决（283 比 143），10 月 30 日克林顿签署终止项目的法案。国会另拨 6.4 亿美元用于「有序终止」。此时联邦已花 16 亿美元，得州 4.09 亿，合计约 20 亿；54 英里的环挖了约 14.5 英里（约 23 公里）隧道和 17 口竖井，地下工程完成约 20%。在岗 2,100 人，发出近 2,000 份解聘通知；其中高能物理学家约 150 人，费米实验室打算接收 18 人。1994 年《科学》杂志的调查说约一半的 SSC 科学家离开了物理学。场地后来卖给化工企业 Magnablend，竖井回填，隧道积水。",
+     "sources": [
+      {
+       "t": "Physics Today 1994 年 2 月：I. Goodwin, After Agonizing Death in the Family, Particle Physics Faces Grim Future",
+       "u": "https://aip.brightspotcdn.com/PTO.v47.i2.87_1.online.pdf"
+      },
+      {
+       "t": "Scientific American 2013-10",
+       "u": "https://www.scientificamerican.com/article/the-supercollider-that-never-was/"
+      },
+      {
+       "t": "维基百科：Superconducting Super Collider",
+       "u": "https://en.wikipedia.org/wiki/Superconducting_Super_Collider"
+      },
+      {
+       "t": "APS News 2013 年 10 月",
+       "u": "https://www.aps.org/publications/apsnews/201310/physicshistory.cfm"
+      },
+      {
+       "t": "Physics Today 2016 年 10 月（Riordan）",
+       "u": "https://physicstoday.aip.org/features/a-bridge-too-far-the-demise-of-the-superconducting-super-collider"
+      }
+     ],
+     "confidence": "高",
+     "note": "日期与里程各家不一，见 disputes"
+    },
+    {
+     "n": 29,
+     "text": "SSC 为什么被砍，各家的说法。Physics Today 1994 年 2 月的现场报道列出：估价涨到约 110 亿；联邦赤字下的象征性削减；没有拿到外国出资（1990 年众议院的法案要求 20% 来自国外，日本被看作最可能的出资方，美国却从未正式邀请它入伙）；审计总署和能源部监察长报告指出的管理不善；选址被认为带「分肥」气味；把医疗应用等好处说过了头；冷战结束。Riordan（《Tunnel Visions》作者之一）2016 年的总结：成本超支、缺乏外国出资、冷战结束是「至少十几条原因」里最主要的；他的新结论是这个项目「太大太贵，不该主要由一个国家来做」，借 Panofsky 的话叫「a bridge too far」；白地新建使它更难辩护，不建在费米实验室旁边多花的基础设施约 20 亿美元（能源部的官方估计是 4.95–10.3 亿）；起初没有成本与进度控制系统，物理学家与军工背景的工程师冲突；40 TeV「被说成科学必需，实则主要是政治选择」。Scientific American：预期约 26 亿美元的外国和州政府出资，外国只有印度承诺 5,000 万；Burton Richter 说先定死设计参数再去要钱是严重错误。当事人的话：Panofsky 称之为「毫无道理的扼杀」，Lederman 说是「这个领域和其中每个人的悲剧」，实验室主任 Schwitters 把能源部的监管叫作「C 等生的报复」。",
+     "sources": [
+      {
+       "t": "Physics Today 1994 年 2 月：I. Goodwin, After Agonizing Death in the Family, Particle Physics Faces Grim Future",
+       "u": "https://aip.brightspotcdn.com/PTO.v47.i2.87_1.online.pdf"
+      },
+      {
+       "t": "Physics Today 2016 年 10 月（Riordan）",
+       "u": "https://physicstoday.aip.org/features/a-bridge-too-far-the-demise-of-the-superconducting-super-collider"
+      },
+      {
+       "t": "Scientific American 2013-10",
+       "u": "https://www.scientificamerican.com/article/the-supercollider-that-never-was/"
+      },
+      {
+       "t": "维基百科：Superconducting Super Collider",
+       "u": "https://en.wikipedia.org/wiki/Superconducting_Super_Collider"
+      },
+      {
+       "t": "APS News 2013 年 10 月",
+       "u": "https://www.aps.org/publications/apsnews/201310/physicshistory.cfm"
+      }
+     ],
+     "confidence": "高",
+     "note": "Riordan、Hoddeson、Kolb 的《Tunnel Visions》（芝加哥大学出版社，2015）原书未见，引的是 Riordan 本人在 Physics Today 的概述"
+    },
+    {
+     "n": 30,
+     "text": "Riordan 对 LHC 与 SSC 的对比：CERN 在已有设施上建造、重复利用旧机器，降低了成本；理事会基本按共识运作，把科学家与直接的政治干预隔开；1996 年批准前已得到 20 多个国家的出资承诺，这些外来贡献使 LHC 得以按 14 TeV 的完整设计建成；LHC 的造价从 1996 年的 28 亿瑞士法郎涨到 2009 年的 43 亿以上；它用大约一半的设计能量就找到了希格斯粒子。Maiani 回忆，鲁比亚当年的论点是用高 100 倍的亮度换能量。SSC 的前主任 Schwitters 2021 年推测，SSC 若建成，会比 LHC 早约 10 年找到希格斯粒子。Physics Today 1994：CERN 由 15 个欧洲国家的政府按国民生产总值比例出资，SSC 则打算由美国一家出钱。",
+     "sources": [
+      {
+       "t": "Physics Today 2016 年 10 月（Riordan）",
+       "u": "https://physicstoday.aip.org/features/a-bridge-too-far-the-demise-of-the-superconducting-super-collider"
+      },
+      {
+       "t": "L. Maiani 口述史（arXiv:1705.04951）",
+       "u": "https://arxiv.org/pdf/1705.04951"
+      },
+      {
+       "t": "维基百科：Superconducting Super Collider",
+       "u": "https://en.wikipedia.org/wiki/Superconducting_Super_Collider"
+      },
+      {
+       "t": "Physics Today 1994 年 2 月：I. Goodwin, After Agonizing Death in the Family, Particle Physics Faces Grim Future",
+       "u": "https://aip.brightspotcdn.com/PTO.v47.i2.87_1.online.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "亮度之比：维基百科与 Scientific American 写 SSC 的设计亮度是 LHC 的十分之一，Maiani 转述鲁比亚的说法是 100 倍，两者指的不是同一组设计值"
+    }
+   ],
+   "disputes": [
+    "氦的总量：CERN 低温页写 120 吨；维基百科写约 96 吨超流氦。种子用 96 吨。",
+    "隧道年代：种子与维基百科写 1983–88 年；CERN 的 LEP 页写掘进机 1985 年 2 月开挖、1988 年完成。",
+    "2008 年出事的接头：CERN 2008-10-16 的分析写偶极与四极磁铁之间的母线连接；Maiani 的回忆写两块偶极之间、约 50 块磁铁被毁；维基百科写两块磁铁之间、53 块受损、约 100 块失超。",
+    "造价：43.32 亿瑞士法郎（CERN，材料费）、65.39 亿瑞士法郎（Maiani 说的 2009 年 CERN 最终花费）、75 亿欧元（维基百科引 2010 年媒体）、接近 100 亿美元（Riordan，含人工与实物贡献）。口径不同，不要互相换算。",
+    "ATLAS 长度：46 米（CERN、ATLAS 官网）与 44 米（瑞典皇家科学院 2013）。",
+    "ATLAS、CMS 人数：约 3,000（瑞典皇家科学院 2013）、5,500 多（CERN 2022）、6,003 名成员（维基百科 2022，ATLAS）、4,000 多（维基百科，CMS）、论文作者 5,345 与 4,550（突破奖 2025）。统计对象不同。",
+    "Run 3 结束：CERN 专页写 2026-06-27 最后一次对撞、06-29 进入 LS3；维基百科的表格写 2026 年 7 月。",
+    "SSC 已挖隧道：约 14.5 英里即约 23 公里（Physics Today 1994）、22.5 公里（维基百科导言）、23.5 公里（维基百科正文）、约 24 公里（Scientific American）、约 30 公里（APS News）。前四个数相互接近，APS News 的数偏大。",
+    "SSC 终止日期：众议院否决写作 10 月 19 日（维基百科）或 10 月 27 日、283 比 143（APS News）；Scientific American 写国会 10 月 21 日正式终止；克林顿 10 月 30 日签署（维基百科）。",
+    "SSC 估价：1991 年 83 亿（Physics Today 1994）或 82.5 亿（Scientific American）；1993 年至少 110 亿（Physics Today、Scientific American）、115 亿（APS News）、120 亿（维基百科）。在岗人数：2,100（Physics Today 1994）或约 2,000（Scientific American）。",
+    "面包与貂：两件事的来源都是媒体转述。面包一事 CERN 人员原话带「可能」；貂一事 NPR 说咬的是电缆，维基百科说爬上变压器。",
+    "2008 年事故时的电流：CERN 新闻稿（Symmetry 转发）写约 9 kA，Rossi（CERN Courier 2010）写升向 9.3 kA 途中的 8.7 kA。磁铁总储能：Rossi 写约 9,000 MJ，LHC 机器科普页写 11 GJ。"
+   ],
+   "todo": [
+    "LS1 加固的接头总数「10,170」这个精确数没有核到；Rossi（CERN Courier 2010）写约 10,000 个 13 kA 接头，Bordry 等（IPAC2013）写 27,000 多个分流片、重做 1,000–1,500 个接头。",
+    "2008 年事故的正式技术报告没有打开；接头电阻（约 220 nΩ）、电流（8.7 kA）、受损段长（约 750 米）用的是 Rossi 2010 年在 CERN Courier 的文章；受损磁铁的细分（通行说法 39 块偶极加 14 块四极）只核到总数 53。",
+    "CERN 2008–2012 年的原始新闻稿（首束、事故、重启、7 月 4 日）在 home.cern 上已是 404 或「归档中」，日期多靠维基百科与 Maiani 口述史。",
+    "LHC 超导缆的另一组常见数字（7,600 公里缆、约 27 万公里股线）没有核到，卡片用的是 Symmetry 2006 的 25 万公里。",
+    "2013 年特别突破奖 300 万美元在七人之间如何分配没有查到。",
+    "Lyn Evans 的「Evans the Atom」绰号、貂标本在鹿特丹展出的具体日期（通行说法 2017 年 1 月）未核；《卫报》被拦截。",
+    "《Tunnel Visions》原书未见（引的是 Riordan 本人 2016 年在 Physics Today 的概述）；得克萨斯州历史手册条目 404。"
+   ]
+  }
+ ],
+ "bench": [
+  {
+   "id": "spear-1976",
+   "year": 1976,
+   "who_zh": "伯顿·里克特、丁肇中",
+   "who_en": "Burton Richter, Samuel C. C. Ting",
+   "what": "SPEAR 储存环与 AGS 双臂谱仪",
+   "line": "里克特在 SLAC 建了直径 80 米的正负电子环 SPEAR，丁肇中在布鲁克海文用质子打靶；1974 年 11 月两边各自看到同一个 3.1 GeV 的粒子。",
+   "number": "SPEAR 直径约 80 米，1972 年建成，每束最高 4 GeV",
+   "lesson": "同一个结果，用两种办法各做一遍。",
+   "citation_en": "for their pioneering work in the discovery of a heavy elementary particle of a new kind",
+   "sources": [
+    {
+     "t": "kva.se：Burton Richter 得主页",
+     "u": "https://www.kva.se/en/prize-laureate/burton-richter-2"
+    },
+    {
+     "t": "Physics Today 1976 年 12 月：Nobel prize to Richter and Ting for discovery of J/psi",
+     "u": "https://aip.brightspotcdn.com/PTO.v29.i12.17_1.online.pdf"
+    },
+    {
+     "t": "SLAC：Our story / History",
+     "u": "https://www6.slac.stanford.edu/about/our-story/history"
+    },
+    {
+     "t": "SSRL：SPEAR history",
+     "u": "https://www-ssrl.slac.stanford.edu/content/spear3/spear-history"
+    },
+    {
+     "t": "Brookhaven：The 1976 Nobel Prize in Physics",
+     "u": "https://www.bnl.gov/bnlweb/history/nobel/1976.php"
+    }
+   ],
+   "confidence": "中",
+   "note": "已核：颁奖词；SPEAR 1972 年建成、直径约 80 米、每束最高 4 GeV；SSRL 称它是高能物理史上性价比最高的机器。Physics Today 1976 年 12 月：SLAC 一方的发现发生在 1974 年 11 月 9–10 日那个周末，共振在 3.105 GeV、半高宽不超过 1.3 MeV；丁肇中的小组在 AGS 上测 p + Be → e⁺e⁻ + X，对谱仪的质量分辨为 5 MeV，他带来了在 DESY 从上百万强子里认出电子对的经验，发表前做了改变磁铁电流等多项检查，11 月 6 日决定发表，两组 11 月 11 日对了结果（SLAC 官方页把发现日期写作 11 月 11 日）。未核到：建在停车场上、造价约 530 万美元、没有专项拨款而用运行经费建成这三点（维基百科 SPEAR 条目的参考文献里有一篇题为 The Ring on the Parking Lot 的文章，正文没有这些数字；SLAC Beam Line 的 PDF 打不开）；丁肇中把强子本底压到一亿分之一的通行说法也没有核到。这几条若要上页面，请标「待核」。Britannica 写 SPEAR 1973 年完工，与 SLAC 官方的 1972 年不同。"
+  },
+  {
+   "id": "nu-beam-1988",
+   "year": 1988,
+   "who_zh": "利昂·莱德曼、梅尔文·施瓦茨、杰克·施泰因贝格尔",
+   "who_en": "Leon M. Lederman, Melvin Schwartz, Jack Steinberger",
+   "what": "中微子束与火花室",
+   "line": "1962 年在布鲁克海文，π 介子飞 20 米后撞上 13.5 米厚的钢墙，只有中微子穿得过；墙后的火花室记到 51 个事例，全带 μ 子：中微子不止一种。",
+   "number": "钢墙厚 13.5 米、约 5,000 吨，用退役战舰的装甲板堆成",
+   "lesson": "先把别的都挡掉，剩下的才是信号。",
+   "citation_en": "for the neutrino beam method and the demonstration of the doublet structure of the leptons through the discovery of the muon neutrino",
+   "sources": [
+    {
+     "t": "kva.se：Leon M. Lederman 得主页",
+     "u": "https://www.kva.se/en/prize-laureate/leon-m-lederman-2"
+    },
+    {
+     "t": "Physics Today 1989 年 1 月：B. Schwarzschild, Physics Nobel Prize to Lederman, Schwartz and Steinberger",
+     "u": "https://aip.brightspotcdn.com/PTO.v42.i1.17_1.online.pdf"
+    },
+    {
+     "t": "Brookhaven：The 1988 Nobel Prize in Physics",
+     "u": "https://www.bnl.gov/bnlweb/history/nobel/1988.php"
+    },
+    {
+     "t": "维基百科：Muon neutrino",
+     "u": "https://en.wikipedia.org/wiki/Muon_neutrino"
+    }
+   ],
+   "confidence": "高",
+   "note": "已核：颁奖词。Physics Today 1989 年 1 月：AGS 能到 30 GeV，为了少用屏蔽只用 15 GeV 的质子打铍靶；π 介子在 20 米空气里衰变；钢墙厚 13.5 米，用的是「从一艘退役战舰上拆来的装甲板」；火花室约 10 吨，分 10 个模块，每个模块 9 块 1 英寸厚的铝板，板间充氖；断续运行 8 个月、约 10^17 个质子，火花室累计只「开」了 6 秒；共记到 56 个像中微子的事例，都带 μ 子，其中约 5 个估计是宇宙线，即 51 个中微子事例；有 6 个事例可能是电子，但都出现在本底最差的初期。布鲁克海文官方页：钢墙 5,000 吨、用旧战舰钢板、π 介子飞行 70 英尺（约 21 米）、这是第一束人造中微子束。未核到：舰名——两处都没有写。「密苏里号」没有出处，而且就我所知该舰 1955 年封存、1980 年代重新服役，并未在 1962 年前拆解（这一条凭通行史料，未核），不要写舰名。通行的「29 个事例」是原始论文里的一个子样本，本次没有核到。"
+  },
+  {
+   "id": "slac-1990",
+   "year": 1990,
+   "who_zh": "杰尔姆·弗里德曼、亨利·肯德尔、理查德·泰勒",
+   "who_en": "Jerome I. Friedman, Henry W. Kendall, Richard E. Taylor",
+   "what": "SLAC 两英里直线加速器",
+   "line": "一根 3.2 公里长的笔直加速管，把电子加速到 20 GeV 去撞氢和氘；1967 年起的散射实验发现，电子像是撞上了质子、中子里的硬粒，那就是夸克。",
+   "number": "长 3.2 公里，埋在地下 9 米，初期 20 GeV",
+   "lesson": "把通用的平台建扎实，后面的实验才长得出来。",
+   "citation_en": "for their pioneering investigations concerning deep inelastic scattering of electrons on protons and bound neutrons, which have been of essential importance for the development of the quark model in particle physics",
+   "sources": [
+    {
+     "t": "kva.se：Richard E. Taylor 得主页",
+     "u": "https://www.kva.se/en/prize-laureate/richard-e-taylor-2"
+    },
+    {
+     "t": "Physics Today 1991 年 1 月：G. B. Lubkin, Friedman, Kendall and Taylor Win Nobel Prize for First Quark Evidence",
+     "u": "https://aip.brightspotcdn.com/PTO.v44.i1.17_1.online.pdf"
+    },
+    {
+     "t": "SLAC：Our story / History",
+     "u": "https://www6.slac.stanford.edu/about/our-story/history"
+    },
+    {
+     "t": "维基百科：SLAC National Accelerator Laboratory",
+     "u": "https://en.wikipedia.org/wiki/SLAC_National_Accelerator_Laboratory"
+    }
+   ],
+   "confidence": "中",
+   "note": "已核：颁奖词（kva.se 页面给出前半句，后半句为通行全文）；长 2 英里（3.2 公里）、埋深 9 米、初期 20 GeV 后来到 50 GeV；1962 年开工，1965 年建速调管长廊，1967 年 9 月 9 日落成典礼（维基百科写 1966 年起运行）。Physics Today 1991 年 1 月：实验从 1967 年做到 1973 年，A 号终端站有 8 GeV、20 GeV 和 1.6 GeV 三台谱仪，动量测到 0.1%；1968 年 8 月第一次报告结果；1970 年起测中子，氢靶和氘靶每小时轮换一次以压低系统误差。「一机三奖」属实：1976 年里克特（J/ψ）、1990 年、1995 年 Perl（τ 轻子），SLAC 官方另算上 2006 年的化学奖，说是四个诺贝尔奖、六位得主。速调管长廊「曾是美国最长的建筑，直到 1999 年 LIGO 的两台干涉仪建成」见维基百科（出处是一份导览资料），置信度中。维基百科另记它是世界最长的直线加速器，直到 2017 年欧洲 XFEL 建成。未核到：造价 1.14 亿美元（1960 年代）。"
+  },
+  {
+   "id": "charpak-1992",
+   "year": 1992,
+   "who_zh": "乔治·夏帕克",
+   "who_en": "Georges Charpak",
+   "what": "多丝正比室",
+   "line": "1968 年在 CERN 发明：气体盒里拉一排相距 2 毫米的细丝，每根丝各接一个放大器，粒子经过的位置直接变成电信号送进计算机，不必再拍照片、靠人量径迹。",
+   "number": "每秒可记约 100 万个事例；气泡室每秒约 1 张照片",
+   "lesson": "把最慢的那一环从人手换成电子学。",
+   "citation_en": "for his invention and development of particle detectors, in particular the multiwire proportional chamber",
+   "sources": [
+    {
+     "t": "kva.se：Georges Charpak 得主页",
+     "u": "https://www.kva.se/en/prize-laureate/georges-charpak-2"
+    },
+    {
+     "t": "Physics Today 1993 年 1 月：B. Schwarzschild, Nobel Physics Prize to Charpak for Inventing Particle Detectors",
+     "u": "https://aip.brightspotcdn.com/PTO.v46.i1.17_1.online.pdf"
+    },
+    {
+     "t": "维基百科：Georges Charpak",
+     "u": "https://en.wikipedia.org/wiki/Georges_Charpak"
+    },
+    {
+     "t": "维基百科：Wire chamber",
+     "u": "https://en.wikipedia.org/wiki/Wire_chamber"
+    },
+    {
+     "t": "维基百科：List of Nobel laureates in Physics",
+     "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    }
+   ],
+   "confidence": "高",
+   "note": "已核：颁奖词；1992 年一人独得（Physics Today 1993 年 1 月明写 alone）。逐年核对了 1993–2025 年的得主名单，每年都是 2 或 3 人，所以在 2026 年哈尔岑之前，夏帕克确实是最后一位独得物理学奖的人；提醒：1991 年的德热纳也是独得。Physics Today 1993：1968 年初与技师 Roger Bouclier 做出 10 × 10 厘米的样机，阳极丝粗约 25 微米、间距约 2 毫米，每根丝要有自己的放大器，时间分辨约 20 纳秒，恢复只要几微秒，整室每秒可记约 100 万个事例；相比之下气泡室每秒约 1 张照片且无法触发，火花室恢复至少要 1 毫秒、输出还是照片。1971 年 ISR 上装了一台约 7 万根丝的丝室；1974 年丁肇中找 J/ψ、1983 年鲁比亚的 2,000 吨探测器找 W 和 Z 都用了它的后代。「提高一千倍」的说法：维基百科 Wire chamber 条目给的是每秒一两个对每秒 1,000 个；按 Physics Today 的数字，它比火花室快约一千倍、比气泡室快约一百万倍（这两个倍数是我算的，不是来源原话）。夏帕克 1924 年生于波兰（今乌克兰境内），1943 年被维希当局关押，后被送进达豪集中营直到 1945 年 4 月，到 CERN 的年份 Physics Today 写 1958、维基百科写 1959，2010 年去世。"
+  }
+ ],
+ "sidebars": {
+  "team": {
+   "table": [
+    {
+     "id": "michelson",
+     "name": "1907 迈克尔逊 · 干涉仪",
+     "laureates": 1,
+     "team": 2,
+     "team_what": "1887 年实验的两位作者（迈克尔逊与莫雷）；磨镜等协作者不计",
+     "sources": [],
+     "confidence": "中"
+    },
+    {
+     "id": "onnes",
+     "name": "1913 卡末林·昂内斯 · 莱顿低温实验室",
+     "laureates": 1,
+     "team": null,
+     "team_what": "实验室连技师、玻璃工、仪器学校学徒在内应有数十人，没有查到可靠数字",
+     "sources": [],
+     "confidence": "低"
+    },
+    {
+     "id": "lawrence",
+     "name": "1939 劳伦斯 · 回旋加速器",
+     "laureates": 1,
+     "team": 60,
+     "team_what": "1939 年前后辐射实验室的人员规模，凭通行史料的印象（约 60 人），未核",
+     "sources": [],
+     "confidence": "低"
+    },
+    {
+     "id": "alvarez",
+     "name": "1968 阿尔瓦雷茨 · 72 英寸气泡室",
+     "laureates": 1,
+     "team": null,
+     "team_what": "阿尔瓦雷茨组包括物理学家、工程师和大批扫描员，论文常有十余位作者；没有查到可靠总数",
+     "sources": [],
+     "confidence": "低"
+    },
+    {
+     "id": "ryle-hewish",
+     "name": "1974 赖尔与休伊什 · 综合孔径与偶极子阵",
+     "laureates": 2,
+     "team": 5,
+     "team_what": "1968 年脉冲星发现论文的作者数（Hewish、Bell、Pilkington、Scott、Collins）；建阵列的学生与暑期工另计",
+     "sources": [],
+     "confidence": "中"
+    },
+    {
+     "id": "spps",
+     "name": "1984 鲁比亚与范德梅尔 · SPS 质子–反质子对撞机",
+     "laureates": 2,
+     "team": 185,
+     "team_what": "两个实验的物理学家：UA1 约 130 人（13 家机构）加 UA2 约 50–60 人；加速器和反质子积累环的队伍不在内",
+     "sources": [
+      {
+       "t": "Physics Today 1985 年 1 月",
+       "u": "https://aip.brightspotcdn.com/PTO.v38.i1.17_1.online.pdf"
+      },
+      {
+       "t": "CERN 时间线：UA1 experiment approved",
+       "u": "https://timeline-upgrade.web.cern.ch/node/488"
+      }
+     ],
+     "confidence": "高"
+    },
+    {
+     "id": "davis",
+     "name": "2002 戴维斯 · Homestake 氯探测器",
+     "laureates": 1,
+     "team": 3,
+     "team_what": "1968 年首批结果论文的作者数（Davis、Harmer、Hoffman），凭通行史料，未核；2002 年的奖共三位得主，戴维斯得四分之一",
+     "sources": [],
+     "confidence": "低"
+    },
+    {
+     "id": "cobe",
+     "name": "2006 马瑟与斯穆特 · COBE",
+     "laureates": 2,
+     "team": 1500,
+     "team_what": "参与项目的总人数：马瑟与 Gruber 基金会写约 1,500，瑞典皇家科学院写 1,000 多；科学工作组 19–20 人",
+     "sources": [
+      {
+       "t": "NASA：J. Mather 2018",
+       "u": "https://science.nasa.gov/missions/explorer/measuring-the-big-bang-with-the-cobe-satellite"
+      },
+      {
+       "t": "kva.se：The Nobel Prize in Physics 2006",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2006-2/"
+      }
+     ],
+     "confidence": "高"
+    },
+    {
+     "id": "lhc",
+     "name": "2013 恩格勒与希格斯 · LHC 与 ATLAS / CMS",
+     "laureates": 2,
+     "team": 6000,
+     "team_what": "获奖时 ATLAS、CMS 各约 3,000 人（瑞典皇家科学院 2013）；2025 年突破奖认定四个实验 Run 2 论文作者 13,508 人",
+     "sources": [
+      {
+       "t": "kva.se：The Nobel Prize in Physics 2013",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2013-2/"
+      },
+      {
+       "t": "Breakthrough Prize 2025 公告",
+       "u": "https://breakthroughprize.org/News/91"
+      }
+     ],
+     "confidence": "高"
+    },
+    {
+     "id": "superk-sno",
+     "name": "2015 梶田隆章与麦克唐纳 · 超级神冈与 SNO",
+     "laureates": 2,
+     "team": 240,
+     "team_what": "超级神冈合作组现约 240 人、约 60 家机构、11 国（官网，未注日期）；SNO 的人数没有查（2001 年论文通行说法约 178 位作者，未核）。2016 年突破奖把五个中微子实验合计算作约 1,370 人",
+     "sources": [
+      {
+       "t": "超级神冈官网：Collaboration",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/collaboration/"
+      },
+      {
+       "t": "Breakthrough Prize 2016 公告",
+       "u": "https://breakthroughprize.org/News/29"
+      }
+     ],
+     "confidence": "中"
+    },
+    {
+     "id": "ligo",
+     "name": "2017 韦斯、巴里什、索恩 · LIGO",
+     "laureates": 3,
+     "team": 1005,
+     "team_what": "宣布首次探测的论文作者数（LIGO 科学合作组与 Virgo 合作组）；LIGO 科学合作组现有 1,000 多名成员、100 多家机构、18 国",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 2016 年 5 月特别奖公告",
+       "u": "https://breakthroughprize.org/News/32"
+      },
+      {
+       "t": "LIGO Scientific Collaboration：Who we are",
+       "u": "https://ligo.org/who-we-are/"
+      }
+     ],
+     "confidence": "高"
+    },
+    {
+     "id": "icecube",
+     "name": "2026 哈尔岑 · IceCube",
+     "laureates": 1,
+     "team": 450,
+     "team_what": "合作组成员数：450 多人，58 家机构，14 国（IceCube 官网，机构地图注明截至 2025 年 4 月）",
+     "sources": [
+      {
+       "t": "IceCube：Collaboration",
+       "u": "https://icecube.wisc.edu/collaboration/"
+      }
+     ],
+     "confidence": "高"
+    }
+   ],
+   "breakthrough": [
+    {
+     "year": 2013,
+     "what": "基础物理学特别突破奖：LHC、ATLAS、CMS 的七位领导者（Evans、Jenni、Gianotti、Della Negra、Virdee、Tonelli、Incandela），2012 年 12 月 11 日公布。发给个人，不是合作组",
+     "people": 7,
+     "money": "300 万美元，七人分享（分法未查到）；Jenni 与 Gianotti 把自己的份额全部捐出，设 ATLAS 博士生奖学金",
+     "sources": [
+      {
+       "t": "Breakthrough Prize：2013 Special Breakthrough Prize 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P4/Y2013"
+      },
+      {
+       "t": "Breakthrough Prize：Jenni and Gianotti Launch ATLAS PhD Scholarship Program",
+       "u": "https://breakthroughprize.org/News/5"
+      }
+     ]
+    },
+    {
+     "year": 2016,
+     "what": "基础物理学突破奖：五个中微子振荡实验的团队——大亚湾（王贻芳、陆锦标）、KamLAND（铃木厚人）、K2K / T2K（西川公一郎）、SNO（麦克唐纳）、超级神冈（梶田隆章、铃木洋一郎），2015 年 11 月 8 日公布",
+     "people": 1370,
+     "money": "300 万美元，五个实验平分。人数在同一份公告里有三种写法：标题 1,370，正文「1,300 多」，物理奖一节 1,377",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 2015-11-08 公告",
+       "u": "https://breakthroughprize.org/News/29"
+      },
+      {
+       "t": "Breakthrough Prize：2016 Fundamental Physics 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P1/Y2016"
+      }
+     ]
+    },
+    {
+     "year": 2016,
+     "what": "基础物理学特别突破奖：探测到引力波的 LIGO。三位创始人 Ronald Drever、Kip Thorne、Rainer Weiss，加 1,012 位贡献者（发现论文的 1,005 位作者和另外 7 人），2016 年 5 月 2 日公布",
+     "people": 1015,
+     "money": "300 万美元：三位创始人平分 100 万，1,012 位贡献者平分 200 万（每人约 2,000 美元）",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 2016-05-02 公告",
+       "u": "https://breakthroughprize.org/News/32"
+      },
+      {
+       "t": "Breakthrough Prize：2016 Special Breakthrough Prize 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P4/Y2016"
+      }
+     ]
+    },
+    {
+     "year": 2018,
+     "what": "基础物理学突破奖：WMAP 科学团队（Bennett、Hinshaw、Jarosik、Page、Spergel 五人领衔）",
+     "people": 27,
+     "money": "300 万美元；27 人是按维基百科名单数出来的，官方得主页没有给总数",
+     "sources": [
+      {
+       "t": "Breakthrough Prize：2018 Fundamental Physics 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P1/Y2018"
+      },
+      {
+       "t": "维基百科：Breakthrough Prize in Fundamental Physics",
+       "u": "https://en.wikipedia.org/wiki/Breakthrough_Prize_in_Fundamental_Physics"
+      }
+     ]
+    },
+    {
+     "year": 2020,
+     "what": "基础物理学突破奖：事件视界望远镜合作组，表彰第一张超大质量黑洞的照片；2019 年 9 月 5 日公布，主任 Shep Doeleman 代表领奖",
+     "people": 347,
+     "money": "300 万美元，由 2019 年 4 月 10 日六篇论文的 347 位作者平分（每人约 8,600 美元）",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 2019-09-05 公告",
+       "u": "https://breakthroughprize.org/News/54"
+      },
+      {
+       "t": "Breakthrough Prize：2020 Fundamental Physics 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P1/Y2020"
+      }
+     ]
+    },
+    {
+     "year": 2025,
+     "what": "基础物理学突破奖：LHC 的四个合作组 ATLAS（5,345 人）、CMS（4,550 人）、ALICE（1,869 人）、LHCb（1,744 人），即 2015 年至 2024 年 7 月 15 日 Run 2 数据论文的全部作者；2025 年 4 月 5 日公布",
+     "people": 13508,
+     "money": "300 万美元，按 100 万、100 万、50 万、50 万分给四个合作组，全部捐给 CERN & Society 基金会，资助成员机构的博士生到 CERN 做研究",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 2025-04-05 公告",
+       "u": "https://breakthroughprize.org/News/91"
+      },
+      {
+       "t": "Breakthrough Prize：2025 Fundamental Physics 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P1/Y2025"
+      }
+     ]
+    },
+    {
+     "year": 2026,
+     "what": "基础物理学突破奖：CERN、布鲁克海文、费米实验室三代 μ 子 g-2 合作组，表彰六十多年来对 μ 子反常磁矩的测量",
+     "people": null,
+     "money": "人数与分配方式在得主页上没有写",
+     "sources": [
+      {
+       "t": "Breakthrough Prize：2026 Fundamental Physics 得主页",
+       "u": "https://breakthroughprize.org/Laureates/1/P1/Y2026"
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "text": "诺贝尔基金会章程第 4 条的通行英文本：「A prize amount may be equally divided between two works, each of which is considered to merit a prize. If a work that is being rewarded has been produced by two or three persons, the prize shall be awarded to them jointly. In no case may a prize amount be divided between more than three persons.」即一项奖最多分给两项工作、三个人；和平奖可以授予组织，物理学奖不行。1974 年起不再追授。",
+    "sources": [
+     {
+      "t": "维基百科：Nobel Prize（「No more than three individuals may share a prize」「A maximum of three laureates and two different works may be selected per award」「Since 1974, laureates must be thought alive at the time of the October announcement」）",
+      "u": "https://en.wikipedia.org/wiki/Nobel_Prize"
+     },
+     {
+      "t": "诺贝尔基金会章程（nobelprize.org，本环境打不开，条文凭通行文本录入）",
+      "u": "https://www.nobelprize.org/about/statutes-of-the-nobel-foundation/"
+     }
+    ],
+    "note": "章程原文所在的 nobelprize.org 按规定没有打开；第 4 条的英文是凭通行文本录入的，上页面前请对一次原文。能核到的是维基百科的三句转述。「三人上限是哪一年写进章程的」没有查到，不要写年份。1964 年三篇论文六位作者只有两人获奖（Brout 已故），是这条规则最常被引用的例子之一。另：2006 年的 Gruber 宇宙学奖把一半奖金分给了 COBE 科学工作组的另外 18 人，比 Breakthrough Prize 的做法更早。"
+   }
+  }
+ },
+ "seed_errors": [
+  "【spps】「反质子积累环一天攒约 3×10^10 个反质子」→ 3×10^10 是实验每天的需求量（Di Lella 2025）；产率的设计值是 6×10^11 个 / 24 小时（Billinge、Crowley-Milling 1979），1984 年实测 1.7×10^11 个 / 24 小时（《PS 五十年》）。维基百科也把 3×10^10 写成日产率。建议改成「一天攒 10^11 量级」。",
+  "【spps】「真空改善近三个数量级」→ 来源不一：1979 年的设计文章（Billinge、Crowley-Milling）写平均真空改善 10 倍即可得约 24 小时的亮度寿命；「近三个数量级」只见于维基百科转引的 1989 年综述，原文没有打开。建议写「真空比做固定靶时好一到三个数量级（来源不一）」，或核到原文后再定。",
+  "【spps】任务书「SppS 运行到 1991 年」→ 两种说法并存：参与者 Di Lella（2025）写对撞机 1990 年完成运行、年底关机，CERN 官方 UA1、UA2 页也写运行到 1990 年；维基百科两个条目（转引 Schmidt 的综述）写 1981–1991。建议按 CERN 的口径写 1990 年，或写「1990 年前后」。",
+  "【spps】任务书「当时费米实验室拒绝、CERN 接受」→ 能核到的说法是：提案交给两家，只有 CERN 批准（Di Lella 2025）；费米实验室 1978 年决定在将来的 Tevatron 上做质子–反质子对撞，不改主环，时间表更慢（Physics Today 1985；费米实验室综述）。没有找到写明「拒绝」的一手来源，建议写「费米实验室没有采纳」。",
+  "【spps】「发现到获奖只隔一年」→ W 于 1983-01-25 宣布，Z 于 1983-06-01 宣布，奖在 1984 年 10 月公布，相隔约 16–21 个月；写「一年多」更准。",
+  "【cobe】「设计寿命 6 个月，实际工作 4 年」→ 计划寿命 1 年（NASA 1989 年新闻资料：名义任务期 12 个月）；6 个月是 FIRAS、DIRBE 的最低要求（DMR 为 12 个月）。实际：氦撑了 10 个月，DMR 测到 1993-12-23，共 4 年 1 个月（戈达德 1990 年工程总结；NSSDC）。",
+  "【cobe】任务书「质量从约 4,990 公斤减到约 2,270 公斤」→ 一手文件的数字是航天飞机方案 10,000 磅（上报的控制重量 11,500 磅）→ Delta 方案 4,828 磅（火箭运力 5,125 磅）；最终发射质量 2,270 公斤（LAMBDA）。4,990 公斤（即 11,000 磅）没有找到出处。",
+  "【cobe】任务书「Smoot 的『上帝的脸』」→ 原话是「If you're religious, it's like seeing God」（OMNI 访谈；伯克利 2025 年讣告；Physics Today 2006 记作 this is like seeing God）。「face of God」是媒体的转述。",
+  "【lhc】「隧道是 1983–88 年为 LEP 挖的」→ CERN 官方 LEP 页：三台掘进机 1985 年 2 月开挖，1988 年完成。1983 年是 LEP 土建开工的通行说法（维基百科写 1983–1988）。建议写「1985–88 年挖成」。",
+  "【lhc】「约 96 吨超流氦」→ CERN 官方低温页写用氦 120 吨；96 吨是维基百科的写法。两者口径不同，建议用 120 吨并注明。",
+  "【lhc】「造价约 75 亿欧元」→ 这是 2010 年媒体的总预算口径。CERN 官方口径（材料费，不含人工）：机器与实验区 37.56 亿瑞士法郎，连同 CERN 分担的探测器与计算共 43.32 亿；全部探测器约 15 亿瑞士法郎；含人工与各国实物贡献接近 100 亿美元（Riordan）。",
+  "【lhc】「貂咬电缆」「标本后来进了鹿特丹自然历史博物馆」→ 2016 年有两起：4 月 29 日和 11 月 21 日；进博物馆的是 11 月那一只（维基百科 Beech marten，引《卫报》2017）。",
+  "【lhc】任务书「2009 年鸟叼面包导致短路」→ 能核到的是 2009 年 11 月初地面供电设备故障使 81 区段从 1.9 K 升到近 8 K，机器协调人说母线上有一小块法棍、「可能是鸟丢的」；当时没有束流，也没有磁铁失超。「短路」「停机」的说法没有出处。",
+  "【lhc】任务书「2013–15 LS1 加固全部约 10,170 处接头」→ 精确数没有核到；能核到的是约 10,000 个 13 kA 接头（每处磁铁互连 6 个）都加了铜分流片（Rossi，CERN Courier 2010），共 27,000 多个分流片、重做 1,000–1,500 个接头、更换 18 块磁铁（Bordry 等，IPAC2013）。",
+  "【lhc / SSC】「1987 年报价 44 亿美元，后涨到 84 亿乃至 120 亿」→ Physics Today 1994 年 2 月的四级台阶是 44 亿（1987）→ 59 亿（1989）→ 83 亿（1991）→ 至少 110 亿（1993）；「120 亿」只见于维基百科。「挖了 22–23 km 隧道」基本属实：约 14.5 英里即约 23 公里（Physics Today 1994）；APS News 写约 30 公里，偏大。",
+  "【lhc】得主生卒要更新：恩格勒已于 2026 年 6 月 18 日去世（CERN Courier 讣告），卡片上应写 1932–2026；希格斯 1929–2024。【cobe】斯穆特 1945–2025（2025 年 9 月 18 日去世，伯克利讣告）。",
+  "【候补席】「用退役军舰的装甲钢做屏蔽」里的「密苏里号？」→ 两个来源（Physics Today 1989、布鲁克海文官方页）都没有舰名，「密苏里号」没有出处，不要写。事例数是 51 个（共记 56 个，约 5 个是宇宙线）。",
+  "【候补席】任务书「多丝室把记录速度提高了多少倍」→ Physics Today 1993 的数字：多丝室每秒约 100 万个事例，气泡室每秒约 1 张照片，火花室恢复至少 1 毫秒。「一千倍」是相对火花室而言的量级，建议直接写这三个数。"
+ ],
+ "notes": "给编辑：1）WebSearch 的配额在我做完 COBE、刚开始查 LHC 时用完了（全体代理共用的 200 次上限）。LHC、SSC、候补席和旁栏只能靠直接打开已知或按规律拼出的网址，没有再搜索；有几条因此只核到一个来源或没核到，都写在各自的 todo、note 和 disputes 里。2）打不开的来源：nobelprize.org（按规定没碰）；timeline.web.cern.ch（要登录，改用 timeline-upgrade.web.cern.ch）；cds.cern.ch（防爬页面）；appel.nasa.gov（全部重定向，用了 spacegrant.org 上的同一篇访谈和 NTRS 上的工程总结）；home.cern 2008–2016 年的旧新闻稿与旧新闻页（404 或「归档中」）；theguardian.com（被拦截）；royalsocietypublishing.org（403）；SLAC Beam Line 的 PDF；kva.se 没有 1984、1992 年的新闻稿页，只有得主页上的颁奖词。3）最不放心的几处：SppS 的真空改善幅度（1979 年设计文章写 10 倍，维基百科转引的综述写近三个数量级）和 2 亿瑞士法郎的口径（只见于 Physics Today 的两篇报道）；COBE 的造价（只有两家媒体的 1.5 亿、1.6 亿美元）；LHC 的「10,170 处接头」这个精确数（约 10,000 个已核）和 2008 年事故受损磁铁的细分；候补席里 SPEAR 的停车场与 530 万美元、中微子束实验的舰名、SLAC 的 1.14 亿美元——这些都没有核到，卡片正文里我只写了核到的内容，没核到的放在各卡的 note 里。4）lhc 卡的 facts 有 30 条（其中 26–30 是 SSC），超过了 10–18 条的建议数，是因为同卡并列了反例。5）旁栏对照表里别的代理负责的九座装置，id 是我按名字拟的（michelson、onnes、lawrence、alvarez、ryle-hewish、davis、superk-sno、ligo、icecube），合并时请对一下；其中 IceCube、LIGO、超级神冈三行的人数我顺手对了官网，其余几行是凭通行史料写的、未核，置信度已标低或中，请以 A、C 代理的结果为准。6）斯穆特已于 2025 年 9 月 18 日去世，希格斯 2024 年 4 月 8 日去世，Brout 2011 年 5 月 3 日去世；恩格勒 2026 年 6 月 18 日去世（CERN Courier 讣告）。2006、2013 两年的四位得主里，现在只有马瑟在世。7）CERN 第三次长停机专页是 2026 年的现行口径：Run 3 于 2026-06-27 结束，LS3 于 06-29 开始，HL-LHC 2030 年年中运行；展望部分可直接引用。 8）后来发现 Physics Today 的旧报道可以按「卷、期、页」拼出 PDF 网址直接打开（aip.brightspotcdn.com/PTO.v卷.i期.页_1.online.pdf），候补席四条和 1983 年 W、Z 的细节靠它补上了；A、C 代理若缺 1960–2000 年代各届诺奖的当年报道，可以用同一办法。 9）种子事实的核对结果分三处：seed_errors（要改的）、seed_confirmed（核实无误的，含原标「待核」的几条）、seed_unverified（这次仍没核到的）。",
+ "seed_confirmed": [
+  "【spps】颁奖词原文、1976 年 6 月提案、McIntyre 与 Cline 是合作者、1981 年 7 月首次对撞、1983 年发现 W 与 Z：属实。",
+  "【spps】随机冷却 1972 年发表（8 月的内部报告）、1974 年在 ISR 上验证：属实；想到是 1968 年，ISR 上首次记录到信号是 1973 年 11 月，结果 1975 年发表。",
+  "【spps】「UA1 约 2,000 吨、百余人（待核）」：属实，约 2,000 吨，约 130 位物理学家（Physics Today 1983 写 135 人），13 家机构。",
+  "【spps】范德梅尔是工程师出身：属实（代尔夫特 1952 年的工程师学位，飞利浦研究实验室 1952–56）；鲁比亚写的《自然》讣告题记就称他 Engineer。",
+  "【cobe】颁奖词、1989-11-18 发射、650 升超流氦杜瓦、FIRAS 是偏振迈克尔逊干涉仪、DMR 1992-04-23 公布十万分之一的起伏、Hauser 主持 DIRBE：属实。",
+  "【cobe】「Rainer Weiss 任科学工作组主席（待核）」：属实（NASA 1989 年新闻资料、LAMBDA 的科学工作组名单、Physics Today 1992）。",
+  "【cobe】「1990 年 1 月天文学会年会上全场起立鼓掌（待核）」：有出处（瑞典皇家科学院 2006 年科普材料、Symmetry 2006、Physics Today 2006）；Physics Today 1990 年 3 月当时的写法是「持久的掌声」。",
+  "【cobe】原定 1988 年由航天飞机发射、挑战者号之后改用 Delta：属实（1982 年 11 月把目标定为 1988 年秋）。",
+  "【lhc】颁奖词写明由 ATLAS 与 CMS 实验证实：属实，全文已录。",
+  "【lhc】1,232 块主偶极磁铁、各约 35 吨、1.9 K；2008-09-19 一个接头故障、53 块磁铁受损、约 6 吨氦泄漏、耽误约 14 个月；之后以一半能量运行、2012 年发现、2015 年到 13 TeV；计算网格 170 多个站点：属实。",
+  "【lhc】2013 年特别突破奖 7 人、2025 年突破奖四个合作组 13,508 人：属实。",
+  "【lhc / SSC】周长 87.1 公里、40 TeV、1987 年报价 44 亿美元、花掉约 20 亿（联邦 16 亿加得州 4.09 亿）、1993 年 10 月下马：属实。",
+  "【候补席】「上一位独得物理学奖的是 1992 年的夏帕克」：属实（1993–2025 年每年 2 或 3 人）。补充：1991 年的德热纳也是独得。",
+  "【候补席】中微子束实验「用退役军舰的装甲钢做屏蔽（待核）」、墙厚约 13.5 米、火花室约 10 吨：属实（Physics Today 1989；布鲁克海文官方页写 5,000 吨）。",
+  "【候补席】SLAC 直线加速器长 3.2 公里、「一机三奖」（1976、1990、1995）、实验做于 1967–73 年：属实；「速调管长廊曾是美国最长的建筑，直到 LIGO 建成」见维基百科，置信度中。",
+  "【旁栏】2016 年特别突破奖 LIGO 三位创始人加 1,012 位贡献者；2016 年五个中微子实验约 1,370 人；2020 年事件视界望远镜 347 人；2025 年 13,508 人：属实。"
+ ],
+ "seed_unverified": [
+  "【候补席】SPEAR「建在停车场上」「造价约 530 万美元」「没有专项拨款、用运行经费建成」：本次都没有核到，仍是待核。",
+  "【候补席】SLAC 直线加速器造价 1.14 亿美元：没有核到。",
+  "【cobe】造价：只有 1989、1992 年两家媒体的 1.5 亿、1.6 亿美元，NASA 官方数字没有查到。",
+  "【cobe】「重新设计没有动科学指标」：没有找到原话；能查实的是三台仪器都保留、DMR 一度险些被删。",
+  "【cobe】1990 年美国天文学会报告的具体日期（1 月 13 日）：只核到月份。",
+  "【spps】2 亿瑞士法郎的口径（是否含探测器与积累环）：只见于 Physics Today 的两篇报道。",
+  "【spps】范德梅尔获奖当天的表态：没有查到原话。",
+  "【lhc】2008 年事故受损磁铁的细分（39 块偶极加 14 块四极）与 LS1 接头的精确数 10,170：没有核到。",
+  "【lhc】2013 年特别突破奖 300 万美元在七人之间的分法：没有查到。"
+ ]
+}

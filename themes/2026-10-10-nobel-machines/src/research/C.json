@@ -1,0 +1,4373 @@
+{
+ "agent": "C",
+ "machines": [
+  {
+   "id": "homestake",
+   "prize": {
+    "year": 2002,
+    "laureates": [
+     {
+      "zh": "雷蒙德·戴维斯",
+      "en": "Raymond Davis Jr.",
+      "life": "1914–2006",
+      "share": "四分之一",
+      "role": "放射化学家。在金矿深处用 615 吨四氯乙烯数了 25 年氩原子，第一次测到太阳中微子，并发现数目只有预期的三分之一。"
+     },
+     {
+      "zh": "小柴昌俊",
+      "en": "Masatoshi Koshiba",
+      "life": "1926–2020",
+      "share": "四分之一",
+      "role": "设计神冈探测器，证实了戴维斯的结果，1987 年记录到超新星 1987A 的中微子。"
+     },
+     {
+      "zh": "里卡尔多·贾科尼",
+      "en": "Riccardo Giacconi",
+      "life": "1931–2018",
+      "share": "二分之一",
+      "role": "另一半奖：开创 X 射线天文学（见候补席）。"
+     }
+    ],
+    "citation_en": "for pioneering contributions to astrophysics, in particular for the detection of cosmic neutrinos",
+    "citation_zh": "表彰他们对天体物理学的开创性贡献，特别是探测到宇宙中微子",
+    "citation_source": {
+     "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2002》（2002-10-08）",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2002-2/"
+    },
+    "citation_other": "贾科尼的颁奖词：for pioneering contributions to astrophysics, which have led to the discovery of cosmic X-ray sources",
+    "announced": "2002-10-08",
+    "amount": "1,000 万瑞典克朗"
+   },
+   "apparatus": {
+    "zh": "Homestake 氯探测器",
+    "en": "Homestake Chlorine Solar Neutrino Experiment",
+    "years": "1965–67 建 / 1970–1994 连续运行",
+    "place_zh": "Homestake 金矿 4,850 英尺层（美国南达科他州利德；布鲁克海文国家实验室）",
+    "lat": 44.35,
+    "lon": -103.75
+   },
+   "claim": "太阳靠核聚变发光，这是 1930 年代末的理论，没有人直接看过太阳的核心。如果理论对，就有大量中微子从核心直接飞到地面。庞蒂科夫 1946 年提出用氯来接：氯-37 吸收一个中微子变成氩-37。1964 年巴考尔算出预期的俘获率，戴维斯提出造一只 10 万加仑的罐子去数这些原子。",
+   "brief": [
+    "靶量：10 万加仑（约 380 立方米）、615 吨四氯乙烯；预期每天产生不到 1 个氩-37 原子（实测 0.48 个）。",
+    "深度：地下 1,478 米，约 4,200–4,400 米水当量，把宇宙线造出的氩-37 压到约每天 0.08 个。",
+    "提取：约每两个月一次，用氦气把平均 17 个氩原子从 38 万升液体（约 2×10³⁰ 个氯原子）里吹出来，回收率约 95%。",
+    "计数：氩-37 半衰期 35 天，要在微型正比计数器里数上几个月；本底起初约每月 10 个计数，靠脉冲上升时间甄别压下去。",
+    "耐久：同一套装置 1970–1994 年几乎不间断地运行了 25 年。"
+   ],
+   "scale": [
+    {
+     "k": "罐体",
+     "v": "10 万加仑（约 380 立方米）钢罐，装 615 吨四氯乙烯",
+     "note": "通行口径：卧式圆筒，直径 6.1 米、长 14.6 米（未核原文）",
+     "f": [
+      8
+     ]
+    },
+    {
+     "k": "深度",
+     "v": "4,850 英尺层，即 1,478 米",
+     "note": "约 4,200–4,400 米水当量，各家口径略有出入",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "洞室",
+     "v": "长 18 米、宽 9 米、高 10 米",
+     "note": "60 × 30 英尺、顶高 32 英尺；1965 年 5 月起约两个月挖成",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "要数的东西",
+     "v": "每天约 0.48 个氩-37 原子",
+     "note": "2.56 SNU；理论值 8.6 SNU（2002 年）",
+     "f": [
+      12
+     ]
+    },
+    {
+     "k": "25 年总账",
+     "v": "产生约 2,200 个、提取 1,997 个、计数 875 个氩-37 原子",
+     "note": "1970–1994 年",
+     "f": [
+      12
+     ]
+    },
+    {
+     "k": "造价",
+     "v": "60 万美元",
+     "note": "1965 年币值；含洞室开挖、钢罐与液体；出自布鲁克海文化学部预算",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "工期",
+     "v": "1965 年 5 月开挖，1966 年夏罐体完工，1967 年取数，1968 年首批结果",
+     "note": "之后连续运行到 1994 年，1998 年发表最终结果",
+     "f": [
+      7,
+      8,
+      12
+     ]
+    },
+    {
+     "k": "人",
+     "v": "核心 3 人，外加 1 位顾问",
+     "note": "戴维斯、Don Harmer、兼职技师 John Galvin；顾问 Kenneth Hoffman",
+     "f": [
+      13
+     ]
+    }
+   ],
+   "approach": [
+    "选放射化学法。让氩-37 在罐里攒两个月，再一次取出来数，不逐个实时记录反应。氯便宜，四氯乙烯是现成的干洗液，买得到几百吨；氩是惰性气体，容易从液体里吹出来。放弃的是每个事例的时间、方向和能量。",
+    "端到端标定。每次提取前加入已知量的载体氩，看能收回多少；还放过中子源、注入过 500 个氩-37 原子、用氯-36 标记做过全流程试验。整套流程的回收率靠实测，不靠推算。",
+    "先小后大。1955 年 3,900 升、1960 年 1,000 加仑，两次试验只给出上限；1963 年巴考尔把预期俘获率上调约 20 倍，10 万加仑的规模才显得够用，这时才去找矿、要钱。",
+    "结果对不上时不改数据。测到的只有理论的三成，戴维斯逐条排除别的解释，加上升时间甄别、给洞室灌水，请怀疑的人下矿来看；巴考尔一遍遍重算太阳模型。三十多年后两边都被证明是对的。"
+   ],
+   "history": [
+    {
+     "d": "1946 / 1949",
+     "t": "庞蒂科夫、阿尔瓦雷茨先后提出用氯–氩反应探测中微子"
+    },
+    {
+     "d": "1955",
+     "t": "戴维斯发表在布鲁克海文反应堆旁用 3,900 升四氯化碳做的试验"
+    },
+    {
+     "d": "1960",
+     "t": "在俄亥俄州 Barberton 石灰石矿装 1,000 加仑四氯乙烯做试验"
+    },
+    {
+     "d": "1961–1962",
+     "t": "经 Fowler 牵线，戴维斯写信请巴考尔算俘获率，合作开始"
+    },
+    {
+     "d": "1964",
+     "t": "两人在《Physical Review Letters》发表背靠背的理论与实验论文"
+    },
+    {
+     "d": "1965-05",
+     "t": "Homestake 金矿 4,850 英尺层的洞室开挖，约两个月挖成"
+    },
+    {
+     "d": "1966 夏",
+     "t": "钢罐完工；10 节铁路罐车的四氯乙烯运到井口，灌满用了 5 周"
+    },
+    {
+     "d": "1967–1968",
+     "t": "开始取数；1968 年首批结果，上限 3 SNU，低于预测"
+    },
+    {
+     "d": "1968–1969",
+     "t": "Gribov 与庞蒂科夫提出中微子振荡可以解释缺额"
+    },
+    {
+     "d": "1970–1971",
+     "t": "加上脉冲上升时间甄别（1970 年底），洞室灌水屏蔽中子（1971 年夏）"
+    },
+    {
+     "d": "1970–1994",
+     "t": "几乎不间断地运行 25 年；1984 年戴维斯从布鲁克海文退休，转到宾夕法尼亚大学"
+    },
+    {
+     "d": "1998",
+     "t": "发表最终结果：2.56 SNU，约为理论值的三成"
+    },
+    {
+     "d": "2001-06-18",
+     "t": "SNO 公布结果，太阳中微子在途中变了味，缺额得到解释"
+    },
+    {
+     "d": "2002-10-08",
+     "t": "戴维斯获诺贝尔物理学奖，时年 87 岁"
+    },
+    {
+     "d": "2006-05-31",
+     "t": "戴维斯去世"
+    },
+    {
+     "d": "2007–2009",
+     "t": "矿井改建为 Sanford 地下研究设施，4850 层重新启用"
+    }
+   ],
+   "people": [
+    {
+     "zh": "约翰·巴考尔",
+     "en": "John N. Bahcall",
+     "r": "理论家；从 1962 年起为这个实验计算预期俘获率，算了四十多年，未获奖"
+    },
+    {
+     "zh": "布鲁诺·庞蒂科夫",
+     "en": "Bruno Pontecorvo",
+     "r": "1946 年提出氯–氩方法；1968–1969 年与 Gribov 提出振荡解释"
+    },
+    {
+     "zh": "",
+     "en": "Don Harmer / John Galvin",
+     "r": "建造与早期运行的另外两位成员，Galvin 是兼职技师"
+    },
+    {
+     "zh": "",
+     "en": "Blair Munhofen",
+     "r": "布鲁克海文的工程人员；与戴维斯一起找矿、建洞室"
+    },
+    {
+     "zh": "",
+     "en": "Richard Dodson / Maurice Goldhaber",
+     "r": "布鲁克海文化学部主任与实验室主任；批准并出钱"
+    },
+    {
+     "zh": "",
+     "en": "William A. Fowler",
+     "r": "加州理工；撮合戴维斯与巴考尔，建议做 500 个氩-37 原子的注入试验"
+    },
+    {
+     "zh": "",
+     "en": "Gordon Garmire",
+     "r": "1968 年提出用脉冲上升时间甄别压本底"
+    },
+    {
+     "zh": "",
+     "en": "Keith Rowley / Kenneth Lande",
+     "r": "后期成员；Rowley 下矿 25 趟，Lande 把实验带到宾夕法尼亚大学"
+    }
+   ],
+   "awards": [
+    "2000 年沃尔夫物理学奖：戴维斯与小柴昌俊",
+    "美国国家科学奖章：戴维斯（布鲁克海文纪念页记在 2002 年）",
+    "2002 年诺贝尔物理学奖：戴维斯与小柴各四分之一，贾科尼二分之一"
+   ],
+   "anecdotes": [
+    {
+     "t": "有人问这个实验花了多少钱，戴维斯答：「商业电视台十分钟的广告时间。」那是 60 万美元。钱出自布鲁克海文化学部的预算，两位当事人后来都不记得写过正式的提案。",
+     "kind": "当事人自述",
+     "f": [
+      17,
+      6
+     ]
+    },
+    {
+     "t": "巴考尔回忆，那些年全世界研究太阳中微子的人「能舒舒服服地坐进 Ray 那辆车的前排」。1964 年去找实验室主任要支持时，戴维斯建议别提天体物理，只讲核物理。",
+     "kind": "当事人自述",
+     "f": [
+      13,
+      6
+     ]
+    },
+    {
+     "t": "为了试往液体里打氦气的喷射混合器，他们在布鲁克海文的游泳池里放了一个直径 10 英尺的有机玻璃环，戴维斯和两位同事专门去考了水肺潜水证。",
+     "kind": "官方史",
+     "f": [
+      18,
+      9
+     ]
+    },
+    {
+     "t": "井下约 32 °C。矿工见到这几个天天下井的化学家，打招呼的话是：「今天逮着了吗？」早期的样品装在玻璃容器里，由人手提着过机场安检带回长岛计数。",
+     "kind": "官方史",
+     "f": [
+      18
+     ]
+    },
+    {
+     "t": "压本底的关键办法——按脉冲上升时间挑信号——是 1968 年戴维斯在加州理工的泳池边晒太阳时，Gordon Garmire 向他提的。",
+     "kind": "当事人自述",
+     "f": [
+      19
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "每次提取前往罐里加已知量的载体氩，看能收回多少；还注入过 500 个氩-37 原子再捞回来。结果只有理论的三成，他不改数据，逐条排除别的解释。",
+    "principle": "端到端标定：放进已知的量，看能找回多少。",
+    "engineer": "先给系统注入已知输入、核对输出，再相信它的读数；测量和模型对不上时，两边各自独立复核，不调数据去凑。",
+    "public": "量东西之前，先拿一个知道答案的东西试一遍；结果和预期不符，先别急着认定是哪一边错了。"
+   },
+   "criteria": [
+    2,
+    3,
+    4
+   ],
+   "criteria_note": "① 部分成立：颁奖词写的是「探测到宇宙中微子」，新闻稿把那只装 600 吨液体的罐子写成理由；② 从 615 吨液体里每两个月数出平均 17 个原子；③ 选址、标定、压本底、25 年不间断运行都有当事人记录；④ 地下低本底、放射化学法，十二座里造价最低的一座。",
+   "lineage": "它留下的「太阳中微子问题」催生了神冈、SAGE、GALLEX、超级神冈和 SNO，最后由 SNO 解决；同一层矿井现在是 Sanford 地下研究设施，放着 LZ，DUNE 的洞室也挖在这里。",
+   "metrics": {
+    "size_m": 14.6,
+    "size_what": "罐体长度（通行口径，未核原文；洞室长 18 米已核）",
+    "mass_t": 615,
+    "mass_what": "四氯乙烯总量（10 万加仑，约 380 立方米）",
+    "depth_m": 1478,
+    "temp_K": null,
+    "cost": {
+     "amount": 600000,
+     "currency": "USD",
+     "year": 1965,
+     "what": "基建投入（洞室开挖、钢罐、液体），1965 年币值，出自布鲁克海文化学部预算；不含 25 年的运行费"
+    },
+    "people": {
+     "n": 3,
+     "what": "建造与早期运行的核心团队（戴维斯、Harmer、Galvin），另有 1 位顾问"
+    },
+    "t_idea": 1964,
+    "t_build": 1965,
+    "t_first": 1967,
+    "t_result": 1968,
+    "t_prize": 2002
+   },
+   "metrics_note": "t_idea 取 1964 年两篇 PRL 论文（方法本身出自 1946 年）；t_result 取 1968 年首批结果，最终结果 1998 年。",
+   "drawing": [
+    {
+     "what": "罐体直径（卧式圆筒）",
+     "value": 6.1,
+     "unit": "米",
+     "note": "通行口径，未核原文",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "罐体长度",
+     "value": 14.6,
+     "unit": "米",
+     "note": "通行口径，未核原文",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "罐体容积",
+     "value": 380,
+     "unit": "立方米",
+     "note": "10 万加仑",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "洞室长 × 宽 × 高",
+     "value": "18.3 × 9.1 × 9.8",
+     "unit": "米",
+     "note": "60 × 30 × 32 英尺",
+     "f": [
+      7
+     ]
+    },
+    {
+     "what": "埋深（4,850 英尺层）",
+     "value": 1478,
+     "unit": "米",
+     "f": [
+      7
+     ]
+    },
+    {
+     "what": "井下运液矿车容积",
+     "value": 650,
+     "unit": "加仑",
+     "note": "3 辆轮流运，灌满用 5 周",
+     "f": [
+      8
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "2002-10-08，瑞典皇家科学院把诺贝尔物理学奖的一半授予 Raymond Davis Jr. 与小柴昌俊，「for pioneering contributions to astrophysics, in particular for the detection of cosmic neutrinos」；另一半授予 Riccardo Giacconi，「for pioneering contributions to astrophysics, which have led to the discovery of cosmic X-ray sources」。奖金共 1,000 万瑞典克朗，即戴维斯与小柴各得四分之一。新闻稿对戴维斯的描述：他造了一只装 600 吨液体的罐子放进矿井，30 年里捕获了约 2,000 个来自太阳的中微子。",
+     "sources": [
+      {
+       "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2002》（2002-10-08）",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2002-2/"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Raymond Davis Jr. 纪念页",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/"
+      },
+      {
+       "t": "Britannica · Raymond Davis, Jr.",
+       "u": "https://www.britannica.com/biography/Raymond-Davis-Jr"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 2,
+     "text": "戴维斯 1914-10-14 生于华盛顿特区，1942 年耶鲁大学物理化学博士，1948 年进布鲁克海文国家实验室化学部，1984 年退休后转到宾夕法尼亚大学任研究教授，2006-05-31 在纽约州 Blue Point 家中去世，享年 91 岁。获奖时 87 岁。",
+     "sources": [
+      {
+       "t": "布鲁克海文国家实验室 · Raymond Davis Jr. 纪念页",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/"
+      },
+      {
+       "t": "Britannica · Raymond Davis, Jr.",
+       "u": "https://www.britannica.com/biography/Raymond-Davis-Jr"
+      },
+      {
+       "t": "J. N. Bahcall《Ray Davis: The Scientist and the Man》（1996）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/RayDavis/paper.pdf"
+      },
+      {
+       "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2002》（2002-10-08）",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2002-2/"
+      }
+     ],
+     "confidence": "高",
+     "note": "离开布鲁克海文的年份：Britannica 写 1984 年退休、1985 年到宾大；Bahcall 的文章写在化学部到 1985 年。"
+    },
+    {
+     "n": 3,
+     "text": "氯–氩方法：氯-37 吸收一个电子中微子变成放射性的氩-37，阈能 0.81 MeV；氩-37 以电子俘获方式衰变，半衰期 35 天。这个反应由庞蒂科夫（Bruno Pontecorvo）1946 年、阿尔瓦雷茨（Luis Alvarez）1949 年先后提出用来探测中微子。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 4,
+     "text": "此前的小规模试验：1950 年代初，戴维斯在布鲁克海文的反应堆旁用 3,900 升四氯化碳做过试验，1955 年发表；之后在萨凡纳河反应堆继续做。1960 年，他与同事在俄亥俄州 Barberton 的石灰石矿里装了 1,000 加仑四氯乙烯的试验装置（7 月装好，10 月首次实验），得到的上限是 4,000 SNU；到 1964 年把上限压到 300 SNU。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Research",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/research.htm"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书写 Barberton 用「两只 500 加仑的罐子」，Bahcall 与戴维斯 1982 年的回顾只写 1,000 加仑。"
+    },
+    {
+     "n": 5,
+     "text": "与巴考尔的合作：经 William Fowler 牵线，戴维斯在 1961–1962 年写信请巴考尔计算太阳里铍-7 俘获电子的速率，两人自此合作四十多年。1963 年巴考尔发现氯-37 可以跃迁到氩-37 的一个激发态，预期俘获率一下子提高约 20 倍，实验才变得可行；1964 年两人在《Physical Review Letters》上发表背靠背的两篇论文，一篇理论、一篇实验，提出用 10 万加仑四氯乙烯。巴考尔 1964 年的预测是 40±20 SNU，1968 年改为 7.5±3 SNU，2002 年的数值是 8.6±1.2 SNU。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "J. N. Bahcall《Ray Davis: The Scientist and the Man》（1996）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/RayDavis/paper.pdf"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《The Evolution of Neutrino Astronomy》（2000）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Millennium/paper.pdf"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "第一封信的年份：Bahcall 1996 年的文章写 1961 年，1982 年的回顾写 1962 年 2 月。"
+    },
+    {
+     "n": 6,
+     "text": "立项与造价：两位当事人都不记得写过正式的提案；1964 年他们向布鲁克海文主任 Maurice Goldhaber 争取支持时，戴维斯建议不谈天体物理的动机，只讲核物理。钱出自布鲁克海文化学部的预算（化学部主任 Richard Dodson 力争，原子能委员会的 Alexander Van Dyken 支持）。总的基建投入是 60 万美元（1965 年币值），包括洞室开挖、钢罐和液体；Homestake 矿业公司给的开挖报价是 12.5 万美元。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《The Evolution of Neutrino Astronomy》（2000）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Millennium/paper.pdf"
+      },
+      {
+       "t": "J. N. Bahcall《Ray Davis: The Scientist and the Man》（1996）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/RayDavis/paper.pdf"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Reminiscences（同事回忆）",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/reminiscences.htm"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 7,
+     "text": "选址与洞室：1963 年戴维斯与 Blair Munhofen 四处找深矿，最后选定南达科他州利德（Lead）Homestake 金矿的 4,850 英尺层（1,478 米）。洞室 1965 年 5 月开挖，约两个月挖好，长 60 英尺、宽 30 英尺、顶高 32 英尺（约 18 × 9 × 10 米）。岩石覆盖相当于约 4,200–4,400 米水当量。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      },
+      {
+       "t": "Sanford 地下研究设施官网 · Our Story",
+       "u": "https://sanfordlab.org/our-story"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Research",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/research.htm"
+      }
+     ],
+     "confidence": "高",
+     "note": "深度口径：Bahcall 与戴维斯写 4,850 英尺层、440 千克每平方厘米（即 4,400 米水当量）；瑞典皇家科学院写 1,500 米、4,200 米水当量；布鲁克海文的网页写 4,800 英尺。"
+    },
+    {
+     "n": 8,
+     "text": "罐体与液体：钢罐由芝加哥桥梁钢铁公司（Chicago Bridge and Iron）承造，1965 年夏开工、1966 年夏完工，部件在厂里做好运到矿上，再在井下组装。罐子容积 10 万加仑（约 380 立方米），装 615 吨四氯乙烯（一种干洗液）。液体来自堪萨斯州威奇托的 Frontier 化学公司，用 10 节铁路罐车运到井口，再用 3 辆 650 加仑的矿车一趟趟运到近一英里深的井下，灌满用了 5 周。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Research",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/research.htm"
+      },
+      {
+       "t": "Sanford 地下研究设施官网 · Our Story",
+       "u": "https://sanfordlab.org/our-story"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Reminiscences（同事回忆）",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/reminiscences.htm"
+      }
+     ],
+     "confidence": "高",
+     "note": "罐体尺寸的通行口径是直径 6.1 米、长 14.6 米的卧式圆筒（出自 1998 年最终结果论文），本次没能打开原文核对；与洞室尺寸相容。"
+    },
+    {
+     "n": 9,
+     "text": "提取：两台每分钟 500 加仑的屏蔽泵让液体循环，经 40 只喷射混合器把氦气打进液体里，把溶在其中的氩带出来；出来的气体经活性炭柱捕集、再做气相色谱提纯，最后把氩装进微型正比计数器，数氩-37 衰变放出的信号。大约每两个月提取一次，回收率约 95%；用瑞典皇家科学院的话说，是要从罐里约 2×10³⁰ 个氯原子中间平均捞出 17 个氩原子。喷射混合器的方案先在布鲁克海文的游泳池里做过试验。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Reminiscences（同事回忆）",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/reminiscences.htm"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Research",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/research.htm"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书提到的「液氮冷却的活性炭冷阱」与计数器的容积本次没有核到原文。"
+    },
+    {
+     "n": 10,
+     "text": "回收率怎么验证：每次提取前先往罐里加入已知量的非放射性载体氩（氩-36 或氩-38），提取后称量收回多少；在罐子中心附近放过一个小中子源，看产生的氩-37 是否如数收回；按 Fowler 的建议注入过 500 个氩-37 原子，搅匀后再提取出来；还用氯-36 标记的四氯乙烯做过全流程试验——氯-36 衰变成氩-36 的过程与中微子俘获产生氩的方式相仿，结果氩-36 定量收回。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall《Ray Davis: The Scientist and the Man》（1996）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/RayDavis/paper.pdf"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 11,
+     "text": "压本底的三招：深度把宇宙线产生的氩-37 压到约每天 0.08 个原子；1970 年底（第 18 次运行）起用脉冲上升时间甄别区分氩-37 的信号和本底，此前本底约每月 10 个计数，这个办法是 Gordon Garmire 1968 年提出的；1971 年夏（第 21 次运行）起把洞室灌满水，挡住岩壁放出的中子。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《The Evolution of Neutrino Astronomy》（2000）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Millennium/paper.pdf"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Reminiscences（同事回忆）",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/reminiscences.htm"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 12,
+     "text": "结果：1967 年开始取数；1968 年发表首批结果，头两次运行给出的上限是 3 SNU，明显低于当时的预测。1970–1994 年几乎不间断地取数，1998 年发表最终结果：氩-37 的产生率是每天 0.48±0.03±0.03 个原子，即 2.56±0.16±0.16 SNU，约为标准太阳模型预测（8.6±1.2 SNU）的三成。25 年里罐中共产生约 2,200 个氩-37 原子，提取出 1,997 个，在计数器里记到衰变的是 875 个。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "SNU 即每 10³⁶ 个靶原子每秒一次俘获。最终结果论文是 Cleveland 等，Astrophys. J. 496, 505（1998）。"
+    },
+    {
+     "n": 13,
+     "text": "团队很小：建造和早期运行的核心只有戴维斯、Don Harmer 和兼职技师 John Galvin，Kenneth Hoffman 在技术问题上出主意。巴考尔的说法是，那些年全世界研究太阳中微子的人「能舒舒服服地坐进 Ray 那辆车的前排」；1968 到 1988 年，氯实验是唯一出数据的太阳中微子实验。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《The Evolution of Neutrino Astronomy》（2000）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Millennium/paper.pdf"
+      },
+      {
+       "t": "J. N. Bahcall《Ray Davis: The Scientist and the Man》（1996）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/RayDavis/paper.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 14,
+     "text": "「太阳中微子问题」的三种可能：太阳模型算错了、实验做错了、或者中微子在路上变了。Gribov 与庞蒂科夫 1968–1969 年就提出了第三种，当时少有人当真。此后神冈（1988）、SAGE 与 GALLEX（1990 年代）、超级神冈都测到缺额；2001-06-18 SNO 公布结果：电子中微子只有预测的约三分之一，但三种中微子的总数与太阳模型相符。实验和理论都没错，错的是「中微子不变味」的假定。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall《Solving the Mystery of the Missing Neutrinos》（2004）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Nobelmuseum/mystery.html"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《The Evolution of Neutrino Astronomy》（2000）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Millennium/paper.pdf"
+      },
+      {
+       "t": "SNO 新闻稿：First Scientific Results（2001-06-18）",
+       "u": "https://sno.phy.queensu.ca/sno/first_results/"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "Gribov–庞蒂科夫论文的年份：Bahcall 2004 年文章写 1969 年，2000 年文章写 1968 年。"
+    },
+    {
+     "n": 15,
+     "text": "矿井的后来：Homestake 金矿开采了 125 年，产金约 4,100 万盎司，2000 年代初关闭；2006 年慈善家 T. Denny Sanford 承诺捐 7,000 万美元，南达科他州另出 4,000 多万美元，2007 年成立 Sanford 地下研究设施（SURF），4850 层排水后在 2009 年重新启用，当年放氯罐的洞室改建为 Davis Cavern。这里先后放过 LUX（2013 年最灵敏的暗物质探测器）和 LZ（2021 年运行）；给 DUNE 用的大洞室 2019 年开挖、2024 年挖完，运出 80 多万吨岩石。",
+     "sources": [
+      {
+       "t": "Sanford 地下研究设施官网 · Our Story",
+       "u": "https://sanfordlab.org/our-story"
+      }
+     ],
+     "confidence": "中",
+     "note": "只有 SURF 官网一个来源；该页面对金矿关闭年份的表述前后不一（一处写 2001 年）。"
+    },
+    {
+     "n": 16,
+     "text": "诺奖之外：2000 年沃尔夫物理学奖（与小柴昌俊同获）；美国国家科学奖章（布鲁克海文的纪念页记在 2002 年）。",
+     "sources": [
+      {
+       "t": "布鲁克海文国家实验室 · Raymond Davis Jr. 纪念页",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/"
+      }
+     ],
+     "confidence": "中",
+     "note": "国家科学奖章通行说法是 2001 年度、2002 年颁发；其他奖项本次未逐项核。"
+    },
+    {
+     "n": 17,
+     "text": "有人问实验花了多少钱，戴维斯的回答是：「商业电视台十分钟的广告时间（60 万美元）。」他还说过，《时代》周刊登了文章之后，「造罐子的那帮人对我们认真多了」。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《The Evolution of Neutrino Astronomy》（2000）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Millennium/paper.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "当事人合著的回顾文章；60 万美元（1965 年币值）的数字两篇文章一致。"
+    },
+    {
+     "n": 18,
+     "text": "布鲁克海文同事的回忆：为了试喷射混合器，他们在实验室游泳池里放了一个直径 10 英尺的有机玻璃环，戴维斯、Galvin 和 Munhofen 专门去考了水肺潜水证；1967 年头几次结果偏低，化学部主任派 Perlman 和 Friedlander 下矿检查，结论是「一切正常」；井下约 90 华氏度（32 °C），矿工见面就问「今天逮着了吗」；早期的样品装在玻璃容器里，由人手提着过机场安检带回布鲁克海文计数；戴维斯在灌了水的洞室里游过泳。",
+     "sources": [
+      {
+       "t": "布鲁克海文国家实验室 · Ray Davis: Reminiscences（同事回忆）",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/reminiscences.htm"
+      }
+     ],
+     "confidence": "中",
+     "note": "官方纪念页上的同事口述（Friedlander、Munhofen、Rowley）。"
+    },
+    {
+     "n": 19,
+     "text": "上升时间甄别的主意，是 1968 年戴维斯在加州理工的游泳池边晒太阳时，Gordon Garmire 向他提的；布鲁克海文的工程师后来做出了足够快的电子学。两位当事人说这对实验的成功至关重要。",
+     "sources": [
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《The Evolution of Neutrino Astronomy》（2000）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/Millennium/paper.pdf"
+      },
+      {
+       "t": "J. N. Bahcall & R. Davis Jr.《An Account of the Development of the Solar Neutrino Problem》（收入 Essays in Nuclear Astrophysics, 1982）",
+       "u": "http://www.sns.ias.edu/~jnb/Papers/Popular/JohnRayhistory/johnrayhistory.html"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    }
+   ],
+   "disputes": [
+    "深度的水当量：Bahcall 与戴维斯写 440 千克每平方厘米（4,400 米水当量）；瑞典皇家科学院 2002 年写 1,500 米、4,200 米水当量；任务书写约 4,100–4,400 米水当量。布鲁克海文的网页把层位写成 4,800 英尺，其余来源是 4,850 英尺。",
+    "测到的是理论的几分之几：规格写「约三分之一」；瑞典皇家科学院 2015 年材料写「约 30%」（2.56 对 8.5 SNU）；1968 年首批结果是上限 3 SNU，对当年的预测 7.5±3 SNU。",
+    "「30 年捕获 2,000 个中微子」（新闻稿）与「25 年产生约 2,200 个、提取 1,997 个、计数 875 个氩原子」（背景材料）是两种口径。",
+    "合作开始的年份：Bahcall 1996 年写戴维斯 1961 年来信；1982 年的回顾写 1962 年 2 月。",
+    "Barberton 试验的规模：1982 年回顾写 1,000 加仑；任务书写两只 500 加仑的罐子。",
+    "戴维斯离开布鲁克海文的年份：Britannica 写 1984 年退休；Bahcall 写在化学部到 1985 年。",
+    "金矿关闭的年份：SURF 官网同一页面的表述前后不一（2001 年或与 2002 年诺奖同年）。"
+   ],
+   "todo": [
+    "罐体尺寸（直径 6.1 米、长 14.6 米）出自 1998 年最终结果论文（ApJ 496, 505）的通行转述，IOP 页面被 robots 规则挡住，没能核对；瑞典皇家科学院的材料只写 615 吨、约 2×10³⁰ 个氯原子。",
+    "提取细节（液氮温度的活性炭冷阱、每次通氦多少小时、正比计数器的容积、25 年共多少次提取）没有核到原文。",
+    "「造好后洞室灌水」已核到 1971 年夏；任务书说的「罐子周围灌水屏蔽」即此。",
+    "戴维斯的其他奖项、小柴（2020 年）与贾科尼（2018 年）的卒年没有逐项核。",
+    "戴维斯的诺奖演讲（nobelprize.org 与 RMP）打不开，没有用上。",
+    "Sanford Lab 现状只有官网一页，LZ 与 DUNE 的细节由 D 代理另核。"
+   ]
+  },
+  {
+   "id": "superk-sno",
+   "prize": {
+    "year": 2015,
+    "laureates": [
+     {
+      "zh": "梶田隆章",
+      "en": "Takaaki Kajita",
+      "life": "1959–",
+      "share": "二分之一",
+      "role": "主持超级神冈的大气中微子分析，1998 年报告 μ 子中微子在穿过地球途中变了身份。"
+     },
+     {
+      "zh": "阿瑟·麦克唐纳",
+      "en": "Arthur B. McDonald",
+      "life": "1943–",
+      "share": "二分之一",
+      "role": "1989 年起领导 SNO 的建造与运行，2001–2002 年证明太阳中微子总数没少、只是变了味。"
+     }
+    ],
+    "citation_en": "for the discovery of neutrino oscillations, which shows that neutrinos have mass",
+    "citation_zh": "表彰他们发现中微子振荡，这表明中微子有质量",
+    "citation_source": {
+     "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2015》（2015-10-06）",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2015-2/"
+    },
+    "announced": "2015-10-06",
+    "amount": "800 万瑞典克朗"
+   },
+   "apparatus": {
+    "zh": "超级神冈与萨德伯里中微子观测站",
+    "en": "Super-Kamiokande / Sudbury Neutrino Observatory (SNO)",
+    "years": "1996 / 1999 运行（前身神冈 1983）",
+    "place_zh": "日本岐阜县飞驒市神冈矿山；加拿大安大略省萨德伯里 Creighton 矿",
+    "lat": 36.43,
+    "lon": 137.31,
+    "sites": [
+     {
+      "zh": "超级神冈",
+      "lat": 36.43,
+      "lon": 137.31
+     },
+     {
+      "zh": "SNO（现 SNOLAB）",
+      "lat": 46.48,
+      "lon": -81.2
+     }
+    ]
+   },
+   "claim": "1957 年庞蒂科夫（Bruno Pontecorvo）提出中微子可能在飞行中变换身份，1962 年牧、中川、坂田给出味混合的图像；这要求中微子有质量，而标准模型里它没有。1968 年起戴维斯测到的太阳中微子只有预期的三分之一。两台探测器要回答：中微子是少了，还是变了。",
+   "brief": [
+    "质量：超级神冈 5 万吨超纯水（有效体积 2.25 万吨），比神冈大 10 倍以上，才能攒够按方向和能量细分的事例。",
+    "光：内壁约 40% 的面积铺上 20 英寸光电倍增管（11,146 只），才能分清 μ 型与电子型事例并定出方向。",
+    "深度：超级神冈在地下 1,000 米；SNO 在约 2,070 米，每天只剩约 70 个宇宙线 μ 子。",
+    "重水：SNO 要 1,000 吨重水，才能同时测带电流、中性流、弹性散射三种反应；重水里的钍要低于 3×10⁻¹⁵ 克每克。",
+    "洁净：SNO 整个井下实验室按洁净室运行，进出淋浴更衣；12 米的亚克力球在井下由 122 块板粘成。"
+   ],
+   "scale": [
+    {
+     "k": "超级神冈水罐",
+     "v": "直径 39.3 米、高 41.4 米，5 万吨超纯水",
+     "note": "有效体积 2.25 万吨；地下 1,000 米",
+     "f": [
+      2
+     ]
+    },
+    {
+     "k": "超级神冈的光电倍增管",
+     "v": "内层 11,146 只 20 英寸管，外层 1,885 只 8 英寸管",
+     "note": "1996–2001 年的数字；内壁覆盖约 40%；现为 11,129 只",
+     "f": [
+      3
+     ]
+    },
+    {
+     "k": "2001 年事故",
+     "v": "约 5–10 秒内毁掉内层 6,777 只、外层约 1,100 只",
+     "note": "官网年表口径；2002 年用 5,182 只恢复，2006 年补齐",
+     "f": [
+      6,
+      7
+     ]
+    },
+    {
+     "k": "SNO 重水",
+     "v": "1,000 吨，向加拿大原子能公司借来",
+     "note": "估值约 3 亿加元",
+     "f": [
+      12
+     ]
+    },
+    {
+     "k": "SNO 亚克力球",
+     "v": "直径 12 米、壁厚 5.5 厘米，122 块板井下粘成",
+     "note": "粘缝总长 500 多米",
+     "f": [
+      12
+     ]
+    },
+    {
+     "k": "SNO 洞室与深度",
+     "v": "直径 22 米、高 34 米；地下约 2,070 米",
+     "note": "约 6,000 米水当量；挖出 6 万多吨岩石",
+     "f": [
+      11
+     ]
+    },
+    {
+     "k": "SNO 光探测与屏蔽",
+     "v": "9,438 只 20 厘米管；约 7,000 吨轻水",
+     "note": "另有 91 只朝外的管子；球架直径 17.8 米",
+     "f": [
+      13
+     ]
+    },
+    {
+     "k": "造价",
+     "v": "SNO 7,300 万加元",
+     "note": "1990–1998 年建造费，不含借来的重水；超级神冈的造价本次未核到一手数字",
+     "f": [
+      15
+     ]
+    },
+    {
+     "k": "人",
+     "v": "超级神冈 1998 年论文 121 位作者；SNO 约 100 人",
+     "note": "2016 年突破奖五个中微子实验合计约 1,370 人；得主 2 人",
+     "f": [
+      5,
+      22,
+      18
+     ]
+    }
+   ],
+   "approach": [
+    "关键器件和供应商一起从头开发。1979 年小柴向滨松要 25 英寸的管子，当时滨松只试制过 8 英寸；两年后做出 20 英寸管。美国的同类方案用几千只 5 英寸管，小柴要靠更大的管子在灵敏度上补回来。",
+    "SNO 选重水，是为了让一台探测器同时给出三个数：只认电子中微子的带电流、三种中微子都认的中性流、以及弹性散射。重水太贵，就向国家的反应堆储备去借，用完归还。",
+    "同一个量测三遍。SNO 的中性流先靠氘本身俘获中子，再靠溶进去的 2 吨食盐，最后靠挂进球里的氦-3 计数管，三种办法的系统误差互不相同。",
+    "事故后先恢复、再补齐。2001 年连锁内爆后，超级神冈用剩下的一半管子加防护罩，一年内恢复观测，四年后才补齐；防护罩的作用是让一只管子内爆时冲击波出不去。"
+   ],
+   "history": [
+    {
+     "d": "1979–1982",
+     "t": "小柴向滨松提出要大口径管；1981-01 首批 20 英寸样管；1982-05 交付 1,050 只"
+    },
+    {
+     "d": "1983-07",
+     "t": "神冈开始观测，3,000 吨水，本意是找质子衰变"
+    },
+    {
+     "d": "1984",
+     "t": "Herb Chen 提出重水方案，SNO 合作组成立（Chen 1987 年去世）"
+    },
+    {
+     "d": "1987-02-23",
+     "t": "神冈记录到超新星 1987A 的 11 个中微子事例"
+    },
+    {
+     "d": "1988",
+     "t": "神冈报告太阳中微子约为预期的一半，大气中微子的 μ 型与电子型比例反常"
+    },
+    {
+     "d": "1990-03 至 1993-05",
+     "t": "SNO 洞室开挖；1989 年加、美、英三国出资"
+    },
+    {
+     "d": "1991-12",
+     "t": "超级神冈洞室开挖（1994-06 挖完）"
+    },
+    {
+     "d": "1996-04-01",
+     "t": "超级神冈零点开始观测"
+    },
+    {
+     "d": "1997-11",
+     "t": "SNO 的亚克力球在井下粘接完工"
+    },
+    {
+     "d": "1998-06-05",
+     "t": "梶田在高山的 Neutrino '98 会议上报告大气中微子振荡的证据"
+    },
+    {
+     "d": "1999-11-02",
+     "t": "SNO 开始第一阶段（纯重水）取数"
+    },
+    {
+     "d": "2001-06-18",
+     "t": "SNO 公布首批结果：太阳电子中微子在途中变成了别的中微子"
+    },
+    {
+     "d": "2001-11-12",
+     "t": "超级神冈重新注水时一只管子内爆，连锁毁掉约 7,900 只"
+    },
+    {
+     "d": "2002",
+     "t": "4-20 SNO 公布中性流结果；10 月超级神冈以 5,182 只管子加防护罩恢复观测"
+    },
+    {
+     "d": "2006",
+     "t": "7 月超级神冈补齐管子恢复全规模；11-28 SNO 结束取数"
+    },
+    {
+     "d": "2015",
+     "t": "10-06 梶田与 McDonald 获诺贝尔奖；11-08 五个中微子实验获突破奖"
+    },
+    {
+     "d": "2020-08",
+     "t": "超级神冈加钆（SK-Gd）；同年 Hyper-Kamiokande 开工"
+    }
+   ],
+   "people": [
+    {
+     "zh": "小柴昌俊",
+     "en": "Masatoshi Koshiba",
+     "r": "神冈的设计者，向滨松提出大口径管；2002 年诺贝尔奖得主"
+    },
+    {
+     "zh": "户塚洋二",
+     "en": "Yoji Totsuka",
+     "r": "超级神冈首任实验负责人；2001 年事故后下令重建（2008 年去世，卒年未核）"
+    },
+    {
+     "zh": "晝馬輝夫",
+     "en": "Teruo Hiruma",
+     "r": "滨松光子社长；1979 年答应小柴试制大口径光电倍增管"
+    },
+    {
+     "zh": "铃木洋一郎",
+     "en": "Yoichiro Suzuki",
+     "r": "与梶田并列为突破奖里超级神冈的具名领导者"
+    },
+    {
+     "zh": "",
+     "en": "Herbert H. Chen",
+     "r": "加州大学尔湾分校；1984 年提出用重水测中性流，1987 年去世"
+    },
+    {
+     "zh": "",
+     "en": "George Ewan",
+     "r": "女王大学；与 Chen 共同发起 SNO 合作组，加方发言人"
+    },
+    {
+     "zh": "",
+     "en": "David Sinclair",
+     "r": "牛津大学；1985 年带英国团队加入，英方发言人"
+    },
+    {
+     "zh": "牧二郎、中川昌美、坂田昌一",
+     "en": "Maki, Nakagawa, Sakata",
+     "r": "1962 年提出中微子味混合；庞蒂科夫 1957 年先提出振荡设想"
+    }
+   ],
+   "awards": [
+    "2016 年基础物理学突破奖（2015-11-08 公布，300 万美元）：大亚湾、KamLAND、K2K / T2K、SNO、超级神冈五个实验平分，约 1,370 人",
+    "1989 年 Bruno Rossi 奖：IMB 与神冈两个实验组（超新星 1987A 的中微子）",
+    "2002 年诺贝尔物理学奖的一半：戴维斯与小柴昌俊（神冈）；二人此前同获 2000 年沃尔夫物理学奖",
+    "2014 年 IEEE Milestone：滨松的 20 英寸光电倍增管（1979–1987）"
+   ],
+   "anecdotes": [
+    {
+     "t": "1979 年，小柴把滨松社长晝馬輝夫请到研究室，开口就问：能不能给我做一只 25 英寸的管子。晝馬点头说那就试试。最后做成的是 20 英寸；玻壳用的是做保温瓶和锅具的硬质玻璃，电极用的是和厨房水槽一样的不锈钢，为的是省钱。",
+     "kind": "官方史",
+     "f": [
+      10
+     ]
+    },
+    {
+     "t": "滨松的工人戴着头盔和防爆面罩做管子，光阴极反应到变色的那一刻，大家会欢呼。跌落试验表明，套一个塑料袋就能兜住内爆飞出的玻璃。20 年后毁掉超级神冈一半管子的，正是水下一只管子的内爆。",
+     "kind": "官方史",
+     "f": [
+      10,
+      6
+     ]
+    },
+    {
+     "t": "2001 年 11 月 12 日 11 点 01 分，超级神冈重新注水到 31.7 米。在场的人感到剧烈摇晃，听到 5 到 10 秒的轰鸣；触发率从每秒约 10 次跳到 100 万次以上，8.8 公里外的地震仪也记到了。源头是罐底 10810 号管或它的邻居。",
+     "kind": "官方史",
+     "f": [
+      6
+     ]
+    },
+    {
+     "t": "进 SNO 的井下实验室，要先脱掉矿工服、淋浴、换洁净服；设备要过井下的「洗车房」。那一层的岩石温度是 42 °C。",
+     "kind": "官方史",
+     "f": [
+      14,
+      11
+     ]
+    },
+    {
+     "t": "SNO 的亚克力球当年装重水，比外面的轻水重，要用绳子吊着；现在改装液体闪烁体做 SNO+，比水轻，绳子改成了往下拉。",
+     "kind": "官方史",
+     "f": [
+      17
+     ]
+    },
+    {
+     "t": "1998 年 6 月高山那次会议的日程表上，后来的三位诺奖得主都在：4 日 McDonald 讲 SNO 的进度，5 日上午 9:55 梶田讲大气中微子，9 日哈尔岑讲 AMANDA 的结果与今后。",
+     "kind": "官方史",
+     "f": [
+      5
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "小柴拉着滨松把 20 英寸管做出来；1.1 万只管密排，2001 年一只内爆连锁毁掉 6,777 只，公开调查后逐只加防护罩；SNO 用三种反应、三个阶段测同一个量。",
+    "principle": "密排的同类器件要算级联失效；一件事用三种办法测。",
+    "engineer": "关键器件拉着供应商从头开发；同类部件密集部署时，先问一个坏了会不会带倒一片；关键结论至少走两条独立的测量链路。",
+    "public": "出了事先公开查原因，再分步恢复；重要的判断，换一种办法再验一遍。"
+   },
+   "criteria": [
+    2,
+    3,
+    4
+   ],
+   "criteria_note": "① 只算部分成立：颁奖词写的是发现本身，没有点装置，但新闻稿与背景材料全程以两台探测器为主线；② 5 万吨水配 1.1 万只 20 英寸管，1,000 吨重水放在 2 公里深的洁净室里；③ 借重水、事故与重建、三阶段测量都有一手记录；④ 地下低本底探测器。",
+   "lineage": "神冈 3,000 吨放大成超级神冈 5 万吨，下一步是 Hyper-Kamiokande；SNO 回答的正是 Homestake 留下的太阳中微子问题；IceCube 用的是同一种切伦科夫光加滨松光电倍增管，只是把水罐换成了冰。",
+   "metrics": {
+    "size_m": 41.4,
+    "size_what": "超级神冈水罐高度（直径 39.3 米）；SNO 亚克力球直径 12 米",
+    "mass_t": 50000,
+    "mass_what": "超级神冈的超纯水总量（有效体积 2.25 万吨）；SNO 重水 1,000 吨",
+    "depth_m": 1000,
+    "temp_K": null,
+    "cost": {
+     "amount": 73000000,
+     "currency": "CAD",
+     "year": 1998,
+     "what": "SNO 的建造费（1990–1998 年，2001 年新闻稿口径，不含借来的约 3 亿加元重水）；超级神冈的造价本次未核到一手数字"
+    },
+    "people": {
+     "n": 121,
+     "what": "超级神冈 1998 年振荡论文的作者数（23 家机构）；SNO 首批结果时约 100 人"
+    },
+    "t_idea": 1984,
+    "t_build": 1991,
+    "t_first": 1996,
+    "t_result": 1998,
+    "t_prize": 2015
+   },
+   "metrics_alt": {
+    "what": "SNO 一侧的同一组指标，供对比小工具二选一",
+    "size_m": 12,
+    "size_what": "亚克力球直径（洞室 22 米 × 34 米）",
+    "mass_t": 1000,
+    "mass_what": "重水（另有约 7,000 吨轻水）",
+    "depth_m": 2070,
+    "t_idea": 1984,
+    "t_build": 1990,
+    "t_first": 1999,
+    "t_result": 2001,
+    "t_prize": 2015
+   },
+   "metrics_note": "主指标取超级神冈；t_idea 取 1984 年 SNO 的提案（超级神冈的提出年份本次未核）；depth_m 取超级神冈的 1,000 米，SNO 约 2,070 米。",
+   "drawing": [
+    {
+     "what": "超级神冈水罐直径",
+     "value": 39.3,
+     "unit": "米",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "超级神冈水罐高度",
+     "value": 41.4,
+     "unit": "米",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "超级神冈埋深（山体覆盖）",
+     "value": 1000,
+     "unit": "米",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "超级神冈外探测器水层厚度",
+     "value": 2,
+     "unit": "米",
+     "note": "论文写约 2 米",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "20 英寸光电倍增管直径 / 安装间距",
+     "value": "0.5 / 0.7",
+     "unit": "米",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "SNO 亚克力球直径",
+     "value": 12,
+     "unit": "米",
+     "f": [
+      12
+     ]
+    },
+    {
+     "what": "SNO 亚克力球壁厚",
+     "value": 0.055,
+     "unit": "米",
+     "f": [
+      12
+     ]
+    },
+    {
+     "what": "SNO 颈筒直径 × 高",
+     "value": "1.5 × 6.8",
+     "unit": "米",
+     "f": [
+      12
+     ]
+    },
+    {
+     "what": "SNO 光电倍增管球架直径",
+     "value": 17.8,
+     "unit": "米",
+     "f": [
+      13
+     ]
+    },
+    {
+     "what": "SNO 洞室直径 × 高（桶形）",
+     "value": "22 × 34",
+     "unit": "米",
+     "f": [
+      11
+     ]
+    },
+    {
+     "what": "SNO 埋深（6,800 英尺层）",
+     "value": 2070,
+     "unit": "米",
+     "note": "球心在地表下 2,039 米",
+     "f": [
+      11
+     ]
+    },
+    {
+     "what": "事故时超级神冈的水位",
+     "value": 31.7,
+     "unit": "米",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "前身神冈的水罐：直径 × 高",
+     "value": "16 × 16",
+     "unit": "米",
+     "note": "约 3,000 吨水，同在地下 1,000 米",
+     "f": [
+      8
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "2015-10-06，瑞典皇家科学院把诺贝尔物理学奖授予梶田隆章（Takaaki Kajita，1959 年生于日本东松山，东京大学，超级神冈合作组）与 Arthur B. McDonald（1943 年生于加拿大悉尼，女王大学，SNO 合作组），二人平分 800 万瑞典克朗；颁奖词「for the discovery of neutrino oscillations, which shows that neutrinos have mass」。新闻稿的说法：梶田在世纪之交前后拿出大气中微子变换身份的证据，McDonald 的团队证明太阳中微子没有消失、只是换了身份。",
+     "sources": [
+      {
+       "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2015》（2015-10-06）",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2015-2/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Chronology",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/about/history/"
+      },
+      {
+       "t": "SNOLAB 官网 · About",
+       "u": "https://www.snolab.ca/about/about-snolab/"
+      }
+     ],
+     "confidence": "高",
+     "note": "颁奖词没有点装置名；新闻稿和两份背景材料都以超级神冈与 SNO 两台探测器为主线。"
+    },
+    {
+     "n": 2,
+     "text": "超级神冈的水罐是不锈钢圆筒，直径 39.3 米、高 41.4 米，装 5 万吨超纯水；分析时只用离内壁 2 米以外的中心部分，即 2.25 万吨的有效体积。它建在岐阜县飞驒市神冈矿山地下 1,000 米，宇宙线 μ 子降到地面的十万分之一，约每秒 2 个。",
+     "sources": [
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Detector",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/detector/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Overview",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/outline/"
+      },
+      {
+       "t": "Super-Kamiokande Collaboration, Evidence for Oscillation of Atmospheric Neutrinos, Phys. Rev. Lett. 81 (1998) 1562",
+       "u": "https://arxiv.org/abs/hep-ex/9807003"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景《Neutrino Oscillations》",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "深度的水当量（通行口径 2,700 米水当量）在本次打开的官方页面里没有出现。"
+    },
+    {
+     "n": 3,
+     "text": "超级神冈的光电倍增管：内探测器最初装 11,146 只 20 英寸（约 50 厘米）管，间隔 70 厘米，覆盖约 40% 的内壁；外探测器是约 2 米厚的一层水，装 1,885 只朝外的 8 英寸管，用来剔除从外面进来的粒子。2006 年重建后内探测器为 11,129 只，全罐合计约 13,000 只。滨松为它供货 11,200 只，型号 R3600-05。",
+     "sources": [
+      {
+       "t": "Super-Kamiokande Collaboration, Evidence for Oscillation of Atmospheric Neutrinos, Phys. Rev. Lett. 81 (1998) 1562",
+       "u": "https://arxiv.org/abs/hep-ex/9807003"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Detector",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/detector/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Research History",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/"
+      },
+      {
+       "t": "滨松光子官网《20-inch PMTs》（20 英寸光电倍增管开发史）",
+       "u": "https://www.hamamatsu.com/jp/en/why-hamamatsu/20inch-pmts.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "规格里的 11,146 是 1996–2001 年的数字；官网现在写 11,129。"
+    },
+    {
+     "n": 4,
+     "text": "超级神冈的工期：1991 年 12 月开挖洞室，1994 年 6 月挖完并开始装探测器，1996 年 1 月起注水（5 万吨用了两个月），1996-04-01 零点开始观测。现在的合作组约 240 人、约 50 家机构，来自日本、美国、波兰、韩国、中国、西班牙、加拿大、英国、意大利、法国、越南。",
+     "sources": [
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Research History",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Chronology",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Overview",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/outline/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 5,
+     "text": "1998-06-05 上午 9:55，梶田在岐阜县高山举行的 Neutrino '98 会议（6 月 4–9 日）上作报告，题目是《Results from Super-Kamiokande & Kamiokande》：535 天（33.0 千吨·年）的数据里有 4,353 个全包含事例和 301 个部分包含事例；从地球另一侧向上飞来的高能 μ 子中微子明显少于从头顶来的，上下不对称偏离零超过 6 个标准差，符合 μ 子中微子振荡成 τ 子中微子。论文《Evidence for Oscillation of Atmospheric Neutrinos》署名 121 人、23 家机构。",
+     "sources": [
+      {
+       "t": "Super-Kamiokande Collaboration, Evidence for Oscillation of Atmospheric Neutrinos, Phys. Rev. Lett. 81 (1998) 1562",
+       "u": "https://arxiv.org/abs/hep-ex/9807003"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景《Neutrino Oscillations》",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      },
+      {
+       "t": "Neutrino '98 会议官方日程（神冈观测所服务器，1998-05-28 版）",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/nu98/program7.txt"
+      },
+      {
+       "t": "Neutrino '98 会议主页（高山）",
+       "u": "http://www-sk.icrr.u-tokyo.ac.jp/nu98/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Research History",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/"
+      }
+     ],
+     "confidence": "高",
+     "note": "日期与时段出自会议的官方日程（5 月 28 日的暂定版）。同一份日程上，6 月 4 日有 McDonald 的《Status of the SNO project》，6 月 9 日有哈尔岑的《Results from Amanda and future》。"
+    },
+    {
+     "n": 6,
+     "text": "2001 年的事故：7 月中旬到 9 月中旬放水更换坏管，9 月 18 日起重新注水。2001-11-12 11:01:30，水位升到 31.7 米（约四分之三满）时，罐底一只管子内爆，冲击波引发连锁内爆；在场的人感到剧烈震动并听到轰鸣，持续约 5–10 秒，8.8 公里外的地震仪记录到约 5 秒的振动。官网的最终数字：内探测器毁掉 6,777 只，外探测器约 1,100 只。调查委员会把最先内爆的管子锁定在罐底第 10810 号或它周围的 8 只；怀疑的原因包括换管时工人踩在铺在底部管子上的泡沫板上、玻璃在储存中老化等，报告没有下定论。",
+     "sources": [
+      {
+       "t": "超级神冈事故原因调查委员会第一次报告《Report on the Super-Kamiokande Accident》（2001-11-22）",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/cause-committee/1st/report-nov22e.pdf"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Research History",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Chronology",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/about/history/"
+      }
+     ],
+     "confidence": "高",
+     "note": "事故后 10 天的中期报告写内探测器 6,779 只、外探测器 1,017 只；官网年表写 6,777 只与 1,100 只。"
+    },
+    {
+     "n": 7,
+     "text": "重建：2002 年用剩下的 5,182 只内探测器管子、按原来一半的密度重新排布，每只管子外面加玻璃钢（FRP）后壳和亚克力前罩，防止一只内爆的冲击波波及邻管，当年恢复观测；2005 年 10 月到 2006 年 6 月补齐到 11,129 只，2006 年 7 月以全部管子恢复运行。",
+     "sources": [
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Research History",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Chronology",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/about/history/"
+      }
+     ],
+     "confidence": "高",
+     "note": "恢复观测的月份两处官方页面不一致：超级神冈页写 2002 年 10 月，观测所年表写 2002 年 12 月。"
+    },
+    {
+     "n": 8,
+     "text": "前身神冈（Kamiokande）：1983 年 7 月开始观测，本意是找质子衰变来检验大统一理论，水罐直径 16 米、高 16 米，装约 3,000 吨纯水（其中约 2,140 吨在内层）和约 1,000 只 20 英寸管，同在地下 1,000 米；1985 年排除了最简单的大统一模型。改造成神冈-II 之后共 1,071 只管（948 只看内层，123 只看外层），1987 年 1 月开始测太阳中微子，1988 年报告太阳中微子只有预期的约一半，同时发现大气中微子里 μ 型与电子型的比例与理论不符。",
+     "sources": [
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Chronology",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Research History",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · スーパーカミオカンデ 研究の歴史（日文版）",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/sk/about/history/"
+      },
+      {
+       "t": "IEEE Milestone #147：20-inch Diameter Photomultiplier Tubes, 1979–1987（2014-11-05 授牌）",
+       "u": "https://ethw.org/Milestones:20-inch_Diameter_Photomultiplier_Tubes,_1979_-_1987"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+       "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · History of Neutrino",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/neutrino/history/"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书里的全称「Kamioka Nucleon Decay Experiment」本次未核。"
+    },
+    {
+     "n": 9,
+     "text": "1987-02-23 16:35（日本时间），神冈在约 10 秒内记录到大麦哲伦云超新星 1987A 的 11 个中微子事例，离它开始测太阳中微子只过了约一个月。小柴昌俊因此与戴维斯分享 2002 年诺贝尔物理学奖的一半。",
+     "sources": [
+      {
+       "t": "滨松光子官网《20-inch PMTs》（20 英寸光电倍增管开发史）",
+       "u": "https://www.hamamatsu.com/jp/en/why-hamamatsu/20inch-pmts.html"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Physics",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/research/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · スーパーカミオカンデ 研究の歴史（日文版）",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/sk/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · History of Neutrino",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/neutrino/history/"
+      },
+      {
+       "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2002》（2002-10-08）",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2002-2/"
+      }
+     ],
+     "confidence": "高",
+     "note": "事例数：神冈官网与滨松写 11 个，瑞典皇家科学院 2002 年材料写 12 个。「恰在小柴退休前一个月」本次未核。"
+    },
+    {
+     "n": 10,
+     "text": "20 英寸光电倍增管的来历（滨松官方史）：1979 年，东京大学的小柴昌俊把滨松社长晝馬輝夫请到研究室，问能不能做一只 25 英寸的管子，晝馬答应试试。当时美国的方案用几千只 5 英寸管，规模近两倍，小柴要靠更大的管子补回来。滨松此前只试制过 8 英寸管。1980 年 10 月开始试制，1981 年 1 月第一批样管送到东京大学，5 个月做了 20 只；型号 R1449，在丰冈制作所由约 30 人生产，成品率约 70%，1982 年 5 月交付 1,050 只。2014-11-05 这项开发获得 IEEE Milestone 认定。",
+     "sources": [
+      {
+       "t": "滨松光子官网《20-inch PMTs》（20 英寸光电倍增管开发史）",
+       "u": "https://www.hamamatsu.com/jp/en/why-hamamatsu/20inch-pmts.html"
+      },
+      {
+       "t": "IEEE Milestone #147：20-inch Diameter Photomultiplier Tubes, 1979–1987（2014-11-05 授牌）",
+       "u": "https://ethw.org/Milestones:20-inch_Diameter_Photomultiplier_Tubes,_1979_-_1987"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 11,
+     "text": "SNO 建在加拿大安大略省萨德伯里附近的 Creighton 镍矿（当时属 INCO，现属 Vale）6,800 英尺层，岩石覆盖约 2,070 米，相当于约 6,000 米水当量，每天只有约 70 个宇宙线 μ 子穿过探测器。洞室是桶形，直径 22 米、高 34 米，1990 年 3 月到 1993 年 5 月开挖，挖出 6 万多吨岩石，是当时这个深度上最大的人工洞室；井下岩温 42 °C。",
+     "sources": [
+      {
+       "t": "SNO Collaboration, The Sudbury Neutrino Observatory, Nucl. Instrum. Meth. A 449 (2000) 172",
+       "u": "https://arxiv.org/abs/nucl-ex/9910016"
+      },
+      {
+       "t": "女王大学 SNO 官网 · The SNO Detector（2002 年版）",
+       "u": "https://sno.phy.queensu.ca/sno/sno2.html"
+      },
+      {
+       "t": "SNOLAB 官网 · Underground Facilities",
+       "u": "https://www.snolab.ca/facility/underground-facilities/"
+      },
+      {
+       "t": "A. Bellerive, J. R. Klein, A. B. McDonald, A. J. Noble, A. W. P. Poon, The Sudbury Neutrino Observatory, Nucl. Phys. B 908 (2016) 30",
+       "u": "https://arxiv.org/abs/1602.02469"
+      }
+     ],
+     "confidence": "高",
+     "note": "深度口径：6,800 英尺层约 2,070 米；探测器论文写球心在地表下 2,039 米；任务书的 2,092 米本次未见于来源。"
+    },
+    {
+     "n": 12,
+     "text": "SNO 的 1,000 吨重水由加拿大原子能公司（AECL）在新建 CANDU 反应堆暂时用不上时出借，估值约 3 亿加元。重水装在直径 12 米的透明亚克力球里，球壁标称厚 5.5 厘米，由 122 块紫外透明亚克力板在井下粘接而成，粘缝总长 500 多米，顶部接一段直径 1.5 米、高 6.8 米的颈筒；球体 1997 年 11 月完工。",
+     "sources": [
+      {
+       "t": "A. Bellerive, J. R. Klein, A. B. McDonald, A. J. Noble, A. W. P. Poon, The Sudbury Neutrino Observatory, Nucl. Phys. B 908 (2016) 30",
+       "u": "https://arxiv.org/abs/1602.02469"
+      },
+      {
+       "t": "SNO Collaboration, The Sudbury Neutrino Observatory, Nucl. Instrum. Meth. A 449 (2000) 172",
+       "u": "https://arxiv.org/abs/nucl-ex/9910016"
+      },
+      {
+       "t": "女王大学 SNO 官网 · The SNO Detector（2002 年版）",
+       "u": "https://sno.phy.queensu.ca/sno/sno2.html"
+      },
+      {
+       "t": "SNO 新闻稿：First Scientific Results（2001-06-18）",
+       "u": "https://sno.phy.queensu.ca/sno/first_results/"
+      }
+     ],
+     "confidence": "高",
+     "note": "规格写「市值 3.3 亿加元」，合作组自己的综述写约 3 亿加元。板数与壁厚：探测器论文 122 块、5.5 厘米；女王大学网页写 125 块、5 厘米。"
+    },
+    {
+     "n": 13,
+     "text": "SNO 的光探测：9,438 只朝内的 20 厘米滨松 R1408 光电倍增管装在直径 17.8 米的不锈钢球架上，每只带直径 27 厘米的反光集光器，把光阴极覆盖率从 31% 提到约 54%；另有 91 只朝外的管子。亚克力球外是约 7,000 吨超纯轻水（球与管之间约 1,700 吨，管与洞壁之间约 5,700 吨），既托住球体又屏蔽岩石的放射性。",
+     "sources": [
+      {
+       "t": "SNO Collaboration, The Sudbury Neutrino Observatory, Nucl. Instrum. Meth. A 449 (2000) 172",
+       "u": "https://arxiv.org/abs/nucl-ex/9910016"
+      },
+      {
+       "t": "A. Bellerive, J. R. Klein, A. B. McDonald, A. J. Noble, A. W. P. Poon, The Sudbury Neutrino Observatory, Nucl. Phys. B 908 (2016) 30",
+       "u": "https://arxiv.org/abs/1602.02469"
+      },
+      {
+       "t": "女王大学 SNO 官网 · The SNO Detector（2002 年版）",
+       "u": "https://sno.phy.queensu.ca/sno/sno2.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "管数：论文 9,438 加 91；瑞典皇家科学院写 9,500；规格写约 9,600；女王大学网页写约 1 万。轻水：1,700 加 5,700 是 7,400 吨，通行口径 7,000 吨。"
+    },
+    {
+     "n": 14,
+     "text": "SNO 的洁净度：重水里钍低于 3×10⁻¹⁵ 克每克、铀低于 4.5×10⁻¹⁴ 克每克；探测器在井下洁净室里装配，条件一般优于 1000 级。整个井下实验室按一间大洁净室运行：人进去要脱掉矿工服、淋浴、换洁净服，设备要过井下的「洗车房」或在地面洗净封装。",
+     "sources": [
+      {
+       "t": "SNO Collaboration, The Sudbury Neutrino Observatory, Nucl. Instrum. Meth. A 449 (2000) 172",
+       "u": "https://arxiv.org/abs/nucl-ex/9910016"
+      },
+      {
+       "t": "SNOLAB 官网 · Underground Facilities",
+       "u": "https://www.snolab.ca/facility/underground-facilities/"
+      },
+      {
+       "t": "女王大学 SNO 官网 · The SNO Detector（2002 年版）",
+       "u": "https://sno.phy.queensu.ca/sno/sno2.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "规格写「探测器腔是 100 级洁净室」，本次来源里没有这个说法。「全探测器的灰尘不到若干克」本次未核。"
+    },
+    {
+     "n": 15,
+     "text": "SNO 的来历：1984 年，加州大学尔湾分校的 Herb Chen 提出用重水同时测带电流和中性流反应，同年与女王大学的 George Ewan 牵头组成 16 人的加美合作组，1985 年英国加入；Chen 1987 年因白血病去世。1987 年 10 月提交详细提案，1989 年加、美、英三国出资，McDonald 出任项目与合作组的负责人，1990 年成立 SNO 研究所。实验室 1990 年开工、1998 年建成，造价 7,300 万加元。",
+     "sources": [
+      {
+       "t": "A. Bellerive, J. R. Klein, A. B. McDonald, A. J. Noble, A. W. P. Poon, The Sudbury Neutrino Observatory, Nucl. Phys. B 908 (2016) 30",
+       "u": "https://arxiv.org/abs/1602.02469"
+      },
+      {
+       "t": "女王大学 SNO 官网 · The SNO Detector（2002 年版）",
+       "u": "https://sno.phy.queensu.ca/sno/sno2.html"
+      },
+      {
+       "t": "SNO 新闻稿：First Scientific Results（2001-06-18）",
+       "u": "https://sno.phy.queensu.ca/sno/first_results/"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景《Neutrino Oscillations》",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "7,300 万加元是 2001 年新闻稿的口径（建造费，不含借来的重水）。Chen 去世的月份（通行说法 11 月）未核。"
+    },
+    {
+     "n": 16,
+     "text": "SNO 的三种反应：带电流（CC）只对电子中微子灵敏，中性流（NC）对三种中微子一视同仁，电子弹性散射（ES）主要对电子中微子灵敏。三个阶段：纯重水（1999-11-02 至 2001-05-31）；重水里溶入约 2 吨食盐以提高中子俘获效率（2001-07-26 至 2003-08-28）；球内挂 36 串氦-3 正比计数管直接数中子（2004-11-27 至 2006-11-28）。第一阶段的结果（单位 10⁶ 每平方厘米每秒）：CC 1.76，ES 2.39，NC 5.09——电子中微子只占总数的约三分之一，总数与太阳模型相符。首批结果 2001-06-18 公布；中性流结果 2002-04-20 在美国物理学会与天文学会的联合会议（阿尔伯克基）上公布，只用 SNO 自己的数据就以 99.999% 的把握表明太阳中微子变了类型。",
+     "sources": [
+      {
+       "t": "A. Bellerive, J. R. Klein, A. B. McDonald, A. J. Noble, A. W. P. Poon, The Sudbury Neutrino Observatory, Nucl. Phys. B 908 (2016) 30",
+       "u": "https://arxiv.org/abs/1602.02469"
+      },
+      {
+       "t": "SNO 新闻稿：First Scientific Results（2001-06-18）",
+       "u": "https://sno.phy.queensu.ca/sno/first_results/"
+      },
+      {
+       "t": "SNO 新闻稿：中性流结果（2002-04-20）",
+       "u": "https://sno.phy.queensu.ca/sno/results_04_02/"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景《Neutrino Oscillations》",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 17,
+     "text": "SNO 2006-11-28 结束取数。原来的洞室和亚克力球现在用于 SNO+：球里换成液体闪烁体，计划加碲找无中微子双贝塔衰变；液闪比水轻，亚克力球从「要往上吊」变成「要用绳子往下拉」。周围扩建成 SNOLAB，洁净空间 5,000 平方米，员工约 150 人。",
+     "sources": [
+      {
+       "t": "A. Bellerive, J. R. Klein, A. B. McDonald, A. J. Noble, A. W. P. Poon, The Sudbury Neutrino Observatory, Nucl. Phys. B 908 (2016) 30",
+       "u": "https://arxiv.org/abs/1602.02469"
+      },
+      {
+       "t": "SNOLAB 官网 · SNO+ 实验页",
+       "u": "https://www.snolab.ca/experiment/sno/"
+      },
+      {
+       "t": "SNOLAB 官网 · About",
+       "u": "https://www.snolab.ca/about/about-snolab/"
+      },
+      {
+       "t": "SNOLAB 官网 · Underground Facilities",
+       "u": "https://www.snolab.ca/facility/underground-facilities/"
+      }
+     ],
+     "confidence": "高",
+     "note": "重水归还 AECL 的时间本次未核。"
+    },
+    {
+     "n": 18,
+     "text": "2015-11-08 公布的 2016 年基础物理学突破奖（300 万美元）由五个中微子振荡实验平分：大亚湾（王贻芳、陆锦标）、KamLAND（铃木厚人）、K2K 与 T2K（西川公一郎）、SNO（McDonald）、超级神冈（梶田隆章、铃木洋一郎）。获奖人数官方页面三处写法不一：1,370 人、1,377 人、「1,300 多人」。",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 新闻稿（2015-11-08）：2016 Breakthrough Prize in Fundamental Physics",
+       "u": "https://breakthroughprize.org/News/29"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Chronology",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/about/history/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 19,
+     "text": "相关的其他奖项：1989 年 Bruno Rossi 奖授予 IMB 与神冈两个实验组，表彰它们互相印证地探测到超新星 1987A 的中微子爆发；2000 年沃尔夫物理学奖授予戴维斯与小柴昌俊。",
+     "sources": [
+      {
+       "t": "美国天文学会高能天体物理分会 · Bruno Rossi Prize 历届得主",
+       "u": "https://head.aas.org/rossi/rossi.recip.html"
+      },
+      {
+       "t": "布鲁克海文国家实验室 · Raymond Davis Jr. 纪念页",
+       "u": "https://www.bnl.gov/bnlweb/raydavis/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 20,
+     "text": "超级神冈至今仍在运行：2008 年 9 月换了前端电子学，2018 年 6 月到 2019 年 1 月大修，2020 年 8 月起在水里加钆（SK-Gd）以便探测中微子反应放出的中子；每天存储 500 GB 以上的数据。同一座矿山里，后继的 Hyper-Kamiokande 2020 年开工，洞室 2025 年 7 月挖完。",
+     "sources": [
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Research History",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Chronology",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/about/history/"
+      },
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · Super-Kamiokande Detector",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/detector/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 21,
+     "text": "户塚洋二（Yoji Totsuka）是超级神冈的首任实验负责人，1996 年 4 月 1 日由他按下开始观测的按钮；2001 年事故后，他作为当时的设施长下令重建。1999 年他代表超级神冈观测组获朝日奖。",
+     "sources": [
+      {
+       "t": "神冈宇宙素粒子研究设施官网 · スーパーカミオカンデ 研究の歴史（日文版）",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/sk/about/history/"
+      }
+     ],
+     "confidence": "中",
+     "note": "出自官网日文版研究史。他 2008 年去世是通行说法，本次没有核到来源；事故后的原话也没有核到。"
+    },
+    {
+     "n": 22,
+     "text": "SNO 首批结果发表时的团队约 100 名科学家，来自加拿大、美国、英国；合作组最多时有 13 家机构。McDonald 自 1989–1990 年起领导合作组并任 SNO 研究所首任所长。",
+     "sources": [
+      {
+       "t": "SNO 新闻稿：First Scientific Results（2001-06-18）",
+       "u": "https://sno.phy.queensu.ca/sno/first_results/"
+      },
+      {
+       "t": "A. Bellerive, J. R. Klein, A. B. McDonald, A. J. Noble, A. W. P. Poon, The Sudbury Neutrino Observatory, Nucl. Phys. B 908 (2016) 30",
+       "u": "https://arxiv.org/abs/1602.02469"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2015 年科学背景《Neutrino Oscillations》",
+       "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+      },
+      {
+       "t": "女王大学 SNO 官网 · The SNO Detector（2002 年版）",
+       "u": "https://sno.phy.queensu.ca/sno/sno2.html"
+      }
+     ],
+     "confidence": "中",
+     "note": "McDonald 上任年份：综述写 1989 年，瑞典皇家科学院写 1990 年起，女王大学网页写 1990 年 SNO 研究所成立时任所长。"
+    }
+   ],
+   "disputes": [
+    "超级神冈内探测器的管数：1998 年论文 11,146 只（事故前）；官网现在写 11,129 只（2006 年重建后）；滨松写供货 11,200 只。",
+    "事故损失：规格写「约 6,600 只」；官网年表写内探测器 6,777 只、外探测器 1,100 只；事故后 10 天的中期报告写内探测器 6,779 只（另一张表 6,665 只）、外探测器 1,017 只。",
+    "超级神冈恢复观测的月份：超级神冈页写 2002 年 10 月（5,182 只）；观测所年表写 2002 年 12 月（约 5,200 只）。全规模恢复：一处写 2006 年 6 月补齐，一处写 2006 年 7 月恢复观测。",
+    "超新星 1987A 的事例数：神冈官网与滨松写 11 个；瑞典皇家科学院 2002 年的新闻稿和背景材料写 12 个。",
+    "神冈的水量：官网写 3,000 吨；瑞典皇家科学院 2002 年材料写 2,140 吨（内层）。管数：约 1,000 只（官网、滨松交付 1,050 只）；神冈-II 为 1,071 只（IEEE）；瑞典皇家科学院写约 1,100 只。",
+    "SNO 的深度：女王大学与 SNOLAB 写 6,800 英尺层、岩石覆盖 2,070 米；探测器论文写球心在地表下 2,039 米；任务书写 2,092 米；新闻稿取整为 2,000 米。水当量：约 6,000 米。",
+    "SNO 的管数：探测器论文 9,438 只朝内加 91 只朝外；瑞典皇家科学院写 9,500 只；规格写约 9,600 只；女王大学网页写约 1 万只。",
+    "SNO 亚克力球：探测器论文写 122 块板、壁厚 5.5 厘米；合作组综述写 122 块、5 厘米；女王大学网页写 125 块、5 厘米。",
+    "SNO 的轻水：通行口径 7,000 吨；探测器论文写 1,700 吨加 5,700 吨（合 7,400 吨）。",
+    "重水估值：规格写 3.3 亿加元；合作组综述写约 3 亿加元。",
+    "2016 年突破奖人数：官方页面写 1,370 人、1,377 人、「1,300 多人」三种。",
+    "McDonald 开始领导 SNO 的年份：综述 1989 年；瑞典皇家科学院 1990 年。"
+   ],
+   "todo": [
+    "超级神冈的造价没有核到一手数字：规格写约 1 亿美元，任务书写约 104 亿日元；滨松官方史只说计划预算约 87 亿日元。",
+    "户塚洋二事故后的原话与去世日期（通行说法 2008-07-10）没有核到来源；职务已由官网日文版核实。",
+    "「约 2,000 只 8 英寸管回收自美国 IMB 实验」没有核到出处（超级神冈的探测器论文本次打不开）。",
+    "超级神冈深度的水当量（2,700 米水当量）未见于本次打开的官方页面。",
+    "神冈的全称，以及「超新星恰在小柴退休前一个月」未核。",
+    "SNO「全探测器灰尘总量不到若干克」、重水归还 AECL 的时间、Chen 去世的月份未核。",
+    "McDonald 的诺奖演讲（RMP）与 APS 页面返回 403，没有用上。"
+   ]
+  },
+  {
+   "id": "ligo",
+   "prize": {
+    "year": 2017,
+    "laureates": [
+     {
+      "zh": "雷纳·韦斯",
+      "en": "Rainer Weiss",
+      "life": "1932–2025",
+      "share": "二分之一",
+      "role": "1972 年写出干涉仪探测引力波的噪声分析与设计，是 LIGO 的蓝本；LIGO 科学合作组首任发言人。"
+     },
+     {
+      "zh": "巴里·巴里什",
+      "en": "Barry C. Barish",
+      "life": "1936–",
+      "share": "四分之一",
+      "role": "1994 年接手项目，重组管理、建成两个观测站，创建 LIGO 科学合作组，定下「初代加升级」两步走。"
+     },
+     {
+      "zh": "基普·索恩",
+      "en": "Kip S. Thorne",
+      "life": "1940–",
+      "share": "四分之一",
+      "role": "理论家。算出各类波源的预期信号，定下科学目标，在加州理工建起实验组，是创始三人之一。"
+     }
+    ],
+    "citation_en": "for decisive contributions to the LIGO detector and the observation of gravitational waves",
+    "citation_zh": "表彰他们对 LIGO 探测器和观测到引力波的决定性贡献",
+    "citation_source": {
+     "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2017》（2017-10-03）",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2017-2/"
+    },
+    "announced": "2017-10-03",
+    "amount": "900 万瑞典克朗"
+   },
+   "apparatus": {
+    "zh": "激光干涉引力波天文台",
+    "en": "Laser Interferometer Gravitational-Wave Observatory (LIGO)",
+    "years": "1972 设想 / 1994 开工 / 2015-09-14 首次探测",
+    "place_zh": "美国华盛顿州汉福德与路易斯安那州利文斯顿（加州理工学院与麻省理工学院运行）",
+    "lat": 46.46,
+    "lon": -119.41,
+    "sites": [
+     {
+      "zh": "汉福德",
+      "lat": 46.46,
+      "lon": -119.41
+     },
+     {
+      "zh": "利文斯顿",
+      "lat": 30.56,
+      "lon": -90.77
+     }
+    ]
+   },
+   "claim": "爱因斯坦 1916 年由广义相对论推出：加速运动的质量会辐射引力波，时空本身被拉伸和压缩，效应极小。1974 年发现的脉冲双星给了间接证据。LIGO 要回答的是：能不能在地面上直接量到这种拉伸——在 4 公里的距离上分辨出约 10⁻¹⁸ 米、比质子直径小两到三个数量级的变化。",
+   "brief": [
+    "臂长 4 公里，光在臂内往返约 280 次，等效光程约 1,120 公里；要分辨的应变是 10⁻²¹ 量级，对应镜间距离变化约 10⁻¹⁸ 米。",
+    "真空：每个站约 1 万立方米抽到约 10⁻⁹ 托，管径 1.2 米、壁厚 3 毫米，抽气 40 天、烘烤 30 天，此后不再破真空。",
+    "隔振：40 公斤的镜子挂在四级摆上，主动平台加悬挂把地面振动压低十几个数量级。",
+    "两个站相距 3,002 公里（光行约 10 毫秒），同一个信号要在这个时间窗里先后出现才算数。",
+    "分两代：初代先达到设计灵敏度（2006 年做到），第二代再提高 10 倍，才进入预计有信号的范围。"
+   ],
+   "scale": [
+    {
+     "k": "臂长",
+     "v": "4 公里 × 2 条臂 × 2 个站",
+     "note": "等效光程约 1,120 公里（光往返约 280 次）",
+     "f": [
+      3,
+      6
+     ]
+    },
+    {
+     "k": "两站距离",
+     "v": "3,002 公里，光行约 10 毫秒",
+     "note": "首次探测时两站到达时间差 6.9 毫秒",
+     "f": [
+      3,
+      13
+     ]
+    },
+    {
+     "k": "真空",
+     "v": "每站约 1 万立方米，约 10⁻⁹ 托",
+     "note": "束流管直径 1.2 米、钢板厚 3 毫米；抽气 1,100 小时，150–170 °C 烘烤 30 天",
+     "f": [
+      4
+     ]
+    },
+    {
+     "k": "镜子",
+     "v": "40 公斤熔石英，直径 34 厘米、厚 20 厘米",
+     "note": "四级摆悬挂，整套 360 公斤，末级用 0.4 毫米熔石英丝",
+     "f": [
+      5
+     ]
+    },
+    {
+     "k": "要测的量",
+     "v": "应变 10⁻²¹，臂长变化约 4×10⁻¹⁸ 米",
+     "note": "GW150914 的实际值；仪器极限约 10⁻¹⁹ 米，即质子宽度的万分之一",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "激光",
+     "v": "1,064 纳米；设计输入 200 瓦、臂内 750 千瓦",
+     "note": "2015 年首次探测时输入约 20 瓦",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "造价",
+     "v": "1994 年方案 3.654 亿美元；Advanced LIGO 2.05 亿美元；到 2016 年累计约 11 亿美元",
+     "note": "当年价；1994 年方案含 0.687 亿调试运行费；11 亿含运行与科研资助",
+     "f": [
+      8
+     ]
+    },
+    {
+     "k": "工期",
+     "v": "1972 年设想，1994 年动工，2002 年首次科学运行，2015 年探测到",
+     "note": "初代 2002–2010 年零探测",
+     "f": [
+      9,
+      12,
+      13
+     ]
+    },
+    {
+     "k": "人",
+     "v": "发现论文 1,005 位作者；得主 3 人",
+     "note": "LSC 成员 2016 年 1,000 多人，2025 年 1,600 多人",
+     "f": [
+      14
+     ]
+    }
+   ],
+   "approach": [
+    "先写噪声预算。韦斯 1972 年的报告先把地震、热噪声、散粒噪声、激光频率抖动逐项估算，再由此推出臂长要到公里级、镜子要悬挂、光路要抽真空。此后四十年的设计都是在这张噪声清单上逐项往下压。",
+    "分两代造。初代 LIGO 用成熟技术，目标是证明能造出来并达到设计灵敏度，不保证看到信号；真空系统和厂房一次建到位，留给第二代换探测器。初代 8 年零探测，Advanced LIGO 开机不久就收到信号。",
+    "建两个相同的站。两台干涉仪相距 3,002 公里，本地的地震、车流、渡鸦不会同时出现在两处；一个信号必须在 10 毫秒的时间窗内先后出现在两站，才进入候选。",
+    "演习整个团队。2007 年和 2010 年两次盲注入，让上千人把「发现」的全过程走了一遍，直到写完论文、表决通过才揭晓。2015 年真信号到来时，核查注入通道、估计误报率、内部审稿都有现成的流程。"
+   ],
+   "history": [
+    {
+     "d": "1962",
+     "t": "Gertsenshtein 与 Pustovoit 提出用干涉仪探测引力波"
+    },
+    {
+     "d": "1965–1969",
+     "t": "Joseph Weber 用铝棒做共振探测，1969 年宣布看到信号，后来无人能重复"
+    },
+    {
+     "d": "1972",
+     "t": "韦斯在 MIT RLE 季度进展报告第 105 期发表干涉仪的噪声分析与设计"
+    },
+    {
+     "d": "1975–1979",
+     "t": "韦斯说服索恩；加州理工建组，1979 年请来 Drever；国家科学基金会开始资助研发"
+    },
+    {
+     "d": "1983-10",
+     "t": "两校提交「蓝皮书」：两台 5 公里干涉仪，预算不到 1 亿美元"
+    },
+    {
+     "d": "1984",
+     "t": "LIGO 成为加州理工与麻省理工的联合项目，韦斯、Drever、索恩三人共管"
+    },
+    {
+     "d": "1987",
+     "t": "改设单一主任，Rochus Vogt 上任（一说 1986 年）"
+    },
+    {
+     "d": "1989–1990",
+     "t": "提交建造提案；1990 年国家科学委员会批准，臂长定为 4 公里"
+    },
+    {
+     "d": "1992",
+     "t": "选定汉福德与利文斯顿；项目重组，Drever 离开"
+    },
+    {
+     "d": "1994",
+     "t": "巴里什接任；11-18 修订方案获批（3.654 亿美元）；汉福德年底动工"
+    },
+    {
+     "d": "1997",
+     "t": "成立 LIGO 科学合作组（LSC），韦斯任首任发言人"
+    },
+    {
+     "d": "1998–1999",
+     "t": "两站真空系统抽气；1999 年举行落成典礼"
+    },
+    {
+     "d": "2002–2010",
+     "t": "初代 LIGO 科学运行，2006 年达到设计灵敏度，没有探测到引力波"
+    },
+    {
+     "d": "2007 / 2010",
+     "t": "两次盲注入演习：Equinox Event 与 Big Dog"
+    },
+    {
+     "d": "2008–2014",
+     "t": "Advanced LIGO 获批（2.05 亿美元），2010–2014 年安装"
+    },
+    {
+     "d": "2015-09-14",
+     "t": "09:50:45 UTC 收到 GW150914，当时还在工程运行，离正式观测还有 4 天"
+    },
+    {
+     "d": "2016-02-11",
+     "t": "公布发现"
+    },
+    {
+     "d": "2017",
+     "t": "3 月 Drever 去世；8-17 首次看到双中子星并合；10-03 获诺贝尔奖"
+    },
+    {
+     "d": "2025",
+     "t": "1-14 记录到信噪比 80 的 GW250114；8-25 韦斯去世；11-18 O4 结束"
+    },
+    {
+     "d": "2026-04-23",
+     "t": "LIGO-India 在印度马哈拉施特拉邦破土动工"
+    }
+   ],
+   "people": [
+    {
+     "zh": "",
+     "en": "Ronald Drever",
+     "r": "1931–2017，创始三人之一；法布里–珀罗臂腔与激光稳频；1992 年离开项目"
+    },
+    {
+     "zh": "",
+     "en": "Rochus Vogt",
+     "r": "加州理工；首任主任，1989 年建造提案的牵头人，1994 年卸任"
+    },
+    {
+     "zh": "",
+     "en": "Joseph Weber",
+     "r": "马里兰大学；1960 年代用共振棒开创引力波探测，结果未被重复"
+    },
+    {
+     "zh": "",
+     "en": "Robert Forward",
+     "r": "Weber 的学生；在休斯研究实验室造出第一台原型干涉仪（臂长 8.5 米）"
+    },
+    {
+     "zh": "",
+     "en": "M. Gertsenshtein / V. Pustovoit",
+     "r": "1962 年最早提出干涉仪方案的两位苏联物理学家"
+    },
+    {
+     "zh": "",
+     "en": "Stanley Whitcomb",
+     "r": "1979 年起与 Drever 一起建加州理工实验组；后任 LIGO 实验室首席科学家"
+    },
+    {
+     "zh": "",
+     "en": "David Shoemaker",
+     "r": "麻省理工；Advanced LIGO 项目负责人"
+    },
+    {
+     "zh": "",
+     "en": "David Reitze",
+     "r": "LIGO 实验室执行主任，2016 年宣布发现"
+    },
+    {
+     "zh": "",
+     "en": "Gabriela González",
+     "r": "路易斯安那州立大学；首次探测时的 LSC 发言人"
+    },
+    {
+     "zh": "",
+     "en": "Marco Drago",
+     "r": "汉诺威马普引力物理所博士后；最先看到 GW150914 的警报"
+    },
+    {
+     "zh": "",
+     "en": "Jay Marx",
+     "r": "时任 LIGO 实验室执行主任；2011 年当众打开 Big Dog 的信封"
+    }
+   ],
+   "awards": [
+    "2016 年 Special Breakthrough Prize in Fundamental Physics（300 万美元）：Drever、索恩、韦斯分 100 万，1,012 位贡献者平分 200 万",
+    "2016 年 Gruber 宇宙学奖：Drever、索恩、韦斯与整个 LIGO 发现团队",
+    "2016 年邵逸夫天文学奖、2016 年 Kavli 天体物理学奖：均为 Drever、索恩、韦斯",
+    "2017 年美国天文学会 Bruno Rossi 奖：Gabriela González 与 LIGO 科学合作组"
+   ],
+   "anecdotes": [
+    {
+     "t": "2010 年 9 月的一天凌晨 2 点 40 分，Jonah Kanner 被警报叫醒：一个像是来自大犬座的强信号。合作组分析了 6 个月，写好论文，约 400 人表决通过，开了香槟。随后主任 Jay Marx 打开信封：信号是约 5 人的小组秘密注入的。",
+     "kind": "当事人自述",
+     "f": [
+      15
+     ]
+    },
+    {
+     "t": "2015 年 9 月 14 日真信号到来时，汉诺威的博士后 Marco Drago 正准备去吃午饭。这时离正式观测还有 4 天。团队先查是不是又一次演习，负责注入的人答复说没有组建注入小组，日志里写的是「没有任何瞬态注入」。",
+     "kind": "官方史",
+     "f": [
+      13,
+      15
+     ]
+    },
+    {
+     "t": "2017 年 7 月，汉福德的传感器里出现一串敲击声。工作人员到 4 公里臂的尽头查看，发现冷却管路结的霜上全是啄痕，还当场撞见一只渡鸦在啄冰解渴。改了管路不再结霜，信号就没了。",
+     "kind": "官方史",
+     "f": [
+      20
+     ]
+    },
+    {
+     "t": "韦斯转向干涉仪，起因是他在麻省理工讲课时没法向学生讲清 Weber 的共振棒到底怎么工作，于是自己想了一个他能讲明白的办法。",
+     "kind": "官方史",
+     "f": [
+      21
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "韦斯 1972 年先逐项算噪声再定臂长；巴里什分两代造，初代 8 年零探测也算交付；两个站相距 3,002 公里互相作证；2007、2010 年两次盲注入，让全组把发现流程走完。",
+    "principle": "先写误差预算；用演习检验整个团队。",
+    "engineer": "动手前把每一项误差来源列成预算表；第一版只求证明能造出来；上线前做一次不打招呼的全流程故障注入。",
+    "public": "大目标分两步走，第一步只求学会；重要的事先彩排一遍，而且彩排时要当真。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "criteria_note": "① 颁奖词直接写了 LIGO detector；② 4 公里臂长上分辨 10⁻¹⁸ 米，1 万立方米的超高真空；③ 三人共管失灵后重组、两代分步、双站、盲注入都有一手记录；④ 精密测量类，十二座里唯一的引力波探测器。",
+   "lineage": "迈克尔逊干涉仪的直系后代：光程从 1887 年的 11 米到等效 1,120 公里；韦斯同时参与过 COBE；后继是 LIGO-India、Cosmic Explorer、Einstein Telescope 与空间的 LISA。",
+   "metrics": {
+    "size_m": 4000,
+    "size_what": "单臂长度（每站两条臂；两站相距 3,002 公里）",
+    "mass_t": 0.04,
+    "mass_what": "单面主反射镜 40 公斤（悬挂系统整套 360 公斤）",
+    "depth_m": null,
+    "temp_K": null,
+    "cost": {
+     "amount": 1100000000,
+     "currency": "USD",
+     "year": 2016,
+     "what": "美国国家科学基金会截至 2016 年初的累计投入（建造、升级、运行与科研资助，各年当年价相加）；其中 1994 年方案 3.654 亿、Advanced LIGO 2.0512 亿"
+    },
+    "people": {
+     "n": 1005,
+     "what": "发现论文作者数（Breakthrough 奖口径）；LSC 成员 2016 年 1,000 多人、2025 年 1,600 多人"
+    },
+    "t_idea": 1972,
+    "t_build": 1994,
+    "t_first": 2002,
+    "t_result": 2015,
+    "t_prize": 2017
+   },
+   "metrics_note": "t_first 取初代 LIGO 第一次科学运行（2002）；Advanced LIGO 2015 年 9 月运行。temp_K 不适用（室温运行）。",
+   "drawing": [
+    {
+     "what": "单臂长度",
+     "value": 4000,
+     "unit": "米",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "束流管直径",
+     "value": 1.2,
+     "unit": "米",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "束流管钢板厚度",
+     "value": 0.003,
+     "unit": "米",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "两站直线距离",
+     "value": 3002,
+     "unit": "公里",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "4 公里臂上需要补偿的地球曲率下垂",
+     "value": 1,
+     "unit": "米",
+     "note": "官网写「近 1 米」",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "主反射镜直径 × 厚度",
+     "value": "0.34 × 0.20",
+     "unit": "米",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "末级悬挂丝直径",
+     "value": 0.0004,
+     "unit": "米",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "干涉仪下方混凝土地板厚度",
+     "value": 0.75,
+     "unit": "米",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "等效光程（约 280 次往返）",
+     "value": 1120,
+     "unit": "公里",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "对照：1887 年迈克尔逊–莫雷装置的光程",
+     "value": 11,
+     "unit": "米",
+     "note": "LIGO 官网的对比口径，A 代理另核",
+     "f": [
+      3
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "2017-10-03，瑞典皇家科学院把诺贝尔物理学奖的一半授予 Rainer Weiss，另一半由 Barry C. Barish 与 Kip S. Thorne 平分，奖金共 900 万瑞典克朗；颁奖词「for decisive contributions to the LIGO detector and the observation of gravitational waves」。新闻稿称 LIGO 是 1,000 多名研究者、20 多个国家参与的合作项目，实现的是一个将近 50 年前的设想。",
+     "sources": [
+      {
+       "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2017》（2017-10-03）",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2017-2/"
+      },
+      {
+       "t": "LIGO / Caltech 新闻稿：2017 年诺贝尔物理学奖（2017-10-03）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20171003"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 2,
+     "text": "三位得主：韦斯 1932 年生于柏林，1962 年麻省理工学院博士，2025-08-25 去世，享年 92 岁；巴里什 1936 年生于美国内布拉斯加州奥马哈，1962 年加州大学伯克利分校博士；索恩 1940 年生于犹他州洛根，1965 年普林斯顿大学博士。",
+     "sources": [
+      {
+       "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2017》（2017-10-03）",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2017-2/"
+      },
+      {
+       "t": "LIGO Lab 新闻（2025-08-27）：Rainer Weiss 去世",
+       "u": "https://www.ligo.caltech.edu/news/ligo20250827"
+      },
+      {
+       "t": "邵逸夫奖 · 2016 年天文学奖",
+       "u": "https://www.shawprize.org/laureates/2016-astronomy/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 3,
+     "text": "两台 L 形干涉仪，各有两条 4 公里长的臂，分别在华盛顿州汉福德和路易斯安那州利文斯顿，相距 3,002 公里，光走约 10 毫秒。4 公里的臂上地球表面下弯近 1 米，施工时要把这段曲率补平，光束才能走直线。官网的对比：臂长是 1887 年迈克尔逊–莫雷装置 11 米光程的 360 倍。",
+     "sources": [
+      {
+       "t": "LIGO Lab 官网 · Facts",
+       "u": "https://www.ligo.caltech.edu/page/facts"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "LIGO Lab 官网 · LIGO's Interferometer",
+       "u": "https://www.ligo.caltech.edu/page/ligos-ifo"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 4,
+     "text": "真空系统：束流管直径 1.2 米，用 3 毫米厚的 304L 不锈钢带螺旋焊成 20 米一段，外加加强环防止被大气压瘪；每个站的真空容积约 1 万立方米，压强约 10⁻⁹ 托（一万亿分之一个大气压）。抽气连续进行了 1,100 小时（约 40 天），之后把管子加热到 150–170 °C 烘烤 30 天赶出残余气体；汉福德 1998 年、利文斯顿 1999 年各抽了一次，此后一直保持真空。每条 4 公里管子上压着约 1.5 亿公斤的大气。干涉仪下面的钢筋混凝土地板厚 75 厘米。",
+     "sources": [
+      {
+       "t": "LIGO Lab 官网 · Ultra-High Vacuum",
+       "u": "https://www.ligo.caltech.edu/page/vacuum"
+      },
+      {
+       "t": "LIGO Lab 官网 · Facts",
+       "u": "https://www.ligo.caltech.edu/page/facts"
+      }
+     ],
+     "confidence": "高",
+     "note": "「约 1 万立方米」官网的表述指每个站。排名两种说法见 disputes。"
+    },
+    {
+     "n": 5,
+     "text": "镜子与悬挂：每面主反射镜（测试质量）是 40 公斤的熔石英圆柱，直径 34 厘米、厚 20 厘米，每 330 万个光子只吸收 1 个。镜子挂在四级摆的最下一级，整套悬挂系统重 360 公斤，最后一级用 0.4 毫米粗的熔石英丝吊着；上游的主动隔振平台先把振动压到 2×10⁻¹³ 米以下，悬挂再压低近 6 个数量级。官网说每面主镜造价约 200 万美元。",
+     "sources": [
+      {
+       "t": "LIGO Lab 官网 · Optics",
+       "u": "https://www.ligo.caltech.edu/page/optics"
+      },
+      {
+       "t": "LIGO Lab 官网 · Vibration Isolation",
+       "u": "https://www.ligo.caltech.edu/page/vibration-isolation"
+      },
+      {
+       "t": "LIGO Lab 官网 · Ultra-High Vacuum",
+       "u": "https://www.ligo.caltech.edu/page/vacuum"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 6,
+     "text": "激光与光路：波长 1,064 纳米的 Nd:YAG 激光。臂上的法布里–珀罗腔让光来回约 280 次，等效臂长约 1,120 公里；功率循环镜把光功率放大约 3,750 倍，设计上输入 200 瓦、臂内达到 750 千瓦。首次探测时（2015 年）实际输入约 20 瓦，分束镜处约 700 瓦。",
+     "sources": [
+      {
+       "t": "LIGO Lab 官网 · LIGO's Interferometer",
+       "u": "https://www.ligo.caltech.edu/page/ligos-ifo"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "LIGO Lab 官网 · Optics",
+       "u": "https://www.ligo.caltech.edu/page/optics"
+      }
+     ],
+     "confidence": "高",
+     "note": "规格写的「臂内约 100 千瓦」是 2015 年首次观测运行时的实际值（出自发现论文正文，本次未直接打开核对）；750 千瓦是设计值。"
+    },
+    {
+     "n": 7,
+     "text": "灵敏度的口径：GW150914 的峰值应变是 1.0×10⁻²¹，乘以 4 公里臂长，镜间距离的变化约 4×10⁻¹⁸ 米，约为质子直径（约 1.7×10⁻¹⁵ 米）的四百分之一。LIGO 官网给的仪器极限是「质子宽度的万分之一」，即约 10⁻¹⁹ 米；瑞典皇家科学院的说法是「比原子核小几千倍」。",
+     "sources": [
+      {
+       "t": "LIGO Scientific Collaboration & Virgo Collaboration, Observation of Gravitational Waves from a Binary Black Hole Merger, Phys. Rev. Lett. 116 (2016) 061102",
+       "u": "https://arxiv.org/abs/1602.03837"
+      },
+      {
+       "t": "LIGO Lab 官网 · Facts",
+       "u": "https://www.ligo.caltech.edu/page/facts"
+      },
+      {
+       "t": "LIGO 新闻稿《Gravitational Waves Detected 100 Years After Einstein's Prediction》（2016-02-11）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20160211"
+      },
+      {
+       "t": "瑞典皇家科学院新闻稿《The Nobel Prize in Physics 2017》（2017-10-03）",
+       "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2017-2/"
+      }
+     ],
+     "confidence": "高",
+     "note": "4×10⁻¹⁸ 米与「四百分之一」是用应变乘臂长算出来的，不是来源原文；质子直径取电荷半径 0.84 飞米的两倍。"
+    },
+    {
+     "n": 8,
+     "text": "造价：1990 年美国国家科学委员会批准建造时预计「接近 3 亿美元」；1994-11-18 批准的修订方案总额 3.654 亿美元，其中建造与相关研发 2.967 亿（原已批准的 2.12 亿加新增的 0.847 亿），1997–2001 财年的调试与运行 0.687 亿。Advanced LIGO 在 2008 年 3 月获批，国家科学基金会出资 2.0512 亿美元、为期 7 年，德国马普学会、英国 STFC 和澳大利亚研究理事会另有实物投入。到 2016 年初，国家科学基金会在 LIGO 上的累计投入约 11 亿美元（含建造、升级、运行和科研资助）。LIGO 1992 年获得的首笔经费，是当时国家科学基金会最大的一笔投资。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "AIP FYI《Good News for NSF's Laser Interferometer Gravitational-Wave Observatory》（1994-11-30）",
+       "u": "https://www.aip.org/fyi/1994/good-news-nsfs-laser-interferometer-gravitational-wave-observatory"
+      },
+      {
+       "t": "新闻稿《Advanced LIGO Project Funded by National Science Foundation》（2008-04-01，转载）",
+       "u": "https://fredbortz.scienceblog.com/15774/advanced-ligo-project-funded-by-national-science-foundation"
+      },
+      {
+       "t": "美国众议院科学委员会 2016-02-24 听证会章程（Hearing Charter）",
+       "u": "https://science.house.gov/sites/republicans.science.house.gov/files/documents/HHRG-114-SY-20160224-SD001.pdf"
+      },
+      {
+       "t": "LIGO 新闻稿《Gravitational Waves Detected 100 Years After Einstein's Prediction》（2016-02-11）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20160211"
+      }
+     ],
+     "confidence": "高",
+     "note": "均为当年价。规格里的「1994 年批准时 3.95 亿」与任务书里的「建造约 2.72 亿」本次没有找到一手出处，见 disputes。"
+    },
+    {
+     "n": 9,
+     "text": "来路：1962 年，苏联的 Gertsenshtein 与 Pustovoit 提出用迈克尔逊式干涉仪探测引力波。Joseph Weber 1965 年起用约 1.5 吨的铝棒做共振探测，1969 年宣布在相距 1,000 公里的两根棒上看到符合信号，到 1970 年代中期多数人认为无法重复。韦斯 1967 年演示了受散粒噪声限制的激光干涉仪，1972 年在麻省理工学院电子学研究实验室（RLE）季度进展报告第 105 期上发表 22 页的分析，逐项估算地震、热噪声、激光频率不稳等噪声，结论是要公里级的干涉仪。Weber 的学生 Robert Forward 在休斯研究实验室造出第一台原型干涉仪（臂长 8.5 米），观测 150 小时没有发现信号。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "J. L. Cervantes-Cota 等, A Brief History of Gravitational Waves, Universe 2 (2016) 22",
+       "u": "https://arxiv.org/abs/1609.09400"
+      },
+      {
+       "t": "LIGO / Caltech 新闻稿：2017 年诺贝尔物理学奖（2017-10-03）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20171003"
+      },
+      {
+       "t": "Gruber Foundation · 2016 Gruber Cosmology Prize",
+       "u": "https://gruber.yale.edu/prize/2016-gruber-cosmology-prize"
+      }
+     ],
+     "confidence": "高",
+     "note": "瑞典皇家科学院新闻稿把韦斯的噪声分析写成「1970 年代中期」，报告本身是 1972 年。Forward 的干涉仪年份：史述写 1971 年报告设计、1978 年发表结果。"
+    },
+    {
+     "n": 10,
+     "text": "立项：1975 年韦斯说服索恩，索恩在加州理工建组，1979 年从格拉斯哥请来 Ronald Drever；同年国家科学基金会开始资助两校的研发。1983 年 10 月两校提交「蓝皮书」，建议建两台相距数千公里、臂长 5 公里的干涉仪，预算不到 1 亿美元。1984 年 LIGO 成为加州理工与麻省理工的联合项目，由韦斯、Drever、索恩三人共同领导；三人意见不合，项目一再拖延，国家科学基金会要求改成单一负责人，加州理工的 Rochus Vogt 出任主任。1989 年 Vogt、Drever、Raab、索恩、韦斯提交建造提案，1990 年获国家科学委员会批准，臂长定为 4 公里；1992 年选定汉福德与利文斯顿。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "LIGO Lab 官网 · Timeline",
+       "u": "https://www.ligo.caltech.edu/page/timeline"
+      },
+      {
+       "t": "Gruber Foundation · 2016 Gruber Cosmology Prize",
+       "u": "https://gruber.yale.edu/prize/2016-gruber-cosmology-prize"
+      },
+      {
+       "t": "LIGO / Caltech 新闻稿：2017 年诺贝尔物理学奖（2017-10-03）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20171003"
+      },
+      {
+       "t": "J. L. Cervantes-Cota 等, A Brief History of Gravitational Waves, Universe 2 (2016) 22",
+       "u": "https://arxiv.org/abs/1609.09400"
+      }
+     ],
+     "confidence": "中",
+     "note": "Vogt 上任的年份：通行说法是 1987 年；史述写国家科学基金会 1986 年要求解散三人领导；瑞典皇家科学院的科学背景没有给年份。"
+    },
+    {
+     "n": 11,
+     "text": "巴里什接手：1994 年他由加州理工与国家科学基金会商定出任 LIGO 负责人。当年 7 月，参议院拨款小组委员会因一个站点「持续的管理问题」要求国家科学基金会提交进度报告和新的造价估算，并冻结 1995 财年经费，直到新的管理方案获批。修订方案把建造期从 4 年拉长到 7 年、增加人手和预备金。他把约 40 人的小组扩成上千人的国际合作，1997 年成立 LIGO 科学合作组（LSC，韦斯任首任发言人至 2003 年），并定下两步走：初代 LIGO 先验证技术，Advanced LIGO 才指望探测到。他 2005 年离任，去主持国际直线对撞机的设计。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "瑞典皇家科学院 2017 年科普背景《Cosmic chirps》",
+       "u": "https://www.kva.se/app/uploads/2017/10/popfyen17.pdf"
+      },
+      {
+       "t": "AIP FYI《Good News for NSF's Laser Interferometer Gravitational-Wave Observatory》（1994-11-30）",
+       "u": "https://www.aip.org/fyi/1994/good-news-nsfs-laser-interferometer-gravitational-wave-observatory"
+      },
+      {
+       "t": "LIGO / Caltech 新闻稿：2017 年诺贝尔物理学奖（2017-10-03）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20171003"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 12,
+     "text": "建造与初代运行：汉福德 1994 年底、利文斯顿 1995 年初动工，1999 年举行落成典礼，2002 年开始第一次科学运行，2006 年达到设计灵敏度。初代 LIGO 运行到 2010 年，没有探测到引力波。Advanced LIGO 的部件 2008 年开工制造，2010–2014 年安装，2015 年 9 月开始运行，目标是灵敏度提高 10 倍、可探测的空间体积扩大 1,000 倍。",
+     "sources": [
+      {
+       "t": "LIGO Lab 官网 · Timeline",
+       "u": "https://www.ligo.caltech.edu/page/timeline"
+      },
+      {
+       "t": "LIGO Lab 官网 · About",
+       "u": "https://www.ligo.caltech.edu/page/about"
+      },
+      {
+       "t": "J. L. Cervantes-Cota 等, A Brief History of Gravitational Waves, Universe 2 (2016) 22",
+       "u": "https://arxiv.org/abs/1609.09400"
+      },
+      {
+       "t": "新闻稿《Advanced LIGO Project Funded by National Science Foundation》（2008-04-01，转载）",
+       "u": "https://fredbortz.scienceblog.com/15774/advanced-ligo-project-funded-by-national-science-foundation"
+      }
+     ],
+     "confidence": "高",
+     "note": "任务书说的「六次科学运行」（S1 至 S6）是通行说法，各次起止日期本次没有逐一核。"
+    },
+    {
+     "n": 13,
+     "text": "首次探测：2015-09-14 09:50:45（协调世界时），信号先到利文斯顿，6.9 毫秒后到汉福德；约 0.2 秒内频率从 35 赫兹升到 250 赫兹，峰值应变 1.0×10⁻²¹，匹配滤波信噪比 24，误报率低于每 20.3 万年一次，显著性高于 5.1σ。源是约 13 亿光年（410 兆秒差距）外两个 36 和 29 倍太阳质量的黑洞并合成 62 倍太阳质量的黑洞，约 3 倍太阳质量转化为引力波。当时仪器还在工程运行阶段，离第一次正式观测运行开始还有 4 天；在线搜索程序约 3 分钟后发出警报，最先看到的是德国汉诺威马普引力物理研究所的博士后 Marco Drago。",
+     "sources": [
+      {
+       "t": "LIGO Scientific Collaboration & Virgo Collaboration, Observation of Gravitational Waves from a Binary Black Hole Merger, Phys. Rev. Lett. 116 (2016) 061102",
+       "u": "https://arxiv.org/abs/1602.03837"
+      },
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "瑞典皇家科学院 2017 年科普背景《Cosmic chirps》",
+       "u": "https://www.kva.se/app/uploads/2017/10/popfyen17.pdf"
+      },
+      {
+       "t": "J. L. Cervantes-Cota 等, A Brief History of Gravitational Waves, Universe 2 (2016) 22",
+       "u": "https://arxiv.org/abs/1609.09400"
+      },
+      {
+       "t": "LIGO 新闻稿《Gravitational Waves Detected 100 Years After Einstein's Prediction》（2016-02-11）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20160211"
+      }
+     ],
+     "confidence": "高",
+     "note": "LIGO 2016 年新闻稿把时间写成 09:51 UTC（取整）；到达时间差多数通俗材料写 7 毫秒。"
+    },
+    {
+     "n": 14,
+     "text": "公布与署名：结果 2016-02-11 公布，论文发表在《Physical Review Letters》116 卷 061102。Breakthrough 奖的口径是发现论文有 1,005 位作者；LIGO 当时的新闻稿说 LSC 有 1,000 多名科学家，来自美国和另外 14 个国家的 90 多所大学和研究机构。2025 年 LSC 的口径是 1,600 多人。",
+     "sources": [
+      {
+       "t": "LIGO 新闻稿《Gravitational Waves Detected 100 Years After Einstein's Prediction》（2016-02-11）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20160211"
+      },
+      {
+       "t": "Breakthrough Prize 新闻稿：Special Breakthrough Prize in Fundamental Physics（2016-05-02）",
+       "u": "https://breakthroughprize.org/News/32"
+      },
+      {
+       "t": "LIGO 科学合作组《LIGO-Virgo-KAGRA Collaboration successfully wraps up its fourth Observing Run》（2025-11-18）",
+       "u": "https://ligo.org/ligo-virgo-kagra-collaboration-successfully-wraps-up-its-fourth-observing-run/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 15,
+     "text": "盲注入：极少数人秘密往探测器里加进假信号，其余人不知情，按真信号走完全部分析流程。2007-09-21 的「Equinox Event」分析了约 18 个月，到 2009 年 3 月的合作组会议才揭晓。2010-09-16 的「Big Dog」（看上去来自大犬座）被分析了 6 个月，估计误报率约每 7,000 年一次，合作组写好了论文《Evidence for the Direct Detection of Gravitational Waves from a Black Hole Binary Coalescence》；2011-03-14 在加州阿卡迪亚的会议上，约 300 人在场、约 100 人远程，表决通过论文之后才打开信封，得知是注入的假信号。GW150914 出现时，团队首先核查的就是有没有人注入，日志记录是「没有任何瞬态注入」。",
+     "sources": [
+      {
+       "t": "LIGO 科学合作组《「Blind injection」stress-tests LIGO and Virgo's search for gravitational waves》",
+       "u": "https://ligo.org/blind-injection/"
+      },
+      {
+       "t": "J. Kanner & A. Weinstein《The Astrophysicists Who Faked It》，Nautilus 2016-10-27（两位作者是 LIGO 成员）",
+       "u": "https://nautil.us/the-cosmologists-who-faked-it-236171"
+      },
+      {
+       "t": "Physics World 书评《The ghost in the machine》（评 Harry Collins《Gravity's Ghost》，2011-06-06）",
+       "u": "https://physicsworld.com/a/the-ghost-in-the-machine/"
+      },
+      {
+       "t": "瑞典皇家科学院 2017 年科普背景《Cosmic chirps》",
+       "u": "https://www.kva.se/app/uploads/2017/10/popfyen17.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 16,
+     "text": "诺奖之外的奖项：2016 年 5 月，Special Breakthrough Prize in Fundamental Physics，300 万美元，Drever、索恩、韦斯三位创始人分 100 万，1,012 位贡献者（发现论文的 1,005 位作者加另外 7 人，其中有 Rochus Vogt）平分 200 万；2016 年 Gruber 宇宙学奖授予 Drever、索恩、韦斯和整个 LIGO 发现团队；2016 年邵逸夫天文学奖与 Kavli 天体物理学奖都授予 Drever、索恩、韦斯三人；2017 年 Bruno Rossi 奖授予 Gabriela González 与 LIGO 科学合作组。",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 新闻稿：Special Breakthrough Prize in Fundamental Physics（2016-05-02）",
+       "u": "https://breakthroughprize.org/News/32"
+      },
+      {
+       "t": "Gruber Foundation · 2016 Gruber Cosmology Prize",
+       "u": "https://gruber.yale.edu/prize/2016-gruber-cosmology-prize"
+      },
+      {
+       "t": "邵逸夫奖 · 2016 年天文学奖",
+       "u": "https://www.shawprize.org/laureates/2016-astronomy/"
+      },
+      {
+       "t": "Kavli Prize · 2016 Astrophysics",
+       "u": "https://www.kavliprize.org/prizes/astrophysics/2016"
+      },
+      {
+       "t": "美国天文学会高能天体物理分会 · Bruno Rossi Prize 历届得主",
+       "u": "https://head.aas.org/rossi/rossi.recip.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "2016 年这四个奖里都没有巴里什。"
+    },
+    {
+     "n": 17,
+     "text": "Ronald Drever（1931–2017）：格拉斯哥大学出身，先后造过 1 米和 10 米的干涉仪，在臂里用法布里–珀罗腔来加长光程，也是 Pound–Drever–Hall 激光稳频技术的发明者之一；1979 年到加州理工主持实验组。1992 年项目重组后他不再参与 LIGO。他在 2017 年 3 月去世，距诺奖公布约 7 个月。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会 2017 年科学背景《The Laser Interferometer Gravitational-Wave Observatory and the first direct observation of gravitational waves》",
+       "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+      },
+      {
+       "t": "瑞典皇家科学院 2017 年科普背景《Cosmic chirps》",
+       "u": "https://www.kva.se/app/uploads/2017/10/popfyen17.pdf"
+      },
+      {
+       "t": "Kavli Prize · 2016 Astrophysics",
+       "u": "https://www.kavliprize.org/prizes/astrophysics/2016"
+      },
+      {
+       "t": "J. L. Cervantes-Cota 等, A Brief History of Gravitational Waves, Universe 2 (2016) 22",
+       "u": "https://arxiv.org/abs/1609.09400"
+      },
+      {
+       "t": "LIGO / Caltech 新闻稿：2017 年诺贝尔物理学奖（2017-10-03）",
+       "u": "https://www.ligo.caltech.edu/news/ligo20171003"
+      },
+      {
+       "t": "邵逸夫奖 · 2016 年天文学奖",
+       "u": "https://www.shawprize.org/laureates/2016-astronomy/"
+      }
+     ],
+     "confidence": "高",
+     "note": "去世的具体日期（通行说法是 2017-03-07）本次只核到「2017 年 3 月」。"
+    },
+    {
+     "n": 18,
+     "text": "近况：第四次观测运行 O4 从 2023-05-24 到 2025-11-18，约两年半，是历次最长；实时发布的候选信号约 250 个。前三次运行共 90 个事例；O4 第一段分析出 128 个，星表里的确认事例达到 218 个，另有 173 个 O4 候选还在分析，合计 391 个。2025-01-14 的 GW250114 由两台 LIGO 探测器记录，信噪比 80，是迄今最清晰的一次，两个黑洞各约 33.6 和 32.2 倍太阳质量；用它检验了霍金的黑洞面积定理（并合后视界面积不减小），论文 2025-09-10 发表于《Physical Review Letters》135 卷 111403。下一次观测计划在 2026 年夏末或秋初开始，为期约 6 个月。",
+     "sources": [
+      {
+       "t": "LIGO 科学合作组《LIGO-Virgo-KAGRA Collaboration successfully wraps up its fourth Observing Run》（2025-11-18）",
+       "u": "https://ligo.org/ligo-virgo-kagra-collaboration-successfully-wraps-up-its-fourth-observing-run/"
+      },
+      {
+       "t": "LIGO Lab 新闻（2025-11-18）：O4 结束",
+       "u": "https://www.ligo.caltech.edu/news/ligo20251118"
+      },
+      {
+       "t": "LIGO 科学合作组《GW250114: 10 years of gravitational-wave astronomy》",
+       "u": "https://ligo.org/detections/gw250114-10-years-of-gravitational-wave-astronomy/"
+      },
+      {
+       "t": "GW250114: Testing Hawking's Area Law and the Kerr Nature of Black Holes, Phys. Rev. Lett. 135 (2025) 111403（摘要）",
+       "u": "https://strathprints.strath.ac.uk/94252"
+      }
+     ],
+     "confidence": "高",
+     "note": "391 是 218 加 173 的算术和，官方新闻稿没有直接写这个总数；LIGO Lab 2026 年 4 月的说法是「已确认 200 多个」。"
+    },
+    {
+     "n": 19,
+     "text": "LIGO-India：2026-04-23 在印度马哈拉施特拉邦欣戈利县的 Aundha 破土动工，场地 174 英亩，设计与美国两台相同（4 公里臂长），由印度政府出资，加州理工与 LIGO 实验室提供关键部件、设计和培训，目标是 2030 年开始观测。",
+     "sources": [
+      {
+       "t": "LIGO Lab 新闻（2026-04-23）：LIGO-India 破土动工",
+       "u": "https://www.ligo.caltech.edu/news/ligo20260423"
+      }
+     ],
+     "confidence": "中",
+     "note": "只有 LIGO Lab 一个来源。"
+    },
+    {
+     "n": 20,
+     "text": "环境噪声的实例：2017 年 7 月，汉福德的麦克风传感器录到敲击声，查下来是渡鸦在啄一条冷却管路上结的霜（霜上留有啄痕，还当场拍到一只），改了管路不再结冰后消失；此事由 LIGO 实验室的 Beverly Berger 在 2018 年 4 月的美国物理学会会议上报告。官网列举的其他干扰源：附近公路的车流、员工沿臂骑自行车、几百英里外的海浪、大陆另一侧的天气、风、附近的农事活动、地球上几乎每一次较大的地震。",
+     "sources": [
+      {
+       "t": "Science News：Emily Conover《How ravens caused a LIGO data glitch》（2018-04-18）",
+       "u": "https://www.sciencenews.org/article/how-ravens-caused-ligo-data-glitch"
+      },
+      {
+       "t": "LIGO Lab 官网 · Vibration Isolation",
+       "u": "https://www.ligo.caltech.edu/page/vibration-isolation"
+      },
+      {
+       "t": "LIGO Lab 官网 · FAQ",
+       "u": "https://www.ligo.caltech.edu/page/faq"
+      }
+     ],
+     "confidence": "高",
+     "note": "报道原文说的是「与冷却系统相连的管子」；「液氮管」是通行转述。"
+    },
+    {
+     "n": 21,
+     "text": "Kavli 奖的介绍说，韦斯起初是在课上讲不清 Weber 的共振棒探测器，才转而去想用干涉仪的办法；他 1972 年的结果是「非正式发表」的，后来成了 LIGO 的蓝本。",
+     "sources": [
+      {
+       "t": "Kavli Prize · 2016 Astrophysics",
+       "u": "https://www.kavliprize.org/prizes/astrophysics/2016"
+      },
+      {
+       "t": "Gruber Foundation · 2016 Gruber Cosmology Prize",
+       "u": "https://gruber.yale.edu/prize/2016-gruber-cosmology-prize"
+      }
+     ],
+     "confidence": "中",
+     "note": ""
+    },
+    {
+     "n": 22,
+     "text": "一条中国线索：李政道研究所官网的第一届国际学术咨询委员会名单里有 Barry Barish（加州理工）。",
+     "sources": [
+      {
+       "t": "李政道研究所官网 · 第一届国际学术咨询委员会名单",
+       "u": "https://tdli.sjtu.edu.cn/about/organization/international-advisory-committee/209"
+      }
+     ],
+     "confidence": "中",
+     "note": ""
+    }
+   ],
+   "disputes": [
+    "1994 年的预算：规格写「批准时 3.95 亿美元」（维基百科口径）；当时 AIP 的记录是 3.654 亿美元（建造与研发 2.967 亿 + 调试运行 0.687 亿）；瑞典皇家科学院科学背景说 1990 年批准时预计「接近 3 亿美元」；任务书提到的「建造约 2.72 亿」本次没有找到出处。",
+    "Vogt 出任主任的年份：通行说法 1987 年；Cervantes-Cota 等的史述写国家科学基金会 1986 年要求解散三人领导并任命 Vogt；瑞典皇家科学院科学背景不给年份。",
+    "法布里–珀罗腔的倍数：LIGO 官网干涉仪页写约 280 次往返、等效 1,120 公里；官网光学页写约 300 次反射；规格写 1,200 公里；瑞典皇家科学院写「超过 1,000 公里」。",
+    "臂内光功率：设计值 750 千瓦；2015 年首次探测时约 100 千瓦（规格的数字，出自发现论文正文，本次未直接核）。",
+    "「能测到多小」的口径：LIGO 官网写质子宽度的万分之一（约 10⁻¹⁹ 米，仪器极限）；瑞典皇家科学院写比原子核小几千倍；GW150914 的实际臂长变化约 4×10⁻¹⁸ 米（应变乘臂长的算术结果），约质子直径的四百分之一。",
+    "真空系统的排名：LIGO 官网 Facts 页写「世界第三大」（排在 NASA 的空间模拟舱和大型强子对撞机之后）；官网真空页写只有大型强子对撞机超过它。",
+    "GW150914 的时刻：论文写 09:50:45 UTC；2016 年新闻稿写 09:51 UTC。两站时间差：科学背景 6.9 毫秒，通俗材料 7 毫秒。",
+    "发现论文作者数：Breakthrough 奖写 1,005 位；通俗说法「约 1,000 人」。",
+    "韦斯噪声分析的年代：报告是 1972 年；瑞典皇家科学院新闻稿与科普稿写「1970 年代中期」。",
+    "Advanced LIGO 的造价：2008 年新闻稿 2.0512 亿美元（国家科学基金会部分）；国会听证材料写「2 亿多美元」。",
+    "事例总数：218（星表已确认）加 173（O4 余下候选）等于 391；LIGO Lab 2026 年 4 月写「已确认 200 多个」。"
+   ],
+   "todo": [
+    "1990–1992 年国会与天文学界对 LIGO 的争议没有查到一手材料（只核到 1994 年参议院拨款小组委员会对管理问题的质疑和冻结经费）。",
+    "利文斯顿的伐木与卡车震动、「为减少卡车震动重铺公路」、「一个人在几米内走动就接近噪声底」三条都没有找到出处，建议不用或标为传说；官网只列了车流、骑车、海浪、地震等干扰源。",
+    "巴里什自述「冒名顶替综合征」的出处没有找到。",
+    "Drever 去世的具体日期（2017-03-07）、Vogt 上任的准确年月、巴里什 1994 年上任的月份未核。",
+    "初代 LIGO 六次科学运行（S1–S6）的各自起止日期未核。",
+    "初代 LIGO「建造费 2.72 亿美元」的口径没有找到出处。",
+    "束流管钢材除氢与烘烤电流等细节没有查到（官网只写 150–170 °C、30 天）。",
+    "韦斯在 COBE 的职务（科学工作组主席）由 B 代理核。"
+   ]
+  },
+  {
+   "id": "icecube",
+   "prize": {
+    "year": 2026,
+    "laureates": [
+     {
+      "zh": "弗朗西斯·哈尔岑",
+      "en": "Francis Halzen",
+      "life": "1944–",
+      "share": "全奖",
+      "role": "理论物理学家。1988 年与 John Learned 提出把极地冰当中微子探测器，推动建成 AMANDA 与 IceCube，2001 年起任 IceCube 首席科学家。"
+     }
+    ],
+    "citation_en": "for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin",
+    "citation_zh": "表彰他对冰立方中微子天文台的决定性贡献，以及发现源自天体的高能中微子",
+    "citation_source": {
+     "t": "瑞典皇家科学院新闻稿《Elusive particles from the universe captured at the South Pole》（2026-10-06）",
+     "u": "https://www.kva.se/en/news/the-nobel-prize-in-physics-2026/"
+    },
+    "press_title_en": "Elusive particles from the universe captured at the South Pole",
+    "press_title_zh": "在南极点捕获来自宇宙的难以捉摸的粒子",
+    "announced": "2026-10-06",
+    "amount": "1,200 万瑞典克朗",
+    "ceremony": "2026-12-10，斯德哥尔摩"
+   },
+   "apparatus": {
+    "zh": "冰立方中微子天文台",
+    "en": "IceCube Neutrino Observatory",
+    "years": "1988 设想 / 2004–2010 建 / 2013 发现",
+    "place_zh": "南极点冰盖之下（美国阿蒙森–斯科特南极站旁）",
+    "lat": -89.99,
+    "lon": -63.45
+   },
+   "claim": "1960 年，马尔可夫（Moisey Markov）提出：在深水里布光传感器，靠切伦科夫光探测中微子。宇宙线 1912 年发现，源头不明；中微子不带电、不被遮挡，能直接指回源头，但流量极低，要立方公里的透明介质才看得到。IceCube 要回答：宇宙里有没有高能中微子源，在哪。",
+   "brief": [
+    "体积：约 1 立方公里、10 亿吨冰。这么大的探测器，一年认得出的天体中微子估计也只有约 100 个。",
+    "深度：传感器全部放在 1,450 米以下。浅处的冰有气泡，光走不到 1 米就散掉；约 1,400 米以下气泡被压没，光能走 100 米以上。",
+    "计时与功耗：信号在模块里就地数字化，定时指标 5 纳秒（实测约 2 纳秒）；每个模块限 5 瓦，因为发电的油要靠飞机运进来。",
+    "可靠性：模块冻进冰里就再也取不出来，设计要求 15 年后仍有 90% 存活。",
+    "工期：每年只有 11 月到次年 2 月能施工，一个 2,500 米深的孔要在 2 天内钻完；所有设备都要拆成能装进 LC-130 运输机的模块。"
+   ],
+   "scale": [
+    {
+     "k": "阵列",
+     "v": "86 根缆 × 60 个光学模块 = 冰下 5,160 个",
+     "note": "加上冰面 IceTop 的 324 个，全台 5,484 个",
+     "f": [
+      6,
+      7
+     ]
+    },
+    {
+     "k": "体积与质量",
+     "v": "约 1 立方公里、约 10 亿吨冰",
+     "note": "仪器覆盖的冰体，不是有效体积",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "深度",
+     "v": "冰下 1,450–2,450 米",
+     "note": "南极点冰盖厚约 2,810 米",
+     "f": [
+      6,
+      16
+     ]
+    },
+    {
+     "k": "间距",
+     "v": "缆间距 125 米，模块间距 17 米",
+     "note": "中心 8 根 DeepCore 加密缆：平均 72 米、7 米",
+     "f": [
+      6,
+      7
+     ]
+    },
+    {
+     "k": "钻孔",
+     "v": "直径 60 厘米、深约 2,500 米；热水钻约 5 兆瓦",
+     "note": "热功率 4.7 兆瓦加 0.3 兆瓦电力；每分钟约 760 升、88 °C 的水",
+     "f": [
+      10
+     ]
+    },
+    {
+     "k": "每孔耗时与耗油",
+     "v": "首孔 57 小时，平均约 48 小时，最快 27 小时；平均约 1.8 万升燃油",
+     "note": "官网口径 4,800 加仑（18,169 升）",
+     "f": [
+      11
+     ]
+    },
+    {
+     "k": "工期",
+     "v": "7 个南极夏季，各季下缆 1、8、13、18、19、20、7 根",
+     "note": "第一根 2005-01-29，最后一根 2010-12-18",
+     "f": [
+      12
+     ]
+    },
+    {
+     "k": "造价",
+     "v": "2.795 亿美元",
+     "note": "建造费，2004–2010 年当年价，不含运行；美国国家科学基金会 2.421 亿，比利时、德国、瑞典合计 0.374 亿",
+     "f": [
+      13
+     ]
+    },
+    {
+     "k": "人",
+     "v": "约 450 人、58 家机构、14 个国家",
+     "note": "合作组成员数（官网 2025-01 口径）；得主 1 人",
+     "f": [
+      20
+     ]
+    }
+   ],
+   "approach": [
+    "介质不造，用现成的。深海方案 DUMAND 的第一根缆下水不久就失效，1995 年终止。哈尔岑与 Learned 1988 年改提南极冰：冰是固体，能当施工平台，南极点有现成的科考站和航线。代价是冰对光的散射比海水强。",
+    "先造小的。AMANDA 头 4 根缆放在 800–1,000 米，气泡让光只能走几十厘米；1995–96 年改到 1,500–2,000 米才看清。做到 19 根缆、测到大气中微子之后，立方公里的方案才拿到钱。",
+    "信号在模块里就地数字化。AMANDA 把模拟信号经长电缆或光纤送上冰面；IceCube 让每个模块自带采样芯片和时钟，用铜双绞线传数据。方案先在 AMANDA 第 18 号缆上装约 40 个样机验证。",
+    "把预备金放在范围里。2004 年定基线时把 80 根缆减到 70 根，腾出 22% 的预备金；钻井一年比一年快，后来恢复到 80 根，再加国外伙伴出资的 6 根，最终 86 根，按原定工期和预算完工。"
+   ],
+   "history": [
+    {
+     "d": "1960",
+     "t": "马尔可夫提出在深水中用切伦科夫光探测中微子；Greisen、Reines 同年有类似设想"
+    },
+    {
+     "d": "1975–1995",
+     "t": "夏威夷深海的 DUMAND 计划：1975 年起开研讨会，1993 年第一根缆失效，1995 年终止"
+    },
+    {
+     "d": "1987 秋",
+     "t": "哈尔岑在堪萨斯大学听说苏联人在南极冰里用无线电找中微子（一说 1988 年）"
+    },
+    {
+     "d": "1988-06",
+     "t": "哈尔岑与 John Learned 在波兰的会议上提出用极地冰做探测器"
+    },
+    {
+     "d": "1990-08",
+     "t": "Morse 与 Miller 在格陵兰冰孔里放下光电倍增管做第一次试验"
+    },
+    {
+     "d": "1993-12-24",
+     "t": "AMANDA 第一根缆在南极点下放，深 800–1,000 米；发现浅层冰里全是气泡"
+    },
+    {
+     "d": "1995–96",
+     "t": "4 根缆下到 1,500–2,000 米，冰是透明的"
+    },
+    {
+     "d": "1999-11",
+     "t": "向美国国家科学基金会提交 IceCube 提案；AMANDA 第 18 号缆试装数字模块"
+    },
+    {
+     "d": "2000-01",
+     "t": "AMANDA-II 完成：19 根缆、677 个模块"
+    },
+    {
+     "d": "2002–2004",
+     "t": "2002 年 3 月启动经费获批；2004 年 4 月建造基线获批"
+    },
+    {
+     "d": "2005-01-29",
+     "t": "IceCube 第一根缆下放（这一季只完成 1 根，首孔钻了 57 小时）"
+    },
+    {
+     "d": "2010-12-18",
+     "t": "第 86 根、也是最后一根缆下放；2011-05-20 全阵列开始取数"
+    },
+    {
+     "d": "2013-11-22",
+     "t": "《Science》发表 28 个高能事例（含 Bert 与 Ernie），4σ"
+    },
+    {
+     "d": "2017-09-22",
+     "t": "IceCube-170922A 指向耀变体 TXS 0506+056；2018-07-12 公布"
+    },
+    {
+     "d": "2021–2023",
+     "t": "格拉肖共振事例（2021-03）、NGC 1068（2022）、银河系平面（2023-06）"
+    },
+    {
+     "d": "2025-12 至 2026-01",
+     "t": "IceCube Upgrade 钻 6 孔、下 6 根加密缆；2026-03-11 其中 87 号缆失联"
+    },
+    {
+     "d": "2026-10-06",
+     "t": "哈尔岑独得诺贝尔物理学奖"
+    }
+   ],
+   "people": [
+    {
+     "zh": "",
+     "en": "John Learned",
+     "r": "夏威夷大学，DUMAND 成员；1988 年与哈尔岑合写南极冰方案的论文"
+    },
+    {
+     "zh": "",
+     "en": "Robert Morse",
+     "r": "威斯康星大学；1990 年在格陵兰做第一次冰孔光学试验"
+    },
+    {
+     "zh": "",
+     "en": "P. Buford Price / Doug Lowder / Steve Barwick",
+     "r": "伯克利一组人，最早把光电倍增管放进冰里；Barwick 设计了第一版 AMANDA"
+    },
+    {
+     "zh": "",
+     "en": "Bruce Koci",
+     "r": "冰钻工程师，AMANDA 热水钻的开创者；2006 年去世"
+    },
+    {
+     "zh": "",
+     "en": "Per Olof Hulth",
+     "r": "1943–2015，斯德哥尔摩大学；1992 年带瑞典团队加入，IceCube 首任发言人"
+    },
+    {
+     "zh": "",
+     "en": "Christian Spiering",
+     "r": "DESY 蔡森分部；做出 AMANDA 的数据采集电子学，后来写了这一领域的史述"
+    },
+    {
+     "zh": "",
+     "en": "David Nygren / Robert Stokstad",
+     "r": "伯克利实验室；提出并推动「模块内就地数字化」的数字光学模块"
+    },
+    {
+     "zh": "",
+     "en": "Jim Yeck",
+     "r": "IceCube 项目主任，管建造期的范围、进度与预算"
+    },
+    {
+     "zh": "",
+     "en": "Albrecht Karle",
+     "r": "威斯康星大学；建造期主管科学与仪器的副主任，现为 Upgrade 首席科学家"
+    },
+    {
+     "zh": "",
+     "en": "Thomas Gaisser",
+     "r": "1940–2022，特拉华大学；IceTop 的灵魂人物，2007–2011 年任发言人"
+    },
+    {
+     "zh": "石原安野",
+     "en": "Aya Ishihara",
+     "r": "千叶大学；在极高能中微子分析里找到 Bert 与 Ernie"
+    },
+    {
+     "zh": "",
+     "en": "Erin O'Sullivan",
+     "r": "乌普萨拉大学；2025 年 5 月起任合作组发言人"
+    }
+   ],
+   "awards": [
+    "2013 年《Physics World》年度突破：IceCube 合作组（首次观测到宇宙高能中微子）",
+    "2015 年巴尔赞奖（天体粒子物理）与欧洲物理学会 Cocconi 奖：哈尔岑",
+    "2021 年美国天文学会 Bruno Rossi 奖：哈尔岑与 IceCube 合作组；同年 Homi Bhabha 奖章：哈尔岑",
+    "2026 年度美国物理学会杰出研究成就奖章（APS Medal，2025-12 公布）：哈尔岑；此前还有 2018 年 Bruno Pontecorvo 奖、2019 年 Yodh 奖"
+   ],
+   "anecdotes": [
+    {
+     "t": "1987 年秋哈尔岑去堪萨斯大学做报告，冰川学家 Ed Zeller 告诉他，苏联人在南极东方站用无线电天线找中微子。他和两位同事算下来阈值太高，才想到改用光。他后来写道，那是「最难的一道 Jackson 习题」，又自嘲「毕竟我是个理论家，写篇论文就满足了」。",
+     "kind": "当事人自述",
+     "f": [
+      3,
+      27
+     ]
+    },
+    {
+     "t": "1993 年平安夜，AMANDA 第一根缆下放，10 个人在零下 30 °C 里干了 17 个小时。两天后钻孔回冻，孔内压力升到周围的约 5 倍，压坏了一只管子和几个接头；之后改成慢慢回冻。等数据出来才发现，800–1,000 米的冰里全是气泡。",
+     "kind": "当事人自述",
+     "f": [
+      27,
+      5
+     ]
+    },
+    {
+     "t": "1991 年南极点的第一台热水钻叫 Bucky-1，加热功率只有 0.5 兆瓦，想钻到 1,000 米时卡在孔里，至今还在冰下。钻井工程师 Bruce Koci 的口头禅是「别读书，动手干」。",
+     "kind": "著作",
+     "f": [
+      28
+     ]
+    },
+    {
+     "t": "发现时能量最高的两个事例被组里的博士生叫作 Bert 和 Ernie，名字取自儿童节目《芝麻街》；2016 年记录到的格拉肖共振事例则被叫作 Hydrangea（绣球花）。",
+     "kind": "官方史",
+     "f": [
+      17,
+      19
+     ]
+    },
+    {
+     "t": "得奖当天哈尔岑对 Physics Today 说：这是一场不保证成功的冒险，我们运气好，才闯过各种难关。他还说自己正在写一份提案，希望这个奖能帮它获批。在更早的口述史里他说，几次想把首席科学家的差事交出去，都没成。",
+     "kind": "当事人自述",
+     "f": [
+      26,
+      29
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "用现成的冰当靶、介质和支架；先用 AMANDA 摸清冰（浅处有气泡，改到 1,500 米以下）；模块冻进去就修不了，所以逐个严格测试，5,484 个里失效不到 100 个。",
+    "principle": "把环境变成仪器；修不了的部件靠出厂测试。",
+    "engineer": "先把环境量清楚再定方案；上线后改不了的部件，把钱花在出厂前的测试上；运输和施工窗口从第一天就写进设计约束。",
+    "public": "手头现成的条件先用起来；做了就没法返工的事，动手前在小处多试几遍。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "criteria_note": "① 颁奖词直接写了 IceCube Neutrino Observatory；② 1 立方公里、10 亿吨的探测介质，5,160 个模块埋在 1,450–2,450 米；③ 选址、先 AMANDA 后 IceCube、范围与预备金、钻井逐年提速都有一手记录；④ 冰下天文台，十二座里唯一建在南极的。",
+   "lineage": "探测原理与神冈、超级神冈相同（切伦科夫光加滨松的光电倍增管），只是把水罐换成天然冰；前身是 AMANDA，后继是 IceCube Upgrade 与拟议中的 IceCube-Gen2，南海的海铃计划走的是同一条路。",
+   "metrics": {
+    "size_m": 1000,
+    "size_what": "阵列的高度（1,450–2,450 米）与水平跨度，各约 1 公里",
+    "mass_t": 1000000000,
+    "mass_what": "仪器覆盖的冰，约 10 亿吨（1 立方公里）",
+    "depth_m": 2450,
+    "temp_K": null,
+    "cost": {
+     "amount": 279500000,
+     "currency": "USD",
+     "year": 2010,
+     "what": "建造费（NSF MREFC 口径，2004–2010 年当年价合计，不含运行；NSF 2.421 亿 + 比利时、德国、瑞典 0.374 亿）"
+    },
+    "people": {
+     "n": 450,
+     "what": "合作组成员数（官网 2025-01 口径，58 家机构、14 国）；2012 年建成时约 250 人"
+    },
+    "t_idea": 1988,
+    "t_build": 2004,
+    "t_first": 2005,
+    "t_result": 2013,
+    "t_prize": 2026
+   },
+   "metrics_note": "depth_m 取阵列底深；t_first 取第一根缆入冰并取数的 2005 年（全阵列 2011-05 取数）；temp_K 不适用（冰温约 232–254 K，不是低温装置）。",
+   "drawing": [
+    {
+     "what": "阵列顶部深度（最浅一层模块）",
+     "value": 1450,
+     "unit": "米",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "阵列底部深度（最深一层模块）",
+     "value": 2450,
+     "unit": "米",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "南极点冰盖厚度（冰面到基岩）",
+     "value": 2810,
+     "unit": "米",
+     "note": "Price 等 2002；常见示意图标 2,820 米",
+     "f": [
+      16
+     ]
+    },
+    {
+     "what": "冰面海拔",
+     "value": 2835,
+     "unit": "米",
+     "f": [
+      16
+     ]
+    },
+    {
+     "what": "阵列水平范围：六边形，占地约 1 平方公里，对边约 1 公里",
+     "value": 1000,
+     "unit": "米",
+     "note": "由 125 米间距的三角格点排成",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "缆间距（水平）",
+     "value": 125,
+     "unit": "米",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "同一根缆上的模块间距（竖直）",
+     "value": 17,
+     "unit": "米",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "每根缆的模块数 / 缆数",
+     "value": "60 / 86",
+     "unit": "个 / 根",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "钻孔直径",
+     "value": 0.6,
+     "unit": "米",
+     "f": [
+      10
+     ]
+    },
+    {
+     "what": "钻孔深度",
+     "value": 2500,
+     "unit": "米",
+     "f": [
+      10
+     ]
+    },
+    {
+     "what": "光学模块玻璃球外径",
+     "value": 0.33,
+     "unit": "米",
+     "note": "13 英寸；内装 10 英寸（25 厘米）光电倍增管",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "含尘层（光学性质较差）深度范围",
+     "value": "2,000–2,100",
+     "unit": "米",
+     "f": [
+      6
+     ]
+    },
+    {
+     "what": "DeepCore：中心 8 根缆，平均缆间距 72 米，下部 50 个模块间距 7 米",
+     "value": 72,
+     "unit": "米",
+     "f": [
+      7
+     ]
+    },
+    {
+     "what": "IceTop：冰面 81 个站、162 个冰罐，同站两罐相距 10 米",
+     "value": 10,
+     "unit": "米",
+     "f": [
+      7
+     ]
+    },
+    {
+     "what": "AMANDA（前身）：头 4 根缆 800–1,000 米，后来的缆 1,500–2,000 米",
+     "value": "800–2,000",
+     "unit": "米",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "Upgrade 新缆：位于阵列中心底部，水平间距 20–30 米，模块间距 3 米",
+     "value": "20–30 / 3",
+     "unit": "米",
+     "f": [
+      21
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "2026-10-06，瑞典皇家科学院宣布 2026 年诺贝尔物理学奖授予威斯康星大学麦迪逊分校的 Francis Halzen 一人，奖金 1,200 万瑞典克朗；颁奖词「for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin」；新闻稿标题「Elusive particles from the universe captured at the South Pole」。诺贝尔物理学委员会主席 Mark Pearce 的评语：哈尔岑领导了一支由研究者和工程师组成的国际团队，给了我们一台了不起的仪器。",
+     "sources": [
+      {
+       "t": "瑞典皇家科学院新闻稿《Elusive particles from the universe captured at the South Pole》（2026-10-06）",
+       "u": "https://www.kva.se/en/news/the-nobel-prize-in-physics-2026/"
+      },
+      {
+       "t": "IceCube 官网新闻《Francis Halzen, IceCube principal investigator, wins 2026 Physics Nobel Prize》（2026-10-06）",
+       "u": "https://icecube.wisc.edu/news/awards/2026/10/francis-halzen-icecube-principal-investigator-wins-2026-physics-nobel-prize/"
+      },
+      {
+       "t": "Physics Today：Laura Fattaruso《Francis Halzen to Receive 2026 Nobel Prize in Physics for Cosmic Neutrino Detection》（2026-10-06）",
+       "u": "https://physicstoday.aip.org/news/francis-halzen-to-receive-2026-nobel-prize-in-physics-for-cosmic-neutrino-detection"
+      }
+     ],
+     "confidence": "高",
+     "note": "Physics Today 同文指出：上一次物理学奖一人独得是 1992 年。"
+    },
+    {
+     "n": 2,
+     "text": "哈尔岑 1944 年生于比利时蒂嫩（Tienen）；1966 年硕士、1969 年博士，均在鲁汶大学；1969–1971 年在 CERN；1971 年到威斯康星大学麦迪逊分校做研究助理，1972 年任助理教授，1977 年任教授；2001 年起任 IceCube 首席科学家（PI）。他是理论物理学家，博士论文做强子的对称性破缺。",
+     "sources": [
+      {
+       "t": "瑞典皇家科学院新闻稿《Elusive particles from the universe captured at the South Pole》（2026-10-06）",
+       "u": "https://www.kva.se/en/news/the-nobel-prize-in-physics-2026/"
+      },
+      {
+       "t": "哈尔岑个人简历（2021-11 版，IceCube 服务器）",
+       "u": "https://user-web.icecube.wisc.edu/~halzen/CV/FH_longCV_11_12_2021.pdf"
+      },
+      {
+       "t": "Physics Today：Laura Fattaruso《Francis Halzen to Receive 2026 Nobel Prize in Physics for Cosmic Neutrino Detection》（2026-10-06）",
+       "u": "https://physicstoday.aip.org/news/francis-halzen-to-receive-2026-nobel-prize-in-physics-for-cosmic-neutrino-detection"
+      },
+      {
+       "t": "WIPAC / APS《Prof. Francis Halzen honored with the 2026 APS Medal》（2025-12-08）",
+       "u": "https://wipac.wisc.edu/prof-francis-halzen-honored-with-the-2026-aps-medal"
+      }
+     ],
+     "confidence": "高",
+     "note": "瑞典皇家科学院写「PhD 1969 from KU Leuven」；简历写「University of Louvain」。到威斯康星的年份：简历写 1971 年任研究助理、1972 年任助理教授；APS 的报道说 1971 年原本只是 6 个月的访问。"
+    },
+    {
+     "n": 3,
+     "text": "设想的来历：1987 年秋，哈尔岑在堪萨斯大学做报告，冰川学家 Ed Zeller 告诉他苏联人在南极东方站用无线电天线在冰里找中微子。哈尔岑与 Todor Stanev、Enrique Zas 计算后认为无线电方法的能量阈值太高，转而考虑用光。1988 年 6 月，他与夏威夷大学的 John Learned（DUMAND 成员）在波兰的一次宇宙线会议上提出：把极地冰同时当靶和切伦科夫介质。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "F. Halzen《Ice Fishing for Neutrinos》（哈尔岑本人写的 AMANDA 早期回顾，约 1995）",
+       "u": "http://icecube.berkeley.edu/amanda/ice-fishing.html"
+      },
+      {
+       "t": "C. Spiering, Towards High-Energy Neutrino Astronomy. A Historical Review, Eur. Phys. J. H 37 (2012) 515",
+       "u": "https://arxiv.org/abs/1207.4952"
+      },
+      {
+       "t": "瑞典皇家科学院科普背景《Ice at the South Pole reveals cosmic particle accelerators》（2026-10-06）",
+       "u": "https://www.kva.se/en/prizes/nobel-prizes/ice-at-the-south-pole-reveals-cosmic-particle-accelerators/"
+      }
+     ],
+     "confidence": "高",
+     "note": "堪萨斯之行的年份两说：瑞典皇家科学院科学背景写 1987 年秋，Spiering 的史述写 1988 年。"
+    },
+    {
+     "n": 4,
+     "text": "前史：1960 年，Moisey Markov 提出在深湖或深海里布探测器、用切伦科夫光定出带电粒子方向来探测中微子；同年 Kenneth Greisen 与 Frederick Reines 也各自提出类似设想。1975 年起 Reines、Learned 等人开 DUMAND 研讨会，计划在夏威夷大岛外 30 公里、水深 4.8 公里处布阵；1987 年放过一根 7 只管子的试验缆，1993 年下的第一根正式缆因耐压壳渗漏和接线盒短路很快失效，1995 年项目终止。贝加尔湖的阵列 1993 年 3–4 月先下了 3 根缆、36 个模块。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "C. Spiering, Towards High-Energy Neutrino Astronomy. A Historical Review, Eur. Phys. J. H 37 (2012) 515",
+       "u": "https://arxiv.org/abs/1207.4952"
+      },
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 5,
+     "text": "AMANDA（Antarctic Muon and Neutrino Detector Array）：1990 年 8 月先在格陵兰的冰孔里试放光电倍增管；1991–92 年在南极点试钻；1993–94 年夏季下了头 4 根缆、80 个模块，深 800–1,000 米，结果冰里约 50 微米的气泡把光散射得只能走 40–80 厘米；1995–96 年把 4 根缆放到 1,500–2,000 米，气泡消失；到 2000 年 1 月共 19 根缆、677 个模块；2001 年 3 月发表大气中微子结果；2009 年停用。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "C. Spiering, Towards High-Energy Neutrino Astronomy. A Historical Review, Eur. Phys. J. H 37 (2012) 515",
+       "u": "https://arxiv.org/abs/1207.4952"
+      },
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      },
+      {
+       "t": "F. Halzen《Ice Fishing for Neutrinos》（哈尔岑本人写的 AMANDA 早期回顾，约 1995）",
+       "u": "http://icecube.berkeley.edu/amanda/ice-fishing.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "格陵兰试验：Bowen 的书与哈尔岑自述写 1990 年，瑞典皇家科学院科学背景写 1991 年。浅层散射长度：科学背景写「不到 50 厘米」，Spiering 写 830 米处 40 厘米、970 米处 80 厘米。"
+    },
+    {
+     "n": 6,
+     "text": "IceCube 冰下阵列：86 根缆，每根 60 个数字光学模块（DOM），共 5,160 个，分布在冰面以下 1,450–2,450 米；缆与缆在水平面上按三角格点排列，间距 125 米，整体呈六边形，占地约 1 平方公里；同一根缆上模块间距 17 米。被仪器覆盖的冰约 1 立方公里、约 10 亿吨。",
+     "sources": [
+      {
+       "t": "IceCube 官网 · Detector / IceCube 页",
+       "u": "https://icecube.wisc.edu/science/icecube/"
+      },
+      {
+       "t": "IceCube Collaboration, The IceCube Neutrino Observatory: Instrumentation and Online Systems, JINST 12 (2017) P03012",
+       "u": "https://arxiv.org/abs/1612.05093"
+      },
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "IceCube: The Cubic Kilometer Neutrino Telescope at the South Pole（2004 年设计概述）",
+       "u": "https://arxiv.org/abs/astro-ph/0406125"
+      }
+     ],
+     "confidence": "高",
+     "note": "1 立方公里是仪器覆盖体积，不是某一类事例的有效体积。2,000–2,100 米有一层含尘较多的冰，标准缆照样布模块，DeepCore 则避开它。"
+    },
+    {
+     "n": 7,
+     "text": "两个子阵列：DeepCore 是阵列中心的 8 根加密缆，缆间距 41–105 米（平均 72 米），下部 50 个模块间距 7 米，把能量阈值降到约 10 GeV；IceTop 是冰面上的宇宙线阵列，81 个站，每站 2 个冰罐（共 162 个），每罐 2 个模块（共 324 个），同站两罐相距 10 米，罐内冰高 0.9 米，测 300 TeV 到 1 EeV 的空气簇射。全台共 5,484 个模块。",
+     "sources": [
+      {
+       "t": "IceCube 官网 · Detector / IceCube 页",
+       "u": "https://icecube.wisc.edu/science/icecube/"
+      },
+      {
+       "t": "IceCube Collaboration, The IceCube Neutrino Observatory: Instrumentation and Online Systems, JINST 12 (2017) P03012",
+       "u": "https://arxiv.org/abs/1612.05093"
+      },
+      {
+       "t": "IceCube 官网 · Quick Facts",
+       "u": "https://icecube.wisc.edu/about-us/facts/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 8,
+     "text": "数字光学模块：外壳是直径 13 英寸（约 33 厘米）、壁厚 0.5 英寸的硼硅玻璃耐压球，长期耐压 250 巴；内装一只朝下的 10 英寸（25 厘米）滨松 R7081-02 光电倍增管和一块主板，信号在球内就地数字化（定制芯片 ATWD 每秒采样 3 亿次，另有每秒 4,000 万次的连续采样 ADC），再经铜双绞线送上冰面。每个模块功耗限 5 瓦（实际约 3.5 瓦），定时精度指标 5 纳秒、实测约 2 纳秒。",
+     "sources": [
+      {
+       "t": "IceCube Collaboration, The IceCube Neutrino Observatory: Instrumentation and Online Systems, JINST 12 (2017) P03012",
+       "u": "https://arxiv.org/abs/1612.05093"
+      },
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      },
+      {
+       "t": "劳伦斯伯克利国家实验室新闻稿：IceCube 完工（2010-12）",
+       "u": "https://newscenter.lbl.gov/?p=13311"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 9,
+     "text": "数字光学模块方案出自劳伦斯伯克利国家实验室：David Nygren（时间投影室的发明者）与 Robert Stokstad 提出并推动，工程师 Jerry Przybylski 做了大部分硬件，采样芯片由 Stuart Kleinfelder 改造。1997 年先在 AMANDA 里放了 2 个样机；1999–2000 年夏季在 AMANDA 第 18 号缆上装了约 40 个样机，下放后全部与冰面通上信；2001 年验证了定时精度，被选为 IceCube 的方案。",
+     "sources": [
+      {
+       "t": "劳伦斯伯克利国家实验室新闻稿：IceCube 完工（2010-12）",
+       "u": "https://newscenter.lbl.gov/?p=13311"
+      },
+      {
+       "t": "伯克利实验室 IceCube 组 · Group History",
+       "u": "https://icecube.lbl.gov/History.html"
+      },
+      {
+       "t": "Symmetry《Astronomy on ice: IceCube from start to finish》（2011-03-08）",
+       "u": "https://www.symmetrymagazine.org/breaking/2011/03/08/astronomy-on-ice-icecube-from-start-to-finish"
+      }
+     ],
+     "confidence": "高",
+     "note": "样机数：伯克利实验室写 40 个，Symmetry 写 41 个。"
+    },
+    {
+     "n": 10,
+     "text": "热水钻（Enhanced Hot Water Drill）：加热厂热功率 4.7 兆瓦，另有 300 千瓦电力，合称约 5 兆瓦；每分钟 200 加仑（约 760 升）、88 °C、约 6.9 兆帕（1,000 psi）的热水从喷嘴射出；钻出直径约 60 厘米、深约 2,500 米的孔，最大钻速约每分钟 2 米；软管长 2,500 米、内径 10 厘米，重约 2.5 万磅；顶部 50 米的粒雪层由另一台独立的粒雪钻先打穿。钻井班组 30 人，全天轮班。",
+     "sources": [
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      },
+      {
+       "t": "T. Benson 等, IceCube Enhanced Hot Water Drill functional description, Annals of Glaciology 55(68) (2014) 104–114",
+       "u": "https://icedrill.org/library/icecube-enhanced-hot-water-drill-functional-description"
+      },
+      {
+       "t": "T. Benson, IceCube Enhanced Hot Water Drill（Polar Technology Conference 2013 报告）",
+       "u": "https://sundowner.colorado.edu/seefeldt/ptc-2005_2016/2013_pdf/PTC_2013_Benson.pdf"
+      },
+      {
+       "t": "IceCube 官网 · Detector / IceCube 页",
+       "u": "https://icecube.wisc.edu/science/icecube/"
+      },
+      {
+       "t": "IceCube 官网 · Quick Facts",
+       "u": "https://icecube.wisc.edu/about-us/facts/"
+      }
+     ],
+     "confidence": "高",
+     "note": "2004 年的设计稿原计划用 100 °C 的水、每孔约 40 小时、每季 16 个孔。"
+    },
+    {
+     "n": 11,
+     "text": "每孔耗时与耗油：第一个孔用了 57 小时；全程平均约 48 小时一孔；最快 27 小时，耗油略多于 1.5 万升。官网口径：平均每孔耗油约 4,800 加仑（18,169 升），每孔融化约 20 万加仑（75 万多升）水；钻好之后下一根缆平均 11 小时。",
+     "sources": [
+      {
+       "t": "IceCube 官网 · Quick Facts",
+       "u": "https://icecube.wisc.edu/about-us/facts/"
+      },
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      },
+      {
+       "t": "T. Benson, IceCube Enhanced Hot Water Drill（Polar Technology Conference 2013 报告）",
+       "u": "https://sundowner.colorado.edu/seefeldt/ptc-2005_2016/2013_pdf/PTC_2013_Benson.pdf"
+      },
+      {
+       "t": "IceCube 官网 · Detector / IceCube 页",
+       "u": "https://icecube.wisc.edu/science/icecube/"
+      }
+     ],
+     "confidence": "高",
+     "note": "钻井组 2013 年的报告写钻进 31 小时、周转 48 小时、每孔约 4,500 加仑；Halzen 与 Klein 2010 年的综述写「每孔不到 3 万升」。口径不同（纯钻进时间与含周转时间、不同年份）。"
+    },
+    {
+     "n": 12,
+     "text": "建造用了 7 个南极夏季：2004–05 年 1 根、2005–06 年 8 根、2006–07 年 13 根、2007–08 年 18 根、2008–09 年 19 根、2009–10 年 20 根、2010–11 年 7 根，合计 86 根。第一根缆 2005-01-29 下放；最后一根在新西兰时间 2010-12-18 傍晚下放（约 17:58 固定在冰面）；86 根缆的全阵列 2011-05-20 开始取数。施工只能在每年 11 月到次年 2 月之间。",
+     "sources": [
+      {
+       "t": "IceCube Collaboration, IceCube: Status and Results（2011，含各季下缆数表）",
+       "u": "https://arxiv.org/abs/1108.1838"
+      },
+      {
+       "t": "The Antarctic Sun（美国南极计划）关于最后一根缆的报道（2010-12）",
+       "u": "https://antarcticsun.usap.gov/science/2326"
+      },
+      {
+       "t": "IceCube 官网 · Detector / IceCube 页",
+       "u": "https://icecube.wisc.edu/science/icecube/"
+      },
+      {
+       "t": "瑞典皇家科学院科普背景《Ice at the South Pole reveals cosmic particle accelerators》（2026-10-06）",
+       "u": "https://www.kva.se/en/prizes/nobel-prizes/ice-at-the-south-pole-reveals-cosmic-particle-accelerators/"
+      }
+     ],
+     "confidence": "高",
+     "note": "瑞典皇家科学院新闻稿写「2011 年完成」，指全阵列投入运行；下缆完成是 2010 年 12 月。"
+    },
+    {
+     "n": 13,
+     "text": "造价：建造总费用 2.795 亿美元（美国国家科学基金会 MREFC 项目口径，2004–2010 年的当年价合计，不含运行），其中国家科学基金会 2.421 亿美元，比利时、德国、瑞典合计 0.374 亿美元；国家科学基金会出了约 85% 的建造费。2004 年 4 月批准的基线含 22% 的预备金，为此把范围从 80 根缆减到 70 根；后来进度超前，恢复到 80 根，再加上国外伙伴出资的 6 根，共 86 根。项目按原定基线的工期与预算完成。",
+     "sources": [
+      {
+       "t": "Jim Yeck（IceCube 项目主任）2012-03-08 在美国众议院科学委员会的书面证词",
+       "u": "https://science.house.gov/sites/republicans.science.house.gov/files/documents/hearings/HHRG-112-SY14-WState-JYeck-20120308.pdf"
+      },
+      {
+       "t": "IceCube 官网 · Detector / IceCube 页",
+       "u": "https://icecube.wisc.edu/science/icecube/"
+      },
+      {
+       "t": "The Antarctic Sun（美国南极计划）关于最后一根缆的报道（2010-12）",
+       "u": "https://antarcticsun.usap.gov/science/2326"
+      },
+      {
+       "t": "IceCube 新闻稿《IceCube pushes neutrinos to the forefront of astronomy》（2013-11-21）",
+       "u": "https://icecube.wisc.edu/news/press-releases/2013/11/icecube-pushes-neutrinos-to-forefront-of-astronomy"
+      }
+     ],
+     "confidence": "高",
+     "note": "官网取整为 2.79 亿与 2.42 亿美元。"
+    },
+    {
+     "n": 14,
+     "text": "后勤：整个建造期向南极点运去近 1,000 万磅（约 4,500 吨）货物，在南极点投入 3 万多人日；钻机系统本身约 140 万磅，货物约一半是燃料；所有设备都要拆成能装进 LC-130 运输机的模块，钻井用油平均每孔约 3 架次。建造第一年发生过一次严重的钻井工伤，此后 5 年、85 个孔没有再出严重伤害。",
+     "sources": [
+      {
+       "t": "Jim Yeck（IceCube 项目主任）2012-03-08 在美国众议院科学委员会的书面证词",
+       "u": "https://science.house.gov/sites/republicans.science.house.gov/files/documents/hearings/HHRG-112-SY14-WState-JYeck-20120308.pdf"
+      },
+      {
+       "t": "T. Benson, IceCube Enhanced Hot Water Drill（Polar Technology Conference 2013 报告）",
+       "u": "https://sundowner.colorado.edu/seefeldt/ptc-2005_2016/2013_pdf/PTC_2013_Benson.pdf"
+      },
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      }
+     ],
+     "confidence": "中",
+     "note": "钻机重量：钻井组报告写 140 万磅，Halzen 与 Klein 写「约 100 万磅」。LC-130 的总架次没有查到官方数字。"
+    },
+    {
+     "n": 15,
+     "text": "可靠性：模块冻进冰里就无法维修，设计要求是 15 年后仍有 90% 存活。到 2016 年，下放的 5,484 个模块里有 5,397 个（98.4%）在正常取数；累计失效 87 个，其中 55 个坏在下放与回冻阶段，32 个坏在投入运行之后。官网现在的说法是约 5,500 个传感器里失效的不到 100 个。探测器的运行时间占比约 99%。",
+     "sources": [
+      {
+       "t": "IceCube Collaboration, The IceCube Neutrino Observatory: Instrumentation and Online Systems, JINST 12 (2017) P03012",
+       "u": "https://arxiv.org/abs/1612.05093"
+      },
+      {
+       "t": "IceCube 官网 · Detector / IceCube 页",
+       "u": "https://icecube.wisc.edu/science/icecube/"
+      },
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      },
+      {
+       "t": "Jim Yeck（IceCube 项目主任）2012-03-08 在美国众议院科学委员会的书面证词",
+       "u": "https://science.house.gov/sites/republicans.science.house.gov/files/documents/hearings/HHRG-112-SY14-WState-JYeck-20120308.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 16,
+     "text": "冰：南极点冰盖厚约 2,810 米，冰面海拔 2,835 米；冰面年均温约 −51 °C，冰底约 −9 °C；模块所在深度的冰温约 −41 °C 到 −19 °C。约 1,400 米以下气泡在高压下消失，冰变得透明：吸收长度 100–200 米以上，2,100 米以下散射长度约 50 米。冰层整体每年向海岸方向移动约 10 米。",
+     "sources": [
+      {
+       "t": "P. B. Price 等, Temperature profile for glacial ice at the South Pole, PNAS 99 (2002) 7844",
+       "u": "https://user-web.icecube.wisc.edu/~dima/work/BKP/DCS/RELATED2/tprof.pdf"
+      },
+      {
+       "t": "IceCube Collaboration, The IceCube Neutrino Observatory: Instrumentation and Online Systems, JINST 12 (2017) P03012",
+       "u": "https://arxiv.org/abs/1612.05093"
+      },
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "IceCube 官网 · Quick Facts",
+       "u": "https://icecube.wisc.edu/about-us/facts/"
+      },
+      {
+       "t": "F. Halzen & S. R. Klein, IceCube: An Instrument for Neutrino Astronomy, Rev. Sci. Instrum. 81 (2010) 081101",
+       "u": "https://arxiv.org/abs/1007.1247"
+      }
+     ],
+     "confidence": "中",
+     "note": "冰厚各家口径：Price 等 2002 年论文写 2,810 米，常见示意图标 2,820 米，Halzen 与 Klein 写约 2,800 米。冰温由 JINST 论文「模块温度 −31 °C 到 −9 °C，比周围冰高约 10 °C」换算而来。"
+    },
+    {
+     "n": 17,
+     "text": "发现：千叶大学的石原安野（Aya Ishihara）在寻找极高能中微子的分析里，从 2010-05 至 2012-05 的数据中找到两个能量约 1.04 PeV 和 1.14 PeV 的事例，绰号 Bert 和 Ernie（取自《芝麻街》）。随后降低阈值重找，又得到 26 个；2013-11-22《Science》发表这 28 个事例（沉积能量 30 TeV 到 1.14 PeV，21 个簇射型、7 个径迹型），纯大气本底的解释在 4σ 水平上被排除；2014 年加入第三年数据后达到 5.7σ。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "IceCube Collaboration, Evidence for High-Energy Extraterrestrial Neutrinos at the IceCube Detector, Science 342 (2013) 1242856",
+       "u": "https://arxiv.org/abs/1311.5238"
+      },
+      {
+       "t": "IceCube 新闻稿《IceCube pushes neutrinos to the forefront of astronomy》（2013-11-21）",
+       "u": "https://icecube.wisc.edu/news/press-releases/2013/11/icecube-pushes-neutrinos-to-forefront-of-astronomy"
+      },
+      {
+       "t": "IceCube 官网新闻《IceCube reveals interesting high-energy neutrino events》（2013-02-06）",
+       "u": "https://icecube.wisc.edu/?p=6758"
+      },
+      {
+       "t": "APPEC《IceCube: Light at the end of the tunnel?》（2013-09-26）",
+       "u": "https://appec.org/news/icecube-light-at-the-end-of-the-tunnel/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 18,
+     "text": "第一个候选源：2017-09-22，IceCube 记录到一个约 290 TeV 的 μ 子中微子（IceCube-170922A）并发出实时预警，方向与正在爆发的耀变体 TXS 0506+056 相差不到 0.1 度；回查旧数据，2014-09 至 2015-03 同一方向还有一次 3.5σ 的中微子爆发。结果 2018-07-12 公布，发表于《Science》。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "IceCube 新闻稿《IceCube neutrinos point to long-sought cosmic ray accelerator》（2018-07-12）",
+       "u": "https://icecube.wisc.edu/news/press-releases/2018/07/icecube-neutrinos-point-to-long-sought-cosmic-ray-accelerator"
+      },
+      {
+       "t": "IceCube 官网 · Research Highlights",
+       "u": "https://icecube.wisc.edu/science/research/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 19,
+     "text": "此后的结果：2016-12-08 记录到一个 6.3 PeV 的格拉肖共振事例（Sheldon Glashow 1960 年预言），2021-03-10 发表于《Nature》；2022 年发表活动星系 NGC 1068 方向的 79 个中微子，显著性 4.2σ；2023-06-29 公布银河系平面的中微子，4.5σ，2026 年用 12 年数据提高到 5.7σ；2026 年 3 月发表的一个 11.4 PeV 事例（2019-03-31 记录）是 IceCube 迄今能量最高的中微子。现在每年记录约 10 万个中微子，绝大多数来自大气，估计约 100 个来自天体。",
+     "sources": [
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "IceCube 新闻稿《IceCube detection of a high-energy particle proves 60-year-old theory》（Nature 2021-03-10）",
+       "u": "https://icecube.wisc.edu/?p=8651"
+      },
+      {
+       "t": "IceCube 新闻稿《Our galaxy seen through a new lens: neutrinos detected by IceCube》（2023-06-29）",
+       "u": "https://icecube.wisc.edu/news/press-releases/2023/06/our-galaxy-seen-through-a-new-lens-neutrinos-detected-by-icecube/"
+      },
+      {
+       "t": "瑞典皇家科学院科普背景《Ice at the South Pole reveals cosmic particle accelerators》（2026-10-06）",
+       "u": "https://www.kva.se/en/prizes/nobel-prizes/ice-at-the-south-pole-reveals-cosmic-particle-accelerators/"
+      }
+     ],
+     "confidence": "高",
+     "note": "瑞典皇家科学院科普稿说 NGC 1068 的证据还不够确凿。"
+    },
+    {
+     "n": 20,
+     "text": "合作组规模：官网 2025 年 1 月与 2026 年 10 月的口径都是约 450 名科学家、58 家机构、14 个国家；2012 年项目主任在国会作证时是约 250 人、39 家机构、11 个国家。",
+     "sources": [
+      {
+       "t": "IceCube 官网 · Quick Facts",
+       "u": "https://icecube.wisc.edu/about-us/facts/"
+      },
+      {
+       "t": "IceCube 官网新闻《Francis Halzen, IceCube principal investigator, wins 2026 Physics Nobel Prize》（2026-10-06）",
+       "u": "https://icecube.wisc.edu/news/awards/2026/10/francis-halzen-icecube-principal-investigator-wins-2026-physics-nobel-prize/"
+      },
+      {
+       "t": "IceCube 新闻稿《The IceCube Neutrino Observatory gets a major upgrade beneath the ice》（2026-02-12）",
+       "u": "https://icecube.wisc.edu/news/press-releases/2026/02/the-icecube-neutrino-observatory-gets-a-major-upgrade-beneath-the-ice/"
+      },
+      {
+       "t": "Jim Yeck（IceCube 项目主任）2012-03-08 在美国众议院科学委员会的书面证词",
+       "u": "https://science.house.gov/sites/republicans.science.house.gov/files/documents/hearings/HHRG-112-SY14-WState-JYeck-20120308.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "Physics Today 2026-10-06 的报道写「400 多人」。口径是合作组成员数，不是某篇论文的作者数。"
+    },
+    {
+     "n": 21,
+     "text": "IceCube Upgrade：2019 年获美国国家科学基金会批准，原计划在阵列中心底部新增 7 根加密缆、近 700 个新型模块；2023–2026 年用了 3 个各约 10 周的野外季，钻孔集中在 2025 年 12 月至 2026 年 1 月，用的还是那台 5 兆瓦热水钻，每孔约 3 天。实际钻了 6 个孔、装了 6 根缆（官网施工周报）；2026-03-11，最先下放的 87 号缆失联，诊断为约 700 米深处电缆断裂；到 2026 年 6 月有 5 根缆（88–92 号）完成调试。新缆水平间距 20–30 米、模块间距 3 米；新模块是 mDOM（24 只 3 英寸管）和 D-Egg（2 只 8 英寸管）。",
+     "sources": [
+      {
+       "t": "IceCube 新闻稿《The IceCube Neutrino Observatory gets a major upgrade beneath the ice》（2026-02-12）",
+       "u": "https://icecube.wisc.edu/news/press-releases/2026/02/the-icecube-neutrino-observatory-gets-a-major-upgrade-beneath-the-ice/"
+      },
+      {
+       "t": "IceCube 官网施工周报 Upgrade Update #13（2026-01-30）",
+       "u": "https://icecube.wisc.edu/news/icecube-gen2/2026/01/upgrade-update-13/"
+      },
+      {
+       "t": "IceCube 官网施工周报 Upgrade Update #14（2026-02-05）",
+       "u": "https://icecube.wisc.edu/news/icecube-gen2/2026/02/upgrade-update-14/"
+      },
+      {
+       "t": "Global Neutrino Network 月报 GNN Monthly February/March 2026",
+       "u": "https://www.globalneutrinonetwork.org/news/2026/gnn-monthly-february-march-2026/"
+      },
+      {
+       "t": "Butterfield, IceCube Upgrade 介绍（IceCube 暑期学校，2026-06-02）",
+       "u": "https://events.icecube.wisc.edu/event/402/contributions/11994/attachments/8985/12112/UpgradeIntro_ICSS26_Butterfield.pdf"
+      },
+      {
+       "t": "IceCube 官网 · IceCube Upgrade 新闻列表（含 2018–2020 年的计划口径）",
+       "u": "https://icecube.wisc.edu/science/beyond-icecube/upgrade/"
+      }
+     ],
+     "confidence": "高",
+     "note": "缆数与模块数各处写法不一，见 disputes。官网 2026-10-06 的新闻说 Upgrade 的首批科学数据预计在 2026 年内取得。"
+    },
+    {
+     "n": 22,
+     "text": "IceCube-Gen2：计划把光学阵列的体积扩到约 8 立方公里，传感器间距从 125 米拉大到 250 米以上，并加一个探测更高能量中微子的无线电阵列。官方至今称它为「拟议中的」；2026 年 3 月的口径是正在走美国国家科学基金会的大型设施（Major Facility）多年评审程序，已提交文件，等待下一轮评审。",
+     "sources": [
+      {
+       "t": "IceCube 官网 · Beyond IceCube（Upgrade 与 Gen2）",
+       "u": "https://icecube.wisc.edu/science/beyond/"
+      },
+      {
+       "t": "Global Neutrino Network 月报 GNN Monthly February/March 2026",
+       "u": "https://www.globalneutrinonetwork.org/news/2026/gnn-monthly-february-march-2026/"
+      },
+      {
+       "t": "IceCube 新闻稿《The IceCube Neutrino Observatory gets a major upgrade beneath the ice》（2026-02-12）",
+       "u": "https://icecube.wisc.edu/news/press-releases/2026/02/the-icecube-neutrino-observatory-gets-a-major-upgrade-beneath-the-ice/"
+      },
+      {
+       "t": "IceCube 官网新闻《Francis Halzen, IceCube principal investigator, wins 2026 Physics Nobel Prize》（2026-10-06）",
+       "u": "https://icecube.wisc.edu/news/awards/2026/10/francis-halzen-icecube-principal-investigator-wins-2026-physics-nobel-prize/"
+      }
+     ],
+     "confidence": "中",
+     "note": "造价与缆数本次没有查到官方数字。"
+    },
+    {
+     "n": 23,
+     "text": "哈尔岑与 IceCube 此前的主要奖项：2013 年《Physics World》年度突破（IceCube 合作组）；2014 年史密森尼美国创意奖；2015 年巴尔赞奖（天体粒子物理）与欧洲物理学会 Cocconi 奖；2018 年 Bruno Pontecorvo 奖（杜布纳联合核子研究所）；2019 年 IUPAP 的 Yodh 奖；2021 年美国天文学会 Bruno Rossi 奖（授予哈尔岑与 IceCube 合作组，理由是发现源自天体的高能中微子流）与 Homi Bhabha 奖章；2026 年度美国物理学会「杰出研究成就奖章」（APS Medal，2025 年 12 月公布）。2024 年当选美国国家科学院院士。",
+     "sources": [
+      {
+       "t": "哈尔岑个人简历（2021-11 版，IceCube 服务器）",
+       "u": "https://user-web.icecube.wisc.edu/~halzen/CV/FH_longCV_11_12_2021.pdf"
+      },
+      {
+       "t": "WIPAC 人员页 · Francis Halzen（含历年荣誉）",
+       "u": "https://wipac.wisc.edu/people/faculty/francis-halzen"
+      },
+      {
+       "t": "美国天文学会高能天体物理分会 · Bruno Rossi Prize 历届得主",
+       "u": "https://head.aas.org/rossi/rossi.recip.html"
+      },
+      {
+       "t": "WIPAC / APS《Prof. Francis Halzen honored with the 2026 APS Medal》（2025-12-08）",
+       "u": "https://wipac.wisc.edu/prof-francis-halzen-honored-with-the-2026-aps-medal"
+      },
+      {
+       "t": "威斯康星大学麦迪逊分校新闻（2026-10-06）",
+       "u": "https://news.wisc.edu/university-of-wisconsin-madison-professor-francis-halzen-named-2026-nobel-laureate-in-physics/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 24,
+     "text": "中国线索：李政道研究所官网的第二届国际学术咨询委员会名单里有 Francis Halzen（威斯康星大学麦迪逊分校）。南海「海铃计划」（TRIDENT）发起人与发言人徐东莲 2015 年在阿拉巴马大学获博士学位，2015–2018 年在威斯康星大学麦迪逊分校做博士后，其间一直在 IceCube 合作组，2018 年 9 月回国加入李政道研究所。瑞典皇家科学院的科学背景把 TRIDENT 与 IceCube-Gen2、KM3NeT、P-ONE、Baikal-GVD 并列为下一代装置。",
+     "sources": [
+      {
+       "t": "李政道研究所官网 · 第二届国际学术咨询委员会名单",
+       "u": "https://tdli.sjtu.edu.cn/about/organization/international-advisory-committee/208"
+      },
+      {
+       "t": "清华大学天文系学术报告页 · 徐东莲简介",
+       "u": "https://astro.tsinghua.edu.cn/info/1069/1367.htm"
+      },
+      {
+       "t": "中国新闻网《「海铃计划」探路者项目取得重要进展》（2021-09-17）",
+       "u": "https://www.chinanews.com/gn/2021/09-17/9567989.shtml"
+      },
+      {
+       "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》（2026-10-06）",
+       "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+      },
+      {
+       "t": "上海交通大学英文新闻：TRIDENT 概念设计发表于 Nature Astronomy（2023-10-10）",
+       "u": "https://en.sjtu.edu.cn/news/4086"
+      }
+     ],
+     "confidence": "中",
+     "note": "「哈尔岑公开推荐海铃计划」的原话出处本次没有找到，只核到咨询委员身份。任务书写「徐东莲曾在 IceCube 合作组」可用；规格里「读研时就在 IceCube」与清华页面的说法（读博与博士后期间）一致。"
+    },
+    {
+     "n": 25,
+     "text": "历任发言人（查到的部分）：Per Olof Hulth（斯德哥尔摩大学）是首任发言人；Thomas Gaisser（特拉华大学）2007–2011 年；Greg Sullivan（马里兰大学）2011–2013 年；Olga Botner（乌普萨拉大学）2013 年 5 月当选；Ignacio Taboada（佐治亚理工）任满两届共 4 年；Erin O'Sullivan（乌普萨拉大学）2025-05-01 起。哈尔岑的简历写他自 2001 年起是「首席科学家兼联合发言人」。",
+     "sources": [
+      {
+       "t": "IceCube 官网《Per Olof Hulth (1943-2015)》（2015-02-27）",
+       "u": "https://icecube.wisc.edu/news/collaboration/2015/02/per-olof-hulth-1943-2015"
+      },
+      {
+       "t": "IceCube 官网《Thomas K. Gaisser, former IceCube spokesperson, dies at 81》（2022）",
+       "u": "https://icecube.wisc.edu/?p=9589"
+      },
+      {
+       "t": "IceCube 官网《IceCube spokesperson transition》（2013-09-04）",
+       "u": "https://icecube.wisc.edu/news/collaboration/2013/09/icecube-spokesperson-transition"
+      },
+      {
+       "t": "IceCube 官网《Erin O'Sullivan elected IceCube's next spokesperson》（2025-04-15）",
+       "u": "https://icecube.wisc.edu/news/collaboration/2025/04/erin-osullivan-elected-icecubes-next-spokesperson"
+      },
+      {
+       "t": "哈尔岑个人简历（2021-11 版，IceCube 服务器）",
+       "u": "https://user-web.icecube.wisc.edu/~halzen/CV/FH_longCV_11_12_2021.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "Botner 与 Taboada 之间的 Darren Grant（约 2017–2021 年）本次未核。"
+    },
+    {
+     "n": 26,
+     "text": "得奖当天的表态：哈尔岑对 Physics Today 说，这是一场不保证成功的冒险，团队运气好才闯过各种难关；他正在写一份提案，希望这个奖能帮它获批。对 IceCube 官网说，终于能把这个合作组应得的认可带给大家，是一种解脱。现任发言人 Erin O'Sullivan 代表合作组表示祝贺。",
+     "sources": [
+      {
+       "t": "Physics Today：Laura Fattaruso《Francis Halzen to Receive 2026 Nobel Prize in Physics for Cosmic Neutrino Detection》（2026-10-06）",
+       "u": "https://physicstoday.aip.org/news/francis-halzen-to-receive-2026-nobel-prize-in-physics-for-cosmic-neutrino-detection"
+      },
+      {
+       "t": "IceCube 官网新闻《Francis Halzen, IceCube principal investigator, wins 2026 Physics Nobel Prize》（2026-10-06）",
+       "u": "https://icecube.wisc.edu/news/awards/2026/10/francis-halzen-icecube-principal-investigator-wins-2026-physics-nobel-prize/"
+      },
+      {
+       "t": "威斯康星大学麦迪逊分校新闻（2026-10-06）",
+       "u": "https://news.wisc.edu/university-of-wisconsin-madison-professor-francis-halzen-named-2026-nobel-laureate-in-physics/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 27,
+     "text": "哈尔岑自述的早期经过：他把无线电信号功率的计算称为「最难的一道 Jackson 习题」；自嘲「毕竟我是个理论家」「写篇论文就满足了」。约一年后，国家科学基金会的项目官员来电，说有「两个伯克利的家伙」（Doug Lowder 与 Andrew Westphal）想把光电倍增管带进南极，他劝对方放行。1993 年平安夜第一根缆下放，10 个人在约 −30 °C 里干了 17 个小时；两天后钻孔回冻，孔内压力升到环境的约 5 倍，压坏了一只管子和几个接头，后来改成缓慢回冻（约 2 倍）。",
+     "sources": [
+      {
+       "t": "F. Halzen《Ice Fishing for Neutrinos》（哈尔岑本人写的 AMANDA 早期回顾，约 1995）",
+       "u": "http://icecube.berkeley.edu/amanda/ice-fishing.html"
+      },
+      {
+       "t": "瑞典皇家科学院科普背景《Ice at the South Pole reveals cosmic particle accelerators》（2026-10-06）",
+       "u": "https://www.kva.se/en/prizes/nobel-prizes/ice-at-the-south-pole-reveals-cosmic-particle-accelerators/"
+      }
+     ],
+     "confidence": "中",
+     "note": "出自哈尔岑本人的文章；平安夜一事瑞典皇家科学院科普稿也提到。"
+    },
+    {
+     "n": 28,
+     "text": "Bowen 书中的几件事：1990 年 8 月，Bob Morse 与 Tim Miller 在格陵兰用 3 只拆来的光电倍增管做试验，往孔里倒乙酸丁酯想改善光学耦合，结果溶掉了电缆外皮；1991 年南极点的第一台热水钻 Bucky-1 只有 0.5 兆瓦，试图钻到 1,000 米时卡在孔里，至今没取出来；当时的教科书说蓝光在纯冰中的吸收长度约 8 米，照此项目做不成，哈尔岑多年后才看到这个数字；钻井工程师 Bruce Koci 的口头禅是「别读书，动手干」。Koci 2006 年去世，哈尔岑当时说，AMANDA 的成功靠两根支柱：南极点的科考站和 Bruce Koci。",
+     "sources": [
+      {
+       "t": "Mark Bowen《The Telescope in the Ice》（St. Martin's Press, 2017）节选，Nautilus 2017-10-26",
+       "u": "https://nautil.us/ice-fishing-for-neutrinos-236860/"
+      },
+      {
+       "t": "F. Halzen《Ice Fishing for Neutrinos》（哈尔岑本人写的 AMANDA 早期回顾，约 1995）",
+       "u": "http://icecube.berkeley.edu/amanda/ice-fishing.html"
+      },
+      {
+       "t": "C. Spiering, Towards High-Energy Neutrino Astronomy. A Historical Review, Eur. Phys. J. H 37 (2012) 515",
+       "u": "https://arxiv.org/abs/1207.4952"
+      }
+     ],
+     "confidence": "中",
+     "note": "著作节选，属二手叙述，但多处引当事人原话；Koci 的卒年与哈尔岑的话出自 Spiering 的史述。"
+    },
+    {
+     "n": 29,
+     "text": "哈尔岑在美国物理联合会 2020 年的口述史里说：他一直觉得让一个理论家来领导实验不是好主意，几次想把这份差事交出去，都没成；早年他去讲 AMANDA 的设想，是想看看会不会被人笑下台。他还说自己年轻时讨厌画法几何和制图，也不喜欢物理实验课。",
+     "sources": [
+      {
+       "t": "美国物理联合会（AIP）2026 年诺奖专题页（含哈尔岑 2020 年口述史摘句）",
+       "u": "https://www.aip.org/nobel-prize"
+      }
+     ],
+     "confidence": "中",
+     "note": "转引自 AIP 诺奖专题页的摘句；口述史原文页面本次打不开（403）。"
+    },
+    {
+     "n": 30,
+     "text": "1998 年 6 月 4–9 日在日本高山举行的 Neutrino '98 会议上，哈尔岑在 6 月 9 日上午作了《Results from Amanda and future》的报告；同一份日程上有 6 月 5 日梶田隆章的大气中微子报告和 6 月 4 日 McDonald 的 SNO 进度报告。",
+     "sources": [
+      {
+       "t": "Neutrino '98 会议官方日程（神冈观测所服务器，1998-05-28 版）",
+       "u": "https://www-sk.icrr.u-tokyo.ac.jp/nu98/program7.txt"
+      }
+     ],
+     "confidence": "中",
+     "note": "会议的官方暂定日程（1998-05-28 版），只此一个来源。"
+    }
+   ],
+   "disputes": [
+    "IceCube Upgrade 的缆数：2018–2020 年的计划是 7 根、近 700 个模块；官网施工周报 #13（2026-01-30）写第 6 个孔是「最后一个」、#14（2026-02-05）写「6 根已装的缆」；官网 2026-02-12 的新闻稿和 Beyond 页写「5 根新缆」；GNN 月报（2026-03）写「6 根里 5 根在取数，87 号缆 3 月 11 日失联」；2026-06 的内部培训报告写「5 根已装并完成调试」（88–92 号）。稳妥的写法：原计划 7 根，实际下了 6 根，现有 5 根在工作。",
+    "IceCube Upgrade 的传感器数：新闻稿写「600 多个新的光传感器与标定装置」，Beyond 页写「750 个光探测器与标定装置」，早期计划写「近 700 个多管模块」，培训报告写「每根缆 100 多个器件」。",
+    "哈尔岑堪萨斯之行的年份：瑞典皇家科学院科学背景写 1987 年秋；Spiering 的史述写 1988 年。两者都说论文在 1988 年年中提出。",
+    "格陵兰冰孔试验的年份：Bowen 的书与哈尔岑自述写 1990 年（8 月）；瑞典皇家科学院科学背景写 1991 年。",
+    "「建成」是哪一年：最后一根缆 2010-12-18 下放（官网、Antarctic Sun）；瑞典皇家科学院写 2011 年完成 / 达到全规模，指的是 2011 年 5 月 86 根缆全阵列开始取数。",
+    "每孔耗油：官网写平均 4,800 加仑（18,169 升）；钻井组 2013 年报告写 4,500 加仑；Halzen 与 Klein 2010 年写「不到 3 万升」、最好一次「略多于 1.5 万升」。",
+    "钻机功率：「约 5 兆瓦」是 4.7 兆瓦热功率加 0.3 兆瓦电力的合称。",
+    "南极点冰厚：Price 等 2002 年论文 2,810 米；常见示意图 2,820 米；Halzen 与 Klein 约 2,800 米；JINST 论文「约 3 公里」。",
+    "合作组人数：官网「约 450 人、58 家机构、14 国」；Physics Today（2026-10-06）「400 多人」；2013 年新闻稿「约 250 人、11 国」。",
+    "失效模块：官网「约 5,500 个里不到 100 个」；JINST 论文（2016 年数据）87 个失效、98.4% 在工作；项目主任 2012 年证词 98.5% 在取数。",
+    "Antarctic Sun 的报道写每根缆 59 个模块，其余来源都是 60 个，应是笔误。"
+   ],
+   "todo": [
+    "哈尔岑「公开推荐海铃计划」的原话出处没有找到；只核到他是李政道研究所第二届国际学术咨询委员会委员（官网名单）。trident.sjtu.edu.cn 的页面抓不到正文。",
+    "发言人 Darren Grant 的任期（约 2017–2021 年）未核；Botner 的卸任年份未核。",
+    "IceTop 冰罐的直径未核（只核到罐内冰高 0.9 米、同站两罐相距 10 米）。",
+    "LC-130 的总架次没有查到官方数字（只有「近 1,000 万磅货物」「钻井用油每孔约 3 架次」）。",
+    "IceCube-Gen2 的造价、缆数与审批时间表未查到官方数字。",
+    "AIP 口述史（repository.aip.org）返回 403，哈尔岑的几句自述转引自 AIP 诺奖专题页；Mark Bowen 的书只看到 Nautilus 上的节选。",
+    "折今价未算（页面若要「折今」，以 2.795 亿美元、2004–2010 年支出为基数由编辑统一换算）。"
+   ]
+  }
+ ],
+ "bench": [
+  {
+   "id": "hulse-taylor-1993",
+   "year": 1993,
+   "who_zh": "拉塞尔·赫尔斯、约瑟夫·泰勒",
+   "who_en": "Russell A. Hulse, Joseph H. Taylor Jr.",
+   "what": "阿雷西博望远镜与脉冲星计时",
+   "line": "1974 年用 305 米的阿雷西博射电望远镜发现第一颗脉冲双星 PSR B1913+16，此后对它计时三十多年：两颗星越转越近，损失的能量与引力波带走的相符。",
+   "number": "轨道周期 7.75 小时，每年缩短约 76 微秒",
+   "lesson": "把天然信号源当精密时钟，长期盯着测。",
+   "citation_en": "for the discovery of a new type of pulsar, a discovery that has opened up new possibilities for the study of gravitation",
+   "citation_zh": "表彰他们发现一种新型脉冲星，这一发现为研究引力开辟了新的可能",
+   "detail": [
+    "轨道周期变化率：观测值 −2.423×10⁻¹² 秒每秒，扣除银河系加速度后 −(2.398±0.004)×10⁻¹²，广义相对论预言 −2.40263×10⁻¹²；折合每年约 76 微秒（换算值）。",
+    "观测与广义相对论预言之比 0.9983±0.0016，即符合到约千分之二（Weisberg 与 Huang 2016 年，用 1981–2012 年在阿雷西博测的 9,257 个脉冲到达时间）。",
+    "脉冲星自转周期约 59 毫秒，轨道偏心率 0.617。",
+    "阿雷西博望远镜：305 米球面反射面，1960 年代初建成；2020 年 8 月和 11 月两根钢缆先后断裂，2020-12-01 重 900 吨的馈源平台坠落 140 米，砸毁反射面；2022 年 10 月美国国家科学基金会宣布不再重建。"
+   ],
+   "sources": [
+    {
+     "t": "J. M. Weisberg & Y. Huang, Relativistic Measurements from Timing the Binary Pulsar PSR B1913+16, Astrophys. J. 829 (2016) 55",
+     "u": "https://arxiv.org/abs/1606.02744"
+    },
+    {
+     "t": "Britannica · Arecibo Observatory",
+     "u": "https://www.britannica.com/topic/Arecibo-Observatory"
+    },
+    {
+     "t": "LIGO 新闻稿（2016-02-11，提到 1974 年的发现与 1982 年的轨道衰减测量）",
+     "u": "https://www.ligo.caltech.edu/news/ligo20160211"
+    },
+    {
+     "t": "诺贝尔物理学委员会 2017 年科学背景",
+     "u": "https://www.kva.se/app/uploads/2017/10/scibackfyen17.pdf"
+    }
+   ],
+   "confidence": "中",
+   "note": "颁奖词凭通行文本照录，nobelprize.org 打不开，没有逐字核对。「每年约 76 微秒」是由变化率换算的。"
+  },
+  {
+   "id": "reines-1995",
+   "year": 1995,
+   "who_zh": "弗雷德里克·莱因斯",
+   "who_en": "Frederick Reines",
+   "what": "反应堆旁的中微子探测器",
+   "line": "1956 年在萨凡纳河反应堆旁，用约 400 升掺氯化镉的水做靶、液体闪烁体做探测器，靠正电子湮灭和几微秒后中子被镉俘获这一前一后两个信号认出中微子。",
+   "number": "1956 年探测到，1995 年获奖，相隔 39 年",
+   "lesson": "用一前一后两个信号的符合来压本底。",
+   "citation_en": "for pioneering experimental contributions to lepton physics: for the detection of the neutrino",
+   "citation_zh": "表彰对轻子物理的开创性实验贡献：探测到中微子",
+   "detail": [
+    "1995 年的奖由 Martin L. Perl（发现 τ 轻子）与莱因斯平分；合作者 Clyde Cowan 1974 年已去世。",
+    "莱因斯 1918-03-16 生，1998-08-26 去世；1944–1959 年在洛斯阿拉莫斯。两人先在汉福德的反应堆试过，再搬到萨凡纳河。",
+    "「Project Poltergeist」最初打算把探测器放在核爆旁边、后来改用反应堆的经过，出处是莱因斯的诺奖演讲和 Los Alamos Science 第 25 期（1997），本次两处都打不开，这一条只能算通行说法。",
+    "任务书里的「三层液体闪烁体共约 4,200 升」本次没有核到来源；Britannica 只给出 400 升的水与氯化镉靶。"
+   ],
+   "sources": [
+    {
+     "t": "Britannica · Frederick Reines",
+     "u": "https://www.britannica.com/biography/Frederick-Reines"
+    },
+    {
+     "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》",
+     "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+    },
+    {
+     "t": "瑞典皇家科学院新闻稿（2002-10-08）",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2002-2/"
+    }
+   ],
+   "confidence": "中",
+   "note": "颁奖词凭通行文本照录，未逐字核对；原子弹方案一节没有打开一手来源。"
+  },
+  {
+   "id": "giacconi-2002",
+   "year": 2002,
+   "who_zh": "里卡尔多·贾科尼",
+   "who_en": "Riccardo Giacconi",
+   "what": "X 射线望远镜：从火箭到卫星",
+   "line": "1962 年用探空火箭发现第一个太阳系外 X 射线源，此后把探测器搬上卫星：Uhuru（1970）列出 339 个源，Chandra（1999）分辨率 0.5 角秒。",
+   "number": "Einstein 的点源灵敏度是 Uhuru 的 1,000 倍",
+   "lesson": "同一条技术路线，一代代往上提数量级。",
+   "citation_en": "for pioneering contributions to astrophysics, which have led to the discovery of cosmic X-ray sources",
+   "citation_zh": "表彰他对天体物理学的开创性贡献，这些贡献导致了宇宙 X 射线源的发现",
+   "detail": [
+    "2002 年的奖一半归贾科尼，另一半由戴维斯与小柴昌俊平分。",
+    "1962 年那次实验此前失败过两次，第三次才成功：Aerobee 火箭带 3 只盖革计数器升空，记到一个约每秒 100 个光子的新源，后来命名为 Scorpius X-1，同时发现了弥漫的 X 射线背景。",
+    "Uhuru 1970 年从肯尼亚发射，灵敏度约为蟹状星云流量的千分之一；Einstein（HEAO-2）1978 年发射，角分辨率 2 角秒。",
+    "Chandra 1976 年提出、1999-07-23 发射：4 层嵌套的掠入射镜面，每段长 83.3 厘米，最外层直径 1.2 米，焦距 10 米，镀 600 埃的铱，镜组重 956 公斤，角分辨率 0.5 角秒。",
+    "贾科尼 1931-10-06 生于热那亚，2018-11-09 去世；1959 年进入 American Science and Engineering 公司开始做 X 射线天文，后任空间望远镜研究所首任所长（1981–1993）、欧洲南方天文台台长（1993–1999）。",
+    "任务书说的「1962 年那次观测只有几分钟」本次没有核到具体时长。"
+   ],
+   "sources": [
+    {
+     "t": "瑞典皇家科学院新闻稿（2002-10-08）",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2002-2/"
+    },
+    {
+     "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+     "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+    },
+    {
+     "t": "Chandra X-ray Center · Chandra Specifications",
+     "u": "https://chandra.harvard.edu/about/specs.html"
+    },
+    {
+     "t": "Britannica · Riccardo Giacconi",
+     "u": "https://www.britannica.com/biography/Riccardo-Giacconi"
+    }
+   ],
+   "confidence": "高",
+   "note": "Uhuru 的发射日期：瑞典皇家科学院 2002 年背景材料写 1970 年 10 月 12 日，通行说法是 1970-12-12（肯尼亚独立日），两者对不上；页面只写到年份即可，要写日期请再核。"
+  },
+  {
+   "id": "genzel-ghez-2020",
+   "year": 2020,
+   "who_zh": "赖因哈德·根策尔、安德烈娅·盖兹",
+   "who_en": "Reinhard Genzel, Andrea Ghez",
+   "what": "自适应光学与四镜合一的 GRAVITY",
+   "line": "两个团队近三十年盯着银河系中心的恒星：先用斑点成像，再用自适应光学抵消大气抖动；GRAVITY 把甚大望远镜的四台合成一台，等效口径最大 130 米。",
+   "number": "恒星 S2 绕中心一圈不到 16 年，中心约 400 万倍太阳质量",
+   "lesson": "两支团队、两套望远镜，各测各的再对表。",
+   "citation_en": "for the discovery of a supermassive compact object at the centre of our galaxy",
+   "citation_zh": "表彰他们发现银河系中心的超大质量致密天体",
+   "detail": [
+    "2020 年的奖一半归彭罗斯（Roger Penrose），另一半由根策尔与盖兹平分，奖金 1,000 万瑞典克朗。",
+    "根策尔团队用欧洲南方天文台在智利的望远镜（3.5 米 NTT、8 米级 VLT，仪器 NACO 与 SINFONI），盖兹团队用夏威夷的 10 米凯克望远镜；两边的测量互相吻合。",
+    "斑点成像：每张只曝光十分之一秒多一点，再把成百上千张对齐叠加；自适应光学用一颗亮星或用激光激发高层大气钠原子造出的「人造星」做参考。",
+    "S2 的轨道周期略小于 16 年，偏心率 0.88，2002 年春与 2018-05-19 两次过近心点，离中心只有 17 光时（约 125 天文单位）。",
+    "GRAVITY：把 VLT 的四台望远镜的光相干合成，工作在 2.0–2.4 微米，2015 年首光、2016 年起常规观测，成像分辨率约 3–4 毫角秒，天体测量精度几十微角秒。"
+   ],
+   "sources": [
+    {
+     "t": "瑞典皇家科学院新闻稿（2020-10-06）",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2020-2/"
+    },
+    {
+     "t": "诺贝尔物理学委员会 2020 年科学背景",
+     "u": "https://www.kva.se/app/uploads/2020/10/scibackfyen20-1.pdf"
+    },
+    {
+     "t": "欧洲南方天文台 · GRAVITY 仪器页",
+     "u": "https://www.eso.org/public/teles-instr/paranal-observatory/vlt/vlt-instr/gravity/"
+    }
+   ],
+   "confidence": "高",
+   "note": "「四台 8.2 米望远镜」的 8.2 米口径本次打开的两个来源都没有写明（科学背景写「8-m VLT」），属通行数字。"
+  }
+ ],
+ "sidebars": {
+  "nu_prizes": [
+   {
+    "year": 1988,
+    "laureates_zh": "莱德曼、施瓦茨、施泰因贝格尔",
+    "laureates_en": "Leon M. Lederman, Melvin Schwartz, Jack Steinberger",
+    "share": "三人平分",
+    "result": "发明中微子束方法，并用它发现 μ 子中微子，证明轻子成对出现（实验做于 1962 年）",
+    "apparatus": "布鲁克海文 AGS 质子同步加速器引出的中微子束，加一台约 10 吨的火花室",
+    "citation_en": "for the neutrino beam method and the demonstration of the doublet structure of the leptons through the discovery of the muon neutrino",
+    "sources": [
+     {
+      "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》",
+      "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+     },
+     {
+      "t": "Physics Today（2026-10-06）：Francis Halzen to Receive 2026 Nobel Prize in Physics",
+      "u": "https://physicstoday.aip.org/news/francis-halzen-to-receive-2026-nobel-prize-in-physics-for-cosmic-neutrino-detection"
+     }
+    ],
+    "confidence": "中",
+    "note": "年份与得主已由瑞典皇家科学院 2026 年科学背景和 Physics Today 确认；颁奖词与装置细节凭通行文本，未逐字核对（候补席若收这一条，请 A/B 代理核）。"
+   },
+   {
+    "year": 1995,
+    "laureates_zh": "莱因斯（与发现 τ 轻子的佩尔平分）",
+    "laureates_en": "Frederick Reines (with Martin L. Perl)",
+    "share": "莱因斯二分之一",
+    "result": "1956 年第一次探测到中微子（与 1974 年去世的 Clyde Cowan 合作）",
+    "apparatus": "萨凡纳河反应堆旁的探测器：约 400 升掺氯化镉的水做靶，液体闪烁体记录信号",
+    "citation_en": "for pioneering experimental contributions to lepton physics: for the detection of the neutrino",
+    "sources": [
+     {
+      "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》",
+      "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+     },
+     {
+      "t": "Britannica · Frederick Reines",
+      "u": "https://www.britannica.com/biography/Frederick-Reines"
+     }
+    ],
+    "confidence": "中",
+    "note": "颁奖词未逐字核对。"
+   },
+   {
+    "year": 2002,
+    "laureates_zh": "戴维斯、小柴昌俊（另一半归贾科尼）",
+    "laureates_en": "Raymond Davis Jr., Masatoshi Koshiba (other half: Riccardo Giacconi)",
+    "share": "戴维斯与小柴各四分之一",
+    "result": "探测到宇宙中微子：戴维斯测到太阳中微子（1968 年起），小柴的神冈测到超新星 1987A 的中微子（1987 年）",
+    "apparatus": "Homestake 金矿里的 615 吨四氯乙烯罐；神冈 3,000 吨水切伦科夫探测器",
+    "citation_en": "for pioneering contributions to astrophysics, in particular for the detection of cosmic neutrinos",
+    "sources": [
+     {
+      "t": "瑞典皇家科学院新闻稿（2002-10-08）",
+      "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2002-2/"
+     },
+     {
+      "t": "诺贝尔物理学委员会 2002 年 Advanced Information",
+      "u": "https://www.kva.se/app/uploads/2002/10/globalassets-priser-nobel-2002-scibackfyen02.pdf"
+     }
+    ],
+    "confidence": "高",
+    "note": ""
+   },
+   {
+    "year": 2015,
+    "laureates_zh": "梶田隆章、麦克唐纳",
+    "laureates_en": "Takaaki Kajita, Arthur B. McDonald",
+    "share": "二人平分",
+    "result": "发现中微子振荡，说明中微子有质量（1998 年大气中微子，2001–2002 年太阳中微子）",
+    "apparatus": "超级神冈（5 万吨水）；萨德伯里中微子观测站（1,000 吨重水）",
+    "citation_en": "for the discovery of neutrino oscillations, which shows that neutrinos have mass",
+    "sources": [
+     {
+      "t": "瑞典皇家科学院新闻稿（2015-10-06）",
+      "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2015-2/"
+     },
+     {
+      "t": "诺贝尔物理学委员会 2015 年科学背景",
+      "u": "https://www.kva.se/app/uploads/2015/10/scibackfyen15211217.pdf"
+     }
+    ],
+    "confidence": "高",
+    "note": ""
+   },
+   {
+    "year": 2026,
+    "laureates_zh": "哈尔岑",
+    "laureates_en": "Francis Halzen",
+    "share": "独得",
+    "result": "对 IceCube 中微子天文台的决定性贡献，以及发现源自天体的高能中微子（2013 年）",
+    "apparatus": "IceCube：南极点冰下 1 立方公里、5,160 个光学模块",
+    "citation_en": "for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin",
+    "sources": [
+     {
+      "t": "瑞典皇家科学院新闻稿（2026-10-06）",
+      "u": "https://www.kva.se/en/news/the-nobel-prize-in-physics-2026/"
+     },
+     {
+      "t": "诺贝尔物理学委员会《Scientific Background to the Nobel Prize in Physics 2026》",
+      "u": "https://www.kva.se/app/uploads/2026/10/nobel-physics-2026-scientific-background_34f71vieby.pdf"
+     }
+    ],
+    "confidence": "高",
+    "note": ""
+   }
+  ],
+  "nu_prizes_note": "瑞典皇家科学院 2026 年的科学背景自己列的「此前的中微子奖」就是 1988、1995、2002、2015 这四次，加上今年共五次，没有漏。2002 年的中微子部分是戴维斯与小柴两人。相关但不计入的：1936 年赫斯（发现宇宙线）、1945 年泡利（1930 年提出中微子，但获奖理由是不相容原理）、1938 年费米。",
+  "decisive": [
+   {
+    "year": 1968,
+    "who": "Luis W. Alvarez",
+    "phrase": "decisive contributions",
+    "citation_en": "for his decisive contributions to elementary particle physics, in particular the discovery of a large number of resonance states, made possible through his development of the technique of using hydrogen bubble chamber and data analysis",
+    "names": "方法：氢气泡室技术与数据分析",
+    "source": {
+     "t": "通行文本，未逐字核对（nobelprize.org 打不开；由 A 代理核）",
+     "u": ""
+    },
+    "confidence": "中"
+   },
+   {
+    "year": 1974,
+    "who": "Martin Ryle, Antony Hewish",
+    "phrase": "decisive role",
+    "citation_en": "for their pioneering research in radio astrophysics: Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars",
+    "names": "方法：综合孔径技术（decisive role 说的是休伊什在发现脉冲星中的作用）",
+    "source": {
+     "t": "通行文本，未逐字核对（由 A 代理核）",
+     "u": ""
+    },
+    "confidence": "中"
+   },
+   {
+    "year": 1984,
+    "who": "Carlo Rubbia, Simon van der Meer",
+    "phrase": "decisive contributions",
+    "citation_en": "for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction",
+    "names": "项目：「the large project」，即 CERN 的质子–反质子对撞机计划",
+    "source": {
+     "t": "通行文本，未逐字核对（由 B 代理核）",
+     "u": ""
+    },
+    "confidence": "中"
+   },
+   {
+    "year": 2017,
+    "who": "Rainer Weiss, Barry C. Barish, Kip S. Thorne",
+    "phrase": "decisive contributions",
+    "citation_en": "for decisive contributions to the LIGO detector and the observation of gravitational waves",
+    "names": "装置：LIGO detector",
+    "source": {
+     "t": "瑞典皇家科学院新闻稿（2017-10-03）",
+     "u": "https://www.kva.se/en/news/nobelpriset-i-fysik-2017-2/"
+    },
+    "confidence": "高"
+   },
+   {
+    "year": 2026,
+    "who": "Francis Halzen",
+    "phrase": "decisive contributions",
+    "citation_en": "for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical origin",
+    "names": "装置：IceCube Neutrino Observatory",
+    "source": {
+     "t": "瑞典皇家科学院新闻稿（2026-10-06）",
+     "u": "https://www.kva.se/en/news/the-nobel-prize-in-physics-2026/"
+    },
+    "confidence": "高"
+   }
+  ],
+  "decisive_note": "凭记忆把 1901 年以来的物理学奖颁奖词过了一遍，含 decisive 一词的只有这五年；因为 nobelprize.org 打不开，没能在官网上检索确认，「没有别的年份」这句话置信度只有中。五年里直接点到装置名的是 2017 与 2026，点到「项目」的是 1984，点到方法的是 1968 与 1974。另有 2013 年的颁奖词不含 decisive，但写了「by the ATLAS and CMS experiments at CERN's Large Hadron Collider」（由 B 代理核原文）。",
+  "wait": [
+   {
+    "id": "michelson",
+    "result": "1887 年迈克尔逊–莫雷实验（干涉仪首次造出是 1881 年）",
+    "prize": 1907,
+    "years": 20,
+    "confidence": "中"
+   },
+   {
+    "id": "kamerlingh-onnes",
+    "result": "1908 年液化氦（1911 年发现超导）",
+    "prize": 1913,
+    "years": 5,
+    "confidence": "中"
+   },
+   {
+    "id": "lawrence",
+    "result": "1931 年第一台能用的回旋加速器",
+    "prize": 1939,
+    "years": 8,
+    "confidence": "中"
+   },
+   {
+    "id": "alvarez",
+    "result": "1959 年 72 英寸氢气泡室投入使用，此后几年发现大批共振态",
+    "prize": 1968,
+    "years": 9,
+    "confidence": "中"
+   },
+   {
+    "id": "ryle-hewish",
+    "result": "1967 年发现脉冲星（一英里综合孔径望远镜 1964 年建成）",
+    "prize": 1974,
+    "years": 7,
+    "confidence": "中"
+   },
+   {
+    "id": "rubbia-vandermeer",
+    "result": "1983 年发现 W 与 Z 粒子",
+    "prize": 1984,
+    "years": 1,
+    "confidence": "中"
+   },
+   {
+    "id": "homestake",
+    "result": "1968 年发表首批太阳中微子结果（探测器 1967 年开始取数）",
+    "prize": 2002,
+    "years": 34,
+    "confidence": "高"
+   },
+   {
+    "id": "cobe",
+    "result": "1990 年公布黑体谱，1992 年公布各向异性",
+    "prize": 2006,
+    "years": 16,
+    "confidence": "中"
+   },
+   {
+    "id": "lhc",
+    "result": "2012-07-04 宣布发现希格斯玻色子（奖给 1964 年提出理论的人）",
+    "prize": 2013,
+    "years": 1,
+    "confidence": "中"
+   },
+   {
+    "id": "superk-sno",
+    "result": "1998 年超级神冈的大气中微子振荡证据；2001 年 SNO 首批结果",
+    "prize": 2015,
+    "years": 17,
+    "confidence": "高"
+   },
+   {
+    "id": "ligo",
+    "result": "2015-09-14 首次探测到引力波（2016-02-11 公布）",
+    "prize": 2017,
+    "years": 2,
+    "confidence": "高"
+   },
+   {
+    "id": "icecube",
+    "result": "2013-11-22 发表 28 个高能天体中微子事例",
+    "prize": 2026,
+    "years": 13,
+    "confidence": "高"
+   }
+  ],
+  "wait_extremes": [
+   {
+    "what": "最短：发现 W、Z 到获奖",
+    "result": "1983 年",
+    "prize": 1984,
+    "years": 1,
+    "confidence": "中",
+    "note": "通行说法是 1983 年 1 月宣布 W、同年年中宣布 Z，1984 年 10 月获奖；具体日期由 B 代理核。"
+   },
+   {
+    "what": "最长：莱因斯探测到中微子到获奖",
+    "result": "1956 年",
+    "prize": 1995,
+    "years": 39,
+    "confidence": "高",
+    "note": "瑞典皇家科学院 2026 年科学背景：Cowan 与 Reines 1956 年用反应堆证实中微子，Reines 1995 年获奖，Cowan 1974 年去世。"
+   },
+   {
+    "what": "参照：小柴昌俊",
+    "result": "1987 年超新星中微子",
+    "prize": 2002,
+    "years": 15,
+    "confidence": "高",
+    "note": ""
+   },
+   {
+    "what": "参照：SNO 一侧",
+    "result": "2001 年首批结果",
+    "prize": 2015,
+    "years": 14,
+    "confidence": "高",
+    "note": "超级神冈一侧是 17 年。"
+   }
+  ],
+  "wait_note": "years 取「获奖年减成果年」的整数。Homestake 若从最终结果（1998）算是 4 年，从首批结果（1968）算是 34 年，页面用哪个口径要写明。我负责的四座为「高」，其余八座是通行口径，等 A、B 代理的核实结果。",
+  "sole_laureates_note": "Physics Today（2026-10-06）写明：上一次物理学奖一人独得是 1992 年（夏帕克）。",
+  "team_vs_laureates": [
+   {
+    "id": "homestake",
+    "laureates": "1 人（就这座装置而言）",
+    "team": "核心 3 人加 1 位顾问",
+    "source": "Bahcall 与 Davis 2000 年文章"
+   },
+   {
+    "id": "superk-sno",
+    "laureates": "2 人",
+    "team": "超级神冈 1998 年论文 121 位作者；SNO 约 100 人；2016 年突破奖五个实验约 1,370 人",
+    "source": "PRL 81, 1562；SNO 2001 年新闻稿；Breakthrough Prize"
+   },
+   {
+    "id": "ligo",
+    "laureates": "3 人",
+    "team": "发现论文 1,005 位作者；2016 年特别突破奖 1,015 人分享",
+    "source": "Breakthrough Prize 2016-05-02"
+   },
+   {
+    "id": "icecube",
+    "laureates": "1 人",
+    "team": "合作组约 450 人、58 家机构、14 国",
+    "source": "IceCube 官网 2026-10-06"
+   }
+  ]
+ },
+ "seed_errors": [
+  "IceCube：「2026-02 升级完成（新增 5 根还是 7 根缆待核）」→ 原计划 7 根；2025-12 至 2026-01 实际钻了 6 个孔、装了 6 根；2026-03-11 其中 87 号缆失联（约 700 米深处电缆断裂）；官网新闻稿与 Beyond 页现在写「5 根新缆、600 多个新传感器与标定装置」。（IceCube 官网施工周报 #13、#14，2026-02-12 新闻稿，GNN 月报 2026-03）",
+  "IceCube：「400 多人的合作组」→ 官网口径是约 450 人、58 家机构、14 个国家（2025-01 与 2026-10-06）；Physics Today 写「400 多人」。",
+  "IceCube：「Markov 1960 年代初提出」→ 1960 年（同年 Greisen、Reines 也各自提出）。（瑞典皇家科学院 2026 年科学背景；Spiering 2012）",
+  "IceCube：任务书「1972 年到威斯康星大学麦迪逊分校」→ 1971 年到校做研究助理（原本是 6 个月的访问），1972 年任助理教授；博士是 1969 年。（哈尔岑简历；APS 报道）",
+  "IceCube：任务书「冰层总厚度约 2,820 米」→ Price 等 2002 年论文写 2,810 米；2,820 米是常见示意图口径。",
+  "IceCube：「造价 2.79 亿美元，其中国家科学基金会 2.42 亿」→ 精确口径 2.795 亿与 2.421 亿，其余 0.374 亿来自比利时、德国、瑞典。（项目主任 Yeck 2012 年国会证词）",
+  "IceCube：「海铃首席科学家徐东莲读研时就在 IceCube 合作组」→ 可用；清华的报告人简介写她 2015 年在阿拉巴马大学获博士、2015–2018 年在威斯康星做博士后，其间参加 IceCube，2018 年 9 月回国。「哈尔岑公开推荐海铃」→ 没有找到出处，只核到他是李政道研究所第二届国际学术咨询委员会委员。",
+  "LIGO：「1994 年批准时 3.95 亿美元」→ 1994-11-18 国家科学委员会批准的修订方案是 3.654 亿美元（建造与研发 2.967 亿 + 1997–2001 财年调试运行 0.687 亿）；3.95 亿没有找到一手出处。（AIP FYI 1994-11-30）",
+  "LIGO：「等效光程约 1,200 km」→ LIGO 官网写约 280 次往返、1,120 公里。",
+  "LIGO：「腔内光功率约 100 kW」→ 设计值是 750 千瓦（输入 200 瓦）；100 千瓦是 2015 年首次观测时的实际值，本次未直接核。",
+  "LIGO：「Advanced LIGO 再投约 2 亿」→ 国家科学基金会 2.0512 亿美元，2008 年 3 月获批，为期 7 年。",
+  "LIGO：「到 2026-02 累计 391 个事例（含候选）」→ 391 是 2025-11-18 O4 结束时的算术和（星表确认 218 个 + O4 余下候选 173 个），官方没有直接写这个总数。",
+  "LIGO：「渡鸦啄液氮管上的霜」→ 报道原文是「与冷却系统相连的管子」上的霜，时间 2017 年 7 月，地点汉福德。（Science News 2018-04-18）",
+  "LIGO：「为减少卡车震动重铺公路」「一个人在 5 m 内走动就接近噪声底」→ 两条都没有找到出处，建议删去或标为传说。",
+  "LIGO：任务书「1987 年 Rochus Vogt 任主任」→ 通行说法是 1987 年，但一份史述写国家科学基金会 1986 年即要求改设单一负责人；瑞典皇家科学院不给年份。",
+  "LIGO：任务书「发现论文作者数约 1,000 人」→ Breakthrough 奖的口径是 1,005 位作者。",
+  "超级神冈：「11,146 只 20 英寸光电倍增管」→ 这是 1996–2001 年的数字；2006 年重建后官网写 11,129 只。",
+  "超级神冈：「冲击波连锁毁掉约 6,600 只」→ 官网年表：内探测器 6,777 只、外探测器约 1,100 只（事故后 10 天的中期报告是 6,779 只与 1,017 只）。",
+  "超级神冈：「次年用剩下的管子加亚克力防护罩恢复运行」→ 2002 年 10–12 月以 5,182 只恢复，防护罩是玻璃钢后壳加亚克力前罩。",
+  "超级神冈：「造价约 1 亿美元」→ 没有核到一手数字；滨松官方史只写计划预算约 87 亿日元。",
+  "SNO：「在地下 2,100 m」→ 6,800 英尺层，岩石覆盖约 2,070 米；探测器论文写球心在地表下 2,039 米。",
+  "SNO：「重水无偿出借（市值 3.3 亿加元）」→ 合作组综述写约 3 亿加元；「无偿」二字本次来源里没有出现，只说是出借。",
+  "SNO：「约 9,600 只光电倍增管」→ 探测器论文：9,438 只朝内加 91 只朝外。",
+  "SNO：「探测器腔是 100 级洁净室」→ 探测器论文写装配条件一般优于 1000 级；没有见到 100 级的说法。",
+  "SNO / 超级神冈：「2016 年 Breakthrough Prize 分给五个中微子实验的上千人」→ 2015-11-08 公布的 2016 年度奖，官方页面的人数有 1,370、1,377、「1,300 多」三种写法。",
+  "Homestake：「每隔几周用氦气吹出几十个氩-37 原子」→ 约每两个月提取一次，平均每次 17 个氩原子；25 年里共产生约 2,200 个、提取 1,997 个、计数 875 个。（瑞典皇家科学院 2002 年背景材料）",
+  "Homestake：「1960 年代后期建成」→ 1965 年 5 月开挖，1966 年夏罐体完工，1967 年取数，1968 年发表首批结果。",
+  "Homestake：任务书「此前在 Barberton 石灰石矿的小规模试验（两只 500 加仑）」→ 当事人 1982 年的回顾写的是 1960 年、1,000 加仑。",
+  "Homestake：任务书「深度约 4,100–4,400 米水当量」→ 瑞典皇家科学院 4,200 米水当量；当事人文章 440 千克每平方厘米（4,400 米水当量）。",
+  "候补席：任务书「GRAVITY 把四台 8.2 米望远镜合成等效 130 米口径」→ 欧洲南方天文台写「最大 130 米」，只在某些方向上达到。",
+  "入口：「上一位独得物理学奖的是 1992 年的夏帕克」→ 已核（Physics Today 2026-10-06）。「哈尔岑的话：这是一场不保证成功的冒险」→ 已核，同一篇报道，原话是 This was kind of an adventure where success was not guaranteed, and we were lucky to overcome the various challenges."
+ ],
+ "notes": "给编辑的话：（1）WebSearch 的配额（每轮 200 次，各代理共用）在我做到 LIGO 中途就用完了，此后只能直接打开已知或可推知的官方网址，没有再搜索，也没有绕道。所以 IceCube 与 LIGO 核得最细；超级神冈、SNO、Homestake 和候补席有几项只有一个来源，或干脆没核到，都写进了各自的 todo。（2）最不放心的地方：超级神冈的造价；户塚洋二一条（没有一手来源，置信度标了低）；Homestake 罐体的直径和长度（通行口径，原文打不开）；LIGO 的几条逸闻（伐木、卡车、走动、巴里什的冒名顶替综合征都没找到出处）；1968、1974、1984、1988、1993、1995 年颁奖词是凭通行文本照录的，请以 A、B 代理或 nobelprize.org 的原文为准；「含 decisive 的只有五年」没能在官网检索确认。（3）打不开的来源：nobelprize.org（没有尝试）；repository.aip.org（AIP 口述史，403）；journals.aps.org（RMP 诺奖演讲，403）；iopscience.iop.org（Cleveland 1998，robots 挡住）；pmc.ncbi.nlm.nih.gov（验证码）；theconversation.com（robots 挡住）；ligo.caltech.edu 的个别页面与 PDF（robots 解析失败）；trident.sjtu.edu.cn（抓不到正文）；sgp.fas.org 与 library.lanl.gov 上的 Los Alamos Science（空白或连不上）；kva.se 没有 1993、1995 年的新闻稿页面。（4）IceCube Upgrade 的缆数官方自己前后不一，页面上建议写「原计划 7 根，实际下了 6 根，现有 5 根在工作」，并注明日期。（5）每座装置对象里除 SCHEMA 字段外多了几个键：drawing（同比例示意图用的几何尺寸）、criteria_note、metrics_note；superk-sno 另有 metrics_alt（SNO 一侧的指标），ligo 与 superk-sno 的 apparatus 里有 sites（两个站点的经纬度）；候补席每条多了 citation_zh、detail、note。sidebars 里除三个指定键外，附了 nu_prizes_note、decisive_note、wait_extremes、wait_note、team_vs_laureates（「奖最多发三个人」旁栏可用）。（6）所有造价都是当年价，没有折今，折算请统一做。（7）逸闻每座给了 4–6 条，多于规格说的一到三条，供挑选；kind 为「官方史」的出自实验室官网、官方调查报告或奖项官方介绍，「当事人自述」出自本人文章、访谈或口述史，「著作」出自 Bowen 的书（节选）。（8）一条可以放进第 1 章的现成材料：1998 年 6 月高山 Neutrino '98 的官方日程上，McDonald（6 月 4 日，SNO 进度）、梶田（6 月 5 日 9:55，大气中微子）、哈尔岑（6 月 9 日，AMANDA）三位后来的得主都在，出处是神冈观测所服务器上的日程文本。（9）哈尔岑的博士学位，瑞典皇家科学院写 KU Leuven、1969 年；李政道研究所的咨询委员身份见其官网第二届名单（巴里什在第一届名单里）。"
+}

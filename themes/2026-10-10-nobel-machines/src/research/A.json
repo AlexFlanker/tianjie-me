@@ -1,0 +1,4138 @@
+{
+ "agent": "A",
+ "machines": [
+  {
+   "id": "michelson",
+   "status": "已核（2026-10-08）",
+   "prize": {
+    "year": 1907,
+    "laureates": [
+     {
+      "zh": "阿尔伯特·迈克尔逊",
+      "en": "Albert A. Michelson",
+      "life": "1852–1931",
+      "share": "全奖",
+      "role": "发明干涉仪；1881 年独自、1887 年与莫雷合作，用它找地球相对以太的运动，结果为零。获奖理由是他的精密光学仪器和用这些仪器做的光谱学、计量学研究"
+     }
+    ],
+    "citation_en": "for his optical precision instruments and the spectroscopic and metrological investigations carried out with their aid",
+    "citation_zh": "表彰他的精密光学仪器，以及借助这些仪器完成的光谱学和计量学研究",
+    "citation_source": {
+     "t": "NobelPrize.org：Albert A. Michelson – Facts（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；措辞经精确短语检索命中该页）",
+     "u": "https://www.nobelprize.org/prizes/physics/1907/michelson/facts/"
+    },
+    "citation_check": "与维基百科《List of Nobel laureates in Physics》所列一致；nobelprize.org 未能打开"
+   },
+   "apparatus": {
+    "zh": "迈克尔逊干涉仪（以太漂移实验装置）",
+    "en": "Michelson interferometer (ether-drift apparatus)",
+    "years": "1881 / 1887",
+    "place_zh": "西储大学 Adelbert 宿舍地下室（今凯斯西储大学），克利夫兰，美国；1881 年的前一台在德国波茨坦天体物理台的地窖",
+    "lat": 41.5,
+    "lon": -81.61,
+    "other_sites": [
+     {
+      "zh": "波茨坦天体物理台（Telegrafenberg），德国",
+      "lat": 52.38,
+      "lon": 13.06,
+      "year": 1881
+     }
+    ]
+   },
+   "claim": "19 世纪的光学认为光是静止「以太」里的波。地球以约 30 公里/秒公转，顺着和垂直于运动方向的两束光，往返光程应差约一亿分之一（v²/c²）。麦克斯韦认为这个量小到没法测；迈克尔逊 1881 年写道，拿黄光波长当尺子，它「很容易测」。装置要回答：地球相对以太动不动。",
+   "brief": [
+    "灵敏度：分辨光程里约一亿分之一的变化。等效臂长 11 米（约 2×10⁷ 个黄光波长）时，仪器转 90°，预期条纹移动 0.4 条。",
+    "读数：把条纹位置读到约 0.01 条，是预期信号的 1/40。",
+    "隔振：1881 年在柏林白天读不了数，在波茨坦约 100 米外有人跺脚条纹就消失；新装置要能在市区楼里连续读数。",
+    "转动：整台仪器水平转一整圈，光路不能变形。6 分钟一圈，一圈 16 个读数点。",
+    "时段：正午和傍晚 6 点各测，利用地球自转换方向；论文还计划每隔 3 个月重做一次，利用公转换方向。"
+   ],
+   "scale": [
+    {
+     "k": "石板",
+     "v": "砂岩板约 1.5 米见方、0.3 米厚",
+     "note": "论文原文；质量未查到",
+     "f": [
+      1
+     ]
+    },
+    {
+     "k": "浮台",
+     "v": "环形木浮子外径 1.5 米、内径 0.7 米、厚 0.25 米，浮在铸铁环形槽的水银里",
+     "note": "槽壁厚 1.6 厘米，四周间隙约 1 厘米；水银用量原文未给",
+     "f": [
+      2
+     ]
+    },
+    {
+     "k": "镜子",
+     "v": "四角各 4 面，共 16 面，直径 5 厘米",
+     "note": "镜用合金（speculum metal）磨成的平面镜",
+     "f": [
+      3
+     ]
+    },
+    {
+     "k": "等效臂长",
+     "v": "约 11 米，合 2×10⁷ 个黄光波长",
+     "note": "论文里的 D，是单程；约为 1881 年装置的 10 倍",
+     "f": [
+      4
+     ]
+    },
+    {
+     "k": "转速与读数",
+     "v": "6 分钟一圈，每圈 16 个读数点，每轮连转 6 圈",
+     "note": "",
+     "f": [
+      5
+     ]
+    },
+    {
+     "k": "信号",
+     "v": "预期 0.4 条条纹；实测不到 0.02 条，很可能不到 0.01 条",
+     "note": "论文原话：肯定小于预期的 1/20，很可能小于 1/40",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "观测",
+     "v": "1887 年 7 月 8、9、11、12 日，共 6 轮、36 圈",
+     "note": "3 轮正午、3 轮傍晚 6 点前后",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "前一台（1881）",
+     "v": "黄铜臂长约 1 米，预期移动约 0.1 条",
+     "note": "洛伦兹后来指出真实预期只有一半",
+     "f": [
+      8,
+      11
+     ]
+    }
+   ],
+   "approach": [
+    "整套光学件装在一块砂岩板上，石板托在木浮环上，浮环浮在水银里。转动时没有轴承受力，石板不变形，可以边转边读。1881 年那台是黄铜臂，一转就变形。水银浮台的方案出自莫雷。",
+    "不加大石板，改在四角各放 4 面镜让光来回折返，把等效臂长从约 1 米加到约 11 米，预期信号从不到 0.1 条放大到 0.4 条。代价是 16 面镜都要调准，两臂长度先用木尺量、再用螺旋细调。",
+    "先用钠黄光找到条纹，再换回白光。白光只在两臂光程几乎相等时才出条纹，中央那条好认，可以当零点。",
+    "读数时不停转。仪器以 6 分钟一圈慢转，每过一个刻度对一次条纹、记一次测微螺旋读数，再轻推一下保持转动。论文说这样比停下来读「均匀一致得多」。"
+   ],
+   "history": [
+    {
+     "d": "1879–1880",
+     "t": "麦克斯韦去世后《自然》刊出他的信：地面实验里的效应正比于速度比的平方，小到没法测。"
+    },
+    {
+     "d": "1880–1881 冬",
+     "t": "迈克尔逊在柏林亥姆霍兹的实验室想出干涉仪方案；贝尔出钱，柏林 Schmidt & Haensch 制造。"
+    },
+    {
+     "d": "1881-04",
+     "t": "柏林震动太大，仪器搬到波茨坦天体物理台的地窖；结果为零。"
+    },
+    {
+     "d": "1881–1886",
+     "t": "巴黎的 Potier（1881 年冬）和洛伦兹（1886）先后指出漏算了横臂，预期值应减半。"
+    },
+    {
+     "d": "1882–1883",
+     "t": "迈克尔逊到克利夫兰的凯斯应用科学学院任物理教授。"
+    },
+    {
+     "d": "1885",
+     "t": "开始与隔壁西储大学的化学教授莫雷合作。"
+    },
+    {
+     "d": "1886-10-27",
+     "t": "凯斯主楼失火烧毁，学校借用西储大学的房子；实验后来在西储的 Adelbert 宿舍地下室做。"
+    },
+    {
+     "d": "1887-07-08 至 07-12",
+     "t": "6 轮观测，正午与傍晚各 3 轮，没有测到预期的条纹移动。"
+    },
+    {
+     "d": "1887-08",
+     "t": "迈克尔逊写信告诉瑞利：结果「明确是否定的」。"
+    },
+    {
+     "d": "1887-11",
+     "t": "论文刊于《American Journal of Science》第 34 卷；12 月英国《哲学杂志》转载。"
+    },
+    {
+     "d": "1902–1905",
+     "t": "莫雷与 Dayton Miller 把臂长加到约 32 米重做，仍是零结果。"
+    },
+    {
+     "d": "1907",
+     "t": "迈克尔逊获诺贝尔物理学奖，是第一位获科学类诺奖的美国人。"
+    },
+    {
+     "d": "1925–1926",
+     "t": "Miller 在威尔逊山宣称测到约 9–10 公里/秒的漂移；别人没能重复。"
+    },
+    {
+     "d": "1955",
+     "t": "Shankland 等人重新分析 Miller 的数据，认为信号主要来自温度效应。"
+    }
+   ],
+   "people": [
+    {
+     "zh": "爱德华·莫雷",
+     "en": "Edward W. Morley",
+     "r": "西储大学化学教授；提出并设计水银浮台，与迈克尔逊共同观测、联名发表"
+    },
+    {
+     "zh": "",
+     "en": "John A. Brashear",
+     "r": "匹兹堡的光学仪器匠，为干涉仪加工光学元件（论文正文未点名）"
+    },
+    {
+     "zh": "亚历山大·格雷厄姆·贝尔",
+     "en": "Alexander Graham Bell",
+     "r": "经 Simon Newcomb 引荐，出钱造了 1881 年的第一台干涉仪"
+    },
+    {
+     "zh": "",
+     "en": "Schmidt & Haensch",
+     "r": "柏林仪器厂，制造 1881 年的干涉仪"
+    },
+    {
+     "zh": "",
+     "en": "Hermann Carl Vogel",
+     "r": "波茨坦天体物理台台长，1881 年把台里的地窖借给迈克尔逊"
+    },
+    {
+     "zh": "亨德里克·洛伦兹",
+     "en": "Hendrik A. Lorentz",
+     "r": "1886 年指出 1881 年的预期值算大了一倍"
+    },
+    {
+     "zh": "",
+     "en": "Alfred Potier",
+     "r": "1881 年冬最先向迈克尔逊指出漏算了横臂"
+    },
+    {
+     "zh": "",
+     "en": "Dayton C. Miller",
+     "r": "凯斯的物理教授；1902 年起与莫雷、后来独自重复实验到 1926 年"
+    }
+   ],
+   "awards": [
+    "1907 年科普利奖章（英国皇家学会），迈克尔逊（Britannica 列出；与本装置的直接关系待核）",
+    "2005 年美国物理学会把凯斯西储大学列为物理学史迹（APS Historic Site），表彰 1887 年在此做的迈克尔逊–莫雷实验"
+   ],
+   "anecdotes": [
+    {
+     "t": "1881 年在波茨坦，仪器放在大望远镜墩座地基围成的地窖里。迈克尔逊在论文里写：天文台外约 100 米的人行道上有人跺脚，条纹就完全消失。",
+     "kind": "当事人自述",
+     "f": [
+      9
+     ]
+    },
+    {
+     "t": "观测做完的那个 8 月，迈克尔逊写信给瑞利：预期偏移 0.40 条，最大只有 0.02，平均远小于 0.01，「而且位置还不对」。",
+     "kind": "当事人自述",
+     "f": [
+      18
+     ]
+    },
+    {
+     "t": "迈克尔逊 1907 年的诺奖演讲没有提这个零结果。Shankland 写道，他多年里很少说起它。晚年他把以太叫作「亲爱的老以太」，说它已被放弃，「我个人还有点舍不得」。",
+     "kind": "著作",
+     "f": [
+      18
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "1881 年败在两处：街道震动，信号不到 0.1 条。1887 年先解决这两件事——石板浮在水银上，光路折返把信号放大到 0.4 条——再读数；最后报出上限：不到预期的 1/20。",
+    "principle": "先把噪声压到信号以下，再开始测；零结果要报上限。",
+    "engineer": "动手前先写出预期信号多大、环境噪声多大。信噪比不够就改装置，不要指望多测几遍。没测到也要给出「小于多少」。",
+    "public": "称体重前先把秤放平，量血压前先坐稳。读数不可信时先查环境。「没查出来」要问清楚是查到多细。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "LIGO 是臂长 4 公里的迈克尔逊干涉仪，COBE 的 FIRAS 是偏振迈克尔逊干涉仪（这两条在各自的装置卡里核实）。",
+   "metrics": {
+    "size_m": 1.5,
+    "size_what": "砂岩板边长（等效臂长 11 米）",
+    "mass_t": null,
+    "mass_what": "石板质量未查到",
+    "depth_m": null,
+    "temp_K": null,
+    "cost": {
+     "amount": null,
+     "currency": "USD",
+     "year": 1887,
+     "what": "未查到造价；《Philosophical Magazine》版脚注写得 Bache 基金资助"
+    },
+    "people": {
+     "n": 2,
+     "what": "1887 年论文作者数"
+    },
+    "t_idea": 1881,
+    "t_build": 1886,
+    "t_first": 1887,
+    "t_result": 1887,
+    "t_prize": 1907
+   },
+   "drawing": [
+    {
+     "what": "砂岩板边长（正方形）",
+     "value": 1.5,
+     "unit": "m",
+     "f": [
+      1
+     ]
+    },
+    {
+     "what": "砂岩板厚度",
+     "value": 0.3,
+     "unit": "m",
+     "f": [
+      1
+     ]
+    },
+    {
+     "what": "环形木浮子外径",
+     "value": 1.5,
+     "unit": "m",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "环形木浮子内径",
+     "value": 0.7,
+     "unit": "m",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "环形木浮子厚度",
+     "value": 0.25,
+     "unit": "m",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "铸铁水银槽壁厚",
+     "value": 1.6,
+     "unit": "cm",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "浮子与槽壁的间隙",
+     "value": 1,
+     "unit": "cm",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "砖墩：空心八角形矮砖墩，上铺水泥（原文未给尺寸，示意即可）",
+     "value": null,
+     "unit": "",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "平面镜直径（四角各 4 面，共 16 面）",
+     "value": 5,
+     "unit": "cm",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "分束玻璃与补偿玻璃：厚 1.25 厘米，表面 5.0 × 7.5 厘米，位于石板中心附近",
+     "value": 1.25,
+     "unit": "cm",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "等效臂长 D（光在对角方向来回折返后的单程长度）",
+     "value": 11,
+     "unit": "m",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "铸铁槽外圈的读数刻度数（等间隔）",
+     "value": 16,
+     "unit": "个",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "1881 年波茨坦装置的黄铜臂长（论文估算时取 1.2 米）",
+     "value": 1.0,
+     "unit": "m",
+     "f": [
+      8
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "1887 年论文写明：承载光学件的石板「约 1.5 米见方、0.3 米厚」。Shankland 称之为「五英尺见方的砂岩板」。",
+     "sources": [
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "R. S. Shankland, Michelson and his interferometer, Physics Today 1974-04, 37–43 页",
+       "u": "https://aip.brightspotcdn.com/PTO.v27.i4.37_1.online.pdf"
+      },
+      {
+       "t": "维基百科（辅助）：Michelson–Morley experiment",
+       "u": "https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment"
+      }
+     ],
+     "confidence": "高",
+     "note": "石板质量、石料产地本轮未查到"
+    },
+    {
+     "n": 2,
+     "text": "石板放在环形木浮子上：外径 1.5 米、内径 0.7 米、厚 0.25 米。浮子浮在铸铁环形槽的水银里，槽壁厚 1.6 厘米，浮子四周间隙约 1 厘米。铁槽坐在水泥层上，下面是砌成空心八角形的矮砖墩。中心有一根定位销保证同心。",
+     "sources": [
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "同一论文的《Philosophical Magazine》1887-12 转载版；Project Gutenberg #70888",
+       "u": "https://gutenberg.org/cache/epub/70888/pg70888-images.html"
+      },
+      {
+       "t": "Dorothy Michelson Livingston, Michelson-Morley: The Great Failure, The Scientist 1987-07",
+       "u": "https://www.the-scientist.com/michelson-morley-the-great-failure-63642"
+      }
+     ],
+     "confidence": "中",
+     "note": "数字只见于论文原文（Gutenberg 版数字以图片呈现，Wikisource 版可读）；结构另有 D. M. Livingston 的描述佐证。水银用量原文未给"
+    },
+    {
+     "n": 3,
+     "text": "石板四个角各放 4 面平面镜，共 16 面，镜用合金（speculum metal）磨制，直径 5 厘米。中心附近的分束玻璃和补偿玻璃是等厚的平行平板，厚 1.25 厘米，表面 5.0 × 7.5 厘米。 光源是一盏 Argand 灯，经透镜照到分束玻璃上，用望远镜观察条纹。调光路时先换成钠黄光找到条纹，再恢复白光，慢慢转动改变光程的螺旋直到彩色条纹出现。整套光学件罩在木罩里。",
+     "sources": [
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "同一论文的《Philosophical Magazine》1887-12 转载版；Project Gutenberg #70888",
+       "u": "https://gutenberg.org/cache/epub/70888/pg70888-images.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "两个出处是同一篇论文的两个刊本，内容一致；这类数字没有比原始论文更直接的出处"
+    },
+    {
+     "n": 4,
+     "text": "多次反射把光程加到「原来的约 10 倍」。论文给出的 D 约 11 米，合 2×10⁷ 个黄光波长。",
+     "sources": [
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "Physics Today 1958-08，第 32 页（迈克尔逊–莫雷纪念文字）",
+       "u": "https://aip.brightspotcdn.com/PTO.v11.i8.32_1.online.pdf"
+      },
+      {
+       "t": "维基百科（辅助）：Michelson–Morley experiment",
+       "u": "https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment"
+      }
+     ],
+     "confidence": "高",
+     "note": "D 是等效单程臂长；往返约 22 米"
+    },
+    {
+     "n": 5,
+     "text": "铸铁槽外圈有 16 个等间隔刻度。仪器以 6 分钟一圈的速度慢转，每过一个刻度把测微目镜的叉丝对到最清楚的一条条纹上，记下螺旋读数，再轻推一下保持转动，连续转满 6 圈。",
+     "sources": [
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "同一论文的《Philosophical Magazine》1887-12 转载版；Project Gutenberg #70888",
+       "u": "https://gutenberg.org/cache/epub/70888/pg70888-images.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "两个刊本一致"
+    },
+    {
+     "n": 6,
+     "text": "论文结论：预期位移 0.4 条条纹；实际位移「肯定小于它的 1/20，很可能小于 1/40」。因位移正比于速度平方，地球与以太的相对速度「很可能小于地球公转速度的 1/6，肯定小于 1/4」。",
+     "sources": [
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "同一论文的《Philosophical Magazine》1887-12 转载版；Project Gutenberg #70888",
+       "u": "https://gutenberg.org/cache/epub/70888/pg70888-images.html"
+      },
+      {
+       "t": "APS Historic Sites：Case Western Reserve University",
+       "u": "https://www.aps.org/funding-recognition/historic-sites/case"
+      }
+     ],
+     "confidence": "高",
+     "note": "换算成速度约为小于 5–7.5 公里/秒（公转速度按 30 公里/秒）"
+    },
+    {
+     "n": 7,
+     "text": "论文数据表的观测日期：正午 7 月 8、9、11 日，傍晚（6 点前后）7 月 8、9、12 日，共 6 轮，每轮 6 圈。最后一轮在 1887-07-12。 论文写明观测只做了一个季节，不能排除太阳系整体运动恰好抵消公转的可能，「因此实验将每隔三个月重复一次」。",
+     "sources": [
+      {
+       "t": "同一论文的《Philosophical Magazine》1887-12 转载版；Project Gutenberg #70888",
+       "u": "https://gutenberg.org/cache/epub/70888/pg70888-images.html"
+      },
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "Dorothy Michelson Livingston, Michelson-Morley: The Great Failure, The Scientist 1987-07",
+       "u": "https://www.the-scientist.com/michelson-morley-the-great-failure-63642"
+      }
+     ],
+     "confidence": "高",
+     "note": "DSB 写「7 月里 5 天」，指 8–12 日这段；Case 百科写 4–7 月间分段观测，含调试；论文两个刊本都有这句话。二手叙述普遍说两人后来没有再做，本轮未找到可引的出处，页面上如要写「没有做」请标低置信度"
+    },
+    {
+     "n": 8,
+     "text": "1881 年的干涉仪由柏林 Schmidt & Haensch 制造，臂是黄铜的，长约 1,000 毫米；论文估算时取 D = 1,200 毫米（约 200 万个黄光波长），预期位移「接近条纹间距的 1/10」。",
+     "sources": [
+      {
+       "t": "Michelson, The Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 22 卷（1881），120 页起；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/The_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "R. S. Shankland, Michelson and his interferometer, Physics Today 1974-04, 37–43 页",
+       "u": "https://aip.brightspotcdn.com/PTO.v27.i4.37_1.online.pdf"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Michelson, Albert Abraham（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/people/science-and-technology/physics-biographies/albert-abraham-michelson"
+      }
+     ],
+     "confidence": "高",
+     "note": "维基表格把臂长记作 1.2 米"
+    },
+    {
+     "n": 9,
+     "text": "1881 年仪器先放在柏林物理研究所的石墩上，因对震动极敏感，白天无法工作。搬到波茨坦天体物理台后普通石墩仍不够，再搬进地窖（地窖的圆墙是大赤道仪墩座的地基）。即便如此，天文台外约 100 米的人行道上有人跺脚，条纹就完全消失。1887 年论文回顾说，在城里即使凌晨 2 点也只能断续看到条纹。",
+     "sources": [
+      {
+       "t": "Michelson, The Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 22 卷（1881），120 页起；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/The_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      }
+     ],
+     "confidence": "高",
+     "note": "跺脚一事发生在波茨坦，不是柏林"
+    },
+    {
+     "n": 10,
+     "text": "1881 年论文结尾致谢：贝尔「提供了开展这项工作的资金」，波茨坦天体物理台台长 Vogel 提供了场地。Shankland 写明是 Simon Newcomb 向贝尔推荐了迈克尔逊；DSB 的说法是迈克尔逊动用了贝尔在 Schmidt & Haensch 的赊账额度。",
+     "sources": [
+      {
+       "t": "Michelson, The Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 22 卷（1881），120 页起；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/The_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "R. S. Shankland, Michelson and his interferometer, Physics Today 1974-04, 37–43 页",
+       "u": "https://aip.brightspotcdn.com/PTO.v27.i4.37_1.online.pdf"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Michelson, Albert Abraham（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/people/science-and-technology/physics-biographies/albert-abraham-michelson"
+      }
+     ],
+     "confidence": "高",
+     "note": "金额三处都没写"
+    },
+    {
+     "n": 11,
+     "text": "1887 年论文开头承认：1881 年推导时忽略了地球运动对垂直方向那束光的影响。巴黎的 A. Potier 在 1881 年冬向迈克尔逊指出了这个错误；洛伦兹的分析表明待测量实际只有原先估计的一半。",
+     "sources": [
+      {
+       "t": "Michelson & Morley, On the Relative Motion of the Earth and the Luminiferous Ether, American Journal of Science 第 3 辑第 34 卷第 203 期（1887-11），333–345 页；Wikisource 录文",
+       "u": "https://en.wikisource.org/wiki/On_the_Relative_Motion_of_the_Earth_and_the_Luminiferous_Ether"
+      },
+      {
+       "t": "同一论文的《Philosophical Magazine》1887-12 转载版；Project Gutenberg #70888",
+       "u": "https://gutenberg.org/cache/epub/70888/pg70888-images.html"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Michelson, Albert Abraham（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/people/science-and-technology/physics-biographies/albert-abraham-michelson"
+      }
+     ],
+     "confidence": "高",
+     "note": "按 1881 年的 D = 1.2 米，预期值从 0.08 条降到 0.04 条"
+    },
+    {
+     "n": 12,
+     "text": "1887 年的实验在西储大学 Adelbert 宿舍（后改名 Pierce Hall，1962 年拆除）的地下室做。此前 1886-10-27 凯斯应用科学学院的主楼被火烧毁，学校借用了西储大学的房子。",
+     "sources": [
+      {
+       "t": "Encyclopedia of Cleveland History（凯斯西储大学）：Michelson-Morley Experiment",
+       "u": "https://case.edu/ech/articles/m/michelson-morley-experiment"
+      },
+      {
+       "t": "凯斯西储大学新闻：Walking tour shows campus through accomplishments of Michelson and Morley",
+       "u": "https://case.edu/news/walking-tour-shows-campus-through-accomplishments-michelson-and-morley"
+      },
+      {
+       "t": "Case School: The Evolving History（凯斯西储大学档案）：Case Main fire",
+       "u": "https://scalar.case.edu/caseschool/case-main-fire"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 13,
+     "text": "莫雷是西储大学的化学教授（1869–1906 年在任），1885 年起与迈克尔逊合作。把石板浮在水银上的办法是他提的，环形槽和浮子由他设计。",
+     "sources": [
+      {
+       "t": "Dorothy Michelson Livingston, Michelson-Morley: The Great Failure, The Scientist 1987-07",
+       "u": "https://www.the-scientist.com/michelson-morley-the-great-failure-63642"
+      },
+      {
+       "t": "Physics Today 1958-08，第 32 页（迈克尔逊–莫雷纪念文字）",
+       "u": "https://aip.brightspotcdn.com/PTO.v11.i8.32_1.online.pdf"
+      },
+      {
+       "t": "Encyclopedia of Cleveland History（凯斯西储大学）：Michelson-Morley Experiment",
+       "u": "https://case.edu/ech/articles/m/michelson-morley-experiment"
+      },
+      {
+       "t": "凯斯西储大学新闻：Walking tour shows campus through accomplishments of Michelson and Morley",
+       "u": "https://case.edu/news/walking-tour-shows-campus-through-accomplishments-michelson-and-morley"
+      }
+     ],
+     "confidence": "高",
+     "note": "正式实验前两人先重做了斐索的流水测光速实验"
+    },
+    {
+     "n": 14,
+     "text": "匹兹堡的 John A. Brashear 为迈克尔逊的干涉仪加工了光学元件。AIP 的说法是迈克尔逊和莫雷请他做干涉仪的光学件；匹兹堡大学称他的光学元件是 1887 年实验的「关键部件」。",
+     "sources": [
+      {
+       "t": "AIP Initial Conditions 播客第 9 集 The Unexpected Hero of Light（含文献注释）",
+       "u": "https://www.aip.org/library/initial-conditions-episode-9-the-unexpected-hero-of-light"
+      },
+      {
+       "t": "匹兹堡大学物理与天文系：John Brashear",
+       "u": "https://physicsandastronomy.pitt.edu/node/667"
+      }
+     ],
+     "confidence": "中",
+     "note": "1887 年论文正文没有出现 Brashear 的名字；具体做了哪几件未查到"
+    },
+    {
+     "n": 15,
+     "text": "论文《On the Relative Motion of the Earth and the Luminiferous Ether》刊于《American Journal of Science》第 3 辑第 34 卷第 203 期（1887-11），333–345 页；同年 12 月《Philosophical Magazine》第 5 辑转载，转载版脚注写明研究得 Bache 基金资助。",
+     "sources": [
+      {
+       "t": "AIP Initial Conditions 播客第 9 集 The Unexpected Hero of Light（含文献注释）",
+       "u": "https://www.aip.org/library/initial-conditions-episode-9-the-unexpected-hero-of-light"
+      },
+      {
+       "t": "同一论文的《Philosophical Magazine》1887-12 转载版；Project Gutenberg #70888",
+       "u": "https://gutenberg.org/cache/epub/70888/pg70888-images.html"
+      },
+      {
+       "t": "APS News, This Month in Physics History: November 1887（2007-11）",
+       "u": "https://www.aps.org/publications/apsnews/200711/physicshistory.cfm"
+      }
+     ],
+     "confidence": "高",
+     "note": "AIP 展览页把卷号写成 35，应为 34"
+    },
+    {
+     "n": 16,
+     "text": "迈克尔逊 1907 年获诺贝尔物理学奖，是第一位获科学类诺贝尔奖的美国人。颁奖词讲的是精密光学仪器与光谱学、计量学研究，没有提以太漂移实验。 迈克尔逊在凯斯应用科学学院任物理教授到 1889 年，之后去克拉克大学，1892 年起任芝加哥大学物理系首任系主任，直到 1929 年退休。",
+     "sources": [
+      {
+       "t": "Britannica：A. A. Michelson",
+       "u": "https://www.britannica.com/biography/A-A-Michelson"
+      },
+      {
+       "t": "凯斯西储大学新闻：Walking tour shows campus through accomplishments of Michelson and Morley",
+       "u": "https://case.edu/news/walking-tour-shows-campus-through-accomplishments-michelson-and-morley"
+      },
+      {
+       "t": "R. S. Shankland, Michelson and his interferometer, Physics Today 1974-04, 37–43 页",
+       "u": "https://aip.brightspotcdn.com/PTO.v27.i4.37_1.online.pdf"
+      },
+      {
+       "t": "NobelPrize.org：Albert A. Michelson – Facts（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；措辞经精确短语检索命中该页）",
+       "u": "https://www.nobelprize.org/prizes/physics/1907/michelson/facts/"
+      },
+      {
+       "t": "APS News, This Month in Physics History: November 1887（2007-11）",
+       "u": "https://www.aps.org/publications/apsnews/200711/physicshistory.cfm"
+      },
+      {
+       "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+       "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+      }
+     ],
+     "confidence": "高",
+     "note": "APS 的「第一位获诺奖的美国人」不准确，应限定为科学类（1906 年和平奖得主是美国总统西奥多·罗斯福，此条凭常识，请编辑复核）；到凯斯的年份有 1882 与 1883 两种写法。对照维基所列 1901–1906 年各届颁奖词（射线、磁与辐射、放射性、气体密度与氩、阴极射线、气体导电），1907 年是第一次把「仪器」写进颁奖词"
+    },
+    {
+     "n": 17,
+     "text": "莫雷后来与凯斯的 Dayton C. Miller 合作重做，1904 年用砂岩、木头和钢三种支架都得到零结果，臂长约 32 米。Miller 1925–1926 年在威尔逊山宣称测到约 9–10 公里/秒的漂移，1920 年代其他实验者都没能证实。1955 年 Shankland 等人重新分析，认为信号主要来自没控制住的温度效应。",
+     "sources": [
+      {
+       "t": "Physics Today 1958-08，第 32 页（迈克尔逊–莫雷纪念文字）",
+       "u": "https://aip.brightspotcdn.com/PTO.v11.i8.32_1.online.pdf"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Michelson, Albert Abraham（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/people/science-and-technology/physics-biographies/albert-abraham-michelson"
+      },
+      {
+       "t": "维基百科（辅助）：Dayton Miller",
+       "u": "https://en.wikipedia.org/wiki/Dayton_Miller"
+      },
+      {
+       "t": "维基百科（辅助）：Michelson–Morley experiment",
+       "u": "https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment"
+      }
+     ],
+     "confidence": "中",
+     "note": "Morley–Miller 的起止年各家写法不一，见 disputes"
+    },
+    {
+     "n": 18,
+     "text": "Shankland 写道，迈克尔逊多年里很少提这个结果，1907 年的诺奖演讲里也没有它。DSB 记他后来的话：「亲爱的老以太（如今已被放弃，虽然我个人还有点舍不得）」，并说他 1927 年在最后一本书里主张对相对论「宽厚地接受」。APS 的说法是两人都把实验看成失败。 1887 年 8 月迈克尔逊致瑞利的信：实验已完成，结果「明确是否定的」；预期偏移 0.40 条，最大位移 0.02，平均远小于 0.01，「而且位置还不对」。",
+     "sources": [
+      {
+       "t": "R. S. Shankland, Michelson and his interferometer, Physics Today 1974-04, 37–43 页",
+       "u": "https://aip.brightspotcdn.com/PTO.v27.i4.37_1.online.pdf"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Michelson, Albert Abraham（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/people/science-and-technology/physics-biographies/albert-abraham-michelson"
+      },
+      {
+       "t": "APS News, This Month in Physics History: November 1887（2007-11）",
+       "u": "https://www.aps.org/publications/apsnews/200711/physicshistory.cfm"
+      },
+      {
+       "t": "密歇根州立大学课程页 Getting Serious: The Michelson-Morley Experiment（引迈克尔逊 1887-08 致瑞利信）",
+       "u": "https://qstbb.pa.msu.edu/storage/new_ed/relativity/J-150_SpecialRelativity_1_S5.html"
+      },
+      {
+       "t": "维基百科（辅助）：Michelson–Morley experiment",
+       "u": "https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment"
+      }
+     ],
+     "confidence": "中",
+     "note": "引语的原始出处（应为 1927 年前后的讲话或著作）未回查；常见引法是 1887-08-17，本轮未见信件影印"
+    }
+   ],
+   "disputes": [
+    "光程：论文写 D「约 11 米」（等效单程臂长），维基表格同；密歇根州立大学课程页写「有效光程 36 米」，未给出处。",
+    "观测天数：论文数据表是 7 月 8、9、11、12 日共 6 轮；DSB 写「5 天」；密歇根州立大学课程页写「6 天」；Case 百科写 4–7 月间分几段集中观测。",
+    "1881 年的预期值：迈克尔逊原文说「接近 1/10 条」（按 D = 1.2 米算是 0.08）；洛伦兹修正后减半为 0.04；维基表格直接列 0.04。",
+    "1881 年臂长：论文一处说黄铜臂「长约 1,000 毫米」，估算时用 D = 1,200 毫米；二手来源多写 1.2 米。",
+    "到凯斯任教的年份：凯斯西储大学与 APS 写 1882，Britannica 与维基写 1883。",
+    "Morley–Miller 实验的年份：维基表格 1902–1904，DSB 写 1900–1906，Physics Today 1958 只说 1904 年得到零结果。",
+    "Miller 宣称的漂移速度：维基 Dayton Miller 条写约 9 公里/秒，维基实验表写 8–10 公里/秒；DSB 提到的约 200 公里/秒是他推算的太阳系整体运动，不是测到的漂移量。",
+    "颁奖词英文：诺奖官网是 for his optical precision instruments and the spectroscopic and metrological investigations carried out with their aid；DSB 写作 for his precision optical instruments and the spectroscopic and metrological investigations conducted therewith。"
+   ],
+   "todo": [
+    "贝尔出资的金额：1881 年论文、Shankland、DSB 都没写数，需查 D. M. Livingston《The Master of Light》或 Swenson《The Ethereal Aether》。",
+    "砂岩板质量、水银用量、1887 年装置造价：本轮来源均无数字。",
+    "Brashear 具体加工了哪些件（16 面镜、平行平板）：需查 Brashear 自传或 Swenson。",
+    "《Light Waves and Their Uses》（1903）里「这个问题引出了干涉仪，足以补偿实验本身的负结果」一句未能在线核到原文，暂未收。",
+    "致瑞利信的具体日期（常写 1887-08-17）与原信影印。",
+    "「每三个月重复一次」后来没有执行，这一点缺可引出处。",
+    "t_build 取 1886 年，依据只是 Shankland 图注里「1886–87 年使用」；开工的确切时间未查到。",
+    "nobelprize.org 打不开，颁奖词未能直接对页（措辞与维基百科诺奖得主列表一致）。"
+   ]
+  },
+  {
+   "id": "leiden",
+   "status": "已核（2026-10-08）",
+   "prize": {
+    "year": 1913,
+    "laureates": [
+     {
+      "zh": "海克·卡末林·昂内斯",
+      "en": "Heike Kamerlingh Onnes",
+      "life": "1853–1926",
+      "share": "全奖",
+      "role": "1882 年起主持莱顿大学物理实验室，用 26 年把它建成能成批生产液氧、液氢的低温工厂，1908 年首次液化氦，1911 年在液氦温度下发现超导"
+     }
+    ],
+    "citation_en": "for his investigations on the properties of matter at low temperatures which led, inter alia, to the production of liquid helium",
+    "citation_zh": "表彰他对物质在低温下性质的研究，这些研究的成果之一是制得了液氦",
+    "citation_source": {
+     "t": "NobelPrize.org：The Nobel Prize in Physics 1913（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；措辞经精确短语检索命中该页，并与维基百科所引一致）",
+     "u": "https://www.nobelprize.org/prizes/physics/1913/summary/"
+    },
+    "citation_check": "与维基百科《List of Nobel laureates in Physics》所列开头一致；nobelprize.org 未能打开"
+   },
+   "apparatus": {
+    "zh": "莱顿低温实验室（级联液化装置与氦液化器）",
+    "en": "Leiden cryogenic laboratory (cascade and helium liquefier)",
+    "years": "1892–1908 / 1911",
+    "place_zh": "莱顿大学物理实验室（Steenschuur，1932 年起称卡末林·昂内斯实验室），莱顿，荷兰",
+    "lat": 52.16,
+    "lon": 4.49
+   },
+   "claim": "范德瓦耳斯 1873 年的理论说，气体和液体是连续的，任何气体冷到临界温度以下都能液化。1898 年杜瓦液化了氢，只剩氦。昂内斯 1907 年底测算出氦的临界温度约 5.3 K、逆转温度约 23 K。装置要回答：照这两个数去做，氦能不能变成液体。",
+   "brief": [
+    "预冷：氦的逆转温度约 23 K，要先用液氢把它冷到这以下，节流膨胀才会降温。当天要备 20 升液氢，前一天备 75 升液空。",
+    "流程：三级级联（氯甲烷、乙烯、氧）成批产液氧和液空，供给氢液化器；氢液化器要连续出液，1906 年做到每小时 4 升。",
+    "工质：全部家当是 360 升氦气，200 升走闭路循环、160 升备用，压到 100 个大气压后节流。氢和氦都要极纯，几立方厘米空气就能冻住细管和阀门。",
+    "目标温度：临界温度约 5 K 以下；实测沸点 4.25 K，再抽气减压到 2 K 以下。",
+    "人手：玻璃杜瓦瓶、阀门、泵都要自制，技工靠自己培养，1904 年有 32 名学徒。"
+   ],
+   "scale": [
+    {
+     "k": "温度",
+     "v": "液氦沸点 4.25 K；当天抽气减压到约 1.7 K",
+     "note": "4.25 K 是昂内斯诺奖演讲里的值，今值约 4.2 K；van Delft 另一篇文章写 1.8 K；到 1913 年估计已达 1.15 K",
+     "f": [
+      3,
+      4
+     ]
+    },
+    {
+     "k": "首日产量",
+     "v": "约 60 毫升液氦",
+     "note": "van Delft：「刚够一小茶杯」",
+     "f": [
+      3
+     ]
+    },
+    {
+     "k": "当天备料",
+     "v": "75 升液空、20 升液氢、200 升氦气（另备 160 升）",
+     "note": "液空前一天备齐，液氢 13:30 前灌进杜瓦瓶",
+     "f": [
+      2
+     ]
+    },
+    {
+     "k": "当天工时",
+     "v": "05:30 开工，19:30 看到液面，21:30 收工",
+     "note": "起止时间据诺奖演讲；19:30 据 van Delft",
+     "f": [
+      2,
+      3
+     ]
+    },
+    {
+     "k": "级联",
+     "v": "氯甲烷约 −90 °C → 乙烯约 −160 °C → 氧（减压到约 −217 °C）→ 液空 → 液氢 20.4 K → 液氦",
+     "note": "各级温度出自 1912 年的报道与诺奖演讲，随压力不同有出入",
+     "f": [
+      1
+     ]
+    },
+    {
+     "k": "氢液化器",
+     "v": "1906 年投产，每小时 4 升；1913 年每小时 10 升",
+     "note": "",
+     "f": [
+      1
+     ]
+    },
+    {
+     "k": "学徒",
+     "v": "1898 年 16 人，1904 年 32 人，1918 年约 40 人",
+     "note": "「蓝衣男孩」，入学年龄 14–18 岁",
+     "f": [
+      8
+     ]
+    },
+    {
+     "k": "停工",
+     "v": "1895 年被市政当局叫停，1898-06-04 复工，约 3 年",
+     "note": "",
+     "f": [
+      7
+     ]
+    },
+    {
+     "k": "垄断",
+     "v": "1908-07-10 到 1923-01-24，全世界只有莱顿有液氦",
+     "note": "约 14 年半；van Delft 说「15 年」",
+     "f": [
+      12
+     ]
+    }
+   ],
+   "approach": [
+    "先建产线，再做实验。1892 年级联出第一滴液氧，1894 年每小时几升；1906 年氢液化器投产。到 1908 年冲击氦时，液空和液氢已是库存品，一天内就能备齐 75 升和 20 升。",
+    "技工自己培养。1885 年收第一个学徒，1901 年成立仪器制造培训协会，学徒白天在车间干活，晚上上课。技师长 Flim 和玻璃工 Kesselring 带出的这支队伍造了全部装置。",
+    "氦液化器沿用氢液化器的做法：预冷加节流膨胀，没有另起炉灶。氦气走闭路循环，因为总共只有 360 升；到 18:30 已循环约 20 遍。",
+    "对手杜瓦靠个人手艺，助手离开后进度停住，他说过「开创性的工作里助手是浪费」。昂内斯靠分工：经理、仪器匠、玻璃工、工程师各司其职。van Delft 把这叫作 20 世纪初的「大科学」。"
+   ],
+   "history": [
+    {
+     "d": "1882",
+     "t": "昂内斯任莱顿大学实验物理教授；就职演讲提出「Door meten tot weten」。"
+    },
+    {
+     "d": "1885",
+     "t": "实验室车间收第一个学徒。"
+    },
+    {
+     "d": "1892–1894",
+     "t": "级联装置 1892 年出第一滴液氧，1894 年建成，每小时产几升。"
+    },
+    {
+     "d": "1895",
+     "t": "莱顿市政当局反对在市中心用压缩气体，8 月要求把低温实验室迁出城；低温工作停止。"
+    },
+    {
+     "d": "1896-03",
+     "t": "对手杜瓦回信声援；荷兰皇家科学院受政府委托组委员会评估危险。"
+    },
+    {
+     "d": "1897-02",
+     "t": "裁决允许在采取防护措施后继续。"
+    },
+    {
+     "d": "1898-06-04",
+     "t": "低温工作恢复；杜瓦已在同年 5 月液化氢。"
+    },
+    {
+     "d": "1901",
+     "t": "成立仪器制造培训协会，今天的莱顿仪器制造学校（LiS）以此为建校年。"
+    },
+    {
+     "d": "1906",
+     "t": "氢液化器投产，每小时 4 升液氢。"
+    },
+    {
+     "d": "1907 年底",
+     "t": "测算出氦的逆转温度约 23 K、临界温度约 5.3 K。"
+    },
+    {
+     "d": "1908-07-10",
+     "t": "首次液化氦，约 60 毫升；减压到约 1.7 K，没能把它冻成固体。"
+    },
+    {
+     "d": "1911-04-08",
+     "t": "汞的电阻在约 3 K 时「几乎为零」，超导被发现。"
+    },
+    {
+     "d": "1913",
+     "t": "昂内斯获诺贝尔物理学奖。"
+    },
+    {
+     "d": "1914-04-24",
+     "t": "向科学院报告铅线圈里的持续电流：0.6 安，一小时内看不出衰减。"
+    },
+    {
+     "d": "1923-01-24",
+     "t": "多伦多大学 McLennan 用莱顿给的图纸制出 1 升液氦，莱顿的垄断结束。"
+    },
+    {
+     "d": "1932",
+     "t": "实验室命名为卡末林·昂内斯实验室。"
+    }
+   ],
+   "people": [
+    {
+     "zh": "",
+     "en": "Gerrit Jan Flim",
+     "r": "面包师之子，1893 年 17 岁进实验室，后任低温车间主任；液化器的建造者"
+    },
+    {
+     "zh": "",
+     "en": "Oskar Kesselring",
+     "r": "图林根来的玻璃吹制师，1902 年 4 月入职；做杜瓦瓶和玻璃虹吸管，兼教学徒"
+    },
+    {
+     "zh": "",
+     "en": "Gilles Holst",
+     "r": "1909 年起任助手；操作电桥和检流计测电阻；后任飞利浦物理实验室科学主任"
+    },
+    {
+     "zh": "",
+     "en": "Cornelis Dorsman",
+     "r": "1911-04-08 负责控制和测量温度"
+    },
+    {
+     "zh": "",
+     "en": "C. A. Crommelin",
+     "r": "负责实验室的技术运行；1908 年起任培训协会秘书兼司库"
+    },
+    {
+     "zh": "",
+     "en": "Onno Kamerlingh Onnes",
+     "r": "昂内斯的兄弟，在阿姆斯特丹主持商业情报机构，替他弄到含氦的独居石砂"
+    },
+    {
+     "zh": "詹姆斯·杜瓦",
+     "en": "James Dewar",
+     "r": "伦敦的对手，1898 年先液化氢；1896 年写信声援被停工的莱顿"
+    },
+    {
+     "zh": "",
+     "en": "John C. McLennan",
+     "r": "多伦多大学；1923 年成为莱顿之外第一个制出液氦的人"
+    },
+    {
+     "zh": "",
+     "en": "P. W. Janssen",
+     "r": "1897 年捐 7,000 荷兰盾设学徒助学基金"
+    }
+   ],
+   "awards": [
+    "2011 年 IEEE 里程碑（IEEE Milestone）：1911 年发现超导，铭牌写了昂内斯、Dorsman、Flim、Holst 四个人的名字",
+    "2015 年欧洲物理学会历史遗址（EPS Historic Site）：卡末林·昂内斯实验室旧址，2015-02-09 揭牌"
+   ],
+   "anecdotes": [
+    {
+     "t": "1908-07-10 晚 7 点半，温度计稳在约 4 K，却看不见液体。有同事提醒，温度计可能已经泡在液体里。昂内斯拿灯从下方斜着照过杜瓦瓶，才看到液面，他写道它「像刀刃一样清晰地贴在玻璃壁上」。",
+     "kind": "著作",
+     "f": [
+      3
+     ]
+    },
+    {
+     "t": "1896 年 3 月，杜瓦给被停工的对手回信：要是莱顿市政当局得逞，「对贵国的科学乃至整个科学都是一场大灾难」。昂内斯征得同意，把这封信附进了呈内政部的报告。",
+     "kind": "当事人自述",
+     "f": [
+      7
+     ]
+    },
+    {
+     "t": "流传的说法是，一个打瞌睡的「蓝衣男孩」让氦浴升温，才撞见了超导转变。van Delft 与 Kes 对照实验笔记后认为这是杜撰：1911-05-23 的记录显示，电阻是在受控的缓慢升温中于 4.12 K 重新出现的。",
+     "kind": "著作",
+     "f": [
+      10
+     ]
+    },
+    {
+     "t": "记下超导的那本笔记，封面写的是「1909–1910」，昂内斯记日期又常不写年份。那一行荷兰文只有三个词：Kwik nagenoeg nul——汞，几乎为零。",
+     "kind": "著作",
+     "f": [
+      9,
+      10
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "液化氦那天只干了 16 小时，之前准备了 26 年：1892 年级联出液氧，1901 年办技工培训，1906 年让液氢每小时出 4 升。液氦是这条产线的最后一级。",
+    "principle": "先把上游做成稳定的产线，再冲击终点。",
+    "engineer": "要做没人做过的事，先把它依赖的每一级做成例行作业：工装、备件、培训、库存。最后一步的风险才只剩它自己。",
+    "public": "想啃一件难事，先把前面的基础变成每天固定的功课。到了冲刺那天，变数只剩最后一关。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "超导在这里被发现；LHC 的超导磁铁和 COBE 的杜瓦都靠液氦工作（数字见各自装置卡）。1911-04-08 那天，他们还在不知情的情况下看到了 2.2 K 的超流转变。",
+   "metrics": {
+    "size_m": null,
+    "size_what": "氦液化器的外形尺寸未查到",
+    "mass_t": null,
+    "mass_what": "",
+    "depth_m": null,
+    "temp_K": 1.7,
+    "temp_what": "1908-07-10 当天减压后的最低温度；液氦沸点约 4.2 K",
+    "cost": {
+     "amount": null,
+     "currency": "NLG",
+     "year": null,
+     "what": "未查到实验室造价或年度经费；只查到 1897 年 Janssen 基金 7,000 荷兰盾（学徒助学金）"
+    },
+    "people": {
+     "n": 32,
+     "what": "1904 年在册学徒数（van Delft）；实验室总人数未查到"
+    },
+    "t_idea": 1882,
+    "t_build": 1882,
+    "t_first": 1892,
+    "t_result": 1908,
+    "t_prize": 1913
+   },
+   "drawing": [
+    {
+     "what": "1908-07-10 制得的液氦体积",
+     "value": 60,
+     "unit": "mL",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "当天备的液氢体积",
+     "value": 20,
+     "unit": "L",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "前一天备齐的液空体积",
+     "value": 75,
+     "unit": "L",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "循环用氦气体积（常压气体；另备 160 升）",
+     "value": 200,
+     "unit": "L",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "级联各级温度阶梯（示意用）：氯甲烷 183 K、乙烯约 113–128 K、氧 90 K（减压约 56 K）、液氢 20.4 K、液氦 4.2 K、减压后 1.7 K",
+     "value": null,
+     "unit": "K",
+     "f": [
+      1,
+      3
+     ]
+    },
+    {
+     "what": "1914 年持续电流实验的铅环截面",
+     "value": "3.0 × 3.5",
+     "unit": "mm²",
+     "f": [
+      11
+     ]
+    },
+    {
+     "what": "氦液化器与低温恒温器的高度、直径：未查到（实物在莱顿布尔哈夫博物馆，可向馆方藏品页核对）",
+     "value": null,
+     "unit": "",
+     "f": []
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "莱顿级联由三个制冷循环组成：氯甲烷、乙烯、氧。1892 年出第一滴液氧，1894 年装置建成、每小时产几升；液氧减压可到约 54 K。氢靠预冷加节流膨胀液化，氢液化器 1906 年全面投产，每小时 4 升。昂内斯 1913 年诺奖演讲说级联（加上液空一级）覆盖到 −217 °C，液空每小时约 14 升，液氢每小时 10 升。1912 年《Scientific American Supplement》的报道给出各级温度：氯甲烷 −90 °C、乙烯 −160 °C、氧 −210 °C、氢 −259 °C、氦约 −272 °C。",
+     "sources": [
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      },
+      {
+       "t": "Kamerlingh Onnes 诺贝尔演讲（1913-12-11）英译本，第三方存档 PDF",
+       "u": "https://eltamiz.com/images/2012/11/onnes-lecture.pdf"
+      },
+      {
+       "t": "G. Bresch, The Cryogenic Laboratory at Leyden, Scientific American Supplement 1912-08-10（译自 La Nature；todayinsci.com 转载）",
+       "u": "https://todayinsci.com/K/KamerlinghOnnes_Heike/KamerlinghOnnesLab.htm"
+      },
+      {
+       "t": "荷兰皇家科学院（KNAW）数字图书馆：Kamerlingh Onnes 传记条目（《A History of Science in the Netherlands》）",
+       "u": "https://dwc.knaw.nl/wp-content/berkelbio/27.kamerlinghonnes.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "各级温度取决于抽气压力，不同来源的数不完全一样；van Delft 2008 说级联 1893 年开始成批产液氧"
+    },
+    {
+     "n": 2,
+     "text": "1908-07-10：前一天把液空库存加到 75 升；当天 13:30 前把 20 升液氢灌进杜瓦瓶；14:30 开始冷却氦，16:20 开氦循环泵，一小时后氦压到 100 个大气压；18:30 温度降到液氢温度以下，此时氦已循环约 20 遍。用于循环的氦气 200 升，另有 160 升备用。诺奖演讲写当天 05:30 开工、21:30 结束。",
+     "sources": [
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      },
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      },
+      {
+       "t": "Kamerlingh Onnes 诺贝尔演讲（1913-12-11）英译本，第三方存档 PDF",
+       "u": "https://eltamiz.com/images/2012/11/onnes-lecture.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "van Delft 写昂内斯清晨 5 点叫马车出门"
+    },
+    {
+     "n": 3,
+     "text": "19:30 温度计稳定在约 4 K，昂内斯用灯从下方斜照才看到液面。当天得到约 60 毫升液氦；抽气到 0.03 个大气压，温度降到约 1.7 K，氦没有凝固。",
+     "sources": [
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      },
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      },
+      {
+       "t": "Europhysics News 46/2（2015）：EPS Historic Site – Kamerlingh Onnes Laboratory（莱顿大学存档）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/EPN_46-2.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "减压后的温度：van Delft 2008 写 1.7 K，van Delft 2011 写 1.8 K，EPN 写「约 2 K」，维基写「近 1.5 K」"
+    },
+    {
+     "n": 4,
+     "text": "昂内斯在诺奖演讲里给的液氦沸点是 4.25 K、临界温度约 5 K；抽到 0.2 毫米汞柱时按蒸气压公式估计为 1.15 K，氦温度计实测到约 1.5 K。KNAW 传记说他最终到过 0.83 K。",
+     "sources": [
+      {
+       "t": "Kamerlingh Onnes 诺贝尔演讲（1913-12-11）英译本，第三方存档 PDF",
+       "u": "https://eltamiz.com/images/2012/11/onnes-lecture.pdf"
+      },
+      {
+       "t": "荷兰皇家科学院（KNAW）数字图书馆：Kamerlingh Onnes 传记条目（《A History of Science in the Netherlands》）",
+       "u": "https://dwc.knaw.nl/wp-content/berkelbio/27.kamerlinghonnes.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      }
+     ],
+     "confidence": "中",
+     "note": "van Delft 2008 说当天修正后的沸点读数是 4.5 K；0.83 K 的年份（常见说法 1922 年）本轮未核到"
+    },
+    {
+     "n": 5,
+     "text": "氦气来自独居石砂。昂内斯的兄弟 Onno 在阿姆斯特丹主持一个商业情报机构，替他安排了从美国北卡罗来纳经汉堡运来的独居石砂；昂内斯在诺奖演讲里向他致谢。1911 年以后 Welsbach 公司也供过氦气。",
+     "sources": [
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      },
+      {
+       "t": "Kamerlingh Onnes 诺贝尔演讲（1913-12-11）英译本，第三方存档 PDF",
+       "u": "https://eltamiz.com/images/2012/11/onnes-lecture.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "数量口径不一：van Delft 2008 写「两袋」，van Delft 2011 写「几十袋」"
+    },
+    {
+     "n": 6,
+     "text": "昂内斯 1882 年就任莱顿教授，就职演讲题为《定量研究在物理学中的意义》，其中说他希望每个物理实验室的门上都写着 Door meten tot weten（由测量而认识）。",
+     "sources": [
+      {
+       "t": "荷兰皇家科学院（KNAW）数字图书馆：Kamerlingh Onnes 传记条目（《A History of Science in the Netherlands》）",
+       "u": "https://dwc.knaw.nl/wp-content/berkelbio/27.kamerlinghonnes.pdf"
+      },
+      {
+       "t": "APS News, This Month in Physics History（2007-04）：Kamerlingh Onnes 与超导",
+       "u": "https://aps.org/publications/apsnews/200704/history.cfm"
+      },
+      {
+       "t": "Leiden Science Magazine：Heike Kamerlingh Onnes and the coldest place on Earth",
+       "u": "https://www.leidensciencemagazine.nl/en/articles/heike-kamerlingh-onnes-and-the-coldest-place-on-earth"
+      }
+     ],
+     "confidence": "高",
+     "note": "莱顿校方说这句话刻在实验室旧址前他的胸像上"
+    },
+    {
+     "n": 7,
+     "text": "1895 年莱顿市政当局反对实验室在市中心使用压缩气体（旧址就是 1807 年火药船爆炸的地方），同年 8 月要求把低温实验室迁出城，昂内斯在获政府许可前不得继续。政府请荷兰皇家科学院组委员会评估；杜瓦 1896-03-08 回信声援。1897-02 昂内斯写信说裁决已下，采取足够防护措施即可继续。低温工作到 1898-06-04 才恢复，van Delft 说前后耽误了 3 年。",
+     "sources": [
+      {
+       "t": "莱顿大学 Lorentz 研究所 KOL 档案：Kamerlingh Onnes 与 Dewar 通信（1895–1922）录文",
+       "u": "https://www2.lorentz.leidenuniv.nl/history/KOL_archive/correspondence/correspondence_with_Dewar.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      },
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": "van Delft 2011 说市政当局的第一封信是 1895 年 1 月；通信录文里昂内斯把裁决机构叫作 Supreme Court，荷兰文原名未核"
+    },
+    {
+     "n": 8,
+     "text": "实验室车间 1885 年收第一个学徒；1897 年 P. W. Janssen 捐 7,000 荷兰盾设助学基金；1901 年成立「仪器制造者培训促进协会」。学徒被叫作「蓝衣男孩」（blauwe jongens），名字来自他们工作罩衫的颜色；他们领一份不高的周薪，晚上必须上夜校。人数：1898 年 16 人，1901 年 27 人，1904 年 32 人，1918 年约 40 人。",
+     "sources": [
+      {
+       "t": "Dirk van Delft, Een tweesnijdend zwaard: Het Janssenfonds … en het ontstaan van de Leidse instrumentmakersschool, Jaarboek Dirk van Eck 2011, 168–201 页（莱顿大学存档）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/blue_boys.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      },
+      {
+       "t": "荷兰皇家科学院（KNAW）数字图书馆：Kamerlingh Onnes 传记条目（《A History of Science in the Netherlands》）",
+       "u": "https://dwc.knaw.nl/wp-content/berkelbio/27.kamerlinghonnes.pdf"
+      },
+      {
+       "t": "莱顿大学 450 周年站：Leidse instrumentenmakers School",
+       "u": "https://top450.universiteitleiden.nl/en/items/leidse-instrumentenmakers-school/p2"
+      }
+     ],
+     "confidence": "高",
+     "note": "今天独立办学的莱顿仪器制造学校（LiS）以 1901 年为建校年"
+    },
+    {
+     "n": 9,
+     "text": "1911-04-08 的实验 07:00 开始，昂内斯 11:20 氦开始循环时到场。Holst 在 4.3 K 精确测了汞和金的电阻；随后减压到约 3 K。笔记本写着「正好下午 4 点」重测两个电阻，汞的那一条是 Kwik nagenoeg nul（汞，几乎为零）。Dorsman 负责控温测温。IEEE 铭牌把昂内斯、Dorsman、Flim、Holst 四人都列为发现者。",
+     "sources": [
+      {
+       "t": "Dirk van Delft & Peter Kes, The discovery of superconductivity, Physics Today 2010-09, 38–43 页（莱顿大学存档 PDF）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/DelftKes_HKO_PT.pdf"
+      },
+      {
+       "t": "IEEE Milestone：Discovery of Superconductivity, 1911（ETHW）",
+       "u": "https://ethw.org/Milestones:Discovery_of_Superconductivity,_1911"
+      }
+     ],
+     "confidence": "高",
+     "note": "Holst 在远离泵的另一间屋里看检流计，是 1910-12-02 铂电阻实验的安排；4 月 8 日是否如此文中未明说"
+    },
+    {
+     "n": 10,
+     "text": "实验笔记存于莱顿布尔哈夫博物馆的昂内斯档案，第 56、57 号笔记本涵盖 1909–1912 年。第 56 号封面写「1909–1910」，却记着 1911 年的超导实验。1911-05-23 的记录：升温时电阻在 4.12 K 重新出现；同年 10 月的曲线显示电阻在 4.20 K 附近 0.01 K 之内从小于 10⁻⁶ 欧跳到 0.1 欧。「打瞌睡的蓝衣男孩」的故事，两位作者判定为杜撰。",
+     "sources": [
+      {
+       "t": "Dirk van Delft & Peter Kes, The discovery of superconductivity, Physics Today 2010-09, 38–43 页（莱顿大学存档 PDF）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/DelftKes_HKO_PT.pdf"
+      },
+      {
+       "t": "IEEE Milestone：Discovery of Superconductivity, 1911（ETHW）",
+       "u": "https://ethw.org/Milestones:Discovery_of_Superconductivity,_1911"
+      }
+     ],
+     "confidence": "中",
+     "note": "主要依据是 van Delft 与 Kes 一篇文章；IEEE 页面佐证 5 月复现与约 0.1 K 的转变宽度"
+    },
+    {
+     "n": 11,
+     "text": "1914-04-24 昂内斯向科学院报告持续电流：多匝铅线圈里 0.6 安的电流一小时内看不出衰减；一只截面 3.0 × 3.5 毫米的铅环载过 320 安。1932 年 Flim 带着一只载有 200 安持续电流的铅环去伦敦皇家研究院演示。",
+     "sources": [
+      {
+       "t": "Dirk van Delft & Peter Kes, The discovery of superconductivity, Physics Today 2010-09, 38–43 页（莱顿大学存档 PDF）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/DelftKes_HKO_PT.pdf"
+      },
+      {
+       "t": "APS News, This Month in Physics History（2007-04）：Kamerlingh Onnes 与超导",
+       "u": "https://aps.org/publications/apsnews/200704/history.cfm"
+      }
+     ],
+     "confidence": "中",
+     "note": ""
+    },
+    {
+     "n": 12,
+     "text": "1908 年之后莱顿独占液氦约 15 年。1923-01-24 多伦多大学的 John McLennan 制出 1 升液氦，是世界上第二个做到的实验室；液化器的详细图纸是昂内斯给的。柏林的 Walther Meissner 1925 年有了液氦，美国国家标准局是 1926 年。",
+     "sources": [
+      {
+       "t": "Allan Griffin, Low temperature physics at Toronto in the period 1920–1936（多伦多大学物理系，2004-02-26 讲稿）",
+       "u": "https://www.physics.utoronto.ca/documents/14/TORONTO_talk_on_LOW_TEMP.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      },
+      {
+       "t": "荷兰皇家科学院（KNAW）数字图书馆：Kamerlingh Onnes 传记条目（《A History of Science in the Netherlands》）",
+       "u": "https://dwc.knaw.nl/wp-content/berkelbio/27.kamerlinghonnes.pdf"
+      },
+      {
+       "t": "Europhysics News 46/2（2015）：EPS Historic Site – Kamerlingh Onnes Laboratory（莱顿大学存档）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/EPN_46-2.pdf"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 13,
+     "text": "技师长 Gerrit Jan Flim 是 Hellendoorn 一个面包师的儿子，1893 年 17 岁到莱顿，后来升为仪器制造师傅、低温实验室车间主任。玻璃吹制师 Oskar Kesselring 来自德国图林根，1902 年 4 月入职，协会另付报酬请他教学徒吹玻璃。van Delft 称两人是莱顿技术队伍的「脊梁」。",
+     "sources": [
+      {
+       "t": "Dirk van Delft, Een tweesnijdend zwaard: Het Janssenfonds … en het ontstaan van de Leidse instrumentmakersschool, Jaarboek Dirk van Eck 2011, 168–201 页（莱顿大学存档）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/blue_boys.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      },
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 14,
+     "text": "Gilles Holst（1886–1968）1909 年起任昂内斯的助手，后来任埃因霍温飞利浦物理实验室的科学主任。昂内斯在诺奖演讲里提到 Holst 做电学测量、Dorsman 做液氦的热学测量；发现超导的论文只署了昂内斯一人的名字。",
+     "sources": [
+      {
+       "t": "维基百科（辅助）：Gilles Holst",
+       "u": "https://en.wikipedia.org/wiki/Gilles_Holst"
+      },
+      {
+       "t": "Kamerlingh Onnes 诺贝尔演讲（1913-12-11）英译本，第三方存档 PDF",
+       "u": "https://eltamiz.com/images/2012/11/onnes-lecture.pdf"
+      },
+      {
+       "t": "Dirk van Delft & Peter Kes, The discovery of superconductivity, Physics Today 2010-09, 38–43 页（莱顿大学存档 PDF）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/DelftKes_HKO_PT.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "「论文只署昂内斯」是通行说法，本轮未逐篇核对莱顿通讯原文；van Delft 与 Kes 提到两人合署过一篇汞的比热与热导论文"
+    },
+    {
+     "n": 15,
+     "text": "颁奖词：「表彰他对物质在低温下性质的研究，这些研究的成果之一是制得了液氦」。获奖在发现超导两年之后，颁奖词没有提超导。",
+     "sources": [
+      {
+       "t": "NobelPrize.org：The Nobel Prize in Physics 1913（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；措辞经精确短语检索命中该页，并与维基百科所引一致）",
+       "u": "https://www.nobelprize.org/prizes/physics/1913/summary/"
+      },
+      {
+       "t": "维基百科（辅助）：Heike Kamerlingh Onnes",
+       "u": "https://en.wikipedia.org/wiki/Heike_Kamerlingh_Onnes"
+      },
+      {
+       "t": "APS News, This Month in Physics History（2007-04）：Kamerlingh Onnes 与超导",
+       "u": "https://aps.org/publications/apsnews/200704/history.cfm"
+      }
+     ],
+     "confidence": "高",
+     "note": "nobelprize.org 未能直接打开"
+    },
+    {
+     "n": 16,
+     "text": "杜瓦 1898 年液化氢，并一度误报液化了氦（冷凝的其实是杂质）。他 1901 年的尝试失败，氦气来源和提纯都成问题，主要助手 Robert Lennox 与他闹翻后离开。",
+     "sources": [
+      {
+       "t": "Dirk van Delft, Little cup of helium, big science, Physics Today 2008-03, 36–42 页",
+       "u": "https://physicstoday.aip.org/features/little-cup-of-helium-big-science"
+      },
+      {
+       "t": "Dirk van Delft, Heike Kamerlingh Onnes and the Road to Liquid Helium, IEEE/CSC & ESAS European Superconductivity News Forum 第 16 期（2011-04）",
+       "u": "https://snf.ieeecsc.org/files/ieeecsc/2023-07/RN19.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "两个出处同一作者"
+    },
+    {
+     "n": 17,
+     "text": "实验室所在的建筑群 1859 年建在 Steenschuur，即 1807-01-12 火药船爆炸（151 人死亡）留下的废墟上；1932 年改名卡末林·昂内斯实验室；物理系后来迁出，旧址现为莱顿大学法学院。",
+     "sources": [
+      {
+       "t": "Europhysics News 46/2（2015）：EPS Historic Site – Kamerlingh Onnes Laboratory（莱顿大学存档）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/EPN_46-2.pdf"
+      },
+      {
+       "t": "莱顿大学 Lorentz 研究所：历史页（低温）",
+       "u": "https://www.lorentz.leidenuniv.nl/history/cold/cold.html"
+      },
+      {
+       "t": "维基百科（辅助）：Leiden gunpowder disaster",
+       "u": "https://en.wikipedia.org/wiki/Leiden_gunpowder_disaster"
+      }
+     ],
+     "confidence": "中",
+     "note": "物理系迁出的年份各页写法不同（1998 年停用 / 2004 年起为法学院）；死亡人数只见于维基"
+    }
+   ],
+   "disputes": [
+    "停工的起止：种子写 1896–98、约两年。通信录文显示 1895 年已被叫停，1897-02 获准；van Delft 说 1898-06-04 才恢复低温工作、前后 3 年。两年指的是打官司的时间，三年是停工的时间。",
+    "1908-07-10 减压后的最低温度：1.7 K（van Delft 2008）、1.8 K（van Delft 2011）、约 2 K（Europhysics News）、近 1.5 K（维基）。昂内斯 1913 年的说法是氦温度计测到约 1.5 K，按蒸气压估计 1.15 K，这是后来的数。",
+    "液氦沸点：昂内斯诺奖演讲 4.25 K；van Delft 2008 说当天修正后的读数是 4.5 K；今值约 4.2 K。",
+    "看到液氦的时刻：van Delft 说 18:30 降到液氢温度以下、19:30 确认液面；诺奖演讲英译本里出现「六点半」。",
+    "级联各级温度：van Delft 的文章不给数；1912 年的报道写乙烯 −160 °C、氧 −210 °C；另有文献（《Freezing Physics》，本轮未能打开）常引作氯甲烷 −90 °C、乙烯 −145 °C、氧 −183 °C。差别来自是否减压。",
+    "级联建成年份：1892 年（KNAW 传记、第一滴液氧）、1893 年（van Delft 2008，成批产液氧）、1894 年（van Delft 2011，装置完工）。",
+    "独居石砂的数量：「两袋」（van Delft 2008）对「几十袋」（van Delft 2011）。",
+    "学校的建校年：1901 年成立的是培训协会；学徒制 1885 年就有，1901 年在车间里已有 27 名学徒。今天的 LiS 以 1901 年为建校年。",
+    "维基百科说昂内斯 1904 年「创立」大型低温实验室；莱顿方面的材料没有这个说法，实验室是 1882 年接手后逐步扩建的。"
+   ],
+   "todo": [
+    "实验室的总人数、建筑面积、造价与年度经费：本轮没有查到数字（van Delft《Freezing Physics》应有，网络存档打不开）。",
+    "氦液化器、低温恒温器的外形尺寸：未查到，画同比例示意图缺数。",
+    "0.83 K 的年份与做法（常见说法是 1922 年用大抽速泵）未核。",
+    "1897-02 作出裁决的机构的荷兰文名称（录文里是 Supreme Court）。",
+    "就职演讲的确切日期（常见说法 1882-11-11）。",
+    "发现超导的几篇莱顿通讯的署名情况需对原文；Holst 到飞利浦的年份（常见说法 1914 年）未核。",
+    "昂内斯的其它奖项（Rumford 奖章、Franklin 奖章等）未核，暂未列入 awards。"
+   ]
+  },
+  {
+   "id": "cyclotron",
+   "status": "已核（2026-10-08）",
+   "prize": {
+    "year": 1939,
+    "laureates": [
+     {
+      "zh": "欧内斯特·劳伦斯",
+      "en": "Ernest O. Lawrence",
+      "life": "1901–1958",
+      "share": "全奖",
+      "role": "1929 年想出让离子在磁场里绕圈、反复加速的办法；1931–1939 年在伯克利带人造了五代回旋加速器，并把辐射实验室办成 60 人的机构"
+     }
+    ],
+    "citation_en": "for the invention and development of the cyclotron and for results obtained with it, especially with regard to artificial radioactive elements",
+    "citation_zh": "表彰他发明并发展了回旋加速器，以及用它取得的成果，特别是在人工放射性元素方面",
+    "citation_source": {
+     "t": "NobelPrize.org：The Nobel Prize in Physics 1939（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；全文措辞据维基百科所引，前半句与 AIP、美联社报道一致）",
+     "u": "https://www.nobelprize.org/prizes/physics/1939/summary/"
+    },
+    "citation_check": "与维基百科《List of Nobel laureates in Physics》所列开头一致；nobelprize.org 未能打开"
+   },
+   "apparatus": {
+    "zh": "回旋加速器（伯克利辐射实验室的五代机器）",
+    "en": "Cyclotron (Berkeley Radiation Laboratory)",
+    "years": "1931–1939（184 英寸 1946）",
+    "place_zh": "加州大学辐射实验室（今劳伦斯伯克利国家实验室），伯克利，美国",
+    "lat": 37.87,
+    "lon": -122.26
+   },
+   "claim": "1919 年卢瑟福用天然 α 粒子实现了第一个人工核反应，1927 年他说需要能量远超天然 α、β 粒子的粒子流。直接加百万伏高压，绝缘做不到。劳伦斯 1929 年提出：让离子在磁场里绕圈，反复通过同一个小电压。装置要回答：这种共振能不能把粒子一路加到 100 万电子伏以上。",
+   "brief": [
+    "能量：超过 1 MeV。1 MeV 的氢分子离子在 5,000 高斯磁场里绕圈，要求约 400 万周/秒的振荡电场。",
+    "电压：电极上只加一两千伏，靠多转圈累积。第一台 80 keV 的离子至少转了 40 圈。",
+    "磁铁：能量上限由磁极直径决定，每一代都要更大的磁铁——约 2 吨、80 吨、220 吨、4,000 多吨。",
+    "束流：从十亿分之一安（1931）提高到 100–200 微安（1938–1940），才够成批生产放射性同位素。",
+    "经费：1931–1940 年共募到约 55 万美元的经费和设备；184 英寸一台另需 140 万美元。"
+   ],
+   "scale": [
+    {
+     "k": "磁极直径",
+     "v": "4.5 → 11 → 27 → 37 → 60 → 184 英寸（0.11 → 0.28 → 0.69 → 0.94 → 1.52 → 4.67 米）",
+     "note": "第一台有 4、4.5、5 英寸三种说法",
+     "f": [
+      2,
+      3,
+      5,
+      7,
+      8,
+      11
+     ]
+    },
+    {
+     "k": "能量",
+     "v": "80 keV（1931-01）→ 1.22 MeV（1932-01）→ 4.8 MeV（1932-12）→ 8 MeV 氘核（1937）→ 16 MeV 氘核（1939）→ 约 200 MeV 氘核（1946-11）",
+     "note": "各级日期与能量各家略有出入，见 disputes",
+     "f": [
+      2,
+      3,
+      5,
+      7,
+      8,
+      11
+     ]
+    },
+    {
+     "k": "磁铁质量",
+     "v": "80 吨（27 / 37 英寸）→ 220 吨（60 英寸）→ 4,000–4,500 吨（184 英寸）",
+     "note": "60 英寸另有 200 吨一说；184 英寸有 4,000、4,300、4,500 吨三种说法",
+     "f": [
+      4,
+      8,
+      11
+     ]
+    },
+    {
+     "k": "电极电压",
+     "v": "第一台 1,000–1,800 伏，离子转至少 40 圈",
+     "note": "AIP 写 1,800 伏，LBL 写「只有一千伏」",
+     "f": [
+      2
+     ]
+    },
+    {
+     "k": "人数",
+     "v": "1932 年 10 人，1939 年 60 人，1944-06 近 1,200 人",
+     "note": "辐射实验室全员；战时是为曼哈顿计划做铀同位素分离",
+     "f": [
+      9,
+      12
+     ]
+    },
+    {
+     "k": "经费",
+     "v": "1931–1940 年共约 55 万美元；184 英寸获洛克菲勒基金会 140 万美元（1940）",
+     "note": "当年美元；维基称洛克菲勒基金会出的是 115 万",
+     "f": [
+      9,
+      11
+     ]
+    },
+    {
+     "k": "第一个模型",
+     "v": "1930 年，约 4 英寸，黄铜、电线加封蜡，「大概花了 25 美元」",
+     "note": "劳伦斯科学馆的说法，原话带「大概」",
+     "f": [
+      1
+     ]
+    },
+    {
+     "k": "扩散",
+     "v": "1940 年美国有 22 台回旋加速器建成或在建，海外 11 台",
+     "note": "",
+     "f": [
+      9
+     ]
+    }
+   ],
+   "approach": [
+    "不追高电压。别的方案都在造百万伏的高压装置，卡在绝缘上。回旋加速器电极上只加一两千伏，让离子转几十圈；难题从绝缘换成了大磁铁和高频振荡器，这两样无线电工业里有现成的。",
+    "捡现成的大件。27 英寸机器的磁铁用的是联邦电报公司闲置在帕洛阿尔托的电弧发射机铸件，原打算用于中国的大功率电台。公司副总裁 Fuller 也是伯克利的电机教授，由他牵线；搬运和改装用了 7,500 美元。",
+    "每代只放大两三倍，上一代出了结果再去募下一代的钱。同一块 80 吨磁铁先装 27 英寸真空室，1937 年加铁环扩成 37 英寸；60 英寸以「医用回旋加速器」的名义募款，因为医学研究的钱好要。",
+    "让工程师管机器。1937 年机械工程师 Brobeck 进组，他发现实验室没有预防性维护的做法。此后他任总工程师 20 年，按 Alvarez 的模型放大出 60 英寸，再主持 184 英寸的设计。"
+   ],
+   "history": [
+    {
+     "d": "1929 春",
+     "t": "劳伦斯在一份德文电工期刊上读到 Wideröe 的直线加速方案，想到让离子绕圈。"
+    },
+    {
+     "d": "1930",
+     "t": "春天 Edlefsen 做出第一个粗糙模型；11 月 Livingston 的 4 英寸黄铜模型出现共振。"
+    },
+    {
+     "d": "1931-01-02",
+     "t": "Livingston 的机器把氢离子加速到 80 keV；他 4 月以此取得博士学位。"
+    },
+    {
+     "d": "1931-08",
+     "t": "大学拨出一栋闲置的土木工程实验楼，辐射实验室成立；3 日的电报报告 11 英寸得到 110 万伏质子。"
+    },
+    {
+     "d": "1932-01",
+     "t": "11 英寸得到 1.22 MeV 质子；2 月 20 日论文寄往《Physical Review》。"
+    },
+    {
+     "d": "1932-09 至 12",
+     "t": "27 英寸出束：9 月质子 3.6 MeV，12 月 4.8 MeV。"
+    },
+    {
+     "d": "1934-02-20",
+     "t": "回旋加速器获美国专利 1,948,384，劳伦斯把它转让给 Research Corporation。"
+    },
+    {
+     "d": "1936",
+     "t": "7 月 1 日辐射实验室成为物理系内的独立单位；Cooksey 任副主任。"
+    },
+    {
+     "d": "1937",
+     "t": "27 英寸扩为 37 英寸，氘核 8 MeV；Brobeck 加入；从旧偏转板里发现第 43 号元素锝。"
+    },
+    {
+     "d": "1939-06",
+     "t": "60 英寸出束，氘核 16 MeV。"
+    },
+    {
+     "d": "1939-11-09",
+     "t": "宣布劳伦斯获诺贝尔物理学奖。"
+    },
+    {
+     "d": "1940-02-29",
+     "t": "因欧洲战事没去斯德哥尔摩，在伯克利 Wheeler Hall 由瑞典驻旧金山总领事颁奖。"
+    },
+    {
+     "d": "1940-04",
+     "t": "洛克菲勒基金会答应出 140 万美元建 184 英寸回旋加速器。"
+    },
+    {
+     "d": "1941-12 至 1942",
+     "t": "37 英寸改成质谱仪分离出微克级铀-235；184 英寸磁铁 1942-05 首次通电，用来研制 calutron。"
+    },
+    {
+     "d": "1946-11",
+     "t": "184 英寸改成同步回旋加速器后出束，氘核约 200 MeV。"
+    }
+   ],
+   "people": [
+    {
+     "zh": "",
+     "en": "M. Stanley Livingston",
+     "r": "研究生；造出第一台能用的回旋加速器和 11、27 英寸；后画出 Livingston 曲线"
+    },
+    {
+     "zh": "",
+     "en": "Niels Edlefsen",
+     "r": "1930 年春按劳伦斯的要求做了第一个模型"
+    },
+    {
+     "zh": "",
+     "en": "David Sloan",
+     "r": "从通用电气请来；做大功率振荡器、X 射线管和直线加速器"
+    },
+    {
+     "zh": "",
+     "en": "Leonard T. Fuller",
+     "r": "伯克利电机教授兼联邦电报公司副总裁，促成 80 吨磁铁到手"
+    },
+    {
+     "zh": "",
+     "en": "Donald Cooksey",
+     "r": "耶鲁来的仪器高手，起初靠自己的收入生活，1936 年任副主任"
+    },
+    {
+     "zh": "",
+     "en": "William Brobeck",
+     "r": "机械工程师，1937–1957 年任副主任兼总工程师；设计 60、184 英寸"
+    },
+    {
+     "zh": "埃德温·麦克米伦",
+     "en": "Edwin McMillan",
+     "r": "1940 年用 60 英寸造出镎；1945 年提出相位稳定原理，184 英寸据此改型"
+    },
+    {
+     "zh": "路易斯·阿尔瓦雷茨",
+     "en": "Luis Alvarez",
+     "r": "做了 60 英寸磁铁的模型；1939 年用 60 英寸发现氦-3"
+    },
+    {
+     "zh": "",
+     "en": "John H. Lawrence",
+     "r": "劳伦斯的弟弟，医生；1935 年到伯克利，1937 年用磷-32 治疗血液病"
+    },
+    {
+     "zh": "",
+     "en": "Rolf Wideröe",
+     "r": "挪威工程师，1928 年在亚琛造出第一台直线加速器，论文启发了劳伦斯"
+    },
+    {
+     "zh": "",
+     "en": "Howard Poillon",
+     "r": "Research Corporation 负责人，1931 年拨 5,000 美元"
+    }
+   ],
+   "awards": [
+    "1937 年美国国家科学院 Comstock 奖，劳伦斯；同年 11 月登上《时代》周刊封面",
+    "1971 年加州大学伯克利分校授予总工程师 Brobeck 荣誉学位"
+   ],
+   "anecdotes": [
+    {
+     "t": "1931-08-03，出门在外的劳伦斯收到秘书的电报：「Livingston 博士让我转告您，他得到了 110 万伏的质子。他还建议我加一句：Whoopee！」",
+     "kind": "官方史",
+     "f": [
+      3
+     ]
+    },
+    {
+     "t": "Livingston 后来这样说劳伦斯：他「掀的浪太大，把我们都抛到了浪尖上」。1932 年的专利申请没有写 Livingston 的名字，《科学传记辞典》认为是赶时间，不是有意。",
+     "kind": "著作",
+     "f": [
+      6
+     ]
+    },
+    {
+     "t": "劳伦斯 1935 年写信给玻尔：「为医学研究筹钱容易得多。」1937 年他把患了无法手术的癌症的母亲接到旧金山，用 Sloan 的 X 射线管治疗，病情明显好转。",
+     "kind": "官方史",
+     "f": [
+      10
+     ]
+    },
+    {
+     "t": "60 英寸的磁铁重 220 吨，实验室里有人开玩笑，说它打出的中子能飞到芝加哥。",
+     "kind": "官方史",
+     "f": [
+      8
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "1931 到 1939 年做了五代：每代磁极直径放大两三倍，每代都出束、出论文或同位素，再凭这些结果去募下一代的钱；机器大了，1937 年起由总工程师管。",
+    "principle": "逐级放大，每一级都要交付结果。",
+    "engineer": "大系统不要一步到位。每级放大两三倍，上线出结果，用结果换下一级的预算。机器大到一个人照看不过来，就设专职工程岗。",
+    "public": "学一门手艺或做一件大事，先定一个几个月能见效的小目标，做成了再翻倍，不要一开始就押上全部。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "Brobeck 后来设计的 Bevatron 用来发现反质子（1959 年诺奖）；阿尔瓦雷茨出自这个实验室，气泡室就装在 Bevatron 旁。",
+   "metrics": {
+    "size_m": 1.52,
+    "size_what": "60 英寸回旋加速器的磁极直径（1939 年获奖时最大的一台；184 英寸为 4.67 米）",
+    "mass_t": 220,
+    "mass_what": "60 英寸的磁铁质量（另有 200 吨一说）；184 英寸约 4,000–4,500 吨",
+    "depth_m": null,
+    "temp_K": null,
+    "cost": {
+     "amount": 550000,
+     "currency": "USD",
+     "year": 1940,
+     "what": "1931–1940 年十年间募集的经费与设备总值（AIP），当年美元；不含 184 英寸的 140 万美元"
+    },
+    "people": {
+     "n": 60,
+     "what": "1939 年辐射实验室人数（AIP）"
+    },
+    "t_idea": 1929,
+    "t_build": 1930,
+    "t_first": 1931,
+    "t_result": 1932,
+    "t_prize": 1939
+   },
+   "drawing": [
+    {
+     "what": "第一台回旋加速器真空室直径（约 4.5 英寸；另有 4、5 英寸之说）",
+     "value": 0.114,
+     "unit": "m",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "11 英寸回旋加速器磁极直径",
+     "value": 0.279,
+     "unit": "m",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "27 英寸回旋加速器磁极直径（DSB 写 27.5 英寸）",
+     "value": 0.686,
+     "unit": "m",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "37 英寸回旋加速器磁极直径（与 27 英寸共用 80 吨磁铁）",
+     "value": 0.94,
+     "unit": "m",
+     "f": [
+      7
+     ]
+    },
+    {
+     "what": "60 英寸回旋加速器磁极直径（磁铁 220 吨）",
+     "value": 1.524,
+     "unit": "m",
+     "f": [
+      8
+     ]
+    },
+    {
+     "what": "184 英寸回旋加速器磁极直径（Craddock 表中记作 4.70 米）",
+     "value": 4.67,
+     "unit": "m",
+     "f": [
+      11
+     ]
+    },
+    {
+     "what": "184 英寸的圆顶建筑直径（约 160 英尺）",
+     "value": 49,
+     "unit": "m",
+     "f": [
+      11
+     ]
+    },
+    {
+     "what": "184 英寸的圆顶建筑高度（Yarris 写近 100 英尺，LBL 75 周年史写圆顶高 90 英尺）",
+     "value": 30,
+     "unit": "m",
+     "f": [
+      11
+     ]
+    },
+    {
+     "what": "第一台里收集杯离中心的距离",
+     "value": 4.5,
+     "unit": "cm",
+     "f": [
+      2
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "劳伦斯 1929 年春读到挪威工程师 Rolf Wideröe 1928 年的方案（同一电压用两次的直线加速），认为加速轻粒子需要几米长的真空管，于是想到用磁场让粒子绕圈。1930 年春他让研究生 Niels Edlefsen 做了第一个模型，是否真的工作存疑；劳伦斯科学馆说这个用电线和封蜡做的模型「大概花了 25 美元」。",
+     "sources": [
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The First Cyclotrons",
+       "u": "https://history.aip.org/exhibits/lawrence/first.htm"
+      },
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory: A Historian's View of the Lawrence Years（LBL Research Review 1981）第 1 章 A New Lab for a New Science",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp1.html"
+      },
+      {
+       "t": "Berkeley Lab Science Beat：A Revolutionary Idea that Changed Modern Physics（2001-10-01）",
+       "u": "https://www2.lbl.gov/Science-Articles/Archive/rev-idea.html"
+      },
+      {
+       "t": "劳伦斯科学馆（Lawrence Hall of Science）：Ernest O. Lawrence",
+       "u": "https://lawrencehallofscience.org/?p=22695"
+      }
+     ],
+     "confidence": "中",
+     "note": "「25 美元」只见于劳伦斯科学馆和维基，且是估计；它指的是 1930 年的模型，不是 Livingston 1931 年那台"
+    },
+    {
+     "n": 2,
+     "text": "研究生 M. Stanley Livingston 1930 年夏开始做，11 月看到共振。1931 年 1 月（LBL 与维基写 1 月 2 日）他的机器把氢离子加速到 80,000 电子伏，电极电压 1,000–1,800 伏；到达 4.5 厘米处收集杯的离子至少转了 40 圈，束流约十亿分之一安。结果在 1 月的美国物理学会会议上报告，Livingston 4 月通过博士考试。",
+     "sources": [
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The First Cyclotrons",
+       "u": "https://history.aip.org/exhibits/lawrence/first.htm"
+      },
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory: A Historian's View of the Lawrence Years（LBL Research Review 1981）第 1 章 A New Lab for a New Science",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp1.html"
+      },
+      {
+       "t": "Berkeley Lab Science Beat：A Revolutionary Idea that Changed Modern Physics（2001-10-01）",
+       "u": "https://www2.lbl.gov/Science-Articles/Archive/rev-idea.html"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Livingston, Milton Stanley（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/livingston-milton-stanley"
+      },
+      {
+       "t": "Berkeley Lab：75 Years of World-Class Science，展览页",
+       "u": "https://www2.lbl.gov/Publications/75th/files/exhibit.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "直径有约 4 英寸、约 4.5 英寸、5 英寸三种写法；被加速的是质子还是氢分子离子，各家写法也不同"
+    },
+    {
+     "n": 3,
+     "text": "11 英寸回旋加速器由 Livingston 建造，装在 LeConte Hall 329 室，是第一台超过 1 MeV 的加速器，发表的能量是 1.22 MeV 质子（论文 1932-02-20 寄出）。1931-08-03 劳伦斯收到电报：「Livingston 博士让我转告您，他得到了 110 万伏的质子」。",
+     "sources": [
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The First Cyclotrons",
+       "u": "https://history.aip.org/exhibits/lawrence/first.htm"
+      },
+      {
+       "t": "同上，第 2 章 The Headmaster and His School",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp2.html"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Livingston, Milton Stanley（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/livingston-milton-stanley"
+      },
+      {
+       "t": "M. K. Craddock, Eighty Years of Cyclotrons, Proceedings of CYCLOTRONS 2010（JACoW）",
+       "u": "https://proceedings.jacow.org/Cyclotrons2010/papers/mom1cio02.pdf"
+      },
+      {
+       "t": "Berkeley Lab Science Beat：A Revolutionary Idea that Changed Modern Physics（2001-10-01）",
+       "u": "https://www2.lbl.gov/Science-Articles/Archive/rev-idea.html"
+      }
+     ],
+     "confidence": "中",
+     "note": "首次过 1 MeV 的日期有 1931-08（AIP 的电报、LBL 2001）和 1932-01-09（DSB）两说"
+    },
+    {
+     "n": 4,
+     "text": "27 英寸回旋加速器的磁铁来自联邦电报公司（Federal Telegraph）闲置在帕洛阿尔托的铸件，约 80 吨。该公司 1946 年的社史说：铸件是一战期间浇铸的，1921 年 1 月公司与中华民国签约建大功率电台，1,000 千瓦电弧发射机准备用这批铸件，因日本反对合同未能完成；后来把「原定用于中国电台的 65 吨铸件」捐给加州大学，装成后重 80 吨。伯克利电机教授、公司副总裁 Leonard Fuller 促成此事。Research Corporation 出 5,000 美元，化学基金会出 2,500 美元用于搬运和配套；1931 年 8 月校长 Sproul 同意提供场地和电费。",
+     "sources": [
+      {
+       "t": "F. J. Mann, Federal Telephone and Radio Corporation: A Historical Review: 1909–1946, Electrical Communication 第 23 卷第 4 期（1946-12），396–398 页",
+       "u": "https://worldradiohistory.com/Archive-ITT/40s/ITT-Vol-23-1946-04.pdf"
+      },
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory: A Historian's View of the Lawrence Years（LBL Research Review 1981）第 1 章 A New Lab for a New Science",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp1.html"
+      },
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The Rad Lab",
+       "u": "https://history.aip.org/exhibits/lawrence/radlab.htm"
+      },
+      {
+       "t": "Lynn Yarris（Berkeley Lab）, Ernest Lawrence's cyclotron: Invention for the ages，伯克利化学学院转载（2021-05-26）",
+       "u": "https://chemistry.berkeley.edu/node/2049"
+      },
+      {
+       "t": "维基百科（辅助）：Federal Telegraph Company",
+       "u": "https://en.wikipedia.org/wiki/Federal_Telegraph_Company"
+      }
+     ],
+     "confidence": "中",
+     "note": "AIP 说磁铁原为一战时的跨大西洋无线电链路而造、劳伦斯「折价购得」；与「捐赠」说法不一。「给中国」一说的最早出处是 1946 年的公司社史"
+    },
+    {
+     "n": 5,
+     "text": "27 英寸回旋加速器 1932 年出束：9 月质子到 3.6 MeV，12 月氢离子到 4.8 MeV；1936-03-26 首次引出外束，氘核 5.8 MeV。",
+     "sources": [
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The Rad Lab",
+       "u": "https://history.aip.org/exhibits/lawrence/radlab.htm"
+      },
+      {
+       "t": "同上，第 2 章 The Headmaster and His School",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp2.html"
+      },
+      {
+       "t": "M. K. Craddock, Eighty Years of Cyclotrons, Proceedings of CYCLOTRONS 2010（JACoW）",
+       "u": "https://proceedings.jacow.org/Cyclotrons2010/papers/mom1cio02.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "Craddock 把启用年写作 1933，1936 年氘核 6.3 MeV、20 微安"
+    },
+    {
+     "n": 6,
+     "text": "Livingston（1905–1986）1934 年去康奈尔，后到麻省理工、布鲁克海文；1952 年与 Courant、Snyder 提出强聚焦原理。他 1954 年在书里把各类加速器的能量画成一张图，指出能量纪录约每 6 年提高 10 倍，后人称为 Livingston 曲线。劳伦斯 1932 年的专利申请没有署他的名。",
+     "sources": [
+      {
+       "t": "Dictionary of Scientific Biography：Livingston, Milton Stanley（encyclopedia.com 转载）",
+       "u": "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/livingston-milton-stanley"
+      },
+      {
+       "t": "Symmetry 杂志：Livingston plot（2009-10）",
+       "u": "https://symmetrymagazine.org/article/october-2009/livingston-plot"
+      }
+     ],
+     "confidence": "中",
+     "note": "书名（通常认为是《High-Energy Accelerators》）本轮来源未点出"
+    },
+    {
+     "n": 7,
+     "text": "37 英寸回旋加速器是在 27 英寸的 80 吨磁铁上加外圈铁环、加宽磁极间隙改成的，1936 年批准，1937 年启用，氘核 8 MeV。1937 年 6 月塞格雷小组宣布从 27 英寸的旧钼偏转板里发现第 43 号元素锝。",
+     "sources": [
+      {
+       "t": "同上，第 2 章 The Headmaster and His School",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp2.html"
+      },
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The Rad Lab",
+       "u": "https://history.aip.org/exhibits/lawrence/radlab.htm"
+      },
+      {
+       "t": "M. K. Craddock, Eighty Years of Cyclotrons, Proceedings of CYCLOTRONS 2010（JACoW）",
+       "u": "https://proceedings.jacow.org/Cyclotrons2010/papers/mom1cio02.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "启用月份：LBL 1981 写 9 月，维基写 6 月；Craddock 写 1938 年 8.5 MeV、100 微安"
+    },
+    {
+     "n": 8,
+     "text": "60 英寸回旋加速器 1939 年 6 月出束，氘核 16 MeV，磁铁约 220 吨，装在新建的 Crocker 实验室。化学基金会为这台「医用回旋加速器」认捐 68,000 美元，W. H. Crocker 出资建房，洛克菲勒基金会和国家癌症咨询委员会也出了钱。主要结构件由奥克兰的 Moore 船坞公司制造。1940 年在它上面发现了碳-14 和镎。",
+     "sources": [
+      {
+       "t": "同上，第 2 章 The Headmaster and His School",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp2.html"
+      },
+      {
+       "t": "Lynn Yarris（Berkeley Lab）, Ernest Lawrence's cyclotron: Invention for the ages，伯克利化学学院转载（2021-05-26）",
+       "u": "https://chemistry.berkeley.edu/node/2049"
+      },
+      {
+       "t": "M. K. Craddock, Eighty Years of Cyclotrons, Proceedings of CYCLOTRONS 2010（JACoW）",
+       "u": "https://proceedings.jacow.org/Cyclotrons2010/papers/mom1cio02.pdf"
+      },
+      {
+       "t": "Berkeley Lab：75 Years of World-Class Science，实验室史第 2 部分",
+       "u": "https://www2.lbl.gov/Publications/75th/files/04-lab-history-pt-2.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "磁铁质量 Craddock 写 200 吨；总造价未查到"
+    },
+    {
+     "n": 9,
+     "text": "辐射实验室 1931 年 8 月成立，1932 年共 10 人，1939 年 60 人。1931–1940 年劳伦斯为实验室募到约 55 万美元的经费和设备，来源包括加州政府（经大学）、Macy 与洛克菲勒基金会、联邦政府（经国家癌症研究所）和捐设备的企业。1940 年美国有 22 台回旋加速器建成或在建，海外 11 台。",
+     "sources": [
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The Rad Lab",
+       "u": "https://history.aip.org/exhibits/lawrence/radlab.htm"
+      },
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：Big Science",
+       "u": "https://history.aip.org/exhibits/lawrence/bigscience.htm"
+      },
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory: A Historian's View of the Lawrence Years（LBL Research Review 1981）第 1 章 A New Lab for a New Science",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp1.html"
+      }
+     ],
+     "confidence": "中",
+     "note": "人数与金额都只见于 AIP 展览"
+    },
+    {
+     "n": 10,
+     "text": "劳伦斯的弟弟、医生 John Lawrence 1935 年到伯克利做同位素的生物医学研究，1937 年用磷-32 治疗一名真性红细胞增多症患者，LBL 称之为第一次用放射性同位素成功治疗人类疾病。劳伦斯 1935 年致玻尔的信里说，为医学研究筹钱容易得多；1937 年他母亲在旧金山用 Sloan 的 X 射线管治疗癌症。",
+     "sources": [
+      {
+       "t": "Berkeley Lab：75 Years of World-Class Science，展览页",
+       "u": "https://www2.lbl.gov/Publications/75th/files/exhibit.html"
+      },
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The Rad Lab",
+       "u": "https://history.aip.org/exhibits/lawrence/radlab.htm"
+      },
+      {
+       "t": "同上，第 2 章 The Headmaster and His School",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp2.html"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 11,
+     "text": "184 英寸回旋加速器：1940 年春洛克菲勒基金会答应出 140 万美元；磁铁设计 4,500 吨，建在俯瞰校园的 Charter Hill 上。因战时钢材紧张和任务变更，磁铁 1942 年 5 月首次通电时是用来研制分离铀同位素的 calutron。1944 年 7 月 Groves 将军拨 17 万美元把机器建完；1946 年 11 月它以同步回旋加速器方式出束，氘核约 200 MeV。",
+     "sources": [
+      {
+       "t": "Berkeley Lab：75 Years of World-Class Science，实验室史第 2 部分",
+       "u": "https://www2.lbl.gov/Publications/75th/files/04-lab-history-pt-2.html"
+      },
+      {
+       "t": "同上，第 3 章 Deflecting Physics for War",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp3.html"
+      },
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：Big Science",
+       "u": "https://history.aip.org/exhibits/lawrence/bigscience.htm"
+      },
+      {
+       "t": "M. K. Craddock, Eighty Years of Cyclotrons, Proceedings of CYCLOTRONS 2010（JACoW）",
+       "u": "https://proceedings.jacow.org/Cyclotrons2010/papers/mom1cio02.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": "拨款数、磁铁吨位、出束日期各家不一，见 disputes"
+    },
+    {
+     "n": 12,
+     "text": "战时辐射实验室转为曼哈顿计划的铀电磁分离研制中心：1941-12-06 用 37 英寸分离出几微克铀-235，1942-02 得到 75 微克、丰度 30% 的样品；1943-02-18 橡树岭工厂破土。实验室 1943-05-01 有 826 名职工加 65 名警卫，1944 年 6 月近 1,200 人，1946 年回落到不足 500 人。",
+     "sources": [
+      {
+       "t": "Berkeley Lab：75 Years of World-Class Science，实验室史第 2 部分",
+       "u": "https://www2.lbl.gov/Publications/75th/files/04-lab-history-pt-2.html"
+      },
+      {
+       "t": "同上，第 3 章 Deflecting Physics for War",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp3.html"
+      }
+     ],
+     "confidence": "中",
+     "note": "两个来源都出自 LBL"
+    },
+    {
+     "n": 13,
+     "text": "William Brobeck（1908–1998）有斯坦福和麻省理工的工程学位，1937 年 29 岁时加入，到 1957 年一直任副主任兼总工程师。LBL 1981 年的史稿说他是看到实验室没有预防性维护才自愿来的。劳伦斯 1951 年说：60 英寸的成功，功劳归他多于归其他任何一个人。麦克米伦称他是「把工程和物理汇到一起的大师」。",
+     "sources": [
+      {
+       "t": "Berkeley Lab Currents（1998-04-17）：Bill Brobeck, Designer of Lab's Historic Particle Accelerators, Dies",
+       "u": "https://www2.lbl.gov/Science-Articles/Archive/bill-brobeck.html"
+      },
+      {
+       "t": "ETHW（IEEE 工程技术史维基）：William Brobeck",
+       "u": "https://ethw.org/William_Brobeck"
+      },
+      {
+       "t": "同上，第 2 章 The Headmaster and His School",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp2.html"
+      }
+     ],
+     "confidence": "高",
+     "note": "是否无薪加入，本轮来源未写"
+    },
+    {
+     "n": 14,
+     "text": "诺贝尔奖 1939-11-09 宣布。因欧洲已开战，劳伦斯没有去斯德哥尔摩；奖章和证书 1940-02-29 在伯克利校园 Wheeler Hall 颁发，颁奖人是瑞典驻旧金山总领事 Carl E. Wallerstedt。",
+     "sources": [
+      {
+       "t": "Berkeley Lab：75 Years of World-Class Science，实验室史第 2 部分",
+       "u": "https://www2.lbl.gov/Publications/75th/files/04-lab-history-pt-2.html"
+      },
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：Big Science",
+       "u": "https://history.aip.org/exhibits/lawrence/bigscience.htm"
+      },
+      {
+       "t": "维基百科（辅助）：Ernest Lawrence",
+       "u": "https://en.wikipedia.org/wiki/Ernest_Lawrence"
+      }
+     ],
+     "confidence": "高",
+     "note": "总领事姓名只见于维基"
+    },
+    {
+     "n": 15,
+     "text": "回旋加速器专利（美国专利 1,948,384）1934-02-20 获批，劳伦斯把它转让给资助他的 Research Corporation。AIP 说他是在 Raytheon 一位工程师为类似装置申请专利之后才去申请的。",
+     "sources": [
+      {
+       "t": "维基百科（辅助）：Ernest Lawrence",
+       "u": "https://en.wikipedia.org/wiki/Ernest_Lawrence"
+      },
+      {
+       "t": "AIP 物理史中心展览 Ernest Lawrence and the Cyclotron：The Rad Lab",
+       "u": "https://history.aip.org/exhibits/lawrence/radlab.htm"
+      }
+     ],
+     "confidence": "中",
+     "note": ""
+    },
+    {
+     "n": 16,
+     "text": "Donald Cooksey 是从耶鲁来的仪器高手，1932 年夏与 Franz Kurie 一起做探测器，1936 年被任命为副主任，此前靠私人收入生活。David Sloan 来自通用电气研究实验室，做了大功率振荡器、X 射线管和重离子直线加速器。Alvarez 做了 60 英寸的模型，Brobeck 把它放大成整机。",
+     "sources": [
+      {
+       "t": "同上，第 2 章 The Headmaster and His School",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp2.html"
+      },
+      {
+       "t": "Berkeley Lab Currents（1998-04-17）：Bill Brobeck, Designer of Lab's Historic Particle Accelerators, Dies",
+       "u": "https://www2.lbl.gov/Science-Articles/Archive/bill-brobeck.html"
+      }
+     ],
+     "confidence": "中",
+     "note": ""
+    }
+   ],
+   "disputes": [
+    "第一台的直径：约 4 英寸（LBL 2001、DSB、Craddock、Symmetry）、约 4.5 英寸（AIP）、5 英寸（APS、LBL 75 周年、Yarris）。电极电压：1,800 伏（AIP）对「只有一千伏」（LBL 2001）。",
+    "首次超过 1 MeV：AIP 引 1931-08-03 的电报「110 万伏质子」，LBL 2001 也写 1931 年 8 月 1.1 MeV；DSB 写 1932-01-09 才首次超过 1 MeV；Craddock 写 1932 年 1 月 1.22 MeV。",
+    "80 吨磁铁的来历：AIP 与 LBL 75 周年说是一战时为跨大西洋无线电链路造的剩余物资，AIP 称劳伦斯「折价购得」；LBL 1981 说是被真空管淘汰的发射方式留下的、由 Fuller 促成；1946 年的 ITT 社史说铸件一战时浇铸、1921 年合同里准备用于中国电台、后来「捐给」加州大学。几种说法可以拼成一条线，但「买」还是「捐」没有对上。",
+    "磁铁质量：80 吨（多数）、75 吨（LBL 1981 第 2 章）、铸件 65 吨装成后 80 吨（ITT 社史；劳伦斯科学馆门前展品也标 65 吨）。",
+    "27 英寸首束：1932-09 质子 3.6 MeV（AIP）、1932-12 4.8 MeV（LBL 1981）、1932 年夏建成到 5 MeV（DSB，且写作 27.5 英寸）、1933 年（Craddock）。",
+    "37 英寸启用：1937-06（维基）、1937-09（LBL 1981）、1938 年 8.5 MeV（Craddock）；Yarris 的文章说「到 1936 年」37 英寸已在产同位素，与前几家不合。",
+    "60 英寸磁铁：220 吨（Yarris）对 200 吨（Craddock）。",
+    "184 英寸的拨款：洛克菲勒基金会 140 万美元（LBL 1981、LBL 75 周年、AIP）对 115 万美元（维基，并称最初方案估价 265 万美元）。",
+    "184 英寸磁铁：4,000 吨（APS、Yarris）、4,300 吨（Craddock）、4,500 吨（LBL 75 周年、维基）。",
+    "184 英寸首束：1946-11-01 零点 12 分、氘核 200 MeV（LBL 75 周年）；1946-11-13（维基）；氘核 190 MeV、α 粒子 380 MeV（Craddock）。",
+    "国家研究委员会（NRC）给的第一笔钱：500 美元（LBL 1981）对 1,000 美元（DSB）。"
+   ],
+   "todo": [
+    "「25 美元」的一手出处未核（只见于劳伦斯科学馆和维基，且带「大概」）；它说的是 1930 年 Edlefsen 的模型。",
+    "11 英寸的造价与磁铁质量（维基写 800 美元、约 2 吨）没有第二来源。",
+    "60 英寸的总造价、Crocker 捐款数额未查到。",
+    "Brobeck 是否以无薪志愿者身份加入（常见说法）未核。",
+    "Heilbron & Seidel《Lawrence and His Laboratory》（1989）线上全文能打开但未能逐章检索；磁铁来历、115 万 / 140 万美元两条应回书里核对。",
+    "Wideröe 论文所在期刊名（通常说是 Archiv für Elektrotechnik）与 Livingston 1954 年书名，本轮来源未点出。",
+    "劳伦斯的其它奖项（Hughes 奖章、Enrico Fermi 奖等）未核，未列入 awards。",
+    "t_result 取 1932 年（首次超过 1 MeV）；颁奖词还包括 1934–1939 年的人工放射性成果，页面如需另取年份请自定。"
+   ]
+  },
+  {
+   "id": "bubble",
+   "status": "已核（2026-10-08；检索额度用尽后只能直接打开已知网址，见 notes）",
+   "prize": {
+    "year": 1968,
+    "laureates": [
+     {
+      "zh": "路易斯·阿尔瓦雷茨",
+      "en": "Luis W. Alvarez",
+      "life": "1911–1988",
+      "share": "全奖",
+      "role": "1953 年决定把格拉泽的气泡室改用液氢并尽量做大，6 年里带组从 1.5 英寸做到 72 英寸，同时建起测量机加计算机的分析流水线，用它找到一批共振态"
+     }
+    ],
+    "citation_en": "for his decisive contributions to elementary particle physics, in particular the discovery of a large number of resonance states, made possible through his development of the technique of using hydrogen bubble chamber and data analysis",
+    "citation_zh": "表彰他对基本粒子物理的决定性贡献，特别是发现了大量共振态；这些发现得以实现，靠的是他发展出的氢气泡室技术和数据分析方法",
+    "citation_source": {
+     "t": "NobelPrize.org：The Nobel Prize in Physics 1968（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；措辞据种子与维基百科所引，两者有一两个词的出入，见 disputes）",
+     "u": "https://www.nobelprize.org/prizes/physics/1968/summary/"
+    },
+    "citation_check": "开头与维基百科《List of Nobel laureates in Physics》所列一致；后半句个别用词（resonance / resonant，chamber / chambers）各处写法不一；nobelprize.org 未能打开"
+   },
+   "apparatus": {
+    "zh": "72 英寸液氢气泡室",
+    "en": "72-inch liquid hydrogen bubble chamber",
+    "years": "1959（1953 年起逐级放大）",
+    "place_zh": "劳伦斯辐射实验室，Bevatron 加速器旁（今劳伦斯伯克利国家实验室），伯克利，美国",
+    "lat": 37.88,
+    "lon": -122.25
+   },
+   "claim": "1950 年代初，宇宙线和加速器里不断出现理论没料到的新粒子。1953 年 4 月，格拉泽展示了热乙醚里沿粒子路径冒出的气泡径迹。阿尔瓦雷茨的判断是：要理清这些粒子，工作液得换成液氢（靶核全是质子），体积要尽量大，测量和分析要自动化。装置要回答：新粒子有多少种，各是什么性质。",
+   "brief": [
+    "尺寸：内腔 72 × 20 × 15 英寸（约 1.83 × 0.51 × 0.38 米），装 12.5 立方英尺（约 354 升）液氢，是第一只液氢室（1.5 英寸）的 48 倍长。",
+    "磁场：18 千高斯（1.8 特斯拉）。磁铁用钢 115 吨、铜 20 吨，由一台 3 兆瓦的电动发电机组供电。",
+    "光学：一块 8,280 立方英寸（约 136 升）的光学玻璃窗，要承受约 100 吨的压力；照明和拍照都只能从这一侧做。",
+    "节拍：每 6 秒膨胀一次，工作压力约 60–70 psi，每次约 10 psi 的压力脉冲。",
+    "数据：测量机要做到每小时 5–10 个事例（云室的办法约每天 1 个）；全组年测量量从 1962 年的 8 万个提高到 1968 年的 150 万个。"
+   ],
+   "scale": [
+    {
+     "k": "内腔",
+     "v": "72 × 20 × 15 英寸（约 1.83 × 0.51 × 0.38 米）",
+     "note": "",
+     "f": [
+      4
+     ]
+    },
+    {
+     "k": "液氢",
+     "v": "12.5 立方英尺，约 354 升",
+     "note": "CERN Courier 引工程师 Jack Lloyd 的说法是 400 升",
+     "f": [
+      5
+     ]
+    },
+    {
+     "k": "磁铁",
+     "v": "钢 115 吨、铜 20 吨，18 千高斯，3 兆瓦供电",
+     "note": "",
+     "f": [
+      5
+     ]
+    },
+    {
+     "k": "整机",
+     "v": "不含制冷设备重 240 吨，靠液压脚移动；腔体是 3.25 吨奥氏体不锈钢",
+     "note": "",
+     "f": [
+      5
+     ]
+    },
+    {
+     "k": "造价",
+     "v": "210 万美元",
+     "note": "LBL 1981 年史稿的数字，1950 年代末的美元；AEC 最初批 75 万；常见的「250 万」一说未能核对",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "逐级放大",
+     "v": "1.5 → 2.5 → 4 → 10 → 15 → 72 英寸",
+     "note": "1953 年底到 1959 年 3 月",
+     "f": [
+      3,
+      4
+     ]
+    },
+    {
+     "k": "工期",
+     "v": "1955-01 提案，1959-03 建成，约 4 年",
+     "note": "",
+     "f": [
+      4,
+      6
+     ]
+    },
+    {
+     "k": "数据量",
+     "v": "年测量事例：1962 年 8 万，1965 年 30 万，1968 年 150 万",
+     "note": "是测量过的事例数，不是照片张数",
+     "f": [
+      8
+     ]
+    },
+    {
+     "k": "团队",
+     "v": "「数百人」",
+     "note": "CERN Courier：1967 年前后是世界上最大的高能物理组",
+     "f": [
+      9
+     ]
+    }
+   ],
+   "approach": [
+    "工作液选液氢，不选容易做的乙醚或丙烷。氢核就是质子，反应最好解释；代价是极低温和易燃易爆。实验室把工程部的 11 个人拉进 10 英寸的设计，并请国家标准局在博尔德的低温工程实验室支援。",
+    "五级样机逐级放大：1.5、2.5、4、10、15 英寸。2.5 英寸换成金属腔体加玻璃窗，4 英寸 1954-11-19 就上 Bevatron 取数，15 英寸专门用来试 72 英寸的光学和制冷。",
+    "只开一面窗。72 英寸的方案把照明和拍照都放在同一侧，阿尔瓦雷茨和 Duane Norgren 为此设计了被叫作「衣架」的照明系统。这样只需要一块大玻璃。",
+    "把数据分析和硬件一起立项。1955 年的预算里就列了 20 万美元买 IBM 计算机；另设运行、数据分析、摄影、计算四个组；测量机换了两代，年测量量从 8 万升到 150 万。"
+   ],
+   "history": [
+    {
+     "d": "1952",
+     "t": "格拉泽在密歇根大学做出约 1 英寸的气泡室，工作液是乙醚。"
+    },
+    {
+     "d": "1953-04",
+     "t": "格拉泽在美国物理学会会议上展示宇宙线 μ 子的径迹；阿尔瓦雷茨随即派人做液氢版。"
+    },
+    {
+     "d": "1953 年底",
+     "t": "John Wood 小组的 1.5 英寸液氢室看到径迹。"
+    },
+    {
+     "d": "1954-11-19",
+     "t": "4 英寸气泡室开始在 Bevatron 上取数。"
+    },
+    {
+     "d": "1955-01-10",
+     "t": "阿尔瓦雷茨提议造 30 英寸气泡室；方案先后放大到 50 英寸、72 英寸。AEC 先批 75 万美元。"
+    },
+    {
+     "d": "1956",
+     "t": "Crawford、Stevenson 等人用气泡室发现 Λ 粒子衰变不守恒宇称。"
+    },
+    {
+     "d": "1957",
+     "t": "购入 IBM 650 计算机。"
+    },
+    {
+     "d": "1958",
+     "t": "测量机 Franckenstein 在日内瓦「原子能和平利用」展览上展出。"
+    },
+    {
+     "d": "1959-03",
+     "t": "72 英寸气泡室建成，造价 210 万美元。"
+    },
+    {
+     "d": "1960",
+     "t": "Rochester 会议上报告共振态 Y*(1385)；同年格拉泽因发明气泡室获诺贝尔奖。"
+    },
+    {
+     "d": "1963",
+     "t": "Spiral Reader 测量机建成。"
+    },
+    {
+     "d": "1968",
+     "t": "阿尔瓦雷茨获诺贝尔物理学奖；全组年测量 150 万个事例。"
+    },
+    {
+     "d": "1970–1979",
+     "t": "CERN 的重液气泡室 Gargamelle 运行；1973 年 7 月公布弱中性流的第一批证据。"
+    }
+   ],
+   "people": [
+    {
+     "zh": "唐纳德·格拉泽",
+     "en": "Donald A. Glaser",
+     "r": "1952 年在密歇根大学发明气泡室，1960 年获诺贝尔奖时 34 岁"
+    },
+    {
+     "zh": "",
+     "en": "John Wood",
+     "r": "他的小组 1953 年底用 1.5 英寸液氢室看到径迹"
+    },
+    {
+     "zh": "",
+     "en": "Frank Crawford / Lynn Stevenson",
+     "r": "1953 年被派去做气泡室的两名研究生；1956 年参与发现 Λ 衰变宇称不守恒"
+    },
+    {
+     "zh": "",
+     "en": "James Gow",
+     "r": "与 Hernandez 共同领导 72 英寸的建造，后任气泡室运行组负责人"
+    },
+    {
+     "zh": "",
+     "en": "Paul Hernandez",
+     "r": "工程师，与 Gow 共同领导 72 英寸气泡室 4 年的建造"
+    },
+    {
+     "zh": "",
+     "en": "Jack Franck",
+     "r": "带队做出测量机 Franckenstein，每小时测 5–10 个事例"
+    },
+    {
+     "zh": "",
+     "en": "Jack Lloyd",
+     "r": "总工程师，1963 年建成 Spiral Reader"
+    },
+    {
+     "zh": "",
+     "en": "Arthur Rosenfeld / Frank Solmitz",
+     "r": "主持径迹重建和分析程序；Rosenfeld 是费米推荐来的博士后"
+    },
+    {
+     "zh": "",
+     "en": "Hugh Bradner",
+     "r": "数据分析组负责人"
+    },
+    {
+     "zh": "",
+     "en": "Duane Norgren",
+     "r": "与阿尔瓦雷茨一起设计单侧照明拍照系统"
+    }
+   ],
+   "awards": [
+    "1960 年诺贝尔物理学奖：格拉泽，表彰他发明气泡室"
+   ],
+   "anecdotes": [
+    {
+     "t": "阿尔瓦雷茨提出造大气泡室时，劳伦斯对他说：「我不相信你的大机器，但我相信你，我会帮你弄到钱。」",
+     "kind": "官方史",
+     "f": [
+      6
+     ]
+    },
+    {
+     "t": "「看啤酒冒泡得到灵感」的说法，格拉泽 2006 年在伯克利实验室的讲座上否认了。他承认确实拿啤酒做过实验，实验室的报道说，那些实验「只在屋里留下一股臭味」。",
+     "kind": "当事人自述",
+     "f": [
+      2
+     ]
+    },
+    {
+     "t": "测量机叫 Franckenstein，取自研制者 Jack Franck 的姓。1958 年它被运到日内瓦，在「原子能和平利用」展览上展出。",
+     "kind": "官方史",
+     "f": [
+      7
+     ]
+    },
+    {
+     "t": "阿尔瓦雷茨起初不愿在那批共振态论文上署名，是年轻同事劝他才署的。获奖后，他拿出一部分奖金，把组里的资深成员和他们的妻子带去了斯德哥尔摩。",
+     "kind": "著作",
+     "f": [
+      9
+     ]
+    },
+    {
+     "t": "气泡室之后的两件事：1960 年代后期他用宇宙线 μ 子探查吉萨的哈夫拉金字塔，探过的约 19% 体积里没有发现密室；1980 年与儿子 Walter 等人依据黏土层里的铱异常，提出天体撞击造成白垩纪末的大灭绝。",
+     "kind": "著作",
+     "f": [
+      12
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "1955 年立项时预算里就有 20 万美元的计算机；运行、数据分析、摄影、计算各设一组；测量机换了两代，年测量量从 8 万升到 150 万个事例。厂房备了接收排放气体的大球罐。",
+    "principle": "数据链路是装置的一半，要和硬件一起立项。",
+    "engineer": "传感器能产出多少数据，就要配同等产能的处理链路。做预算时把测量、存储、分析的人和机器一起算进去。危险介质要有专门的设施。",
+    "public": "拍了一万张照片不整理，等于没拍。动手之前先想好：产出的东西谁来看、怎么看、看得过来吗。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "出自劳伦斯的辐射实验室，装在 Bevatron 旁；同一原理的 Gargamelle 1973 年在 CERN 发现弱中性流，十年后 W、Z 粒子在同一家实验室被找到。",
+   "metrics": {
+    "size_m": 1.83,
+    "size_what": "气泡室内腔长度（72 英寸）",
+    "mass_t": 240,
+    "mass_what": "整机质量，不含制冷设备；其中磁铁钢 115 吨、铜 20 吨",
+    "depth_m": null,
+    "temp_K": null,
+    "cost": {
+     "amount": 2100000,
+     "currency": "USD",
+     "year": 1959,
+     "what": "LBL 1981 年史稿给的造价（建成于 1959 年 3 月，按当年美元计）；是否含计算机与厂房未说明"
+    },
+    "people": {
+     "n": null,
+     "what": "「数百人」（CERN Courier 对 1967 年前后阿尔瓦雷茨组的描述），无确数"
+    },
+    "t_idea": 1953,
+    "t_build": 1955,
+    "t_first": 1959,
+    "t_result": 1960,
+    "t_prize": 1968
+   },
+   "drawing": [
+    {
+     "what": "72 英寸气泡室内腔长",
+     "value": 1.83,
+     "unit": "m",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "72 英寸气泡室内腔宽（20 英寸）",
+     "value": 0.51,
+     "unit": "m",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "72 英寸气泡室内腔深（15 英寸）",
+     "value": 0.38,
+     "unit": "m",
+     "f": [
+      4
+     ]
+    },
+    {
+     "what": "格拉泽 1952 年第一只气泡室（约 1 英寸）",
+     "value": 2.5,
+     "unit": "cm",
+     "f": [
+      1
+     ]
+    },
+    {
+     "what": "1.5 英寸液氢室（1953 年底）",
+     "value": 3.8,
+     "unit": "cm",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "2.5 英寸液氢室（金属腔体、玻璃窗）",
+     "value": 6.4,
+     "unit": "cm",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "4 英寸液氢室（1954-11 上 Bevatron）",
+     "value": 10.2,
+     "unit": "cm",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "10 英寸液氢室（液氢用量约为 4 英寸的 6 倍）",
+     "value": 25.4,
+     "unit": "cm",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "15 英寸液氢室（72 英寸的光学与制冷样机）",
+     "value": 38.1,
+     "unit": "cm",
+     "f": [
+      3
+     ]
+    },
+    {
+     "what": "72 英寸气泡室厂房面积（7,500 平方英尺）",
+     "value": 697,
+     "unit": "m²",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "Gargamelle 长度",
+     "value": 4.8,
+     "unit": "m",
+     "f": [
+      11
+     ]
+    },
+    {
+     "what": "Gargamelle 直径",
+     "value": 2.0,
+     "unit": "m",
+     "f": [
+      11
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "格拉泽 1949 年起在密歇根大学任教，1952 年做出第一只约 1 英寸的气泡室样机，工作液是乙醚（二乙醚）；他把气泡室形容为「带窗的高压锅」。论文发表在 1952 年的《Physical Review》第 87 卷。他 1959 年转到伯克利，1960 年获诺贝尔奖时 34 岁。",
+     "sources": [
+      {
+       "t": "UC Berkeley News（2013-03-01）：Physics Nobelist and biotech pioneer Donald Glaser dies at 86",
+       "u": "http://news.berkeley.edu/2013/03/01/physics-nobelist-and-biotech-pioneer-donald-glaser-dies-at-86/"
+      },
+      {
+       "t": "Berkeley Lab View（2006-07-21）：Anne Pinckard 对格拉泽讲座的报道 Front Seat to History",
+       "u": "https://www2.lbl.gov/Publications/Currents/Archive/Jul-21-2006.html"
+      },
+      {
+       "t": "维基百科（辅助）：Donald A. Glaser",
+       "u": "https://en.wikipedia.org/wiki/Donald_A._Glaser"
+      },
+      {
+       "t": "Britannica：bubble chamber",
+       "u": "https://www.britannica.com/technology/bubble-chamber"
+      }
+     ],
+     "confidence": "高",
+     "note": "伯克利新闻的讣告在解释原理时举的液体是氙，那是后来的做法"
+    },
+    {
+     "n": 2,
+     "text": "流传的说法是格拉泽看啤酒冒泡得到灵感。他 2006 年在伯克利实验室的讲座上否认了，但说自己确实考虑过并拿啤酒做过实验；实验室的报道写道，那些实验只在屋里留下一股臭味。",
+     "sources": [
+      {
+       "t": "Berkeley Lab View（2006-07-21）：Anne Pinckard 对格拉泽讲座的报道 Front Seat to History",
+       "u": "https://www2.lbl.gov/Publications/Currents/Archive/Jul-21-2006.html"
+      },
+      {
+       "t": "维基百科（辅助）：Bubble chamber",
+       "u": "https://en.wikipedia.org/wiki/Bubble_chamber"
+      },
+      {
+       "t": "维基百科（辅助）：Donald A. Glaser",
+       "u": "https://en.wikipedia.org/wiki/Donald_A._Glaser"
+      }
+     ],
+     "confidence": "中",
+     "note": "三处都源自同一篇 2006 年的实验室报道（转述，无逐字引语）"
+    },
+    {
+     "n": 3,
+     "text": "1953 年 4 月格拉泽在美国物理学会会议上展示了热乙醚里的宇宙线 μ 子径迹，阿尔瓦雷茨在会上得知此事，立刻派研究生 Frank Crawford、Lynn Stevenson 和几名技师去做液氢版。到 1953 年底 John Wood 小组的 1.5 英寸室看到径迹；随后是 2.5 英寸（金属腔体、玻璃窗）、4 英寸（1954-11-19 开始在 Bevatron 上用）、10 英寸（工程部 11 人参与设计，液氢用量约为 4 英寸的 6 倍，国家标准局博尔德低温工程实验室支援）、15 英寸（试光学和制冷的样机）。",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      },
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      },
+      {
+       "t": "维基百科（辅助）：Luis Walter Alvarez",
+       "u": "https://en.wikipedia.org/wiki/Luis_Walter_Alvarez"
+      }
+     ],
+     "confidence": "高",
+     "note": "液氢里第一次见到径迹的时间，CERN Courier 写 1954 年夏"
+    },
+    {
+     "n": 4,
+     "text": "1955-01-10 阿尔瓦雷茨提议造 30 英寸气泡室，方案先放大到 50 英寸，再定为 72 × 20 × 15 英寸。由 James Gow 和 Paul Hernandez 领导的团队用 4 年建成，1959 年 3 月完工。",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      },
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      }
+     ],
+     "confidence": "中",
+     "note": "常被引用的另一个日期是 1955 年 4 月的内部备忘录（出自阿尔瓦雷茨诺奖演讲，本轮未能核对）；维基只说「近 7 英尺（2.1 米）长」"
+    },
+    {
+     "n": 5,
+     "text": "72 英寸气泡室：腔体用 3.25 吨奥氏体不锈钢，装 12.5 立方英尺液氢；光学玻璃窗 8,280 立方英寸，按承受 100 吨压力设计；磁铁用钢 115 吨、铜 20 吨，磁场 18 千高斯，由 3 兆瓦电动发电机组供电；整机不含制冷设备重 240 吨，靠液压脚移动。厂房 7,500 平方英尺，有吊车、两台压缩机和一个接收排出气体的大球罐。",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      },
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      }
+     ],
+     "confidence": "中",
+     "note": "CERN Courier 引 Jack Lloyd：液氢 400 升，工作压力约 60–70 psi，每 6 秒一次约 10 psi 的脉冲"
+    },
+    {
+     "n": 6,
+     "text": "经费：原子能委员会（AEC）最初批给 75 万美元，到 1955 年底估价升到 125 万美元，另加 20 万美元买 IBM 计算机；最终造价 210 万美元。劳伦斯对阿尔瓦雷茨说：「我不相信你的大机器，但我相信你，我会帮你弄到钱。」",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      }
+     ],
+     "confidence": "中",
+     "note": "单一来源（LBL 官方史稿）；种子里的「约 250 万美元」未能找到可打开的出处"
+    },
+    {
+     "n": 7,
+     "text": "测量机 Franckenstein 由 Jack Franck 的团队研制，每小时可测 5–10 个事例，而沿用云室的办法大约每天 1 个；1958 年在日内瓦「原子能和平利用」展览上展出。早期两台机器加 30 个人，一天只能分析 200 个事例。另一台更超前的 McCormick Reaper 因当时的计算机跟不上而放弃。",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      }
+     ],
+     "confidence": "中",
+     "note": "单一来源"
+    },
+    {
+     "n": 8,
+     "text": "Spiral Reader 1963 年在总工程师 Jack Lloyd 主持下建成；测量过的事例从 1962 年的 8 万个增加到 1965 年的 30 万个，1968 年达到每年 150 万个。CERN Courier 的说法是到 1967 年全组每年分析 100 多万个事例。计算机依次是 IBM 650（1957）、704、709（1960）、7090（1961）、CDC 6600（1966）。Frank Solmitz 和 Arthur Rosenfeld 主持径迹重建程序。",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      },
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      }
+     ],
+     "confidence": "高",
+     "note": "这是事例数，不是照片张数；扫描员人数本轮没有查到"
+    },
+    {
+     "n": 9,
+     "text": "阿尔瓦雷茨组在 1960 年代是世界上最大的高能物理组，共数百人。NAS 传记说，那批共振态论文是他获奖的依据，年轻同事还得劝他在论文上署名；他用部分奖金带资深成员夫妇去了斯德哥尔摩。",
+     "sources": [
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      },
+      {
+       "t": "W. Peter Trower, Luis W. Alvarez 1911–1988, 美国国家科学院传记回忆录（2009）",
+       "u": "https://www.nasonline.org/publications/biographical-memoirs/memoir-pdfs/alvarez-luis-w.pdf"
+      }
+     ],
+     "confidence": "中",
+     "note": ""
+    },
+    {
+     "n": 10,
+     "text": "气泡室的成果：1956 年 Crawford、Stevenson 等发现 Λ 衰变不守恒宇称；1960 年 Rochester 会议上报告共振态 Y*(1385)；此后伯克利组又找到 K*(890)、Y*(1405) 等，加州大学洛杉矶分校的 Harold Ticho 用 72 英寸的底片找到 Ξ*(1530)。这些共振态之间的关系导向「八重法」和夸克模型。",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      },
+      {
+       "t": "W. Peter Trower, Luis W. Alvarez 1911–1988, 美国国家科学院传记回忆录（2009）",
+       "u": "https://www.nasonline.org/publications/biographical-memoirs/memoir-pdfs/alvarez-luis-w.pdf"
+      },
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      }
+     ],
+     "confidence": "中",
+     "note": "各共振态的发现者与年份，摘要里有含混处，引用前请对原文"
+    },
+    {
+     "n": 11,
+     "text": "CERN 的 Gargamelle 是为探测中微子设计的重液气泡室：长 4.8 米、直径 2 米、重 1,000 吨，装近 12 立方米氟利昂（CF₃Br）。1970–1976 年用质子同步加速器（PS）的中微子束，之后搬到 SPS，1979 年因出现无法修复的裂纹停用。1973 年 7 月合作组在 CERN 报告了弱中性流的第一批直接证据，当时确认了 166 个强子型事例和 1 个电子型事例；两篇论文同年 9 月 3 日发表于《Physics Letters》。",
+     "sources": [
+      {
+       "t": "CERN 官网：Gargamelle",
+       "u": "https://home.cern/science/experiments/gargamelle"
+      },
+      {
+       "t": "维基百科（辅助）：Bubble chamber",
+       "u": "https://en.wikipedia.org/wiki/Bubble_chamber"
+      }
+     ],
+     "confidence": "高",
+     "note": "BEBC 的数字本轮未核（CERN 页面返回 404）"
+    },
+    {
+     "n": 12,
+     "text": "阿尔瓦雷茨 1965 年提出用宇宙线 μ 子探查吉萨的哈夫拉（Chephren）金字塔，1967 年六日战争一度中断，做到 1969 年；结果是探过的 19% 体积里没有密室，论文《Search for hidden chambers in the pyramids》发表在《Science》第 167 卷 832–839 页。1980 年他与儿子 Walter Alvarez、Frank Asaro、Helen Michel 在《Science》第 208 卷发表《Extraterrestrial Cause for the Cretaceous-Tertiary Extinction》，依据是界线黏土里的铱异常。",
+     "sources": [
+      {
+       "t": "维基百科（辅助）：Luis Walter Alvarez",
+       "u": "https://en.wikipedia.org/wiki/Luis_Walter_Alvarez"
+      },
+      {
+       "t": "W. Peter Trower, Luis W. Alvarez 1911–1988, 美国国家科学院传记回忆录（2009）",
+       "u": "https://www.nasonline.org/publications/biographical-memoirs/memoir-pdfs/alvarez-luis-w.pdf"
+      },
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      },
+      {
+       "t": "Britannica：Luis Alvarez",
+       "u": "https://www.britannica.com/biography/Luis-Alvarez"
+      }
+     ],
+     "confidence": "高",
+     "note": "NAS 传记的书目把金字塔论文列在 1969 年名下，卷号 167 对应 1970 年初"
+    },
+    {
+     "n": 13,
+     "text": "CERN Courier 写道，阿尔瓦雷茨在建造和运行 72 英寸气泡室期间保持了完美的安全记录。作为对照，《科学传记辞典》提到麻省剑桥电子加速器的液氢气泡室发生过一次爆炸，1 人死亡，Livingston 主持了灾后重建。",
+     "sources": [
+      {
+       "t": "CERN Courier：Luis Alvarez: the ideas man",
+       "u": "https://cerncourier.com/a/luis-alvarez-the-ideas-man/"
+      },
+      {
+       "t": "Dictionary of Scientific Biography：Livingston, Milton Stanley（提到剑桥电子加速器的液氢气泡室爆炸）",
+       "u": "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/livingston-milton-stanley"
+      }
+     ],
+     "confidence": "中",
+     "note": "剑桥那次事故的日期（通常写 1965-07-05）与伤亡细节本轮未能核对"
+    },
+    {
+     "n": 14,
+     "text": "气泡室装在 Bevatron 的束流线上。Bevatron 1954 年建成，是一台 10,000 吨的质子同步加速器，1954-04-01 束流到 6.1 BeV，设计（改型后）能量 6.2 BeV。",
+     "sources": [
+      {
+       "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+      },
+      {
+       "t": "同上，Episode 5: Strange and Contrary Particles",
+       "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fepi5.html"
+      },
+      {
+       "t": "Berkeley Lab 历史网站：1950s",
+       "u": "https://history.lbl.gov/1950s"
+      }
+     ],
+     "confidence": "高",
+     "note": "LBL 历史网站写设计能量 6.5 BeV"
+    },
+    {
+     "n": 15,
+     "text": "1968 年颁奖词把「氢气泡室技术」和「数据分析」并列写成获奖理由，开头用了 decisive contributions 的说法。",
+     "sources": [
+      {
+       "t": "NobelPrize.org：The Nobel Prize in Physics 1968（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；措辞据种子与维基百科所引，两者有一两个词的出入，见 disputes）",
+       "u": "https://www.nobelprize.org/prizes/physics/1968/summary/"
+      },
+      {
+       "t": "维基百科（辅助）：Luis Walter Alvarez",
+       "u": "https://en.wikipedia.org/wiki/Luis_Walter_Alvarez"
+      },
+      {
+       "t": "Britannica：Luis Alvarez",
+       "u": "https://www.britannica.com/biography/Luis-Alvarez"
+      }
+     ],
+     "confidence": "中",
+     "note": "官网未能打开；维基的写法是 resonant states / bubble chambers，种子与通行引法是 resonance states / bubble chamber"
+    }
+   ],
+   "disputes": [
+    "造价：LBL 1981 年史稿写 2,100,000 美元；种子写约 250 万美元（常见于转引阿尔瓦雷茨诺奖演讲的文献，本轮打不开原文，无法判断是不是含了计算机、厂房或后续改造）。",
+    "液氢体积：12.5 立方英尺，约 354 升（LBL 1981）；400 升（CERN Courier 引工程师 Jack Lloyd）。",
+    "液氢里第一次看到径迹：1953 年底、John Wood 的 1.5 英寸室（LBL 1981）；1954 年夏（CERN Courier）。",
+    "大气泡室的提案日期：1955-01-10 提议 30 英寸（LBL 1981）；通行说法是 1955 年 4 月的内部备忘录（未核）。",
+    "颁奖词个别用词：resonance states / hydrogen bubble chamber（通行引法）对 resonant states / hydrogen bubble chambers（维基）。",
+    "金字塔项目的年份：维基写 1965 年提出、做到 1969 年；种子写 1967–69；CERN Courier 只说 1960 年代后期。",
+    "Bevatron 的能量：6.2 BeV（LBL 1981）对 6.5 BeV（LBL 历史网站、Brobeck 讣告）。"
+   ],
+   "todo": [
+    "阿尔瓦雷茨诺奖演讲（nobelprize.org，打不开）里的数字都没能核对：每年拍摄的照片张数、扫描员人数、「250 万美元」、1955 年 4 月备忘录的标题与日期、分析程序名（PANG、KICK、SUMX）。",
+    "Paul Hernandez 的氢安全工作（安全规范、设计准则）：本轮只核到他与 Gow 共同领导建造；「氢安全工程师」这个说法缺出处。",
+    "剑桥电子加速器液氢气泡室爆炸的日期与伤亡（维基页面返回 cache-only，未绕行）。",
+    "72 英寸气泡室首次出径迹的确切日期（只有「1959 年 3 月建成」）；它后来改为 82 英寸并迁往 SLAC 的经过未核。",
+    "BEBC 的尺寸与运行年份未核。",
+    "各共振态的发现者、年份与所用气泡室（15 英寸还是 72 英寸）需对原始论文。",
+    "格拉泽 1952 年第一只气泡室的精确尺寸（常见说法是几立方厘米的玻璃泡）只核到「约 1 英寸」。"
+   ]
+  },
+  {
+   "id": "cambridge",
+   "status": "已核（2026-10-08；检索额度用尽后只能直接打开已知网址，一英里望远镜的数字主要靠维基转引，见 notes）",
+   "prize": {
+    "year": 1974,
+    "laureates": [
+     {
+      "zh": "马丁·赖尔",
+      "en": "Martin Ryle",
+      "life": "1918–1984",
+      "share": "1/2",
+      "role": "战时做雷达天线和雷达对抗，战后把干涉仪做成综合孔径望远镜：用几面小天线、铁轨和地球自转合成公里级的口径"
+     },
+     {
+      "zh": "安东尼·休伊什",
+      "en": "Antony Hewish",
+      "life": "1924–2021",
+      "share": "1/2",
+      "role": "设计并争取经费建成行星际闪烁阵；他的研究生贝尔在记录纸上发现了第一颗脉冲星，他主持了后续的判断和发表"
+     }
+    ],
+    "citation_en": "for their pioneering research in radio astrophysics: Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars",
+    "citation_zh": "表彰他们在射电天体物理学方面的开创性研究：赖尔，因为他的观测和发明，特别是综合孔径技术；休伊什，因为他在发现脉冲星中所起的决定性作用",
+    "citation_source": {
+     "t": "NobelPrize.org：The Nobel Prize in Physics 1974（SCHEMA 写明本环境对该站返回 403，按约定没有去抓；后半句与种子及维基百科所引一致，前半句 for their pioneering research in radio astrophysics 为通行引法，未能对页）",
+     "u": "https://www.nobelprize.org/prizes/physics/1974/summary/"
+    },
+    "citation_check": "与维基百科《List of Nobel laureates in Physics》所列一致；nobelprize.org 未能打开"
+   },
+   "apparatus": {
+    "zh": "一英里望远镜与行星际闪烁阵",
+    "en": "One-Mile Telescope & Interplanetary Scintillation Array",
+    "years": "1964 / 1967",
+    "place_zh": "Mullard 射电天文台（剑桥大学卡文迪许实验室），Lord's Bridge，剑桥郊外，英国",
+    "lat": 52.17,
+    "lon": 0.03
+   },
+   "claim": "两台装置回答两个问题。赖尔的问题：不造一英里大的天线，能不能得到一英里口径的分辨率——用三面 18 米天线，移动其中一面，再借地球自转扫出整个口径，由计算机合成图像。休伊什 1965 年的问题：能不能靠行星际闪烁，用一个便宜的大阵列从大批射电源里挑出角径极小的类星体。",
+   "brief": [
+    "一英里望远镜：3 面直径 18 米、各重 120 吨的抛物面天线，2 面固定，1 面在 800 米铁轨上移动，最长基线约 1.6 公里。",
+    "轨道精度：800 米铁轨的直线度在 0.9 厘米以内；远端垫高 5 厘米，抵消这段距离上的地球曲率。",
+    "分辨率：408 MHz 下 80 角秒，1.4 GHz 下 20 角秒。",
+    "闪烁阵：工作在 81.5 MHz（波长 3.7 米），占地 4.5 英亩（约 1.8 公顷），1,000 多根木桩、2,000 多个偶极子、120 英里（约 190 公里）电线电缆，造价约 1.5 万英镑。",
+    "记录：4 个波束每 4 天扫一遍赤纬 −10° 到 +50° 的天区，每天出 96 英尺（约 29 米）记录纸，靠人看。"
+   ],
+   "scale": [
+    {
+     "k": "一英里望远镜",
+     "v": "3 面 18 米天线，各重 120 吨；2 面固定，1 面在 800 米铁轨上移动",
+     "note": "数字出自维基转引的 Ryle 1962 年《Nature》论文",
+     "f": [
+      2
+     ]
+    },
+    {
+     "k": "合成口径",
+     "v": "约 1.6 公里（1 英里）",
+     "note": "Britannica：效果相当于一面直径 1.6 公里的望远镜",
+     "f": [
+      2,
+      3
+     ]
+    },
+    {
+     "k": "轨道精度",
+     "v": "直线度 0.9 厘米以内，远端垫高 5 厘米补偿地球曲率",
+     "note": "",
+     "f": [
+      2
+     ]
+    },
+    {
+     "k": "分辨率",
+     "v": "408 MHz 下 80 角秒；1.4 GHz 下 20 角秒",
+     "note": "",
+     "f": [
+      2
+     ]
+    },
+    {
+     "k": "闪烁阵规模",
+     "v": "4.5 英亩，1,000 多根木桩、2,000 多个偶极子、120 英里电线电缆",
+     "note": "贝尔·伯内尔的说法：相当于 57 个网球场；维基写最初 4 英亩",
+     "f": [
+      5
+     ]
+    },
+    {
+     "k": "闪烁阵造价与工期",
+     "v": "约 1.5 万英镑；五六个人加暑期学生干了 2 年",
+     "note": "1960 年代中期的英镑",
+     "f": [
+      5
+     ]
+    },
+    {
+     "k": "数据量",
+     "v": "每天 96 英尺记录纸；贝尔共看了约 3.5 英里（约 5.6 公里）",
+     "note": "",
+     "f": [
+      6
+     ]
+    },
+    {
+     "k": "信号",
+     "v": "周期 1⅓ 秒的脉冲；在记录纸上只占四分之一英寸",
+     "note": "",
+     "f": [
+      7,
+      8
+     ]
+    },
+    {
+     "k": "5 公里望远镜",
+     "v": "8 面 13 米天线，4 面在 1.2 公里铁轨上，最长基线 4.8 公里",
+     "note": "1971–1972 年建成，后改名 Ryle Telescope",
+     "f": [
+      13
+     ]
+    }
+   ],
+   "approach": [
+    "用时间和计算换口径。一英里望远镜不造整面大天线：三面小天线每次只测一个间距，把能动的那面沿铁轨挪到下一个位置再测，地球自转替它转过各个方向；最后由 Titan 这一代计算机做傅里叶反演，合成一张图。",
+    "把铁轨当精密部件来做。800 米轨道的直线度控制在 0.9 厘米以内，远端抬高 5 厘米抵消地球曲率，因为天线间距的误差会直接变成图像的误差。",
+    "闪烁阵用最便宜的办法堆面积：木桩、电线、偶极子，约 1.5 万英镑，学生自己用大锤打桩。它不能转动，只能等天体随地球自转经过波束；换来的是大接收面积和以秒计的时间分辨率。",
+    "输出用笔绘记录仪，人工逐段看。贝尔一个人负责运行和分析，她认得出干扰和闪烁各长什么样，所以注意到了一段两者都不像的「毛刺」，并且没有把它丢掉。"
+   ],
+   "history": [
+    {
+     "d": "1939–1945",
+     "t": "赖尔在英国电信研究所（TRE）做机载雷达天线和雷达对抗；休伊什战时也在那里与他共事。"
+    },
+    {
+     "d": "1946",
+     "t": "赖尔与 Vonberg 建成第一台多单元射电干涉仪。"
+    },
+    {
+     "d": "1957–1959",
+     "t": "赖尔 1957 年任 Mullard 射电天文台台长，1959 年任射电天文学教授；同年发表 3C 射电源表。"
+    },
+    {
+     "d": "1962-05-12",
+     "t": "赖尔在《Nature》发表《新剑桥射电望远镜》，公布一英里望远镜的方案。"
+    },
+    {
+     "d": "1964",
+     "t": "一英里望远镜建成，是第一台用地球自转做综合孔径的望远镜。"
+    },
+    {
+     "d": "1965",
+     "t": "休伊什拿到经费，开始建闪烁阵；贝尔等人干了两年。"
+    },
+    {
+     "d": "1967-07",
+     "t": "闪烁阵开始运行，贝尔负责操作和分析记录纸。"
+    },
+    {
+     "d": "1967-08-06",
+     "t": "记录纸上第一次出现赤经 19 时 19 分的那个信号（事后认出）。"
+    },
+    {
+     "d": "1967-11-28",
+     "t": "换用快速记录仪后看到一串间隔 1⅓ 秒的脉冲。"
+    },
+    {
+     "d": "1967-12",
+     "t": "圣诞假期前一晚，贝尔在另一片天区找到第二个源，周期 1.2 秒。"
+    },
+    {
+     "d": "1968-02-24",
+     "t": "论文在《Nature》发表，5 位作者，休伊什第一、贝尔第二。"
+    },
+    {
+     "d": "1971–1972",
+     "t": "5 公里望远镜建成：8 面 13 米天线，最长基线 4.8 公里。"
+    },
+    {
+     "d": "1974",
+     "t": "赖尔与休伊什获诺贝尔物理学奖；贝尔不在其中，Fred Hoyle 公开表示她应当分享。"
+    },
+    {
+     "d": "2018-09-06",
+     "t": "贝尔·伯内尔获基础物理学特别突破奖，300 万美元奖金全部捐给英国物理学会设研究生奖学金。"
+    }
+   ],
+   "people": [
+    {
+     "zh": "乔瑟琳·贝尔·伯内尔",
+     "en": "Jocelyn Bell Burnell",
+     "r": "休伊什的博士生；参与建阵，独自运行和看图，两个月内找到前 4 颗脉冲星；未获诺奖"
+    },
+    {
+     "zh": "",
+     "en": "John Pilkington",
+     "r": "测出信号的色散，判定它来自太阳系外、银河系内；论文作者"
+    },
+    {
+     "zh": "",
+     "en": "Paul Scott / Robin Collins",
+     "r": "用另一套设备证实了脉冲信号；论文作者"
+    },
+    {
+     "zh": "",
+     "en": "Derek Vonberg",
+     "r": "1946 年与赖尔建成第一台多单元射电干涉仪"
+    },
+    {
+     "zh": "弗雷德·霍伊尔",
+     "en": "Fred Hoyle",
+     "r": "1974 年后公开批评评奖漏掉贝尔；此前与赖尔在宇宙学上长期争论"
+    },
+    {
+     "zh": "托马斯·戈尔德",
+     "en": "Thomas Gold",
+     "r": "1968 年指出脉冲星是快速自转的中子星"
+    },
+    {
+     "zh": "",
+     "en": "Ruby Payne-Scott / Joseph Pawsey",
+     "r": "1946 年在澳大利亚做了最早的射电干涉观测，综合孔径的概念由此提出"
+    }
+   ],
+   "awards": [
+    "1973 年富兰克林研究所迈克尔逊奖章：休伊什与贝尔·伯内尔共享",
+    "1989 年英国皇家天文学会赫歇尔奖章：贝尔·伯内尔",
+    "2018 年基础物理学特别突破奖：贝尔·伯内尔，300 万美元，表彰她对发现脉冲星的根本性贡献和毕生的科学领导工作",
+    "2021 年英国皇家学会科普利奖章：贝尔·伯内尔"
+   ],
+   "anecdotes": [
+    {
+     "t": "那段「毛刺」在记录纸上只占四分之一英寸，贝尔说约是她全部记录的一千万分之一。换上快速记录仪后，它又消失了一个月，1967-11-28 才重新出现。",
+     "kind": "当事人自述",
+     "f": [
+      7,
+      8
+     ]
+    },
+    {
+     "t": "信号太规则，休伊什的第一反应是「一定是人造的」。组里半开玩笑地管它叫 LGM（小绿人）。贝尔在圣诞假期前一晚又在另一片天区找到一个周期 1.2 秒的源，外星信号的可能才被放下。",
+     "kind": "当事人自述",
+     "f": [
+      8,
+      9
+     ]
+    },
+    {
+     "t": "关于没有得奖，贝尔 1977 年说：把诺贝尔奖发给研究生会贬低这个奖，除非情况极其特殊，「而我不认为这次属于那种情况」；「我自己并不为此难过——毕竟我有不少好同伴，不是吗」。",
+     "kind": "当事人自述",
+     "f": [
+      11
+     ]
+    },
+    {
+     "t": "发现公布后，记者让贝尔在土堤上站着拍、坐着拍、拿着假记录纸拍，还问她比玛格丽特公主高还是矮、有几个男朋友。",
+     "kind": "当事人自述",
+     "f": [
+      10
+     ]
+    },
+    {
+     "t": "「阵列里的草靠放羊来啃，因为割草机进不去」这句话出自维基百科的闪烁阵条目，条目里没有标出处。",
+     "kind": "传说",
+     "f": [
+      14
+     ]
+    }
+   ],
+   "lesson": {
+    "how": "一英里望远镜用三面 18 米天线和 800 米铁轨，靠挪天线和地球自转合成 1.6 公里口径。闪烁阵约 1.5 万英镑，木桩加电线搭成。纸带上四分之一英寸的异常被留下，追了三个月。",
+    "principle": "用时间和算法换硬件；看不懂的信号先别删。",
+    "engineer": "买不起大件时，想想能不能用多次小测量加计算拼出来。日志里解释不了的毛刺先标记、先复现，再判断是不是噪声。",
+    "public": "体检单上一个说不清的小异常，值得隔一阵再查一次。很多发现一开始看起来都像干扰。"
+   },
+   "criteria": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "lineage": "综合孔径是后来各大射电阵列和事件视界望远镜的基础；脉冲星引出了 1993 年赫尔斯与泰勒的奖，也是今天脉冲星计时阵的「钟」。",
+   "metrics": {
+    "size_m": 1600,
+    "size_what": "一英里望远镜的最长基线（合成口径）",
+    "mass_t": 360,
+    "mass_what": "一英里望远镜三面天线合计（各 120 吨）",
+    "depth_m": null,
+    "temp_K": null,
+    "cost": {
+     "amount": 15000,
+     "currency": "GBP",
+     "year": 1967,
+     "what": "闪烁阵的造价，贝尔·伯内尔 1977 年的说法「约 1.5 万英镑」；一英里望远镜的造价未查到"
+    },
+    "people": {
+     "n": 5,
+     "what": "1968 年《Nature》脉冲星论文作者数；建闪烁阵的是五六个人加暑期学生"
+    },
+    "t_idea": 1962,
+    "t_build": 1962,
+    "t_first": 1964,
+    "t_result": 1967,
+    "t_prize": 1974
+   },
+   "drawing": [
+    {
+     "what": "一英里望远镜：天线直径（共 3 面）",
+     "value": 18,
+     "unit": "m",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "一英里望远镜：可移动天线的铁轨长度（半英里）",
+     "value": 800,
+     "unit": "m",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "一英里望远镜：最长基线（约 1 英里）",
+     "value": 1600,
+     "unit": "m",
+     "f": [
+      2,
+      3
+     ]
+    },
+    {
+     "what": "一英里望远镜：两面固定天线的间距（来源未明写；按「两面固定 + 800 米轨道合成 1 英里」推算约 800 米，画图前请核）",
+     "value": 800,
+     "unit": "m",
+     "f": [
+      2
+     ]
+    },
+    {
+     "what": "行星际闪烁阵：占地面积（4.5 英亩；维基写 4 英亩 = 16,000 平方米）",
+     "value": 18200,
+     "unit": "m²",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "行星际闪烁阵：长与宽——本轮没有查到可打开的出处（应在 1968 年《Nature》论文正文里），画图只能按面积示意",
+     "value": null,
+     "unit": "",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "行星际闪烁阵：木桩数（1,000 多根）",
+     "value": 1000,
+     "unit": "根",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "行星际闪烁阵：偶极子数（2,000 多个）",
+     "value": 2000,
+     "unit": "个",
+     "f": [
+      5
+     ]
+    },
+    {
+     "what": "5 公里望远镜：天线直径（共 8 面）",
+     "value": 13,
+     "unit": "m",
+     "f": [
+      13
+     ]
+    },
+    {
+     "what": "5 公里望远镜：铁轨长度（4 面可移动天线）",
+     "value": 1200,
+     "unit": "m",
+     "f": [
+      13
+     ]
+    },
+    {
+     "what": "5 公里望远镜：最长基线",
+     "value": 4800,
+     "unit": "m",
+     "f": [
+      13
+     ]
+    },
+    {
+     "what": "记录纸：每天 96 英尺",
+     "value": 29,
+     "unit": "m",
+     "f": [
+      6
+     ]
+    }
+   ],
+   "facts": [
+    {
+     "n": 1,
+     "text": "赖尔 1939 年起在英国电信研究所（TRE）做机载雷达天线设计，主要从事雷达对抗；战后到卡文迪许实验室，1946 年与 Derek Vonberg 建成第一台多单元射电干涉仪。1957 年任 Mullard 射电天文台台长，1959 年任射电天文学教授，1972–1982 年任皇家天文学家。休伊什战时在皇家飞机研究院和 TRE 服役，与赖尔共事。",
+     "sources": [
+      {
+       "t": "Britannica：Sir Martin Ryle",
+       "u": "https://www.britannica.com/biography/Martin-Ryle"
+      },
+      {
+       "t": "维基百科（辅助）：Martin Ryle",
+       "u": "https://en.wikipedia.org/wiki/Martin_Ryle"
+      },
+      {
+       "t": "维基百科（辅助）：Antony Hewish",
+       "u": "https://en.wikipedia.org/wiki/Antony_Hewish"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 2,
+     "text": "一英里望远镜 1964 年由剑桥射电天文组建成：3 面抛物面天线，直径 18 米（60 英尺），各重 120 吨；2 面固定，第 3 面可在 800 米（半英里）长的铁轨上移动。轨道直线度在 0.9 厘米以内，远端垫高 5 厘米以抵消地球曲率。常用观测频率 408 MHz（分辨率 80 角秒）和 1407 MHz（分辨率 20 角秒）。它是第一台利用地球自转做综合孔径的望远镜，产出了 5C 射电源表。",
+     "sources": [
+      {
+       "t": "维基百科（辅助）：One-Mile Telescope（数字引自 Ryle 1962 年《Nature》与 Elsmore 等 1966 年 MNRAS）",
+       "u": "https://en.wikipedia.org/wiki/One-Mile_Telescope"
+      },
+      {
+       "t": "M. Ryle, The New Cambridge Radio Telescope, Nature 194, 517–518（1962-05-12；正文需订阅，本轮只核到题录）",
+       "u": "https://www.nature.com/articles/194517a0"
+      },
+      {
+       "t": "维基百科（辅助）：Mullard Radio Astronomy Observatory",
+       "u": "https://en.wikipedia.org/wiki/Mullard_Radio_Astronomy_Observatory"
+      }
+     ],
+     "confidence": "中",
+     "note": "数字只经维基转引，原始出处是 Ryle 1962 年《Nature》论文（1962-05-12，正文未能打开）和 Elsmore 等 1966 年 MNRAS 论文"
+    },
+    {
+     "n": 3,
+     "text": "Britannica 对综合孔径的描述：用两台间距可变的望远镜加计算机分析来提高分辨率；1960 年代中期那套铁轨上的望远镜最大间距 1.6 公里（1 英里），效果相当于一面直径 1.6 公里的望远镜，后来用它给第一颗脉冲星定位。Mullard 天文台官网的解释是：靠沿铁轨移动天线和地球自转改变天线之间的相对位置，再由计算机把数据合成高分辨率的图。",
+     "sources": [
+      {
+       "t": "Britannica：Sir Martin Ryle",
+       "u": "https://www.britannica.com/biography/Martin-Ryle"
+      },
+      {
+       "t": "Mullard 射电天文台官网：Radio telescopes（综合孔径原理说明）",
+       "u": "https://www.mrao.cam.ac.uk/outreach/radio-telescopes/"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 4,
+     "text": "综合孔径成像需要对数据做傅里叶反演。维基的说法是，Titan 这一代计算机出现后，剑桥才得以合成「一英里」和后来「5 公里」的等效口径。综合孔径的概念 1946 年由澳大利亚的 Ruby Payne-Scott 和 Joseph Pawsey 最早提出，赖尔的小组在射电波段把它发展成成像技术。",
+     "sources": [
+      {
+       "t": "维基百科（辅助）：Aperture synthesis",
+       "u": "https://en.wikipedia.org/wiki/Aperture_synthesis"
+      },
+      {
+       "t": "维基百科（辅助）：One-Mile Telescope（数字引自 Ryle 1962 年《Nature》与 Elsmore 等 1966 年 MNRAS）",
+       "u": "https://en.wikipedia.org/wiki/One-Mile_Telescope"
+      }
+     ],
+     "confidence": "低",
+     "note": "只有维基；种子里问到的 EDSAC II 本轮没有找到出处（通常说 1962 年前后的地球自转综合试验用的是 EDSAC II）"
+    },
+    {
+     "n": 5,
+     "text": "行星际闪烁阵由休伊什设计，1965 年拿到经费，工作在 81.5 MHz。贝尔·伯内尔 1977 年的描述：占地 4.5 英亩（够放 57 个网球场），1,000 多根木桩之间拉了 2,000 多个偶极子，用了 120 英里电线电缆；大约 5 个人加上「抡了一整个夏天大锤」的暑期学生，花了 2 年建成，造价约 1.5 万英镑；1967 年 7 月开始运行，当时还没完全建完。",
+     "sources": [
+      {
+       "t": "S. Jocelyn Bell Burnell, Little Green Men, White Dwarfs or Pulsars?（1977 年餐后演讲 Petit Four；Cosmic Search 第 1 卷第 1 期，1979）",
+       "u": "http://www.bigear.org/vol1no1/burnell.htm"
+      },
+      {
+       "t": "APS News, This Month in Physics History：February 1968: The Discovery of Pulsars Announced（2006-02）",
+       "u": "https://www.aps.org/publications/apsnews/200602/history.cfm"
+      },
+      {
+       "t": "剑桥大学官网专题 Journeys of discovery：pulsars（贝尔·伯内尔自述）",
+       "u": "https://www.cam.ac.uk/stories/journeysofdiscovery-pulsars"
+      },
+      {
+       "t": "维基百科（辅助）：Interplanetary Scintillation Array",
+       "u": "https://en.wikipedia.org/wiki/Interplanetary_Scintillation_Array"
+      }
+     ],
+     "confidence": "高",
+     "note": "面积：贝尔·伯内尔与 APS 写 4.5 英亩，维基写最初 4 英亩（1978 年扩到 9 英亩）。人数：演讲里说约 5 人，剑桥官网引她的话是「我们 6 个人」。偶极子的确数（通常引作 2,048 个）在论文正文里，未能打开"
+    },
+    {
+     "n": 6,
+     "text": "阵列的 4 个波束每 4 天把赤纬 −10° 到 +50° 的天区扫一遍，输出到 4 台三笔记录仪上，每天 96 英尺记录纸。贝尔在休伊什指导下独自负责运行望远镜和分析数据，全靠人看，她一共分析了约 3.5 英里长的记录。",
+     "sources": [
+      {
+       "t": "S. Jocelyn Bell Burnell, Little Green Men, White Dwarfs or Pulsars?（1977 年餐后演讲 Petit Four；Cosmic Search 第 1 卷第 1 期，1979）",
+       "u": "http://www.bigear.org/vol1no1/burnell.htm"
+      },
+      {
+       "t": "APS News, This Month in Physics History：February 1968: The Discovery of Pulsars Announced（2006-02）",
+       "u": "https://www.aps.org/publications/apsnews/200602/history.cfm"
+      },
+      {
+       "t": "维基百科（辅助）：Jocelyn Bell Burnell",
+       "u": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell"
+      }
+     ],
+     "confidence": "高",
+     "note": "APS 写「每天近 100 英尺」"
+    },
+    {
+     "n": 7,
+     "text": "巡天开始六到八周后，贝尔注意到记录纸上来自赤经 19 时 19 分的一段「毛刺」（a bit of scruff），既不像闪烁也不像人为干扰。剑桥大学的图注把这个信号第一次出现在记录上的日期定为 1967-08-06。它在记录纸上只占四分之一英寸，贝尔说约是全部记录的一千万分之一。",
+     "sources": [
+      {
+       "t": "S. Jocelyn Bell Burnell, Little Green Men, White Dwarfs or Pulsars?（1977 年餐后演讲 Petit Four；Cosmic Search 第 1 卷第 1 期，1979）",
+       "u": "http://www.bigear.org/vol1no1/burnell.htm"
+      },
+      {
+       "t": "剑桥大学官网专题 Journeys of discovery：pulsars（贝尔·伯内尔自述）",
+       "u": "https://www.cam.ac.uk/stories/journeysofdiscovery-pulsars"
+      },
+      {
+       "t": "APS News, This Month in Physics History：February 1968: The Discovery of Pulsars Announced（2006-02）",
+       "u": "https://www.aps.org/publications/apsnews/200602/history.cfm"
+      }
+     ],
+     "confidence": "高",
+     "note": "剑桥官网另一处图注写 8 月 5 日；这是信号首次被记录的日期，她注意到它是在此后几周"
+    },
+    {
+     "n": 8,
+     "text": "改用快速记录仪后，信号有约一个月没有出现；1967-11-28 再次出现，是一串间隔 1⅓ 秒的脉冲。休伊什的第一反应是信号「一定是人造的」；组里曾开玩笑用 LGM（Little Green Men，小绿人）称呼这类信号。Scott、Collins 用别的设备证实了脉冲，Pilkington 测色散后把源定在太阳系外、银河系内。",
+     "sources": [
+      {
+       "t": "S. Jocelyn Bell Burnell, Little Green Men, White Dwarfs or Pulsars?（1977 年餐后演讲 Petit Four；Cosmic Search 第 1 卷第 1 期，1979）",
+       "u": "http://www.bigear.org/vol1no1/burnell.htm"
+      },
+      {
+       "t": "剑桥大学官网专题 Journeys of discovery：pulsars（贝尔·伯内尔自述）",
+       "u": "https://www.cam.ac.uk/stories/journeysofdiscovery-pulsars"
+      },
+      {
+       "t": "APS News, This Month in Physics History：February 1968: The Discovery of Pulsars Announced（2006-02）",
+       "u": "https://www.aps.org/publications/apsnews/200602/history.cfm"
+      },
+      {
+       "t": "维基百科（辅助）：Jocelyn Bell Burnell",
+       "u": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell"
+      }
+     ],
+     "confidence": "高",
+     "note": "周期的精确值（约 1.337 秒）在论文正文里；Astrobites 写 1.33 秒、脉冲宽约 0.3 秒"
+    },
+    {
+     "n": 9,
+     "text": "1967 年圣诞假期前一晚，贝尔在另一片天区找到第二个源，脉冲间隔 1.2 秒；假期后又找到两个。剑桥官网说她两个月里找到了前 4 颗脉冲星。",
+     "sources": [
+      {
+       "t": "S. Jocelyn Bell Burnell, Little Green Men, White Dwarfs or Pulsars?（1977 年餐后演讲 Petit Four；Cosmic Search 第 1 卷第 1 期，1979）",
+       "u": "http://www.bigear.org/vol1no1/burnell.htm"
+      },
+      {
+       "t": "剑桥大学官网专题 Journeys of discovery：pulsars（贝尔·伯内尔自述）",
+       "u": "https://www.cam.ac.uk/stories/journeysofdiscovery-pulsars"
+      },
+      {
+       "t": "APS News, This Month in Physics History：February 1968: The Discovery of Pulsars Announced（2006-02）",
+       "u": "https://www.aps.org/publications/apsnews/200602/history.cfm"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 10,
+     "text": "论文《Observation of a Rapidly Pulsating Radio Source》1968 年 1 月底投给《Nature》，2 月 24 日发表（第 217 卷 709–713 页），作者依次是 Hewish、Bell、Pilkington、Scott、Collins。摘要说辐射似乎来自银河系内的天体，可能与白矮星或中子星的振荡有关。贝尔回忆，记者让她摆拍，还问她的身高和男朋友。",
+     "sources": [
+      {
+       "t": "Hewish, Bell, Pilkington, Scott & Collins, Observation of a Rapidly Pulsating Radio Source, Nature 217, 709–713（1968-02-24）",
+       "u": "https://www.nature.com/articles/217709a0"
+      },
+      {
+       "t": "S. Jocelyn Bell Burnell, Little Green Men, White Dwarfs or Pulsars?（1977 年餐后演讲 Petit Four；Cosmic Search 第 1 卷第 1 期，1979）",
+       "u": "http://www.bigear.org/vol1no1/burnell.htm"
+      },
+      {
+       "t": "APS News, This Month in Physics History：February 1968: The Discovery of Pulsars Announced（2006-02）",
+       "u": "https://www.aps.org/publications/apsnews/200602/history.cfm"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 11,
+     "text": "1974 年的奖发给赖尔和休伊什，贝尔不在其中。Fred Hoyle 公开主张她应当分享。贝尔 1977 年说：导师和学生之间的功劳之争很难说清；把诺贝尔奖发给研究生会贬低这个奖，除非情况极其特殊，她不认为这次是；她自己并不难过。她后来也说过，「研究生」和「女性」这两重身份加在一起，降低了她在评奖中的分量。Rowan-Robinson 在休伊什的讣告里写，休伊什无疑是导致这一发现的工作里的主要角色。",
+     "sources": [
+      {
+       "t": "S. Jocelyn Bell Burnell, Little Green Men, White Dwarfs or Pulsars?（1977 年餐后演讲 Petit Four；Cosmic Search 第 1 卷第 1 期，1979）",
+       "u": "http://www.bigear.org/vol1no1/burnell.htm"
+      },
+      {
+       "t": "维基百科（辅助）：Jocelyn Bell Burnell",
+       "u": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell"
+      },
+      {
+       "t": "维基百科（辅助）：Antony Hewish",
+       "u": "https://en.wikipedia.org/wiki/Antony_Hewish"
+      },
+      {
+       "t": "剑桥大学官网专题 Journeys of discovery：pulsars（贝尔·伯内尔自述）",
+       "u": "https://www.cam.ac.uk/stories/journeysofdiscovery-pulsars"
+      }
+     ],
+     "confidence": "中",
+     "note": "Hoyle 的原话与日期（通常说是 1975 年 3 月的谈话和随后致《泰晤士报》的信）本轮未核到；剑桥官网提到有人称之为 No-Bell 奖"
+    },
+    {
+     "n": 12,
+     "text": "2018-09-06 贝尔·伯内尔获基础物理学特别突破奖，奖金 300 万美元（约 230 万英镑），颁奖词是「对发现脉冲星的根本性贡献，以及毕生在科学界的启发性领导」。她把奖金全部捐给英国物理学会（IOP），设立 Bell Burnell 研究生奖学金基金，资助物理学里人数偏少的群体读博士；2020 年起每年都有获资助者。",
+     "sources": [
+      {
+       "t": "Breakthrough Prize 官网新闻稿（2018-09-06）：Special Breakthrough Prize in Fundamental Physics Awarded to Jocelyn Bell Burnell",
+       "u": "https://breakthroughprize.org/News/45"
+      },
+      {
+       "t": "英国物理学会（IOP）：Bell Burnell Graduate Scholarship Fund",
+       "u": "https://www.iop.org/about/support-grants/bell-burnell-fund"
+      },
+      {
+       "t": "剑桥大学官网专题 Journeys of discovery：pulsars（贝尔·伯内尔自述）",
+       "u": "https://www.cam.ac.uk/stories/journeysofdiscovery-pulsars"
+      },
+      {
+       "t": "维基百科（辅助）：Jocelyn Bell Burnell",
+       "u": "https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell"
+      }
+     ],
+     "confidence": "高",
+     "note": ""
+    },
+    {
+     "n": 13,
+     "text": "5 公里望远镜（后改名 Ryle Telescope）是 8 面 13 米卡塞格林天线组成的东西向干涉仪：4 面装在 1.2 公里长的铁轨上，其余固定、间隔 1.2 公里，基线从 18 米到 4.8 公里。2004–2006 年改组为 AMI 大阵。",
+     "sources": [
+      {
+       "t": "维基百科（辅助）：Ryle Telescope",
+       "u": "https://en.wikipedia.org/wiki/Ryle_Telescope"
+      },
+      {
+       "t": "维基百科（辅助）：Mullard Radio Astronomy Observatory",
+       "u": "https://en.wikipedia.org/wiki/Mullard_Radio_Astronomy_Observatory"
+      }
+     ],
+     "confidence": "低",
+     "note": "只有维基；建成年份维基表格写 1971，种子写 1972"
+    },
+    {
+     "n": 14,
+     "text": "维基百科的闪烁阵条目写：天文台的工作人员用羊来控制天线之间的草，因为割草机进不去。这句话没有脚注。",
+     "sources": [
+      {
+       "t": "维基百科（辅助）：Interplanetary Scintillation Array",
+       "u": "https://en.wikipedia.org/wiki/Interplanetary_Scintillation_Array"
+      }
+     ],
+     "confidence": "低",
+     "note": "没有找到天文台官方或当事人的出处，按传说处理"
+    },
+    {
+     "n": 15,
+     "text": "Britannica 称 1974 年的奖是「第一个为表彰天文学研究而颁发的诺贝尔奖」。",
+     "sources": [
+      {
+       "t": "Britannica：Sir Martin Ryle",
+       "u": "https://www.britannica.com/biography/Martin-Ryle"
+      },
+      {
+       "t": "维基百科（辅助）：Martin Ryle",
+       "u": "https://en.wikipedia.org/wiki/Martin_Ryle"
+      },
+      {
+       "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+       "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+      }
+     ],
+     "confidence": "中",
+     "note": "这个说法需要限定：维基所列颁奖词显示，1936 年赫斯因「发现宇宙辐射」、1967 年贝特因核反应理论「特别是恒星能量产生方面的发现」已获物理学奖。稳妥的写法是「第一次授予天文观测研究」"
+    },
+    {
+     "n": 16,
+     "text": "APS 的回顾写道：到 1968 年底已发现几十颗脉冲星；Thomas Gold 指出它们是快速自转的中子星，而中子星早在 1933 年就有人预言。",
+     "sources": [
+      {
+       "t": "APS News, This Month in Physics History：February 1968: The Discovery of Pulsars Announced（2006-02）",
+       "u": "https://www.aps.org/publications/apsnews/200602/history.cfm"
+      }
+     ],
+     "confidence": "中",
+     "note": ""
+    }
+   ],
+   "disputes": [
+    "闪烁阵的面积：4.5 英亩（贝尔·伯内尔 1977、APS）对 4 英亩（维基，且称 1978 年扩到 9 英亩；该阵也常被叫作 4-acre array）。",
+    "建阵人数：「约 5 人」（贝尔·伯内尔 1977 年演讲）对「我们 6 个人」（剑桥官网引她的话）。",
+    "偶极子数：贝尔·伯内尔与 APS 都只说「2,000 多个」；种子写「上千根偶极子」不对，上千根的是木桩。维基条目现在写 4,096 个，是扩建后的数。",
+    "信号首次出现的日期：1967-08-06（剑桥官网图注）对 8 月 5 日（同一页另一处图注）；维基 Jocelyn Bell Burnell 条把「注意到毛刺」写在 11 月 28 日，与她本人的叙述（7 月开机后六到八周注意到，11 月底看到脉冲）不合。",
+    "每天的记录纸：96 英尺（贝尔·伯内尔）对「近 100 英尺」（APS）；维基写成「每晚」。",
+    "5 公里望远镜的年份：1971（维基天文台条目表格）对 1972（种子与通行说法）。",
+    "「第一个天文学方面的诺贝尔奖」：Britannica 与维基这样写；按字面不够严谨，见 facts 第 15 条。"
+   ],
+   "todo": [
+    "一英里望远镜的造价、经费来源、两面固定天线的间距、每张图的观测天数，以及用了哪台计算机（EDSAC II / Titan）：需查 Ryle 1962 年《Nature》论文正文、Elsmore 等 1966 年 MNRAS 论文或赖尔的诺奖演讲，本轮都打不开。",
+    "闪烁阵的长与宽、偶极子确数（2,048）和脉冲周期的精确值：在 1968 年《Nature》论文正文里，本轮只核到题录与摘要。",
+    "休伊什申请到的经费数额（另有 17,000 多英镑的说法）未核；本卡用的是贝尔·伯内尔说的「约 1.5 万英镑」。",
+    "Fred Hoyle 批评的原话、时间与休伊什的回应。",
+    "「放羊」一说的出处；可问 Mullard 天文台或查贝尔·伯内尔的访谈。",
+    "LGM-1 这个编号式的叫法：贝尔·伯内尔 1977 年的演讲里只说了 Little Green Men，「LGM-1」见于 APS 与维基。",
+    "1974 年诺奖新闻稿原文（nobelprize.org 打不开）：有没有「第一次授予天文观测」之类的官方措辞。"
+   ]
+  }
+ ],
+ "bench": [
+  {
+   "id": "rontgen-1901",
+   "year": 1901,
+   "who_zh": "威廉·伦琴",
+   "who_en": "Wilhelm Conrad Röntgen",
+   "what": "放电管、感应线圈和一块荧光屏",
+   "line": "1895-11-08 傍晚，维尔茨堡。他用黑纸板包住通电的克鲁克斯管，发现几米外的氰亚铂酸钡屏在发光。此后七周他吃住在实验室，把这种射线查了一遍。",
+   "number": "发光的荧光屏在约 9 英尺（2.7 米）外；全套器材一张桌子放得下",
+   "lesson": "先花七周把现象查透，再发表；不申请专利。",
+   "citation_en": "in recognition of the extraordinary services he has rendered by the discovery of the remarkable rays subsequently named after him",
+   "citation_zh": "表彰他发现了后来以他的名字命名的那种奇特射线，由此作出的非凡贡献",
+   "sources": [
+    {
+     "t": "APS News, This Month in Physics History：November 8, 1895: Roentgen's Discovery of X-Rays（2001-11）",
+     "u": "https://www.aps.org/publications/apsnews/200111/history.cfm"
+    },
+    {
+     "t": "Britannica：Wilhelm Röntgen",
+     "u": "https://www.britannica.com/biography/Wilhelm-Rontgen"
+    },
+    {
+     "t": "维基百科（辅助）：Wilhelm Röntgen",
+     "u": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen"
+    },
+    {
+     "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+     "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    }
+   ],
+   "confidence": "高",
+   "details": [
+    "器材：克鲁克斯–希托夫放电管（也用过 Lenard 管）、感应线圈、黑纸板罩、涂氰亚铂酸钡的荧光屏（维基、Britannica、APS）。",
+    "屏的距离：APS 写约 9 英尺，维基写「几英尺外的工作台上」，Britannica 只说「离管子很远」。",
+    "第一篇报告《论一种新射线》1895-12-28 交给维尔茨堡物理医学学会；最早的底片之一是他妻子 Bertha 戴着婚戒的手（APS、维基）。",
+    "他没有为 X 射线申请任何专利（APS、Britannica、维基三处一致）；诺贝尔奖金捐给了维尔茨堡大学（APS、Britannica）。",
+    "1901 年是第一届诺贝尔物理学奖。"
+   ],
+   "note": "「独自一人」：三处来源都没有明写他是一个人做的，只说七周的系统实验、吃住在实验室；页面上写「一个人」前请再核。放电管本身的长度没有查到（凭常识是几十厘米量级，未核），所以 number 给的是荧光屏的距离。奖金数额（常说 5 万瑞典克朗）未核。"
+  },
+  {
+   "id": "dalen-1912",
+   "year": 1912,
+   "who_zh": "古斯塔夫·达伦",
+   "who_en": "Nils Gustaf Dalén",
+   "what": "灯塔与浮标的自动调节器",
+   "line": "他是 AGA 公司的总工程师，1909 年任总经理。闪光器让乙炔灯一闪一灭，省气九成以上；太阳阀天亮关灯、天黑点灯。乙炔灯塔从此可以一年以上没人看管。",
+   "number": "闪光器省气 90% 以上；灯塔可无人值守 1 年以上",
+   "lesson": "把「有人守着」改成「装置自己判断」。",
+   "citation_en": "for his invention of automatic regulators for use in conjunction with gas accumulators for illuminating lighthouses and buoys",
+   "citation_zh": "表彰他发明了与储气器配合使用的自动调节器，用于灯塔和浮标的照明",
+   "sources": [
+    {
+     "t": "Britannica：Nils Dalén",
+     "u": "https://www.britannica.com/biography/Nils-Dalen"
+    },
+    {
+     "t": "维基百科（辅助）：Gustaf Dalén",
+     "u": "https://en.wikipedia.org/wiki/Gustaf_Dal%C3%A9n"
+    },
+    {
+     "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+     "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    }
+   ],
+   "confidence": "中",
+   "details": [
+    "身份：Britannica 开头称他为瑞典工程师；1896 年毕业于查尔姆斯工学院；1906 年任储气器公司（Gas Accumulator Company，即 AGA）总工程师，1909 年任总经理（Britannica、维基）。",
+    "他还发明了 Agamassan，一种吸附乙炔的多孔材料，使乙炔可以安全地压缩储存（Britannica）。",
+    "事故：试验储气瓶最大耐压时乙炔爆炸，他双目失明。维基写 1912 年初，Britannica 写 1913 年。他没能出席颁奖，由兄弟、眼科教授 Albin Dalén 代领（维基）。",
+    "维基称斯德哥尔摩 Blockhusudden 灯塔的太阳阀从 1912 年用到 1980 年灯塔电气化，其间没有大修。",
+    "他一生有 100 多项专利，1922 年取得 AGA 灶具的专利，失明后继续工作到 1937 年去世（维基、Britannica）。"
+   ],
+   "note": "省气比例和无人值守时间只有维基一个来源；失明年份两家不一（多数文献取 1912 年，即获奖当年）。颁奖词全文据通行引法，维基列表所列开头一致；Britannica 的转述是「因发明自动太阳阀」。"
+  },
+  {
+   "id": "wu-1957",
+   "year": 1957,
+   "who_zh": "杨振宁、李政道（实验：吴健雄与美国国家标准局低温组）",
+   "who_en": "Chen Ning Yang, Tsung-Dao Lee (experiment: Chien-Shiung Wu, E. Ambler, R. W. Hayward, D. D. Hoppes, R. P. Hudson)",
+   "what": "钴-60 β 衰变宇称实验",
+   "line": "李、杨 1956 年提出弱作用里宇称可能不守恒。吴健雄与国家标准局低温组把钴-60 冷到约 0.003 K，用磁场排齐核自旋，看到 β 粒子偏向自旋的反方向。",
+   "number": "约 0.003 K（绝热去磁）；1956-12-27 第一次成功",
+   "lesson": "自己不会的那一环，找已经练熟的实验室合作。",
+   "citation_en": "for their penetrating investigation of the so-called parity laws which has led to important discoveries regarding the elementary particles",
+   "citation_zh": "表彰他们对所谓宇称定律的深入研究，这项研究引出了有关基本粒子的重要发现",
+   "sources": [
+    {
+     "t": "NIST：The Fall of Parity（展览首页）",
+     "u": "https://www.nist.gov/pml/fall-parity"
+    },
+    {
+     "t": "NIST：The Reversal of Parity Law in Nuclear Physics（实验说明，取自 NBS Technical News Bulletin 1957-04）",
+     "u": "https://www.nist.gov/pml/fall-parity/reversal-parity-law-nuclear-physics"
+    },
+    {
+     "t": "维基百科（辅助）：Wu experiment",
+     "u": "https://en.wikipedia.org/wiki/Wu_experiment"
+    },
+    {
+     "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+     "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    }
+   ],
+   "confidence": "高",
+   "details": [
+    "合作者：哥伦比亚大学的吴健雄，国家标准局（NBS，今 NIST，华盛顿）的 Ernest Ambler、Raymond W. Hayward、Dale D. Hoppes、Ralph P. Hudson。选这个低温实验室，是因为它此前做过低温下排齐原子核的工作（NIST）。",
+    "做法：钴-60 镀在一块硝酸铈镁单晶表面，厚约 50 微米；晶体放在抽真空的瓶里，浸在液氦中，外面再套液氮。对这种顺磁盐做绝热去磁，样品冷到约 0.003 K（NIST）。",
+    "探测：源上方约 2 厘米处是一片蒽晶体闪烁体，光经 120 厘米长的有机玻璃光导传到顶端的光电倍增管；外面两只碘化钠计数器测 γ 射线的方向分布，用来监视极化程度（NIST）。",
+    "时间：实验笔记本上成功那两轮的日期是 1956-12-27，第一轮 12:04 开始；NIST 说第一批结果出在 1956 年圣诞节到新年之间。Hudson 后来在 Ambler 的笔记本那一页补了一句 PARITY NOT CONSERVED!",
+    "论文：Wu, Ambler, Hayward, Hoppes, Hudson, Physical Review 105, 1413（1957）。李、杨的论文是 Physical Review 104, 254（1956）。",
+    "从提出到获奖：论文 1956 年发表，实验 1956 年 12 月做成，1957 年获奖。实验到获奖不到一年。吴健雄不在获奖者中；1978 年她获首届沃尔夫物理学奖（维基）。"
+   ],
+   "note": "种子里的「1956-12 至 1957-01」「约 0.003 K」「四位合作者」都核实了。1957-01 的具体日期（常见说法是 1 月 9 日凌晨复核完成、1 月 15 日投稿）本轮来源没有给。"
+  },
+  {
+   "id": "cherenkov-1958",
+   "year": 1958,
+   "who_zh": "切伦科夫、弗兰克、塔姆",
+   "who_en": "Pavel A. Cherenkov, Il'ja M. Frank, Igor Y. Tamm",
+   "what": "切伦科夫辐射",
+   "line": "1934 年切伦科夫在水里的放射源周围看到微弱的蓝光，并查明它不是荧光；1937 年弗兰克和塔姆给出解释。超级神冈和 IceCube 看的就是这种光。",
+   "number": "1934 年发现，1937 年有理论，1958 年获奖，隔了 24 年",
+   "lesson": "先排除已知的解释，异常才算数。",
+   "citation_en": "for the discovery and the interpretation of the Cherenkov effect",
+   "citation_zh": "表彰他们发现并解释了切伦科夫效应",
+   "sources": [
+    {
+     "t": "维基百科（辅助）：Cherenkov radiation",
+     "u": "https://en.wikipedia.org/wiki/Cherenkov_radiation"
+    },
+    {
+     "t": "维基百科（辅助）：Pavel Cherenkov（引 Physics Today 1992-12 讣告）",
+     "u": "https://en.wikipedia.org/wiki/Pavel_Cherenkov"
+    },
+    {
+     "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+     "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    }
+   ],
+   "confidence": "中",
+   "details": [
+    "切伦科夫 1930 年进列别捷夫物理研究所；1934 年的论文题为《γ 辐射作用下纯液体的可见发光》；他的学位论文研究的是铀盐溶液在 γ 射线激发下的发光（维基）。",
+    "更早的旁证：居里夫人 1910 年在高浓度镭溶液里见过淡蓝色的光，没有追查；法国放射治疗师 Lucien Mallet 1926 年描述过镭照射水发出的连续谱光（维基）。",
+    "理论上的先声：Heaviside 1888–1889 年、Sommerfeld 1904 年都预言过超光速运动电荷的锥形波前（维基）。",
+    "今天的大型中微子探测器（超级神冈、SNO、IceCube）都靠探测这种光工作（维基，该句无脚注）。"
+   ],
+   "note": "只有维基一类来源（检索额度用尽，没能打开 Britannica 或诺奖演讲）。任务里问的「1934 年装置有多简陋」没有查到可引的描述；常见说法（他先在暗室里让眼睛适应一小时，用肉眼判断亮度）本轮未核，不要写进页面。"
+  },
+  {
+   "id": "bevatron-1959",
+   "year": 1959,
+   "who_zh": "塞格雷、张伯伦",
+   "who_en": "Emilio Segrè, Owen Chamberlain",
+   "what": "Bevatron 质子同步加速器",
+   "line": "1948 年 3 月劳伦斯把目标定在 6 BeV，即产生反质子的阈值；1951 年 12 月再缩小磁极间隙以直接达到它。1955 年 9 月数到第一批反质子。",
+   "number": "设计能量 6.2 BeV；磁铁 10,000 吨",
+   "lesson": "先定要找什么，再由它倒推机器的指标。",
+   "citation_en": "for their discovery of the antiproton",
+   "citation_zh": "表彰他们发现反质子",
+   "sources": [
+    {
+     "t": "Heilbron, Seidel & Wheaton, Lawrence and His Laboratory（LBL Research Review 1981）第 6 章 Bumper Crop",
+     "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fchp6.html"
+    },
+    {
+     "t": "同上，Episode 5: Strange and Contrary Particles",
+     "u": "https://www2.lbl.gov/Science-Articles/Research-Review/Magazine/1981/81fepi5.html"
+    },
+    {
+     "t": "Berkeley Lab 历史网站：1950s",
+     "u": "https://history.lbl.gov/1950s"
+    },
+    {
+     "t": "Berkeley Lab Currents（1998-04-17）：Brobeck 讣告",
+     "u": "https://www2.lbl.gov/Science-Articles/Archive/bill-brobeck.html"
+    },
+    {
+     "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+     "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    }
+   ],
+   "confidence": "高",
+   "details": [
+    "指标怎么定的：1947 年 Brobeck 最初把顶能定在 10 BeV，理由是「近期造得出来的最大机器」；1948 年 3 月劳伦斯改定 6 BeV，即反质子产生阈值。Brobeck 原设计的 4 × 14 英尺间隙只能到 1.5 BeV；1949 年四分之一比例模型之后改为 2 × 6 英尺（3.67 BeV）；1951 年 12 月定为 1 × 4 英尺，直达 6 BeV（LBL 1981）。",
+    "机器：1954 年建成（历史网站写 1 月完工），10,000 吨的质子同步加速器，质子 1.85 秒里转 400 万圈，到 6.2 BeV；1954-04-01 束流到 6.1 BeV（LBL 1981）。LBL 历史网站和 Brobeck 讣告写设计能量 6.5 BeV。",
+    "实验：Segrè 与 Chamberlain 一组、Lofgren 一组轮流用束流。1955 年 8 月第一周开始；9 月 5 日机器故障；9 月 21 日 Lofgren 组让出 4 天机时，Segrè 组当即得到第一批反质子计数。10 月 19 日致信《Physical Review》公布（LBL 1981、历史网站）。",
+    "探测办法：磁分析器选出动量 1.19 BeV/c 的负粒子，再用飞行时间（约 5×10⁻⁸ 秒）和切伦科夫计数器测速度；每个反质子混在约 5 万个负 π 介子里（LBL 1981）。",
+    "作者还有 Clyde Wiegand 和 Thomas Ypsilantis；Gerson Goldhaber 等用乳胶确认了湮灭事例。1959 年的奖只给了 Segrè 和 Chamberlain。"
+   ],
+   "note": "种子里「能量指标就是按反质子阈值定的」属实，出处是 LBL 1981 年的官方史稿。能量有 6.2 与 6.5 BeV 两种写法。"
+  },
+  {
+   "id": "penzias-wilson-1978",
+   "year": 1978,
+   "who_zh": "彭齐亚斯、威尔逊",
+   "who_en": "Arno A. Penzias, Robert W. Wilson",
+   "what": "霍姆德尔 20 英尺喇叭天线",
+   "line": "天线 1959 年为 Echo 卫星通信实验而建。两人逐项扣掉大气和天线自身的噪声，赶走筑巢的鸽子、清掉鸽粪，仍剩约 3.5 K 说不清来源的噪声。",
+   "number": "多余天线温度 3.5 K（4,080 MHz）；天线长 15 米、重约 16 吨",
+   "lesson": "把每一项噪声来源列出来，逐项排除。",
+   "citation_en": "for their discovery of cosmic microwave background radiation",
+   "citation_zh": "表彰他们发现宇宙微波背景辐射",
+   "sources": [
+    {
+     "t": "维基百科（辅助）：Holmdel Horn Antenna（数字引自美国国家公园管理局 1989 年的史迹登录文件）",
+     "u": "https://en.wikipedia.org/wiki/Holmdel_Horn_Antenna"
+    },
+    {
+     "t": "维基百科（辅助）：Discovery of cosmic microwave background radiation（引 Penzias & Wilson 1965 年论文）",
+     "u": "https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation"
+    },
+    {
+     "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+     "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    }
+   ],
+   "confidence": "中",
+   "details": [
+    "天线：1959 年建在新泽西州 Holmdel 的 Crawford Hill，为 Project Echo（被动式通信卫星）服务；铝制，长 50 英尺（15 米），口面 20 × 20 英尺（6.1 × 6.1 米），整体重 18 短吨（约 16 吨）；1989 年列为美国国家历史地标。",
+    "测量：波长 7.35 厘米（4,080 MHz）。论文给出的结果是：扣除大气吸收的 2.3 K 和仪器自身的 0.9 K 之后，还剩 3.5 K。接收机用液氦冷却（维基引原论文）。",
+    "排查：先去掉雷达和广播的影响，再检查设备；把在天线里筑巢的鸽子弄走、清掉鸽粪之后，噪声仍在（维基）。",
+    "论文《A Measurement of Excess Antenna Temperature at 4080 Mc/s》1965 年 7 月发表于《Astrophysical Journal》第 142 卷 419–421 页；普林斯顿 Dicke 小组的解释文章紧挨着发表在 414–419 页。Penzias 是从 Bernard Burke 那里听说 Peebles 的预印本，才打电话给 Dicke 的。",
+    "1978 年两人分得奖金的一半，另一半给了做低温物理的卡皮查，两件事无关。"
+   ],
+   "note": "只有维基一类来源（检索额度用尽）。种子里的三点——逐项排除噪声含清鸽粪、约 3.5 K、天线原为 Echo 卫星而建——都对得上。原论文里 3.5 K 的误差（常引 ±1.0 K）和「白色电介质」这个说法未核到。"
+  }
+ ],
+ "sidebars": {
+  "engineers": [
+   {
+    "year": 1909,
+    "zh": "古列尔莫·马可尼",
+    "en": "Guglielmo Marconi",
+    "for": "无线电报（与布劳恩分享）",
+    "citation_en": "in recognition of their contributions to the development of wireless telegraphy",
+    "why": "没上过正规学校，没有大学学位，是发明家兼企业家：1897 年在英国办无线电报公司，1901 年报告收到跨大西洋信号。",
+    "sources": [
+     {
+      "t": "维基百科（辅助）：Guglielmo Marconi",
+      "u": "https://en.wikipedia.org/wiki/Guglielmo_Marconi"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "中",
+    "note": "维基称他为「射频工程师、发明家、政治家」；他在博洛尼亚旁听过 Righi 的课。1901 年那次接收是否属实，技术史上有争议。"
+   },
+   {
+    "year": 1909,
+    "zh": "卡尔·费迪南德·布劳恩",
+    "en": "Karl Ferdinand Braun",
+    "for": "无线电报（与马可尼分享）",
+    "citation_en": "in recognition of their contributions to the development of wireless telegraphy",
+    "why": "获奖成果是电路和器件：把发射机的谐振回路与天线分开的耦合电路，提高了发射距离；他参与创办的公司后来成为 Telefunken。",
+    "sources": [
+     {
+      "t": "维基百科（辅助）：Karl Ferdinand Braun",
+      "u": "https://en.wikipedia.org/wiki/Karl_Ferdinand_Braun"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "中",
+    "note": "身份上他是物理学教授（1872 年柏林大学博士，1895 年起任斯特拉斯堡物理研究所所长），不是工程师出身。算「因技术获奖」，不算「工程师获奖」。他 1897 年做出阴极射线管，1905 年发明相控阵天线。"
+   },
+   {
+    "year": 1912,
+    "zh": "古斯塔夫·达伦",
+    "en": "Nils Gustaf Dalén",
+    "for": "灯塔与浮标照明用的自动调节器",
+    "citation_en": "for his invention of automatic regulators for use in conjunction with gas accumulators for illuminating lighthouses and buoys",
+    "why": "查尔姆斯工学院毕业的工程师，AGA 公司总工程师（1906）、总经理（1909）；获奖成果是一件工业产品。",
+    "sources": [
+     {
+      "t": "Britannica：Nils Dalén",
+      "u": "https://www.britannica.com/biography/Nils-Dalen"
+     },
+     {
+      "t": "维基百科（辅助）：Gustaf Dalén",
+      "u": "https://en.wikipedia.org/wiki/Gustaf_Dal%C3%A9n"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "高",
+    "note": "Britannica 开头就称他为瑞典工程师。"
+   },
+   {
+    "year": 1984,
+    "zh": "西蒙·范德梅尔",
+    "en": "Simon van der Meer",
+    "for": "随机冷却，使 CERN 的质子–反质子对撞机得以发现 W、Z 粒子（与鲁比亚分享）",
+    "citation_en": "for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction",
+    "why": "1952 年在代尔夫特拿的是技术物理的工程师学位；先在飞利浦做电子显微镜的高压设备，1956 年进 CERN，管电源的调节与控制，一直干到 1990 年退休。",
+    "sources": [
+     {
+      "t": "Britannica：Simon van der Meer",
+      "u": "https://www.britannica.com/biography/Simon-van-der-Meer"
+     },
+     {
+      "t": "维基百科（辅助）：Simon van der Meer",
+      "u": "https://en.wikipedia.org/wiki/Simon_van_der_Meer"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "高",
+    "note": "Britannica 称他为 physical engineer；维基称「加速器物理学家」。他还发明了中微子束用的磁号角（1961）和今天 LHC 仍在用的 van der Meer 扫描。「没有博士学位」是通行说法，两处来源都没有明写。颁奖词后半句据通行引法，维基列表所列开头一致。"
+   },
+   {
+    "year": 1986,
+    "zh": "恩斯特·鲁斯卡",
+    "en": "Ernst Ruska",
+    "for": "电子光学的基础工作和第一台电子显微镜（得一半奖金）",
+    "citation_en": "for his fundamental work in electron optics, and for the design of the first electron microscope",
+    "why": "Britannica 称他为电气工程师。读的是慕尼黑和柏林两所工科大学；1931 年做出电子透镜，1933 年做出电子显微镜；1937–1955 年在西门子任研究工程师，1939 年公司推出第一台商品电子显微镜。",
+    "sources": [
+     {
+      "t": "Britannica：Ernst Ruska",
+      "u": "https://www.britannica.com/biography/Ernst-Ruska"
+     },
+     {
+      "t": "维基百科（辅助）：Ernst Ruska",
+      "u": "https://en.wikipedia.org/wiki/Ernst_Ruska"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "高",
+    "note": "从 1933 年的电子显微镜到 1986 年获奖隔了 53 年；另一半奖金给了扫描隧道显微镜的 Binnig 与 Rohrer。合作者与导师是 Max Knoll。"
+   },
+   {
+    "year": 2000,
+    "zh": "杰克·基尔比",
+    "en": "Jack S. Kilby",
+    "for": "参与发明集成电路",
+    "citation_en": "for his part in the invention of the integrated circuit",
+    "why": "电气工程师（伊利诺伊大学 1947 年学士）。1958 年进德州仪器，当年 9 月 12 日向公司管理层演示了第一块锗集成电路；后来还参与发明手持计算器和热敏打印机。",
+    "sources": [
+     {
+      "t": "Britannica：Jack Kilby",
+      "u": "https://www.britannica.com/biography/Jack-Kilby"
+     },
+     {
+      "t": "维基百科（辅助）：Jack Kilby",
+      "u": "https://en.wikipedia.org/wiki/Jack_Kilby"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "高",
+    "note": "Britannica 称他为 American engineer；同年另外两位得主是 Alferov 和 Kroemer（半导体异质结构）。"
+   },
+   {
+    "year": 2009,
+    "zh": "高锟",
+    "en": "Charles K. Kao",
+    "for": "光在光纤中传输用于光通信的突破性成就（得一半奖金）",
+    "citation_en": "for groundbreaking achievements concerning the transmission of light in fibers for optical communication",
+    "why": "电气工程学士（1957）和博士（1965，伦敦大学）；在 STC 公司及其设在 Harlow 的标准电信实验室当工程师时，1966 年与 Hockham 提出：玻璃足够纯，光纤的损耗可以降到每公里 20 分贝以下。",
+    "sources": [
+     {
+      "t": "Britannica：Charles Kao",
+      "u": "https://www.britannica.com/biography/Charles-Kao"
+     },
+     {
+      "t": "维基百科（辅助）：Charles K. Kao",
+      "u": "https://en.wikipedia.org/wiki/Charles_K._Kao"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "高",
+    "note": "称呼不一：维基称他为电气工程师、「光纤之父」，Britannica 称他为物理学家。1933 年生于上海，2018 年在香港去世；1987–1996 年任香港中文大学校长。"
+   },
+   {
+    "year": 2009,
+    "zh": "威拉德·博伊尔、乔治·史密斯",
+    "en": "Willard S. Boyle, George E. Smith",
+    "for": "发明成像半导体电路——CCD 传感器（两人合得一半奖金）",
+    "citation_en": "for the invention of an imaging semiconductor circuit – the CCD sensor",
+    "why": "贝尔实验室 1969 年的一项器件发明。算「因器件获奖」；两人是企业实验室的研究人员，Boyle 是麦吉尔大学的物理学博士（1950）。",
+    "sources": [
+     {
+      "t": "维基百科（辅助）：Willard Boyle",
+      "u": "https://en.wikipedia.org/wiki/Willard_Boyle"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "中",
+    "note": "不宜写成「工程师」。Smith 的学历本轮未核。贝尔实验室的前同事 Eugene Gordon 和 Mike Tompsett 对「用于成像」这一步的归属提出过异议（维基）。"
+   },
+   {
+    "year": 2014,
+    "zh": "中村修二（与赤崎勇、天野浩分享）",
+    "en": "Shuji Nakamura (with Isamu Akasaki and Hiroshi Amano)",
+    "for": "高效蓝光发光二极管，由此有了明亮节能的白光光源",
+    "citation_en": "for the invention of efficient blue light-emitting diodes which has enabled bright and energy-saving white light sources",
+    "why": "中村是德岛大学电子工程学士、硕士（1977、1979），1979–1999 年在日亚化学当企业工程师；公司一度叫他停掉氮化镓的工作，他自己接着做，1993 年蓝光 LED 投产。",
+    "sources": [
+     {
+      "t": "维基百科（辅助）：Shuji Nakamura",
+      "u": "https://en.wikipedia.org/wiki/Shuji_Nakamura"
+     },
+     {
+      "t": "维基百科（辅助）：List of Nobel laureates in Physics（逐届颁奖词，引自 nobelprize.org）",
+      "u": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+     }
+    ],
+    "confidence": "中",
+    "note": "只有维基。维基称他为 electronics engineer。他说那项关键专利只拿到 2 万日元，起诉后一审判给 200 亿日元，2005 年以 8.4 亿日元和解。赤崎勇、天野浩是大学里的研究者，身份本轮未核，页面上只把中村归入「工程师」较稳妥。"
+   }
+  ],
+  "engineers_note": "判断口径：「工程师的奖」分两种——得主本人是工程师或发明家（马可尼、达伦、范德梅尔、鲁斯卡、基尔比、高锟、中村）；得主是物理学家，但获奖成果是器件或技术（布劳恩、博伊尔与史密斯）。两种请在页面上分开写。"
+ },
+ "seed_errors": [
+  "【莱顿】「因市议会担心爆炸停摆约两年（1896–98）」→ 1895 年起被莱顿市政当局叫停（8 月要求把低温实验室迁出城），1897-02 裁决获准，1898-06-04 才恢复低温工作，前后约 3 年。（昂内斯–杜瓦通信录文；van Delft, Physics Today 2008）",
+  "【莱顿】「减压后到约 1.5 K」→ 1908-07-10 当天是约 1.7 K（van Delft 2008；另有 1.8 K、约 2 K 的写法）。约 1.5 K（氦温度计）和 1.15 K（按蒸气压估计）是昂内斯 1913 年诺奖演讲里的数。",
+  "【莱顿】「1901 年办仪器制造学校」→ 1901 年成立的是「仪器制造者培训促进协会」；学徒制 1885 年就有，1901 年车间里已有 27 名学徒。今天的 LiS 以 1901 年为建校年，写「1901 年办校」可以，但宜注明。（van Delft, Jaarboek Dirk van Eck 2011）",
+  "【莱顿】「实际测到超导的 Gilles Holst」→ 1911-04-08 那天 Holst 测电阻、Dorsman 控温测温、Flim 管低温设备，昂内斯到场主持并记笔记；IEEE 铭牌把四人并列为发现者。（van Delft & Kes, Physics Today 2010；IEEE Milestone）",
+  "【回旋加速器】「第一台造价约 25 美元」→ 说的是 1930 年 Edlefsen 做的第一个模型（黄铜、电线、封蜡），出处是劳伦斯科学馆的「大概花了 25 美元」；不是 Livingston 1931 年 1 月出束的那台。",
+  "【回旋加速器】「80 吨那块原是给中国的电台造的」→ 需要细化：铸件是一战期间浇铸的；联邦电报公司 1921 年 1 月与中华民国签约建大功率电台，准备用这批铸件造 1,000 千瓦电弧发射机，合同因日本反对未完成；后来把 65 吨铸件捐给加州大学，装成磁铁后 80 吨。（ITT 社史，Electrical Communication 1946-12）AIP 的说法是「一战时为跨大西洋无线电链路而造」。两说可以衔接。",
+  "【回旋加速器】「4.5 英寸（1931-01-02，80 keV）」→ 能量与日期无误；直径有约 4 英寸（LBL、DSB）、约 4.5 英寸（AIP）、5 英寸（APS、LBL 75 周年）三种写法，页面上宜写「约 4–5 英寸」或注明口径。",
+  "【气泡室】「造价约 250 万美元」→ LBL 1981 年官方史稿写 210 万美元（AEC 最初批 75 万，1955 年底估价 125 万另加 20 万买计算机）。250 万之说本轮找不到可打开的出处。",
+  "【气泡室】「每年上百万张照片」→ 核到的是「每年测量上百万个事例」：1962 年 8 万、1965 年 30 万、1968 年 150 万（LBL 1981；CERN Courier：到 1967 年每年 100 多万）。照片张数没有查到。",
+  "【气泡室】「氢安全工程师 Paul Hernandez」→ 核到的身份是：与 James Gow 共同领导 72 英寸气泡室 4 年建造的工程师（LBL 1981）。「氢安全工程师」的说法本轮没有找到出处。",
+  "【剑桥】「上千根偶极子」→ 偶极子是 2,000 多个，上千根的是木桩；另有 120 英里电线电缆。（贝尔·伯内尔 1977 年演讲；APS）",
+  "【剑桥】「占地约 4 英亩」→ 贝尔·伯内尔本人和 APS 都写 4.5 英亩（「57 个网球场」）；维基写 4 英亩。",
+  "【剑桥】「阵列里的草靠放羊，割草机进不去」→ 只见于维基百科闪烁阵条目，且该句没有脚注；按传说处理，或不收。",
+  "【剑桥】「5 公里望远镜（Ryle Telescope，1972）」→ 维基天文台条目的表格写 1971；本轮没有第二来源，年份请再核。",
+  "【候补·达伦】「1912 年试验事故失明」→ 维基写 1912 年初，Britannica 写 1913 年；两说并存。",
+  "【迈克尔逊】「光路经多次反射折到 11 m」→ 没有错，但 11 米是论文里的 D，即等效单程臂长，往返是 22 米；与 LIGO 的「臂长」比较时用 11 米。"
+ ],
+ "notes": "一、进度。五座装置、六条候补、九条旁栏都已填写。前三座（迈克尔逊、莱顿、回旋加速器）是在能检索的情况下核的，每座十几次抓取，关键数字多数有两处以上来源。做到第四座时，本轮的 WebSearch 额度（各代理共用 200 次）用完了，之后只能直接打开已知网址（LBL 官方史稿、CERN、NIST、APS、Britannica、剑桥大学、IOP、Breakthrough Prize 和维基百科）。因此气泡室、剑桥两座，以及候补席和旁栏里，凡只有维基一个来源的条目都标了「中」或「低」，并写进了各自的 todo / note。二、最不放心的地方。（1）一英里望远镜的数字（3 面 18 米天线、120 吨、800 米轨道、0.9 厘米直线度、分辨率）全部经维基转引自 Ryle 1962 年《Nature》论文，原文在付费墙后；造价、计算机型号没有查到。（2）闪烁阵的长与宽、偶极子确数、脉冲周期精确值在 1968 年《Nature》论文正文里，没能打开，drawing 里只给了面积。（3）72 英寸气泡室的造价用的是 LBL 史稿的 210 万美元，与种子的 250 万不一致；照片张数、扫描员人数、Paul Hernandez 的氢安全工作、剑桥电子加速器爆炸的日期都没核到。（4）莱顿实验室的总人数、经费、氦液化器的外形尺寸没有查到，size_m 为空，同比例示意图缺数。（5）回旋加速器各代的日期和能量，各家官方来源自己就不一致（见 disputes），页面上宜取一家并注明。（6）切伦科夫 1934 年的装置细节没有可引的描述。三、颁奖词。nobelprize.org 按规定没有去碰。十几条颁奖词都与维基百科《List of Nobel laureates in Physics》对过开头（抓取工具把长引文截断了），全文按通行引法写出；1968 年那条个别用词各处写法不一。对照该列表，1907 年确实是第一次在颁奖词里出现「仪器」。用了 decisive 一词的：1968（decisive contributions）、1974 休伊什部分（decisive role）、1984（decisive contributions）。四、种子事实里核实无误的：贝尔资助了 1881 年的实验（论文致谢，金额未查到）；跺脚使条纹消失一事在波茨坦；0.4 条与不到 0.02 条；迈克尔逊是第一位获科学类诺奖的美国人；Door meten tot weten 出自 1882 年就职演讲；莱顿垄断液氦到 1923 年，被多伦多的 McLennan 打破（1923-01-24）；Brobeck 1937–1957 年任总工程师；劳伦斯 1940-02-29 在伯克利领奖；184 英寸磁铁战时用于 calutron；格拉泽否认啤酒传说但确实拿啤酒试过；贝尔·伯内尔 2018 年的 300 万美元奖金捐给 IOP；Bevatron 的能量按反质子阈值定；吴健雄实验约 0.003 K 及四位合作者；彭齐亚斯与威尔逊的 3.5 K、鸽粪和 Echo 卫星。五、打不开或没有文字层的来源：web.archive.org（被拦）、royalsocietypublishing.org（403）、AIP 的迈克尔逊论文扫描 PDF 和 Shankland 1964 年 AJP 论文（无文字层）、Nature 两篇论文正文（付费墙）、维基 Cambridge Electron Accelerator 条目（cache-only）、home.cern 的 BEBC 页和 mrao.cam.ac.uk 的旧望远镜页（404）。都没有绕行。六、文案里保留了几处引语自带的感叹号和问句（Whoopee、PARITY NOT CONSERVED、贝尔·伯内尔的「不是吗」），是原话，统稿时可酌情处理。七、除 SCHEMA 规定的字段外，每座装置加了 drawing（同比例示意图用的几何尺寸）、status、prize.citation_check；莱顿的 metrics 里多一个 temp_what；候补席每条多了 citation_zh、details、note；旁栏每条多了 citation_en、note。"
+}

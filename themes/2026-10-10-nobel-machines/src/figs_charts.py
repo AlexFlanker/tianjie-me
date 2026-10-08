@@ -227,7 +227,7 @@ def map_overview(machines):
 
 def keyplan(m):
     """标题栏里的位置小图：一张小地图，装置所在处打一个十字。"""
-    s = Svg(720, 360, cls='dwg keyplan', title=f'{m["short"]}的位置')
+    s = Svg(720, 360, cls='dwg keyplan', title=f'{m["short"]}{" " if m["short"][-1].isascii() else ""}的位置')
     s.add('<use href="#world" x="0" y="0" width="720" height="360"/>')
     for st in m['sites']:
         if m['id'] == 'michelson' and st['name'].startswith('波茨坦'):

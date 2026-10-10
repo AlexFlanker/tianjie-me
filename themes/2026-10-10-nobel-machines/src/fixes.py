@@ -619,3 +619,14 @@ ADD_TODO['dark-ages-moon'] = ['LuSEE-Night 仪器是否已交付承运方没有�
 ADD_TODO['schwinger'] = ['SLAC 的 E-320 是否已在 FACET-II 取数、上海极端光装置（SEL）的现状与指标，都没有核到，正文没有列 SEL。']
 ADD_TODO['dark-energy'] = ['「2.8–4.2σ」里上端所用的超新星样本后来有过重新标定，新数值没有核到。']
 ADD_TODO['gw-ground'] = ['LIGO-India 的造价，Space.com 写 3.18 亿美元，Physics World 写 31 亿美元（按 260 亿卢比折算，后者应是笔误）。']
+
+# ---------------------------------------------------------------- 2026-10-09 复核：诺奖官网可以打开了
+# 1907、1913、1939、1968、1974 五年的颁奖词逐字对过 nobelprize.org 各年得主页，全部与页面一致；
+# 1974 年新闻稿也打开了：没有「第一次授予天文」之类的话，没有提到贝尔。
+POST += [
+    ('开头用了 decisive contributions 的说法。', '开头用了 decisive contributions 的说法（2026-10-09 对过诺奖官网原文）。'),
+    ('官网未能打开', '诺奖官网写的是 resonance states / hydrogen bubble chamber，与本页所录一致'),
+    ('颁奖词个别用词：resonance states / hydrogen bubble chamber（通行引法）对 resonant states / hydrogen bubble chambers（维基）。', '颁奖词个别用词：resonance states / hydrogen bubble chamber（诺奖官网，2026-10-09 对过）对 resonant states / hydrogen bubble chambers（维基）。'),
+    ('nobelprize.org 打不开，颁奖词未能直接对页（措辞与维基百科诺奖得主列表一致）。', ''),
+    ('1974 年诺奖新闻稿原文（nobelprize.org 打不开）：有没有「第一次授予天文观测」之类的官方措辞。', '1974 年诺奖新闻稿（2026-10-09 打开）里没有「第一次授予天文观测」之类的话，也没有提到贝尔；本卡没有用这类说法。'),
+]

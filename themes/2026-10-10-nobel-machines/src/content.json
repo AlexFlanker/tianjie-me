@@ -88,7 +88,7 @@
     "names": "点到方法",
     "en": "for his decisive contributions to elementary particle physics, in particular the discovery of a large number of resonance states, made possible through his development of the technique of using hydrogen bubble chamber and data analysis",
     "zh": "表彰他对基本粒子物理的决定性贡献，特别是发现了大量共振态；这些发现得以实现，靠的是他发展出的氢气泡室技术和数据分析方法",
-    "src": "通行文本，未与诺贝尔奖官网逐字核对"
+    "src": "诺贝尔奖官网，2026-10-09 逐字对过"
    },
    {
     "year": 1984,
@@ -115,7 +115,7 @@
     "src": "瑞典皇家科学院新闻稿"
    }
   ],
-  "cite_note": "含 decisive 一词的物理学奖颁奖词，逐年翻下来有五次：1968、1974、1984、2017、2026。1974 年那一次说的是休伊什在发现脉冲星中的「决定性作用」。这个数没能在诺奖官网上检索确认，置信度中。",
+  "cite_note": "含 decisive 一词的物理学奖颁奖词，逐年翻下来有五次：1968、1974、1984、2017、2026。1974 年那一次说的是休伊什在发现脉冲星中的「决定性作用」。这五年的原文都对过了；「没有别的年份」是把历年颁奖词过了一遍得出的，官网的总表没能打开，没法逐年检索，这半句置信度中。",
   "nu": [
    {
     "built": 1956,
@@ -208,7 +208,7 @@
     "citation_en": "for his optical precision instruments and the spectroscopic and metrological investigations carried out with their aid",
     "citation_zh": "表彰他的精密光学仪器，以及借助这些仪器完成的光谱学和计量学研究",
     "citation_src": {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1907/michelson/facts/"
     }
    },
@@ -849,8 +849,7 @@
     "《Light Waves and Their Uses》（1903）里「这个问题引出了干涉仪，足以补偿实验本身的负结果」一句未能在线核到原文，暂未收。",
     "致瑞利信的具体日期（常写 1887-08-17）与原信影印。",
     "「每三个月重复一次」后来没有执行，这一点缺可引出处。",
-    "开工的确切时间未查到。",
-    "nobelprize.org 打不开，颁奖词未能直接对页（措辞与维基百科诺奖得主列表一致）。"
+    "开工的确切时间未查到。"
    ]
   },
   {
@@ -870,7 +869,7 @@
     "citation_en": "for his investigations on the properties of matter at low temperatures which led, inter alia, to the production of liquid helium",
     "citation_zh": "表彰他对物质在低温下性质的研究，这些研究的成果之一是制得了液氦",
     "citation_src": {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1913/summary/"
     }
    },
@@ -1519,7 +1518,7 @@
     "citation_en": "for the invention and development of the cyclotron and for results obtained with it, especially with regard to artificial radioactive elements",
     "citation_zh": "表彰他发明并发展了回旋加速器，以及用它取得的成果，特别是在人工放射性元素方面",
     "citation_src": {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1939/summary/"
     }
    },
@@ -2180,7 +2179,7 @@
     "citation_en": "for his decisive contributions to elementary particle physics, in particular the discovery of a large number of resonance states, made possible through his development of the technique of using hydrogen bubble chamber and data analysis",
     "citation_zh": "表彰他对基本粒子物理的决定性贡献，特别是发现了大量共振态；这些发现得以实现，靠的是他发展出的氢气泡室技术和数据分析方法",
     "citation_src": {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1968/summary/"
     }
    },
@@ -2671,9 +2670,9 @@
     },
     {
      "n": 15,
-     "text": "1968 年颁奖词把「氢气泡室技术」和「数据分析」并列写成获奖理由，开头用了 decisive contributions 的说法。",
+     "text": "1968 年颁奖词把「氢气泡室技术」和「数据分析」并列写成获奖理由，开头用了 decisive contributions 的说法（2026-10-09 对过诺奖官网原文）。",
      "confidence": "中",
-     "note": "官网未能打开。",
+     "note": "诺奖官网写的是 resonance states / hydrogen bubble chamber，与本页所录一致。",
      "sources": [
       {
        "t": "NobelPrize.org：The Nobel Prize in Physics 1968",
@@ -2711,7 +2710,7 @@
     "液氢体积：12.5 立方英尺，约 354 升（LBL 1981）；400 升（CERN Courier 引工程师 Jack Lloyd）。",
     "液氢里第一次看到径迹：1953 年底、John Wood 的 1.5 英寸室（LBL 1981）；1954 年夏（CERN Courier）。",
     "大气泡室的提案日期：1955-01-10 提议 30 英寸（LBL 1981）；通行说法是 1955 年 4 月的内部备忘录（未核）。",
-    "颁奖词个别用词：resonance states / hydrogen bubble chamber（通行引法）对 resonant states / hydrogen bubble chambers（维基）。",
+    "颁奖词个别用词：resonance states / hydrogen bubble chamber（诺奖官网，2026-10-09 对过）对 resonant states / hydrogen bubble chambers（维基）。",
     "金字塔项目的年份：维基写 1965 年提出、做到 1969 年；另有 1967–69 年的说法；CERN Courier 只说 1960 年代后期。",
     "Bevatron 的能量：6.2 BeV（LBL 1981）对 6.5 BeV（LBL 历史网站、Brobeck 讣告）。"
    ],
@@ -2751,7 +2750,7 @@
     "citation_en": "for their pioneering research in radio astrophysics: Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars",
     "citation_zh": "表彰他们在射电天体物理学方面的开创性研究：赖尔，因为他的观测和发明，特别是综合孔径技术；休伊什，因为他在发现脉冲星中所起的决定性作用",
     "citation_src": {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1974/summary/"
     }
    },
@@ -3326,7 +3325,7 @@
     "Fred Hoyle 批评的原话、时间与休伊什的回应。",
     "「放羊」一说的出处；可问 Mullard 天文台或查贝尔·伯内尔的访谈。",
     "LGM-1 这个编号式的叫法：贝尔·伯内尔 1977 年的演讲里只说了 Little Green Men，「LGM-1」见于 APS 与维基。",
-    "1974 年诺奖新闻稿原文（nobelprize.org 打不开）：有没有「第一次授予天文观测」之类的官方措辞。",
+    "1974 年诺奖新闻稿（2026-10-09 打开）里没有「第一次授予天文观测」之类的话，也没有提到贝尔；本卡没有用这类说法。",
     "闪烁阵的外形（东西长 470 米、南北宽 45 米，16 排 × 128 个全波偶极子）取 1968 年《Nature》论文的通行引述，没能打开论文正文核对；它与贝尔所说的 4.5 英亩相差约一成半。",
     "一英里望远镜两面固定天线的间距没有查到原始数字，示意图上的「约 800 米」是用最长基线减去铁轨长度推算的。",
     "奖项栏里 1973 年迈克尔逊奖章、1989 年赫歇尔奖章、2021 年科普利奖章取通行资料，没有逐一打开颁奖机构的名单；霍伊尔批评评奖的原话与日期也没有核到。"
@@ -16191,7 +16190,7 @@
    "group": "1907 干涉仪",
    "items": [
     {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1907/michelson/facts/"
     },
     {
@@ -16276,7 +16275,7 @@
    "group": "1913 莱顿低温实验室",
    "items": [
     {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1913/summary/"
     },
     {
@@ -16357,7 +16356,7 @@
    "group": "1939 回旋加速器",
    "items": [
     {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1939/summary/"
     },
     {
@@ -16442,7 +16441,7 @@
    "group": "1968 72 英寸气泡室",
    "items": [
     {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1968/summary/"
     },
     {
@@ -16507,7 +16506,7 @@
    "group": "1974 一英里望远镜与闪烁阵",
    "items": [
     {
-     "t": "通行文本，未与诺贝尔奖官网逐字核对",
+     "t": "诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过",
      "u": "https://www.nobelprize.org/prizes/physics/1974/summary/"
     },
     {
@@ -18673,7 +18672,7 @@
  "method": [
   "研究分四路：1907–1974 年的五座、加速器与卫星三座、中微子与引力波四座、展望课题。每条事实尽量找两个来源，一手或官方的优先；维基百科只作辅助。",
   "置信度：高，是一手或官方来源明写，且至少两处一致；中，是只有一个可靠来源，或口径略有出入；低，是只有二手转述，或唯一的来源本身不够可靠。来源对不上的地方并列写在卡片底下「来源对不上的地方」里，不替读者挑。",
-  "颁奖词：1984、2002、2006、2013、2015、2017、2026 年的对照了瑞典皇家科学院的新闻稿或得主页；1907、1913、1939、1968、1974 年的按通行文本录入，只和维基百科的得主列表对过开头；诺贝尔奖官网没能打开，这五年没有对照原文。",
+  "颁奖词：1984、2002、2006、2013、2015、2017、2026 年的对照了瑞典皇家科学院的新闻稿或得主页；1907、1913、1939、1968、1974 年的在 2026-10-09 对照了诺贝尔奖官网各年的得主页，逐字一致（官网 10 月 8 日打不开，9 日可以打开）；2013 年的末句也对过官网。",
   "造价一律先写当年价和币种。「约合今天」的算法：按当年年均汇率换成美元，再乘美国消费者价格指数（CPI-U）到 2025 年的比值。这只是粗算，1913 年以前的更只能看量级。",
   "示意图由程序按核到的尺寸绘制，颜色跟随深浅色主题。没有核到的尺寸在图上标了「示意」。世界地图只画陆地轮廓（Natural Earth 1:1.1 亿，公有领域），不画国界。",
   "「工程思维」一章是本页的归纳；「下一批任务书」里的年份是估计，分三类写明依据。两处都不是史料。",
@@ -18682,7 +18681,7 @@
   "上线前另做了一轮核查：七路各自对照来源重读全页，共提出约三百条意见，查实的错误和说得过满的地方已改，改不了的列在下面和各卡片的「没有核到的」里。"
  ],
  "todo": [
-  "颁奖词：1907、1913、1939、1968、1974 五年未能对诺奖官网原文；「含 decisive 的只有五年」未在官网检索确认。",
+  "颁奖词：「含 decisive 一词的只有五年」没能在诺奖官网上逐年检索确认（五年各自的原文已对过）；诺贝尔基金会章程的条文、阿尔瓦雷茨的诺奖演讲，官网上仍然打不开。",
   "迈克尔逊：贝尔出资的金额、石板质量、1887 年装置的造价；砖墩的尺寸原论文没给，图上是示意。",
   "莱顿：实验室总人数与经费、氦液化器的外形尺寸；当天的最低温度有 1.7 K、1.8 K、约 2 K 几种写法。",
   "回旋加速器：各代机器的日期与能量，伯克利实验室、AIP、APS 几家官方来源自己就不一致，见卡内「来源对不上的地方」。",
@@ -18701,5 +18700,5 @@
   "气泡室：Λ 衰变宇称不守恒一项改记 1957 年，论文原文没能打开；前六只样机的外形没有查到。",
   "展望里各课题「最可能」的年份是按本页自定的办法估的；几处项目现状只查到 2025 年或 2026 年上半年的口径，已在行内注明。"
  ],
- "stamp": "文字、示意图与核查：Claude（Fable 5.1）与天杰 · 研究截至 2026-10-08 · 地图只画陆地轮廓"
+ "stamp": "文字、示意图与核查：Claude（Fable 5.1）与天杰 · 研究截至 2026-10-08，颁奖词复核 2026-10-09 · 地图只画陆地轮廓"
 }

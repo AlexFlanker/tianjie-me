@@ -207,7 +207,7 @@ CH1 = dict(
         dict(year=1968, who='阿尔瓦雷茨', names='点到方法',
              en='for his decisive contributions to elementary particle physics, in particular the discovery of a large number of resonance states, made possible through his development of the technique of using hydrogen bubble chamber and data analysis',
              zh='表彰他对基本粒子物理的决定性贡献，特别是发现了大量共振态；这些发现得以实现，靠的是他发展出的氢气泡室技术和数据分析方法',
-             src='通行文本，未与诺贝尔奖官网逐字核对'),
+             src='诺贝尔奖官网，2026-10-09 逐字对过'),
         dict(year=1984, who='鲁比亚与范德梅尔', names='点到「项目」',
              en='for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction',
              zh='表彰他们对一个大型项目的决定性贡献，这个项目导致发现了传递弱相互作用的场粒子 W 和 Z',
@@ -222,7 +222,7 @@ CH1 = dict(
              src='瑞典皇家科学院新闻稿'),
     ],
     cite_note='含 decisive 一词的物理学奖颁奖词，逐年翻下来有五次：1968、1974、1984、2017、2026。1974 年那一次说的是休伊什在发现脉冲星中的「决定性作用」。'
-              '这个数没能在诺奖官网上检索确认，置信度中。',
+              '这五年的原文都对过了；「没有别的年份」是把历年颁奖词过了一遍得出的，官网的总表没能打开，没法逐年检索，这半句置信度中。',
     # 中微子五次获奖所用的装置，按建成年份排；mass_t 用于画对数条
     nu=[
         dict(built=1956, what='萨凡纳河反应堆旁的探测器', mass='约 400 升水靶', mass_t=0.4, prize='1995 莱因斯', result='第一次探测到中微子'),

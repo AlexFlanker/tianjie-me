@@ -199,7 +199,7 @@ for no, mid in enumerate(E.IDS, 1):
     cs = pz.get('citation_source') or {}
     cs_t = cs.get('t', '')
     if 'NobelPrize' in cs_t or 'nobelprize' in (cs.get('u') or ''):
-        cs = {'t': '通行文本，未与诺贝尔奖官网逐字核对', 'u': cs.get('u', '')}
+        cs = {'t': '诺贝尔奖官网（nobelprize.org），2026-10-09 逐字对过', 'u': cs.get('u', '')}
     else:
         cs = {'t': scrub(cs_t, w + '/citation_source'), 'u': cs.get('u', '')}
     drop_a = set(o.get('drop_anecdotes', [])); drop_w = set(o.get('drop_awards', []))

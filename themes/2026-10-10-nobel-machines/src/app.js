@@ -242,4 +242,37 @@
     window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(render, 150); });
     render();
   }
+
+  // ---------- 图片陈列：点小图放大，左右键翻页
+  (function () {
+    var lb = document.getElementById('lb'); var DATA = null; try { DATA = JSON.parse(document.getElementById("data").textContent); } catch (e) {}
+    if (!lb || !DATA || !DATA.gallery) return;
+    var cur = null, idx = 0, noOf = {};
+    DATA.machines.forEach(function (m) { noOf[m.id] = m.no; });
+    function show() {
+      var list = DATA.gallery[cur], g = list[idx], no = ('0' + noOf[cur]).slice(-2);
+      var img = document.getElementById('lb-img');
+      img.src = g.file; img.alt = g.title; img.width = g.w; img.height = g.h;
+      document.getElementById('lb-n').textContent = '图 ' + no + '-' + String.fromCharCode(65 + idx) + '　' + (idx + 1) + ' / ' + list.length;
+      document.getElementById('lb-role').textContent = g.role_zh;
+      document.getElementById('lb-t').textContent = g.title + (g.year ? '（' + g.year + '）' : '');
+      document.getElementById('lb-c').textContent = g.caption;
+      document.getElementById('lb-cr').textContent = '署名：' + g.credit;
+      document.getElementById('lb-li').textContent = '许可：' + g.license;
+      document.getElementById('lb-src').href = g.source_url;
+    }
+    function step(d) { var n = DATA.gallery[cur].length; idx = (idx + d + n) % n; show(); }
+    document.addEventListener('click', function (ev) {
+      var t = ev.target.closest('.g-t'); if (!t) return;
+      cur = t.getAttribute('data-g'); idx = +t.getAttribute('data-i'); show();
+      if (lb.showModal) lb.showModal(); else lb.setAttribute('open', '');
+    });
+    document.getElementById('lb-x').addEventListener('click', function () { lb.close ? lb.close() : lb.removeAttribute('open'); });
+    document.getElementById('lb-p').addEventListener('click', function () { step(-1); });
+    document.getElementById('lb-q').addEventListener('click', function () { step(1); });
+    lb.addEventListener('click', function (ev) { if (ev.target === lb) lb.close(); });
+    lb.addEventListener('keydown', function (ev) {
+      if (ev.key === 'ArrowLeft') step(-1); else if (ev.key === 'ArrowRight') step(1);
+    });
+  })();
 })();

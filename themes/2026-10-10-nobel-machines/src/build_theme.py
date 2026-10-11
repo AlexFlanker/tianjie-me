@@ -24,6 +24,7 @@ WORLD = json.load(open(os.path.join(HERE, 'world.json'), encoding='utf-8'))
 tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
 app_js = open(os.path.join(HERE, 'app.js'), encoding='utf-8').read()
 M = C['machines']
+IMG = json.load(open(os.path.join(HERE, 'images.json'), encoding='utf-8'))['groups']
 MID = {m['id']: m for m in M}
 CIRC = '①②③④'
 
@@ -138,6 +139,71 @@ def facts_html(card):
     return out
 
 
+def fmt_len(v):
+    if v >= 1000:
+        x = v / 1000
+        return (f'{x:,.0f}' if x >= 10 else f'{x:g}'), '公里'
+    return f'{v:g}', '米'
+
+
+def fmt_mass(v):
+    if v >= 1e8:
+        return f'{v / 1e8:g}', '亿吨'
+    if v >= 1e4:
+        return f'{v / 1e4:g}', '万吨'
+    return (f'{v:,.0f}' if v >= 10 else f'{v:g}'), '吨'
+
+
+def readout(m):
+    """卡片顶上的读数条：尺度、质量、人数、从成果到获奖的年数。没有核到的不显示。"""
+    t = m['tool']
+    cells = []
+    if t.get('size_m'):
+        v, u = fmt_len(t['size_m'])
+        cells.append(('尺度', v, u, t.get('size_what', '')))
+    if t.get('mass_t'):
+        v, u = fmt_mass(t['mass_t'])
+        cells.append(('质量', v, u, t.get('mass_what', '')))
+    if t.get('people'):
+        cells.append(('人', f'{t["people"]:,}', '人', t.get('people_what', '')))
+    cells.append(('从成果到获奖', str(t['wait']), '年', f'{t["t_result"]} 年出成果，{t["t_prize"]} 年获奖'))
+    return ''.join(f'<div><dt>{esc(k)}</dt><dd><b>{esc(v)}</b><i>{esc(u)}</i></dd><small>{esc(w)}</small></div>' for k, v, u, w in cells)
+
+
+def gallery_html(m):
+    """每座装置一条图片带：第一张是大图，其余是小图；点开看图注、署名与出处。"""
+    imgs = IMG.get(m['id'], [])
+    if not imgs:
+        return ''
+    tiles = ''
+    for i, g in enumerate(imgs):
+        cls = 'g-t' + (' g-lead' if i == 0 else '') + (' plate' if g['kind'] == 'plate' else '') + (' bk' if g.get('bg') == 'black' else '')
+        tiles += (f'<button type="button" class="{cls}" data-g="{m["id"]}" data-i="{i}" aria-label="放大：{esc(g["title"])}">'
+                  f'<img src="{esc(g["file"])}" width="{g["w"]}" height="{g["h"]}" loading="lazy" decoding="async" alt="{esc(g["title"])}">'
+                  f'<span class="g-n">{m["no"]:02d}-{chr(65 + i)}</span>'
+                  f'<span class="g-c"><i>{esc(g["role_zh"])}</i>{esc(g["title"])}</span></button>')
+    others = len(imgs) - 1
+    if others % 2 == 1:
+        tiles += (f'<div class="g-info"><b>{len(imgs)}</b><span>张图<br>点开看图注、署名与出处</span></div>')
+        others += 1
+    cols = max(1, others // 2)
+    roles = '、'.join(dict.fromkeys(g['role_zh'] for g in imgs))
+    return (f'<div class="m-gal fade" data-cols="{cols}"><div class="g-bar"><span>图片陈列 {m["no"]:02d}</span><span>{len(imgs)} 张：{esc(roles)}</span></div>'
+            f'<div class="g-grid" style="grid-template-columns:minmax(0,{cols}fr) repeat({cols},minmax(0,1fr))">{tiles}</div></div>')
+
+
+def credits_html():
+    rows = ''
+    for m in M:
+        for i, g in enumerate(IMG.get(m['id'], [])):
+            rows += (f'<tr><td>{m["no"]:02d}-{chr(65 + i)}</td><td>{esc(m["short"])}：{esc(g["title"])}</td><td>{esc(g["credit"])}</td>'
+                     f'<td>{esc(g["license"])}</td><td>{link("来源", g["source_url"])}</td></tr>')
+    n = sum(len(v) for v in IMG.values())
+    return (f'<div class="credits"><h3>图片署名</h3>'
+            f'<p class="small">共 {n} 张，按装置排列。公有领域与知识共享许可的图可照许可转用；标「机构条款」的只许用于教育、信息或非商业用途，版权仍归原机构，转载请回到来源页看条款。个别图为排版做了裁边、缩小，气泡室两张做了水平翻转（原翻拍片左右颠倒）。</p>'
+            f'<div class="tbl"><table><thead><tr><th>图号</th><th>内容</th><th>署名</th><th>许可</th><th></th></tr></thead><tbody>{rows}</tbody></table></div></div>')
+
+
 def card_html(m):
     no = m['no']
     pz = m['prize']
@@ -168,15 +234,19 @@ def card_html(m):
     ls = m['lesson']
     return f'''
 <article class="m" id="m-{m['id']}">
+  <header class="m-head">
+    <div class="m-plate"><span>图 02-{no:02d}</span><span>{no:02d} / 12</span><span>{esc(m['era'])}</span><span>{esc(m['place'])}</span><span>{pz['year']} 年获奖</span></div>
+    <h3>{esc(m['short'])}<small>{esc(m['name'])}　{esc(m['name_en'])}</small></h3>
+    <p class="tag">{esc(m['tag'])}</p>
+    <dl class="readout">{readout(m)}</dl>
+  </header>
+  {gallery_html(m)}
   <div class="m-fig">
     <div class="frame"><button type="button" class="zb" aria-pressed="false">放大</button>{FM.FIGS[m['id']]()}</div>
     <div class="tblock"><div class="kp">{FC.keyplan(m)}</div><dl>{tblock}</dl></div>
     <div class="tl">{FC.tl_strip(m, M)}</div>
   </div>
   <div class="m-txt">
-    <p class="m-no">{no:02d} / 12</p>
-    <h3>{esc(m['short'])}<small>{esc(m['name'])}　{esc(m['name_en'])}</small></h3>
-    <p class="tag">{esc(m['tag'])}</p>
     <div class="prize"><div class="who"><b>{pz['year']} 年诺贝尔物理学奖</b></div>{who}
       <blockquote lang="en">{esc(pz['citation_en'])}</blockquote><p class="zh">{esc(pz['citation_zh'])}　<span class="small">（{link(pz['citation_src']['t'], pz['citation_src']['u'])}）</span></p></div>
     <h4>预言</h4><p class="claim">{esc(m['claim'])}</p>
@@ -590,9 +660,15 @@ def end():
   <div><h3>方法</h3><ol>{method}</ol><h3 style="margin-top:34px">仍待核</h3><ul>{todo}</ul></div>
   <div class="refs"><h3>参考</h3>{refs}</div>
 </div>
+{credits_html()}
 <div class="stamp"><div><b>题号</b>一周一题 第四题</div><div><b>日期</b>2026-10-10</div><div><b>格式</b>图谱</div><div><b>作者</b>天杰</div><div>{esc(C['stamp'])}</div></div>
 </div></footer>
-<button type="button" class="theme-btn" id="theme-btn" aria-label="切换深浅色" data-cover-hide>深 / 浅</button>'''
+<button type="button" class="theme-btn" id="theme-btn" aria-label="切换深浅色" data-cover-hide>深 / 浅</button>
+<dialog class="lbx" id="lb" aria-label="图片放大"><div class="lb-in">
+  <div class="lb-bar"><span id="lb-n"></span><span id="lb-role"></span><button type="button" id="lb-x" aria-label="关闭">关闭</button></div>
+  <div class="lb-stage"><button type="button" class="lb-nav" id="lb-p" aria-label="上一张">‹</button><img id="lb-img" alt=""><button type="button" class="lb-nav" id="lb-q" aria-label="下一张">›</button></div>
+  <div class="lb-cap"><h4 id="lb-t"></h4><p id="lb-c"></p><p class="lb-cr"><span id="lb-cr"></span><span id="lb-li"></span><a id="lb-src" target="_blank" rel="noopener">来源页</a></p></div>
+</div></dialog>'''
 
 
 DARK = ('--bg:#0C2444;--surface:#102D55;--surface-2:#163765;--ink:#EAF1FA;--ink-2:#C5D3E6;--muted:#93A9C6;'
@@ -604,7 +680,8 @@ dark_blocks = ('@media (prefers-color-scheme: dark){:root:not([data-theme="light
 
 data = {'machines': [{'id': m['id'], 'no': m['no'], 'name': m['short'], 'year': m['prize']['year'], 'tool': m['tool'],
                       'cost': {'usd': m['cost'].get('usd2025'), 'usdText': m['cost'].get('usd_text', ''), 'text': m['cost'].get('text', '')}, 'shape': m.get('shape')} for m in M],
-        'extra': C['extra_shapes']}
+        'extra': C['extra_shapes'],
+        'gallery': {k: [{x: g.get(x, '') for x in ('file', 'title', 'caption', 'year', 'credit', 'license', 'source_url', 'role_zh', 'w', 'h')} for g in v] for k, v in IMG.items()}}
 
 body = (FB.DEFS + FC.world_symbol(WORLD) + hero() + nav() + ch1() + ch2() + ch3() + ch4() + ch5() + end())
 page = (tpl.replace('{{DESCRIPTION}}', esc(C['meta']['desc'])).replace('{{DARK_BLOCKS}}', dark_blocks)

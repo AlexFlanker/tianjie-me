@@ -1,0 +1,1229 @@
+{
+ "cells": [
+  {
+   "era": 0,
+   "track": "air",
+   "subject": "蒙戈尔菲耶热气球首次载人自由飞行",
+   "kmh": 21.6,
+   "speed": "约 20 km/h（随风漂移；1783-11-21 巴黎，约 25 分钟飞约 9 km，高约 900 m）",
+   "year": "1783",
+   "who": "Pilâtre de Rozier、d'Arlandes 侯爵 / 蒙戈尔菲耶兄弟",
+   "where": "法国巴黎",
+   "conf": "中",
+   "why": "人类第一次离开地面飞行，但气球只能随风走，「空中速度」还不是一个可以追求的指标。",
+   "note": "口径：由航程 ÷ 时长推算的平均地速（9 km ÷ 25 min ≈ 21.6 km/h），非测速纪录；鸟类参照：游隼俯冲约 389 km/h。",
+   "sources": [
+    {
+     "t": "Museum of Flight：Montgolfier Brothers",
+     "u": "https://www.museumofflight.org/Exhibits/montgolfier-brothers"
+    }
+   ],
+   "todo": ""
+  },
+  {
+   "era": 1,
+   "track": "air",
+   "subject": "Giffard 蒸汽飞艇——第一次有动力、可操纵的飞行",
+   "kmh": 10,
+   "speed": "约 10 km/h（6 mph；1852-09-24 巴黎赛马场→Élancourt 约 27 km，3 马力蒸汽机）",
+   "year": "1852",
+   "who": "Henri Giffard",
+   "where": "法国巴黎→Trappes 附近",
+   "conf": "中",
+   "why": "飞艇把「能不能飞」变成「能飞多快」：第一次有人在空中靠发动机决定方向。",
+   "note": "口径：平均地速；动力不足以逆风返航，因此只是半程可控。",
+   "sources": [
+    {
+     "t": "Space.com：The First Powered Airship",
+     "u": "https://www.space.com/16623-first-powered-airship.html"
+    },
+    {
+     "t": "Monash Hargrave 航空史：Henri Giffard",
+     "u": "https://ctie.monash.edu/hargrave/giffard.html"
+    }
+   ],
+   "todo": ""
+  },
+  {
+   "era": 2,
+   "track": "air",
+   "subject": "Prévost 驾 Deperdussin Monocoque 破 200 km/h",
+   "kmh": 203.85,
+   "speed": "203.85 km/h（126.7 mph；1913-09-29 兰斯 Gordon Bennett 杯期间的最快单圈，赛段平均 200.5 km/h）",
+   "year": "1913",
+   "who": "Maurice Prévost / Deperdussin",
+   "where": "法国兰斯",
+   "conf": "中",
+   "why": "飞机诞生十年就跑过 200 km/h，追上了 1903 年的电力机车与 1909 年的汽车，此后空中再没把「最快」让回地面。",
+   "note": "口径：203.85 km/h 为 Monash 航空史记录的最快单圈；同年 6 月 17 日 Prévost 的 FAI 绝对纪录为 179.82 km/h。Monash 页面注明比赛日期有 9 月 29 日 / 10 月 4 日两说。",
+   "sources": [
+    {
+     "t": "Monash Hargrave 航空史：Maurice Prévost",
+     "u": "https://ctie.monash.edu/hargrave/prevost.html"
+    },
+    {
+     "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+     "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+    },
+    {
+     "t": "Wikipedia：Maurice Prévost",
+     "u": "https://en.wikipedia.org/wiki/Maurice_Pr%C3%A9vost"
+    }
+   ],
+   "todo": "FAI 原始档案未直接打开，203.85 的 FAI 认证状态待确认",
+   "also": {
+    "era": 2,
+    "track": "air",
+    "subject": "Santos-Dumont 14-bis——FAI 认证的第一次飞机飞行",
+    "kmh": 41.292,
+    "speed": "41.292 km/h（25.65 mph；1906-11-12 巴黎 Bagatelle，飞 220 m）",
+    "year": "1906",
+    "who": "Alberto Santos-Dumont",
+    "where": "法国巴黎",
+    "conf": "高",
+    "why": "FAI 承认的第一次航空运动成绩，比当时的汽车慢四倍。",
+    "note": "口径：FAI 认证；莱特兄弟 1903-12-17 首飞仅约 11 km/h 地速（逆风），未申请纪录。",
+    "sources": [
+     {
+      "t": "FAI News 17/06：Santos-Dumont 1906 首条 FAI 认证飞行",
+      "u": "https://old.fai.org/news/31942-FAI-News-17-06"
+     },
+     {
+      "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+      "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+     }
+    ],
+    "todo": ""
+   }
+  },
+  {
+   "era": 3,
+   "track": "air",
+   "subject": "Me 209 V1 活塞飞机绝对速度纪录",
+   "kmh": 755.138,
+   "speed": "755.138 km/h（469.22 mph；1939-04-26，Fritz Wendel，FAI 绝对纪录；活塞发动机纪录保持到 1969 年）",
+   "year": "1939",
+   "who": "Fritz Wendel / 梅塞施密特",
+   "where": "德国奥格斯堡",
+   "conf": "高",
+   "why": "两战之间纪录热的顶点：活塞螺旋桨飞机的物理极限，这个数字要到 1969 年才被另一架活塞飞机（Greenamyer，F8F，776 km/h）超过。",
+   "note": "口径：FAI 绝对速度纪录（3 km 低空航线）；作为「绝对纪录」它在 1945 年被喷气机取代，作为「活塞纪录」保持 30 年。",
+   "sources": [
+    {
+     "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+     "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+    },
+    {
+     "t": "波兰航空博物馆：Messerschmitt Me 209 V1",
+     "u": "https://muzeumlotnictwa.pl/en/exhibits/messerschmitt-me-209-v1-2/"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 3,
+    "track": "air",
+    "subject": "Supermarine S.6B（施耐德杯）",
+    "kmh": 655.8,
+    "speed": "655.8 km/h（407.5 mph；1931-09-13，George Stainforth，FAI 绝对纪录，水上飞机）",
+    "year": "1931",
+    "who": "George Stainforth / Supermarine（R. J. Mitchell）",
+    "where": "英国南海岸",
+    "conf": "中",
+    "why": "施耐德杯催生的高速水上飞机，当时比任何陆上飞机都快；它的设计思路直接通向喷火战斗机。",
+    "note": "口径：FAI 绝对纪录；S.6B 同年 9 月 13 日永久赢得施耐德杯后创此纪录。",
+    "sources": [
+     {
+      "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+      "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+     }
+    ],
+    "todo": ""
+   }
+  },
+  {
+   "era": 4,
+   "track": "air",
+   "subject": "Bell X-1 首次载人超音速",
+   "kmh": 1127,
+   "speed": "Mach 1.06（约 700 mph ≈ 1,127 km/h，高度 43,000 ft；1947-10-14 加州穆罗克，火箭动力，B-29 空中投放）",
+   "year": "1947",
+   "who": "Chuck Yeager / 贝尔 / 美国陆军航空队 / NACA",
+   "where": "美国加州穆罗克（今爱德华兹空军基地）",
+   "conf": "高",
+   "why": "「音障」从传说变成可以穿过的东西；NASA 史料记载这次飞行「平稳，没有剧烈抖振，没有失控」。此后十年载人飞行速度翻了三倍。",
+   "note": "口径：NASA SP-4219 记 Mach 1.06、约 700 mph、43,000 ft；因高空音速低于海平面，有资料按 670 mph（1,078 km/h）换算，两说并列。当时保密，1948 年才公开。非 FAI 纪录（空中投放的火箭飞机不符合当时规则）。",
+   "sources": [
+    {
+     "t": "NASA：Fiftieth Anniversary of X-1",
+     "u": "https://www.nasa.gov/history/x1/"
+    },
+    {
+     "t": "NASA SP-4219 第 3 章 Breaking of the Sound Barrier",
+     "u": "https://www.nasa.gov/history/SP-4219/Chapter3.html"
+    },
+    {
+     "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+     "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 4,
+    "track": "air",
+    "subject": "Bell X-2 首次载人 Mach 3",
+    "kmh": 3370,
+    "speed": "Mach 3.196（2,094 mph ≈ 3,370 km/h；1956-09-27，Milburn Apt，自 72,200 ft 俯冲加速）",
+    "year": "1956",
+    "who": "Milburn \"Mel\" Apt / USAF",
+    "where": "美国爱德华兹空军基地",
+    "conf": "高",
+    "why": "人类第一次超过 Mach 3；飞行员在同一次飞行中因惯性耦合失控牺牲，说明速度之后的墙是操纵与热。",
+    "note": "口径：USAF 史料；1953-11-20 Scott Crossfield 驾 D-558-II 首次 Mach 2。",
+    "sources": [
+     {
+      "t": "爱德华兹空军基地：Starbuster — Capt. Mel Apt conquered Mach 3",
+      "u": "https://www.edwards.af.mil/News/Article/394758/starbuster-55-years-ago-capt-mel-apt-conquered-mach-3-lost-life-on-fated-flight/"
+     }
+    ],
+    "todo": ""
+   }
+  },
+  {
+   "era": 5,
+   "track": "air",
+   "subject": "North American X-15——载人有翼飞行器最快纪录",
+   "kmh": 7274,
+   "speed": "7,274 km/h（4,520 mph，Mach 6.7；1967-10-03，Pete Knight，X-15A-2 挂副油箱，火箭动力）",
+   "year": "1967",
+   "who": "William J. \"Pete\" Knight / USAF / NASA",
+   "where": "美国爱德华兹空军基地",
+   "conf": "高",
+   "why": "载人有翼飞行器的速度顶点，至今未被超越；NASA 称之为「飞机达到过的最高速度」。",
+   "note": "口径：NASA 口径 4,520 mph；非 FAI 纪录（火箭飞机由 B-52 空中投放）；吸气式（喷气）飞机的 FAI 绝对纪录是 1976 年 SR-71 的 3,529.56 km/h。",
+   "sources": [
+    {
+     "t": "NASA X-15 Hypersonic Research Program",
+     "u": "https://www.nasa.gov/reference/x-15/"
+    },
+    {
+     "t": "NASA X-15 Chronology",
+     "u": "https://www.nasa.gov/history/x15/chrono.html"
+    },
+    {
+     "t": "NASA X-15 Biographies：William J. Knight",
+     "u": "https://www.nasa.gov/history/x15/knight.html"
+    },
+    {
+     "t": "NASA Aeronautics：X-15",
+     "u": "https://www.nasa.gov/aeronautics/x-15/"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 5,
+    "track": "air",
+    "subject": "SR-71——FAI 吸气式载人飞机绝对速度纪录",
+    "kmh": 3529.56,
+    "speed": "3,529.56 km/h（2,193.17 mph；1976-07-28 加州比尔空军基地附近，25 km 航线，Eldon Joersz / George Morgan，FAI 认证）",
+    "year": "1976",
+    "who": "Eldon W. Joersz / George T. Morgan Jr. / USAF",
+    "where": "美国加州比尔空军基地",
+    "conf": "高",
+    "why": "喷气发动机载人飞机的官方速度纪录，保持 50 年无人挑战。",
+    "note": "口径：FAI 认证的喷气式飞机绝对纪录（直线航线）；协和 1976-01-21 商业首航，巡航 Mach 2.04（约 2,180 km/h），是乘客能买票坐到的最快速度。",
+    "sources": [
+     {
+      "t": "吉尼斯：Fastest speed for a manned aircraft",
+      "u": "https://www.guinnessworldrecords.com/world-records/63087-fastest-speed-for-a-manned-aircraft"
+     },
+     {
+      "t": "美国空军：SR-71 pilots, crew relive absolute speed record",
+      "u": "https://www.af.mil/News/Article-Display/Article/909026/sr-71-pilots-crew-relive-absolute-speed-record/"
+     },
+     {
+      "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+      "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+     }
+    ],
+    "todo": ""
+   }
+  },
+  {
+   "era": 6,
+   "track": "air",
+   "subject": "协和客机最后一次商业飞行",
+   "kmh": 2180,
+   "speed": "巡航 Mach 2.04（约 2,180 km/h，高度约 60,000 ft）；2003-10-24 英航 BA002 纽约→伦敦希思罗最后一班",
+   "year": "2003",
+   "who": "英国航空 / 法国航空",
+   "where": "伦敦希思罗",
+   "conf": "中",
+   "why": "乘客能买到的最快速度在 2003 年倒退：此后民航巡航速度回到 Mach 0.85，二十多年没变。",
+   "note": "口径：协和巡航速度为运营值；1986 年 Voyager 不着陆环球是航程而非速度的纪录。",
+   "sources": [
+    {
+     "t": "MiGFlug：The Legend of Concorde",
+     "u": "https://migflug.com/jetflights/mach-2-60000-feet-and-a-view-of-the-curved-earth-the-legend-of-concorde/"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 6,
+    "track": "air",
+    "subject": "NASA X-43A 无人超燃冲压 Mach 9.6",
+    "kmh": 10870,
+    "speed": "Mach 9.6（近 7,000 mph ≈ 10,870 km/h；2004-11-16，无人，高度约 109,000 ft，超燃冲压工作约 10 秒）",
+    "year": "2004",
+    "who": "NASA Hyper-X 计划",
+    "where": "美国加州外海太平洋上空",
+    "conf": "高",
+    "why": "吸气式发动机达到的最高速度，吉尼斯承认为吸气式飞行器纪录。",
+    "note": "口径：无人、试验、B-52 投放 + 飞马火箭助推；不能与载人 X-15 直接比较。",
+    "sources": [
+     {
+      "t": "NASA：Guinness Recognizes NASA's X-43A Scramjet Speed Record",
+      "u": "https://www.nasa.gov/news-release/guinness-recognizes-nasas-x-43a-scramjet-speed-record/"
+     },
+     {
+      "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+      "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+     }
+    ],
+    "todo": ""
+   }
+  },
+  {
+   "era": 7,
+   "track": "air",
+   "subject": "Boom XB-1 首次超音速——私营超音速客机验证机",
+   "kmh": 1207,
+   "speed": "Mach 1.122（约 750 mph ≈ 1,207 km/h，高度 35,290 ft；2025-01-28 莫哈维，厂商公布）",
+   "year": "2025",
+   "who": "Tristan Brandenburg / Boom Supersonic",
+   "where": "美国加州莫哈维",
+   "conf": "中",
+   "why": "协和退役二十年后，超音速客机的梦想由私营公司重新捡起；但客机巡航速度仍停在 Mach 0.85，速度已不是民航的卖点。",
+   "note": "口径：Boom 新闻稿的 Mach 1.122，媒体转述，非 FAI 纪录；NASA X-59 静音超音速验证机 2025-10-28 从帕姆代尔首飞（首飞为低速检查飞行）。",
+   "sources": [
+    {
+     "t": "CBS News：XB-1 breaks sound barrier（引 Boom 新闻稿）",
+     "u": "https://www.cbsnews.com/news/xb-1-baby-boom-jet-supersonic-breaks-sound-barrier/"
+    },
+    {
+     "t": "AIAA：NASA's X-59 Performs First Flight（2025-10-29）",
+     "u": "https://aiaa.org/2025/10/29/nasas-x-59-quiet-supersonic-research-aircraft-performs-first-flight/"
+    },
+    {
+     "t": "NASA 图片：X-59 lifts off for first flight",
+     "u": "https://www.nasa.gov/image-detail/nasas-x-59-lifts-off-for-first-flight-6/"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 7,
+    "track": "air",
+    "subject": "鲍姆加特纳平流层跳伞——无载具的超音速",
+    "kmh": 1357.6,
+    "speed": "1,357.6 km/h（最大垂直速度，无减速伞；2012-10-14 新墨西哥罗斯韦尔，出舱高度 38,969.4 m，FAI 认证）",
+    "year": "2012",
+    "who": "Felix Baumgartner / Red Bull Stratos",
+    "where": "美国新墨西哥州",
+    "conf": "高",
+    "why": "没有任何载具、只靠身体与重力达到的超音速。",
+    "note": "口径：FAI 认证的最大垂直速度；2014 年 Alan Eustace 出舱更高（41,419 m）但速度纪录未被超过。",
+    "sources": [
+     {
+      "t": "FAI：10-year anniversary of Baumgartner's jump",
+      "u": "https://www.fai.org/node/193240"
+     }
+    ],
+    "todo": ""
+   }
+  },
+  {
+   "era": 0,
+   "track": "space",
+   "subject": "—",
+   "kmh": null,
+   "speed": "",
+   "year": "",
+   "who": "",
+   "where": "",
+   "conf": "高",
+   "why": "1800 年前没有任何人造物离开大气层；牛顿已用「牛顿炮弹」思想实验算出环绕地球所需的速度，但没有任何工具能实现。",
+   "note": "",
+   "sources": [],
+   "todo": ""
+  },
+  {
+   "era": 1,
+   "track": "space",
+   "subject": "—",
+   "kmh": null,
+   "speed": "",
+   "year": "",
+   "who": "",
+   "where": "",
+   "conf": "高",
+   "why": "蒸汽时代没有航天：轨道速度在理论上已知（约 7.9 km/s），火箭只是烟火与康格里夫军用火箭。",
+   "note": "",
+   "sources": [],
+   "todo": ""
+  },
+  {
+   "era": 2,
+   "track": "space",
+   "subject": "—",
+   "kmh": null,
+   "speed": "",
+   "year": "",
+   "who": "",
+   "where": "",
+   "conf": "高",
+   "why": "1903 年齐奥尔科夫斯基发表火箭方程，给出达到轨道速度的理论路线；没有飞行器实现。",
+   "note": "",
+   "sources": [],
+   "todo": ""
+  },
+  {
+   "era": 3,
+   "track": "space",
+   "subject": "—",
+   "kmh": null,
+   "speed": "",
+   "year": "",
+   "who": "",
+   "where": "",
+   "conf": "高",
+   "why": "1926 年 Goddard 发射第一枚液体火箭（飞行 2.5 秒、约 12 m 高），1930 年代德国 A 系列火箭开始试验，但都远未入轨。",
+   "note": "",
+   "sources": [],
+   "todo": ""
+  },
+  {
+   "era": 4,
+   "track": "space",
+   "subject": "Sputnik 1——第一颗人造卫星",
+   "kmh": 29000,
+   "speed": "约 29,000 km/h（约 8 km/s；1957-10-04 拜科努尔发射，近地点约 215 km、远地点约 939 km）",
+   "year": "1957",
+   "who": "苏联（科罗廖夫）",
+   "where": "拜科努尔",
+   "conf": "中",
+   "why": "第一个达到第一宇宙速度的人造物：一夜之间把「最快」的尺度从千米每小时抬到千米每秒。",
+   "note": "口径：轨道速度相对地心，无人；NASA 史料对同期 Explorer 1（1958-01-31）给出「18,000 mph（约 29,000 km/h）」的轨道速度，Sputnik 1 量级相同。1949-02-24 Bumper-WAC 两级火箭曾达约 8,300 km/h（亚轨道），是此前最快的人造物。",
+   "sources": [
+    {
+     "t": "NASA History：Sputnik / Explorer-I and Jupiter-C",
+     "u": "https://www.nasa.gov/history/sputnik/expinfo.html"
+    }
+   ],
+   "todo": "Sputnik 1 本身的官方速度数字未直接核到，用同轨道 Explorer 1 的 NASA 数字作参照"
+  },
+  {
+   "era": 5,
+   "track": "space",
+   "subject": "Apollo 10 返回地球——人类乘坐过的最快速度",
+   "kmh": 39897,
+   "speed": "39,897 km/h（24,791 mph，NASA 史料口径；1969-05-26 再入前，相对地球）",
+   "year": "1969",
+   "who": "Thomas Stafford / John Young / Eugene Cernan / NASA",
+   "where": "太平洋上空（再入）",
+   "conf": "高",
+   "why": "人类到过的速度顶点，此后 57 年没有人更快；NASA 写道「至今 Stafford、Cernan、Young 仍保持最快人类的纪录」。",
+   "note": "口径并列：NASA 历史文章 24,791 mph（39,897 km/h）；吉尼斯 39,937.7 km/h（24,816.1 mph，取自任务报告再入最大速度 36,397 ft/s）；任务报告 400,000 ft 再入界面速度 36,314 ft/s（约 39,840 km/h）。三者相差不到 0.3%，均相对地球。1976 年无人探测器 Helios 2 相对太阳达 252,792 km/h。",
+   "sources": [
+    {
+     "t": "NASA History：50 Years Ago, Apollo 10 Clears the Way",
+     "u": "https://www.nasa.gov/history/50-years-ago-apollo-10-clears-the-way-for-the-first-moon-landing/"
+    },
+    {
+     "t": "吉尼斯：Fastest speed achieved by humans",
+     "u": "https://guinnessworldrecords.com/world-records/66125-fastest-speed-achieved-by-humans"
+    },
+    {
+     "t": "NASA Apollo 10 Mission Report（MSC-00126）",
+     "u": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a410/A10_MissionReport.pdf"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 5,
+    "track": "space",
+    "subject": "加加林东方一号——人类首次轨道飞行",
+    "kmh": 27400,
+    "speed": "约 27,400 km/h（约 7.6 km/s；1961-04-12，全程 108 分钟，绕地球一圈）",
+    "year": "1961",
+    "who": "尤里·加加林 / 苏联",
+    "where": "拜科努尔→萨拉托夫州",
+    "conf": "中",
+    "why": "人类第一次以轨道速度飞行，比此前任何载人飞行器快 8 倍以上。",
+    "note": "口径：近地轨道平均速度（推算，NASA 页面只给出 108 分钟）；按 FAI 当时「飞行员须随飞行器着陆」规则，加加林跳伞着陆一度引起争议。",
+    "sources": [
+     {
+      "t": "NASA Science：Yuri Gagarin, First Human in Space",
+      "u": "https://science.nasa.gov/resource/yuri-gagarin-first-human-in-space/"
+     }
+    ],
+    "todo": "官方速度数字"
+   }
+  },
+  {
+   "era": 6,
+   "track": "space",
+   "subject": "航天飞机与和平号——近地轨道速度不再变快",
+   "kmh": 28000,
+   "speed": "约 28,000 km/h（约 7.7–7.8 km/s 近地轨道；航天飞机 1981–2011 共 135 次任务）",
+   "year": "1981",
+   "who": "NASA / 苏联—俄罗斯航天",
+   "where": "近地轨道",
+   "conf": "中",
+   "why": "太空速度在这个时代没有变快：近地轨道速度由物理决定，可重复使用与长期驻留才是主题。",
+   "note": "口径：近地轨道速度相对地心，为物理推算值；无人探测器 Ulysses（1990）借木星引力进入太阳极轨道，速度纪录仍属 Helios 2。",
+   "sources": [],
+   "todo": "本格为物理推算，无单一纪录来源"
+  },
+  {
+   "era": 7,
+   "track": "space",
+   "subject": "帕克太阳探测器——最快人造物",
+   "kmh": 692000,
+   "speed": "约 692,000 km/h（430,000 mph，约 192 km/s；2024-12-24 近日点，距太阳表面 3.8 百万英里≈6.1 百万 km，相对太阳，无人）",
+   "year": "2024",
+   "who": "NASA / 约翰·霍普金斯大学 APL",
+   "where": "太阳附近",
+   "conf": "高",
+   "why": "人造物的速度纪录比人类乘坐过的最快速度高 17 倍，但仍只有光速的 0.064%。",
+   "note": "口径：NASA 口径 430,000 mph，相对太阳的日心速度，无人；神舟 / 天宫近地轨道约 7.68 km/s（约 27,600 km/h）。",
+   "sources": [
+    {
+     "t": "NASA：Parker Solar Probe Makes History With Closest Pass to Sun",
+     "u": "https://science.nasa.gov/science-research/heliophysics/nasas-parker-solar-probe-makes-history-with-closest-pass-to-sun/"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 7,
+    "track": "space",
+    "subject": "Artemis II 载人绕月返回——没有改写 Apollo 10",
+    "kmh": 39693,
+    "speed": "约 24,664 mph（≈39,693 km/h，BBC 转述；2026-04-10 再入，相对地球）",
+    "year": "2026",
+    "who": "Reid Wiseman / Victor Glover / Christina Koch / Jeremy Hansen / NASA",
+    "where": "太平洋圣迭戈外海（再入）",
+    "conf": "中",
+    "why": "57 年后人类再次以接近 Apollo 的速度返回地球，并创下离地球最远纪录（406,771 km），但速度没有超过 Apollo 10。",
+    "note": "口径并列：NASA 赛前预告约 25,000 mph「若达到将破纪录」（飞行主任 Rick Henfling，USA Today 转述）；实测媒体口径 24,664 mph（BBC / Wikipedia）或 24,527 mph（IFLScience），均低于 Apollo 10 的 24,791 mph。NASA 事后评估只称再入界面速度「与预测相差不到 1 mph」、「近 35 倍音速」，未公布具体数字。",
+    "sources": [
+     {
+      "t": "Wikipedia：Artemis II（引 BBC 2026-04-10）",
+      "u": "https://en.wikipedia.org/wiki/Artemis_II"
+     },
+     {
+      "t": "USA Today / AOL：Fastest humans have ever traveled? Artemis II（赛前预测）",
+      "u": "https://www.aol.com/articles/fastest-humans-ever-traveled-shocking-100108452.html"
+     },
+     {
+      "t": "NASA：NASA on Track for Future Missions with Initial Artemis II Assessments",
+      "u": "https://www.nasa.gov/missions/nasa-on-track-for-future-missions-with-initial-artemis-ii-assessments/"
+     }
+    ],
+    "todo": "NASA 官方最终再入速度数字"
+   }
+  },
+  {
+   "era": 0,
+   "track": "body",
+   "subject": "马——前工业时代的最快载具",
+   "kmh": 65,
+   "speed": "短程冲刺约 60–70 km/h；驿传 / 信使换马日行 100–300 km",
+   "year": "—",
+   "who": "—",
+   "where": "—",
+   "conf": "中",
+   "why": "1800 年以前，人能达到的最快速度就是一匹马能跑多快；两千年里这个上限几乎没变。",
+   "note": "口径：现代纯血马测得极速为吉尼斯 Winning Brew 70.76 km/h（2008，402 m），古代马种偏慢；步行约 5 km/h。动物参照：猎豹 98 km/h（辛辛那提动物园 Sarah，2012，100 m 5.95 s）、游隼俯冲约 389 km/h。",
+   "sources": [
+    {
+     "t": "Pennsylvania Horse Racing Association：Fastest Speed for a Racehorse（引吉尼斯）",
+     "u": "https://pennhorseracing.com/stories/fastest-speed-for-a-race-horse/"
+    },
+    {
+     "t": "辛辛那提动物园：Cheetah Sets New World Speed Record",
+     "u": "https://cincinnatizoo.org/cincinnati-zoo-cheetah-sets-new-world-speed-record/"
+    }
+   ],
+   "todo": ""
+  },
+  {
+   "era": 1,
+   "track": "body",
+   "subject": "高轮自行车与赛马",
+   "kmh": 40,
+   "speed": "高轮车（penny-farthing）竞速约 30–40 km/h；赛马冲刺约 60 km/h",
+   "year": "1870s",
+   "who": "—",
+   "where": "英国、法国",
+   "conf": "低",
+   "why": "自行车是第一个让普通人靠自己的肌肉跑赢马车的机器。",
+   "note": "口径：时代估计值，无官方认证纪录。",
+   "sources": [],
+   "todo": "无一手来源，为估计值"
+  },
+  {
+   "era": 2,
+   "track": "body",
+   "subject": "Charles Murphy「一分钟一英里」领骑",
+   "kmh": 96.56,
+   "speed": "1 英里 57.8 秒（约 100 km/h；1899-06-30 长岛，在火车后的木板轨道上跟车）",
+   "year": "1899",
+   "who": "Charles \"Mile-a-Minute\" Murphy",
+   "where": "美国长岛铁路",
+   "conf": "中",
+   "why": "借火车挡风，人力第一次跑到 100 km/h 量级——速度的秘密在空气，不在腿。",
+   "note": "口径：领骑（有挡风），非 UCI 认证；吉尼斯称其为第一个骑车超过 60 mph 的人。1896 年首届现代奥运 100 m 冠军 Burke 12.0 s（约 30 km/h）。",
+   "sources": [
+    {
+     "t": "吉尼斯：A history of cycling speed records（Mueller-Korenek / Rompelberg / Murphy）",
+     "u": "https://guinnessworldrecords.com/news/2018/9/a-history-of-cycling-speed-records-as-denise-mueller-koronek-reaches-183-mph-541481"
+    }
+   ],
+   "todo": ""
+  },
+  {
+   "era": 3,
+   "track": "body",
+   "subject": "杰西·欧文斯 1936 柏林 100 m",
+   "kmh": 35.0,
+   "speed": "10.3 s（手计时，平均约 35 km/h；1936-08-03 柏林奥运，追平世界纪录）",
+   "year": "1936",
+   "who": "Jesse Owens",
+   "where": "德国柏林",
+   "conf": "低",
+   "why": "手计时时代的短跑顶点，也是两战之间「纪录热」的人体版本。",
+   "note": "口径：手计时；1935-05-25 安娜堡他在 45 分钟内破 3 项、平 1 项世界纪录。",
+   "sources": [],
+   "todo": "未核一手来源"
+  },
+  {
+   "era": 4,
+   "track": "body",
+   "subject": "班尼斯特四分钟英里",
+   "kmh": 24.14,
+   "speed": "3:59.4（1 英里，平均 24.1 km/h；1954-05-06 牛津 Iffley Road 跑道）",
+   "year": "1954",
+   "who": "Roger Bannister",
+   "where": "英国牛津",
+   "conf": "高",
+   "why": "「四分钟英里」曾被当作人体的生理之墙，被破后 46 天就有第二人跑进。",
+   "note": "口径：世界田径承认的世界纪录；同年 12 月 John Stapp 坐火箭滑车承受 46.2 g，是人体耐受的另一堵墙。",
+   "sources": [
+    {
+     "t": "世界田径 Heritage：70 years since Bannister's 3:59.4",
+     "u": "https://worldathletics.org/heritage/news/roger-bannister-sub-four-minute-mile-70-years"
+    },
+    {
+     "t": "吉尼斯：First person to run a mile in less than four minutes",
+     "u": "https://www.guinnessworldrecords.com/world-records/first-person-to-run-a-mile-in-less-than-four-minutes"
+    }
+   ],
+   "todo": ""
+  },
+  {
+   "era": 5,
+   "track": "body",
+   "subject": "Jim Hines 100 m 首次电子计时破 10 秒",
+   "kmh": 36.18,
+   "speed": "9.95 s（全自动电子计时，平均 36.2 km/h；1968-10-14 墨西哥城奥运决赛，海拔 2,240 m）",
+   "year": "1968",
+   "who": "Jim Hines",
+   "where": "墨西哥城",
+   "conf": "高",
+   "why": "第一个在全自动计时下跑进 10 秒的人；此后短跑纪录以百分之一秒计。",
+   "note": "口径：全自动计时；高原海拔有利于短跑。",
+   "sources": [
+    {
+     "t": "吉尼斯：First person to run 100 m in less than 10 seconds (automatic timing)",
+     "u": "https://www.guinnessworldrecords.com/world-records/first-person-to-run-100-m-in-less-than-10-seconds-(automatic-timing)"
+    }
+   ],
+   "todo": ""
+  },
+  {
+   "era": 6,
+   "track": "body",
+   "subject": "Fred Rompelberg 领骑自行车 268.8 km/h",
+   "kmh": 268.831,
+   "speed": "268.831 km/h（167.044 mph；1995-10-03 博纳维尔盐滩，跟在带挡风板的赛车后）",
+   "year": "1995",
+   "who": "Fred Rompelberg",
+   "where": "美国犹他州博纳维尔盐滩",
+   "conf": "高",
+   "why": "人力加挡风达到的速度，保持 23 年。",
+   "note": "口径：吉尼斯「Fastest bicycle speed in slipstream (male)」，非 UCI 项目；短跑方面 Ben Johnson 1988 年 9.79 s 因药检作废，Carl Lewis 1991 年 9.86 s。",
+   "sources": [
+    {
+     "t": "吉尼斯：A history of cycling speed records（Mueller-Korenek / Rompelberg / Murphy）",
+     "u": "https://guinnessworldrecords.com/news/2018/9/a-history-of-cycling-speed-records-as-denise-mueller-koronek-reaches-183-mph-541481"
+    }
+   ],
+   "todo": ""
+  },
+  {
+   "era": 7,
+   "track": "body",
+   "subject": "博尔特 100 m 9.58 s",
+   "kmh": 44.72,
+   "speed": "9.58 s（2009-08-16 柏林世锦赛；60–80 m 区间最高速度 12.42 m/s = 44.72 km/h，IAAF 柏林世锦赛生物力学报告）",
+   "year": "2009",
+   "who": "尤塞恩·博尔特",
+   "where": "德国柏林",
+   "conf": "高",
+   "why": "人体无辅助的速度上限：17 年无人接近。",
+   "note": "口径：世界田径世界纪录 9.58 s；44.72 km/h 为 20 m 分段（1.61 s）的平均速度，非激光测得的瞬时峰值。马拉松：Kiptum 2023-10-08 芝加哥 2:00:35（世界田径 2024-02 批准）。",
+   "sources": [
+    {
+     "t": "Facta Universitatis（引 Hommel 2009 柏林世锦赛生物力学报告）",
+     "u": "https://casopisi.junis.ni.ac.rs/index.php/FUPhysEdSport/article/download/4984/3002"
+    },
+    {
+     "t": "世界田径：Ratified — Kiptum's world marathon record",
+     "u": "https://worldathletics.org/news/press-releases/ratified-world-marathon-record-kelvin-kiptum"
+    }
+   ],
+   "todo": "",
+   "also": {
+    "era": 7,
+    "track": "body",
+    "subject": "Denise Mueller-Korenek 领骑自行车 296 km/h",
+    "kmh": 296.009,
+    "speed": "296.009 km/h（183.931 mph；2018-09-16 博纳维尔盐滩，跟在 Shea Holbrook 驾驶的改装赛车后）",
+    "year": "2018",
+    "who": "Denise Mueller-Korenek",
+    "where": "美国犹他州博纳维尔盐滩",
+    "conf": "高",
+    "why": "人力踩出的最快速度，超过 1930 年代的陆地汽车纪录。",
+    "note": "口径：吉尼斯「Fastest bicycle speed in slipstream」，起步由赛车牵引；非 UCI 认证。赛马吉尼斯纪录 Winning Brew 70.76 km/h（2008-05-14）。",
+    "sources": [
+     {
+      "t": "吉尼斯：A history of cycling speed records（Mueller-Korenek / Rompelberg / Murphy）",
+      "u": "https://guinnessworldrecords.com/news/2018/9/a-history-of-cycling-speed-records-as-denise-mueller-koronek-reaches-183-mph-541481"
+     },
+     {
+      "t": "NPR：Woman rides bicycle to 183.9 mph",
+      "u": "https://whyy.org/npr-story/woman-rides-bicycle-to-183-9-mph-a-world-record/"
+     }
+    ],
+    "todo": ""
+   }
+  }
+ ],
+ "record_line": [
+  {
+   "year": -3000,
+   "label": "骑马（前工业时代上限）",
+   "kmh": 60,
+   "who": "骑手",
+   "manned": true,
+   "note": "口径：短程冲刺估计值，远程驿传平均远低于此；现代赛马极速 70.76 km/h。",
+   "conf": "低",
+   "sources": [
+    {
+     "t": "Pennsylvania Horse Racing Association：Fastest Speed for a Racehorse（引吉尼斯）",
+     "u": "https://pennhorseracing.com/stories/fastest-speed-for-a-race-horse/"
+    }
+   ]
+  },
+  {
+   "year": 1829,
+   "label": "史蒂芬森「火箭号」Rainhill 试车",
+   "kmh": 48,
+   "who": "乘客 / 司机",
+   "manned": true,
+   "note": "口径：约 30 mph（48 km/h），1830 年利物浦—曼彻斯特铁路通车。",
+   "conf": "低",
+   "sources": []
+  },
+  {
+   "year": 1903,
+   "label": "Zossen 三相电力试验车 210 km/h",
+   "kmh": 210.2,
+   "who": "AEG 试验车（载试验人员）",
+   "manned": true,
+   "note": "口径：1903-10-28 Marienfelde—Zossen 普鲁士军用铁路；同年 10 月 6 日西门子车 206 km/h。人类乘坐首次超过 200 km/h。",
+   "conf": "中",
+   "sources": [
+    {
+     "t": "Wikipedia：Experimental three-phase railcar（1903 Zossen）",
+     "u": "https://en.wikipedia.org/wiki/Experimental_three-phase_railcar"
+    }
+   ]
+  },
+  {
+   "year": 1913,
+   "label": "Deperdussin 飞机 203.85 km/h",
+   "kmh": 203.85,
+   "who": "Maurice Prévost",
+   "manned": true,
+   "note": "口径：兰斯 Gordon Bennett 杯最快单圈；FAI 同年绝对纪录 179.82 km/h。",
+   "conf": "中",
+   "sources": [
+    {
+     "t": "Monash Hargrave 航空史：Maurice Prévost",
+     "u": "https://ctie.monash.edu/hargrave/prevost.html"
+    },
+    {
+     "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+     "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+    }
+   ]
+  },
+  {
+   "year": 1939,
+   "label": "Me 209 V1 活塞飞机 755 km/h",
+   "kmh": 755.138,
+   "who": "Fritz Wendel",
+   "manned": true,
+   "note": "口径：FAI 绝对纪录；活塞时代顶点。",
+   "conf": "高",
+   "sources": [
+    {
+     "t": "Wikipedia：List of flight airspeed records（含 FAI 条目）",
+     "u": "https://en.wikipedia.org/wiki/List_of_flight_airspeed_records"
+    },
+    {
+     "t": "波兰航空博物馆：Messerschmitt Me 209 V1",
+     "u": "https://muzeumlotnictwa.pl/en/exhibits/messerschmitt-me-209-v1-2/"
+    }
+   ]
+  },
+  {
+   "year": 1947,
+   "label": "Bell X-1 突破音障 Mach 1.06",
+   "kmh": 1127,
+   "who": "Chuck Yeager",
+   "manned": true,
+   "note": "口径：NASA 约 700 mph / Mach 1.06 / 43,000 ft；另有 670 mph（1,078 km/h）换算。",
+   "conf": "高",
+   "sources": [
+    {
+     "t": "NASA SP-4219 第 3 章 Breaking of the Sound Barrier",
+     "u": "https://www.nasa.gov/history/SP-4219/Chapter3.html"
+    },
+    {
+     "t": "NASA：Fiftieth Anniversary of X-1",
+     "u": "https://www.nasa.gov/history/x1/"
+    }
+   ]
+  },
+  {
+   "year": 1956,
+   "label": "Bell X-2 Mach 3.2",
+   "kmh": 3370,
+   "who": "Milburn Apt",
+   "manned": true,
+   "note": "口径：USAF 2,094 mph，Mach 3.196。",
+   "conf": "高",
+   "sources": [
+    {
+     "t": "爱德华兹空军基地：Starbuster — Capt. Mel Apt conquered Mach 3",
+     "u": "https://www.edwards.af.mil/News/Article/394758/starbuster-55-years-ago-capt-mel-apt-conquered-mach-3-lost-life-on-fated-flight/"
+    }
+   ]
+  },
+  {
+   "year": 1961,
+   "label": "加加林轨道飞行",
+   "kmh": 27400,
+   "who": "尤里·加加林",
+   "manned": true,
+   "note": "口径：近地轨道速度推算值。",
+   "conf": "中",
+   "sources": [
+    {
+     "t": "NASA Science：Yuri Gagarin, First Human in Space",
+     "u": "https://science.nasa.gov/resource/yuri-gagarin-first-human-in-space/"
+    }
+   ]
+  },
+  {
+   "year": 1967,
+   "label": "X-15 7,274 km/h（载人有翼飞行器顶点）",
+   "kmh": 7274,
+   "who": "Pete Knight",
+   "manned": true,
+   "note": "口径：NASA 4,520 mph；低于轨道速度，列出以示有翼飞行器上限。",
+   "conf": "高",
+   "sources": [
+    {
+     "t": "NASA X-15 Hypersonic Research Program",
+     "u": "https://www.nasa.gov/reference/x-15/"
+    },
+    {
+     "t": "NASA X-15 Chronology",
+     "u": "https://www.nasa.gov/history/x15/chrono.html"
+    }
+   ]
+  },
+  {
+   "year": 1969,
+   "label": "Apollo 10 返回（顶点）",
+   "kmh": 39897,
+   "who": "Stafford / Young / Cernan",
+   "manned": true,
+   "note": "口径并列：NASA 24,791 mph（39,897 km/h）；吉尼斯 39,937.7 km/h（24,816.1 mph）；任务报告再入界面 36,314 ft/s。",
+   "conf": "高",
+   "sources": [
+    {
+     "t": "NASA History：50 Years Ago, Apollo 10 Clears the Way",
+     "u": "https://www.nasa.gov/history/50-years-ago-apollo-10-clears-the-way-for-the-first-moon-landing/"
+    },
+    {
+     "t": "吉尼斯：Fastest speed achieved by humans",
+     "u": "https://guinnessworldrecords.com/world-records/66125-fastest-speed-achieved-by-humans"
+    },
+    {
+     "t": "NASA Apollo 10 Mission Report（MSC-00126）",
+     "u": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a410/A10_MissionReport.pdf"
+    }
+   ]
+  },
+  {
+   "year": 2026,
+   "label": "Artemis II 返回（未改写纪录）",
+   "kmh": 39693,
+   "who": "Wiseman / Glover / Koch / Hansen",
+   "manned": true,
+   "note": "口径：媒体转述约 24,664 mph（BBC）/ 24,527 mph（IFLScience）；NASA 赛前预告约 25,000 mph；NASA 事后未公布具体数字。均低于 Apollo 10。",
+   "conf": "中",
+   "sources": [
+    {
+     "t": "Wikipedia：Artemis II（引 BBC 2026-04-10）",
+     "u": "https://en.wikipedia.org/wiki/Artemis_II"
+    },
+    {
+     "t": "USA Today / AOL：Fastest humans have ever traveled? Artemis II（赛前预测）",
+     "u": "https://www.aol.com/articles/fastest-humans-ever-traveled-shocking-100108452.html"
+    },
+    {
+     "t": "NASA：NASA on Track for Future Missions with Initial Artemis II Assessments",
+     "u": "https://www.nasa.gov/missions/nasa-on-track-for-future-missions-with-initial-artemis-ii-assessments/"
+    }
+   ]
+  }
+ ],
+ "scale": [
+  {
+   "id": "walk",
+   "label": "步行",
+   "kmh": 5,
+   "kind": "body",
+   "year": "",
+   "note": "成人常速约 5 km/h。",
+   "sources": [],
+   "conf": "中"
+  },
+  {
+   "id": "bolt",
+   "label": "博尔特 100 m 最高速度",
+   "kmh": 44.72,
+   "kind": "body",
+   "year": "2009",
+   "note": "柏林 60–80 m 分段 12.42 m/s（IAAF 生物力学报告）。",
+   "sources": [
+    {
+     "t": "Facta Universitatis（引 Hommel 2009 柏林世锦赛生物力学报告）",
+     "u": "https://casopisi.junis.ni.ac.rs/index.php/FUPhysEdSport/article/download/4984/3002"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "horse",
+   "label": "赛马极速",
+   "kmh": 70.76,
+   "kind": "animal",
+   "year": "2008",
+   "note": "吉尼斯 Winning Brew，402 m 用时 20.57 s。",
+   "sources": [
+    {
+     "t": "Pennsylvania Horse Racing Association：Fastest Speed for a Racehorse（引吉尼斯）",
+     "u": "https://pennhorseracing.com/stories/fastest-speed-for-a-race-horse/"
+    }
+   ],
+   "conf": "中"
+  },
+  {
+   "id": "cheetah",
+   "label": "猎豹",
+   "kmh": 98,
+   "kind": "animal",
+   "year": "2012",
+   "note": "辛辛那提动物园 Sarah，100 m 5.95 s，峰值 61 mph。",
+   "sources": [
+    {
+     "t": "辛辛那提动物园：Cheetah Sets New World Speed Record",
+     "u": "https://cincinnatizoo.org/cincinnati-zoo-cheetah-sets-new-world-speed-record/"
+    },
+    {
+     "t": "National Geographic：Cheetah Sarah fastest record",
+     "u": "https://www.nationalgeographic.com/news/2012/8/120802-cheetah-sarah-cincinnati-zoo-fastest-record-science-usain-bolt-olympics/"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "bike_drafted",
+   "label": "领骑自行车",
+   "kmh": 296.009,
+   "kind": "body",
+   "year": "2018",
+   "note": "Mueller-Korenek，有挡风，吉尼斯。",
+   "sources": [
+    {
+     "t": "吉尼斯：A history of cycling speed records（Mueller-Korenek / Rompelberg / Murphy）",
+     "u": "https://guinnessworldrecords.com/news/2018/9/a-history-of-cycling-speed-records-as-denise-mueller-koronek-reaches-183-mph-541481"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "hsr",
+   "label": "高铁运营",
+   "kmh": 350,
+   "kind": "vehicle",
+   "year": "2017",
+   "note": "京沪高铁复兴号运营时速 350 km/h。",
+   "sources": [],
+   "conf": "中"
+  },
+  {
+   "id": "falcon",
+   "label": "游隼俯冲",
+   "kmh": 389,
+   "kind": "animal",
+   "year": "",
+   "note": "常引口径 242 mph，俯冲非平飞，测量条件各异。",
+   "sources": [],
+   "conf": "低"
+  },
+  {
+   "id": "airliner",
+   "label": "客机巡航",
+   "kmh": 900,
+   "kind": "vehicle",
+   "year": "",
+   "note": "Mach 0.85 于巡航高度约 900 km/h 真空速。",
+   "sources": [],
+   "conf": "中"
+  },
+  {
+   "id": "sound",
+   "label": "音速（海平面 15 °C）",
+   "kmh": 1225,
+   "kind": "physics",
+   "year": "",
+   "note": "340.3 m/s = 1,225 km/h；随温度变化，11 km 高空（−56.5 °C）约 1,062 km/h。",
+   "sources": [],
+   "conf": "高"
+  },
+  {
+   "id": "stratos",
+   "label": "鲍姆加特纳自由落体",
+   "kmh": 1357.6,
+   "kind": "body",
+   "year": "2012",
+   "note": "FAI 最大垂直速度，无载具。",
+   "sources": [
+    {
+     "t": "FAI：10-year anniversary of Baumgartner's jump",
+     "u": "https://www.fai.org/node/193240"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "concorde",
+   "label": "协和巡航",
+   "kmh": 2180,
+   "kind": "vehicle",
+   "year": "1976",
+   "note": "Mach 2.04，约 60,000 ft。",
+   "sources": [
+    {
+     "t": "MiGFlug：The Legend of Concorde",
+     "u": "https://migflug.com/jetflights/mach-2-60000-feet-and-a-view-of-the-curved-earth-the-legend-of-concorde/"
+    }
+   ],
+   "conf": "中"
+  },
+  {
+   "id": "sr71",
+   "label": "SR-71",
+   "kmh": 3529.56,
+   "kind": "vehicle",
+   "year": "1976",
+   "note": "FAI 吸气式载人飞机绝对纪录。",
+   "sources": [
+    {
+     "t": "吉尼斯：Fastest speed for a manned aircraft",
+     "u": "https://www.guinnessworldrecords.com/world-records/63087-fastest-speed-for-a-manned-aircraft"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "x15",
+   "label": "X-15",
+   "kmh": 7274,
+   "kind": "vehicle",
+   "year": "1967",
+   "note": "载人有翼飞行器最快，NASA 4,520 mph。",
+   "sources": [
+    {
+     "t": "NASA X-15 Hypersonic Research Program",
+     "u": "https://www.nasa.gov/reference/x-15/"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "orbital",
+   "label": "第一宇宙速度",
+   "kmh": 28440,
+   "kind": "physics",
+   "year": "",
+   "note": "7.9 km/s，地表圆轨道理论值；实际近地轨道约 7.7 km/s。",
+   "sources": [],
+   "conf": "高"
+  },
+  {
+   "id": "apollo10",
+   "label": "Apollo 10 返回",
+   "kmh": 39897,
+   "kind": "vehicle",
+   "year": "1969",
+   "note": "人类乘坐过的最快速度（NASA 24,791 mph；吉尼斯 39,937.7 km/h）。",
+   "sources": [
+    {
+     "t": "NASA History：50 Years Ago, Apollo 10 Clears the Way",
+     "u": "https://www.nasa.gov/history/50-years-ago-apollo-10-clears-the-way-for-the-first-moon-landing/"
+    },
+    {
+     "t": "吉尼斯：Fastest speed achieved by humans",
+     "u": "https://guinnessworldrecords.com/world-records/66125-fastest-speed-achieved-by-humans"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "parker",
+   "label": "帕克太阳探测器",
+   "kmh": 692000,
+   "kind": "vehicle",
+   "year": "2024",
+   "note": "NASA 430,000 mph，相对太阳，无人。",
+   "sources": [
+    {
+     "t": "NASA：Parker Solar Probe Makes History With Closest Pass to Sun",
+     "u": "https://science.nasa.gov/science-research/heliophysics/nasas-parker-solar-probe-makes-history-with-closest-pass-to-sun/"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "light",
+   "label": "光速",
+   "kmh": 1079252848.8,
+   "kind": "physics",
+   "year": "",
+   "note": "299,792,458 m/s（SI 定义值）× 3.6 = 1,079,252,848.8 km/h。",
+   "sources": [],
+   "conf": "高"
+  }
+ ],
+ "wall": [
+  {
+   "id": "air",
+   "title": "音障与热障",
+   "formula": "Ma = v / a；驻点温度 T₀ ≈ T·(1 + 0.2·Ma²)（空气 γ = 1.4）",
+   "text": "音障不是一堵墙，是激波：接近 Mach 1 时阻力骤增、操纵面失效，1940 年代多架俯冲的螺旋桨飞机因此解体。X-1 用火箭推力硬推过去，并靠可整体偏转的水平尾翼保住了操纵；NASA 史料写这次飞行「平稳，没有剧烈抖振，没有失控」。穿过音障后真正的墙是热：空气在机头驻点被压缩加热，温度随马赫数平方增长。SR-71 以 Mach 3.2 巡航时表面温度约 800 °F（约 430 °C），热浸温度超过 600 °F，机体几乎全部用钛合金；X-15 外皮用 Inconel X 镍铬合金作热沉，Mach 6.7 时机头驻点气温达 1,900 °F（约 1,040 °C），X-15A-2 为此加了烧蚀涂层，仍在 1967 年纪录飞行中烧坏了挂架。吸气式发动机在 Mach 10 附近也到头：X-43A 的超燃冲压只工作了约 10 秒。",
+   "breakthroughs": [
+    "1947 X-1：火箭推力 + 全动水平尾翼穿过音障",
+    "1960s SR-71：钛合金机体 + 可变进气锥，Mach 3 巡航一小时以上",
+    "1967 X-15A-2：Inconel X 热沉 + 烧蚀涂层，Mach 6.7",
+    "2004 X-43A：超燃冲压 Mach 9.6（无人，10 秒）"
+   ],
+   "example": "SR-71 以 Mach 3 持续飞行时表面约 800 °F；这正是它必须用钛而不是铝的原因——铝合金在 300 °F 以上就迅速失去强度。",
+   "sources": [
+    {
+     "t": "NASA SP-4219 第 3 章 Breaking of the Sound Barrier",
+     "u": "https://www.nasa.gov/history/SP-4219/Chapter3.html"
+    },
+    {
+     "t": "NASA Dryden SR-71 Fact Sheet（FS-030）",
+     "u": "https://www.nasa.gov/wp-content/uploads/2021/09/495839main_fs-030_sr-71.pdf"
+    },
+    {
+     "t": "NASA Aeronautics：X-15",
+     "u": "https://www.nasa.gov/aeronautics/x-15/"
+    },
+    {
+     "t": "NASA：Guinness Recognizes NASA's X-43A Scramjet Speed Record",
+     "u": "https://www.nasa.gov/news-release/guinness-recognizes-nasas-x-43a-scramjet-speed-record/"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "g",
+   "title": "人体的 g 极限",
+   "formula": "a = Δv / Δt；1 g = 9.81 m/s²；46.2 g ≈ 从 1,017 km/h 在 1.4 s 内刹停",
+   "text": "速度本身不伤人，加速度才伤人。1954-12-10 John Stapp 在霍洛曼空军基地乘「Sonic Wind 1 号」火箭滑车加速到 632 mph（约 1,017 km/h），再在 1.4 秒内刹停，承受 46.2 g——美国空军形容「相当于以 50 mph 撞墙」。他暂时失明、浑身淤血，但没有永久伤害；这组数据直接为弹射座椅与汽车安全带定了标准。日常参照：战斗机飞行员持续 9 g 需要抗荷服与抗荷动作；弹射座椅瞬间约 12–20 g；F1 车手刹车与过弯约 5–6 g；Apollo 10 再入峰值 6.78 g（任务报告）。",
+   "breakthroughs": [
+    "1954 Stapp 46.2 g：确定人体短时耐受上限",
+    "抗荷服与弹射座椅：把瞬时 g 变成可控风险",
+    "航天再入轨迹设计：以升力控制把 11 km/s 的减速摊到几分钟"
+   ],
+   "example": "Apollo 10 以 39,897 km/h 再入，航天员承受的峰值只有 6.78 g，远低于速度只有它 1/40 的火箭滑车——因为减速用了几分钟而不是 1.4 秒。",
+   "sources": [
+    {
+     "t": "赖特-帕特森空军基地：'Fastest Man on Earth' started out as aeromedical researcher",
+     "u": "https://www.wpafb.af.mil/News/Article-Display/Article/1505044/fastest-man-on-earth-started-out-as-aeromedical-researcher/"
+    },
+    {
+     "t": "史密森尼航空航天博物馆：The Man Behind High-Speed Safety Standards",
+     "u": "https://airandspace.si.edu/stories/editorial/man-behind-high-speed-safety-standards"
+    },
+    {
+     "t": "NASA Apollo 10 Mission Report（MSC-00126）",
+     "u": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/a410/A10_MissionReport.pdf"
+    }
+   ],
+   "conf": "高"
+  },
+  {
+   "id": "light",
+   "title": "光速是终点",
+   "formula": "γ = 1 / √(1 − v²/c²)；c = 299,792,458 m/s（SI 定义值）",
+   "text": "狭义相对论下有质量的物体永远到不了光速：接近 c 时推进同样的 Δv 需要的能量趋于无穷。帕克太阳探测器 2024-12-24 近日点的 430,000 mph ≈ 692,000 km/h ≈ 192 km/s，是人造物的顶点，但只是光速的 0.064%；在这个速度下 γ − 1 ≈ 2×10⁻⁷，即探测器上的钟每年比地球慢约 6 秒。人类乘坐过的 Apollo 10 只有光速的 0.0037%。",
+   "breakthroughs": [
+    "1905 狭义相对论：光速成为上限",
+    "1983 年「米」改由光速定义，c 成为精确值",
+    "2024 帕克太阳探测器：0.064% c，靠太阳引力而非发动机"
+   ],
+   "example": "算法：v/c = 192 km/s ÷ 299,792 km/s ≈ 0.00064 = 0.064%；Apollo 10：11.08 km/s ÷ 299,792 ≈ 0.000037 = 0.0037%。",
+   "sources": [
+    {
+     "t": "NASA：Parker Solar Probe Makes History With Closest Pass to Sun",
+     "u": "https://science.nasa.gov/science-research/heliophysics/nasas-parker-solar-probe-makes-history-with-closest-pass-to-sun/"
+    },
+    {
+     "t": "吉尼斯：Fastest speed achieved by humans",
+     "u": "https://guinnessworldrecords.com/world-records/66125-fastest-speed-achieved-by-humans"
+    }
+   ],
+   "conf": "高"
+  }
+ ]
+}

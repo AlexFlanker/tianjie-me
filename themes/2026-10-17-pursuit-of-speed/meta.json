@@ -1,0 +1,27 @@
+{
+  "no": 5,
+  "slug": "pursuit-of-speed",
+  "title": "速度的阶梯：人类追求更快的历程",
+  "subtitle": "从奔跑、骑马、帆船到火车、汽车、飞机与火箭——纪录为什么一路飙升，而日常速度为什么在 1970 年代之后停了下来",
+  "date": "2026-10-17",
+  "summary": "一张 8 个时代 × 5 条赛道的速度矩阵、一把从步行到光速的对数速度尺、两条总线（人类乘坐过的最快速度 vs 普通人日常能坐到的最快速度）、六面物理墙、二十五张「为什么追速度」卡片和两个小工具。纪录一路往上，日常速度在 1970 年代之后停了下来：这一周的 Roadster 演示、巴黎车展、两个「音障日」是入口，每条数字标出处、口径与置信度。",
+  "tags": [
+    "速度",
+    "纪录",
+    "汽车",
+    "铁路",
+    "航空航天",
+    "图谱"
+  ],
+  "format": "图谱",
+  "cover": "cover.png",
+  "cover_focus": ".rulerfig",
+  "cover_scheme": "dark",
+  "reading_time": "35 分钟",
+  "sources": [
+    "FIA / FIM / FAI / UIM / 世界田径 / 吉尼斯的纪录页；NASA 与美国空军官方史（X-1、X-2、X-15、SR-71、Apollo 10、Artemis II、帕克探测器、Stapp）",
+    "英国国家铁路博物馆与科学博物馆集团、JR 东海、SNCF / Alstom、国铁集团与中车、澳大利亚国家海事博物馆、辛辛那提动物园",
+    "TechCrunch、Electrek、CBS 对 2026-10-15 Roadster 演示的报道；央视、新华网、界面对 GB 7258—2026 的报道；motorionline 对腾势 Z 的转述",
+    "图片 20 张：NASA、美国陆军 / 海军、美国国会图书馆 Bain 收藏、Gallica、大都会博物馆 Open Access、geograph.org.uk、Flickr（CC BY / CC BY-SA）；逐张署名见页面卷末与 src/images.json"
+  ]
+}

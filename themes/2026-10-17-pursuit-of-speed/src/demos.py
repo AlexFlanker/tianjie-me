@@ -4,7 +4,7 @@ import html
 def esc(s): return html.escape(str(s), quote=True)
 
 def slider(id_, label, mn, mx, step, val, unit=''):
-    return f'<label class="dsl"><span>{esc(label)}</span><input type="range" id="{id_}" min="{mn}" max="{mx}" step="{step}" value="{val}"><output for="{id_}" id="{id_}-o">{val}{esc(unit)}</output></label>'
+    return f'<label class="dsl"><span>{esc(label)}</span><input type="range" id="{id_}" min="{mn}" max="{mx}" step="{step}" value="{val}"><output for="{id_}" id="{id_}-o" data-unit="{esc(unit)}">{val}{esc(unit)}</output></label>'
 
 def chips(items, attr='data-v'):
     return '<div class="dchips">' + ''.join(f'<button type="button" {attr}="{v}">{esc(n)}</button>' for n, v in items) + '</div>'
@@ -15,7 +15,7 @@ def readouts(items):
 # ---------- 物理墙
 def wall_tyre():
     return f'''<div class="demo" data-demo="tyre">
-<div class="dstage"><div class="strip"><i class="lane"></i><b class="dot" id="ty-dot"></b><span class="mk" style="left:0">0</span><span class="mk" style="right:0">100 km/h</span><em class="slip" id="ty-slip">打滑</em></div>
+<div class="dstage"><div class="road sm" id="ty-road"><div class="posts"></div><div class="rlines"></div><b class="rdot" id="ty-dot"><i></i></b><em class="slip" id="ty-slip">打滑</em><div class="hud"><b id="ty-v">0</b><span>km/h</span></div></div>
 <div class="mu"><i style="--a:0;--b:1.2" class="z1">量产胎 μ≈1.0–1.2</i><i style="--a:1.2;--b:1.5" class="z2">赛道胶 / 半热熔</i><i style="--a:1.5;--b:3" class="z3">轮胎做不到</i><b class="needle" id="ty-mu"></b></div></div>
 {slider('ty-t', '0–100 km/h 用时', 0.5, 6, 0.01, 3, ' s')}
 {chips([('GB 7258 默认 5 s', 5), ('SU7 Max 宣称 2.78', 2.78), ('Plaid 1.99（0–60）', 1.99), ('Nevera 1.74（0–60）', 1.74), ('Roadster 宣称 0.81（0–60）', 0.81)])}
@@ -130,17 +130,21 @@ H_DEMOS = {'roadster': h_roadster, 'x15': h_x15, 'apollo': h_apollo, 'hydro': h_
 
 # ---------- 跑一跑
 def race():
-    lanes = [('你输入的', 'you'), ('步行 5', 'walk'), ('博尔特 44.72', 'bolt'), ('高铁 350', 'hsr'), ('客机 900', 'air'), ('音速 1,225', 'snd')]
-    ln = ''.join(f'<div class="rlane" data-k="{k}"><span>{esc(n)}</span><i><b></b></i><em></em></div>' for n, k in lanes)
+    lanes = [('你', 'you'), ('步行 5', 'walk'), ('博尔特 44.72', 'bolt'), ('高铁 350', 'hsr'), ('客机 900', 'air'), ('音速 1,225', 'snd')]
+    ln = ''.join(f'<div class="rl" data-k="{k}"><b class="rdot"><i></i><span>{esc(n)}</span></b></div>' for n, k in lanes)
     return f'''<div class="demo race" data-demo="race">
-<div class="frow"><input id="rc-v" type="number" inputmode="decimal" min="0" step="any" value="120"><select id="rc-u"><option value="1">km/h</option><option value="3.6">m/s</option><option value="1.609344">mph</option><option value="1.852">节</option><option value="1225">马赫</option></select><button type="button" class="dgo" id="rc-go">开跑 10 秒</button><span class="small" id="rc-scale"></span></div>
-<div class="rlanes" id="rc-lanes">{ln}</div>
-<p class="small" id="rc-sum"></p></div>'''
+<div class="frow"><input id="rc-v" type="number" inputmode="decimal" min="0" step="any" value="120"><select id="rc-u"><option value="1">km/h</option><option value="3.6">m/s</option><option value="1.609344">mph</option><option value="1.852">节</option><option value="1225">马赫</option></select><button type="button" class="dgo" id="rc-go">开跑</button><span class="small">镜头跟着你走：比你快的从身边掠过，比你慢的掉到后面。</span></div>
+<div class="road" id="rc-road"><div class="posts"></div><div class="rlines"></div>{ln}<div class="hud"><b id="rc-t">0.0</b><span>s</span><em id="rc-d">0 m</em></div></div>
+<div class="rtab" id="rc-tab"></div></div>'''
 
 def drag():
-    presets = [('GB 7258 默认 5 s', 5, '0–100'), ('SU7 Max 宣称 2.78', 2.78, '0–100'), ('Plaid 厂商 1.99', 1.99, '0–60 mph'), ('Nevera 1.74', 1.74, '0–60 mph'), ('Roadster 宣称 0.81', 0.81, '0–60 mph'), ('Roadster 推文 0.59', 0.59, '0–60 mph')]
+    presets = [('GB 7258 默认 5 s', 5, '0–100'), ('SU7 Max 宣称 2.78', 2.78, '0–100'), ('Plaid 厂商 1.99', 1.99, '0–60 mph'), ('Nevera 1.74', 1.74, '0–60 mph'), ('Roadster 宣称 0.81', 0.81, '0–60 mph'), ('Roadster 推文 0.59', 0.59, '0–60 mph'), ('火箭号 1829 · 到 48 约 60 s', 60, '0–48'), ('复兴号 · 到 350 约 6 min', 360, '0–350')]
     opts = ''.join(f'<option value="{v}|{m}">{esc(n)}</option>' for n, v, m in presets)
+    def lane(i):
+        return f'''<div class="dl"><div class="dname" id="dg-{i}n"></div><div class="road sm" id="dg-{i}r"><div class="posts"></div><div class="rlines"></div><b class="rdot"><i></i></b></div>
+<div class="dmeter"><svg viewBox="0 0 120 70"><path class="g-track" d="M10 65 A50 50 0 0 1 110 65"/><line class="dn" id="dg-{i}nd" x1="60" y1="65" x2="60" y2="20" style="transform-origin:60px 65px"/></svg><div><b id="dg-{i}v">0</b><span>km/h</span></div></div>
+<div class="dtime"><b id="dg-{i}t">0.00</b><span>s</span><i id="dg-{i}g"></i></div></div>'''
     return f'''<div class="demo drag" data-demo="drag">
 <div class="frow"><select id="dg-a">{opts}</select><span class="small">vs</span><select id="dg-b">{opts}</select><button type="button" class="dgo" id="dg-go">起步</button></div>
-<div class="dlanes"><div class="dlane"><span id="dg-an"></span><i><b></b></i><em></em></div><div class="dlane"><span id="dg-bn"></span><i><b></b></i><em></em></div></div>
-<p class="small" id="dg-sum">匀加速假设；0–60 mph 按 96.56 km/h 换算，厂商口径多含 1 英尺 rollout。到 100 km/h 之后继续滑行到 200 m 结束。</p></div>'''
+<div class="dlanes">{lane('a')}{lane('b')}</div>
+<p class="small" id="dg-sum">实时回放，匀加速假设；0–60 mph 按 96.56 km/h 换算，厂商口径多含 1 英尺 rollout。表盘到目标速度为止，地面以车速滚动。</p></div>'''

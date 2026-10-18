@@ -43,9 +43,24 @@
   var set = function (id, t) { var e = $('#' + id); if (e) e.textContent = t; };
   var DEMO = {};
 
+  /* ---------- 路面：镜头跟随，地面以物体速度后退；速度越高条纹越糊、流线越亮 */
+  var PPM = 10; // 1 m = 10 px
+  function road(el) {
+    var r = { el: el, x: 0, v: 0 };
+    r.step = function (dt, v) {
+      r.v = v; r.x = (r.x - v * PPM * dt) % 600; var pxs = v * PPM;
+      el.style.setProperty('--x', r.x.toFixed(1) + 'px');
+      el.style.setProperty('--blur', clamp((pxs - 1000) / 2600, 0, .9).toFixed(2));
+      el.style.setProperty('--rl', clamp(pxs / 1500, 0, 1).toFixed(2));
+    };
+    r.reset = function () { r.x = 0; r.step(0, 0); };
+    return r;
+  }
+  var fmtD = function (d) { return Math.abs(d) >= 1000 ? num(d / 1000, Math.abs(d) >= 10000 ? 0 : 1) + ' km' : num(d, 0) + ' m'; };
+
   /* ---------- 墙 1 轮胎 */
   DEMO.tyre = function (root) {
-    var wall = root.closest('.wall'), dot = $('#ty-dot'), slip = $('#ty-slip'), mu = $('#ty-mu'), t = 3, anim = null;
+    var wall = root.closest('.wall'), slip = $('#ty-slip'), mu = $('#ty-mu'), rd = road($('#ty-road')), t = 3, raf = null;
     var sl = bindSlider('ty-t', function (v) {
       t = v; var a = 27.78 / v, g = a / 9.81;
       set('ty-a', num(a, 1)); set('ty-g', num(g, 2)); set('ty-need', num(g, 2));
@@ -53,13 +68,17 @@
     });
     $$('.dchips button[data-v]', root).forEach(function (b) { b.addEventListener('click', function () { sl.set(parseFloat(b.getAttribute('data-v'))); go(); }); });
     function go() {
-      if (anim) cancelAnimationFrame(anim); var g = 27.78 / t / 9.81, over = g > 1.5, t0 = performance.now(), T = Math.min(t, 4) * 1000;
-      slip.classList.remove('on'); root.classList.remove('slipping'); dot.style.transition = 'none';
+      cancelAnimationFrame(raf); var a = 27.78 / t, over = a / 9.81 > 1.5, t0 = performance.now(), last = t0, v = 0, slipping = false;
+      slip.classList.remove('on'); root.classList.remove('slipping', 'over'); rd.reset(); set('ty-v', '0');
+      if (reduced) { set('ty-v', over ? '—' : '100'); if (over) { slip.classList.add('on'); root.classList.add('over'); } return; }
+      noise(.25, .35, over ? 2500 : 900);
       (function step(now) {
-        var p = clamp((now - t0) / T, 0, 1); var x = over ? Math.min(p, .25) * 100 + (p > .25 ? Math.sin(now / 25) * 1.5 : 0) : p * p * 100;
-        dot.style.left = clamp(x, 0, 100) + '%';
-        if (over && p > .25) { slip.classList.add('on'); root.classList.add('slipping'); }
-        if (p < 1) anim = requestAnimationFrame(step); else if (over) { hit(wall); noise(.3, .4, 1200); } else tone(220 + 600 * (1 / t), .15, .06, 'sawtooth');
+        var dt = Math.min(.05, (now - last) / 1000), s = (now - t0) / 1000; last = now;
+        if (over && s > .12 && !slipping) { slipping = true; slip.classList.add('on'); root.classList.add('slipping', 'over'); hit(wall); noise(.6, .5, 3000); }
+        v = Math.min(27.78, v + (slipping ? 0.55 * 9.81 : a) * dt); // 打滑后只剩动摩擦，约 0.55 g 往前拱
+        rd.step(dt, v); set('ty-v', num(v * 3.6, 0));
+        if (v < 27.78 && s < 8) raf = requestAnimationFrame(step);
+        else { set('ty-v', '100'); if (!over) tone(220 + 600 / t, .15, .06, 'sawtooth'); }
       })(t0);
     }
     $('#ty-go').addEventListener('click', go); sl.run();
@@ -320,41 +339,68 @@
     if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { run(); io.unobserve(t); } }); }, { threshold: .5 }); io.observe(t); } else run();
   });
 
-  /* ---------- 跑一跑 · 比速度 */
+  /* ---------- 跑一跑 · 比速度：镜头钉在你身上 */
   (function () {
     var root = $('.demo.race'); if (!root) return;
-    var REF = { walk: 5, bolt: 44.72, hsr: 350, air: 900, snd: 1225 }, lanes = {}, raf = null;
-    $$('.rlane', root).forEach(function (l) { lanes[l.getAttribute('data-k')] = l; });
+    var REF = { walk: 5, bolt: 44.72, hsr: 350, air: 900, snd: 1225 }, NAME = { walk: '步行', bolt: '博尔特', hsr: '高铁', air: '客机', snd: '音速' };
+    var TOP = { walk: 13, bolt: 31, you: 50, hsr: 67, air: 82, snd: 94 }, el = $('#rc-road'), rd = road(el), lanes = {}, raf = null, tab = $('#rc-tab');
+    $$('.rl', root).forEach(function (l) { var k = l.getAttribute('data-k'); lanes[k] = l; l.style.setProperty('--t', TOP[k]); });
+    function place(k, dk) { // dk：与你的距离差（m）
+      var W = el.clientWidth, x = W * .3 + dk * PPM, l = lanes[k], dot = $('.rdot', l), c = clamp(x, 12, W - 12);
+      dot.style.left = c + 'px'; l.classList.toggle('lead', x > W - 12); l.classList.toggle('lag', x < 12);
+      if (x > W - 12 || x < 12) dot.setAttribute('data-gap', NAME[k] + ' ' + (dk > 0 ? '领先 ' : '落后 ') + fmtD(Math.abs(dk)));
+    }
     function go() {
       cancelAnimationFrame(raf); var v = parseFloat($('#rc-v').value) * parseFloat($('#rc-u').value); if (!(v >= 0)) return;
-      var vs = Object.assign({ you: v }, REF), vmax = Math.max.apply(null, Object.keys(vs).map(function (k) { return vs[k]; })), dist = vmax / 3.6 * 10;
-      $('#rc-scale').textContent = '跑道全长 ' + (dist >= 1000 ? num(dist / 1000, 1) + ' km' : num(dist, 0) + ' m') + '（最快的一个 10 秒跑完）';
-      var t0 = performance.now(); noise(.4, .3, 2000);
-      (function step(t) {
-        var s = clamp((t - t0) / 1000, 0, 10);
-        Object.keys(vs).forEach(function (k) { var d = vs[k] / 3.6 * s; var l = lanes[k]; $('b', l).style.width = (d / dist * 100) + '%'; $('em', l).textContent = d >= 1000 ? num(d / 1000, 2) + ' km' : num(d, 1) + ' m'; });
-        if (s < 10) raf = requestAnimationFrame(step);
-        else $('#rc-sum').textContent = '10 秒里：你跑了 ' + (v / 3.6 * 10 >= 1000 ? num(v / 36, 2) + ' km' : num(v / 3.6 * 10, 1) + ' m') + '，是步行的 ' + num(v / 5, 1) + ' 倍、高铁的 ' + num(v / 350, 2) + ' 倍；北京到上海要 ' + (function (h) { return h >= 1 ? num(h, 1) + ' 小时' : num(h * 60, 1) + ' 分钟'; })(D.tool1.bjsh / v) + '。';
+      var vy = v / 3.6, t0 = performance.now(), last = t0; rd.reset(); tab.innerHTML = '';
+      Object.keys(REF).forEach(function (k) { place(k, 0); });
+      raf = raf || 1;
+      function finish(s) {
+        var dy = vy * s, h = D.tool1.bjsh / Math.max(v, 1e-6);
+        var html = '<div class="you"><b>' + fmtD(dy) + '</b><i>你 ' + num(s, 0) + ' 秒跑的距离</i><i>北京→上海 ' + (h >= 1 ? num(h, 1) + ' 小时' : num(h * 60, 1) + ' 分钟') + '</i></div>';
+        Object.keys(REF).forEach(function (k) { var r = v / REF[k]; html += '<div><b>' + fmtD(REF[k] / 3.6 * s) + '</b><i>' + NAME[k] + ' ' + num(REF[k], 0) + ' km/h</i><i>' + (r >= 1 ? '你是它的 ' + num(r, r >= 10 ? 0 : 1) + ' 倍' : '它是你的 ' + num(1 / r, 1 / r >= 10 ? 0 : 1) + ' 倍') + '</i></div>'; });
+        tab.innerHTML = html;
+      }
+      if (reduced) { rd.step(0, vy); Object.keys(REF).forEach(function (k) { place(k, (REF[k] / 3.6 - vy) * 10); }); set('rc-t', '10.0'); set('rc-d', fmtD(vy * 10)); finish(10); return; }
+      noise(.5, clamp(v / 1200, .15, .6), 600 + v * 2);
+      (function step(now) {
+        var dt = Math.min(.05, (now - last) / 1000), s = clamp((now - t0) / 1000, 0, 10); last = now;
+        rd.step(dt, vy); set('rc-t', num(s, 1)); set('rc-d', fmtD(vy * s));
+        Object.keys(REF).forEach(function (k) { place(k, (REF[k] / 3.6 - vy) * s); });
+        if (s < 10) raf = requestAnimationFrame(step); else { raf = null; finish(10); }
       })(t0);
     }
     $('#rc-go').addEventListener('click', go); $('#rc-v').addEventListener('keydown', function (e) { if (e.key === 'Enter') go(); });
+    function grid() { var W = el.clientWidth; Object.keys(REF).forEach(function (k, i) { var l = lanes[k]; l.classList.remove('lead', 'lag'); $('.rdot', l).style.left = Math.max(14, W * .3 - (i + 1) * 16) + 'px'; }); }
+    grid(); window.addEventListener('resize', function () { if (!raf) grid(); });
   })();
 
-  /* ---------- 跑一跑 · 比起步 */
+  /* ---------- 跑一跑 · 比起步：表盘扫到目标速度为止 */
   (function () {
     var root = $('.demo.drag'); if (!root) return;
-    var raf = null, L = 200;
-    function parse(sel) { var p = sel.value.split('|'); return { t: parseFloat(p[0]), v: p[1] === '0–60 mph' ? 96.56 : 100, n: sel.options[sel.selectedIndex].text }; }
+    var raf = null, R = { a: road($('#dg-ar')), b: road($('#dg-br')) }, sum = $('#dg-sum'), base = sum.textContent;
+    function parse(sel) { var p = sel.value.split('|'); var vt = { '0–100': 100, '0–60 mph': 96.56, '0–48': 48, '0–350': 350 }[p[1]] || 100; return { t: parseFloat(p[0]), vt: vt, n: sel.options[sel.selectedIndex].text + ' · ' + p[1] + (p[1].indexOf('mph') < 0 ? ' km/h' : '') }; }
     function go() {
-      cancelAnimationFrame(raf); var A = parse($('#dg-a')), B = parse($('#dg-b')); $('#dg-an').textContent = A.n; $('#dg-bn').textContent = B.n;
-      var lanes = $$('.dlane', root), t0 = performance.now(), done = [false, false]; noise(.3, .4, 1500);
-      function dist(c, s) { var a = c.v / 3.6 / c.t; var tt = c.v / 3.6 / a; return s <= tt ? 0.5 * a * s * s : 0.5 * a * tt * tt + c.v / 3.6 * (s - tt); }
-      (function step(t) {
-        var s = (t - t0) / 1000, all = true;
-        [A, B].forEach(function (c, i) { var d = Math.min(L, dist(c, s)); $('b', lanes[i]).style.width = (d / L * 100) + '%'; $('em', lanes[i]).textContent = num(d, 0) + ' m · ' + num(s, 2) + ' s'; if (d < L) all = false; else if (!done[i]) { done[i] = true; $('em', lanes[i]).textContent = '200 m · ' + num(s, 2) + ' s'; } });
-        if (!all && s < 20) raf = requestAnimationFrame(step);
+      cancelAnimationFrame(raf); var C = { a: parse($('#dg-a')), b: parse($('#dg-b')) }, scale = Math.max(1, Math.max(C.a.t, C.b.t) / 10), t0 = performance.now(), last = t0, done = {};
+      sum.textContent = (scale > 1 ? '时间 ×' + num(scale, 0) + ' 快进。' : '') + base;
+      ['a', 'b'].forEach(function (i) { set('dg-' + i + 'n', C[i].n); R[i].reset(); $('#dg-' + i + 't').parentNode.classList.remove('done'); });
+      function draw(i, s) {
+        var c = C[i], a = c.vt / 3.6 / c.t, v = Math.min(c.vt / 3.6, a * s), fin = s >= c.t, lane = $('#dg-' + i + 'r').parentNode;
+        $('#dg-' + i + 'nd').style.transform = 'rotate(' + (-90 + v / (c.vt / 3.6) * 180) + 'deg)'; set('dg-' + i + 'v', num(v * 3.6, 0));
+        set('dg-' + i + 't', num(fin ? c.t : s, c.t > 30 ? 1 : 2)); set('dg-' + i + 'g', fin ? '到 ' + num(c.vt, 0) + ' km/h' : '推背 ' + num(a / 9.81, 2) + ' g');
+        lane.classList.toggle('push', !fin); $('#dg-' + i + 't').parentNode.classList.toggle('done', fin);
+        if (fin && !done[i]) { done[i] = true; tone(160 + 500 / c.t, .2, .06, 'sawtooth'); }
+        return v;
+      }
+      if (reduced) { ['a', 'b'].forEach(function (i) { draw(i, C[i].t); R[i].step(0, C[i].vt / 3.6); }); return; }
+      noise(.35, .4, 1500);
+      (function step(now) {
+        var dt = Math.min(.05, (now - last) / 1000) * scale, s = (now - t0) / 1000 * scale; last = now;
+        ['a', 'b'].forEach(function (i) { R[i].step(dt, draw(i, s)); });
+        if (!(done.a && done.b)) raf = requestAnimationFrame(step);
       })(t0);
     }
-    $('#dg-go').addEventListener('click', go); $('#dg-b').selectedIndex = 1;
+    $('#dg-go').addEventListener('click', go); $('#dg-b').selectedIndex = 4;
+    ['a', 'b'].forEach(function (i) { set('dg-' + i + 'n', parse($('#dg-' + i)).n); });
   })();
 })();

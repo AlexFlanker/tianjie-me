@@ -230,7 +230,7 @@ def ch_cards():
 def ch_tools():
     return f'''<section class="chap" id="tools"><div class="wide">{chead("tools")}<div class="tools">
 <div class="tool fade"><div class="hd"><b>比速度</b><p>输入一个速度，和步行、博尔特、高铁、客机、音速同场跑 10 秒。</p></div><div class="bd">{demos.race()}</div></div>
-<div class="tool fade"><div class="hd"><b>比起步</b><p>两辆车各自的 0–100（或 0–60 mph）秒数，看谁先到 200 米。</p></div><div class="bd">{demos.drag()}</div></div>
+<div class="tool fade"><div class="hd"><b>比起步</b><p>两辆车各自宣称的起步秒数，看表盘谁先扫到目标速度——0.81 秒和 5 秒是两个世界。</p></div><div class="bd">{demos.drag()}</div></div>
 </div><p class="small" style="margin-top:12px">参照：步行 5、博尔特 44.72、高铁 350、客机 900、音速 1,225 km/h（海平面 15 °C）；京沪高铁 1,318 km。</p></div></section>'''
 
 # ---------- 卷末

@@ -10,6 +10,7 @@ import editorial as E
 import figs
 import fixes
 import journey
+import demos
 H = None
 
 def esc(s): return html.escape(str(s), quote=True)
@@ -72,14 +73,14 @@ def hero():
 </div></header>'''
 
 def cnav():
-    links = ''.join(f'<a href="#{cid}" data-nav="{cid}"><small>{base}<sup>{n}</sup></small>{esc(t.split("：")[0])}</a>' for cid, base, n, t, _ in E.CHAPTERS)
-    links += '<a href="#end" data-nav="end"><small>卷末</small>参考 · 方法</a>'
+    links = ''.join(f'<a href="#{cid}" data-nav="{cid}"><small>{n}</small>{esc(t)}</a>' for cid, n, t, _ in E.CHAPTERS)
+    links += '<a href="#end" data-nav="end"><small>末</small>参考 · 方法</a>'
     return f'<nav class="cnav" id="cnav" aria-label="章节"><div class="row">{links}<i class="prog" id="prog"></i></div></nav>'
 
 def chead(cid):
-    _, base, n, t, lede = next(c for c in E.CHAPTERS if c[0] == cid)
+    _, n, t, lede = next(c for c in E.CHAPTERS if c[0] == cid)
     label = '序章' if int(n) == 0 else f'第 {"一二三四五六七八"[int(n)-1]} 章'
-    return f'<div class="chead fade"><div class="cno">{base}<sup>{n}</sup><small>km/h · {label}</small></div><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
+    return f'<div class="chead fade"><div class="cno">{int(n):02d}<small>{label}</small></div><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
 
 # ---------- 序章 · 速度之旅
 def src_lookup(key):
@@ -105,7 +106,7 @@ def caption_of(img_id, im): return E.CAPTIONS.get(img_id, im.get('caption', ''))
 def ch_journey():
     return (f'<section class="chap journey band" id="journey"><div class="wide">{chead("journey")}</div>'
             + journey.stage(IM, caption_of) + journey.steps(IM, caption_of, src_lookup)
-            + '<p class="jnote">剪影全部程序绘制，只画体量与轮廓，不画商标、不复刻外观细节；比例经夸张处理。数字与口径同第二章矩阵与卷首速度尺，出处见各级卡片与卷末。</p></section>')
+            + '<p class="jnote">照片全部公有领域或 CC，署名见各级卡片与卷末；数字与口径同第二章与卷首速度尺。</p></section>')
 
 # ---------- 第一章
 def now_card(n, side=False):
@@ -134,22 +135,26 @@ def cell_html(track, era):
             f'<span class="v">{fmt(c["kmh"])}<small>km/h</small></span><span class="y">{esc(c["year"])} · {esc(c["who"])}</span>{conf(c.get("conf"))}{also}</button></div>')
 
 def ch_matrix():
-    head = [f'<div class="th eh"><b>赛道 \\ 时代</b></div>'] + [f'<div class="eh"><b>{esc(n)}</b><span>{esc(y)}</span><i>{esc(h)}</i></div>' for n, y, h in E.ERAS]
+    import math
     rows = []
     for tid, tn, tsub in E.TRACKS:
-        cls = ' body' if tid == 'body' else ''
-        rows.append(f'<div class="th{cls}"><b>{figs.glyph(tid)}{esc(tn)}</b><span>{esc(tsub)}</span></div>')
-        for e in range(8): rows.append(cell_html(tid, e).replace('<div>', f'<div class="{"brow" if tid=="body" else ""}">', 1))
-    legend = '<div class="mx-legend"><span>置信度：<span class="conf h">高</span> 官方 / 一手核过 <span class="conf m">中</span> 媒体 / 博物馆 / 维基 <span class="conf l">低</span> 推算或通行说法</span><span>数字为该格代表物的最高速度，口径见详情。横向可滑动。</span></div>'
-    return f'''<section class="chap" id="matrix"><div class="wide">{chead("matrix")}{legend}
-<div class="fade"><div class="mx-head" id="mxhead"><div class="mx">{''.join(head)}</div></div><div class="mx-wrap" id="mxwrap"><div class="mx" id="mx">{''.join(rows)}</div></div></div>
+        bars = []
+        for e in range(8):
+            c = CELLS.get((tid, e))
+            if not c or c.get('subject') == '—':
+                bars.append(f'<div class="tb none" title="{esc(c["why"]) if c else ""}"><i></i></div>'); continue
+            h = max(2, (math.log10(c['kmh']) + 0.3) / 6.3 * 100)
+            bars.append(f'<button type="button" class="tb" data-cell="{tid}-{e}" style="--h:{h:.1f}%" title="{esc(c["subject"])} · {fmt(c["kmh"])} km/h · {esc(c["year"])}"><i></i><b>{fmt(c["kmh"])}</b><span>{esc(E.ERAS[e][1])}</span></button>')
+        rows.append(f'<div class="trk{" body" if tid=="body" else ""}"><div class="th"><b>{figs.glyph(tid)}{esc(tn)}</b><span>{esc(tsub)}</span></div><div class="tbars">{"".join(bars)}</div></div>')
+    return f'''<section class="chap" id="tracks"><div class="wide">{chead("tracks")}
+<div class="tracks fade">{''.join(rows)}</div>
 <div class="mxd fade" id="mxd" data-first="road-6"></div>
+<p class="small" style="margin-top:10px">柱高按对数刻度；灰柱 = 该时代没有合适的代表物（鼠标悬停看原因）。置信度与口径在详情里。</p>
 </div></section>'''
 
 # ---------- 第三章
 def ch_lines():
     rec = sorted(B['record_line'], key=lambda p: p['year'])
-    # 纪录包络线：只画刷新了「乘坐过的最快」的点（Deperdussin 1913、X-15 1967 没有超过此前的纪录，只列在表里）；Artemis II 作为「没有改写」的点单独画
     rec_line, mx = [], 0
     for p in rec:
         if p['kmh'] > mx: rec_line.append(p); mx = p['kmh']
@@ -157,30 +162,34 @@ def ch_lines():
     day = sorted(C['daily_line'], key=lambda p: p['year'])
     for p in rec: p['short'] = p['label'].split('（')[0].replace('史蒂芬森「火箭号」Rainhill 试车', '火箭号').replace('Zossen 三相电力试验车 210 km/h', 'Zossen 电动车').replace('Deperdussin 飞机 203.85 km/h', 'Deperdussin').replace('Me 209 V1 活塞飞机 755 km/h', 'Me 209').replace('Bell X-1 突破音障 Mach 1.06', 'X-1').replace('Bell X-2 Mach 3.2', 'X-2').replace('加加林轨道飞行', '加加林').replace('X-15 7,274 km/h', 'X-15').replace('Apollo 10 返回', 'Apollo 10').replace('Artemis II 返回', 'Artemis II')
     for p in day: p['short'] = p['label'].replace('京津城际 350', '京津城际').replace('复兴号 350', '复兴号').replace('仍是 350 / 900', '高铁至今')
-    def li(p, cls=''):
+    def li(p):
         yr = '前 1800' if p['year'] < 1800 else str(p['year'])
         return f'<li><span class="y">{yr}</span><span>{esc(p["label"])} {conf(p.get("conf"))}</span><span class="v">{fmt(p["kmh"])} km/h</span><p>{esc(re.sub(r"^口径[：:]\s*", "", p.get("note","")))}</p></li>'
-    items = ''.join(f'<li>{x}</li>' for x in E.COUNTER['items'])
+    tiles = []
+    for it in E.COUNTER['items']:
+        vis = {'bar': '<div class="cvis bar"><i><b></b></i></div>', 'gauge': '<div class="cvis gauge2"><svg viewBox="0 0 120 70"><path class="g-track" d="M10 65 A50 50 0 0 1 110 65"/><path class="g-red" d="M60 15 A50 50 0 0 1 110 65"/><line class="cn" x1="60" y1="65" x2="60" y2="20" style="transform-origin:60px 65px"/></svg></div>',
+               'launch': '<div class="cvis strip"><i class="lane"></i><b class="dot"></b></div>', 'mach': '<div class="cvis machbar"><i></i><b></b><span>Mach 1</span></div>'}[it['kind']]
+        tiles.append(f'<div class="ctile fade" data-kind="{it["kind"]}" data-v="{it["v"]}" data-max="{it["max"]}" data-mark="{it.get("mark","")}"><div class="k">{esc(it["k"])}</div><div class="v"><b class="cnt" data-to="{it["v"]}" data-dec="{it["dec"]}">0</b><small>{esc(it["unit"])}</small></div>{vis}<details class="fold"><summary>为什么算反例</summary><p>{esc(it["d"])}</p></details></div>')
     return f'''<section class="chap" id="lines"><div class="wide">{chead("lines")}
-<figure class="lines-fig fade">{figs.lines_svg(rec_line, day)}<div class="lkey"><span><i></i>人类乘坐过的最快速度（载人纪录）</span><span><i class="k2"></i>普通人日常能坐到的最快速度（商业运营）</span><span>纵轴对数；横轴 1800 年起，更早的点压在左端</span></div></figure>
-<div class="cols2" style="margin-top:28px">
-<div class="fade"><details class="fold big"><summary><h3 class="sub-h">红线 · 乘坐过的最快 · 数据表</h3></summary><ul class="pts">{''.join(li(p) for p in rec)}</ul>{srcs([s for p in rec for s in p.get('sources', [])][:6])}</details></div>
-<div class="fade"><details class="fold big"><summary><h3 class="sub-h">黑线 · 日常能坐到的最快 · 数据表</h3></summary><ul class="pts day">{''.join(li(p) for p in day)}</ul>{srcs([s for p in day for s in p.get('sources', [])][:6])}</details>
-<div class="counter"><h3>{esc(E.COUNTER['title'])}</h3><ul>{items}</ul></div></div>
-</div></div></section>'''
+<figure class="lines-fig fade" id="lines-fig">{figs.lines_svg(rec_line, day)}
+<div class="lctl"><button type="button" class="dgo" id="ln-play">▶ 播放 1800 → 2026</button><input type="range" id="ln-yr" min="1800" max="2026" step="1" value="2026"><div class="lyr"><b id="ln-y">2026</b><span id="ln-rec">最快 <i>39,897</i></span><span id="ln-day">日常 <i>350</i></span></div><div class="lflash" id="ln-flash"></div></div>
+<div class="lkey"><span><i></i>人类乘坐过的最快速度（载人纪录）</span><span><i class="k2"></i>普通人日常能坐到的最快速度（商业运营）</span><span>纵轴对数</span></div></figure>
+<h3 class="sub-h">{esc(E.COUNTER['title'])}</h3>
+<div class="ctiles">{''.join(tiles)}</div>
+<details class="fold big fade" style="margin-top:22px"><summary><h3>数据表 · 两条线逐点口径与来源</h3></summary><div class="cols2"><div><h4>红线</h4><ul class="pts">{''.join(li(p) for p in rec)}</ul>{srcs([s for p in rec for s in p.get('sources', [])][:6])}</div><div><h4>黑线</h4><ul class="pts day">{''.join(li(p) for p in day)}</ul>{srcs([s for p in day for s in p.get('sources', [])][:6])}</div></div></details>
+</div></section>'''
 
 # ---------- 第四章
 def ch_walls():
-    order = ['tyre', 'rail', 'water', 'air', 'g', 'light']
+    order = [('tyre', '轮胎打滑'), ('rail', '接触网跳火'), ('water', '水翼空化'), ('air', '音障与热障'), ('g', '黑视'), ('light', '光速')]
     out = []
-    for wid in order:
+    for wid, short in order:
         w = WALLS[wid]
-        br = ''.join(f'<li>{esc(b)}</li>' for b in w.get('breakthroughs', []))
-        img = E.IMAGES.get('wall:' + wid)
-        ph = fig(img, 'ph') if img else ''
-        out.append(f'''<article class="wall fade"><div class="hd"><b>{esc(w['title'])}</b><span class="f">{esc(w['formula'])}</span></div>
-<div class="bd"><p>{esc(w['text'])}</p><h4 style="margin-top:14px">突破手段</h4><ul>{br}</ul><p class="ex"><b>今天的例子</b>{esc(w.get('example',''))}</p>{srcs(w.get('sources'))}<p class="small" style="margin:6px 0 0">置信度 {conf(w.get('conf'))}</p></div>{ph}</article>''')
-    return f'<section class="chap" id="walls"><div class="wide">{chead("walls")}<div class="walls">{"".join(out)}</div></div></section>'
+        br = ''.join(f'<li>{esc(x)}</li>' for x in w.get('breakthroughs', []))
+        out.append(f'''<article class="wall fade" id="wall-{wid}"><div class="hd"><b>{esc(w['title'])}</b><span class="f">{esc(w['formula'])}</span></div>
+{demos.WALL_DEMOS[wid]()}
+<details class="fold"><summary>这面墙是怎么回事、谁撞过、怎么绕过去</summary><p>{esc(w['text'])}</p><h4>突破手段</h4><ul>{br}</ul><p class="ex"><b>今天的例子</b>{esc(w.get('example',''))}</p>{srcs(w.get('sources'))}<p class="small">置信度 {conf(w.get('conf'))}</p></details></article>''')
+    return f'<section class="chap" id="walls"><div class="wide">{chead("walls")}<div class="snd fade"><button type="button" id="snd-btn" aria-pressed="false">声音：关</button><span>打开后撞墙有音爆、跳火、ABS 的点击（程序合成，没有采样）。</span></div><div class="walls">{"".join(out)}</div></div></section>'
 
 # ---------- 第五章 · 驾驭
 HARNESS_IMG = {'x15-rcs': 'x15', 'apollo-reentry': 'apollo_cm', 'falcon9-landing': 'falcon9', 'thrust-ssc': 'thrustssc', 'three-point-hydroplane': 'spiritoz',
@@ -188,68 +197,52 @@ HARNESS_IMG = {'x15-rcs': 'x15', 'apollo-reentry': 'apollo_cm', 'falcon9-landing
                'animal-control': 'cheetah', 'concorde-cg': 'concorde'}
 KIND_CLS = {'宣称': 'claim', '实测': 'meas', '官方': 'off', '设计值': 'des'}
 def ch_harness():
-    facts = ''.join(f'<li><p>{esc(f["fact"])}</p>{srcs(f.get("sources"))}</li>' for f in H['intro_facts'])
     cards = []
     for c in H['cards']:
+        measure, demo = E.MEASURE.get(c['id'], (c['title'], ''))
         img = HARNESS_IMG.get(c['id']); im = IM.get(img) if img else None
-        ph = (f'<figure class="hph"><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{esc(E.CAPTIONS.get(img, im.get("caption", "")))} 图：{esc(im["author"])}，{esc(im["license"])}。</figcaption></figure>') if im else ''
-        nums = ''.join(f'<div><span>{esc(n["k"])}</span><b>{esc(n["v"])}</b><i class="tag kind {KIND_CLS.get(n.get("kind"), "off")}">{esc(n.get("kind", ""))}</i></div>' for n in c.get('numbers', []))
+        ph = (f'<figure class="hph"><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{esc(E.CAPTIONS.get(img, im.get("caption", "")))} 图：{esc(im["author"])}，{esc(im["license"])}。</figcaption></figure>') if (im and not demo) else ''
+        dm = demos.H_DEMOS[demo]() if demo else ''
+        nums = ''.join(f'<div><span>{esc(n["k"])}</span><b>{esc(n["v"])}</b><i class="tag kind {KIND_CLS.get(n.get("kind"), "off")}">{esc(n.get("kind", ""))}</i></div>' for n in c.get('numbers', [])[:(8 if c['id'] == 'roadster-2026' else 4)])
         link = f'<p class="hlink">{esc(c["link"])}</p>' if c.get('link') else ''
-        cards.append(f'''<article class="hcard fade" id="h-{esc(c['id'])}">{ph}
+        cards.append(f'''<article class="hcard fade{' demo-card' if demo else ''}" id="h-{esc(c['id'])}">{ph}
 <div class="hbd"><div class="hhd"><span class="tag">{esc(c['domain'])}</span><span class="hyr">{esc(c['year'])}</span>{conf(c.get('conf'))}</div>
-<h3>{esc(c['title'])}</h3>
-<p class="hprob"><b>失控的原因</b>{esc(c['problem'])}</p>
-<p class="hsol"><b>解法</b>{esc(c['solution'])}</p>
+<h3>{esc(measure)}</h3><p class="hsub">{esc(c['title'])}</p>
+{dm}
 <div class="hnums">{nums}</div>
-<p class="hcost"><b>代价 / 争议</b>{esc(c['cost'])}</p>{link}
-<details class="fold"><summary>来源</summary>{srcs(c.get('sources'))}</details></div></article>''')
+<details class="fold"><summary>失控的原因、解法、代价与来源</summary><p class="hprob"><b>失控的原因</b>{esc(c['problem'])}</p><p class="hsol"><b>解法</b>{esc(c['solution'])}</p><p class="hcost"><b>代价 / 争议</b>{esc(c['cost'])}</p>{link}{srcs(c.get('sources'))}</details></div></article>''')
     return f'''<section class="chap" id="harness"><div class="wide">{chead("harness")}
-<ul class="facts fade">{facts}</ul>
 <div class="hgrid">{''.join(cards)}</div></div></section>'''
 
 # ---------- 第六章
 def ch_cards():
-    tags = ['全部', '商业', '政治', '技术', '规则', '文化']
-    chips = ''.join(f'<button type="button" data-tag="{t}" aria-pressed="{"true" if t=="全部" else "false"}">{t}</button>' for t in tags)
-    cards = []
-    for c in sorted(C['cards'], key=lambda c: int(re.match(r'\d{4}', c['year']).group(0)) if re.match(r'\d{4}', c['year']) else 0):
-        img = E.IMAGES.get('card:' + c['id'])
-        ph = fig(img, 'cph') if img else ''
-        ph = ph.replace('class="cph"', '')
-        cards.append(f'''<article class="card fade" data-tag="{esc(c['tag'])}" data-era="{c['era']}"><span class="tag">{esc(c['tag'])}</span><div class="y">{esc(c['year'])}</div><h3>{esc(c['title'])}</h3><p>{esc(c['text'])}</p>
-<div class="n"><b>{esc(c.get('number',''))}</b>{conf(c.get('conf'))}</div>{('<details><summary>来源</summary>' + srcs(c.get('sources')) + '</details>') if c.get('sources') else '<p class="small" style="margin:6px 0 0">通行说法，未找到可引的一手来源。</p>'}{ph}</article>''')
-    return f'''<section class="chap" id="cards"><div class="wide">{chead("cards")}
-<div class="chips" id="chips">{chips}<span class="cnt" id="ccnt"></span></div>
-<div class="cards" id="cardgrid">{''.join(cards)}</div></div></section>'''
+    groups = [('商业', '钱'), ('政治', '国旗'), ('技术', '能不能'), ('规则', '许不许'), ('文化', '敢不敢')]
+    cols = []
+    for tag, word in groups:
+        cs = [c for c in C['cards'] if c['tag'] == tag]
+        cs.sort(key=lambda c: int(re.match(r'\d{4}', c['year']).group(0)) if re.match(r'\d{4}', c['year']) else 0)
+        items = ''.join(f'''<article class="why fade" id="why-{esc(c['id'])}"><div class="wy">{esc(c['year'])}</div><h3>{esc(c['title'])}</h3><p class="wq">{esc(E.WHY.get(c['id'], ''))}</p><div class="wn">{esc(c.get('number',''))} {conf(c.get('conf'))}</div><details class="fold"><summary>展开</summary><p>{esc(c['text'])}</p>{srcs(c.get('sources')) or '<p class="small">通行说法，未找到可引的一手来源。</p>'}</details></article>''' for c in cs)
+        cols.append(f'<div class="wcol" data-tag="{tag}"><div class="wh"><b>{esc(tag)}</b><span>{esc(word)}</span><em>{len(cs)}</em></div>{items}</div>')
+    return f'''<section class="chap" id="why"><div class="wide">{chead("why")}
+<div class="wcols">{''.join(cols)}</div></div></section>'''
 
 # ---------- 第六章
 def ch_tools():
-    T1, T2 = E.TOOL1, E.TOOL2
-    p1 = ''.join(f'<button type="button" data-v="{v}">{esc(n)} {(fmt(v) if v != 44.72 else "44.72")}</button>' for n, v in T1['presets'])
-    p2 = ''.join(f'<button type="button" data-t="{v}">{esc(n)}</button>' for n, v in T2['presets'])
     return f'''<section class="chap" id="tools"><div class="wide">{chead("tools")}<div class="tools">
-<div class="tool fade"><div class="hd"><b>{esc(T1['title'])}</b><p>{esc(T1['sub'])}</p></div><div class="bd">
-<div class="frow"><label for="spd-v">速度</label><input id="spd-v" type="number" inputmode="decimal" min="0" step="any" value="350"><select id="spd-u"><option value="1">km/h</option><option value="3.6">m/s</option><option value="1.609344">mph</option><option value="1.852">节</option><option value="1225">马赫（海平面）</option></select></div>
-<div class="presets">{p1}</div><ul class="out" id="spd-out"></ul>
-<p class="small" style="margin:10px 0 0">参照：步行 5、博尔特 44.72、猎豹 98、高铁 350、客机 900、音速 1,225（海平面 15 °C）、第一宇宙速度 28,440、光速 1,079,252,849 km/h；{esc(T1['china_src'])}；{esc(T1['bj_sh_src'])}。</p></div></div>
-<div class="tool fade"><div class="hd"><b>{esc(T2['title'])}</b><p>{esc(T2['sub'])}</p></div><div class="bd">
-<div class="frow"><label for="acc-t">0–100 km/h 用时</label><input id="acc-t" type="number" inputmode="decimal" min="0.05" step="0.01" value="5"><span class="small">秒</span><label class="small" style="margin-left:8px"><input type="checkbox" id="acc-60"> 按 0–60 mph（96.56 km/h）算</label></div>
-<div class="presets">{p2}</div>
-<div class="gauge"><div><b id="g-a">—</b><span>平均加速度 m/s²</span></div><div><b id="g-g">—</b><span>平均 g</span></div><div><b id="g-mu">—</b><span>纯靠轮胎需要的摩擦系数 μ</span></div></div>
-<p class="verdict" id="g-v"></p>
-<p class="small" style="margin:10px 0 0">干沥青上量产胎 μ 约 1.0–1.2，赛道胶处理与半热熔胎可到 1.3 上下；μ 再往上，要么靠风扇 / 吸附产生起步时的下压力，要么靠不经过轮胎的推力（火箭、冷气推进器）。厂商的 0–60 mph 常含 1 英尺 rollout，比 0–100 km/h 的口径更宽松。人体短时可承受的加速度远高于这些值（第四章）。</p></div></div>
-</div></div></section>'''
+<div class="tool fade"><div class="hd"><b>比速度</b><p>输入一个速度，和步行、博尔特、高铁、客机、音速同场跑 10 秒。</p></div><div class="bd">{demos.race()}</div></div>
+<div class="tool fade"><div class="hd"><b>比起步</b><p>两辆车各自的 0–100（或 0–60 mph）秒数，看谁先到 200 米。</p></div><div class="bd">{demos.drag()}</div></div>
+</div><p class="small" style="margin-top:12px">参照：步行 5、博尔特 44.72、高铁 350、客机 900、音速 1,225 km/h（海平面 15 °C）；京沪高铁 1,318 km。</p></div></section>'''
 
 # ---------- 卷末
 def refs_block():
     groups = [('第一章 · 这一周', [s for n in C['now'] for s in n.get('sources', [])]),
-              ('第二章 · 矩阵（陆上轮式 / 铁路 / 水上）', [s for c in A['cells'] for s in c.get('sources', []) + c.get('also', {}).get('sources', [])]),
+              ('第二章 · 五条赛道（陆上轮式 / 铁路 / 水上）', [s for c in A['cells'] for s in c.get('sources', []) + c.get('also', {}).get('sources', [])]),
               ('序章 · 速度之旅', [s for l in journey.LEVELS for s in (src_lookup_raw(l['src']) or [])]),
-              ('第二章 · 矩阵（空中 / 太空 / 人体与动物）与速度尺', [s for c in B['cells'] for s in c.get('sources', []) + c.get('also', {}).get('sources', [])] + [s for c in B['scale'] for s in c.get('sources', [])]),
+              ('第二章 · 五条赛道（空中 / 太空 / 人体与动物）与速度尺', [s for c in B['cells'] for s in c.get('sources', []) + c.get('also', {}).get('sources', [])] + [s for c in B['scale'] for s in c.get('sources', [])]),
               ('第三章 · 两条总线', [s for p in B['record_line'] + C['daily_line'] for s in p.get('sources', [])]),
               ('第四章 · 物理墙', [s for w in WALLS.values() for s in w.get('sources', [])]),
               ('第五章 · 驾驭', [s for c in H['cards'] for s in c.get('sources', [])] + [s for f in H['intro_facts'] for s in f.get('sources', [])]),
-              ('第六章 · 卡片', [s for c in C['cards'] for s in c.get('sources', [])])]
+              ('第六章 · 为什么要快', [s for c in C['cards'] for s in c.get('sources', [])])]
     out = []
     for g, ss in groups:
         seen, items = set(), []
@@ -294,11 +287,15 @@ def data():
         cells[f'{t}-{e}']['era'] = f'{E.ERAS[e][0]} {E.ERAS[e][1]}'
         if im: cells[f'{t}-{e}']['img'] = {'file': 'assets/' + im['file'], 'cap': E.CAPTIONS.get(img, im.get('caption', '')), 'credit': f'{im["author"]}，{im["license"]}', 'alt': im['subject']}
     scale = {s['id']: s for s in B['scale']}
-    return {'cells': cells, 'scale': scale, 'journey': journey.data(), 'tool1': {'china': E.TOOL1['china_ew_km'], 'bjsh': E.TOOL1['bj_sh_km']}}
+    rec = sorted(B['record_line'], key=lambda p: p['year']); rl, mx = [], 0
+    for p in rec:
+        if p['kmh'] > mx: rl.append({'y': max(p['year'], 1790), 'v': p['kmh'], 'n': p['short']}); mx = p['kmh']
+    dl = [{'y': p['year'], 'v': p['kmh'], 'n': p['short']} for p in sorted(C['daily_line'], key=lambda p: p['year'])]
+    return {'cells': cells, 'scale': scale, 'journey': journey.data(), 'lines': {'rec': rl, 'day': dl}, 'tool1': {'china': E.TOOL1['china_ew_km'], 'bjsh': E.TOOL1['bj_sh_km']}}
 
 def main():
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
-    app = open(os.path.join(HERE, 'app.js'), encoding='utf-8').read()
+    app = open(os.path.join(HERE, 'app.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'demos.js'), encoding='utf-8').read()
     dark = ('@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + DARK + '}}\n:root[data-theme="dark"]{' + DARK + '}')
     body = hero() + cnav() + '<main>' + ch_journey() + ch_now() + ch_matrix() + ch_lines() + ch_walls() + ch_harness() + ch_cards() + ch_tools() + '</main>' + endm()
     page = (tpl.replace('{{TITLE}}', esc(E.META['title'])).replace('{{DESCRIPTION}}', esc(E.META['desc'])).replace('{{DARK_BLOCKS}}', dark)

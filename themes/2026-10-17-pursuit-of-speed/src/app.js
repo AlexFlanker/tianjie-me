@@ -145,14 +145,14 @@
   var mxd = $('#mxd');
   function showCell(key) {
     var c = D.cells[key]; if (!c || !mxd) return;
-    $$('.cell').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-cell') === key); });
+    $$('[data-cell]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-cell') === key); });
     var also = c.also ? '<dt>同格另一条</dt><dd><b>' + esc(c.also.subject) + '</b> · ' + esc(c.also.speed) + ' · ' + esc(c.also.who) + '。' + esc(c.also.why || '') + (c.also.note ? ' ' + esc(c.also.note) : '') + ' ' + conf(c.also.conf) + srcs(c.also.sources) + '</dd>' : '';
     var ph = c.img ? '<figure class="ph"><img src="' + esc(c.img.file) + '" alt="' + esc(c.img.alt) + '" loading="lazy"><figcaption>' + esc(c.img.cap) + ' 图：' + esc(c.img.credit) + '。</figcaption></figure>' : '<div class="ph none">本格没有合规照片，只用文字。</div>';
     mxd.innerHTML = '<div class="txt"><div class="kicker">' + esc(c.track) + ' · ' + esc(c.era) + '</div><h3>' + esc(c.subject) + '</h3><p class="big">' + fmt(c.kmh) + '<small>km/h</small></p><p class="spd">' + esc(c.speed) + ' ' + conf(c.conf) + '</p>'
       + '<dl><dt>年份</dt><dd>' + esc(c.year) + '</dd><dt>谁</dt><dd>' + esc(c.who) + (c.where ? '，' + esc(c.where) : '') + '</dd><dt>为什么是它</dt><dd>' + esc(c.why) + '</dd>' + (c.note ? '<dt>口径</dt><dd>' + esc(c.note) + '</dd>' : '') + also + '</dl>' + srcs(c.sources) + '</div>' + ph;
   }
   document.addEventListener('click', function (ev) {
-    var b = ev.target.closest('.cell[data-cell]'); if (!b) return;
+    var b = ev.target.closest('[data-cell]'); if (!b) return;
     showCell(b.getAttribute('data-cell'));
     mxd.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   });

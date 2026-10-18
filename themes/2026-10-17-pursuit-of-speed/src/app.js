@@ -90,8 +90,9 @@
       if (needle) needle.style.transform = 'rotate(' + (-135 + 270 * L.f) + 'deg)';
       if (gfill) gfill.style.strokeDasharray = L.f + ' 1';
       countTo(jnum, L.kmh, 0, instant ? 0 : 900);
-      if (jalt) jalt.textContent = num(L.kmh / 1.609344, L.kmh < 100 ? 1 : 0) + ' mph · Mach ' + (L.kmh / 1225 < 0.01 ? (L.kmh / 1225).toFixed(4) : L.kmh / 1225 > 1000 ? num(L.kmh / 1225, 0) : (L.kmh / 1225).toFixed(2)) + ' · 北京到上海 ' + (function (h) { return h >= 1 ? num(h, 1) + ' 小时' : h * 60 >= 1 ? num(h * 60, 1) + ' 分钟' : num(h * 3600, 2) + ' 秒'; })(D.tool1.bjsh / L.kmh);
-      if (jk) jk.textContent = L.kicker; if (jt) jt.textContent = L.name; if (jidx) jidx.textContent = (i < 9 ? '0' : '') + (i + 1);
+      if (jalt) jalt.textContent = num(L.kmh / 1.609344, L.kmh < 100 ? 1 : 0) + ' mph · Mach ' + (L.kmh / 1225 < 0.01 ? (L.kmh / 1225).toFixed(4) : L.kmh / 1225 > 1000 ? num(L.kmh / 1225, 0) : (L.kmh / 1225).toFixed(2)) + ' · 北京到上海 ' + (function (h) { return h >= 1 ? num(h, 1) + ' 小时' : h * 60 >= 1 ? num(h * 60, 1) + ' 分钟' : h * 3600 >= 0.1 ? num(h * 3600, 1) + ' 秒' : (h * 3600).toFixed(4) + ' 秒'; })(D.tool1.bjsh / L.kmh);
+      if (jk) jk.textContent = L.kicker;
+      $$('.veh-c b').forEach(function(x){}); if (jt) jt.textContent = L.name; if (jidx) jidx.textContent = (i < 9 ? '0' : '') + (i + 1);
       vehs.forEach(function (v, k) {
         if (k === i) { v.classList.remove('out'); v.classList.add('on'); }
         else if (k === prev) { v.classList.remove('on'); v.classList.add('out'); setTimeout(function () { v.classList.remove('out'); }, 600); }

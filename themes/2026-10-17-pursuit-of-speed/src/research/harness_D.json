@@ -1,0 +1,355 @@
+{
+  "intro_facts": [
+    {"fact": "NASA 的 X-29 前掠翼验证机质心在中性点之后约 35%，飞控计算机每秒最多 40 次下指令才能飞直；计算机全停时振幅 0.12 秒翻倍，NASA 原话是「没有任何人类操作者能把它稳住」。", "kind": "官方", "sources": [{"t": "NASA《Sweeping Forward》", "u": "https://www.nasa.gov/wp-content/uploads/2015/04/Sweeping_Forward.pdf"}], "conf": "高", "todo": ""},
+    {"fact": "美国空军把 F-16 称为「第一次使用放宽静稳定 / 电传飞控系统」的飞机：飞行员的杆不再连着舵面，只是向计算机提要求。", "kind": "官方", "sources": [{"t": "Osan AB F-16 Fact Sheet", "u": "https://www.osan.af.mil/About-Us/Fact-Sheets/Display/Article/1757435/"}], "conf": "高", "todo": ""},
+    {"fact": "阿波罗指令舱再入时改不了升力大小，只能靠小火箭滚转整个舱体来转动升力方向；Apollo 10 以约 11 km/s 进入大气，峰值 6.78 g，最终落在距目标 1.4 海里内。", "kind": "官方", "sources": [{"t": "NASA Apollo 10 Entry Postflight Analysis", "u": "https://www.nasa.gov/wp-content/uploads/static/history/afj/ap10fj/pdf/19730064165_a10mr-supp10-entry-postflight-analysis.pdf"}], "conf": "高", "todo": ""},
+    {"fact": "X-15 在约 100,000 英尺以上舵面推不动空气，靠机头和两翼的过氧化氢小火箭控姿态，俯仰 / 偏航各 113 磅力、滚转 40 磅力——与 Roadster 的冷气推进器是同一思路。", "kind": "官方", "sources": [{"t": "NASA TM X-56002 (1964)", "u": "https://ntrs.nasa.gov/api/citations/19640010769/downloads/19640010769.pdf"}, {"t": "NASA X-15 Fact Sheet", "u": "https://www.nasa.gov/centers/dryden/pdf/120306main_FS-052-DFRC.pdf"}], "conf": "高", "todo": ""},
+    {"fact": "Bosch 1978 年量产的 ABS 每秒最多 40 次调节制动压力，1995 年的 ESP 每秒 25 次比对车辆去向与方向盘指向；Rimac Nevera 的四电机扭矩矢量每秒调整 100 次。", "kind": "官方", "sources": [{"t": "Bosch 新闻稿", "u": "https://www.bosch-presse.de/pressportal/us/en/press-release-10958.html"}, {"t": "Rimac 新闻稿", "u": "https://www.rimac-newsroom.com/press-releases/rimac-automobili/rimac-nevera-r-becomes-new-0-400-0-champion-and-sets-24-performance-records"}], "conf": "高", "todo": ""}
+  ],
+  "cards": [
+    {
+      "id": "roadster-2026",
+      "title": "Roadster 演示：风扇吸附 + 冷气推进器 + 空中翻转",
+      "domain": "车",
+      "year": "2026",
+      "problem": "轮胎抓地力有上限，再快的加速、再猛的过弯都卡在摩擦系数上；离地之后更是没有任何气动或轮胎可用。",
+      "solution": "特斯拉 2026-10-15 在得州 Waco 的 SpaceX 试验场演示并宣称三套机构。一是「多模式吸附系统」：四台各约 20 kW 的风扇把车底抽成低压，高速时放下前后裙边，演示中车沿卷起的坡道倒置贴面行驶。二是 SpaceX 冷气推进器：Rocket 版 10 个喷口（每角一个向下、前部两个管偏航、后部四个管加速），10,000 psi 压缩空气，拆掉副驾装到 600 L。三是空中姿态：车飞离坡道末端后翻转 180° 以轮着地。展板写下压力约 4,700 kg、过弯超过 2 G；现场 0–60 mph 计时 0.81 s。",
+      "numbers": [
+        {"k": "推进器", "v": "10 个（Rocket 版），600 L、10,000 psi 压缩空气", "kind": "宣称"},
+        {"k": "后部四喷口推力", "v": "80 kN（Electrek 转述）", "kind": "宣称"},
+        {"k": "吸附风扇", "v": "4 台，合计约 80 kW", "kind": "宣称"},
+        {"k": "下压力", "v": "约 4,700 kg（展板）", "kind": "宣称"},
+        {"k": "过弯", "v": "> 2 G", "kind": "宣称"},
+        {"k": "0–60 mph", "v": "现场 0.81 s；宣称 0.55 s（顶配，含 1 ft rollout）", "kind": "宣称"},
+        {"k": "储气充填", "v": "目前 6–7 小时，目标 30 分钟", "kind": "宣称"}
+      ],
+      "cost": "Electrek 的 Jameson Dow 质疑：向上推力让轮胎受载变少、「大幅伤害性能」；4,700 kg 下压力对不到 1,700 kg 的车「大得出奇」（McMurtry Spéirling 约 1,000 kg 重、吸附 2,000 kg）。FAA 向 CBS 表示该车不符合「航空器」定义。量产 2028 年，全部为厂商宣称。",
+      "link": "本章其余各卡就是这三套机构的「老祖宗」：小火箭控姿态（X-15）、风扇吸地（Chaparral 2J、Brabham BT46B）、推力矢量着陆（Falcon 9）。",
+      "sources": [
+        {"t": "TechCrunch", "u": "https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/"},
+        {"t": "Electrek", "u": "https://electrek.co/2026/10/15/an-updated-technical-look-at-teslas-kick-flipping-0-60-in-1s-next-gen-roadster/"},
+        {"t": "CBS News", "u": "https://www.cbsnews.com/news/tesla-roadster-debut-elon-musk-flying-cars-are-real/"}
+      ],
+      "conf": "中",
+      "todo": "三个链接已核；FAA 原话 CBS 未直接引用，只转述。4,700 kg / 2 G 仅见于 Electrek 转述展板，TechCrunch 未提。"
+    },
+    {
+      "id": "x15-rcs",
+      "title": "X-15：舵面没用的地方，用小火箭",
+      "domain": "航天",
+      "year": "1959–1968",
+      "problem": "飞到 80 km 以上，动压接近零，常规气动舵面推不动空气，飞机会自由翻滚。",
+      "solution": "X-15 装了一套反作用控制系统：机头并排布置俯仰与偏航小火箭，两翼布置滚转小火箭，推进剂是 90% 浓度过氧化氢，经银网催化床分解成高压蒸汽与氧气从喷管喷出；俯仰、偏航火箭最大推力各 113 磅力，滚转火箭 40 磅力。飞行员用座舱左侧一根独立小杆操作，三号机的自适应飞控把气动舵与火箭合并，按动压自动切换。NASA 1964 年的运行报告称这套系统在约 100,000 英尺（动压 100 psf）以上接管姿态。1963-08-22 Joseph Walker 飞到 354,200 英尺（107.96 km），全靠它控姿态。",
+      "numbers": [
+        {"k": "最高高度", "v": "354,200 ft（107.96 km，1963-08-22，Walker）", "kind": "官方"},
+        {"k": "最高速度", "v": "4,520 mph（7,274 km/h，Mach 6.7，1967-10-03，Knight）", "kind": "官方"},
+        {"k": "小火箭推力", "v": "俯仰 / 偏航各 113 lbf，滚转 40 lbf", "kind": "设计值"},
+        {"k": "推进剂", "v": "90% 过氧化氢", "kind": "官方"}
+      ],
+      "cost": "1967-11-15 Michael Adams 驾驶三号机进入尾旋后改出，却因自适应飞控故障无法从倒飞俯冲中拉起，机毁人亡——姿态控制与飞控「谁说了算」的问题至今没有标准答案。",
+      "link": "Roadster 冷气推进器的直系祖先：空气帮不上忙时，自己带反作用力。差别是 X-15 用化学分解的热气，Roadster 用冷压缩空气。",
+      "sources": [
+        {"t": "NASA Dryden X-15 Fact Sheet FS-052", "u": "https://www.nasa.gov/centers/dryden/pdf/120306main_FS-052-DFRC.pdf"},
+        {"t": "NASA TM X-56002《Operational Experience with X-15 Reaction Controls》(1964)", "u": "https://ntrs.nasa.gov/api/citations/19640010769/downloads/19640010769.pdf"}
+      ],
+      "conf": "高",
+      "todo": "「100,000 ft」一句来自 OCR，原扫描件建议复核"
+    },
+    {
+      "id": "apollo-reentry",
+      "title": "阿波罗再入：滚转控升力",
+      "domain": "航天",
+      "year": "1968–1972",
+      "problem": "以约 11 km/s 从月球返回，再入角太陡过载会压死人，太浅会弹出大气层。",
+      "solution": "指令舱的质心故意偏离中轴，再入时以固定攻角飞行，高超音速升阻比约 0.31。制导计算机改不了升力大小，只能用姿态小火箭滚转整个舱体：升力朝上拉平过载，朝下压进大气，左右翻转修横向落点。Apollo 10 以 36,309 ft/s（约 11.07 km/s）进入大气，先升力朝上飞恒定减速段，过载降到 5.44 g 以下时翻到 −180°，末段平均滚转角约 70°，四次左右换向，最终落在距目标 1.4 海里内。峰值过载 6.78 g。",
+      "numbers": [
+        {"k": "再入速度", "v": "36,309 ft/s（约 39,850 km/h，Apollo 10，惯性速度）", "kind": "官方"},
+        {"k": "峰值过载", "v": "6.78 g（Apollo 10 再入分析，遥测值 6.77 g）", "kind": "官方"},
+        {"k": "升阻比", "v": "0.31（高超音速段实测）", "kind": "实测"},
+        {"k": "落点误差", "v": "1.4 海里（舱载计算机估计）", "kind": "官方"}
+      ],
+      "cost": "没有翼面，一切都压在小火箭和计算机上：同一份报告里，若忽略滚转姿态误差重算，落点会偏 133 海里。再入走廊只有几度宽，陡了压死人，浅了弹回太空。",
+      "link": "Roadster 的「空中翻转 180° 落地」同样是把整车当姿态控制对象——阿波罗 1969 年就靠翻滚来「驾驶」一个没有翅膀的东西。",
+      "sources": [
+        {"t": "NASA Apollo 10 Mission Report Supplement 10: Entry Postflight Analysis", "u": "https://www.nasa.gov/wp-content/uploads/static/history/afj/ap10fj/pdf/19730064165_a10mr-supp10-entry-postflight-analysis.pdf"},
+        {"t": "NASA Apollo 10 Mission Report", "u": "https://www.nasa.gov/wp-content/uploads/static/history/afj/ap10fj/pdf/a10-mission-report.pdf"}
+      ],
+      "conf": "高",
+      "todo": ""
+    },
+    {
+      "id": "falcon9-landing",
+      "title": "猎鹰 9：栅格翼 + 发动机摆动着陆",
+      "domain": "航天",
+      "year": "2015",
+      "problem": "一根 40 多米高的火箭芯级，要倒着从超音速减到零，且只能靠底部一台发动机。",
+      "solution": "分离后，一级先用冷气推进器脉冲把 156 英尺高的箭体掉头，再点燃九台 Merlin 中的一部分做回推点火；再入大气时顶端四片可动栅格翼负责气动稳定与转向；最后中央一台发动机点火减速，推力矢量靠发动机摆动，四条着陆腿展开落地。2015-12-21 Orbcomm OG2 任务中，一级在发射后约 10 分钟回到卡纳维拉尔角原 SLC-13 改建的 Landing Zone 1，是轨道级火箭首次陆上回收。",
+      "numbers": [
+        {"k": "首次陆上回收", "v": "2015-12-21（Landing Zone 1，Orbcomm OG2）", "kind": "官方"},
+        {"k": "一级高度", "v": "156 ft（约 47.5 m）", "kind": "官方"},
+        {"k": "栅格翼 / 着陆腿", "v": "4 片 / 4 条", "kind": "官方"},
+        {"k": "回推高度", "v": "60 英里以上", "kind": "官方"}
+      ],
+      "cost": "此前多次驳船着陆爆炸；单台发动机最小推力仍大于一级着陆重量，不能悬停，减速曲线必须正好在触地那一刻归零。",
+      "link": "Roadster 的「冷气推进器翻身 + 气动面 + 推力」三层组合，与猎鹰 9 回收的分层逻辑一模一样，只是把着陆腿换成了轮子。",
+      "sources": [
+        {"t": "Spaceflight Now（2015-12-19 着陆计划）", "u": "https://spaceflightnow.com/2015/12/19/rocket-landing-at-cape-canaveral-planned-after-sundays-spacex-launch/"},
+        {"t": "Universe Today（2015-12-21 着陆报道）", "u": "https://universetoday.com/124020/successful-spacex-launch"}
+      ],
+      "conf": "中",
+      "todo": "SpaceX 官网车辆页抓不到正文，缺一手口径；「不能悬停」为业内常识，未找官方句"
+    },
+    {
+      "id": "thrust-ssc",
+      "title": "Thrust SSC：超音速下的偏航修正",
+      "domain": "车",
+      "year": "1997",
+      "problem": "超音速时车底激波改变下压力分布，车身前后抓地在瞬间翻转，轻微偏航就会被放大。",
+      "solution": "两台 Rolls-Royce Spey 202 涡扇装在前轮正上方，迫使设计师 Ron Ayers 采用后轮转向：前轮固定在进气口外侧，两个后轮前后错开排在中轴上，像船舵。没有风洞能做 800 mph 的滚动路面，气动靠 Swansea 大学 Cray 超算的 CFD 加上 1/25 火箭滑车模型（0.8 秒加到 800 mph）互相印证。吉尼斯引用车手 Andy Green：「在 200 mph 够用的下压力，到 700 mph 会把车砸进地里」，因此气动、悬架和控制面随速度自动调整。1997 年 5 月在约旦 350 mph 以上时车开始摆动，「方向盘每一个微小动作都造成一次需要再修正的摆动」，Green 形容像用指尖立一支铅笔。1997-10-15 在黑岩沙漠双向平均 1,227.985 km/h（Mach 1.02）。",
+      "numbers": [
+        {"k": "纪录", "v": "1,227.985 km/h（763.035 mph，Mach 1.02，FIA 认证，双向平均，1997-10-15）", "kind": "官方"},
+        {"k": "推力", "v": "两台 Spey 202 合计 44,000 lbf（196 kN）以上", "kind": "设计值"},
+        {"k": "转向", "v": "后轮转向，两后轮前后错开排列", "kind": "官方"},
+        {"k": "车载仪表", "v": "120 个以上传感器", "kind": "官方"}
+      ],
+      "cost": "后轮转向反直觉，团队用一辆改装 Mini 让 Green 练手；车身中部的激波被微型飞机拍到，音爆让 10 英里外 Gerlach 镇居民以为地震。",
+      "link": "陆地纪录的难点不在推力而在气动：下压力随速度的变化必须「主动管理」，这正是 Roadster 吸附系统要解决的同一道题。",
+      "sources": [
+        {"t": "Guinness World Records · Andy Green 专页", "u": "https://www.guinnessworldrecords.com/records/hall-of-fame/andy-green-fastest-car-land-speed-record"},
+        {"t": "ASME Landmark #256 Thrust SSC", "u": "https://www.asme.org/About-ASME/Engineering-History/Landmarks/256-Thrust-SSC-Supersonic-Car"},
+        {"t": "The Engineer《In pursuit of the land speed record》", "u": "https://www.theengineer.co.uk/content/in-depth/in-pursuit-of-the-land-speed-record"}
+      ],
+      "conf": "高",
+      "todo": "Mach 数：ASME / 吉尼斯写 1.02，FIA 常引 1.016，页面按 1.02 并注"
+    },
+    {
+      "id": "three-point-hydroplane",
+      "title": "三点式水翼艇：靠三个触点在水上跑",
+      "domain": "水上",
+      "year": "1967 / 1978",
+      "problem": "高速时艇体大部分离水，只剩三个小接触点，攻角稍一变大，气动升力就把艇翻过来。",
+      "solution": "三点式水翼艇只用两个前浮筒和一个尾部触点踩在水面上，艇身其余部分像机翼一样被空气托着，所以俯仰角是生死线：Bluebird K7 的安全俯仰角 5.5°，300 mph 时计算起飞角约 6°。1967-01-04 Donald Campbell 在 Coniston 湖第一程平均 297.6 mph、峰值 311 mph，未加油即掉头，第二程超过 320 mph 时右浮筒反复弹离水面，艇体超过气动静稳定极限抬头腾空、翻滚入水，Campbell 遇难；逐帧分析还发现前一天撞鸭子撞瘪了左前横梁整流罩，发动机在腾空前已熄火。Ken Warby 在悉尼郊区自家后院用两年造出木壳三点艇 Spirit of Australia，装一台 65 美元买来的军剩喷气发动机，1978 年在 Blowering 水库跑出 511.11 km/h。",
+      "numbers": [
+        {"k": "水上纪录", "v": "511.11 km/h（317.6 mph，1978-10-08，Warby，Blowering Dam，UIM）", "kind": "官方"},
+        {"k": "K7 安全俯仰角", "v": "5.5°；300 mph 计算起飞角 6°", "kind": "设计值"},
+        {"k": "Campbell 末程", "v": "> 320 mph（约 515 km/h），后算峰值 328 mph", "kind": "实测"},
+        {"k": "K7 旧纪录", "v": "444.71 km/h（276.33 mph，1964-12-31）", "kind": "官方"}
+      ],
+      "cost": "1978 年后无人打破水上纪录，此后多位挑战者死于翻艇；三点艇的控制余量只有一两度攻角，这是速度史上「控制比动力更难」最直白的例子。",
+      "link": "Roadster 的风扇吸地是在「怎样不离地」上做文章——三点艇是反面教材：一旦空气把你托起来，没有任何舵面能救你。",
+      "sources": [
+        {"t": "澳大利亚国家海事博物馆 · Spirit of Australia 藏品页", "u": "https://collections.sea.museum/objects/6651/spirit-of-australia"},
+        {"t": "Wikipedia · Bluebird K7（含 Mitchell & Sheppard 逐帧分析、Express 1967 报告）", "u": "https://en.wikipedia.org/wiki/Bluebird_K7"}
+      ],
+      "conf": "中",
+      "todo": "Campbell 事故分析只有维基汇总，未回到 Ruskin 博物馆 / Bluebird Project 一手页；UIM 官方纪录页未打开"
+    },
+    {
+      "id": "f1-aero",
+      "title": "F1：地面效应、主动悬架与可动翼",
+      "domain": "赛车",
+      "year": "1977–2026",
+      "problem": "下压力越大越快，但下压力依赖离地高度，车一抬起来就瞬间消失。",
+      "solution": "Lotus 78/79（1977–78）把侧箱做成倒机翼并用裙边封住车底，地面效应让下压力随速度猛增。1978 年 Gordon Murray 的 Brabham BT46B 走另一条路：由变速箱驱动一台风扇把密封车底抽真空，Murray 的说法是下压力「来自发动机转速而不是车速」，Lauda 在瑞典站首战即胜；FOCA 协商后车队自行撤回，次日 CSI 以「安全理由」立即禁用。Williams FW14B（1992）用主动液压悬架把车高锁在最佳位置，FIA 自 1994 年起禁用主动悬架等电子辅助。DRS 2011 年允许直道打开尾翼减阻。FIA 2026 规则改为主动空气动力：三片式尾翼全部可动，前翼双片可动襟翼，弯道「Z 模式」、直道「X 模式」低阻；车身下压力比上代减 30%、阻力减 55%，最低重量 768 kg。",
+      "numbers": [
+        {"k": "BT46B", "v": "1978 瑞典站一战一胜，随即被禁", "kind": "官方"},
+        {"k": "主动悬架禁用", "v": "1994 赛季起", "kind": "官方"},
+        {"k": "2026 可动翼", "v": "尾翼 3 片全动，前翼 2 片襟翼；X / Z 模式", "kind": "官方"},
+        {"k": "2026 气动", "v": "下压力 −30%，阻力 −55%，最低 768 kg", "kind": "官方"}
+      ],
+      "cost": "风扇车被指向后车喷碎石；地面效应时代裙边失效即瞬间失去下压力，1982 年多起重伤亡；1994 年取消电子辅助后车更难驾驭，同年 Senna 遇难引发安全大讨论。",
+      "link": "Roadster 的「多模式吸附系统」就是 Chaparral 2J（1970）和 BT46B 的风扇翻版：下压力不再依赖车速。F1 两次把它禁掉，特斯拉把它卖给路人。",
+      "sources": [
+        {"t": "FIA · 2026 规则发布", "u": "https://fia.com/node/51855"},
+        {"t": "Formula1.com · 2026 气动规则解读（X / Z 模式）", "u": "https://www.formula1.com/en/latest/article/explained-2026-aerodynamic-regulations-fia-x-mode-z-mode-.26c1CtOzCmN3GfLMywrgb2"},
+        {"t": "Motor Sport Magazine《Vacuum clean-up》(1998)", "u": "https://www.motorsportmagazine.com/archive/article/may-1998/65/vacuum-clean/"}
+      ],
+      "conf": "高",
+      "todo": "Lotus 79 / FW14B 战绩与 1994 禁令、DRS 2011 凭常识，未单独核；FIA 页未写 DRS 取消"
+    },
+    {
+      "id": "traction-control",
+      "title": "ABS、ESC 到四电机扭矩矢量",
+      "domain": "车",
+      "year": "1978–2026",
+      "problem": "轮胎在 10–20% 滑移率时抓地最大，超过就打滑；人脚的反应速度做不到毫秒级调节。",
+      "solution": "Bosch 历经九年开发，1978 年量产第一套电控 ABS，首装奔驰 450 SEL 6.9：车轮一抱死就降压、再加压，每秒最多 40 次。1995 年 Bosch 与奔驰推出 ESP：每秒 25 次比较车辆实际运动方向与方向盘指向，不一致就减扭矩并单独制动某个轮子；Bosch 估计仅欧盟就避免近 50 万起事故。电动车把这套逻辑搬到驱动端：Rimac Nevera 四台电机独立驱动，扭矩矢量系统「每秒 100 次计算并调整每个轮子的动力」，2023 年在 Papenburg 由 Dewesoft 独立计时 0–100 km/h 1.81 s；2025 年 Nevera R 做到 1.72 s、0–400–0 km/h 25.79 s。",
+      "numbers": [
+        {"k": "ABS 量产", "v": "1978 年，Bosch / 奔驰 450 SEL 6.9；每秒最多 40 次调压", "kind": "官方"},
+        {"k": "ESP 量产", "v": "1995 年，Bosch / 奔驰 S 级等；每秒 25 次比对", "kind": "官方"},
+        {"k": "Nevera 扭矩矢量", "v": "四电机，每秒 100 次调整", "kind": "宣称"},
+        {"k": "Nevera 0–100 km/h", "v": "1.81 s（Nevera，Dewesoft 独立计时）；1.72 s（Nevera R，2025）", "kind": "实测"},
+        {"k": "Model S Plaid 0–60 mph", "v": "1.99 s（厂商，含 1 ft rollout）", "kind": "宣称"}
+      ],
+      "cost": "加速数字口径之争不断：1 ft rollout、预备胶面、是否独立计时；控制越好，驾驶者越感觉不到车辆的真实极限。",
+      "link": "Roadster 的 0.55 s 要靠推进器而非轮胎，等于承认四电机控制已经把摩擦上限用尽——下一步只能找轮胎以外的力。",
+      "sources": [
+        {"t": "Bosch 新闻稿（ABS / ESP 历史与每秒调节次数）", "u": "https://www.bosch-presse.de/pressportal/us/en/press-release-10958.html"},
+        {"t": "Mercedes-Benz《40 years of assistance systems》", "u": "https://mercedes-benz.com/en/innovation/milestones/40-years-of-assistance-systems"},
+        {"t": "Rimac 新闻稿 · Nevera R 纪录", "u": "https://www.rimac-newsroom.com/press-releases/rimac-automobili/rimac-nevera-r-becomes-new-0-400-0-champion-and-sets-24-performance-records"}
+      ],
+      "conf": "高",
+      "todo": "Plaid 1.99 s 凭常识（Tesla 官网口径），未单独打开"
+    },
+    {
+      "id": "relaxed-stability",
+      "title": "放宽静稳定：没有计算机就飞不起来",
+      "domain": "飞机",
+      "year": "1978–1992",
+      "problem": "静稳定的飞机会自动回正，但也因此抗拒机动；要想机动快就得把重心往后放，飞机变得天然想翻。",
+      "solution": "美国空军把 F-16 称为「第一次使用放宽静稳定 / 电传飞控系统」的飞机：亚音速时质心在压心之后，飞机天然想翻，电线把飞行员的指令送进计算机，计算机再算出舵面该怎么动。1976 年 12 月首飞，1979 年 1 月交付 Hill 空军基地首个作战联队，满内油可承受 9 g。NASA 的 X-29 前掠翼验证机把这一思路推到极端：质心在平均气动弦 35% 处、在中性点之后，三余度数字飞控每秒最多 40 次下指令，每台数字计算机还各带一台模拟备份。",
+      "numbers": [
+        {"k": "F-16", "v": "1976-12 首飞；1979-01 交付首个作战联队；9 g", "kind": "官方"},
+        {"k": "X-29 静不稳定度", "v": "约 35%（亚音速）", "kind": "官方"},
+        {"k": "X-29 修正频率", "v": "最多每秒 40 次", "kind": "官方"},
+        {"k": "X-29 失控发散", "v": "计算机全停时振幅倍增时间约 0.12 s", "kind": "官方"}
+      ],
+      "cost": "NASA 原话：计算机全停，「没有任何人类操作者能把它稳住」。飞行员的操纵杆不再直接连舵面，只是向计算机提出请求。",
+      "link": "Roadster 在空中翻转落地，靠的只能是这种「每秒几十次」的自动修正，而非驾驶者的手。",
+      "sources": [
+        {"t": "NASA《Sweeping Forward》X-29 专著", "u": "https://www.nasa.gov/wp-content/uploads/2015/04/Sweeping_Forward.pdf"},
+        {"t": "USAF F-16 Fact Sheet", "u": "https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104505/f-16-fighting-falcon/"},
+        {"t": "Osan AB F-16 Fact Sheet（放宽静稳定措辞）", "u": "https://www.osan.af.mil/About-Us/Fact-Sheets/Display/Article/1757435/"}
+      ],
+      "conf": "高",
+      "todo": ""
+    },
+    {
+      "id": "sr71-unstart",
+      "title": "SR-71：进气锥与「unstart」",
+      "domain": "飞机",
+      "year": "1964–1998",
+      "problem": "Mach 3 时进气道内的激波位置稍有偏移，气流瞬间从一侧进气道「吐出」，单侧推力骤降，飞机猛烈偏航。",
+      "solution": "NASA 口径：Mach 3 巡航时两台 J58 发动机本身只出不到 20% 的推力，其余来自进气道和每个短舱前端那根可动的锥形进气锥。进气锥随速度每 0.1 Mach 后缩约 1.6 英寸，到 Mach 3.2 缩到底（全程约 26 英寸），把激波停在喉部；前放气门由压力传感器自动开闭，后放气门由飞行员手控。退役飞行员 Richard Graham 说 unstart「总在你最不设防的时候来」；后座侦察系统官 Roger Jacks 回忆飞机「把我的头砸到座舱侧壁」，机身偏航、俯仰、抖动。1980 年代换装数字自动飞行与进气控制系统（DAFICS）后 unstart 大减。",
+      "numbers": [
+        {"k": "巡航", "v": "Mach 3.2（2,200 mph 以上），最高 85,000 ft", "kind": "官方"},
+        {"k": "进气道占推力", "v": "发动机 < 20%，其余来自进气道 / 进气锥", "kind": "官方"},
+        {"k": "进气锥行程", "v": "约 1.6 in / 0.1 Mach，全程约 26 in", "kind": "官方"},
+        {"k": "J58 推力", "v": "每台 32,500 lbf", "kind": "官方"}
+      ],
+      "cost": "Unstart 一侧推力骤失、阻力猛增，飞机向失效一侧猛甩；DAFICS 以前飞行员要手动开后放气门「找回」激波。",
+      "link": "进气锥控制的是气流不是动力——和 Roadster 的风扇吸附一样，速度猛兽真正难驯的是空气。",
+      "sources": [
+        {"t": "NASA Dryden SR-71 Fact Sheet FS-030", "u": "https://www.nasa.gov/centers/dryden/pdf/495839main_FS-030_SR-71.pdf"},
+        {"t": "Smithsonian Air & Space《How Things Work: Supersonic Inlets》", "u": "https://www.smithsonianmag.com/air-space-magazine/how-things-work-supersonic-inlets-35428453/"},
+        {"t": "SAE 851977《SR-71 Digital Automatic Flight and Inlet Control System》", "u": "https://saemobilus.sae.org/papers/sr-71-digital-automatic-flight-inlet-control-system-851977"}
+      ],
+      "conf": "高",
+      "todo": "26 英寸为 1.6 in × 16 推算，Mach 1.6 起缩未在所引页面直接写明"
+    },
+    {
+      "id": "rail-pantograph-tilt-maglev",
+      "title": "铁路：受电弓、车体倾斜与悬浮间隙",
+      "domain": "铁路",
+      "year": "1964–2007",
+      "problem": "轮轨列车越快，受电弓离线、弯道横向加速度、轮轨蛇行三件事同时变糟；磁浮则要在几毫米间隙内稳住 几十吨。",
+      "solution": "2007-04-03 TGV V150 在 LGV Est 跑出 574.8 km/h，接触线被拉到极限：接触网张力从常规 25 kN 提到 40 kN，电压从 25 kV 提到 31 kV，试验了主动控制受电弓并加装车顶整流罩，轮径从 920 mm 加大到 1,092 mm 以限制传动转速，功率 19.6 MW。日本东海道新干线 N700 在半径 2,500 m 的弯道上给一侧二系空气弹簧充气，把车体抬起 1°，让 700 系限速 250 km/h 的弯道能以 270 km/h 的线路最高速通过。上海磁浮（Transrapid）靠车上电磁铁吸向轨道底面悬浮，名义间隙保持 10 mm，车载电子以极高频率测量并调节磁铁电流，营运速度 431 km/h，2003-11-12 试验 501.5 km/h。",
+      "numbers": [
+        {"k": "V150 接触网", "v": "张力 40 kN（常规 25 kN），电压 31 kV（常规 25 kV）", "kind": "官方"},
+        {"k": "V150 纪录", "v": "574.8 km/h（2007-04-03，轮轨，试验列车）", "kind": "官方"},
+        {"k": "N700 车体倾斜", "v": "1°，R2,500 m 弯道 250 → 270 km/h", "kind": "官方"},
+        {"k": "上海磁浮间隙", "v": "10 mm（名义）；车下离轨面约 15 cm", "kind": "官方"},
+        {"k": "上海磁浮速度", "v": "营运 431 km/h；试验 501.5 km/h（2003-11-12）", "kind": "官方"}
+      ],
+      "cost": "V150 是一次性试验，线路、电网、列车都特别改装；磁浮失去悬浮控制只能落到滑橇上。2006-09-22 德国 Lathen 试验线 Transrapid 与维护车相撞 23 人遇难，原因是调度失误。",
+      "link": "铁路是把「控制」交给基础设施的一派：轨道、接触网、磁铁都在地上。与 Roadster 把一切塞进车里正相反。",
+      "sources": [
+        {"t": "Wikipedia · Project V150（引 BBC / Reuters / record2007.com）", "u": "https://en.wikipedia.org/wiki/Project_V150"},
+        {"t": "Railway Gazette《N700 pushes the speed envelope》", "u": "https://railwaygazette.com/news/n700-pushes-the-speed-envelope/29774.article"},
+        {"t": "Wikipedia · Transrapid", "u": "https://en.wikipedia.org/wiki/Transrapid"}
+      ],
+      "conf": "中",
+      "todo": "V150 与磁浮为维基 + 行业媒体口径，未回到 SNCF / 上海磁浮官方页；维基称磁浮间隙「每秒测量 10 万次」，数值存疑未写进正文"
+    },
+    {
+      "id": "human-g-limit",
+      "title": "人体的 g 极限：Stapp、抗荷服、HANS、Halo",
+      "domain": "动物",
+      "year": "1954–2018",
+      "problem": "再好的控制系统，里面的人在几个 g 持续作用下会黑视、昏迷，碰撞时颈椎会被自己头的重量拉断。",
+      "solution": "1954-12-10 美国空军军医 John Stapp 在 Holloman 基地的火箭滑车 Sonic Wind 上，五秒内加到 632 mph，再被水刹急停，减速峰值约 46.2 g（史密森尼口径；空军试验中心页写 40 g），受伤但无永久损伤，直接推动了弹射座椅与安全带标准。战斗机的解法是抗荷服给腿部充气压血、加压呼吸和抗荷动作，美国空军称 F-16 满内油可承受 9 g。F1 则在 1994 年 Imola 之后逐步加码：2003 赛季强制 HANS 头颈保护装置，2018 年引入 Halo 座舱保护，FIA 认定 2022 年周冠宇银石翻车时 Halo 保护了车手。",
+      "numbers": [
+        {"k": "Stapp 峰值", "v": "46.2 g（史密森尼）/ 40 g（USAF AFTC），632 mph，1954-12-10", "kind": "官方"},
+        {"k": "战斗机过载", "v": "F-16 满内油 9 g", "kind": "官方"},
+        {"k": "HANS 强制", "v": "F1 2003 赛季；2007 年扩展到多数 FIA 赛事", "kind": "官方"},
+        {"k": "Halo 引入", "v": "F1 2018 年", "kind": "官方"}
+      ],
+      "cost": "两个官方口径对 Stapp 峰值 g 不一致（46.2 与 40）；Halo 引入时大批车手与车迷反对其外观，直到 Grosjean 与周冠宇事故后才平息。",
+      "link": "Roadster 宣称 2 G 过弯、0.55 s 的 0–60，乘员的身体是最后一道没人提的控制极限。",
+      "sources": [
+        {"t": "Smithsonian NASM《The Man Behind High-Speed Safety Standards》", "u": "https://airandspace.si.edu/stories/editorial/man-behind-high-speed-safety-standards"},
+        {"t": "USAF AFTC · On This Day in Test History 1954-12-10", "u": "https://www.aftc.af.mil/About-Us/History/On-This-Day-in-Test-History/Article-Display-Test-History/Article/2411198/december-10-1954-dr-john-stapp-testing-pioneer/"},
+        {"t": "FIA《Legacy of Safety》", "u": "https://fia.com/node/51351"},
+        {"t": "USAF F-16 Fact Sheet（9 g）", "u": "https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104505/f-16-fighting-falcon/"}
+      ],
+      "conf": "高",
+      "todo": "抗荷服 / 加压呼吸机制为常识，未单独引官方页"
+    },
+    {
+      "id": "animal-control",
+      "title": "动物：猎豹的尾巴与游隼的翼",
+      "domain": "动物",
+      "year": "2013–2018",
+      "problem": "高速奔跑或俯冲的动物同样面临急转时的角动量与失速问题，但它们没有计算机。",
+      "solution": "英国皇家兽医学院 Alan Wilson 团队（Nature，2013-06-13）给五只野生猎豹戴上太阳能 GPS-惯性项圈，17 个月记录 367 次追猎：最高 93 km/h，但大多数追猎远低于极速；侧向（向心）加速度常超过 13 m/s²，而马球马只有 6 m/s²，加速功率约为赛犬两倍。结论原话：「抓地与机动性，而非极速，才是狩猎成功的关键。」牛津与格罗宁根团队（Mills 等，PLOS Computational Biology，2018-04-12）用计算模型模拟游隼俯冲，发现高速俯冲让游隼能产生大得多的气动力用于机动，但需要「极精确调校的转向」才能命中灵活的猎物。",
+      "numbers": [
+        {"k": "猎豹最高速度", "v": "93 km/h（58 mph，野外项圈实测）", "kind": "实测"},
+        {"k": "猎豹侧向加速度", "v": "> 13 m/s²（约 1.3 g；马球马 6 m/s²）", "kind": "实测"},
+        {"k": "猎豹样本", "v": "5 只、367 次追猎、17 个月", "kind": "实测"},
+        {"k": "游隼俯冲", "v": "389 km/h（吉尼斯口径）", "kind": "官方"}
+      ],
+      "cost": "猎豹平均一天只追 1.3 次、每次约 173 m，高速机动的能量代价极高；两项研究都在说同一件事——「可控的快」比「最快」更值钱。",
+      "link": "猎豹靠抓地转向、游隼靠速度换机动力，正好对应 Roadster 的两条路：吸附抓地，推进器「借力」。",
+      "sources": [
+        {"t": "ScienceDaily / RVC · Wilson et al. 2013 Nature 猎豹追猎动力学", "u": "https://sciencedaily.com/releases/2013/06/130614082900.htm"},
+        {"t": "Oxford University · Mills et al. 2018 PLOS Comput Biol 游隼俯冲模拟", "u": "https://www.ox.ac.uk/node/1425399"}
+      ],
+      "conf": "中",
+      "todo": "游隼 389 km/h 为吉尼斯常见口径，未打开吉尼斯页；原骨架的「尾巴惯性配重」说法无一手来源，已删"
+    },
+    {
+      "id": "concorde-cg",
+      "title": "协和：泵 20 吨燃油配平",
+      "domain": "飞机",
+      "year": "1976–2003",
+      "problem": "超音速时机翼压心向后移动约 2 m，飞机变得头重，常规配平舵面会带来巨大阻力。",
+      "solution": "协和机身前后设有配平油箱。起飞前飞行工程师就开始把燃油从前部的 9、10 号油箱向尾部的 11 号及 5、7 号油箱转移，到穿越 Mach 1 冲向 Mach 2 的过程中总共移动约 20 吨，重心后移约 6 英尺（2 m），正好抵消升力中心后移；减速回亚音速时再泵回前方。整个过程由飞行工程师在他的面板上监控，仪表上的「重心走廊」游标随马赫数移动，重心必须始终落在走廊之内。没有这套系统，协和就得靠升降舵硬拉，阻力大到飞不到巡航航程。",
+      "numbers": [
+        {"k": "配平燃油", "v": "约 20 吨", "kind": "官方"},
+        {"k": "重心移动", "v": "约 6 ft（2 m）", "kind": "官方"},
+        {"k": "巡航", "v": "Mach 2.02，约 18 km", "kind": "官方"}
+      ],
+      "cost": "每次飞行多一套人工配平流程，飞行工程师成为不可省的第三个机组；超音速客机的经济性也因此始终紧绷。",
+      "link": "把质量本身当控制面——和阿波罗偏置质心是同一种思路；Roadster 为了装气罐拆掉副驾座，也是在用质量布局换控制权。",
+      "sources": [
+        {"t": "Heritage Concorde · Fuel Transfer", "u": "https://www.heritageconcorde.com/fuel-transfer"},
+        {"t": "Heritage Concorde · Fuel System General", "u": "https://heritageconcorde.com/fuelgeneral"}
+      ],
+      "conf": "中",
+      "todo": "Mach 2.02 / 18 km 巡航为常识未核；Heritage Concorde 为爱好者 / 志愿者站点，非 BA 官方"
+    },
+    {
+      "id": "hyperloop-bugatti",
+      "title": "Hyperloop 的 500 米管与 Bugatti 的 4,100 转轮胎",
+      "domain": "车",
+      "year": "2017–2023",
+      "problem": "超高速下任何微小几何误差——管道对中、轮胎的离心膨胀——都会被速度平方放大。",
+      "solution": "Hyperloop One 在内华达只建了一条 500 m 的 DevLoop 真空管：2017 年 12 月 XP-1 吊舱做到 387 km/h（240 mph），2020-11-08 首次载人只跑 172 km/h；此后再无更快测试，2023-12-31 停业，原因是财务困难与「未拿到任何一条实际建设合同」。Bugatti 则把轮胎控制到极限：2019-08-02 Andy Wallace 在 Ehra-Lessien 8.8 km 直道上以 Chiron 预量产衍生车跑出 490.484 km/h（304.773 mph），SGS-TÜV 密封 GPS 认证；米其林轮胎加强带束层以承受 5,300 g 离心载荷，转速 4,100 rpm，每条逐一 X 光检查，台架测到 511 km/h。Bugatti 总裁随即宣布「这是我们最后一次」。",
+      "numbers": [
+        {"k": "Hyperloop One 最高", "v": "387 km/h（2017-12，XP-1，无人，500 m 管）", "kind": "宣称"},
+        {"k": "Hyperloop One 载人", "v": "172 km/h（2020-11-08）", "kind": "宣称"},
+        {"k": "Bugatti", "v": "490.484 km/h（2019-08-02，单程，SGS-TÜV 认证，非 FIA / 吉尼斯双向平均）", "kind": "宣称"},
+        {"k": "轮胎", "v": "4,100 rpm，带束层承受 5,300 g；台架 511 km/h", "kind": "宣称"}
+      ],
+      "cost": "Bugatti 的新闻稿未写双向，吉尼斯「最快量产车」口径要求双向平均，因此只算厂商纪录；Hyperloop 的控制问题从未在超过 500 m 的管道里验证过。",
+      "link": "Roadster 的数字同样只有一次演示、一个方向；本章把它和 Bugatti 一样归入「宣称」。",
+      "sources": [
+        {"t": "Bugatti Newsroom《Bugatti breaks the 300 mph barrier》", "u": "https://newsroom.bugatti.com/press-releases/bugatti-breaks-the-300-mph-barrier"},
+        {"t": "Wikipedia · Hyperloop One（引 Engadget / 公司公告）", "u": "https://en.wikipedia.org/wiki/Hyperloop_One"},
+        {"t": "SiliconANGLE · Hyperloop One 停业报道（2023-12-22）", "u": "https://siliconangle.com/2023/12/22/futuristic-transit-company-hyperloop-one-shut/"}
+      ],
+      "conf": "中",
+      "todo": "Hyperloop 数字仅维基汇总；Bugatti 的加长车尾 / 尾翼角度细节新闻稿未写，已从正文删去"
+    }
+  ]
+}

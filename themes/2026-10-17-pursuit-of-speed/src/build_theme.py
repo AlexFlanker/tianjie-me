@@ -10,10 +10,12 @@ import editorial as E
 import figs
 import fixes
 import journey
+H = None
 
 def esc(s): return html.escape(str(s), quote=True)
 def J(name): return json.load(open(os.path.join(HERE, 'research', name), encoding='utf-8'))
 A, B, C = J('matrix_A.json'), J('matrix_B.json'), J('cards_C.json')
+H = J('harness_D.json')
 for _l in fixes.patch_data(A, B, C): print('data', _l)
 IM = {i['id']: i for i in json.load(open(os.path.join(HERE, 'images.json'), encoding='utf-8')) if i.get('status') == 'ok'}
 
@@ -76,7 +78,7 @@ def cnav():
 
 def chead(cid):
     _, base, n, t, lede = next(c for c in E.CHAPTERS if c[0] == cid)
-    label = '序章' if int(n) == 0 else f'第 {"一二三四五六"[int(n)-1]} 章'
+    label = '序章' if int(n) == 0 else f'第 {"一二三四五六七八"[int(n)-1]} 章'
     return f'<div class="chead fade"><div class="cno">{base}<sup>{n}</sup><small>km/h · {label}</small></div><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
 
 # ---------- 序章 · 速度之旅
@@ -89,6 +91,14 @@ def src_lookup(key):
         if obj and len(parts) > 2 and parts[2] == 'also': obj = obj.get('also')
     if not obj: return '', ''
     return srcs(obj.get('sources')), conf(obj.get('conf'))
+
+def src_lookup_raw(key):
+    parts = key.split(':'); obj = None
+    if parts[0] == 'scale': obj = next((s for s in B['scale'] if s['id'] == parts[1]), None)
+    elif parts[0] == 'cell':
+        t, e = parts[1].split('-'); obj = CELLS.get((t, int(e)))
+        if obj and len(parts) > 2 and parts[2] == 'also': obj = obj.get('also')
+    return obj.get('sources') if obj else None
 
 def caption_of(img_id, im): return E.CAPTIONS.get(img_id, im.get('caption', ''))
 
@@ -154,8 +164,8 @@ def ch_lines():
     return f'''<section class="chap" id="lines"><div class="wide">{chead("lines")}
 <figure class="lines-fig fade">{figs.lines_svg(rec_line, day)}<div class="lkey"><span><i></i>人类乘坐过的最快速度（载人纪录）</span><span><i class="k2"></i>普通人日常能坐到的最快速度（商业运营）</span><span>纵轴对数；横轴 1800 年起，更早的点压在左端</span></div></figure>
 <div class="cols2" style="margin-top:28px">
-<div class="fade"><h3 class="sub-h" style="margin-top:0">红线 · 乘坐过的最快</h3><ul class="pts">{''.join(li(p) for p in rec)}</ul>{srcs([s for p in rec for s in p.get('sources', [])][:6])}</div>
-<div class="fade"><h3 class="sub-h" style="margin-top:0">黑线 · 日常能坐到的最快</h3><ul class="pts day">{''.join(li(p) for p in day)}</ul>{srcs([s for p in day for s in p.get('sources', [])][:6])}
+<div class="fade"><details class="fold big"><summary><h3 class="sub-h">红线 · 乘坐过的最快 · 数据表</h3></summary><ul class="pts">{''.join(li(p) for p in rec)}</ul>{srcs([s for p in rec for s in p.get('sources', [])][:6])}</details></div>
+<div class="fade"><details class="fold big"><summary><h3 class="sub-h">黑线 · 日常能坐到的最快 · 数据表</h3></summary><ul class="pts day">{''.join(li(p) for p in day)}</ul>{srcs([s for p in day for s in p.get('sources', [])][:6])}</details>
 <div class="counter"><h3>{esc(E.COUNTER['title'])}</h3><ul>{items}</ul></div></div>
 </div></div></section>'''
 
@@ -172,7 +182,32 @@ def ch_walls():
 <div class="bd"><p>{esc(w['text'])}</p><h4 style="margin-top:14px">突破手段</h4><ul>{br}</ul><p class="ex"><b>今天的例子</b>{esc(w.get('example',''))}</p>{srcs(w.get('sources'))}<p class="small" style="margin:6px 0 0">置信度 {conf(w.get('conf'))}</p></div>{ph}</article>''')
     return f'<section class="chap" id="walls"><div class="wide">{chead("walls")}<div class="walls">{"".join(out)}</div></div></section>'
 
-# ---------- 第五章
+# ---------- 第五章 · 驾驭
+HARNESS_IMG = {'x15-rcs': 'x15', 'apollo-reentry': 'apollo_cm', 'falcon9-landing': 'falcon9', 'thrust-ssc': 'thrustssc', 'three-point-hydroplane': 'spiritoz',
+               'f1-aero': 'f1_ground', 'relaxed-stability': 'x29', 'sr71-unstart': 'sr71', 'rail-pantograph-tilt-maglev': 'maglev_l0', 'human-g-limit': 'stapp2',
+               'animal-control': 'cheetah', 'concorde-cg': 'concorde'}
+KIND_CLS = {'宣称': 'claim', '实测': 'meas', '官方': 'off', '设计值': 'des'}
+def ch_harness():
+    facts = ''.join(f'<li><p>{esc(f["fact"])}</p>{srcs(f.get("sources"))}</li>' for f in H['intro_facts'])
+    cards = []
+    for c in H['cards']:
+        img = HARNESS_IMG.get(c['id']); im = IM.get(img) if img else None
+        ph = (f'<figure class="hph"><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{esc(E.CAPTIONS.get(img, im.get("caption", "")))} 图：{esc(im["author"])}，{esc(im["license"])}。</figcaption></figure>') if im else ''
+        nums = ''.join(f'<div><span>{esc(n["k"])}</span><b>{esc(n["v"])}</b><i class="tag kind {KIND_CLS.get(n.get("kind"), "off")}">{esc(n.get("kind", ""))}</i></div>' for n in c.get('numbers', []))
+        link = f'<p class="hlink">{esc(c["link"])}</p>' if c.get('link') else ''
+        cards.append(f'''<article class="hcard fade" id="h-{esc(c['id'])}">{ph}
+<div class="hbd"><div class="hhd"><span class="tag">{esc(c['domain'])}</span><span class="hyr">{esc(c['year'])}</span>{conf(c.get('conf'))}</div>
+<h3>{esc(c['title'])}</h3>
+<p class="hprob"><b>失控的原因</b>{esc(c['problem'])}</p>
+<p class="hsol"><b>解法</b>{esc(c['solution'])}</p>
+<div class="hnums">{nums}</div>
+<p class="hcost"><b>代价 / 争议</b>{esc(c['cost'])}</p>{link}
+<details class="fold"><summary>来源</summary>{srcs(c.get('sources'))}</details></div></article>''')
+    return f'''<section class="chap" id="harness"><div class="wide">{chead("harness")}
+<ul class="facts fade">{facts}</ul>
+<div class="hgrid">{''.join(cards)}</div></div></section>'''
+
+# ---------- 第六章
 def ch_cards():
     tags = ['全部', '商业', '政治', '技术', '规则', '文化']
     chips = ''.join(f'<button type="button" data-tag="{t}" aria-pressed="{"true" if t=="全部" else "false"}">{t}</button>' for t in tags)
@@ -209,10 +244,12 @@ def ch_tools():
 def refs_block():
     groups = [('第一章 · 这一周', [s for n in C['now'] for s in n.get('sources', [])]),
               ('第二章 · 矩阵（陆上轮式 / 铁路 / 水上）', [s for c in A['cells'] for s in c.get('sources', []) + c.get('also', {}).get('sources', [])]),
+              ('序章 · 速度之旅', [s for l in journey.LEVELS for s in (src_lookup_raw(l['src']) or [])]),
               ('第二章 · 矩阵（空中 / 太空 / 人体与动物）与速度尺', [s for c in B['cells'] for s in c.get('sources', []) + c.get('also', {}).get('sources', [])] + [s for c in B['scale'] for s in c.get('sources', [])]),
               ('第三章 · 两条总线', [s for p in B['record_line'] + C['daily_line'] for s in p.get('sources', [])]),
               ('第四章 · 物理墙', [s for w in WALLS.values() for s in w.get('sources', [])]),
-              ('第五章 · 卡片', [s for c in C['cards'] for s in c.get('sources', [])])]
+              ('第五章 · 驾驭', [s for c in H['cards'] for s in c.get('sources', [])] + [s for f in H['intro_facts'] for s in f.get('sources', [])]),
+              ('第六章 · 卡片', [s for c in C['cards'] for s in c.get('sources', [])])]
     out = []
     for g, ss in groups:
         seen, items = set(), []
@@ -234,9 +271,11 @@ def endm():
     todo = ''.join(f'<li>{t}</li>' for t in M['todo'])
     return f'''<footer class="endm paper" id="end"><div class="wide">
 <h2 class="fade">卷末 · 参考、方法与署名</h2>
-<div class="refs fade">{refs_block()}</div>
-<div class="method fade"><h3>方法</h3><ul>{proc}</ul><h3>仍待核</h3><ul>{todo}</ul></div>
-<h3 class="fade">图片署名</h3><div class="fade">{credits()}</div>
+<p class="small fade">都折叠着，点开看。</p>
+<details class="fold big fade"><summary><h3>参考（按章分组）</h3></summary><div class="refs">{refs_block()}</div></details>
+<details class="fold big fade"><summary><h3>方法</h3></summary><div class="method"><ul>{proc}</ul></div></details>
+<details class="fold big fade"><summary><h3>仍待核</h3></summary><div class="method"><ul>{todo}</ul></div></details>
+<details class="fold big fade"><summary><h3>图片署名（{len(IM)} 张）</h3></summary>{credits()}</details>
 <div class="stamp fade">一周一题 · 第 {E.META['no']} 题 · {E.META['date']}<br>研究、绘图与核查：Claude（站长复核）</div>
 </div></footer>
 <button class="theme-btn" id="theme-btn" type="button" data-cover-hide aria-label="切换深浅色">深 / 浅</button>'''
@@ -261,7 +300,7 @@ def main():
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     app = open(os.path.join(HERE, 'app.js'), encoding='utf-8').read()
     dark = ('@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + DARK + '}}\n:root[data-theme="dark"]{' + DARK + '}')
-    body = hero() + cnav() + '<main>' + ch_journey() + ch_now() + ch_matrix() + ch_lines() + ch_walls() + ch_cards() + ch_tools() + '</main>' + endm()
+    body = hero() + cnav() + '<main>' + ch_journey() + ch_now() + ch_matrix() + ch_lines() + ch_walls() + ch_harness() + ch_cards() + ch_tools() + '</main>' + endm()
     page = (tpl.replace('{{TITLE}}', esc(E.META['title'])).replace('{{DESCRIPTION}}', esc(E.META['desc'])).replace('{{DARK_BLOCKS}}', dark)
             .replace('{{BODY}}', body).replace('{{DATA_JSON}}', json.dumps(data(), ensure_ascii=False).replace('</', '<\\/')).replace('{{APP_JS}}', app))
     page, report = fixes.apply(page)
@@ -270,10 +309,10 @@ def main():
     open(out, 'w', encoding='utf-8').write(page)
     meta = {'no': E.META['no'], 'slug': E.META['slug'], 'title': E.META['title'], 'subtitle': E.META['subtitle'], 'date': E.META['date'], 'summary': E.META['desc'],
             'tags': E.META['tags'], 'format': E.META['format'], 'cover': 'cover.png', 'cover_focus': E.META['cover_focus'], 'cover_scheme': E.META['cover_scheme'], 'reading_time': E.META['reading_time'],
-            'sources': ['FIA / FIM / FAI / UIM / 世界田径 / 吉尼斯的纪录页；NASA 与美国空军官方史（X-1、X-2、X-15、SR-71、Apollo 10、Artemis II、帕克探测器、Stapp）',
+            'sources': ['FIA / FIM / FAI / UIM / 世界田径 / 吉尼斯的纪录页；NASA 与美国空军官方史（X-1、X-2、X-15、X-29、SR-71、Apollo 10、Artemis II、帕克探测器、Falcon 9 回收、Stapp）',
                         '英国国家铁路博物馆与科学博物馆集团、JR 东海、SNCF / Alstom、国铁集团与中车、澳大利亚国家海事博物馆、辛辛那提动物园',
                         'TechCrunch、Electrek、CBS 对 2026-10-15 Roadster 演示的报道；央视、新华网、界面对 GB 7258—2026 的报道；motorionline 对腾势 Z 的转述',
-                        '图片 20 张：NASA、美国陆军 / 海军、美国国会图书馆 Bain 收藏、Gallica、大都会博物馆 Open Access、geograph.org.uk、Flickr（CC BY / CC BY-SA）；逐张署名见页面卷末与 src/images.json']}
+                        '图片 29 张：NASA、美国陆军 / 海军、美国国会图书馆 Bain 收藏、Gallica、大都会博物馆 Open Access、geograph.org.uk、Flickr（CC BY / CC BY-SA）；逐张署名见页面卷末与 src/images.json']}
     json.dump(meta, open(os.path.join(HERE, '..', 'meta.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
     print('wrote index.html', len(page), 'bytes')
 

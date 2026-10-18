@@ -564,15 +564,15 @@ input[type=range]{accent-color:var(--accent);width:100%}
 .why details.fold p{font-size:12.5px;line-height:1.7;color:var(--ink-2);margin:0 0 6px}
 /* ---------- 跑一跑 */
 .rlanes{display:grid;gap:8px;margin-top:12px}
-.rlane,.dlane{display:grid;grid-template-columns:8em 1fr 6em;gap:10px;align-items:center;font-size:12.5px;color:var(--muted)}
+.rlane,.dlane{display:grid;grid-template-columns:8em 1fr 8.5em;gap:10px;align-items:center;font-size:12.5px;color:var(--muted);min-height:20px}
 .rlane i,.dlane i{display:block;height:12px;background:var(--line);position:relative}
 .rlane b,.dlane b{display:block;height:100%;width:0;background:var(--ink)}
 .rlane[data-k="you"] b,.dlane:first-child b{background:var(--accent)}
-.rlane em,.dlane em{font-style:normal;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink)}
+.rlane em,.dlane em{font-style:normal;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink);white-space:nowrap;overflow:hidden}
 .dlanes{display:grid;gap:10px;margin:12px 0}
 .dlane span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:980px){.ctiles{grid-template-columns:repeat(2,minmax(0,1fr))}.wcols{grid-template-columns:repeat(2,minmax(0,1fr))}.hcard#h-roadster-2026{grid-column:auto}}
-@media (max-width:600px){.ctiles,.wcols{grid-template-columns:1fr}.trk{grid-template-columns:96px 1fr}.tbars{height:96px}.tb span{font-size:9px}.dread{grid-template-columns:1fr}.dsl{grid-template-columns:5.5em 1fr 4.5em}.lctl{grid-template-columns:1fr}.lyr{white-space:normal}.rlane,.dlane{grid-template-columns:5.5em 1fr 5em}.clocks{grid-template-columns:auto auto;}.clocks .ebar{grid-column:1/-1}}
+@media (max-width:600px){.rlane,.dlane{grid-template-columns:5.5em 1fr 7.5em}.ctiles,.wcols{grid-template-columns:1fr}.trk{grid-template-columns:96px 1fr}.tbars{height:96px}.tb span{font-size:9px}.dread{grid-template-columns:1fr}.dsl{grid-template-columns:5.5em 1fr 4.5em}.lctl{grid-template-columns:1fr}.lyr{white-space:normal}.clocks{grid-template-columns:auto auto;}.clocks .ebar{grid-column:1/-1}}
 @media (prefers-reduced-motion:reduce){.tb i{transition:none;transform:none}.hit{animation:none}}
 
 /* ---------- 卷末 */

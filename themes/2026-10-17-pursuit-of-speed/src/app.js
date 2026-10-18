@@ -54,6 +54,75 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', function () { setNavH(); onScroll(); });
 
+
+  /* ---------- 卷首指标带：进入视口时从 0 数到目标值（只播一次） */
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fmtN = function (v, dec) { v = Number(v); if (dec) return v.toFixed(dec); if (v >= 1e8) return num(v / 1e8, 4) + ' 亿'; if (v >= 100) return num(v, 0); if (v >= 10) return num(v, 1); return num(v, 2); };
+  function countTo(el, to, dec, ms) {
+    var from = parseFloat(el.getAttribute('data-cur') || '0') || 0;
+    if (reduced || !ms) { el.textContent = fmtN(to, dec); el.setAttribute('data-cur', to); return; }
+    var t0 = performance.now();
+    var useLog = from > 0 && to > 0 && Math.max(from, to) / Math.min(from, to) > 20;
+    function tick(t) {
+      var p = Math.min(1, (t - t0) / ms); var e = 1 - Math.pow(1 - p, 3);
+      var v = useLog ? Math.exp(Math.log(from) + (Math.log(to) - Math.log(from)) * e) : from + (to - from) * e;
+      el.textContent = fmtN(p < 1 ? v : to, dec);
+      if (p < 1) requestAnimationFrame(tick); else el.setAttribute('data-cur', to);
+    }
+    requestAnimationFrame(tick);
+  }
+  var cnts = $$('.cnt[data-to]');
+  if ('IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { countTo(e.target, parseFloat(e.target.getAttribute('data-to')), parseInt(e.target.getAttribute('data-dec') || '0', 10), 1100); cio.unobserve(e.target); } }); }, { threshold: .4 });
+    cnts.forEach(function (el) { cio.observe(el); });
+  } else { cnts.forEach(function (el) { countTo(el, parseFloat(el.getAttribute('data-to')), parseInt(el.getAttribute('data-dec') || '0', 10), 0); }); }
+
+  /* ---------- 序章 · 速度之旅 */
+  var J = D.journey || [], jstage = $('#jstage');
+  if (jstage && J.length) {
+    var needle = $('#g-needle'), gfill = $('#g-fill'), jnum = $('#jnum'), jalt = $('#jalt'), jk = $('#jk'), jt = $('#jt'), jidx = $('#jidx'), scene = $('.jscene', jstage);
+    var vehs = $$('.veh', jstage), lads = $$('.lad', jstage), jsteps = $$('.jstep');
+    if (gfill) gfill.setAttribute('pathLength', '1');
+    var cur = -1, moveT = null;
+    function setLevel(i, instant) {
+      if (i === cur || !J[i]) return;
+      var prev = cur; cur = i; var L = J[i];
+      if (needle) needle.style.transform = 'rotate(' + (-135 + 270 * L.f) + 'deg)';
+      if (gfill) gfill.style.strokeDasharray = L.f + ' 1';
+      countTo(jnum, L.kmh, 0, instant ? 0 : 900);
+      if (jalt) jalt.textContent = num(L.kmh / 1.609344, L.kmh < 100 ? 1 : 0) + ' mph · Mach ' + (L.kmh / 1225 < 0.01 ? (L.kmh / 1225).toFixed(4) : L.kmh / 1225 > 1000 ? num(L.kmh / 1225, 0) : (L.kmh / 1225).toFixed(2)) + ' · 北京到上海 ' + (function (h) { return h >= 1 ? num(h, 1) + ' 小时' : h * 60 >= 1 ? num(h * 60, 1) + ' 分钟' : num(h * 3600, 2) + ' 秒'; })(D.tool1.bjsh / L.kmh);
+      if (jk) jk.textContent = L.kicker; if (jt) jt.textContent = L.name; if (jidx) jidx.textContent = (i < 9 ? '0' : '') + (i + 1);
+      vehs.forEach(function (v, k) {
+        if (k === i) { v.classList.remove('out'); v.classList.add('on'); }
+        else if (k === prev) { v.classList.remove('on'); v.classList.add('out'); setTimeout(function () { v.classList.remove('out'); }, 600); }
+        else v.classList.remove('on', 'out');
+      });
+      lads.forEach(function (b, k) { b.classList.toggle('on', k === i); b.classList.toggle('done', k < i); });
+      jsteps.forEach(function (s, k) { s.classList.toggle('on', k === i); });
+      if (scene && !instant && !reduced) {
+        scene.style.setProperty('--op', String(Math.min(.7, .15 + L.f * .6)));
+        scene.classList.add('moving'); clearTimeout(moveT); moveT = setTimeout(function () { scene.classList.remove('moving'); }, 1400);
+      }
+    }
+    function pickLevel() {
+      var mid = window.innerHeight * 0.5, best = 0, bestD = Infinity;
+      for (var k = 0; k < jsteps.length; k++) {
+        var r = jsteps[k].getBoundingClientRect();
+        if (r.top <= mid && r.bottom >= mid) { best = k; bestD = 0; break; }
+        var d = Math.min(Math.abs(r.top - mid), Math.abs(r.bottom - mid));
+        if (d < bestD) { bestD = d; best = k; }
+      }
+      var sr = jstage.getBoundingClientRect();
+      if (sr.top > window.innerHeight || jsteps[jsteps.length - 1].getBoundingClientRect().bottom < 0) return;
+      setLevel(best, cur < 0);
+    }
+    var jt2 = false;
+    window.addEventListener('scroll', function () { if (jt2) return; jt2 = true; requestAnimationFrame(function () { jt2 = false; pickLevel(); }); }, { passive: true });
+    window.addEventListener('resize', pickLevel);
+    lads.forEach(function (b) { b.addEventListener('click', function () { var k = parseInt(b.getAttribute('data-lvl'), 10); jsteps[k].scrollIntoView({ block: 'center', behavior: reduced ? 'auto' : 'smooth' }); }); });
+    setLevel(0, true); pickLevel();
+  }
+
   /* ---------- 卷首速度尺 */
   var rcard = $('#rcard');
   var REF = { walk: 5, bolt: 44.72, cheetah: 98, hsr: 350, airliner: 900, sound: 1225, orbital: 28440, light: 1079252848.8 };

@@ -9,6 +9,7 @@ sys.path.insert(0, HERE)
 import editorial as E
 import figs
 import fixes
+import journey
 
 def esc(s): return html.escape(str(s), quote=True)
 def J(name): return json.load(open(os.path.join(HERE, 'research', name), encoding='utf-8'))
@@ -48,13 +49,18 @@ def hero():
     scale = sorted(B['scale'], key=lambda s: s['kmh'])
     first = next(s for s in scale if s['id'] == 'sound')
     return f'''
-<header class="hero paper"><div class="wide">
+<header class="hero paper band"><div class="wide">
   <div class="strip fade"><span><b>一周一题</b>第 {M['no']} 题</span><span><b>上线</b>{M['date']}</span><span><b>格式</b>{M['format']}</span><span><b>阅读</b>{M['reading_time']}</span></div>
   <h1 class="fade">{esc(M['title'].split('：')[0])}<br><span style="font-size:.56em;letter-spacing:.04em">{esc(M['title'].split('：')[1])}</span></h1>
   <p class="sub fade">{esc(M['subtitle'])}</p>
   <div class="hero-grid">
     <div class="fade"><p class="thesis">{H['thesis']}</p><div class="week">{week}</div></div>
     <ol class="steps fade">{steps}</ol>
+  </div>
+  <div class="stats fade">
+    <div class="stat"><div class="k">FASTEST HUMANS · 1969</div><div class="v"><b class="cnt" data-to="39897">0</b><small>km/h</small></div><div class="d">人类乘坐过的最快速度：Apollo 10 返回地球</div><div class="n">NASA 口径 24,791 mph；吉尼斯作 39,937.7 km/h。五十七年未破，今年的 Artemis II 也没有。</div></div>
+    <div class="stat"><div class="k">EVERYDAY MAXIMUM · 2017–</div><div class="v"><b class="cnt" data-to="350">0</b><small>km/h</small></div><div class="d">普通人今天能买票坐到的陆上最快：轮轨高铁</div><div class="n">空中约 900 km/h（Mach 0.85）；1976–2003 年协和曾到 2,180。</div></div>
+    <div class="stat"><div class="k">THIS WEEK · CLAIMED</div><div class="v"><b class="cnt" data-to="0.81" data-dec="2">0</b><small>s · 0–60 mph</small></div><div class="d">特斯拉 Roadster 演示：现场计时器故障后的宣称值</div><div class="n">录像 1.0 秒；推文称顶配 0.59 秒以内。没有第三方实测，见第一章。</div></div>
   </div>
   <figure class="rulerfig fade">
     <div class="ruler-wrap">{figs.ruler_svg(scale)}</div>
@@ -70,7 +76,26 @@ def cnav():
 
 def chead(cid):
     _, base, n, t, lede = next(c for c in E.CHAPTERS if c[0] == cid)
-    return f'<div class="chead fade"><div class="cno">{base}<sup>{n}</sup><small>km/h · 第 {"一二三四五六"[int(n)-1]} 章</small></div><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
+    label = '序章' if int(n) == 0 else f'第 {"一二三四五六"[int(n)-1]} 章'
+    return f'<div class="chead fade"><div class="cno">{base}<sup>{n}</sup><small>km/h · {label}</small></div><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
+
+# ---------- 序章 · 速度之旅
+def src_lookup(key):
+    parts = key.split(':')
+    obj = None
+    if parts[0] == 'scale': obj = next((s for s in B['scale'] if s['id'] == parts[1]), None)
+    elif parts[0] == 'cell':
+        t, e = parts[1].split('-'); obj = CELLS.get((t, int(e)))
+        if obj and len(parts) > 2 and parts[2] == 'also': obj = obj.get('also')
+    if not obj: return '', ''
+    return srcs(obj.get('sources')), conf(obj.get('conf'))
+
+def caption_of(img_id, im): return E.CAPTIONS.get(img_id, im.get('caption', ''))
+
+def ch_journey():
+    return (f'<section class="chap journey band" id="journey"><div class="wide">{chead("journey")}</div>'
+            + journey.stage(IM, caption_of) + journey.steps(IM, caption_of, src_lookup)
+            + '<p class="jnote">剪影全部程序绘制，只画体量与轮廓，不画商标、不复刻外观细节；比例经夸张处理。数字与口径同第二章矩阵与卷首速度尺，出处见各级卡片与卷末。</p></section>')
 
 # ---------- 第一章
 def now_card(n, side=False):
@@ -230,13 +255,13 @@ def data():
         cells[f'{t}-{e}']['era'] = f'{E.ERAS[e][0]} {E.ERAS[e][1]}'
         if im: cells[f'{t}-{e}']['img'] = {'file': 'assets/' + im['file'], 'cap': E.CAPTIONS.get(img, im.get('caption', '')), 'credit': f'{im["author"]}，{im["license"]}', 'alt': im['subject']}
     scale = {s['id']: s for s in B['scale']}
-    return {'cells': cells, 'scale': scale, 'tool1': {'china': E.TOOL1['china_ew_km'], 'bjsh': E.TOOL1['bj_sh_km']}}
+    return {'cells': cells, 'scale': scale, 'journey': journey.data(), 'tool1': {'china': E.TOOL1['china_ew_km'], 'bjsh': E.TOOL1['bj_sh_km']}}
 
 def main():
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     app = open(os.path.join(HERE, 'app.js'), encoding='utf-8').read()
     dark = ('@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + DARK + '}}\n:root[data-theme="dark"]{' + DARK + '}')
-    body = hero() + cnav() + '<main>' + ch_now() + ch_matrix() + ch_lines() + ch_walls() + ch_cards() + ch_tools() + '</main>' + endm()
+    body = hero() + cnav() + '<main>' + ch_journey() + ch_now() + ch_matrix() + ch_lines() + ch_walls() + ch_cards() + ch_tools() + '</main>' + endm()
     page = (tpl.replace('{{TITLE}}', esc(E.META['title'])).replace('{{DESCRIPTION}}', esc(E.META['desc'])).replace('{{DARK_BLOCKS}}', dark)
             .replace('{{BODY}}', body).replace('{{DATA_JSON}}', json.dumps(data(), ensure_ascii=False).replace('</', '<\\/')).replace('{{APP_JS}}', app))
     page, report = fixes.apply(page)

@@ -18,8 +18,8 @@ focus = a.focus or meta.get('cover_focus'); scheme = a.scheme or meta.get('cover
 with sync_playwright() as p:
     b = p.chromium.launch(); ctx = b.new_context(viewport={'width': 1200, 'height': 630}, device_scale_factor=1, color_scheme=scheme)
     pg = ctx.new_page(); pg.goto('file://' + os.path.join(d, 'index.html')); pg.wait_for_timeout(1800)
-    pg.add_style_tag(content='[data-cover-hide]{display:none !important}')  # 主题页里标了 data-cover-hide 的元素（如深浅色按钮）不进封面
+    pg.add_style_tag(content='[data-cover-hide]{display:none !important} html{scroll-behavior:auto !important}')  # 主题页里标了 data-cover-hide 的元素（如深浅色按钮）不进封面；关掉平滑滚动，否则 scrollIntoView 还没到位就截图了
     if focus:
-        pg.evaluate("sel => { const el = document.querySelector(sel); if (el) el.scrollIntoView({block:'center'}); }", focus); pg.wait_for_timeout(500)
+        pg.evaluate("sel => { const el = document.querySelector(sel); if (el) el.scrollIntoView({block:'center'}); }", focus); pg.wait_for_timeout(1400)
     pg.screenshot(path=out); b.close()
 print('wrote', os.path.relpath(out))

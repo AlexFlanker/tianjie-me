@@ -139,10 +139,15 @@ feed = f"""<?xml version="1.0" encoding="utf-8"?>
 """
 open(os.path.join(OUT, 'feed.xml'), 'w', encoding='utf-8').write(feed)
 urls = [f"  <url><loc>{BASE}/</loc><lastmod>{latest['date'] if latest else dt.date.today()}</lastmod><changefreq>weekly</changefreq></url>"] + \
-       [f"  <url><loc>{BASE}{m['url']}</loc><lastmod>{m['date']}</lastmod></url>" for m in themes]
+       [f"  <url><loc>{BASE}{m['url']}</loc><lastmod>{m['date']}</lastmod></url>" for m in themes] + \
+       [f"  <url><loc>{BASE}{p['url']}</loc></url>" for p in site.get('projects', []) if p['url'].startswith('/')]
 open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(urls) + '\n</urlset>\n')
 open(os.path.join(OUT, 'robots.txt'), 'w').write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
 for f in ('_headers', '_redirects', '404.html'):
     src = os.path.join(HUB, f)
     if os.path.exists(src): shutil.copy(src, OUT)
+# ---------- static/：原样复制到站点根（独立小页面，如 /listen/） ----------
+STATIC = os.path.join(ROOT, 'static')
+if os.path.isdir(STATIC):
+    shutil.copytree(STATIC, OUT, dirs_exist_ok=True)
 print(f"built {len(themes)} theme(s) → public/  (latest: 第 {latest['no']} 题 {latest['title']})" if latest else 'built: no themes')

@@ -83,7 +83,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .ic{width:44px;height:44px;color:var(--fg)}
 .ic svg{width:22px;height:22px;fill:currentColor}
 .ic:hover{background:var(--accent-soft)}
-.ic small{font-size:9px;font-weight:500;position:absolute;bottom:7px;font-variant-numeric:tabular-nums}
+.skip svg{width:26px;height:26px;fill:none}
+.skip small{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:8.5px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
 .ic{position:relative}
 .play{width:64px;height:64px;background:var(--accent);color:var(--bg)}
 .play:hover{filter:brightness(1.08);background:var(--accent)}
@@ -154,12 +155,12 @@ footer a{color:var(--ink-2);text-decoration:none}footer a:hover{color:var(--acce
 
   <div class="transport">
     <button class="ic" id="prev" title="上一集" aria-label="上一集"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
-    <button class="ic" id="back" title="后退 15 秒" aria-label="后退 15 秒"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg><small>15</small></button>
+    <button class="ic skip" id="back" title="后退 15 秒" aria-label="后退 15 秒"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4 3.5v4h4"/></svg><small>15</small></button>
     <button class="play" id="play" aria-label="播放">
       <svg id="iplay" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       <svg id="ipause" viewBox="0 0 24 24" hidden><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
     </button>
-    <button class="ic" id="fwd" title="前进 30 秒" aria-label="前进 30 秒"><svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z"/></svg><small>30</small></button>
+    <button class="ic skip" id="fwd" title="前进 30 秒" aria-label="前进 30 秒"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M20 3.5v4h-4"/></svg><small>30</small></button>
     <button class="ic" id="next" title="下一集" aria-label="下一集"><svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z"/></svg></button>
   </div>
 

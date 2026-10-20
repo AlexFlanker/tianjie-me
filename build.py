@@ -151,3 +151,108 @@ STATIC = os.path.join(ROOT, 'static')
 if os.path.isdir(STATIC):
     shutil.copytree(STATIC, OUT, dirs_exist_ok=True)
 print(f"built {len(themes)} theme(s) → public/  (latest: 第 {latest['no']} 题 {latest['title']})" if latest else 'built: no themes')
+
+# ======================================================================
+# 播客 /listen/：podcast/episodes/<YYYY-MM-DD>-<slug>/{meta.json, notes.html, cover.png, audio/, script.md}
+# 输出 public/listen/index.html、public/listen/<slug>/、public/listen/feed.xml（带 enclosure 的播客 RSS）
+# ======================================================================
+POD = site.get('podcast')
+PODDIR = os.path.join(ROOT, 'podcast', 'episodes')
+if POD and os.path.isdir(PODDIR):
+    PBASE = POD.get('path', '/listen/')
+    eps = []
+    for d in sorted(os.listdir(PODDIR)):
+        p = os.path.join(PODDIR, d)
+        if not os.path.isdir(p) or not re.match(r'^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$', d): continue
+        if not os.path.exists(os.path.join(p, 'meta.json')): continue
+        e = json.load(open(os.path.join(p, 'meta.json'), encoding='utf-8'))
+        if e.get('draft'): continue
+        e.setdefault('slug', d[11:]); e.setdefault('date', d[:10]); e.setdefault('tags', [])
+        e['dir'] = p; e['url'] = f"{PBASE}{e['slug']}/"
+        e['dur'] = e['tracks'][0]['dur']; e['min'] = round(e['dur'] / 60)
+        e['has_cover'] = os.path.exists(os.path.join(p, 'cover.png'))
+        e['sq'] = 'cover-sq.png' if os.path.exists(os.path.join(p, 'cover-sq.png')) else 'cover.png'
+        eps.append(e)
+    eps.sort(key=lambda e: e['date'])
+    for i, e in enumerate(eps): e.setdefault('no', i + 1)
+    pod_out = os.path.join(OUT, PBASE.strip('/')); os.makedirs(pod_out, exist_ok=True)
+
+    def mmss(s): return f"{int(s)//60}:{int(s)%60:02d}"
+    def hhmmss(s): s = int(s); return f"{s//3600:02d}:{s%3600//60:02d}:{s%60:02d}"
+    ep_tpl = open(os.path.join(HUB, 'podcast_episode.html'), encoding='utf-8').read()
+    for i, e in enumerate(eps):
+        dst = os.path.join(pod_out, e['slug']); os.makedirs(dst, exist_ok=True)
+        for extra in ('cover.png', 'cover-sq.png', 'audio', 'script.md'):
+            src = os.path.join(e['dir'], extra)
+            if os.path.isdir(src): shutil.copytree(src, os.path.join(dst, extra), dirs_exist_ok=True)
+            elif os.path.exists(src): shutil.copy(src, dst)
+        notes = open(os.path.join(e['dir'], 'notes.html'), encoding='utf-8').read() if os.path.exists(os.path.join(e['dir'], 'notes.html')) else ''
+        prev_e = eps[i - 1] if i > 0 else None; next_e = eps[i + 1] if i + 1 < len(eps) else None
+        epjson = json.dumps({'slug': e['slug'], 'title': e['title'], 'coverTitle': e.get('cover_title', e['title']), 'coverSub': e.get('cover_sub', ''),
+                             'chapters': e['chapters'], 'tracks': [{'id': t['id'], 'title': t['title'], 'sub': t.get('sub', ''), 'src': t['file'], 'dur': t['dur'], 'ch': t['ch']} for t in e['tracks']]}, ensure_ascii=False)
+        page = (ep_tpl.replace('{{EP_JSON}}', epjson).replace('{{EP_TITLE}}', esc(e['title'])).replace('{{EP_SUB}}', esc(e.get('subtitle', '')))
+                .replace('{{EP_DESC}}', esc(e.get('summary', '')[:150])).replace('{{EP_DATE}}', e['date']).replace('{{EP_NO}}', str(e['no'])).replace('{{EP_MIN}}', str(e['min']))
+                .replace('{{EP_URL}}', e['url']).replace('{{POD_NAME}}', esc(POD['name'])).replace('{{BASE}}', BASE).replace('{{YEAR}}', str(dt.date.today().year))
+                .replace('{{BOOKS}}', ''.join(f'<span>{esc(b)}</span>' for b in e.get('books', []))).replace('{{NOTES}}', notes)
+                .replace('{{PREV}}', f'<a href="{prev_e["url"]}" title="{esc(prev_e["title"])}">← 上一期</a>' if prev_e else '<span>← 上一期</span>')
+                .replace('{{NEXT}}', f'<a href="{next_e["url"]}" title="{esc(next_e["title"])}">下一期 →</a>' if next_e else '<span>下一期 →</span>'))
+        open(os.path.join(dst, 'index.html'), 'w', encoding='utf-8').write(page)
+
+    # 播客首页
+    latest_e = eps[-1] if eps else None
+    def ep_card(e):
+        cover = f'<img src="{e["url"]}{e["sq"]}" alt="" loading="lazy">' if e['has_cover'] else ''
+        tags = ''.join(f'<span>{esc(t)}</span>' for t in e['tags'])
+        return (f'<a class="ep" href="{e["url"]}"><div class="cv">{cover}</div><div><div class="no">第 {e["no"]} 期 <time datetime="{e["date"]}">{e["date"]}</time> · {e["min"]} 分钟</div>'
+                f'<h3>{esc(e["title"])}</h3><p>{esc(e.get("subtitle") or e.get("summary", ""))}</p><div class="tags">{tags}<i>{len(e["tracks"])} 个声音版本</i></div></div></a>')
+    hero = ''
+    if latest_e:
+        cover = f'<img src="{latest_e["url"]}cover.png" alt="{esc(latest_e["title"])}">' if latest_e['has_cover'] else ''
+        hero = (f'<section class="hero"><div class="hero-cv">{cover}</div><div class="hero-tx"><div class="kicker">最新 · 第 {latest_e["no"]} 期 · {nice_date(latest_e["date"])}</div>'
+                f'<h2><a href="{latest_e["url"]}">{esc(latest_e["title"])}</a></h2>'
+                f'{"<div class=sub>"+esc(latest_e["subtitle"])+"</div>" if latest_e.get("subtitle") else ""}<p>{esc(latest_e.get("summary", ""))}</p>'
+                f'<div class="cta"><a class="btn" href="{latest_e["url"]}"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>开始收听</a><span class="meta">{latest_e["min"]} 分钟 · {len(latest_e["tracks"])} 个声音版本</span></div></div></section>')
+    ptpl = open(os.path.join(HUB, 'podcast_home.html'), encoding='utf-8').read()
+    home_p = (ptpl.replace('{{POD_NAME}}', esc(POD['name'])).replace('{{POD_TAGLINE}}', esc(POD['tagline'])).replace('{{POD_ABOUT}}', POD['about'])
+              .replace('{{HERO}}', hero).replace('{{EPISODES}}', ''.join(ep_card(e) for e in reversed(eps))).replace('{{COUNT}}', str(len(eps)))
+              .replace('{{BASE}}', BASE).replace('{{YEAR}}', str(dt.date.today().year))
+              .replace('{{OG_IMAGE}}', f"{BASE}{latest_e['url']}cover.png" if latest_e and latest_e['has_cover'] else ''))
+    open(os.path.join(pod_out, 'index.html'), 'w', encoding='utf-8').write(home_p)
+
+    # 播客 RSS（iTunes 命名空间；enclosure 用第一条音轨）
+    items = ''
+    for e in reversed(eps):
+        t = e['tracks'][0]; af = os.path.join(e['dir'], t['file']); size = os.path.getsize(af) if os.path.exists(af) else 0
+        pub = dt.datetime.fromisoformat(e['date'] + 'T08:00:00-07:00').strftime('%a, %d %b %Y %H:%M:%S %z')
+        items += f"""    <item>
+      <title>{esc(e['title'])}</title>
+      <link>{BASE}{e['url']}</link>
+      <guid isPermaLink="true">{BASE}{e['url']}</guid>
+      <pubDate>{pub}</pubDate>
+      <description>{esc(e.get('summary', ''))}</description>
+      <enclosure url="{BASE}{e['url']}{t['file']}" length="{size}" type="audio/mpeg"/>
+      <itunes:duration>{hhmmss(t['dur'])}</itunes:duration>
+      <itunes:episode>{e['no']}</itunes:episode>
+      {'<itunes:image href="'+BASE+e['url']+'cover.png"/>' if e['has_cover'] else ''}
+    </item>
+"""
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{esc(POD['name'])}</title>
+    <link>{BASE}{PBASE}</link>
+    <atom:link href="{BASE}{PBASE}feed.xml" rel="self" type="application/rss+xml"/>
+    <language>zh-cn</language>
+    <description>{esc(POD['tagline'])}</description>
+    <itunes:author>{esc(POD.get('author', site['author']))}</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    {'<itunes:image href="'+BASE+latest_e['url']+'cover.png"/>' if latest_e and latest_e['has_cover'] else ''}
+{items}  </channel>
+</rss>
+"""
+    open(os.path.join(pod_out, 'feed.xml'), 'w', encoding='utf-8').write(rss)
+    # sitemap 补充
+    sm = open(os.path.join(OUT, 'sitemap.xml'), encoding='utf-8').read()
+    add = ''.join(f"  <url><loc>{BASE}{e['url']}</loc><lastmod>{e['date']}</lastmod></url>\n" for e in eps)
+    open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(sm.replace('</urlset>', add + '</urlset>'))
+    print(f"podcast: {len(eps)} episode(s) → {PBASE}")

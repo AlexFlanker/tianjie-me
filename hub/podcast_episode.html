@@ -2,39 +2,58 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="三本书的一次合读：《架构整洁之道》《AI 工程》《智能简史》听书节目，三个声音版本可选，章节跳转。">
-<meta property="og:title" content="三本书的一次合读 · 听书">
-<meta property="og:description" content="当 AI 让你能做更多事之后——三本书的综合听书，约 25 分钟。">
-<meta property="og:url" content="https://tianjie.me/listen/">
-<meta property="og:image" content="https://tianjie.me/listen/cover.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{EP_TITLE}} · {{POD_NAME}} — 天杰</title>
+<meta name="description" content="{{EP_DESC}}">
+<meta name="author" content="Tianjie Sun">
+<meta name="theme-color" content="#f3f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16181b" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="{{BASE}}{{EP_URL}}">
+<link rel="alternate" type="application/rss+xml" title="{{POD_NAME}}" href="/listen/feed.xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{EP_TITLE}} · {{POD_NAME}}">
+<meta property="og:description" content="{{EP_SUB}}">
+<meta property="og:url" content="{{BASE}}{{EP_URL}}">
+<meta property="og:image" content="{{BASE}}{{EP_URL}}cover.png">
+<meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2213%22 fill=%22%231f5f63%22/%3E%3Cpath d=%22M12 10v12l10-6z%22 fill=%22%23fff%22/%3E%3C/svg%3E">
-<title>三本书的一次合读 · 听书 — 天杰</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231f5f63'/%3E%3Cpath d='M26 20v24l20-12z' fill='%23fff'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('yzyt-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
 <style>
-/* Layout: one centered column — cover, title, transport, then two compact lists (声音版本 / 章节). Quiet paper surface, one deep teal accent. */
-:root{
-  --bg:#f5f6f4; --surface:#ffffff; --fg:#1b2220; --muted:#6b7673; --line:#dfe4e1;
-  --accent:#1f5f63; --accent-soft:#d9e9e8; --track:#e6eae8;
-  --display:"Noto Serif SC",Georgia,"Songti SC",serif;
-  --body:"Noto Sans SC",-apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#111514; --surface:#191e1c; --fg:#e8ecea; --muted:#8d9894; --line:#2a312e;
-  --accent:#7fc2c3; --accent-soft:#1f3334; --track:#262d2a; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#111514; --surface:#191e1c; --fg:#e8ecea; --muted:#8d9894; --line:#2a312e;
-  --accent:#7fc2c3; --accent-soft:#1f3334; --track:#262d2a; color-scheme:dark}
+:root{--bg:#f3f4ef;--surface:#fbfbf8;--surface-2:#eceee6;--fg:#1c1e1a;--ink:#1c1e1a;--ink-2:#4c4f49;--muted:#7d817a;--line:#d8dad2;--line-2:#c5c8bf;--accent:#1f5f63;--accent-soft:#dbe8e7;--accent-ink:#fff;--track:#e3e5de;
+  --display:"Noto Serif SC","Songti SC","STSong",serif;--body:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#16181b;--surface:#1e2125;--surface-2:#262a2f;--fg:#ecebe4;--ink:#ecebe4;--ink-2:#b9bbb3;--muted:#8b8e88;--line:#33373c;--line-2:#444950;--accent:#7fc2c3;--accent-soft:#1f3334;--accent-ink:#121416;--track:#2b2f34;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#16181b;--surface:#1e2125;--surface-2:#262a2f;--fg:#ecebe4;--ink:#ecebe4;--ink-2:#b9bbb3;--muted:#8b8e88;--line:#33373c;--line-2:#444950;--accent:#7fc2c3;--accent-soft:#1f3334;--accent-ink:#121416;--track:#2b2f34;color-scheme:dark}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+[hidden]{display:none!important}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:8px 56px}
+@media (min-width:900px){.wrap{padding-left:max(36px,env(safe-area-inset-left,0px));padding-right:max(36px,env(safe-area-inset-right,0px))}}
+/* 顶栏 */
+.bar-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 18px;padding-block:14px 10px;border-bottom:2px solid var(--ink);font-size:13.5px}
+.bar-top a{text-decoration:none;color:var(--ink-2);letter-spacing:.06em}.bar-top a:hover{color:var(--accent)}
+.bar-top .brand{font-family:var(--display);font-weight:900;letter-spacing:.12em;color:var(--ink);font-size:16px}
+.bar-top .brand b{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:11px;letter-spacing:.1em;padding:1px 6px;border-radius:2px;margin-left:8px;vertical-align:1px;font-family:var(--body);font-weight:500}
+.bar-top .nav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.bar-top .nav span{color:var(--line-2)}
+.theme-btn{font:inherit;font-size:12px;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;background:var(--surface);cursor:pointer}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+/* 播放器 */
+
 
 html,body{height:100%}
 [hidden]{display:none!important}
 img{max-width:100%}
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 .back{display:block;text-align:center;font-size:13px;color:var(--muted);text-decoration:none;margin-top:6px}.back:hover{color:var(--accent)}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
-.wrap{max-width:560px;margin:0 auto;display:grid;gap:22px}
+.player{max-width:560px;margin:0 auto;display:grid;gap:22px;padding-block:28px 8px}
 .cover{width:min(300px,78vw);aspect-ratio:1;max-width:100%;margin:0 auto;border-radius:14px;overflow:hidden;
   box-shadow:0 18px 40px -22px rgba(0,0,0,.45)}
 .cover canvas{width:100%;height:100%;display:block}
@@ -91,15 +110,37 @@ section h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:va
 .list li.on .n span{display:none}
 .hint{text-align:center;font-size:12px;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
 
+/* 节目笔记 */
+.notes{max-width:680px;margin:36px auto 0;padding:28px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:none;overflow:visible}
+.notes h2{font-family:var(--display);font-size:22px;font-weight:900;letter-spacing:.08em;margin:0 0 14px}
+.notes h3{font-family:var(--display);font-size:17px;font-weight:700;margin:26px 0 8px}
+.notes p,.notes li{color:var(--ink-2);font-size:15px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{padding-left:1.3em;margin:0 0 12px}
+.notes li{margin-bottom:6px}
+.notes a{color:var(--accent)}
+.notes .fine{font-size:13px;color:var(--muted);margin-top:20px}
+.books{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.books span{font-size:12.5px;padding:2px 10px;border-radius:999px;background:var(--surface-2);color:var(--ink-2)}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted)}
+footer a{color:var(--ink-2);text-decoration:none}footer a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
 <div class="wrap">
+  <div class="bar-top" role="navigation" aria-label="播客">
+    <a class="brand" href="/listen/">{{POD_NAME}}<b>第 {{EP_NO}} 期</b></a>
+    <div class="nav">{{PREV}}<a href="/listen/">全部节目</a>{{NEXT}}<button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></div>
+  </div>
+
+<div class="player">
   <div class="cover" aria-hidden="true"><canvas id="cv" width="900" height="900"></canvas></div>
 
   <div class="meta">
-    <div class="eyebrow">听书 · 合读</div>
-    <h1>三本书的一次合读</h1>
-    <div class="sub">当 AI 让你能做更多事之后 · 约 25 分钟</div>
+    <div class="eyebrow">{{POD_NAME}} · 第 {{EP_NO}} 期 · {{EP_DATE}}</div>
+    <h1>{{EP_TITLE}}</h1>
+    <div class="sub">{{EP_SUB}} · 约 {{EP_MIN}} 分钟</div>
     <div class="now" id="now"></div>
   </div>
 
@@ -138,25 +179,19 @@ section h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:va
   </section>
 
   <div class="hint">空格 播放/暂停 · ← → 后退/前进 · ↑ ↓ 音量 · 自动记住上次位置</div>
-  <a class="back" href="/">← 回到 一周一题</a>
 </div>
 
 <audio id="au" preload="metadata"></audio>
 
 <script>
 (function(){
-const CH=["开场","第一部分 · 先搭房子，再请帮手 ——《架构整洁之道》","第二部分 · 当你造的东西会犯错 ——《AI 工程》","第三部分 · 智能是怎么一层一层长出来的 ——《智能简史》","第四部分 · 把三本书放到一起"];
-const TRACKS=[
- {id:"yunjian",title:"云健版（定稿）",sub:"男声 · 偏低、磁性，慢 4%",src:"audio/yunjian.mp3",dur:1483,ch:[0,134,528,887,1237]},
- {id:"xiaoxiao",title:"晓晓版",sub:"女声 · 清晰、播音感",src:"audio/xiaoxiao.mp3",dur:1484,ch:[0,140,538,892,1241]},
- {id:"yunxi",title:"云希版",sub:"男声 · 明亮、讲述感",src:"audio/yunxi.mp3",dur:1422,ch:[0,134,511,852,1190]},
-];
+const EP={{EP_JSON}};const CH=EP.chapters,TRACKS=EP.tracks;
 const SPEEDS=[0.8,1,1.1,1.25,1.5,1.75,2];
 const $=id=>document.getElementById(id);
 const au=$("au"),bar=$("bar"),fill=$("fill"),buf=$("buf"),knob=$("knob"),marks=$("marks"),cur=$("cur"),rem=$("rem"),now=$("now");
 let ti=0,spd=1,dragging=false;
 
-const store={get(k){try{return JSON.parse(localStorage.getItem("sbhd:"+k))}catch(e){return null}},set(k,v){try{localStorage.setItem("sbhd:"+k,JSON.stringify(v))}catch(e){}}};
+const store={get(k){try{return JSON.parse(localStorage.getItem("pod:"+EP.slug+":"+k))}catch(e){return null}},set(k,v){try{localStorage.setItem("pod:"+EP.slug+":"+k,JSON.stringify(v))}catch(e){}}};
 const fmt=s=>{s=Math.max(0,Math.floor(s||0));const m=Math.floor(s/60),x=s%60;return m+":"+(x<10?"0":"")+x};
 const T=()=>TRACKS[ti];
 const dur=()=>isFinite(au.duration)&&au.duration>0?au.duration:T().dur;
@@ -182,8 +217,8 @@ function drawCover(){
   g.beginPath();g.fillStyle=dark?"#7fc2c3":"#1f5f63";g.arc(cx+18,cy-14,34,0,Math.PI*2);g.fill();
   // text
   g.fillStyle=ink;g.textAlign="center";
-  g.font="700 78px 'Noto Serif SC',Georgia,serif";g.fillText("三本书合读",cx,H*.86);
-  g.font="500 28px 'Noto Sans SC',system-ui,sans-serif";g.globalAlpha=.65;g.fillText("认知 · 结构 · 组件",cx,H*.92);g.globalAlpha=1;
+  g.font="700 78px 'Noto Serif SC',Georgia,serif";g.fillText(EP.coverTitle||EP.title,cx,H*.86);
+  g.font="500 28px 'Noto Sans SC',system-ui,sans-serif";g.globalAlpha=.65;g.fillText(EP.coverSub||"",cx,H*.92);g.globalAlpha=1;
 }
 document.fonts&&document.fonts.ready.then(drawCover);drawCover();
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",drawCover);
@@ -259,5 +294,17 @@ const st=store.get("track");load(typeof st==="number"?st:0,false);
 })();
 </script>
 
+<section class="notes">
+  <h2>节目笔记</h2>
+  <div class="books">{{BOOKS}}</div>
+  {{NOTES}}
+</section>
+
+<footer><span>© {{YEAR}} Tianjie Sun</span><a href="/listen/feed.xml">播客 RSS</a><a href="/">一周一题</a></footer>
+</div>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('themebtn');if(!b)return;function L(){var t=r.getAttribute('data-theme');b.textContent=t==='dark'?'☀ 浅色':t==='light'?'☾ 深色':'◐ 深浅色'}
+b.addEventListener('click',function(){var d=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);r.setAttribute('data-theme',d?'light':'dark');try{localStorage.setItem('yzyt-theme',r.getAttribute('data-theme'))}catch(e){}L()});L()})();
+</script>
 </body>
 </html>

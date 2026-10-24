@@ -1,0 +1,1585 @@
+{
+  "route": "B",
+  "nodes": [
+    {
+      "id": "oracle-ganzhi",
+      "title": "甲骨上的干支：六十日一轮的纪日",
+      "year": -1250,
+      "year_end": -1046,
+      "year_label": "商代晚期",
+      "lane": "china",
+      "place": {
+        "name": "安阳",
+        "lat": 36.13,
+        "lon": 114.31
+      },
+      "scales": [
+        "day",
+        "month"
+      ],
+      "motive": [
+        "religion",
+        "rule"
+      ],
+      "object": "殷墟甲骨干支表",
+      "problem": "占卜与祭祀要落到具体某一天，需要一套不依赖月相、不会重复混淆的日名",
+      "method": "十天干配十二地支，六十日一轮，用来纪日；甲骨中已有「十三月」「十四月」作闰月",
+      "error": "纪日本身无累积误差，只是循环编号；年与月的协调靠置闰",
+      "cost": "六十日的周期和自然周期都不重合，必须与朔望月、回归年另行对表",
+      "still_used": "是，干支仍用于农历纪年、纪日与节气推算",
+      "why": "中国现存最早的成体系纪时记录，六十干支至今仍在用",
+      "text": "殷墟甲骨上刻着成套的干支表：十天干配十二地支，六十日一轮，用来给每一天编号。商人占卜先写干支日再写所问之事，所以今天还能按日名把三千多年前的卜辞排序；商王庙号也用天干，如「祖甲」「武丁」。甲骨中出现的「十三月」「十四月」说明商人已在年末补月来协调月与年。六十干支在商代主要用来纪日，今天则多用于纪年，但这套编号从商代一直沿用至今，与现行农历纪日仍可衔接。",
+      "numbers": [
+        {
+          "label": "干支周期",
+          "value": "60",
+          "unit": "日",
+          "basis": "十干 × 十二支的最小公倍数",
+          "confidence": "高"
+        },
+        {
+          "label": "甲骨中的闰月名",
+          "value": "十三月、十四月",
+          "unit": "",
+          "basis": "刘源讲座（澎湃新闻 2020-01-09）",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "「干支纪日自春秋以来两千七百余年未间断」是通行说法，本路未找到一手或通史页面逐字核对，故正文只写「从商代沿用至今」。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "讲座｜刘源：如何读懂甲骨文及其背后的商文明（澎湃新闻，2020-01-09，国家图书馆讲座纪要）",
+          "url": "https://www.thepaper.cn/newsDetail_forward_5440589",
+          "note": "商代六十干支代表六十天；十三月、十四月为闰月"
+        },
+        {
+          "title": "香港天文台：农历的来源（十九年七闰，春秋已用）",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendarinfo.htm",
+          "note": "官方页"
+        }
+      ],
+      "unverified": [
+        "「六十甲子纪日自春秋鲁隐公三年（前 720 年）起连续未断」只见二手转述",
+        "甲骨干支表具体藏品编号"
+      ]
+    },
+    {
+      "id": "yaodian",
+      "title": "《尧典》：三百六十六日与闰月",
+      "year": -300,
+      "year_end": null,
+      "year_label": "《尚书·尧典》（成书年代有争议）",
+      "lane": "china",
+      "place": {
+        "name": "平阳（传说中尧都）",
+        "lat": 36.08,
+        "lon": 111.52
+      },
+      "scales": [
+        "year",
+        "month"
+      ],
+      "motive": [
+        "astronomy",
+        "farming",
+        "rule"
+      ],
+      "object": "《尚书·尧典》",
+      "problem": "十二个朔望月只有约 354 日，与一年差十余日，四季会漂移",
+      "method": "一年三百六十六日为约数，用闰月把四时固定在该在的月份；以黄昏中星（鸟、火、虚、昴）定仲春、仲夏、仲秋、仲冬",
+      "error": "文中只给整日数，不给分数；实际协调靠观星与置闰",
+      "cost": "需要专职观象的官员（羲、和），历法成为王权的职能",
+      "still_used": "文本仍在，置闰原则一直延续到现行农历",
+      "why": "中国典籍里最早把「年有多少日」「用闰月定四时」写成制度的一段话",
+      "text": "《尚书·尧典》记尧「乃命羲和，钦若昊天，历象日月星辰，敬授人时」，又派四人观测四方：「日中，星鸟，以殷仲春」「日永，星火，以正仲夏」「宵中，星虚，以殷仲秋」「日短，星昴，以正仲冬」——用昼夜长短和黄昏南中的星宿定四季中点。最后一句最像历法条文：「期三百有六旬有六日，以闰月定四时成岁」。《尧典》成书年代有争议，但这段话把阴阳合历的核心——月随朔望、年随太阳、靠闰月弥合——说得清楚，后世历法都在这个框架里。",
+      "numbers": [
+        {
+          "label": "一年日数（《尧典》）",
+          "value": "366",
+          "unit": "日",
+          "basis": "「期三百有六旬有六日」原文",
+          "confidence": "高"
+        },
+        {
+          "label": "四仲中星",
+          "value": "鸟、火、虚、昴",
+          "unit": "",
+          "basis": "原文",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "《尧典》成书年代：传统以为记尧舜之事，现代学者多定为战国前后编定；四仲中星所反映的天象年代也有多种推算，本路不取其一。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "《尚书·尧典》原文（中国哲学书电子化计划）",
+          "url": "https://ctext.org/shang-shu/canon-of-yao/zhs",
+          "note": "原典；站点有反爬验证，需在浏览器中打开"
+        },
+        {
+          "title": "香港天文台：农历的来源",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendarinfo.htm",
+          "note": "十二朔望月 354.3672 日与回归年相差十余日，累积成闰月"
+        }
+      ],
+      "unverified": [
+        "《尧典》成书年代的具体学术结论"
+      ]
+    },
+    {
+      "id": "zhang-cycle",
+      "title": "十九年七闰：「章」与四分历",
+      "year": -400,
+      "year_end": null,
+      "year_label": "春秋—战国",
+      "lane": "china",
+      "place": {
+        "name": "洛阳",
+        "lat": 34.62,
+        "lon": 112.45
+      },
+      "scales": [
+        "year",
+        "month"
+      ],
+      "motive": [
+        "astronomy"
+      ],
+      "object": "四分历（古六历）",
+      "problem": "要让朔望月与回归年在一个固定周期内对齐，才能预先排好闰月",
+      "method": "19 年 = 235 朔望月，其中 7 个是闰月，称为一「章」；回归年取 365¼ 日，故名四分历",
+      "error": "365.25 日比回归年长约 11 分钟，每约 128 年多出一天；235 月对 19 年也有小差，长期要「破章」",
+      "cost": "朔与节气按平均值推算，日久与实测相差，历法要不断改订",
+      "still_used": "十九年七闰的比例至今仍大致成立，但现行农历按实测定朔定气，不再固定用章",
+      "why": "中国历法从观测报时走向可预推的数学模型的第一步",
+      "text": "十二个朔望月约 354 日，比回归年短十余日，三年就差一个月。古人发现 19 个回归年几乎等于 235 个朔望月，于是每 19 年安排 7 个闰月，这个周期叫「章」。香港天文台的说明写道，早在春秋时期中国已采用十九年七闰。配套的回归年取 365 又四分之一日，所以这类历法通称「四分历」。同一比例在巴比伦和希腊也被使用，希腊称为默冬章；两地各有记录，这里只并列事实。365.25 日比真实回归年长约 11 分钟，一百多年就多出一天，这也是后世不断改历的起点。",
+      "numbers": [
+        {
+          "label": "一章",
+          "value": "19 年 = 235 朔望月 = 7 闰",
+          "unit": "",
+          "basis": "四分历基本常数",
+          "confidence": "高"
+        },
+        {
+          "label": "四分历回归年",
+          "value": "365.25",
+          "unit": "日",
+          "basis": "名称由来；国立天文台历 Wiki",
+          "confidence": "高"
+        },
+        {
+          "label": "十二朔望月合计",
+          "value": "354.3672",
+          "unit": "日",
+          "basis": "香港天文台",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "十九年七闰起用年代：香港天文台称「早在春秋时期」；陈遵妫等通史多定在春秋中晚期至战国；精确年份不可考。巴比伦系统采用 19 年周期的年代（约前 5 世纪）与中国孰先，本路不作判断。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "香港天文台：农历的来源",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendarinfo.htm",
+          "note": "官方页，春秋已用十九年七闰"
+        },
+        {
+          "title": "国立天文台 历 Wiki：太初历 / 三统历（1 统 = 81 章 = 1539 年）",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/C2C0BDE9CEF1.html",
+          "note": "章、统的定义；汉历常数"
+        }
+      ],
+      "unverified": [
+        "十九年七闰在中国的确切起用年代",
+        "默冬章年份（前 432）本路未另核"
+      ]
+    },
+    {
+      "id": "taichu-104bc",
+      "title": "太初历：节气入历、正月为岁首",
+      "year": -104,
+      "year_end": null,
+      "year_label": "前 104 年（汉武帝太初元年）",
+      "lane": "china",
+      "place": {
+        "name": "长安",
+        "lat": 34.27,
+        "lon": 108.94
+      },
+      "scales": [
+        "year",
+        "month"
+      ],
+      "motive": [
+        "astronomy",
+        "politics",
+        "farming"
+      ],
+      "object": "《汉书·律历志》",
+      "problem": "秦与汉初沿用《颛顼历》以十月为岁首，朔晦与月相已不合",
+      "method": "邓平等「造八十一分律历」，一月为 29 又 81 分之 43 日；以正月为岁首；二十四节气全部列入历法",
+      "error": "回归年 365.250162 日（562120 ÷ 1539），比四分历略长",
+      "cost": "二十余家争议，司马迁等参与；「罢废尤疏远者十七家」",
+      "still_used": "正月岁首与二十四节气的框架沿用至今",
+      "why": "正史记载的第一部完整历法，定下正月过年和节气入历两件大事",
+      "text": "汉武帝太初元年（前 104 年）改历。《汉书·律历志》记朝廷招募治历者「凡二十余人」，方士唐都、巴郡落下闳在其中，最后「诏迁用邓平所造八十一分律历」：一个朔望月为 29 又 81 分之 43 日，回归年约 365.2502 日。太初历把岁首从秦制的十月改回正月——今天农历「正月初一过年」由此定下；二十四节气的全部名称也在此时完整进入官方历法（名称序列最早见于《淮南子·天文训》）。它是正史记载的第一部完整历法，用到东汉元和二年（公元 85 年）改行四分历。",
+      "numbers": [
+        {
+          "label": "施行年",
+          "value": "前 104",
+          "unit": "年",
+          "basis": "《汉书·律历志》；国立天文台历 Wiki",
+          "confidence": "高"
+        },
+        {
+          "label": "朔望月",
+          "value": "29 + 43/81",
+          "unit": "日",
+          "basis": "八十一分法",
+          "confidence": "高"
+        },
+        {
+          "label": "回归年",
+          "value": "365.250162",
+          "unit": "日",
+          "basis": "562120 ÷ 1539，国立天文台历 Wiki",
+          "confidence": "高"
+        },
+        {
+          "label": "沿用年数",
+          "value": "约 188",
+          "unit": "年",
+          "basis": "前 104 → 公元 85，国立天文台历 Wiki",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "太初历的主要作者：《汉书》明记采用「邓平所造八十一分律历」，落下闳为参与者之一；后世常以落下闳为代表人物，两说并列。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "《汉书·律历志上》原文（中国哲学书电子化计划）",
+          "url": "https://ctext.org/han-shu/lv-li-zhi-shang/zhs",
+          "note": "原典"
+        },
+        {
+          "title": "国立天文台 历 Wiki：太初历 / 三统历",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/C2C0BDE9CEF1.html",
+          "note": "常数与沿用年限"
+        },
+        {
+          "title": "《淮南子·天文训》原文（二十四节气全名最早序列）",
+          "url": "https://ctext.org/huainanzi/tian-wen-xun/zhs",
+          "note": "原典"
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "id": "dayan-729",
+      "title": "大衍历：一行的历法",
+      "year": 729,
+      "year_end": null,
+      "year_label": "729 年（开元十七年）颁行",
+      "lane": "china",
+      "place": {
+        "name": "长安",
+        "lat": 34.27,
+        "lon": 108.94
+      },
+      "scales": [
+        "year",
+        "month",
+        "day"
+      ],
+      "motive": [
+        "astronomy",
+        "politics"
+      ],
+      "object": "《大衍历》",
+      "problem": "麟德历预报日食屡失，玄宗命僧一行改历",
+      "method": "引入太阳视运动不均匀（日行盈缩）的修正与岁差；用不等间距二次内插推算；定朔注历",
+      "error": "回归年 365.24441 日（1110343 ÷ 3040）",
+      "cost": "一行在历成前去世，由张说、陈玄景整理成书",
+      "still_used": "否；其结构成为后世历法的范式，并传入日本（764–857 年行用）",
+      "why": "唐代历法的代表作，结构被后世沿用，又是东亚历法交流的实例",
+      "text": "开元年间，僧一行受唐玄宗之命重修历法。他主持大规模天文测量，把太阳视运动不均匀（日行盈缩）与岁差正式纳入推算，用不等间距二次内插法处理数据，使日月位置预报明显改善；回归年取 365.24441 日。一行在历书完成前去世，由张说、陈玄景整理成书，开元十七年（729 年）颁行，在唐代用到 761 年。此历还传入日本，天平宝字八年（764 年）至天安元年（857 年）作为日本官历使用 94 年。国立天文台历 Wiki 还记一行编制了最早的正切函数表之一。",
+      "numbers": [
+        {
+          "label": "颁行年",
+          "value": "729",
+          "unit": "年",
+          "basis": "国立天文台历 Wiki；国家图书馆年表（日本 763 年采用、764 施行）",
+          "confidence": "高"
+        },
+        {
+          "label": "回归年",
+          "value": "365.24441",
+          "unit": "日",
+          "basis": "1110343 ÷ 3040，国立天文台历 Wiki",
+          "confidence": "高"
+        },
+        {
+          "label": "中国行用",
+          "value": "729–761",
+          "unit": "年",
+          "basis": "国立天文台历 Wiki",
+          "confidence": "中"
+        },
+        {
+          "label": "日本行用",
+          "value": "764–857",
+          "unit": "年",
+          "basis": "国立天文台历 Wiki；国立国会图书馆年表",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "历书完成年份：通行说法为开元十五年（727 年）草成、一行卒；郭津嵩（史语所集刊 93.2，2022）中文摘要写「开元十六年《大衍历》修成」，英文摘要作 727。颁行为开元十七年（729）无异说。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "国立天文台 历 Wiki：大衍历",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/C2E7DEA7CEF1.html",
+          "note": "常数、行用年限"
+        },
+        {
+          "title": "国立国会图书馆「日本の暦」年表（763 年废仪凤历用大衍历，施行于翌年）",
+          "url": "https://www.ndl.go.jp/koyomi/chapter1/s3.html",
+          "note": "官方页"
+        },
+        {
+          "title": "郭津嵩《僧一行改历与唐玄宗制礼》，史语所集刊 93.2（2022）",
+          "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/1146/Article/2070",
+          "note": "学术论文摘要"
+        },
+        {
+          "title": "《新唐书·历志》（中国哲学书电子化计划检索）",
+          "url": "https://ctext.org/searchbooks.pl?if=gb&searchu=%E5%A4%A7%E8%A1%8D%E6%9B%86",
+          "note": "原典检索入口"
+        }
+      ],
+      "unverified": [
+        "开元九年（721）受命改历只见通行说法",
+        "一行正切表年份 724 只有国立天文台脚注"
+      ]
+    },
+    {
+      "id": "shoushi-1281",
+      "title": "授时历：365.2425 日",
+      "year": 1281,
+      "year_end": null,
+      "year_label": "1281 年（至元十八年）施行",
+      "lane": "china",
+      "place": {
+        "name": "大都",
+        "lat": 39.9,
+        "lon": 116.4
+      },
+      "scales": [
+        "year"
+      ],
+      "motive": [
+        "astronomy",
+        "politics"
+      ],
+      "object": "《元史·历志》",
+      "problem": "金《大明历》沿用已久，推算与实测不合；元统一后需新历",
+      "method": "许衡、王恂、郭守敬主持，设二十七处观测点「四海测验」，造简仪、仰仪等新仪；回归年取 365.2425 日，废除上元积年，用实测数据起算",
+      "error": "365.2425 日比回归年长约 26 秒，约 3,300 年差一天",
+      "cost": "需全国性测量与新造仪器；明代改名《大统历》继续使用，去掉消长法",
+      "still_used": "否，1645 年被时宪历取代；但其回归年值与今日公历相同",
+      "why": "中国传统历法精度的顶点，回归年值与三百年后的格里历相同",
+      "text": "元世祖至元年间，许衡、王恂、郭守敬等奉命改历，先在全国设二十七处观测点进行「四海测验」，又造简仪、仰仪等新仪器。《元史·历志》记新历于至元十七年（1280 年）冬告成，次年（1281 年）颁行，名《授时历》。其回归年为 365.2425 日（岁实 3652425 ÷ 日法 10000），与 1582 年格里历采用的平均年数值相同，两者相隔 301 年——这是数值上的事实，两地各自独立得出。授时历还放弃从「上元」累计年数，直接用实测起算。明代改称《大统历》沿用，前后共 364 年，并传入朝鲜、越南、日本。",
+      "numbers": [
+        {
+          "label": "回归年",
+          "value": "365.2425",
+          "unit": "日",
+          "basis": "岁实 3652425 ÷ 日周 10000；国立天文台历 Wiki",
+          "confidence": "高"
+        },
+        {
+          "label": "施行年",
+          "value": "1281",
+          "unit": "年",
+          "basis": "至元十八年；国立天文台历 Wiki",
+          "confidence": "高"
+        },
+        {
+          "label": "与格里历（1582）相隔",
+          "value": "301",
+          "unit": "年",
+          "basis": "1582 − 1281",
+          "confidence": "高"
+        },
+        {
+          "label": "沿用年数（含大统历）",
+          "value": "364",
+          "unit": "年",
+          "basis": "1281–1644，国立天文台历 Wiki",
+          "confidence": "中"
+        },
+        {
+          "label": "四海测验观测点",
+          "value": "27",
+          "unit": "处",
+          "basis": "新华网《国宝美鉴》",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "沿用年数：国立天文台历 Wiki 作 364 年（至 1644）；新华网报道作「380 余年」（含明清之交及朝鲜等地续用）。「比格里历早 300 年」与「301 年」两种表述并存，1582 − 1281 = 301。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "国立天文台 历 Wiki：授时历",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/BCF8BBFECEF1.html",
+          "note": "常数、作者、行用年限"
+        },
+        {
+          "title": "新华网《国宝美鉴》第三集：授时历法 探寻时间之尺（2025-06-20）",
+          "url": "https://www.xinhuanet.com/enterprise/20250620/ba5c0964dc914c1796548ea7db31bfd4/c.html",
+          "note": "四海测验、简仪"
+        },
+        {
+          "title": "《元史·历志》（中国哲学书电子化计划检索）",
+          "url": "https://ctext.org/searchbooks.pl?if=gb&searchu=%E6%8E%88%E6%97%B6%E5%8E%86",
+          "note": "原典检索入口"
+        },
+        {
+          "title": "City University of Hong Kong：Guo Shoujing（PDF）",
+          "url": "https://www.ee.cityu.edu.hk/~gchen/pdf/GuoShoujing.pdf",
+          "note": "辅助"
+        }
+      ],
+      "unverified": [
+        "《元史》「至元十七年冬新历告成」的逐字原文（ctext 有反爬验证，未能机读）"
+      ]
+    },
+    {
+      "id": "shixian-1645",
+      "title": "时宪历：定气注历",
+      "year": 1645,
+      "year_end": null,
+      "year_label": "1645 年（顺治二年）施行",
+      "lane": "china",
+      "place": {
+        "name": "北京",
+        "lat": 39.9,
+        "lon": 116.4
+      },
+      "scales": [
+        "year",
+        "month"
+      ],
+      "motive": [
+        "astronomy",
+        "politics"
+      ],
+      "object": "《时宪历》（《西洋新法历书》）",
+      "problem": "《大统历》日食预报屡误；明末徐光启主持编成《崇祯历书》却未及颁行",
+      "method": "汤若望删改《崇祯历书》为《西洋新法历书》，清廷于 1645 年颁行；节气由平气改为定气——按太阳黄经每 15° 定一气",
+      "error": "回归年 365.24233442 日；节气间隔随地球轨道椭圆而在约 14–16 日之间变动",
+      "cost": "康熙初年曾一度被废又恢复；定气使「无中气之月」的出现方式改变，置闰规则随之变化",
+      "still_used": "是，现行农历仍按定气与定朔编算",
+      "why": "现行农历的直接祖本：节气按太阳真实位置划分",
+      "text": "明末徐光启等与传教士合编《崇祯历书》，引入欧洲天文学模型，但明亡前未能颁行。1644 年汤若望将其删改为《西洋新法历书》进呈清廷，顺治二年（1645 年）起以《时宪历》之名施行。最大的改变是节气定法：此前用「平气」，把一年时间等分为 24 段，每段约 15.2 日；时宪历改用「定气」，按太阳在黄道上每走 15° 定一个节气，因地球轨道是椭圆，各气间隔在 14 至 16 日之间变动。其回归年为 365.24233442 日，用到清亡共 267 年，康熙初年曾短暂中断。今天的农历仍沿用定朔定气这套算法。",
+      "numbers": [
+        {
+          "label": "施行年",
+          "value": "1645",
+          "unit": "年",
+          "basis": "顺治二年；国立天文台历 Wiki",
+          "confidence": "高"
+        },
+        {
+          "label": "回归年",
+          "value": "365.24233442",
+          "unit": "日",
+          "basis": "国立天文台历 Wiki",
+          "confidence": "中"
+        },
+        {
+          "label": "定气间隔",
+          "value": "15",
+          "unit": "度黄经",
+          "basis": "国立天文台「二十四节气的定法」",
+          "confidence": "高"
+        },
+        {
+          "label": "行用年数",
+          "value": "267",
+          "unit": "年",
+          "basis": "1645–1911，国立天文台历 Wiki",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "日本采用定气晚于中国：日本至天保历（1844 年）才改定气（国立天文台）；中国 1645 年时宪历即用定气。两地年份不同为事实并列。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "国立天文台 历 Wiki：时宪历",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/BBFEB7FBCEF1.html",
+          "note": "作者、常数、行用年限、定气法"
+        },
+        {
+          "title": "国立天文台 历 Wiki：二十四节气的定法（平气法与定气法）",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/B5A8C0E12FC6F3BDBDBBCDC0E1B5A4A4CEC4EAA4E1CAFD.html",
+          "note": "每 15° 一气，间隔 14–16 日"
+        },
+        {
+          "title": "arXiv: The Eclipse of 21 June 1629 in Beijing in the Context of the Reform of the Chinese Calendar",
+          "url": "https://arxiv.org/pdf/2006.16766",
+          "note": "崇祯改历背景（学术）"
+        }
+      ],
+      "unverified": [
+        "《明史·历志》《清史稿·时宪志》原文未能机读（ctext 反爬）"
+      ]
+    },
+    {
+      "id": "roc-1912",
+      "title": "1912：改用阳历、民国纪年",
+      "year": 1912,
+      "year_end": null,
+      "year_label": "1912-01-01",
+      "lane": "china",
+      "place": {
+        "name": "南京",
+        "lat": 32.06,
+        "lon": 118.8
+      },
+      "scales": [
+        "year"
+      ],
+      "motive": [
+        "politics"
+      ],
+      "object": "临时大总统改历改元通电（1912-01-02）",
+      "problem": "新政权需要与国际通用的历法与纪年接轨",
+      "method": "各省代表会议 1911-12-31 议决改用阳历；孙中山 1912-01-02 通电：「以黄帝纪元四千六百零九年十一月十三日为中华民国元年元旦」",
+      "error": "",
+      "cost": "官方与学校过阳历新年，商民仍过旧历年，形成「二历并存」；后续多次试图废止旧历未果",
+      "still_used": "公历在中国大陆沿用；「民国纪年」至今在台湾地区使用",
+      "why": "中国正式进入公历系统的时间点，也是「农历并行」格局的起点",
+      "text": "1911 年 12 月 31 日，在南京的各省代表会议议决改用阳历。1912 年 1 月 1 日孙中山就任临时大总统，宣言书署「大中华民国元年元旦」；1 月 2 日通电各省：「中华民国改用阳历，以黄帝纪元四千六百零九年十一月十三日为中华民国元年元旦」，并「订于阳历正月十五日补祝新年」。此后民国纪年与公历月日并用。临时参议院的历法议案规定「新旧二历并存」：官署、学校按阳历，商民照旧按旧历过年。1930 年前后国民政府曾以法令废止旧历，民间习惯并未改变，两历并行延续至今。",
+      "numbers": [
+        {
+          "label": "改用阳历",
+          "value": "1912-01-01",
+          "unit": "",
+          "basis": "各省代表会议议决、孙中山通电",
+          "confidence": "高"
+        },
+        {
+          "label": "通电日期",
+          "value": "1912-01-02",
+          "unit": "",
+          "basis": "澎湃新闻、中新网报道",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "通电中「黄帝纪元四千六百零九年」与「四千六百九年」两种写法见于不同转录。1930 年「废止旧历」的法令年份，澎湃文章作 1930；通行说法多作 1928–1929 年国民政府内政部提案，本路未核原件。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "郑泽民《从「旧新年」到「新新年」：民国时期商家的新年营销》，澎湃新闻 2017-01-01",
+          "url": "https://www.thepaper.cn/newsDetail_forward_1581572",
+          "note": "通电片段、二历并存"
+        },
+        {
+          "title": "《孙中山最早正式使用「元旦」》，中国新闻网转《江南时报》2016-01-04",
+          "url": "https://www.chinanews.com.cn/m/cul/2016/01-04/7699338.shtml",
+          "note": "1911-12-31 议决、1912-01-02 通电"
+        },
+        {
+          "title": "国立天文台 历 Wiki：时宪历（「清灭亡后 1912 年起采用太阳历」）",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/BBFEB7FBCEF1.html",
+          "note": "旁证"
+        }
+      ],
+      "unverified": [
+        "《孙中山全集》通电全文未见原件",
+        "1914 年内务部呈准以阴历元旦为「春节」只有通行说法",
+        "1928–1930 废旧历法令原件"
+      ]
+    },
+    {
+      "id": "prc-1949",
+      "title": "1949：公元纪年与农历国家标准",
+      "year": 1949,
+      "year_end": 2017,
+      "year_label": "1949-09-27 / 2017-09-01",
+      "lane": "china",
+      "place": {
+        "name": "北京",
+        "lat": 39.9,
+        "lon": 116.4
+      },
+      "scales": [
+        "year",
+        "month"
+      ],
+      "motive": [
+        "politics",
+        "astronomy"
+      ],
+      "object": "GB/T 33661-2017《农历的编算和颁行》",
+      "problem": "公历与农历并行，但农历长期没有国家层面的编算规范，民间历书时有出入",
+      "method": "1949 年中国人民政治协商会议第一届全体会议决议纪年采用公元；农历由中国科学院紫金山天文台编算；2017 年发布国家标准，规定朔日为初一、含冬至之月为十一月、冬至后第一个无中气之月为闰月、以北京时间为准",
+      "error": "标准同时规定了编算模型与精度要求",
+      "cost": "标准为推荐性（GB/T）；各地历书须以紫金山天文台编算结果为准",
+      "still_used": "是",
+      "why": "现行农历的法定算法第一次写进国家标准",
+      "text": "1949 年 9 月，中国人民政治协商会议第一届全体会议决议中华人民共和国的纪年采用公元。公历成为法定历法，农历并未废止，春节、中秋照旧按农历过，由中国科学院紫金山天文台编算。2017 年 5 月 12 日国家标准 GB/T 33661-2017《农历的编算和颁行》发布，9 月 1 日实施，首次把规则写成条文：朔日为初一；含冬至的农历月为十一月；其后第二个（不计闰月）农历月、即含雨水之月为正月；冬至后第一个没有中气的农历月为闰月；计算以北京时间（UTC+8）为准。二十四节气则于 2016 年列入联合国教科文组织非遗代表作名录。",
+      "numbers": [
+        {
+          "label": "政协决议采用公元纪年",
+          "value": "1949-09-27",
+          "unit": "",
+          "basis": "《关于中华人民共和国国都、纪年、国歌、国旗的决议》；新华社大事记记会期 9-21 至 9-30",
+          "confidence": "中"
+        },
+        {
+          "label": "标准发布日",
+          "value": "2017-05-12",
+          "unit": "",
+          "basis": "国家标准全文公开系统",
+          "confidence": "高"
+        },
+        {
+          "label": "标准实施日",
+          "value": "2017-09-01",
+          "unit": "",
+          "basis": "国家标准全文公开系统",
+          "confidence": "高"
+        },
+        {
+          "label": "二十四节气入 UNESCO 名录",
+          "value": "2016（第 11 届委员会会议 11.COM）",
+          "unit": "",
+          "basis": "UNESCO 非遗官网",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "政协决议日期 9 月 27 日为通行记载（维基文库收录决议文本）；新华社《大事记》只记会议 9 月 21–30 日举行并决定采用公元纪年，未单列日期。UNESCO 官网只给年份 2016 与 11.COM，「11 月 30 日」见中方报道。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "国家标准全文公开系统：GB/T 33661-2017 农历的编算和颁行",
+          "url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=E107EA4DE9725EDF819F33C60A44B296",
+          "note": "官方页：发布 2017-05-12、实施 2017-09-01、归口中国科学院"
+        },
+        {
+          "title": "新华网：乙巳春节趣谈——春节日期原来是这样来的（2025-01-27）",
+          "url": "https://www.news.cn/20250127/19b7b1e375d24931bbdfa8d654043f21/c.html",
+          "note": "紫金山天文台编算；置闰规则原文"
+        },
+        {
+          "title": "UNESCO ICH: The Twenty-Four Solar Terms（00647）",
+          "url": "https://ich.unesco.org/en/RL/the-twenty-four-solar-terms-knowledge-in-china-of-time-and-practices-developed-through-observation-of-the-suns-annual-motion-00647",
+          "note": "官方页"
+        },
+        {
+          "title": "新华社《中华人民共和国大事记（1949 年 10 月–2019 年 9 月）》（澎湃转载）",
+          "url": "https://m.thepaper.cn/newsDetail_forward_4543499",
+          "note": "采用公元纪年"
+        },
+        {
+          "title": "维基文库：关于中华人民共和国国都、纪年、国歌、国旗的决议",
+          "url": "https://zh.wikisource.org/zh/%E9%97%9C%E6%96%BC%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E5%9C%8B%E9%83%BD%E3%80%81%E7%B4%80%E5%B9%B4%E3%80%81%E5%9C%8B%E6%AD%8C%E3%80%81%E5%9C%8B%E6%97%97%E7%9A%84%E6%B1%BA%E8%AD%B0",
+          "note": "决议文本（辅助；本会话未能打开）"
+        }
+      ],
+      "unverified": [
+        "GB/T 33661-2017 条文原文（openstd 仅开放题录与预览，未能机读全文；规则摘录来自新华社报道）",
+        "UNESCO 列入的具体日期 2016-11-30（ihchina.cn 页面打不开）"
+      ]
+    },
+    {
+      "id": "solar-terms",
+      "title": "二十四节气：藏在农历里的阳历",
+      "year": 2026,
+      "year_end": null,
+      "year_label": "2026-10-23 霜降 · 2026-11-07 立冬",
+      "lane": "china",
+      "place": {
+        "name": "北京",
+        "lat": 39.9,
+        "lon": 116.4
+      },
+      "scales": [
+        "year",
+        "month"
+      ],
+      "motive": [
+        "farming",
+        "astronomy"
+      ],
+      "object": "二十四节气",
+      "problem": "农历月份随月相，日期在公历上每年漂动近一个月，农事无法照月份安排",
+      "method": "把太阳在黄道上的一周分为 24 段，每 15° 一气；节气日期在公历上基本固定，前后只差一两天",
+      "error": "定气法下各气间隔 14–16 日不等；节气时刻接近午夜时，日期可能相差一天",
+      "cost": "阴阳合历必须同时跟踪月与日，闰月规则因此比纯阴历或纯阳历复杂",
+      "still_used": "是",
+      "why": "解释「农历是阴阳历」这一常见误会的最好例子",
+      "text": "农历常被叫做「阴历」，其实是阴阳合历：月份跟着月相，年份靠闰月追着太阳，而二十四节气是纯粹的阳历成分——只看太阳在黄道上的位置，与月相无关。所以节气在公历上的日期几乎固定：今年霜降 10 月 23 日，立冬 11 月 7 日，和往年只差一两天；换成农历，同一节气每年要漂动十来天。节气定法有两种：古代多用「平气」，把一年时间平分为 24 段；1645 年时宪历起改用「定气」，按太阳黄经每 15° 定一气，各气间隔在 14 到 16 日之间变动。节气也是置闰的尺子：没有「中气」的农历月就是闰月。",
+      "numbers": [
+        {
+          "label": "2026 霜降",
+          "value": "2026-10-23",
+          "unit": "",
+          "basis": "香港天文台 2026 年公历农历对照表",
+          "confidence": "高"
+        },
+        {
+          "label": "2026 立冬",
+          "value": "2026-11-07",
+          "unit": "",
+          "basis": "香港天文台 2026 年公历农历对照表",
+          "confidence": "高"
+        },
+        {
+          "label": "每气黄经",
+          "value": "15",
+          "unit": "°",
+          "basis": "国立天文台「二十四节气的定法」",
+          "confidence": "高"
+        },
+        {
+          "label": "定气间隔范围",
+          "value": "约 14–16",
+          "unit": "日",
+          "basis": "国立天文台「二十四节气的定法」",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台：2026 年公历与农历对照表（文本版）",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2026c.txt",
+          "note": "官方页：10-23 霜降、11-07 立冬"
+        },
+        {
+          "title": "国立天文台 历 Wiki：二十四节气的定法",
+          "url": "https://eco.mtk.nao.ac.jp/koyomi/wiki/B5A8C0E12FC6F3BDBDBBCDC0E1B5A4A4CEC4EAA4E1CAFD.html",
+          "note": "平气与定气"
+        },
+        {
+          "title": "UNESCO ICH: The Twenty-Four Solar Terms",
+          "url": "https://ich.unesco.org/en/RL/the-twenty-four-solar-terms-knowledge-in-china-of-time-and-practices-developed-through-observation-of-the-suns-annual-motion-00647",
+          "note": "官方页"
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "id": "east-asia",
+      "title": "东亚与南亚：一张公历、多本旧历",
+      "year": 1873,
+      "year_end": 2019,
+      "year_label": "1873-01-01 → 2019-05-01",
+      "lane": "china",
+      "place": {
+        "name": "东京",
+        "lat": 35.68,
+        "lon": 139.69
+      },
+      "scales": [
+        "year"
+      ],
+      "motive": [
+        "politics",
+        "religion"
+      ],
+      "object": "明治改历（1872-11-09 发布）",
+      "problem": "各国在采用公历的同时，如何安置原有的历法与纪年",
+      "method": "日本 1873-01-01 改用格里历、年号保留；越南 1967 年起以 UTC+7 算农历；泰国 1941 年改以 1 月 1 日为年首、佛历 = 公历 + 543；埃塞俄比亚保留 13 月历；尼泊尔以维克拉姆历为官历",
+      "error": "越南与中国因时区不同，个别年份春节相差一天甚至一个月（1985、2007）",
+      "cost": "一国之内常常两套甚至三套纪年并行",
+      "still_used": "是",
+      "why": "展示「采用公历」不等于「放弃旧历」，各国各有拼法",
+      "text": "日本于明治 5 年 11 月 9 日（1872 年）宣布改历，把明治 5 年 12 月 3 日定为明治 6 年 1 月 1 日，即 1873 年 1 月 1 日起用格里历，年号制度保留，2019 年 5 月 1 日改元令和。越南农历与中国同源，但 1967 年起按河内时间（UTC+7）计算：1985 年越南春节在 1 月 21 日、中国在 2 月 20 日；2007 年为 2 月 17 日对 2 月 18 日。泰国 1941 年把年首从 4 月 1 日改为 1 月 1 日，佛历 2483 年只有 9 个月，佛历年 = 公历年 + 543。埃塞俄比亚历 12 个 30 天的月加 5–6 天的第 13 月，比公历晚 7–8 年，2007 年 9 月 12 日才进入 2000 年。尼泊尔以维克拉姆历为官方历。",
+      "numbers": [
+        {
+          "label": "日本改历",
+          "value": "1873-01-01（旧历明治 5 年 12 月 3 日）",
+          "unit": "",
+          "basis": "国立国会图书馆「日本の暦」年表",
+          "confidence": "高"
+        },
+        {
+          "label": "改历发布",
+          "value": "1872-11-09（明治 5 年 11 月 9 日）",
+          "unit": "",
+          "basis": "国立国会图书馆年表",
+          "confidence": "高"
+        },
+        {
+          "label": "令和施行",
+          "value": "2019-05-01",
+          "unit": "",
+          "basis": "内阁府「元号について」：平成 31 年政令第 143 号附则",
+          "confidence": "高"
+        },
+        {
+          "label": "越南 1985 春节 / 中国",
+          "value": "1985-01-21 / 1985-02-20",
+          "unit": "",
+          "basis": "Hồ Ngọc Đức, Computing the Vietnamese lunar calendar",
+          "confidence": "中"
+        },
+        {
+          "label": "越南 2007 春节 / 中国",
+          "value": "2007-02-17 / 2007-02-18",
+          "unit": "",
+          "basis": "同上",
+          "confidence": "中"
+        },
+        {
+          "label": "泰国改年首",
+          "value": "1941-01-01（佛历 2484 年始）",
+          "unit": "",
+          "basis": "Royal Gazette 1940-09-17（经维基转引）",
+          "confidence": "中"
+        },
+        {
+          "label": "佛历 − 公历",
+          "value": "543",
+          "unit": "年",
+          "basis": "维基；通行换算",
+          "confidence": "中"
+        },
+        {
+          "label": "埃塞俄比亚千禧年",
+          "value": "2007-09-12",
+          "unit": "",
+          "basis": "埃塞俄比亚驻美使馆网页",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "越南改用 UTC+7 计算农历的法令：维基称 1967-08-08 北越政府颁布，未给法令号；通行说法为 121-CP 号决定。南越 1975 年后跟进亦只见维基。泰国 1912 年改用佛历纪年、1888 年采用阳历只有维基，未见一手。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "国立国会图书馆「日本の暦」年表：1872 年 11 月 9 日改历发表；1873 年 1 月 1 日（旧历 12 月 3 日）起施行格里历",
+          "url": "https://www.ndl.go.jp/koyomi/chapter1/s3.html",
+          "note": "官方页"
+        },
+        {
+          "title": "内阁府：元号について（元号法 昭和 54 年法律第 43 号；元号を改める政令 平成 31 年政令第 143 号）",
+          "url": "https://www.cao.go.jp/others/soumu/gengou/index.html",
+          "note": "官方页"
+        },
+        {
+          "title": "Hồ Ngọc Đức, Computing the Vietnamese lunar calendar（莱比锡大学）",
+          "url": "https://www.informatik.uni-leipzig.de/~duc/amlich/calrules_en.html",
+          "note": "1985 / 2007 两例原文"
+        },
+        {
+          "title": "Wikipedia: Vietnamese calendar",
+          "url": "https://en.wikipedia.org/wiki/Vietnamese_calendar",
+          "note": "1967-08-08 改时区，线索"
+        },
+        {
+          "title": "Wikipedia: Thai solar calendar（引 Royal Gazette 57(ก):419, 1940-09-17）",
+          "url": "https://en.wikipedia.org/wiki/Thai_solar_calendar",
+          "note": "线索；一手为泰国政府公报"
+        },
+        {
+          "title": "Embassy of Ethiopia (Washington): Ethiopian Time",
+          "url": "https://ethiopianembassy.org/?p=3812",
+          "note": "官方页：13 月、千禧年 2007-09-12"
+        }
+      ],
+      "unverified": [
+        "越南 1967 年法令编号（121-CP）与日期",
+        "泰国 1888 年采用阳历、1912 年改佛历纪年只有维基",
+        "尼泊尔维克拉姆历只有通行说法，未找到官方页",
+        "朝鲜半岛农历按韩国标准时（UTC+9）计算的官方表述（韩国天文研究院页面未写明）"
+      ]
+    },
+    {
+      "id": "maya",
+      "title": "玛雅：长纪历与 13.0.0.0.0",
+      "year": -3114,
+      "year_end": 2012,
+      "year_label": "前 3114-08-11 → 2012-12-21",
+      "lane": "mesoamerica",
+      "place": {
+        "name": "蒂卡尔 / 奇琴伊察",
+        "lat": 17.22,
+        "lon": -89.62
+      },
+      "scales": [
+        "day",
+        "year"
+      ],
+      "motive": [
+        "religion",
+        "astronomy",
+        "rule"
+      ],
+      "object": "德累斯顿抄本（SLUB Dresden, Mscr.Dresd.R.310）",
+      "problem": "需要同时记录神圣历、太阳年和跨越数千年的王朝纪年",
+      "method": "卓尔金历 260 日（13 × 20）；哈布历 365 日（18 × 20 + 5）；两者合成 52 年的历法轮回（18,980 日）；长纪历以 20 进制（第三位 18）从前 3114 年起连续数日",
+      "error": "哈布历 365 日不置闰，每年比回归年短约 0.24 日；长纪历本身是纯计数，无误差",
+      "cost": "与公历的对应依赖「相关常数」，学界以 584283（GMT 相关）为通行值，另有 584285 等说",
+      "still_used": "卓尔金历在危地马拉高地部分玛雅社区仍在使用",
+      "why": "美洲文明独立发展出的多周期历法与连续纪日，并留下金星表",
+      "text": "玛雅人同时运行几套周期：卓尔金历 260 日，20 个日名配 1 到 13；哈布历 365 日，18 个月各 20 天加 5 天「瓦耶布」。两者同一组合每 52 年（18,980 日）重现一次，叫历法轮回。更长的事件用长纪历：以 20 进位连续数日（第三位用 18），起点 13.0.0.0.0 对应公元前 3114 年 8 月 11 日，13 个伯克盾共 1,872,000 日，于 2012 年 12 月 21 日再次回到 13.0.0.0.0——这是按通行的「GMT 相关常数」584283 换算的结果，另一常数 584285 给出 12 月 23 日。德累斯顿抄本藏于德国萨克森州立暨大学图书馆，1739 年购自维也纳，其中金星表以 584 日为金星会合周期。",
+      "numbers": [
+        {
+          "label": "卓尔金历",
+          "value": "260",
+          "unit": "日",
+          "basis": "20 × 13，史密森尼国立美洲印第安人博物馆",
+          "confidence": "高"
+        },
+        {
+          "label": "哈布历",
+          "value": "365",
+          "unit": "日",
+          "basis": "18 × 20 + 5，同上",
+          "confidence": "高"
+        },
+        {
+          "label": "历法轮回",
+          "value": "52 年 = 18,980 日",
+          "unit": "",
+          "basis": "同上（52 × 365）",
+          "confidence": "高"
+        },
+        {
+          "label": "长纪历起点",
+          "value": "前 3114-08-11（公历推算）",
+          "unit": "",
+          "basis": "史密森尼 NMAI",
+          "confidence": "高"
+        },
+        {
+          "label": "13 伯克盾",
+          "value": "1,872,000",
+          "unit": "日",
+          "basis": "史密森尼 NMAI",
+          "confidence": "高"
+        },
+        {
+          "label": "13.0.0.0.0 再临",
+          "value": "2012-12-21",
+          "unit": "",
+          "basis": "史密森尼 NMAI",
+          "confidence": "高"
+        },
+        {
+          "label": "GMT 相关常数",
+          "value": "584283",
+          "unit": "儒略日",
+          "basis": "通行说法（维基等）",
+          "confidence": "低"
+        },
+        {
+          "label": "德累斯顿抄本购入",
+          "value": "1739",
+          "unit": "年",
+          "basis": "FAMSI",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "相关常数：584283（Thompson 修订的 GMT 值）对应 2012-12-21；584285 对应 2012-12-23；本路只并列。抄本页数：维基作 78 页（74 页有字），FAMSI 按旧编号作 1–74 页。抄本年代：维基列 c. 1200–1345 等多说，早期「11–12 世纪」说已被修正。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Smithsonian NMAI: Living Maya Time — The Calendar System",
+          "url": "https://maya.nmai.si.edu/calendar/calendar-system",
+          "note": "官方页：260 / 365 / 52 年 / 13.0.0.0.0 / 2012-12-21"
+        },
+        {
+          "title": "FAMSI: The Dresden Codex",
+          "url": "https://www.famsi.org/mayawriting/codices/dresden.html",
+          "note": "1739 年购入、1744 年入藏、Förstemann 1880/1892 版"
+        },
+        {
+          "title": "Wikipedia: Dresden Codex（引 Thompson 1972、SLUB 页）",
+          "url": "https://en.wikipedia.org/wiki/Dresden_Codex",
+          "note": "线索；SLUB 数字版 PDF 链接见其参考文献"
+        },
+        {
+          "title": "SLUB Dresden 数字馆藏（Codex Dresdensis）",
+          "url": "https://digital.slub-dresden.de/werkansicht/dlf/2967/1",
+          "note": "本会话被人机验证拦截，许可未能核对"
+        }
+      ],
+      "unverified": [
+        "SLUB 数字版的授权条款（通常为 Public Domain Mark 或 CC BY-SA 4.0，本会话打不开 SLUB 页面）",
+        "金星表具体页码（24、46–50）",
+        "584283 的一手文献（Thompson 1927/1935）"
+      ]
+    },
+    {
+      "id": "aztec",
+      "title": "阿兹特克：52 年一次新火",
+      "year": 1507,
+      "year_end": null,
+      "year_label": "1507 年新火仪式",
+      "lane": "mesoamerica",
+      "place": {
+        "name": "特诺奇蒂特兰",
+        "lat": 19.43,
+        "lon": -99.13
+      },
+      "scales": [
+        "day",
+        "year"
+      ],
+      "motive": [
+        "religion",
+        "rule"
+      ],
+      "object": "新火仪式（Toxiuhmolpilia）/ 太阳石",
+      "problem": "365 日年历与 260 日神圣历每 52 年才重合一次，周期之交被视为世界可能终结的时刻",
+      "method": "xiuhpohualli 365 日（18 × 20 + 5）与 tonalpohualli 260 日并行；每 52 年熄灭全城火种，在维萨奇特兰山顶取新火",
+      "error": "365 日年历不置闰",
+      "cost": "全城灭火、弃旧器物；仪式伴有人祭",
+      "still_used": "否",
+      "why": "与玛雅同源的双历结构，用仪式把 52 年周期刻进政治生活",
+      "text": "阿兹特克人沿用中部美洲共同的双历：365 日的年历 xiuhpohualli（18 个 20 日月加 5 日）和 260 日的神圣历 tonalpohualli。两者每 52 年回到同一起点，这一夜被视为世界可能终结的时刻，于是举行「新火仪式」：全城熄灭所有火种，祭司在特斯科科湖东南的维萨奇特兰山（今「星山」）顶等待特定星辰过中天，钻木取火，再由跑者把火种分送全城。据《世界历史百科》整理，仪式曾于 1351、1403、1455、1507 年举行，最后一次在莫克特苏马二世在位时，距西班牙人到来仅十余年。",
+      "numbers": [
+        {
+          "label": "年历",
+          "value": "365",
+          "unit": "日",
+          "basis": "World History Encyclopedia",
+          "confidence": "高"
+        },
+        {
+          "label": "神圣历",
+          "value": "260",
+          "unit": "日",
+          "basis": "同上",
+          "confidence": "高"
+        },
+        {
+          "label": "新火周期",
+          "value": "52",
+          "unit": "年",
+          "basis": "同上",
+          "confidence": "高"
+        },
+        {
+          "label": "最后一次新火",
+          "value": "1507",
+          "unit": "年",
+          "basis": "同上",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Mark Cartwright, The Aztec New Fire Ceremony, World History Encyclopedia (2016)",
+          "url": "https://www.worldhistory.org/article/866/the-aztec-new-fire-ceremony/",
+          "note": "CC BY-NC-SA；1351/1403/1455/1507"
+        },
+        {
+          "title": "Wikipedia: New Fire ceremony",
+          "url": "https://en.wikipedia.org/wiki/New_Fire_ceremony",
+          "note": "线索"
+        }
+      ],
+      "unverified": [
+        "萨阿贡《佛罗伦萨抄本》中新火仪式的原文页码"
+      ]
+    },
+    {
+      "id": "day-division",
+      "title": "一日怎么分：时辰、刻、小时",
+      "year": -1500,
+      "year_end": 1350,
+      "year_label": "古埃及 → 14 世纪机械钟",
+      "lane": "china",
+      "place": {
+        "name": "开封",
+        "lat": 34.8,
+        "lon": 114.3
+      },
+      "scales": [
+        "hour"
+      ],
+      "motive": [
+        "astronomy",
+        "technology",
+        "rule"
+      ],
+      "object": "漏刻 / 更鼓 / 塔钟",
+      "problem": "太阳只给出「正午」一个天然刻度，昼夜长短又随季节变化，一日之内怎么等分、怎么报时",
+      "method": "中国：十二时辰与一日百刻并行，夜间另分五更，后改九十六刻（每时辰八刻）；埃及：昼夜各分 12 段，形成 24 小时；巴比伦：60 进制；欧洲：14 世纪机械塔钟使等长小时取代季节时",
+      "error": "百刻与十二时辰不能整除（一时辰 8⅓ 刻）；季节时在冬夏长短不等；1656 年惠更斯摆钟误差才小于每日 1 分钟",
+      "cost": "每次改分法都要重刻漏箭、日晷和钟面",
+      "still_used": "24 小时、60 分、60 秒沿用至今；「刻」仍指 15 分钟",
+      "why": "年和月靠天象，小时却是人为约定——各文明分法不同，接力成今天的 24 × 60 × 60",
+      "text": "一天怎么切，各文明答案不同。中国自汉以来并行两套：十二时辰与漏刻的「百刻制」——一昼夜一百刻，每刻约 14.4 分钟；夜间另按季节分五更，由钟鼓楼报时。百刻与十二时辰不能整除，后来改为九十六刻，每时辰八刻、每小时四刻，「一刻钟 = 15 分钟」由此而来。古埃及人用日晷与水钟把白昼和夜晚各分 12 段，合成 24 小时，但每「小时」随季节伸缩；巴比伦的 60 进制给了分与秒。14 世纪上半叶，意大利城市塔楼上出现大型机械钟，机械节拍不随季节变化，等长小时逐渐取代季节时；1656 年惠更斯造出摆钟，误差首次小于每日 1 分钟。",
+      "numbers": [
+        {
+          "label": "百刻制每刻",
+          "value": "约 14.4",
+          "unit": "分钟",
+          "basis": "24 × 60 ÷ 100",
+          "confidence": "高"
+        },
+        {
+          "label": "九十六刻制",
+          "value": "每时辰 8 刻、每小时 4 刻",
+          "unit": "",
+          "basis": "李忠林《协日正时》，人民论坛 2025-04-17",
+          "confidence": "高"
+        },
+        {
+          "label": "宋代漏刻精度",
+          "value": "约 2",
+          "unit": "分钟",
+          "basis": "同上",
+          "confidence": "中"
+        },
+        {
+          "label": "埃及水钟 / 影钟",
+          "value": "约前 1500",
+          "unit": "年",
+          "basis": "NIST A Walk Through Time",
+          "confidence": "中"
+        },
+        {
+          "label": "欧洲机械塔钟",
+          "value": "14 世纪上半叶",
+          "unit": "",
+          "basis": "NIST A Walk Through Time",
+          "confidence": "高"
+        },
+        {
+          "label": "惠更斯摆钟",
+          "value": "1656",
+          "unit": "年",
+          "basis": "NIST",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "九十六刻制的采用时间：通行说法为明末《崇祯历书》/ 清初《时宪历》（1645）随西法引入；李忠林（人民论坛 2025）写「直到清中叶改为九十六刻」。两说并列，本路未见原始档案。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "李忠林《协日正时：我国古代的计时制度》，《人民论坛》2025-04-17 第 07 版",
+          "url": "https://paper.people.com.cn/rmlt/pc/content/202504/17/content_30080950.html",
+          "note": "百刻、九十六刻、五更、漏刻精度"
+        },
+        {
+          "title": "NIST: A Walk Through Time — Early Clocks",
+          "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-early-clocks",
+          "note": "官方页：埃及影钟、水钟约前 1500 年"
+        },
+        {
+          "title": "NIST: A Walk Through Time — A Revolution in Timekeeping（归档页）",
+          "url": "https://www.nist.gov/node/446006",
+          "note": "14 世纪意大利塔钟、1656 惠更斯"
+        }
+      ],
+      "unverified": [
+        "埃及「昼夜各 12 小时」与巴比伦 60 进制的接力：NIST 页面未直接写明，依通史常识",
+        "苏颂水运仪象台（1092）本路未另核"
+      ]
+    },
+    {
+      "id": "still-changing",
+      "title": "还在议的：公历与旧历并行",
+      "year": 1979,
+      "year_end": 2026,
+      "year_label": "1979 → 今",
+      "lane": "china",
+      "place": {
+        "name": "首尔",
+        "lat": 37.57,
+        "lon": 126.98
+      },
+      "scales": [
+        "year"
+      ],
+      "motive": [
+        "politics"
+      ],
+      "object": "日本《元号法》（昭和 54 年法律第 43 号）",
+      "problem": "采用公历一百多年后，旧历与旧纪年该放在什么位置，东亚各国仍在用法律与假日安排作答",
+      "method": "韩国以法规恢复农历新年为公休日；日本以《元号法》把年号制度写进法律；中国以国家标准规范农历编算、以法定假日保留农历节日",
+      "error": "",
+      "cost": "两套日期并行带来换算与放假安排的持续成本",
+      "still_used": "是",
+      "why": "说明历法之争并未结束，只是换成了假日表和法律条文",
+      "text": "东亚三国都用公历，也都没有放下旧历。韩国 1949 年起把阳历 1 月 1 日定为公休日，农历新年一度不放假；1985 年以「民俗之日」名义恢复一天假，1989 年改回「설날」并放假三天。日本 1873 年改历后旧历不再官用，但年号保留，1979 年《元号法》规定「元号由政令规定」「仅在皇位继承时更改」，2019 年 5 月 1 日依此改元令和。中国以公元纪年，同时由紫金山天文台编算农历，2017 年起有国家标准规范算法，春节等农历节日为法定假日。哪一套算「正式」、哪一套是「民俗」，三国的法律和假日表给出了不同答案。",
+      "numbers": [
+        {
+          "label": "韩国恢复农历新年假日",
+          "value": "1985（民俗之日，1 天）→ 1989（설날，3 天）",
+          "unit": "",
+          "basis": "韩国国家记录院通讯 2015-02",
+          "confidence": "高"
+        },
+        {
+          "label": "日本《元号法》",
+          "value": "1979（昭和 54 年法律第 43 号）",
+          "unit": "",
+          "basis": "内阁府",
+          "confidence": "高"
+        },
+        {
+          "label": "令和改元",
+          "value": "2019-05-01",
+          "unit": "",
+          "basis": "内阁府：政令第 143 号附则",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "韩国国家记录院「이달의 기록」2015 年 2 月：설날 公休日变迁",
+          "url": "https://theme.archives.go.kr/next/pages/new_newsletter/2015/02/sub1.html",
+          "note": "官方页：1949 / 1985 / 1989"
+        },
+        {
+          "title": "内阁府：元号について",
+          "url": "https://www.cao.go.jp/others/soumu/gengou/index.html",
+          "note": "官方页"
+        },
+        {
+          "title": "国家标准全文公开系统：GB/T 33661-2017",
+          "url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=E107EA4DE9725EDF819F33C60A44B296",
+          "note": "官方页"
+        }
+      ],
+      "unverified": [
+        "韩国农历编算以韩国标准时（UTC+9）为准、由韩国天文研究院发布「월력요항」——KASI 页面提示以月历要项为准，但未写明时区",
+        "中国《全国年节及纪念日放假办法》条文本路未另核"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "leap-rule-gb",
+      "text": "GB/T 33661-2017 规定的农历置闰规则（据新华社 2025-01-27 报道转述）：朔日为农历月的第一个农历日，即初一；包含冬至节气的农历月为十一月；十一月之后第二个（不计闰月）农历月、即包含雨水节气的月份为正月；「冬至后第一个没有中气的农历月为闰月」；计算以北京时间为标准。",
+      "value": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "新华网 2025-01-27",
+          "url": "https://www.news.cn/20250127/19b7b1e375d24931bbdfa8d654043f21/c.html"
+        },
+        {
+          "title": "openstd 题录",
+          "url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=E107EA4DE9725EDF819F33C60A44B296"
+        }
+      ]
+    },
+    {
+      "id": "leap-rule-vn",
+      "text": "越南农历同一规则的英文表述（Hồ Ngọc Đức）：「The Winter Solstice always falls in month 11 of the lunar year」；若两个相邻冬至月之间有 13 个月则该年置闰，闰月为「the first lunar month after the first Winter Solstice that does not contain a Principal Term」；按河内时间计算。",
+      "value": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Computing the Vietnamese lunar calendar",
+          "url": "https://www.informatik.uni-leipzig.de/~duc/amlich/calrules_en.html"
+        }
+      ]
+    },
+    {
+      "id": "gb-dates",
+      "text": "GB/T 33661-2017《农历的编算和颁行》2017-05-12 发布、2017-09-01 实施，归口与主管部门为中国科学院，现行有效。",
+      "value": "2017-09-01",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=E107EA4DE9725EDF819F33C60A44B296"
+        }
+      ]
+    },
+    {
+      "id": "leap-2017",
+      "text": "2017 年闰六月，闰六月初一为 2017-07-23；该年春节 2017-01-28。",
+      "value": "闰六月 2017-07-23",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2017 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2017c.txt"
+        }
+      ]
+    },
+    {
+      "id": "leap-2020",
+      "text": "2020 年闰四月，闰四月初一为 2020-05-23；该年春节 2020-01-25。",
+      "value": "闰四月 2020-05-23",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2020 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2020c.txt"
+        }
+      ]
+    },
+    {
+      "id": "leap-2023",
+      "text": "2023 年闰二月，闰二月初一为 2023-03-22。",
+      "value": "闰二月 2023-03-22",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2023 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2023c.txt"
+        }
+      ]
+    },
+    {
+      "id": "leap-2025",
+      "text": "2025 年闰六月，闰六月初一为 2025-07-25。",
+      "value": "闰六月 2025-07-25",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2025 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2025c.txt"
+        }
+      ]
+    },
+    {
+      "id": "no-leap-2024-2026-2027",
+      "text": "2024、2026、2027 年均无闰月。",
+      "value": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2024 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2024c.txt"
+        },
+        {
+          "title": "2026",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2026c.txt"
+        },
+        {
+          "title": "2027",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2027c.txt"
+        }
+      ]
+    },
+    {
+      "id": "cny-2023",
+      "text": "2023 年春节（正月初一）2023-01-22。",
+      "value": "2023-01-22",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2023 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2023c.txt"
+        }
+      ]
+    },
+    {
+      "id": "cny-2024",
+      "text": "2024 年春节 2024-02-10。",
+      "value": "2024-02-10",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2024 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2024c.txt"
+        }
+      ]
+    },
+    {
+      "id": "cny-2025",
+      "text": "2025 年春节 2025-01-29。",
+      "value": "2025-01-29",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2025 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2025c.txt"
+        }
+      ]
+    },
+    {
+      "id": "cny-2026",
+      "text": "2026 年春节 2026-02-17。",
+      "value": "2026-02-17",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2026 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2026c.txt"
+        }
+      ]
+    },
+    {
+      "id": "cny-2027",
+      "text": "2027 年春节 2027-02-06。",
+      "value": "2027-02-06",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2027 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2027c.txt"
+        }
+      ]
+    },
+    {
+      "id": "today-lunar",
+      "text": "2026-10-24（星期六）是农历丙午年九月十五；前一天 10-23 为九月十四、霜降；九月初一为 2026-10-10；立冬为 2026-11-07。",
+      "value": "九月十五",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 2026 对照表",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendar/text/files/T2026c.txt"
+        }
+      ]
+    },
+    {
+      "id": "vn-cn-1985",
+      "text": "1985 年越南春节为 1985-01-21，中国春节为 1985-02-20，相差一个月：因 1984 年冬至在河内时间为 12 月 21 日、北京时间为 12 月 22 日，冬至所在月不同，闰月位置随之不同（越南该年闰月为 1985-03-21 至 04-19 的那个月）。",
+      "value": "1985-01-21 / 1985-02-20",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Hồ Ngọc Đức",
+          "url": "https://www.informatik.uni-leipzig.de/~duc/amlich/calrules_en.html"
+        },
+        {
+          "title": "Wikipedia: Vietnamese calendar",
+          "url": "https://en.wikipedia.org/wiki/Vietnamese_calendar"
+        }
+      ]
+    },
+    {
+      "id": "vn-cn-2007",
+      "text": "2007 年越南春节为 2007-02-17，中国春节为 2007-02-18，相差一天（朔的时刻跨越了两地的午夜）。",
+      "value": "2007-02-17 / 2007-02-18",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Hồ Ngọc Đức",
+          "url": "https://www.informatik.uni-leipzig.de/~duc/amlich/calrules_en.html"
+        }
+      ]
+    },
+    {
+      "id": "hko-caveat",
+      "text": "香港天文台提示：若新月（初一）或节气时刻很接近午夜零时，对照表的日期可能有一日之差；其表覆盖 1901–2100 年。",
+      "value": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 公历与农历对照表说明",
+          "url": "https://www.hko.gov.hk/tc/gts/time/conversion.htm"
+        }
+      ]
+    },
+    {
+      "id": "unesco-24",
+      "text": "二十四节气于 2016 年由联合国教科文组织保护非物质文化遗产政府间委员会第 11 届会议（11.COM）列入人类非物质文化遗产代表作名录，元素名「The Twenty-Four Solar Terms, knowledge in China of time and practices developed through observation of the sun's annual motion」。",
+      "value": "2016",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "UNESCO ICH 00647",
+          "url": "https://ich.unesco.org/en/RL/the-twenty-four-solar-terms-knowledge-in-china-of-time-and-practices-developed-through-observation-of-the-suns-annual-motion-00647"
+        }
+      ]
+    },
+    {
+      "id": "twelve-months",
+      "text": "十二个朔望月合计 354.3672 日，比回归年短十余日；早在春秋时期中国已采用十九年七闰的安排（香港天文台表述）。",
+      "value": "354.3672",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "香港天文台 农历的来源",
+          "url": "https://www.hko.gov.hk/tc/gts/time/calendarinfo.htm"
+        }
+      ]
+    }
+  ],
+  "constants": {
+    "shoushi_tropical_year_days": {
+      "value": "365.2425",
+      "source": "授时历岁实 3652425 ÷ 日周 10000；国立天文台历 Wiki https://eco.mtk.nao.ac.jp/koyomi/wiki/BCF8BBFECEF1.html"
+    },
+    "gregorian_mean_year_days": {
+      "value": "365.2425",
+      "source": "400 年 97 闰：(400 × 365 + 97) ÷ 400；与授时历数值相同，相隔 301 年（1281 → 1582）"
+    },
+    "tropical_year_days": {
+      "value": "365.24219",
+      "source": "共用简报给定值；本路未另核"
+    },
+    "shixian_tropical_year_days": {
+      "value": "365.24233442",
+      "source": "国立天文台历 Wiki：时宪历 https://eco.mtk.nao.ac.jp/koyomi/wiki/BBFEB7FBCEF1.html"
+    },
+    "dayan_tropical_year_days": {
+      "value": "365.24441",
+      "source": "1110343 ÷ 3040；国立天文台历 Wiki：大衍历 https://eco.mtk.nao.ac.jp/koyomi/wiki/C2E7DEA7CEF1.html"
+    },
+    "taichu_tropical_year_days": {
+      "value": "365.250162",
+      "source": "562120 ÷ 1539；国立天文台历 Wiki：太初历 https://eco.mtk.nao.ac.jp/koyomi/wiki/C2C0BDE9CEF1.html"
+    },
+    "sifen_tropical_year_days": {
+      "value": "365.25",
+      "source": "四分历名称由来"
+    },
+    "twelve_synodic_months_days": {
+      "value": "354.3672",
+      "source": "香港天文台 https://www.hko.gov.hk/tc/gts/time/calendarinfo.htm"
+    },
+    "zhang_cycle": {
+      "value": "19 年 = 235 朔望月 = 7 闰月",
+      "source": "四分历；香港天文台"
+    },
+    "maya_calendar_round_days": {
+      "value": "18980",
+      "source": "52 × 365；Smithsonian NMAI https://maya.nmai.si.edu/calendar/calendar-system"
+    },
+    "maya_13_baktun_days": {
+      "value": "1872000",
+      "source": "Smithsonian NMAI"
+    },
+    "gmt_correlation_jd": {
+      "value": "584283",
+      "source": "通行说法（GMT 相关常数，Thompson 修订值）；另说 584285；未见一手"
+    },
+    "thai_be_minus_ce": {
+      "value": "543",
+      "source": "维基 Thai solar calendar；通行换算"
+    },
+    "ke_96_minutes": {
+      "value": "15",
+      "source": "九十六刻制每刻 = 15 分钟；李忠林《协日正时》"
+    }
+  },
+  "unverified": [
+    "ctext.org 全站有反爬验证，所有原典（《尚书·尧典》《汉书·律历志》《元史·历志》《新唐书·历志》）只给链接、未能机读逐字核对；《尧典》引文依通行文本",
+    "zh.wikisource.org 本会话打不开（url_not_found），1949 政协决议文本与《唐书》历志未能核对",
+    "GB/T 33661-2017 条文原文未能机读，置闰规则摘录来自新华社 2025-01-27 报道",
+    "二十四节气 UNESCO 列入具体日期 2016-11-30（ihchina.cn 打不开；UNESCO 页只给 2016 / 11.COM）",
+    "SLUB 德累斯顿抄本数字版的许可条款（人机验证拦截）",
+    "GMT 相关常数 584283 的一手文献",
+    "越南 1967 年改 UTC+7 算历的法令编号与日期（维基作 1967-08-08）",
+    "尼泊尔维克拉姆历只写一句，未找到官方页",
+    "泰国 1888 年采用阳历、1912 年改佛历纪年只有维基；1940-09-17 政府公报为维基转引",
+    "九十六刻制采用年代（明末 / 清初 / 清中叶）诸说未见原始档案",
+    "「六十甲子纪日自春秋以来连续未断」只有通行说法",
+    "1914 年「春节」定名与 1928–1930 年废旧历法令原件"
+  ]
+}

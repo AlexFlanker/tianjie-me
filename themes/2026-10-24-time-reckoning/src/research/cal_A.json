@@ -1,0 +1,1992 @@
+{
+  "route": "A",
+  "nodes": [
+    {
+      "id": "babylon-lunisolar",
+      "title": "两河：看见新月才算月初，19 年补 7 个月",
+      "year": -500,
+      "year_end": null,
+      "year_label": "约前 5 世纪",
+      "lane": "mesopotamia",
+      "place": {
+        "name": "巴比伦",
+        "lat": 32.54,
+        "lon": 44.42
+      },
+      "scales": [
+        "month",
+        "year",
+        "week",
+        "hour"
+      ],
+      "motive": [
+        "astronomy",
+        "religion",
+        "rule"
+      ],
+      "object": "巴比伦天文日志（泥板）与尼散月新年",
+      "problem": "12 个朔望月只有约 354 天，比回归年短约 11 天，不补月则新年很快脱离春分",
+      "method": "每月从日落后首见新月起算，29 或 30 天；国王下令置闰（第二个乌卢卢月或第二个阿达尔月），约前 5 世纪起固定为 19 年 7 闰",
+      "error": "235 个朔望月 ≈ 6,939.69 天，19 个回归年 ≈ 6,939.60 天，每 19 年约差 2 小时，约 219 年差一天",
+      "cost": "月初靠肉眼观测，阴天就要等；各城邦置闰不一则日期难以对账",
+      "still_used": "直接后裔是希伯来历；60 进制的时分秒与七曜日名沿用至今",
+      "why": "阴阳历、19 年 7 闰、60 进制与七日周，四样东西都从这里起步",
+      "text": "巴比伦人把一个月定义为「日落后第一次看见新月」到下一次之间，29 或 30 天；12 个这样的月只有 354 天左右，于是国王要在合适的年份下令加一个月。到波斯统治下的公元前 5 世纪，置闰被固定成 19 年 7 闰的周期：235 个朔望月与 19 个太阳年几乎等长，每 19 年只差约 2 小时。他们还把昼夜分成 12 个「贝鲁」、把圆周分成 360 度，60 进制一路传到今天的时分秒；以日月五星命名的七天循环，则经希腊罗马成为今天的星期。",
+      "numbers": [
+        {
+          "label": "阴历年长",
+          "value": "约 354",
+          "unit": "天",
+          "basis": "12 × 29.53",
+          "confidence": "高"
+        },
+        {
+          "label": "置闰周期",
+          "value": "19 年 7 闰（235 个月）",
+          "unit": "",
+          "basis": "Britannica / Livius",
+          "confidence": "高"
+        },
+        {
+          "label": "19 年周期误差",
+          "value": "约 2.08",
+          "unit": "小时 / 19 年",
+          "basis": "235 × 29.530589 − 19 × 365.24219",
+          "confidence": "高"
+        },
+        {
+          "label": "制度化年代",
+          "value": "前 503（Livius）/ 约前 380（Britannica）",
+          "unit": "",
+          "basis": "见 dispute",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "19 年周期何时固定：Livius（Lendering）称前 503 年大流士一世时已成标准程序「若非更早」；Britannica 称约前 380 年起规则化；Britton（2007）据天文日志认为前 484 年后再无例外。本页取「约前 5 世纪」。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Britannica: Babylonian calendar",
+          "url": "https://www.britannica.com/print/article/47677",
+          "note": "权威百科"
+        },
+        {
+          "title": "Livius.org: Calendar, Babylonian（Jona Lendering）",
+          "url": "https://www.livius.org/articles/concept/calendar-babylonian/",
+          "note": "专题"
+        },
+        {
+          "title": "Babylonian calendar（维基）",
+          "url": "https://en.wikipedia.org/wiki/Babylonian_calendar",
+          "note": "维基（线索）"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "昼夜 12 贝鲁 / 360 度的一手出处（Neugebauer 等）本轮未直接核对",
+        "Britton 2007 原文未打开"
+      ]
+    },
+    {
+      "id": "egypt-365",
+      "title": "埃及：365 天的民用年与一天 24 小时",
+      "year": -2450,
+      "year_end": null,
+      "year_label": "至迟古王国（约前 2450 年）",
+      "lane": "egypt",
+      "place": {
+        "name": "孟菲斯",
+        "lat": 29.85,
+        "lon": 31.25
+      },
+      "scales": [
+        "year",
+        "month",
+        "day",
+        "hour"
+      ],
+      "motive": [
+        "farming",
+        "astronomy",
+        "rule"
+      ],
+      "object": "民用历（12 × 30 + 5 天）与天狼星偕日升",
+      "problem": "尼罗河泛滥与天狼星黎明前重现同期，需要一个不靠观月、便于行政的固定年",
+      "method": "12 个月各 30 天，加 5 个「年外日」，共 365 天，不置闰；三季各四个月；每月三个十日周；白昼与黑夜各分 12 小时",
+      "error": "每 4 年落后太阳年约 1 天，1,460 年绕回一圈（天狼周期）",
+      "cost": "民用年与季节慢慢错开，宗教节日要靠另一部阴历追踪",
+      "still_used": "科普特历与埃塞俄比亚历保留 12 × 30 + 5 的骨架；24 小时制沿用至今",
+      "why": "第一个 365 天年与 24 小时制的源头",
+      "text": "古埃及人注意到，天狼星在黎明前重新出现的日子与尼罗河开始泛滥大致同时，于是用它标记新年。至迟在古王国时期，他们的民用历已是 12 个月、每月 30 天，年末再加 5 天，一年 365 天，不设闰日，行政上极为整齐。一年分泛滥、生长、收获三季，每季四个月，每月三个十日周。因为比太阳年短约四分之一天，民用历每 4 年提前一天，要 1,460 年才与天狼星重新对齐。白昼与黑夜各分 12 小时——这便是一天 24 小时的来历，夜间的小时靠一组组「旬星」的升起来数，白天靠影钟与水钟。",
+      "numbers": [
+        {
+          "label": "年长",
+          "value": "365",
+          "unit": "天",
+          "basis": "12 × 30 + 5",
+          "confidence": "高"
+        },
+        {
+          "label": "漂移",
+          "value": "约 1 天 / 4 年；1,460 年一周",
+          "unit": "",
+          "basis": "Britannica / Met Museum",
+          "confidence": "高"
+        },
+        {
+          "label": "小时制",
+          "value": "昼 12 + 夜 12 = 24",
+          "unit": "小时",
+          "basis": "Met Museum（Kamrin 2017）",
+          "confidence": "高"
+        },
+        {
+          "label": "民用历确立",
+          "value": "至迟约前 2450（古王国）",
+          "unit": "",
+          "basis": "Met Museum",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "民用历起源年代：Met Museum 称「至迟古王国约前 2450 年」；通行说法另有约前 3000 / 前 2800 年等推算，均属推断。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Britannica: Egyptian calendar",
+          "url": "https://www.britannica.com/print/article/180708",
+          "note": "权威百科"
+        },
+        {
+          "title": "Met Museum: Telling Time in Ancient Egypt（Janice Kamrin, 2017）",
+          "url": "https://www.metmuseum.org/essays/telling-time-in-ancient-egypt",
+          "note": "博物馆专文"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "托勒密三世前 238 年卡诺普斯敕令试行闰日、前 25 年亚历山大历——本轮未单独核对"
+      ]
+    },
+    {
+      "id": "rome-julian",
+      "title": "罗马：445 天的「混乱之年」与四年一闰",
+      "year": -46,
+      "year_end": null,
+      "year_label": "前 46 年",
+      "lane": "europe",
+      "place": {
+        "name": "罗马",
+        "lat": 41.9,
+        "lon": 12.5
+      },
+      "scales": [
+        "year",
+        "month"
+      ],
+      "motive": [
+        "politics",
+        "astronomy",
+        "rule"
+      ],
+      "object": "儒略历（凯撒与索西琴尼）",
+      "problem": "努马历 355 天靠祭司团临时加 22/23 天的闰月，祭司因政治与债务考虑屡屡失职，到前 46 年历法已与季节错开近两个月",
+      "method": "前 46 年加到 445 天把季节拉回；前 45 年 1 月 1 日起一年 365 天，每 4 年 2 月加一日，平均 365.25 天",
+      "error": "365.25 比回归年长约 11 分 14 秒，约 128 年多出一天",
+      "cost": "445 天的一年：租约、任期、利息都要按天重算；祭司起初又误为「每 3 年一闰」，奥古斯都于前 8 年前后停闰补救",
+      "still_used": "是——东正教教会历仍用儒略历；民用历由格里历取代",
+      "why": "第一次用算法代替人判断来置闰，格里历只是给它打补丁",
+      "text": "共和时期的罗马历一年 355 天，是否加一个 22 或 23 天的闰月由祭司团决定；他们常因政治、债务和任期考虑而不闰或乱闰，到公元前 46 年，历书上的日期与季节已错开将近两个月。凯撒在亚历山大天文学家索西琴尼的建议下，把前 46 年拉长到 445 天——史称「混乱之年」——然后从前 45 年 1 月 1 日起实行新历：一年 365 天，每四年在二月加一天。平均 365.25 天的儒略年比回归年长约 11 分 14 秒，每 128 年就多出一天，这个小尾巴积累 1,600 年，就是 1582 年要跳掉的 10 天。",
+      "numbers": [
+        {
+          "label": "前 46 年长度",
+          "value": "445",
+          "unit": "天",
+          "basis": "比利时皇家天文台 / 通史",
+          "confidence": "高"
+        },
+        {
+          "label": "努马历年长",
+          "value": "355",
+          "unit": "天",
+          "basis": "同上",
+          "confidence": "高"
+        },
+        {
+          "label": "儒略年误差",
+          "value": "11 分 14 秒 / 年 ≈ 128 年差 1 天",
+          "unit": "",
+          "basis": "365.25 − 365.24219 = 0.00781 天",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "各月天数何时定型：比利时皇家天文台页称尚不清楚、有说法晚至 14 世纪（Sacrobosco 之说）；通行说法为凯撒即定今制。本页不展开。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Royal Observatory of Belgium: The Roman and Julian calendars",
+          "url": "https://robinfo.oma.be/en/astro-info/calendar/the-roman-and-julian-calendars/",
+          "note": "官方机构"
+        },
+        {
+          "title": "Britannica: Egyptian calendar（提及凯撒前 46 年加闰日）",
+          "url": "https://www.britannica.com/print/article/180708",
+          "note": "权威百科"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "「祭司误为 3 年一闰、奥古斯都前 8 年停闰」出自 Macrobius《农神节》，本轮只据通史"
+      ]
+    },
+    {
+      "id": "ad-era",
+      "title": "公元纪年与法定的星期日",
+      "year": 525,
+      "year_end": null,
+      "year_label": "525 年（321 年）",
+      "lane": "europe",
+      "place": {
+        "name": "罗马",
+        "lat": 41.9,
+        "lon": 12.5
+      },
+      "scales": [
+        "year",
+        "week"
+      ],
+      "motive": [
+        "religion",
+        "rule",
+        "politics"
+      ],
+      "object": "狄奥尼修斯的复活节表；君士坦丁 321 年敕令",
+      "problem": "各地以皇帝在位年、建城年、戴克里先年等纪年，复活节表换一位皇帝就要重编",
+      "method": "525 年狄奥尼修斯编复活节表时以「主的降生」为元年；731 年比德《英吉利教会史》通篇用之，公元纪年随之传遍西欧。321 年君士坦丁令城市居民与法官在「太阳日」休息，七日周有了法律地位",
+      "error": "狄奥尼修斯把耶稣诞生定在罗马建城 753 年，后世多认为偏晚数年；没有「公元 0 年」",
+      "cost": "公元前的倒数纪年要到 15 世纪后才通行；历史年代换算至今仍要处理「无 0 年」",
+      "still_used": "是，全球通用纪年；星期日休息沿用至今",
+      "why": "今天写下的每一个年份数字，都是这张复活节表的副产品",
+      "text": "公元 525 年，在罗马工作的修士狄奥尼修斯受教皇之托续编复活节表。他不愿沿用迫害基督徒的戴克里先纪年，改以「主的降生」为第 1 年——他把这一年定在罗马建城 753 年，也没有设第 0 年。这种纪年起初只在复活节表里流传，8 世纪的比德在《论时间的推算》和 731 年成书的《英吉利教会史》中通篇使用，公元纪年才在西欧扎根。星期的法律地位更早：321 年君士坦丁下令城市居民与法官在「太阳日」休息，务农者除外，七日周从此由民间习惯变成国家制度。",
+      "numbers": [
+        {
+          "label": "复活节表与纪元",
+          "value": "525",
+          "unit": "年",
+          "basis": "Britannica",
+          "confidence": "高"
+        },
+        {
+          "label": "比德《英吉利教会史》",
+          "value": "731",
+          "unit": "年",
+          "basis": "Linda Hall Library",
+          "confidence": "高"
+        },
+        {
+          "label": "星期日休息令",
+          "value": "321",
+          "unit": "年",
+          "basis": "Codex Justinianus 3.12.2；UvA Lived Time 项目",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "君士坦丁敕令日期：通行作 321 年 3 月 7 日（《查士丁尼法典》3.12.2）；另一条 321 年 7 月 3 日（《狄奥多西法典》2.8.1）涉及星期日释奴。本页只写 321 年。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Britannica: Dionysius Exiguus",
+          "url": "https://britannica.com/print/article/164239",
+          "note": "权威百科"
+        },
+        {
+          "title": "Linda Hall Library: Scientist of the Day – Venerable Bede",
+          "url": "https://www.lindahall.org/about/news/scientist-of-the-day/venerable-bede",
+          "note": "图书馆专文"
+        },
+        {
+          "title": "Univ. of Amsterdam, Lived Time: 321–324 CE, the Roman Empire out of sync（Sofie Remijsen）",
+          "url": "https://www.livedtime.humanities.uva.nl/?p=570",
+          "note": "学术项目"
+        },
+        {
+          "title": "NPNF II/1, Eusebius Life of Constantine（注释提及 321 年敕令）",
+          "url": "https://st-takla.org/books/en/ecf/201/2010604.html",
+          "note": "原典英译"
+        }
+      ],
+      "unverified": [
+        "《查士丁尼法典》3.12.2 拉丁原文本轮未直接核对"
+      ]
+    },
+    {
+      "id": "hebrew",
+      "title": "希伯来历：19 年 7 闰的固定算法",
+      "year": 359,
+      "year_end": null,
+      "year_label": "约 359 年",
+      "lane": "europe",
+      "place": {
+        "name": "耶路撒冷",
+        "lat": 31.78,
+        "lon": 35.22
+      },
+      "scales": [
+        "month",
+        "year",
+        "day"
+      ],
+      "motive": [
+        "religion",
+        "astronomy"
+      ],
+      "object": "固定算法历（传统归于希勒尔二世）",
+      "problem": "散居各地后，靠耶路撒冷公会观月宣布新月再传信已不可行",
+      "method": "阴阳历；19 年中第 3、6、8、11、14、17、19 年加第十三个月（闰阿达尔月）；以平均朔望月 29 天 12 小时 44 分 3⅓ 秒推算新月（molad）；年首提斯利月初一（新年节），受四条推迟规则约束；一日从日落起",
+      "error": "平均年 365.2468 天，比回归年长约 6 分 39 秒，约 216 年差一天",
+      "cost": "年长有 353/354/355 与 383/384/385 六种；节期相对公历每年移动，33 年左右绕回",
+      "still_used": "是，以色列国与犹太社群的宗教与民用历之一",
+      "why": "把观测历彻底变成算法历的最早范例之一",
+      "text": "希伯来历是阴阳历：月按月相，年按太阳。通行说法是公元 359 年前后，纳西（族长）希勒尔二世公布了固定算法，使散居各地的社群不必再等耶路撒冷的观月通告。规则是 19 年中第 3、6、8、11、14、17、19 年加一个月，与巴比伦的 19 年 7 闰同源；新月时刻用平均朔望月 29 天 12 小时 44 分 3⅓ 秒推算；一年从提斯利月初一的新年节起算，但有四条推迟规则，避免某些节日落在不便的星期几，于是平年可以是 353、354 或 355 天，闰年 383 至 385 天。一日从日落开始。平均年 365.2468 天，比回归年长约 6 分 39 秒，约 216 年累积一天。",
+      "numbers": [
+        {
+          "label": "闰年位置",
+          "value": "3, 6, 8, 11, 14, 17, 19",
+          "unit": "（19 年周期内）",
+          "basis": "USNO",
+          "confidence": "高"
+        },
+        {
+          "label": "平均朔望月（历法用）",
+          "value": "29 天 12 时 44 分 3⅓ 秒 = 29.530594 天",
+          "unit": "",
+          "basis": "USNO",
+          "confidence": "高"
+        },
+        {
+          "label": "年长范围",
+          "value": "353/354/355；383/384/385",
+          "unit": "天",
+          "basis": "USNO",
+          "confidence": "高"
+        },
+        {
+          "label": "平均年与漂移",
+          "value": "365.2468 天；约 216 年差 1 天",
+          "unit": "",
+          "basis": "235 × 29.530594 ÷ 19 − 365.24219",
+          "confidence": "高"
+        },
+        {
+          "label": "纪元",
+          "value": "创世纪元元年 = 前 3761 年 10 月 7 日（儒略，推算）",
+          "unit": "",
+          "basis": "USNO",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "「359 年希勒尔二世定历」是中世纪以来的传统说法，USNO 亦沿用；学界（如 Sacha Stern）认为固定算法到 8–9 世纪才完全定型。本页写「通行说法」。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "U.S. Naval Observatory: The Jewish Calendar（FAQ）",
+          "url": "https://aa.usno.navy.mil/faq/jewish",
+          "note": "官方机构"
+        },
+        {
+          "title": "Hillel II（维基）",
+          "url": "https://en.wikipedia.org/wiki/Hillel_II",
+          "note": "维基（线索）"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "Sacha Stern《Calendar and Community》关于定型年代的原文未打开"
+      ]
+    },
+    {
+      "id": "islamic",
+      "title": "伊斯兰历：纯阴历与 622 年的起点",
+      "year": 622,
+      "year_end": null,
+      "year_label": "622 年（希吉拉）",
+      "lane": "islam",
+      "place": {
+        "name": "麦加",
+        "lat": 21.42,
+        "lon": 39.83
+      },
+      "scales": [
+        "month",
+        "year",
+        "day"
+      ],
+      "motive": [
+        "religion",
+        "astronomy",
+        "rule"
+      ],
+      "object": "希吉拉纪元；沙特乌姆库拉历",
+      "problem": "经文规定一年十二个月、禁止置闰月，于是历年与季节不绑定",
+      "method": "12 个朔望月，每月以新月为始，一年 354 或 355 天；纪元自 622 年先知迁徙麦地那之年起算（民用纪元元日 622-07-16，儒略）；一日自日落起",
+      "error": "每年比回归年短约 10.9 天，任一节日约 33 年绕季节一周",
+      "cost": "宗教日期须按各地见月决定，同一个斋月开始日常相差一天；行政上另需算表历",
+      "still_used": "是，全球穆斯林宗教历；沙特等国的官方历",
+      "why": "唯一在全球范围仍通行的纯阴历，也是「算表 vs 观月」之争最活跃的地方",
+      "text": "伊斯兰历是纯阴历：一年固定 12 个朔望月，354 或 355 天，不加闰月，因此每年比太阳年短约 11 天，斋月等节期约 33 年在四季中绕一圈。纪元从公元 622 年先知迁徙麦地那之年算起，民用元日对应儒略历 622 年 7 月 16 日，一日自日落开始。月初传统上由见到新月决定，各地常差一天。沙特的乌姆库拉历自 1423 年（2002 年 3 月）起改用算表：某月第 29 日麦加日落前已合朔、且月亮晚于太阳落下，次日即为初一，由国王科技城推算；斋月、朝觐等宗教日期仍以实际见月为准。2016 年 10 月 1 日起，沙特公务员薪酬改按公历支付。",
+      "numbers": [
+        {
+          "label": "年长",
+          "value": "354 或 355（平均 354.367）",
+          "unit": "天",
+          "basis": "12 × 29.530589",
+          "confidence": "高"
+        },
+        {
+          "label": "每年比回归年短",
+          "value": "约 10.9",
+          "unit": "天",
+          "basis": "365.24219 − 354.367",
+          "confidence": "高"
+        },
+        {
+          "label": "绕季节一周",
+          "value": "约 33.6",
+          "unit": "年",
+          "basis": "365.24219 ÷ 10.875",
+          "confidence": "高"
+        },
+        {
+          "label": "乌姆库拉现行规则起用",
+          "value": "1423 AH = 2002-03-15",
+          "unit": "",
+          "basis": "van Gent, Umm al-Qura rules",
+          "confidence": "高"
+        },
+        {
+          "label": "沙特公务薪酬改公历",
+          "value": "2016-10-01",
+          "unit": "",
+          "basis": "AFP via The Peninsula 2016-10-03；Economist 2016-12-17",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "希吉拉纪元元日：民用（表历）取 622-07-16（儒略，星期五）；天文纪元取 622-07-15（星期四），两说见 Reingold & Dershowitz。沙特 2016 年的报道口径：AFP 与 Economist 均称「公务员薪酬改按公历」，并非废止希吉拉历。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "R.H. van Gent（Utrecht）: The Umm al-Qura Calendar of Saudi Arabia – rules",
+          "url": "https://webspace.science.uu.nl/~gent0113/islam/ummalqura_rules.htm",
+          "note": "学术专题"
+        },
+        {
+          "title": "The Peninsula（AFP）2016-10-03: Saudi abandons Islamic calendar for govt pay",
+          "url": "https://thepeninsulaqatar.com/article/03/10/2016/Saudi-abandons-Islamic-calendar-for-govt-pay",
+          "note": "通讯社报道"
+        },
+        {
+          "title": "The Economist 2016-12-17: The prince's time machine",
+          "url": "https://www.economist.com/news/middle-east-and-africa/21711938-hauling-saudi-arabia-21st-century-saudi-arabia-adopts-gregorian",
+          "note": "报道"
+        },
+        {
+          "title": "Gulf News: Public sector loses 11 days of salary after calendar switch",
+          "url": "https://gulfnews.com/world/gulf/saudi/public-sector-loses-11-days-of-salary-after-calendar-switch-in-saudi-arabia-1.1903333",
+          "note": "报道（页面年份标注含糊）"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "沙特内阁决议原文（沙特通讯社 SPA）未直接打开，只有通讯社转述"
+      ]
+    },
+    {
+      "id": "persian",
+      "title": "波斯：从贾拉里历到伊朗太阳历",
+      "year": 1079,
+      "year_end": null,
+      "year_label": "1079 年 / 1925 年",
+      "lane": "persia",
+      "place": {
+        "name": "伊斯法罕",
+        "lat": 32.65,
+        "lon": 51.67
+      },
+      "scales": [
+        "year",
+        "day"
+      ],
+      "motive": [
+        "astronomy",
+        "politics",
+        "rule"
+      ],
+      "object": "贾拉里历（海亚姆等人）；1925 年伊朗历法法",
+      "problem": "伊斯兰阴历与农时、税期脱节，波斯旧阳历又因不置闰而漂移",
+      "method": "1079 年马利克沙在伊斯法罕设观象台，海亚姆等人定新历：年首为春分（诺鲁孜），闰日按「七个四年加一个五年」的节律安排；1925 年伊朗立法沿用此思路，年首取德黑兰子午线真太阳春分，月长 31×6、30×5、末月 29/30",
+      "error": "按天文春分定年首，没有算法误差；常用的 33 年 8 闰近似平均年 365.2424 天，与官方历在 1925–2088 年间完全一致",
+      "cost": "需要每年精算春分时刻；历书不能提前几百年机械排定",
+      "still_used": "是，伊朗与阿富汗的官方历",
+      "why": "世界上少数以天文观测而非算术规则定年首的现行官方历",
+      "text": "1072 年塞尔柱苏丹马利克沙定都伊斯法罕，召集海亚姆等天文学家建观象台并修历，到 1079 年新历成形，以苏丹之名称贾拉里历。年首定在太阳入白羊宫的春分日（诺鲁孜），闰日按「连续七个四年之后插入一个五年」的节律安排，即后人概括的 33 年 8 闰。1925 年伊朗立法确立太阳历为官方历：年首以德黑兰经线上的真春分时刻定出，前六个月各 31 天、后五个月各 30 天、末月 29 或 30 天，纪元仍从 622 年起算。因为按天文春分而非算术规则定年首，它没有系统误差；33 年 8 闰只是近似，恰与官方历在 1925 至 2088 年间逐年吻合。",
+      "numbers": [
+        {
+          "label": "贾拉里历成形",
+          "value": "1079",
+          "unit": "年",
+          "basis": "Biographical Encyclopedia of Astronomers（Hashemipour）",
+          "confidence": "高"
+        },
+        {
+          "label": "伊朗太阳历立法",
+          "value": "1925",
+          "unit": "年",
+          "basis": "IANA tz asia（Pournader 2005）；FarsiWeb",
+          "confidence": "高"
+        },
+        {
+          "label": "33 年 8 闰平均年",
+          "value": "365.24242",
+          "unit": "天",
+          "basis": "365 + 8/33",
+          "confidence": "高"
+        },
+        {
+          "label": "33 年近似与官方历一致区间",
+          "value": "1925–2088",
+          "unit": "年",
+          "basis": "FarsiWeb Iranian calendar 页",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "贾拉里历改历年份：BEA 条目作「至 1079 年完成」，另有史料记 1074/1075 年开工。春分观测地：1925 年法律未指定，现行实践用东经 52.5° 子午线（FarsiWeb）。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Biographical Encyclopedia of Astronomers: Khayyām（B. Hashemipour, Springer 2007）",
+          "url": "https://islamsci.mcgill.ca/RASI/BEA/Khayyam_BEA.htm",
+          "note": "学术百科"
+        },
+        {
+          "title": "IANA tz 数据库 asia 文件（Iran 节：1925 年法律以真太阳年为准）",
+          "url": "https://data.iana.org/time-zones/tzdb/asia",
+          "note": "一手汇编"
+        },
+        {
+          "title": "FarsiWeb / Sharif: Iranian calendar（Roozbeh Pournader）",
+          "url": "https://persian-computing.org/archives/Sharif-FarsiWeb-Inc/Iranian_calendar.html",
+          "note": "专题"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "1925 年法律的确切日期（1304 年 11 Farvardin = 1925-03-31）只据通行说法"
+      ]
+    },
+    {
+      "id": "india",
+      "title": "印度：三十种历书与 1957 年的国家历",
+      "year": 1957,
+      "year_end": null,
+      "year_label": "1957-03-22",
+      "lane": "india",
+      "place": {
+        "name": "新德里",
+        "lat": 28.61,
+        "lon": 77.21
+      },
+      "scales": [
+        "year",
+        "month",
+        "day"
+      ],
+      "motive": [
+        "religion",
+        "astronomy",
+        "politics"
+      ],
+      "object": "历法改革委员会（萨哈主持）；《国家历书》",
+      "problem": "独立时全国并行近 30 种历书（panchang），各地阴阳历的闰月、月名、年首都不同",
+      "method": "1952 年科学与工业研究理事会设历法改革委员会，物理学家萨哈任主席；建议民用采用塞种纪元太阳历、宗教用统一的阴阳历；国家历自塞种 1879 年制檀月 1 日（1957 年 3 月 22 日）起与公历并行",
+      "error": "国家历闰年与公历同步，平均年 365.2425 天，误差同格里历",
+      "cost": "国家历在民间使用有限，节日仍按各地阴阳历；排灯节等以月相定日，每年在公历上移动",
+      "still_used": "是，与公历并列于政府公报、全印广播",
+      "why": "多历并存的国家如何「统一而不取代」的典型",
+      "text": "印度的历法传统可上溯吠陀时代与中古的悉檀多天文学，月按月相、年按太阳，但各地对闰月、月首、年首的处理不同，独立时全国仍并行近三十种历书。1952 年科学与工业研究理事会设历法改革委员会，物理学家萨哈主持，建议民用采用以塞种纪元计年的太阳历，宗教节期用一部统一的阴阳历推算。国家历自塞种 1879 年制檀月 1 日——公历 1957 年 3 月 22 日——起与公历并行，闰年与公历同步；印度气象局的位置天文中心每年编印《国家历书》。排灯节等节日仍按阴阳历的月相定日，所以在公历上每年移动。",
+      "numbers": [
+        {
+          "label": "历法改革委员会设立",
+          "value": "1952（CSIR，萨哈主持）",
+          "unit": "",
+          "basis": "印度气象局位置天文中心",
+          "confidence": "高"
+        },
+        {
+          "label": "国家历起用",
+          "value": "1957-03-22 = 塞种 1879 年制檀月 1 日",
+          "unit": "",
+          "basis": "IMD PAC（1879 Saka = 1957–58）；维基",
+          "confidence": "中"
+        },
+        {
+          "label": "并行历书数",
+          "value": "近 30",
+          "unit": "种",
+          "basis": "IMD PAC",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "委员会报告出版年：通行作 1955 年；IMD 页只记 1955-12-01 起剩余工作由气象局接手。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "India Meteorological Department, Positional Astronomy Centre: History",
+          "url": "https://packolkata.imd.gov.in/history.php",
+          "note": "官方机构"
+        },
+        {
+          "title": "Indian national calendar（维基）",
+          "url": "https://en.wikipedia.org/wiki/Indian_national_calendar",
+          "note": "维基（线索）"
+        },
+        {
+          "title": "Report of the Calendar Reform Committee（1955, archive.org 转录）",
+          "url": "https://ia801000.us.archive.org/30/items/HistoryOfCalendarPanchangaCommittee/History-of-Calendar-Panchanga-Committee_text.pdf",
+          "note": "一手（未逐页核对）"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "1957-03-22 这一具体起用日只据维基与通行说法，IMD 页只给年份",
+        "排灯节定日规则（迦絺底迦月新月）据通史"
+      ]
+    },
+    {
+      "id": "greg-1582",
+      "title": "格里历：跳过的 10 天",
+      "year": 1582,
+      "year_end": null,
+      "year_label": "1582-10-15",
+      "lane": "europe",
+      "place": {
+        "name": "罗马",
+        "lat": 41.9,
+        "lon": 12.5
+      },
+      "scales": [
+        "year"
+      ],
+      "motive": [
+        "religion",
+        "astronomy"
+      ],
+      "object": "教皇诏书 Inter gravissimas（1582-02-24）",
+      "problem": "儒略历每 128 年多出一天，春分已从尼西亚会议时的 3 月 21 日漂到 3 月 11 日前后，复活节的月龄表也偏了四天多",
+      "method": "1582 年 10 月 4 日（星期四）的次日定为 10 月 15 日（星期五）；百年之年只有能被 400 整除者置闰，即 400 年 97 闰；以「闰余」周期取代黄金数修正复活节月龄",
+      "error": "平均年 365.2425 天，比回归年长约 27 秒，约 3,200 年差一天",
+      "cost": "10 天凭空消失；新教与东正教地区拒用一两百年，欧洲长期两套日期并行",
+      "still_used": "是，全球民用历",
+      "why": "今天全世界共用的年历从这一天起算",
+      "text": "1582 年 2 月 24 日，教皇格里高利十三世颁布诏书《最重大之事》，采用医生兼天文学家利利奥的方案：当年 10 月 4 日（圣方济各瞻礼）的次日直接定为 10 月 15 日，把春分拉回尼西亚会议时的 3 月 21 日；百年之年只有能被 400 整除的才闰，诏书点名 1700、1800、1900 不闰而 2000 照闰，于是 400 年 97 闰；复活节改用「闰余」表推算月龄。新历平均年 365.2425 天，比回归年只长约 27 秒，要三千多年才差一天。意大利、西班牙、葡萄牙、波兰当天跟进，法国 12 月跟进，新教与东正教地区则拒绝了一两百年。",
+      "numbers": [
+        {
+          "label": "跳过的天数",
+          "value": "10",
+          "unit": "天",
+          "basis": "诏书原文",
+          "confidence": "高"
+        },
+        {
+          "label": "跳日",
+          "value": "1582-10-04（儒略，星期四）的次日是 1582-10-15（格里，星期五）",
+          "unit": "",
+          "basis": "诏书原文 / Nørby",
+          "confidence": "高"
+        },
+        {
+          "label": "闰法",
+          "value": "400 年 97 闰",
+          "unit": "",
+          "basis": "诏书原文（1700/1800/1900 不闰，2000 闰）",
+          "confidence": "高"
+        },
+        {
+          "label": "平均年",
+          "value": "365.2425",
+          "unit": "天",
+          "basis": "365 + 97/400",
+          "confidence": "高"
+        },
+        {
+          "label": "误差",
+          "value": "约 27 秒 / 年 ≈ 3,200 年差 1 天",
+          "unit": "",
+          "basis": "365.2425 − 365.24219",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "「约 3,300 年差一天」是常见口径（取回归年 365.2422）；按 365.24219 计算为约 3,226 年。两者皆可，本页写「三千多年」。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Inter gravissimas 英译全文（Wikisource，据 Clavius 1612 拉丁本）",
+          "url": "https://en.wikisource.org/wiki/Translation:Inter_gravissimas",
+          "note": "一手"
+        },
+        {
+          "title": "Rodolphe Audette / ECU: Inter gravissimas 拉丁文与译文入口",
+          "url": "https://myweb.ecu.edu/mccartyr/inter-grav.html",
+          "note": "一手整理"
+        },
+        {
+          "title": "Library of Congress law blog: Inter Gravissimas, or Why the Pope Is Never Late for Tea",
+          "url": "https://blogs.loc.gov/law/2013/01/inter-gravissimas-or-why-the-pope-is-never-late-for-tea/",
+          "note": "官方机构博客"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "id": "adoption",
+      "title": "格里历的采用：从 1582 到 2016",
+      "year": 1582,
+      "year_end": 2016,
+      "year_label": "1582–2016",
+      "lane": "europe",
+      "place": {
+        "name": "伦敦",
+        "lat": 51.5,
+        "lon": -0.12
+      },
+      "scales": [
+        "year",
+        "day"
+      ],
+      "motive": [
+        "religion",
+        "politics",
+        "commerce"
+      ],
+      "object": "英国《1750 年历法（新式）法》等各国法令",
+      "problem": "一部由教皇颁布的历法，新教、东正教与非基督教国家各有理由不接受",
+      "method": "天主教国家 1582–84 年跳 10 天；新教德意志与丹麦 1700 年跳 11 天；英国 1752-09-02 的次日为 09-14；瑞典 1753 年；日本 1873、中国 1912、俄国 1918、希腊 1923、土耳其 1926 年；沙特 2016 年公务改用",
+      "error": "改历越晚跳的天数越多：1582 年 10 天，1700 年起 11 天，1800 年起 12 天，1900 年起 13 天",
+      "cost": "英国税务年度从 3 月 25 日挪到 4 月 6 日沿用至今；俄国 1918 年跳掉 13 天；东正教教会历仍用儒略历，圣诞落在公历 1 月 7 日",
+      "still_used": "是",
+      "why": "同一部历，各国用了 434 年才差不多用齐",
+      "text": "格里历用了四百多年才铺满世界。天主教国家 1582 至 1584 年先后跳过 10 天；新教的德意志诸邦与丹麦—挪威等到 1700 年 2 月 18 日的次日定为 3 月 1 日，跳 11 天；英国及其殖民地 1752 年 9 月 2 日的次日是 9 月 14 日，同时把岁首从 3 月 25 日改到 1 月 1 日，税务年度却按「自然天数」顺延，1800 年再挪一天，便成了今天的 4 月 6 日。瑞典 1700 年想逐年少闰、慢慢过渡，中途作罢，1712 年补出一个 2 月 30 日，1753 年才一次跳完。日本 1873 年、中国 1912 年、保加利亚 1916 年、俄国 1918 年（跳 13 天）、希腊 1923 年、土耳其 1926 年相继改用；沙特 2016 年公务薪酬改按公历。东正教多数教会至今按儒略历过节，圣诞节落在公历 1 月 7 日。",
+      "numbers": [
+        {
+          "label": "英国跳日",
+          "value": "1752-09-02 的次日是 1752-09-14（11 天）",
+          "unit": "",
+          "basis": "Calendar (New Style) Act 1750 原文",
+          "confidence": "高"
+        },
+        {
+          "label": "俄国跳日",
+          "value": "1918-01-31 的次日是 1918-02-14（13 天）",
+          "unit": "",
+          "basis": "IANA tz calendars；Nørby",
+          "confidence": "高"
+        },
+        {
+          "label": "瑞典 2 月 30 日",
+          "value": "1712-02-30",
+          "unit": "",
+          "basis": "IANA tz calendars（Beckman 1924 / Lodén 1968）",
+          "confidence": "高"
+        },
+        {
+          "label": "英国税务年度",
+          "value": "3 月 25 日 → 1753 年 4 月 5 日 → 1800 年 4 月 6 日",
+          "unit": "",
+          "basis": "The Conversation",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "详见 adoption 表各行 dispute 字段（如保加利亚 1915/1916、土耳其 1917/1926、埃及 1875 日期不详）。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Calendar (New Style) Act 1750（legislation.gov.uk 原文）",
+          "url": "https://www.legislation.gov.uk/apgb/Geo2/24/23/1991-02-01?timeline=false",
+          "note": "一手"
+        },
+        {
+          "title": "IANA tz 数据库 calendars 文件（Grotefend 1941 表、瑞典 1712、法国共和历、俄国 1918）",
+          "url": "https://data.iana.org/time-zones/tzdb/calendars",
+          "note": "一手汇编，公有领域"
+        },
+        {
+          "title": "Toke Nørby, The Perpetual Calendar – 各国改历日期表",
+          "url": "http://www.norbyhus.dk/calendar.php",
+          "note": "专题整理，附文献号"
+        },
+        {
+          "title": "Adoption of the Gregorian calendar（维基，含各国一手文献引注）",
+          "url": "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar",
+          "note": "维基（线索）"
+        },
+        {
+          "title": "The Conversation: Why the UK tax year starts on April 6",
+          "url": "https://theconversation.com/why-the-uk-tax-year-starts-on-april-6-57247",
+          "note": "专文"
+        }
+      ],
+      "unverified": [
+        "俄国 1918 年人民委员会法令原文（niv.ru）打不开",
+        "埃及 1875 年只有维基与 Nørby「日期不详」"
+      ]
+    },
+    {
+      "id": "republican",
+      "title": "两次改写日历的失败：十日周与五日周",
+      "year": 1793,
+      "year_end": 1940,
+      "year_label": "1793–1805 / 1929–1940",
+      "lane": "europe",
+      "place": {
+        "name": "巴黎",
+        "lat": 48.86,
+        "lon": 2.35
+      },
+      "scales": [
+        "week",
+        "hour",
+        "month"
+      ],
+      "motive": [
+        "politics",
+        "rule"
+      ],
+      "object": "法国共和历与十进制时间；苏联「不间断工作周」",
+      "problem": "革命政权想把宗教与旧秩序从日历里清除：七日周、圣徒日、以耶稣诞生计年",
+      "method": "法国：1793 年 11 月 24 日法令，一年 12 个月各 30 天、每月三个十日周、年末 5 或 6 个补日，纪元自 1792 年 9 月 22 日（共和国成立、秋分）起；一日 10 小时、每小时 100 分、每分 100 秒。苏联：1929 年 9 月底起五日轮休、全国 80% 人同时在岗，1931 年改六日周，1940 年 6 月 26 日恢复七日周",
+      "error": "十进制时间 1795 年 4 月 7 日即无限期搁置；共和历 1805 年 9 月 9 日废除、1806 年 1 月 1 日起恢复公历",
+      "cost": "钟表要重做；十日一休比七日一休更累；苏联家人轮休日错开、机器连转损耗，生产率反降",
+      "still_used": "否",
+      "why": "证明「周」比「年」更难改——它和生活节律绑得最死",
+      "text": "法国国民公会 1793 年 11 月 24 日以法令确立共和历：一年 12 个月、每月 30 天，每月分三个十日周，年末加 5 或 6 个补日，纪元从 1792 年 9 月 22 日共和国成立之日、也是秋分起算；同一法令把一天分为 10 小时、每小时 100 分、每分 100 秒。十进制时间几乎没人用，1795 年 4 月 7 日就被无限期搁置；共和历撑到拿破仑 1805 年 9 月 9 日下令废止，1806 年 1 月 1 日恢复公历。苏联 1929 年秋推行「不间断工作周」，五天一轮、全国八成城市劳动力同时在岗，1931 年改为六日周；因为家人休息日错开、机器连续运转损耗，1940 年 6 月 26 日恢复了七日周。",
+      "numbers": [
+        {
+          "label": "共和历法令",
+          "value": "1793-11-24（共和二年霜月 4 日）",
+          "unit": "",
+          "basis": "napoleon.org",
+          "confidence": "高"
+        },
+        {
+          "label": "十进制时间搁置",
+          "value": "1795-04-07（共和三年芽月 18 日）",
+          "unit": "",
+          "basis": "napoleon.org",
+          "confidence": "高"
+        },
+        {
+          "label": "共和历废止",
+          "value": "1805-09-09 令，1806-01-01 起",
+          "unit": "",
+          "basis": "napoleon.org；IANA tz calendars",
+          "confidence": "高"
+        },
+        {
+          "label": "苏联五日周起 / 七日周复",
+          "value": "1929-09 底 / 1940-06-26",
+          "unit": "",
+          "basis": "History.com（Frost 2018）；维基",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "共和历起始：IANA tz calendars 记「1793-11-24 起使用」（十进制与历法法令日），另有 1793-10-05 的首个历法法令与 1792-09-22 的追溯纪元；本页以法令与纪元分写。巴黎公社 1871 年 5 月曾短暂重用共和历（tz calendars）。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Fondation Napoléon: Revolutionary period skeleton clock（含共和历与十进制时间法令日期）",
+          "url": "https://www.napoleon.org/en/history-of-the-two-empires/objects/revolutionary-period-skeleton-clock",
+          "note": "机构专文"
+        },
+        {
+          "title": "IANA tz 数据库 calendars 文件（Grotefend 1941 表、瑞典 1712、法国共和历、俄国 1918）",
+          "url": "https://data.iana.org/time-zones/tzdb/calendars",
+          "note": "一手汇编，公有领域"
+        },
+        {
+          "title": "History.com: For 11 Years, the Soviet Union Had No Weekends（Natasha Frost）",
+          "url": "https://www.history.com/articles/soviet-union-stalin-weekend-labor-policy",
+          "note": "专文"
+        },
+        {
+          "title": "Soviet calendar（维基）",
+          "url": "https://en.wikipedia.org/wiki/Soviet_calendar",
+          "note": "维基（线索）"
+        }
+      ],
+      "unverified": [
+        "苏联 1931-12-01 改六日周的具体日期只有维基",
+        "共和历 1793-10-05 法令原文未核"
+      ]
+    },
+    {
+      "id": "day-start",
+      "title": "一天从何时起，一周从哪天起",
+      "year": 1925,
+      "year_end": null,
+      "year_label": "1925-01-01",
+      "lane": "global",
+      "place": {
+        "name": "格林尼治",
+        "lat": 51.48,
+        "lon": 0.0
+      },
+      "scales": [
+        "day",
+        "week"
+      ],
+      "motive": [
+        "astronomy",
+        "religion",
+        "rule",
+        "technology"
+      ],
+      "object": "1925 年航海历改以子夜起日；ISO 8601 周一起周",
+      "problem": "日落起日（希伯来、伊斯兰）、日出起日（古埃及、印度）、正午起日（天文学家）、子夜起日（罗马民用）同时并存，同一个「星期二」可能是三个不同区间",
+      "method": "1925 年 1 月 1 日起各国航海历与天文年历改以子夜为日始，1928 年国际天文联合会定名「世界时」；儒略日为保持连续仍从正午起算。ISO 8601 规定周一为一周之首，美国、日本、以色列等日历页从周日起，多数阿拉伯国家从周六起",
+      "error": "",
+      "cost": "1925 年前后的天文观测记录须注明用的是哪种「格林尼治时间」；跨国软件至今要为「每周第一天」单独配置",
+      "still_used": "子夜起日为全球民用标准；日落起日仍用于宗教历",
+      "why": "刻度的起点也是约定——而且至今没统一",
+      "text": "一天从哪一刻开始，各文明答案不同：希伯来与伊斯兰历从日落起，古埃及与印度传统从黎明起，罗马民用历从子夜起，而天文学家为了不在观测夜中途换日期，长期以正午为日始。天文界迟至 1925 年 1 月 1 日才在航海历与天文年历中改用子夜，1928 年国际天文联合会把从格林尼治子夜起算的时间定名为「世界时」；儒略日数为保持连续仍从正午起算。一周从哪天起同样没有统一：ISO 8601 规定周一为首日，美国、日本、以色列、印度等地的日历页从周日起，埃及、伊朗等多数阿拉伯—伊斯兰国家从周六起。",
+      "numbers": [
+        {
+          "label": "天文日改子夜起",
+          "value": "1925-01-01",
+          "unit": "",
+          "basis": "Steve Allen（Lick）引 AENA；维基 Julian day",
+          "confidence": "高"
+        },
+        {
+          "label": "「世界时」定名",
+          "value": "1928（IAU 第 4 委员会）",
+          "unit": "",
+          "basis": "Steve Allen（Lick）",
+          "confidence": "中"
+        },
+        {
+          "label": "ISO 周首日",
+          "value": "周一；第 1 周含当年首个周四",
+          "unit": "",
+          "basis": "van Gent, ISO calendar",
+          "confidence": "高"
+        },
+        {
+          "label": "周日起周的地区（CLDR）",
+          "value": "US, JP, IL, IN, BR, CA, KR, SA 等",
+          "unit": "",
+          "basis": "Unicode CLDR supplementalData weekData",
+          "confidence": "高"
+        },
+        {
+          "label": "周六起周的地区（CLDR）",
+          "value": "EG, IR, IQ, JO, KW, QA, SY 等",
+          "unit": "",
+          "basis": "同上",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "1925 年改制的决定主体：通行说法归于 1922 年 IAU 罗马大会；本轮查 IAU 1922 决议文本未见此条，只核到 1925 年各国年历确已改制。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Steve Allen (UCO/Lick): 1925 年航海历改制与 UT 定名（navyls 档）",
+          "url": "https://ucolick.org/~sla/navyls/0336.html",
+          "note": "专题（天文台人员）"
+        },
+        {
+          "title": "R.H. van Gent: The ISO calendar",
+          "url": "https://webspace.science.uu.nl/~gent0113/calendar/isocalendar_text_2.htm",
+          "note": "学术专题"
+        },
+        {
+          "title": "Unicode CLDR supplementalData.xml（weekData / firstDay）",
+          "url": "https://raw.githubusercontent.com/unicode-org/cldr/main/common/supplemental/supplementalData.xml",
+          "note": "一手数据"
+        },
+        {
+          "title": "Met Museum: Telling Time in Ancient Egypt（埃及一日始于黎明）",
+          "url": "https://www.metmuseum.org/essays/telling-time-in-ancient-egypt",
+          "note": "博物馆专文"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": [
+        "IAU 1922 关于天文日的决议原文未找到",
+        "印度传统一日始于日出据 Reingold & Dershowitz 通述"
+      ]
+    },
+    {
+      "id": "computus",
+      "title": "复活节算法：春分后第一个满月后的星期日",
+      "year": 325,
+      "year_end": null,
+      "year_label": "325 年",
+      "lane": "europe",
+      "place": {
+        "name": "尼西亚",
+        "lat": 40.43,
+        "lon": 29.72
+      },
+      "scales": [
+        "year",
+        "month",
+        "week"
+      ],
+      "motive": [
+        "religion",
+        "astronomy"
+      ],
+      "object": "尼西亚会议；复活节表（computus）",
+      "problem": "复活节既要在星期日，又要跟着逾越节的满月，阴历与七日周必须同时对上太阳年",
+      "method": "以 3 月 21 日为教会春分，取其后第一个「教会满月」（按 19 年周期推算的第 14 日月龄）之后的星期日；格里历改用闰余表修正月龄",
+      "error": "教会满月与真满月可差数日；东方教会沿用儒略历，其 3 月 21 日已是公历 4 月 3 日",
+      "cost": "西方复活节在 3 月 22 日至 4 月 25 日之间移动；东西方多数年份不在同一天",
+      "still_used": "是",
+      "why": "中世纪欧洲几乎所有的历算与天文训练，都为了算这一天",
+      "text": "325 年尼西亚会议要求各地在同一个星期日过复活节，后世概括的规则是：以 3 月 21 日为春分，取其后第一个满月之后的星期日。为此教会编出「复活节表」：用 19 年周期推算教会满月，再配上星期的 28 年周期，中世纪历算之学由此而来。格里历改革的另一半正是修正这张表——改用闰余表，让推算月龄回到真满月三天之内。东方教会至今按儒略历推算，其 3 月 21 日已是公历 4 月 3 日，两方复活节多数年份不同天：西方在 3 月 22 日至 4 月 25 日之间，东方折成公历在 4 月 4 日至 5 月 8 日之间。伊斯兰历靠见月、中国农历以无中气之月置闰，是另外两种办法。",
+      "numbers": [
+        {
+          "label": "西方复活节范围",
+          "value": "3 月 22 日 – 4 月 25 日",
+          "unit": "",
+          "basis": "Antsaklis（Notre Dame）",
+          "confidence": "高"
+        },
+        {
+          "label": "东方复活节范围（折公历）",
+          "value": "4 月 4 日 – 5 月 8 日",
+          "unit": "",
+          "basis": "同上",
+          "confidence": "高"
+        },
+        {
+          "label": "格里改革前月龄偏差",
+          "value": "四天有余",
+          "unit": "",
+          "basis": "Inter gravissimas 原文",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "尼西亚会议并无留存的正式历法条文，「春分后首个满月后的星期日」是依亚历山大教会实践归纳的通行表述（Antsaklis 亦注明）。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "P. Antsaklis (Univ. of Notre Dame): The Dates of Easter Sunday",
+          "url": "https://academicweb.nd.edu/~pantsakl/Archive/dateofeaster.pdf",
+          "note": "学术讲义"
+        },
+        {
+          "title": "Inter gravissimas 英译全文（Wikisource）",
+          "url": "https://en.wikisource.org/wiki/Translation:Inter_gravissimas",
+          "note": "一手"
+        },
+        {
+          "title": "Britannica: Dionysius Exiguus（复活节表）",
+          "url": "https://britannica.com/print/article/164239",
+          "note": "权威百科"
+        },
+        {
+          "title": "Reingold & Dershowitz, Calendrical Calculations: The Ultimate Edition (CUP 2018)",
+          "url": "https://www.cambridge.org/core/books/calendrical-calculations/",
+          "note": "通史 / 算法权威（纸本）"
+        }
+      ],
+      "unverified": []
+    },
+    {
+      "id": "computer-era",
+      "title": "给机器用的时间：儒略日、ISO 8601、Unix 时间与 tz 数据库",
+      "year": 1970,
+      "year_end": null,
+      "year_label": "1970-01-01",
+      "lane": "global",
+      "place": {
+        "name": "格林尼治",
+        "lat": 51.48,
+        "lon": 0.0
+      },
+      "scales": [
+        "day",
+        "second",
+        "year"
+      ],
+      "motive": [
+        "technology",
+        "astronomy",
+        "commerce"
+      ],
+      "object": "儒略日数；ISO 8601；Unix 纪元；IANA tz 数据库",
+      "problem": "跨历法、跨时区、跨世纪地比较两个时刻，需要一条不分月、不分年的连续数轴",
+      "method": "1583 年斯卡利杰提出 7,980 年的儒略周期，起点为前 4713 年 1 月 1 日正午，1849 年赫歇尔用作天文连续日数；ISO 8601（1988 年首版）统一为 YYYY-MM-DD；POSIX 以 1970-01-01 00:00 UTC 起的秒数计时，每天恒为 86,400 秒；tz 数据库由志愿者经公开邮件列表维护，记录 1970 年以后各地的时区与夏令时规则",
+      "error": "32 位有符号秒数在 2038-01-19 03:14:07 UTC 溢出；Unix 时间不计闰秒",
+      "cost": "两位数年份带来「千年虫」；tz 数据库每年数次更新，各国临时改时区都要全球软件跟着改",
+      "still_used": "是",
+      "why": "今天所有设备里跑的，是这几条约定",
+      "text": "1583 年斯卡利杰以 28 年太阳周期、19 年太阴周期与 15 年小纪相乘，得到 7,980 年的「儒略周期」，起点定在公元前 4713 年 1 月 1 日正午；1849 年赫歇尔把它用作天文学的连续日数，至今仍从正午起算。计算机时代又加了几条约定：POSIX 规定时间为自 1970 年 1 月 1 日 0 时（UTC）起的秒数，每天恒为 86,400 秒、不计闰秒，32 位整数在 2038 年 1 月 19 日 03:14:07 溢出；ISO 8601 于 1988 年首版，日期统一写成「年-月-日」，周一为一周之首；两位数年份的「千年虫」在 2000 年前夕逼全球检修代码。各地时区与夏令时规则由 IANA 托管的 tz 数据库记录，志愿者经公开邮件列表提交更正，文件里的历史注释就是一部各国改时制的编年史。",
+      "numbers": [
+        {
+          "label": "儒略周期",
+          "value": "28 × 19 × 15 = 7,980 年；JD 0 = 前 4713-01-01 12:00（儒略）",
+          "unit": "",
+          "basis": "USNO；Scaliger 1583",
+          "confidence": "高"
+        },
+        {
+          "label": "Unix 纪元",
+          "value": "1970-01-01 00:00:00 UTC；每日 86,400 秒",
+          "unit": "",
+          "basis": "POSIX.1-2017 §4.16",
+          "confidence": "高"
+        },
+        {
+          "label": "Unix 纪元的儒略日",
+          "value": "2440587.5",
+          "unit": "",
+          "basis": "维基 Julian day 表",
+          "confidence": "高"
+        },
+        {
+          "label": "2038 年问题",
+          "value": "2038-01-19 03:14:07 UTC（2³¹ − 1 秒）",
+          "unit": "",
+          "basis": "算术",
+          "confidence": "高"
+        },
+        {
+          "label": "ISO 8601 首版",
+          "value": "1988-06（取代 ISO 2015:1976 等）",
+          "unit": "",
+          "basis": "van Gent；Austrian Standards 条目 1988-06-16",
+          "confidence": "高"
+        },
+        {
+          "label": "tz 数据库版本号",
+          "value": "1996 年起为「年份 + 字母」",
+          "unit": "",
+          "basis": "tz-link.html",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO: Julian Date Converter（定义）",
+          "url": "https://aa.usno.navy.mil/data/JulianDate",
+          "note": "官方机构"
+        },
+        {
+          "title": "The Open Group Base Specifications (POSIX.1-2017) §4.16 Seconds Since the Epoch",
+          "url": "https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html",
+          "note": "一手标准"
+        },
+        {
+          "title": "IANA tz: Theory and pragmatics of the tz code and data",
+          "url": "https://data.iana.org/time-zones/theory.html",
+          "note": "一手"
+        },
+        {
+          "title": "IANA tz: Sources for Time Zone and Daylight Saving Time Data (tz-link)",
+          "url": "https://data.iana.org/time-zones/tz-link.html",
+          "note": "一手"
+        },
+        {
+          "title": "R.H. van Gent: The ISO calendar",
+          "url": "https://webspace.science.uu.nl/~gent0113/calendar/isocalendar_text_2.htm",
+          "note": "学术专题"
+        },
+        {
+          "title": "Julian day（维基，含 Scaliger 1583、Herschel 1849 原书链接）",
+          "url": "https://en.wikipedia.org/wiki/Julian_day",
+          "note": "维基（线索）"
+        }
+      ],
+      "unverified": [
+        "千年虫全球修复费用（常引 3,000–6,000 亿美元）未核，text 中不写数字",
+        "tz 数据库现任协调人（Paul Eggert）与 RFC 6557 流程未在 text 中点名"
+      ]
+    },
+    {
+      "id": "reform-proposals",
+      "title": "没改成的与还在改的",
+      "year": 1955,
+      "year_end": 2024,
+      "year_label": "1955 年 / 2016–2024",
+      "lane": "global",
+      "place": {
+        "name": "纽约",
+        "lat": 40.75,
+        "lon": -73.97
+      },
+      "scales": [
+        "week",
+        "month",
+        "hour"
+      ],
+      "motive": [
+        "commerce",
+        "religion",
+        "politics"
+      ],
+      "object": "世界历、国际固定历；沙特、伊朗、哈萨克斯坦近年法令",
+      "problem": "格里历月长不齐、同一日期每年星期不同，商业与统计界一再要求「万年历」",
+      "method": "国际固定历：13 个月各 28 天加一个无星期的「年日」，柯达公司 1928 至 1989 年内部沿用；世界历：四个 91 天的季度加「世界日」，1930 年代国际联盟讨论，1955 年联合国经社理事会因美国不支持而搁置。仍在改的是时间而非历：沙特 2016 年公务薪酬改公历；伊朗自 1402 年（2023 年 3 月）起取消夏令时；哈萨克斯坦 2024 年 3 月 1 日全国统一为 UTC+5",
+      "error": "两种万年历都要加「无星期之日」，打断七日周的连续，遭到守安息日各宗教反对",
+      "cost": "联合国 1955 年后再未立项；改时区的国家则要承受学校、航班、软件的一次性调整",
+      "still_used": "万年历方案均未采用；近年时区改动均在实行",
+      "why": "历法已经「冻结」，但时间的刻度仍在被各国政府改写",
+      "text": "二十世纪有两套「万年历」方案走到过国际舞台。科茨沃思的国际固定历把一年分成 13 个月、每月 28 天，再加一个不算星期的「年日」，柯达创办人伊士曼是最大支持者，柯达内部用到 1989 年。阿赫利斯 1930 年提出的世界历保留 12 个月，四个季度各 91 天，年末加「世界日」，1930 年代在国际联盟获得支持，1955 年在联合国经社理事会因美国不支持而搁置——两案都因「无星期之日」打断七日周遭宗教界反对。历法已冻结，时间仍在改：沙特 2016 年 10 月起公务薪酬改按公历；伊朗自 1402 年（2023 年 3 月）起不再实行夏令时；哈萨克斯坦 2024 年 3 月 1 日起全国统一为 UTC+5。",
+      "numbers": [
+        {
+          "label": "柯达使用 13 月历",
+          "value": "至 1989",
+          "unit": "年",
+          "basis": "Bloomberg 2014",
+          "confidence": "中"
+        },
+        {
+          "label": "世界历提出",
+          "value": "1930（Achelis）",
+          "unit": "",
+          "basis": "维基 World Calendar",
+          "confidence": "中"
+        },
+        {
+          "label": "联合国搁置",
+          "value": "1955",
+          "unit": "年",
+          "basis": "维基（引 Ford 1955 信件等）",
+          "confidence": "中"
+        },
+        {
+          "label": "哈萨克斯坦统一时区",
+          "value": "2024-03-01 00:00 起 UTC+5",
+          "unit": "",
+          "basis": "IANA tz asia（引 gov.kz / primeminister.kz 2024-01-19 决议）",
+          "confidence": "高"
+        },
+        {
+          "label": "伊朗取消夏令时",
+          "value": "自伊朗历 1402 年（2023-03-21）起",
+          "unit": "",
+          "basis": "IANA tz asia（引 IRNA 2022-05）",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "IAU 1922 年大会第 32 委员会亦曾提出「52 周加 1–2 天」的万年历方案，但 IAU 未予批准（IAU 1922 决议文本）。柯达起用年份通行作 1928 年，Bloomberg 文只确认用到 1989 年。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "IANA tz 数据库 asia 文件（Kazakhstan 2024、Iran DST 注释）",
+          "url": "https://data.iana.org/time-zones/tzdb/asia",
+          "note": "一手汇编"
+        },
+        {
+          "title": "Bloomberg CityLab 2014-12-11: The Death and Life of the 13-Month Calendar",
+          "url": "https://www.bloomberg.com/news/articles/2014-12-11/the-death-and-life-of-the-13-month-calendar",
+          "note": "报道"
+        },
+        {
+          "title": "IAU 1922 年大会决议（法文 PDF，第 32 委员会历法改革）",
+          "url": "https://www.iau.org/static/resolutions/IAU1922_French.pdf",
+          "note": "一手"
+        },
+        {
+          "title": "World Calendar（维基）",
+          "url": "https://en.wikipedia.org/wiki/World_Calendar",
+          "note": "维基（线索）"
+        },
+        {
+          "title": "International Fixed Calendar（维基）",
+          "url": "https://en.wikipedia.org/wiki/International_Fixed_Calendar",
+          "note": "维基（线索）"
+        },
+        {
+          "title": "The Peninsula（AFP）2016-10-03: Saudi abandons Islamic calendar for govt pay",
+          "url": "https://thepeninsulaqatar.com/article/03/10/2016/Saudi-abandons-Islamic-calendar-for-govt-pay",
+          "note": "通讯社报道"
+        }
+      ],
+      "unverified": [
+        "联合国经社理事会 1955 年文件号与美国声明原文未打开",
+        "柯达 1928 年起用只有维基"
+      ]
+    }
+  ],
+  "adoption": [
+    {
+      "country": "意大利诸邦 / 教皇国",
+      "year": 1582,
+      "date_from": "1582-10-04（儒略）",
+      "date_to": "1582-10-15（格里）",
+      "skipped_days": 10,
+      "legal_or_common": "法定（诏书）",
+      "note": "佛罗伦萨、比萨岁首改制迟至 1750",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php",
+        "https://en.wikisource.org/wiki/Translation:Inter_gravissimas"
+      ]
+    },
+    {
+      "country": "西班牙（含属地）",
+      "year": 1582,
+      "date_from": "1582-10-04",
+      "date_to": "1582-10-15",
+      "skipped_days": 10,
+      "legal_or_common": "法定（腓力二世 1582-09-19 诏令）",
+      "note": "",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php",
+        "http://hdl.loc.gov/loc.wdl/wdl.2837"
+      ]
+    },
+    {
+      "country": "葡萄牙",
+      "year": 1582,
+      "date_from": "1582-10-04",
+      "date_to": "1582-10-15",
+      "skipped_days": 10,
+      "legal_or_common": "法定",
+      "note": "",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "波兰—立陶宛",
+      "year": 1582,
+      "date_from": "1582-10-04",
+      "date_to": "1582-10-15",
+      "skipped_days": 10,
+      "legal_or_common": "法定",
+      "note": "Grotefend 注「仅天主教徒与但泽」；立陶宛大公国 Nørby 记 1584-01-10→01-21；1795 年后俄占区复用儒略历",
+      "dispute": "波兰全境日期与立陶宛日期两说",
+      "confidence": "中",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "法国",
+      "year": 1582,
+      "date_from": "1582-12-09",
+      "date_to": "1582-12-20",
+      "skipped_days": 10,
+      "legal_or_common": "法定",
+      "note": "阿尔萨斯 1583、斯特拉斯堡 1682 另算；1793–1805 用共和历",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php",
+        "https://www.persee.fr/doc/bec_0373-6237_1999_num_157_2_450985"
+      ]
+    },
+    {
+      "country": "荷兰诸省",
+      "year": 1582,
+      "date_from": "1582-12-14 / 1582-12-21（儒略）",
+      "date_to": "1582-12-25 / 1583-01-01（格里）",
+      "skipped_days": 10,
+      "legal_or_common": "各省自定",
+      "note": "布拉班特、泽兰、荷兰省 1582–83；海尔德兰、乌得勒支等 1700；弗里斯兰、格罗宁根 1701-01-12",
+      "dispute": "各省日期分歧，格罗宁根 1594 年一度退回儒略历",
+      "confidence": "中",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "天主教德意志诸邦、奥地利、波希米亚",
+      "year": 1583,
+      "date_from": "1583-10-05 等（巴伐利亚）/ 1584-01-06（奥地利、波希米亚）",
+      "date_to": "1583-10-16 / 1584-01-17",
+      "skipped_days": 10,
+      "legal_or_common": "各邦自定",
+      "note": "巴伐利亚、萨尔茨堡 1583-10；科隆、美因茨 1583-11；奥地利 1584-01",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars"
+      ]
+    },
+    {
+      "country": "瑞士天主教诸邦",
+      "year": 1584,
+      "date_from": "1584-01-11",
+      "date_to": "1584-01-22",
+      "skipped_days": 10,
+      "legal_or_common": "各邦自定",
+      "note": "卢塞恩、乌里、施维茨等；新教的苏黎世、伯尔尼、巴塞尔、日内瓦 1701-01-12；格劳宾登 1760–1812",
+      "dispute": "",
+      "confidence": "中",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "https://hls-dhs-dss.ch/fr/articles/012812/2018-01-15/"
+      ]
+    },
+    {
+      "country": "匈牙利",
+      "year": 1587,
+      "date_from": "1587-10-21（法定）",
+      "date_to": "",
+      "skipped_days": 10,
+      "legal_or_common": "法定",
+      "note": "Grotefend：1584-01-22→02-02 施行，1587-10-21 立法",
+      "dispute": "施行 1584 与立法 1587 两说",
+      "confidence": "中",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars"
+      ]
+    },
+    {
+      "country": "普鲁士公国",
+      "year": 1612,
+      "date_from": "1612-08-22",
+      "date_to": "1612-09-02",
+      "skipped_days": 10,
+      "legal_or_common": "法定",
+      "note": "Nørby 记 1610-08-22→09-02 并质疑 1612 之说",
+      "dispute": "1610 vs 1612",
+      "confidence": "低",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "新教德意志诸邦、丹麦—挪威",
+      "year": 1700,
+      "date_from": "1700-02-18",
+      "date_to": "1700-03-01",
+      "skipped_days": 11,
+      "legal_or_common": "法定（丹麦 1699-11-28 法令；帝国议会 1699 决议）",
+      "note": "复活节仍按天文推算至 1776",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php",
+        "https://www.jstor.org/stable/27303637"
+      ]
+    },
+    {
+      "country": "大不列颠及属地（含北美殖民地）",
+      "year": 1752,
+      "date_from": "1752-09-02",
+      "date_to": "1752-09-14",
+      "skipped_days": 11,
+      "legal_or_common": "法定（Calendar (New Style) Act 1750）",
+      "note": "岁首同时由 3-25 改为 1-01；税务年度顺延至 4-05，1800 年再至 4-06",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://www.legislation.gov.uk/apgb/Geo2/24/23/1991-02-01?timeline=false",
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "https://theconversation.com/why-the-uk-tax-year-starts-on-april-6-57247"
+      ]
+    },
+    {
+      "country": "瑞典（含芬兰）",
+      "year": 1753,
+      "date_from": "1753-02-17",
+      "date_to": "1753-03-01",
+      "skipped_days": 11,
+      "legal_or_common": "法定",
+      "note": "1700 年起拟逐年少闰过渡，1704、1708 仍闰，1712 年补 2 月 30 日退回儒略历",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "托斯卡纳（佛罗伦萨、比萨）岁首",
+      "year": 1750,
+      "date_from": "1749-12-20（旧岁首 3-25）",
+      "date_to": "1750-01-01",
+      "skipped_days": 0,
+      "legal_or_common": "法定",
+      "note": "历法早已为格里历，此处改的是岁首",
+      "dispute": "",
+      "confidence": "中",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "日本",
+      "year": 1873,
+      "date_from": "明治 5 年 12 月 2 日（天保历）",
+      "date_to": "明治 6 年 1 月 1 日 = 1873-01-01",
+      "skipped_days": null,
+      "legal_or_common": "法定（1872 年 11 月太政官布告）",
+      "note": "阴阳历改太阳历，非儒略→格里；筹备期极短",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://www.ndl.go.jp/koyomi/e/history/calendar.html",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "埃及",
+      "year": 1875,
+      "date_from": "",
+      "date_to": "",
+      "skipped_days": null,
+      "legal_or_common": "政府行政用",
+      "note": "具体日期不详；科普特历与伊斯兰历并行至今",
+      "dispute": "Nørby 记「日期不详」，仅维基与 Statesman's Year-Book 给 1875",
+      "confidence": "低",
+      "sources": [
+        "http://www.norbyhus.dk/calendar.php",
+        "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar"
+      ]
+    },
+    {
+      "country": "朝鲜（大韩帝国）",
+      "year": 1896,
+      "date_from": "开国 504 年 11 月 17 日（阴历）",
+      "date_to": "1896-01-01（建阳元年）",
+      "skipped_days": null,
+      "legal_or_common": "法定",
+      "note": "",
+      "dispute": "",
+      "confidence": "中",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar",
+        "https://books.google.com/books?id=rhUm97beo2cC&pg=PA382"
+      ]
+    },
+    {
+      "country": "中华民国",
+      "year": 1912,
+      "date_from": "辛亥年十一月十三日（阴历）",
+      "date_to": "1912-01-01（民国元年元旦）",
+      "skipped_days": null,
+      "legal_or_common": "法定（1912-01-02 临时大总统通电；临时参议院「新旧二历并存」）",
+      "note": "1929 年起国民政府推行「废除旧历、普用国历」；农历节日沿用至今",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://www.thepaper.cn/newsDetail_forward_1581572",
+        "http://www.norbyhus.dk/calendar.php",
+        "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar"
+      ]
+    },
+    {
+      "country": "阿尔巴尼亚",
+      "year": 1912,
+      "date_from": "",
+      "date_to": "",
+      "skipped_days": null,
+      "legal_or_common": "独立后通用",
+      "note": "1912-11 独立后即用格里历，确切日期不详",
+      "dispute": "",
+      "confidence": "低",
+      "sources": [
+        "http://www.norbyhus.dk/calendar.php",
+        "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar"
+      ]
+    },
+    {
+      "country": "保加利亚",
+      "year": 1916,
+      "date_from": "1916-03-31",
+      "date_to": "1916-04-14",
+      "skipped_days": 13,
+      "legal_or_common": "法定（1916-03-21 公报法律）",
+      "note": "",
+      "dispute": "Nørby 另列 1915-10-31→11-14 并标 1916 为存疑；维基引 1916 年公报",
+      "confidence": "中",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "俄国（苏维埃政权）",
+      "year": 1918,
+      "date_from": "1918-01-31",
+      "date_to": "1918-02-14",
+      "skipped_days": 13,
+      "legal_or_common": "法定（人民委员会 1918-01-24 法令）",
+      "note": "高尔察克政权 1918-10、远东 1920 年另行改历；俄罗斯正教会至今用儒略历，圣诞在公历 1-07",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php",
+        "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar"
+      ]
+    },
+    {
+      "country": "爱沙尼亚 / 拉脱维亚",
+      "year": 1918,
+      "date_from": "1918-01-31 / 1918-02-01",
+      "date_to": "1918-02-14 / 1918-02-15",
+      "skipped_days": 13,
+      "legal_or_common": "沿俄国法令",
+      "note": "",
+      "dispute": "",
+      "confidence": "中",
+      "sources": [
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "罗马尼亚",
+      "year": 1919,
+      "date_from": "1919-03-31",
+      "date_to": "1919-04-14",
+      "skipped_days": 13,
+      "legal_or_common": "法定",
+      "note": "特兰西瓦尼亚 1590 年已改；教会 1924-10",
+      "dispute": "",
+      "confidence": "中",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "塞尔维亚—克罗地亚—斯洛文尼亚王国",
+      "year": 1919,
+      "date_from": "1919-01-14",
+      "date_to": "1919-01-28",
+      "skipped_days": 13,
+      "legal_or_common": "法定（1919-01-10 法律）",
+      "note": "",
+      "dispute": "",
+      "confidence": "中",
+      "sources": [
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "希腊",
+      "year": 1923,
+      "date_from": "1923-02-15",
+      "date_to": "1923-03-01",
+      "skipped_days": 13,
+      "legal_or_common": "法定（1923-01-18 法令，仅民用）",
+      "note": "希腊教会 1924-03-10→03-23 改用修正儒略历（固定节日），复活节仍按儒略推算",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://nataliavogeikoff.com/2013/12/25/an-odd-christmas-or-the-christmasless-year-of-1923-in-greece/",
+        "http://www.norbyhus.dk/calendar.php",
+        "https://doi.org/10.3724/SP.J.1440-2807.2007.02.05"
+      ]
+    },
+    {
+      "country": "土耳其",
+      "year": 1926,
+      "date_from": "1925-12-31（鲁米历 1341 年）",
+      "date_to": "1926-01-01",
+      "skipped_days": 0,
+      "legal_or_common": "法定（1925-12-26 第 698 号法律改纪元）",
+      "note": "1917-02-15→03-01 鲁米历已跳 13 天对齐格里历，1926 改的是纪元与岁首",
+      "dispute": "Nørby 以 1917 为改历年，通史以 1926 为采用年",
+      "confidence": "中",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rumi_calendar",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "country": "沙特阿拉伯",
+      "year": 2016,
+      "date_from": "",
+      "date_to": "2016-10-01",
+      "skipped_days": null,
+      "legal_or_common": "公务薪酬与行政（内阁决议）",
+      "note": "希吉拉历仍为宗教与官方纪年",
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        "https://thepeninsulaqatar.com/article/03/10/2016/Saudi-abandons-Islamic-calendar-for-govt-pay",
+        "https://www.economist.com/news/middle-east-and-africa/21711938-hauling-saudi-arabia-21st-century-saudi-arabia-adopts-gregorian"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "jul-greg-gap",
+      "text": "儒略历与格里历的日期差：1582 年 10 天，1700-03-01 起 11 天，1800-03-01 起 12 天，1900-03-01 起 13 天，2100-03-01 起 14 天（每逢不被 400 整除的百年多一天）。",
+      "value": "10 / 11 / 12 / 13 / 14",
+      "confidence": "高",
+      "sources": [
+        "https://en.wikisource.org/wiki/Translation:Inter_gravissimas",
+        "https://www.cambridge.org/core/books/calendrical-calculations/"
+      ]
+    },
+    {
+      "id": "tropical-year",
+      "text": "回归年约 365.24219 日，即 365 天 5 小时 48 分 45 秒。",
+      "value": "365.24219",
+      "confidence": "高",
+      "sources": [
+        "https://www.cambridge.org/core/books/calendrical-calculations/",
+        "https://aa.usno.navy.mil/faq/jewish"
+      ]
+    },
+    {
+      "id": "synodic-month",
+      "text": "朔望月平均约 29.530589 日，即 29 天 12 小时 44 分 2.9 秒。",
+      "value": "29.530589",
+      "confidence": "高",
+      "sources": [
+        "https://www.cambridge.org/core/books/calendrical-calculations/"
+      ]
+    },
+    {
+      "id": "metonic-error",
+      "text": "默冬章：235 个朔望月（6,939.69 天）与 19 个回归年（6,939.60 天）只差约 2 小时 5 分，约 219 年累积一天。",
+      "value": "≈2.08 h / 19 年",
+      "confidence": "高",
+      "sources": [
+        "https://www.britannica.com/print/article/47677",
+        "https://www.cambridge.org/core/books/calendrical-calculations/"
+      ]
+    },
+    {
+      "id": "julian-error",
+      "text": "儒略年 365.25 天比回归年长 11 分 14 秒，约 128 年多出一天。",
+      "value": "11 m 14 s / 年",
+      "confidence": "高",
+      "sources": [
+        "https://www.cambridge.org/core/books/calendrical-calculations/",
+        "https://robinfo.oma.be/en/astro-info/calendar/the-roman-and-julian-calendars/"
+      ]
+    },
+    {
+      "id": "greg-error",
+      "text": "格里历平均年 365.2425 天比回归年长约 27 秒，约 3,200 年多出一天（常见口径「约 3,300 年」取回归年 365.2422）。",
+      "value": "≈27 s / 年",
+      "confidence": "高",
+      "sources": [
+        "https://www.cambridge.org/core/books/calendrical-calculations/"
+      ]
+    },
+    {
+      "id": "year-cf",
+      "text": "一年不是整数天：365.24219 = 365 + 1/(4 + 1/(7 + 1/(1 + 1/(3 + …))))，渐近分数依次是 1/4、7/29、8/33、31/128——分别对应儒略历的 4 年 1 闰、贾拉里 / 伊朗历常用的 33 年 8 闰、与 128 年 31 闰；格里历的 97/400 不是渐近分数，但便于按世纪记忆。",
+      "value": "[4; 7, 1, 3, 24, …]",
+      "confidence": "高",
+      "sources": [
+        "https://www.cambridge.org/core/books/calendrical-calculations/"
+      ]
+    },
+    {
+      "id": "leap-schemes",
+      "text": "各种闰法的平均年与误差：4 年 1 闰 = 365.25 天，+11 分 15 秒 / 年，128 年差一天；33 年 8 闰 = 365.24242 天，+20 秒 / 年，约 4,300 年差一天；128 年 31 闰 = 365.2421875 天，与回归年之差不足 1 秒 / 年，十万年量级才差一天；400 年 97 闰 = 365.2425 天，+27 秒 / 年，约 3,200 年差一天。",
+      "value": "365.25 / 365.24242 / 365.2421875 / 365.2425",
+      "confidence": "高",
+      "sources": [
+        "https://www.cambridge.org/core/books/calendrical-calculations/"
+      ]
+    },
+    {
+      "id": "hebrew-year",
+      "text": "希伯来历平均年 365.2468 天，比回归年长约 6 分 39 秒，约 216 年差一天。",
+      "value": "365.2468",
+      "confidence": "高",
+      "sources": [
+        "https://aa.usno.navy.mil/faq/jewish"
+      ]
+    },
+    {
+      "id": "islamic-year",
+      "text": "伊斯兰历平均年 354.367 天，比回归年短约 10.9 天，节期约 33.6 年在四季中绕一圈。",
+      "value": "354.367",
+      "confidence": "高",
+      "sources": [
+        "https://www.cambridge.org/core/books/calendrical-calculations/"
+      ]
+    },
+    {
+      "id": "y2038",
+      "text": "32 位有符号 Unix 时间在 2038-01-19 03:14:07 UTC 达到 2³¹ − 1 秒后溢出。",
+      "value": "2038-01-19T03:14:07Z",
+      "confidence": "高",
+      "sources": [
+        "https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html"
+      ]
+    },
+    {
+      "id": "sweden-feb30",
+      "text": "1712 年瑞典为退回儒略历设了一个 2 月 30 日。",
+      "value": "1712-02-30",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "id": "uk-1752",
+      "text": "英国 1752-09-02 的次日是 1752-09-14；法律规定租金利息按「自然天数」计算，税务年度因此从 3 月 25 日挪到 4 月 5 日，1800 年再挪到 4 月 6 日。",
+      "value": "11 天",
+      "confidence": "高",
+      "sources": [
+        "https://www.legislation.gov.uk/apgb/Geo2/24/23/1991-02-01?timeline=false",
+        "https://theconversation.com/why-the-uk-tax-year-starts-on-april-6-57247"
+      ]
+    },
+    {
+      "id": "kz-2024",
+      "text": "哈萨克斯坦自 2024-03-01 00:00 起全国统一为 UTC+5。",
+      "value": "UTC+5",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia"
+      ]
+    },
+    {
+      "id": "iran-dst",
+      "text": "伊朗自伊朗历 1402 年（2023-03-21）起不再实行夏令时。",
+      "value": "2023",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia"
+      ]
+    }
+  ],
+  "constants": {
+    "tropical_year_days": {
+      "value": "365.24219",
+      "source": "Reingold & Dershowitz；与简报一致"
+    },
+    "synodic_month_days": {
+      "value": "29.530589",
+      "source": "Reingold & Dershowitz；与简报一致（希伯来历法值取 29.530594）"
+    },
+    "julian_year_days": {
+      "value": "365.25",
+      "source": "定义"
+    },
+    "gregorian_mean_year_days": {
+      "value": "365.2425",
+      "source": "Inter gravissimas（400 年 97 闰）"
+    },
+    "jalali_33_8_mean_year_days": {
+      "value": "365.242424",
+      "source": "365 + 8/33"
+    },
+    "cycle_128_31_mean_year_days": {
+      "value": "365.2421875",
+      "source": "365 + 31/128"
+    },
+    "hebrew_mean_year_days": {
+      "value": "365.24682",
+      "source": "235 × 29.530594 / 19（USNO 月长）"
+    },
+    "islamic_mean_year_days": {
+      "value": "354.36707",
+      "source": "12 × 29.530589"
+    },
+    "julian_drift": {
+      "value": "11 分 14 秒 / 年 ≈ 1 天 / 128 年",
+      "source": "365.25 − 365.24219"
+    },
+    "gregorian_drift": {
+      "value": "约 27 秒 / 年 ≈ 1 天 / 3,200 年（简报口径 3,300 年取 365.2422）",
+      "source": "365.2425 − 365.24219"
+    },
+    "metonic_error": {
+      "value": "约 2.08 小时 / 19 年",
+      "source": "235 × 29.530589 − 19 × 365.24219"
+    },
+    "jd_epoch": {
+      "value": "前 4713-01-01 12:00（儒略历）= JD 0",
+      "source": "USNO"
+    },
+    "unix_epoch_jd": {
+      "value": "2440587.5",
+      "source": "维基 Julian day 表（算术可验）"
+    },
+    "julian_gregorian_gap": {
+      "value": {
+        "1582": 10,
+        "1700": 11,
+        "1800": 12,
+        "1900": 13,
+        "2000": 13,
+        "2100": 14
+      },
+      "source": "400 年 97 闰规则"
+    }
+  },
+  "unverified": [
+    "俄国 1918 年人民委员会法令原文站点（niv.ru）打不开，只据 tz calendars 与 Nørby",
+    "埃及 1875 年改历具体日期无一手来源",
+    "沙特 2016 年内阁决议原文（SPA）未直接打开，仅 AFP / Economist 转述",
+    "IAU 1922 年关于天文日改子夜的决议原文未找到（1925 年改制本身已核）",
+    "van Gent 乌姆库拉主页抓取为空，只核到其 rules 子页",
+    "联合国 1955 年搁置世界历的文件号未核",
+    "印度国家历 1957-03-22 起用日只有维基与通行说法",
+    "Britton 2007 关于巴比伦 19 年周期起用年代的原文未打开",
+    "柯达 1928 年起用 13 月历只有维基；1989 年止有 Bloomberg",
+    "千年虫费用数字未核，正文不写"
+  ]
+}

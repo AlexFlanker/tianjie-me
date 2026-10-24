@@ -1,0 +1,1916 @@
+{
+  "route": "C",
+  "nodes": [
+    {
+      "id": "sundial-noon",
+      "title": "日晷与漏刻：每座城自己的正午",
+      "year": -1500,
+      "year_end": 1800,
+      "year_label": "公元前 15 世纪 – 1800",
+      "lane": "global",
+      "place": {
+        "name": "任意一座城",
+        "lat": null,
+        "lon": null
+      },
+      "scales": [
+        "hour",
+        "day"
+      ],
+      "motive": [
+        "astronomy",
+        "rule",
+        "religion"
+      ],
+      "object": "日晷 · 漏刻 · 更鼓 / 钟楼",
+      "problem": "太阳过中天即正午，可每座城的中天时刻都不同：经度每差 1°，正午差 4 分钟；而太阳本身也不准，真太阳时与平太阳时一年里最多相差约 16 分钟",
+      "method": "白天读日晷影子，夜里靠漏刻（水钟）与更鼓；城里以本城钟楼为准，城外另算",
+      "error": "真太阳时比平太阳时最快约 +16 分 33 秒（11 月初）、最慢约 −14 分 06 秒（2 月中），四次归零在 4-15 / 6-13 / 9-01 / 12-25 前后（时差方程）",
+      "cost": "两城之间无法对表；1800 年前后布里斯托尔比伦敦慢约 10 分钟，1891–1911 年法国火车站内的钟比站外慢 5 分钟",
+      "still_used": "日晷只作纪念物；「地方平太阳时」仍是时区计算的基准",
+      "why": "一切「对表」的起点：在铁路与电报之前，正午属于每座城自己",
+      "text": "钟表普及之前，正午就是太阳过头顶的那一刻：白天读日晷，夜里靠漏刻与更鼓，每座城都以自己的天顶为准。这个正午有两重不准。一是经度：地球 24 小时转 360°，经度每差 1° 正午就差 4 分钟，布里斯托尔因此比伦敦慢约 10 分钟。二是太阳本身：因轨道偏心与黄赤交角，日晷读的真太阳时比匀速的平太阳时一年里最多快约 16 分半（11 月初）、慢约 14 分（2 月中），两者一年只有四次重合。铁路之前，没有谁需要同时知道两座城的时间。",
+      "numbers": [
+        {
+          "label": "经度与时间换算",
+          "value": "1° = 4 分钟；15° = 1 小时",
+          "unit": "",
+          "basis": "360° / 24 h",
+          "confidence": "高"
+        },
+        {
+          "label": "时差方程极值",
+          "value": "+16 分 33 秒（约 11-03）/ −14 分 06 秒（约 02-11）",
+          "unit": "",
+          "basis": "Equation of time 条目；不同历元相差数十秒",
+          "confidence": "中"
+        },
+        {
+          "label": "布里斯托尔平时与 GMT 之差",
+          "value": "约 10",
+          "unit": "分钟",
+          "basis": "RMG：Bristol Mean Time 比 GMT 慢 10 分钟",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Wikipedia: Equation of time",
+          "url": "https://en.wikipedia.org/wiki/Equation_of_time",
+          "note": "极值与归零日期；辅助"
+        },
+        {
+          "title": "Royal Museums Greenwich: What is Greenwich Mean Time?",
+          "url": "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt",
+          "note": "摆钟使平时可用；布里斯托尔慢 10 分钟、加的夫慢 13 分钟"
+        },
+        {
+          "title": "IANA tz theory.html",
+          "url": "https://data.iana.org/time-zones/tzdb/theory.html",
+          "note": "1891–1911 法国站内 UT+0:04:21、站外 UT+0:09:21"
+        }
+      ],
+      "unverified": [
+        "中国漏刻、更鼓的具体制度只引通行说法，未另找一手史料"
+      ]
+    },
+    {
+      "id": "huygens-harrison",
+      "title": "摆钟与航海钟：时间差就是经度",
+      "year": 1656,
+      "year_end": 1761,
+      "year_label": "1656 → 1761",
+      "lane": "global",
+      "place": {
+        "name": "海牙 / 伦敦",
+        "lat": 51.5,
+        "lon": -0.1
+      },
+      "scales": [
+        "hour",
+        "second"
+      ],
+      "motive": [
+        "astronomy",
+        "commerce",
+        "technology"
+      ],
+      "object": "惠更斯摆钟 · 哈里森 H4",
+      "problem": "海上不知经度：只要知道出发港的时刻与船上当地正午之差，每差 1 小时就是 15° 经度，可当时没有一只钟经得起海上颠簸",
+      "method": "1656 年惠更斯造出摆钟，把日误差压到分以内；1714 年英国《经度法》悬赏最高 2 万英镑；哈里森 1759 年完成 H4，1761-11-18 随「德特福德号」驶往牙买加，81 天航程只慢约 5 秒",
+      "error": "H4 牙买加之行慢约 5 秒 ≈ 1.25 弧分经度（约 1 海里）；1764 年巴巴多斯之行误差 39 秒",
+      "cost": "哈里森与经度委员会缠斗数十年：1765 年得 1 万英镑，1773 年国会再付 8,750 英镑",
+      "still_used": "「经度 = 时间差」至今是 GPS 的基本原理；机械航海钟已被原子钟取代",
+      "why": "把「时间」变成可以随身携带、跨越经度的东西，是对表史的前提",
+      "text": "1656 年惠更斯把摆装进钟，日误差第一次压到分以内，「平太阳时」从算法变成钟面读数。但摆在船上不管用，而海上最要命的是经度：地球每小时转 15°，只要带着出发港的时间再测当地正午，时差就是经度。1714 年英国《经度法》悬赏最高 2 万英镑。木匠出身的哈里森从 1735 年的 H1 做到 1759 年的 H4：这只怀表 1761 年 11 月 18 日随船驶往牙买加，81 天只慢约 5 秒。经度委员会 1765 年先付 1 万英镑，1773 年国会再付 8,750 英镑，哈里森已 80 岁。",
+      "numbers": [
+        {
+          "label": "惠更斯摆钟",
+          "value": "1656",
+          "unit": "年",
+          "basis": "RMG 作「1650s」；通史作 1656 年发明、1657 年由 Coster 取得专利",
+          "confidence": "中"
+        },
+        {
+          "label": "经度法悬赏上限",
+          "value": "20,000",
+          "unit": "英镑",
+          "basis": "Wikipedia John Harrison：「rewards of up to £20,000」",
+          "confidence": "中"
+        },
+        {
+          "label": "H4 牙买加航程误差",
+          "value": "约 5 秒 / 81 天",
+          "unit": "",
+          "basis": "Wikipedia John Harrison；RMG 页只记 1761 年获准试航",
+          "confidence": "中"
+        },
+        {
+          "label": "付款",
+          "value": "1765 年 £10,000；1773 年 £8,750",
+          "unit": "",
+          "basis": "RMG + Wikipedia 一致",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "H4 牙买加误差：通行说法 5.1 秒，Wikipedia 作「5 秒」，RMG 页未给数字。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Royal Museums Greenwich: Longitude found – John Harrison",
+          "url": "https://www.rmg.co.uk/discover/explore/longitude-found-john-harrison",
+          "note": "H1 1735、1737 年 £500、1761 年试航获准、1765-05-10 新经度法、1766 年格林尼治测试"
+        },
+        {
+          "title": "Wikipedia: John Harrison",
+          "url": "https://en.wikipedia.org/wiki/John_Harrison",
+          "note": "H4 刻 AD 1759；1761-11-18 出航、81 天 5 小时、慢 5 秒；£10,000 / £8,750；辅助"
+        },
+        {
+          "title": "Royal Museums Greenwich: What is GMT?",
+          "url": "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt",
+          "note": "1650s 摆钟使平时与太阳时可换算"
+        }
+      ],
+      "unverified": [
+        "惠更斯 1656 年的确切月份与 Coster 1657 专利只有通史与维基",
+        "1714 经度法 £10,000 / £15,000 / £20,000 三档只有通行说法"
+      ]
+    },
+    {
+      "id": "greenwich-1675",
+      "title": "格林尼治：从天文台到报时球",
+      "year": 1675,
+      "year_end": 1852,
+      "year_label": "1675 → 1852",
+      "lane": "global",
+      "place": {
+        "name": "格林尼治",
+        "lat": 51.4769,
+        "lon": 0.0
+      },
+      "scales": [
+        "hour",
+        "day"
+      ],
+      "motive": [
+        "astronomy",
+        "commerce",
+        "technology"
+      ],
+      "object": "皇家天文台 · 《航海天文年历》 · 报时球 · 谢泼德电钟",
+      "problem": "航海需要一个公共的基准时与基准子午线；船长出港前要给航海钟对表",
+      "method": "1675 年查理二世设皇家天文台，弗拉姆斯蒂德任首位皇家天文学家；1767 年马斯基林创刊《航海天文年历》，月距表以格林尼治平时为基准；1833 年起每天 13:00 报时球落下供泰晤士河上船只对表；1852 年谢泼德电钟把格林尼治时间经电报送往全国",
+      "error": "报时球以天文台子午仪观测校准；1866 年起经跨大西洋海缆向哈佛发报时信号",
+      "cost": "英国海图与年历用格林尼治子午线，使 1884 年「世界 72% 的航运依赖格林尼治海图」成为选它当本初子午线的理由",
+      "still_used": "格林尼治报时球至今每天 13:00 落下；GMT 1972 年被 UTC 取代，但本初子午线仍在格林尼治（WGS84 零度线偏东约 102 米）",
+      "why": "格林尼治能成为世界的零点，不是因为天文，而是因为它先成了海员口袋里那只钟的参照",
+      "text": "1675 年查理二世在格林尼治设皇家天文台，任务是为航海编星表月表。1767 年马斯基林创刊《航海天文年历》，月距表一律以格林尼治平时为基准——买这本年历的船长，钟都对着格林尼治。1833 年起天文台每天 13:00 让桅顶报时球落下，泰晤士河上的船据此校钟（中午天文学家忙着测太阳过中天，故选 1 点）。1852 年谢泼德电钟装进天文台，大门 24 小时钟面首次向公众显示 GMT，电报把信号送往铁路与邮局，1866 年经海缆抵哈佛。到 1884 年，世界 72% 的航运已依赖格林尼治海图。",
+      "numbers": [
+        {
+          "label": "皇家天文台设立",
+          "value": "1675",
+          "unit": "年",
+          "basis": "RMG 页记弗拉姆斯蒂德迁入「新建的格林尼治皇家天文台」；1675-06-22 为通行日期",
+          "confidence": "高"
+        },
+        {
+          "label": "《航海天文年历》创刊",
+          "value": "1767",
+          "unit": "年",
+          "basis": "RMG：「In 1767 Maskelyne introduced the Nautical Almanac」",
+          "confidence": "高"
+        },
+        {
+          "label": "报时球",
+          "value": "1833 年起，每日 13:00",
+          "unit": "",
+          "basis": "RMG 报时球页",
+          "confidence": "高"
+        },
+        {
+          "label": "谢泼德电钟",
+          "value": "1852",
+          "unit": "年",
+          "basis": "RMG",
+          "confidence": "高"
+        },
+        {
+          "label": "依赖格林尼治海图的航运",
+          "value": "72",
+          "unit": "%",
+          "basis": "RMG 引 1884 年会议理由",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Royal Museums Greenwich: What is Greenwich Mean Time?",
+          "url": "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt",
+          "note": "1767、1847、1852、1866、1880、1884、1893、1972 各节点"
+        },
+        {
+          "title": "Royal Museums Greenwich: The Greenwich Time Ball",
+          "url": "https://www.rmg.co.uk/stories/time/greenwich-time-ball-one-time-all",
+          "note": "1833 年起；12:55 升半、12:58 到顶、13:00 落下"
+        },
+        {
+          "title": "Howse, Greenwich Time and the Longitude (1997)",
+          "url": "",
+          "note": "专著引用：1675 年建台、1833-10-28 首次落球"
+        }
+      ],
+      "unverified": [
+        "报时球首次落下的具体日期 1833-10-28 只有 Howse / 维基",
+        "WGS84 零度线偏东约 102 米只有通行说法"
+      ]
+    },
+    {
+      "id": "railway-time",
+      "title": "铁路时间：一个国家，一个钟",
+      "year": 1840,
+      "year_end": 1880,
+      "year_label": "1840-11 → 1880-08-02",
+      "lane": "global",
+      "place": {
+        "name": "伦敦 / 布里斯托尔",
+        "lat": 51.45,
+        "lon": -2.59
+      },
+      "scales": [
+        "hour"
+      ],
+      "motive": [
+        "commerce",
+        "technology",
+        "rule"
+      ],
+      "object": "大西部铁路时刻表 · 布里斯托尔交易所双分针钟 · 1880 年《法定时间定义法》",
+      "problem": "火车按时刻表跨城运行，而每座城用自己的地方平时：伦敦—布里斯托尔差约 10 分钟，同一张时刻表在不同站台意味着不同的时刻",
+      "method": "1840 年 11 月大西部铁路率先全线用伦敦时间；1847-09-22 铁路清算所建议各站采用 GMT，1847-12-01 起多家铁路改用；1852 年电报把格林尼治时间送到各站；1880-08-02《法定时间定义法》御准，GMT 成为大不列颠法定时间",
+      "error": "1855 年英国绝大多数公共时钟已用 GMT；法律文书仍按地方时，投票站出现 08:13 开门、16:13 关门的怪事",
+      "cost": "城市自尊：布里斯托尔 1852-09-14 才正式采用铁路时间，交易所大钟保留两根分针（红针本地时、另一根 GMT）至今",
+      "still_used": "是：GMT / UTC+0 仍为英国冬季法定时间",
+      "why": "第一次有一个国家放弃「每城一个正午」，统一到一座天文台的钟上",
+      "text": "火车跑得比太阳快。1840 年 11 月大西部铁路全线改用伦敦时间，否则时刻表到布里斯托尔就得减 10 分钟。1847 年 9 月 22 日铁路清算所建议各站一律采用格林尼治平时，12 月 1 日起多家铁路切换；1852 年电报接通天文台，各站每日收校时信号。1855 年英国绝大多数公共时钟已是 GMT，只有法律死守地方时，投票站出现 08:13 开门、16:13 关门的记录。1880 年 8 月 2 日《法定时间定义法》御准，GMT 成为法定时间。布里斯托尔交易所大钟至今两根分针：一根本地时，一根格林尼治。",
+      "numbers": [
+        {
+          "label": "大西部铁路采用伦敦时间",
+          "value": "1840-11",
+          "unit": "",
+          "basis": "tz europe 注（引 Howse）",
+          "confidence": "高"
+        },
+        {
+          "label": "铁路清算所建议 GMT",
+          "value": "1847-09-22",
+          "unit": "",
+          "basis": "tz europe 注；RMG 作「1847 年 12 月」",
+          "confidence": "高"
+        },
+        {
+          "label": "《法定时间定义法》御准",
+          "value": "1880-08-02",
+          "unit": "",
+          "basis": "tz europe 注；RMG「1880 年成为法定」",
+          "confidence": "高"
+        },
+        {
+          "label": "布里斯托尔正式采用铁路时间",
+          "value": "1852-09-14",
+          "unit": "",
+          "basis": "Wikipedia The Exchange, Bristol",
+          "confidence": "低"
+        }
+      ],
+      "dispute": "统一时点：tz 以 1847-12-01 为伦敦转换日，RMG 作 1847 年 12 月铁路清算所采用；1880 年为法定时点。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "IANA tz 源文件 europe（Paul Eggert 1993-11-18 注，引 Howse）",
+          "url": "https://data.iana.org/time-zones/tzdb/europe",
+          "note": "1840-11 GWR、1847-09-22、1847-12-01、1855、08:13 投票站、1880-08-02 御准"
+        },
+        {
+          "title": "Royal Museums Greenwich: What is GMT?",
+          "url": "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt",
+          "note": "1847-12 铁路清算所；1880 法定；布里斯托尔慢 10 分钟"
+        },
+        {
+          "title": "Wikipedia: The Exchange, Bristol",
+          "url": "https://en.wikipedia.org/wiki/The_Exchange,_Bristol",
+          "note": "1822 年装钟、后加第二根分针、1852-09-14；辅助"
+        }
+      ],
+      "unverified": [
+        "布里斯托尔第二根分针加装年份未见一手来源",
+        "1880 年法案全名 Statutes (Definition of Time) Act 1880（43 & 44 Vict. c. 9）的 legislation.gov.uk 原文未打开"
+      ]
+    },
+    {
+      "id": "us-1883",
+      "title": "两次正午之日：美国铁路四时区",
+      "year": 1883,
+      "year_end": 1918,
+      "year_label": "1883-11-18 → 1918-03-19",
+      "lane": "global",
+      "place": {
+        "name": "纽约",
+        "lat": 40.71,
+        "lon": -74.01
+      },
+      "scales": [
+        "hour"
+      ],
+      "motive": [
+        "commerce",
+        "technology",
+        "rule"
+      ],
+      "object": "总时间大会（General Time Convention）决议 · 1918 年《标准时间法》",
+      "problem": "北美铁路用着几十种「铁路时」，每家公司以本部所在城为准；一座大站同时挂几只钟",
+      "method": "William F. Allen 1883-04-11 向总时间大会提出以格林尼治为基准、每 15° 一区的方案；1883-10-11 大会通过，11 月 18 日（周日）正午实施——东部以 75°W、中部 90°W、山地 105°W、太平洋 120°W 为准；1918-03-19 国会《标准时间法》把时区写进联邦法并首次全国实行夏令时",
+      "error": "纽约地方平时 −4:56:02 → 东部标准时 −5:00，钟拨慢 3 分 58 秒；西侧城市当天出现两次正午",
+      "cost": "1883–1918 年间标准时只是铁路与多数城市的习惯，无联邦法律效力；地方诉讼仍按地方时",
+      "still_used": "是：美国四大本土时区沿用至今，法定时区现为 9 个（15 U.S.C. §263）",
+      "why": "「时区」作为制度第一次在一个大陆上落地，比 1884 年的国际会议早一年",
+      "text": "1883 年 11 月 18 日星期日，美国东部各城经历「两次正午」：12 点纽约圣保罗教堂按旧地方时敲钟，3 分 58 秒后海军天文台电信号传来，三一教堂敲出东部标准时的 12 响，纽约从此比格林尼治慢整 5 小时。推手是铁路工程师 William F. Allen：4 月 11 日他向总时间大会提出以格林尼治为基准、每 15° 一区的方案，10 月 11 日通过，一个月后几乎所有铁路同时切换；Sandford Fleming 鼓吹的全球 24 时区有了第一块实地。但这只是铁路的约定，直到 1918 年 3 月 19 日《标准时间法》，时区才有联邦法律效力。",
+      "numbers": [
+        {
+          "label": "实施日",
+          "value": "1883-11-18（周日）",
+          "unit": "",
+          "basis": "tz northamerica 注；Bartky 1989",
+          "confidence": "高"
+        },
+        {
+          "label": "纽约钟表拨慢",
+          "value": "3 分 58 秒（−4:56:02 → −5:00）",
+          "unit": "",
+          "basis": "tz Zone America/New_York",
+          "confidence": "高"
+        },
+        {
+          "label": "《标准时间法》",
+          "value": "Public Law 65-106，1918-03-19",
+          "unit": "",
+          "basis": "tz 注引 LOC Statutes at Large",
+          "confidence": "高"
+        },
+        {
+          "label": "美国法定时区数",
+          "value": "9",
+          "unit": "个",
+          "basis": "15 U.S.C. §263（含大西洋、萨摩亚、查莫罗）",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "切换时点：tz 注明 1883 年切换发生在新时间的 12:00（Prerau），而非旧时间 12:00。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "IANA tz 源文件 northamerica（Eggert 2024-11-18 注）",
+          "url": "https://data.iana.org/time-zones/tzdb/northamerica",
+          "note": "Allen 1883-04-11 / 10-11 / 11-18；两次正午；Allen 目击纽约切换的原话；Bartky 1989 Technol Cult 30(1):25–56"
+        },
+        {
+          "title": "Public Law 65-106, 1918-03-19（Statutes at Large, LOC）",
+          "url": "https://www.loc.gov/law/help/statutes-at-large/65th-congress/session-2/c65s2ch24.pdf",
+          "note": "一手；tz 注引用"
+        },
+        {
+          "title": "15 U.S.C. §263 Designation of zone standard times（Cornell LII）",
+          "url": "https://www.law.cornell.edu/uscode/text/15/263",
+          "note": "9 个法定时区；源注 1918-03-19 ch.24 §4"
+        }
+      ],
+      "unverified": [
+        "Fleming 1876 年提案与 Dowd 1870 年方案的细节只据 tz 注转述"
+      ]
+    },
+    {
+      "id": "meridian-1884",
+      "title": "华盛顿 1884：22 票选出的零度线",
+      "year": 1884,
+      "year_end": 1912,
+      "year_label": "1884-10-13 投票 · 10-22 决议",
+      "lane": "global",
+      "place": {
+        "name": "华盛顿",
+        "lat": 38.9,
+        "lon": -77.04
+      },
+      "scales": [
+        "hour",
+        "day"
+      ],
+      "motive": [
+        "astronomy",
+        "commerce",
+        "politics"
+      ],
+      "object": "国际子午线会议决议（Final Act）",
+      "problem": "各国海图各用各的本初子午线（格林尼治、巴黎、费罗、华盛顿……），经度数字不能互通；「一天」从何时何地开始也没有共识",
+      "method": "1884-10-01 开幕于华盛顿国务院，26 国受邀（丹麦缺席）；10-13 投票、10-22 通过 7 项决议：以格林尼治子午仪为本初子午线（22 赞成、1 反对、2 弃权）；经度东西各算至 180°；设「世界日」为从本初子午线平子夜起算的平太阳日、0–24 时计",
+      "error": "决议只是「建议」，无强制力：法国坚持巴黎时间至 1911-03-11，法律措辞是「巴黎平时减 9 分 21 秒」，1978 年才改以 UTC 为基准",
+      "cost": "巴黎子午线（东经 2°20′14″）在法国海图上又用了近 30 年；「世界日」从子夜起的建议直到 1925-01-01 才被天文界采纳",
+      "still_used": "是：UTC 仍以格林尼治为零度；1912 年巴黎国际时间会议决定设国际时间局（BIH），1987 年职能移交 BIPM / IERS",
+      "why": "世界第一次对「零点在哪、一天从何时开始」投票",
+      "text": "1884 年 10 月 1 日，25 国代表应美国之邀在华盛顿开会。先一致通过「应有单一本初子午线」，再为放在哪里争了两周：法国主张选一条不穿过大陆的「中立」线，10 月 13 日以 3 比 21 被否；随即表决格林尼治——22 票赞成，圣多明各反对，法国与巴西弃权。10 月 22 日通过的 7 项决议还定下：经度自格林尼治东西各算至 180°；「世界日」从本初子午线平子夜起、0 至 24 时计。决议只是建议：法国直到 1911 年 3 月 11 日才改用格林尼治时间，法律措辞仍是「巴黎平时减 9 分 21 秒」；1912 年巴黎会议决定设国际时间局。",
+      "numbers": [
+        {
+          "label": "格林尼治子午线表决",
+          "value": "22 赞成 / 1 反对（圣多明各）/ 2 弃权（法国、巴西）",
+          "unit": "",
+          "basis": "会议纪要（Gutenberg 17759）；Wikipedia 转述一致",
+          "confidence": "高"
+        },
+        {
+          "label": "中立子午线提案表决",
+          "value": "3 赞成（法、巴西、圣多明各）/ 21 反对",
+          "unit": "",
+          "basis": "Wikipedia International Meridian Conference",
+          "confidence": "中"
+        },
+        {
+          "label": "世界日定义表决",
+          "value": "14 赞成 / 3 反对 / 7 弃权",
+          "unit": "",
+          "basis": "Wikipedia 转述纪要",
+          "confidence": "中"
+        },
+        {
+          "label": "法国改用 GMT",
+          "value": "1911-03-11（巴黎平时 −0:09:21）",
+          "unit": "",
+          "basis": "tz europe Zone Europe/Paris；Howse",
+          "confidence": "高"
+        },
+        {
+          "label": "法国改以 UTC 为基准",
+          "value": "1978-08-09",
+          "unit": "",
+          "basis": "tz europe 注引 Howse",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "与会国数：Wikipedia 作 26 国（丹麦缺席）、41 名代表；通行说法作 25 国出席。国际时间局成立年：1912 年会议决定设立，1913 年国际公约未获批准，1919 年才成为国际天文学联合会时间委员会的执行机构，故有 1912 / 1919 / 1920 三种口径。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "International Conference held at Washington for the purpose of fixing a Prime Meridian and a Universal Day: Protocols of the Proceedings (1884), Project Gutenberg #17759",
+          "url": "https://gutenberg.org/files/17759/17759-h/17759-h.htm",
+          "note": "一手；本次抓取只读到 10-06 议程（抓取被截断于约 13 万字符），Final Act 在第 199 页"
+        },
+        {
+          "title": "Steve Allen (UCO/Lick): 1884 International Meridian Conference scan index",
+          "url": "https://www.ucolick.org/~sla/leapsecs/scans-meridian.html",
+          "note": "按页索引：中立提案否决 p.84、格林尼治通过 p.99、世界日通过 p.146、Final Act p.199（Session VII 1884-10-22）、闭会 1884-11-01"
+        },
+        {
+          "title": "Wikipedia: International Meridian Conference",
+          "url": "https://en.wikipedia.org/wiki/International_Meridian_Conference",
+          "note": "7 项决议与票数；26 国 41 代表；法国 1911；辅助"
+        },
+        {
+          "title": "IANA tz 源文件 europe",
+          "url": "https://data.iana.org/time-zones/tzdb/europe",
+          "note": "Zone Europe/Paris：PMT 至 1911-03-11；Howse：1978-08-09 改 UTC 基准"
+        },
+        {
+          "title": "Wikipedia: International Time Bureau",
+          "url": "https://en.wikipedia.org/wiki/International_Time_Bureau",
+          "note": "1912 决定设立、1919 归 IAU、1987 移交 BIPM；辅助"
+        }
+      ],
+      "unverified": [
+        "Final Act 决议原文与票数未能在 Gutenberg 抓取中直接读到（页面抓取被截断），票数以维基转述 + 简报共用常数为准",
+        "法国 1911-03-09 法律文本（Légifrance）未打开"
+      ]
+    },
+    {
+      "id": "china-time",
+      "title": "从海岸时到北京时间",
+      "year": 1902,
+      "year_end": 1949,
+      "year_label": "1902 → 1949",
+      "lane": "china",
+      "place": {
+        "name": "北京",
+        "lat": 39.9,
+        "lon": 116.4
+      },
+      "scales": [
+        "hour"
+      ],
+      "motive": [
+        "commerce",
+        "rule",
+        "technology"
+      ],
+      "object": "海关海岸时 · 中央观象台五时区 · 北京时间（国家授时中心 UTC(NTSC)）",
+      "problem": "清代各地用地方视太阳时；海关、铁路、电报进入后需要统一的钟",
+      "method": "1902 年海关提出以东经 120° 的「海岸时」为沿海各港标准；1918 年中央观象台提出长白（+8:30）、中原（+8）、陇蜀（+7）、新藏（+6）、昆仑（+5:30）五时区；1939-03-09 内政部重庆标准时间会议决定自 6 月 1 日起实行五时区（抗战期间全国暂用陇蜀时）；1949 年秋起「北京时间」= 东八区区时（UTC+8）逐步通行全国；现由中国科学院国家授时中心产生、保持并经 BPM 短波 / BPL 长波发播",
+      "error": "北京时间以东经 120° 为准，北京城（116.4°E）的平太阳正午约在 12:14；乌鲁木齐（87.6°E）约在 14:10",
+      "cost": "全国一个时区：新疆实际并行使用乌鲁木齐时间（东经 90° 标准时，UTC+6）与北京时间两种口径（1986-02-01 起乌鲁木齐时间在当地实施）",
+      "still_used": "是：UTC+8，不实行夏令时",
+      "why": "一个跨 4 个自然时区的国家选择一个钟，是时区史上另一种答案",
+      "text": "清代各地用地方视太阳时。1902 年海关提出以东经 120° 的「海岸时」为沿海各港标准，即今天的东八区。1918 年中央观象台提出长白（+8:30）、中原（+8）、陇蜀（+7）、新藏（+6）、昆仑（+5:30）五时区，1939 年 3 月重庆标准时间会议决定 6 月 1 日起实行，抗战期间全国暂用陇蜀时。1949 年 9 月 27 日北平改名北京，各地电台随即播出「以北京时间为准」，1950 年初除新疆、西藏外通用。北京时间是东经 120° 区时，北京城太阳正午约 12:14；它由陕西临潼国家授时中心产生保持，经蒲城 BPM、BPL 台发播。新疆并行使用乌鲁木齐时间（UTC+6）与北京时间。",
+      "numbers": [
+        {
+          "label": "海岸时",
+          "value": "1902 年，东经 120°",
+          "unit": "",
+          "basis": "新华网 2015-10-28 引郭庆生；Wikipedia Time in China",
+          "confidence": "中"
+        },
+        {
+          "label": "五时区提出",
+          "value": "1918",
+          "unit": "年",
+          "basis": "新华网引郭庆生《中国标准时制考》；tz asia 注引郭庆生",
+          "confidence": "高"
+        },
+        {
+          "label": "五时区决定实行",
+          "value": "1939-03-09 会议，1939-06-01 起",
+          "unit": "",
+          "basis": "新华网 2015；Wikipedia Time in China",
+          "confidence": "中"
+        },
+        {
+          "label": "「北京时间」最早见于播音",
+          "value": "1949-09-27 至 10-06 之间；西安台 1949-10-07 有记录",
+          "unit": "",
+          "basis": "新华网 2015 引郭庆生考证",
+          "confidence": "中"
+        },
+        {
+          "label": "国家授时中心",
+          "value": "1966 年建（原陕西天文台）；BPM 1970 年建台",
+          "unit": "",
+          "basis": "NTSC 英文站简介",
+          "confidence": "高"
+        },
+        {
+          "label": "乌鲁木齐时间在乌鲁木齐实施",
+          "value": "1986-02-01",
+          "unit": "",
+          "basis": "tz asia 注（TIME 1986-02-17 等）",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "五时区的年份有三种口径：1918 年中央观象台提出（郭庆生、tz）；1939 年标准时间会议决定自 6 月 1 日实行（新华网、Wikipedia）；tz 另记 1948 年 3 月「正式实施（略有修改）」。通行的「1912 年划分五时区」说未见于上述史料。北京时间的起点：郭庆生 2003 年文章提出 1949 年 9 月 27 日前后北京时间一度为「北京地方视太阳时」，tz 与 Wikipedia 均注明此说存疑。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "新华网 2015-10-28：「北京时间」的由来（引国家授时中心郭庆生考证）",
+          "url": "https://www.xinhuanet.com/politics/2015-10/28/c_1116958394.htm",
+          "note": "1902 海岸时；1918 五时区；1939-03-09；1949-09-27 / 10-07 / 11-03；新疆两种口径"
+        },
+        {
+          "title": "IANA tz 源文件 asia（China 节，Eggert 2017-01-05 注引郭庆生两文）",
+          "url": "https://data.iana.org/time-zones/tzdb/asia",
+          "note": "五时区偏移；1948-03；Zone Asia/Shanghai 8:05:43 LMT；Zone Asia/Urumqi 5:50:20 LMT→+6（1928）；1986-02-01"
+        },
+        {
+          "title": "中国科学院国家授时中心（英文站）Brief Introduction",
+          "url": "https://english.ntsc.cas.cn/aboutus/bi/",
+          "note": "1966 年建；临潼；BPM 1970、BPL 1986 通过国家鉴定；产生、保持与发播国家标准时间 / UTC(NTSC)"
+        },
+        {
+          "title": "郭庆生《中国标准时制考》，中国科技史料 2001, 22(3): 269–280；《建国初期的北京时间》2003, 24(1): 5–9",
+          "url": "",
+          "note": "专著 / 论文引用"
+        },
+        {
+          "title": "Wikipedia: Time in China",
+          "url": "https://en.wikipedia.org/wiki/Time_in_China",
+          "note": "1902、1914、1918、1928、1939、1949 时间线；辅助"
+        }
+      ],
+      "unverified": [
+        "ntsc.ac.cn 中文站 robots 禁止抓取，蒲城 BPM/BPL 台址只据英文站与通行资料",
+        "1902 年海关「海岸时」的海关原始文件未见",
+        "乌鲁木齐 1928 年改 +6 为 tz 的近似，无一手来源"
+      ]
+    },
+    {
+      "id": "dst-history",
+      "title": "夏令时：拨快一小时的一百年",
+      "year": 1916,
+      "year_end": 2023,
+      "year_label": "1916-04-30 → 2023",
+      "lane": "global",
+      "place": {
+        "name": "柏林",
+        "lat": 52.52,
+        "lon": 13.4
+      },
+      "scales": [
+        "hour"
+      ],
+      "motive": [
+        "politics",
+        "commerce",
+        "technology"
+      ],
+      "object": "德国 1916 年 Sommerzeit · 美国《统一时间法》 · 欧盟指令 2000/84/EC · 国务院 1986 年夏时制通知",
+      "problem": "战时省煤、省电；下班后多一小时白天",
+      "method": "1895 年新西兰人 Hudson 首倡、1907 年英国人 Willett 再倡；1916-04-30 德国与奥匈首先实施，英国 5 月 21 日跟进；美国 1918 年立法、1919 年废止、1942–45 年全国「战时时间」、1966 年《统一时间法》统一起止日、2005 年《能源政策法》自 2007 年起延长至 3 月第二周日—11 月第一周日；欧盟 2000/84/EC 规定 3 月与 10 月最后一个周日 01:00 UTC；中国 1986–1991 实行六年、1992 年起暂停",
+      "error": "美国 1974 年全年夏令时实验（PL 93-182）第二个冬天即被 PL 93-434 叫停",
+      "cost": "每年两次调钟；各国反复取消与恢复：俄罗斯 2011 永久夏令时→2014 永久冬令时；土耳其 2016-09-07 永久 +3；墨西哥 2022-10-30 最后一次拨回；伊朗 2022 年宣布 1402 年起取消；埃及 2023 年恢复",
+      "still_used": "欧盟、英国、北美、澳洲东南部、新西兰、智利、埃及等仍实行；中国、日本、俄罗斯、土耳其、墨西哥、伊朗不实行",
+      "why": "夏令时是人类唯一一种「故意把钟拨错」的制度，也是最常被改来改去的刻度",
+      "text": "1895 年新西兰昆虫学家 Hudson 为下班后多一小时采集昆虫首倡拨钟，1907 年伦敦建筑商 Willett 再倡。真正实施的是战争：1916 年 4 月 30 日 23 时德国与奥匈把钟拨到次日 0 时，英国 5 月 21 日跟进。美国 1918 年首次全国实行，次年废止，1942–45 年全国「战时时间」，1966 年《统一时间法》统一起止日，2007 年起定为 3 月第二周日至 11 月第一周日。欧盟 2000/84/EC 规定 3 月与 10 月最后一个周日 01:00 GMT 切换。中国 1986 年 5 月 4 日起实行夏时制，1992 年起暂停。近年俄罗斯、土耳其、墨西哥、伊朗相继取消，埃及 2023 年恢复。",
+      "numbers": [
+        {
+          "label": "德国首次夏令时",
+          "value": "1916-04-30 23:00 → 1916-10-01 01:00",
+          "unit": "",
+          "basis": "tz europe Rule C-Eur 1916",
+          "confidence": "高"
+        },
+        {
+          "label": "英国首次夏令时",
+          "value": "1916-05-21（Summer Time Act 1916）",
+          "unit": "",
+          "basis": "tz europe Rule GB-Eire 1916",
+          "confidence": "高"
+        },
+        {
+          "label": "美国立法",
+          "value": "PL 65-106 1918-03-19；PL 77-403 1942-01-20（2-09 起战时）；PL 79-187 1945-09-25（9-30 止）；PL 89-387 1966-04-13；PL 109-58 2005-08-08（2007 起）",
+          "unit": "",
+          "basis": "tz northamerica 注 + Cornell LII 15 U.S.C. §260a 源注",
+          "confidence": "高"
+        },
+        {
+          "label": "欧盟指令",
+          "value": "2000/84/EC，2001-01-19；OJ L 31, 2001-02-02, p. 21",
+          "unit": "",
+          "basis": "EUR-Lex 原文第 2、3 条",
+          "confidence": "高"
+        },
+        {
+          "label": "中国夏时制",
+          "value": "1986-05-04 02:00 起；1987–1991 年 4 月中旬第一个周日 02:00 → 9 月中旬第一个周日 02:00；1992 年起暂停",
+          "unit": "",
+          "basis": "tz asia Rule PRC；国务院公报 1987 年第 3 号 p.114、第 21 号 p.709、1992 年第 5 号 p.152（1992-03-03）",
+          "confidence": "高"
+        },
+        {
+          "label": "墨西哥取消",
+          "value": "2022-10-28 公布于 DOF；2022-10-30 02:00 最后一次拨回",
+          "unit": "",
+          "basis": "tz northamerica 注引 DOF",
+          "confidence": "高"
+        },
+        {
+          "label": "土耳其永久 +3",
+          "value": "2016-09-07（Resmî Gazete 2016-09-08）",
+          "unit": "",
+          "basis": "tz europe 注",
+          "confidence": "高"
+        },
+        {
+          "label": "伊朗取消",
+          "value": "2022-05 宣布 1402 年（2023 起）不再实行；最后一次 2022-09-21",
+          "unit": "",
+          "basis": "tz asia 注引 IRNA",
+          "confidence": "中"
+        },
+        {
+          "label": "埃及恢复",
+          "value": "2023 年起 4 月最后一个周五 00:00 → 10 月最后一个周四 24:00",
+          "unit": "",
+          "basis": "tz africa Rule Egypt 2023",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "中国 1986 年通知的发文机关与文号：tz 引浙江省政府公报 1986 年第 8 期 p.21–22（1986-04-12）；回忆文章作「中央有关部门」；通行说法作国务院办公厅《关于在全国范围内实行夏时制的通知》，文号未核到。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "IANA tz 源文件 europe（Hudson 1895、Willett 1907、C-Eur 1916、GB-Eire 1916、Russia 2011 / 2014、Turkey 2016 注）",
+          "url": "https://data.iana.org/time-zones/tzdb/europe",
+          "note": "一手汇编"
+        },
+        {
+          "title": "IANA tz 源文件 northamerica（美国历次法律与 LOC / govinfo 链接；墨西哥 DOF 2022-10-28）",
+          "url": "https://data.iana.org/time-zones/tzdb/northamerica",
+          "note": ""
+        },
+        {
+          "title": "IANA tz 源文件 asia（Rule PRC 1986–1991；国务院公报链接；伊朗 IRNA 2022）",
+          "url": "https://data.iana.org/time-zones/tzdb/asia",
+          "note": ""
+        },
+        {
+          "title": "IANA tz 源文件 africa（Rule Egypt 2023）",
+          "url": "https://data.iana.org/time-zones/tzdb/africa",
+          "note": ""
+        },
+        {
+          "title": "Directive 2000/84/EC（EUR-Lex 全文）",
+          "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32000L0084:EN:HTML",
+          "note": "一手：第 1–4 条"
+        },
+        {
+          "title": "15 U.S.C. §260a（Cornell LII）",
+          "url": "https://www.law.cornell.edu/uscode/text/15/260a",
+          "note": "一手：现行规则与历次修订源注"
+        },
+        {
+          "title": "NIST: Daylight Saving Time",
+          "url": "https://www.nist.gov/node/430171",
+          "note": "2026-03-08 → 2026-11-01；由交通部主管；不实行的州与属地"
+        },
+        {
+          "title": "国务院公报 1992 年第 5 号 p.152（1992-03-03 暂停夏时制）",
+          "url": "http://www.gov.cn/gongbao/shuju/1992/gwyb199205.pdf",
+          "note": "PDF 为扫描件，无法机读；由 tz 注转引"
+        },
+        {
+          "title": "澎湃新闻：缪迅《夏时制的六年》回忆文章",
+          "url": "https://www.thepaper.cn/newsDetail_forward_7961174",
+          "note": "1986-05-04 → 09-14；取消背景；辅助"
+        }
+      ],
+      "unverified": [
+        "国务院 1986 年通知与 1992 年通知的正式文号",
+        "墨西哥 2022 年法律名称《Ley de los Husos Horarios en los Estados Unidos Mexicanos》只据通行资料，DOF 原文未打开"
+      ]
+    },
+    {
+      "id": "tz-map",
+      "title": "时区地图：从 −12 到 +14 的 26 个小时",
+      "year": 1995,
+      "year_end": 2024,
+      "year_label": "1995 → 2024-03-01",
+      "lane": "global",
+      "place": {
+        "name": "基里巴斯 · 萨摩亚 · 阿斯塔纳",
+        "lat": 1.87,
+        "lon": -157.4
+      },
+      "scales": [
+        "hour",
+        "day"
+      ],
+      "motive": [
+        "politics",
+        "commerce"
+      ],
+      "object": "IANA 时区数据库（tzdb）",
+      "problem": "理论上 24 个整时区，现实里有 38 种偏移：从 UTC−12（贝克岛）到 UTC+14（基里巴斯莱恩群岛），同一瞬间地球上可能是三个日期",
+      "method": "半小时区：印度 +5:30（1906 起）、伊朗 +3:30、阿富汗 +4:30（1945 起）、缅甸 +6:30、纽芬兰 −3:30；45 分钟区：尼泊尔 +5:45（1986 起）、查塔姆 +12:45、澳洲尤克拉 +8:45（无官方地位）；日期变更线弯折：基里巴斯 1995-01-01 把东部群岛从 −10 / −11 改为 +14 / +13，萨摩亚 2011-12-29 结束后直接进入 12-31、跳过 12-30",
+      "error": "数据库注释承认 1970 年前多数记录来自不可靠的二手来源",
+      "cost": "单时区大国：中国（UTC+8，横跨约 4 个自然时区）、印度（+5:30）；多时区大国：俄罗斯 11 个、法国含海外 12 个、美国法定 9 个（含属地与无人岛共 11 种偏移）",
+      "still_used": "是：tzdb 每年更新数次，是几乎所有操作系统与手机的时区来源",
+      "why": "时区是政治地理，不是天文地理：地图上的每一道折线背后都是一次决定",
+      "text": "理论上 24 个时区，现实里的偏移从 UTC−12 的贝克岛到 UTC+14 的基里巴斯莱恩群岛，跨 26 小时，同一瞬间地球上可有三个日期。整点之外有半小时区（印度 +5:30、伊朗 +3:30、阿富汗 +4:30、缅甸 +6:30、纽芬兰 −3:30）与 45 分钟区（尼泊尔 +5:45、查塔姆 +12:45，尤克拉 +8:45 无官方地位）。日期变更线也会搬家：基里巴斯 1995 年 1 月 1 日让全国同一天，萨摩亚 2011 年跳过 12 月 30 日。中国、印度各一个时区，俄罗斯 11 个，法国含海外 12 个。近年改动皆为政治决定：俄罗斯 2011、2014，朝鲜 2015、2018，土耳其 2016，哈萨克斯坦 2024 年 3 月 1 日统一 UTC+5。",
+      "numbers": [
+        {
+          "label": "偏移范围",
+          "value": "UTC−12（贝克岛 / 豪兰岛）至 UTC+14（基里巴斯莱恩群岛）",
+          "unit": "",
+          "basis": "tz australasia Zone Pacific/Kiritimati +14；Wikipedia 列表",
+          "confidence": "高"
+        },
+        {
+          "label": "基里巴斯改线",
+          "value": "1994-12-31 → 1995-01-01：Kanton −11→+13，Kiritimati −10→+14",
+          "unit": "",
+          "basis": "tz australasia Zone 行",
+          "confidence": "高"
+        },
+        {
+          "label": "萨摩亚跳日",
+          "value": "2011-12-29 24:00 由 −11 改 +13，跳过 2011-12-30",
+          "unit": "",
+          "basis": "tz australasia Zone Pacific/Apia",
+          "confidence": "高"
+        },
+        {
+          "label": "尼泊尔 +5:45",
+          "value": "1986 年起（此前 +5:30）",
+          "unit": "",
+          "basis": "tz asia Zone Asia/Kathmandu",
+          "confidence": "高"
+        },
+        {
+          "label": "朝鲜",
+          "value": "2015-08-15 改 +8:30；2018-05-04 23:30 改回 +9（最高人民会议常任委员会 2018-04-30 第 2232 号政令）",
+          "unit": "",
+          "basis": "tz asia 注",
+          "confidence": "高"
+        },
+        {
+          "label": "哈萨克斯坦统一 UTC+5",
+          "value": "2024-03-01 00:00",
+          "unit": "",
+          "basis": "tz asia 注引 gov.kz / primeminister.kz 2024-01-19 决议",
+          "confidence": "高"
+        },
+        {
+          "label": "俄罗斯",
+          "value": "2011-03-27 永久 +4（莫斯科）；2014-10-26 02:00 改 +3",
+          "unit": "",
+          "basis": "tz europe Zone Europe/Moscow；2011-06-09 签署《时间计算法》",
+          "confidence": "高"
+        },
+        {
+          "label": "格陵兰（努克）",
+          "value": "2023-03-26 起 −2（2023-10-29 起随欧盟夏令时）",
+          "unit": "",
+          "basis": "tz europe Zone America/Nuuk",
+          "confidence": "高"
+        },
+        {
+          "label": "时区数",
+          "value": "俄罗斯 11；法国 12；美国 11 种偏移（法定 9 区）；中国 1；印度 1",
+          "unit": "",
+          "basis": "Wikipedia List of time zones by country；15 U.S.C. §263",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "美国时区数：法定 9 个（15 U.S.C. §263）；按含无人岛屿的偏移种数为 11；仅本土与阿拉斯加、夏威夷为 6。尤克拉 +8:45 在 tzdb 中有 Zone Australia/Eucla 条目，但无州或联邦法律依据。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "IANA tz 源文件 australasia",
+          "url": "https://data.iana.org/time-zones/tzdb/australasia",
+          "note": "Eucla 8:45；Kanton / Kiritimati 1994-12-31；Apia 2011-12-29 24:00；Chatham +12:45"
+        },
+        {
+          "title": "IANA tz 源文件 asia",
+          "url": "https://data.iana.org/time-zones/tzdb/asia",
+          "note": "Kolkata 1906-01-01 +5:30；Kabul 1945 +4:30；Tehran +3:30；Yangon +6:30；Kathmandu 1986 +5:45；Pyongyang 2015 / 2018；Almaty 2024-03-01"
+        },
+        {
+          "title": "IANA tz 源文件 europe",
+          "url": "https://data.iana.org/time-zones/tzdb/europe",
+          "note": "Moscow 2011 / 2014；Istanbul 2016-09-07；Nuuk 2023"
+        },
+        {
+          "title": "IANA tz theory.html",
+          "url": "https://data.iana.org/time-zones/tzdb/theory.html",
+          "note": "1970 年前数据来源不可靠的声明"
+        },
+        {
+          "title": "Wikipedia: List of time zones by country",
+          "url": "https://en.wikipedia.org/wiki/List_of_time_zones_by_country",
+          "note": "各国时区数；辅助"
+        },
+        {
+          "title": "哈萨克斯坦政府 2024-01-19 决议",
+          "url": "https://primeminister.kz/ru/decisions/19012024-20",
+          "note": "由 tz 注引用，未直接打开"
+        }
+      ],
+      "unverified": [
+        "俄罗斯 11 个时区、法国 12 个的数字只有维基列表",
+        "基里巴斯 1995 年改线的政府法令原文未见"
+      ]
+    },
+    {
+      "id": "this-week",
+      "title": "本周对表：10/25 欧洲拨回，11/1 北美拨回",
+      "year": 2026,
+      "year_end": null,
+      "year_label": "2026-10-25 · 2026-11-01",
+      "lane": "global",
+      "place": {
+        "name": "布鲁塞尔 / 华盛顿",
+        "lat": 50.85,
+        "lon": 4.35
+      },
+      "scales": [
+        "hour"
+      ],
+      "motive": [
+        "politics",
+        "rule"
+      ],
+      "object": "欧盟指令 2000/84/EC · 15 U.S.C. §260a · 美国众议院 H.R. 139",
+      "problem": "2026 年秋季两次拨回：欧洲与英国 10 月 25 日、北美 11 月 1 日；而两边的立法机构都在讨论是否结束这件事",
+      "method": "欧盟 2000/84/EC 第 3 条：夏令时于 10 月最后一个周日 01:00 GMT 结束（2026-10-25）；英国同一规则（gov.uk：2026-10-25 02:00 BST 拨回 01:00 GMT）；美国 15 U.S.C. §260a：11 月第一个周日 02:00 拨回（2026-11-01）；加拿大多数省同美国",
+      "error": "美国众议院 2026-07-14 以 308–117 通过 H.R. 139《阳光保护法》（永久夏令时），参议院未安排表决；欧盟委员会 2018 年提案废除季节性换时，理事会至今未形成立场",
+      "cost": "欧洲与北美之间的时差每年有两周不同：2026-10-25 至 11-01 期间，伦敦—纽约差 4 小时而非 5 小时",
+      "still_used": "是：本周末与下周末的拨回照常进行",
+      "why": "一百多年的对表史，这个周末还在继续",
+      "text": "这个周日 10 月 25 日，欧盟与英国的钟在格林尼治时间 01:00 一齐拨回一小时——欧盟 2000/84/EC 指令第 3 条规定夏令时在 10 月最后一个周日 01:00 GMT 结束，各国同一瞬间切换。北美再等一周：按 15 U.S.C. §260a，美国在 11 月第一个周日凌晨 2 点拨回，2026 年是 11 月 1 日，加拿大多数省同步。两边都在讨论要不要终结这件事：美国众议院 7 月 14 日以 308 票对 117 票通过 H.R. 139《阳光保护法》，要把夏令时变成永久，参议院未安排表决；欧盟理事会对 2018 年的废除提案至今无立场。这一周里，伦敦与纽约只差 4 小时。",
+      "numbers": [
+        {
+          "label": "欧盟 / 英国拨回",
+          "value": "2026-10-25 01:00 UTC",
+          "unit": "",
+          "basis": "2000/84/EC 第 3 条；gov.uk",
+          "confidence": "高"
+        },
+        {
+          "label": "美国 / 加拿大拨回",
+          "value": "2026-11-01 02:00 当地时间",
+          "unit": "",
+          "basis": "15 U.S.C. §260a；NIST；tz Rule Canada",
+          "confidence": "高"
+        },
+        {
+          "label": "H.R. 139 众院表决",
+          "value": "308 赞成 / 117 反对 / 6 未投票，2026-07-14 17:17，Roll Call 238",
+          "unit": "",
+          "basis": "clerk.house.gov",
+          "confidence": "高"
+        },
+        {
+          "label": "欧洲议会表决",
+          "value": "2019-03-26 通过废除季节性换时立场",
+          "unit": "",
+          "basis": "通行报道",
+          "confidence": "低"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "GOV.UK: When do the clocks change?",
+          "url": "https://www.gov.uk/when-do-the-clocks-change",
+          "note": "2026-03-29 / 10-25；2027-03-28 / 10-31"
+        },
+        {
+          "title": "Directive 2000/84/EC 第 2、3 条",
+          "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32000L0084:EN:HTML",
+          "note": "一手"
+        },
+        {
+          "title": "NIST: Daylight Saving Time",
+          "url": "https://www.nist.gov/node/430171",
+          "note": "2026-03-08 → 2026-11-01"
+        },
+        {
+          "title": "15 U.S.C. §260a（Cornell LII）",
+          "url": "https://www.law.cornell.edu/uscode/text/15/260a",
+          "note": "一手"
+        },
+        {
+          "title": "U.S. House Clerk: Roll Call 238, 119th Congress 2nd Session",
+          "url": "https://clerk.house.gov/Votes/2026238",
+          "note": "一手：H.R. 139 On Passage 308–117"
+        },
+        {
+          "title": "Wisconsin Examiner 2026-07-15: US House passes bipartisan bill to make daylight saving time permanent",
+          "url": "https://wisconsinexaminer.com/?p=46748",
+          "note": "参院未行动；2022 年 S.623 先例；白宫声明"
+        }
+      ],
+      "unverified": [
+        "欧盟理事会「无立场」的官方表述（europarl / consilium 页面未打开）",
+        "欧洲议会 2019-03-26 表决票数 410–192 只有通行报道"
+      ]
+    }
+  ],
+  "cities": [
+    {
+      "id": "rome",
+      "name": "罗马",
+      "lat": 41.9,
+      "lon": 12.5,
+      "gregorian_adoption": {
+        "year": 1582,
+        "date_from": "1582-10-04（儒略）",
+        "date_to": "1582-10-15（格里）",
+        "skipped_days": 10,
+        "note": "教皇诏书 Inter gravissimas 原发地；1798–99 罗马共和国曾短暂并用法兰西共和历"
+      },
+      "calendars_1800": "格里历，基督纪年（教皇国；1798–1799 法国扶植的罗马共和国并用共和历第 VI–VII 年）",
+      "lmt_offset_min": 50.0,
+      "lmt_note": "12.50°E × 4 = +50.0 分钟（tz：Europe/Rome LMT +0:49:56）",
+      "tz_history": [
+        {
+          "year": 1866,
+          "offset": "+0:49:56",
+          "note": "1866-12-12 起全意大利统一用罗马平时（RMT）"
+        },
+        {
+          "year": 1893,
+          "offset": "+1:00",
+          "note": "1893-10-31 23:00 UTC 起中欧时 CET"
+        },
+        {
+          "year": 1916,
+          "offset": "+1/+2",
+          "note": "首次夏令时；1966 年起每年实行，1980 年起随欧共体规则"
+        },
+        {
+          "year": 2026,
+          "offset": "+1 / 夏 +2",
+          "note": "现行：CET，欧盟夏令时"
+        }
+      ],
+      "solar_noon_vs_clock_min": 10.0,
+      "solar_noon_note": "CET 下平太阳正午约 12:10（夏令时 13:10）",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/europe",
+        "https://data.iana.org/time-zones/tzdb/calendars",
+        "https://en.wikipedia.org/wiki/International_Meridian_Conference"
+      ]
+    },
+    {
+      "id": "london",
+      "name": "伦敦",
+      "lat": 51.51,
+      "lon": -0.13,
+      "gregorian_adoption": {
+        "year": 1752,
+        "date_from": "1752-09-02（儒略）",
+        "date_to": "1752-09-14（格里）",
+        "skipped_days": 11,
+        "note": "Calendar (New Style) Act 1750；岁首同时由 3-25 改 1-01"
+      },
+      "calendars_1800": "格里历（1752 起），基督纪年并用乔治三世在位第 40–41 年的国王纪年",
+      "lmt_offset_min": -0.5,
+      "lmt_note": "0.13°W × 4 = −0.5 分钟（tz：Europe/London LMT −0:01:15，按旧圣保罗大教堂）",
+      "tz_history": [
+        {
+          "year": 1847,
+          "offset": "0:00",
+          "note": "1847-12-01 铁路普遍改用 GMT"
+        },
+        {
+          "year": 1880,
+          "offset": "0:00",
+          "note": "1880-08-02《法定时间定义法》GMT 成法定时间"
+        },
+        {
+          "year": 1916,
+          "offset": "0 / 夏 +1",
+          "note": "1916-05-21 首次 BST"
+        },
+        {
+          "year": 1968,
+          "offset": "+1",
+          "note": "1968-10-27 至 1971-10-31 全年「英国标准时」+1 试验"
+        },
+        {
+          "year": 2026,
+          "offset": "0 / 夏 +1",
+          "note": "现行：GMT / BST，3 月与 10 月最后一个周日 01:00 UTC 切换"
+        }
+      ],
+      "solar_noon_vs_clock_min": 0.5,
+      "solar_noon_note": "GMT 下平太阳正午约 12:00:30",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/europe",
+        "https://www.gov.uk/when-do-the-clocks-change",
+        "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt"
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "巴黎",
+      "lat": 48.86,
+      "lon": 2.35,
+      "gregorian_adoption": {
+        "year": 1582,
+        "date_from": "1582-12-09（儒略）",
+        "date_to": "1582-12-20（格里）",
+        "skipped_days": 10,
+        "note": "1793-10-05 至 1805-12-31 改用法兰西共和历，1806-01-01 恢复格里历"
+      },
+      "calendars_1800": "法兰西共和历（1800-01-01 = 共和八年雪月 11 日），十日一旬；民间仍记格里历日期",
+      "lmt_offset_min": 9.4,
+      "lmt_note": "2.35°E × 4 = +9.4 分钟（tz：Europe/Paris LMT +0:09:21，按巴黎天文台）",
+      "tz_history": [
+        {
+          "year": 1891,
+          "offset": "+0:09:21",
+          "note": "1891-03-16 起全法以巴黎平时为法定时间；1891–1911 站内钟慢 5 分钟"
+        },
+        {
+          "year": 1911,
+          "offset": "0:00",
+          "note": "1911-03-11 起「巴黎平时减 9 分 21 秒」= GMT"
+        },
+        {
+          "year": 1940,
+          "offset": "+1",
+          "note": "1940-06-14 占领期间改中欧时，战后沿用"
+        },
+        {
+          "year": 1976,
+          "offset": "+1 / 夏 +2",
+          "note": "1976 年恢复夏令时；1978-08-09 法定基准改为 UTC"
+        },
+        {
+          "year": 2026,
+          "offset": "+1 / 夏 +2",
+          "note": "现行：CET，欧盟夏令时"
+        }
+      ],
+      "solar_noon_vs_clock_min": 50.6,
+      "solar_noon_note": "CET 下平太阳正午约 12:51（夏令时 13:51）",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/europe",
+        "https://data.iana.org/time-zones/tzdb/theory.html",
+        "https://data.iana.org/time-zones/tzdb/calendars"
+      ]
+    },
+    {
+      "id": "istanbul",
+      "name": "伊斯坦布尔",
+      "lat": 41.01,
+      "lon": 28.98,
+      "gregorian_adoption": {
+        "year": 1926,
+        "date_from": "1925-12-31（鲁米历 1341 年）",
+        "date_to": "1926-01-01",
+        "skipped_days": 0,
+        "note": "1917-02-15 之次日为 03-01，鲁米历已跳 13 天对齐格里历；1925-12-26 第 698 号法律改纪元为公元"
+      },
+      "calendars_1800": "伊斯兰历（希吉拉 1214–1215 年）为宗教与民用纪年；财政用以儒略历为基础的鲁米历（Mali 年）",
+      "lmt_offset_min": 115.9,
+      "lmt_note": "28.98°E × 4 = +115.9 分钟（tz：Europe/Istanbul LMT +1:55:52）",
+      "tz_history": [
+        {
+          "year": 1880,
+          "offset": "+1:56:56",
+          "note": "伊斯坦布尔平时（IMT）"
+        },
+        {
+          "year": 1910,
+          "offset": "+2",
+          "note": "1910-10 起东欧时；1916 年起时有夏令时"
+        },
+        {
+          "year": 1978,
+          "offset": "+3",
+          "note": "1978-06-29 至 1984-11-01 全年 +3"
+        },
+        {
+          "year": 2007,
+          "offset": "+2 / 夏 +3",
+          "note": "2007–2016 随欧盟规则，2011、2014、2015 三次临时推迟切换"
+        },
+        {
+          "year": 2016,
+          "offset": "+3",
+          "note": "2016-09-07 起永久 +3，不再换时"
+        }
+      ],
+      "solar_noon_vs_clock_min": 64.1,
+      "solar_noon_note": "UTC+3 下平太阳正午约 13:04",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/europe",
+        "https://data.iana.org/time-zones/tzdb/calendars"
+      ]
+    },
+    {
+      "id": "cairo",
+      "name": "开罗",
+      "lat": 30.04,
+      "lon": 31.24,
+      "gregorian_adoption": {
+        "year": 1875,
+        "date_from": "",
+        "date_to": "",
+        "skipped_days": null,
+        "note": "政府行政用格里历的通行年份，具体日期不详；伊斯兰历与科普特历并行至今"
+      },
+      "calendars_1800": "伊斯兰历（希吉拉 1214–1215 年）为民用与宗教纪年；科普特历（殉道纪元 1516 年）用于农事与科普特教会；1798–1801 法军占领当局用法兰西共和历",
+      "lmt_offset_min": 125.0,
+      "lmt_note": "31.24°E × 4 = +125.0 分钟（tz：Africa/Cairo LMT +2:05:09）",
+      "tz_history": [
+        {
+          "year": 1900,
+          "offset": "+2",
+          "note": "1900-10 起东欧时 EET"
+        },
+        {
+          "year": 1940,
+          "offset": "+2 / 夏 +3",
+          "note": "1940–45 战时夏令时；1957–2010 每年实行（2010 年斋月期间暂停）；2011–2013 停，2014 短暂恢复，2015–2022 不实行"
+        },
+        {
+          "year": 2023,
+          "offset": "+2 / 夏 +3",
+          "note": "2023 年起恢复：4 月最后一个周五 00:00 至 10 月最后一个周四 24:00"
+        }
+      ],
+      "solar_noon_vs_clock_min": -5.0,
+      "solar_noon_note": "EET 下平太阳正午约 11:55（夏令时 12:55）",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/africa",
+        "http://www.norbyhus.dk/calendar.php"
+      ]
+    },
+    {
+      "id": "moscow",
+      "name": "莫斯科",
+      "lat": 55.76,
+      "lon": 37.62,
+      "gregorian_adoption": {
+        "year": 1918,
+        "date_from": "1918-01-31（儒略）",
+        "date_to": "1918-02-14（格里）",
+        "skipped_days": 13,
+        "note": "人民委员会 1918-01-24 法令；俄罗斯正教会至今用儒略历"
+      },
+      "calendars_1800": "儒略历（比格里历慢 12 天），基督纪年（1700 年彼得一世改自创世纪年 7208 年）",
+      "lmt_offset_min": 150.5,
+      "lmt_note": "37.62°E × 4 = +150.5 分钟（tz：Europe/Moscow LMT +2:30:17）",
+      "tz_history": [
+        {
+          "year": 1880,
+          "offset": "+2:30:17",
+          "note": "莫斯科平时 MMT 至 1916"
+        },
+        {
+          "year": 1919,
+          "offset": "+3",
+          "note": "1919-07-01 起按 UT 整点；1922-10 起 +2 东欧时"
+        },
+        {
+          "year": 1930,
+          "offset": "+3",
+          "note": "1930-06-21「法令时」：标准 +2 再加 1 小时，常年 +3"
+        },
+        {
+          "year": 1981,
+          "offset": "+3 / 夏 +4",
+          "note": "1981 年起夏令时"
+        },
+        {
+          "year": 2011,
+          "offset": "+4",
+          "note": "2011-03-27 起永久「夏令时」+4（2011-06-09《时间计算法》）"
+        },
+        {
+          "year": 2014,
+          "offset": "+3",
+          "note": "2014-10-26 02:00 起永久 +3，不换时"
+        }
+      ],
+      "solar_noon_vs_clock_min": 29.5,
+      "solar_noon_note": "UTC+3 下平太阳正午约 12:30",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/europe",
+        "https://data.iana.org/time-zones/tzdb/calendars"
+      ]
+    },
+    {
+      "id": "delhi",
+      "name": "德里",
+      "lat": 28.61,
+      "lon": 77.21,
+      "gregorian_adoption": {
+        "year": 1752,
+        "date_from": "1752-09-02（儒略）",
+        "date_to": "1752-09-14（格里）",
+        "skipped_days": 11,
+        "note": "英属印度行政沿用英国 1752 年改历；1957-03-22 起印度国定历（塞迦纪元）与格里历并列为官方历"
+      },
+      "calendars_1800": "莫卧儿宫廷与穆斯林社群用伊斯兰历（希吉拉 1214–1215 年）及法斯利年；印度教社群用维克拉姆纪元 1856–1857 年、塞迦纪元 1721–1722 年的阴阳历；东印度公司用格里历",
+      "lmt_offset_min": 308.8,
+      "lmt_note": "77.21°E × 4 = +308.8 分钟 = +5:08:51（tz 以加尔各答 +5:53:28 代表印度）",
+      "tz_history": [
+        {
+          "year": 1854,
+          "offset": "+5:53:28 / +5:21:10",
+          "note": "加尔各答平时；1870 起铁路与电报多用马德拉斯时 +5:21:10"
+        },
+        {
+          "year": 1906,
+          "offset": "+5:30",
+          "note": "1906-01-01 起铁路与电报采用 +5:30（东经 82.5°），即今日 IST；加尔各答、孟买地方时并行至 1948 / 1955"
+        },
+        {
+          "year": 1942,
+          "offset": "+6:30",
+          "note": "1942-09 至 1945-10-15 战时 +6:30"
+        },
+        {
+          "year": 2026,
+          "offset": "+5:30",
+          "note": "现行：IST，全国一个时区，不实行夏令时"
+        }
+      ],
+      "solar_noon_vs_clock_min": 21.2,
+      "solar_noon_note": "IST 下平太阳正午约 12:21",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia",
+        "https://en.wikipedia.org/wiki/List_of_time_zones_by_country"
+      ]
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "lat": 39.9,
+      "lon": 116.4,
+      "gregorian_adoption": {
+        "year": 1912,
+        "date_from": "辛亥年十一月十三日（阴历）",
+        "date_to": "1912-01-01（民国元年元旦）",
+        "skipped_days": null,
+        "note": "1912-01-02 临时大总统通电改用阳历；1949-09-27 政协决议采用公元纪年；农历并行至今"
+      },
+      "calendars_1800": "时宪历（阴阳历）：嘉庆五年庚申，干支纪年纪日，二十四节气",
+      "lmt_offset_min": 465.6,
+      "lmt_note": "116.40°E × 4 = +465.6 分钟 = +7:45:36（tz 以上海 +8:05:43 代表中国）",
+      "tz_history": [
+        {
+          "year": 1902,
+          "offset": "+8",
+          "note": "海关「海岸时」（东经 120°）用于沿海各港，铁路随之"
+        },
+        {
+          "year": 1914,
+          "offset": "+7:45:36",
+          "note": "民国历书以北京地方平太阳时为准"
+        },
+        {
+          "year": 1918,
+          "offset": "+8",
+          "note": "中央观象台五时区案，北京属中原时区；1928 年起历书改以东经 120° 为准"
+        },
+        {
+          "year": 1939,
+          "offset": "+7",
+          "note": "1939-06-01 起五时区法定；抗战期间全国暂用陇蜀时 +7"
+        },
+        {
+          "year": 1949,
+          "offset": "+8",
+          "note": "1949 年秋起「北京时间」= 东八区区时"
+        },
+        {
+          "year": 1986,
+          "offset": "+8 / 夏 +9",
+          "note": "1986-05-04 至 1991 年夏时制；1992 年起暂停"
+        },
+        {
+          "year": 2026,
+          "offset": "+8",
+          "note": "现行：UTC+8，不实行夏令时"
+        }
+      ],
+      "solar_noon_vs_clock_min": 14.4,
+      "solar_noon_note": "北京时间下平太阳正午约 12:14",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia",
+        "https://www.xinhuanet.com/politics/2015-10/28/c_1116958394.htm",
+        "https://english.ntsc.cas.cn/aboutus/bi/"
+      ]
+    },
+    {
+      "id": "urumqi",
+      "name": "乌鲁木齐",
+      "lat": 43.83,
+      "lon": 87.6,
+      "gregorian_adoption": {
+        "year": 1912,
+        "date_from": "辛亥年十一月十三日（阴历）",
+        "date_to": "1912-01-01",
+        "skipped_days": null,
+        "note": "随民国改历；当地穆斯林社群宗教节期仍用伊斯兰历"
+      },
+      "calendars_1800": "清朝官方用时宪历（嘉庆五年庚申）；当地穆斯林社群用伊斯兰历（希吉拉 1214–1215 年）与十二生肖纪年",
+      "lmt_offset_min": 350.4,
+      "lmt_note": "87.60°E × 4 = +350.4 分钟 = +5:50:24（tz：Asia/Urumqi LMT +5:50:20）",
+      "tz_history": [
+        {
+          "year": 1918,
+          "offset": "+6",
+          "note": "中央观象台五时区案中属新藏时区（东经 90°）"
+        },
+        {
+          "year": 1928,
+          "offset": "+6",
+          "note": "tz 以 1928 年为改用 +6 的近似年份，无一手来源"
+        },
+        {
+          "year": 1949,
+          "offset": "+8 / +6",
+          "note": "北京时间推行全国；新疆民间与地方文件长期并用新疆时间"
+        },
+        {
+          "year": 1986,
+          "offset": "+8（官方）/ +6（乌鲁木齐时间）",
+          "note": "1986-02-01 起乌鲁木齐时间在当地实施，自治区政府文件并列两种时间"
+        },
+        {
+          "year": 2026,
+          "offset": "+8 / 并行 +6",
+          "note": "现行：法定北京时间 UTC+8；乌鲁木齐时间 UTC+6 并行使用"
+        }
+      ],
+      "solar_noon_vs_clock_min": 129.6,
+      "solar_noon_note": "北京时间下平太阳正午约 14:10（8×60 − 350.4 = 129.6 分钟）；按乌鲁木齐时间 UTC+6 则约 12:10",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia",
+        "https://www.xinhuanet.com/politics/2015-10/28/c_1116958394.htm"
+      ]
+    },
+    {
+      "id": "tokyo",
+      "name": "东京",
+      "lat": 35.68,
+      "lon": 139.69,
+      "gregorian_adoption": {
+        "year": 1873,
+        "date_from": "明治 5 年 12 月 2 日（天保历）",
+        "date_to": "明治 6 年 1 月 1 日 = 1873-01-01",
+        "skipped_days": null,
+        "note": "1872-11 太政官布告；阴阳历改太阳历"
+      },
+      "calendars_1800": "宽政历（阴阳历，1798–1844）：宽政十二年庚申，年号 + 干支纪年",
+      "lmt_offset_min": 558.8,
+      "lmt_note": "139.69°E × 4 = +558.8 分钟 = +9:18:46（tz：Asia/Tokyo LMT +9:18:59）",
+      "tz_history": [
+        {
+          "year": 1888,
+          "offset": "+9",
+          "note": "1886-07-07 勅令第 51 号以东经 135° 为标准时，1888-01-01 00:00 起实施"
+        },
+        {
+          "year": 1948,
+          "offset": "+9 / 夏 +10",
+          "note": "1948–1951 占领期间夏令时，1952 年废止"
+        },
+        {
+          "year": 2026,
+          "offset": "+9",
+          "note": "现行：JST，不实行夏令时"
+        }
+      ],
+      "solar_noon_vs_clock_min": -18.8,
+      "solar_noon_note": "JST 下平太阳正午约 11:41",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia",
+        "https://www.ndl.go.jp/koyomi/e/history/calendar.html"
+      ]
+    },
+    {
+      "id": "new-york",
+      "name": "纽约",
+      "lat": 40.71,
+      "lon": -74.01,
+      "gregorian_adoption": {
+        "year": 1752,
+        "date_from": "1752-09-02（儒略）",
+        "date_to": "1752-09-14（格里）",
+        "skipped_days": 11,
+        "note": "英属殖民地随英国改历"
+      },
+      "calendars_1800": "格里历（1752 起），基督纪年",
+      "lmt_offset_min": -296.0,
+      "lmt_note": "74.01°W × 4 = −296.0 分钟 = −4:56:02（tz：America/New_York LMT −4:56:02）",
+      "tz_history": [
+        {
+          "year": 1883,
+          "offset": "−5",
+          "note": "1883-11-18 正午起东部标准时，钟拨慢 3 分 58 秒"
+        },
+        {
+          "year": 1918,
+          "offset": "−5 / 夏 −4",
+          "note": "1918-03-19《标准时间法》法定；1920–1966 纽约市自行实行夏令时"
+        },
+        {
+          "year": 1967,
+          "offset": "−5 / 夏 −4",
+          "note": "1967 年起按《统一时间法》；2007 年起 3 月第二周日至 11 月第一周日"
+        },
+        {
+          "year": 2026,
+          "offset": "−5 / 夏 −4",
+          "note": "现行：EST / EDT；2026-11-01 02:00 拨回"
+        }
+      ],
+      "solar_noon_vs_clock_min": -4.0,
+      "solar_noon_note": "EST 下平太阳正午约 11:56（EDT 12:56）",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/northamerica",
+        "https://www.law.cornell.edu/uscode/text/15/260a",
+        "https://www.nist.gov/node/430171"
+      ]
+    },
+    {
+      "id": "mexico-city",
+      "name": "墨西哥城",
+      "lat": 19.43,
+      "lon": -99.13,
+      "gregorian_adoption": {
+        "year": 1582,
+        "date_from": "1582-10-04（儒略）",
+        "date_to": "1582-10-15（格里）",
+        "skipped_days": 10,
+        "note": "随西班牙王国 1582-09-19 诏令；新西班牙实际执行时间有迟至 1583 年之说"
+      },
+      "calendars_1800": "格里历（1582 起），基督纪年（新西班牙总督区）",
+      "lmt_offset_min": -396.5,
+      "lmt_note": "99.13°W × 4 = −396.5 分钟 = −6:36:31（tz：America/Mexico_City LMT −6:36:36）",
+      "tz_history": [
+        {
+          "year": 1922,
+          "offset": "−7",
+          "note": "1922-01-01 起标准时 −7"
+        },
+        {
+          "year": 1927,
+          "offset": "−6",
+          "note": "1927–1932 间在 −6 与 −7 之间反复，1932-04-01 起定为 −6 CST"
+        },
+        {
+          "year": 1996,
+          "offset": "−6 / 夏 −5",
+          "note": "1996–2022 实行夏令时（4 月第一周日至 10 月最后一个周日）"
+        },
+        {
+          "year": 2022,
+          "offset": "−6",
+          "note": "2022-10-28 新《时区法》公布于 DOF，2022-10-30 02:00 最后一次拨回，此后不再换时"
+        }
+      ],
+      "solar_noon_vs_clock_min": 36.5,
+      "solar_noon_note": "CST 下平太阳正午约 12:36",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/northamerica",
+        "https://data.iana.org/time-zones/tzdb/calendars"
+      ]
+    }
+  ],
+  "dst_rules_2026_27": {
+    "note": "按各法域现行规则推算；时刻为当地或 UTC 如注；来源以 IANA tz 规则行与官方页为准",
+    "eu": {
+      "rule": "3 月最后一个周日 01:00 UTC 开始，10 月最后一个周日 01:00 UTC 结束（指令 2000/84/EC 第 2、3 条）",
+      "2026": {
+        "start": "2026-03-29",
+        "end": "2026-10-25"
+      },
+      "2027": {
+        "start": "2027-03-28",
+        "end": "2027-10-31"
+      },
+      "sources": [
+        "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32000L0084:EN:HTML",
+        "https://data.iana.org/time-zones/tzdb/europe"
+      ]
+    },
+    "uk": {
+      "rule": "同欧盟：3 月最后一个周日 01:00 GMT 拨快至 02:00 BST；10 月最后一个周日 02:00 BST 拨回 01:00 GMT",
+      "2026": {
+        "start": "2026-03-29",
+        "end": "2026-10-25"
+      },
+      "2027": {
+        "start": "2027-03-28",
+        "end": "2027-10-31"
+      },
+      "sources": [
+        "https://www.gov.uk/when-do-the-clocks-change"
+      ]
+    },
+    "us": {
+      "rule": "3 月第二个周日 02:00 当地时间开始，11 月第一个周日 02:00 当地时间结束（15 U.S.C. §260a）；夏威夷、亚利桑那（纳瓦霍保留地除外）、波多黎各、关岛、美属萨摩亚、美属维尔京群岛不实行",
+      "2026": {
+        "start": "2026-03-08",
+        "end": "2026-11-01"
+      },
+      "2027": {
+        "start": "2027-03-14",
+        "end": "2027-11-07"
+      },
+      "sources": [
+        "https://www.law.cornell.edu/uscode/text/15/260a",
+        "https://www.nist.gov/node/430171"
+      ]
+    },
+    "canada": {
+      "rule": "多数省与地区同美国：3 月第二个周日 02:00 至 11 月第一个周日 02:00；萨斯喀彻温常年 −6 不换时，育空 2020 年起常年 −7",
+      "2026": {
+        "start": "2026-03-08",
+        "end": "2026-11-01"
+      },
+      "2027": {
+        "start": "2027-03-14",
+        "end": "2027-11-07"
+      },
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/northamerica"
+      ]
+    },
+    "australia": {
+      "rule": "新南威尔士、维多利亚、塔斯马尼亚、南澳、首都领地：10 月第一个周日 02:00 标准时开始，4 月第一个周日 03:00 夏令时结束（2008 年起）；昆士兰、西澳、北领地不实行",
+      "2026": {
+        "end": "2026-04-05",
+        "start": "2026-10-04"
+      },
+      "2027": {
+        "end": "2027-04-04",
+        "start": "2027-10-03"
+      },
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/australasia"
+      ]
+    },
+    "new_zealand": {
+      "rule": "9 月最后一个周日 02:00 标准时开始，4 月第一个周日 03:00 夏令时结束（2007 年起）；查塔姆群岛同日 02:45 / 03:45",
+      "2026": {
+        "end": "2026-04-05",
+        "start": "2026-09-27"
+      },
+      "2027": {
+        "end": "2027-04-04",
+        "start": "2027-09-26"
+      },
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/australasia"
+      ]
+    },
+    "chile": {
+      "rule": "大陆（−4 / 夏 −3）：9 月第一个在 2 日或之后的周日 00:00（周六 24:00，04:00 UTC）开始，4 月第一个在 2 日或之后的周日 00:00（03:00 UTC）结束（2019 年起规则，2022 年例外延后）；麦哲伦大区常年 −3；复活节岛 −6 / −5 同步",
+      "2026": {
+        "end": "2026-04-05",
+        "start": "2026-09-06"
+      },
+      "2027": {
+        "end": "2027-04-04",
+        "start": "2027-09-05"
+      },
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/southamerica"
+      ]
+    },
+    "mexico": {
+      "rule": "不实行（2022-10-28 DOF 公布新时区法，2022-10-30 最后一次拨回）；美墨边境若干市镇随美国规则",
+      "2026": null,
+      "2027": null,
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/northamerica"
+      ]
+    },
+    "china": {
+      "rule": "不实行（1986–1991 实行，1992 年起暂停）；全国 UTC+8",
+      "2026": null,
+      "2027": null,
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia"
+      ]
+    },
+    "japan": {
+      "rule": "不实行（1948–1951 占领期间实行，1952 年废止）；UTC+9",
+      "2026": null,
+      "2027": null,
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "meridian-1884-vote",
+      "text": "1884 年华盛顿国际子午线会议以 22 票赞成、1 票反对（圣多明各）、2 票弃权（法国、巴西）通过以格林尼治为本初子午线。",
+      "value": "22 / 1 / 2",
+      "confidence": "高",
+      "sources": [
+        "https://gutenberg.org/files/17759/17759-h/17759-h.htm",
+        "https://en.wikipedia.org/wiki/International_Meridian_Conference"
+      ]
+    },
+    {
+      "id": "meridian-1884-dates",
+      "text": "会议 1884-10-01 开幕，10-13 表决格林尼治案，10-22 通过 7 项决议（Final Act），11-01 闭会。",
+      "value": "1884-10-01 → 11-01",
+      "confidence": "高",
+      "sources": [
+        "https://www.ucolick.org/~sla/leapsecs/scans-meridian.html",
+        "https://en.wikipedia.org/wiki/International_Meridian_Conference"
+      ]
+    },
+    {
+      "id": "france-gmt-1911",
+      "text": "法国 1911-03-11 起改用格林尼治时间，法律措辞为「巴黎平时减 9 分 21 秒」；1978-08-09 起法定基准改为 UTC。",
+      "value": "1911-03-11",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/europe",
+        "https://en.wikipedia.org/wiki/International_Meridian_Conference"
+      ]
+    },
+    {
+      "id": "two-noons",
+      "text": "美国铁路四时区于 1883-11-18（周日）正午实施，史称「两次正午之日」。",
+      "value": "1883-11-18",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/northamerica"
+      ]
+    },
+    {
+      "id": "uk-1880-act",
+      "text": "英国《法定时间定义法》（Statutes (Definition of Time) Act 1880）于 1880-08-02 获御准，GMT 成为大不列颠法定时间。",
+      "value": "1880-08-02",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/europe",
+        "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt"
+      ]
+    },
+    {
+      "id": "us-1918-act",
+      "text": "美国《标准时间法》Public Law 65-106 于 1918-03-19 签署，首次以联邦法律确立时区并实行夏令时。",
+      "value": "1918-03-19",
+      "confidence": "高",
+      "sources": [
+        "https://www.loc.gov/law/help/statutes-at-large/65th-congress/session-2/c65s2ch24.pdf",
+        "https://data.iana.org/time-zones/tzdb/northamerica"
+      ]
+    },
+    {
+      "id": "us-1966-act",
+      "text": "美国《统一时间法》Public Law 89-387 于 1966-04-13 签署，1967 年起全国统一夏令时起止日。",
+      "value": "1966-04-13",
+      "confidence": "高",
+      "sources": [
+        "https://www.law.cornell.edu/uscode/text/15/260a",
+        "https://data.iana.org/time-zones/tzdb/northamerica"
+      ]
+    },
+    {
+      "id": "us-2005-act",
+      "text": "美国《能源政策法》Public Law 109-58 第 110 条于 2005-08-08 签署，2007 年起夏令时改为 3 月第二个周日至 11 月第一个周日。",
+      "value": "2005-08-08 → 2007",
+      "confidence": "高",
+      "sources": [
+        "https://www.law.cornell.edu/uscode/text/15/260a",
+        "https://www.nist.gov/node/430171"
+      ]
+    },
+    {
+      "id": "china-dst-1986",
+      "text": "中国 1986-05-04 02:00 起实行夏时制，1987–1991 年为 4 月中旬第一个周日至 9 月中旬第一个周日；国务院公报 1992 年第 5 号（1992-03-03）载明自 1992 年起暂停。",
+      "value": "1986–1991",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia",
+        "http://www.gov.cn/gongbao/shuju/1992/gwyb199205.pdf"
+      ]
+    },
+    {
+      "id": "mexico-2022",
+      "text": "墨西哥新时区法 2022-10-28 公布于《联邦官方公报》（DOF），2022-10-30 02:00 为最后一次拨回。",
+      "value": "2022-10-28",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/northamerica",
+        "https://www.dof.gob.mx/nota_detalle.php?codigo=5670045&fecha=28/10/2022"
+      ]
+    },
+    {
+      "id": "kazakhstan-2024",
+      "text": "哈萨克斯坦 2024-03-01 00:00 起全国统一为 UTC+5（政府 2024-01-19 决议）。",
+      "value": "2024-03-01",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/asia",
+        "https://primeminister.kz/ru/decisions/19012024-20"
+      ]
+    },
+    {
+      "id": "hr139-2026",
+      "text": "美国众议院 2026-07-14 以 308 票对 117 票通过 H.R. 139《阳光保护法》（Roll Call 238），参议院尚未表决。",
+      "value": "308–117",
+      "confidence": "高",
+      "sources": [
+        "https://clerk.house.gov/Votes/2026238",
+        "https://wisconsinexaminer.com/?p=46748"
+      ]
+    },
+    {
+      "id": "eu-dst-rule",
+      "text": "欧盟指令 2000/84/EC（2001-01-19，OJ L 31）规定夏令时自 3 月最后一个周日 01:00 GMT 起、至 10 月最后一个周日 01:00 GMT 止。",
+      "value": "lastSun Mar / Oct 01:00 UTC",
+      "confidence": "高",
+      "sources": [
+        "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32000L0084:EN:HTML"
+      ]
+    },
+    {
+      "id": "samoa-2011",
+      "text": "萨摩亚 2011-12-29 结束后直接进入 12-31，跳过 2011-12-30 一天，由 UTC−11 改为 +13。",
+      "value": "2011-12-30",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/australasia"
+      ]
+    },
+    {
+      "id": "kiribati-1995",
+      "text": "基里巴斯 1995-01-01 起将凤凰群岛与莱恩群岛由 UTC−11 / −10 改为 +13 / +14，日期变更线因此东折。",
+      "value": "1995-01-01",
+      "confidence": "高",
+      "sources": [
+        "https://data.iana.org/time-zones/tzdb/australasia"
+      ]
+    },
+    {
+      "id": "beijing-time-origin",
+      "text": "「北京时间」一词最早见于 1949-09-27 至 10-06 间的电台播音，1950 年初除新疆、西藏外全国通用；它是东经 120° 的区时（UTC+8），非北京地方时。",
+      "value": "1949",
+      "confidence": "中",
+      "sources": [
+        "https://www.xinhuanet.com/politics/2015-10/28/c_1116958394.htm",
+        "https://data.iana.org/time-zones/tzdb/asia"
+      ]
+    },
+    {
+      "id": "longitude-time",
+      "text": "地球每小时自转 15°：经度每差 1°，地方时差 4 分钟。",
+      "value": "15° = 1 h",
+      "confidence": "高",
+      "sources": [
+        "https://en.wikipedia.org/wiki/John_Harrison"
+      ]
+    }
+  ],
+  "constants": {
+    "deg_per_hour": {
+      "value": "15",
+      "unit": "°/h",
+      "source": "360° / 24 h"
+    },
+    "min_per_degree": {
+      "value": "4",
+      "unit": "min/°",
+      "source": "同上"
+    },
+    "equation_of_time_max": {
+      "value": "+16 min 33 s（约 11-03）",
+      "source": "https://en.wikipedia.org/wiki/Equation_of_time"
+    },
+    "equation_of_time_min": {
+      "value": "−14 min 06 s（约 02-11）",
+      "source": "https://en.wikipedia.org/wiki/Equation_of_time"
+    },
+    "paris_minus_greenwich": {
+      "value": "9 min 21 s",
+      "source": "https://data.iana.org/time-zones/tzdb/europe"
+    },
+    "utc_offset_range": {
+      "value": "−12:00（贝克岛）至 +14:00（基里巴斯莱恩群岛）",
+      "source": "https://data.iana.org/time-zones/tzdb/australasia"
+    },
+    "meridian_1884_vote": {
+      "value": "22 赞成 / 1 反对（圣多明各）/ 2 弃权（法国、巴西）",
+      "source": "https://en.wikipedia.org/wiki/International_Meridian_Conference（转述 Gutenberg #17759 纪要）"
+    },
+    "china_std_offset": {
+      "value": "UTC+8（东经 120°）",
+      "source": "https://data.iana.org/time-zones/tzdb/asia"
+    },
+    "gmt_replaced_by_utc": {
+      "value": "1972",
+      "source": "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt"
+    }
+  },
+  "unverified": [
+    "Gutenberg #17759 全文抓取被截断（约 13 万字符，止于 1884-10-06 议程），Final Act 决议原文与票数未能直接读到；票数依维基转述与简报共用常数",
+    "国务院 1986 年《关于在全国范围内实行夏时制的通知》与 1992 年暂停通知的正式文号未核到；gov.cn 公报 PDF 为扫描件无法机读",
+    "ntsc.ac.cn 中文站 robots 禁止抓取；BPM / BPL 台址在蒲城只据英文站与通行资料",
+    "EUR-Lex 2000/84/EC 的 ELI 页只返回元数据，条文经 LexUriServ HTML 版取得",
+    "RMG 的 GMT 史页未写 1675 与 1833 年报时球首落具体日期（1833-10-28 只据 Howse / 维基）",
+    "法国 1911-03-09 法律原文（Légifrance）与 1891 年法律未打开",
+    "开罗 1875 年采用格里历只据 Statesman's Year-Book / 维基；伊斯坦布尔 1800 年前后鲁米历细节只据通史",
+    "乌鲁木齐 1928 年改 +6 为 tz 近似；新疆两种时间的官方表述只据新华网与 tz 注",
+    "俄罗斯 11 个、法国 12 个时区只有维基列表；欧盟理事会「无立场」未找到官方页面",
+    "墨西哥 2022 年法律名称与 DOF 原文、哈萨克斯坦 2024 年决议原文均由 tz 注转引，未直接打开",
+    "惠更斯 1656 年、经度法三档奖金、H4 牙买加误差 5.1 秒只有维基 / 通史",
+    "加尔各答时 1948 年、孟买时 1955 年废止只据通行说法；Interpretation Act 1978 沿用 1880 年定义未核"
+  ]
+}

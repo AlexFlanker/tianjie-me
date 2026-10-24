@@ -1,0 +1,344 @@
+[
+ {
+  "id": "img-d-01-shepherd-gate-clock",
+  "subject": "格林尼治皇家天文台门口的 Shepherd 24 小时电钟（1852），第一座向公众显示 GMT 的钟",
+  "url_page": "https://www.geograph.org.uk/photo/3624155",
+  "url_file": "https://s3.geograph.org.uk/geophotos/03/62/41/3624155_03d605f7.jpg",
+  "author": "David Dixon",
+  "year": 2013,
+  "license": "CC BY-SA 2.0（geograph 全站；许可页 https://creativecommons.org/licenses/by-sa/2.0/ ，须署名 © David Dixon / geograph.org.uk）",
+  "source_name": "Geograph Britain and Ireland",
+  "why_fits": "序章「对表」与 UTC 节点的视觉锚点：GMT 从这面 24 小时表盘走向全世界",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 335 KB",
+  "file": "shepherd-gate-clock.jpg",
+  "orig_size": [
+   480,
+   640
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-02-greenwich-observatory-1904",
+  "subject": "格林尼治天文台立体照片（约 1904）",
+  "url_page": "https://www.loc.gov/pictures/item/2019637858/",
+  "url_file": "https://cdn.loc.gov/service/pnp/stereo/1s20000/1s22000/1s22200/1s22225v.jpg",
+  "author": "未署名（立体照片出版商）",
+  "year": 1904,
+  "license": "公有领域（美国国会图书馆 Prints & Photographs，Stereograph Cards 集，无已知版权限制；LC-DIG-stereo-1s22225）",
+  "source_name": "Library of Congress Prints & Photographs",
+  "why_fits": "本初子午线所在地的历史影像，配 1884 子午线会议与 GMT 节点",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 366 KB；更大 TIFF: …/1s22225u.tif",
+  "file": "greenwich-observatory-1904.jpg",
+  "orig_size": [
+   1024,
+   533
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-03-usno-standard-clock",
+  "subject": "美国海军天文台标准钟（1909–1919），GPS 时与 UTC(USNO) 的前身",
+  "url_page": "https://www.loc.gov/pictures/item/2016820980/",
+  "url_file": "https://cdn.loc.gov/service/pnp/npcc/19300/19391v.jpg",
+  "author": "National Photo Company",
+  "year": 1915,
+  "license": "公有领域（美国国会图书馆 National Photo Company Collection，无已知版权限制；LC-DIG-npcc-19391）",
+  "source_name": "Library of Congress Prints & Photographs",
+  "why_fits": "gps-ntp 节点：USNO 主钟驾驭 GPS 时的历史渊源",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 105 KB；年份为区间 1909–1919 的中值",
+  "file": "usno-standard-clock.jpg",
+  "orig_size": [
+   741,
+   1024
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-04-nist-f2",
+  "subject": "NIST 物理学家 Steve Jefferts 与 Tom Heavner 和 NIST-F2 铯喷泉钟（2014）",
+  "url_page": "https://www.nist.gov/node/392946",
+  "url_file": "https://www.nist.gov/sites/default/files/images/2016/12/27/f2_atomic_clock.jpg",
+  "author": "NIST",
+  "year": 2014,
+  "license": "公有领域（美国联邦政府作品；页面图注 Credit: NIST）",
+  "source_name": "NIST",
+  "why_fits": "精度阶梯「3 亿年差 1 秒」一级的实物",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 992 KB",
+  "file": "nist-f2.jpg",
+  "orig_size": [
+   1200,
+   857
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-05-nist-f1",
+  "subject": "NIST-F1 铯喷泉钟（1999 年起的美国时间基准）",
+  "url_page": "https://www.nist.gov/news-events/news/1999/12/nist-f1-cesium-fountain-clock",
+  "url_file": "https://www.nist.gov/sites/default/files/images/2017/02/09/f1clock.jpg",
+  "author": "NIST",
+  "year": 1999,
+  "license": "公有领域（美国联邦政府作品；页面图注 Credit: NIST）",
+  "source_name": "NIST",
+  "why_fits": "精度阶梯「2000 万年差 1 秒」一级",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 169 KB",
+  "file": "nist-f1.jpg",
+  "orig_size": [
+   1023,
+   1826
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-06-regiomontanus-astrolabe-1462",
+  "subject": "星盘，Regiomontanus，1462（德意志或意大利）",
+  "url_page": "https://www.metmuseum.org/art/collection/search/923639",
+  "url_file": "https://images.metmuseum.org/CRDImages/cl/original/DP-41678-001.jpg",
+  "author": "Regiomontanus（Johannes Müller von Königsberg）",
+  "year": 1462,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true；https://www.metmuseum.org/policies/open-access）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "欧洲泳道：天文定时的仪器，也是格里改历前夜的天文学家之作",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 3.1 MB",
+  "file": "regiomontanus-astrolabe-1462.jpg",
+  "orig_size": [
+   3760,
+   4000
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-07-persian-astrolabe-1654",
+  "subject": "平面星盘，Muhammad Zaman al-Munajjim al-Asturlabi，伊历 1065 / 公元 1654–55",
+  "url_page": "https://www.metmuseum.org/art/collection/search/451699",
+  "url_file": "https://images.metmuseum.org/CRDImages/is/original/DP170383.jpg",
+  "author": "Muhammad Zaman al-Munajjim al-Asturlabi",
+  "year": 1654,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "伊斯兰 / 波斯泳道：礼拜时刻与历法计算的仪器",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 2.0 MB",
+  "file": "persian-astrolabe-1654.jpg",
+  "orig_size": [
+   2898,
+   3870
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-08-egyptian-water-clock",
+  "subject": "饰有狒狒的水钟（埃及，公元前 664–30，后期至托勒密时期）",
+  "url_page": "https://www.metmuseum.org/art/collection/search/572126",
+  "url_file": "https://images.metmuseum.org/CRDImages/eg/original/DP-35752-001.jpg",
+  "author": "佚名（古埃及）",
+  "year": -300,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "埃及泳道与精度阶梯「水钟」一级",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 1.3 MB；年份取区间中值",
+  "file": "egyptian-water-clock.jpg",
+  "orig_size": [
+   2989,
+   4000
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-09-jazari-water-clock-1315",
+  "subject": "《精巧机械装置知识之书》中的「孔雀水钟设计图」，al-Jazari，伊历 715 / 公元 1315 抄本",
+  "url_page": "https://www.metmuseum.org/art/collection/search/451302",
+  "url_file": "https://images.metmuseum.org/CRDImages/is/original/DP369551.jpg",
+  "author": "Badi' al-Zaman ibn al-Razzaz al-Jazari",
+  "year": 1315,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "伊斯兰泳道：中世纪机械计时的巅峰之一",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 2.9 MB",
+  "file": "jazari-water-clock-1315.jpg",
+  "orig_size": [
+   2792,
+   3882
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-10-chandlee-sundial-1800",
+  "subject": "日晷，Goldsmith Chandlee，美国，约 1800",
+  "url_page": "https://www.metmuseum.org/art/collection/search/8026",
+  "url_file": "https://images.metmuseum.org/CRDImages/ad/original/238354.jpg",
+  "author": "Goldsmith Chandlee",
+  "year": 1800,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "精度阶梯第一级「日晷」；也可配铁路时代之前「每镇一个太阳时」",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 795 KB",
+  "file": "chandlee-sundial-1800.jpg",
+  "orig_size": [
+   1886,
+   1873
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-11-revolutionary-calendar-1793",
+  "subject": "法国共和历（Calendrier républicain），Louis Philibert Debucourt 版画，1793",
+  "url_page": "https://www.metmuseum.org/art/collection/search/431358",
+  "url_file": "https://images.metmuseum.org/CRDImages/dp/original/DP852150.jpg",
+  "author": "Louis Philibert Debucourt",
+  "year": 1793,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "欧洲泳道「十进制时间」节点：共和历与十进制钟的同期原件",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 3.3 MB",
+  "file": "revolutionary-calendar-1793.jpg",
+  "orig_size": [
+   3118,
+   3680
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-12-gregory-xiii-medal-1579",
+  "subject": "教皇格里高利十三世像章（「格里历的颁布者」），Giovanni V. Melon，1579",
+  "url_page": "https://www.metmuseum.org/art/collection/search/191961",
+  "url_file": "https://images.metmuseum.org/CRDImages/es/original/13987.jpg",
+  "author": "Giovanni V. Melon",
+  "year": 1579,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "1582 格里改历节点的人像",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 1.2 MB",
+  "file": "gregory-xiii-medal-1579.jpg",
+  "orig_size": [
+   3842,
+   2564
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-13-cuneiform-astronomical-table",
+  "subject": "楔形文字泥板：天文表残片（约公元前 1 千纪晚期，两河流域）",
+  "url_page": "https://www.metmuseum.org/art/collection/search/321621",
+  "url_file": "https://images.metmuseum.org/CRDImages/an/original/86.11.374a,b_new.jpg",
+  "author": "佚名（巴比伦）",
+  "year": -300,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "两河泳道：六十进制与天文历表的源头",
+  "confidence": "中",
+  "verified": "curl -sI 200 image/jpeg 2.1 MB；URL 含逗号，前端引用时需 encodeURI；馆方标题带问号「astronomical table (?)」",
+  "file": "cuneiform-astronomical-table.jpg",
+  "orig_size": [
+   3648,
+   2736
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-14-pocket-chronometer-1850",
+  "subject": "袖珍天文钟（pocket chronometer），François Czapek，约 1850–55",
+  "url_page": "https://www.metmuseum.org/art/collection/search/207365",
+  "url_file": "https://images.metmuseum.org/CRDImages/es/original/DP338182.jpg",
+  "author": "François Czapek",
+  "year": 1852,
+  "license": "CC0（大都会博物馆 Open Access，isPublicDomain = true）",
+  "source_name": "The Metropolitan Museum of Art",
+  "why_fits": "哈里森 H4 的替代视觉：航海经度时代的精密计时器（RMG 图不可用）",
+  "confidence": "中",
+  "verified": "curl -sI 200 image/jpeg 2.0 MB；非哈里森原件，页面须注明",
+  "file": "pocket-chronometer-1850.jpg",
+  "orig_size": [
+   4000,
+   3687
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-15-wellcome-royal-observatory-engraving",
+  "subject": "《格林尼治山上的皇家天文台》版画",
+  "url_page": "https://wellcomecollection.org/works/xm5dn9x3",
+  "url_file": "https://iiif.wellcomecollection.org/image/V0013356/full/1200,/0/default.jpg",
+  "author": "佚名版画师（Wellcome Collection V0013356）",
+  "year": 1800,
+  "license": "Public Domain Mark（Wellcome Collection，license id = pdm）",
+  "source_name": "Wellcome Collection",
+  "why_fits": "格林尼治 / 本初子午线节点的 18–19 世纪图像",
+  "confidence": "中",
+  "verified": "curl -sI 200 image/jpeg（IIIF，可改 full/max/0/default.jpg 取原尺寸）；年份未在 API 结果中给出，为估计",
+  "file": "wellcome-royal-observatory-engraving.jpg",
+  "orig_size": [
+   1200,
+   910
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-16-wellcome-water-clock-diagrams-1809",
+  "subject": "《钟表：水钟图解》，J. Pass 彩色版画，1809",
+  "url_page": "https://wellcomecollection.org/works/cheymsrc",
+  "url_file": "https://iiif.wellcomecollection.org/image/V0023836EL/full/1200,/0/default.jpg",
+  "author": "J. Pass",
+  "year": 1809,
+  "license": "Public Domain Mark（Wellcome Collection，license id = pdm）",
+  "source_name": "Wellcome Collection",
+  "why_fits": "精度阶梯「水钟 / 漏刻」一级的原理图",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg（IIIF）",
+  "file": "wellcome-water-clock-diagrams-1809.jpg",
+  "orig_size": [
+   1200,
+   1571
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-17-wellcome-volvelle-world-times",
+  "subject": "《地理：两枚可转动圆盘（volvelle），显示各地相对时刻》",
+  "url_page": "https://wellcomecollection.org/works/kn5jmjj5",
+  "url_file": "https://iiif.wellcomecollection.org/image/V0025026/full/1200,/0/default.jpg",
+  "author": "佚名（Wellcome Collection V0025026）",
+  "year": 1800,
+  "license": "Public Domain Mark（Wellcome Collection，license id = pdm）",
+  "source_name": "Wellcome Collection",
+  "why_fits": "时区 / 经度与地方时节点的纸上工具，呼应页面的「对表」小工具",
+  "confidence": "中",
+  "verified": "curl -sI 200 image/jpeg（IIIF）；年份未在 API 结果中给出，为估计",
+  "file": "wellcome-volvelle-world-times.jpg",
+  "orig_size": [
+   1200,
+   876
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-18-waterloo-station-clock",
+  "subject": "伦敦滑铁卢车站大钟",
+  "url_page": "https://www.geograph.org.uk/photo/7482581",
+  "url_file": "https://s1.geograph.org.uk/geophotos/07/48/25/7482581_8d32577c.jpg",
+  "author": "Colin Smith",
+  "year": 2023,
+  "license": "CC BY-SA 2.0（geograph 全站；须署名 © Colin Smith / geograph.org.uk）",
+  "source_name": "Geograph Britain and Ireland",
+  "why_fits": "铁路时间节点：车站大钟是「铁路时」统一地方时的象征",
+  "confidence": "高",
+  "verified": "curl -sI 200 image/jpeg 114 KB",
+  "file": "waterloo-station-clock.jpg",
+  "orig_size": [
+   640,
+   480
+  ],
+  "status": "ok"
+ }
+]

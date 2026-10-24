@@ -1,0 +1,1343 @@
+{
+  "route": "D",
+  "nodes": [
+    {
+      "id": "essen-1955",
+      "title": "铯原子钟：秒离开天空",
+      "year": 1955,
+      "year_end": 1967,
+      "year_label": "1955-06 → 1967",
+      "lane": "global",
+      "place": {
+        "name": "泰丁顿（英国国家物理实验室 NPL）",
+        "lat": 51.43,
+        "lon": -0.34
+      },
+      "scales": [
+        "second"
+      ],
+      "motive": [
+        "technology",
+        "astronomy"
+      ],
+      "object": "Essen–Parry 铯束原子钟（NPL，1955）；第 13 届 CGPM 第 1 号决议（1967）",
+      "problem": "秒原本是平太阳日的 1/86,400，再改为 1956 年的「历书秒」（回归年 1/31,556,925.9747），都依赖地球转动或公转，不均匀且难以实时复现",
+      "method": "以铯-133 基态两个超精细能级之间跃迁辐射的 9,192,631,770 个周期定义 1 秒；该数由 Essen 与美国海军天文台 Markowitz 对比历书秒测得",
+      "error": "1955 年 Essen 钟约 300 年差 1 秒（量级 10⁻¹⁰）；比 1930 年代石英钟好约 30 倍、比最好的摆钟好约 300 倍",
+      "cost": "秒从天文量变成实验室常数：天文时与原子时从此分道，需要 UTC 与闰秒来调和",
+      "still_used": "是；2019 年 SI 第 9 版改写为「取 ΔνCs = 9 192 631 770 Hz 为固定数值」，物理内容不变",
+      "why": "这是秒第一次不再由天体运动定义——所有后来的闰秒争论都从这里开始",
+      "text": "1955 年，英国国家物理实验室的 Essen 与 Parry 建成第一台实用铯原子钟，约 300 年才差 1 秒，比当时最好的石英钟好约 30 倍。Essen 随后与美国海军天文台的 Markowitz 合作，把铯跃迁频率对到当时的历书秒上，得到 9,192,631,770 Hz。1967 年第 13 届国际计量大会据此把秒定义为「铯-133 原子基态两个超精细能级间跃迁辐射的 9,192,631,770 个周期」，并废止 1956 年以地球公转为准的历书秒。从此秒不再由天空决定，而由原子决定。",
+      "numbers": [
+        {
+          "label": "铯跃迁频率",
+          "value": "9,192,631,770",
+          "unit": "Hz",
+          "basis": "第 13 届 CGPM 第 1 号决议（1967）；SI 手册第 9 版",
+          "confidence": "高"
+        },
+        {
+          "label": "Essen 钟精度",
+          "value": "约 300 年差 1 秒",
+          "unit": "",
+          "basis": "英国科学博物馆藏品说明（co855）",
+          "confidence": "中"
+        },
+        {
+          "label": "建成年份",
+          "value": "1955",
+          "unit": "年",
+          "basis": "科学博物馆、NIST 原子钟史页；Essen & Parry, Nature 176, 280 (1955)",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "开机月份：通行说法为 1955 年 6 月（NPL 史页），但本次能打开的一手页（科学博物馆、NIST）只给年份，未给月份。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM · 第 13 届 CGPM（1967）第 1 号决议：秒的 SI 单位",
+          "url": "https://www.bipm.org/en/committees/cg/cgpm/13-1967/resolution-1",
+          "note": "一手，定义原文与废止条款"
+        },
+        {
+          "title": "BIPM · SI 基本单位：秒（SI 手册第 9 版定义）",
+          "url": "https://www.bipm.org/en/si-base-units/second",
+          "note": "一手"
+        },
+        {
+          "title": "Science Museum Group · Caesium atomic clock, 1955（Essen & Parry, NPL）",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co855/caesium-atomic-clock-1955",
+          "note": "馆藏原件说明：300 年差 1 秒"
+        },
+        {
+          "title": "NIST · A Walk Through Time: The Atomic Age",
+          "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-atomic-age-time",
+          "note": "1955 NPL 第一台实用铯频标；1967 定义"
+        },
+        {
+          "title": "NIST · Time and Frequency from A to Z / A brief history of atomic clocks at NIST",
+          "url": "https://tf.nist.gov/cesium/atomichistory.htm",
+          "note": "1949 氨钟、1955 NPL、1959 NBS-1、1967"
+        }
+      ],
+      "unverified": [
+        "Essen 钟开机的确切日期（通行 1955-06-03）只有二手来源；NPL 史页 (npl.co.uk/history/essen-atomic-clock) 本次打不开",
+        "Essen–Markowitz 1958 年测定值的原始论文（Physical Review Letters 1, 105）未直接核"
+      ]
+    },
+    {
+      "id": "utc-1972",
+      "title": "UTC 与闰秒：原子时迁就地球",
+      "year": 1972,
+      "year_end": null,
+      "year_label": "1972-01-01",
+      "lane": "global",
+      "place": {
+        "name": "巴黎（BIPM / IERS 地球定向中心）",
+        "lat": 48.83,
+        "lon": 2.22
+      },
+      "scales": [
+        "second",
+        "day"
+      ],
+      "motive": [
+        "technology",
+        "astronomy",
+        "rule"
+      ],
+      "object": "协调世界时 UTC；IERS 公报 C（每半年宣布是否插闰秒）",
+      "problem": "原子时 TAI 均匀，地球自转时 UT1 却在变慢且不规则；民用时既要原子秒的均匀，又不能离太阳时太远",
+      "method": "1972-01-01 起 UTC 的秒长 = 原子秒，与 TAI 相差整数秒（初值 10 s）；当 |UT1−UTC| 将超 0.9 s 时，在 6 月末或 12 月末最后一分钟加 1 秒（23:59:60）",
+      "error": "1972 年以来共插入 27 次正闰秒，最后一次 2016-12-31；2017-01-01 起 UTC−TAI = −37 s，至今未变",
+      "cost": "每次闰秒都要全球软件、卫星系统与交易所手工配合；2012、2017 年都出过事故",
+      "still_used": "是，但 2027-05-20 起停止插闰秒（第 28 届 CGPM 第 5 号决议）",
+      "why": "闰秒是人类最后一次让「均匀的秒」低头迁就「不均匀的地球」的制度",
+      "text": "1972 年 1 月 1 日起，协调世界时 UTC 改为现行规则：秒长取原子秒，与国际原子时 TAI 保持整数秒之差，初值 10 秒；当地球自转时 UT1 与 UTC 之差将超过 0.9 秒时，巴黎天文台的 IERS 发布公报 C，在 6 月末或 12 月末最后一分钟插入第 61 秒（23:59:60）。1972 年至今共插入 27 次，最后一次是 2016 年 12 月 31 日，此后 UTC−TAI 一直是 −37 秒。这套制度让民用时既有原子秒的均匀，又不离太阳时太远。2026 年 7 月 6 日的第 72 号公报 C 宣布 2026 年底不插闰秒。",
+      "numbers": [
+        {
+          "label": "TAI−UTC 初值",
+          "value": "10",
+          "unit": "s",
+          "basis": "USNO tai-utc.dat：1972 JAN 1 TAI-UTC = 10.0 S",
+          "confidence": "高"
+        },
+        {
+          "label": "闰秒总次数",
+          "value": "27",
+          "unit": "次",
+          "basis": "USNO tai-utc.dat 从 1972-07-01 到 2017-01-01 共 27 次 +1 s；Meta 2022 博客亦称 27",
+          "confidence": "高"
+        },
+        {
+          "label": "最后一次闰秒",
+          "value": "2016-12-31",
+          "unit": "",
+          "basis": "tai-utc.dat：2017 JAN 1 TAI-UTC = 37.0 S",
+          "confidence": "高"
+        },
+        {
+          "label": "UTC−TAI 现值",
+          "value": "−37",
+          "unit": "s",
+          "basis": "IERS 公报 C 72（2026-07-06）：from 2017 January 1, 0h UTC, until further notice: UTC-TAI = -37 s",
+          "confidence": "高"
+        },
+        {
+          "label": "2026 年底是否插闰秒",
+          "value": "不插",
+          "unit": "",
+          "basis": "IERS 公报 C 72（2026-07-06），经 IANA tz 邮件列表转发",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO · tai-utc.dat（TAI−UTC 历史表，含 1961–1972 分段与全部闰秒）",
+          "url": "https://maia.usno.navy.mil/ser7/tai-utc.dat",
+          "note": "一手，本次已下载核对"
+        },
+        {
+          "title": "IANA tz 列表 · Fwd: Bulletin C number 72（IERS，Paris, 06 July 2026）",
+          "url": "https://lists.iana.org/hyperkitty/list/tz@iana.org/thread/QXCI2R2IOCR6XHSWBBTYXXE4WT2LEY3R/",
+          "note": "一手转发：NO leap second at the end of December 2026；UTC-TAI = -37 s"
+        },
+        {
+          "title": "IERS 公报 C 原始目录（本次 robots 拒绝，列作出处）",
+          "url": "https://hpiers.obspm.fr/eoppc/bul/bulc/",
+          "note": "一手目录"
+        },
+        {
+          "title": "BIPM · 第 27 届 CGPM（2022）第 4 号决议（回顾 UTC 规则与 0.9 s 容限）",
+          "url": "https://www.bipm.org/en/cgpm-2022/resolution-4",
+          "note": "一手"
+        }
+      ],
+      "unverified": [
+        "0.9 s 容限的原始出处是 ITU-R TF.460，本次未直接打开 ITU 文本，依 CGPM 2022 决议与 Meta 博客转述"
+      ]
+    },
+    {
+      "id": "incidents",
+      "title": "多出来的一秒：互联网事故",
+      "year": 2012,
+      "year_end": 2017,
+      "year_label": "2012-06-30 / 2017-01-01",
+      "lane": "global",
+      "place": {
+        "name": "互联网（硅谷 / 全球数据中心）",
+        "lat": 37.4,
+        "lon": -122.1
+      },
+      "scales": [
+        "second"
+      ],
+      "motive": [
+        "technology"
+      ],
+      "object": "Linux 内核 hrtimer 补丁（John Stultz，2012）；Cloudflare RRDNS 复盘（2017）；Google leap smear；Meta《是时候告别闰秒了》（2022）",
+      "problem": "软件普遍假设「时间不会倒流、一分钟只有 60 秒」，闰秒把这两条都打破",
+      "method": "大厂改用「抹匀」：Google 以正午到正午 24 小时线性拉长每一秒；Meta 从 00:00 UTC 起用 17 小时二次曲线抹匀",
+      "error": "2012-06-30：Linux 内核闰秒后未调用 clock_was_set()，hrtimer 提前 1 秒触发，服务器负载飙升，Reddit 等瘫痪 30–40 分钟；2017-01-01：Cloudflare DNS 因 Go time.Now() 回退得到负时长，rand.Int63n 崩溃，峰值约 0.2% 查询失败，持续到 06:45 UTC",
+      "cost": "每次闰秒都是一次全球性的回归测试；负闰秒从未实施，影响未知",
+      "still_used": "smear 仍是行业做法，直到 2027 年闰秒停止",
+      "why": "这些事故是 2022 年各国同意废除闰秒的直接动机",
+      "text": "2012 年 6 月 30 日闰秒后，Linux 内核因漏了一次 clock_was_set() 调用，高精度定时器比系统时间快 1 秒，短定时器反复立刻到期，大批服务器 CPU 飙满，Reddit 瘫痪 30 到 40 分钟。2017 年 1 月 1 日零时，Cloudflare 的 DNS 因 Go 语言 time.Now() 不保证单调、时间回退得到负数，随机函数崩溃，峰值约 0.2% 的查询失败，06:45 UTC 才修复推完。Google 自 2008 年起不再跳秒，而是从正午到正午把这一秒线性抹匀 24 小时；2022 年 7 月 Meta 工程师公开撰文支持「停在 27 次」。",
+      "numbers": [
+        {
+          "label": "Cloudflare 受影响比例（峰值）",
+          "value": "约 0.2%",
+          "unit": "DNS 查询",
+          "basis": "Cloudflare 官方复盘博客",
+          "confidence": "高"
+        },
+        {
+          "label": "Cloudflare 事故时长",
+          "value": "00:00–06:45 UTC",
+          "unit": "",
+          "basis": "Cloudflare 官方复盘博客；最严重机器 90 分钟内修补",
+          "confidence": "高"
+        },
+        {
+          "label": "Reddit 2012 瘫痪时长",
+          "value": "30–40",
+          "unit": "分钟",
+          "basis": "Meta 2022 博客转述",
+          "confidence": "中"
+        },
+        {
+          "label": "Google smear 窗口",
+          "value": "24",
+          "unit": "小时（正午到正午 UTC，线性）",
+          "basis": "developers.google.com/time/smear",
+          "confidence": "高"
+        },
+        {
+          "label": "Meta smear 窗口",
+          "value": "17",
+          "unit": "小时（00:00 UTC 起，二次曲线）",
+          "basis": "Meta 2022 博客",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "Google 首次抹匀的年份：官方 smear 页称 2008 年起（当年为 20 小时余弦抹匀），其引用的博客常被转述为 2011 年。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "LWN.net · The leap second bug（2012-07-02）",
+          "url": "https://lwn.net/Articles/504744/",
+          "note": "内核根因与 Stultz 补丁"
+        },
+        {
+          "title": "LKML · [PATCH 0/7] 3.4-stable: Fix for leapsecond caused hrtimer/futex issue",
+          "url": "https://lkml.iu.edu/hypermail/linux/kernel/1207.2/00590.html",
+          "note": "一手补丁邮件"
+        },
+        {
+          "title": "Cloudflare · How and why the leap second affected Cloudflare DNS（2017-01）",
+          "url": "https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/",
+          "note": "一手复盘"
+        },
+        {
+          "title": "Google · Leap Smear",
+          "url": "https://developers.google.com/time/smear",
+          "note": "一手"
+        },
+        {
+          "title": "Meta Engineering · It's time to leave the leap second in the past（2022-07-25）",
+          "url": "https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/",
+          "note": "一手；含 Reddit 30–40 分钟、27 次"
+        }
+      ],
+      "unverified": [
+        "Reddit 2012 年没有正式复盘博客，30–40 分钟来自 Meta 转述与当时媒体",
+        "2012 年受影响的其他方（Mozilla、Amadeus/Qantas 订票系统）只有新闻报道"
+      ]
+    },
+    {
+      "id": "gps-ntp",
+      "title": "GPS 时与北斗时：不插闰秒的钟",
+      "year": 1980,
+      "year_end": null,
+      "year_label": "1980-01-06",
+      "lane": "global",
+      "place": {
+        "name": "美国海军天文台主钟（华盛顿）→ GPS 星座",
+        "lat": 38.92,
+        "lon": -77.07
+      },
+      "scales": [
+        "second"
+      ],
+      "motive": [
+        "technology"
+      ],
+      "object": "GPS 系统时（USNO 主钟驾驭）；北斗时 BDT；NTP 报文闰秒指示位（RFC 5905）",
+      "problem": "导航卫星要在星座内部对表到纳秒级，容不得整秒跳变",
+      "method": "GPS 时从 1980-01-06 0 时 UTC 起连续计数、不插闰秒，导航电文另播 GPS−UTC 整秒差；BDT 从 2006-01-01 0 时 UTC 起同样连续；NTP 用报文头 2 位 LI 字段提前预告本月末最后一分钟有 61 秒或 59 秒",
+      "error": "GPS 时现比 UTC 快 18 s（2016-12-31 起）；BDT 比 UTC 快 4 s、比 GPS 时慢 14 s（换算）",
+      "cost": "每个接收机都要自己做整秒换算；闰秒公告需提前写进导航电文",
+      "still_used": "是",
+      "why": "卫星导航早已用「连续时」运行几十年——它是 2027 年连续 UTC 的现成样板",
+      "text": "GPS 系统时从 1980 年 1 月 6 日零时 UTC 起连续计数，由美国海军天文台主钟驾驭、与 UTC(USNO) 相差不超过 1 微秒，但从不插闰秒，因此与 UTC 之差是整数秒：2016 年底那次闰秒后，GPS 时比 UTC 快 18 秒，接收机靠导航电文里的参数换算。北斗时 BDT 以 2006 年 1 月 1 日零时 UTC 为起点，同样用 SI 秒连续累积，比 UTC 快 4 秒、比 GPS 时慢 14 秒。网络校时协议 NTP 在报文头留了 2 位闰秒指示：1 表示本月最后一分钟 61 秒，2 表示 59 秒。",
+      "numbers": [
+        {
+          "label": "GPS 时起点",
+          "value": "1980-01-06 00:00 UT",
+          "unit": "",
+          "basis": "USNO GPS Time Transfer 页",
+          "confidence": "高"
+        },
+        {
+          "label": "GPS−UTC",
+          "value": "+18",
+          "unit": "s",
+          "basis": "USNO：As of December 31st, 2016, GPS is ahead of UTC by eighteen (18) seconds",
+          "confidence": "高"
+        },
+        {
+          "label": "BDT 起点",
+          "value": "2006-01-01 00:00 UTC",
+          "unit": "",
+          "basis": "ITU 文章《北斗与 UTC 闰秒》",
+          "confidence": "高"
+        },
+        {
+          "label": "BDT−UTC",
+          "value": "+4",
+          "unit": "s",
+          "basis": "换算：2006-01-01 时 TAI−UTC = 33 s，现 37 s，差 4 s；GPS−BDT = 18−4 = 14 s",
+          "confidence": "中"
+        },
+        {
+          "label": "NTP 闰秒指示 LI",
+          "value": "0 无 / 1 本日最后一分钟 61 秒 / 2 为 59 秒 / 3 未同步",
+          "unit": "",
+          "basis": "RFC 5905 §7.3 图 9",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO · USNO GPS Time Transfer（GPS epoch、18 s、UTC(USNO) 1 μs）",
+          "url": "https://www.cnmoc.usff.navy.mil/Our-Commands/United-States-Naval-Observatory/Precise-Time-Department/Global-Positioning-System/USNO-GPS-Time-Transfer/",
+          "note": "一手"
+        },
+        {
+          "title": "ITU · The BeiDou Navigation Satellite System and the UTC leap second（2023-06）",
+          "url": "https://www.itu.int/hub/2023/06/the-beidou-navigation-satellite-system-and-the-utc-leap-second/",
+          "note": "BDT 起点、连续无闰秒、与 UTC 偏差 50 ns（模 1 s）"
+        },
+        {
+          "title": "IETF · RFC 5905 Network Time Protocol Version 4 §7.3",
+          "url": "https://datatracker.ietf.org/doc/html/rfc5905",
+          "note": "一手"
+        },
+        {
+          "title": "USNO · tai-utc.dat（2006-01-01 TAI−UTC = 33 s，用于 BDT 换算）",
+          "url": "https://maia.usno.navy.mil/ser7/tai-utc.dat",
+          "note": "一手"
+        }
+      ],
+      "unverified": [
+        "BDT−UTC = 4 s、GPS−BDT = 14 s 为据 tai-utc.dat 换算，未在北斗 ICD 原文中直接读到该整数"
+      ]
+    },
+    {
+      "id": "cgpm-2022-2026",
+      "title": "2027-05-20：闰秒的终结与秒的下一次重定义",
+      "year": 2022,
+      "year_end": 2027,
+      "year_label": "2022-11 → 2026-10-15 → 2027-05-20",
+      "lane": "global",
+      "place": {
+        "name": "凡尔赛（国际计量大会 CGPM）",
+        "lat": 48.8,
+        "lon": 2.13
+      },
+      "scales": [
+        "second"
+      ],
+      "motive": [
+        "technology",
+        "rule"
+      ],
+      "object": "第 27 届 CGPM 第 4 号决议（2022）；第 28 届 CGPM 第 4、5、6 号决议（2026-10-13~15）",
+      "problem": "闰秒不可预测、不可编程；地球近年转快，史无前例的负闰秒概率上升；光钟精度已超铯钟最多百倍",
+      "method": "2022 年决定「2035 年或之前提高 UT1−UTC 上限」；2026 年第 5 号决议定为 2027-05-20 起 UTC 连续、|UT1−UTC| 上限 3,600 秒（1 小时）；第 4 号决议要求 2030 年第 29 届大会审议以光学跃迁重新定义秒；第 6 号决议启动可溯源到 UTC 的月球参考时间尺度",
+      "error": "按当前自转趋势，UTC 与太阳时偏差积累到 1 小时需要数百年乃至更久（决议要求至少保证一个世纪连续）",
+      "cost": "民用时与太阳时脱钩写进国际规则；各国法律中「UTC」的定义要跟着改",
+      "still_used": "2027-05-20 起生效",
+      "why": "这是秒的刻度史最新的一页：两年前的方向性决议在 2026 年落成了日期和上限",
+      "text": "2022 年 11 月，第 27 届国际计量大会第 4 号决议决定「UT1−UTC 之差的最大值将在 2035 年或之前提高」。2026 年 10 月 13 至 15 日，第 28 届大会在凡尔赛通过第 5 号决议：「连续 UTC 将于 2027 年 5 月 20 日生效」，|UT1−UTC| 上限定为 3,600 秒（1 小时）；决议注明负闰秒从未实施，其概率到 2035 年可能升至 30%。同次第 4 号决议要求把基于光学频标的秒的新定义提交 2030 年第 29 届大会；第 6 号决议启动可溯源到 UTC 的月球参考时间尺度。2024 年 4 月 2 日美国白宫备忘录已要求 NASA 在 2026 年底前拿出协调月球时策略。",
+      "numbers": [
+        {
+          "label": "连续 UTC 生效日",
+          "value": "2027-05-20",
+          "unit": "",
+          "basis": "第 28 届 CGPM 第 5 号决议原文：continuous UTC will become effective on 20 May 2027",
+          "confidence": "高"
+        },
+        {
+          "label": "|UT1−UTC| 新上限",
+          "value": "3,600",
+          "unit": "s（1 小时）",
+          "basis": "第 5 号决议原文",
+          "confidence": "高"
+        },
+        {
+          "label": "负闰秒概率（到 2035）",
+          "value": "30%",
+          "unit": "",
+          "basis": "第 5 号决议 noting 段",
+          "confidence": "高"
+        },
+        {
+          "label": "秒重定义审议时间",
+          "value": "2030（第 29 届 CGPM）",
+          "unit": "",
+          "basis": "第 4 号决议原文",
+          "confidence": "高"
+        },
+        {
+          "label": "光钟优于铯钟",
+          "value": "最多约 100",
+          "unit": "倍",
+          "basis": "第 4 号决议 noting 段",
+          "confidence": "高"
+        },
+        {
+          "label": "白宫月球时备忘录",
+          "value": "2024-04-02；NASA 策略截止 2026-12-31",
+          "unit": "",
+          "basis": "白宫 OSTP 备忘录 PDF",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "大会页只给出会期 2026-10-13~15，决议页本身不标注通过日；「2026-10-15」为简报口径（闭幕日）。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM · 第 28 届 CGPM（2026）大会页：七项决议清单与 DOI",
+          "url": "https://www.bipm.org/en/cgpm-2026",
+          "note": "一手；会期 13–15 October 2026，Palais des Congrès de Versailles"
+        },
+        {
+          "title": "BIPM · Resolution 5 (2026) On the technical actions needed to ensure the continuity of UTC",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5",
+          "note": "一手；DOI https://www.doi.org/10.59161/CGPM2026RES5E"
+        },
+        {
+          "title": "BIPM · Resolution 4 (2026) On the future definition of the second",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-4",
+          "note": "一手；DOI https://www.doi.org/10.59161/CGPM2026RES4E"
+        },
+        {
+          "title": "BIPM · Resolution 6 (2026) On the definition of an international lunar reference time scale and its traceability to UTC",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-6",
+          "note": "一手；DOI https://www.doi.org/10.59161/CGPM2026RES6E"
+        },
+        {
+          "title": "BIPM · CCTF 主席就第 28 届 CGPM 的声明",
+          "url": "https://www.bipm.org/documents/d/guest/statement-cctf-president-cgpm-2026",
+          "note": "一手：Resolution 5 states that continuous UTC will take effect on 20 May 2027; long-term limit of one hour"
+        },
+        {
+          "title": "BIPM · 第 27 届 CGPM（2022）第 4 号决议 On the use and future development of UTC",
+          "url": "https://www.bipm.org/en/cgpm-2022/resolution-4",
+          "note": "一手：decides that the maximum value for the difference (UT1-UTC) will be increased in, or before, 2035"
+        },
+        {
+          "title": "White House OSTP · Policy on Celestial Time Standardization（2024-04-02）",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2024/04/Celestial-Time-Standardization-Policy.pdf",
+          "note": "一手"
+        }
+      ],
+      "unverified": [
+        "第 5 号决议具体表决日（10-13/14/15）",
+        "ITU 无线电通信大会（WRC-23）对 UTC 的配套决议未核"
+      ]
+    },
+    {
+      "id": "earth-rotation",
+      "title": "地球这只钟：ΔT 与日长",
+      "year": 1900,
+      "year_end": 2025,
+      "year_label": "1900–2025",
+      "lane": "global",
+      "place": {
+        "name": "地球（IERS / USNO 地球定向观测）",
+        "lat": 0,
+        "lon": 0
+      },
+      "scales": [
+        "day",
+        "second"
+      ],
+      "motive": [
+        "astronomy"
+      ],
+      "object": "ΔT = TT − UT1；USNO finals.all / deltat.data；IERS 公报 A",
+      "problem": "地球自转既有潮汐摩擦的长期减速，也有核–幔耦合、冰川消融、大气海洋的年际起伏，日长不是常数",
+      "method": "用 VLBI、GNSS、激光测距天天测 UT1，与原子时相减得 ΔT；ΔT 的斜率就是日长与 86,400 s 的差",
+      "error": "ΔT：1900 年 −2.7 s，1950 年 29 s，2000 年 63.8 s，2020-01-01 69.36 s，2025-01-01 69.14 s；2024-07-05 一天比 86,400 s 短 1.66 ms，为原子钟时代最短的一天",
+      "cost": "长期看每世纪日长约增 1.8 ms（潮汐理论值 2.3 ms），但 2020 年代地球暂时转快，ΔT 甚至回落",
+      "still_used": "是，持续观测",
+      "why": "闰秒多少、要不要负闰秒，全由这条曲线决定",
+      "text": "把地球当一只钟，它既不均匀也不是稳定地变慢。用 ΔT（地球时减世界时）衡量：1900 年约 −2.7 秒，1950 年 29 秒，2000 年 63.8 秒，2020 年初 69.36 秒——然后回落到 2025 年初的 69.14 秒，因为地球近年转快了。按 IERS/USNO 日值，2024 年 7 月 5 日比 86,400 秒短 1.66 毫秒，是原子钟时代最短的一天。长期趋势相反：Stephenson 等用公元前 720 年以来的日月食记录算出日长每世纪平均增加 1.8 毫秒，低于潮汐摩擦理论的 2.3 毫秒。Agnew 2024 年在《自然》指出，冰盖消融把负闰秒推迟了约 3 年到 2028 年前后。",
+      "numbers": [
+        {
+          "label": "ΔT 1900",
+          "value": "−2.72",
+          "unit": "s",
+          "basis": "Morrison & Stephenson 表（Gent 整理页）；NASA 日食站表取整为 −3",
+          "confidence": "高"
+        },
+        {
+          "label": "ΔT 2000-01-01",
+          "value": "63.83",
+          "unit": "s",
+          "basis": "USNO deltat.data：2000 1 1 63.8285；NASA 表 +63.8",
+          "confidence": "高"
+        },
+        {
+          "label": "ΔT 2020-01-01",
+          "value": "69.36",
+          "unit": "s",
+          "basis": "USNO deltat.data：2020 1 1 69.3612",
+          "confidence": "高"
+        },
+        {
+          "label": "ΔT 2025-01-01",
+          "value": "69.14",
+          "unit": "s",
+          "basis": "USNO deltat.data：2025 1 1 69.1377",
+          "confidence": "高"
+        },
+        {
+          "label": "2024-07-05 日长超额",
+          "value": "−1.6568",
+          "unit": "ms",
+          "basis": "USNO/IERS finals.all LOD 列（本次下载核对）；timeanddate 报道 1.66 ms",
+          "confidence": "高"
+        },
+        {
+          "label": "2022-06-29 日长超额",
+          "value": "−1.5901",
+          "unit": "ms",
+          "basis": "USNO/IERS finals.all",
+          "confidence": "高"
+        },
+        {
+          "label": "日长长期增速（实测）",
+          "value": "+1.8",
+          "unit": "ms / 世纪",
+          "basis": "Stephenson, Morrison & Hohenkerk 2016, Proc. R. Soc. A 472:20160404",
+          "confidence": "高"
+        },
+        {
+          "label": "日长长期增速（潮汐理论）",
+          "value": "+2.3",
+          "unit": "ms / 世纪",
+          "basis": "同上",
+          "confidence": "高"
+        },
+        {
+          "label": "负闰秒预计时间（Agnew）",
+          "value": "约 2028；若无冰融则约早 3 年",
+          "unit": "",
+          "basis": "Agnew 2024, Nature 628, doi:10.1038/s41586-024-07170-0；Scripps 新闻稿",
+          "confidence": "高"
+        }
+      ],
+      "dispute": "负闰秒时间：Agnew 原文给「2028 年前后，若无冰川融化则提前约 3 年」；简报口径「2026→2029」与新闻转述略有出入，以 Scripps 新闻稿为准。潮汐口径：简报写 1.7–2.3 ms/世纪，Stephenson 等 2016 实测 1.8、理论 2.3。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO · deltat.data（1973 起逐月 ΔT）",
+          "url": "https://maia.usno.navy.mil/ser7/deltat.data",
+          "note": "一手，本次已下载"
+        },
+        {
+          "title": "USNO / IERS · finals.all（逐日 UT1−UTC 与 LOD）",
+          "url": "https://maia.usno.navy.mil/ser7/finals.all",
+          "note": "一手，本次已下载：24 7 5 LOD = -1.6568 ms"
+        },
+        {
+          "title": "NASA Eclipse · Delta T (ΔT) 表（Morrison & Stephenson 2004；Astronomical Almanac 2006）",
+          "url": "https://eclipse.gsfc.nasa.gov/SEcat5/deltat.html",
+          "note": "权威二手：1900 −3，1950 29，2000 63.8"
+        },
+        {
+          "title": "R. H. van Gent · Delta T: modern values（含 ΔT = (TAI−UTC) − (UT1−UTC) + 32.184 s 公式）",
+          "url": "https://webspace.science.uu.nl/~gent0113/deltat/deltat_modern.htm",
+          "note": "辅助"
+        },
+        {
+          "title": "Stephenson, Morrison & Hohenkerk (2016) Measurement of the Earth's rotation: 720 BC to AD 2015",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5247521/",
+          "note": "一手论文"
+        },
+        {
+          "title": "Scripps / UC San Diego · Global warming influencing global timekeeping（Agnew, Nature 2024-03-27）",
+          "url": "https://scripps.ucsd.edu/news/global-warming-influencing-global-timekeeping",
+          "note": "作者机构新闻稿"
+        },
+        {
+          "title": "FOX / timeanddate 转述：2024-07-05 比常日短 1.66 ms",
+          "url": "https://www.fox13news.com/news/july-9-shortest-day-atomic-clock",
+          "note": "二手，与 finals.all 一致"
+        },
+        {
+          "title": "BIPM · 第 28 届 CGPM 第 5 号决议（负闰秒概率 30%）",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5",
+          "note": "一手"
+        }
+      ],
+      "unverified": [
+        "timeanddate 原页 (timeanddate.com/time/earth-rotation-record.html) 本次打不开，1.66 ms 以 finals.all 原始数据为准",
+        "Agnew 论文正文未直接打开，依 Scripps 新闻稿"
+      ]
+    },
+    {
+      "id": "precision-ladder",
+      "title": "精度阶梯：从日晷到光钟",
+      "year": -1500,
+      "year_end": 2025,
+      "year_label": "约前 1500 → 2025",
+      "lane": "global",
+      "place": {
+        "name": "各地",
+        "lat": 0,
+        "lon": 0
+      },
+      "scales": [
+        "hour",
+        "second"
+      ],
+      "motive": [
+        "technology",
+        "commerce"
+      ],
+      "object": "日晷、漏刻、摆钟、航海钟、Shortt 钟、石英钟、铯钟、光钟",
+      "problem": "每一级新钟都暴露上一级「标准」的不稳：摆钟暴露了日晷，石英钟暴露了摆钟，铯钟暴露了地球本身",
+      "method": "把计时交给频率更高、更不受环境影响的周期现象：日影 → 水流 → 摆 → 石英振子 → 原子跃迁（微波 → 光）",
+      "error": "14 世纪机械钟 ±15 分/天 → 1656 摆钟 <1 分/天、后约 10 秒/天 → 1761 哈里森 H4 约 1/3 秒/天 → 1921 Shortt 钟每年数秒 → 1927 石英钟约 3 年差 1 秒 → 1955 铯钟 300 年差 1 秒 → 1999 NIST-F1 约 2000 万年差 1 秒 → 2014 NIST-F2 约 3 亿年 → 2025 铝离子光钟 5.5×10⁻¹⁹（换算约 580 亿年差 1 秒）",
+      "cost": "精度每进一级，「以太阳为准」的旧定义就少一分合法性",
+      "still_used": "是",
+      "why": "阶梯解释了为什么秒会从天文量变成原子常数，又为什么 2030 年还要再改一次",
+      "text": "人类的钟每隔一两百年就好上一到两个量级。14 世纪的机械钟一天差一刻钟；1656 年惠更斯的摆钟压到每天不足 1 分钟、后约 10 秒；1761 年哈里森 H4 航海钟横渡大西洋约两个月只慢 5 秒；1921 年 Shortt 自由摆钟每年只差几秒，天文台用它反过来发现地球自转的季节起伏；1927 年 Marrison 的石英钟约 3 年差 1 秒；1955 年 Essen 的铯钟 300 年差 1 秒；1999 年 NIST-F1 约 2000 万年差 1 秒，2014 年 NIST-F2 约 3 亿年；2025 年 NIST 铝离子光钟不确定度 5.5×10⁻¹⁹，换算五百多亿年才差 1 秒。精度到了 10⁻¹³ 以后，GPS 卫星钟每天因相对论快 38 微秒也必须算进去。",
+      "numbers": [
+        {
+          "label": "阶梯级数",
+          "value": "11",
+          "unit": "级（见顶层 ladder 数组）",
+          "basis": "",
+          "confidence": "高"
+        },
+        {
+          "label": "GPS 卫星钟相对论净效应",
+          "value": "+38",
+          "unit": "μs / 天（狭义 −7，广义 +45）",
+          "basis": "GPS World · Inside the Box: GPS and Relativity（Pratap Misra）",
+          "confidence": "中"
+        }
+      ],
+      "dispute": "哈里森 H4 牙买加试航：Linda Hall 图书馆页称「约两个月后仅慢 5 秒」；NIST Lombardi 文称「5 个月航程快 54 秒，约 1/3 秒/天」（后者疑为 1764 年巴巴多斯之行或含往返）；通行的「81 天差 5 秒」本次只有二手。Shortt 钟：Lombardi「每年数秒」，史密森尼「每年 10 秒以内」，通行「每年约 1 秒」。石英钟：史密森尼「3 年差 1 秒」（≈10⁻⁸），Lombardi「±100 μs/天」（≈10⁻⁹）。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "NIST · M. Lombardi, Fundamentals of Time and Frequency（含历代钟不确定度表 18.2）",
+          "url": "https://tf.nist.gov/general/pdf/1279.pdf",
+          "note": "权威综述：15 min/天、<1 min/天→10 s/天、1/3 s/天、Shortt 数秒/年、石英 100 μs/天"
+        },
+        {
+          "title": "Smithsonian NMAH · On Time: Expanding Time – Seconds",
+          "url": "https://americanhistory.si.edu/ontime/expanding/seconds.html",
+          "note": "Shortt 10 s/年；Marrison 1927 石英钟 3 年差 1 秒"
+        },
+        {
+          "title": "NIST · A Walk Through Time: Early Clocks",
+          "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-early-clocks",
+          "note": "日晷、水钟（阿蒙霍特普一世墓约前 1500 年）"
+        },
+        {
+          "title": "Linda Hall Library · John Harrison",
+          "url": "https://www.lindahall.org/about/news/scientist-of-the-day/john-harrison",
+          "note": "H4 约两个月慢 5 秒"
+        },
+        {
+          "title": "Science Museum Group · Caesium atomic clock, 1955",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co855/caesium-atomic-clock-1955",
+          "note": "300 年差 1 秒"
+        },
+        {
+          "title": "NIST · NIST-F1 Cesium Fountain Clock（1999-12-29）",
+          "url": "https://www.nist.gov/news-events/news/1999/12/nist-f1-cesium-fountain-clock",
+          "note": "1.7×10⁻¹⁵，nearly 20 million years"
+        },
+        {
+          "title": "NIST · NIST Launches a New U.S. Time Standard: NIST-F2（2014-04-03）",
+          "url": "https://www.nist.gov/node/392946",
+          "note": "about 300 million years"
+        },
+        {
+          "title": "NIST · NIST Ion Clock Sets New Record for Most Accurate Clock in the World（2025-07-14）",
+          "url": "https://www.nist.gov/node/1886246",
+          "note": "5.5×10⁻¹⁹，19 位小数"
+        },
+        {
+          "title": "GPS World · Inside the Box: GPS and Relativity",
+          "url": "https://www.gpsworld.com/inside-the-box-gps-and-relativity/",
+          "note": "−7 / +45 / +38 μs/天；10.22999999543 MHz"
+        }
+      ],
+      "unverified": [
+        "日晷与水钟没有权威的「每天差多少」量化，页面只能写量级",
+        "哈里森 H4「81 天」只有二手",
+        "光钟「300 亿年差 1 秒」为 10⁻¹⁸ 的换算值，非机构原话"
+      ]
+    }
+  ],
+  "leap_seconds": [
+    {
+      "n": 1,
+      "date": "1972-06-30",
+      "tai_utc_after": 11
+    },
+    {
+      "n": 2,
+      "date": "1972-12-31",
+      "tai_utc_after": 12
+    },
+    {
+      "n": 3,
+      "date": "1973-12-31",
+      "tai_utc_after": 13
+    },
+    {
+      "n": 4,
+      "date": "1974-12-31",
+      "tai_utc_after": 14
+    },
+    {
+      "n": 5,
+      "date": "1975-12-31",
+      "tai_utc_after": 15
+    },
+    {
+      "n": 6,
+      "date": "1976-12-31",
+      "tai_utc_after": 16
+    },
+    {
+      "n": 7,
+      "date": "1977-12-31",
+      "tai_utc_after": 17
+    },
+    {
+      "n": 8,
+      "date": "1978-12-31",
+      "tai_utc_after": 18
+    },
+    {
+      "n": 9,
+      "date": "1979-12-31",
+      "tai_utc_after": 19
+    },
+    {
+      "n": 10,
+      "date": "1981-06-30",
+      "tai_utc_after": 20
+    },
+    {
+      "n": 11,
+      "date": "1982-06-30",
+      "tai_utc_after": 21
+    },
+    {
+      "n": 12,
+      "date": "1983-06-30",
+      "tai_utc_after": 22
+    },
+    {
+      "n": 13,
+      "date": "1985-06-30",
+      "tai_utc_after": 23
+    },
+    {
+      "n": 14,
+      "date": "1987-12-31",
+      "tai_utc_after": 24
+    },
+    {
+      "n": 15,
+      "date": "1989-12-31",
+      "tai_utc_after": 25
+    },
+    {
+      "n": 16,
+      "date": "1990-12-31",
+      "tai_utc_after": 26
+    },
+    {
+      "n": 17,
+      "date": "1992-06-30",
+      "tai_utc_after": 27
+    },
+    {
+      "n": 18,
+      "date": "1993-06-30",
+      "tai_utc_after": 28
+    },
+    {
+      "n": 19,
+      "date": "1994-06-30",
+      "tai_utc_after": 29
+    },
+    {
+      "n": 20,
+      "date": "1995-12-31",
+      "tai_utc_after": 30
+    },
+    {
+      "n": 21,
+      "date": "1997-06-30",
+      "tai_utc_after": 31
+    },
+    {
+      "n": 22,
+      "date": "1998-12-31",
+      "tai_utc_after": 32
+    },
+    {
+      "n": 23,
+      "date": "2005-12-31",
+      "tai_utc_after": 33
+    },
+    {
+      "n": 24,
+      "date": "2008-12-31",
+      "tai_utc_after": 34
+    },
+    {
+      "n": 25,
+      "date": "2012-06-30",
+      "tai_utc_after": 35
+    },
+    {
+      "n": 26,
+      "date": "2015-06-30",
+      "tai_utc_after": 36
+    },
+    {
+      "n": 27,
+      "date": "2016-12-31",
+      "tai_utc_after": 37
+    }
+  ],
+  "leap_seconds_meta": {
+    "note": "date = 插入闰秒的那一天（当日 23:59:60 UTC）；tai_utc_after = 次日 0 时起的 TAI−UTC（秒）。1972-01-01 起始值 TAI−UTC = 10 s。全部为正闰秒，从未有负闰秒。",
+    "source": {
+      "title": "USNO tai-utc.dat",
+      "url": "https://maia.usno.navy.mil/ser7/tai-utc.dat"
+    },
+    "next_decision": {
+      "text": "IERS 公报 C 72（2026-07-06）：2026 年 12 月底不插闰秒；UTC−TAI = −37 s 直至另行通知",
+      "url": "https://lists.iana.org/hyperkitty/list/tz@iana.org/thread/QXCI2R2IOCR6XHSWBBTYXXE4WT2LEY3R/"
+    },
+    "end_of_system": {
+      "text": "第 28 届 CGPM 第 5 号决议：2027-05-20 起连续 UTC",
+      "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5"
+    }
+  },
+  "ladder": [
+    {
+      "rank": 1,
+      "name": "日晷",
+      "year": -1500,
+      "year_label": "约前 1500（埃及便携日晷）",
+      "principle": "日影方位 / 长度",
+      "per_day": "读数约 1–2 分钟量级；且随季节与平太阳时相差最多约 ±16 分钟（均时差）",
+      "frac": "~10⁻³",
+      "one_second_in": "—",
+      "source": {
+        "title": "NIST · Walk Through Time: Early Clocks",
+        "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-early-clocks"
+      },
+      "confidence": "低",
+      "note": "权威页只给年代不给误差；±16 分钟为均时差的通行数值"
+    },
+    {
+      "rank": 2,
+      "name": "水钟 / 漏刻",
+      "year": -1500,
+      "year_label": "约前 1500（阿蒙霍特普一世墓）→ 前 325 希腊 clepsydra",
+      "principle": "恒定流量滴水",
+      "per_day": "无权威量化；受水温、水压与孔径磨损影响，「不可能达到很高精度」",
+      "frac": "~10⁻²–10⁻³",
+      "one_second_in": "—",
+      "source": {
+        "title": "NIST · Walk Through Time: Early Clocks",
+        "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-early-clocks"
+      },
+      "confidence": "低",
+      "note": ""
+    },
+    {
+      "rank": 3,
+      "name": "机械机轴钟（verge & foliot）",
+      "year": 1300,
+      "year_label": "14 世纪",
+      "principle": "重锤 + 机轴擒纵",
+      "per_day": "约 ±15 分钟 / 天",
+      "frac": "≈1×10⁻²",
+      "one_second_in": "—",
+      "source": {
+        "title": "Lombardi, Fundamentals of Time and Frequency, Table 18.2",
+        "url": "https://tf.nist.gov/general/pdf/1279.pdf"
+      },
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "rank": 4,
+      "name": "惠更斯摆钟",
+      "year": 1656,
+      "year_label": "1656",
+      "principle": "单摆等时性",
+      "per_day": "最初不足 1 分钟 / 天，后改进到约 10 秒 / 天",
+      "frac": "≈7×10⁻⁴ → 1×10⁻⁴",
+      "one_second_in": "—",
+      "source": {
+        "title": "Lombardi, Fundamentals of Time and Frequency",
+        "url": "https://tf.nist.gov/general/pdf/1279.pdf"
+      },
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "rank": 5,
+      "name": "哈里森 H4 航海钟",
+      "year": 1761,
+      "year_label": "1761–62 牙买加试航",
+      "principle": "温度补偿摆轮 + 高频游丝",
+      "per_day": "约 1/3 秒 / 天；牙买加之行约两个月仅慢 5 秒",
+      "frac": "≈4×10⁻⁶",
+      "one_second_in": "≈3 天",
+      "source": {
+        "title": "Linda Hall Library · John Harrison；Lombardi (NIST)",
+        "url": "https://www.lindahall.org/about/news/scientist-of-the-day/john-harrison"
+      },
+      "confidence": "中",
+      "note": "「81 天」只有二手；Lombardi 给 5 个月快 54 秒"
+    },
+    {
+      "rank": 6,
+      "name": "Shortt 自由摆钟",
+      "year": 1921,
+      "year_label": "1921",
+      "principle": "真空自由摆 + 从钟驱动",
+      "per_day": "每年数秒（史密森尼：10 秒以内）≈ 每天 0.01–0.03 秒",
+      "frac": "≈1×10⁻⁷",
+      "one_second_in": "约 0.1–1 年",
+      "source": {
+        "title": "Lombardi (NIST)；Smithsonian NMAH On Time",
+        "url": "https://americanhistory.si.edu/ontime/expanding/seconds.html"
+      },
+      "confidence": "中",
+      "note": "通行「每年约 1 秒」未在上述两源中出现"
+    },
+    {
+      "rank": 7,
+      "name": "石英钟（Marrison，贝尔实验室）",
+      "year": 1927,
+      "year_label": "1927",
+      "principle": "石英晶体压电振荡",
+      "per_day": "约 1 毫秒 / 天量级（史密森尼：3 年差 1 秒 ≈ 0.9 ms/天；Lombardi：±100 μs/天）",
+      "frac": "≈10⁻⁸–10⁻⁹",
+      "one_second_in": "约 3–30 年",
+      "source": {
+        "title": "Smithsonian NMAH On Time；Lombardi (NIST)",
+        "url": "https://americanhistory.si.edu/ontime/expanding/seconds.html"
+      },
+      "confidence": "中",
+      "note": ""
+    },
+    {
+      "rank": 8,
+      "name": "Essen–Parry 铯束原子钟",
+      "year": 1955,
+      "year_label": "1955（NPL）",
+      "principle": "铯-133 超精细跃迁 9,192,631,770 Hz",
+      "per_day": "约 10 μs / 天",
+      "frac": "≈1×10⁻¹⁰",
+      "one_second_in": "约 300 年",
+      "source": {
+        "title": "Science Museum Group · Caesium atomic clock, 1955",
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co855/caesium-atomic-clock-1955"
+      },
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "rank": 9,
+      "name": "NIST-F1 铯喷泉钟",
+      "year": 1999,
+      "year_label": "1999-12-29",
+      "principle": "激光冷却铯原子喷泉",
+      "per_day": "约 0.15 ns / 天",
+      "frac": "1.7×10⁻¹⁵",
+      "one_second_in": "近 2000 万年",
+      "source": {
+        "title": "NIST · NIST-F1 Cesium Fountain Clock",
+        "url": "https://www.nist.gov/news-events/news/1999/12/nist-f1-cesium-fountain-clock"
+      },
+      "confidence": "高",
+      "note": ""
+    },
+    {
+      "rank": 10,
+      "name": "NIST-F2 铯喷泉钟",
+      "year": 2014,
+      "year_label": "2014-04-03",
+      "principle": "液氮冷却真空腔的铯喷泉",
+      "per_day": "约 0.01 ns / 天",
+      "frac": "≈1×10⁻¹⁶",
+      "one_second_in": "约 3 亿年",
+      "source": {
+        "title": "NIST · NIST Launches a New U.S. Time Standard: NIST-F2",
+        "url": "https://www.nist.gov/node/392946"
+      },
+      "confidence": "高",
+      "note": "10⁻¹⁶ 为换算量级，NIST 新闻稿只给「3 亿年」与「比 F1 准约 3 倍」"
+    },
+    {
+      "rank": 11,
+      "name": "光钟（NIST 铝离子钟）",
+      "year": 2025,
+      "year_label": "2025-07-14",
+      "principle": "铝离子光学跃迁，量子逻辑读出",
+      "per_day": "约 5×10⁻¹⁴ s / 天（≈50 fs）",
+      "frac": "5.5×10⁻¹⁹",
+      "one_second_in": "换算约 580 亿年（10⁻¹⁸ 量级钟约 300 亿年）",
+      "source": {
+        "title": "NIST · NIST Ion Clock Sets New Record for Most Accurate Clock in the World",
+        "url": "https://www.nist.gov/node/1886246"
+      },
+      "confidence": "高",
+      "note": "「多少年差 1 秒」为换算值；NIST 原话为「19 位小数」"
+    },
+    {
+      "rank": "ref",
+      "name": "参照：GPS 卫星钟的相对论修正",
+      "year": 1978,
+      "year_label": "GPS 卫星（约 20,200 km 高度）",
+      "principle": "狭义相对论慢 ~7 μs/天，广义相对论快 ~45 μs/天",
+      "per_day": "净快约 +38 μs / 天；出厂频率预置为 10.22999999543 MHz",
+      "frac": "≈4.4×10⁻¹⁰",
+      "one_second_in": "约 72 年（若不修正）",
+      "source": {
+        "title": "GPS World · Inside the Box: GPS and Relativity（Pratap Misra）",
+        "url": "https://www.gpsworld.com/inside-the-box-gps-and-relativity/"
+      },
+      "confidence": "中",
+      "note": "行业期刊，非官方机构页"
+    }
+  ],
+  "facts": [
+    {
+      "id": "second-definition-1967",
+      "text": "1967 年第 13 届 CGPM：「秒是铯-133 原子基态两个超精细能级之间跃迁所对应辐射的 9 192 631 770 个周期的持续时间。」",
+      "value": "9,192,631,770 周期",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM · 13th CGPM Resolution 1",
+          "url": "https://www.bipm.org/en/committees/cg/cgpm/13-1967/resolution-1"
+        }
+      ]
+    },
+    {
+      "id": "second-definition-si9",
+      "text": "SI 第 9 版（2019 起）：「秒，符号 s，是 SI 的时间单位。它由取铯频率 ΔνCs——铯-133 原子未受扰动的基态超精细跃迁频率——以 Hz（即 s⁻¹）为单位表示时的固定数值 9 192 631 770 来定义。」",
+      "value": "ΔνCs = 9 192 631 770 Hz",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM · SI base unit: second",
+          "url": "https://www.bipm.org/en/si-base-units/second"
+        }
+      ]
+    },
+    {
+      "id": "utc-tai",
+      "text": "2017-01-01 0 时 UTC 起 UTC−TAI = −37 s，直至另行通知（IERS 公报 C 72，2026-07-06）。",
+      "value": "−37 s",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "IERS Bulletin C 72 via tz list",
+          "url": "https://lists.iana.org/hyperkitty/list/tz@iana.org/thread/QXCI2R2IOCR6XHSWBBTYXXE4WT2LEY3R/"
+        },
+        {
+          "title": "USNO tai-utc.dat",
+          "url": "https://maia.usno.navy.mil/ser7/tai-utc.dat"
+        }
+      ]
+    },
+    {
+      "id": "gps-utc",
+      "text": "GPS 时自 1980-01-06 0 时起连续不插闰秒；2016-12-31 之后比 UTC 快 18 秒。",
+      "value": "+18 s",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO GPS Time Transfer",
+          "url": "https://www.cnmoc.usff.navy.mil/Our-Commands/United-States-Naval-Observatory/Precise-Time-Department/Global-Positioning-System/USNO-GPS-Time-Transfer/"
+        }
+      ]
+    },
+    {
+      "id": "continuous-utc-2027",
+      "text": "第 28 届 CGPM 第 5 号决议（2026-10）：连续 UTC 于 2027 年 5 月 20 日生效。",
+      "value": "2027-05-20",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM Resolution 5 (2026)",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5"
+        },
+        {
+          "title": "CCTF President statement",
+          "url": "https://www.bipm.org/documents/d/guest/statement-cctf-president-cgpm-2026"
+        }
+      ]
+    },
+    {
+      "id": "ut1-utc-limit",
+      "text": "2027-05-20 起 |UT1−UTC| 的最大值为 3,600 秒（1 小时）。",
+      "value": "3,600 s",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM Resolution 5 (2026)",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5"
+        }
+      ]
+    },
+    {
+      "id": "leap-second-count",
+      "text": "1972 年以来共插入 27 次闰秒，全部为正；最后一次 2016-12-31。",
+      "value": "27",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO tai-utc.dat",
+          "url": "https://maia.usno.navy.mil/ser7/tai-utc.dat"
+        },
+        {
+          "title": "Meta Engineering 2022",
+          "url": "https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/"
+        }
+      ]
+    },
+    {
+      "id": "essen-1955",
+      "text": "1955 年，NPL 的 Essen 与 Parry 建成第一台实用铯原子钟，约 300 年差 1 秒。",
+      "value": "1955",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Science Museum Group co855",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co855/caesium-atomic-clock-1955"
+        },
+        {
+          "title": "NIST Walk Through Time",
+          "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-atomic-age-time"
+        }
+      ]
+    },
+    {
+      "id": "delta-t",
+      "text": "ΔT（地球时 − 世界时）：1900 年约 −2.7 s，1950 年 29 s，2000 年 63.8 s，2020 年初 69.36 s，2025 年初 69.14 s。",
+      "value": "−2.7 / 29 / 63.8 / 69.36 / 69.14 s",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO deltat.data",
+          "url": "https://maia.usno.navy.mil/ser7/deltat.data"
+        },
+        {
+          "title": "NASA Eclipse ΔT table",
+          "url": "https://eclipse.gsfc.nasa.gov/SEcat5/deltat.html"
+        }
+      ]
+    },
+    {
+      "id": "shortest-day",
+      "text": "2024-07-05 这一天比 86,400 秒短 1.66 毫秒（IERS/USNO finals.all LOD = −1.6568 ms），为原子钟时代最短的一天。",
+      "value": "−1.66 ms",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "USNO/IERS finals.all",
+          "url": "https://maia.usno.navy.mil/ser7/finals.all"
+        }
+      ]
+    },
+    {
+      "id": "lod-secular",
+      "text": "公元前 720 年以来，日长平均每世纪增加 1.8 毫秒，低于潮汐摩擦理论值 2.3 毫秒。",
+      "value": "+1.8 ms/世纪（理论 +2.3）",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Stephenson, Morrison & Hohenkerk 2016",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5247521/"
+        }
+      ]
+    },
+    {
+      "id": "negative-leap",
+      "text": "负闰秒从未实施；第 28 届 CGPM 估计其概率到 2035 年升至 30%；Agnew（Nature 2024）估计约 2028 年前后，冰川融化使之推迟约 3 年。",
+      "value": "30%（2035）",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM Resolution 5 (2026)",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5"
+        },
+        {
+          "title": "Scripps news on Agnew 2024",
+          "url": "https://scripps.ucsd.edu/news/global-warming-influencing-global-timekeeping"
+        }
+      ]
+    },
+    {
+      "id": "second-redefinition-2030",
+      "text": "第 28 届 CGPM 第 4 号决议：请 CIPM 把基于光学频标的秒的新定义提交 2030 年第 29 届大会。",
+      "value": "2030",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "BIPM Resolution 4 (2026)",
+          "url": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-4"
+        }
+      ]
+    },
+    {
+      "id": "gps-relativity",
+      "text": "GPS 卫星钟相对论净效应每天约快 38 微秒（狭义 −7、广义 +45）。",
+      "value": "+38 μs/天",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "GPS World · GPS and Relativity",
+          "url": "https://www.gpsworld.com/inside-the-box-gps-and-relativity/"
+        }
+      ]
+    }
+  ],
+  "constants": {
+    "cs_hyperfine_hz": {
+      "value": "9192631770",
+      "source": "https://www.bipm.org/en/si-base-units/second"
+    },
+    "utc_minus_tai_s": {
+      "value": "-37",
+      "since": "2017-01-01",
+      "source": "https://lists.iana.org/hyperkitty/list/tz@iana.org/thread/QXCI2R2IOCR6XHSWBBTYXXE4WT2LEY3R/"
+    },
+    "gps_minus_utc_s": {
+      "value": "18",
+      "since": "2017-01-01",
+      "source": "https://www.cnmoc.usff.navy.mil/Our-Commands/United-States-Naval-Observatory/Precise-Time-Department/Global-Positioning-System/USNO-GPS-Time-Transfer/"
+    },
+    "bdt_minus_utc_s": {
+      "value": "4",
+      "note": "换算值：BDT 起点 2006-01-01 时 TAI−UTC = 33",
+      "source": "https://www.itu.int/hub/2023/06/the-beidou-navigation-satellite-system-and-the-utc-leap-second/"
+    },
+    "leap_second_count": {
+      "value": "27",
+      "last": "2016-12-31",
+      "source": "https://maia.usno.navy.mil/ser7/tai-utc.dat"
+    },
+    "continuous_utc_date": {
+      "value": "2027-05-20",
+      "source": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5"
+    },
+    "ut1_utc_max_s": {
+      "value": "3600",
+      "source": "https://www.bipm.org/committees/cg/cgpm/28-2026/resolution-5"
+    },
+    "ut1_utc_old_tolerance_s": {
+      "value": "0.9",
+      "source": "ITU-R TF.460（本次未直接打开；见 CGPM 2022 第 4 号决议背景）"
+    },
+    "tt_minus_tai_s": {
+      "value": "32.184",
+      "source": "https://webspace.science.uu.nl/~gent0113/deltat/deltat_modern.htm"
+    },
+    "delta_t_1900_s": {
+      "value": "-2.72",
+      "source": "https://webspace.science.uu.nl/~gent0113/deltat/deltat_modern.htm"
+    },
+    "delta_t_2000_s": {
+      "value": "63.83",
+      "source": "https://maia.usno.navy.mil/ser7/deltat.data"
+    },
+    "delta_t_2025_s": {
+      "value": "69.14",
+      "source": "https://maia.usno.navy.mil/ser7/deltat.data"
+    },
+    "lod_record_2024_07_05_ms": {
+      "value": "-1.6568",
+      "source": "https://maia.usno.navy.mil/ser7/finals.all"
+    },
+    "lod_secular_ms_per_century": {
+      "value": "1.8",
+      "tidal_theory": "2.3",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5247521/"
+    },
+    "gps_relativity_us_per_day": {
+      "value": "38",
+      "source": "https://www.gpsworld.com/inside-the-box-gps-and-relativity/"
+    }
+  },
+  "unverified": [
+    "Essen 铯钟开机月份（通行 1955-06）：NPL 史页打不开，科学博物馆与 NIST 页只给年份",
+    "哈里森 H4 牙买加试航「81 天差 5 秒」：只有二手；Linda Hall 给「约两个月慢 5 秒」，Lombardi 给「5 个月快 54 秒」",
+    "Shortt 钟「每年约 1 秒」：两源分别为「数秒」与「10 秒以内」",
+    "0.9 s 容限的 ITU-R TF.460 原文未直接打开",
+    "BDT−UTC = 4 s 为换算值，北斗 ICD 原文未读到",
+    "IERS 公报 C 原始目录与 Leap_Second.dat 均被 robots 拒绝，改用 USNO tai-utc.dat 与 tz 列表转发件",
+    "timeanddate 原页打不开，1.66 ms 以 USNO finals.all 原始数据为准",
+    "日晷 ±16 分钟均时差、光钟「300 亿年差 1 秒」均为通行换算，非机构原话"
+  ]
+}

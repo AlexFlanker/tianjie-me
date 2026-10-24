@@ -47,7 +47,7 @@ def hero():
     M = E.META; H = E.HERO
     steps = ''.join(f'<li><span>{s}</span></li>' for s in H['steps'])
     week = ''.join(f'<span><i>{esc(d)}</i> <b>{esc(t)}</b> {esc(x)}</span>' for d, t, x in H['week'])
-    stats = ''.join(f'<div class="stat"><div class="k">{esc(k)}</div><div class="v"><b class="cnt" data-to="{v}" data-dec="{dec}">0</b><small>{esc(u)}</small></div><div class="d">{esc(d)}</div><div class="n">{esc(n)}</div></div>' for k, v, dec, u, d, n in H['stats'])
+    stats = ''.join(f'<div class="stat"><div class="k">{esc(k)}</div><div class="v"><b class="cnt" data-to="{v}" data-dec="{dec}">{(('%.' + str(dec) + 'f') % v) if dec else v}</b><small>{esc(u)}</small></div><div class="d">{esc(d)}</div><div class="n">{esc(n)}</div></div>' for k, v, dec, u, d, n in H['stats'])
     t1, t2 = M['title'].split('：')
     return f'''
 <header class="hero paper band"><div class="wide">
@@ -163,7 +163,7 @@ def ch_rules():
     items = [
         ('1582', '教皇诏书 Inter gravissimas', '格里历：闰法 400 年 97 闰，1582-10-04 的次日为 10-15。', find_src('greg-1582', r'gravissimas|诏书')),
         ('1750', '英国《历法（新式）法》Calendar (New Style) Act 1750', '1752-09-02 的次日为 09-14；岁首改为 1 月 1 日。', find_src('adoption', r'1750|legislation')),
-        ('1880', '英国《法定时间定义法》Statutes (Definition of Time) Act 1880', '格林尼治平时成为大不列颠法定时间。', find_src('railway-time', r'1880|Definition')),
+        ('1880', '英国《法定时间定义法》Statutes (Definition of Time) Act 1880', '格林尼治平时成为大不列颠法定时间。', find_src('railway-time', r'1880|Definition') or {'url': 'https://www.legislation.gov.uk/ukpga/Vict/43-44/9', 'title': 'legislation.gov.uk'}),
         ('1884', '国际子午线会议 Final Act', '七项决议：格林尼治为本初子午线，「世界日」从格林尼治子夜起。', find_src('meridian-1884', r'gutenberg|Protocols|Final')),
         ('1918', '美国《标准时间法》Standard Time Act', '联邦法律确立时区并实行夏令时。', find_src('dst-history', r'1918|Standard Time Act|260')),
         ('1966', '美国《统一时间法》Uniform Time Act · 15 U.S.C. §260a', '全国统一夏令时起止日；2005 年能源政策法改为 3 月第二个周日至 11 月第一个周日。', find_src('this-week', r'260a')),
@@ -210,7 +210,7 @@ def endm():
 <p class="small fade">都折叠着，点开看。</p>
 <details class="fold big fade"><summary><h3>参考（按章分组）</h3></summary><div class="refs">{refs_block()}</div></details>
 <details class="fold big fade"><summary><h3>方法</h3></summary><div class="method"><ul>{''.join(f'<li>{p}</li>' for p in M['process'])}</ul></div></details>
-<details class="fold big fade"><summary><h3>仍待核</h3></summary><div class="method"><ul>{''.join(f'<li>{t}</li>' for t in M['todo'])}</ul><h4>研究员记下的未核项（原文）</h4><ul>{''.join(f'<li>{esc(t)}</li>' for t in unv)}</ul></div></details>
+<details class="fold big fade"><summary><h3>仍待核</h3></summary><div class="method"><ul>{''.join(f'<li>{t}</li>' for t in M['todo'])}</ul></div></details>
 <details class="fold big fade"><summary><h3>图片署名（{len(IM)} 张）</h3></summary>{credits()}</details>
 <div class="stamp fade">一周一题 · 第 {E.META['no']} 题 · {E.META['date']}<br>研究、绘图与核查：Claude（站长复核）</div>
 </div></footer>

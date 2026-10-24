@@ -40,7 +40,7 @@ def wall_noon(pid='nn'):
     return f'''<div class="demo" data-demo="noon" id="noon-{pid}">
 {chips(cities, 'data-city')}
 <div class="frow"><label>经度 <input type="number" id="{pid}-lon" step="0.01" value="87.6" style="width:7em"> °</label><label>时区 UTC <input type="number" id="{pid}-tz" step="0.25" value="8" style="width:5em"></label><label>日期 <input type="date" id="{pid}-date" value="2026-10-24"></label></div>
-<div class="dstage noonst"><div class="sunbar"><div class="sunclock" id="{pid}-clock"></div><div class="noonlab"><b id="{pid}-noon">14:10</b><span>真太阳正午在当地钟表的时刻</span></div></div></div>
+<div class="dstage noonst"><div class="sunbar"><div class="sunclock" id="{pid}-clock"></div><div class="noonlab"><b id="{pid}-noon">13:54</b><span>真太阳正午在当地钟表的时刻</span></div></div></div>
 {readouts([(pid + '-r1', '时区中央经线'), (pid + '-r2', '经度带来的差'), (pid + '-r3', '今天的均时差')])}</div>'''
 
 # ---------- 墙 5 自转不稳
@@ -71,4 +71,5 @@ def tool_leaps():
     return f'''<div class="demo tleap" data-demo="leaps">
 <div class="frow"><label>出生年 <input type="number" id="ls-y" min="1900" max="2026" value="1985" style="width:6em"></label><span class="small" id="ls-sum"></span></div>
 <div class="dstage lsst"><div class="lsbar" id="ls-bar"></div><svg class="dsvg" viewBox="0 0 600 120" id="ls-proj"></svg></div>
+<p class="small">2027-05-20 以后 UT1−UTC 不再归零：虚线按 1972–2016 的平均速率（约 0.6 s / 年）外推，到 2100 年约 −44 s；实线按 2016–2025 的近零速率（约 0.1 s / 年）。1 小时的上限在图外很远的下方；真实曲线由 IERS 逐年公布，这里只是示意。</p>
 <ol class="lslist" id="ls-list"></ol></div>'''

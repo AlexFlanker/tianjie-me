@@ -177,7 +177,7 @@
       var oa = a.o + (inDst(a, j) ? 1 : 0), ob = b.o + (inDst(b, j) ? 1 : 0), diff = ob - oa;
       row.innerHTML = [[a, oa], [b, ob]].map(function (x) { return '<div class="dsc"><b>' + esc(x[0].n) + '</b>' + dialSvg(720 + x[1] * 60, 72) + '<span>' + hhmm(720 + x[1] * 60) + '</span><small>UTC 12:00 时</small></div>'; }).join('<div class="dsarrow">' + (diff === 0 ? '同时' : (diff > 0 ? '快 ' : '慢 ') + num(Math.abs(diff), 2) + ' 小时') + '</div>');
       set('ds-diff', (diff === 0 ? '0' : (diff > 0 ? '+' : '−') + num(Math.abs(diff), 2)) + ' 小时'); set('ds-a-st', status(a, j)); set('ds-b-st', status(b, j));
-      $('#ds-note').textContent = '规则：欧盟 / 英国 3 月与 10 月最后一个周日 01:00 UTC；美国 / 加拿大 3 月第二个周日至 11 月第一个周日当地 02:00；澳大利亚东南各州 10 月第一个周日至 4 月第一个周日；新西兰 9 月最后一个周日至 4 月第一个周日；智利 9 月与 4 月第一个在 2 日或之后的周日；埃及 4 月最后一个周五至 10 月最后一个周四（2023 起）。墨西哥 2022、中国 1992、日本 1952 后不实行。只按日期判断，不计换时当天的具体时刻。';
+      $('#ds-note').textContent = '规则：欧盟 / 英国 3 月与 10 月最后一个周日 01:00 UTC；美国 / 加拿大 3 月第二个周日至 11 月第一个周日当地 02:00；澳大利亚东南各州 10 月第一个周日至 4 月第一个周日；新西兰 9 月最后一个周日至 4 月第一个周日；智利 9 月与 4 月第一个在 2 日或之后的周日；埃及 4 月最后一个周五至 10 月最后一个周四（2023 起）。墨西哥 2022 年、中国 1992 年、日本 1952 年起不实行。只按日期判断，不计换时当天的具体时刻。';
     }
     [A, B, date].forEach(function (i) { i.addEventListener('input', draw); i.addEventListener('change', draw); });
     B.selectedIndex = 1; draw();
@@ -194,11 +194,11 @@
         + D.leaps.map(function (s) { var y = parseInt(s.slice(0, 4), 10) + (s.slice(5) === '06-30' ? .5 : 1); return '<i style="left:' + ((y - 1972) / 58 * 100) + '%" class="' + (y >= by ? 'me' : '') + '" title="' + s + '"></i>'; }).join('')
         + '<em style="left:' + ((2027.38 - 1972) / 58 * 100) + '%">2027-05-20 起不再插</em>' + (by >= 1972 && by <= 2027 ? '<u style="left:' + ((by - 1972) / 58 * 100) + '%">' + by + ' 出生</u>' : '');
       list.innerHTML = D.leaps.map(function (s, i) { return '<li' + (parseInt(s.slice(0, 4), 10) >= by ? ' class="me"' : '') + '><span>' + (i + 1) + '</span>' + s + '</li>'; }).join('');
-      // 2027 后 UT1−UTC 的示意漂移：按近年 ΔT 年增量 ≈ 0（2016–2025 几乎不变）与长期趋势 ≈ +0.6 s/年 两条线
-      var W = 600, X = function (y) { return 40 + (y - 2016) / 84 * 540; }, Y = function (v) { return 60 - v * 12; };
-      var d1 = 'M' + X(2016) + ' ' + Y(0) + ' L' + X(2027.4) + ' ' + Y(0) + ' L' + X(2100) + ' ' + Y(-(2100 - 2027.4) * 0.03), d2 = 'M' + X(2027.4) + ' ' + Y(0) + ' L' + X(2100) + ' ' + Y(-(2100 - 2027.4) * 0.006);
-      proj.innerHTML = '<line class="ln" x1="40" y1="' + Y(0) + '" x2="580" y2="' + Y(0) + '"/><line class="ln2" x1="40" y1="' + Y(-3.6) + '" x2="580" y2="' + Y(-3.6) + '"/><text class="dt" x="42" y="' + (Y(-3.6) - 4) + '">−1 小时的上限在很远的下方（此处纵轴 1 格 = 1 秒，上限 3,600 秒）</text><path class="o2 d" d="' + d1 + '"/><path class="o2" d="' + d2 + '"/>'
-        + '<text class="dt" x="' + X(2027.4) + '" y="18">2027-05-20</text><line class="a" x1="' + X(2027.4) + '" y1="22" x2="' + X(2027.4) + '" y2="100"/><text class="dt" x="40" y="112">示意：虚线按 1972–2016 的平均速率（约 0.6 s / 年）外推，实线按 2016–2025 的近零速率；真实曲线由 IERS 逐年公布。</text><text class="dt" x="580" y="112" text-anchor="end">2100</text>';
+      // 2027 后 UT1−UTC 的示意漂移：按 1972–2016 平均速率（约 0.6 s/年）与 2016–2025 的近零速率两条线；纵轴 1 格 = 10 秒
+      var X = function (y) { return 40 + (y - 2016) / 84 * 540; }, Y = function (v) { return 14 - v * 1.0; };
+      var d1 = 'M' + X(2016) + ' ' + Y(0) + ' L' + X(2027.4) + ' ' + Y(0) + ' L' + X(2100) + ' ' + Y(-(2100 - 2027.4) * 0.6), d2 = 'M' + X(2027.4) + ' ' + Y(0) + ' L' + X(2100) + ' ' + Y(-(2100 - 2027.4) * 0.1);
+      proj.innerHTML = [0, -20, -40].map(function (v) { return '<line class="' + (v ? 'ln2' : 'ln') + '" x1="40" y1="' + Y(v) + '" x2="580" y2="' + Y(v) + '"/><text class="dt" x="36" y="' + (Y(v) + 4) + '" text-anchor="end">' + v + ' s</text>'; }).join('') + '<path class="o2 d" d="' + d1 + '"/><path class="o2" d="' + d2 + '"/>'
+        + '<text class="dt" x="' + X(2027.4) + '" y="10">2027-05-20</text><line class="a" x1="' + X(2027.4) + '" y1="12" x2="' + X(2027.4) + '" y2="' + Y(-44) + '"/><text class="dt" x="40" y="112">UT1 − UTC 示意：虚线 0.6 s / 年（1972–2016 均速），实线 0.1 s / 年（2016–2025）</text><text class="dt" x="580" y="' + (Y(0) - 4) + '" text-anchor="end">2100</text>';
     }
     yin.addEventListener('input', draw); draw();
   })();

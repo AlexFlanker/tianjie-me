@@ -48,7 +48,7 @@ def plate(city, step):
         if Y < 1803: return (isl, '伊斯兰历（莫卧儿宫廷）· 维克拉姆纪元 ' + str(y + 57 if m >= 4 else y + 56) + ' 年')
         return (fmt_g(y, m, d), '格里历（东印度公司 / 英属印度，1752 起）· 伊斯兰历与印度教诸历并行')
     if cid == 'istanbul':
-        if Y < 1917: return (isl, '伊斯兰历 · 财政用鲁米历（儒略历为基）' if Y >= 1840 else '伊斯兰历')
+        if Y < 1917: return (isl, '伊斯兰历 · 财政用鲁米历（儒略历为基）' if Y >= 1789 else '伊斯兰历')
         if Y < 1926: return (f'鲁米历 {y - 584} 年 {m} 月 {d} 日', f'1917 年起鲁米历改用格里日期 · 伊斯兰历 {iy} 年')
         return (fmt_g(y, m, d), '格里历 · 基督纪元（1926-01-01 起，第 698 号法律）')
     if cid == 'cairo':
@@ -81,7 +81,7 @@ def clock(city, step):
         'rome': [(1893, 60, '中欧时间 +1')], 'london': [(1847, 0, '格林尼治平时（铁路，1880 法定）')], 'paris': [(1891, 9.35, '巴黎平时 +0:09:21'), (1911, 0, '格林尼治时间（法律称「巴黎平时减 9 分 21 秒」）'), (1940, 60, '中欧时间 +1')],
         'istanbul': [(1910, 120, '东欧时间 +2'), (1978, 180, '+3'), (2007, 120, '+2'), (2016, 180, '土耳其时间 +3')], 'cairo': [(1900, 120, '东欧时间 +2')],
         'moscow': [(1919, 180, '莫斯科时间 +3'), (2011, 240, '+4（取消换时）'), (2014, 180, '莫斯科时间 +3')], 'delhi': [(1906, 330, '印度标准时间 +5:30')],
-        'beijing': [(1902, 480, '海关海岸时 +8'), (1918, 480, '中原标准时 +8'), (1949, 480, '北京时间 +8')], 'urumqi': [(1918, 360, '新藏时区 +6'), (1949, 480, '北京时间 +8（官方）· 并行乌鲁木齐时间 +6')],
+        'beijing': [(1902, 480, '海关海岸时 +8'), (1918, 480, '中原标准时 +8（1918 方案，1939 法定）'), (1949, 480, '北京时间 +8')], 'urumqi': [(1928, 360, '+6（tz 数据库：1928 起）'), (1949, 480, '北京时间 +8（官方）· 并行乌鲁木齐时间 +6')],
         'tokyo': [(1888, 540, '日本标准时 +9')], 'new-york': [(1883, -300, '东部标准时 −5')], 'mexico-city': [(1922, -420, '−7'), (1927, -360, '中部时间 −6')],
     }
     best = None
@@ -89,8 +89,9 @@ def clock(city, step):
         if Y >= yr: best = (off, label)
     if best is None: return L()
     off, label = best
-    # 2027-05-20 的夏令时：欧盟 / 英国 / 美国
-    if Y == 2027 and cid in ('rome', 'london', 'paris', 'new-york'): return (off + 60, label + ' · 夏令时 +1', True)
+    # 夏令时：2027-05-20 按现行规则（欧盟 / 英国 / 美国 / 埃及）；1972-06-30 与 1949-10-01 按 IANA tz 当年规则
+    DST = {2027: ('rome', 'london', 'paris', 'new-york', 'cairo'), 1972: ('london', 'rome', 'new-york', 'cairo'), 1949: ('london', 'paris')}
+    if cid in DST.get(Y, ()): return (off + 60, label + ' · 夏令时 +1', True)
     return (off, label, False)
 
 def dial_svg(minutes, size=64):
@@ -147,7 +148,7 @@ def data(cities):
         row = {'id': s['id'], 'year': s['year'], 'kicker': s['kicker'], 'title': s['title'], 'gmt': s['year'] >= 1884, 'cities': {}}
         for c in cities:
             main, sub = plate(c, s); off, label, dst = clock(c, s)
-            key = (re.sub(r'（[^）]*）|\s', '', sub.split('·')[0]), label)
+            key = label
             changed = (prev.get(c['id']) is not None and prev[c['id']] != key) or c['id'] in s.get('hl', [])
             prev[c['id']] = key
             row['cities'][c['id']] = {'plate': main, 'sub': sub, 'off': round(off, 1), 'time': hhmm(off), 'label': label, 'changed': changed, 'dial': dial_svg(off)}

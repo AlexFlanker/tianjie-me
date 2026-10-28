@@ -1,0 +1,41 @@
+{
+  "name": "Tianjie Sun",
+  "name_zh": "孙天杰",
+  "alias": "天杰",
+  "url": "https://tianjie.me/about/",
+  "location": "San Jose, California",
+  "persona": "Integration-platform engineer for the agent era.",
+  "persona_zh": "做集成平台的工程师，正在把它搬到 agent 时代。",
+  "lede": "I build the integration layer between recruiting software and the world's applicant-tracking systems — and I'm working out what that layer should look like when the clients are AI agents, not people clicking buttons.",
+  "lede_zh": "我做的是招聘软件和各家 ATS 之间的集成层；现在在想的问题是：当调用方从点按钮的人变成 AI agent，这一层该长成什么样。",
+  "now": [
+    "Tech lead of the ATS integration platform at hireEZ: one platform, ~58 ATS / CRM / HCM vendors, a 3-engineer squad.",
+    "Running tianjie.me as a weekly, agent-assisted publishing pipeline — one research-backed interactive page every Saturday.",
+    "Building toward Senior/Staff-level roles on platform, integration and agent infrastructure teams in the Bay Area."
+  ],
+  "now_zh": [
+    "hireEZ ATS 集成平台 tech lead：一个平台，约 58 家 ATS / CRM / HCM 厂商，三人小队。",
+    "把 tianjie.me 当成一条每周运转的、agent 辅助的出版流水线：每周六一个有出处的交互页面。",
+    "朝着湾区平台 / 集成 / agent 基础设施方向的 Senior / Staff 岗位准备。"
+  ],
+  "facts": [
+    {"k": "Role", "v": "Senior Software Engineer, hireEZ (Apr 2021 – present); tech lead of the ATS-Squad"},
+    {"k": "Previously", "v": "Backend Software Engineer, CrossCircles Inc. (Oct 2018 – Apr 2021)"},
+    {"k": "Education", "v": "M.Eng. Electrical & Computer Engineering, Cornell University (2017); B.Eng. Measurement & Control Technology and Instrument, Northeastern University at Qinhuangdao (2016)"},
+    {"k": "Certification", "v": "Claude Certified Architect – Professional (Anthropic, 2026)"},
+    {"k": "Based in", "v": "San Jose, California"}
+  ],
+  "evidence": [
+    {"title": "一周一题 · six weeks, six pages", "url": "/#archive", "desc": "Each page is researched, written, checked and built with Claude through a fixed pipeline; sources are listed on every page."},
+    {"title": "合读 · a podcast of books read together", "url": "/listen/", "desc": "Clean Architecture, AI Engineering and A Brief History of Intelligence, read as one argument."},
+    {"title": "Alcatraz photo tour", "url": "https://phototour.tianjie.me/", "desc": "A 3D shooting-route map with on-site audio guidance in four languages."},
+    {"title": "GitHub · AlexFlanker", "url": "https://github.com/AlexFlanker", "desc": "This site's repo and the rest."}
+  ],
+  "links": [
+    {"label": "GitHub", "url": "https://github.com/AlexFlanker"},
+    {"label": "LinkedIn", "url": "https://www.linkedin.com/in/tianjiesun/"},
+    {"label": "RSS", "url": "/feed.xml"}
+  ],
+  "contact_note": "The fastest way to reach me is LinkedIn.",
+  "contact_note_zh": "找我最快的方式是 LinkedIn。"
+}

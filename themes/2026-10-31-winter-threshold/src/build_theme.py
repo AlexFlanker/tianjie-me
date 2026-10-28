@@ -67,27 +67,50 @@ def fest_record(nid):
 FEST = {nid: fest_record(nid) for nid in NODES}
 ORDER = [r['id'] for r in E.COMPARE]
 
+# ---------- 小工具
+OPEN, CLOSE = '（(「『【[《', '）)」』】]》'
+def brief(t, n=72):
+    """取开头几句，到 n 个字左右为止：只在括号、引号之外的「。；」处断开；剩下的放进折叠。"""
+    t = str(t or '').strip()
+    if len(t) <= n: return t
+    parts, cur, depth = [], '', 0
+    for ch in t:
+        cur += ch
+        if ch in OPEN: depth += 1
+        elif ch in CLOSE: depth = max(0, depth - 1)
+        elif ch in '。；' and depth == 0: parts.append(cur); cur = ''
+    if cur: parts.append(cur)
+    out = ''
+    for p in parts:
+        if out and len(out + p) > n: break
+        out += p
+    return out.rstrip('；') + ('……' if len(out) < len(t) else '')
+def fact(nid, key, field, n):
+    """灯谱行里的短事实：编辑手写的（editorial.FACTS）优先，否则取底稿原文的开头几句。"""
+    v = (E.FACTS.get(nid) or {}).get(key)
+    return v if v else brief(NODES[nid].get(field, ''), n)
+def latlabel(lat): return ('北纬 ' if lat >= 0 else '南纬 ') + f'{abs(lat):.1f}°'
+WDN = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+def wdz(iso): y, m, d = (int(x) for x in iso.split('-')); return WDN[dt.date(y, m, d).weekday()]
+def imgcap(im, n=80): s = im['subject']; return (s[:n] + '…' if len(s) > n else s) + f' 图：{im["author_short"]}，{im["license_short"]}。'
+
 # ---------- 卷首
 def hero():
     M = E.META; H = E.HERO
-    steps = ''.join(f'<li><span>{esc(s)}</span></li>' for s in H['steps'])
-    week = ''.join(f'<span><i>{esc(d)}</i> <b>{esc(t)}</b> {esc(x)}</span>' for d, t, x in H['week'])
-    stats = ''.join(f'<div class="stat"><div class="k">{esc(k)}</div><div class="v"><b class="cnt" data-to="{v}" data-dec="{dec}">{(("%." + str(dec) + "f") % v) if dec else v}</b><small>{esc(u)}</small></div><div class="d">{esc(d)}</div><div class="n">{esc(n)}</div></div>' for k, v, dec, u, d, n in H['stats'])
     t1, t2 = M['title'].split('：', 1)
     return f'''<header class="hero band"><div class="wide">
-  <div class="strip fade"><span><b>一周一题</b>第 {M['no']} 题</span><span><b>上线</b>{M['date']}</span><span><b>格式</b>{esc(M['format'])}</span><span><b>阅读</b>{esc(M['reading_time'])}</span></div>
-  <h1 class="fade">{esc(t1)}<small>{esc(t2)}</small></h1>
-  <p class="sub fade">{esc(M['subtitle'])}</p>
-  <div class="lead"><p class="thesis fade">{H['thesis']}</p><ol class="steps fade">{steps}</ol></div>
-  <figure class="field" id="field"><div class="fieldbox" id="fieldbox"><canvas id="fcv" width="1200" height="520" aria-label="夜的田野：横轴日期、纵轴纬度、底色是黑夜长短"></canvas><svg class="fov" id="fov" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true"></svg><div class="ftip" id="ftip"></div></div>
-  <figcaption class="fcap"><span><b>夜的田野。</b>横轴 10 月 1 日 → 12 月 31 日，纵轴北纬 62° → 南纬 36°；底色越深，那一天那条纬线上的黑夜越长（白线是等昼长线）。每盏灯是一种节日 2026 年落下的日子与它核心城市的纬度，悬停看昼长，点灯跳到它的卡片。虚线框是这十天。</span><span class="fkey">昼长按太阳赤纬算，天顶距 90.833° · 不计海拔</span></figcaption></figure>
-  <div class="week fade">{week}</div>
-  <div class="stats fade">{stats}</div>
+  <div class="strip fade" data-cover-hide><span><b>一周一题</b>第 {M['no']} 题</span><span><b>上线</b>{M['date']}</span><span><b>格式</b>{esc(M['format'])}</span><span><b>阅读</b>{esc(M['reading_time'])}</span></div>
+  <h1 class="fade" data-cover-hide>{esc(t1)}<small>{esc(t2)}</small></h1>
+  <p class="thesis fade" data-cover-hide>{H['thesis']}</p>
+  <figure class="field" id="field"><div class="fieldbox" id="fieldbox" tabindex="0" role="slider" aria-label="夜的田野：拖动竖线选日期" aria-valuemin="274" aria-valuemax="365" aria-valuenow="304" aria-valuetext="10 月 31 日">
+    <canvas id="fcv" width="1200" height="520" aria-hidden="true"></canvas><svg class="fov" id="fov" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="fread glass" id="fread" aria-live="polite" data-cover-hide></div><div class="ftip" id="ftip"></div></div>
+  <figcaption class="fcap"><span><b>夜的田野。</b>横轴 10 月 1 日 → 12 月 31 日，纵轴北纬 62° → 南纬 36°；底色越深，那天那条纬线上的黑夜越长，白线是等昼长线。每盏灯是灯谱里的一行，放在它 2026 年的日子与核心城市的纬度上；点灯打开那一行（感恩节只作参照，灯谱里没有；8 月的中元在横轴以外）。</span><span class="fkey">{esc(H['hint'])}</span></figcaption></figure>
 </div></header>'''
 
 def cnav():
     links = ''.join(f'<a href="#{cid}" data-nav="{cid}"><small>{n}</small>{esc(t)}</a>' for cid, n, t, _ in E.CHAPTERS)
-    links += '<a href="#end" data-nav="end"><small>末</small>参考 · 方法</a>'
+    links += '<a href="#end" data-nav="end"><small>末</small>规则与参考</a>'
     return f'<nav class="cnav" id="cnav" aria-label="章节"><div class="row">{links}<i class="prog" id="prog"></i></div></nav>'
 
 def chead(cid):
@@ -95,135 +118,132 @@ def chead(cid):
     label = '序章' if n == 0 else f'第 {"一二三四五六七八"[n-1]} 章'
     return f'<div class="chead fade"><div class="cno">{n:02d}<small>{label}</small></div><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
 
-# ---------- 序章
+# ---------- 序章：全屏时间轴
 def ch_days():
-    return (f'<section class="chap journey band" id="days"><div class="wide">{chead("days")}</div>' + stage.stage(STAGE_CITIES, 'assets/earth-night-1920.jpg') + stage.steps(IM, FEST)
-            + '<p class="jnote">底图：NASA「黑色弹珠」2016 年全球夜间灯光合成图（Suomi NPP / VIIRS，公有领域）。地图上的横带按当天各纬度的黑夜长短加深；城市的灯在有节的那天点亮。昼长与日出日落按太阳赤纬与均时差的标准近似算，取各城标准时、不含夏令时，误差在几分钟内。</p></section>')
+    return f'<section class="chap tl band" id="days" aria-label="序章 · 这十天">{stage.stage(STAGE_CITIES, "assets/earth-night-1920.jpg", IM, FEST)}</section>'
 
-# ---------- 第一章
-def ch_now():
-    dm = NODES['dia-de-muertos']; hw = NODES['halloween']; dw = NODES['diwali']; hy = NODES['hanyi']; ld = NODES['lidong']
-    def nums(n, key):
-        for x in n.get('numbers', []):
-            if key in x.get('label', ''): return x
-        return {}
-    nrf = nums(hw, '2026 预期'); nrf25 = nums(hw, '2025')
-    cards = [
-        ('10/31 · 周六 14:00', '墨西哥城亡灵节大游行', '2016', '年起 · 第十届', '从改革大道的狩猎女神雕像走到宪法广场。这条「传统」只有十年：2015 年 007《幽灵党》开场拍了一场虚构的亡灵节游行，次年市政府把它办成了真的；今年 6 月为世界杯还办过一场夏季版。亡灵节本身 2008 年列入人类非遗。', [s for s in dm.get('sources', []) if re.search(r'gob|Desfile|desfile|游行|unesco|UNESCO', (s.get('title') or '') + (s.get('url') or ''))][:4]),
-        ('10/31 · 周六', '万圣节的生意', esc(nrf.get('value', '135')), '亿美元 · 美国 2026 年预期（NRF）', f'美国零售联合会的年度调查：2025 年创纪录的 {nrf25.get("value", "131")} 亿美元，2026 年预期 {nrf.get("value", "135")} 亿，49% 的人 9 月或更早就开始买。日子是爱尔兰的夏末，内容是北美的货架——「门槛」从霜期变成了货架期。', [s for s in hw.get('sources', []) if 'nrf' in (s.get('url') or '').lower()][:3]),
-        ('11/8 → 11/9', '同一轮新月，两个节', '12:32', '印度时间 11/9 朔 · 北京时间 15:02', '印度按日落时的 tithi：11 月 8 日傍晚 amavasya 当值，当晚点灯；中国按《农历的编算和颁行》以含朔时刻的那一天为初一：11 月 9 日是十月初一，送寒衣。同一个天象，两种数法，差出一天。', [s for s in dw.get('sources', [])[:2]] + [s for s in hy.get('sources', []) if re.search(r'天文台|hko|33661', (s.get('title') or '') + (s.get('url') or ''))][:2]),
-        ('11/7 · 周六 17:52', '立冬 = 天文学上的 Samhain', '225°', '太阳黄经 · 秋分与冬至正中', '立冬是太阳黄经 225° 的时刻，正好在秋分（180°）与冬至（270°）之间——天文学上的「跨季日」，也是 Samhain 被赋予的天文定义。中国把它钉在黄河流域的物候上：「水始冰，地始冻」，北京常年 11 月 8 日第一次跌破冰点。', [s for s in ld.get('sources', [])[:3]]),
-    ]
-    out = ''.join(f'<article class="nowcard fade"><div class="d">{esc(d)}</div><h3>{esc(t)}</h3><p class="big">{b}<small>{esc(u)}</small></p><p>{esc(x)}</p>{srcs(ss)}</article>' for d, t, b, u, x, ss in cards)
-    return f'<section class="chap" id="now"><div class="wide">{chead("now")}<div class="nowcards">{out}</div></div></section>'
+# ---------- 灯谱：透镜分组
+KIND_ORDER = ['harvest', 'monsoon', 'night', 'solar', 'calendar', 'event', 'sowing', 'religion', 'none']
+SPREAD_ORDER = ['native', 'church-calendar', 'migration', 'commercial', 'transplant']
+def lens_groups():
+    rows = [FEST[i] for i in ORDER]
+    bydoy = lambda ids: sorted(ids, key=lambda i: (FEST[i]['doy'], -FEST[i]['lat']))
+    out = {}
+    g = [('before', '这十天之前', [f['id'] for f in rows if f['doy'] < 304]), ('ten', '这十天 · 10/31–11/9 · 七个节日', [f['id'] for f in rows if 304 <= f['doy'] <= 313]), ('after', '这十天之后', [f['id'] for f in rows if f['doy'] > 313])]
+    out['date'] = [dict(k=k, label=l, ids=bydoy(ids)) for k, l, ids in g if ids]
+    def latk(lat): return 'n50' if lat >= 50 else 'n30' if lat >= 30 else 'n0' if lat >= 0 else 's'
+    LATL = [('n50', '北纬 50° 以北'), ('n30', '北纬 30°–50°'), ('n0', '北纬 0°–30°'), ('s', '南半球')]
+    out['lat'] = [dict(k=k, label=l, ids=sorted([f['id'] for f in rows if latk(f['lat']) == k], key=lambda i: -FEST[i]['lat'])) for k, l in LATL]
+    out['kind'] = [dict(k=k, label=E.KIND_NAME[k] + ('（另一道门槛）' if k == 'religion' else ''), ids=bydoy([f['id'] for f in rows if f['kind'] == k])) for k in KIND_ORDER]
+    bk = {}
+    for f in rows: bk.setdefault(f['basisName'], []).append(f['id'])
+    out['basis'] = [dict(k=k, label=k + ' · ' + '、'.join(dict.fromkeys(FEST[i]['basisSub'] for i in ids if FEST[i]['basisSub'])), ids=bydoy(ids)) for k, ids in sorted(bk.items(), key=lambda kv: ['固定日', '跟月亮', '跟太阳', '按规则'].index(kv[0]) if kv[0] in ['固定日', '跟月亮', '跟太阳', '按规则'] else 9)]
+    out['spread'] = [dict(k=k, label=E.SPREAD_NAME.get(k, k), ids=bydoy([f['id'] for f in rows if f['spread'] == k])) for k in SPREAD_ORDER]
+    for k in out: out[k] = [x for x in out[k] if x['ids']]
+    return out
+LENS = lens_groups()
+GROUP_OF = {lens: {i: g['k'] for g in groups for i in g['ids']} for lens, groups in LENS.items()}
 
-# ---------- 节点卡
-def node_card(nid):
+def three_tiles(nid):
+    out = []
+    for col, label in E.THREE_COLS:
+        txt, img, none = E.TILES[nid][col]; im = IM.get(img) if img else None
+        if img and not im: raise SystemExit(f'TILES {nid}.{col}: 图片 {img} 不在 images.json')
+        fig = f'<figure><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{esc(imgcap(im, 56))}</figcaption></figure>' if im else ''
+        out.append(f'<div class="l3t{" none" if none else ""}{" ph" if im else ""}">{fig}<b>{esc(label)}</b><p>{esc(txt)}</p></div>')
+    return '<div class="l3">' + ''.join(out) + '</div>'
+
+def spread_line(nid):
+    """「传播」一栏：标签 · 正文；正文若以标签开头的短句起头（如「本土节日。」「宗教日历：」），去掉这段重复。"""
+    lab = FEST[nid]['spreadName']; t = fact(nid, 'spread', 'spread_text', 70)
+    for sep in '。：':
+        head, _, rest = t.partition(sep)
+        if rest and head.startswith(lab) and len(head) <= 16: t = rest; break
+    return f'{lab} · {t}'
+
+def lamp_row(nid):
     n = NODES[nid]; f = FEST[nid]; im = IM.get(E.NODE_IMG.get(nid) or '')
-    ph = f'<figure class="nph"><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{esc(im["subject"][:110])}{"…" if len(im["subject"]) > 110 else ""} 图：{esc(im["author_short"])}，{esc(im["license_short"])}。</figcaption></figure>' if im else ''
-    c = n.get('city') or {}; lat = c.get('lat')
-    where = f'{esc(c.get("name", ""))} · {("北纬 " if lat >= 0 else "南纬 ") + str(abs(lat)) + "°" if lat is not None else ""} · {esc(c.get("koppen", ""))}'
-    three = n.get('three') or {}
+    lat = f['lat']; pct = (lat + 40) / 100 * 100; dl = f['dl']
+    thumb = f'<span class="lthumb"><img src="assets/{esc(im["file"])}" alt="" loading="lazy"></span>' if im else '<span class="lthumb none"><i class="lamp"></i></span>'
+    watch = E.WATCH.get(nid)
+    wblk = (f'<div class="lwatch"><h4>去看的话</h4><dl><dt>日期</dt><dd>{esc(watch["when"])}</dd><dt>必看</dt><dd>{esc(watch["see"])}</dd><dt>必吃</dt><dd>{esc(watch["eat"])}</dd><dt>礼仪</dt><dd>{esc(watch["mind"])}</dd></dl></div>') if watch else ''
+    o = n.get('origin') or {}; c = n.get('city') or {}; cl = c.get('climate') or {}
     tl = ''.join(f'<li><i>{esc(t.get("year_label") or t.get("year"))}</i><div>{esc(t.get("label", ""))}{("：" + esc(t["text"])) if t.get("text") else ""}</div></li>' for t in (n.get('timeline') or [])[:10])
-    nums = ''.join(f'<div><span>{esc(x["label"])}</span><b>{esc(x["value"])}{(" " + esc(x["unit"])) if x.get("unit") else ""}</b></div>' for x in (n.get('numbers') or [])[:4])
+    nums = ''.join(f'<div><span>{esc(x["label"])}</span><b>{esc(x["value"])}{(" " + esc(x["unit"])) if x.get("unit") else ""}</b></div>' for x in (n.get('numbers') or [])[:6])
+    clim = ''.join(f'<dt>{k}</dt><dd>{esc(v)}</dd>' for k, v in (('这一天', cl.get('season')), ('收成', cl.get('harvest')), ('雨季 / 季风', cl.get('rain')), ('霜', cl.get('frost'))) if v)
     disp = f'<p class="dispute"><b>两说</b>{esc(n["dispute"])}</p>' if n.get('dispute') else ''
-    cl = c.get('climate') or {}
-    clim = ''.join(f'<span>{k}</span><b>{esc(v)}</b>' for k, v in (('这一天', cl.get('season')), ('收成', cl.get('harvest')), ('雨季', cl.get('rain')), ('霜', cl.get('frost'))) if v)
     wasny = n.get('was_new_year') or ''
-    o = n.get('origin') or {}
-    kind = f'<span class="chip a">{esc(f["kindName"])}</span>' if f.get('kindName') else ''
-    return f'''<article class="ncard fade{" contrast" if nid in E.CONTRAST else ""}" id="n-{esc(nid)}" data-node="{esc(nid)}" data-lane="{esc(f["lane"])}">
-<div class="nhd"><span class="ny">{esc(f["date"][5:].replace("-", "/"))}</span><span class="chip">{esc(f["basisName"])}{(" · " + esc(f["basisSub"])) if f["basisSub"] else ""}</span>{kind}<span class="chip">{esc(f["spreadName"])}</span><span>{where}</span>{conf(n.get('confidence'))}</div>
-<h3>{esc(n['name'])}</h3><p class="nobj">{esc(n.get('name_local', ''))}{(' · ' + esc(n.get('region', ''))) if n.get('region') else ''}</p>
-<p class="why">{esc(n.get('why', ''))}</p>
-<div class="nrow"><span>怎么定日</span><b class="k">{esc(n.get('date_rule', ''))}</b><span>压在哪道门槛上</span><b>{esc(n.get('threshold', ''))}</b>{('<span>岁首</span><b>' + esc(wasny) + '</b>') if wasny and not wasny.startswith('否') else ''}</div>
-{ph}
-<details class="fold"><summary>来历、三件事、怎么传开的、数字与来源</summary><p><b>{esc(o.get('year_label', ''))}</b> {esc(o.get('text', ''))}</p><p>{esc(n.get('text', ''))}</p>
-<div class="nrow"><span>请亡灵</span><b>{esc(three.get('dead', '—'))}</b><span>点灯</span><b>{esc(three.get('light', '—'))}</b><span>吃一顿</span><b>{esc(three.get('food', '—'))}</b></div>
-<div class="nrow"><span>传播</span><b>{esc(n.get('spread_text', ''))}</b>{clim}</div>
-{('<ol class="tl">' + tl + '</ol>') if tl else ''}<div class="nnums">{nums}</div>{disp}{srcs(n.get('sources'), n=8)}</details></article>'''
+    ny = ('<dt>岁首</dt><dd>' + esc(fact(nid, 'ny', 'was_new_year', 80)) + '</dd>') if wasny and not wasny.startswith('否') else ''
+    attrs = ' '.join(f'data-g-{lens}="{GROUP_OF[lens].get(nid, "")}"' for lens in LENS)
+    ten = 304 <= f['doy'] <= 313
+    return f'''<article class="lrow{" ct" if f["contrast"] else ""}{" ten" if ten else ""}" id="n-{esc(nid)}" data-id="{esc(nid)}" {attrs}>
+<button type="button" class="lhead" aria-expanded="false" aria-controls="lm-{esc(nid)}">
+<span class="ldate"><b>{esc(f["date"][5:].replace("-", "/"))}</b><small>{wdz(f["date"])}</small></span>
+<span class="lname"><b><i class="lamp{"" if ten else " dim"}"></i>{esc(f["short"])}</b><small>{esc(f["city"])} · {latlabel(lat)} · {esc(f["koppen"])}</small></span>
+<span class="llat" title="纬度：南纬 40° → 北纬 60°"><u></u><i style="left:{pct:.1f}%"></i></span>
+<span class="ldl" title="当天昼长"><span class="bar"><i style="width:{dl / 24 * 100:.1f}%"></i><u></u></span><small>{sun.hm(dl)}</small></span>
+<span class="ltags"><span class="chip">{esc(f["basisName"])}</span><span class="chip a">{esc(f["kindName"])}</span>{'<span class="chip ct">对照</span>' if f["contrast"] else ''}</span>
+{thumb}<span class="lchev" aria-hidden="true"></span></button>
+<div class="lmore" id="lm-{esc(nid)}" role="region" aria-label="{esc(f['short'])} 详情"><div class="lmore-in">
+<p class="lwhy">{esc(n.get('why', ''))}</p>
+<dl class="lfacts"><dt>怎么定日</dt><dd>{esc(fact(nid, 'rule', 'date_rule', 80))}</dd><dt>压在哪道门槛上</dt><dd>{esc(fact(nid, 'threshold', 'threshold', 90))}</dd>{ny}<dt>传播</dt><dd>{esc(spread_line(nid))}</dd></dl>
+{three_tiles(nid)}{wblk}
+<details class="fold"><summary>全文：来历、定日规则、气候口径、时间轴、数字、两说与来源 {conf(n.get('confidence'))}</summary>
+<p><b>{esc(o.get('year_label', ''))}</b> {esc(o.get('text', ''))}</p><p>{esc(n.get('text', ''))}</p>
+<dl class="lfacts"><dt>怎么定日</dt><dd>{esc(n.get('date_rule', ''))}</dd><dt>压在哪道门槛上</dt><dd>{esc(n.get('threshold', ''))}</dd>{('<dt>岁首</dt><dd>' + esc(wasny) + '</dd>') if wasny else ''}<dt>传播</dt><dd>{esc(n.get('spread_text', ''))}</dd>{clim}</dl>
+{('<ol class="tl">' + tl + '</ol>') if tl else ''}{('<div class="nnums">' + nums + '</div>') if nums else ''}{disp}{srcs(n.get('sources'), n=8)}</details>
+</div></div></article>'''
 
-# ---------- 第二章
-def ch_threshold():
-    items = [dict(id=i, name=FEST[i]['short'], date=FEST[i]['date'], basis=FEST[i]['basis'], lane=FEST[i]['lane']) for i in NODES]
-    wheel = figs.wheel_svg(items, size=520)
-    chips = '<div class="lchips" id="lane-chips"><button type="button" data-lane="all" aria-pressed="true">全部</button>' + ''.join(f'<button type="button" data-lane="{lid}" aria-pressed="false">{esc(ln)}</button>' for lid, ln, _ in E.LANES) + '</div>'
-    key = '<div class="lkey"><span><svg width="14" height="14"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>公历固定日</span><span><svg width="14" height="14"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2 1.5"/></svg>跟月亮走</span><span>底色 = 两道门槛：夏末（7 月下旬–9 月中）、冬初（10 月下旬–11 月下旬）</span></div>'
-    left = f'<div class="lanestage fade"><div class="wheelbox">{wheel}</div>{key}{chips}<p class="small" style="margin-top:8px">点年轮上的点跳到卡片；卡片滚过视口中线时年轮上的点一起亮。虚线边框的卡片是反例与对照。</p></div>'
-    cards = ''
-    for lid, ln, ids in E.LANES:
-        sub = {'europe': '从都柏林到罗马：本土的夏末、教会定的 11 月、议会定的 11 月 5 日', 'eastasia': '黄河流域的十月：岁首、授衣、迎冬；日本把收成门槛钉成固定日', 'southasia': '季风退去后的第一个新月，与雨季末最满的河', 'americas': '教会日历搬到两个半球：雨季末的墨西哥高原、春天的安第斯、仲春的悉尼', 'contrast': '同样请亡灵回家，却不在冬天的门槛上'}.get(lid, '')
-        cards += f'<div class="lanehd"><b>{esc(ln)}</b><span>{esc(sub)}</span></div>' + ''.join(node_card(i) for i in ids)
-    return f'<section class="chap" id="threshold"><div class="wide">{chead("threshold")}<div class="lanewrap">{left}<div class="ncards">{cards}</div></div></div></section>'
-
-# ---------- 第三章
-def ch_compare():
-    hd = ('<div class="cmphd" id="cmphd"><button type="button" data-sort="date" aria-pressed="true">节日 · 日期 ↕</button><button type="button" data-sort="lat">纬度 ↕</button><button type="button" data-sort="dl">当天昼长 ↕</button>'
-          '<button type="button" data-sort="koppen">气候带 ↕</button><button type="button" data-sort="kind">门槛 ↕</button><button type="button" data-sort="basis">历法 ↕</button><button type="button" data-sort="spread">传播 ↕</button></div>')
-    rows = []
-    for r in E.COMPARE:
-        f = FEST[r['id']]; lat = f['lat']; pct = (lat - (-40)) / 100.0 * 100; dl = f['dl']; cl = f['climate']
-        rows.append(f'''<div class="cmprow{" ct" if f["contrast"] else ""}" data-date="{f['doy']}" data-lat="{lat}" data-dl="{dl}" data-koppen="{esc(f['koppen'])}" data-kind="{esc(f['kindName'])}" data-basis="{esc(f['basisName'])}" data-spread="{esc(f['spreadName'])}">
-<div class="nm"><b><a href="#n-{esc(r['id'])}" style="color:inherit;text-decoration:none">{esc(f['short'])}</a></b><span>{esc(f['city'])} · {esc(f['date'][5:].replace('-', '/'))}{(' · ' + esc(r['note'])) if r.get('note') else ''}</span></div>
-<div class="lat"><span>{'北纬' if lat >= 0 else '南纬'} {abs(lat):.1f}°</span><div class="sc"><u style="left:40%"></u><i style="left:{pct:.1f}%"></i></div></div>
-<div class="dl"><span>{sun.hm(dl)}</span><div class="bar"><u></u><i style="width:{dl/24*100:.1f}%"></i></div></div>
-<div class="kop">{esc(f['koppen'])}<small>{esc(f['koppen_note'] or '')}</small></div>
-<div class="sea">{esc(r['season'])}<br><span class="chip a" style="margin-top:3px">{esc(f['kindName'])}</span></div>
-<div><span class="chip">{esc(f['basisName'])}</span><br><small style="color:var(--muted)">{esc(f['basisSub'])}</small></div>
-<div><span class="chip">{esc(f['spreadName'])}</span><br><button type="button" class="cmpbtn" style="margin-top:4px">详情</button></div>
-<div class="cmpmore"><div><b>收成 / 农事</b>{esc(cl.get('harvest') or '—')}</div><div><b>雨季 / 季风 / 霜</b>{esc((cl.get('rain') or '—') + ('；霜：' + cl['frost'] if cl.get('frost') else ''))}</div><div><b>三件事</b>亡灵：{esc(f['three'].get('dead') or '—')}<br>灯：{esc(f['three'].get('light') or '—')}<br>吃：{esc(f['three'].get('food') or '—')}</div></div>
-</div>''')
-    same = ''.join(f'<li><b>{esc(k)}</b><span class="waf" aria-label="十九行里 {n} 行">' + ''.join('<i' + (' class="f"' if j < n else '') + '></i>' for j in range(19)) + f'<em>{n} / 19</em></span>{esc(v)}</li>' for k, n, v in E.SAME)
-    diff = ''.join(f'<li><b>{esc(k)}</b>{esc(v)}<span class="ev">证据：' + ' '.join(f'<a href="#n-{esc(i)}">{esc(FEST[i]["short"])}</a>' for i in ids) + '</span></li>' for k, v, ids in E.DIFF)
-    return f'''<section class="chap" id="compare"><div class="wide">{chead("compare")}
-<div class="cmpwrap fade"><div class="cmpbox">{hd}<div id="cmpbody">{''.join(rows)}</div></div></div>
-<p class="small" style="margin-top:8px">昼长按核心城市纬度与 2026 年日期算；纬度刻度从南纬 40° 到北纬 60°，竖线是赤道；柯本类型按 Beck 等 2018 的 1 km 数据逐城读取；「门槛」是编辑按各路气象与农业口径归的类。最后三行是对照组。</p>
-<div class="sdgrid"><div class="sdcard fade"><h3>同：五件事</h3><ol>{same}</ol></div><div class="sdcard diff fade"><h3>异：四根轴</h3><ol>{diff}</ol></div></div>
+def ch_lamps():
+    tabs = ''.join(f'<button type="button" role="tab" data-lens="{k}" aria-selected="{"true" if k == "date" else "false"}">{esc(t)}</button>' for k, t in E.LENSES)
+    body = ''
+    for g in LENS['date']:
+        body += f'<div class="lgh" data-g="{g["k"]}"><b>{esc(g["label"])}</b><small>{len(g["ids"])} 行</small></div>' + ''.join(lamp_row(i) for i in g['ids'])
+    return f'''<section class="chap" id="lamps"><div class="wide">{chead("lamps")}
+<div class="lensbar fade"><span class="lensk">按</span><div class="lens" id="lens" role="tablist" aria-label="灯谱的透镜">{tabs}</div><span class="lensnote" id="lensnote">十九行 · 点一行展开</span></div>
+<div class="lcols" aria-hidden="true"><span>日期</span><span>节日 · 核心城市</span><span>纬度 南 40° → 北 60°</span><span>当天昼长</span><span>历法 · 门槛</span></div>
+<div class="lgrid" id="lgrid">{body}</div>
+<p class="small lfoot">昼长按核心城市纬度与 2026 年日期算；柯本类型按 Beck 等 2018 的 1 km 数据逐城读取；「门槛」是编辑按各路气象与农业口径归的类。标着「对照」、底纹带斜线的三行是对照：悉尼的万圣节在仲春，中元与 Pchum Ben 在另一道门槛上。</p>
 </div></section>'''
 
-# ---------- 第四章
-def ch_three():
-    cells = ['<div class="th"></div>'] + [f'<div class="th">{k}<b>{esc(t)}</b></div>' for k, t in zip(('一', '二', '三'), [t for _, t in E.THREE_COLS])]
-    for rid in E.THREE_ROWS:
-        r = E.THREE[rid]
-        cells.append(f'<div class="rh"><b>{esc(r["name"])}</b><span>{esc(r["city"])}</span></div>')
-        for key, _ in E.THREE_COLS:
-            txt, img = r[key]; im = IM.get(img) if img else None
-            fig = f'<figure><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"></figure><small>{esc(im["subject"][:60])}{"…" if len(im["subject"]) > 60 else ""} · {esc(im["license_short"])}</small>' if im else ''
-            cells.append(f'<div class="tcell">{fig}<p{" class=none" if txt.startswith(("不祭", "篝火夜不", "排灯节不")) else ""}>{esc(txt)}</p></div>')
-    return f'<section class="chap" id="three"><div class="wide">{chead("three")}<div class="three fade">{"".join(cells)}</div><p class="small" style="margin-top:10px">每格的来历与出处在第二章对应的卡片里；照片的作者与许可见卷末署名表。没有合规照片的格子不放图。</p></div></section>'
+# ---------- 门槛：年轮 + 同与异
+def ch_threshold():
+    items = [dict(id=i, name=FEST[i]['short'], date=FEST[i]['date'], basis=FEST[i]['basis'], lane=FEST[i]['lane']) for i in ORDER]
+    wheel = figs.wheel_svg(items, size=520, center=('年轮', '顶上 = 公历 1/1'), anchors=E.ANCHORS)
+    anc = ''.join(f'<button type="button" data-k="{k}" title="{esc(desc)}" aria-pressed="{"true" if k == 0 else "false"}">{esc(short)}</button>' for k, (short, desc, _d) in enumerate(E.ANCHORS))
+    same = ''.join(f'<li><b>{esc(k)}</b><span class="waf" aria-label="十九行里 {n} 行">' + ''.join('<i' + (' class="f"' if j < n else '') + '></i>' for j in range(19)) + f'<em>{n} / 19</em></span><span class="sdt">{esc(v)}</span></li>' for k, n, v in E.SAME)
+    diff = ''.join(f'<li><b>{esc(k)}</b><span class="sdt">{esc(v)}</span><span class="ev">' + ''.join(f'<button type="button" class="evb" data-open="{esc(i)}" data-lens="{esc(lens)}">{esc(FEST[i]["short"])}</button>' for i in ids) + f'<button type="button" class="evb all" data-lens="{esc(lens)}">按{esc(dict(E.LENSES)[lens])}看灯谱 →</button></span></li>' for k, v, ids, lens in E.DIFF)
+    return f'''<section class="chap" id="threshold"><div class="wide">{chead("threshold")}
+<div class="thwrap"><div class="wheelcol fade">
+<div class="wheelbox" id="wheelbox" role="slider" tabindex="0" aria-label="年轮：拖动旋转，方向键切换岁首" aria-valuetext="顶上 = 公历 1/1">{wheel}</div>
+<div class="anchors" id="anchors" role="group" aria-label="把谁的岁首转到顶上"><span>岁首</span>{anc}</div>
+<p class="small">拖住年轮转一转，松手会停在最近的岁首；点一个节日打开它在灯谱里的那一行。底色是两道门槛：夏末（7 月下旬–9 月中）与冬初（10 月下旬–11 月下旬）；虚线圈 = 跟月亮走，实线圈 = 公历固定日与节气（立冬）；圈上的短刻线是各家的岁首，顶上的小三角指着当前的岁首。</p>
+</div><div class="sdcol">
+<div class="sdcard fade"><h3>同：五条</h3><ol>{same}</ol></div>
+<div class="sdcard diff fade"><h3>异：四根轴</h3><ol>{diff}</ol></div>
+</div></div></div></section>'''
 
-# ---------- 第五章
-def ch_walls():
-    items = [dict(id=i, name=FEST[i]['short'], date=FEST[i]['date'], basis=FEST[i]['basis'], lane=FEST[i]['lane']) for i in NODES]
-    wheel2 = figs.wheel_svg(items, size=520, center=('年轮', '顶上 = 公历 1/1'), gid='wheel-g2', cls='wheel')
-    body = {'lat': demos.wall_lat(), 'wheel': demos.wall_wheel(wheel2)}
-    out = ''.join(f'<article class="wall fade" id="wall-{w["id"]}"><div class="hd"><b>{esc(w["title"])}</b><span class="f">{esc(w["formula"])}</span></div>{body[w["id"]]}<details class="fold"><summary>这面墙是怎么回事</summary><p>{esc(w["text"])}</p></details></article>' for w in E.WALLS)
-    return f'<section class="chap band" id="walls"><div class="wide">{chead("walls")}<div class="walls">{out}</div></div></section>'
+# ---------- 动手
+def ch_hands():
+    W = E.WALLS[0]; T = E.TOOLS[0]
+    return f'''<section class="chap" id="hands"><div class="wide">{chead("hands")}<div class="hands">
+<article class="wall fade" id="wall-lat"><div class="hd"><b>{esc(W["title"])}</b><span class="f">{esc(W["formula"])}</span></div>{demos.wall_lat()}<details class="fold"><summary>这面墙是怎么算的</summary><p>{esc(W["text"])}</p></details></article>
+<div class="tool fade" id="tool-dates"><div class="hd"><b>{esc(T["title"])}</b><p>{esc(T["lede"])}</p></div>{demos.tool_dates()}</div>
+</div></div></section>'''
 
-# ---------- 第六章
-def ch_tools():
-    opts = ''.join(f'<option value="{i}">{esc(FEST[i]["short"])} · {esc(FEST[i]["city"])}</option>' for i in ORDER)
-    opts3 = ''.join(f'<option value="{i}">{esc(FEST[i]["short"])} · {esc(FEST[i]["city"])}</option>' for i in E.WATCH)
-    T = {t['id']: t for t in E.TOOLS}
-    def tool(tid, body, full=False): return f'<div class="tool fade{" full" if full else ""}"><div class="hd"><b>{esc(T[tid]["title"])}</b><p>{esc(T[tid]["lede"])}</p></div>{body}</div>'
-    return f'<section class="chap" id="tools"><div class="wide">{chead("tools")}<div class="tools">{tool("dates", demos.tool_dates(), True)}{tool("pair", demos.tool_pair(opts))}{tool("list", demos.tool_list(opts3))}</div></div></section>'
-
-# ---------- 第七章
+# ---------- 卷末：规则文件 + 折叠
 def find_src(nid, pat):
     pool = Dd['cities'][0].get('koppen_source') and [Dd['cities'][0]['koppen_source']] if nid == 'cities' else NODES.get(nid, {}).get('sources', [])
     for s in pool or []:
         if isinstance(s, dict) and re.search(pat, (s.get('title') or '') + ' ' + (s.get('url') or ''), re.I): return s
     return None
-def ch_rules():
+def rules_block():
     li = ''
     for k, (y, t, d, (nid, pat)) in enumerate(E.RULES):
         s = find_src(nid, pat)
-        li += (f'<article class="rcard fade" style="--i:{k}"><span class="ry">{esc(y)}</span><b>{esc(t)}</b><p>{esc(d)}</p>'
+        li += (f'<article class="rcard fade"><span class="ry">{esc(y)}</span><b>{esc(t)}</b><p>{esc(d)}</p>'
                + (f'<a class="rgo" href="{esc(s["url"])}" target="_blank" rel="noopener">原文 / 入口 ↗</a>' if s and s.get('url') else '') + '</article>')
-    return f'<section class="chap" id="rules"><div class="wide">{chead("rules")}<div class="rgrid">{li}</div></div></section>'
-
-# ---------- 卷末
+    return f'<div class="rgrid">{li}</div>'
 def refs_block():
     groups = [('欧洲与南半球（A 路）', [s for n in A['nodes'] for s in n.get('sources', [])] + [s for f in A.get('facts', []) for s in f.get('sources', [])]),
               ('中国与日本（B 路）', [s for n in B['nodes'] for s in n.get('sources', [])] + [s for f in B.get('facts', []) for s in f.get('sources', [])]),
@@ -246,8 +266,9 @@ def credits():
 def endm():
     M = E.METHOD
     return f'''<footer class="endm" id="end"><div class="wide">
-<h2 class="fade">卷末 · 参考、方法与署名</h2>
-<p class="small fade">都折叠着，点开看。</p>
+<h2 class="fade">卷末 · 规则、参考与署名</h2>
+<h3 class="endh fade">规则是怎么写的<small>页面上的日子和数字从哪来：十一份文件</small></h3>
+{rules_block()}
 <details class="fold big fade"><summary><h3>参考（按研究路分组）</h3></summary><div class="refs">{refs_block()}</div></details>
 <details class="fold big fade"><summary><h3>方法</h3></summary><div class="method"><ul>{''.join(f'<li>{esc(p)}</li>' for p in M['process'])}</ul></div></details>
 <details class="fold big fade"><summary><h3>仍待核</h3></summary><div class="method"><ul>{''.join(f'<li>{esc(t)}</li>' for t in M['todo'])}</ul></div></details>
@@ -262,19 +283,39 @@ def data():
     for r in E.COMPARE:
         f = FEST[r['id']]
         if f['doy'] < 274: continue
-        field.append(dict(id=r['id'], node=r['id'], name=f['short'] + ('（' + f['city'] + '）' if r['id'] == 'halloween' else ''), city=f['city'], lat=f['lat'], date=f['date'], rule=f['rule'][:40]))
-    field.append(dict(id='thanksgiving', node='martinmas', name='感恩节', city='华盛顿', lat=38.9, date='2026-11-26', rule='11 月第四个周四'))
+        field.append(dict(id=r['id'], node=r['id'], name=f['short'] + ('（' + f['city'] + '）' if r['id'] == 'halloween' else ''), city=f['city'], lat=f['lat'], date=f['date'], rule=E.RULE_SHORT.get(r['id']) or brief(f['rule'], 40)))
+    field.append(dict(id='thanksgiving', node='', name='感恩节', city='华盛顿', lat=38.9, date='2026-11-26', rule='11 月第四个周四'))
     cities = {cid: dict(name_zh=c['name_zh'], lat=c['lat'], lon=c['lon'], koppen=c.get('koppen', ''), tz=c['tz']) for cid, c in CITIES.items()}
-    return {'field': field, 'stage': stage.data(STAGE_CITIES), 'cities': cities, 'fest': FEST, 'order': ORDER, 'tables': TABLES, 'lunar': LUNAR, 'watch': E.WATCH}
+    fest = {i: {k: FEST[i][k] for k in ('id', 'short', 'name', 'city', 'lat', 'date', 'doy', 'dl', 'koppen', 'season', 'kindName', 'basisName')} for i in ORDER}
+    lens = {k: [dict(k=g['k'], label=g['label'], ids=g['ids']) for g in v] for k, v in LENS.items()}
+    anchors = [dict(short=a, desc=b, doy=d) for a, b, d in E.ANCHORS]
+    return {'field': field, 'stage': stage.data(STAGE_CITIES, IM, FEST), 'cities': cities, 'fest': fest, 'order': ORDER, 'lens': lens, 'lensName': dict(E.LENSES), 'anchors': anchors, 'tables': TABLES, 'lunar': LUNAR}
 
 LIGHT = ('--bg:#ECEDF0;--surface:#F7F7F9;--surface-2:#E2E4EA;--ink:#1C2030;--ink-2:#48506A;--muted:#7A8094;--line:#C9CDD8;--line-2:#DCDFE7;--grid:rgba(28,32,48,.06);'
-         '--accent:#D9661F;--accent-2:#F2A33A;--accent-ink:#B4511A;--wash:rgba(217,102,31,.10);--wash-2:rgba(217,102,31,.2);color-scheme:light;')
+         '--accent:#D9661F;--accent-2:#F2A33A;--accent-ink:#B4511A;--wash:rgba(217,102,31,.10);--wash-2:rgba(217,102,31,.2);--nav-glass:rgba(236,237,240,.74);--glass-line:rgba(28,32,48,.12);color-scheme:light;')
+
+def audit():
+    """文案里的计数与数据对账：同的五个数、门槛透镜、年轮冬初段、这十天的行数、长夜。对不上就报出来（不拦构建）。"""
+    same = {k: n for k, n, _ in E.SAME}; ids = ORDER; out = []
+    for col, key in (('dead', '亡灵'), ('light', '灯火'), ('food', '吃一顿')):
+        n = sum(1 for i in ids if not E.TILES[i][col][2]); out.append((key, n, same[key]))
+    out.append(('门槛', sum(1 for i in ids if FEST[i]['kind'] not in ('none', 'religion', 'sowing')), same['门槛']))
+    north = [i for i in ids if FEST[i]['lat'] >= 50]
+    out.append(('长夜', sum(1 for i in north if FEST[i]['dl'] < 10), same['长夜']))
+    out.append(('长夜·南边跌破 10 小时的只有下元', [i for i in ids if FEST[i]['lat'] < 50 and FEST[i]['dl'] < 10], ['xiayuan']))
+    out.append(('年轮冬初段 16 行', sum(1 for i in ids if 298 <= FEST[i]['doy'] <= 331), 16))
+    out.append(('这十天 11 行', sum(1 for i in ids if 304 <= FEST[i]['doy'] <= 313), 11))
+    out.append(('十九行', len(ids), 19))
+    bad = [x for x in out if x[1] != x[2]]
+    for k, got, want in out: print(f'{"ok  " if got == want else "DIFF"} audit {k}: {got} / 文案 {want}')
+    return bad
 
 def main():
+    audit()
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     app = open(os.path.join(HERE, 'calendars.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'app.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'demos.js'), encoding='utf-8').read()
     light = ('@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){' + LIGHT + '}}\n:root[data-theme="light"]{' + LIGHT + '}')
-    body = hero() + cnav() + '<main>' + ch_days() + ch_now() + ch_threshold() + ch_compare() + ch_three() + ch_walls() + ch_tools() + ch_rules() + '</main>' + endm()
+    body = hero() + cnav() + '<main>' + ch_days() + ch_lamps() + ch_threshold() + ch_hands() + '</main>' + endm()
     page = (tpl.replace('{{TITLE}}', esc(E.META['title'])).replace('{{DESCRIPTION}}', esc(E.META['desc'])).replace('{{LIGHT_BLOCKS}}', light)
             .replace('{{BODY}}', body).replace('{{DATA_JSON}}', json.dumps(data(), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('{{APP_JS}}', app))
     page, report = fixes.apply(page)

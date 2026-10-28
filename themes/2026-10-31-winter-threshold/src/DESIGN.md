@@ -59,5 +59,17 @@ typography:
 ## 6. 交互母题 Interaction motif
 「点灯」：全页的交互都是让一盏灯亮起来看它在哪——滚到哪一天，那天的城就亮；卡片滚过中线，年轮上那个点就亮；拖纬度，那条纬线附近的节日就亮；转年轮，别家的岁首转到顶上；选两个节日，并排看同与异。亮的永远是焰色，别的都退成灰。
 
+## 6b. v2 改版（2026-10-28，天杰选「连结构一起重排」）
+依据：apple-design（Emil Kowalski，WWDC Designing Fluid Interfaces 等）+ UI Skills 目录里的 fluid-design、accessible-animation。皮肤不变，结构与手感重做，正文字数砍约一半。
+- 结构：卷首「夜的田野」（可拖）→ 0 这十天（全屏时间轴）→ 1 灯谱（十九个节日一张表）→ 2 门槛（可拖转年轮 + 同与异）→ 3 动手（纬度墙 + 算日子）→ 卷末（规则文件、参考、方法、待核、署名）。原「这一周」「三件事」「同与异对照」「看点清单」不再单列：入口事实进序章卡，三件事与看点进灯谱的展开详情。
+- 交互母题「拖动时间」：田野、序章刻度尺、纬度墙都是一条可拖的竖线；按下即响应（pointerdown 就移到指针处），之后 1:1 跟手（setPointerCapture），松手按速度投影 `x + (v/1000)·d/(1−d)`（d = 0.998）再吸附到最近的节日日子；触屏用 `touch-action: pan-y`，竖向滑动仍交给页面滚动。
+- 弹簧：自写的原生 JS 弹簧（Apple 的两参数：阻尼比 + response；k = (2π/T)²，c = 4πζ/T，1/240 s 子步积分），永远从当前值出发、可被下一次输入打断、松手时继承手指速度。默认临界阻尼（ζ = 1，T = 0.35–0.4 s）；只有「甩」过的年轮用 ζ = 0.8、T = 0.4 s（Apple 的旋转值）。
+- 序章：整段固定（sticky），滚动进度与刻度尺是同一个量 t（10/31 → 11/11，按天连续）；镜头在相邻两步的取景之间按 t 连续插值，灯在有节的那天亮；拖刻度尺会同步滚动位置，两者不会打架。卡片与昼带是半透明材质浮在地图上。
+- 灯谱：一个「透镜」切换（日期 / 纬度 / 门槛 / 历法 / 传播）代替多排筛选器；切换时行按组重排，用 FLIP 补间保住位置记忆；行内展开从点击处向下长出、原路收回（grid-template-rows 0fr → 1fr）。门槛章「异：四根轴」的证据直接把灯谱切到对应透镜并展开那一行。
+- 年轮：直接用手拖转，松手按角速度投影吸附到最近的「岁首」（公历 1/1、春节、秦十月朔、古吉拉特新年、尼泊尔历元旦、宋干、Samhain 之说）；转动时外圈标签淡出，停稳后按新角度重排再淡入；点（不拖）一个节日打开它在灯谱里的行。
+- 材质：吸顶导航与浮层用 backdrop-filter 半透明 + 导航下缘渐隐，代替 1px 硬线；`prefers-reduced-transparency` 改实底。
+- 减少动效（分层，不一刀切）：第一层去掉——序章的连续镜头（改成按步跳切 + 150 ms 淡入）、灯的呼吸、年轮的甩动惯性（直接吸附）、图片 Ken Burns；第二层缩短——入场淡入；第三层保留——颜色、透明度与焦点环。`prefers-contrast: more` 加实线边框。
+- 键盘：田野、刻度尺、年轮都是 role="slider"，方向键按天 / 按岁首移动，Home / End 到两端。
+
 ## 7. Agent Prompt Guide
 Build a long-form, scroll-driven editorial page in the "night satellite image with a lamplit field notebook" mood: default dark (#0B0E17) with cream serif type (#F1EADB) and a single lamp-flame accent (#F2A33A) reserved for lit cities, the current chapter, selected festivals and buttons; a separate night→indigo→pale-day ramp (#070A12 → #2B3458 → #C9D3E6) encodes one quantity only, the fraction of the day that is night. Light mode = grey-white paper (#ECEDF0) with a burnt-orange accent (#D9661F); the hero field and the prologue stage stay night in both modes. Fonts fixed: Noto Serif SC headings, Noto Sans SC body, tabular numerals. No gradients as decoration, no glass, no shadows except lamp glow, no second accent, no purple. Program-drawn graphics only for the night field, the world map camera, the year wheel with fanned-out labels, day-length tracks and waffle strips; real photos keep original colour. Every interactive element is "light a lamp and see where it sits", with honest scale.

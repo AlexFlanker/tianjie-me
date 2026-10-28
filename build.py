@@ -165,6 +165,16 @@ if person:
     open(os.path.join(OUT, 'llms.txt'), 'w', encoding='utf-8').write('\n'.join(llms))
     print(f"about: /about/ + llms.txt + Person JSON-LD")
 
+# ---------- /how/：这些题是怎么做出来的 ----------
+HOW_PATH = os.path.join(HUB, 'how.html')
+if os.path.exists(HOW_PATH):
+    how = (open(HOW_PATH, encoding='utf-8').read().replace('{{SITE_NAME}}', esc(site['name'])).replace('{{BASE}}', BASE)
+           .replace('{{COUNT}}', str(len(themes))).replace('{{YEAR}}', str(dt.date.today().year))
+           .replace('{{OG_IMAGE}}', f"{BASE}{latest['url']}cover.png" if latest and latest['has_cover'] else ''))
+    os.makedirs(os.path.join(OUT, 'how'), exist_ok=True)
+    open(os.path.join(OUT, 'how', 'index.html'), 'w', encoding='utf-8').write(how)
+    print("how: /how/")
+
 # ---------- feed / sitemap / robots / 404 / headers / redirects ----------
 def rfc3339(s): return s + 'T08:00:00-07:00'
 entries = ''.join(f"""  <entry>
@@ -190,7 +200,8 @@ open(os.path.join(OUT, 'feed.xml'), 'w', encoding='utf-8').write(feed)
 urls = [f"  <url><loc>{BASE}/</loc><lastmod>{latest['date'] if latest else dt.date.today()}</lastmod><changefreq>weekly</changefreq></url>"] + \
        [f"  <url><loc>{BASE}{m['url']}</loc><lastmod>{m['date']}</lastmod></url>" for m in themes] + \
        [f"  <url><loc>{BASE}{p['url']}</loc></url>" for p in site.get('projects', []) if p['url'].startswith('/')] + \
-       ([f"  <url><loc>{BASE}/about/</loc><lastmod>{updated}</lastmod></url>"] if person else [])
+       ([f"  <url><loc>{BASE}/about/</loc><lastmod>{updated}</lastmod></url>"] if person else []) + \
+       ([f"  <url><loc>{BASE}/how/</loc><lastmod>{latest['date'] if latest else dt.date.today()}</lastmod></url>"] if os.path.exists(HOW_PATH) else [])
 open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(urls) + '\n</urlset>\n')
 open(os.path.join(OUT, 'robots.txt'), 'w').write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
 for f in ('_headers', '_redirects', '404.html'):

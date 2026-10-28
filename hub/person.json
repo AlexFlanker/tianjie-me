@@ -19,22 +19,67 @@
     "朝着湾区平台 / 集成 / agent 基础设施方向的 Senior / Staff 岗位准备。"
   ],
   "facts": [
-    {"k": "Role", "v": "Senior Software Engineer, hireEZ (Apr 2021 – present); tech lead of the ATS-Squad"},
-    {"k": "Previously", "v": "Backend Software Engineer, CrossCircles Inc. (Oct 2018 – Apr 2021)"},
-    {"k": "Education", "v": "M.Eng. Electrical & Computer Engineering, Cornell University (2017); B.Eng. Measurement & Control Technology and Instrument, Northeastern University at Qinhuangdao (2016)"},
-    {"k": "Certification", "v": "Claude Certified Architect – Professional (Anthropic, 2026)"},
-    {"k": "Based in", "v": "San Jose, California"}
+    {
+      "k": "Role",
+      "v": "Senior Software Engineer, hireEZ (Apr 2021 – present); tech lead of the ATS-Squad"
+    },
+    {
+      "k": "Previously",
+      "v": "Backend Software Engineer, CrossCircles Inc. (Oct 2018 – Apr 2021)"
+    },
+    {
+      "k": "Education",
+      "v": "M.Eng. Electrical & Computer Engineering, Cornell University (2017); B.Eng. Measurement & Control Technology and Instrument, Northeastern University at Qinhuangdao (2016)"
+    },
+    {
+      "k": "Certification",
+      "v": "Claude Certified Architect – Professional (Anthropic, 2026)"
+    },
+    {
+      "k": "Based in",
+      "v": "San Jose, California"
+    }
   ],
   "evidence": [
-    {"title": "一周一题 · six weeks, six pages", "url": "/#archive", "desc": "Each page is researched, written, checked and built with Claude through a fixed pipeline; sources are listed on every page."},
-    {"title": "合读 · a podcast of books read together", "url": "/listen/", "desc": "Clean Architecture, AI Engineering and A Brief History of Intelligence, read as one argument."},
-    {"title": "Alcatraz photo tour", "url": "https://phototour.tianjie.me/", "desc": "A 3D shooting-route map with on-site audio guidance in four languages."},
-    {"title": "GitHub · AlexFlanker", "url": "https://github.com/AlexFlanker", "desc": "This site's repo and the rest."}
+    {
+      "title": "一周一题 · six weeks, six pages",
+      "url": "/#archive",
+      "desc": "Each page is researched, written, checked and built with Claude through a fixed pipeline; sources are listed on every page."
+    },
+    {
+      "title": "How the pages are made",
+      "url": "/how/",
+      "desc": "The weekly pipeline: a shared research brief, four research workers with search budgets and confidence levels, an independent checker, and a human who says go."
+    },
+    {
+      "title": "合读 · a podcast of books read together",
+      "url": "/listen/",
+      "desc": "Clean Architecture, AI Engineering and A Brief History of Intelligence, read as one argument."
+    },
+    {
+      "title": "Alcatraz photo tour",
+      "url": "https://phototour.tianjie.me/",
+      "desc": "A 3D shooting-route map with on-site audio guidance in four languages."
+    },
+    {
+      "title": "GitHub · AlexFlanker",
+      "url": "https://github.com/AlexFlanker",
+      "desc": "This site's repo and the rest."
+    }
   ],
   "links": [
-    {"label": "GitHub", "url": "https://github.com/AlexFlanker"},
-    {"label": "LinkedIn", "url": "https://www.linkedin.com/in/tianjiesun/"},
-    {"label": "RSS", "url": "/feed.xml"}
+    {
+      "label": "GitHub",
+      "url": "https://github.com/AlexFlanker"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tianjiesun/"
+    },
+    {
+      "label": "RSS",
+      "url": "/feed.xml"
+    }
   ],
   "contact_note": "The fastest way to reach me is LinkedIn.",
   "contact_note_zh": "找我最快的方式是 LinkedIn。"

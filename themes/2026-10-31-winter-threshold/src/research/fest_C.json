@@ -1,0 +1,1546 @@
+{
+  "route": "C",
+  "nodes": [
+    {
+      "id": "diwali",
+      "name": "排灯节 Diwali / Deepavali",
+      "name_local": "दीपावली Dīpāvalī / Diwali / தீபாவளி Deepavali",
+      "lane": "india",
+      "region": "北印度（德里）、古吉拉特（艾哈迈达巴德）→ 全印度与尼泊尔 → 海外印裔社区",
+      "city": {
+        "name": "德里",
+        "lat": 28.61,
+        "lon": 77.21,
+        "elev_m": 216,
+        "koppen": "BSh / Cwa 交界",
+        "koppen_note": "半干旱草原与季风型湿润亚热带的交界：Beck 2018 图按经纬度读出 BSh，维基城市分类表作 Cwa（bordering on BSh）；1991–2020 年 Safdarjung 站年降水 762.3 mm（IMD 常年值）、冬干夏雨。艾哈迈达巴德为 BSh（与 Aw 交界）。",
+        "climate": {
+          "season": "季风撤退后的旱季之初：印度气象局常年口径，西南季风 9/17 自西拉贾斯坦开始撤退，9/25 撤出新德里，10/15 撤出全国；排灯节 2015–2027 年落在 10/19–11/14 之间，即全国撤完后几天到四周余。德里 10 月常年降水约 13 mm、11 月约 5 mm，昼长已从夏至的 14.0 小时缩到 11/8 的约 10.9 小时。",
+          "harvest": "kharif（季风季）作物收获期：FAO GIEWS 2026-02 简报称主季 kharif 稻（约占年产八成）至 2026 年 1 月收完、kharif 玉米 11 月收，2025 年 kharif 稻创纪录 1.875 亿吨；棉花亦为 kharif 作物。",
+          "rain": "印度气象局：西南季风 6–9 月，新德里常年登陆 6/27、撤退 9/25（旧口径 6/23、9/22）；南印度东北季风随后登场（2025 年 10/16 与全国撤完同日）。",
+          "frost": "无常年初霜口径：德里 11 月均温约 21 ℃，初霜不是这一门槛的变量。",
+          "sources": [
+            {
+              "title": "印度气象局（IMD）新闻稿：西南季风登陆与撤退常年日期修订（2020 年，登陆用 1961–2019、撤退用 1971–2019 资料，2020-06-01 起启用）",
+              "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf",
+              "note": "官方"
+            },
+            {
+              "title": "Business Standard 2025-10-16：Southwest monsoon withdraws from India, northeast rains set in — IMD（撤完常年日 10/15；2025 年 10/16 撤完，同日东北季风在泰米尔纳德登场）",
+              "url": "https://www.business-standard.com/india-news/southwest-monsoon-withdraws-from-india-northeast-rains-set-in-imd-125101600525_1.html",
+              "note": "二手转述官方"
+            },
+            {
+              "title": "FAO GIEWS 印度国别简报（2026-02-13）：主季 kharif 稻约占年产八成、至 2026 年 1 月收完；kharif 玉米 11 月收；2025 年 6–9 月季风雨量平均至偏多；kharif 稻创纪录 1.875 亿吨",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=IND",
+              "note": "官方"
+            },
+            {
+              "title": "climate-zone.com Delhi（Köppen Cwa；1991–2020 年 Safdarjung 站常年值：10 月均温约 26 ℃、降水约 13 mm，11 月约 21 ℃、约 5 mm，年降水约 840 mm（IMD 常年表为 762.3 mm）；原始日值来自 NOAA 全球站网）",
+              "url": "https://www.climate-zone.com/climate/in/delhi",
+              "note": "二手整理气象站资料"
+            },
+            {
+              "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+              "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+              "note": "维基，辅助"
+            },
+            {
+              "title": "昼长为按太阳赤纬公式的几何计算值（日心，天顶距 90.833°、与第三章同一口径）：德里 11/8 约 10.9 小时、夏至 14.0 小时；加德满都 11/8 约 10.9 小时；素可泰 11/24 约 11.3 小时、夏至 13.1；金边 10/10 约 11.9 小时、夏至 12.8",
+              "url": "",
+              "note": "本路计算"
+            }
+          ]
+        }
+      },
+      "date_rule": "amanta 历阿湿缚庾阇月（Ashvina）末的朔日 amavasya（purnimanta 历叫迦底迦月 Kartika 的 amavasya）；以日落后 pradosh 时段内 amavasya 是否当值定公历日：若相邻两日的 pradosh 都含 amavasya，Dharmasindhu 主张取后一日，但后一日的 amavasya 须覆盖 pradosh 的大部——2024、2025 年官方假日表与多数北印度历书因此都取了前一日；孟加拉的 Kali Puja 改以午夜 nishith 为准。印度中央政府假日表每年公布「Diwali (Deepavali)」一日并附 Saka 历日期。",
+      "date_2026": "2026-11-08",
+      "date_range": "10/19 – 11/14（2015–2027 年官方假日表的最早与最晚：2017-10-19、2020-11-14）",
+      "calendar_basis": "lunisolar-hindu",
+      "was_new_year": "是（区域性）：古吉拉特以排灯节次日——迦底迦月白分初一（Bestu Varas / Nutan Varsh）——为维克拉姆历（Vikram Samvat）新年，商人在排灯节当晚于吉祥天女前开新账本（Chopda Pujan）；北印度多数地区不作岁首。",
+      "origin": {
+        "year_label": "7 世纪戒日王《龙喜记》「Dīpapratipadotsava」→ 7–10 世纪《莲花往世书》《室建陀往世书》→ 11 世纪比鲁尼记「迦底迦月新月日」",
+        "text": "7 世纪戒日王的梵剧《龙喜记》已称它「灯·初一·节」，7–10 世纪的《莲花往世书》《室建陀往世书》记有灯祭，11 世纪比鲁尼写它在「迦底迦月新月之日」。主线是迎吉祥天女与罗摩归来（《罗摩衍那》传统）；耆那教同日纪念大雄涅槃，锡克教过 Bandi Chhor Divas，孟加拉改祭迦梨女神。"
+      },
+      "threshold": "钉在季风退去后的迦底迦月朔（多数年份即撤退后的第一个新月）：印度气象局常年口径，西南季风 9/25 撤出德里、10/15 撤出全国，排灯节 2015–2027 年都落在 10/19–11/14；kharif 稻谷、玉米正在收（GIEWS），雨停天晴，德里昼长 11/8 约 10.9 小时。灯点在最暗的无月夜，账本在收成变现时翻新。",
+      "three": {
+        "dead": "排灯节本身不是祭祖节：五天里与死亡相关的只有第一天为阎摩点的 Yama Deepam 和第二天「那罗迦十四」（黑天诛那罗迦）；请亡灵回家的主题在尼泊尔 Tihar 的乌鸦日（乌鸦是阎摩使者）更明显。",
+        "light": "家家在门窗、庭院点陶土油灯 diya（也用蜡烛、灯笼、电灯串），夜里放烟花；灯点在迦底迦月 amavasya——一年里最暗的夜之一。",
+        "food": "甜食 mithai 与家宴是主项：互赠甜食、干果；古吉拉特与北印度的 Annakut（「食物山」）在次日的牛增山祭上把菜肴堆成山供神。"
+      },
+      "spread": "native",
+      "spread_text": "本土长出的季风—收成节，先随印度教、耆那、锡克三种日历铺满南亚，再随 19–20 世纪的契约劳工与移民到海外印裔社区；搬到南半球或温带北美后它落在春末或初冬，脱离了「季风刚退、稻谷正收」的门槛，日期仍由月相规则定。",
+      "timeline": [
+        {
+          "year": 650,
+          "year_label": "7 世纪",
+          "label": "《龙喜记》",
+          "text": "戒日王的梵剧称此节为 Dīpapratipadotsava（灯·初一·节）。",
+          "sources": [
+            {
+              "title": "Wikipedia: Diwali（引 Pintchman 2005、Bahadur 2006、Jones 2011、Long 2009、Dundas 2002、Grewal 1998、McDermott 2011、Coogan 2003、Melton 2011、Sachau 译 Al-Biruni 等）",
+              "url": "https://en.wikipedia.org/wiki/Diwali",
+              "note": "维基，辅助"
+            }
+          ]
+        },
+        {
+          "year": 1030,
+          "year_label": "约 1030 年",
+          "label": "比鲁尼记载",
+          "text": "比鲁尼《印度志》记 Deepavali 在「迦底迦月新月之日」。",
+          "sources": [
+            {
+              "title": "Wikipedia: Diwali（引 Pintchman 2005、Bahadur 2006、Jones 2011、Long 2009、Dundas 2002、Grewal 1998、McDermott 2011、Coogan 2003、Melton 2011、Sachau 译 Al-Biruni 等）",
+              "url": "https://en.wikipedia.org/wiki/Diwali",
+              "note": "维基，辅助"
+            }
+          ]
+        },
+        {
+          "year": 1619,
+          "year_label": "17 世纪初（通行说法 1619 年）",
+          "label": "Bandi Chhor Divas",
+          "text": "锡克教纪念古鲁哈尔戈宾德被贾汉吉尔自瓜廖尔堡释放，年份系通行说法。",
+          "sources": [
+            {
+              "title": "Wikipedia: Diwali（引 Pintchman 2005、Bahadur 2006、Jones 2011、Long 2009、Dundas 2002、Grewal 1998、McDermott 2011、Coogan 2003、Melton 2011、Sachau 译 Al-Biruni 等）",
+              "url": "https://en.wikipedia.org/wiki/Diwali",
+              "note": "维基，辅助"
+            },
+            {
+              "title": "The Hitavada 2020-11-14：Laxmi Pujan: A day of spiritual awakening（Ashwin/Kartik 月无月之夜为正日、Pradosh Kaal 行 Mahalakshmi Puja、古吉拉特商人 Chopda Pujan 开新账本、耆那教纪念大雄涅槃、锡克教 Bandi Chhor Divas）",
+              "url": "https://www.thehitavada.com/Encyc/2020/11/14/Laxmi-Pujan-A-day-of-spiritual-awakening.html",
+              "note": "二手"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "year_label": "2020",
+          "label": "季风常年日期修订",
+          "text": "印度气象局把西北印度季风撤退常年日期从 9/1 改为 9/17，新德里改为 9/25。",
+          "sources": [
+            {
+              "title": "印度气象局（IMD）新闻稿：西南季风登陆与撤退常年日期修订（2020 年，登陆用 1961–2019、撤退用 1971–2019 资料，2020-06-01 起启用）",
+              "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf",
+              "note": "官方"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026-11-08",
+          "label": "排灯节",
+          "text": "印度中央政府假日表与驻外使馆假日表均列 11/8（周日）。",
+          "sources": [
+            {
+              "title": "印度驻埃里温使馆《List of Holidays during 2026》：Diwali (Deepavali) November 08, Sunday",
+              "url": "https://eoiyerevan.gov.in/pdf/List%20of%20holidays%202026.pdf",
+              "note": "官方"
+            },
+            {
+              "title": "DoPT 办公备忘录 F.No.12/2/2023-JCA（2025-07-03）《Holidays ... during the year 2026》：Diwali (Deepavali) Sunday, November 08, 2026 (Kartika 17)（GConnect 转载）",
+              "url": "https://www.gconnect.in/?p=42587",
+              "note": "官方转载"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "西南季风撤出新德里常年日期",
+          "value": "9/25",
+          "unit": "",
+          "basis": "IMD 2020 年修订，1971–2019 年资料（旧口径 9/22）",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "印度气象局（IMD）新闻稿：西南季风登陆与撤退常年日期修订（2020 年，登陆用 1961–2019、撤退用 1971–2019 资料，2020-06-01 起启用）",
+              "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf",
+              "note": "官方"
+            }
+          ]
+        },
+        {
+          "label": "西南季风撤出全国常年日期",
+          "value": "10/15",
+          "unit": "",
+          "basis": "IMD；2025 年实际 10/16",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "印度气象局（IMD）新闻稿：西南季风登陆与撤退常年日期修订（2020 年，登陆用 1961–2019、撤退用 1971–2019 资料，2020-06-01 起启用）",
+              "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf",
+              "note": "官方"
+            },
+            {
+              "title": "Business Standard 2025-10-16：Southwest monsoon withdraws from India, northeast rains set in — IMD（撤完常年日 10/15；2025 年 10/16 撤完，同日东北季风在泰米尔纳德登场）",
+              "url": "https://www.business-standard.com/india-news/southwest-monsoon-withdraws-from-india-northeast-rains-set-in-imd-125101600525_1.html",
+              "note": "二手转述官方"
+            }
+          ]
+        },
+        {
+          "label": "2015–2027 年排灯节最早 / 最晚",
+          "value": "10/19 – 11/14",
+          "unit": "",
+          "basis": "印度中央政府假日表 13 年",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "印度人事与培训部（DoPT）办公备忘录 F.No.12/2/2023-JCA（2026-07-16）《Holidays to be observed in Central Government Offices during the year 2027》（印度邮政部转发件，cept.gov.in）：「During 2027, Diwali (Deepavali) falls on Friday, October 29, 2027 (Kartika 7)」",
+              "url": "https://utilities.cept.gov.in/dop/pdfbind.ashx?id=15435",
+              "note": "官方"
+            }
+          ]
+        },
+        {
+          "label": "德里 11 月常年降水",
+          "value": "约 5",
+          "unit": "mm",
+          "basis": "1991–2020 年 Safdarjung 站",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "climate-zone.com Delhi（Köppen Cwa；1991–2020 年 Safdarjung 站常年值：10 月均温约 26 ℃、降水约 13 mm，11 月约 21 ℃、约 5 mm，年降水约 840 mm（IMD 常年表为 762.3 mm）；原始日值来自 NOAA 全球站网）",
+              "url": "https://www.climate-zone.com/climate/in/delhi",
+              "note": "二手整理气象站资料"
+            }
+          ]
+        },
+        {
+          "label": "2025 年 kharif 稻谷产量",
+          "value": "1.875",
+          "unit": "亿吨",
+          "basis": "FAO GIEWS 2026-02 引印度官方估计",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "FAO GIEWS 印度国别简报（2026-02-13）：主季 kharif 稻约占年产八成、至 2026 年 1 月收完；kharif 玉米 11 月收；2025 年 6–9 月季风雨量平均至偏多；kharif 稻创纪录 1.875 亿吨",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=IND",
+              "note": "官方"
+            }
+          ]
+        }
+      ],
+      "dispute": "① 日期判定：当 amavasya 跨两日的 pradosh 时段，各历书取舍不同——2024 年 10/31 与 11/1、2025 年 10/20 与 10/21 都出现过两说，印度中央政府假日表取 10/31 与 10/20，Drik Panchang 同（2025 年 amavasya 10/20 15:44 起、10/21 17:54 止）；Dharmasindhu 的「两日皆含则取后一日」规则在实践里以 amavasya 是否覆盖足够长的 pradosh 为准。② 耆那教大雄涅槃纪年公元前 527 年学界存疑（Dundas 2002、Potter 2007）。③ Bandi Chhor Divas 的年份（1619 年）为通行说法，一手出处待核。",
+      "why": "南亚最大的点灯节，钉在季风撤退后的迦底迦月朔上；2026 年它与中国寒衣节共用 11/9 这一轮朔，一个按日落、一个按含朔之日，差出一天。",
+      "text": "排灯节是五天：牛财节开场，那罗迦十四，第三天——迦底迦月的朔日——日落后在一年里最暗的夜点满油灯迎吉祥天女，第四天牛增山祭、古吉拉特人过维克拉姆历新年（新账本已在前一晚吉祥天女前开启），第五天兄妹节。落在哪一天看日落后 amavasya 是否当值，所以同一轮新月，印度 11 月 8 日点灯，中国 11 月 9 日过寒衣节。它钉在季风刚退的空档上：印度气象局常年口径，西南季风 9 月 25 日撤出德里、10 月 15 日撤出全国，2015 到 2027 年的排灯节都落在 10 月 19 日到 11 月 14 日之间——雨停、天晴、稻谷正收。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "印度人事与培训部（DoPT）办公备忘录 F.No.12/2/2023-JCA（2026-07-16）《Holidays to be observed in Central Government Offices during the year 2027》（印度邮政部转发件，cept.gov.in）：「During 2027, Diwali (Deepavali) falls on Friday, October 29, 2027 (Kartika 7)」",
+          "url": "https://utilities.cept.gov.in/dop/pdfbind.ashx?id=15435",
+          "note": "官方"
+        },
+        {
+          "title": "印度驻埃里温使馆《List of Holidays during 2026》：Diwali (Deepavali) November 08, Sunday",
+          "url": "https://eoiyerevan.gov.in/pdf/List%20of%20holidays%202026.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "DoPT 办公备忘录 F.No.12/2/2023-JCA（2025-07-03）《Holidays ... during the year 2026》：Diwali (Deepavali) Sunday, November 08, 2026 (Kartika 17)（GConnect 转载）",
+          "url": "https://www.gconnect.in/?p=42587",
+          "note": "官方转载"
+        },
+        {
+          "title": "印度气象局（IMD）新闻稿：西南季风登陆与撤退常年日期修订（2020 年，登陆用 1961–2019、撤退用 1971–2019 资料，2020-06-01 起启用）",
+          "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "Business Standard 2025-10-16：Southwest monsoon withdraws from India, northeast rains set in — IMD（撤完常年日 10/15；2025 年 10/16 撤完，同日东北季风在泰米尔纳德登场）",
+          "url": "https://www.business-standard.com/india-news/southwest-monsoon-withdraws-from-india-northeast-rains-set-in-imd-125101600525_1.html",
+          "note": "二手转述官方"
+        },
+        {
+          "title": "FAO GIEWS 印度国别简报（2026-02-13）：主季 kharif 稻约占年产八成、至 2026 年 1 月收完；kharif 玉米 11 月收；2025 年 6–9 月季风雨量平均至偏多；kharif 稻创纪录 1.875 亿吨",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=IND",
+          "note": "官方"
+        },
+        {
+          "title": "climate-zone.com Delhi（Köppen Cwa；1991–2020 年 Safdarjung 站常年值：10 月均温约 26 ℃、降水约 13 mm，11 月约 21 ℃、约 5 mm，年降水约 840 mm（IMD 常年表为 762.3 mm）；原始日值来自 NOAA 全球站网）",
+          "url": "https://www.climate-zone.com/climate/in/delhi",
+          "note": "二手整理气象站资料"
+        },
+        {
+          "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+          "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+          "note": "维基，辅助"
+        },
+        {
+          "title": "PanchangBodh：排灯节日期与吉时如何推算（引 Dharmasindhu、Nirnayasindhu：迦底迦月 amavasya 的 pradosh 时段行吉祥天女供与 deep daan；若两日 pradosh 皆含 amavasya 取后一日；孟加拉 Kali Puja 以午夜 nishith 为准；引 Rashtriya Panchang）",
+          "url": "https://panchangbodh.com/hi/how-is-diwali-date-muhurat-timings-calculated",
+          "note": "历法说明"
+        },
+        {
+          "title": "Drik Panchang：Lakshmi Puja 2025（「Lakshmi Puja should be done during Pradosh Kaal which starts after sunset」；Amavasya 2025-10-20 15:44 – 10-21 17:54；正日 10/20）",
+          "url": "https://www.drikpanchang.com/festivals/lakshmipuja/festivals-lakshmipuja-timings.html?year=2025",
+          "note": "历法网站"
+        },
+        {
+          "title": "The Hitavada 2020-11-14：Laxmi Pujan: A day of spiritual awakening（Ashwin/Kartik 月无月之夜为正日、Pradosh Kaal 行 Mahalakshmi Puja、古吉拉特商人 Chopda Pujan 开新账本、耆那教纪念大雄涅槃、锡克教 Bandi Chhor Divas）",
+          "url": "https://www.thehitavada.com/Encyc/2020/11/14/Laxmi-Pujan-A-day-of-spiritual-awakening.html",
+          "note": "二手"
+        },
+        {
+          "title": "Wikipedia: Diwali（引 Pintchman 2005、Bahadur 2006、Jones 2011、Long 2009、Dundas 2002、Grewal 1998、McDermott 2011、Coogan 2003、Melton 2011、Sachau 译 Al-Biruni 等）",
+          "url": "https://en.wikipedia.org/wiki/Diwali",
+          "note": "维基，辅助"
+        },
+        {
+          "title": "昼长为按太阳赤纬公式的几何计算值（日心，天顶距 90.833°、与第三章同一口径）：德里 11/8 约 10.9 小时、夏至 14.0 小时；加德满都 11/8 约 10.9 小时；素可泰 11/24 约 11.3 小时、夏至 13.1；金边 10/10 约 11.9 小时、夏至 12.8",
+          "url": "",
+          "note": "本路计算"
+        }
+      ],
+      "unverified": [
+        "Yama Deepam（牛财节为阎摩点灯）一手出处",
+        "Bandi Chhor Divas 1619 年份的一手出处",
+        "棉花（kharif）采摘月份",
+        "海外以排灯节为公共假日的国家清单",
+        "印度气象局东北季风常年开始日（约 10/20）原文",
+        "2024 年 10/31 与 11/1 之争的各邦假日表"
+      ]
+    },
+    {
+      "id": "tihar",
+      "name": "尼泊尔 Tihar（Deepawali / Yamapanchak / Swanti）",
+      "name_local": "तिहार Tihār / यमपञ्चक Yamapañcak / स्वन्ति Swanti（尼瓦尔语）",
+      "lane": "india",
+      "region": "尼泊尔（加德满都谷地及全国；尼瓦尔人称 Swanti）",
+      "city": {
+        "name": "加德满都",
+        "lat": 27.72,
+        "lon": 85.32,
+        "elev_m": 1300,
+        "koppen": "Cwa / Cwb",
+        "koppen_note": "亚热带高地、冬干：Beck 2018 图按经纬度读出 Cwa，Kattel（2008）对谷地各微气象站的分析以 C 类为主、Cwa 与 Cwb 并存。海拔约 1300 米使它比同纬度的德里凉而少霾。",
+        "climate": {
+          "season": "季风后（post-monsoon）的晴朗旱季：稻作 5 月中起播、10–12 月收（GIEWS 尼泊尔简报）；Tihar 2026 落在 11/7–11，正当收稻与打谷；昼长与德里相近（11/8 约 10.9 小时）。",
+          "harvest": "FAO GIEWS 2026-08 简报：2026 年稻作自 5 月中起种，收获在「October/December」；2025 年稻谷 570 万吨。乌鸦日、狗日、牛日、牛王日把农事里的动物逐一请进节日。",
+          "rain": "季风 6–9 月。",
+          "frost": "无口径。",
+          "sources": [
+            {
+              "title": "FAO GIEWS 尼泊尔国别简报（2026-08-18）：稻作 5 月中起播、「October/December harvest」；2025 年稻谷 570 万吨（−4.2%）",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=NPL",
+              "note": "官方"
+            },
+            {
+              "title": "Kattel, D. B. (2008). Climatic Types, Their Distribution and Changes in Different Micro Meteorological Stations in Kathmandu Valley. Nepal Journal of Science and Technology 9: 171–178（谷地以 C 类为主，Cwa 与 Cwb 并存，个别站 Cfa/Cfb）",
+              "url": "https://www.nepjol.info/index.php/NJST/article/view/3183",
+              "note": "学术"
+            },
+            {
+              "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+              "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+              "note": "维基，辅助"
+            },
+            {
+              "title": "昼长为按太阳赤纬公式的几何计算值（日心，天顶距 90.833°、与第三章同一口径）：德里 11/8 约 10.9 小时、夏至 14.0 小时；加德满都 11/8 约 10.9 小时；素可泰 11/24 约 11.3 小时、夏至 13.1；金边 10/10 约 11.9 小时、夏至 12.8",
+              "url": "",
+              "note": "本路计算"
+            }
+          ]
+        }
+      },
+      "date_rule": "迦底迦月（Kartik）黑分十三 Trayodashi（乌鸦日 Kag Tihar，兼牛财节）→ 黑分十四（狗日 Kukur Tihar，兼那罗迦十四）→ 朔日 amavasya 晚（牛日 Gai Tihar 晨、吉祥天女祭 Laxmi Puja 晚）→ 白分初一（牛王日 Goru Tihar / 牛增山祭；尼瓦尔人的「自我祭」Mha Puja，兼尼泊尔历 Nepal Sambat 新年）→ 白分初二（兄妹节 Bhai Tika）；各日以当日有效的 tithi（多取日出时）定，Bhai Tika 吉时由尼泊尔历法决定委员会（Nepal Calendar Determination Committee）公布。",
+      "date_2026": "2026-11-08（吉祥天女祭）；五天 11/7–11/11（乌鸦日 11/7、狗日 11/8 晨、吉祥天女祭 11/8 晚、牛日 11/9、牛王日 / Mha Puja 11/10、兄妹节 11/11）",
+      "date_range": "与排灯节同轮：吉祥天女祭 10/19 – 11/14；五天整体约 10 月中 – 11 月中",
+      "calendar_basis": "lunisolar-hindu",
+      "was_new_year": "是（尼瓦尔）：第四天 Mha Puja 即尼泊尔历（Nepal Sambat）元旦，迦底迦月白分初一；2026-11-10 为 Nepal Sambat 1147 年元旦（推算，未见官方公告）。",
+      "origin": {
+        "year_label": "阎摩与阎牟那的传说 → 尼瓦尔的 Swanti 与 Nepal Sambat（879/880 年纪元）",
+        "text": "Tihar 是排灯节在尼泊尔的本地形态，五天合称「阎摩五日」：乌鸦和狗是阎摩的使者，牛与牛王是农事伙伴，兄妹节出自阎摩之妹阎牟那以额上 tika、油与花环未干未凋为限留住兄长的传说。尼瓦尔人称它 Swanti，第四天的「自我祭」Mha Puja 正是尼泊尔历元旦。"
+      },
+      "threshold": "与印度排灯节共用同一轮新月，但更贴着谷地的农事：稻作 10–12 月收、季风早已退去，五天里依次酬谢乌鸦、狗、牛、牛王，把一年里帮过忙的动物逐个请进节日，再以吉祥天女祭与兄妹节收束；夜里家家门窗点 diyo，「女神不进暗屋」。",
+      "three": {
+        "dead": "第一天乌鸦日：乌鸦是阎摩的使者，日出前把谷物、甜食放在屋顶与院子里，请它们带走忧伤——这是五天里最接近「请亡灵」的一层。",
+        "light": "吉祥天女祭之夜在门口、窗台点陶灯 diyo、挂电灯串，「女神不去黑暗的屋子」；孩子们挨家唱 Deusi-Bhailo 讨钱与吃食。",
+        "food": "炸米圈 sel roti 是节令食物：供吉祥天女、喂乌鸦、兄妹节给兄弟；另有甜食、水果，Deusi-Bhailo 的回礼。"
+      },
+      "spread": "native",
+      "spread_text": "随印度教历在喜马拉雅山麓本地化，国家层面 2083 年假日表给五天国定假日（Kartik 22–26，11/8–12；往年多为 3–5 天）；它没有被商业或移民搬到别的气候带，仍钉在谷地的收稻季。",
+      "timeline": [
+        {
+          "year": 2022,
+          "year_label": "2022-10-27",
+          "label": "Bhai Tika 吉时",
+          "text": "历法委员会公布 11:37 为 Bhai Tika 吉时；当年因 10/25 日偏食把吉祥天女祭提前一日，与狗日同在 10/24。",
+          "sources": [
+            {
+              "title": "The Rising Nepal 2022-10-22：Tihar schedule & Bhai Tika auspicious hour",
+              "url": "https://risingnepaldaily.com/news/17534",
+              "note": "官方媒体"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "year_label": "2023-11-15",
+          "label": "Bhai Tika 吉时",
+          "text": "Radio Nepal：委员会公布 11/15 10:51 为 Bhai Tika 吉时，Tihar 自 11/11 始。",
+          "sources": [
+            {
+              "title": "Radio Nepal（onlineradionepal.gov.np）：Nepal Calendar Determination Development Committee 公布 Bhai Tika 吉时（「10:51 am on November 15」，Tihar 自 11/11 始；为 2023 年）",
+              "url": "https://onlineradionepal.gov.np/en/?p=366720",
+              "note": "官方媒体"
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "year_label": "2025-10-23",
+          "label": "Bhai Tika 吉时",
+          "text": "委员会公布 10/23 11:39 为吉时；吉祥天女祭 10/20 晚。",
+          "sources": [
+            {
+              "title": "B360 Nepal 2025-10-14：Nepal Calendar Determination Committee announces 11:39 am (Oct 23) as auspicious hour for Bhaitika（2025 年：Yama Panchak 10/18 起、Kag Tihar 10/19、Kukur Tihar 10/20 晨、Laxmi Puja 10/20 晚、Mha Puja 10/22、Bhai Tika 10/23）",
+              "url": "https://www.b360nepal.com/detail/26703/nepal-calendar-determination-committee-announces-1139am-as-auspicious-hour-for-bhaitika",
+              "note": "二手转述官方"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026-11-07 → 11-11",
+          "label": "Tihar 2083 BS",
+          "text": "乌鸦日 11/7、吉祥天女祭 11/8、Mha Puja 11/10、兄妹节 11/11（内政部假日表转述）。",
+          "sources": [
+            {
+              "title": "Nepal Hiking Team：Tihar 2026 Dates（2026-10-26 更新；日表引内政部 2083 年公共假日表与 Hamro Patro 2083 Kartik 历）：Kaag 11/7（Kartik 21）、Kukur + Lakshmi Puja 11/8（Kartik 22）、Gai 11/9、Govardhan / Goru / Mha Puja 11/10、Bhai Tika 11/11（Kartik 25）；Bhai Tika 吉时尚未公布",
+              "url": "https://www.nepalhikingteam.com/tihar-festival",
+              "note": "二手转述官方"
+            },
+            {
+              "title": "Wikipedia: Tihar (festival)（引 Kathmandu Post 2016/2017、ECS Nepal、Republica 2022、Perry 1990 等：Kag Tihar 在迦底迦月黑分十三、Bhai Tika 在白分初二；乌鸦为阎摩使者；「the goddess will not visit dark homes」；2083 年假日表给五天国定假日 11/8–12；节期 2026 年 11/7–11）",
+              "url": "https://en.wikipedia.org/wiki/Tihar_(festival)",
+              "note": "维基，辅助"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "2025 年尼泊尔稻谷产量",
+          "value": "570",
+          "unit": "万吨",
+          "basis": "FAO GIEWS 2026-08 引官方",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "FAO GIEWS 尼泊尔国别简报（2026-08-18）：稻作 5 月中起播、「October/December harvest」；2025 年稻谷 570 万吨（−4.2%）",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=NPL",
+              "note": "官方"
+            }
+          ]
+        },
+        {
+          "label": "国定假日天数",
+          "value": "3",
+          "unit": "天",
+          "basis": "Republica 2022 转述；2083 年假日表为 Kartik 22–26",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "Wikipedia: Tihar (festival)（引 Kathmandu Post 2016/2017、ECS Nepal、Republica 2022、Perry 1990 等：Kag Tihar 在迦底迦月黑分十三、Bhai Tika 在白分初二；乌鸦为阎摩使者；「the goddess will not visit dark homes」；2083 年假日表给五天国定假日 11/8–12；节期 2026 年 11/7–11）",
+              "url": "https://en.wikipedia.org/wiki/Tihar_(festival)",
+              "note": "维基，辅助"
+            },
+            {
+              "title": "Nepal Hiking Team：Tihar 2026 Dates（2026-10-26 更新；日表引内政部 2083 年公共假日表与 Hamro Patro 2083 Kartik 历）：Kaag 11/7（Kartik 21）、Kukur + Lakshmi Puja 11/8（Kartik 22）、Gai 11/9、Govardhan / Goru / Mha Puja 11/10、Bhai Tika 11/11（Kartik 25）；Bhai Tika 吉时尚未公布",
+              "url": "https://www.nepalhikingteam.com/tihar-festival",
+              "note": "二手转述官方"
+            }
+          ]
+        }
+      ],
+      "dispute": "2026 年各日的公历对应有两说：Nepal Hiking Team（引内政部 2083 年假日表与 Hamro Patro）作 11/7–11/11，维基信息框同；Drik Panchang 的尼泊尔历作 11/6–11/10（吉祥天女祭同为 11/8）。差异来自 tithi 跨日时各历书取舍不同；官方的 Bhai Tika 吉时由历法决定委员会在节前公布。",
+      "why": "同一轮新月、同一盏灯，但把乌鸦、狗、牛逐日请进节日，又兼作尼瓦尔人的岁首——是排灯节「本地化」最完整的样本。",
+      "text": "尼泊尔把排灯节过成「阎摩五日」：第一天日出前在屋顶放下谷物与甜食请乌鸦——阎摩的使者；第二天给狗戴万寿菊花环；第三天早上酬谢牛，晚上在迦底迦月的朔日点满陶灯迎吉祥天女，「女神不进暗屋」；第四天酬谢牛王，尼瓦尔人行「自我祭」，这天也是尼泊尔历元旦；第五天兄妹节，吉时由国家的历法决定委员会提前公布。2026 年是 11 月 7 日到 11 日，吉祥天女祭 11 月 8 日，与印度同日。加德满都海拔 1300 米，季风 6 月中入、10 月初退（DHM 常年 6/13–10/2），稻作 10 到 12 月收，这五天正落在收稻的间隙；炸米圈 sel roti 供神、喂乌鸦、也给兄弟。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Nepal Hiking Team：Tihar 2026 Dates（2026-10-26 更新；日表引内政部 2083 年公共假日表与 Hamro Patro 2083 Kartik 历）：Kaag 11/7（Kartik 21）、Kukur + Lakshmi Puja 11/8（Kartik 22）、Gai 11/9、Govardhan / Goru / Mha Puja 11/10、Bhai Tika 11/11（Kartik 25）；Bhai Tika 吉时尚未公布",
+          "url": "https://www.nepalhikingteam.com/tihar-festival",
+          "note": "二手转述官方"
+        },
+        {
+          "title": "Wikipedia: Tihar (festival)（引 Kathmandu Post 2016/2017、ECS Nepal、Republica 2022、Perry 1990 等：Kag Tihar 在迦底迦月黑分十三、Bhai Tika 在白分初二；乌鸦为阎摩使者；「the goddess will not visit dark homes」；2083 年假日表给五天国定假日 11/8–12；节期 2026 年 11/7–11）",
+          "url": "https://en.wikipedia.org/wiki/Tihar_(festival)",
+          "note": "维基，辅助"
+        },
+        {
+          "title": "Drik Panchang Nepali Tihar Calendar 2026：Kag 11/6、Kukur 11/7、Gai Tihar + Lakshmi Puja 11/8、Goru Tihar + Mha Puja + Newari New Year 11/9、Bhai Tika 11/10",
+          "url": "https://www.drikpanchang.com/nepali/tihar/tihar-calendar.html",
+          "note": "历法网站"
+        },
+        {
+          "title": "B360 Nepal 2025-10-14：Nepal Calendar Determination Committee announces 11:39 am (Oct 23) as auspicious hour for Bhaitika（2025 年：Yama Panchak 10/18 起、Kag Tihar 10/19、Kukur Tihar 10/20 晨、Laxmi Puja 10/20 晚、Mha Puja 10/22、Bhai Tika 10/23）",
+          "url": "https://www.b360nepal.com/detail/26703/nepal-calendar-determination-committee-announces-1139am-as-auspicious-hour-for-bhaitika",
+          "note": "二手转述官方"
+        },
+        {
+          "title": "Radio Nepal（onlineradionepal.gov.np）：Nepal Calendar Determination Development Committee 公布 Bhai Tika 吉时（「10:51 am on November 15」，Tihar 自 11/11 始；为 2023 年）",
+          "url": "https://onlineradionepal.gov.np/en/?p=366720",
+          "note": "官方媒体"
+        },
+        {
+          "title": "FAO GIEWS 尼泊尔国别简报（2026-08-18）：稻作 5 月中起播、「October/December harvest」；2025 年稻谷 570 万吨（−4.2%）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=NPL",
+          "note": "官方"
+        },
+        {
+          "title": "Kattel, D. B. (2008). Climatic Types, Their Distribution and Changes in Different Micro Meteorological Stations in Kathmandu Valley. Nepal Journal of Science and Technology 9: 171–178（谷地以 C 类为主，Cwa 与 Cwb 并存，个别站 Cfa/Cfb）",
+          "url": "https://www.nepjol.info/index.php/NJST/article/view/3183",
+          "note": "学术"
+        },
+        {
+          "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+          "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+          "note": "维基，辅助"
+        }
+      ],
+      "unverified": [
+        "尼泊尔历法决定委员会 2026 年（2083 BS）Bhai Tika 吉时公告",
+        "内政部 2083 年公共假日表原件",
+        "尼泊尔水文气象局的雨季起止口径",
+        "Nepal Sambat 1147 元旦为 2026-11-10 的官方说法",
+        "加德满都初霜"
+      ]
+    },
+    {
+      "id": "loy-krathong",
+      "name": "水灯节 Loy Krathong 与兰纳 Yi Peng 天灯",
+      "name_local": "ลอยกระทง Loi Krathong / ยี่เป็ง Yi Peng（兰纳）",
+      "lane": "southeast-asia",
+      "region": "泰国（素可泰、曼谷、清迈；达府用椰壳灯）",
+      "city": {
+        "name": "素可泰",
+        "lat": 17.0,
+        "lon": 99.8,
+        "elev_m": 60,
+        "koppen": "Aw",
+        "koppen_note": "热带草原气候（干湿季分明）：曼谷、金边在维基城市分类表作 Aw，素可泰按同一分类通行说法作 Aw。",
+        "climate": {
+          "season": "雨季刚结束、冷季之初：泰国气象厅口径雨季约 5 月中–10 月中（西南季风），冷季 10 月中–2 月中（东北季风）自北部、东北部先开始，南部雨要下到 12 月；水灯节 2015–2027 年落在 10/31–11/27，正是北部、中部雨停而河水仍满的时候。昼长变化小：素可泰 11/24 约 11.3 小时（夏至 13.1）。",
+          "harvest": "主季稻（雨养，约占年产七到八成）5 月下旬起种、延至 8 月，10 月初开始收、次年 1 月收完，「大头在 10 月到 1 月之间」（FAO GIEWS 泰国简报）；水灯节正在收割季的前半。",
+          "rain": "泰国气象厅：雨季约 5 月中–10 月中，最湿 8–9 月；西南季风 5–10 月、东北季风 11–2 月；2024 年 9 月气象厅称雨季「持续到 10 月中」。",
+          "frost": "无（热带）。北部山区冷季清晨偶有低温。",
+          "sources": [
+            {
+              "title": "泰国政府门户 thailand.go.th《The Seasons of Thailand》（资料来源注明泰国气象厅 Department of Meteorology）：「The rainy season is between mid-May and mid-October」「Winter is between mid-October and mid-February」，南部雨季延续到 12 月",
+              "url": "https://thailand.go.th/issue-focus-detail/009_142",
+              "note": "官方"
+            },
+            {
+              "title": "泰国气象厅（TMD）国别报告（WMO SWFDP-SeA）：「Rainy Season (around mid-May to mid-October)」「Southwest monsoon (May - October)」「Northeast monsoon (November - February)」「The wettest period of the year is August to September」",
+              "url": "https://old.wmo.int/extranet/pages/prog/amp/pwsp/documents/CountryReportThailandSWFDP-SeA.pdf",
+              "note": "官方"
+            },
+            {
+              "title": "Thai PBS World 2024-09-20：泰国气象厅称雨季「will last until mid-October」，冷季 10 月自北部、东北部开始",
+              "url": "https://old.thaipbsworld.com/?p=334584",
+              "note": "二手转述官方"
+            },
+            {
+              "title": "FAO GIEWS 泰国国别简报存档（2015–2020 各期）：「Harvesting of the 2018 main paddy crop started in early October and is expected to be finalized in January 2019」；「bulk to be gathered between October and January」；播种延至 8 月；雨季 5–10 月",
+              "url": "https://cb.apps.fao.org/country/THA/pdf_archive/THA_Archive.pdf",
+              "note": "官方"
+            },
+            {
+              "title": "FAO GIEWS 泰国国别简报（2025-08-20）：主季稻（多为雨养）约占年产八成；「The May-October monsoon season began on time in mid-May」",
+              "url": "https://cb.apps.fao.org/country/THA/pdf/THA.pdf",
+              "note": "官方"
+            },
+            {
+              "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+              "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+              "note": "维基，辅助"
+            },
+            {
+              "title": "昼长为按太阳赤纬公式的几何计算值（日心，天顶距 90.833°、与第三章同一口径）：德里 11/8 约 10.9 小时、夏至 14.0 小时；加德满都 11/8 约 10.9 小时；素可泰 11/24 约 11.3 小时、夏至 13.1；金边 10/10 约 11.9 小时、夏至 12.8",
+              "url": "",
+              "note": "本路计算"
+            }
+          ]
+        }
+      },
+      "date_rule": "泰历（阴阳历）十二月望——第十二月的白分十五日之夜；兰纳历比中部早两个月，同一轮满月叫「二月望」（Yi = 二，Peng = 望），故清迈的 Yi Peng 与全国的水灯节同一夜。泰国旅游局与政府门户每年公告正日。",
+      "date_2026": "2026-11-24（周二）；素可泰历史公园活动 11/15–11/24",
+      "date_range": "10/31 – 11/27（2015–2027 年：最早 2020-10-31，最晚 2023-11-27）",
+      "calendar_basis": "thai-lunar",
+      "was_new_year": "否：泰国岁首是 4 月的宋干；十二月望不作年的接缝。",
+      "origin": {
+        "year_label": "19 世纪前期（拉玛三世朝）成书的《Nang Nopphamat / 塔沃·西·朱拉拉克女官传》→ 1863 年拉玛四世的说法 → 20 世纪后半的全国化",
+        "text": "通行传说说素可泰王的女官 Nang Nopphamat 首创莲花形水灯，但这篇文本成书于 19 世纪前期的拉玛三世朝，丹龙亲王 1936 年甚至认为是拉玛三世御撰，Pasuk 与 Baker 称之为「曼谷时期的文学虚构」；更早的证据是吴哥巴戎寺约 13 世纪初的浮雕。拉玛四世 1863 年说此节源于印度教，史家 Sujit 指出全国性的水灯节是二战后借民族主义与旅游业推开的。"
+      },
+      "threshold": "钉在雨季结束、河水最满的那轮满月：泰国气象厅口径雨季 5 月中到 10 月中，水灯节落在 10/31–11/27；主季稻 10 月初开镰、1 月收完（GIEWS）。放水灯是「向水之女神致意、把霉运放走」——雨停、水满、稻熟三件事同时到来。",
+      "three": {
+        "dead": "不是祭祖节：水灯承载的是对水的致意与把霉运、坏情绪放走（旅游局口径），而非请亡灵回家。",
+        "light": "香蕉茎做底、香蕉叶折成莲花，插蜡烛、香与兰花放入水中；兰纳（清迈）同夜放 khom loi 天灯——薄纸蒙竹骨、底下点燃料托起；素可泰在兰甘亨王像前有烧蜡烛与「放火」表演。",
+        "food": "没有固定的节令食物；素可泰历史公园与各地夜市、庙会是这一夜的吃喝场景。"
+      },
+      "spread": "commercial",
+      "spread_text": "根在高棉—婆罗门的水祭，经 19 世纪曼谷文本安上素可泰的出身，再在二战后由国家与旅游局推成全国节；兰纳的 Yi Peng 近代才从曼谷引入。素可泰历史公园的「水灯与烛光节」是旅游局口径下的发源地活动，2026 年票价 500–1200 泰铢。",
+      "timeline": [
+        {
+          "year": 1207,
+          "year_label": "约 13 世纪初（佛历约 1750）",
+          "label": "巴戎寺浮雕",
+          "text": "吴哥巴戎寺外回廊浮雕：宫女捧供品向水，被视为东南亚最早的「放灯」图像。",
+          "sources": [
+            {
+              "title": "Matichon Weekly 专栏（ศิริพจน์ เหล่ามานะเจริญ Siriphot Laomanacharoen）：《ตำรับท้าวศรีจุฬาลักษณ์》成书于拉达那哥欣早期拉玛三世朝，丹龙亲王 1936 年致帕亚·阿努曼信中认为或为拉玛三世御撰；「นพมาศ ก็เป็นนางในจินตนาการ ไม่ได้มีตัวตนจริงอยู่ในประวัติศาสตร์」；最早图像为吴哥巴戎寺外回廊浮雕（约佛历 1750 年）",
+              "url": "https://www.matichonweekly.com/column/article_14930",
+              "note": "专著级专栏"
+            }
+          ]
+        },
+        {
+          "year": 1835,
+          "year_label": "拉玛三世朝（1824–1851）",
+          "label": "Nang Nopphamat 文本",
+          "text": "《塔沃·西·朱拉拉克女官传》成书，把水灯的发明安在素可泰女官身上。",
+          "sources": [
+            {
+              "title": "Matichon Weekly 专栏（ศิริพจน์ เหล่ามานะเจริญ Siriphot Laomanacharoen）：《ตำรับท้าวศรีจุฬาลักษณ์》成书于拉达那哥欣早期拉玛三世朝，丹龙亲王 1936 年致帕亚·阿努曼信中认为或为拉玛三世御撰；「นพมาศ ก็เป็นนางในจินตนาการ ไม่ได้มีตัวตนจริงอยู่ในประวัติศาสตร์」；最早图像为吴哥巴戎寺外回廊浮雕（约佛历 1750 年）",
+              "url": "https://www.matichonweekly.com/column/article_14930",
+              "note": "专著级专栏"
+            },
+            {
+              "title": "Wikipedia: Loy Krathong（年表 2010–2030；Yi Peng = 兰纳历二月望；Nopphamat 传说出自曼谷王朝早期文本；Pasuk & Baker《A History of Ayutthaya》称之为曼谷时期的文学虚构；拉玛四世 1863 年称其源于印度教）",
+              "url": "https://en.wikipedia.org/wiki/Loy_Krathong",
+              "note": "维基，辅助"
+            }
+          ]
+        },
+        {
+          "year": 1863,
+          "year_label": "1863",
+          "label": "拉玛四世的说法",
+          "text": "蒙固王写道此节源于印度教，由泰国佛教徒改为敬佛。",
+          "sources": [
+            {
+              "title": "Wikipedia: Loy Krathong（年表 2010–2030；Yi Peng = 兰纳历二月望；Nopphamat 传说出自曼谷王朝早期文本；Pasuk & Baker《A History of Ayutthaya》称之为曼谷时期的文学虚构；拉玛四世 1863 年称其源于印度教）",
+              "url": "https://en.wikipedia.org/wiki/Loy_Krathong",
+              "note": "维基，辅助"
+            }
+          ]
+        },
+        {
+          "year": 1947,
+          "year_label": "二战后",
+          "label": "全国化",
+          "text": "Sujit：借民族主义、Ram Wong 歌曲与 1960 年代旅游业，水灯节从中部城市圈推向全国。",
+          "sources": [
+            {
+              "title": "Matichon（สุจิตต์ วงษ์เทศ Sujit Wongthes）：《ลอยกระทงเพื่อชาติของกบในกะลา》——今日通行的水灯节是二战后借民族主义、1947 年政变后的 Ram Wong 歌曲与 1960 年经济发展计划下的旅游业而「被做红」的发明传统；兰纳的 Yi Peng 近代才从曼谷引入；作者自注为个人记忆不作严谨研究",
+              "url": "https://www.matichon.co.th/education/religious-cultural/news_722887",
+              "note": "学者专栏"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026-11-24",
+          "label": "水灯节正日",
+          "text": "素可泰历史公园活动 11/15–24，末日加场。",
+          "sources": [
+            {
+              "title": "泰国政府门户 thailand.go.th（公共关系部）：Loy Krathong, Burning Candles, and Playing with Fire Festival in Sukhothai，2026-11-15 – 11-24，素可泰历史公园，票价 500 / 900 / 1200 泰铢",
+              "url": "https://www.thailand.go.th/event-detail/loy-krathong-burning-candles-and-playing-with-fire-festival-in-sukhothai",
+              "note": "官方"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "素可泰 2026 活动票价",
+          "value": "500 / 900 / 1200",
+          "unit": "泰铢",
+          "basis": "泰国政府门户",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "泰国政府门户 thailand.go.th（公共关系部）：Loy Krathong, Burning Candles, and Playing with Fire Festival in Sukhothai，2026-11-15 – 11-24，素可泰历史公园，票价 500 / 900 / 1200 泰铢",
+              "url": "https://www.thailand.go.th/event-detail/loy-krathong-burning-candles-and-playing-with-fire-festival-in-sukhothai",
+              "note": "官方"
+            }
+          ]
+        },
+        {
+          "label": "雨季",
+          "value": "5 月中 – 10 月中",
+          "unit": "",
+          "basis": "泰国气象厅",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "泰国政府门户 thailand.go.th《The Seasons of Thailand》（资料来源注明泰国气象厅 Department of Meteorology）：「The rainy season is between mid-May and mid-October」「Winter is between mid-October and mid-February」，南部雨季延续到 12 月",
+              "url": "https://thailand.go.th/issue-focus-detail/009_142",
+              "note": "官方"
+            },
+            {
+              "title": "泰国气象厅（TMD）国别报告（WMO SWFDP-SeA）：「Rainy Season (around mid-May to mid-October)」「Southwest monsoon (May - October)」「Northeast monsoon (November - February)」「The wettest period of the year is August to September」",
+              "url": "https://old.wmo.int/extranet/pages/prog/amp/pwsp/documents/CountryReportThailandSWFDP-SeA.pdf",
+              "note": "官方"
+            }
+          ]
+        },
+        {
+          "label": "主季稻收获",
+          "value": "10 月初 – 次年 1 月",
+          "unit": "",
+          "basis": "FAO GIEWS 泰国简报（2017、2018）",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "FAO GIEWS 泰国国别简报存档（2015–2020 各期）：「Harvesting of the 2018 main paddy crop started in early October and is expected to be finalized in January 2019」；「bulk to be gathered between October and January」；播种延至 8 月；雨季 5–10 月",
+              "url": "https://cb.apps.fao.org/country/THA/pdf_archive/THA_Archive.pdf",
+              "note": "官方"
+            }
+          ]
+        },
+        {
+          "label": "2015–2027 年正日最早 / 最晚",
+          "value": "10/31 – 11/27",
+          "unit": "",
+          "basis": "泰国旅游局、政府门户年度公告",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "TAT Newsroom 2019-10：TAT highlights Bangkok and six unique locations for Loi Krathong Festival 2019（「The full moon night of the 12th lunar month this year falls on 11 November」）",
+              "url": "https://www.tatnews.org/2019/10/tat-highlights-bangkok-and-six-unique-locations-for-loi-krathong-festival-2019/",
+              "note": "官方"
+            },
+            {
+              "title": "泰国政府门户 thailand.go.th：Loy Krathong Festival 2023 to be held nationwide（「This year the festival is on Monday, 27 November」「celebrated during the full moon of the 12th month of the Thai lunar calendar」）",
+              "url": "https://www.thailand.go.th/event-detail/loy-krathong-festival-2023-to-be-held-nationwide",
+              "note": "官方"
+            }
+          ]
+        }
+      ],
+      "dispute": "起源三说并列：① 旅游局与素可泰活动口径——素可泰时期（TAT 口径「约 600 年前」）由 Nang Nopphamat 首创；② 史学口径——Nopphamat 文本成于 19 世纪拉玛三世朝、人物为虚构（Siriphot；Pasuk & Baker），根在高棉—婆罗门水祭（巴戎寺浮雕）；③ Sujit——今天的全国性节日是二战后的发明传统。日期上，2018 年 11/22、2027 年 11/13 据维基年表，2025 年 11/5 据素可泰活动末日，未另见官方公告。",
+      "why": "同一周里最靠南、最靠近赤道的一盏灯：没有长夜、没有霜，钉住它的是雨季的终点和满到岸边的河。",
+      "text": "泰历十二月的满月夜，人们把香蕉茎做底、香蕉叶折成莲花的小筏放进河里，插上蜡烛、香和兰花，向水致意、把一年的霉运放走；清迈同一夜放天灯，兰纳历比中部早两个月，所以叫「二月望」Yi Peng。它钉在雨季的终点：泰国气象厅口径雨季 5 月中到 10 月中，2015 到 2027 年的正日都落在 10 月 31 日到 11 月 27 日之间，这时河水最满、主季稻刚开镰。素可泰被旅游局定为发源地，传说女官 Nang Nopphamat 首创水灯；但这篇文本成书于 19 世纪前期的曼谷王朝，史家称之为文学虚构，更早的图像在吴哥巴戎寺的浮雕上。2026 年正日 11 月 24 日。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "泰国政府门户 thailand.go.th（公共关系部）：Loy Krathong, Burning Candles, and Playing with Fire Festival in Sukhothai，2026-11-15 – 11-24，素可泰历史公园，票价 500 / 900 / 1200 泰铢",
+          "url": "https://www.thailand.go.th/event-detail/loy-krathong-burning-candles-and-playing-with-fire-festival-in-sukhothai",
+          "note": "官方"
+        },
+        {
+          "title": "泰国政府门户 thailand.go.th：Loy Krathong Festival 2023 to be held nationwide（「This year the festival is on Monday, 27 November」「celebrated during the full moon of the 12th month of the Thai lunar calendar」）",
+          "url": "https://www.thailand.go.th/event-detail/loy-krathong-festival-2023-to-be-held-nationwide",
+          "note": "官方"
+        },
+        {
+          "title": "TAT Newsroom 2019-10：TAT highlights Bangkok and six unique locations for Loi Krathong Festival 2019（「The full moon night of the 12th lunar month this year falls on 11 November」）",
+          "url": "https://www.tatnews.org/2019/10/tat-highlights-bangkok-and-six-unique-locations-for-loi-krathong-festival-2019/",
+          "note": "官方"
+        },
+        {
+          "title": "TAT Newsroom 2024-11：Loi Krathong Festival 2024（「Celebrated annually during the full moon of the 12th month in the Thai lunar calendar」；放水灯「to honour the goddess of water」「release misfortune and invite good fortune」；素可泰 11/8–17，清迈 Yi Peng 11/14–17）",
+          "url": "https://www.tatnews.org/2024/11/loi-krathong-festival-2024-experience-thailands-enchanting-festival-of-lights/",
+          "note": "官方"
+        },
+        {
+          "title": "TAT Newsroom 2022-10：Loi Krathong Festival 2022（「pay respect to the goddess of water」「rid oneself of bad luck and negative feelings」；正日 11/8）",
+          "url": "https://www.tatnews.org/2022/10/loi-krathong-festival-2022/",
+          "note": "官方"
+        },
+        {
+          "title": "TAT Newsroom 2021-11：Candle-lit krathongs and fireworks feature in November 2021 festivals（素可泰「thought to have started there about 600 years ago」；北部同时过 Yi Peng）",
+          "url": "https://www.tatnews.org/2021/11/candle-lit-krathongs-and-fireworks-feature-in-november-2021-festivals/",
+          "note": "官方"
+        },
+        {
+          "title": "TAT Newsroom 2018（PDF）：Sukhothai Loi Krathong and Candle Festival 2018, 16–25 November, Sukhothai Historical Park（节目含「Candle burning ceremony at the King Ram Kamhaeng monument」「Miss Noppamas」选美）",
+          "url": "https://www.tatnews.org/wp-content/uploads/2018/10/Sukhothai-Loi-Krathong-and-Candle-Festival-2018.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "TAT Newsroom 2016-03：Why rivers and water are at the heart of Thai culture（水灯「Banana stalk floats, crewed by incense and orchids」；达府用椰壳灯、清迈叫 Yi Peng 放天灯）",
+          "url": "https://www.tatnews.org/2016/03/why-rivers-and-water-are-at-the-heart-of-thai-culture/",
+          "note": "官方"
+        },
+        {
+          "title": "Wikipedia: Loy Krathong（年表 2010–2030；Yi Peng = 兰纳历二月望；Nopphamat 传说出自曼谷王朝早期文本；Pasuk & Baker《A History of Ayutthaya》称之为曼谷时期的文学虚构；拉玛四世 1863 年称其源于印度教）",
+          "url": "https://en.wikipedia.org/wiki/Loy_Krathong",
+          "note": "维基，辅助"
+        },
+        {
+          "title": "Matichon Weekly 专栏（ศิริพจน์ เหล่ามานะเจริญ Siriphot Laomanacharoen）：《ตำรับท้าวศรีจุฬาลักษณ์》成书于拉达那哥欣早期拉玛三世朝，丹龙亲王 1936 年致帕亚·阿努曼信中认为或为拉玛三世御撰；「นพมาศ ก็เป็นนางในจินตนาการ ไม่ได้มีตัวตนจริงอยู่ในประวัติศาสตร์」；最早图像为吴哥巴戎寺外回廊浮雕（约佛历 1750 年）",
+          "url": "https://www.matichonweekly.com/column/article_14930",
+          "note": "专著级专栏"
+        },
+        {
+          "title": "Matichon（สุจิตต์ วงษ์เทศ Sujit Wongthes）：《ลอยกระทงเพื่อชาติของกบในกะลา》——今日通行的水灯节是二战后借民族主义、1947 年政变后的 Ram Wong 歌曲与 1960 年经济发展计划下的旅游业而「被做红」的发明传统；兰纳的 Yi Peng 近代才从曼谷引入；作者自注为个人记忆不作严谨研究",
+          "url": "https://www.matichon.co.th/education/religious-cultural/news_722887",
+          "note": "学者专栏"
+        },
+        {
+          "title": "泰国政府门户 thailand.go.th《The Seasons of Thailand》（资料来源注明泰国气象厅 Department of Meteorology）：「The rainy season is between mid-May and mid-October」「Winter is between mid-October and mid-February」，南部雨季延续到 12 月",
+          "url": "https://thailand.go.th/issue-focus-detail/009_142",
+          "note": "官方"
+        },
+        {
+          "title": "泰国气象厅（TMD）国别报告（WMO SWFDP-SeA）：「Rainy Season (around mid-May to mid-October)」「Southwest monsoon (May - October)」「Northeast monsoon (November - February)」「The wettest period of the year is August to September」",
+          "url": "https://old.wmo.int/extranet/pages/prog/amp/pwsp/documents/CountryReportThailandSWFDP-SeA.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "Thai PBS World 2024-09-20：泰国气象厅称雨季「will last until mid-October」，冷季 10 月自北部、东北部开始",
+          "url": "https://old.thaipbsworld.com/?p=334584",
+          "note": "二手转述官方"
+        },
+        {
+          "title": "FAO GIEWS 泰国国别简报存档（2015–2020 各期）：「Harvesting of the 2018 main paddy crop started in early October and is expected to be finalized in January 2019」；「bulk to be gathered between October and January」；播种延至 8 月；雨季 5–10 月",
+          "url": "https://cb.apps.fao.org/country/THA/pdf_archive/THA_Archive.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "FAO GIEWS 泰国国别简报（2025-08-20）：主季稻（多为雨养）约占年产八成；「The May-October monsoon season began on time in mid-May」",
+          "url": "https://cb.apps.fao.org/country/THA/pdf/THA.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+          "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+          "note": "维基，辅助"
+        }
+      ],
+      "unverified": [
+        "Phya Anuman Rajadhon《The Loi Krathongs》（JSS 1951）原文未打开（站点跳转）",
+        "素可泰的柯本类型与海拔的城市级出处",
+        "素可泰「水灯与烛光节」始于 1977 年的官方出处",
+        "2018 年正日 11/22、2027 年 11/13 的官方公告",
+        "2025 年正日 11/5 的明文",
+        "水灯节节令食物",
+        "拉玛四世 1863 年原文"
+      ]
+    },
+    {
+      "id": "pchum-ben",
+      "name": "柬埔寨亡人节 Pchum Ben",
+      "name_local": "បុណ្យភ្ជុំបិណ្ឌ Bon Pchum Ben",
+      "lane": "contrast",
+      "region": "柬埔寨全国（金边）",
+      "city": {
+        "name": "金边",
+        "lat": 11.56,
+        "lon": 104.92,
+        "elev_m": 12,
+        "koppen": "Aw",
+        "koppen_note": "热带草原气候：年均温 27.8 ℃，年降水约 1432 mm，干湿季分明。",
+        "climate": {
+          "season": "雨季中后段：GIEWS 记柬埔寨雨季 5–11 月，Pchum Ben 落在 9 月中–10 月中（2026 年 Kan Ben 9/27 起、假日 10/10–12），雨还没停；昼长变化小（金边 10/10 约 11.9 小时，夏至 12.8）。",
+          "harvest": "雨季稻（约占年产七成）要到 1 月才收完——节日落在收成之前，不是收成之后；雨季玉米 11 月收完。",
+          "rain": "FAO GIEWS：「May to November 2025 rainy season」；2025 年稻谷 1460 万吨。",
+          "frost": "无（热带）。",
+          "sources": [
+            {
+              "title": "FAO GIEWS 柬埔寨国别简报（2026-02-02）：雨季稻约占年产七成、2026 年 1 月收完；「May to November 2025 rainy season」；2025 年稻谷 1460 万吨",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=KHM",
+              "note": "官方"
+            },
+            {
+              "title": "climate-data.org Phnom Penh（Köppen Aw；年均温 27.8 ℃，年降水约 1432 mm）",
+              "url": "https://en.climate-data.org/asia/cambodia/phnom-penh-1211/",
+              "note": "二手"
+            },
+            {
+              "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+              "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+              "note": "维基，辅助"
+            },
+            {
+              "title": "昼长为按太阳赤纬公式的几何计算值（日心，天顶距 90.833°、与第三章同一口径）：德里 11/8 约 10.9 小时、夏至 14.0 小时；加德满都 11/8 约 10.9 小时；素可泰 11/24 约 11.3 小时、夏至 13.1；金边 10/10 约 11.9 小时、夏至 12.8",
+              "url": "",
+              "note": "本路计算"
+            }
+          ]
+        }
+      },
+      "date_rule": "高棉历十月（Pheaktrabot / Putrobut）亏月第一日起前十四天为 Kan Ben，第十五日（亏月十五，即朔）为 Pchum Ben 正日；时间锚在佛教雨安居（Vassa）将尽之际，而非收成。王国政府以次级法令定每年三天公共假日。",
+      "date_2026": "2026-10-11（正日按亏月十五推算；官方假日 10/10–10/12，Kan Ben 自 9/27 起）",
+      "date_range": "9 月中 – 10 月中",
+      "calendar_basis": "thai-lunar",
+      "was_new_year": "否：高棉新年在 4 月。",
+      "origin": {
+        "year_label": "上座部佛教的「施饿鬼」仪轨 → 柬埔寨独有的十五日节",
+        "text": "Pchum Ben 是上座部佛教「向亡者回向功德」仪轨在柬埔寨长成的独有节日：十五天里信众轮流到寺院供僧，相信此时地狱之门开启、祖先与饿鬼回来受食，上溯七代；僧人通宵诵经，黎明时把饭团 bay ben 掷向田野，让它直接到亡者手里。学界称它为柬埔寨独有，大样上与中国的中元相似。"
+      },
+      "threshold": "作为对照：它和北半球 10 月末到 11 月初的那一串节不在同一道门槛上——雨季还没结束、稻子还没收，钉住它的是僧团雨安居将满三个月这件事。同样是「请亡灵回家、吃一顿」，这里的日历锚是宗教制度，不是收成或长夜。",
+      "three": {
+        "dead": "十五天里到寺院供僧、为上溯七代的祖先回向，相信地狱之门开启、亡者回来受食；黎明掷饭团 bay ben 给无人祭祀的饿鬼。",
+        "light": "以僧人通宵诵经与黎明的供养为核心，点灯不是主项。",
+        "food": "饭团 bay ben（米饭、或拌豆）掷给亡者，供僧的饭菜由各家轮流备办。"
+      },
+      "spread": "native",
+      "spread_text": "上座部佛教日历下的本土节，随柬埔寨移民带到海外社区；日期跟高棉历与雨安居走，不随气候带变。",
+      "timeline": [
+        {
+          "year": 2025,
+          "year_label": "2025-09-18",
+          "label": "2026 年假日令",
+          "text": "王国政府第 167 号次级法令定 2026 年 Pchum Ben 假日 10/10–12。",
+          "sources": [
+            {
+              "title": "Andersen in Cambodia：Cambodia Sets Official 2026 Public Holiday Schedule（王国政府 2025-09-18 第 167 号次级法令；Pchum Ben 假日 2026-10-10 至 10-12，共三天）",
+              "url": "https://kh.andersen.com/publications/cambodia-sets-official-2026-public-holiday-schedule/",
+              "note": "律所转述官方"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026-09-27 → 10-11",
+          "label": "Kan Ben 十四日",
+          "text": "9/27 起十五天，正日落在官方假日 10/10–12 之中。",
+          "sources": [
+            {
+              "title": "Cambodianess（Thmey Thmey）：Cambodians Begin Pchum Ben Celebrations: What Is It?（2026 年 Kan Ben 自 9/27 起，十五日中的第十五日为 Pchum Ben；以 Putrobut 月亏月首日起算，终于高棉历十月十五；上溯七代祖先；bay ben 饭团；佛教雨安居结束）",
+              "url": "https://cambodianess.com/article/cambodians-begin-pchum-ben-celebrations-what-is-it",
+              "note": "二手"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "2026 年公共假日",
+          "value": "10/10–10/12",
+          "unit": "",
+          "basis": "第 167 号次级法令",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "Andersen in Cambodia：Cambodia Sets Official 2026 Public Holiday Schedule（王国政府 2025-09-18 第 167 号次级法令；Pchum Ben 假日 2026-10-10 至 10-12，共三天）",
+              "url": "https://kh.andersen.com/publications/cambodia-sets-official-2026-public-holiday-schedule/",
+              "note": "律所转述官方"
+            }
+          ]
+        },
+        {
+          "label": "雨季",
+          "value": "5–11 月",
+          "unit": "",
+          "basis": "FAO GIEWS 2026-02",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "FAO GIEWS 柬埔寨国别简报（2026-02-02）：雨季稻约占年产七成、2026 年 1 月收完；「May to November 2025 rainy season」；2025 年稻谷 1460 万吨",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=KHM",
+              "note": "官方"
+            }
+          ]
+        }
+      ],
+      "dispute": "2026 年正日：按亏月十五推算为 10/11 前后，官方假日 10/10–12；政府公告未点明正日。",
+      "why": "反例：同样祭亡灵，却在雨季中、收成前，由僧团雨安居的日历钉住——说明「祭亡灵」未必跟着收成与长夜走。",
+      "text": "柬埔寨的亡人节在雨季里过：高棉历十月亏月的头一天起，十五天里信众轮流到寺院供僧，相信地狱之门这时打开，上溯七代的祖先和无人祭祀的饿鬼回来受食；僧人通宵诵经，黎明时人们把饭团 bay ben 掷向田野，让它直接到亡者手里。第十五天是正日，2026 年落在 10 月 11 日前后，官方假日 10 月 10 到 12 日。此时雨还没停——柬埔寨雨季 5 到 11 月——雨季稻要到 1 月才收完，钉住它的是僧团雨安居将满三个月，而不是收成或长夜：请亡灵回家的日子可以挂在宗教制度上，不一定挂在气候的门槛上。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Andersen in Cambodia：Cambodia Sets Official 2026 Public Holiday Schedule（王国政府 2025-09-18 第 167 号次级法令；Pchum Ben 假日 2026-10-10 至 10-12，共三天）",
+          "url": "https://kh.andersen.com/publications/cambodia-sets-official-2026-public-holiday-schedule/",
+          "note": "律所转述官方"
+        },
+        {
+          "title": "Cambodianess（Thmey Thmey）：Cambodians Begin Pchum Ben Celebrations: What Is It?（2026 年 Kan Ben 自 9/27 起，十五日中的第十五日为 Pchum Ben；以 Putrobut 月亏月首日起算，终于高棉历十月十五；上溯七代祖先；bay ben 饭团；佛教雨安居结束）",
+          "url": "https://cambodianess.com/article/cambodians-begin-pchum-ben-celebrations-what-is-it",
+          "note": "二手"
+        },
+        {
+          "title": "Wikipedia: Pchum Ben（引 Holt 2012《Caring for the Dead Ritually in Cambodia》、Kobayashi 2004、Ly Daravuth 等：高棉历十月亏月第十五日、Vassa 结束；地狱之门开启、阎摩；七代祖先；饭团掷于田野；「considered unique to Cambodia」、与中元 / 盂兰相似）",
+          "url": "https://en.wikipedia.org/wiki/Pchum_Ben",
+          "note": "维基，辅助"
+        },
+        {
+          "title": "FAO GIEWS 柬埔寨国别简报（2026-02-02）：雨季稻约占年产七成、2026 年 1 月收完；「May to November 2025 rainy season」；2025 年稻谷 1460 万吨",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=KHM",
+          "note": "官方"
+        },
+        {
+          "title": "climate-data.org Phnom Penh（Köppen Aw；年均温 27.8 ℃，年降水约 1432 mm）",
+          "url": "https://en.climate-data.org/asia/cambodia/phnom-penh-1211/",
+          "note": "二手"
+        },
+        {
+          "title": "Wikipedia: List of cities by Köppen climate classification（Delhi: Cwa, bordering on BSh；Ahmedabad: BSh, bordering on Aw；Kathmandu: Cwa；Bangkok: Aw；Phnom Penh: Aw）",
+          "url": "https://en.wikipedia.org/wiki/List_of_cities_by_K%C3%B6ppen_climate_classification",
+          "note": "维基，辅助"
+        }
+      ],
+      "unverified": [
+        "2026 年 Pchum Ben 正日（10/10 或 10/11）的政府公告与第 167 号次级法令原文",
+        "num ansom 的出处",
+        "湄公河 / 洞里萨湖 9–10 月水位口径",
+        "Holt 2012 原文"
+      ]
+    }
+  ],
+  "dates_table": [
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2015,
+      "date": "2015-11-11",
+      "weekday": "三",
+      "saka": "Kartika 20 (1937)",
+      "source": {
+        "title": "印度人事与培训部（DoPT）办公备忘录 F.No.12/5/2014-JCA-2（2014-06-06）《Holidays to be observed in Central Government Offices during the year 2015》附件一：Diwali (Deepavali) November 11, Wednesday, Kartika 20（GConnect 转载）",
+        "url": "https://www.gconnect.in/?p=7518"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2016,
+      "date": "2016-10-30",
+      "weekday": "日",
+      "saka": "Kartika 08 (1938)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/7/2015-JCA-2（2015-06-11）《Holidays ... during the year 2016》：「During 2016, Diwali (Deepavali) falls on Sunday, October 30, 2016 (Kartika 08)」（印度农业研究理事会 ICAR 官网存档件）",
+        "url": "https://icar.org.in/sites/default/files/inline-files/HolidaystoinCentral%20Govtoffices-02016_0.pdf"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2017,
+      "date": "2017-10-19",
+      "weekday": "四",
+      "saka": "Asvina 28 (1939)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/8/2016-JCA-2（2016-06-24）《Holidays ... during the year 2017》：「During 2017, Diwali (Deepavali) falls on Thursday, October 19, 2017 (Ashvina 28)」（ICAR 官网存档件）",
+        "url": "https://icar.org.in/sites/default/files/inline-files/holiday-2017_0.pdf"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2018,
+      "date": "2018-11-07",
+      "weekday": "三",
+      "saka": "Kartika 16 (1940)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/3/2017-JCA-2（2017-06-14）《Holidays ... during the year 2018》附件一：Diwali (Deepavali) November 07, Wednesday, Kartika 16（StaffNews 转载；原件 documents.doptcirculars.nic.in/D2/D02est/12_3_2017-JCA-2-14062017.pdf；该备忘录第 6 段正文误抄了上一年的「October 19, 2017」，以附件一为准）",
+        "url": "https://www.staffnews.in/?p=2682"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2019,
+      "date": "2019-10-27",
+      "weekday": "日",
+      "saka": "Kartika 05 (1941)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/2/2018-JCA-2（2018-07-11）《Holidays ... during the year 2019》：「In 2019, Diwali (Deepavali) falls on Sunday, October 27, 2019 (Kartika 05)」（GConnect、StaffNews 两处转载一致；原件 dopt.gov.in/sites/default/files/holiday list 2019 2_1.pdf）",
+        "url": "https://www.gconnect.in/orders-in-brief/leave-ltc/leave/central-government-holidays-list-2019.html"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2020,
+      "date": "2020-11-14",
+      "weekday": "六",
+      "saka": "Kartika 23 (1942)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/1/2019-JCA-2（2019-06-18）《Holidays ... during the year 2020》：「Diwali (Deepavali) falls on Saturday, November 14, 2020 (Kartika 23)」（StaffNews 转载；原件 dopt.gov.in/sites/default/files/Holiday list 2020.pdf）",
+        "url": "https://www.staffnews.in/?p=445"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2021,
+      "date": "2021-11-04",
+      "weekday": "四",
+      "saka": "Kartika 13 (1943)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/9/2020-JCA-2（2020-06-10）《Holidays ... during the year 2021》附件一：Diwali (Deepavali) November 04, Thursday, Kartika 13（GConnect 转载）",
+        "url": "https://gconnect.in/orders-in-brief/leave-ltc/leave/central-government-holidays-2021.html"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2022,
+      "date": "2022-10-24",
+      "weekday": "一",
+      "saka": "Kartika 02 (1944)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/3/2021-JCA-2（2021-06-08）《Holidays ... during the year 2022》：「Monday, October 24, 2022 (Kartika 2)」（StaffNews 转载，两页一致）",
+        "url": "https://www.staffnews.in/?p=117999"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2023,
+      "date": "2023-11-12",
+      "weekday": "日",
+      "saka": "Kartika 21 (1945)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/5/2022-JCA（2022-06-16）《Holidays ... during the year 2023》：Diwali (Deepavali) Sunday, November 12, 2023 (Kartika 21)（印度环境、森林与气候变化部 moef.gov.in 存档件；StaffNews、GConnect 转载一致）",
+        "url": "https://moef.gov.in/uploads/2023/01/holiday-list-2023.pdf"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2024,
+      "date": "2024-10-31",
+      "weekday": "四",
+      "saka": "Kartika 09 (1946)",
+      "source": {
+        "title": "中央政府雇员福利协调委员会（CGEWCC）特里凡得琅 2024 年假日表（依 DoPT 清单）：「15 Diwali (Deepavali) October 31 Karthika 09」（印度审计署 cag.gov.in 存档件）",
+        "url": "https://cag.gov.in/uploads/media/Holiday-List-2024-06578497a8faa36-79955722.pdf"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2025,
+      "date": "2025-10-20",
+      "weekday": "一",
+      "saka": "Asvina 28 (1947)",
+      "source": {
+        "title": "梅加拉亚邦中央政府机构 2025 年法定假日表（Annexure-A，依 DoPT 清单）：Diwali (Deepavali) October 20, Asvina 28（cag.gov.in 存档件；GConnect/StaffNews 转载的 DoPT OM 2024-07-09 同为 10/20）",
+        "url": "https://cag.gov.in/uploads/media/Holiday-List-for-the-Calendar-Year-2025-067ebb9eb3a1143-61635028.pdf"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2026,
+      "date": "2026-11-08",
+      "weekday": "日",
+      "saka": "Kartika 17 (1948)",
+      "source": {
+        "title": "印度驻埃里温使馆《List of Holidays during 2026》：Diwali (Deepavali) November 08, Sunday；DoPT 办公备忘录 F.No.12/2/2023-JCA（2025-07-03）同：Sunday, November 08, 2026 (Kartika 17)",
+        "url": "https://eoiyerevan.gov.in/pdf/List%20of%20holidays%202026.pdf"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "diwali",
+      "label": "排灯节（Lakshmi Puja 日 / 印度中央政府假日）",
+      "year": 2027,
+      "date": "2027-10-29",
+      "weekday": "五",
+      "saka": "Kartika 07 (1949)",
+      "source": {
+        "title": "DoPT 办公备忘录 F.No.12/2/2023-JCA（2026-07-16）《Holidays ... during the year 2027》：「During 2027, Diwali (Deepavali) falls on Friday, October 29, 2027 (Kartika 7)」（印度邮政部转发件 No. Y-21/2/2026-PE-II-DOP，2026-09-08，cept.gov.in）",
+        "url": "https://utilities.cept.gov.in/dop/pdfbind.ashx?id=15435"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2015,
+      "date": "2015-11-25",
+      "weekday": "三",
+      "source": {
+        "title": "TAT Newsroom: TAT hosted Loi Krathong 2015 celebrations at Nagaraphirom Park in Bangkok（「full moon night of the 12th lunar month, which this year falls on 25 November」）",
+        "url": "https://www.tatnews.org/2015/11/tat-hosted-loi-krathong-2015-celebrations-at-nagaraphirom-park-in-bangkok/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2016,
+      "date": "2016-11-14",
+      "weekday": "一",
+      "source": {
+        "title": "TAT Newsroom: Loi Krathong Festival 2016 will show respect to His Majesty King Bhumibol Adulyadej（「On the evening of Loi Krathong itself (14 November)」；素可泰 11/10–14，清迈 Yi Peng 11/12–15）",
+        "url": "https://www.tatnews.org/2016/10/loi-krathong-festival-2016-will-show-respect-to-his-majesty-king-bhumibol-adulyadej/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2017,
+      "date": "2017-11-03",
+      "weekday": "五",
+      "source": {
+        "title": "TAT Newsroom: TAT floats Bangkok and five unique locations for Loi Krathong Festival 2017（「krathong floating activity scheduled to take place on the full moon night of 3 November」；素可泰、清迈 11/1–5）",
+        "url": "https://www.tatnews.org/2017/10/tat-floats-bangkok-five-unique-locations-loi-krathong-festival-2017/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2018,
+      "date": "2018-11-22",
+      "weekday": "四",
+      "source": {
+        "title": "TAT Newsroom（PDF）: Sukhothai Loi Krathong and Candle Festival 2018, 16–25 November 2018, Sukhothai Historical Park（节目表未单独标出正日；正日 11/22 另据 Wikipedia 年表）",
+        "url": "https://www.tatnews.org/wp-content/uploads/2018/10/Sukhothai-Loi-Krathong-and-Candle-Festival-2018.pdf"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2019,
+      "date": "2019-11-11",
+      "weekday": "一",
+      "source": {
+        "title": "TAT Newsroom: TAT highlights Bangkok and six unique locations for Loi Krathong Festival 2019（「The full moon night of the 12th lunar month this year falls on 11 November」；素可泰 11/2–11，清迈 11/9–12）",
+        "url": "https://www.tatnews.org/2019/10/tat-highlights-bangkok-and-six-unique-locations-for-loi-krathong-festival-2019/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2020,
+      "date": "2020-10-31",
+      "weekday": "六",
+      "source": {
+        "title": "TAT Newsroom: TAT celebrates Loi Krathong Festival 2020 in the new normal（「The full moon night of the 12th lunar month this year falls on 31 October」；素可泰 10/23–11/1，清迈 10/31–11/1）",
+        "url": "https://www.tatnews.org/2020/10/tat-celebrates-loi-krathong-festival-2020-in-the-new-normal/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2021,
+      "date": "2021-11-19",
+      "weekday": "五",
+      "source": {
+        "title": "TAT Newsroom: Candle-lit krathongs and fireworks feature in November 2021 festivals（「In 2021 it will be held on Friday, 19 November」）",
+        "url": "https://www.tatnews.org/2021/11/candle-lit-krathongs-and-fireworks-feature-in-november-2021-festivals/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2022,
+      "date": "2022-11-08",
+      "weekday": "二",
+      "source": {
+        "title": "TAT Newsroom: Loi Krathong Festival 2022（「This year the festival is on Tuesday, 8 November」；素可泰 10/29–11/8，清迈 11/7–9）",
+        "url": "https://www.tatnews.org/2022/10/loi-krathong-festival-2022/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2023,
+      "date": "2023-11-27",
+      "weekday": "一",
+      "source": {
+        "title": "泰国政府门户 thailand.go.th: Loy Krathong Festival 2023 to be held nationwide（「This year the festival is on Monday, 27 November」；素可泰 11/18–27，清迈 11/26–28）；TAT Newsroom 2023 同",
+        "url": "https://www.thailand.go.th/event-detail/loy-krathong-festival-2023-to-be-held-nationwide"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2024,
+      "date": "2024-11-15",
+      "weekday": "五",
+      "source": {
+        "title": "TAT Newsroom: Loi Krathong Festival 2024（「this year's festival falls on Friday, 15 November」；素可泰 11/8–17，清迈 11/14–17）",
+        "url": "https://www.tatnews.org/2024/11/loi-krathong-festival-2024-experience-thailands-enchanting-festival-of-lights/"
+      },
+      "confidence": "高"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2025,
+      "date": "2025-11-05",
+      "weekday": "三",
+      "source": {
+        "title": "TAT Newsroom: Thailand marks rivers of light for the Loi Krathong Festival 2025（素可泰活动 10/27–11/5，末日为正日）",
+        "url": "https://www.tatnews.org/2025/11/thailand-marks-rivers-of-light-for-the-loi-krathong-festival-2025/"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2026,
+      "date": "2026-11-24",
+      "weekday": "二",
+      "source": {
+        "title": "泰国政府门户 thailand.go.th: Loy Krathong, Burning Candles, and Playing with Fire Festival in Sukhothai, 15–24 November 2026（末日 11/24 加场 20:30）",
+        "url": "https://www.thailand.go.th/event-detail/loy-krathong-burning-candles-and-playing-with-fire-festival-in-sukhothai"
+      },
+      "confidence": "中"
+    },
+    {
+      "festival": "loy-krathong",
+      "label": "水灯节正日（泰历十二月望）",
+      "year": 2027,
+      "date": "2027-11-13",
+      "weekday": "六",
+      "source": {
+        "title": "Wikipedia: Loy Krathong 年表（2027 年 13 Nov；天文满月 2027-11-14 07:26 UTC，泰历十五或落在前一日；泰国旅游局尚未公告）",
+        "url": "https://en.wikipedia.org/wiki/Loy_Krathong"
+      },
+      "confidence": "低"
+    }
+  ],
+  "facts": [
+    {
+      "id": "imd-monsoon-withdrawal",
+      "text": "印度气象局 2020 年修订的西南季风常年日期：撤退自西拉贾斯坦（贾沙梅尔、比卡内尔）9 月 17 日开始（旧口径 9 月 1 日），新德里 9 月 25 日（旧 9 月 22 日）、艾哈迈达巴德 9 月 30 日、勒克瑙 10 月 3 日、加尔各答 10 月 12 日，南印度最终撤完 10 月 15 日不变；撤退口径用 1971–2019 年资料，登陆口径用 1961–2019 年资料，自 2020 年 6 月 1 日起启用。",
+      "value": "9/17 起撤 → 10/15 撤完",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "IMD Press release: new onset and withdrawal dates (Final), 2020",
+          "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf"
+        },
+        {
+          "title": "Business Standard 2025-10-16: Southwest monsoon withdraws from India, northeast rains set in — IMD（撤完常年日 10/15；2025 年 10/16 撤完，同日东北季风在泰米尔纳德登场）",
+          "url": "https://www.business-standard.com/india-news/southwest-monsoon-withdraws-from-india-northeast-rains-set-in-imd-125101600525_1.html"
+        }
+      ]
+    },
+    {
+      "id": "imd-delhi-monsoon",
+      "text": "印度气象局常年口径：西南季风登陆新德里 6 月 27 日、撤出 9 月 25 日（1961–2019 / 1971–2019 年资料，2020 年修订）；艾哈迈达巴德登陆 6/21、撤出 9/30；加尔各答 6/11、10/12。",
+      "value": "6/27 → 9/25",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "印度气象局（IMD）新闻稿：西南季风登陆与撤退常年日期修订（2020 年，登陆用 1961–2019、撤退用 1971–2019 资料，2020-06-01 起启用）",
+          "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf",
+          "note": "官方"
+        }
+      ]
+    },
+    {
+      "id": "tmd-rainy-season",
+      "text": "泰国气象厅口径：雨季约 5 月中–10 月中（西南季风），冷季 10 月中–2 月中（东北季风），夏季 2 月中–5 月中；最湿 8–9 月；冷季自北部、东北部先开始，南部雨要下到 12 月。",
+      "value": "5 月中 – 10 月中",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "泰国政府门户 thailand.go.th《The Seasons of Thailand》（资料来源注明泰国气象厅 Department of Meteorology）：「The rainy season is between mid-May and mid-October」「Winter is between mid-October and mid-February」，南部雨季延续到 12 月",
+          "url": "https://thailand.go.th/issue-focus-detail/009_142",
+          "note": "官方"
+        },
+        {
+          "title": "泰国气象厅（TMD）国别报告（WMO SWFDP-SeA）：「Rainy Season (around mid-May to mid-October)」「Southwest monsoon (May - October)」「Northeast monsoon (November - February)」「The wettest period of the year is August to September」",
+          "url": "https://old.wmo.int/extranet/pages/prog/amp/pwsp/documents/CountryReportThailandSWFDP-SeA.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "Thai PBS World 2024-09-20：泰国气象厅称雨季「will last until mid-October」，冷季 10 月自北部、东北部开始",
+          "url": "https://old.thaipbsworld.com/?p=334584",
+          "note": "二手转述官方"
+        }
+      ]
+    },
+    {
+      "id": "diwali-gujarati-new-year",
+      "text": "古吉拉特把排灯节次日——迦底迦月白分初一（Bestu Varas）——当维克拉姆历新年，商人在排灯节当晚于吉祥天女前开新账本（Chopda Pujan）；所以排灯节在古吉拉特同时是年的接缝。",
+      "value": "排灯节 + 1 日 = 维克拉姆历元旦",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Wikipedia: Diwali（引 Pintchman 2005、Bahadur 2006、Jones 2011、Long 2009、Dundas 2002、Grewal 1998、McDermott 2011、Coogan 2003、Melton 2011、Sachau 译 Al-Biruni 等）",
+          "url": "https://en.wikipedia.org/wiki/Diwali",
+          "note": "维基，辅助"
+        },
+        {
+          "title": "The Hitavada 2020-11-14：Laxmi Pujan: A day of spiritual awakening（Ashwin/Kartik 月无月之夜为正日、Pradosh Kaal 行 Mahalakshmi Puja、古吉拉特商人 Chopda Pujan 开新账本、耆那教纪念大雄涅槃、锡克教 Bandi Chhor Divas）",
+          "url": "https://www.thehitavada.com/Encyc/2020/11/14/Laxmi-Pujan-A-day-of-spiritual-awakening.html",
+          "note": "二手"
+        }
+      ]
+    },
+    {
+      "id": "diwali-pradosh-rule",
+      "text": "排灯节日期规则：迦底迦月 amavasya 当值于日落后的 pradosh 时段之日行吉祥天女祭；若相邻两日的 pradosh 都含 amavasya，Dharmasindhu、Nirnayasindhu 主张取后一日，但后一日的 amavasya 须覆盖 pradosh 的大部（2024、2025 年官方假日表都取了前一日）；孟加拉的 Kali Puja 以午夜 nishith 为准。印度中央政府假日表每年据此公布一日。",
+      "value": "以日落后 pradosh 时的 tithi 为准",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "PanchangBodh：排灯节日期与吉时如何推算（引 Dharmasindhu、Nirnayasindhu：迦底迦月 amavasya 的 pradosh 时段行吉祥天女供与 deep daan；若两日 pradosh 皆含 amavasya 取后一日；孟加拉 Kali Puja 以午夜 nishith 为准；引 Rashtriya Panchang）",
+          "url": "https://panchangbodh.com/hi/how-is-diwali-date-muhurat-timings-calculated",
+          "note": "历法说明"
+        },
+        {
+          "title": "Drik Panchang：Lakshmi Puja 2025（「Lakshmi Puja should be done during Pradosh Kaal which starts after sunset」；Amavasya 2025-10-20 15:44 – 10-21 17:54；正日 10/20）",
+          "url": "https://www.drikpanchang.com/festivals/lakshmipuja/festivals-lakshmipuja-timings.html?year=2025",
+          "note": "历法网站"
+        }
+      ]
+    },
+    {
+      "id": "diwali-span",
+      "text": "2015–2027 年印度中央政府假日表上的排灯节最早 10 月 19 日（2017）、最晚 11 月 14 日（2020），跨度 26 天；2026 年 11 月 8 日（周日）。",
+      "value": "10/19 – 11/14",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "印度人事与培训部（DoPT）办公备忘录 F.No.12/2/2023-JCA（2026-07-16）《Holidays to be observed in Central Government Offices during the year 2027》（印度邮政部转发件，cept.gov.in）：「During 2027, Diwali (Deepavali) falls on Friday, October 29, 2027 (Kartika 7)」",
+          "url": "https://utilities.cept.gov.in/dop/pdfbind.ashx?id=15435",
+          "note": "官方"
+        },
+        {
+          "title": "印度驻埃里温使馆《List of Holidays during 2026》：Diwali (Deepavali) November 08, Sunday",
+          "url": "https://eoiyerevan.gov.in/pdf/List%20of%20holidays%202026.pdf",
+          "note": "官方"
+        }
+      ]
+    },
+    {
+      "id": "loy-krathong-rule",
+      "text": "水灯节正日 = 泰历十二月望（兰纳历二月望 Yi Peng）；2015–2027 年落在 10 月 31 日（2020）到 11 月 27 日（2023）之间，2026 年 11 月 24 日。",
+      "value": "泰历十二月望",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "TAT Newsroom 2019-10：TAT highlights Bangkok and six unique locations for Loi Krathong Festival 2019（「The full moon night of the 12th lunar month this year falls on 11 November」）",
+          "url": "https://www.tatnews.org/2019/10/tat-highlights-bangkok-and-six-unique-locations-for-loi-krathong-festival-2019/",
+          "note": "官方"
+        },
+        {
+          "title": "泰国政府门户 thailand.go.th：Loy Krathong Festival 2023 to be held nationwide（「This year the festival is on Monday, 27 November」「celebrated during the full moon of the 12th month of the Thai lunar calendar」）",
+          "url": "https://www.thailand.go.th/event-detail/loy-krathong-festival-2023-to-be-held-nationwide",
+          "note": "官方"
+        },
+        {
+          "title": "泰国政府门户 thailand.go.th（公共关系部）：Loy Krathong, Burning Candles, and Playing with Fire Festival in Sukhothai，2026-11-15 – 11-24，素可泰历史公园，票价 500 / 900 / 1200 泰铢",
+          "url": "https://www.thailand.go.th/event-detail/loy-krathong-burning-candles-and-playing-with-fire-festival-in-sukhothai",
+          "note": "官方"
+        }
+      ]
+    },
+    {
+      "id": "thai-rice-harvest",
+      "text": "FAO GIEWS：泰国主季稻（约占年产七到八成）5 月下旬起种、延至 8 月，10 月初开始收、次年 1 月收完，「大头在 10 月到 1 月之间」。",
+      "value": "10 月初 – 1 月",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "FAO GIEWS 泰国国别简报存档（2015–2020 各期）：「Harvesting of the 2018 main paddy crop started in early October and is expected to be finalized in January 2019」；「bulk to be gathered between October and January」；播种延至 8 月；雨季 5–10 月",
+          "url": "https://cb.apps.fao.org/country/THA/pdf_archive/THA_Archive.pdf",
+          "note": "官方"
+        },
+        {
+          "title": "FAO GIEWS 泰国国别简报（2025-08-20）：主季稻（多为雨养）约占年产八成；「The May-October monsoon season began on time in mid-May」",
+          "url": "https://cb.apps.fao.org/country/THA/pdf/THA.pdf",
+          "note": "官方"
+        }
+      ]
+    },
+    {
+      "id": "india-kharif-harvest",
+      "text": "FAO GIEWS 2026-02：印度主季 kharif 稻（约占年产八成）至 2026 年 1 月收完，kharif 玉米 11 月收；2025 年 6–9 月季风雨量平均至偏多，kharif 稻创纪录 1.875 亿吨。",
+      "value": "10 月 – 1 月",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "FAO GIEWS 印度国别简报（2026-02-13）：主季 kharif 稻约占年产八成、至 2026 年 1 月收完；kharif 玉米 11 月收；2025 年 6–9 月季风雨量平均至偏多；kharif 稻创纪录 1.875 亿吨",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=IND",
+          "note": "官方"
+        }
+      ]
+    },
+    {
+      "id": "daylength-south-asia",
+      "text": "昼长（天顶距 90.833°，与第三章同口径）：德里 11/8 约 10.9 小时（夏至 14.0）、加德满都 11/8 约 10.9、素可泰 11/24 约 11.3（夏至 13.1）、金边 10/10 约 11.9（夏至 12.8）——越靠近赤道，「长夜」这道门槛越不存在。",
+      "value": "10.7 / 10.7 / 11.1 / 11.8 小时",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "昼长为按太阳赤纬公式的几何计算值（日心，天顶距 90.833°、与第三章同一口径）：德里 11/8 约 10.9 小时、夏至 14.0 小时；加德满都 11/8 约 10.9 小时；素可泰 11/24 约 11.3 小时、夏至 13.1；金边 10/10 约 11.9 小时、夏至 12.8",
+          "url": "",
+          "note": "本路计算"
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "id": "dopt-2027-diwali",
+      "source_title": "印度人事与培训部办公备忘录 F.No.12/2/2023-JCA（2026-07-16）《Holidays to be observed in Central Government Offices during the year 2027》第 6 段",
+      "text": "During 2027, Diwali (Deepavali) falls on Friday, October 29, 2027 (Kartika 7).",
+      "translation_or_gloss": "2027 年排灯节在 10 月 29 日（周五），Saka 历迦底迦月 7 日。",
+      "edition_url": "https://utilities.cept.gov.in/dop/pdfbind.ashx?id=15435",
+      "confidence": "高"
+    },
+    {
+      "id": "tat-2019-full-moon",
+      "source_title": "泰国旅游局 TAT Newsroom 2019-10：TAT highlights Bangkok and six unique locations for Loi Krathong Festival 2019",
+      "text": "The full moon night of the 12th lunar month this year falls on 11 November.",
+      "translation_or_gloss": "今年泰历十二月的满月夜落在 11 月 11 日。",
+      "edition_url": "https://www.tatnews.org/2019/10/tat-highlights-bangkok-and-six-unique-locations-for-loi-krathong-festival-2019/",
+      "confidence": "高"
+    },
+    {
+      "id": "siriphot-nopphamat",
+      "source_title": "Matichon Weekly 专栏，Siriphot Laomanacharoen 论 Nang Nopphamat",
+      "text": "อันที่จริงแล้ว “นพมาศ” ก็เป็นนางในจินตนาการ ไม่ได้มีตัวตนจริงอยู่ในประวัติศาสตร์",
+      "translation_or_gloss": "其实「Nopphamat」是想象中的女子，历史上并无其人。",
+      "edition_url": "https://www.matichonweekly.com/column/article_14930",
+      "confidence": "中"
+    },
+    {
+      "id": "imd-15-october",
+      "source_title": "印度气象局 2020 年新闻稿：西南季风登陆与撤退常年日期修订",
+      "text": "There is no change in the final withdrawal date over south India, i.e., 15th October.",
+      "translation_or_gloss": "南印度的最终撤退日期不变，仍为 10 月 15 日。",
+      "edition_url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf",
+      "confidence": "高"
+    },
+    {
+      "id": "tgt-seasons",
+      "source_title": "泰国政府门户《The Seasons of Thailand》（资料来源：泰国气象厅）",
+      "text": "The rainy season is between mid-May and mid-October; Winter is between mid-October and mid-February.",
+      "translation_or_gloss": "雨季在 5 月中到 10 月中；冬季（冷季）在 10 月中到 2 月中。",
+      "edition_url": "https://thailand.go.th/issue-focus-detail/009_142",
+      "confidence": "高"
+    }
+  ],
+  "unverified": [
+    "水灯节 2018 年正日 11/22、2027 年 11/13 没有官方公告（据维基年表）；2025 年 11/5 仅据素可泰活动末日。",
+    "Phya Anuman Rajadhon《The Loi Krathongs》（JSS 1951）原文未能打开（siamese-heritage.org 跳转到无关站点）。",
+    "素可泰的柯本类型（Aw）与海拔未核到城市级出处；加德满都 Cwb / Cwa 两说并列。",
+    "印度气象局东北季风常年开始日（约 10/20）未核到 IMD 原文（2025 年实际 10/16）。",
+    "Tihar 2026 年尼泊尔历法决定委员会的 Bhai Tika 吉时尚未公布；内政部 2083 年假日表原件未打开；Nepal Sambat 1147 元旦日期为推算。",
+    "Bandi Chhor Divas 1619 年、Yama Deepam、海外排灯节假日国家清单、棉花采摘月份。",
+    "Pchum Ben 2026 正日（10/10 或 10/11）与王国政府第 167 号次级法令原文；num ansom。",
+    "水灯节节令食物；素可泰「水灯与烛光节」始于 1977 年的官方出处。",
+    "昼长数字为几何计算值（不含折射），非气象部门口径；德里、加德满都无初霜口径。",
+    "DoPT 2015、2020、2021 年假日表只核到一处转载（GConnect / StaffNews），2024、2025 年用的是依 DoPT 清单编制的 CGEWCC 邦级假日表（cag.gov.in）。"
+  ]
+}

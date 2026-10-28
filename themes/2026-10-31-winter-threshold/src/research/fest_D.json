@@ -1,0 +1,1092 @@
+{
+  "route": "D",
+  "nodes": [
+    {
+      "id": "dia-de-muertos",
+      "name": "亡灵节 Día de Muertos",
+      "name_local": "Día de Muertos / Día de los Fieles Difuntos（11/2）· Día de Todos los Santos（11/1）",
+      "lane": "mesoamerica",
+      "region": "墨西哥中部与南部高原（墨西哥城、瓦哈卡、米却肯 Pátzcuaro 等 21 个州）→ 美国西南移民社区 → 全球",
+      "city": {
+        "name": "墨西哥城",
+        "lat": 19.43,
+        "lon": -99.13,
+        "elev_m": 2240,
+        "koppen": "Cwb",
+        "koppen_note": "副热带高地气候（温带、干冬、暖夏）——Beck 等 2018 1 km 图读取；瓦哈卡市像元为 BSh（热半干旱），Pátzcuaro 为 Cwb",
+        "climate": {
+          "season": "雨季末 / 旱季初：国家气象局口径，墨西哥大部分地区雨季通常在 5–10 月，10 月进入尾声；11 月起旱季。UNESCO 与 INAH 条目都把节期写成「玉米年度栽培周期结束之时」。",
+          "harvest": "主季玉米：FAO GIEWS 2026-03 简报——中部产区 4 月起播种，靠 4–6 月降雨；谷物销售年度为 10 月 / 9 月制，主季收成落在秋季；UNESCO 条目：节日标志「玉米年度栽培周期的完成」。",
+          "rain": "国家气象局（SMN）：墨西哥大部分地区雨季通常 5–10 月；国家水委会（Conagua）行政口径：「雨季与热带气旋季」5/15–11/30。",
+          "frost": "",
+          "sources": [
+            {
+              "title": "Expansión Política 2026-10-06 引 SMN：「en la mayor parte de México la temporada de lluvias ocurre normalmente entre mayo y octubre」",
+              "url": "https://politica.expansion.mx/mexico/2026/10/06/hasta-cuando-seguira-lloviendo-mexico-ultimos-meses-2026"
+            },
+            {
+              "title": "TV Azteca 2026 引 Conagua 日程：雨季与热带气旋季 5/15 起、11/30 正式结束",
+              "url": "https://www.tvazteca.com/aztecanoticias/temporada-lluvias-2026-en-mexico-cuando-termina-oficialmente-conagua/"
+            },
+            {
+              "title": "FAO GIEWS Country Brief: Mexico（Reference Date 23-March-2026）",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MEX"
+            },
+            {
+              "title": "UNESCO ICH 00054 条目：「completion of the annual cycle of cultivation of maize」",
+              "url": "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054"
+            },
+            {
+              "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+              "note": "一手数据集"
+            }
+          ]
+        }
+      },
+      "date_rule": "固定公历：11/1 诸圣节——悼念夭折儿童（Día de los Angelitos）；11/2 诸灵节（Fieles Difuntos）——悼念成人；守夜与祭坛从 10/31 夜起；按 INAH / UNESCO 条目，各族群按死因、年龄、性别分日祭祀，整体落在 10 月末至 11 月初。",
+      "date_2026": "2026-11-01",
+      "date_range": "固定（11/1–11/2；前夜 10/31）",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否。阿兹特克太阳年（xiuhpohualli）的祭亡双月是第 9、10 月，不在岁首；并入天主教日历后钉在 11/1–11/2，也不是教会年的接缝。",
+      "origin": {
+        "year_label": "16 世纪：萨阿贡《佛罗伦萨手抄本》第二卷记阿兹特克太阳年第 9 月 Tlaxochimaco（又称 Miccailhuitontli「小祭亡节」）、第 10 月 Xocotl Huetzi（又称 Hueymiccailhuitl「大祭亡节」）→ 殖民时期并入 11/1 诸圣、11/2 诸灵 → 2008 年列入 UNESCO 人类非遗代表作名录",
+        "text": "西班牙人到来前，墨西哥中部的纳瓦人在 365 日太阳年的 18 个二十日「月」里，有两个专门祭亡的月份：第 9 月 Tlaxochimaco（「献花」，别名 Miccailhuitontli，小祭亡节）和第 10 月 Xocotl Huetzi（「果实落下」，别名 Hueymiccailhuitl，大祭亡节），落在夏末。殖民时期，这套祭亡传统与天主教 11 月 1 日诸圣节、11 月 2 日诸灵节合流；UNESCO 与墨西哥国家人类学历史研究所（INAH）都把今天的节日描述为「前西班牙宗教仪式与天主教节期的融合」，并把节期与玉米年度栽培周期的结束联系起来。"
+      },
+      "threshold": "墨西哥城海拔约 2 240 m，柯本 Cwb（干冬暖夏的高地气候）。国家气象局口径的雨季在 5–10 月，11 月进入旱季；FAO GIEWS 记中部产区主季玉米 4 月起播、靠 4–6 月降雨，收成在秋季；UNESCO 条目直接写明节日「标志玉米年度栽培周期的完成」。万寿菊（cempasúchil, Tagetes erecta）是一年生短周期作物，7 月前后种下、约 90 天完成生长，秋季开花，正赶上 11 月初的祭坛。换句话说，亡灵节站在「雨季结束、玉米收完、旱季开始」这道门槛上——这是相关，不是决定：节日的日期本身是教会日历钉死的 11/1–11/2。",
+      "three": {
+        "dead": "在家中与墓前摆 ofrenda 祭坛，放亡者生前爱吃的菜、照片、水、盐与万寿菊；从墓园到家门撒花瓣、点蜡烛为亡魂引路；11/1 迎夭折的孩子（angelitos），11/2 迎成人。",
+        "light": "蜡烛与万寿菊花瓣铺成的「路」把亡魂从墓园引回家；墓园通宵点烛，Pátzcuaro 湖区的岛上守夜以烛火闻名；节期正在雨季结束、夜晚转凉的 11 月初。",
+        "food": "亡灵面包 pan de muerto（面上捏骨形的甜面包）、糖骷髅（calaveras de azúcar）、玉米粽 tamales、热巧克力与 atole；祭坛上的菜肴先供亡者「享用」，再由家人分食。"
+      },
+      "spread": "church-calendar",
+      "spread_text": "日期靠教会日历（诸圣 / 诸灵节）定在 11/1–11/2，本土祭亡传统附着其上，这是它脱离本地气候的第一步；20 世纪初波萨达的骷髅版画、1947 年里韦拉壁画里的「卡特里娜」把它变成国民图像；2003 年 UNESCO 宣布为口头与非物质遗产代表作、2008 年列入代表作名录；2016 年起墨西哥城政府办「亡灵节大游行」，灵感来自 2015 年 007《幽灵党》开场的虚构游行；2026 年 6 月 13 日更因世界杯办了一场夏季版「世界杯大游行」，骷髅与祭坛花车完全脱离了 11 月的雨季末——节日从此既是农事与教会的，也是城市营销与影视的。",
+      "timeline": [
+        {
+          "year": 1577,
+          "year_label": "16 世纪（手抄本成书约 1577）",
+          "label": "萨阿贡《佛罗伦萨手抄本》记 18 个二十日月",
+          "text": "第 9 月 Tlaxochimaco（「献花」，别名 Miccailhuitontli 小祭亡节）与第 10 月 Xocotl Huetzi / Hueymiccailhuitl（大祭亡节）是夏末的祭亡双月。",
+          "sources": [
+            {
+              "title": "美国国会图书馆（原世界数字图书馆）：佛罗伦萨手抄本第四卷条目（1577 年，佛罗伦萨洛伦佐图书馆藏）",
+              "url": "https://www.loc.gov/item/2021667849"
+            },
+            {
+              "title": "Wired Humanities 纳瓦语词典 Tlaxochimaco 条：引 Anderson & Dibble 译《佛罗伦萨手抄本》第 2 卷（1951）p. 101，「第 9 月，献花之节」",
+              "url": "https://nahuatl.wired-humanities.org/node/177017"
+            },
+            {
+              "title": "国会图书馆 / 世界数字图书馆：托瓦尔手抄本「Hueymiccaihuitl, Great Feast of the Dead, the Tenth Month of the Aztec Solar Calendar」",
+              "url": "http://www.wdl.org/en/item/6739/"
+            },
+            {
+              "title": "Brotherston, G. The Year in the Mexican Codices: The Nature and Structure of the Eighteen Feasts, Estudios de Cultura Náhuatl（UNAM）——Miccailhuitl 为「小 / 大」双节",
+              "url": "https://nahuatl.historicas.unam.mx/index.php/ecn/article/download/78655/69596/231826"
+            }
+          ]
+        },
+        {
+          "year": 1521,
+          "year_label": "16 世纪殖民时期",
+          "label": "并入诸圣节（11/1）与诸灵节（11/2）",
+          "text": "UNESCO 与 INAH 条目：节日是「前西班牙宗教仪式与天主教节期的融合」，把土著信仰与 16 世纪欧洲人带来的世界观合在一起。",
+          "sources": [
+            {
+              "title": "UNESCO ICH 00054",
+              "url": "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054"
+            },
+            {
+              "title": "INAH Lugares：Las fiestas indígenas dedicadas a los muertos",
+              "url": "https://lugares.inah.gob.mx/en/node/6394"
+            }
+          ]
+        },
+        {
+          "year": 1910,
+          "year_label": "约 1910–1913",
+          "label": "波萨达的骷髅版画",
+          "text": "José Guadalupe Posada（1852–1913）为瓦内加斯·阿罗约印刷所作的锌版骷髅（今通称 La Calavera Catrina），博物馆断代约 1910–1913 年。",
+          "sources": [
+            {
+              "title": "Colgate University Picker Art Gallery 藏品记录：La Calavera Catrina, zinc etching, c. 1910–1913",
+              "url": "https://emuseum.colgate.edu/objects/9565/la-calavera-catrina"
+            }
+          ]
+        },
+        {
+          "year": 1947,
+          "year_label": "1947",
+          "label": "里韦拉壁画《阿拉米达公园的周日午后之梦》",
+          "text": "里韦拉在壁画中把波萨达的骷髅画成盛装贵妇并置于画面中央，「Catrina」之名由此流行（通行说法）。",
+          "sources": [
+            {
+              "title": "Colgate Picker Art Gallery 藏品记录（印本今题 La Calavera Catrina，c. 1910–1913）",
+              "url": "https://emuseum.colgate.edu/objects/9565/la-calavera-catrina"
+            }
+          ]
+        },
+        {
+          "year": 1998,
+          "year_label": "1998 / 2006",
+          "label": "Brandes 质疑「阿兹特克连续性」",
+          "text": "Stanley Brandes 在《Journal of American Folklore》111(442) 与 2006 年专著中指出：今天的亡灵节是天主教诸圣节的一种版本，被旅游业与国际关系塑造成「独一无二的中美洲遗产」与国族象征。",
+          "sources": [
+            {
+              "title": "Brandes, S. (1998) The Day of the Dead, Halloween, and the Quest for Mexican National Identity. JAF 111(442): 359–380（Český lid 2016 参考文献）",
+              "url": "https://ceskylid.avcr.cz/en/article/koncepty-mestizaje-a-lo-mexicano-a-jejich-souvislost-s-mexickym-nacionalismem-a-svatkem-dia-de-los-muertos-2"
+            },
+            {
+              "title": "Brandes 文西译摘要（Alteridades, UAM）",
+              "url": "https://alteridades.izt.uam.mx/index.php/Alte/article/download/418/417"
+            },
+            {
+              "title": "Journal of Folklore Research Reviews：Skulls to the Living, Bread to the Dead（Blackwell 2006）书评",
+              "url": "https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/40139"
+            }
+          ]
+        },
+        {
+          "year": 2003,
+          "year_label": "2003 → 2008",
+          "label": "UNESCO 非遗",
+          "text": "2003 年宣布为人类口头与非物质遗产代表作；2008 年（3.COM）列入人类非物质文化遗产代表作名录，条目名「Indigenous festivity dedicated to the dead」。",
+          "sources": [
+            {
+              "title": "UNESCO ICH 00054：Inscribed in 2008 (3.COM) … originally proclaimed in 2003",
+              "url": "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054"
+            },
+            {
+              "title": "INAH：Declaratoria UNESCO 2008",
+              "url": "https://lugares.inah.gob.mx/en/node/6394"
+            }
+          ]
+        },
+        {
+          "year": 2015,
+          "year_label": "2015",
+          "label": "007《幽灵党》开场的虚构游行",
+          "text": "电影在墨西哥城拍了一场并不存在的亡灵节游行；市政府随后把它办成了真的。",
+          "sources": [
+            {
+              "title": "Expansión 2026-10-14：「se inspiró parcialmente en la escena inicial de la película 007: Spectre」",
+              "url": "https://politica.expansion.mx/cdmx/2026/10/14/ruta-fecha-hora-tradicional-desfile-dia-de-muertos-cdmx"
+            },
+            {
+              "title": "Time Out México：「Este evento tiene su origen en la película Spectre, de James Bond」",
+              "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/que-hacer/desfile-dia-de-muertos"
+            }
+          ]
+        },
+        {
+          "year": 2016,
+          "year_label": "2016-10-29",
+          "label": "首届墨西哥城亡灵节大游行",
+          "text": "2016 年 10 月 29 日首办，2026 年为第十年。",
+          "sources": [
+            {
+              "title": "Expansión 2026-10-14：「El primer desfile se llevó a cabo el 29 de octubre de 2016」",
+              "url": "https://politica.expansion.mx/cdmx/2026/10/14/ruta-fecha-hora-tradicional-desfile-dia-de-muertos-cdmx"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026-06-13",
+          "label": "世界杯夏季版「Gran Desfile Mundialista」",
+          "text": "6 月 13 日 13:00 从 Diana Cazadora 沿 Reforma 走约 3 km 到革命纪念碑：10 辆花车、50 人卡特里娜方阵、向贝利与马拉多纳致敬的祭坛花车——亡灵节元素被搬进世界杯「Fiesta del Mundial」（6/11–7/19）。",
+          "sources": [
+            {
+              "title": "El Imparcial 2026-06-06：Así será el Gran Desfile Mundialista en CDMX",
+              "url": "https://www.elimparcial.com/mexico/2026/06/06/asi-sera-el-gran-desfile-mundialista-en-cdmx-ruta-horario-y-actividades-gratis-con-catrinas-alebrijes/"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026-10-31 14:00",
+          "label": "2026 年亡灵节大游行",
+          "text": "周六 10 月 31 日 14:00，自 Reforma（Diana Cazadora 一带）经 5 de Mayo 到 Zócalo，主题「墨西哥文化的多样面貌与灵魂前往 Mictlán 之旅」。",
+          "sources": [
+            {
+              "title": "墨西哥城政府旅游页：Sábado 31 de octubre a las 14:00 horas, Paseo de la Reforma hasta llegar al Zócalo",
+              "url": "https://mexicocity.cdmx.gob.mx/?p=21852"
+            },
+            {
+              "title": "Expansión 2026-10-14 路线细节",
+              "url": "https://politica.expansion.mx/cdmx/2026/10/14/ruta-fecha-hora-tradicional-desfile-dia-de-muertos-cdmx"
+            },
+            {
+              "title": "Récord 2026-10-16",
+              "url": "https://www.record.com.mx/historia/desfile-de-dia-de-muertos-2026-en-cdmx-cuando-es-y-cual-sera-la-ruta-2026101623203591854"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "UNESCO 条目覆盖的州",
+          "value": "21",
+          "unit": "个州",
+          "basis": "INAH 条目列出 Campeche 至 Zacatecas 共 21 州，点名玛雅、纳瓦、萨波特克、米斯特克族群",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "INAH",
+              "url": "https://lugares.inah.gob.mx/en/node/6394"
+            }
+          ]
+        },
+        {
+          "label": "2026 年大游行开始时间",
+          "value": "14:00",
+          "unit": "10/31（六）",
+          "basis": "墨西哥城政府旅游页",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "CDMX",
+              "url": "https://mexicocity.cdmx.gob.mx/?p=21852"
+            }
+          ]
+        },
+        {
+          "label": "首届游行日期",
+          "value": "2016-10-29",
+          "unit": "",
+          "basis": "Expansión 引市政府说法",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "Expansión",
+              "url": "https://politica.expansion.mx/cdmx/2026/10/14/ruta-fecha-hora-tradicional-desfile-dia-de-muertos-cdmx"
+            }
+          ]
+        },
+        {
+          "label": "世界杯版游行",
+          "value": "2026-06-13 13:00",
+          "unit": "",
+          "basis": "10 辆花车、50 名卡特里娜、约 3 km（El Imparcial 引市政府发布）",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "El Imparcial",
+              "url": "https://www.elimparcial.com/mexico/2026/06/06/asi-sera-el-gran-desfile-mundialista-en-cdmx-ruta-horario-y-actividades-gratis-con-catrinas-alebrijes/"
+            }
+          ]
+        },
+        {
+          "label": "万寿菊生长周期",
+          "value": "约 90",
+          "unit": "天",
+          "basis": "N+ 报道：通常 7 月种下，种子约两周发芽、8–12 周长成，秋季开花",
+          "confidence": "低",
+          "sources": [
+            {
+              "title": "N+ (nmas.com.mx)",
+              "url": "https://www.nmas.com.mx/ciencia-tecnologia/el-cempasuchil-vuelve-a-florecer-te-decimos-que-pasa-con-la-flor-despues-de-dia-de-muertos/"
+            }
+          ]
+        },
+        {
+          "label": "游行观众（年份未注明）",
+          "value": "130 万以上",
+          "unit": "人",
+          "basis": "Time Out México 转述，未注明年份与统计方",
+          "confidence": "低",
+          "sources": [
+            {
+              "title": "Time Out México",
+              "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/que-hacer/desfile-dia-de-muertos"
+            }
+          ]
+        }
+      ],
+      "dispute": "一、「阿兹特克连续性」：UNESCO / INAH 条目把节日写成前西班牙祭亡仪式与天主教节期的融合、根在古代墨西哥的世界观（UNESCO 00054；INAH）；Brandes（1998 JAF；2006 Blackwell）则认为它是天主教诸圣节的一种版本，「独一无二的中美洲遗产」的叙事是旅游业与国际关系塑造的国族象征（Alteridades 摘要）。二、「Catrina」之名：博物馆藏品记录把波萨达约 1910–1913 年的锌版题为 La Calavera Catrina（Colgate）；通行说法是原版题作 La Calavera Garbancera、「Catrina」出自里韦拉 1947 年壁画——后者未见博物馆或学术页面佐证。三、阿兹特克祭亡月的公历对应：各手抄本（佛罗伦萨、托瓦尔、Telleriano-Remensis、Borbonicus）与 Brotherston 都把 Miccailhuitontli / Hueymiccailhuitl 记为第 9、10 月的「小 / 大」双节，但具体公历起讫因历法对应方案而异，本页只取「夏末」。",
+      "why": "它是图谱里最清楚的「门槛被日历搬家」案例：本土祭亡原在夏末的雨季中，被教会日历钉到 11 月初的雨季末、玉米收完、旱季开始之时，再被电影和城市营销搬到 6 月的世界杯。",
+      "text": "墨西哥城海拔两千二百米，雨季五到十月，十一月入旱季，主季玉米这时收完，UNESCO 条目说这正是玉米栽培周期结束之时。阿兹特克太阳年里，祭亡本是夏末的两个二十日月；殖民之后它附着到天主教十一月一日诸圣节、二日诸灵节上，一日迎夭折的孩子，二日迎成人。家里与墓前摆祭坛，放亡者爱吃的菜、亡灵面包、糖骷髅，用七月种下、秋天开花的万寿菊和蜡烛铺一条从墓园回家的路。二〇一六年起又多了一场源自〇〇七电影的大游行，今年十月三十一日下午两点从改革大道走到宪法广场，六月还因世界杯办了夏季版。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "UNESCO ICH：Indigenous festivity dedicated to the dead（00054）",
+          "url": "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054",
+          "note": "官方"
+        },
+        {
+          "title": "INAH Lugares：Las fiestas indígenas dedicadas a los muertos",
+          "url": "https://lugares.inah.gob.mx/en/node/6394",
+          "note": "官方"
+        },
+        {
+          "title": "国会图书馆 / 世界数字图书馆：佛罗伦萨手抄本第四卷（1577）",
+          "url": "https://www.loc.gov/item/2021667849",
+          "note": "一手（数字图书馆）"
+        },
+        {
+          "title": "国会图书馆 / 世界数字图书馆：托瓦尔手抄本 Hueymiccaihuitl 页",
+          "url": "http://www.wdl.org/en/item/6739/",
+          "note": "一手（数字图书馆）"
+        },
+        {
+          "title": "Wired Humanities 纳瓦语词典 Tlaxochimaco（引 Anderson & Dibble 1951）",
+          "url": "https://nahuatl.wired-humanities.org/node/177017",
+          "note": "大学"
+        },
+        {
+          "title": "University of Utah Press：Florentine Codex Book 2: The Ceremonies（Anderson & Dibble 译）",
+          "url": "https://uofupress.lib.utah.edu/?p=63072",
+          "note": "专著"
+        },
+        {
+          "title": "Brotherston, Estudios de Cultura Náhuatl（UNAM）",
+          "url": "https://nahuatl.historicas.unam.mx/index.php/ecn/article/download/78655/69596/231826",
+          "note": "学术"
+        },
+        {
+          "title": "Dumbarton Oaks：The Festival Tlaxochimaco（Codex Borbonicus）",
+          "url": "https://www.doaks.org/resources/online-exhibits/standing-on-ceremony-processions-pathways-and-plazas/Processions/the-festival-tlaxochimaco",
+          "note": "博物馆 / 研究机构"
+        },
+        {
+          "title": "Colgate Picker Art Gallery：La Calavera Catrina 藏品记录",
+          "url": "https://emuseum.colgate.edu/objects/9565/la-calavera-catrina",
+          "note": "博物馆"
+        },
+        {
+          "title": "Brandes 1998 西译摘要（Alteridades, UAM）",
+          "url": "https://alteridades.izt.uam.mx/index.php/Alte/article/download/418/417",
+          "note": "学术"
+        },
+        {
+          "title": "Český lid 2016（Brandes 1998、2006 书目）",
+          "url": "https://ceskylid.avcr.cz/en/article/koncepty-mestizaje-a-lo-mexicano-a-jejich-souvislost-s-mexickym-nacionalismem-a-svatkem-dia-de-los-muertos-2",
+          "note": "学术"
+        },
+        {
+          "title": "Journal of Folklore Research Reviews：Brandes 2006 书评",
+          "url": "https://scholarworks.iu.edu/journals/index.php/jfrr/article/view/40139",
+          "note": "学术"
+        },
+        {
+          "title": "墨西哥城政府：Gran Desfile de Día de Muertos 2026",
+          "url": "https://mexicocity.cdmx.gob.mx/?p=21852",
+          "note": "官方"
+        },
+        {
+          "title": "Expansión 2026-10-14：游行路线与 2016 首届",
+          "url": "https://politica.expansion.mx/cdmx/2026/10/14/ruta-fecha-hora-tradicional-desfile-dia-de-muertos-cdmx",
+          "note": "二手（主流媒体）"
+        },
+        {
+          "title": "El Imparcial 2026-06-06：Gran Desfile Mundialista",
+          "url": "https://www.elimparcial.com/mexico/2026/06/06/asi-sera-el-gran-desfile-mundialista-en-cdmx-ruta-horario-y-actividades-gratis-con-catrinas-alebrijes/",
+          "note": "二手（主流媒体）"
+        },
+        {
+          "title": "Expansión 2026-10-06 引 SMN 雨季口径",
+          "url": "https://politica.expansion.mx/mexico/2026/10/06/hasta-cuando-seguira-lloviendo-mexico-ultimos-meses-2026",
+          "note": "二手（转述气象部门）"
+        },
+        {
+          "title": "FAO GIEWS Mexico",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MEX",
+          "note": "官方"
+        },
+        {
+          "title": "N+：万寿菊生长周期",
+          "url": "https://www.nmas.com.mx/ciencia-tecnologia/el-cempasuchil-vuelve-a-florecer-te-decimos-que-pasa-con-la-flor-despues-de-dia-de-muertos/",
+          "note": "二手"
+        }
+      ],
+      "unverified": [
+        "萨阿贡关于祭亡月份的原句：国会图书馆只开到第四卷页面，第二卷数字页与 Getty 数字版均未搜到；Anderson & Dibble 译本页码（Book 2, p. 101）仅通过 Wired Humanities 词典转引",
+        "阿兹特克第 9、10 月对应的公历起讫日（各历法对应方案不一），只写「夏末」",
+        "「Catrina」之名出自里韦拉 1947 年壁画《Sueño de una tarde dominical en la Alameda Central》——未核到博物馆 / 学术页面；原版题名 La Calavera Garbancera 亦未核",
+        "2016 年首届游行的观众数（市政府口径）未核到；Time Out「130 万以上」未注明年份",
+        "万寿菊播种 / 开花月份只核到媒体与 UAM 服务社会报告口径；gob.mx 农业部新闻稿（2022 年两则）打不开（client_error）",
+        "墨西哥城（谷地）平均初霜日未核到（SMN 霜冻季口径）",
+        "2003 年「人类口头与非物质遗产代表作」宣布：UNESCO 页只写「originally proclaimed in 2003」，未写明名目",
+        "瓦哈卡与 Pátzcuaro 的具体仪式细节（通宵守墓等）为通行说法，未逐条核"
+      ]
+    }
+  ],
+  "cities": [
+    {
+      "id": "dublin",
+      "name_zh": "都柏林",
+      "name": "Dublin",
+      "lat": 53.35,
+      "lon": -6.26,
+      "elev_m": 20,
+      "koppen": "Cfb",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "全年有雨、无明显雨季：都柏林机场 1991–2020 年均降水 772.5 mm，11 月最多（82.7 mm），9 月 63.3、10 月 78.4、12 月 72.1 mm（Met Éireann）",
+      "frost": "气霜日平均：10 月 0.8 天、11 月 3.3 天、12 月 6.7 天、全年 35 天；地霜 10 月 4.9、11 月 9.5 天——初霜通常在 10 月末至 11 月（Met Éireann 都柏林机场 1991–2020）",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "Met Éireann：Dublin Airport 1991–2020 climate averages",
+          "url": "https://www.met.ie/cms/assets/uploads/2023/09/www_met_ie_dublin_9120.htm"
+        },
+        {
+          "title": "Met Éireann 30-year averages 总页",
+          "url": "https://www.met.ie/climate/30-year-averages"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "主要作物与收获月（爱尔兰谷物 / 马铃薯）未核到农业部门口径"
+      ]
+    },
+    {
+      "id": "london",
+      "name_zh": "伦敦",
+      "name": "London",
+      "lat": 51.51,
+      "lon": -0.13,
+      "elev_m": 11,
+      "koppen": "Cfb",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "全年有雨：英格兰东南与中南部面域序列 1991–2020 月均降水 10 月 89.8、11 月 93.5、12 月 89.1、1 月 84.4 mm，秋冬最多，3–7 月 52–54 mm（Met Office HadUK-Grid 区域序列，本路按 1991–2020 年求均值）",
+      "frost": "气霜日平均：10 月 1.1 天、11 月 4.5 天、12 月 9.7 天、全年 43 天——初霜通常在 11 月（Met Office 英格兰东南与中南部区域序列 1991–2020 均值）",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "Met Office UK and regional series（England SE and Central S）",
+          "url": "https://www.metoffice.gov.uk/research/climate/maps-and-data/uk-and-regional-series"
+        },
+        {
+          "title": "Met Office 数据文件：Days of air frost, England SE and Central S",
+          "url": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/AirFrost/date/England_SE_and_Central_S.txt"
+        },
+        {
+          "title": "Met Office 数据文件：Rainfall, England SE and Central S",
+          "url": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/Rainfall/date/England_SE_and_Central_S.txt"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "Heathrow 站点页表格为脚本渲染，未能读取，改用区域序列",
+        "主要作物与收获月未核到农业部门口径"
+      ]
+    },
+    {
+      "id": "lewes",
+      "name_zh": "刘易斯",
+      "name": "Lewes",
+      "lat": 50.87,
+      "lon": 0.01,
+      "elev_m": 20,
+      "koppen": "Cfb",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "同伦敦所在的英格兰东南与中南部区域：1991–2020 月均降水 10 月 89.8、11 月 93.5、12 月 89.1 mm，秋冬最多（Met Office 区域序列）",
+      "frost": "同区域气霜日：10 月 1.1、11 月 4.5、12 月 9.7 天——初霜通常在 11 月（Met Office 区域序列 1991–2020 均值）",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "Met Office UK and regional series",
+          "url": "https://www.metoffice.gov.uk/research/climate/maps-and-data/uk-and-regional-series"
+        },
+        {
+          "title": "Days of air frost, England SE and Central S",
+          "url": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/AirFrost/date/England_SE_and_Central_S.txt"
+        },
+        {
+          "title": "Rainfall, England SE and Central S",
+          "url": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/Rainfall/date/England_SE_and_Central_S.txt"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "刘易斯无独立官方站点均值，采用区域面域序列",
+        "收成未核"
+      ]
+    },
+    {
+      "id": "utrecht",
+      "name_zh": "乌得勒支",
+      "name": "Utrecht",
+      "lat": 52.09,
+      "lon": 5.12,
+      "elev_m": 5,
+      "koppen": "Cfb",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "全年有雨：KNMI De Bilt（紧邻乌得勒支）1991–2020 年均降水 854.7 mm，最多月为 7 月 85.2 mm，9 月 77.9、10 月 81.1、11 月 80.0、12 月 83.8 mm",
+      "frost": "霜日（Tmin<0 °C）平均：10 月 1.3 天、11 月 4.7 天、12 月 11.3 天、1 月 12.0 天、全年 53.1 天；平均最低气温 10 月 7.1、11 月 3.9 °C——初霜通常在 10 月末至 11 月（KNMI De Bilt 1991–2020）",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "KNMI klimaattabel 1991–2020, station 260 De Bilt",
+          "url": "https://cdn.knmi.nl/knmi/map/page/klimatologie/klimaatatlas/tabel/stationsdata/klimtab_9120_260.pdf"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "收成未核"
+      ]
+    },
+    {
+      "id": "stockholm",
+      "name_zh": "斯德哥尔摩",
+      "name": "Stockholm",
+      "lat": 59.33,
+      "lon": 18.07,
+      "elev_m": 28,
+      "koppen": "Dfb",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "无雨季之分：斯德哥尔摩站 1991–2020 年均降水常值 546 mm（SMHI 年度降水统计表，2025 年实测 470 mm）；SMHI 新常值——瑞典 85% 以上测站以 7 月或 8 月为全年最多雨月，3 月或 4 月最少",
+      "frost": "",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "SMHI：Nederbörd och solskenstid 2025（站点年表，含 Normal 1991-20）",
+          "url": "https://www.smhi.se/pd/klimat/pdf_stats/year/SMHI_vov_precipitation_sunshine_25.pdf"
+        },
+        {
+          "title": "SMHI 博客 2021-09-29：Ny normalnederbörd – några kuriosavärden（Sverker Hellström）",
+          "url": "https://www.smhi.se/blogg/blogg/2021-09-29-ny-normalnederbord---nagra-kuriosavarden"
+        },
+        {
+          "title": "SMHI 博客 2024-10-15：Den första höstfrosten håller tidtabellen（含 1991–2020 初霜常值图）",
+          "url": "https://www.smhi.se/blogg/blogg/2024-10-15-den-forsta-hostfrosten-haller-tidtabellen"
+        },
+        {
+          "title": "SVT 2024-08-05：Normal första frosten（引 SMHI 1991–2020）",
+          "url": "https://www.svt.se/vader/normal-forsta-frosten"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "斯德哥尔摩平均初霜日：SMHI 有 1991–2020 常值图但文字未给出数值，SVT 只给全国最早（8 月初，耶姆特兰）与最晚（11 月末，约塔兰海岸）",
+        "斯德哥尔摩站点 1991–2020 月降水常值未读到",
+        "收成未核"
+      ]
+    },
+    {
+      "id": "rome",
+      "name_zh": "罗马",
+      "name": "Rome",
+      "lat": 41.9,
+      "lon": 12.5,
+      "elev_m": 21,
+      "koppen": "Csa",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "",
+      "frost": "",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "雨季 / 初霜 / 收成三项均未核到意大利气象或农业部门口径（搜索预算用尽；柯本 Csa 为「夏干」型，雨集中在秋冬，但本路未取得站点数值）"
+      ]
+    },
+    {
+      "id": "beijing",
+      "name_zh": "北京",
+      "name": "Beijing",
+      "lat": 39.9,
+      "lon": 116.4,
+      "elev_m": 44,
+      "koppen": "Dwa",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "夏雨型：主汛期「七下八上」（7 月下旬–8 月上旬），降水集中 7–8 月，南郊观象台 7 月下旬旬均 63.3 mm 为全年最多（中国天气网，新京报 2022-07-27 转述）；常年入秋 9 月 13 日（北京市气象台，1991–2020 平均）",
+      "frost": "",
+      "harvest": "秋粮（玉米）10 月收获、冬小麦 10–11 月播种：FAO GIEWS 中国简报 2026-01-29——2025 年 10 月收获期遭遇异常强降雨，冬小麦播种 11 月完成（较常年推迟三周，10/20 起 60 天抢种），2025 年作物季 11 月结束",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "京报网 / 北京日报客户端 2026-09-16：北京市气象台官宣 2026 年 9 月 8 日入秋，常年入秋 9 月 13 日",
+          "url": "https://news.bjd.com.cn/2026/09/16/11960662.shtml"
+        },
+        {
+          "title": "新京报 2022-07-27：「七下八上」主汛期",
+          "url": "https://m.bjnews.com.cn/detail/165892794314221.html"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: China（29-January-2026）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=CHN"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "北京平均初霜日（气象局口径）未核到",
+        "汛期常年起止日期与汛期降水占比未核到"
+      ]
+    },
+    {
+      "id": "tokyo",
+      "name_zh": "东京",
+      "name": "Tokyo",
+      "lat": 35.68,
+      "lon": 139.69,
+      "elev_m": 25,
+      "koppen": "Cfa",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "秋雨与台风：東京 10 月平年降水 234.8 mm（1991–2020，東京管区気象台）；气象厅解说——夏秋之交的秋雨前线带来连雨，1991–2020 年关东甲信台风接近以 9 月前后最多，秋季降水偏多",
+      "frost": "",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "東京管区気象台：2024 年 10 月 東京都の気象概況（含 1991–2020 平年値）",
+          "url": "https://www.jma-net.go.jp/tokyo/shosai/chiiki/gaikyo/662_10.pdf"
+        },
+        {
+          "title": "気象庁 関東甲信地方 季節ごとの平年の天候 コラム「秋の降水」",
+          "url": "https://www.data.jma.go.jp/cpd/j_climate/kanto_koshin/TenkouKaisetsuHeinenColumn3_Kanto-Koshin.html"
+        },
+        {
+          "title": "東京管区気象台 2024-12-19 初雪のお知らせ（初雪平年日 1 月 3 日）",
+          "url": "https://www.data.jma.go.jp/tokyo/shosai/news/pdf/2024/20241219hatsuyuki_oshirase.pdf"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "东京初霜平年日未核到（只核到初雪平年日 1/3）",
+        "关东水稻收获月未核到农林水产省口径"
+      ]
+    },
+    {
+      "id": "delhi",
+      "name_zh": "德里",
+      "name": "Delhi",
+      "lat": 28.61,
+      "lon": 77.21,
+      "elev_m": 216,
+      "koppen": "BSh / Cwa 交界",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取为 BSh（3×3 邻域一致）；维基城市分类表作 Cwa（bordering on BSh）",
+      "rain_season": "西南季风：印度气象局 2020 年修订常值——德里季风到达 6 月 27 日、撤退 9 月 25 日（到达按 1961–2019、撤退按 1971–2019 数据）；全国在南印度最终撤完 10 月 15 日",
+      "frost": "",
+      "harvest": "Kharif（雨季作物）：主季玉米 11 月收获、主季水稻至次年 1 月收完；Rabi（冬作）小麦 3 月下旬起收（FAO GIEWS 印度简报 2026-02-13）",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "IMD 新闻稿：New normal onset and withdrawal dates of southwest monsoon",
+          "url": "https://mausam.imd.gov.in/backend/assets/press_release_pdf/IMD_Press_release_new_onset_and_withdrawal_dates%28Final%29.pdf"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: India（13-February-2026）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=IND"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "德里冬季霜情（IMD 口径）未核；BSh 半干旱，12–1 月偶有霜的说法未核"
+      ]
+    },
+    {
+      "id": "kathmandu",
+      "name_zh": "加德满都",
+      "name": "Kathmandu",
+      "lat": 27.72,
+      "lon": 85.32,
+      "elev_m": 1337,
+      "koppen": "Cwa / Cwb",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取为 Cwa（3×3 邻域一致）；Kattel 2008 的谷地测站 Cwa 与 Cwb 并存",
+      "rain_season": "季风雨季约 6–9 月：FAO GIEWS 尼泊尔简报记 2026 年 6 月干燥拖慢插秧、2025 年 6–7 月降雨不足（尼泊尔水文气象局 DHM 的季风起止常值未核）",
+      "frost": "",
+      "harvest": "主季水稻 5 月中旬起插秧、10–12 月收获；玉米 9 月收完；冬小麦 6 月收（FAO GIEWS 尼泊尔简报 2026-08-18）",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Nepal（18-August-2026）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=NPL"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "DHM 季风常年起止日期未核",
+        "加德满都谷地初霜未核"
+      ]
+    },
+    {
+      "id": "sukhothai",
+      "name_zh": "素可泰",
+      "name": "Sukhothai",
+      "lat": 17.01,
+      "lon": 99.82,
+      "elev_m": 60,
+      "koppen": "Aw",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "季风雨季 5–10 月：FAO GIEWS 泰国简报——「The May–October monsoon season began on time in mid-May」（2025-08-20）",
+      "frost": "无霜",
+      "harvest": "主季（雨季）水稻 8 月底前插秧完毕，占年产约 80%；主季玉米 7 月初种完、9 月起收；第二季玉米 11 月起播、第二季水稻 1 月起播（FAO GIEWS 泰国简报 2025-08-20）",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Thailand（20-August-2025）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=THA"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "泰国气象厅（TMD）宣布雨季结束的常年日期未核",
+        "主季水稻收获月（11–12 月）未在 GIEWS 简报里写明"
+      ]
+    },
+    {
+      "id": "bangkok",
+      "name_zh": "曼谷",
+      "name": "Bangkok",
+      "lat": 13.76,
+      "lon": 100.5,
+      "elev_m": 2,
+      "koppen": "Aw",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "季风雨季 5–10 月（FAO GIEWS 泰国简报 2025-08-20：「The May–October monsoon season began on time in mid-May」）",
+      "frost": "无霜",
+      "harvest": "同素可泰：主季水稻 8 月底前插秧完毕，主季玉米 9 月起收，第二季玉米 11 月起播（FAO GIEWS）",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Thailand（20-August-2025）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=THA"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "TMD 雨季结束常年日期未核"
+      ]
+    },
+    {
+      "id": "mexico-city",
+      "name_zh": "墨西哥城",
+      "name": "Mexico City",
+      "lat": 19.43,
+      "lon": -99.13,
+      "elev_m": 2240,
+      "koppen": "Cwb",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "雨季 5–10 月、旱季 11–4 月：国家气象局（SMN）口径「墨西哥大部分地区雨季通常在 5–10 月」；国家水委会（Conagua）行政口径「雨季与热带气旋季」5/15–11/30",
+      "frost": "",
+      "harvest": "主季玉米：中部产区 4 月起播种、靠 4–6 月降雨，秋季收获（谷物销售年度 10 月 / 9 月制）；主季高粱约占年产 55%；冬季小麦 2 月中旬播完（FAO GIEWS 墨西哥简报 2026-03-23）；UNESCO 条目：节期为「玉米年度栽培周期完成」之时",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "Expansión 2026-10-06 引 SMN",
+          "url": "https://politica.expansion.mx/mexico/2026/10/06/hasta-cuando-seguira-lloviendo-mexico-ultimos-meses-2026"
+        },
+        {
+          "title": "TV Azteca 引 Conagua 日程",
+          "url": "https://www.tvazteca.com/aztecanoticias/temporada-lluvias-2026-en-mexico-cuando-termina-oficialmente-conagua/"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Mexico（23-March-2026）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=MEX"
+        },
+        {
+          "title": "UNESCO ICH 00054",
+          "url": "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "SMN 雨季口径系经 Expansión 转述，smn.conagua.gob.mx 原页未搜到",
+        "墨西哥谷地平均初霜日未核",
+        "主季玉米收获月份 GIEWS 简报未写明，只能由播种期与销售年度推断"
+      ]
+    },
+    {
+      "id": "la-paz",
+      "name_zh": "拉巴斯",
+      "name": "La Paz",
+      "lat": -16.5,
+      "lon": -68.15,
+      "elev_m": 3640,
+      "koppen": "Cwb（邻域含 Cwc / ET）",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 1 km 图：市中心像元 Cwb，3×3 邻域内含 Cwc 与 ET（海拔 3 600–4 000 m 的高原边缘，El Alto 一侧为 ET）",
+      "rain_season": "",
+      "frost": "",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Bolivia（09-September-2026）——只涉及低地作物（主季玉米 7 月起收、水稻 4 月收完、冬谷物 9 月在收）",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=BOL"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "高原雨季（通常 11/12–3 月）与初霜：SENAMHI 口径未核（搜索预算用尽）",
+        "高原作物（马铃薯、藜麦）播种 / 收获月未核；GIEWS 简报只写低地作物"
+      ]
+    },
+    {
+      "id": "sydney",
+      "name_zh": "悉尼",
+      "name": "Sydney",
+      "lat": -33.87,
+      "lon": 151.21,
+      "elev_m": 39,
+      "koppen": "Cfa",
+      "koppen_source": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+      "koppen_note": "Beck 等 2018 年 1 km 现状图（1980–2016）按城市经纬度所在像元读取，3×3 邻域一致",
+      "rain_season": "",
+      "frost": "市区（观象山）基本无霜：BoM 年度气候摘要记 2023 年最低气温 5.1 °C（7/20）、2024 年 5.7 °C（6/20）",
+      "harvest": "",
+      "sources": [
+        {
+          "title": "Beck, H.E. et al. (2018) Present and future Köppen-Geiger climate classification maps at 1-km resolution. Scientific Data 5:180214. doi:10.1038/sdata.2018.214（figshare 数据页，Beck_KG_V1_present_0p0083.tif）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959",
+          "note": "一手数据集"
+        },
+        {
+          "title": "BoM Annual Climate Summary for Greater Sydney 2024",
+          "url": "https://www.bom.gov.au/climate/current/annual/nsw/archive/2024.sydney.shtml"
+        },
+        {
+          "title": "BoM Annual Climate Summary for Greater Sydney 2023",
+          "url": "https://www.bom.gov.au/climate/current/annual/nsw/archive/2023.sydney.shtml"
+        }
+      ],
+      "unverified": [
+        "海拔为通行参考值",
+        "观象山长期平均月降水（BoM 站点统计表）未读到，年度摘要的「average」栏为空",
+        "新南威尔士冬作（小麦）10–12 月收获的说法未核到 ABARES / 农业部门口径"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "mx-central-rain-season",
+      "text": "墨西哥国家气象局（SMN）口径：墨西哥大部分地区的雨季通常在 5–10 月，10 月进入尾声，11–4 月为旱季；国家水委会（Conagua）的行政口径「雨季与热带气旋季」则为 5 月 15 日至 11 月 30 日。",
+      "value": "雨季 5–10 月；Conagua 日程 5/15–11/30",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Expansión 2026-10-06 引 SMN",
+          "url": "https://politica.expansion.mx/mexico/2026/10/06/hasta-cuando-seguira-lloviendo-mexico-ultimos-meses-2026"
+        },
+        {
+          "title": "TV Azteca 2026 引 Conagua",
+          "url": "https://www.tvazteca.com/aztecanoticias/temporada-lluvias-2026-en-mexico-cuando-termina-oficialmente-conagua/"
+        }
+      ]
+    },
+    {
+      "id": "cempasuchil-bloom",
+      "text": "万寿菊（cempasúchil, Tagetes erecta）是一年生作物，通常 7 月种下，种子约两周发芽、8–12 周长成，整个周期约 90 天，秋季开花，正赶上 11 月初的亡灵节祭坛；墨西哥农业部每年 10 月发布亡灵节季万寿菊产量新闻稿。",
+      "value": "7 月播 → 约 90 天 → 10 月末开花",
+      "confidence": "低",
+      "sources": [
+        {
+          "title": "N+（nmas.com.mx）",
+          "url": "https://www.nmas.com.mx/ciencia-tecnologia/el-cempasuchil-vuelve-a-florecer-te-decimos-que-pasa-con-la-flor-despues-de-dia-de-muertos/"
+        },
+        {
+          "title": "UAM Xochimilco 服务社会报告：Producción en maceta de cempasúchil ornamental（2023 年 6–12 月）",
+          "url": "https://repositorio.xoc.uam.mx/jspui/retrieve/62cd8dc1-c17c-4d4d-b624-3edd084e9368/254375.pdf"
+        },
+        {
+          "title": "gob.mx 农业部 2022 新闻稿（标题：Alistan agricultores del país cultivo de cempasúchil…；页面未能打开）",
+          "url": "https://www.gob.mx/agricultura/prensa/alistan-agricultores-del-pais-cultivo-de-cempasuchil-para-celebraciones-por-el-dia-de-muertos-2022?idiom=es"
+        },
+        {
+          "title": "gob.mx 农业部 2022 新闻稿（标题：Aumenta producción de flor de cempasúchil…；页面未能打开）",
+          "url": "https://www.gob.mx/agricultura/prensa/aumenta-produccion-de-flor-de-cempasuchil-en-temporada-2022-de-dia-de-muertos"
+        }
+      ]
+    },
+    {
+      "id": "unesco-2008-entry",
+      "text": "UNESCO 人类非物质文化遗产代表作名录条目「Indigenous festivity dedicated to the dead」（墨西哥，编号 00054）：2008 年（3.COM）列入，原于 2003 年宣布；INAH 页面记 Declaratoria UNESCO 2008。",
+      "value": "Indigenous festivity dedicated to the dead · 2008（3.COM）· originally proclaimed 2003",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "UNESCO ICH 00054",
+          "url": "https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054"
+        },
+        {
+          "title": "INAH",
+          "url": "https://lugares.inah.gob.mx/en/node/6394"
+        }
+      ]
+    },
+    {
+      "id": "cdmx-parade-2016-first",
+      "text": "墨西哥城亡灵节大游行首届于 2016 年 10 月 29 日举行，部分灵感来自 007《幽灵党》（2015）的开场戏；2026 年是第十年，10 月 31 日 14:00 自改革大道（Diana Cazadora 一带）经 5 de Mayo 到宪法广场。",
+      "value": "2016-10-29",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Expansión 2026-10-14",
+          "url": "https://politica.expansion.mx/cdmx/2026/10/14/ruta-fecha-hora-tradicional-desfile-dia-de-muertos-cdmx"
+        },
+        {
+          "title": "墨西哥城政府旅游页",
+          "url": "https://mexicocity.cdmx.gob.mx/?p=21852"
+        }
+      ]
+    },
+    {
+      "id": "koppen-beck-2018-citation",
+      "text": "全页柯本气候类型取自 Beck 等 2018 年发表于 Scientific Data 的 1 km 分辨率现状图（1980–2016），按各城市经纬度所在像元读取。",
+      "value": "Beck, H.E., N.E. Zimmermann, T.R. McVicar, N. Vergopolan, A. Berg, E.F. Wood: Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214, doi:10.1038/sdata.2018.214 (2018).",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "figshare 数据页（Beck_KG_V1，含 legend.txt 与引用格式）",
+          "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+        },
+        {
+          "title": "Scientific Data 论文全文（PMC）",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6207062"
+        }
+      ]
+    },
+    {
+      "id": "cdmx-parade-2026-june",
+      "text": "2026 年 6 月 13 日 13:00，墨西哥城政府为世界杯办「Gran Desfile Mundialista」：从 Diana Cazadora 沿改革大道约 3 km 到革命纪念碑，10 辆花车、6 个巨型气球、50 人卡特里娜方阵、向贝利与马拉多纳致敬的祭坛花车，属 6/11–7/19 的「Fiesta del Mundial」。",
+      "value": "2026-06-13 13:00",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "El Imparcial 2026-06-06",
+          "url": "https://www.elimparcial.com/mexico/2026/06/06/asi-sera-el-gran-desfile-mundialista-en-cdmx-ruta-horario-y-actividades-gratis-con-catrinas-alebrijes/"
+        }
+      ]
+    },
+    {
+      "id": "aztec-dead-months",
+      "text": "阿兹特克太阳年 18 个二十日月中，第 9 月 Tlaxochimaco（献花，别名 Miccailhuitontli「小祭亡节」）与第 10 月 Xocotl Huetzi（果实落下，别名 Hueymiccailhuitl「大祭亡节」）是夏末的祭亡双月。",
+      "value": "第 9、10 月",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "LoC / WDL 托瓦尔手抄本页",
+          "url": "http://www.wdl.org/en/item/6739/"
+        },
+        {
+          "title": "Wired Humanities 词典 Tlaxochimaco（引 Florentine Codex Book 2, Anderson & Dibble 1951, p. 101）",
+          "url": "https://nahuatl.wired-humanities.org/node/177017"
+        },
+        {
+          "title": "Brotherston, Estudios de Cultura Náhuatl",
+          "url": "https://nahuatl.historicas.unam.mx/index.php/ecn/article/download/78655/69596/231826"
+        },
+        {
+          "title": "Utah 数字馆藏：Clavigero《History of Mexico》OCR——「the tenth month Hueimiccailhuitl, or the grand festival of the dead」",
+          "url": "https://collections.lib.utah.edu/details?id=310974"
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "id": "tovar-hueymiccaihuitl",
+      "source_title": "托瓦尔手抄本（Juan de Tovar，16 世纪）第三部分历书——国会图书馆 / 世界数字图书馆条目说明",
+      "text": "This month is called Hueymiccaihuitl (or Xocotlhuetzi; Fall of Fruit or Great Feast of the Dead).",
+      "translation_or_gloss": "这个月叫 Hueymiccaihuitl（或 Xocotlhuetzi，「果实落下」或「大祭亡节」）——阿兹特克太阳年的第十个月。",
+      "edition_url": "http://www.wdl.org/en/item/6739/",
+      "confidence": "高"
+    },
+    {
+      "id": "clavigero-dead-months",
+      "source_title": "Clavigero《History of Mexico》（Cullen 英译，1787）——犹他大学数字馆藏 OCR",
+      "text": "the ninth month Miccailhuitl, or the festival of the dead … the tenth month Hueimiccailhuitl, or the grand festival of the dead",
+      "translation_or_gloss": "第九月 Miccailhuitl，祭亡之节……第十月 Hueimiccailhuitl，大祭亡之节（Clavigero 记为特拉斯卡拉人的月名；OCR 有讹字，已按通行拼写订正）。",
+      "edition_url": "https://collections.lib.utah.edu/details?id=310974",
+      "confidence": "中"
+    },
+    {
+      "id": "sahagun-tlaxochimaco",
+      "source_title": "萨阿贡《佛罗伦萨手抄本》第二卷（Anderson & Dibble 英译，1951，p. 101）——经 Wired Humanities 纳瓦语词典转引",
+      "text": "Tlaxochimaco — the ninth month, when the feast called \"The Flowers are Offered\" was held.",
+      "translation_or_gloss": "Tlaxochimaco，第九月，举行名为「献花」的节日（萨阿贡在佛罗伦萨手抄本里用的是 Tlaxochimaco / Xocotl Huetzi 这对月名，「小 / 大祭亡节」是其他手抄本与地区的叫法）。",
+      "edition_url": "https://nahuatl.wired-humanities.org/node/177017",
+      "confidence": "中"
+    }
+  ],
+  "unverified": [
+    "萨阿贡第二卷原句未能从数字图书馆页面直接核到（LoC 只开到第四卷；Getty 数字版、Early Nahuatl Library 均无第二卷）——quotes 里以托瓦尔手抄本（LoC）与 Clavigero（Utah）替代，萨阿贡句为词典转引",
+    "「Catrina」命名出自里韦拉 1947 年壁画：未核到博物馆 / 学术页面",
+    "2016 年首届游行观众数（市政府口径）未核到",
+    "万寿菊农业 / 植物学口径：gob.mx 农业部页面全部打不开（client_error），只核到媒体与 UAM 报告",
+    "SMN 雨季口径系媒体转述，smn.conagua.gob.mx 原页未搜到",
+    "14 座城市海拔均为通行参考值，未逐一核官方站点高度",
+    "罗马：雨季 / 初霜 / 收成三项均未核到（搜索预算用尽，搜索结果无气象部门页面）",
+    "拉巴斯：雨季 / 初霜 / 高原收成均未核到 SENAMHI 口径",
+    "斯德哥尔摩、北京、东京、德里、加德满都、墨西哥城的平均初霜日均未核到；悉尼以 BoM 年度摘要最低气温说明市区无霜",
+    "欧洲五城（都柏林、伦敦、刘易斯、乌得勒支、斯德哥尔摩）与东京、悉尼的主要作物收获月未核到农业部门口径（FAO GIEWS 无这些国家简报）",
+    "IMD 全国季风撤退常值：新闻稿只给南印度最终撤完 10/15，「西北印度 9/17 撤退」未在该文件中核到"
+  ]
+}

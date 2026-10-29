@@ -94,7 +94,8 @@
       return { rows: rows, moon: moon };
     }
     function go() {
-      var y = parseInt(td.value, 10); if (isNaN(y) || y < 1900 || y > 2100) { $('#td-note').textContent = '请输入 1900–2100 的年份。'; return; }
+      var y = parseInt(td.value, 10); if (isNaN(y) || y < 1900 || y > 2100) { td.setAttribute('aria-invalid', 'true'); $('#td-note').textContent = '只能算 1900–2100 年：农历月表与天文表只覆盖这两百年。'; return; }
+      td.setAttribute('aria-invalid', 'false');
       var r = compute(y), tb = $('#td-tab tbody');
       tb.innerHTML = r.rows.map(function (row) { var d = row[1].slice(0, 10), ok = /^\d{4}-\d{2}-\d{2}$/.test(d); return '<tr' + (y === 2026 && d >= '2026-10-31' && d <= '2026-11-09' ? ' class="hl"' : '') + '><td>' + esc(row[0]) + '</td><td class="dd">' + (ok ? md(d) + (row[1].length > 10 ? '<small>' + esc(row[1].slice(10)) + '</small>' : '') : esc(row[1])) + '</td><td class="wk">' + (ok ? wd(d) : '') + '</td><td><small style="display:inline">' + esc(row[2]) + '</small></td></tr>'; }).join('');
       $('#td-moon').textContent = r.moon; $('#td-note').textContent = y === 2026 ? '高亮的是这十天。' : '';

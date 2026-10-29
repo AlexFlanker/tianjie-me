@@ -141,8 +141,15 @@ def cnav():
 
 def chead(cid):
     _, n, t, lede = next(c for c in E.CHAPTERS if c[0] == cid)
-    label = '序章' if n == 0 else f'第 {"一二三四五六七八"[n-1]} 章'
-    return f'<div class="chead fade"><div class="cno">{n:02d}<small>{label}</small></div><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
+    label = '序章' if n == 0 else f'第{"一二三四五六七八"[n-1]}章'
+    txt = f'<div class="ptext"><p class="cno">{n:02d} · {label}</p><h2>{esc(t)}</h2><p class="lede">{lede}</p></div>'
+    O = E.OPENERS.get(cid)
+    if not O:
+        return f'<header class="chead fade">{txt}</header>'
+    im = IM[O['img']]
+    fig = (f'<figure class="pimg{" pano" if O.get("wide") else ""}"><img src="assets/{esc(im["file"])}" srcset="assets/{esc(O["small"])} 1280w, assets/{esc(im["file"])} {O["w"]}w" '
+           f'sizes="(min-width: 981px) 58vw, 100vw" alt="{esc(O["alt"])}" loading="lazy" decoding="async"><figcaption>{esc(O["cap"])}</figcaption></figure>')
+    return f'<header class="chead plate fade">{txt}{fig}</header>'
 
 # ---------- 序章：全屏时间轴
 def ch_days():
@@ -176,7 +183,7 @@ def three_tiles(nid):
         txt, img, none = E.TILES[nid][col]; im = IM.get(img) if img else None
         if img and not im: raise SystemExit(f'TILES {nid}.{col}: 图片 {img} 不在 images.json')
         fig = f'<figure><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{esc(imgcap(im, 56))}</figcaption></figure>' if im else ''
-        out.append(f'<div class="l3t{" none" if none else ""}{" ph" if im else ""}">{fig}<b>{esc(label)}</b><p>{esc(txt)}</p></div>')
+        out.append(f'<div class="l3t{" none" if none else ""}{" ph" if im else ""}"><b>{esc(label)}</b>{fig}<p>{esc(txt)}</p></div>')
     return '<div class="l3">' + ''.join(out) + '</div>'
 
 def spread_line(nid):
@@ -208,7 +215,7 @@ def lamp_row(nid):
 <span class="lname"><b><i class="lamp{"" if ten else " dim"}"></i>{esc(f["short"])}</b><small>{esc(f["city"])} · {latlabel(lat)} · {esc(f["koppen"])}</small></span>
 <span class="llat" title="纬度：南纬 40° → 北纬 60°"><u></u><i style="left:{pct:.1f}%"></i></span>
 <span class="ldl" title="当天昼长"><span class="bar"><i style="width:{dl / 24 * 100:.1f}%"></i><u></u></span><small>{sun.hm(dl)}</small></span>
-<span class="ltags"><span class="chip">{esc(f["basisName"])}</span><span class="chip a">{esc(f["kindName"])}</span>{'<span class="chip ct">对照</span>' if f["contrast"] else ''}</span>
+<span class="ltags"><span>{esc(f["basisName"])}</span><span class="lk">{esc(f["kindName"])}</span>{'<span class="lct">对照</span>' if f["contrast"] else ''}</span>
 {thumb}<span class="lchev" aria-hidden="true"></span></button>
 <div class="lmore" id="lm-{esc(nid)}" role="region" aria-label="{esc(f['short'])} 详情"><div class="lmore-in">
 <p class="lwhy">{esc(n.get('why', ''))}</p>
@@ -229,7 +236,7 @@ def ch_lamps():
 <div class="lensbar fade"><span class="lensk">按</span><div class="lens" id="lens" role="tablist" aria-label="灯谱的透镜">{tabs}</div><span class="lensnote" id="lensnote">十九行 · 点一行展开</span></div>
 <div class="lcols" aria-hidden="true"><span>日期</span><span>节日 · 核心城市</span><span>纬度 南 40° → 北 60°</span><span>当天昼长</span><span>历法 · 门槛</span></div>
 <div class="lgrid" id="lgrid">{body}</div>
-<p class="small lfoot">昼长按核心城市纬度与 2026 年日期算；柯本类型按 Beck 等 2018 的 1 km 数据逐城读取；「门槛」是编辑按各路气象与农业口径归的类。标着「对照」、底纹带斜线的三行是对照：悉尼的万圣节在仲春，中元与 Pchum Ben 在另一道门槛上。</p>
+<p class="small lfoot">昼长按核心城市纬度与 2026 年日期算；柯本类型按 Beck 等 2018 的 1 km 数据逐城读取；「门槛」是编辑按各路气象与农业口径归的类。标着「对照」的三行是对照：悉尼的万圣节在仲春，中元与 Pchum Ben 在另一道门槛上。</p>
 </div></section>'''
 
 # ---------- 门槛：年轮 + 同与异
@@ -266,10 +273,10 @@ def find_src(nid, pat):
 def rules_block():
     li = ''
     for k, (y, t, d, (nid, pat)) in enumerate(E.RULES):
-        s = find_src(nid, pat)
-        li += (f'<article class="rcard fade"><span class="ry">{esc(y)}</span><b>{esc(t)}</b><p>{esc(d)}</p>'
-               + (f'<a class="rgo" href="{esc(s["url"])}" target="_blank" rel="noopener">原文 / 入口 ↗</a>' if s and s.get('url') else '') + '</article>')
-    return f'<div class="rgrid">{li}</div>'
+        s_ = find_src(nid, pat)
+        li += (f'<article class="ritem fade"><span class="ry">{esc(y)}</span><div><b>{esc(t)}</b><p>{esc(d)}</p>'
+               + (f'<a class="rgo" href="{esc(s_["url"])}" target="_blank" rel="noopener">原文 / 入口 ↗</a>' if s_ and s_.get('url') else '') + '</div></article>')
+    return f'<div class="rlist">{li}</div>'
 def refs_block():
     groups = [('欧洲与南半球（A 路）', [s for n in A['nodes'] for s in n.get('sources', [])] + [s for f in A.get('facts', []) for s in f.get('sources', [])]),
               ('中国与日本（B 路）', [s for n in B['nodes'] for s in n.get('sources', [])] + [s for f in B.get('facts', []) for s in f.get('sources', [])]),
@@ -317,8 +324,8 @@ def data():
     anchors = [dict(short=a, desc=b, doy=d) for a, b, d in E.ANCHORS]
     return {'field': field, 'stage': stage.data(STAGE_CITIES, IM, FEST), 'cities': cities, 'fest': fest, 'order': ORDER, 'lens': lens, 'lensName': dict(E.LENSES), 'anchors': anchors, 'tables': TABLES, 'lunar': LUNAR}
 
-LIGHT = ('--bg:#ECEDF0;--surface:#F7F7F9;--surface-2:#E2E4EA;--ink:#1C2030;--ink-2:#48506A;--muted:#7A8094;--line:#C9CDD8;--line-2:#DCDFE7;--grid:rgba(28,32,48,.06);'
-         '--accent:#D9661F;--accent-2:#F2A33A;--accent-ink:#B4511A;--wash:rgba(217,102,31,.10);--wash-2:rgba(217,102,31,.2);--nav-glass:rgba(236,237,240,.74);--glass-line:rgba(28,32,48,.12);color-scheme:light;')
+LIGHT = ('--bg:#F4F1EA;--surface:#FBF9F4;--surface-2:#ECE7DC;--ink:#1A1712;--ink-2:#4A443A;--muted:#857D70;--line:rgba(26,23,18,.16);--line-2:rgba(26,23,18,.09);--grid:rgba(26,23,18,.05);'
+         '--accent:#C2551A;--accent-2:#E08A3A;--accent-ink:#A8461A;--wash:rgba(194,85,26,.08);--wash-2:rgba(194,85,26,.16);--nav-glass:rgba(244,241,234,.78);--glass-line:rgba(26,23,18,.12);color-scheme:light;')
 
 def audit():
     """文案里的计数与数据对账：同的五个数、门槛透镜、年轮冬初段、这十天的行数、长夜。对不上就报出来（不拦构建）。"""

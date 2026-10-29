@@ -73,3 +73,15 @@ typography:
 
 ## 7. Agent Prompt Guide
 Build a long-form, scroll-driven editorial page in the "night satellite image with a lamplit field notebook" mood: default dark (#0B0E17) with cream serif type (#F1EADB) and a single lamp-flame accent (#F2A33A) reserved for lit cities, the current chapter, selected festivals and buttons; a separate night→indigo→pale-day ramp (#070A12 → #2B3458 → #C9D3E6) encodes one quantity only, the fraction of the day that is night. Light mode = grey-white paper (#ECEDF0) with a burnt-orange accent (#D9661F); the hero field and the prologue stage stay night in both modes. Fonts fixed: Noto Serif SC headings, Noto Sans SC body, tabular numerals. No gradients as decoration, no glass, no shadows except lamp glow, no second accent, no purple. Program-drawn graphics only for the night field, the world map camera, the year wheel with fanned-out labels, day-length tracks and waffle strips; real photos keep original colour. Every interactive element is "light a lamp and see where it sits", with honest scale.
+
+## 6c. v3（2026-10-29，天杰转来 Elaya 的 landing-page-design / redesign-skill，说「这种级别的提升是我所期待的」）
+
+- **方法**：先按 redesign-skill 诊断（v2：32 种字号、15 处 900 字重、13 种圆角、28 种间距、19 处毛玻璃、30 处单边框线、默认缓动），首屏先改、给天杰看过方向，再逐节改完。
+- **图先说话**：卷首一张全幅实拍（NASA 国际空间站 iss062e103874：星空、大气辉光、城市灯火），只留标题、副题、一个动作「走过这十天」、一行依据；标题用左白右灰的文字渐变（全页唯一的渐变）。每章开篇一张「图版」，左字右图、图不压字：灯谱配《宫廷女眷庆祝排灯节》（克利夫兰，CC0），门槛配米勒《干草堆：秋》（大都会，CC0），动手配国际空间站的轨道日出 iss071e439624（NASA）。序章本身就是夜光图，不另配。
+- **论点单独成一节**（skill 的 tagline reveal）：三行大字随滚动逐词点亮，亮起时先暖后定，像点灯；减弱动效时直接全亮。
+- **字号**只取 12/14/16/18/20/24/30/36/48/60/96/128；中文正文行高放宽（16/28、14/24、18/32），这是对 skill 行高表的有意例外。**字重** 400/500/600/700，取消 900（字体请求改为宋体 500/700、黑体 400/500/600/700）。**间距** 2/4/8/12/16/24/32/40/48/64/96。**圆角** 2/4/6/8/12/16/全圆。
+- **颜色**：深色底从靛黑 #0B0E17 改为暖黑 #131209（skill 色板里唯一的暖色），夜色带（卷首、论点、田野、序章）用纯黑接照片；强调色饱和度降到 80% 以下（#E9A23F）；浅色模式改暖白纸 #F4F1EA、深褐墨、余烬橙 #C2551A，灰色全部同一暖色系。
+- **去框**：三件事、去看的话、同与异、动手两件、卷末十一份规则都不再套卡片，靠留白、字号与细分隔线分层；行内标签从药丸改成纯文字（门槛类型用强调色，「对照」是一个小方框标）；折叠改成一条细线加「+」。保留材质的只有浮在内容上的东西：章节导航、透镜条、序章卡片与刻度尺、昼带按钮。
+- **状态**：按钮、行、透镜、岁首、证据链接都有悬停、按下（下沉 1 px 或缩到 0.98）与键盘焦点；年份输错时输入框标红并说明原因；纬度墙空带有说明。深浅色切换挪进章节导航（「白天读 / 夜里读」）。
+- **动效**：统一 cubic-bezier(.22,1,.36,1)；位移 500 ms、颜色 300 ms、入场上升 32 px / 700 ms 只播一次；呼吸灯用自定的正弦曲线，不用浏览器默认曲线。
+- **AI 插画**：天杰选「两者都试」。这一轮会话里调用 Superdesign 的 CLI 被权限系统拦下，环境里也没有出图工具；门槛一章预留为对照位，等天杰提供或批准出图后，同一位置做 AI 版并标明「AI 插画」。

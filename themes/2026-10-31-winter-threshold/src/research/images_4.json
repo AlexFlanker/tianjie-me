@@ -1,6 +1,10 @@
-{"note": "v3（2026-10-29）补的大图：卷首全幅照片。只收公有领域 / CC0。",
+{
+ "note": "v3（2026-10-29）补的大图：卷首全幅照片。只收公有领域 / CC0。",
  "images": [
-  {"id": "img-hero-1", "node": "hero", "file": "hero-iss062e103874-2400.jpg",
+  {
+   "id": "img-hero-1",
+   "node": "hero",
+   "file": "hero-iss062e103874-2400.jpg",
    "subject": "国际空间站 2020 年 3 月 20 日在欧亚交界上空、正驶入轨道日落时拍下的夜：上面是星空，中间一道大气辉光，下面是城市灯火",
    "author": "NASA / ISS Expedition 62 乘组（JSC），照片编号 iss062e103874",
    "year": "2020-03-20",
@@ -10,5 +14,52 @@
    "url_file": "https://images-assets.nasa.gov/image/iss062e103874/iss062e103874~orig.jpg",
    "source_name": "NASA Image and Video Library（images.nasa.gov）",
    "status": "ok",
-   "note": "原图 5568×3712；另存 2400 宽（300 KB）与 1280 宽（82 KB）两档，页面用 srcset。说明原文：The city lights at the intersection of Europe and Asia sparkle underneath an atmospheric glow and a starry night sky as the International Space Station orbited 262 miles above into an orbital sunset."}
- ]}
+   "note": "原图 5568×3712；另存 2400 宽（300 KB）与 1280 宽（82 KB）两档，页面用 srcset。说明原文：The city lights at the intersection of Europe and Asia sparkle underneath an atmospheric glow and a starry night sky as the International Space Station orbited 262 miles above into an orbital sunset."
+  },
+  {
+   "id": "img-open-lamps",
+   "node": "open",
+   "file": "open-diwali-1800.jpg",
+   "subject": "《宫廷女眷庆祝排灯节》（Royal Women Celebrating Diwali），约 1760 年，北印度北方邦勒克瑙，纸本胶彩描金：檐口、栏杆与河上船沿排满灯烛，众人放烟花",
+   "author": "佚名画家（北印度勒克瑙），克利夫兰艺术博物馆藏，入藏号 1971.82（Andrew R. and Martha Holden Jennings Fund）",
+   "year": "约 1760",
+   "license": "CC0（克利夫兰艺术博物馆 Open Access）",
+   "license_url": "https://www.clevelandart.org/open-access",
+   "url_page": "https://clevelandart.org/art/1971.82",
+   "url_file": "https://openaccess-cdn.clevelandart.org/1971.82/1971.82_print.jpg",
+   "source_name": "克利夫兰艺术博物馆 Open Access",
+   "status": "ok",
+   "note": "print 版 3400×2878，裁去四周的浅色衬边；1800 宽与 1280 宽两档。"
+  },
+  {
+   "id": "img-open-threshold",
+   "node": "open",
+   "file": "open-millet-1800.jpg",
+   "subject": "米勒《干草堆：秋》（Haystacks: Autumn），约 1874 年，布面油画：秋天收完的田里堆着三座干草垛，羊群在吃草，天色转阴",
+   "author": "让-弗朗索瓦·米勒（Jean-François Millet，1814–1875），大都会艺术博物馆藏，入藏号 60.71.12（Bequest of Lillian S. Timken, 1959）",
+   "year": "约 1874",
+   "license": "公有领域（大都会艺术博物馆 Open Access，CC0）",
+   "license_url": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+   "url_page": "https://www.metmuseum.org/art/collection/search/437097",
+   "url_file": "https://images.metmuseum.org/CRDImages/ep/original/DP124093.jpg",
+   "source_name": "大都会艺术博物馆 Open Access",
+   "status": "ok",
+   "note": "原图 3867×3020，裁去画布四边约 1.5%；1800 宽与 1280 宽两档。"
+  },
+  {
+   "id": "img-open-hands",
+   "node": "open",
+   "file": "open-iss071e439624-2400.jpg",
+   "subject": "国际空间站 2024 年 8 月 6 日在新西兰奥克兰以北的太平洋上空拍下的轨道日出：阳光照亮大气层，画出白昼与黑夜的分界（晨昏线）",
+   "author": "NASA / ISS Expedition 71 乘组（JSC），照片编号 iss071e439624",
+   "year": "2024-08-06",
+   "license": "NASA 出品，公有领域（NASA 影像一般不受版权保护；NASA Image and Video Library 条目，center: JSC）",
+   "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "url_page": "https://images.nasa.gov/details/iss071e439624",
+   "url_file": "https://images-assets.nasa.gov/image/iss071e439624/iss071e439624~orig.jpg",
+   "source_name": "NASA Image and Video Library（images.nasa.gov）",
+   "status": "ok",
+   "note": "原图 4928×2768；2400 宽与 1280 宽两档。说明原文：An orbital sunrise colorfully illuminates the Earth's atmosphere and highlights the boundary between night and day, also known as the terminator."
+  }
+ ]
+}

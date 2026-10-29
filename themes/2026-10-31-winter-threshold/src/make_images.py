@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""合并三路找图底稿（research/images_{1,2,3}.json）→ images.json；核对文件存在、读尺寸；舍弃 status != ok 与 DROP 里的条目。
+"""合并找图底稿（research/images_{1,2,3}.json 三路 + images_4.json v3 补图）→ images.json；核对文件存在、读尺寸；舍弃 status != ok 与 DROP 里的条目。
 用法：python3 themes/2026-10-31-winter-threshold/src/make_images.py"""
 import json, os, re
 from PIL import Image
@@ -16,7 +16,7 @@ def lic_short(s):
     if 'NASA' in s or 'Public Domain' in s or '公有领域' in s or 'PD' in s: return '公有领域'
     return s[:20]
 out = []
-for k in (1, 2, 3):
+for k in (1, 2, 3, 4):
     p = os.path.join(HERE, 'research', f'images_{k}.json')
     if not os.path.exists(p): continue
     d = json.load(open(p, encoding='utf-8')); items = d['images'] if isinstance(d, dict) else d

@@ -55,10 +55,12 @@
   /* ================= 深浅色：这一题默认是夜；用户切过就记住 ================= */
   try { var saved = localStorage.getItem('yzyt-theme'); if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved); } catch (e) {}
   var tb = $('#theme-btn');
-  if (tb) tb.addEventListener('click', function () {
-    var cur = root.getAttribute('data-theme') || 'dark', next = cur === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', next);
+  function curTheme() { return root.getAttribute('data-theme') || (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'); }
+  function themeLabel() { if (!tb) return; var d = curTheme() === 'dark'; tb.textContent = d ? '白天读' : '夜里读'; tb.setAttribute('aria-label', d ? '换成浅色' : '换成深色'); }
+  if (tb) { themeLabel(); tb.addEventListener('click', function () {
+    var next = curTheme() === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', next); themeLabel();
     try { localStorage.setItem('yzyt-theme', next); } catch (e) {}
-  });
+  }); }
 
   /* ================= 太阳：昼长（小时）、日落（分钟，经度 0° 平太阳时）。与 sun.py 同公式 ================= */
   var RAD = Math.PI / 180;
@@ -76,11 +78,33 @@
   window.YZ.sun = { dayLen: dayLen, sunset: sunset, hm: hm, mm: mm, doyToMd: doyToMd, isoDoy: isoDoy, latTxt: latTxt };
 
   /* ================= 入场 ================= */
-  var fades = $$('.fade');
+  var fades = $$('.fade').concat($$('.rise').filter(function (el) { return !el.closest('#top'); }));
   if ('IntersectionObserver' in window && !RM.on) {
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -6% 0px' });
     fades.forEach(function (el) { io.observe(el); });
   } else { fades.forEach(function (el) { el.classList.add('in'); }); }
+
+  /* ================= v3 卷首：标题依次升起；论点逐词点亮 ================= */
+  (function initHero3() {
+    var h = $('#top'); if (!h) return;
+    var rs = $$('.rise', h);
+    if (RM.on) { rs.forEach(function (el) { el.classList.add('in'); }); return; }
+    requestAnimationFrame(function () { rs.forEach(function (el, i) { el.style.transitionDelay = (0.15 + Math.min(i * 0.08, 0.4)).toFixed(2) + 's'; el.classList.add('in'); }); });
+  })();
+  (function initTagline() {
+    var sec = $('#tagsec'); if (!sec) return;
+    var ws = $$('.tagl .w', sec), rest = $('.tagrest', sec), tick = false;
+    function upd() {
+      tick = false;
+      if (RM.on) { ws.forEach(function (w) { w.classList.add('on'); }); if (rest) rest.classList.add('on'); return; }
+      var r = sec.getBoundingClientRect(), span = sec.offsetHeight - window.innerHeight;
+      var p = clamp(-r.top / (span > 0 ? span : 1), 0, 1), n = Math.floor(p * (ws.length + 3));
+      ws.forEach(function (w, i) { var on = i < n; if (on !== w.classList.contains('on')) w.classList.toggle('on', on); });
+      if (rest) rest.classList.toggle('on', n >= ws.length + 1);
+    }
+    window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(upd); } }, { passive: true });
+    window.addEventListener('resize', upd); upd();
+  })();
 
   /* ================= 章节导航与进度 ================= */
   var nav = $('#cnav'), prog = $('#prog'), links = $$('[data-nav]'), secs = links.map(function (a) { return document.getElementById(a.getAttribute('data-nav')); });
@@ -152,8 +176,6 @@
       [[274, '10 月 1 日'], [305, '11 月 1 日'], [335, '12 月 1 日']].forEach(function (m) { s += '<text class="ax" x="' + fx(m[0]).toFixed(1) + '" y="' + (FH - 10) + '" text-anchor="middle">' + m[1] + '</text>'; });
       s += '<rect class="win" x="' + fx(304).toFixed(1) + '" y="' + FT + '" width="' + (fx(313) - fx(304)).toFixed(1) + '" height="' + (FH - FT - FB) + '"/>';
       s += '<text class="lab s" x="' + (fx(304) + 4).toFixed(1) + '" y="' + (FT + 14) + '">这十天</text>';
-      s += '<text class="ftitle" x="' + (FL + 16) + '" y="' + (FT + (FSM ? 40 : 46)) + '">冬天的门槛</text><text class="fsub" x="' + (FL + 17) + '" y="' + (FT + (FSM ? 64 : 70)) + '">这些节日的夜与灯 · 2026 年 10–12 月</text>';
-      placed.push({ x: FL + 10, y: FT + 20, w: FSM ? 330 : 300, h: FSM ? 56 : 60 });
       var items = D.field.slice().sort(function (p, q) { return isoDoy(p.date) - isoDoy(q.date) || q.lat - p.lat; });
       items.forEach(function (f, i) {
         var show = !FSM || FKEY.indexOf(f.id) >= 0, x = fx(isoDoy(f.date)), y = fy(f.lat), w = show ? f.name.length * LF + 6 : 0, flip = x + 9 + w > FW - 8, lx = flip ? x - 9 - w : x + 9, ly = y + 4;
@@ -409,9 +431,6 @@
       ts.to(t, { damping: 1, response: 0.22 });
     }
     window.addEventListener('scroll', onScroll, { passive: true });
-    // 刻度尺贴在视口底边时，把右下角的「夜 / 昼」按钮让到刻度尺上方，免得盖住最后一个刻度
-    function tlOn() { var rr = ruler.getBoundingClientRect(); document.documentElement.classList.toggle('tl-on', rr.bottom > innerHeight - 64 && rr.top < innerHeight); }
-    window.addEventListener('scroll', tlOn, { passive: true }); window.addEventListener('resize', tlOn); tlOn();
     ['wheel', 'touchstart'].forEach(function (ev) { window.addEventListener(ev, function () { if (mode === 'fly') mode = 'scroll'; }, { passive: true }); });
     function nearestStepDay(t) { var best = stepDays[0], bd = 1e9; stepDays.forEach(function (d) { var dd = Math.abs(d - t); if (dd < bd) { bd = dd; best = d; } }); return best; }
     function flyTo(t, v) { mode = 'fly'; progY = null; ts.to(clamp(t, 0, N - 1), { velocity: v || 0, damping: 1, response: 0.42 }); }

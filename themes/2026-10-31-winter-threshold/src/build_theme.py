@@ -94,23 +94,49 @@ WDN = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
 def wdz(iso): y, m, d = (int(x) for x in iso.split('-')); return WDN[dt.date(y, m, d).weekday()]
 def imgcap(im, n=80): s = im['subject']; return (s[:n] + '…' if len(s) > n else s) + f' 图：{im["author_short"]}，{im["license_short"]}。'
 
-# ---------- 卷首
+# ---------- 卷首（v3）：全幅实拍 + 标题 + 一个动作
 def hero():
-    M = E.META; H = E.HERO
-    t1, t2 = M['title'].split('：', 1)
-    return f'''<header class="hero band"><div class="wide">
-  <div class="strip fade" data-cover-hide><span><b>一周一题</b>第 {M['no']} 题</span><span><b>上线</b>{M['date']}</span><span><b>格式</b>{esc(M['format'])}</span><span><b>阅读</b>{esc(M['reading_time'])}</span></div>
-  <h1 class="fade" data-cover-hide>{esc(t1)}<small>{esc(t2)}</small></h1>
-  <p class="thesis fade" data-cover-hide>{H['thesis']}</p>
-  <figure class="field" id="field"><div class="fieldbox" id="fieldbox" tabindex="0" role="slider" aria-label="夜的田野：拖动竖线选日期" aria-valuemin="274" aria-valuemax="365" aria-valuenow="304" aria-valuetext="10 月 31 日">
+    H = E.HERO3; im = IM[H['img']]
+    sub = ''.join(f'<span>{esc(x)}</span>' for x in H['sub'])
+    arrow = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5 8 13l4.5-4.5"/></svg>'
+    return f'''<header class="h3 band" id="top">
+  <figure class="h3img"><img src="assets/{esc(im['file'])}" srcset="assets/{esc(H['img_1280'])} 1280w, assets/{esc(im['file'])} 2400w" sizes="100vw" alt="{esc(H['alt'])}" fetchpriority="high" decoding="async"></figure>
+  <div class="h3in wide">
+    <p class="h3k rise">{esc(H['kicker'])}</p>
+    <h1 class="h3t rise">{esc(H['title'])}</h1>
+    <p class="h3s rise">{sub}</p>
+    <div class="h3a rise"><a class="btn" href="{esc(H['cta_href'])}">{esc(H['cta'])}{arrow}</a><span class="h3p">{esc(H['proof'])}</span></div>
+  </div>
+  <p class="h3cap">{esc(H['cap'])}</p>
+</header>'''
+
+def tagline_sec():
+    lines = []
+    k = 0
+    for ln in E.TAGLINE.split('/'):
+        ws = []
+        for w in ln.split('|'):
+            ws.append(f'<span class="w" style="--i:{k}">{esc(w)}</span>'); k += 1
+        lines.append('<span class="ln">' + ''.join(ws) + '</span>')
+    return f'''<section class="tagsec band" id="tagsec" aria-label="这一页的论点"><div class="tagstick"><div class="wide">
+<p class="tagl" aria-label="{esc(E.TAGLINE.replace('|', '').replace('/', ''))}"><span aria-hidden="true">{''.join(lines)}</span></p>
+<p class="tagrest">{esc(E.TAGREST)}</p>
+</div></div></section>'''
+
+def field_sec():
+    F = E.FIELD3
+    return f'''<section class="fieldsec band" id="fieldsec" aria-label="{esc(F['title'])}"><div class="wide">
+  <div class="fhead rise"><h2>{esc(F['title'])}</h2><p>{esc(F['lede'])}</p></div>
+  <figure class="field rise" id="field"><div class="fieldbox" id="fieldbox" tabindex="0" role="slider" aria-label="夜的田野：拖动竖线选日期" aria-valuemin="274" aria-valuemax="365" aria-valuenow="304" aria-valuetext="10 月 31 日">
     <canvas id="fcv" width="1200" height="520" aria-hidden="true"></canvas><svg class="fov" id="fov" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true"></svg>
     <div class="fread glass" id="fread" aria-live="polite" data-cover-hide></div><div class="ftip" id="ftip"></div></div>
-  <figcaption class="fcap"><span><b>夜的田野。</b>横轴 10 月 1 日 → 12 月 31 日，纵轴北纬 62° → 南纬 36°；底色越深，那天那条纬线上的黑夜越长，白线是等昼长线。每盏灯是灯谱里的一行，放在它 2026 年的日子与核心城市的纬度上；点灯打开那一行（感恩节只作参照，灯谱里没有；8 月的中元在横轴以外）。</span><span class="fkey">{esc(H['hint'])}</span></figcaption></figure>
-</div></header>'''
+    <figcaption class="fcap"><span>横轴 10 月 1 日 → 12 月 31 日，纵轴北纬 62° → 南纬 36°，白线是等昼长线。每盏灯是灯谱里的一行，放在它 2026 年的日子与核心城市的纬度上，点一下打开那一行；感恩节只作参照，8 月的中元在横轴以外。</span></figcaption></figure>
+</div></section>'''
 
 def cnav():
     links = ''.join(f'<a href="#{cid}" data-nav="{cid}"><small>{n}</small>{esc(t)}</a>' for cid, n, t, _ in E.CHAPTERS)
     links += '<a href="#end" data-nav="end"><small>末</small>规则与参考</a>'
+    links += '<button type="button" class="ntheme" id="theme-btn" data-cover-hide aria-label="切换深浅色">白天读</button>'
     return f'<nav class="cnav" id="cnav" aria-label="章节"><div class="row">{links}<i class="prog" id="prog"></i></div></nav>'
 
 def chead(cid):
@@ -275,7 +301,7 @@ def endm():
 <details class="fold big fade"><summary><h3>图片署名（{len(IM)} 张）</h3></summary>{credits()}</details>
 <div class="stamp fade">一周一题 · 第 {E.META['no']} 题 · {E.META['date']}<br>研究、绘图与核查：Claude（站长复核）</div>
 </div></footer>
-<button class="theme-btn" id="theme-btn" type="button" data-cover-hide aria-label="切换深浅色">夜 / 昼</button>'''
+'''
 
 # ---------- 数据
 def data():
@@ -315,7 +341,7 @@ def main():
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     app = open(os.path.join(HERE, 'calendars.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'app.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'demos.js'), encoding='utf-8').read()
     light = ('@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){' + LIGHT + '}}\n:root[data-theme="light"]{' + LIGHT + '}')
-    body = hero() + cnav() + '<main>' + ch_days() + ch_lamps() + ch_threshold() + ch_hands() + '</main>' + endm()
+    body = hero() + cnav() + '<main>' + tagline_sec() + field_sec() + ch_days() + ch_lamps() + ch_threshold() + ch_hands() + '</main>' + endm()
     page = (tpl.replace('{{TITLE}}', esc(E.META['title'])).replace('{{DESCRIPTION}}', esc(E.META['desc'])).replace('{{LIGHT_BLOCKS}}', light)
             .replace('{{BODY}}', body).replace('{{DATA_JSON}}', json.dumps(data(), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('{{APP_JS}}', app))
     page, report = fixes.apply(page)

@@ -1,0 +1,14 @@
+{"note": "v3（2026-10-29）补的大图：卷首全幅照片。只收公有领域 / CC0。",
+ "images": [
+  {"id": "img-hero-1", "node": "hero", "file": "hero-iss062e103874-2400.jpg",
+   "subject": "国际空间站 2020 年 3 月 20 日在欧亚交界上空、正驶入轨道日落时拍下的夜：上面是星空，中间一道大气辉光，下面是城市灯火",
+   "author": "NASA / ISS Expedition 62 乘组（JSC），照片编号 iss062e103874",
+   "year": "2020-03-20",
+   "license": "NASA 出品，公有领域（NASA 影像一般不受版权保护；NASA Image and Video Library 条目，center: JSC）",
+   "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+   "url_page": "https://images.nasa.gov/details/iss062e103874",
+   "url_file": "https://images-assets.nasa.gov/image/iss062e103874/iss062e103874~orig.jpg",
+   "source_name": "NASA Image and Video Library（images.nasa.gov）",
+   "status": "ok",
+   "note": "原图 5568×3712；另存 2400 宽（300 KB）与 1280 宽（82 KB）两档，页面用 srcset。说明原文：The city lights at the intersection of Europe and Asia sparkle underneath an atmospheric glow and a starry night sky as the International Space Station orbited 262 miles above into an orbital sunset."}
+ ]}

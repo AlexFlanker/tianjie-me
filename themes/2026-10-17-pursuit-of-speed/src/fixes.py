@@ -76,4 +76,8 @@ def patch_data(A, B, C):
     for c in B['cells']:
         if c['track'] == 'body' and c['era'] == 2 and c['kmh'] < 100: c['kmh'] = 100; log.append('Murphy 96.6 → 100（1 英里 57.8 s）')
         if c['track'] == 'body' and c['era'] == 0: c['note'] = (c.get('note') or '') + ' 本页三处用了三个数：矩阵 65（估计）、速度尺 70.76（现代赛马纪录）、总线 60（前工业时代估计），都是「马能跑多快」的不同口径。'; log.append('马：三处口径说明')
+    for c in B['cells']:
+        al = c.get('also') or {}
+        if c['track'] == 'air' and c['era'] == 3 and '1931-09-13' in (al.get('speed') or ''):
+            al['speed'] = al['speed'].replace('1931-09-13', '1931-09-29'); log.append('S.6B 407.5 mph 是 1931-09-29（9-13 是施耐德杯比赛日）')
     return log

@@ -296,36 +296,7 @@
 
   $$('.demo[data-demo]').forEach(function (el) { var k = el.getAttribute('data-demo'); if (DEMO[k]) { try { DEMO[k](el); } catch (e) { console.error(k, e); } } });
 
-  /* ---------- 第三章 · 两条线播放 */
-  (function () {
-    var fig = $('#lines-fig'); if (!fig || !D.lines) return;
-    var svg = $('svg', fig), play = $('#ln-play'), yr = $('#ln-yr'), yEl = $('#ln-y'), rEl = $('#ln-rec i'), dEl = $('#ln-day i'), flash = $('#ln-flash');
-    var clip = document.createElementNS('http://www.w3.org/2000/svg', 'clipPath'); clip.id = 'ln-clip'; var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect'); rect.setAttribute('x', '0'); rect.setAttribute('y', '0'); rect.setAttribute('height', '460'); rect.setAttribute('width', '1200'); clip.appendChild(rect); svg.insertBefore(clip, svg.firstChild);
-    var g = document.createElementNS('http://www.w3.org/2000/svg', 'g'); g.setAttribute('clip-path', 'url(#ln-clip)');
-    $$('polyline, circle, text', svg).forEach(function (n) { if (n.classList.contains('tm')) return; g.appendChild(n); }); svg.appendChild(g);
-    var X = function (y) { return 70 + (Math.max(y, 1790) - 1790) / (2032 - 1790) * (1150 - 70); };
-    var fmtk = function (v) { return v >= 100 ? num(v, 0) : num(v, 1); };
-    var valAt = function (arr, y) { var v = arr[0].v; for (var i = 0; i < arr.length; i++) if (arr[i].y <= y) v = arr[i].v; return v; };
-    var lastY = 2026, raf = null;
-    function setYear(y, animate) {
-      y = Math.round(y); rect.setAttribute('width', String(X(y) + 6)); yEl.textContent = y; rEl.textContent = fmtk(valAt(D.lines.rec, y)); dEl.textContent = fmtk(valAt(D.lines.day, y));
-      if (animate) {
-        if (lastY < 1969 && y >= 1969) msg('1969 · Apollo 10 返回，39,897 km/h——到顶，之后 57 年没动过', 'rec');
-        if (lastY < 1976 && y >= 1976) msg('1976 · 协和商业首航，日常也到顶：2,180 km/h', 'day');
-        if (lastY < 2003 && y >= 2003) { msg('2003 · 协和退役，日常退回 900 km/h', 'drop'); fig.classList.add('drop'); setTimeout(function () { fig.classList.remove('drop'); }, 900); }
-        if (lastY < 2026 && y >= 2026) msg('2026 · Artemis II 39,693 km/h：没有改写', 'rec');
-      }
-      lastY = y;
-    }
-    function msg(t, cls) { flash.textContent = t; flash.className = 'lflash on ' + cls; clearTimeout(flash._t); flash._t = setTimeout(function () { flash.classList.remove('on'); }, 2600); }
-    yr.addEventListener('input', function () { cancelAnimationFrame(raf); setYear(parseFloat(yr.value), false); });
-    play.addEventListener('click', function () {
-      cancelAnimationFrame(raf); var t0 = performance.now(), dur = reduced ? 0 : 9000; lastY = 1799;
-      if (!dur) { setYear(2026, false); return; }
-      (function step(t) { var p = clamp((t - t0) / dur, 0, 1); var y = 1800 + 226 * p; yr.value = y; setYear(y, true); if (p < 1) raf = requestAnimationFrame(step); })(t0);
-    });
-    setYear(2026, false);
-  })();
+  /* 第三章「两条线」的播放与拖动在 app.js（v2 改为按实际宽度现画的主图） */
 
   /* ---------- 反例小图 */
   $$('.ctile').forEach(function (t) {

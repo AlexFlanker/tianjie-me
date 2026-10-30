@@ -15,13 +15,13 @@
   ],
   "format": "图谱",
   "cover": "cover.png",
-  "cover_focus": "#lvl-ssc",
+  "cover_focus": "#top",
   "cover_scheme": "dark",
   "reading_time": "30 分钟",
   "sources": [
     "FIA / FIM / FAI / UIM / 世界田径 / 吉尼斯的纪录页；NASA 与美国空军官方史（X-1、X-2、X-15、X-29、SR-71、Apollo 10、Artemis II、帕克探测器、Falcon 9 回收、Stapp）",
     "英国国家铁路博物馆与科学博物馆集团、JR 东海、SNCF / Alstom、国铁集团与中车、澳大利亚国家海事博物馆、辛辛那提动物园",
     "TechCrunch、Electrek、CBS 对 2026-10-15 Roadster 演示的报道；央视、新华网、界面对 GB 7258—2026 的报道；motorionline 对腾势 Z 的转述",
-    "图片 29 张：NASA、美国陆军 / 海军、美国国会图书馆 Bain 收藏、Gallica、大都会博物馆 Open Access、geograph.org.uk、Flickr（CC BY / CC BY-SA）；逐张署名见页面卷末与 src/images.json"
+    "图片 30 张：NASA、美国陆军 / 海军、美国国会图书馆 Bain 收藏、Gallica、大都会博物馆 Open Access、geograph.org.uk、Flickr（CC BY / CC BY-SA）；逐张署名见页面卷末与 src/images.json"
   ]
 }

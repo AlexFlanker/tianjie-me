@@ -1,5 +1,20 @@
 [
  {
+  "id": "hero-s69-33855",
+  "subject": "Apollo 10 夜间停在 39B 号发射台（1969-05-04）",
+  "file": "hero-s69-33855-2400.jpg",
+  "w": 2400,
+  "h": 1200,
+  "author": "NASA (JSC)",
+  "year": "1969-05-04",
+  "license": "公有领域（美国政府作品，NASA 图像不受版权保护）",
+  "source_page": "https://images.nasa.gov/details/S69-33855",
+  "source_file": "https://images-assets.nasa.gov/image/S69-33855/S69-33855~orig.jpg",
+  "caption": "1969 年 5 月 4 日夜，肯尼迪航天中心 39B 号发射台上的 Apollo 10（土星五号 SA-505），拍摄时活动服务塔正在撤离；5 月 18 日发射，5 月 26 日返回地球时 39,897 km/h。",
+  "status": "ok",
+  "note": "NASA 图库 S69-33855，美国政府作品，不受版权保护。原片 3660×4698 竖幅；卷首的横幅（3200/2400/1600 宽）与手机竖幅（1440/960 宽）只做了缩放、把原片放进纯黑画布（两侧或上方以黑色补齐，贴边处羽化）、黑场压低 3/255，主体未改动。"
+ },
+ {
   "id": "rocket",
   "subject": "Stephenson's Rocket（1829）",
   "file": "rocket.jpg",

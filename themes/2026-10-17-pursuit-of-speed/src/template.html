@@ -11,7 +11,7 @@
 <meta name="color-scheme" content="light dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* 皮肤「记录纸与沥青」：浅色是计时记录纸的白底配墨线刻度，深色是沥青黑底配白线；唯一强调色是转速表红线的红。章号用速度的数量级 10¹…10⁶ km/h。 */
 :root{
@@ -49,7 +49,59 @@ button{font-family:var(--sans)}
 .src{font-size:12.5px;line-height:1.7;color:var(--muted);margin:8px 0 0}
 .src a{color:var(--muted)}
 .src a:hover{color:var(--accent-ink)}
-.theme-btn{position:fixed;right:14px;bottom:14px;z-index:40;font:500 12.5px/1 var(--sans);padding:9px 12px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);cursor:pointer}
+
+/* ---------- v2 卷首与论点（第 7 题 v3 的版面系统：字号只取 12/14/16/18/20/24/30/36/48/60/96/128，间距 4–96，字重 ≤700，缓动 cubic-bezier(.22,1,.36,1)，入场上升 32 px；背景不用渐变，卷首标题字除外）
+   卷首是一张竖幅原片放进纯黑画布：横屏火箭在右侧 72%，手机竖屏火箭在右下，字压在夜空上，不加遮罩。 */
+:root{--ease:cubic-bezier(.22,1,.36,1)}
+.h3{position:relative;min-height:max(calc(100dvh - 36px),630px);display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:#000;color:#fff;isolation:isolate}
+.h3img{position:absolute;inset:0;margin:0;z-index:-1;background:#000}
+.h3img picture{display:block;width:100%;height:100%}
+.h3img img{display:block;width:100%;height:100%;object-fit:cover;object-position:72% 42%;transform:scale(1.06);transform-origin:72% 60%;animation:h3zoom 2.4s var(--ease) .1s forwards}
+@keyframes h3zoom{to{transform:scale(1)}}
+.h3in{width:100%;padding-top:48px;padding-bottom:176px}
+.h3k{margin:0;font:500 14px/20px var(--sans);letter-spacing:.08em;color:rgba(255,255,255,.72)}
+.h3t{margin:16px 0 0;font:700 128px/1 var(--serif);letter-spacing:-.01em;max-width:680px;background:linear-gradient(90deg,#FFFFFF 0%,#9B9B9B 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-wrap:nowrap}
+.h3s{margin:24px 0 0;font:500 24px/32px var(--serif);letter-spacing:0;color:rgba(255,255,255,.9);max-width:680px}
+.h3s span{display:block}
+.h3a{margin:40px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;max-width:680px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px 12px 24px;border-radius:9999px;background:#fff;color:#0B0B0B;font:600 16px/24px var(--sans);text-decoration:none;transition:transform .3s var(--ease),background-color .3s var(--ease)}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;transition:transform .5s var(--ease)}
+.btn:hover{background:#ECEAE4}
+.btn:hover svg{transform:translateY(2px)}
+.btn:active{transform:scale(.98)}
+.btn:focus-visible{outline:2px solid #FF4F4F;outline-offset:4px}
+.h3p{font:400 14px/20px var(--sans);color:rgba(255,255,255,.72)}
+.h3cap{position:absolute;right:24px;bottom:16px;margin:0;max-width:480px;font:400 12px/16px var(--sans);color:rgba(255,255,255,.56);text-align:right;text-wrap:balance}
+.rise{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rise.in{opacity:1;transform:none}
+/* 论点：一句话，逐词「掠」进来——带一点横向拖影，像从窗外闪过的东西 */
+.tagsec{position:relative;height:240vh;background:#000}
+.tagsec.band,.h3.band{background:#000}
+.tagstick{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));display:flex;align-items:center}
+/* 放不下（矮屏、手机）就不钉住，跟着页面走，词按位置点亮 */
+.tagsec.flow{height:auto}.tagsec.flow .tagstick{position:static;height:auto;padding:96px 0}
+.tagstick>.wide{width:100%}
+.tagl{margin:0;font:700 60px/1.25 var(--serif);letter-spacing:-.01em;max-width:680px}
+.tagl .ln{display:block}
+.tagl .w{display:inline-block;color:rgba(241,239,232,.22);transition:color .5s var(--ease)}
+.tagl .w.on{color:#F1EFE8;animation:whoosh .8s var(--ease)}
+@keyframes whoosh{0%{transform:translateX(-32px);filter:blur(6px);color:#FF4F4F}50%{color:#FFB4AB}100%{transform:none;filter:none;color:#F1EFE8}}
+.tagrest{margin:40px 0 0;max-width:820px;opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.tagrest.on{opacity:1;transform:none}
+.tagrest>p{margin:0;max-width:680px;font:400 18px/32px var(--sans);color:#C9C7BE;text-wrap:pretty}
+.tnums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:48px 0 0}
+.tn b{display:block;font:700 36px/40px var(--serif);color:#F1EFE8;letter-spacing:-.01em;white-space:nowrap}
+.tn b small{font:500 14px/20px var(--sans);color:#FF5A5A;margin-left:8px;letter-spacing:.04em}
+.tn p{margin:8px 0 0;font:400 14px/24px var(--sans);color:#9A9CA3}
+.rulersec{padding:64px 0 16px}
+.ntheme{flex:none;margin-left:auto;align-self:center;padding:6px 12px;border:1px solid var(--line);border-radius:9999px;background:transparent;color:var(--ink-2);font:500 12px/16px var(--sans);letter-spacing:.04em;cursor:pointer;white-space:nowrap;transition:color .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease)}
+.ntheme:hover{color:var(--ink);border-color:var(--ink-2)}
+.ntheme:active{transform:scale(.98)}
+@media (max-width:1100px){.h3t{font-size:96px}}
+@media (max-width:480px){.h3{min-height:max(calc(100dvh - 60px),560px)}}
+@media (max-width:700px){.h3t{font-size:60px}.h3s{font:500 20px/28px var(--serif)}.h3in{padding-top:32px;padding-bottom:208px}.h3a{margin-top:32px}.h3cap{left:16px;right:16px;bottom:12px;text-align:left;max-width:none}.tagl{font-size:36px;line-height:1.3}.tagrest>p{font-size:16px;line-height:28px}.tagrest{margin-top:32px}.tnums{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:32px}.tn b{font-size:30px;line-height:36px}.rulersec{padding-top:48px}}
+/* 竖屏：换竖幅图，火箭在右下，字在左边的夜空里 */
+@media (max-aspect-ratio:4/5){.h3img img{object-position:74% 100%;transform-origin:74% 90%}.h3p{max-width:60%}.h3cap{left:16px;right:auto;bottom:12px;text-align:left;max-width:min(48%,320px)}}
 
 /* ---------- 图 */
 .dwg{display:block;width:100%;height:auto}
@@ -653,8 +705,10 @@ input[type=range]{accent-color:var(--accent);width:100%}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .fade{opacity:1;transform:none;transition:none}
+  .rise{opacity:1;transform:none;transition:none}.h3img img{animation:none;transform:none}
+  .tagsec{height:auto}.tagstick{position:static;height:auto;padding:96px 0}.tagl .w{color:#F1EFE8;animation:none}.tagrest{opacity:1;transform:none;transition:none}
 }
-@media print{.cnav,.theme-btn{display:none}.fade{opacity:1;transform:none}}
+@media print{.cnav,.ntheme{display:none}.fade,.rise{opacity:1;transform:none}.tagsec{height:auto}.tagstick{position:static;height:auto}.tagl .w{color:#F1EFE8}.tagrest{opacity:1;transform:none}}
 </style>
 </head>
 <body>

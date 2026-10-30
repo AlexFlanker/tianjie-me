@@ -1,17 +1,17 @@
 [
   {
-    "id": "hero-cma-1975-96",
-    "file": "hero-cma-1975-96-2400.jpg",
+    "id": "hero-met-1987-10",
+    "file": "hero-met-1987-10-2400.jpg",
     "w": 2400,
     "h": 1200,
-    "subject": "青铜甗（Food Steamer, Xian），商代安阳期至西周（约公元前 1000 年），高 39.4 cm",
-    "author": "克利夫兰艺术博物馆",
-    "date": "约公元前 1000 年（器物）",
-    "license": "CC0",
-    "source": "https://clevelandart.org/art/1975.96",
-    "file_source": "https://openaccess-cdn.clevelandart.org/1975.96/1975.96_print.jpg",
-    "credit_line": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund, 1975.96",
-    "note": "卷首图。原片 2660×3400 竖幅、灰色渐变背景；器物本身不动，背景用以器物为中心的椭圆光斑往外压暗成黑，原片四边羽化后放进纯黑画布（横幅 3200 / 2400 / 1600，手机竖幅 1440 / 960），黑场压低 3/255。脚本 src/tools/compose_hero.py。",
+    "subject": "青花鱼藻纹大盘，元代（14 世纪中叶），景德镇窑，口径 45.7 cm",
+    "author": "大都会艺术博物馆",
+    "date": "14 世纪中叶（器物）",
+    "license": "公有领域（The Met Open Access）",
+    "source": "https://www.metmuseum.org/art/collection/search/39638",
+    "file_source": "https://images.metmuseum.org/CRDImages/as/original/DP-14609-052.jpg",
+    "credit_line": "The Metropolitan Museum of Art, Purchase, Mrs. Richard E. Linburn Gift, 1987 (1987.10)",
+    "note": "卷首图（2026-10-30 第二版，天杰要「高清的大菜餐桌」，合规的餐桌照片找不到，改用高清餐具）。原片 4000×3002、深灰到浅灰渐变背景；盘子本身不动，背景用以盘为中心的圆形光斑压暗成黑，原片四边羽化后放进纯黑画布（横幅 3200 / 2400 / 1600，平板竖屏 1536 / 1024，手机竖屏 1440 / 960），黑场压低 3/255。脚本 src/tools/compose_hero.py。第一版是克利夫兰 1975.96 青铜甗（CC0），见 git 历史。",
     "status": "ok"
   }
 ]

@@ -7,3 +7,4 @@
   - 皮肤「宣纸与朱砂」：默认是纸（#F4F0E6），朱砂 #B5432C 是唯一强调色；卷首是纯黑带；导航里可切「夜里读」，记在全站共用的 `yzyt-theme`。
   - 结构：v1 的单文件模板拆成 `atlas.css` / `atlas.html` / `atlas.js`（内容不动，令牌改由新外壳 `shell.html` 提供；时间轴吸顶让到导航下面；时间轴不再用 scrollIntoView，避免载入时把页面拽到地图那里）；新外壳在 `shell.html` + `app.js`；`build_theme.py` 重写。
   - 重建：`python3 themes/2026-09-21-cuisine-atlas/src/build_theme.py && python3 tools/cover.py themes/2026-09-21-cuisine-atlas && python3 build.py`
+- 2026-10-30 卷首换图：天杰看完首屏说「首屏还是换成一张高清的经典中餐大菜餐桌吧」。按站点的图片规矩（公有领域 / CC0 / CC BY / CC BY-SA）找了一轮：维基共享资源对这里限流（429），Flickr 403，pxhere 只有家常长桌、点心笼和一张 2500 px 的家宴，Pexels / Unsplash / 图库站许可不合规，国会图书馆 Highsmith 也没有。问他之后他问「有没有高清的餐具图？」，于是换成大都会 1987.10 元青花鱼藻纹大盘（14 世纪中叶，景德镇窑，口径 45.7 cm，公有领域，原片 4000×3002）：盘心一条鱼，宴席上的「大菜」意思还在。构图与青铜甗同一套做法，另加一套 4:3（2400 / 1600）给 4:3、5:4 的桌面与横放平板（`<source media="(max-aspect-ratio: 3/2)">`），否则这些比例下盘会压到标题。青铜甗的图从仓库删掉（git 历史里有）。

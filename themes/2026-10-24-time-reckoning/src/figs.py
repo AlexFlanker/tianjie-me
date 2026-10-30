@@ -103,3 +103,38 @@ def dt_svg(points, leaps, W=1000):
     out.append(f'<line class="o2 d" x1="{x(2027.4):.1f}" y1="{T}" x2="{x(2027.4):.1f}" y2="{H-B}"/><text class="ts tsm" x="{x(2027.4)+4:.1f}" y="{T+14}">2027-05-20 连续 UTC</text>')
     out.append('</svg>')
     return ''.join(out)
+
+# ---------- v2 序章舞台：晨昏线世界地图（2026-10-30）
+def day_poly(decl, sslon, step=3):
+    """白天半球的多边形（等经纬投影 720×360）：晨昏线 tan φ = −cos(λ − λs) / tan δ；北半球夏天往上封口，冬天往下封口。与 app.js 同式。"""
+    d = decl if abs(decl) > 0.2 else (0.2 if decl >= 0 else -0.2)
+    td = math.tan(math.radians(d)); pts = []
+    for lam in range(-186, 187, step):
+        phi = math.degrees(math.atan(-math.cos(math.radians(lam - sslon)) / td))
+        pts.append(((lam + 180) * 2, (90 - phi) * 2))
+    edge = -40 if d > 0 else 400
+    return 'M' + ' L'.join(f'{x:.1f} {y:.1f}' for x, y in pts) + f' L{pts[-1][0]:.1f} {edge} L{pts[0][0]:.1f} {edge}Z'
+
+def stage_map(cities, img_src, s0):
+    """序章舞台：NASA「蓝色弹珠」日间图 + 夜半球的暗罩（晨昏线处羽化）+ 太阳直射点 + 1884 年后的格林尼治子午线 + 十二城。
+    视窗（viewBox）由 app.js 的「镜头」按每一步变化的城市推进；标签也由 app.js 按像素避让后再摆，这里只给首选方位（data-off）。"""
+    OFF = {'rome': 'b', 'london': 'l', 'paris': 'r', 'istanbul': 'r', 'cairo': 'b', 'moscow': 't', 'delhi': 'b', 'beijing': 'r', 'urumqi': 't', 'tokyo': 'r', 'new-york': 't', 'mexico-city': 'b'}
+    dots = ''.join(f'<g class="cdot" data-city="{esc(c["id"])}" data-x="{XY(c["lat"], c["lon"])[0]:.1f}" data-y="{XY(c["lat"], c["lon"])[1]:.1f}" data-off="{OFF.get(c["id"], "t")}" transform="translate({XY(c["lat"], c["lon"])[0]:.1f} {XY(c["lat"], c["lon"])[1]:.1f})"><circle class="g" r="16" fill="url(#lampglow)"/><circle class="c" r="3.2"/><text x="0" y="-8">{esc(c["name"])}</text></g>' for c in cities)
+    sx, sy = XY(s0['decl'], s0['sslon'])
+    bg = '#05080F'
+    return (f'<svg class="wmap" id="wmap" viewBox="0 0 720 360" preserveAspectRatio="xMidYMid meet" role="img" aria-label="世界地图：格林尼治平太阳正午这一刻的白天与黑夜，十二座城的位置">'
+            f'<defs><filter id="tblur" filterUnits="userSpaceOnUse" x="-120" y="-120" width="960" height="600"><feGaussianBlur stdDeviation="5"/></filter>'
+            f'<mask id="nightm" maskUnits="userSpaceOnUse" x="-2200" y="-1100" width="5120" height="2560"><rect x="-2200" y="-1100" width="5120" height="2560" fill="#fff"/><path id="daypoly" fill="#000" filter="url(#tblur)" d="{day_poly(s0["decl"], s0["sslon"])}"/></mask>'
+            f'<linearGradient id="mapfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{bg}" stop-opacity="0"/><stop offset="1" stop-color="{bg}"/></linearGradient>'
+            f'<linearGradient id="mapfadeT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{bg}"/><stop offset="1" stop-color="{bg}" stop-opacity="0"/></linearGradient>'
+            f'<linearGradient id="mapfadeL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{bg}"/><stop offset="1" stop-color="{bg}" stop-opacity="0"/></linearGradient>'
+            f'<linearGradient id="mapfadeR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{bg}" stop-opacity="0"/><stop offset="1" stop-color="{bg}"/></linearGradient>'
+            f'<radialGradient id="lampglow"><stop offset="0" stop-color="#E6BC6A" stop-opacity=".9"/><stop offset=".45" stop-color="#E6BC6A" stop-opacity=".35"/><stop offset="1" stop-color="#E6BC6A" stop-opacity="0"/></radialGradient></defs>'
+            f'<rect x="-2160" y="-1080" width="5040" height="2520" fill="{bg}"/>'
+            f'<image class="dayimg" href="{esc(img_src)}" x="0" y="0" width="720" height="360" preserveAspectRatio="none"/>'
+            f'<rect class="shade" x="-2160" y="-1080" width="5040" height="2520" mask="url(#nightm)"/>'
+            f'<rect x="-2" y="-2" width="724" height="26" fill="url(#mapfadeT)"/><rect x="-2" y="-2" width="26" height="364" fill="url(#mapfadeL)"/><rect x="696" y="-2" width="26" height="364" fill="url(#mapfadeR)"/>'
+            f'<rect x="-720" y="318" width="2160" height="44" fill="url(#mapfade)"/><rect x="-720" y="360" width="2160" height="400" fill="{bg}"/>'
+            f'<line class="gmt{" on" if s0["gmt"] else ""}" id="gmtline" x1="360" y1="8" x2="360" y2="352"/><text class="gmtl{" on" if s0["gmt"] else ""}" id="gmtlab" x="364" y="20">格林尼治 0°</text>'
+            f'<g class="ss" id="ssmark" transform="translate({sx:.1f} {sy:.1f})"><circle r="6"/><circle r="2" style="fill:#FFE2A6;stroke:none"/><text x="0" y="-11">直射点</text></g>'
+            f'{dots}</svg>')

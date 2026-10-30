@@ -359,5 +359,100 @@
    2667
   ],
   "status": "ok"
+ },
+ {
+  "id": "img-d-20-earth-day",
+  "subject": "NASA「蓝色弹珠：下一代」2004 年 10 月全球合成图（含地形与海底地形，等经纬投影 5400×2700）",
+  "url_page": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/topography-bathymetry/",
+  "url_file": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73826/world.topo.bathy.200410.3x5400x2700.jpg",
+  "author": "NASA Earth Observatory（Blue Marble: Next Generation）",
+  "year": 2004,
+  "license": "公有领域（NASA 出品，一般不受美国版权保护；NASA 图像使用政策）",
+  "source_name": "NASA Earth Observatory",
+  "why_fits": "v2 序章舞台的底图；夜半球按晨昏线加一层暗罩（夜光图有电灯，放在 1582 年不合适，没用）",
+  "confidence": "高",
+  "verified": "2026-10-30 curl 200，5400×2700；缩成 1920×960",
+  "file": "earth-day-1920.jpg",
+  "orig_size": [
+   5400,
+   2700
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-22-open-goes-equinox",
+  "subject": "2014 年 3 月 20 日春分，NOAA GOES-13 卫星 11:45 UTC 拍下的美洲半球全圆盘图",
+  "url_page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001174",
+  "url_file": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001174/GSFC_20171208_Archive_e001174~orig.jpg",
+  "author": "NOAA/NASA GOES Project",
+  "year": 2014,
+  "license": "公有领域（NASA / NOAA 出品；NASA 图像使用政策）",
+  "source_name": "NASA Image and Video Library",
+  "why_fits": "v2「年与月」开篇：阳历要凑的就是两次春分之间的 365.24219 天",
+  "confidence": "高",
+  "verified": "2026-10-30 images-api 200，3072×3072；抹掉左上角的文字条，放进 4:3 黑底",
+  "file": "open-goes-equinox-1800.jpg",
+  "orig_size": [
+   3072,
+   3072
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-23-open-grand-central-clock",
+  "subject": "纽约中央车站大厅问讯处的四面钟（Carol M. Highsmith 摄，1980–2006 年间）",
+  "url_page": "https://www.loc.gov/pictures/item/2011634940/",
+  "url_file": "https://tile.loc.gov/image-services/iiif/service:pnp:highsm:16700:16747/full/2000,/0/default.jpg",
+  "author": "Carol M. Highsmith（Carol M. Highsmith Archive，美国国会图书馆）",
+  "year": "1980–2006",
+  "license": "无已知版权限制（美国国会图书馆：No known restrictions on publication；Highsmith 档案）",
+  "source_name": "Library of Congress（LC-DIG-highsm-16747）",
+  "why_fits": "v2「日与时」开篇：铁路把时间拉直，车站的钟成了一城的标准",
+  "confidence": "高",
+  "verified": "2026-10-30 IIIF 2000 宽；裁成 4:3 横幅",
+  "file": "open-grand-central-clock-1800.jpg",
+  "orig_size": [
+   2000,
+   2567
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-24-open-usno-transit",
+  "subject": "美国海军天文台观测「钟星」定时的子午仪室（National Photo Company，1909–1919）",
+  "url_page": "https://www.loc.gov/pictures/item/2016821018/",
+  "url_file": "https://tile.loc.gov/image-services/iiif/service:pnp:npcc:19400:19429v/full/2000,/0/default.jpg",
+  "author": "National Photo Company（美国国会图书馆藏）",
+  "year": "1909–1919",
+  "license": "无已知版权限制（美国国会图书馆：No known restrictions on publication）",
+  "source_name": "Library of Congress（National Photo Company Collection，LC-F8-19429）",
+  "why_fits": "v2「秒」开篇：原子钟以前，钟要对着星星校——秒由地球自转定义",
+  "confidence": "高",
+  "verified": "2026-10-30 IIIF 2000 宽",
+  "file": "open-usno-transit-1800.jpg",
+  "orig_size": [
+   2000,
+   1441
+  ],
+  "status": "ok"
+ },
+ {
+  "id": "img-d-25-usno-watts-1918",
+  "subject": "1918 年，美国海军天文台的 C. B. Watts 把钟拨回（Harris & Ewing 摄）",
+  "url_page": "https://www.loc.gov/pictures/item/2016869005/",
+  "url_file": "https://tile.loc.gov/image-services/iiif/service:pnp:hec:10500:10560v/full/2000,/0/default.jpg",
+  "author": "Harris & Ewing（美国国会图书馆藏）",
+  "year": 1918,
+  "license": "无已知版权限制（美国国会图书馆：No known restrictions on publication）",
+  "source_name": "Library of Congress（Harris & Ewing Collection，LC-H25-10560）",
+  "why_fits": "v2 夏令时一行的配图",
+  "confidence": "高",
+  "verified": "2026-10-30 IIIF 2000 宽，缩到 1280",
+  "file": "usno-watts-1918.jpg",
+  "orig_size": [
+   2000,
+   2701
+  ],
+  "status": "ok"
  }
 ]

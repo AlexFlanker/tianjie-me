@@ -340,5 +340,24 @@
    480
   ],
   "status": "ok"
+ },
+ {
+  "id": "img-d-19-hero-potw1631a",
+  "subject": "智利阿塔卡马沙漠的星轨：相机对准南天极连续曝光几个小时，每颗星绕天极画出一段圆弧（左上一道短亮线是流星）",
+  "url_page": "https://www.eso.org/public/images/potw1631a/",
+  "url_file": "https://cdn.eso.org/images/publicationjpg/potw1631a.jpg",
+  "author": "Adhemar M. Duro Jr.（ESO 摄影大使；署名行 A. Duro/ESO）",
+  "year": 2016,
+  "license": "CC BY 4.0（ESO 网站图片默认许可；署名行须原样、清楚可见：A. Duro/ESO；许可页 https://www.eso.org/public/copyright/）",
+  "source_name": "ESO Picture of the Week（2016-08-01）",
+  "why_fits": "v2 卷首：星轨就是地球自转留下的刻度——天本身就是一座钟",
+  "confidence": "高",
+  "verified": "2026-10-30 curl 200，publicationjpg 4000×2667；ESO 图页标题 All in a spin、Credit: A. Duro/ESO",
+  "file": "hero-potw1631a-2400.jpg",
+  "orig_size": [
+   4000,
+   2667
+  ],
+  "status": "ok"
  }
 ]

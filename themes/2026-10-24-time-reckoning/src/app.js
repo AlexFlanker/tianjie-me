@@ -7,17 +7,41 @@
   var num = function (v, d) { return Number(v).toLocaleString('zh-CN', { maximumFractionDigits: d == null ? 0 : d }); };
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- 深浅色 */
+  var clamp = function (v, a, b) { return Math.max(a, Math.min(b, v)); };
+  /* ---------- 深浅色：按钮在导航里，写「白天读 / 夜里读」；用户切过就记住 */
   try { var saved = localStorage.getItem('yzyt-theme'); if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved); } catch (e) {}
   var tb = $('#theme-btn');
-  if (tb) tb.addEventListener('click', function () {
-    var cur = root.getAttribute('data-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    var next = cur === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', next);
+  function curTheme() { return root.getAttribute('data-theme') || (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }
+  function themeLabel() { if (!tb) return; var d = curTheme() === 'dark'; tb.textContent = d ? '白天读' : '夜里读'; tb.setAttribute('aria-label', d ? '换成浅色' : '换成深色'); }
+  if (tb) { themeLabel(); tb.addEventListener('click', function () {
+    var next = curTheme() === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', next); themeLabel();
     try { localStorage.setItem('yzyt-theme', next); } catch (e) {}
-  });
+  }); }
+
+  /* ---------- v2 卷首：标题依次升起；论点逐词点亮 */
+  (function initHero() {
+    var h = $('#top'); if (!h) return;
+    var rs = $$('.rise', h);
+    if (reduced) { rs.forEach(function (el) { el.classList.add('in'); }); return; }
+    requestAnimationFrame(function () { rs.forEach(function (el, i) { el.style.transitionDelay = (0.15 + Math.min(i * 0.08, 0.4)).toFixed(2) + 's'; el.classList.add('in'); }); });
+  })();
+  (function initTagline() {
+    var sec = $('#tagsec'); if (!sec) return;
+    var ws = $$('.tagl .w', sec), rest = $('.tagrest', sec), tick = false;
+    function upd() {
+      tick = false;
+      if (reduced) { ws.forEach(function (w) { w.classList.add('on'); }); if (rest) rest.classList.add('on'); return; }
+      var r = sec.getBoundingClientRect(), span = sec.offsetHeight - window.innerHeight;
+      var p = clamp(-r.top / (span > 0 ? span : 1), 0, 1), n = Math.floor(p * (ws.length + 3));
+      ws.forEach(function (w, i) { var on = i < n; if (on !== w.classList.contains('on')) w.classList.toggle('on', on); });
+      if (rest) rest.classList.toggle('on', n >= ws.length + 1);
+    }
+    window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(upd); } }, { passive: true });
+    window.addEventListener('resize', upd); upd();
+  })();
 
   /* ---------- 入场 */
-  var fades = $$('.fade');
+  var fades = $$('.fade').concat($$('.rise').filter(function (el) { return !el.closest('#top'); }));
   if ('IntersectionObserver' in window && !reduced) {
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -6% 0px' });
     fades.forEach(function (el) { io.observe(el); });

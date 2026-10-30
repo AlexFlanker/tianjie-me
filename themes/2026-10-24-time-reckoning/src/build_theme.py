@@ -19,7 +19,7 @@ NODES = {}
 for route, src in (('A', A), ('B', B), ('C', C), ('D', D)):
     for n in src['nodes']: n['route'] = route; NODES[n['id']] = n
 ALL_NODES = list(NODES.values())
-LIC_SHORT = lambda s: 'CC0' if 'CC0' in s else 'CC BY-SA 2.0' if 'BY-SA' in s else 'Public Domain Mark' if 'Public Domain Mark' in s else '公有领域'
+LIC_SHORT = lambda s: 'CC0' if 'CC0' in s else 'CC BY-SA 2.0' if 'BY-SA' in s else 'CC BY 4.0' if 'CC BY 4.0' in s else 'Public Domain Mark' if 'Public Domain Mark' in s else '公有领域'
 IM = {}
 for i in json.load(open(os.path.join(HERE, 'images.json'), encoding='utf-8')):
     if i.get('status') != 'ok': continue
@@ -42,8 +42,37 @@ def src_lookup(key):
     return srcs(n.get('sources')[:4]), conf(n.get('confidence'))
 LANE_NAME = dict(E.LANES); SCALE_NAME = dict(E.SCALES)
 
-# ---------- 卷首
+# ---------- 卷首（v2：全幅实拍 + 标题 + 一个动作）
 def hero():
+    H = E.HERO2; im = IM[H['img']]
+    sub = ''.join(f'<span>{esc(x)}</span>' for x in H['sub'])
+    arrow = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5 8 13l4.5-4.5"/></svg>'
+    return f'''<header class="h3 band" id="top">
+  <figure class="h3img"><img src="assets/{esc(im['file'])}" srcset="assets/{esc(H['img_1280'])} 1280w, assets/{esc(im['file'])} 2400w" sizes="100vw" alt="{esc(H['alt'])}" fetchpriority="high" decoding="async"></figure>
+  <div class="h3in wide">
+    <p class="h3k rise">{esc(H['kicker'])}</p>
+    <h1 class="h3t rise">{esc(H['title'])}</h1>
+    <p class="h3s rise">{sub}</p>
+    <div class="h3a rise"><a class="btn" href="{esc(H['cta_href'])}">{esc(H['cta'])}{arrow}</a><span class="h3p">{esc(H['proof'])}</span></div>
+  </div>
+  <p class="h3cap">{esc(H['cap'])}</p>
+</header>'''
+
+def tagline_sec():
+    lines, k = [], 0
+    for ln in E.TAGLINE.split('/'):
+        ws = []
+        for w in ln.split('|'):
+            ws.append(f'<span class="w" style="--i:{k}">{esc(w)}</span>'); k += 1
+        lines.append('<span class="ln">' + ''.join(ws) + '</span>')
+    nums = ''.join(f'<div class="tn"><b>{esc(v)}<small>{esc(u)}</small></b><p>{esc(t)}</p></div>' for v, u, t in E.NUMS)
+    return f'''<section class="tagsec band" id="tagsec" aria-label="这一页的论点"><div class="tagstick"><div class="wide">
+<p class="tagl" aria-label="{esc(E.TAGLINE.replace('|', '').replace('/', ''))}"><span aria-hidden="true">{''.join(lines)}</span></p>
+<div class="tagrest"><p>{esc(E.TAGREST)}</p><div class="tnums">{nums}</div></div>
+</div></div></section>'''
+
+# ---------- 卷首（v1，留作对照，不再输出）
+def hero_v1():
     M = E.META; H = E.HERO
     steps = ''.join(f'<li><span>{s}</span></li>' for s in H['steps'])
     week = ''.join(f'<span><i>{esc(d)}</i> <b>{esc(t)}</b> {esc(x)}</span>' for d, t, x in H['week'])
@@ -61,7 +90,7 @@ def hero():
 def cnav():
     links = ''.join(f'<a href="#{cid}" data-nav="{cid}"><small>{n}</small>{esc(t)}</a>' for cid, n, t, _ in E.CHAPTERS)
     links += '<a href="#end" data-nav="end"><small>末</small>参考 · 方法</a>'
-    return f'<nav class="cnav" id="cnav" aria-label="章节"><div class="row">{links}<i class="prog" id="prog"></i></div></nav>'
+    return f'<nav class="cnav" id="cnav" aria-label="章节"><div class="row">{links}<i class="prog" id="prog"></i><button type="button" class="ntheme" id="theme-btn" data-cover-hide aria-label="切换深浅色">白天读</button></div></nav>'
 
 def chead(cid):
     _, n, t, lede = next(c for c in E.CHAPTERS if c[0] == cid)
@@ -213,8 +242,7 @@ def endm():
 <details class="fold big fade"><summary><h3>仍待核</h3></summary><div class="method"><ul>{''.join(f'<li>{t}</li>' for t in M['todo'])}</ul></div></details>
 <details class="fold big fade"><summary><h3>图片署名（{len(IM)} 张）</h3></summary>{credits()}</details>
 <div class="stamp fade">一周一题 · 第 {E.META['no']} 题 · {E.META['date']}<br>研究、绘图与核查：Claude（站长复核）</div>
-</div></footer>
-<button class="theme-btn" id="theme-btn" type="button" data-cover-hide aria-label="切换深浅色">深 / 浅</button>'''
+</div></footer>'''
 
 # ---------- 数据
 DELTA_T = [(1900, -2.7), (1910, 10.5), (1920, 21.2), (1930, 24.0), (1940, 24.3), (1950, 29.1), (1960, 33.2), (1970, 40.2), (1980, 50.5), (1990, 56.9), (2000, 63.8), (2010, 66.1), (2016, 68.1), (2020, 69.4), (2025, 69.1), (2030, 69.6)]
@@ -228,7 +256,7 @@ def main():
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     app = open(os.path.join(HERE, 'calendars.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'app.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'demos.js'), encoding='utf-8').read()
     dark = ('@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){' + DARK + '}}\n:root[data-theme="dark"]{' + DARK + '}')
-    body = hero() + cnav() + '<main>' + ch_journey() + ch_now() + ch_year() + ch_day() + ch_second() + ch_walls() + ch_tools() + ch_rules() + '</main>' + endm()
+    body = hero() + cnav() + '<main>' + tagline_sec() + ch_journey() + ch_now() + ch_year() + ch_day() + ch_second() + ch_walls() + ch_tools() + ch_rules() + '</main>' + endm()
     page = (tpl.replace('{{TITLE}}', esc(E.META['title'])).replace('{{DESCRIPTION}}', esc(E.META['desc'])).replace('{{DARK_BLOCKS}}', dark)
             .replace('{{BODY}}', body).replace('{{DATA_JSON}}', json.dumps(data(), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('{{APP_JS}}', app))
     page, report = fixes.apply(page)

@@ -92,7 +92,10 @@ def fact(nid, key, field, n):
 def latlabel(lat): return ('北纬 ' if lat >= 0 else '南纬 ') + f'{abs(lat):.1f}°'
 WDN = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
 def wdz(iso): y, m, d = (int(x) for x in iso.split('-')); return WDN[dt.date(y, m, d).weekday()]
-def imgcap(im, n=80): s = im['subject']; return (s[:n] + '…' if len(s) > n else s) + f' 图：{im["author_short"]}，{im["license_short"]}。'
+def capspan(im, n=80):
+    """图注分两段：说明可以截短，署名（作者 + 许可）永远完整显示。"""
+    s = im['subject']; s = s[:n] + '…' if len(s) > n else s
+    return f'<span class="cs">{esc(s)}</span><span class="cr">图：{esc(im["author_short"])}，{esc(im["license_short"])}。</span>'
 
 # ---------- 卷首（v3）：全幅实拍 + 标题 + 一个动作
 def hero():
@@ -182,7 +185,7 @@ def three_tiles(nid):
     for col, label in E.THREE_COLS:
         txt, img, none = E.TILES[nid][col]; im = IM.get(img) if img else None
         if img and not im: raise SystemExit(f'TILES {nid}.{col}: 图片 {img} 不在 images.json')
-        fig = f'<figure><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{esc(imgcap(im, 56))}</figcaption></figure>' if im else ''
+        fig = f'<figure><img src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}" loading="lazy"><figcaption>{capspan(im, 56)}</figcaption></figure>' if im else ''
         out.append(f'<div class="l3t{" none" if none else ""}{" ph" if im else ""}"><b>{esc(label)}</b>{fig}<p>{esc(txt)}</p></div>')
     return '<div class="l3">' + ''.join(out) + '</div>'
 

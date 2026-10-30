@@ -33,7 +33,11 @@
       band.forEach(function (f) { var d = S.isoDoy(f.date); s += '<circle class="pt" cx="' + x(d).toFixed(1) + '" cy="' + y(S.dayLen(f.lat, d)).toFixed(1) + '" r="3" opacity=".75"/>'; });
       s += '<line class="aglow" x1="' + X + '" y1="' + T + '" x2="' + X + '" y2="' + (H - B) + '"/><line class="amark" x1="' + X + '" y1="' + T + '" x2="' + X + '" y2="' + (H - B) + '"/>';
       s += '<circle class="knob" cx="' + X + '" cy="' + y(dl0).toFixed(1) + '" r="6"/>';
-      s += '<text class="dt2" x="' + (x(doy) + (doy > 290 ? -10 : 10)).toFixed(1) + '" y="' + (y(dl0) - 12).toFixed(1) + '" text-anchor="' + (doy > 290 ? 'end' : 'start') + '">' + S.hm(dl0) + '</text>';
+      // 读数标签：放在它横跨的那段曲线的最高点之上（约 48 天宽），不压线；贴到顶就放到曲线下方
+      var lft = doy > 290, yHi = y(dl0), yLo = y(dl0);
+      for (var dd = 4; dd <= 48; dd += 4) { var yy = y(S.dayLen(lat, clamp(doy + (lft ? -dd : dd), 1, 365))); if (yy < yHi) yHi = yy; if (yy > yLo) yLo = yy; }
+      var ly = yHi - 12; if (ly < T + 14) ly = Math.min(yLo + 22, H - B - 6);
+      s += '<text class="dt2" x="' + (x(doy) + (lft ? -10 : 10)).toFixed(1) + '" y="' + ly.toFixed(1) + '" text-anchor="' + (lft ? 'end' : 'start') + '">' + S.hm(dl0) + '</text>';
       svg.innerHTML = s;
       $('#wl-dl').textContent = S.hm(dl0); $('#wl-set').textContent = ss === null ? (dl0 >= 24 ? '极昼' : '极夜') : S.mm(ss); $('#wl-night').textContent = Math.round((1 - dl0 / 24) * 100) + '%';
       $('#wl-list').innerHTML = band.length ? band.map(function (f) { return '<div><button type="button" data-open="' + esc(f.id) + '">' + esc(f.short) + '</button><span>' + esc(f.city) + ' · ' + S.latTxt(f.lat) + ' · ' + esc(f.koppen) + ' · ' + esc(f.season) + '</span><small>' + md(f.date) + ' · 昼长 ' + S.hm(S.dayLen(f.lat, S.isoDoy(f.date))) + '</small></div>'; }).join('') : '<span class="none">这个纬度带（±8°）上没有本页收录的节日。本页最北的一行在斯德哥尔摩（北纬 59.3°），南半球只收了拉巴斯（南纬 16.5°）与悉尼（南纬 33.9°）。</span>';

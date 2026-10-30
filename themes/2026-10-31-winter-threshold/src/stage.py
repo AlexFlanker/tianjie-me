@@ -36,7 +36,7 @@ def stage(cities, img_src, IM, FEST):
             f'<h3 class="tltitle" id="tltitle">{esc(s0["title"])}</h3>'
             f'<p class="tlbig"><b id="tlbig"></b><small id="tlbigu"></small></p><p class="tlbasis" id="tlbasis"></p>'
             f'<p class="tltext" id="tltext">{esc(s0["text"])}</p><div class="tlchips" id="tlchips">{chips0}</div>'
-            + (f'<figure class="tlph"><img id="tlimg" src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}"><figcaption id="tlcap">{esc(_cap(im))}</figcaption></figure>' if im else '')
+            + (f'<figure class="tlph"><img id="tlimg" src="assets/{esc(im["file"])}" alt="{esc(im["subject"])}"><figcaption id="tlcap"><span class="cs">{esc(_cap(im)[0])}</span><span class="cr">{esc(_cap(im)[1])}</span></figcaption></figure>' if im else '')
             + '<p class="tlcredit">底图：NASA「黑色弹珠」2016 夜光图，公有领域 · 昼长按各城纬度现算</p></aside>')
     hud = (f'<div class="tlhud" id="jhud"><span class="tlch">00 · 序章 · 这十天 · 拖动底部刻度尺，或往下滚</span><span class="jk" id="jk">{esc(s0["kicker"])}</span>'
            f'<div class="jdate" id="jdate">{int(m)} 月 {int(d)} 日<small>{WD[s0["wd"]]}</small></div><div class="jt" id="jt">{esc(s0["title"])}</div></div>')
@@ -48,8 +48,9 @@ def stage(cities, img_src, IM, FEST):
 
 
 def _cap(im):
+    """（说明, 署名）：说明可以截短，署名（作者 + 许可）永远完整显示。"""
     s = im['subject']
-    return (s[:80] + '…' if len(s) > 80 else s) + f' 图：{im["author_short"]}，{im["license_short"]}。'
+    return (s[:80] + '…' if len(s) > 80 else s), f'图：{im["author_short"]}，{im["license_short"]}。'
 
 
 def data(cities, IM, FEST):
@@ -71,6 +72,6 @@ def data(cities, IM, FEST):
         im = IM.get(s.get('photo'))
         steps.append({'id': s['id'], 'day': _day_index(s['date']), 'date': s['date'], 'wd': WD[s['wd']], 'label': s['label'], 'kicker': s['kicker'], 'title': s['title'],
                       'text': s['text'], 'main': s['main'], 'cities': s['cities'],
-                      'img': ('assets/' + im['file']) if im else '', 'alt': im['subject'] if im else '', 'cap': _cap(im) if im else '',
+                      'img': ('assets/' + im['file']) if im else '', 'alt': im['subject'] if im else '', 'cap': _cap(im)[0] if im else '', 'cred': _cap(im)[1] if im else '',
                       'fest': [[f, FEST[f]['short']] for f in s['fest'] if f in FEST]})
     return {'days': days, 'steps': steps, 'n': NDAYS}

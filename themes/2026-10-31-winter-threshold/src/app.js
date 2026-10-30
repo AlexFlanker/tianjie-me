@@ -377,8 +377,24 @@
       var s = STEPS[k];
       el.no.textContent = ('0' + (k + 1)).slice(-2) + ' / ' + ('0' + STEPS.length).slice(-2); el.kick.textContent = s.kicker; el.title.textContent = s.title; el.text.textContent = s.text;
       el.chips.innerHTML = s.fest.map(function (f) { return '<a class="chip a" href="#n-' + f[0] + '" data-open="' + f[0] + '">' + f[1] + '</a>'; }).join('');
-      if (el.img && s.img) { el.img.src = s.img; el.img.alt = s.alt; el.cap.textContent = s.cap; }
+      if (el.img && s.img) { el.img.src = s.img; el.img.alt = s.alt; var cs = el.cap.querySelector('.cs'), cr = el.cap.querySelector('.cr'); if (cs) cs.textContent = s.cap; if (cr) cr.textContent = s.cred; }
+      fitCard();
     }
+    // ---- 卡片放不下时：上沿最高到 HUD 下沿以下 24 px；照片先按 CSS 收矮（最矮 96 px），
+    //      还不够就依次收起「底图」一行、照片、日出日落一行；正文从不截断
+    function cardOver() {
+      var lim = card.clientHeight - 16, kids = card.children;
+      for (var i = 0; i < kids.length; i++) { var c = kids[i]; if (!c.offsetHeight) continue; if (c.offsetTop + c.offsetHeight > lim + 1 || (c.classList.contains('tlph') && c.scrollHeight > c.offsetHeight + 1)) return true; }
+      return false;
+    }
+    function fitCard() {
+      card.classList.remove('fit1', 'fit2', 'fit3');
+      if (getComputedStyle(card).position === 'absolute') { var mh = Math.floor(card.getBoundingClientRect().bottom - hud.getBoundingClientRect().bottom - 24); card.style.maxHeight = mh >= 160 ? mh + 'px' : ''; }
+      else card.style.maxHeight = '';
+      if (!card.clientHeight) return;
+      if (cardOver()) card.classList.add('fit1'); if (cardOver()) card.classList.add('fit2'); if (cardOver()) card.classList.add('fit3');
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitCard);
     function showStep(k) {
       if (k === shownStep) return; var first = shownStep < 0; shownStep = k;
       if (first || RM.on) { fillCard(k); return; }
@@ -400,7 +416,7 @@
         showStep(onStep ? day.step : k); card.classList.toggle('empty', !onStep);
         var main = (onStep ? STEPS[day.step] : s).main, mc = day.cities[main], mcity = D.cities[main];
         el.big.textContent = hm(mc.dl); el.bigu.textContent = mcity.name_zh + ' · 昼长';
-        el.basis.textContent = '日出 ' + mc.rise + '，日落 ' + mc.set + '（当地标准时，不含夏令时）· ' + latTxt(mcity.lat) + ' · ' + mcity.koppen;
+        el.basis.textContent = '日出 ' + mc.rise + '，日落 ' + mc.set + '（当地标准时，不含夏令时）· ' + latTxt(mcity.lat) + ' · ' + mcity.koppen; fitCard();
         Object.keys(day.cities).forEach(function (cid) {
           var c = day.cities[cid], r = rows[cid], on = day.lit.indexOf(cid) >= 0;
           if (r) { var rs = toH(c.rise), ss = toH(c.set), bar = $('.dbb', r); bar.style.left = (rs / 24 * 100).toFixed(2) + '%'; bar.style.width = ((ss - rs) / 24 * 100).toFixed(2) + '%'; $('.dbv', r).textContent = shortHm(c.dl); r.title = D.cities[cid].name_zh + '：日出 ' + c.rise + '，日落 ' + c.set + '（当地标准时）'; r.classList.toggle('lit', on); r.classList.toggle('main', cid === main); $('.lamp', r).classList.toggle('off', !on); }
@@ -473,7 +489,7 @@
     });
     if ('ResizeObserver' in window) { var ro0 = null; new ResizeObserver(function () { var sz = scene.clientWidth + 'x' + scene.clientHeight; if (ro0 && sz !== ro0) reframe(true); ro0 = sz; }).observe(scene); }
     var rz = 0;
-    function relayout() { layout(); var t = mode === 'scroll' ? tFromScroll() : ts.x; ts.set(t); curDay = -1; render(t); }
+    function relayout() { layout(); var t = mode === 'scroll' ? tFromScroll() : ts.x; ts.set(t); curDay = -1; render(t); fitCard(); }
     window.addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(relayout, 120); });
     window.addEventListener('load', relayout);
     layout(); ts.set(tFromScroll());

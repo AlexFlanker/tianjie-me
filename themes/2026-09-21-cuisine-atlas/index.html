@@ -1,73 +1,146 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>中国菜系演化图谱</title>
-<meta name="description" content="以食材、器具、技法、口味四条线索，把先秦到当代十个时期的中国饮食变迁映射到今天的 34 个省级行政区：交互地图、时间轴与各地菜系沿革。">
+<meta name="description" content="从鼎、鬲、甗里的蒸煮到辣椒入川以后的麻辣：以食材、器具、技法、口味四条线索，把先秦到当代十个时期的中国饮食变迁映射到今天的 34 个省级行政区——可播放的时间轴、三种着色的交互地图，以及每个省份的沿革。">
 <meta name="author" content="Tianjie Sun">
-<meta name="theme-color" content="#f3f4ef" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#16181b" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F0E6">
 <meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://tianjie.me/t/cuisine-atlas/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="中国菜系演化图谱">
-<meta property="og:description" content="以食材、器具、技法、口味四条线索，把先秦到当代十个时期的中国饮食变迁映射到今天的 34 个省级行政区：交互地图、时间轴与各地菜系沿革。">
+<meta property="og:description" content="从鼎、鬲、甗里的蒸煮到辣椒入川以后的麻辣：以食材、器具、技法、口味四条线索，把先秦到当代十个时期的中国饮食变迁映射到今天的 34 个省级行政区——可播放的时间轴、三种着色的交互地图，以及每个省份的沿革。">
 <meta property="og:url" content="https://tianjie.me/t/cuisine-atlas/">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b5432c'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Noto Serif SC,Songti SC,serif' font-weight='900' fill='%23fff'%3E味%3C/text%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem('cuisine-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b5432c'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Noto Serif SC,Songti SC,serif' font-weight='700' fill='%23fff'%3E味%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('yzyt-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"></noscript>
 <style>
-:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-img{max-width:100%}
-[hidden]{display:none!important}
-</style>
-<style>
+/* 皮肤「宣纸与朱砂」v2（2026-10-30，按第 5–7 题 v2 的版面系统重排；9/27 天杰认可过这个方向）：
+   默认是纸——米色宣纸 #F4F0E6 为底，暖墨字，朱砂 #B5432C 是唯一强调色；卷首是纯黑的「灯下」带（展柜里的青铜甗）。导航里可切「夜里读」。
+   字号只取 12/14/16/18/20/24/30/36/48/60/96/128；间距只取 4/8/12/16/24/32/40/48/64/80/96；新写的部分字重 400–700；圆角 4/6/8/12/16/全圆。
+   背景不用渐变（卷首标题字除外）。缓动统一 cubic-bezier(.22,1,.36,1)：位移 500 ms，颜色与透明度 300 ms，入场 700 ms。
+   地图、时期面板、四维长卷与各地沿革在首屏阶段沿用 v1（atlas.css），只把令牌换成这一套。 */
 :root{
-  --bg:#f3f4ef; --surface:#fbfbf8; --surface-2:#eceee6; --ink:#1c1e1a; --ink-2:#4c4f49; --muted:#7d817a;
-  --line:#d8dad2; --line-2:#c5c8bf; --accent:#b5432c; --accent-soft:#f1d9d2; --accent-ink:#ffffff;
-  --sea:#e4e9ec; --map-border:#fbfbf8; --map-dim:#d5d8d0; --halo:#fbfbf8; --shadow:0 12px 32px rgba(28,30,26,.14);
-  --dim-food:#8a6b2a; --dim-tool:#5d6b7a; --dim-tech:#3f7b6a; --dim-taste:#b5432c;
+  --bg:#F4F0E6;--surface:#FBF8F1;--surface-2:#ECE6D8;
+  --ink:#1A1714;--ink-2:#4A453E;--muted:#7A7368;
+  --line:rgba(26,23,20,.14);--line-2:rgba(26,23,20,.22);--grid:rgba(26,23,20,.05);
+  --accent:#B5432C;--accent-2:#C9573F;--accent-ink:#A63C26;--wash:rgba(181,67,44,.08);--wash-2:rgba(181,67,44,.16);--fill:#B5432C;--on-fill:#FFFFFF;
+  --w-off:rgba(26,23,20,.16);
+  --nav-glass:rgba(244,240,230,.82);--glass-line:rgba(26,23,20,.12);
+  --accent-soft:#F1DDD4;--sea:#E6E2D6;--map-border:#FBF8F1;--map-dim:#DCD6C8;--halo:#FBF8F1;--shadow:0 12px 32px rgba(26,23,20,.14);
+  --dim-food:#8A6B2A;--dim-tool:#5D6B7A;--dim-tech:#3F7B6A;--dim-taste:#B5432C;
   --fam-A:#418ad1;--fam-B:#eebc4a;--fam-C:#b8445a;--fam-D:#115629;--fam-E:#b69d80;--fam-F:#a763ab;--fam-G:#566d27;--fam-H:#b2bbe5;--fam-I:#fa6a57;--fam-J:#12a7a7;--fam-K:#f89dc9;--fam-L:#3ca17b;--fam-M:#68559b;--fam-N:#e87e42;--taste-xian:#683b18;--taste-tian:#ffa7d6;--taste-suan:#77b868;--taste-xinxiang:#faca4b;--taste-mala:#d33a3c;--taste-la:#ff8051;--taste-qing:#008b9e;--taste-nai:#a295cb;--staple-su:#f2cf3b;--staple-mai:#9c5313;--staple-dao:#4a9a5e;--staple-qingke:#ceb6fc;--staple-rou:#4576b4;--staple-shu:#ef7d88;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#16181b; --surface:#1e2125; --surface-2:#262a2f; --ink:#ecebe4; --ink-2:#b9bbb3; --muted:#8b8e88;
-    --line:#33373c; --line-2:#444950; --accent:#e2694f; --accent-soft:#3b2622; --accent-ink:#1a1a1a;
-    --sea:#1b2024; --map-border:#16181b; --map-dim:#2a2e33; --halo:#16181b; --shadow:0 12px 32px rgba(0,0,0,.5);
-    --dim-food:#d1a955; --dim-tool:#9fb1c4; --dim-tech:#6fbba5; --dim-taste:#e2694f;
-    --fam-A:#286cab;--fam-B:#c79e41;--fam-C:#9f3d4f;--fam-D:#0d4a22;--fam-E:#947b60;--fam-F:#854888;--fam-G:#3d5010;--fam-H:#8d96be;--fam-I:#c04637;--fam-J:#007475;--fam-K:#cb7ba2;--fam-L:#248160;--fam-M:#4c3b77;--fam-N:#a9531e;--taste-xian:#532d0f;--taste-tian:#e38ab5;--taste-suan:#558a49;--taste-xinxiang:#c69f32;--taste-mala:#ac1922;--taste-la:#d6673f;--taste-qing:#006574;--taste-nai:#8378a6;--staple-su:#ba9c13;--staple-mai:#753b07;--staple-dao:#2b7440;--staple-qingke:#a18cc8;--staple-rou:#2e598f;--staple-shu:#bd5f69;
-  }
+  --nav-h:48px;--gut:clamp(16px,3.2vw,40px);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --serif:"Noto Serif SC","Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong",serif;
+  --sans:"Noto Sans SC","Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color-scheme:light;
 }
 :root[data-theme="dark"]{
-  --bg:#16181b; --surface:#1e2125; --surface-2:#262a2f; --ink:#ecebe4; --ink-2:#b9bbb3; --muted:#8b8e88;
-  --line:#33373c; --line-2:#444950; --accent:#e2694f; --accent-soft:#3b2622; --accent-ink:#1a1a1a;
-  --sea:#1b2024; --map-border:#16181b; --map-dim:#2a2e33; --halo:#16181b; --shadow:0 12px 32px rgba(0,0,0,.5);
-  --dim-food:#d1a955; --dim-tool:#9fb1c4; --dim-tech:#6fbba5; --dim-taste:#e2694f;
+  --bg:#12110F;--surface:#1B1A17;--surface-2:#24221E;
+  --ink:#EFEBE2;--ink-2:#BDB7AA;--muted:#8E887C;
+  --line:rgba(239,235,226,.14);--line-2:rgba(239,235,226,.24);--grid:rgba(239,235,226,.05);
+  --accent:#E2694F;--accent-2:#C9573F;--accent-ink:#EE7B62;--wash:rgba(226,105,79,.10);--wash-2:rgba(226,105,79,.2);--fill:#C8462E;--on-fill:#FFFFFF;
+  --w-off:rgba(239,235,226,.2);
+  --nav-glass:rgba(18,17,15,.76);--glass-line:rgba(239,235,226,.12);
+  --accent-soft:#3B2622;--sea:#1B1E20;--map-border:#12110F;--map-dim:#2A2C2E;--halo:#12110F;--shadow:0 12px 32px rgba(0,0,0,.5);
+  --dim-food:#D1A955;--dim-tool:#9FB1C4;--dim-tech:#6FBBA5;--dim-taste:#E2694F;
   --fam-A:#286cab;--fam-B:#c79e41;--fam-C:#9f3d4f;--fam-D:#0d4a22;--fam-E:#947b60;--fam-F:#854888;--fam-G:#3d5010;--fam-H:#8d96be;--fam-I:#c04637;--fam-J:#007475;--fam-K:#cb7ba2;--fam-L:#248160;--fam-M:#4c3b77;--fam-N:#a9531e;--taste-xian:#532d0f;--taste-tian:#e38ab5;--taste-suan:#558a49;--taste-xinxiang:#c69f32;--taste-mala:#ac1922;--taste-la:#d6673f;--taste-qing:#006574;--taste-nai:#8378a6;--staple-su:#ba9c13;--staple-mai:#753b07;--staple-dao:#2b7440;--staple-qingke:#a18cc8;--staple-rou:#2e598f;--staple-shu:#bd5f69;
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+html{scroll-padding-top:calc(var(--nav-h) + 72px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/28px var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background-color .3s var(--ease),color .3s var(--ease)}
+img{max-width:100%}
+[hidden]{display:none!important}
+h1,h2,h3{font-family:var(--serif);margin:0;text-wrap:balance}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:var(--accent-ink);text-underline-offset:4px}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wide{max-width:1240px;margin:0 auto;padding:0 var(--gut)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.fade{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.fade.in{opacity:1;transform:none}
+
+/* ---------- 卷首：克利夫兰的青铜甗（竖幅原片放进纯黑画布）——横屏器物在右侧 70%，手机竖屏在下方；字压在黑底上，不加遮罩 */
+.h3{position:relative;min-height:max(calc(100dvh - 36px),630px);display:flex;flex-direction:column;justify-content:center;overflow:hidden;color:#fff;background:#000;isolation:isolate}
+.h3img{position:absolute;inset:0;margin:0;z-index:-1;background:#000}
+.h3img picture{display:block;width:100%;height:100%}
+.h3img img{display:block;width:100%;height:100%;object-fit:cover;object-position:70% 48%;transform:scale(1.04);transform-origin:70% 56%;animation:h3zoom 2.4s var(--ease) .1s forwards}
+@keyframes h3zoom{to{transform:scale(1)}}
+.h3in{width:100%;padding-top:48px;padding-bottom:128px}
+.h3k{margin:0;font:500 14px/20px var(--sans);letter-spacing:.08em;color:rgba(255,255,255,.72)}
+.h3t{margin:16px 0 0;font:700 128px/1.08 var(--serif);letter-spacing:.02em;background:linear-gradient(90deg,#FFFFFF 0%,#BDB09C 100%);-webkit-background-clip:text;background-clip:text;color:transparent;width:max-content;max-width:100%}
+.h3t span{display:block;white-space:nowrap}
+.h3s{margin:24px 0 0;font:500 24px/32px var(--serif);color:rgba(255,255,255,.9);max-width:600px}
+.h3s span{display:block}
+.h3a{margin:40px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;max-width:600px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px 12px 24px;border-radius:9999px;background:#fff;color:#14110E;font:600 16px/24px var(--sans);text-decoration:none;transition:transform .3s var(--ease),background-color .3s var(--ease)}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;transition:transform .5s var(--ease)}
+.btn:hover{background:#EFE9DD}
+.btn:hover svg{transform:translateY(2px)}
+.btn:active{transform:scale(.98)}
+.btn:focus-visible{outline:2px solid #E2694F;outline-offset:4px}
+.h3p{font:400 14px/20px var(--sans);color:rgba(255,255,255,.72)}
+.h3cap{position:absolute;right:24px;bottom:16px;margin:0;max-width:440px;font:400 12px/16px var(--sans);color:rgba(255,255,255,.56);text-align:right;text-wrap:balance}
+.rise{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rise.in{opacity:1;transform:none}
+
+/* ---------- 吸顶章节导航（半透明材质）+ 深浅色切换 */
+.cnav{position:sticky;top:0;z-index:30;background:var(--nav-glass);-webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid var(--glass-line)}
+.cnav .row{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;max-width:1240px;margin:0 auto;padding:0 calc(var(--gut) - 12px);position:relative}
+.cnav .row::-webkit-scrollbar{display:none}
+.cnav a{flex:none;padding:12px;font-size:14px;line-height:22px;color:var(--muted);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color .3s var(--ease),border-color .3s var(--ease)}
+.cnav a:hover{color:var(--ink)}
+.cnav a small{font:700 12px/16px var(--serif);margin-right:8px;color:var(--accent-ink)}
+.cnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.cnav .prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--accent);opacity:.5;transform-origin:0 50%;transform:scaleX(0)}
+.ntheme{flex:none;margin-left:auto;align-self:center;font:500 14px/20px var(--sans);color:var(--muted);padding:8px 12px;border-radius:9999px;white-space:nowrap;transition:color .3s var(--ease),background-color .3s var(--ease)}
+.ntheme:hover{color:var(--ink);background:var(--wash)}
+.ntheme:active{transform:translateY(1px)}
+
+/* ---------- 论点：放得下就钉住、随滚动逐词点亮；放不下（手机、矮屏）就随文流动 */
+.tagsec{position:relative;height:240vh}
+.tagstick{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));display:flex;align-items:center}
+.tagstick>.wide{width:100%}
+.tagsec.flow{height:auto}
+.tagsec.flow .tagstick{position:static;height:auto;padding:96px 0}
+.tagl{margin:0;font:700 60px/1.3 var(--serif);letter-spacing:-.01em;max-width:760px}
+.tagl .ln{display:block}
+.tagl .w{display:inline-block;color:var(--w-off);transition:color .5s var(--ease)}
+.tagl .w.on{color:var(--ink);animation:whoosh .8s var(--ease)}
+.tagl .w.k.on{color:var(--accent-ink);animation-name:whoosh-k}
+@keyframes whoosh{0%{transform:translateX(-32px);filter:blur(6px);color:var(--accent)}100%{transform:none;filter:none;color:var(--ink)}}
+@keyframes whoosh-k{0%{transform:translateX(-32px);filter:blur(6px);color:var(--accent-2)}100%{transform:none;filter:none;color:var(--accent-ink)}}
+.tagrest{margin:40px 0 0;max-width:820px;opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.tagrest.on{opacity:1;transform:none}
+.tagrest>p{margin:0;max-width:680px;font:400 18px/32px var(--sans);color:var(--ink-2);text-wrap:pretty}
+.tnums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:48px 0 0;padding-top:24px;border-top:1px solid var(--line)}
+.tn b{display:block;font:700 36px/40px var(--serif);color:var(--ink);white-space:nowrap}
+.tn b small{font:500 14px/20px var(--sans);color:var(--accent-ink);margin-left:8px;letter-spacing:.04em}
+.tn p{margin:8px 0 0;font:400 14px/24px var(--sans);color:var(--muted);text-wrap:pretty}
+
+/* ---------- 章节头（新） */
+.sech{padding:96px 0 24px}
+.sech .cno{margin:0;font:500 14px/20px var(--sans);letter-spacing:.08em;color:var(--accent-ink)}
+.sech h2{margin:12px 0 0;font:700 48px/56px var(--serif);letter-spacing:-.01em}
+.sech .slede{margin:16px 0 0;max-width:36em;font:400 18px/32px var(--sans);color:var(--ink-2);text-wrap:pretty}
+
+/* 第 1 题 v1 的地图、时期面板、四维长卷、各地沿革、参考与抽屉样式（2026-09-21）。v2 首屏阶段原样沿用，令牌改由 shell.html 提供。 */
+*{box-sizing:border-box}
 .wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(16px,3vw,36px);padding-block:8px 64px}
 h1,h2,h3{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;text-wrap:balance;margin:0}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 a{color:var(--accent)}
 
-/* masthead */
-.masthead{padding-block:28px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:20px 32px;align-items:end}
-.seal{writing-mode:vertical-rl;font-family:"Noto Serif SC",serif;font-weight:900;font-size:15px;letter-spacing:.35em;color:var(--accent-ink);background:var(--accent);padding:14px 8px;line-height:1;border-radius:2px;align-self:start}
-.masthead h1{font-size:clamp(30px,4.2vw,46px);font-weight:900;letter-spacing:.06em;line-height:1.2}
-.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-.lede{max-width:62ch;color:var(--ink-2);margin:10px 0 0;font-size:15px}
-.theme-btn{float:right;margin-left:12px;letter-spacing:.05em;text-transform:none;font-size:12px;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:2px 10px;background:var(--surface)}
-.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
-.lede b{color:var(--ink);font-weight:500}
 
 /* timeline */
 .timeline{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px 6px;margin-top:4px}
@@ -215,8 +288,6 @@ table.matrix{border-collapse:separate;border-spacing:0;min-width:1180px;width:10
 
 @media (max-width:980px){
   .atlas{grid-template-columns:1fr}
-  .masthead{grid-template-columns:1fr}
-  .seal{writing-mode:horizontal-tb;letter-spacing:.3em;padding:8px 12px;width:max-content}
   .refs ol{columns:1}
 }
 @media (max-width:640px){
@@ -226,18 +297,63 @@ table.matrix{border-collapse:separate;border-spacing:0;min-width:1180px;width:10
   .infobar .go{grid-column:2}
   .panel h2{font-size:26px}
 }
+
+
+/* ---------- v1 的地图与长卷：放进新外壳（写在 atlas.css 之后，覆盖它的页边与吸顶位置） */
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gut) 96px;font-size:15px;line-height:1.7}
+.wrap h1,.wrap h2,.wrap h3,.drawer h1,.drawer h2,.drawer h3{font-family:var(--serif)}
+.timeline{top:var(--nav-h)}
+
+@media (max-width:1100px){
+  .h3t{font-size:96px}
+}
+@media (max-width:700px){
+  .h3{justify-content:flex-start}
+  .h3t{font-size:60px}.h3s{font:500 20px/28px var(--serif)}.h3in{padding-top:40px;padding-bottom:48px}.h3a{margin-top:32px}
+  .h3cap{left:16px;right:16px;bottom:12px;text-align:left;max-width:none}
+  .tagl{font-size:36px;line-height:1.35}.tagrest>p{font-size:16px;line-height:28px}.tagrest{margin-top:32px}
+  .tnums{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:32px}.tn b{font-size:30px;line-height:36px}
+  .sech{padding:64px 0 16px}.sech h2{font-size:36px;line-height:44px}.sech .slede{font-size:16px;line-height:28px}
+  .tagsec.flow .tagstick{padding:64px 0}
+}
+@media (max-aspect-ratio:4/5){.h3img img{object-position:58% 100%;transform-origin:58% 90%}}
+@media (max-aspect-ratio:4/5) and (min-width:701px){.h3{justify-content:flex-start}.h3in{padding-top:80px}.h3img img{object-position:60% 100%;transform-origin:60% 90%}}
+@media (max-width:480px) and (max-height:760px){.h3in{padding-top:24px}.h3s{margin-top:16px}.h3a{margin-top:24px}}
+@media (max-width:480px){.h3{min-height:max(calc(100dvh - 60px),560px)}.h3t{font-size:48px}}
+@media (prefers-reduced-transparency:reduce){.cnav{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}}
+@media (prefers-contrast:more){.cnav{background:var(--bg);border-bottom-color:var(--ink)}.tagl .w{color:var(--muted)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .fade,.rise{opacity:1;transform:none}
+  .h3img img{animation:none;transform:none}
+  .tagsec{height:auto}.tagstick{position:static;height:auto;padding:96px 0}.tagl .w{color:var(--ink);animation:none}.tagl .w.k{color:var(--accent-ink)}.tagrest{opacity:1;transform:none}
+}
+@media print{.cnav,.ntheme{display:none}.fade,.rise{opacity:1;transform:none}.tagsec{height:auto}.tagstick{position:static;height:auto}.tagl .w{color:var(--ink)}.tagrest{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<header class="h3" id="top">
+  <figure class="h3img"><picture>
+    <source media="(max-aspect-ratio: 4/5) and (min-width: 701px)" srcset="assets/hero-cma-1975-96-t1024.jpg 1024w, assets/hero-cma-1975-96-t1536.jpg 1536w" sizes="100vw">
+    <source media="(max-aspect-ratio: 4/5)" srcset="assets/hero-cma-1975-96-p960.jpg 960w, assets/hero-cma-1975-96-p1440.jpg 1440w" sizes="(max-aspect-ratio: 9/16) 57vh, 100vw">
+    <img src="assets/hero-cma-1975-96-2400.jpg" srcset="assets/hero-cma-1975-96-1600.jpg 1600w, assets/hero-cma-1975-96-2400.jpg 2400w, assets/hero-cma-1975-96-3200.jpg 3200w" sizes="(max-aspect-ratio: 2/1) calc(200vh - 72px), 100vw" alt="青铜甗，约公元前 1000 年：上部是盛食物的甑，下部是三只兽面足的鬲，在黑底上打着聚光。" width="2400" height="1200" fetchpriority="high" decoding="async">
+  </picture></figure>
+  <div class="h3in wide">
+    <p class="h3k rise">四千年 · 十个时期 · 34 个省级行政区</p>
+    <h1 class="h3t rise" aria-label="中国菜系演化图谱"><span>中国菜系</span><span>演化图谱</span></h1>
+    <p class="h3s rise"><span>从鼎、鬲、甗里的蒸煮</span><span>到辣椒入川以后的麻辣</span><span>四千年的餐桌，铺在一张地图上</span></p>
+    <div class="h3a rise"><a class="btn" href="#atlas">从先秦走到今天<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5 8 13l4.5-4.5"/></svg></a><span class="h3p">十个时期 · 关键节点标出典籍与考古出处</span></div>
+  </div>
+  <p class="h3cap">青铜甗，约公元前 1000 年：下面的鬲烧水，上面的甑蒸食。克利夫兰艺术博物馆藏，CC0。</p>
+</header>
+<nav class="cnav" id="cnav" aria-label="章节"><div class="row"><a href="#atlas" data-nav="atlas"><small>00</small>十个时期</a><a href="#scroll" data-nav="scroll"><small>01</small>四维长卷</a><a href="#regions" data-nav="regions"><small>02</small>各地沿革</a><a href="#refs" data-nav="refs"><small>末</small>参考</a><button type="button" class="ntheme" id="theme-btn" data-cover-hide aria-label="换成深色">夜里读</button><i class="prog" id="prog"></i></div></nav>
+<main>
+<section class="tagsec" id="tagsec" aria-label="这一页的论点"><div class="tagstick"><div class="wide">
+<p class="tagl" aria-label="辣椒进中国菜，才三百多年；「八大菜系」这个说法，才四十六年。"><span aria-hidden="true"><span class="ln"><span class="w" style="--i:0">辣椒</span><span class="w" style="--i:1">进</span><span class="w" style="--i:2">中国菜，</span></span><span class="ln"><span class="w" style="--i:3">才</span><span class="w k" style="--i:4">三百多年；</span></span><span class="ln"><span class="w" style="--i:5">「八大菜系」</span><span class="w" style="--i:6">这个说法，</span></span><span class="ln"><span class="w" style="--i:7">才</span><span class="w k" style="--i:8">四十六年。</span></span></span></p>
+<div class="tagrest"><p>在它们之前，是新石器时代就分开的北粟南稻，汉唐传进来的胡食，宋代汴京的南食与北食，明清落户山区的玉米和番薯。今天地图上的口味，是十个时期一层一层叠出来的。</p><div class="tnums"><div class="tn"><b>1671<small>年</small></b><p>浙江《山阴县志》写下「辣茄……可以代椒」，通常认为是最早拿辣椒当调料的记载。</p></div><div class="tn"><b>1749<small>年</small></b><p>四川的方志里第一次出现辣椒（乾隆十四年《大邑县志》），比浙江晚了七十八年。</p></div><div class="tn"><b>1980<small>年</small></b><p>「八大菜系」第一次见报：汪绍铨《我国的八大菜系》。「菜系」这个词本身，也是 1950–70 年代才有的。</p></div></div></div>
+</div></div></section>
 <div class="wrap">
-  <header class="masthead">
-    <div class="seal">食·器·技·味</div>
-    <div>
-      <div class="eyebrow">Atlas of Chinese Regional Cuisines · 先秦—当代<button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></div>
-      <h1>中国菜系演化图谱</h1>
-      <p class="lede">以<b>食材、器具、技法、口味</b>四条线索，把先秦到当代十个时期的饮食变迁映射到今天的 34 个省级行政区。选一个时期，看地图上的风味分区、口味主调与主食怎样流转；点一个省，读它的沿革。</p>
-    </div>
-  </header>
+  <header class="sech fade" id="atlas"><p class="cno">00 · 十个时期</p><h2>一张地图，十个时期</h2><p class="slede">选一个时期，看地图上的风味分区、口味主调与主食怎样流转；点一个省，读它的沿革。</p></header>
 
   <nav class="timeline" aria-label="时期">
     <div class="tl-scroll"><div class="tl" id="tl"><div class="tl-fill" id="tlfill"></div></div></div>
@@ -286,6 +402,7 @@ table.matrix{border-collapse:separate;border-spacing:0;min-width:1180px;width:10
   <div class="bd" id="drawer-bd"></div>
   <div class="pn" id="drawer-pn" role="dialog" aria-modal="true" aria-labelledby="dr-title"></div>
 </div>
+</main>
 
 <script>
 const DATA = { periods: [], provinces: {}, families: {}, tastes: {}, staples: {}, provNotes: {}, modern: {}, refs: [] };
@@ -998,7 +1115,10 @@ const PALMETA = {"light":{"fam-C":true,"fam-D":true,"fam-G":true,"fam-M":true,"t
     [...tl.querySelectorAll('.tl-item')].forEach((b, i) => { b.setAttribute('aria-pressed', String(i === state.p)); b.classList.toggle('past', i < state.p); });
     const items = tl.querySelectorAll('.tl-item'); const it = items[state.p];
     $('#tlfill').style.width = (it.offsetLeft + 14) + 'px';
-    if (it.scrollIntoView) it.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+    // v2：只横向滚时间轴自己，不带动整页（时间轴已不在首屏，scrollIntoView 会在载入时把页面拽下去）
+    const sc = tl.closest('.tl-scroll');
+    if (sc && sc.scrollWidth > sc.clientWidth) { const l = it.offsetLeft - 16, r = it.offsetLeft + it.offsetWidth + 16;
+      if (l < sc.scrollLeft) sc.scrollTo({ left: l, behavior: 'smooth' }); else if (r > sc.scrollLeft + sc.clientWidth) sc.scrollTo({ left: r - sc.clientWidth, behavior: 'smooth' }); }
   }
 
   // ---------- map ----------
@@ -1177,11 +1297,6 @@ const PALMETA = {"light":{"fam-C":true,"fam-D":true,"fam-G":true,"fam-M":true,"t
 
   // ---------- init ----------
   
-  (function(){ const root=document.documentElement, btn=$('#themebtn'); if(!btn) return;
-    const label=()=>{ const t=root.getAttribute('data-theme'); btn.textContent = t==='dark' ? '☀ 浅色' : t==='light' ? '☾ 深色' : '◐ 深浅色'; };
-    btn.addEventListener('click',()=>{ const dark = root.getAttribute('data-theme')==='dark' || (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
-      root.setAttribute('data-theme', dark ? 'light' : 'dark'); try{ localStorage.setItem('cuisine-theme', root.getAttribute('data-theme')); }catch(e){} label(); });
-    label(); })();
   if (!hoverable){ $('#ib-name').textContent = '点按一个省份'; $('#ib-note').textContent = '查看它在当前时期所属的风味分区、口味与主食，再点“查看沿革”读完整故事。'; }
   buildMatrix(); buildCards();
   let p0 = 0, m0 = 'fam';
@@ -1190,7 +1305,95 @@ const PALMETA = {"light":{"fam-C":true,"fam-D":true,"fam-G":true,"fam-M":true,"t
   setPeriod(p0);
   window.addEventListener('resize', paintTimeline);
 })();
-</script>
 
+</script>
+<script>
+/* 第 1 题 v2 外壳：深浅色、入场、吸顶导航与进度、卷首升起、论点逐词点亮。地图与长卷的逻辑在 atlas.js（v1）。 */
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  var $ = function (s, el) { return (el || document).querySelector(s); };
+  var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+  var RM = { on: false };
+  try { var rmq = window.matchMedia('(prefers-reduced-motion: reduce)'); RM.on = rmq.matches; var rmc = function (e) { RM.on = e.matches; }; if (rmq.addEventListener) rmq.addEventListener('change', rmc); else if (rmq.addListener) rmq.addListener(rmc); } catch (e) {}
+
+  /* ---------- 深浅色：这一题默认是纸；切过就记住（全站同一个键） */
+  var tb = $('#theme-btn');
+  function curTheme() { return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'; }
+  function themeLabel() { if (!tb) return; var d = curTheme() === 'dark'; tb.textContent = d ? '白天读' : '夜里读'; tb.setAttribute('aria-label', d ? '换成浅色' : '换成深色'); }
+  if (tb) {
+    themeLabel();
+    tb.addEventListener('click', function () {
+      var next = curTheme() === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', next); themeLabel();
+      try { localStorage.setItem('yzyt-theme', next); } catch (e) {}
+    });
+  }
+
+  /* ---------- 入场 */
+  var fades = $$('.fade');
+  if ('IntersectionObserver' in window && !RM.on) {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -6% 0px' });
+    fades.forEach(function (n) { io.observe(n); });
+  } else { fades.forEach(function (n) { n.classList.add('in'); }); }
+
+  /* ---------- 章节导航与进度 */
+  var nav = $('#cnav'), prog = $('#prog'), links = $$('[data-nav]'), secs = links.map(function (a) { return document.getElementById(a.getAttribute('data-nav')); });
+  function navH() { return nav ? nav.offsetHeight : 0; }
+  function setNavH() { root.style.setProperty('--nav-h', navH() + 'px'); }
+  var navTick = false;
+  function onScrollNav() {
+    if (navTick) return; navTick = true;
+    requestAnimationFrame(function () {
+      navTick = false;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      if (prog) prog.style.transform = 'scaleX(' + (h > 0 ? clamp(window.scrollY / h, 0, 1) : 0).toFixed(4) + ')';
+      var y = window.scrollY + navH() + 80, cur = -1;
+      for (var i = 0; i < secs.length; i++) if (secs[i] && secs[i].getBoundingClientRect().top + window.scrollY <= y) cur = i;
+      links.forEach(function (a, i) {
+        var on = i === cur;
+        if (on !== a.classList.contains('on')) {
+          a.classList.toggle('on', on);
+          if (on && nav) { var r = a.getBoundingClientRect(), rr = nav.getBoundingClientRect(); if (r.left < rr.left || r.right > rr.right) a.parentNode.scrollLeft += r.left - rr.left - 20; }
+        }
+      });
+    });
+  }
+  setNavH(); onScrollNav();
+  window.addEventListener('scroll', onScrollNav, { passive: true });
+  window.addEventListener('resize', function () { setNavH(); onScrollNav(); });
+
+  /* ---------- 卷首：依次升起 */
+  (function initHero() {
+    var h = $('#top'); if (!h) return;
+    var rs = $$('.rise', h);
+    if (RM.on) { rs.forEach(function (n) { n.classList.add('in'); }); return; }
+    requestAnimationFrame(function () { rs.forEach(function (n, i) { n.style.transitionDelay = (0.15 + Math.min(i * 0.08, 0.4)).toFixed(2) + 's'; n.classList.add('in'); }); });
+  })();
+
+  /* ---------- 论点：钉住时按滚动进度逐词点亮；放不下就随文流动、按位置点亮 */
+  (function initTagline() {
+    var sec = $('#tagsec'); if (!sec) return;
+    var ws = $$('.tagl .w', sec), rest = $('.tagrest', sec), tagl = $('.tagl', sec), inner = $('.tagstick > .wide', sec), tick = false;
+    function upd() {
+      tick = false;
+      if (RM.on) { ws.forEach(function (w) { w.classList.add('on'); }); if (rest) rest.classList.add('on'); return; }
+      var nh = navH(), avail = window.innerHeight - nh;
+      var fits = inner.offsetHeight + 48 <= avail;
+      if (fits === sec.classList.contains('flow')) sec.classList.toggle('flow', !fits);
+      var p;
+      if (fits) { var r = sec.getBoundingClientRect(), span = sec.offsetHeight - avail; p = clamp((nh - r.top) / (span > 0 ? span : 1), 0, 1); }
+      else { var t = tagl.getBoundingClientRect(); p = clamp((window.innerHeight * 0.8 - t.top) / (window.innerHeight * 0.45), 0, 1); }
+      var n = Math.floor(p * (ws.length + 3));
+      ws.forEach(function (w, i) { var on = i < n; if (on !== w.classList.contains('on')) w.classList.toggle('on', on); });
+      if (rest) rest.classList.toggle('on', n >= ws.length + 1);
+    }
+    window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(upd); } }, { passive: true });
+    window.addEventListener('resize', upd); upd();
+  })();
+})();
+
+</script>
 </body>
 </html>

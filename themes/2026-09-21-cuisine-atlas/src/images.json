@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hero-cma-1975-96",
+    "file": "hero-cma-1975-96-2400.jpg",
+    "w": 2400,
+    "h": 1200,
+    "subject": "青铜甗（Food Steamer, Xian），商代安阳期至西周（约公元前 1000 年），高 39.4 cm",
+    "author": "克利夫兰艺术博物馆",
+    "date": "约公元前 1000 年（器物）",
+    "license": "CC0",
+    "source": "https://clevelandart.org/art/1975.96",
+    "file_source": "https://openaccess-cdn.clevelandart.org/1975.96/1975.96_print.jpg",
+    "credit_line": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund, 1975.96",
+    "note": "卷首图。原片 2660×3400 竖幅、灰色渐变背景；器物本身不动，背景用以器物为中心的椭圆光斑往外压暗成黑，原片四边羽化后放进纯黑画布（横幅 3200 / 2400 / 1600，手机竖幅 1440 / 960），黑场压低 3/255。脚本 src/tools/compose_hero.py。",
+    "status": "ok"
+  }
+]

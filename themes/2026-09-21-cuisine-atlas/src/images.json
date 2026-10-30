@@ -1,17 +1,17 @@
 [
   {
-    "id": "hero-met-1987-10",
-    "file": "hero-met-1987-10-2400.jpg",
+    "id": "hero-met-40741",
+    "file": "hero-met-40741-2400.jpg",
     "w": 2400,
     "h": 1200,
-    "subject": "青花鱼藻纹大盘，元代（14 世纪中叶），景德镇窑，口径 45.7 cm",
+    "subject": "掐丝珐琅八吉祥纹大碗，明代（15 世纪末–16 世纪初），口径 29.2 cm、高 14.3 cm",
     "author": "大都会艺术博物馆",
-    "date": "14 世纪中叶（器物）",
+    "date": "15 世纪末–16 世纪初（器物）",
     "license": "公有领域（The Met Open Access）",
-    "source": "https://www.metmuseum.org/art/collection/search/39638",
-    "file_source": "https://images.metmuseum.org/CRDImages/as/original/DP-14609-052.jpg",
-    "credit_line": "The Metropolitan Museum of Art, Purchase, Mrs. Richard E. Linburn Gift, 1987 (1987.10)",
-    "note": "卷首图（2026-10-30 第二版，天杰要「高清的大菜餐桌」，合规的餐桌照片找不到，改用高清餐具）。原片 4000×3002、深灰到浅灰渐变背景；盘子本身不动，背景用以盘为中心的圆形光斑压暗成黑，原片四边羽化后放进纯黑画布（横幅 3200 / 2400 / 1600，平板竖屏 1536 / 1024，手机竖屏 1440 / 960），黑场压低 3/255。脚本 src/tools/compose_hero.py。第一版是克利夫兰 1975.96 青铜甗（CC0），见 git 历史。",
+    "source": "https://www.metmuseum.org/art/collection/search/40741",
+    "file_source": "https://images.metmuseum.org/CRDImages/as/original/DP228992.jpg",
+    "credit_line": "The Metropolitan Museum of Art, Gift of Edward G. Kennedy, 1929 (29.110.88)",
+    "note": "卷首图（2026-10-30 第三版）。天杰先要「高清的经典中餐大菜餐桌」，合规的餐桌照片找不到；再问「有没有高清的餐具图」，用过大都会 1987.10 元青花鱼藻纹大盘；最后要「亮色、配着筷子的、珐琅掐丝的」——能找到的掐丝珐琅配筷子只有大都会 24.80.323a–d 康熙珐琅刀筷套（只有 532×925 的老黑白照），所以用这只松石蓝地的明代掐丝珐琅大碗，筷子没有。原片 3919×2941、深灰到浅灰渐变背景；碗本身不动，背景用以碗为中心的椭圆光斑压暗成黑，原片四边羽化后放进纯黑画布（横幅 3200 / 2400 / 1600，4:3 2400 / 1600，平板竖屏 1536 / 1024，手机竖屏 1440 / 960），黑场压低 3/255。脚本 src/tools/compose_hero.py。前两版（克利夫兰 1975.96 青铜甗、大都会 1987.10 元青花大盘）见 git 历史。",
     "status": "ok"
   }
 ]

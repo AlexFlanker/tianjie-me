@@ -23,7 +23,7 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"></noscript>
 <style>
 /* 皮肤「宣纸与朱砂」v2（2026-10-30，按第 5–7 题 v2 的版面系统重排；9/27 天杰认可过这个方向）：
-   默认是纸——米色宣纸 #F4F0E6 为底，暖墨字，朱砂 #B5432C 是唯一强调色；卷首是纯黑的「灯下」带（展柜里的元青花大盘）。导航里可切「夜里读」。
+   默认是纸——米色宣纸 #F4F0E6 为底，暖墨字，朱砂 #B5432C 是唯一强调色；卷首是纯黑的「灯下」带（展柜里的掐丝珐琅大碗）。导航里可切「夜里读」。
    字号只取 12/14/16/18/20/24/30/36/48/60/96/128；间距只取 4/8/12/16/24/32/40/48/64/80/96；新写的部分字重 400–700；圆角 4/6/8/12/16/全圆。
    背景不用渐变（卷首标题字除外）。缓动统一 cubic-bezier(.22,1,.36,1)：位移 500 ms，颜色与透明度 300 ms，入场 700 ms。
    地图、时期面板、四维长卷与各地沿革在首屏阶段沿用 v1（atlas.css），只把令牌换成这一套。 */
@@ -69,7 +69,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid 
 .fade{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .fade.in{opacity:1;transform:none}
 
-/* ---------- 卷首：大都会的元青花鱼藻纹大盘（放进纯黑画布、打聚光）——横屏盘在右侧 72%，平板与手机竖屏在下方；字压在黑底上，不加遮罩 */
+/* ---------- 卷首：大都会的明代掐丝珐琅大碗（放进纯黑画布、打聚光）——横屏碗在右侧 72%，平板与手机竖屏在下方；字压在黑底上，不加遮罩 */
 .h3{position:relative;min-height:max(calc(100dvh - 36px),630px);display:flex;flex-direction:column;justify-content:center;overflow:hidden;color:#fff;background:#000;isolation:isolate}
 .h3img{position:absolute;inset:0;margin:0;z-index:-1;background:#000}
 .h3img picture{display:block;width:100%;height:100%}
@@ -152,9 +152,9 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid 
   .sech{padding:64px 0 16px}.sech h2{font-size:36px;line-height:44px}.sech .slede{font-size:16px;line-height:28px}
   .tagsec.flow .tagstick{padding:64px 0}
 }
-@media (min-aspect-ratio:4/5) and (max-aspect-ratio:3/2){.h3img img{object-position:75% 50%;transform-origin:75% 52%}}
-@media (max-aspect-ratio:4/5){.h3img img{object-position:55% 100%;transform-origin:55% 90%}}
-@media (max-aspect-ratio:4/5) and (min-width:701px){.h3{justify-content:flex-start}.h3in{padding-top:80px}.h3img img{object-position:62% 100%;transform-origin:62% 90%}}
+@media (min-aspect-ratio:4/5) and (max-aspect-ratio:3/2){.h3img img{object-position:74% 50%;transform-origin:74% 52%}}
+@media (max-aspect-ratio:4/5){.h3img img{object-position:50% 100%;transform-origin:50% 90%}}
+@media (max-aspect-ratio:4/5) and (min-width:701px){.h3{justify-content:flex-start}.h3in{padding-top:80px}.h3img img{object-position:56% 100%;transform-origin:56% 90%}}
 @media (max-width:480px) and (max-height:760px){.h3in{padding-top:24px}.h3s{margin-top:16px}.h3a{margin-top:24px}}
 @media (max-width:480px){.h3{min-height:max(calc(100dvh - 60px),560px)}.h3t{font-size:48px}}
 @media (prefers-reduced-transparency:reduce){.cnav{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}}

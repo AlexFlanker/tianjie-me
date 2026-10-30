@@ -296,8 +296,9 @@ def refs_block():
             items.append(f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s.get("title") or s["url"])}</a></li>' if s.get('url') else f'<li>{esc(s.get("title", ""))}</li>')
         out.append(f'<h3>{esc(g)}（{len(items)}）</h3><ul>{"".join(items)}</ul>')
     return ''.join(out)
+USED = []  # 页面上实际出现的图（main() 在拼卷末之前算出）；署名表只列这些
 def credits():
-    rows = ''.join(f'<tr><td>{esc(k)}</td><td>{esc(im["subject"])}</td><td>{esc(im["author_short"])}，{esc(im.get("year", ""))}</td><td>{esc(im["license_short"])}</td><td><a href="{esc(im["url_page"])}" target="_blank" rel="noopener">{esc(im["source_name"])}</a></td></tr>' for k, im in IM.items())
+    rows = ''.join(f'<tr><td>{esc(k)}</td><td>{esc(im["subject"])}</td><td>{esc(im["author_short"])}，{esc(im.get("year", ""))}</td><td>{esc(im["license_short"])}</td><td><a href="{esc(im["url_page"])}" target="_blank" rel="noopener">{esc(im["source_name"])}</a></td></tr>' for k, im in ((k, IM[k]) for k in USED))
     return f'<div class="tblwrap credits"><table><thead><tr><th>编号</th><th>主题</th><th>作者 / 年代</th><th>许可</th><th>出处</th></tr></thead><tbody>{rows}</tbody></table></div>'
 def endm():
     M = E.METHOD
@@ -308,7 +309,7 @@ def endm():
 <details class="fold big fade"><summary><h3>参考（按研究路分组）</h3></summary><div class="refs">{refs_block()}</div></details>
 <details class="fold big fade"><summary><h3>方法</h3></summary><div class="method"><ul>{''.join(f'<li>{esc(p)}</li>' for p in M['process'])}</ul></div></details>
 <details class="fold big fade"><summary><h3>仍待核</h3></summary><div class="method"><ul>{''.join(f'<li>{esc(t)}</li>' for t in M['todo'])}</ul></div></details>
-<details class="fold big fade"><summary><h3>图片署名（{len(IM)} 张）</h3></summary>{credits()}</details>
+<details class="fold big fade"><summary><h3>图片署名（{len(USED)} 张）</h3></summary>{credits()}</details>
 <div class="stamp fade">一周一题 · 第 {E.META['no']} 题 · {E.META['date']}<br>研究、绘图与核查：Claude（站长复核）</div>
 </div></footer>
 '''
@@ -351,9 +352,14 @@ def main():
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     app = open(os.path.join(HERE, 'calendars.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'app.js'), encoding='utf-8').read() + '\n' + open(os.path.join(HERE, 'demos.js'), encoding='utf-8').read()
     light = ('@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){' + LIGHT + '}}\n:root[data-theme="light"]{' + LIGHT + '}')
-    body = hero() + cnav() + '<main>' + tagline_sec() + field_sec() + ch_days() + ch_lamps() + ch_threshold() + ch_hands() + '</main>' + endm()
+    pre = hero() + cnav() + '<main>' + tagline_sec() + field_sec() + ch_days() + ch_lamps() + ch_threshold() + ch_hands() + '</main>'
+    dj = json.dumps(data(), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    seen = pre + dj  # 舞台底图用的是 earth-night-1 的 1920 宽副本
+    USED[:] = [k for k, im in IM.items() if ('assets/' + im['file']) in seen or (k == 'img-earth-night-1' and 'assets/earth-night-1920.jpg' in seen)]
+    print('images used', len(USED), '/', len(IM))
+    body = pre + endm()
     page = (tpl.replace('{{TITLE}}', esc(E.META['title'])).replace('{{DESCRIPTION}}', esc(E.META['desc'])).replace('{{LIGHT_BLOCKS}}', light)
-            .replace('{{BODY}}', body).replace('{{DATA_JSON}}', json.dumps(data(), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('{{APP_JS}}', app))
+            .replace('{{BODY}}', body).replace('{{DATA_JSON}}', dj).replace('{{APP_JS}}', app))
     page, report = fixes.apply(page)
     for line in report: print(line)
     open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf-8').write(page)
@@ -362,7 +368,7 @@ def main():
             'sources': ['原典与专著：《诗经·七月》《礼记·月令》《史记·秦始皇本纪》《汉书·律历志》《东京梦华录》《帝京景物略》、Tochmarc Emire（CELT）、Hutton《Stations of the Sun》、Brandes、Fernández Juárez 2006、萨阿贡 / 托瓦尔手抄本（LoC）',
                         '官方与数据：印度中央政府假日备忘录 2015–2027、印度气象局季风常年日期、泰国政府门户与旅游局、墨西哥城政府、UNESCO 非遗名录（2008、2016）、国立天文台暦要項、香港天文台历表、北京市气象台、国家气候中心、FAO GIEWS、Beck 等 2018 柯本数据集、NRF、ARA / Roy Morgan',
                         '算法：立冬 / 小雪 / 冬至按太阳视黄经（PyEphem）；排灯节按 amanta 历朔日与德里日落 tithi（与官方表 2015–2027 全部一致）；农历按 GB/T 33661-2017 月表；昼长按太阳赤纬标准近似',
-                        f'图片 {len(IM)} 张：纽约公共图书馆、美国国会图书馆、大都会与克利夫兰艺术博物馆 Open Access、Rijksmuseum、Wellcome、Europeana 合作馆（斯德哥尔摩民族学博物馆、哥德堡世界文化博物馆等）、geograph、NASA、pxhere / WordPress CC0 图库；逐张署名见页面卷末与 src/images.json']}
+                        f'图片 {len(USED)} 张：纽约公共图书馆、美国国会图书馆、大都会与克利夫兰艺术博物馆 Open Access、Rijksmuseum、Wellcome、Europeana 合作馆（斯德哥尔摩民族学博物馆、哥德堡世界文化博物馆等）、geograph、NASA、pxhere / WordPress CC0 图库；逐张署名见页面卷末与 src/images.json']}
     json.dump(meta, open(os.path.join(HERE, '..', 'meta.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
     print('wrote index.html', len(page), 'bytes')
 

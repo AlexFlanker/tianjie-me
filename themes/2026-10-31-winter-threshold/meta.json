@@ -21,6 +21,6 @@
     "原典与专著：《诗经·七月》《礼记·月令》《史记·秦始皇本纪》《汉书·律历志》《东京梦华录》《帝京景物略》、Tochmarc Emire（CELT）、Hutton《Stations of the Sun》、Brandes、Fernández Juárez 2006、萨阿贡 / 托瓦尔手抄本（LoC）",
     "官方与数据：印度中央政府假日备忘录 2015–2027、印度气象局季风常年日期、泰国政府门户与旅游局、墨西哥城政府、UNESCO 非遗名录（2008、2016）、国立天文台暦要項、香港天文台历表、北京市气象台、国家气候中心、FAO GIEWS、Beck 等 2018 柯本数据集、NRF、ARA / Roy Morgan",
     "算法：立冬 / 小雪 / 冬至按太阳视黄经（PyEphem）；排灯节按 amanta 历朔日与德里日落 tithi（与官方表 2015–2027 全部一致）；农历按 GB/T 33661-2017 月表；昼长按太阳赤纬标准近似",
-    "图片 46 张：纽约公共图书馆、美国国会图书馆、大都会与克利夫兰艺术博物馆 Open Access、Rijksmuseum、Wellcome、Europeana 合作馆（斯德哥尔摩民族学博物馆、哥德堡世界文化博物馆等）、geograph、NASA、pxhere / WordPress CC0 图库；逐张署名见页面卷末与 src/images.json"
+    "图片 36 张：纽约公共图书馆、美国国会图书馆、大都会与克利夫兰艺术博物馆 Open Access、Rijksmuseum、Wellcome、Europeana 合作馆（斯德哥尔摩民族学博物馆、哥德堡世界文化博物馆等）、geograph、NASA、pxhere / WordPress CC0 图库；逐张署名见页面卷末与 src/images.json"
   ]
 }

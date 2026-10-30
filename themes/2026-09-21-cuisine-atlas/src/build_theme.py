@@ -116,9 +116,7 @@ def hero():
     arrow = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5 8 13l4.5-4.5"/></svg>'
     return f'''<header class="h3" id="top">
   <figure class="h3img"><picture>
-    <source media="(max-aspect-ratio: 4/5) and (min-width: 701px)" srcset="{b}-t1024.jpg 1024w, {b}-t1536.jpg 1536w" sizes="100vw">
-    <source media="(max-aspect-ratio: 4/5)" srcset="{b}-p960.jpg 960w, {b}-p1440.jpg 1440w" sizes="(max-aspect-ratio: 9/16) 57vh, 100vw">
-    <source media="(max-aspect-ratio: 3/2)" srcset="{b}-m1600.jpg 1600w, {b}-m2400.jpg 2400w" sizes="(max-aspect-ratio: 4/3) calc(133vh - 48px), 100vw">
+    <source media="(max-aspect-ratio: 3/2)" srcset="{b}-s1000.jpg 1000w, {b}-s1600.jpg 1600w" sizes="(min-aspect-ratio: 1/1) 50vw, (min-width: 701px) 72vw, 100vw">
     <img src="assets/{esc(im['file'])}" srcset="{b}-1600.jpg 1600w, {b}-2400.jpg 2400w, {b}-3200.jpg 3200w" sizes="(max-aspect-ratio: 2/1) calc(200vh - 72px), 100vw" alt="{esc(H['alt'])}" width="{im['w']}" height="{im['h']}" fetchpriority="high" decoding="async">
   </picture></figure>
   <div class="h3in wide">

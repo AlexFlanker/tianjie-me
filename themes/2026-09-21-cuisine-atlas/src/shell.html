@@ -23,7 +23,7 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"></noscript>
 <style>
 /* 皮肤「宣纸与朱砂」v2（2026-10-30，按第 5–7 题 v2 的版面系统重排；9/27 天杰认可过这个方向）：
-   默认是纸——米色宣纸 #F4F0E6 为底，暖墨字，朱砂 #B5432C 是唯一强调色；卷首是纯黑的「灯下」带（展柜里的掐丝珐琅大碗）。导航里可切「夜里读」。
+   默认是纸——米色宣纸 #F4F0E6 为底，暖墨字，朱砂 #B5432C 是唯一强调色；卷首是纯黑的「灯下」带（一束聚光下的麻婆豆腐）。导航里可切「夜里读」。
    字号只取 12/14/16/18/20/24/30/36/48/60/96/128；间距只取 4/8/12/16/24/32/40/48/64/80/96；新写的部分字重 400–700；圆角 4/6/8/12/16/全圆。
    背景不用渐变（卷首标题字除外）。缓动统一 cubic-bezier(.22,1,.36,1)：位移 500 ms，颜色与透明度 300 ms，入场 700 ms。
    全页（2026-10-30）：序章是钉住的全屏地图舞台（滚动与刻度尺是同一个量 t），第一、三章是透镜分组的列表，第二章是可拖动年份的辣椒地图。 */
@@ -73,7 +73,8 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid 
 .fade{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .fade.in{opacity:1;transform:none}
 
-/* ---------- 卷首：大都会的明代掐丝珐琅大碗（放进纯黑画布、打聚光）——横屏碗在右侧 72%，平板与手机竖屏在下方；字压在黑底上，不加遮罩 */
+/* ---------- 卷首：一盘麻婆豆腐（WordPress 图片库 CC0；放进纯黑画布、打聚光）——宽屏（> 3:2）盘在右侧 72%，字压在黑底上，不加遮罩；
+   3:2 以下盘子单独占一块：横一点的屏在字右边、竖屏在字下面（见文末媒体查询），字和盘不重叠 */
 .h3{position:relative;min-height:max(calc(100dvh - 36px),630px);display:flex;flex-direction:column;justify-content:center;overflow:hidden;color:#fff;background:#000;isolation:isolate}
 .h3img{position:absolute;inset:0;margin:0;z-index:-1;background:#000}
 .h3img picture{display:block;width:100%;height:100%}
@@ -133,7 +134,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid 
 
 /* ---------- 共用：玻璃材质、章、图版开篇 */
 .glass{background:var(--glass);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border:1px solid var(--glass-line);box-shadow:var(--shadow-s)}
-.chap{padding:96px 0 48px}
+.chap{padding-top:96px;padding-bottom:48px}
 .chap.tl{padding:0}
 .chead{margin-bottom:64px}
 .plate{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:end}
@@ -498,7 +499,7 @@ details.fold.big>:not(summary){padding:0 0 24px}
   .tagl{font-size:36px;line-height:1.35}.tagrest>p{font-size:16px;line-height:28px}.tagrest{margin-top:32px}
   .tnums{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:32px}.tn b{font-size:30px;line-height:36px}
   .tagsec.flow .tagstick{padding:64px 0}
-  .chap{padding:64px 0 32px}
+  .chap{padding-top:64px;padding-bottom:32px}
   .chead h2,.tlintro h2{font-size:36px;line-height:44px}
   .chead .lede,.tlintro .lede{font-size:16px;line-height:28px}
   .tlintro{padding-top:64px;padding-bottom:32px}
@@ -511,11 +512,38 @@ details.fold.big>:not(summary){padding:0 0 24px}
   .endm h2{font-size:36px;line-height:44px}
   .msech h3{font-size:24px;line-height:32px}
 }
-@media (min-aspect-ratio:4/5) and (max-aspect-ratio:3/2){.h3img img{object-position:74% 50%;transform-origin:74% 52%}}
-@media (max-aspect-ratio:4/5){.h3img img{object-position:50% 100%;transform-origin:50% 90%}}
-@media (max-aspect-ratio:4/5) and (min-width:701px){.h3{justify-content:flex-start}.h3in{padding-top:80px}.h3img img{object-position:56% 100%;transform-origin:56% 90%}}
+/* 宽高比 1:1 到 3:2（4:3 屏、横放的平板）：盘子在字右边单独一栏——方图（盘居中、四周纯黑）按这一栏等比缩放（contain）；
+   --tw 是字这一栏的宽度（实测标题 128px 宽 522、96px 时按钮加说明一行宽 458，再留 48 的空），栏从字的右边开始 */
+@media (min-aspect-ratio:1/1) and (max-aspect-ratio:3/2){
+  .h3{--tw:570px}
+  .h3img{left:calc(max(0px,(100% - 1240px) / 2) + var(--gut) + var(--tw))}
+  .h3img img{object-fit:contain;object-position:50% 50%;transform-origin:50% 50%}
+}
+@media (min-aspect-ratio:1/1) and (max-aspect-ratio:3/2) and (max-width:1100px){.h3{--tw:506px}}
+@media (min-aspect-ratio:1/1) and (max-aspect-ratio:3/2) and (max-width:700px){.h3{--tw:312px}.h3a{max-width:300px}}
+/* 竖屏（宽高比 ≤ 1:1：手机、竖放的平板）：字在上，盘子在下面单独占一块——同一张方图，按字下面剩下的高度等比缩放（contain）；
+   屏幕太矮时这一块至少留 min(80vw, 320px)，卷首往下长。这几条写在上面「字右边一栏」之后，正好 1:1 时按竖屏排 */
+@media (max-aspect-ratio:1/1){
+  .h3{justify-content:flex-start}
+  .h3in{order:1;flex:none;padding-bottom:8px}
+  .h3img{order:2;position:relative;inset:auto;flex:1 1 auto;min-height:min(80vw,320px)}
+  .h3img picture{position:absolute;inset:0}
+  .h3img img{object-fit:contain;object-position:50% 50%;transform-origin:50% 50%}
+  .h3cap{order:3;position:static;margin:0;padding:4px var(--gut) 12px;max-width:none;text-align:left}
+}
+@media (max-aspect-ratio:1/1) and (min-width:701px){.h3in{padding-top:80px}}
 @media (max-width:480px) and (max-height:760px){.h3in{padding-top:24px}.h3s{margin-top:16px}.h3a{margin-top:24px}}
 @media (max-width:480px){.h3{min-height:max(calc(100dvh - 60px),560px)}.h3t{font-size:48px}}
+/* 很矮的横屏（横放的手机）：卷首正好一屏高，字按屏高缩小，去掉 CTA 旁那行说明，图注挪到左下，盘子不压字 */
+@media (max-height:560px) and (min-aspect-ratio:3/2){
+  .h3{min-height:calc(100dvh - 36px)}
+  .h3in{padding-top:20px;padding-bottom:52px}
+  .h3t{margin-top:8px;font-size:clamp(40px,13vh,72px)}
+  .h3s{margin-top:12px;font:500 16px/24px var(--serif)}
+  .h3a{margin-top:16px}
+  .h3p{display:none}
+  .h3cap{left:var(--gut);right:auto;bottom:12px;text-align:left;max-width:none}
+}
 @media (prefers-reduced-transparency:reduce){.cnav,.lensbar{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}.glass{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none}}
 @media (prefers-contrast:more){.cnav,.lensbar{background:var(--bg);border-bottom-color:var(--ink)}.tagl .w{color:var(--muted)}.glass{background:var(--surface);border-color:var(--ink)}}
 @media (prefers-reduced-motion:reduce){

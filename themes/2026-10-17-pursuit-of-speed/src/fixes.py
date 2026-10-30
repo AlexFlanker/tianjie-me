@@ -47,6 +47,7 @@ POST = [
     ('"subject": "Denise Mueller-Korenek 领骑自行车 296 km/h"', '"subject": "Denise Mueller-Korenek 领骑自行车"', '同上（弹窗）'),
     ('431 km/h（2003 年起商业运营最高速度，龙阳路—浦东机场）', '431 km/h（2003 年 10 月试运营、2004 年起商业运营的最高速度，龙阳路—浦东机场；2021 年 5 月起降为 300 km/h）', '上海磁浮口径'),
     ('公有领域（No known copyright restrictions，美国国会图书馆 Flickr Commons）', '无已知版权限制（Flickr Commons 声明；1915 年前的美国作品，视为公有领域）', 'Flickr Commons 的权利声明不等于公有领域宣告'),
+    ('是乘客能买票坐到的最快速度。', '是普通乘客能坐到的最快速度（1976–2003）。', 'v2 核查后补：2001 年起已有自费太空游客，「买票能坐到的最快」改与论点同口径'),
 ]
 
 def apply(page):

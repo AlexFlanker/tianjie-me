@@ -255,9 +255,9 @@
   "height": 800,
   "status": "ok",
   "note": "馆方最大尺寸 884×800；是博物馆内搭建的祭坛而非墨西哥家中 / 公墓现场，图注需如实写；同馆 2013 年 Westling 摄 ofrenda 照片图像权利为 BY-NC-ND，未采用",
-  "license_short": "CC BY",
+  "license_short": "CC BY 4.0",
   "route": "1",
-  "author_short": "Johan Jeppsson；Etnografiska museet / Statens museer för värl"
+  "author_short": "Johan Jeppsson；斯德哥尔摩民族学博物馆"
  },
  {
   "id": "img-rome-contrast-1",
@@ -335,9 +335,9 @@
   "height": 851,
   "status": "ok",
   "note": "原图 1920×1276。这不是印度本土的 diya 排灯：Flickr 图片 CDN 与维基共享资源 API 在本环境对出口 IP 段返回 429，印度现场照片未能取到；此图画面只有手与灯盏、无人脸，可配「随移民搬到高纬度」一节。同组另 4 张（有人脸 / 儿童）未用。",
-  "license_short": "CC BY",
+  "license_short": "CC BY 4.0",
   "route": "2",
-  "author_short": "Kari Hakli/ Helsinki City Museum"
+  "author_short": "Kari Hakli / 赫尔辛基市博物馆"
  },
  {
   "id": "img-diwali-2",
@@ -675,17 +675,18 @@
   "height": 480,
   "status": "ok",
   "note": "馆方最大尺寸仅 374×480，适合小图或并排排版；同批另有粉色糖骷髅 1963.27.0065（额头写「Pepe」，object/1016336，图 image/zoom/1142446/1963.27.0065.jpg，389×480，同许可）。这是博物馆藏品的物件照，不是市集 / 祭坛现场",
-  "license_short": "CC0",
+  "license_short": "CC BY 4.0",
   "route": "3",
-  "author_short": "藏品摄影：Etnografiska museet / Statens museer för världskultur；采"
+  "author_short": "斯德哥尔摩民族学博物馆（藏品摄影）",
+  "license_note_v4": "2026-10-31 v4：馆方藏品页与 Europeana 标注不一致时，按馆方页面（权利方）标注，取较严的一种；署名照旧。"
  },
  {
   "id": "img-dia-de-muertos-10",
   "node": "dia-de-muertos",
   "file": "dia-de-muertos-10.jpg",
-  "subject": "1934–35 年墨西哥城南 Milpa Alta 一户人家的亡灵节祭坛（ofrenda）：铺着镂花桌布的供桌上堆满亡灵面包，烛光里一位妇人守在桌旁——馆方目录卡原文「Offerbordet står dukat åt förfädernas andar」（供桌已为祖先的灵魂摆好）",
+  "subject": "约 1930 年代墨西哥城南 Milpa Alta 一户人家的亡灵节祭坛（ofrenda）：铺着镂花桌布的供桌上堆满亡灵面包，烛光里一位妇人守在桌旁——馆方目录卡原文「Offerbordet står dukat åt förfädernas andar」（供桌已为祖先的灵魂摆好）",
   "author": "Ola Apenes（1898–1943，挪威工程师，1929 年起在墨西哥城 L. M. Ericsson 工作，业余从事民族学摄影）[馆方标注存疑「?」]；瑞典第二次墨西哥考察（1934–1935，Sigvald Linné 与 Gösta Montell）系列",
-  "year": "1934–1935",
+  "year": "约 1930 年代（馆方页面无拍摄年份，1952 年入藏）",
   "license": "Public Domain Mark 1.0（馆方藏品页图像旁标 creativecommons.org/publicdomain/mark/1.0/；Europeana 记录 edmRights 标为 CC0 1.0）",
   "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
   "url_page": "https://collections.smvk.se/carlotta-em/web/object/2545854",
@@ -694,10 +695,11 @@
   "width": 976,
   "height": 800,
   "status": "ok",
-  "note": "黑白照片翻拍，馆方最大尺寸 976×800；画面有一位妇人侧脸。同组：0493.0005（object/2545849，老妇人与供桌，891×800）、0493.0007（object/2545859，Gösta Montell 摄，房间全景，见 dia-de-muertos-13）。这是 1930 年代墨西哥家中祭坛的实景，不是现代彩色照片；公墓守夜与万寿菊花径的现代彩色照片仍未取到",
-  "license_short": "CC0",
+  "note": "黑白照片翻拍，馆方最大尺寸 976×800；画面有一位妇人侧脸。同组：0493.0005（object/2545849，老妇人与供桌，891×800）、0493.0007（object/2545859，Gösta Montell 摄，房间全景，见 dia-de-muertos-13）。这是 1930 年代墨西哥家中祭坛的实景，不是现代彩色照片；公墓守夜与万寿菊花径的现代彩色照片仍未取到｜2026-10-31 v4 核查：馆方页面署名 Apenes, Ola（无问号），无拍摄年份、未写考察队；1934–35 年只属于同组 0493.0007（Montell）。",
+  "license_short": "公有领域标记",
   "route": "3",
-  "author_short": "Ola Apenes[馆方标注存疑「?」]；瑞典第二次墨西哥考察系列"
+  "author_short": "Ola Apenes；斯德哥尔摩民族学博物馆藏",
+  "license_note_v4": "2026-10-31 v4：馆方藏品页与 Europeana 标注不一致时，按馆方页面（权利方）标注，取较严的一种；署名照旧。"
  },
  {
   "id": "img-dia-de-muertos-11",
@@ -726,18 +728,19 @@
   "subject": "玻利维亚贝尼省 Riberalta 的诸圣节（Todos Santos）：公墓里的坟头插满白十字架，绕着蓝、白、粉的纸花环，树荫下一家家人守在亲人坟前——馆方说明「Firande av Alla Helgons Dag i Riberalta med blomsterprydd kyrkogård」（在 Riberalta 庆祝诸圣节，花饰公墓）",
   "author": "Sven-Erik Isacsson（1947–2001，民族学家，哥德堡民族学博物馆馆长）",
   "year": "1980（馆方记录 1980-10-02；目录卡 1981）",
-  "license": "CC BY（馆方藏品页图像旁为 CC BY 徽标，链接 creativecommons.org/licenses/by/…；Europeana 记录 edmRights 标为 CC0 1.0）",
-  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license": "CC BY-NC-ND 2.5（馆方藏品页图像徽标链接 creativecommons.org/licenses/by-nc-nd/2.5/；页脚另有一行「Erkännande (cc-by)」，范围不明，按图像徽标算，2026-10-31 两路核查）。不在本站许可范围内，页面不用。",
+  "license_url": "http://creativecommons.org/licenses/by-nc-nd/2.5/",
   "url_page": "https://collections.smvk.se/carlotta-vkm/web/object/116006",
   "url_file": "https://collections.smvk.se/carlotta-vkm/web/image/zoom/2193244/image.jpg",
   "source_name": "Världskulturmuseet（Museum of World Culture, Gothenburg）– Carlotta，图像档案号 4374D（经 Europeana 检索到，记录 /91609/SMVK_VKM_fotografi_116006）",
   "width": 1000,
   "height": 662,
-  "status": "ok",
+  "status": "rejected-license",
   "note": "馆方最大尺寸 1000×662，彩色幻灯片翻拍。Riberalta 在玻利维亚亚马逊低地（贝尼省），不是安第斯高原，图注需写明；画面中有人物但为远景背影。t'anta wawa 面包特写仍未取到",
-  "license_short": "CC0",
+  "license_short": "CC BY-NC-ND 2.5（不可用）",
   "route": "3",
-  "author_short": "Sven-Erik Isacsson"
+  "author_short": "Sven-Erik Isacsson",
+  "license_note_v4": "2026-10-31 v4：馆方藏品页与 Europeana 标注不一致时，按馆方页面（权利方）标注，取较严的一种；署名照旧。"
  },
  {
   "id": "img-tihar-2",
@@ -775,9 +778,10 @@
   "height": 718,
   "status": "ok",
   "note": "黑白藏品照（1000×718，带比例尺），是 1960 年代乡村的人形 / 动物形 pan de muerto，不是今日面包店常见的圆形撒糖「骨头」面包；若版面需要彩色现代面包，仍未取到开放许可图",
-  "license_short": "CC0",
+  "license_short": "CC BY 4.0",
   "route": "3",
-  "author_short": "藏品摄影：Etnografiska museet / Statens museer för världskultur；采"
+  "author_short": "斯德哥尔摩民族学博物馆（藏品摄影）",
+  "license_note_v4": "2026-10-31 v4：馆方藏品页与 Europeana 标注不一致时，按馆方页面（权利方）标注，取较严的一种；署名照旧。"
  },
  {
   "id": "img-tihar-3",
@@ -803,9 +807,9 @@
   "id": "img-todos-santos-andes-3",
   "node": "todos-santos-andes",
   "file": "todos-santos-andes-3.jpg",
-  "subject": "1905 年诸圣节（Todos Santos），秘鲁安第斯山区 Santa Rosa 的公墓：盖丘亚人披着斗篷、撑着黑伞聚在土坯墙围起的墓园里，远处山脊下立着十字架——馆方目录卡：「Quichuaindianer på Allhelgonadagen vid kyrkogård」（诸圣节当天在公墓的盖丘亚印第安人）",
+  "subject": "1904 或 1905 年诸圣节（Todos Santos），秘鲁安第斯山区 Santa Rosa 的公墓：盖丘亚人披着斗篷、撑着黑伞聚在土坯墙围起的墓园里，远处山脊下立着十字架——馆方目录卡：「Quichuaindianer på Allhelgonadagen vid kyrkogård」（诸圣节当天在公墓的盖丘亚印第安人）",
   "author": "Erland Nordenskiöld（1877–1932），瑞典 1904–1905 年秘鲁—玻利维亚考察队",
-  "year": "1905",
+  "year": "1904 或 1905（馆方标「1904 [?]; 1905 [?]」）",
   "license": "Public Domain Mark 1.0（馆方藏品页标 creativecommons.org/publicdomain/mark/1.0/；Europeana 记录 edmRights 标为 CC0 1.0）",
   "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
   "url_page": "https://collections.smvk.se/carlotta-vkm/web/object/1270554",
@@ -815,9 +819,10 @@
   "height": 800,
   "status": "ok",
   "note": "竖幅，馆方最大尺寸 622×800，玻璃底片扫描、黑白。同系列 002923（object/1882111，816×800，PDM）为同一墓园的盖丘亚人近景，目录卡注「这些印第安人是基督徒，但同时保留许多旧有观念」；002480（object/1270538）「Invånare vid kyrkogård」。地点 Santa Rosa 据馆方记录在秘鲁（考察队 1904–05 年在普诺地区 Ollachea 一带活动）",
-  "license_short": "CC0",
+  "license_short": "公有领域标记",
   "route": "3",
-  "author_short": "Erland Nordenskiöld，瑞典 1904–1905 年秘鲁—玻利维亚考察队"
+  "author_short": "Erland Nordenskiöld，瑞典 1904–1905 年秘鲁—玻利维亚考察队",
+  "license_note_v4": "2026-10-31 v4：馆方藏品页与 Europeana 标注不一致时，按馆方页面（权利方）标注，取较严的一种；署名照旧。"
  },
  {
   "id": "img-dia-de-muertos-13",
@@ -826,18 +831,19 @@
   "subject": "1934–35 年墨西哥亡灵节家中祭坛全景：土屋里烛光映着铺白布的供桌，桌上桌下摆着面包与陶罐，一位妇人坐在供桌旁的草席上——馆方目录卡：「Altare med offer till de döda. Dylika finnas i varje hus」（给亡者的祭坛，家家都有），参见 G. Montell《Mexikanskt》第 112 页",
   "author": "Gösta Montell（1899–1975，瑞典考古学家、民族学家），瑞典第二次墨西哥考察（1934–1935）",
   "year": "1934–1935",
-  "license": "CC BY（馆方藏品页图像旁为 CC BY 徽标，链接 creativecommons.org/licenses/by/…；Europeana 记录 edmRights 标为 CC0 1.0）",
-  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license": "CC BY-NC-ND 4.0（馆方藏品页图像徽标链接 creativecommons.org/licenses/by-nc-nd/4.0/，2026-10-31 两路核查确认；早先记成 CC BY 有误）。不在本站许可范围内，v4 起页面不用。",
+  "license_url": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
   "url_page": "https://collections.smvk.se/carlotta-em/web/object/2545859",
   "url_file": "https://collections.smvk.se/carlotta-em/web/image/zoom/2545862/0493.0007.jpg",
   "source_name": "Etnografiska museet / Statens museer för världskultur – Carlotta，图像档案号 0493.0007（经 Europeana 检索到，记录 /91627/SMVK_EM_fotografi_2545859）",
   "width": 1000,
   "height": 683,
-  "status": "ok",
+  "status": "rejected-license",
   "note": "黑白，馆方最大尺寸 1000×683，地点未注明（同图集前两张为 Milpa Alta）。另有同馆 0482.0023（object/2348377，Ola Apenes 摄，「De dödas dag. Dia de Muertos」：夜里一群戴草帽的男子围着一具纸骷髅，1000×721，CC0/馆方页面见下）可作狂欢面向的配图，但人物正脸多",
-  "license_short": "CC0",
+  "license_short": "CC BY-NC-ND 4.0（不可用）",
   "route": "3",
-  "author_short": "Gösta Montell，瑞典第二次墨西哥考察"
+  "author_short": "Gösta Montell，瑞典第二次墨西哥考察",
+  "license_note_v4": "2026-10-31 v4：馆方藏品页与 Europeana 标注不一致时，按馆方页面（权利方）标注，取较严的一种；署名照旧。"
  },
  {
   "id": "img-hero-1",

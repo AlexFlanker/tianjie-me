@@ -91,6 +91,38 @@
     if (RM.on) { rs.forEach(function (el) { el.classList.add('in'); }); return; }
     requestAnimationFrame(function () { rs.forEach(function (el, i) { el.style.transitionDelay = (0.15 + Math.min(i * 0.08, 0.4)).toFixed(2) + 's'; el.classList.add('in'); }); });
   })();
+  /* v4 卷首：万寿菊花瓣路——从左下角引到照片；按实际像素画（点永远是圆的），入场时从左往右铺开一次 */
+  (function initPath() {
+    var h = $('#top'), svg = $('#h4path'), fig = $('#h4fig'); if (!h || !svg || !fig) return;
+    var pp = $('.pp', svg), pl = $('.pl', svg);
+    function offIn(el, anc) { var x = 0, y = 0, e = el; while (e && e !== anc) { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent; } if (e !== anc) { var a = anc.getBoundingClientRect(), r = el.getBoundingClientRect(); return { x: r.left - a.left, y: r.top - a.top }; } return { x: x, y: y }; }
+    function draw() {
+      // 用版面位置（offset* 沿 offsetParent 链累加到卷首，不含 .rise 的入场位移）算，入场动画进行中也不会画歪；
+      // Chrome 会把带 transform 的祖先当 offsetParent，所以不能只加一层
+      var img = $('img', fig) || fig, tx = $('.h4txt', h); if (!tx) return;
+      var W = h.offsetWidth, H = h.offsetHeight; if (!W || !H) return;
+      var io = offIn(img, h), to = offIn(tx, h);
+      var hr = { left: 0, top: 0 }, ir = { left: io.x, top: io.y, width: img.offsetWidth, height: img.offsetHeight }, tr = { bottom: to.y + tx.offsetHeight };
+      svg.setAttribute('viewBox', '0 0 ' + W.toFixed(0) + ' ' + H.toFixed(0)); svg.setAttribute('width', W.toFixed(0)); svg.setAttribute('height', H.toFixed(0));
+      var stacked = ir.top >= tr.bottom - 1, x0 = -12, x1, y1, d;
+      // 并排：在内容下方 56 px 处横着走来（贴着内容而不是贴着卷首底边，矮屏与封面也看得见起点），在字与图之间拐上去，从左边进照片（不穿过图注和按钮）
+      if (!stacked) { var fo = offIn(fig, h), cb = Math.max(tr.bottom, fo.y + fig.offsetHeight), y0 = Math.min(H - 40, cb + 56); x1 = ir.left - hr.left + 10; y1 = ir.top - hr.top + ir.height * 0.7;
+        d = 'M ' + x0 + ' ' + y0.toFixed(1) + ' C ' + (W * 0.24).toFixed(1) + ' ' + (y0 - 2).toFixed(1) + ', ' + (x1 - W * 0.1).toFixed(1) + ' ' + (y0 + 4).toFixed(1) + ', ' + x1.toFixed(1) + ' ' + y1.toFixed(1); }
+      // 上下叠：在字和图之间的空当里横穿，拐进照片顶边
+      else { var ym = (tr.bottom + ir.top) / 2 - hr.top; x1 = ir.left - hr.left + ir.width * 0.5; y1 = ir.top - hr.top + 8;
+        d = 'M ' + x0 + ' ' + ym.toFixed(1) + ' C ' + (W * 0.3).toFixed(1) + ' ' + (ym - 2).toFixed(1) + ', ' + (x1 - 56).toFixed(1) + ' ' + ym.toFixed(1) + ', ' + x1.toFixed(1) + ' ' + y1.toFixed(1); }
+      pp.setAttribute('d', d);
+      var L = pp.getTotalLength ? pp.getTotalLength() : 0, s = '', rg = stacked ? 12 : 16;
+      [0.34, 0.68].forEach(function (u) { if (!L) return; var p = pp.getPointAtLength(L * u); s += '<circle class="g" cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + rg + '"/><circle class="c" cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="5"/>'; });
+      pl.innerHTML = s;
+    }
+    draw(); h.classList.add('pathon');
+    var rz = 0; window.addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(draw, 120); });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
+    window.addEventListener('load', draw);
+    var im0 = $('img', fig); if (im0 && !im0.complete) im0.addEventListener('load', draw);
+    fig.addEventListener('transitionend', function (e) { if (e.target === fig && e.propertyName === 'transform') draw(); });
+  })();
   (function initTagline() {
     var sec = $('#tagsec'); if (!sec) return;
     var ws = $$('.tagl .w', sec), rest = $('.tagrest', sec), tick = false;
@@ -180,7 +212,7 @@
       items.forEach(function (f, i) {
         var show = !FSM || FKEY.indexOf(f.id) >= 0, x = fx(isoDoy(f.date)), y = fy(f.lat), w = show ? f.name.length * LF + 6 : 0, flip = x + 9 + w > FW - 8, lx = flip ? x - 9 - w : x + 9, ly = y + 4;
         if (show) { for (var k = 0; k < 12; k++) { var clash = placed.some(function (p) { return ly - LF < p.y + (p.h || LS) - 2 && ly > p.y - 2 && lx < p.x + p.w && lx + w > p.x; }); if (!clash) break; ly += LS; } placed.push({ x: lx, y: ly - LF, w: w, h: LS }); }
-        s += '<g class="lg" data-fid="' + f.id + '"' + (f.node ? ' data-open="' + f.node + '" role="link"' : '') + ' style="opacity:0;animation:lit .45s ' + (0.3 + i * 0.06).toFixed(2) + 's forwards"><circle class="halo" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="9"/><circle class="lampd" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="3.6"/>' + (ly !== y + 4 ? '<line x1="' + (x + 4).toFixed(1) + '" y1="' + y.toFixed(1) + '" x2="' + (flip ? lx + w : lx).toFixed(1) + '" y2="' + (ly - 4) + '" stroke="#F3EDDE" stroke-opacity=".45" stroke-width="1"/>' : '') + (show ? '<text class="lab" x="' + lx.toFixed(1) + '" y="' + ly + '">' + f.name + '</text>' : '') + '</g>';
+        s += '<g class="lg ' + (f.cat || '') + '" data-fid="' + f.id + '"' + (f.node ? ' data-open="' + f.node + '" role="link"' : '') + ' style="opacity:0;animation:lit .45s ' + (0.3 + i * 0.06).toFixed(2) + 's forwards"><circle class="halo" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="9"/><circle class="lampd" cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="3.6"/>' + (ly !== y + 4 ? '<line x1="' + (x + 4).toFixed(1) + '" y1="' + y.toFixed(1) + '" x2="' + (flip ? lx + w : lx).toFixed(1) + '" y2="' + (ly - 4) + '" stroke="#F3EDDE" stroke-opacity=".45" stroke-width="1"/>' : '') + (show ? '<text class="lab" x="' + lx.toFixed(1) + '" y="' + ly + '">' + f.name + '</text>' : '') + '</g>';
       });
       s += '<g class="fscrub" id="fscrub"><line class="fs-glow" y1="' + FT + '" y2="' + (FH - FB) + '"/><line class="fs-line" y1="' + FT + '" y2="' + (FH - FB) + '"/><circle class="fs-dot" r="5"/><rect class="fs-knob" width="14" height="22" rx="7"/><text class="fs-date"></text></g>';
       fov.innerHTML = s;
@@ -283,7 +315,7 @@
     $$('.cdot', stg).forEach(function (d) { dots[d.getAttribute('data-city')] = d; });
     $$('.dbrow', stg).forEach(function (r) { rows[r.getAttribute('data-city')] = r; });
     var stepDays = STEPS.map(function (s) { return s.day; });
-    var litBefore = []; (function () { var acc = {}; for (var i = 0; i < N; i++) { litBefore.push(Object.assign({}, acc)); DAYS[i].lit.forEach(function (c) { acc[c] = 1; }); } })();
+    var litBefore = [], wasCat = []; (function () { var acc = {}, ac = {}; for (var i = 0; i < N; i++) { litBefore.push(Object.assign({}, acc)); wasCat.push(Object.assign({}, ac)); DAYS[i].lit.forEach(function (c) { acc[c] = 1; ac[c] = (DAYS[i].cat || {})[c] || 'none'; }); } })();
     function toH(t) { var p = t.split(':'); return parseInt(p[0], 10) + parseInt(p[1], 10) / 60; }
     function shortHm(h) { var m = Math.round(h * 60); return Math.floor(m / 60) + 'h' + ('0' + (m % 60)).slice(-2) + 'm'; }
     function stepAtOrBefore(di) { var k = 0; for (var i = 0; i < STEPS.length; i++) if (STEPS[i].day <= di) k = i; return k; }
@@ -376,7 +408,7 @@
     function fillCard(k) {
       var s = STEPS[k];
       el.no.textContent = ('0' + (k + 1)).slice(-2) + ' / ' + ('0' + STEPS.length).slice(-2); el.kick.textContent = s.kicker; el.title.textContent = s.title; el.text.textContent = s.text;
-      el.chips.innerHTML = s.fest.map(function (f) { return '<a class="chip a" href="#n-' + f[0] + '" data-open="' + f[0] + '">' + f[1] + '</a>'; }).join('');
+      el.chips.innerHTML = s.fest.map(function (f) { return '<a class="chip a ' + (f[2] || '') + '" href="#n-' + f[0] + '" data-open="' + f[0] + '">' + f[1] + '</a>'; }).join('');
       if (el.img && s.img) { el.img.src = s.img; el.img.alt = s.alt; var cs = el.cap.querySelector('.cs'), cr = el.cap.querySelector('.cr'); if (cs) cs.textContent = s.cap; if (cr) cr.textContent = s.cred; }
       fitCard();
     }
@@ -419,8 +451,8 @@
         el.basis.textContent = '日出 ' + mc.rise + '，日落 ' + mc.set + '（当地标准时，不含夏令时）· ' + latTxt(mcity.lat) + ' · ' + mcity.koppen; fitCard();
         Object.keys(day.cities).forEach(function (cid) {
           var c = day.cities[cid], r = rows[cid], on = day.lit.indexOf(cid) >= 0;
-          if (r) { var rs = toH(c.rise), ss = toH(c.set), bar = $('.dbb', r); bar.style.left = (rs / 24 * 100).toFixed(2) + '%'; bar.style.width = ((ss - rs) / 24 * 100).toFixed(2) + '%'; $('.dbv', r).textContent = shortHm(c.dl); r.title = D.cities[cid].name_zh + '：日出 ' + c.rise + '，日落 ' + c.set + '（当地标准时）'; r.classList.toggle('lit', on); r.classList.toggle('main', cid === main); $('.lamp', r).classList.toggle('off', !on); }
-          if (dots[cid]) { dots[cid].classList.toggle('on', on); dots[cid].classList.toggle('was', !on && !!litBefore[di][cid]); }
+          if (r) { var rs = toH(c.rise), ss = toH(c.set), bar = $('.dbb', r); bar.style.left = (rs / 24 * 100).toFixed(2) + '%'; bar.style.width = ((ss - rs) / 24 * 100).toFixed(2) + '%'; $('.dbv', r).textContent = shortHm(c.dl); r.title = D.cities[cid].name_zh + '：日出 ' + c.rise + '，日落 ' + c.set + '（当地标准时）'; r.classList.toggle('lit', on); r.classList.toggle('main', cid === main); var lp = $('.lamp', r), lc = on ? (day.cat[cid] || 'none') : ''; lp.classList.toggle('off', !on); ['dead', 'light', 'none'].forEach(function (k) { lp.classList.toggle(k, lc === k); }); }
+          if (dots[cid]) { var ct = on ? (day.cat[cid] || 'none') : (wasCat[di][cid] || ''); dots[cid].classList.toggle('on', on); dots[cid].classList.toggle('was', !on && !!litBefore[di][cid]); ['dead', 'light', 'none'].forEach(function (k) { dots[cid].classList.toggle('c-' + k, ct === k); }); }
         });
         marks.forEach(function (m) { m.classList.toggle('on', parseInt(m.getAttribute('data-step'), 10) === day.step); });
         ruler.setAttribute('aria-valuenow', di); ruler.setAttribute('aria-valuetext', parseInt(md[1], 10) + ' 月 ' + parseInt(md[2], 10) + ' 日' + (onStep ? ' ' + STEPS[day.step].label : ''));
@@ -499,7 +531,7 @@
   (function initLamps() {
     var grid = $('#lgrid'), lensEl = $('#lens'); if (!grid || !lensEl) return;
     var rows = {}; $$('.lrow', grid).forEach(function (r) { rows[r.getAttribute('data-id')] = r; });
-    var tabs = $$('button[data-lens]', lensEl), cur = 'date', note = $('#lensnote');
+    var tabs = $$('button[data-lens]', lensEl), cur = (tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0] || tabs[0]).getAttribute('data-lens'), note = $('#lensnote');
     // 胶囊指示条：两个弹簧（位置、宽度）
     var pill = document.createElement('span'); pill.className = 'pill'; lensEl.insertBefore(pill, lensEl.firstChild);
     var px = new Spring({ damping: 1, response: 0.32, eps: 0.2, onUpdate: function (x) { pill.style.transform = 'translateX(' + x.toFixed(1) + 'px)'; } });

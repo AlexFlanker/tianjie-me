@@ -4,3 +4,5 @@ themes/*/src/dist/
 node_modules/
 .wrangler/
 __pycache__/
+
+extras/*/src/raw_img/

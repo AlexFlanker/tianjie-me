@@ -61,7 +61,7 @@
     var all = D.stage, laneSel = 'south', steps = [], idx = -1;
     var card = $('.card', st), ruler = $('.ruler', st), head = $('.hd', ruler), ph = $('.ph', st), cap = $('.cap', st);
     var imgs = {};
-    all.forEach(function (s) { if (s.img && !imgs[s.img]) { var im = new Image(); im.alt = ''; im.decoding = 'async'; im.loading = 'lazy'; im.src = s.img; if (s.fit === 'contain') im.className = 'contain'; ph.appendChild(im); imgs[s.img] = im; } });
+    all.forEach(function (s) { if (s.img && !imgs[s.img]) { var im = new Image(); im.alt = ''; im.decoding = 'async'; im.loading = 'lazy'; im.src = s.img; if (s.fit === 'contain') { im.className = 'contain'; if (s.pw) im.style.setProperty('--pw', s.pw + 'px'); } ph.appendChild(im); imgs[s.img] = im; } });
     function pick() { steps = all.filter(function (s) { return s.lane === 'both' || s.lane === laneSel; }); st.style.setProperty('--steps', steps.length); }
     function ticks() { ruler.innerHTML = '<div class="hd"></div>'; head = $('.hd', ruler); steps.forEach(function (s, i) { var b = document.createElement('div'); b.className = 'tk'; b.style.left = pos(i) + '%'; b.textContent = s.label; b.addEventListener('click', function () { go(i); }); ruler.appendChild(b); }); }
     function pos(i) { var pad = innerWidth < 700 ? 8 : 5; return steps.length < 2 ? 50 : pad + (100 - 2 * pad) * i / (steps.length - 1); }

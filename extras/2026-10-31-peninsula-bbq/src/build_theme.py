@@ -159,7 +159,7 @@ def data():
     for s in E.STAGE:
         d = {k: s[k] for k in ('id', 'y', 'lane', 'label', 'yr', 'era', 'title', 'text', 'dishes')}
         k = s['img'] if src(s['img']) else 'plate-fire'
-        d['img'] = src(k); d['cap'] = cred(k); d['fit'] = (img(k) or {}).get('fit')
+        d['img'] = src(k); d['cap'] = cred(k); d['fit'] = (img(k) or {}).get('fit'); d['pw'] = round((img(k) or {}).get('w', 0) * 1.5) if d['fit'] else None
         stage.append(d)
     cuts = []
     for c in B['cuts']:

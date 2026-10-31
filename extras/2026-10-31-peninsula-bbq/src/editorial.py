@@ -224,7 +224,7 @@ VS_HEAD = (T('', ''), T('韩牛 Hanwoo', 'Hanwoo'), T('和牛 Wagyu', 'Wagyu'))
 
 # ---------- 地图：半岛与周边节点（美中节点取自 C 路 map） ----------
 MAP_EXTRA = [
-    dict(lat=39.03, lon=125.75, year=1935, city=T('平壤', 'Pyongyang'), text=T('牡丹台松林的露天烤肉已是名物，1935 年因烟害被禁。', 'Open-air grilling in the Moranbong pines is famous enough to be banned for smoke in 1935.'), c='kp'),
+    dict(lat=39.03, lon=125.75, year=1935, dy=-8, city=T('平壤', 'Pyongyang'), text=T('牡丹台松林的露天烤肉已是名物，1935 年因烟害被禁。', 'Open-air grilling in the Moranbong pines is famous enough to be banned for smoke in 1935.'), c='kp'),
     dict(lat=37.26, lon=127.03, year=1956, city=T('水原', 'Suwon'), text=T('华春屋开卖炭火烤牛排骨，后来的「水原王갈비」。', 'Hwachun-ok starts charcoal-grilled short ribs — the future “king galbi.”'), c='kr', minor=True),
     dict(lat=37.57, lon=126.99, year=1983, city=T('首尔', 'Seoul'), text=T('三角洞被称作「五花肉胡同」；马场洞畜产市场 1963 年起承担首都圈约七成的畜产流通。', 'Samgak-dong is “Samgyeopsal Alley”; Majang-dong market (since 1963) handles about 70% of the capital area’s meat.'), c='kr'),
     dict(lat=22.30, lon=114.17, year=2015, city=T('香港', 'Hong Kong'), text=T('12 月韩牛第一次出口，香港至今仍占韩牛出口约八成。', 'First Hanwoo export in December; Hong Kong still takes about 80% of exports.'), c='kr', ta='end', dx=-6),
@@ -256,3 +256,5 @@ MAP_NAME = {
     '上海虹泉路 Hongquan Rd': (T('上海虹泉路', 'Shanghai'), False),
 }
 MAP_DROP = {'北京霍营 Huoying'}
+
+MAP_POS = {'北京朝阳 Beijing Chaoyang': dict(ta='end', dx=-7), '深圳 Shenzhen': dict(dy=12)}

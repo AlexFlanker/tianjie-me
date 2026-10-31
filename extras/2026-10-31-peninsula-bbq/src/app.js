@@ -221,7 +221,7 @@
     var vb = M.vb; svg.setAttribute('viewBox', vb.join(' '));
     svg.innerHTML = '<path class="land" d="' + M.land + '"/>' + M.nodes.map(function (n, i) { return '<g class="node ' + (n.c || '') + '" data-i="' + i + '" transform="translate(' + n.x + ',' + n.y + ')"><circle r="' + (n.r || 3) + '"/><text x="' + (n.dx || 5) + '" y="' + (n.dy || 3) + '" text-anchor="' + (n.ta || 'start') + '"></text></g>'; }).join('');
     var gs = $$('.node', svg);
-    function sc() { var k = M.vb[2] / Math.max(1, svg.clientWidth); gs.forEach(function (g, i) { var n = M.nodes[i]; $('circle', g).setAttribute('r', (n.c === 'kr' || n.c === 'kp' ? 5 : 4) * k); var t = $('text', g); t.style.fontSize = (12 * k) + 'px'; t.style.strokeWidth = (3 * k) + 'px'; t.setAttribute('x', (n.dx || 7) * k); t.setAttribute('y', 4 * k); }); }
+    function sc() { var k = M.vb[2] / Math.max(1, svg.clientWidth); gs.forEach(function (g, i) { var n = M.nodes[i]; $('circle', g).setAttribute('r', (n.c === 'kr' || n.c === 'kp' ? 5 : 4) * k); var t = $('text', g); t.style.fontSize = (12 * k) + 'px'; t.style.strokeWidth = (3 * k) + 'px'; t.setAttribute('x', (n.dx || 7) * k); t.setAttribute('y', (n.dy || 4) * k); }); }
     addEventListener('resize', sc);
     function upd() { yr = +rng.value; var last = null; gs.forEach(function (g, i) { var n = M.nodes[i], on = n.year <= yr; g.classList.toggle('off', !on); g.classList.toggle('on', on && n.year > yr - 6); $('text', g).textContent = L(n.city); g.classList.toggle('hide-l', !!n.minor && !(on && n.year > yr - 6)); if (on && (!last || n.year >= last.year)) last = n; });
       var cnt = M.nodes.filter(function (n) { return n.year <= yr; }).length;

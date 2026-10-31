@@ -115,7 +115,7 @@ def photo_row(keys):
 def ch_world():
     return (f'<section class="ch" id="world">{plate("world", "plate-world")}<div class="wide"><p class="lede fade">{bi(E.CH["world"]["lede"])}</p>'
             f'<div class="sec">{sec_h("MAP · 1900–2026", T("扩张地图", "Expansion map"), T("拖动年份或按 ▶ 播放；点任一节点看说明。", "Drag the year or press ▶; tap any point."))}'
-            f'<div><div class="map" id="map"><div class="hud"></div><svg></svg></div><div class="mapctl"><button class="pill" data-act="play" type="button">▶</button><input type="range" min="1900" max="2026" value="2026" step="1" aria-label="Year"></div><div class="mapnote"></div></div></div>'
+            f'<div><div class="map" id="map"><div class="hud"></div><svg></svg></div><div class="maphint small">{bi(T("← 左右滑动地图，美国在右边 →", "← Swipe the map; the US is on the right →"))}</div><div class="mapctl"><button class="pill" data-act="play" type="button">▶</button><input type="range" min="1900" max="2026" value="2026" step="1" aria-label="Year"></div><div class="mapnote"></div></div></div>'
             + photo_row(['w-la', 'w-cote', 'w-yanji', 'w-baekjeong']) +
             f'<div class="sec">{sec_h("US / CN", T("两条曲线", "Two curves"), E.WORLD_NOTE)}'
             f'<div class="twin"><div class="side"><h4><span class="sticker red">USA</span>{bi(T("美国：从社区食堂到纳斯达克", "US: from canteen to Nasdaq"))}</h4>{phases("us")}</div>'
@@ -191,7 +191,7 @@ def data():
         for m in C[k]['map']:
             if m.get('note') or m['city'] in E.MAP_DROP: continue
             x, y = geo.proj(m['lat'], m['lon']); nm, minor = E.MAP_NAME[m['city']]
-            nodes.append(dict(x=x, y=y, year=m['year'], city=nm, minor=minor, text=T(m['zh'], m['en']), c=k))
+            nd = dict(x=x, y=y, year=m['year'], city=nm, minor=minor, text=T(m['zh'], m['en']), c=k); nd.update(E.MAP_POS.get(m['city'], {})); nodes.append(nd)
     nodes += E.MAP_EXTRA
     for n in nodes:
         if 'x' not in n: n['x'], n['y'] = geo.proj(n['lat'], n['lon'])

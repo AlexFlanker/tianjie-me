@@ -13,6 +13,8 @@ def bi(o, tag='span', raw=True):
 def T(z, e): return {'zh': z, 'en': e}
 
 A, B, C = J('hist_A.json'), J('hanwoo_B.json'), J('market_C.json')
+import fixes
+print('  核查改正', fixes.apply(B, C), '条全部命中')
 IMGS = {im['key']: im for im in json.load(open(os.path.join(HERE, 'images.json'), encoding='utf-8'))} if os.path.exists(os.path.join(HERE, 'images.json')) else {}
 def img(k): return IMGS.get(k)
 def src(k): im = img(k); return im['file'] if im else None
@@ -36,7 +38,7 @@ def hero():
 
 def thesis():
     t = E.THESIS
-    zl = ' '.join(f'<span class="w{" hot" if hot else ""}">{esc(w)}</span>' for w, hot in t['zh'])
+    zl = ''.join(f'<span class="w{" hot" if hot else ""}">{esc(w)}</span>' for w, hot in t['zh'])
     el = ' '.join(f'<span class="w{" hot" if hot else ""}">{esc(w)}</span>' for w, hot in t['en'])
     nums = ''.join(f'<div class="n fade"><b>{esc(n["zh"])}</b><span>{bi(n["k"])}</span></div>' for n in t['nums'])
     return f'<section class="thesis"><div class="wide"><div class="lines zh">{zl}</div><div class="lines en">{el}</div><div class="nums">{nums}</div></div></section>'
@@ -115,11 +117,11 @@ def photo_row(keys):
 def ch_world():
     return (f'<section class="ch" id="world">{plate("world", "plate-world")}<div class="wide"><p class="lede fade">{bi(E.CH["world"]["lede"])}</p>'
             f'<div class="sec">{sec_h("MAP · 1900–2026", T("扩张地图", "Expansion map"), T("拖动年份或按 ▶ 播放；点任一节点看说明。", "Drag the year or press ▶; tap any point."))}'
-            f'<div><div class="map" id="map"><div class="hud"></div><svg></svg></div><div class="maphint small">{bi(T("← 左右滑动地图，美国在右边 →", "← Swipe the map; the US is on the right →"))}</div><div class="mapctl"><button class="pill" data-act="play" type="button">▶</button><input type="range" min="1900" max="2026" value="2026" step="1" aria-label="Year"></div><div class="mapnote"></div></div></div>'
+            f'<div><div class="map" id="map"><div class="hud"></div><div class="panels"><figure data-p="asia"><figcaption></figcaption><svg></svg></figure><figure data-p="usa"><figcaption></figcaption><svg></svg></figure></div></div><div class="mapctl"><button class="pill" data-act="play" type="button">▶</button><input type="range" min="1900" max="2026" value="2026" step="1" aria-label="Year"></div><div class="mapnote"></div></div></div>'
             + photo_row(['w-la', 'w-cote', 'w-yanji', 'w-baekjeong']) +
             f'<div class="sec">{sec_h("US / CN", T("两条曲线", "Two curves"), E.WORLD_NOTE)}'
             f'<div class="twin"><div class="side"><h4><span class="sticker red">USA</span>{bi(T("美国：从社区食堂到纳斯达克", "US: from canteen to Nasdaq"))}</h4>{phases("us")}</div>'
-            f'<div class="side"><h4><span class="sticker">CHINA</span>{bi(T("中国：从延边炭火到本土赛道", "China: from Yanbian charcoal to a local category"))}</h4>{phases("cn")}</div></div></div>'
+            f'<div class="side"><h4><span class="sticker">CHINA</span>{bi(T("中国：从建交后的连锁到本土赛道", "China: from post-1992 chains to a local category"))}</h4>{phases("cn")}</div></div></div>'
             '</div></section>')
 
 def ch_end():
@@ -178,26 +180,29 @@ def data():
                           note=E.GRILL_NOTE, done=T('可以吃了：' + c['how_zh'], 'Ready. ' + c['how_en']),
                           img=src('grill-' + gid) or src('grill-beef'), cap=cred('grill-' + gid) if src('grill-' + gid) else cred('grill-beef')))
     yrs = list(range(2004, 2027))
-    imp = {x['year']: x['value'] for x in B['series']['imports']}; ss = {x['year']: x['pct'] for x in B['series']['selfsuff']}
+    imp = {x['year']: x['value'] for x in B['series']['imports'] if x['year'] != 2025}   # 2025 只有 1–10 月，不画
+    ss = {x['year']: x['pct'] for x in B['series']['selfsuff']}
     series = dict(title=E.SERIES['title'], l1=E.SERIES['l1'], l2=E.SERIES['l2'], years=yrs, imports=[imp.get(y) for y in yrs], selfsuff=[ss.get(y) for y in yrs], imax=500, focus=2008, events=E.SERIES['events'])
     ops = []
     for i, o in enumerate(B['ops']):
         facts = [dict(zh=f['zh'], en=f['en'], src=(f.get('sources') or [{}])[0].get('url')) for f in o['facts'] if f.get('conf') != '低']
         ops.append(dict(id=o['id'], title=T(o['title_zh'].split('：')[0], o['title_en'].split(':')[0]), one=T((o['title_zh'].split('：') + [''])[1], (o['title_en'].split(':') + [''])[1].strip()), facts=facts, img=src('ops-' + o['id']), cap=cred('ops-' + o['id'])))
     table = [dict(title=t['title'], text=t['text'], img=src(t['img']), cap=cred(t['img'])) for t in E.TABLE]
-    # 地图节点
+    # 地图节点：两块分图（东亚 / 美国本土 + 夏威夷插图）
     nodes = []
     for k in ('us', 'cn'):
         for m in C[k]['map']:
             if m.get('note') or m['city'] in E.MAP_DROP: continue
-            x, y = geo.proj(m['lat'], m['lon']); nm, minor = E.MAP_NAME[m['city']]
-            nd = dict(x=x, y=y, year=m['year'], city=nm, minor=minor, text=T(m['zh'], m['en']), c=k); nd.update(E.MAP_POS.get(m['city'], {})); nodes.append(nd)
-    nodes += E.MAP_EXTRA
+            nm, minor = E.MAP_NAME[m['city']]
+            nd = dict(lat=m['lat'], lon=m['lon'], year=m['year'], city=nm, minor=minor, text=T(m['zh'], m['en']), c=k); nd.update(E.MAP_POS.get(m['city'], {})); nodes.append(nd)
+    nodes += [dict(n) for n in E.MAP_EXTRA]
     for n in nodes:
-        if 'x' not in n: n['x'], n['y'] = geo.proj(n['lat'], n['lon'])
+        n['p'], n['x'], n['y'] = geo.place(n.pop('lat'), n.pop('lon'))
     nodes.sort(key=lambda n: n['year'])
     return dict(meta=dict(title_zh=E.META['title_zh'], title_en=E.META['title_en']), stage=stage, cuts=cuts, grill=grill, series=series, ops=ops, table=table,
-                map=dict(vb=geo.vb(), land=geo.land(), nodes=nodes))
+                map=dict(panels=[dict(id='asia', name=T('东亚', 'East Asia'), vb=geo.ASIA.vb(), land=geo.ASIA.land()),
+                                 dict(id='usa', name=T('美国', 'United States'), vb=geo.USA.vb(), land=geo.USA.land(), inset=dict(geo.hawaii_inset(), name=T('夏威夷', 'Hawaii')))],
+                         nodes=nodes))
 
 def main():
     body = hero() + thesis() + nav() + '<main>' + ch_fire() + ch_cut() + ch_table() + ch_world() + ch_end() + '</main>'

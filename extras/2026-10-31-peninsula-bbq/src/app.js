@@ -214,22 +214,35 @@
     render(); addEventListener('langchange', render);
   })();
 
-  /* ---------- 03 WORLD：扩张地图 ---------- */
+  /* ---------- 03 WORLD：扩张地图（两块分图：东亚 / 美国本土 + 夏威夷插图） ---------- */
   (function () {
     var m = $('#map'); if (!m || !D.map) return;
-    var M = D.map, svg = $('svg', m), hud = $('.hud', m), rng = $('input', m.parentNode), note = $('.mapnote', m.parentNode), yr = +rng.value, play = $('[data-act=play]', m.parentNode), pt = 0;
-    var vb = M.vb; svg.setAttribute('viewBox', vb.join(' '));
-    svg.innerHTML = '<path class="land" d="' + M.land + '"/>' + M.nodes.map(function (n, i) { return '<g class="node ' + (n.c || '') + '" data-i="' + i + '" transform="translate(' + n.x + ',' + n.y + ')"><circle r="' + (n.r || 3) + '"/><text x="' + (n.dx || 5) + '" y="' + (n.dy || 3) + '" text-anchor="' + (n.ta || 'start') + '"></text></g>'; }).join('');
-    var gs = $$('.node', svg);
-    function sc() { var k = M.vb[2] / Math.max(1, svg.clientWidth); gs.forEach(function (g, i) { var n = M.nodes[i]; $('circle', g).setAttribute('r', (n.c === 'kr' || n.c === 'kp' ? 5 : 4) * k); var t = $('text', g); t.style.fontSize = (12 * k) + 'px'; t.style.strokeWidth = (3 * k) + 'px'; t.setAttribute('x', (n.dx || 7) * k); t.setAttribute('y', (n.dy || 4) * k); }); }
-    addEventListener('resize', sc);
-    function upd() { yr = +rng.value; var last = null; gs.forEach(function (g, i) { var n = M.nodes[i], on = n.year <= yr; g.classList.toggle('off', !on); g.classList.toggle('on', on && n.year > yr - 6); $('text', g).textContent = L(n.city); g.classList.toggle('hide-l', !!n.minor && !(on && n.year > yr - 6)); if (on && (!last || n.year >= last.year)) last = n; });
+    var M = D.map, hud = $('.hud', m), rng = $('input', m.parentNode), note = $('.mapnote', m.parentNode), yr = +rng.value, play = $('[data-act=play]', m.parentNode), pt = 0;
+    var P = {}, gs = [];
+    M.panels.forEach(function (p) {
+      var fig = $('figure[data-p="' + p.id + '"]', m); if (!fig) return;
+      var svg = $('svg', fig); svg.setAttribute('viewBox', p.vb.join(' ')); svg.setAttribute('role', 'img');
+      var html = '<path class="land" d="' + p.land + '"/>';
+      if (p.inset) { var I = p.inset; html += '<rect class="inset" x="' + I.x + '" y="' + I.y + '" width="' + I.w + '" height="' + I.h + '"/><g transform="translate(' + I.dx + ',' + I.dy + ')"><path class="land" d="' + I.land + '"/></g><text class="insetl" data-zh="' + esc(I.name.zh) + '" data-en="' + esc(I.name.en) + '" x="' + (I.x + 3) + '" y="' + (I.y - 3) + '"></text>'; }
+      M.nodes.forEach(function (n, i) { if (n.p !== p.id) return; html += '<g class="node ' + (n.c || '') + '" data-i="' + i + '" transform="translate(' + n.x + ',' + n.y + ')"><circle r="3"/><text text-anchor="' + (n.ta || 'start') + '"></text></g>'; });
+      svg.innerHTML = html; P[p.id] = { svg: svg, cap: $('figcaption', fig), p: p };
+    });
+    gs = $$('.node', m);
+    function sc() {
+      for (var id in P) { var o = P[id], k = o.p.vb[2] / Math.max(1, o.svg.clientWidth);
+        $$('.node', o.svg).forEach(function (g) { var n = M.nodes[+g.getAttribute('data-i')]; $('circle', g).setAttribute('r', (n.c === 'kr' || n.c === 'kp' ? 5 : 4) * k); var t = $('text', g); t.style.fontSize = (12 * k) + 'px'; t.style.strokeWidth = (3 * k) + 'px'; t.setAttribute('x', (n.dx || 7) * k); t.setAttribute('y', (n.dy || 4) * k); });
+        var il = $('.insetl', o.svg); if (il) { il.style.fontSize = (11 * k) + 'px'; il.setAttribute('y', +o.p.inset.y - 4 * k); }
+      }
+    }
+    function labels() { for (var id in P) { var o = P[id]; o.cap.textContent = L(o.p.name); var il = $('.insetl', o.svg); if (il) il.textContent = L({ zh: il.getAttribute('data-zh'), en: il.getAttribute('data-en') }); } }
+    var rt; addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(sc, 80); });
+    function upd() { yr = +rng.value; var last = null; gs.forEach(function (g) { var n = M.nodes[+g.getAttribute('data-i')], on = n.year <= yr, fresh = on && n.year > yr - 6; g.classList.toggle('off', !on); g.classList.toggle('on', fresh); $('text', g).textContent = L(n.city); g.classList.toggle('hide-l', !!n.minor && !fresh); if (on && (!last || n.year >= last.year)) last = n; });
       var cnt = M.nodes.filter(function (n) { return n.year <= yr; }).length;
-      hud.innerHTML = yr + '<span>' + esc(L({ zh: '已标出 ' + cnt + ' 个节点', en: cnt + ' milestones on the map' })) + '</span>';
+      hud.innerHTML = '<b>' + yr + '</b><span>' + esc(L({ zh: '已标出 ' + cnt + ' 个节点 · 红点是最近 5 年亮起的', en: cnt + ' milestones · red = lit in the last 5 years' })) + '</span>';
       note.innerHTML = last ? '<b>' + last.year + ' · ' + esc(L(last.city)) + '</b> — ' + L(last.text) : ''; }
     gs.forEach(function (g) { g.style.cursor = 'pointer'; g.addEventListener('click', function () { var n = M.nodes[+g.getAttribute('data-i')]; note.innerHTML = '<b>' + n.year + ' · ' + esc(L(n.city)) + '</b> — ' + L(n.text); }); });
     rng.addEventListener('input', upd);
     if (play) play.addEventListener('click', function () { if (pt) { clearInterval(pt); pt = 0; play.textContent = '▶'; return; } if (+rng.value >= +rng.max) rng.value = rng.min; play.textContent = '❚❚'; pt = setInterval(function () { rng.value = +rng.value + 1; upd(); if (+rng.value >= +rng.max) { clearInterval(pt); pt = 0; play.textContent = '▶'; } }, RM ? 30 : 160); });
-    addEventListener('langchange', upd); sc(); upd();
+    addEventListener('langchange', function () { labels(); upd(); }); labels(); sc(); upd();
   })();
 })();

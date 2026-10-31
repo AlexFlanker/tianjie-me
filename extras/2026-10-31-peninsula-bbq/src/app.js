@@ -72,7 +72,7 @@
       for (var k in imgs) imgs[k].classList.toggle('on', k === s.img);
       card.classList.add('out');
       setTimeout(function () {
-        card.innerHTML = '<div class="mv"><div class="yr">' + esc(L(s.yr || s.label)) + '</div><div class="era">' + esc(L(s.era)) + '</div><h3>' + esc(L(s.title)) + '</h3><p>' + L(s.text) + '</p>' +
+        var yt = L(s.yr || s.label); card.innerHTML = '<div class="mv"><div class="yr' + (yt.length > 8 ? ' long' : '') + '">' + esc(yt) + '</div><div class="era">' + esc(L(s.era)) + '</div><h3>' + esc(L(s.title)) + '</h3><p>' + L(s.text) + '</p>' +
           (s.dishes && s.dishes.length ? '<div class="dish">' + s.dishes.map(function (d) { return '<span>' + esc(L(d)) + (d.ko ? '<i>' + esc(d.ko) + '</i>' : '') + '</span>'; }).join('') + '</div>' : '') + '</div>';
         card.classList.remove('out');
         cap.innerHTML = s.cap ? L(s.cap) : '';
@@ -107,12 +107,12 @@
     var cur = null, sub = -1;
     function render() {
       map.innerHTML = '<span class="axis" style="left:8px;top:-20px">← ' + esc(L({ zh: '头', en: 'Head' })) + '</span><span class="axis" style="right:8px;top:-20px">' + esc(L({ zh: '尾', en: 'Tail' })) + ' →</span>' +
-        D.cuts.map(function (c, i) { return '<button class="pr' + (cur === c.id ? ' on' : '') + '" data-id="' + c.id + '" style="grid-area:' + c.area + '"><i>' + (i + 1 < 10 ? '0' : '') + (i + 1) + '</i><b>' + esc(L(c)) + '</b><span>' + esc(c.ko) + (lang() === 'zh' ? ' · ' + esc(c.en) : '') + '</span></button>'; }).join('');
+        D.cuts.map(function (c, i) { var b = function (area) { return '<button class="pr' + (cur === c.id ? ' on' : '') + '" data-id="' + c.id + '" style="grid-area:' + area + '"><i>' + (i + 1 < 10 ? '0' : '') + (i + 1) + '</i><b>' + esc(L(c)) + '</b><span>' + esc(c.ko) + (lang() === 'zh' ? ' · ' + esc(c.en) : '') + '</span></button>'; }; return b(c.area) + (c.area2 ? b(c.area2) : ''); }).join('');
       $$('.pr', map).forEach(function (b) { b.addEventListener('click', function () { cur = b.getAttribute('data-id'); sub = -1; render(); }); });
       var c = D.cuts.filter(function (x) { return x.id === cur; })[0] || D.cuts[0]; if (!cur) { cur = c.id; $$('.pr', map)[0].classList.add('on'); }
       var s = sub >= 0 ? c.subs[sub] : null;
       panel.innerHTML = (c.img ? '<div class="im"><img src="' + c.img + '" alt="" loading="lazy"></div>' + (c.cap ? '<div class="cap2">' + L(c.cap) + '</div>' : '') : '') +
-        '<div class="bd"><span class="sticker red pop">' + esc(L({ zh: '大分割', en: 'Primal' })) + ' ' + (D.cuts.indexOf(c) + 1) + ' / ' + D.cuts.length + '</span><h4 style="margin-top:12px">' + esc(L(c)) + '</h4><div class="ko">' + esc(c.ko) + ' · ' + esc(c.en) + '</div>' +
+        '<div class="bd"><span class="sticker red pop">' + esc(L({ zh: '大分割', en: 'Primal' })) + ' ' + (D.cuts.indexOf(c) + 1) + ' / ' + D.cuts.length + '</span><h4 style="margin-top:12px">' + esc(L(c)) + '</h4><div class="ko">' + (lang() === 'zh' && c.full !== c.zh ? esc(c.full) + ' · ' : '') + esc(c.ko) + ' · ' + esc(c.en) + '</div>' +
         (c.subs && c.subs.length ? '<div class="small">' + esc(L({ zh: '小分割（点一个看说明）', en: 'Sub-primals (tap one)' })) + '</div><div class="subs">' + c.subs.map(function (x, i) { return '<button data-i="' + i + '" class="' + (i === sub ? 'on' : '') + '">' + esc(L(x)) + '</button>'; }).join('') + '</div>' : '') +
         (s ? '<p style="margin:0 0 8px"><b>' + esc(L(s)) + '</b> <span class="small">' + esc(s.ko) + ' · ' + esc(s.en) + '</span><br>' + esc(L(s.note || '')) + '</p>' : '') +
         '<dl><dt>' + esc(L({ zh: '口感', en: 'Texture' })) + '</dt><dd>' + esc(L(c.texture)) + '</dd><dt>' + esc(L({ zh: '吃法', en: 'Best as' })) + '</dt><dd>' + esc(L(c.how)) + '</dd>' + (c.price ? '<dt>' + esc(L({ zh: '价位', en: 'Price' })) + '</dt><dd>' + esc(L(c.price)) + '</dd>' : '') + '</dl></div>';
@@ -124,18 +124,18 @@
   /* ---------- 01 CUT：烤一块（计时器） ---------- */
   (function () {
     var g = $('#grill'); if (!g || !D.grill) return;
-    var cuts = D.grill, cur = cuts[0], t0 = 0, raf = 0, side = 1, running = false;
+    var cuts = D.grill, cur = cuts[0], t0 = 0, raf = 0, side = 1, running = false, speed = 1, bSpeed = $('[data-act=speed]', g);
+    if (bSpeed) bSpeed.addEventListener('click', function () { var now = performance.now(), el = (now - t0) / 1000 * speed; speed = speed === 1 ? 5 : 1; t0 = now - el * 1000 / speed; bSpeed.textContent = speed === 1 ? '5×' : '1×'; bSpeed.classList.toggle('on', speed === 5); });
     var bx = $('.gcuts', g), clock = $('.clock b', g), unit = $('.clock span', g), bar = $('.bar i', g), say = $('.say', g), img = $('.gp img', g), note = $('.note', g), bStart = $('[data-act=go]', g), bReset = $('[data-act=reset]', g), gcap = $('.gpcap', g);
     function chips() { bx.innerHTML = cuts.map(function (c) { return '<button class="pill' + (c === cur ? ' on' : '') + '" data-id="' + c.id + '">' + esc(L(c)) + '</button>'; }).join(''); $$('.pill', bx).forEach(function (b) { b.addEventListener('click', function () { cur = cuts.filter(function (c) { return c.id === b.getAttribute('data-id'); })[0]; reset(); chips(); }); }); }
-    function total() { return cur.sides.reduce(function (a, b) { return a + b; }, 0) + (cur.rest || 0); }
-    function idle() { clock.textContent = total(); unit.textContent = L({ zh: '秒 · ' + cur.sides.length + ' 面' + (cur.rest ? ' + 静置' : ''), en: 'sec · ' + cur.sides.length + ' side' + (cur.sides.length > 1 ? 's' : '') + (cur.rest ? ' + rest' : '') }); say.innerHTML = L(cur.tip); note.innerHTML = L(cur.note); if (cur.img) { img.src = cur.img; } if (gcap) gcap.innerHTML = cur.cap ? L(cur.cap) : ''; img.style.filter = ''; bar.style.width = '0'; bStart.textContent = L({ zh: '上烤盘', en: 'On the grill' }); }
+    function total() { return cur.sides.reduce(function (a, b) { return a + b; }, 0); }
+    function idle() { clock.textContent = total(); unit.textContent = L({ zh: '秒 · ' + cur.sides.length + ' 面' + ' · 共计', en: 'sec in all · ' + cur.sides.length + ' sides' }); say.innerHTML = L(cur.tip); note.innerHTML = L(cur.note); if (cur.img) { img.src = cur.img; } if (gcap) gcap.innerHTML = cur.cap ? L(cur.cap) : ''; img.style.filter = ''; bar.style.width = '0'; bStart.textContent = L({ zh: '上烤盘', en: 'On the grill' }); }
     function reset() { cancelAnimationFrame(raf); running = false; g.classList.remove('run'); idle(); }
     function stepper(now) {
-      var el = (now - t0) / 1000, tot = total(), acc = 0, k = 0, msg = '';
+      var el = (now - t0) / 1000 * speed, tot = total(), acc = 0, k = 0, msg = '';
       while (k < cur.sides.length && el > acc + cur.sides[k]) { acc += cur.sides[k]; k++; }
       if (k !== side - 1 && k < cur.sides.length) { side = k + 1; g.classList.remove('flip'); void g.offsetWidth; g.classList.add('flip'); }
       if (k < cur.sides.length) { var left = Math.ceil(acc + cur.sides[k] - el); clock.textContent = left; unit.textContent = L({ zh: '秒 · 第 ' + (k + 1) + ' 面', en: 'sec · side ' + (k + 1) }); msg = k === 0 ? L(cur.s1 || { zh: '滋——别动它。', en: 'Sizzle. Don’t touch it.' }) : L(cur.s2 || { zh: '<b>翻面！</b>', en: '<b>Flip!</b>' }); }
-      else if (el < tot) { clock.textContent = Math.ceil(tot - el); unit.textContent = L({ zh: '秒 · 静置', en: 'sec · rest' }); msg = L({ zh: '离火，静置一会儿，让肉汁回流。', en: 'Off the heat. Let the juices settle.' }); }
       else { clock.textContent = '✓'; unit.textContent = L({ zh: '可以吃了', en: 'Eat' }); msg = L(cur.done); running = false; g.classList.remove('run'); bStart.textContent = L({ zh: '再来一块', en: 'Another' }); }
       say.innerHTML = msg; var p = clamp(el / tot, 0, 1); bar.style.width = (p * 100) + '%'; img.style.filter = 'saturate(' + (1 + p * 0.35) + ') brightness(' + (1 - p * 0.12) + ') contrast(' + (1 + p * 0.12) + ')';
       if (running) raf = requestAnimationFrame(stepper);
@@ -158,8 +158,9 @@
       var maxI = S.imax || Math.max.apply(null, S.imports.filter(function (v) { return v != null; })) * 1.1;
       var Yi = function (v) { return m.t + (H - m.t - m.b) * (1 - v / maxI); }, Ys = function (p) { return m.t + (H - m.t - m.b) * (1 - p / 100); };
       var p1 = '', p2 = '', a1 = '';
-      ys.forEach(function (y, i) { var v = S.imports[i]; if (v != null) { p1 += (p1 ? 'L' : 'M') + X(y).toFixed(1) + ',' + Yi(v).toFixed(1); } var s = S.selfsuff[i]; if (s != null) p2 += (p2 ? 'L' : 'M') + X(y).toFixed(1) + ',' + Ys(s).toFixed(1); });
-      a1 = p1 + 'L' + X(x1) + ',' + Yi(0) + 'L' + X(x0) + ',' + Yi(0) + 'Z';
+      var b1 = true, b2 = true, dots = '';
+      ys.forEach(function (y, i) { var v = S.imports[i]; if (v != null) { p1 += (b1 ? 'M' : 'L') + X(y).toFixed(1) + ',' + Yi(v).toFixed(1); b1 = false; dots += '<circle cx="' + X(y).toFixed(1) + '" cy="' + Yi(v).toFixed(1) + '" r="3.5" fill="var(--red)"/>'; } else b1 = true; var s = S.selfsuff[i]; if (s != null) { p2 += (b2 ? 'M' : 'L') + X(y).toFixed(1) + ',' + Ys(s).toFixed(1); b2 = false; dots += '<circle cx="' + X(y).toFixed(1) + '" cy="' + Ys(s).toFixed(1) + '" r="3.5" fill="var(--ink)"/>'; } else b2 = true; });
+      a1 = '';
       var g = '';
       for (var t = 0; t <= 100; t += 25) g += '<line class="ax" x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + Ys(t) + '" y2="' + Ys(t) + '"/><text x="' + (W - m.r + 6) + '" y="' + (Ys(t) + 4) + '">' + t + '%</text>';
       var step = maxI > 400 ? 200 : 100;
@@ -167,7 +168,7 @@
       var dec = W < 560 ? 10 : 5;
       for (var y = Math.ceil(x0 / dec) * dec; y <= x1; y += dec) g += '<text x="' + X(y) + '" y="' + (H - 8) + '" text-anchor="middle">' + y + '</text>';
       var mk = (S.events || []).map(function (e, i) { return '<g class="mk" data-i="' + i + '"><circle cx="' + X(e.year) + '" cy="' + (m.t + 4) + '" r="7"/><text x="' + X(e.year) + '" y="' + (m.t + 8) + '" text-anchor="middle" style="font-size:9px;pointer-events:none">' + (i + 1) + '</text></g>'; }).join('');
-      wrap.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" height="' + H + '" role="img" aria-label="' + esc(L(S.title)) + '">' + g + '<path class="a1" d="' + a1 + '"/><path class="l1" d="' + p1 + '"/><path class="l2" d="' + p2 + '"/>' + mk + '<line class="cur" y1="' + m.t + '" y2="' + (H - m.b) + '"/></svg>';
+      wrap.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" height="' + H + '" role="img" aria-label="' + esc(L(S.title)) + '">' + g + '<path class="l1" d="' + p1 + '"/><path class="l2" d="' + p2 + '"/>' + dots + mk + '<line class="cur" y1="' + m.t + '" y2="' + (H - m.b) + '"/></svg>';
       var svg = $('svg', wrap), cur = $('.cur', svg);
       function setY(y) { yr = clamp(Math.round(y), x0, x1); cur.setAttribute('x1', X(yr)); cur.setAttribute('x2', X(yr)); var i = ys.indexOf(yr); var im = S.imports[i], ss = S.selfsuff[i];
         rd.innerHTML = '<div><b>' + yr + '</b></div><div><b style="color:var(--red)">' + (im != null ? fmt(im) : '—') + '</b><div class="k">' + esc(L(S.l1)) + '</div></div><div><b>' + (ss != null ? fmt(ss, 1) + '%' : '—') + '</b><div class="k">' + esc(L(S.l2)) + '</div></div>';
@@ -207,7 +208,7 @@
 
   /* ---------- 02 TABLE：一桌 ---------- */
   (function () {
-    var t = $('#table'); if (!t || !D.table) return;
+    var t = $('#tablebox'); if (!t || !D.table) return;
     var ls = $('.tl', t), im = $('.tp img', t), cp = $('.tcap', t), cur = 0;
     function render() { ls.innerHTML = D.table.map(function (x, i) { return '<button class="' + (i === cur ? 'on' : '') + '" data-i="' + i + '"><i>' + (i + 1) + '</i><span><b>' + esc(L(x.title)) + '</b><span>' + L(x.text) + '</span></span></button>'; }).join(''); $$('button', ls).forEach(function (b) { b.addEventListener('click', function () { cur = +b.getAttribute('data-i'); render(); }); }); var x = D.table[cur]; if (x.img && im.getAttribute('src') !== x.img) { im.style.opacity = 0; setTimeout(function () { im.src = x.img; im.style.opacity = 1; }, RM ? 0 : 180); } cp.innerHTML = L(x.cap || ''); }
     render(); addEventListener('langchange', render);
@@ -218,8 +219,10 @@
     var m = $('#map'); if (!m || !D.map) return;
     var M = D.map, svg = $('svg', m), hud = $('.hud', m), rng = $('input', m.parentNode), note = $('.mapnote', m.parentNode), yr = +rng.value, play = $('[data-act=play]', m.parentNode), pt = 0;
     var vb = M.vb; svg.setAttribute('viewBox', vb.join(' '));
-    svg.innerHTML = '<path class="land" d="' + M.land + '"/>' + M.nodes.map(function (n, i) { return '<g class="node" data-i="' + i + '" transform="translate(' + n.x + ',' + n.y + ')"><circle r="' + (n.r || 3) + '"/><text x="' + (n.dx || 5) + '" y="' + (n.dy || 3) + '" text-anchor="' + (n.ta || 'start') + '"></text></g>'; }).join('');
+    svg.innerHTML = '<path class="land" d="' + M.land + '"/>' + M.nodes.map(function (n, i) { return '<g class="node ' + (n.c || '') + '" data-i="' + i + '" transform="translate(' + n.x + ',' + n.y + ')"><circle r="' + (n.r || 3) + '"/><text x="' + (n.dx || 5) + '" y="' + (n.dy || 3) + '" text-anchor="' + (n.ta || 'start') + '"></text></g>'; }).join('');
     var gs = $$('.node', svg);
+    function sc() { var k = M.vb[2] / Math.max(1, svg.clientWidth); gs.forEach(function (g, i) { var n = M.nodes[i]; $('circle', g).setAttribute('r', (n.c === 'kr' || n.c === 'kp' ? 5 : 4) * k); var t = $('text', g); t.style.fontSize = (12 * k) + 'px'; t.style.strokeWidth = (3 * k) + 'px'; t.setAttribute('x', (n.dx || 7) * k); t.setAttribute('y', 4 * k); }); }
+    addEventListener('resize', sc);
     function upd() { yr = +rng.value; var last = null; gs.forEach(function (g, i) { var n = M.nodes[i], on = n.year <= yr; g.classList.toggle('off', !on); g.classList.toggle('on', on && n.year > yr - 6); $('text', g).textContent = L(n.city); g.classList.toggle('hide-l', !!n.minor && !(on && n.year > yr - 6)); if (on && (!last || n.year >= last.year)) last = n; });
       var cnt = M.nodes.filter(function (n) { return n.year <= yr; }).length;
       hud.innerHTML = yr + '<span>' + esc(L({ zh: '已标出 ' + cnt + ' 个节点', en: cnt + ' milestones on the map' })) + '</span>';
@@ -227,6 +230,6 @@
     gs.forEach(function (g) { g.style.cursor = 'pointer'; g.addEventListener('click', function () { var n = M.nodes[+g.getAttribute('data-i')]; note.innerHTML = '<b>' + n.year + ' · ' + esc(L(n.city)) + '</b> — ' + L(n.text); }); });
     rng.addEventListener('input', upd);
     if (play) play.addEventListener('click', function () { if (pt) { clearInterval(pt); pt = 0; play.textContent = '▶'; return; } if (+rng.value >= +rng.max) rng.value = rng.min; play.textContent = '❚❚'; pt = setInterval(function () { rng.value = +rng.value + 1; upd(); if (+rng.value >= +rng.max) { clearInterval(pt); pt = 0; play.textContent = '▶'; } }, RM ? 30 : 160); });
-    addEventListener('langchange', upd); upd();
+    addEventListener('langchange', upd); sc(); upd();
   })();
 })();

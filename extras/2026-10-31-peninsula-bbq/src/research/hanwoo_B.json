@@ -1,12 +1,960 @@
 {
- "timeline": [],
+ "timeline": [
+  {
+   "year": "约 2000 年前",
+   "zh": "金海贝冢出土牛骨，显示半岛养牛史超过两千年；高句丽双楹冢壁画与《三国史记》记载用牛耕作。",
+   "en": "Cattle bones from the Gimhae shell mound show over 2,000 years of cattle keeping; Goguryeo murals and the Samguk sagi record ox-drawn farming.",
+   "num": "2000+ 年",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "데일리안 「한우」 역사 기획（1938 심사표준·1940 흑우 8%·칡소 3%·일제기 150만 두 반출·구마모토/고치 1.9만 두）",
+     "url": "https://m.dailian.co.kr/news/view/1136777",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "品种"
+  },
+  {
+   "year": 1938,
+   "zh": "日本殖民当局颁布韩牛审查标准，只承认黄褐色牛为「韩牛」；黑牛、칡소（虎斑牛）等被排除在外，品种多样性大幅流失。",
+   "en": "The colonial authorities issued a Hanwoo judging standard recognising only yellow-brown cattle as Hanwoo; black and brindle (chikso) cattle were excluded and diversity eroded.",
+   "num": "1940 年约 200 万头中，黑牛约 8%、칡소约 3% 不被承认",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "데일리안 「한우」 역사 기획（1938 심사표준·1940 흑우 8%·칡소 3%·일제기 150만 두 반출·구마모토/고치 1.9만 두）",
+     "url": "https://m.dailian.co.kr/news/view/1136777",
+     "kind": "媒体"
+    },
+    {
+     "title": "파이낸셜뉴스 2020-10-28 제주흑우（1938 한우표준·2004 FAO 등록·2013 천연기념물）",
+     "url": "https://www.fnnews.com/news/202010281156059895",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "品种"
+  },
+  {
+   "year": "1910–1945",
+   "zh": "殖民时期约 150 万头朝鲜牛被运往日本、中国东北、俄罗斯等地，其中约 1.9 万头被用于熊本、高知两县的褐毛和种改良。",
+   "en": "About 1.5 million Korean cattle were shipped out during the colonial period; some 19,000 went into breeding Japan's Brown Wagyu in Kumamoto and Kochi.",
+   "num": "150 万头 / 1.9 万头",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "데일리안 「한우」 역사 기획（1938 심사표준·1940 흑우 8%·칡소 3%·일제기 150만 두 반출·구마모토/고치 1.9만 두）",
+     "url": "https://m.dailian.co.kr/news/view/1136777",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "品种",
+   "note": "褐毛和种与朝鲜牛的血缘关系，最好再找日本侧（家畜改良センター/熊本县）资料核实。"
+  },
+  {
+   "year": "1970s",
+   "zh": "韩牛开始系统改良：1970 年代通过后裔测定选出 21 头优秀种公牛。随着农业机械化，韩牛从役牛（농우）逐步转为肉牛；1974 年出栏体重约 358 kg，2019 年达 694 kg。",
+   "en": "Systematic improvement began in the 1970s with 21 sires chosen by progeny testing. As farming mechanised, Hanwoo shifted from draft to beef animals; shipping weight rose from about 358 kg (1974) to 694 kg (2019).",
+   "num": "358 kg→694 kg",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "데일리안 「한우」 역사 기획（1938 심사표준·1940 흑우 8%·칡소 3%·일제기 150만 두 반출·구마모토/고치 1.9만 두）",
+     "url": "https://m.dailian.co.kr/news/view/1136777",
+     "kind": "媒体"
+    },
+    {
+     "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」(국립축산과학원 보증씨수소)",
+     "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+     "kind": "官方"
+    }
+   ],
+   "tag": "品种",
+   "note": "役牛→肉牛转型的具体年代（耕耘机普及约 1970s–80s）未找到一手统计，属概述。"
+  },
+  {
+   "year": 1989,
+   "zh": "农协中央会以「身土不二（신토불이）」作为爱用国产农产品运动的口号，时任会长韩浩先（한호선）策划；1993 年歌手裴一镐的同名歌曲让这四个字家喻户晓。该词原为佛教用语，「本地当季食物有益健康」之义来自明治日本的食养运动。",
+   "en": "In 1989 the National Agricultural Cooperative Federation (NACF) adopted 'sintoburi' (身土不二, 'body and soil are one') as its buy-domestic slogan, devised by chairman Han Ho-seon; Bae Il-ho's 1993 song of the same name made it a household phrase. The term is Buddhist in origin; its 'eat local' meaning came from Meiji-era Japan's food-cure movement.",
+   "num": "1989 / 1993",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "itwiki 「신토불이」(1989 농협 구호·1993 배일호 노래)",
+     "url": "https://itwiki.kr/w/%EC%8B%A0%ED%86%A0%EB%B6%88%EC%9D%B4",
+     "kind": "百科"
+    }
+   ],
+   "tag": "营销",
+   "note": "可再找农协或《韩国民族文化大百科》条目替换百科来源。"
+  },
+  {
+   "year": 1993,
+   "zh": "韩国引入牛肉等级判定制度（最初为 1、2、3 等级），用于在市场开放前提升国产牛竞争力、与进口牛区分；当年韩牛 1 等级出现率仅约 10.7%。同年国立畜产科学院被指定为法定家畜改良机构。",
+   "en": "Korea introduced carcass grading (initially grades 1–3) to make domestic beef competitive ahead of market opening and distinguish it from imports; only about 10.7% of Hanwoo graded 1 that year. The National Institute of Animal Science was designated the statutory improvement agency.",
+   "num": "1 等级 10.7%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    },
+    {
+     "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」(국립축산과학원 보증씨수소)",
+     "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @architect-y 「소고기 3/4 등급과 맛」2026-05-10（1993 1등급 10.7%、2019 79.3%、2025 78.4%）",
+     "url": "https://brunch.co.kr/@architect-y/1601",
+     "kind": "二手"
+    }
+   ],
+   "tag": "制度"
+  },
+  {
+   "year": "1994–2001",
+   "zh": "乌拉圭回合谈判结果下，1994–2000 年牛肉进口按配额（quota）管理并逐年扩大；2001 年 1 月牛肉进口全面自由化，按 41.2% 关税征收（后降至 40%）。",
+   "en": "Under the Uruguay Round, beef imports were quota-managed and expanded from 1994 to 2000; in January 2001 imports were fully liberalised at a 41.2% tariff (later 40%).",
+   "num": "关税 41.2%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "KREI 현안분석 제12호 「쇠고기 자급률 동향과 전망」 2016-05-03（우병준·이형우）",
+     "url": "https://repository.krei.re.kr/bitstream/2018.oak/22026/1/%ec%87%a0%ea%b3%a0%ea%b8%b0%20%ec%9e%90%ea%b8%89%eb%a5%a0%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%a0%84%eb%a7%9d.pdf",
+     "kind": "学术"
+    }
+   ],
+   "tag": "制度"
+  },
+  {
+   "year": 1995,
+   "zh": "韩牛开始全国性遗传评估（每年 3–4 次），种公牛（보증씨수소，KPN 编号）经后裔测定选拔，每年约 30 头；每头种公牛精液限量 10–12 万支，以控制近交。",
+   "en": "National genetic evaluation began in 1995 (3–4 runs a year); proven bulls (KPN numbers) are chosen by progeny test, about 30 a year, with semen capped at 100,000–120,000 straws per bull to limit inbreeding.",
+   "num": "每年约 30 头",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」(국립축산과학원 보증씨수소)",
+     "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+     "kind": "官方"
+    }
+   ],
+   "tag": "品种",
+   "note": "KPN 缩写含义（Korean Proven Nonghyup?）未查到官方解释。"
+  },
+  {
+   "year": 1997,
+   "zh": "牛肉等级增设 1+ 等级（参照日本）。",
+   "en": "Grade 1+ was added, modelled on Japan.",
+   "num": null,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    }
+   ],
+   "tag": "制度",
+   "note": "1997 改版仅见二手来源。"
+  },
+  {
+   "year": 2001,
+   "zh": "市场全面开放后，韩肉牛（한육우）饲养头数跌至谷底约 140.6 万头。",
+   "en": "After full market opening, Korean beef cattle numbers bottomed out at about 1.406 million head.",
+   "num": "140.6 万头（12 月 1 日）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "KREI 농업전망 2010 제22장 「축산물 수급 동향과 전망」(허덕 외)",
+     "url": "https://repository.krei.re.kr/bitstream/2018.oak/30302/1/e04-2010-22.pdf",
+     "kind": "学术"
+    }
+   ],
+   "tag": "危机"
+  },
+  {
+   "year": 2003,
+   "zh": "2003 年 12 月 23 日美国确诊疯牛病（BSE），韩国随即全面停止进口美国牛肉。2006 年试图恢复进口 30 月龄以下去骨牛肉，因检出骨片而失败；2007 年零星恢复（当年美国牛肉进口约 1.5 万吨）。",
+   "en": "After the US confirmed BSE on 23 Dec 2003, Korea banned US beef. A 2006 reopening for boneless beef under 30 months failed over bone chips; limited imports resumed in 2007 (about 15,000 t).",
+   "num": "2007 年美国牛 1.5 万吨",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wikipedia — 2008 US beef protest in South Korea",
+     "url": "https://en.wikipedia.org/wiki/2008_US_beef_protest_in_South_Korea",
+     "kind": "百科"
+    },
+    {
+     "title": "KREI 농업전망 2010 제22장 「축산물 수급 동향과 전망」(허덕 외)",
+     "url": "https://repository.krei.re.kr/bitstream/2018.oak/30302/1/e04-2010-22.pdf",
+     "kind": "学术"
+    }
+   ],
+   "tag": "危机"
+  },
+  {
+   "year": 2004,
+   "zh": "增设最高等级 1++；同年制定产肉量（육량）指数公式。",
+   "en": "Top grade 1++ was added, and a yield-index formula was introduced.",
+   "num": null,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    },
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "制度"
+  },
+  {
+   "year": 2004,
+   "zh": "联合国粮农组织（FAO）家畜多样性数据库将济州黑牛、内陆黑牛、칡소、白牛登记为韩牛系统品种。",
+   "en": "The FAO registered Jeju black cattle, inland black cattle, chikso and white cattle within the Korean cattle lineage.",
+   "num": null,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "파이낸셜뉴스 2020-10-28 제주흑우（1938 한우표준·2004 FAO 등록·2013 천연기념물）",
+     "url": "https://www.fnnews.com/news/202010281156059895",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "品种"
+  },
+  {
+   "year": 2005,
+   "zh": "韩牛义务自助金（checkoff）依《畜产自助金法》设立，每屠宰一头牛征收 2 万韩元；年筹约 180 亿韩元，加政府配套约 300 亿韩元，用于宣传和供需调节。",
+   "en": "The mandatory Hanwoo checkoff was set up under the Livestock Checkoff Act in 2005, levying KRW 20,000 per animal slaughtered — about KRW 18bn a year, roughly KRW 30bn with government matching, spent on promotion and supply management.",
+   "num": "2 万韩元/头；约 300 亿韩元/年",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "YTN 라디오 2024-11-11 이동활 한우자조금관리위원장 인터뷰",
+     "url": "https://www.ytn.co.kr/_ln/0103_202411111701171735",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "营销",
+   "note": "成立年来自自助金委员长口述，hanwoo.or.kr 沿革页未打开核对。"
+  },
+  {
+   "year": 2007,
+   "zh": "韩牛被文化观光部选为「100 个韩国民族文化象征」之一。",
+   "en": "Hanwoo was named one of the '100 symbols of Korean national culture' by the Ministry of Culture and Tourism.",
+   "num": null,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "데일리안 「한우」 역사 기획（1938 심사표준·1940 흑우 8%·칡소 3%·일제기 150만 두 반출·구마모토/고치 1.9만 두）",
+     "url": "https://m.dailian.co.kr/news/view/1136777",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "营销",
+   "alt": "YTN 采访中自助金委员长说是 2008 年。"
+  },
+  {
+   "year": 2008,
+   "zh": "4 月 18 日韩美达成允许 30 月龄以上美国牛肉进口的协议，4 月 27 日 MBC《PD 手册》播出后，5 月 24 日起首尔爆发烛光抗议，6 月 10 日达到高峰；6 月 22 日追加协商限 30 月龄以下，6 月 26 日公告即时生效，7 月起恢复进口。",
+   "en": "On 18 Apr 2008 Korea agreed to admit US beef including from cattle over 30 months; after MBC's PD Note aired on 27 Apr, candlelight protests began on 24 May and peaked on 10 Jun. A 22 Jun side deal limited imports to under-30-month cattle, gazetted with immediate effect on 26 Jun, and imports resumed in July.",
+   "num": "抗议人数估计 8 万（6/10 当晚）至「最多百万」",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wikipedia — 2008 US beef protest in South Korea",
+     "url": "https://en.wikipedia.org/wiki/2008_US_beef_protest_in_South_Korea",
+     "kind": "百科"
+    },
+    {
+     "title": "정책브리핑 2008-06-26 미국산 쇠고기 수입위생조건 고시（농림수산식품부 고시 제2008-15호, 즉시 발효）",
+     "url": "https://m.korea.kr/news/policyNewsView.do?newsId=148654043",
+     "kind": "官方"
+    }
+   ],
+   "tag": "危机",
+   "alt": "人数各方说法差距大：ABC 报 6 月 10 日约 8 万，维基导言称最多百万。"
+  },
+  {
+   "year": 2008,
+   "zh": "全国韩牛协会将 11 月 1 日定为「韩牛日（한우의 날）」：日期含三个「1」，寓意最好、第一；「牛」字第三笔也是「一」。此后每年由自助金、农协与大卖场办折扣活动。",
+   "en": "The Korea Hanwoo Association declared 1 November 'Hanwoo Day' in 2008 — three 1s for 'best' and 'first', and 一 is the third stroke of 牛. Checkoff, NH and big retailers run discount events every year.",
+   "num": "11·1",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "세계일보 2024-10-28 한우의 날（2008 한우협회 지정·11월 1일）",
+     "url": "https://www.segye.com/newsView/20241028514096",
+     "kind": "媒体"
+    },
+    {
+     "title": "매일신문 2013-11-11 한우자조금 「한우의 날」",
+     "url": "https://www.imaeil.com/page/view/2013111107375946293",
+     "kind": "媒体"
+    },
+    {
+     "title": "한국경제 2025-10-29 「11월 1일 '한우데이'…반값 세일」",
+     "url": "https://www.hankyung.com/amp/2025102988911",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "营销"
+  },
+  {
+   "year": "2008–2009",
+   "zh": "牛肉溯源制度（쇠고기 이력제）：2008 年 12 月在饲养阶段实施、同月推行餐馆原产地标示；2009 年 6 月扩大到流通阶段全面实施，消费者可凭 12 位个体识别号查询出生、屠宰、等级等信息。",
+   "en": "Beef traceability: from December 2008 at the farm stage (alongside restaurant country-of-origin labelling), and fully across distribution from June 2009; consumers can look up birth, slaughter and grade by a 12-digit ID.",
+   "num": "12 位识别号",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "KREI 농업전망 2010 제22장 「축산물 수급 동향과 전망」(허덕 외)",
+     "url": "https://repository.krei.re.kr/bitstream/2018.oak/30302/1/e04-2010-22.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Leisurebyte — Hanwoo Rhapsody (2021) Review",
+     "url": "https://leisurebyte.com/hanwoo-rhapsody-2021-review-paik-jong-won/",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "制度",
+   "note": "2008-12 饲养阶段起始据记忆，KREI 只明确 2009-06 全面实施与 2008-12 餐馆原产地标示。"
+  },
+  {
+   "year": 2012,
+   "zh": "韩美 FTA 于 2012 年 3 月 15 日生效：美国牛肉 40% 关税分 15 年每年下调约 2.67 个百分点，2016 年 26.7%、2020 年 16.0%、2023 年 8.0%，2026 年 1 月 1 日降至零。",
+   "en": "KORUS took effect on 15 Mar 2012: the 40% tariff on US beef fell by about 2.67 points a year — 26.7% (2016), 16.0% (2020), 8.0% (2023) — reaching zero on 1 Jan 2026.",
+   "num": "40%→0%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "아시아경제(영문) 2026-01-07 「US Beef Tariff Reduced to '0%' After 14 Years」",
+     "url": "https://www.asiae.co.kr/en/article/2026010721371820180",
+     "kind": "媒体"
+    },
+    {
+     "title": "USDA FAS GAIN KS2022-0006 Livestock and Products Semi-annual (2022-04-06)",
+     "url": "https://agriexchange.apeda.gov.in/MarketReport/Reports/Livestock_Products_Korea2305.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "KREI 현안분석 제12호 「쇠고기 자급률 동향과 전망」 2016-05-03（우병준·이형우）",
+     "url": "https://repository.krei.re.kr/bitstream/2018.oak/22026/1/%ec%87%a0%ea%b3%a0%ea%b8%b0%20%ec%9e%90%ea%b8%89%eb%a5%a0%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%a0%84%eb%a7%9d.pdf",
+     "kind": "学术"
+    }
+   ],
+   "tag": "制度",
+   "alt": "亚洲经济报道称 FTA 前税率为 37.3%、每年降 2.6 个百分点；USDA 表列基准税率 40%。"
+  },
+  {
+   "year": 2012,
+   "zh": "2012 年 9 月韩肉牛饲养头数创高峰 314 万头，随后政府推行母牛减量、FTA 废业补贴，小规模繁殖户退出。",
+   "en": "Korean beef cattle peaked at 3.14 million head in Sept 2012; cow-reduction programmes and FTA exit aid then pushed small breeders out.",
+   "num": "314 万头",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "KREI 현안분석 제12호 「쇠고기 자급률 동향과 전망」 2016-05-03（우병준·이형우）",
+     "url": "https://repository.krei.re.kr/bitstream/2018.oak/22026/1/%ec%87%a0%ea%b3%a0%ea%b8%b0%20%ec%9e%90%ea%b8%89%eb%a5%a0%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%a0%84%eb%a7%9d.pdf",
+     "kind": "学术"
+    }
+   ],
+   "tag": "市场"
+  },
+  {
+   "year": 2013,
+   "zh": "济州黑牛（제주흑우）被指定为天然纪念物第 546 号，当时约 130 头由济州畜产振兴院饲养。",
+   "en": "Jeju black cattle became Natural Monument No. 546; about 130 head were kept by the Jeju livestock agency.",
+   "num": "约 130 头",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "데일리벳 2013-07-23 「토종 제주흑우, 6번째 가축 천연기념물로 지정」",
+     "url": "https://www.dailyvet.co.kr/?p=8469",
+     "kind": "媒体"
+    },
+    {
+     "title": "파이낸셜뉴스 2020-10-28 제주흑우（1938 한우표준·2004 FAO 등록·2013 천연기념물）",
+     "url": "https://www.fnnews.com/news/202010281156059895",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "品种"
+  },
+  {
+   "year": 2014,
+   "zh": "韩澳 FTA（2014 年 12 月生效）：澳洲牛肉关税同样 15 年归零，2026 年为 5.3%，2028 年归零；设农产品特别保障（safeguard），2025 年 9 月触发后恢复 24% 税率至年底。",
+   "en": "KAFTA (in force Dec 2014) phases out the beef tariff over 15 years — 5.3% in 2026, zero in 2028 — with a safeguard that, once triggered in Sept 2025, restored a 24% rate to year-end.",
+   "num": "2026 年 5.3%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Expana 「Korea's Oct 2025 beef imports nosedive as safeguard barriers kick in」",
+     "url": "https://www.expanamarkets.com/insights/article/koreas-oct-2025-beef-imports-nosedive-as-safeguard-barriers-kick-in/",
+     "kind": "媒体"
+    },
+    {
+     "title": "USDA FAS GAIN KS2022-0006 Livestock and Products Semi-annual (2022-04-06)",
+     "url": "https://agriexchange.apeda.gov.in/MarketReport/Reports/Livestock_Products_Korea2305.pdf",
+     "kind": "官方"
+    }
+   ],
+   "tag": "制度"
+  },
+  {
+   "year": 2015,
+   "zh": "2015 年 12 月韩牛首次出口香港（两国 2015 年达成检疫协议）；至 2016 年 3 月共出口 1+ 等级韩牛约 5.3 吨。",
+   "en": "Hanwoo exports began with Hong Kong in Dec 2015 after a 2015 quarantine deal; about 5.3 t of grade-1+ Hanwoo shipped by Mar 2016.",
+   "num": "5.3 吨",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "KREI 현안분석 제12호 「쇠고기 자급률 동향과 전망」 2016-05-03（우병준·이형우）",
+     "url": "https://repository.krei.re.kr/bitstream/2018.oak/22026/1/%ec%87%a0%ea%b3%a0%ea%b8%b0%20%ec%9e%90%ea%b8%89%eb%a5%a0%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%a0%84%eb%a7%9d.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "파이낸셜뉴스 2026-08-31 한우 홍콩 검역조건 개선（9월 1일 시행）",
+     "url": "https://www.fnnews.com/news/202608311100581480",
+     "kind": "媒体"
+    },
+    {
+     "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+     "url": "https://www.segye.com/newsView/20250820518577",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "市场"
+  },
+  {
+   "year": 2016,
+   "zh": "《请托禁止法》（김영란법）2016 年 9 月 28 日施行，公职人员等受礼上限 5 万韩元，高价韩牛名节礼盒受冲击；2018 年起农畜水产品礼品上限提至 10 万韩元，2023 年再提至 15 万韩元、名节期间 30 万韩元。",
+   "en": "The Improper Solicitation and Graft Act took effect on 28 Sep 2016, capping gifts to officials at KRW 50,000 and hitting premium Hanwoo holiday sets; the farm-produce cap rose to KRW 100,000 from 2018, then KRW 150,000 (KRW 300,000 during holidays) in 2023.",
+   "num": "5 万→10 万→15 万/30 万韩元",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "경향신문 2024-07-22 청탁금지법 선물·식사 한도 변천",
+     "url": "https://www.khan.co.kr/article/202407221856001",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "危机",
+   "note": "USDA 报告也把小牛产量下滑归因于该法对高端牛肉需求的冲击；2017 年 12 月修订、2018 年 1 月施行。"
+  },
+  {
+   "year": 2019,
+   "zh": "2019 年 12 月 1 日等级标准改版：1++ 由大理石纹 8–9 号（脂肪 17%+）下调为 7–9 号（15.6%+），1+ 改为 6 号；肉质四项分别评级取最低；产肉量公式按品种与性别分 6 套。目标是把平均育肥期从 31.2 个月缩到 29 个月、每年为农户省约 1161 亿韩元。",
+   "en": "The 1 Dec 2019 revision lowered 1++ from marbling No. 8–9 (17%+ fat) to No. 7–9 (15.6%+) and set 1+ at No. 6; the four quality traits are now graded separately with the lowest applying, and yield uses six breed/sex formulas. The aim was to cut average finishing from 31.2 to 29 months, saving farms about KRW 116.1bn a year.",
+   "num": "31.2→29 个月；1161 亿韩元/年",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "MAFRA 보도자료 「12월 1일부터 쇠고기 등급 기준 개편」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/68/322105/artclView.do",
+     "kind": "官方"
+    }
+   ],
+   "tag": "制度"
+  },
+  {
+   "year": 2022,
+   "zh": "2022 年韩牛出口约 44 吨，主要销往香港；美国牛肉进口创纪录约 25.7 万吨，约占进口牛肉一半。",
+   "en": "Hanwoo exports were about 44 t in 2022, mostly to Hong Kong; US beef imports hit a record ~257,000 t, about half of imported beef.",
+   "num": "44 吨 vs 25.7 万吨",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "서울신문 2023-05-11 「4년 만에 한우 구제역 발생…청정국 지위 앞두고 날벼락」",
+     "url": "https://m.seoul.co.kr/news/2023/05/11/20230511500173",
+     "kind": "媒体"
+    },
+    {
+     "title": "아시아경제(영문) 2026-01-07 「US Beef Tariff Reduced to '0%' After 14 Years」",
+     "url": "https://www.asiae.co.kr/en/article/2026010721371820180",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "市场"
+  },
+  {
+   "year": 2023,
+   "zh": "2023 年 3 月与马来西亚达成韩牛检疫协议（清真市场）；同年 8 月在柬埔寨举办韩牛推介会，签下「5 年 1 亿美元」规模的出口意向。",
+   "en": "A Hanwoo quarantine deal with Malaysia (halal market) was reached in Mar 2023; a launch show in Cambodia followed in Aug 2023 with a reported five-year, USD 100m export plan.",
+   "num": "5 年 1 亿美元（意向）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "아주경제 2023-03-28 「한우, 말레이시아 수출길 열렸다…양국 검역협상 타결」",
+     "url": "https://www.ajunews.com/view/20230328102843881",
+     "kind": "媒体"
+    },
+    {
+     "title": "이투데이 「우리 한우 캄보디아로 수출한다…5년간 1억 달러 규모」",
+     "url": "https://www.etoday.co.kr/news/view/2279282",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "市场",
+   "note": "两条仅凭新闻标题，未打开正文。"
+  },
+  {
+   "year": 2023,
+   "zh": "2023 年 5 月清州韩牛场暴发口蹄疫（时隔 4 年 4 个月），韩国申请世界动物卫生组织（WOAH）「免疫无疫」地位的计划落空，原本瞄准新加坡、越南等市场、把出口扩大到 200 吨的计划受阻。",
+   "en": "A May 2023 foot-and-mouth outbreak on Cheongju Hanwoo farms (the first in 4 years 4 months) derailed Korea's bid for WOAH 'FMD-free with vaccination' status and plans to reach Singapore and Vietnam and grow exports to 200 t.",
+   "num": "目标 200 吨",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "서울신문 2023-05-11 「4년 만에 한우 구제역 발생…청정국 지위 앞두고 날벼락」",
+     "url": "https://m.seoul.co.kr/news/2023/05/11/20230511500173",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "危机"
+  },
+  {
+   "year": 2024,
+   "zh": "韩牛价格低迷：按当时拍卖价，育肥阉牛每头亏损约 180 万韩元、繁殖小牛每头亏约 130 万韩元；韩牛农户由高峰约 15 万户减至约 8 万户。",
+   "en": "Hanwoo prices slumped: at 2024 auction prices, finishing a steer lost about KRW 1.8m a head and breeding a calf about KRW 1.3m; farm numbers fell from a peak of ~150,000 to ~80,000.",
+   "num": "-180 万韩元/头",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "YTN 라디오 2024-11-11 이동활 한우자조금관리위원장 인터뷰",
+     "url": "https://www.ytn.co.kr/_ln/0103_202411111701171735",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "危机",
+   "note": "数据为自助金委员长口述。"
+  },
+  {
+   "year": 2024,
+   "zh": "「韩牛法」（한우산업 지원법）2024 年 5 月 28 日由在野党在国会单独通过，5 月 29 日被尹锡悦总统否决；2025 年 7 月 3 日新一届国会以 263 票赞成、0 票反对再次通过，2026 年 8 月起施行。内容含韩牛自给率与消费目标、遗传资源国家管理、供需稳定、限制企业资本进入养殖等。",
+   "en": "The Hanwoo Industry Act passed the National Assembly on 28 May 2024 with opposition votes alone and was vetoed by President Yoon on 29 May; a new Assembly re-passed it 263–0 on 3 Jul 2025, and it took effect in Aug 2026. It sets self-sufficiency and consumption targets, national management of genetic resources, supply stabilisation and limits on corporate entry into farming.",
+   "num": "263:0:3",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "뉴시스 2024-05-28 「민주유공자법 등 4개 법안 야 단독 처리…여 거부권 예고」(한우법 포함)",
+     "url": "https://www.newsis.com/view/NISX20240528_0002752059",
+     "kind": "媒体"
+    },
+    {
+     "title": "축산신문(livesnews) 한우법 재의결 2025-07-03（찬성 263·반대 0·기권 3）",
+     "url": "https://www.livesnews.com/news/article.html?no=52516",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "制度",
+   "alt": "축산신문 页面把否决日期写成 2025-05-29（与尹锡悦 2025 年 4 月已被罢免矛盾），应为 2024-05-29；2025 年版正式名称或为「탄소중립에 따른 한우산업 전환 및 지원에 관한 법률」。",
+   "note": "施行日期只见报道标题「10년 기다린 한우산업법 시행」(2026-08-24)。"
+  },
+  {
+   "year": 2025,
+   "zh": "2025 年 3 月全南灵岩暴发口蹄疫（时隔 1 年 10 个月），全罗南道韩牛出口暂停；2026 年京畿、庆北疫情也一度中断对港出口。",
+   "en": "A March 2025 FMD outbreak in Yeongam, South Jeolla (the first in 1 year 10 months) halted the province's Hanwoo exports; 2026 outbreaks in Gyeonggi and Gyeongbuk also briefly cut Hong Kong shipments.",
+   "num": null,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2025-03-14 「영암 구제역 발생 국내서 1년10개월만…전남도 한우 수출 중지」",
+     "url": "https://www.newsis.com/view/NISX20250314_0003098867",
+     "kind": "媒体"
+    },
+    {
+     "title": "파이낸셜뉴스 2026-08-31 한우 홍콩 검역조건 개선（9월 1일 시행）",
+     "url": "https://www.fnnews.com/news/202608311100581480",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "危机"
+  },
+  {
+   "year": 2025,
+   "zh": "韩牛出口市场为香港、马来西亚、柬埔寨、阿联酋、澳门 5 地；2025 年 1–7 月出口 27.2 吨、约 180 万美元，香港占 2024 年出口量约 80%。横城 KC 屠宰场 2025 年 1 月获阿联酋清真认证；济州 2025 年 5 月获口蹄疫相关清净认定。",
+   "en": "Hanwoo goes to five markets — Hong Kong, Malaysia, Cambodia, the UAE and Macau. Jan–Jul 2025 exports were 27.2 t worth about USD 1.8m; Hong Kong took ~80% of 2024 volume. Hoengseong KC's plant won UAE halal certification in Jan 2025, and Jeju gained an FMD-free recognition in May 2025.",
+   "num": "27.2 吨 / 180 万美元（1–7 月）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+     "url": "https://www.segye.com/newsView/20250820518577",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "市场",
+   "note": "济州的认定性质（WOAH『不免疫无疫区』？）需核实。"
+  },
+  {
+   "year": 2026,
+   "zh": "2026 年 1 月 1 日美国牛肉关税归零；美国牛肉约占进口牛肉 45%（2025 年 1–11 月 21.8 万吨）。澳洲牛 2026 年配额内税率 5.3%。",
+   "en": "US beef became duty-free on 1 Jan 2026; it holds about 45% of imports (218,000 t in Jan–Nov 2025). Australian beef pays 5.3% in-quota in 2026.",
+   "num": "0%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "아시아경제(영문) 2026-01-07 「US Beef Tariff Reduced to '0%' After 14 Years」",
+     "url": "https://www.asiae.co.kr/en/article/2026010721371820180",
+     "kind": "媒体"
+    },
+    {
+     "title": "Expana 「Korea's Oct 2025 beef imports nosedive as safeguard barriers kick in」",
+     "url": "https://www.expanamarkets.com/insights/article/koreas-oct-2025-beef-imports-nosedive-as-safeguard-barriers-kick-in/",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "制度"
+  },
+  {
+   "year": 2026,
+   "zh": "韩牛饲养头数持续下降：2025 年 12 月约 321.1 万头（同比 -4.7%），2026 年 6 月韩牛 315.4 万头；屠宰减少推高价格，KREI 预测 2026 年批发价约 22,500 韩元/kg（+14.5%）。",
+   "en": "Hanwoo numbers keep falling: ~3.211m (Dec 2025, -4.7%) and 3.154m (Jun 2026); fewer slaughterings push prices up, with KREI forecasting about KRW 22,500/kg wholesale for 2026 (+14.5%).",
+   "num": "315.4 万头",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "파이낸셜뉴스 2025-12-09 KREI 농업관측（한우 2025-12 321.1만 두 추정 등）",
+     "url": "https://www.fnnews.com/news/202512091807424422",
+     "kind": "媒体"
+    },
+    {
+     "title": "파이낸셜뉴스 2026-09-03 KREI 축산관측 9월호（2026-06 한육우 328.9만 두）",
+     "url": "https://www.fnnews.com/news/202609031023207489",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "市场"
+  },
+  {
+   "year": 2026,
+   "zh": "2026 年 9 月 1 日起香港把口蹄疫限制范围由整个道缩小到发病市郡；新加坡已签韩牛与猪肉检疫协议。",
+   "en": "From 1 Sep 2026 Hong Kong narrowed FMD restrictions from whole provinces to the affected city or county; Singapore has signed a quarantine deal for Hanwoo and pork.",
+   "num": null,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "파이낸셜뉴스 2026-08-31 한우 홍콩 검역조건 개선（9월 1일 시행）",
+     "url": "https://www.fnnews.com/news/202608311100581480",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "市场"
+  },
+  {
+   "year": 2026,
+   "zh": "美国、中国目前均未对韩国牛肉开放进口（韩国未获 WOAH 口蹄疫无疫地位）；韩国牛肉只能经出口许可国小量出口，美国、中国市场上的「韩式烤肉」用的是本地或进口（美、澳、日）牛肉。",
+   "en": "Neither the US nor China currently admits Korean beef (Korea lacks WOAH FMD-free status); Hanwoo exports go only to a few approved markets, so Korean BBQ in the US and China uses local or imported (US, Australian, Japanese) beef.",
+   "num": null,
+   "conf": "低",
+   "sources": [
+    {
+     "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+     "url": "https://www.segye.com/newsView/20250820518577",
+     "kind": "媒体"
+    },
+    {
+     "title": "서울신문 2023-05-11 「4년 만에 한우 구제역 발생…청정국 지위 앞두고 날벼락」",
+     "url": "https://m.seoul.co.kr/news/2023/05/11/20230511500173",
+     "kind": "媒体"
+    }
+   ],
+   "tag": "市场",
+   "note": "未找到明文写「美国/中国禁止」的一手来源；出口目的地清单中不含美中，据此推断。建议主会话用 USDA APHIS 口蹄疫国家名单核实。"
+  }
+ ],
  "series": {
-  "imports": [],
-  "selfsuff": [],
-  "head": [],
-  "percap": [],
-  "notes_zh": "",
-  "sources": []
+  "imports": [
+   {
+    "year": 2004,
+    "value": 133,
+    "unit": "千吨（정육 기준）"
+   },
+   {
+    "year": 2005,
+    "value": 143,
+    "unit": "千吨（정육 기준）"
+   },
+   {
+    "year": 2006,
+    "value": 179,
+    "unit": "千吨（정육 기준）"
+   },
+   {
+    "year": 2007,
+    "value": 203,
+    "unit": "千吨（정육 기준）"
+   },
+   {
+    "year": 2008,
+    "value": 224,
+    "unit": "千吨（정육 기준）"
+   },
+   {
+    "year": 2009,
+    "value": 198,
+    "unit": "千吨（정육 기준，推定）"
+   },
+   {
+    "year": 2010,
+    "value": 245,
+    "unit": "千吨（KREI 2016）"
+   },
+   {
+    "year": 2011,
+    "value": 289,
+    "unit": "千吨（KREI 2016）"
+   },
+   {
+    "year": 2012,
+    "value": 254,
+    "unit": "千吨（KREI 2016）"
+   },
+   {
+    "year": 2013,
+    "value": 257,
+    "unit": "千吨（KREI 2016）"
+   },
+   {
+    "year": 2014,
+    "value": 280,
+    "unit": "千吨（KREI 2016）"
+   },
+   {
+    "year": 2015,
+    "value": 297,
+    "unit": "千吨（KREI 2016）"
+   },
+   {
+    "year": 2021,
+    "value": 471.2,
+    "unit": "千吨（产品重量，USDA；美 53%、澳 38%）"
+   },
+   {
+    "year": 2025,
+    "value": 423.7,
+    "unit": "千吨（1–10 月，海关，Expana）"
+   }
+  ],
+  "selfsuff": [
+   {
+    "year": 2004,
+    "pct": 44.2
+   },
+   {
+    "year": 2005,
+    "pct": 48.1
+   },
+   {
+    "year": 2006,
+    "pct": 47.8
+   },
+   {
+    "year": 2007,
+    "pct": 46.4
+   },
+   {
+    "year": 2008,
+    "pct": 47.6
+   },
+   {
+    "year": 2009,
+    "pct": 50.1
+   },
+   {
+    "year": 2010,
+    "pct": 43.2
+   },
+   {
+    "year": 2011,
+    "pct": 42.8
+   },
+   {
+    "year": 2012,
+    "pct": 48.2
+   },
+   {
+    "year": 2013,
+    "pct": 50.1
+   },
+   {
+    "year": 2014,
+    "pct": 48.1
+   },
+   {
+    "year": 2015,
+    "pct": 46.2
+   },
+   {
+    "year": 2020,
+    "pct": 35,
+    "basis": "USDA PSD 胴体当量推算"
+   },
+   {
+    "year": 2021,
+    "pct": 34,
+    "basis": "USDA PSD 胴体当量推算"
+   },
+   {
+    "year": 2022,
+    "pct": 35,
+    "basis": "USDA PSD 胴体当量推算（预测）"
+   }
+  ],
+  "head": [
+   {
+    "year": 2001,
+    "value": 1406000
+   },
+   {
+    "year": 2008,
+    "value": 2440000
+   },
+   {
+    "year": 2009,
+    "value": 2640000
+   },
+   {
+    "year": 2012,
+    "value": 3140000,
+    "note": "9 月高峰"
+   },
+   {
+    "year": 2013,
+    "value": 2920000
+   },
+   {
+    "year": 2014,
+    "value": 2760000
+   },
+   {
+    "year": 2015,
+    "value": 2680000
+   },
+   {
+    "year": 2024,
+    "value": 3369000,
+    "note": "由 2025 年 -4.7% 反推，韩牛"
+   },
+   {
+    "year": 2025,
+    "value": 3211000,
+    "note": "12 月推定，韩牛"
+   },
+   {
+    "year": 2026,
+    "value": 3154000,
+    "note": "6 月，韩牛；한육우 328.9 万"
+   }
+  ],
+  "percap": [
+   {
+    "year": 2004,
+    "kg": 6.8
+   },
+   {
+    "year": 2005,
+    "kg": 6.7
+   },
+   {
+    "year": 2006,
+    "kg": 6.8
+   },
+   {
+    "year": 2007,
+    "kg": 7.6
+   },
+   {
+    "year": 2008,
+    "kg": 7.5
+   },
+   {
+    "year": 2009,
+    "kg": 8.0
+   },
+   {
+    "year": 2010,
+    "kg": 8.8
+   },
+   {
+    "year": 2011,
+    "kg": 10.2
+   },
+   {
+    "year": 2012,
+    "kg": 9.7
+   },
+   {
+    "year": 2013,
+    "kg": 10.3
+   },
+   {
+    "year": 2014,
+    "kg": 10.8
+   },
+   {
+    "year": 2015,
+    "kg": 10.9
+   }
+  ],
+  "notes_zh": "口径：2004–2009 年取自 KREI《农业展望 2010》（精肉基准，2009 年为推定）；2010–2015 年取自 KREI 现案分析第 12 号（2016），单位千吨，原表未注明精肉或胴体基准。自给率 = 国产量 ÷ 消费量。2020–2022 年自给率由 USDA PSD（胴体当量 CWE：产量 287/310/325 千吨，消费 831/900/915 千吨）推算，与 KREI 精肉基准不可直接对比。饲养头数 2001–2015 为韩肉牛（한육우，含肉用牛），12 月 1 日基准；2024–2026 为韩牛（한우）单列。1990s 各指标、2016–2024 年自给率与人均消费量本轮未取得一手数据（KOSIS『가축동향조사』与 KREI『식품수급표』可补）。2025 年进口量各源不一：Expana 1–10 月 423.7 千吨，파이낸셜뉴스 1–11 月 425 千吨（疑为不同口径）。",
+  "sources": [
+   {
+    "title": "KREI 농업전망 2010 제22장 「축산물 수급 동향과 전망」(허덕 외)",
+    "url": "https://repository.krei.re.kr/bitstream/2018.oak/30302/1/e04-2010-22.pdf",
+    "kind": "学术"
+   },
+   {
+    "title": "KREI 현안분석 제12호 「쇠고기 자급률 동향과 전망」 2016-05-03（우병준·이형우）",
+    "url": "https://repository.krei.re.kr/bitstream/2018.oak/22026/1/%ec%87%a0%ea%b3%a0%ea%b8%b0%20%ec%9e%90%ea%b8%89%eb%a5%a0%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%a0%84%eb%a7%9d.pdf",
+    "kind": "学术"
+   },
+   {
+    "title": "USDA FAS GAIN KS2022-0006 Livestock and Products Semi-annual (2022-04-06)",
+    "url": "https://agriexchange.apeda.gov.in/MarketReport/Reports/Livestock_Products_Korea2305.pdf",
+    "kind": "官方"
+   },
+   {
+    "title": "Expana 「Korea's Oct 2025 beef imports nosedive as safeguard barriers kick in」",
+    "url": "https://www.expanamarkets.com/insights/article/koreas-oct-2025-beef-imports-nosedive-as-safeguard-barriers-kick-in/",
+    "kind": "媒体"
+   },
+   {
+    "title": "파이낸셜뉴스 2025-12-09 KREI 농업관측（한우 2025-12 321.1만 두 추정 등）",
+    "url": "https://www.fnnews.com/news/202512091807424422",
+    "kind": "媒体"
+   },
+   {
+    "title": "파이낸셜뉴스 2026-09-03 KREI 축산관측 9월호（2026-06 한육우 328.9만 두）",
+    "url": "https://www.fnnews.com/news/202609031023207489",
+    "kind": "媒体"
+   },
+   {
+    "title": "아시아경제(영문) 2026-01-07 「US Beef Tariff Reduced to '0%' After 14 Years」",
+    "url": "https://www.asiae.co.kr/en/article/2026010721371820180",
+    "kind": "媒体"
+   }
+  ]
  },
  "grades": [
   {
@@ -95,8 +1043,14 @@
      "title": "brunch @architect-y 「소고기 3/4 등급과 맛」2026-05-10（1993 1등급 10.7%、2019 79.3%、2025 78.4%）",
      "url": "https://brunch.co.kr/@architect-y/1601",
      "kind": "二手"
+    },
+    {
+     "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」",
+     "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+     "kind": "官方"
     }
-   ]
+   ],
+   "alt": "农振厅网志把 10.7%（1993）与 88.8%（2019，阉牛）表述为「1+ 以上」，brunch 则写作「1 等级（以上）」；1993 年尚无 1+ 等级，前者或为摘要误差。"
   },
   {
    "grade": "2",
@@ -206,9 +1160,780 @@
    ]
   }
  ],
- "wagyu_vs": [],
- "price": [],
- "ops": [],
+ "wagyu_vs": [
+  {
+   "dim_zh": "品种",
+   "dim_en": "Breed",
+   "hanwoo_zh": "单一本土品种，主流为黄牛（황우）；另有칡소、黑牛、济州黑牛等少数系统。",
+   "hanwoo_en": "A single native breed, overwhelmingly yellow-brown; minor lines include chikso (brindle), black and Jeju black cattle.",
+   "wagyu_zh": "四个品种：黑毛和种（占绝大多数）、褐毛和种、日本短角种、无角和种。",
+   "wagyu_en": "Four breeds: Japanese Black (the vast majority), Brown, Shorthorn and Polled.",
+   "sources": [
+    {
+     "title": "파이낸셜뉴스 2020-10-28 제주흑우（1938 한우표준·2004 FAO 등록·2013 천연기념물）",
+     "url": "https://www.fnnews.com/news/202010281156059895",
+     "kind": "媒体"
+    },
+    {
+     "title": "Wikipedia — Wagyu（品种、分级、海外和牛、遗传资源保护）",
+     "url": "https://en.wikipedia.org/wiki/Wagyu",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "dim_zh": "血缘交集",
+   "dim_en": "Shared bloodlines",
+   "hanwoo_zh": "殖民时期约 1.9 万头朝鲜牛被运到熊本、高知改良褐毛和种。",
+   "hanwoo_en": "About 19,000 Korean cattle were sent to Kumamoto and Kochi in the colonial era to develop Brown Wagyu.",
+   "wagyu_zh": "褐毛和种（赤牛）含朝鲜牛血统。",
+   "wagyu_en": "Brown Wagyu (akaushi) carries Korean cattle ancestry.",
+   "sources": [
+    {
+     "title": "데일리안 「한우」 역사 기획（1938 심사표준·1940 흑우 8%·칡소 3%·일제기 150만 두 반출·구마모토/고치 1.9만 두）",
+     "url": "https://m.dailian.co.kr/news/view/1136777",
+     "kind": "媒体"
+    },
+    {
+     "title": "Wikipedia — Wagyu（品种、分级、海外和牛、遗传资源保护）",
+     "url": "https://en.wikipedia.org/wiki/Wagyu",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "dim_zh": "分级体系",
+   "dim_en": "Grading",
+   "hanwoo_zh": "肉质 1++/1+/1/2/3 + 产肉量 A/B/C；大理石纹 1–9 号，1++ 为 7–9 号（2019 年起）。",
+   "hanwoo_en": "Quality 1++/1+/1/2/3 plus yield A/B/C; marbling No. 1–9, with 1++ = No. 7–9 since 2019.",
+   "wagyu_zh": "日本食肉格付协会：产肉量 A/B/C × 肉质 1–5；BMS 1–12，A5 需 BMS 8–12。",
+   "wagyu_en": "JMGA: yield A/B/C × quality 1–5; BMS 1–12, with A5 requiring BMS 8–12.",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "dim_zh": "育肥期",
+   "dim_en": "Finishing period",
+   "hanwoo_zh": "2019 年平均约 31.2 个月，目标缩至 29 个月；2022 年阉牛平均出栏 30.7 个月。",
+   "hanwoo_en": "About 31.2 months on average in 2019 (target 29); steers averaged 30.7 months at slaughter in 2022.",
+   "wagyu_zh": "约 29 个月（美国约 22 个月）。",
+   "wagyu_en": "About 29 months (US ~22).",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "메트로신문 2023-03-27 축평원 2022년 등급판정 결과(한우 1등급 이상 75.2%)",
+     "url": "https://www.metroseoul.co.kr/article/20230327500553",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "dim_zh": "出口规模",
+   "dim_en": "Export scale",
+   "hanwoo_zh": "2025 年 1–7 月出口 27.2 吨、约 180 万美元，五个市场，香港占八成。",
+   "hanwoo_en": "27.2 t, about USD 1.8m in Jan–Jul 2025, to five markets with Hong Kong taking ~80%.",
+   "wagyu_zh": "2025 年日本牛肉出口 731 亿日元，十年增 6.6 倍，跃居农林水产品出口第二位。",
+   "wagyu_en": "Japan's beef exports reached ¥73.1bn in 2025, up 6.6× in a decade, now its No. 2 farm-food export.",
+   "sources": [
+    {
+     "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+     "url": "https://www.segye.com/newsView/20250820518577",
+     "kind": "媒体"
+    },
+    {
+     "title": "nippon.com 2026 农林水产品出口（2025 年牛肉出口 731 亿日元）",
+     "url": "https://www.nippon.com/ja/japan-data/h02743/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "dim_zh": "出口门槛",
+   "dim_en": "Market access",
+   "hanwoo_zh": "口蹄疫反复，未获 WOAH 无疫地位；美、中、新加坡等大市场长期进不去，每次疫情都中断出口。",
+   "hanwoo_en": "Recurring FMD has kept WOAH status out of reach; the US, China and others stayed closed, and each outbreak halts exports.",
+   "wagyu_zh": "日本为口蹄疫无疫国（2010 年宫崎疫情后恢复），可出口美、欧、亚多地。",
+   "wagyu_en": "Japan is FMD-free (regained after the 2010 Miyazaki outbreak) and ships to the US, EU and across Asia.",
+   "sources": [
+    {
+     "title": "서울신문 2023-05-11 「4년 만에 한우 구제역 발생…청정국 지위 앞두고 날벼락」",
+     "url": "https://m.seoul.co.kr/news/2023/05/11/20230511500173",
+     "kind": "媒体"
+    },
+    {
+     "title": "Wikipedia — Wagyu（品种、分级、海外和牛、遗传资源保护）",
+     "url": "https://en.wikipedia.org/wiki/Wagyu",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "dim_zh": "遗传资源外流",
+   "dim_en": "Genetics abroad",
+   "hanwoo_zh": "活牛、精液基本未外流，海外没有「韩牛」产业；2025 年韩牛法把遗传资源纳入国家管理。",
+   "hanwoo_en": "Live animals and semen have essentially not left Korea, so no overseas Hanwoo industry exists; the 2025 Hanwoo Act puts genetic resources under state management.",
+   "wagyu_zh": "1976 年起及 1990 年代有活牛、精液出口美国，衍生出美国、澳洲和牛产业；2020 年日本立法保护和牛遗传资源。",
+   "wagyu_en": "Live cattle and semen went to the US from 1976 and in the 1990s, seeding American and Australian wagyu; Japan passed a 2020 law protecting wagyu genetics.",
+   "sources": [
+    {
+     "title": "축산신문(livesnews) 한우법 재의결 2025-07-03（찬성 263·반대 0·기권 3）",
+     "url": "https://www.livesnews.com/news/article.html?no=52516",
+     "kind": "媒体"
+    },
+    {
+     "title": "Wikipedia — Wagyu（品种、分级、海外和牛、遗传资源保护）",
+     "url": "https://en.wikipedia.org/wiki/Wagyu",
+     "kind": "百科"
+    }
+   ],
+   "note": "日方年份与法律名（家畜遺伝資源に係る不正競争の防止に関する法律, 2020）据记忆，Wikipedia 页未打开。"
+  },
+  {
+   "dim_zh": "品牌策略",
+   "dim_en": "Brand strategy",
+   "hanwoo_zh": "对内：自助金广告、韩牛日、溯源与等级标示，「身土不二」式国产认同，对抗进口牛。",
+   "hanwoo_en": "Inward-facing: checkoff ads, Hanwoo Day, traceability and grade labels, and 'sintoburi' patriotism against imports.",
+   "wagyu_zh": "对外：和牛统一标志、神户牛等地理标志、国家出口促进，把「Wagyu」做成全球高端品类。",
+   "wagyu_en": "Outward-facing: a unified wagyu mark, GIs like Kobe beef and state export promotion made 'wagyu' a global luxury category.",
+   "sources": [
+    {
+     "title": "세계일보 2024-10-28 한우의 날（2008 한우협회 지정·11월 1일）",
+     "url": "https://www.segye.com/newsView/20241028514096",
+     "kind": "媒体"
+    },
+    {
+     "title": "Wikipedia — Wagyu（品种、分级、海外和牛、遗传资源保护）",
+     "url": "https://en.wikipedia.org/wiki/Wagyu",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "dim_zh": "终端价格（参考）",
+   "dim_en": "Retail price (reference)",
+   "hanwoo_zh": "首尔 1+ 등심约 13,105 韩元/100g（2025-11），约合 40 美元/磅。",
+   "hanwoo_en": "1+ Hanwoo loin about KRW 13,105/100 g in Seoul (Nov 2025), roughly USD 40/lb.",
+   "wagyu_zh": "美国 Costco 日本 A5 肋眼整块 59.99 美元/磅（2025-08，含 25.6% 关税）。",
+   "wagyu_en": "Japanese A5 ribeye roast at a US Costco: USD 59.99/lb (Aug 2025, with a 25.6% tariff).",
+   "sources": [
+    {
+     "title": "아시아경제 2025-11-27 「한우 등심 한달새 38% 급등」(KAMIS)",
+     "url": "https://view.asiae.co.kr/article/2025112516064327993",
+     "kind": "媒体"
+    },
+    {
+     "title": "Lead Stories 2025-08-17 Costco 日本 A5 和牛 $59.99/lb 事实核查",
+     "url": "https://leadstories.com/hoax-alert/2025/08/fact-check-video-does-not-prove-rib-eye-boneless-costs-5999-a-pound.html",
+     "kind": "媒体"
+    }
+   ],
+   "note": "美元折算按约 1,450 韩元/美元，仅作量级参考。"
+  }
+ ],
+ "price": [
+  {
+   "item_zh": "韩牛 1+ 등심（里脊）零售",
+   "item_en": "Hanwoo 1+ loin, retail",
+   "price": 13105,
+   "unit": "韩元/100g",
+   "where": "韩国全国平均（KAMIS）",
+   "date": "2025-11-25",
+   "sources": [
+    {
+     "title": "아시아경제 2025-11-27 「한우 등심 한달새 38% 급등」(KAMIS)",
+     "url": "https://view.asiae.co.kr/article/2025112516064327993",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "韩牛 1++ 등심 韩牛日折扣价",
+   "item_en": "Hanwoo 1++ loin, Hanwoo Day sale",
+   "price": 9900,
+   "unit": "韩元/100g",
+   "where": "首尔 良才 Hanaro Mart 直销场",
+   "date": "2025-10/11",
+   "sources": [
+    {
+     "title": "한국경제 2025-10-29 「11월 1일 '한우데이'…반값 세일」",
+     "url": "https://www.hankyung.com/amp/2025102988911",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "韩牛 1++ 등심 餐厅价",
+   "item_en": "Hanwoo 1++ loin, restaurant",
+   "price": "90,000（大邱）–180,000（水原/首尔）",
+   "unit": "韩元/kg",
+   "where": "韩国餐厅",
+   "date": "2024-11",
+   "sources": [
+    {
+     "title": "YTN 라디오 2024-11-11 이동활 한우자조금관리위원장 인터뷰",
+     "url": "https://www.ytn.co.kr/_ln/0103_202411111701171735",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "美国牛 갈비살（冷藏）零售",
+   "item_en": "US rib-finger meat (chilled), retail",
+   "price": 4857,
+   "unit": "韩元/100g",
+   "where": "韩国（KAMIS）",
+   "date": "2025-11-24",
+   "sources": [
+    {
+     "title": "아시아경제 2025-11-27 「한우 등심 한달새 38% 급등」(KAMIS)",
+     "url": "https://view.asiae.co.kr/article/2025112516064327993",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "美国牛 갈비（冷冻）零售",
+   "item_en": "US short rib (frozen), retail",
+   "price": 4355,
+   "unit": "韩元/100g",
+   "where": "韩国（KAMIS）",
+   "date": "2025-11-24",
+   "sources": [
+    {
+     "title": "아시아경제 2025-11-27 「한우 등심 한달새 38% 급등」(KAMIS)",
+     "url": "https://view.asiae.co.kr/article/2025112516064327993",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "韩牛阉牛批发（拍卖）均价",
+   "item_en": "Hanwoo steer wholesale average",
+   "price": 20980,
+   "unit": "韩元/kg（胴体）",
+   "where": "韩国",
+   "date": "2022",
+   "sources": [
+    {
+     "title": "메트로신문 2023-03-27 축평원 2022년 등급판정 결과(한우 1등급 이상 75.2%)",
+     "url": "https://www.metroseoul.co.kr/article/20230327500553",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "韩牛批发价预测",
+   "item_en": "Hanwoo wholesale forecast",
+   "price": 22500,
+   "unit": "韩元/kg",
+   "where": "韩国（KREI）",
+   "date": "2026",
+   "sources": [
+    {
+     "title": "파이낸셜뉴스 2026-09-03 KREI 축산관측 9월호（2026-06 한육우 328.9만 두）",
+     "url": "https://www.fnnews.com/news/202609031023207489",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "日本 A5 和牛肋眼整块",
+   "item_en": "Japanese A5 wagyu ribeye roast",
+   "price": 59.99,
+   "unit": "美元/磅",
+   "where": "美国北卡 Costco",
+   "date": "2025-08",
+   "sources": [
+    {
+     "title": "Lead Stories 2025-08-17 Costco 日本 A5 和牛 $59.99/lb 事实核查",
+     "url": "https://leadstories.com/hoax-alert/2025/08/fact-check-video-does-not-prove-rib-eye-boneless-costs-5999-a-pound.html",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "USDA Choice 安格斯肋排烤肉",
+   "item_en": "USDA Choice Angus rib roast",
+   "price": "17.49–32.86",
+   "unit": "美元/磅",
+   "where": "美国北卡 Publix / Costco",
+   "date": "2025-08",
+   "sources": [
+    {
+     "title": "Lead Stories 2025-08-17 Costco 日本 A5 和牛 $59.99/lb 事实核查",
+     "url": "https://leadstories.com/hoax-alert/2025/08/fact-check-video-does-not-prove-rib-eye-boneless-costs-5999-a-pound.html",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "item_zh": "韩牛（美国、中国市场）",
+   "item_en": "Hanwoo in the US / China",
+   "price": null,
+   "unit": "—",
+   "where": "美国、中国",
+   "date": "2026",
+   "sources": [
+    {
+     "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+     "url": "https://www.segye.com/newsView/20250820518577",
+     "kind": "媒体"
+    }
+   ],
+   "note": "韩牛未获美中准入，两地没有合法零售价。USDA Prime、澳洲和牛的美国/中国参考价本轮未查到可靠带日期来源。"
+  }
+ ],
+ "ops": [
+  {
+   "id": "grading_trace",
+   "title_zh": "分级与溯源：把「国产」变成看得见的溢价",
+   "title_en": "Grading and traceability: making 'domestic' visible",
+   "facts": [
+    {
+     "zh": "1993 年在市场开放前引入等级制，目的就是让国产牛与进口牛区分开。",
+     "en": "Grading was introduced in 1993, before market opening, explicitly to set domestic beef apart from imports.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+       "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "韩牛 1 等级以上比例由 1993 年约 10.7% 升到 2019 年 79.3%、2025 年 78.4%，阉牛达 92%。",
+     "en": "Hanwoo grading 1 or above rose from ~10.7% (1993) to 79.3% (2019) and 78.4% (2025); 92% for steers.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "brunch @architect-y 「소고기 3/4 등급과 맛」2026-05-10（1993 1등급 10.7%、2019 79.3%、2025 78.4%）",
+       "url": "https://brunch.co.kr/@architect-y/1601",
+       "kind": "二手"
+      },
+      {
+       "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」(국립축산과학원 보증씨수소)",
+       "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "2009 年起溯源全面覆盖流通环节，买肉时可查到个体从出生到出售的记录，《韩牛狂想曲》也拿它作卖点。",
+     "en": "Since 2009 traceability covers the whole chain; buyers can look up an animal's record from birth to sale — a selling point in Hanwoo Rhapsody too.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "KREI 농업전망 2010 제22장 「축산물 수급 동향과 전망」(허덕 외)",
+       "url": "https://repository.krei.re.kr/bitstream/2018.oak/30302/1/e04-2010-22.pdf",
+       "kind": "学术"
+      },
+      {
+       "title": "Leisurebyte — Hanwoo Rhapsody (2021) Review",
+       "url": "https://leisurebyte.com/hanwoo-rhapsody-2021-review-paik-jong-won/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "自助金委员长称韩牛是唯一全程溯源的品种，假冒多发生在流通加工环节改标，辅以 DNA 检测。",
+     "en": "The checkoff chair says Hanwoo is the only breed tracked end-to-end; fakes arise from relabelling in processing and are checked with DNA tests.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "YTN 라디오 2024-11-11 이동활 한우자조금관리위원장 인터뷰",
+       "url": "https://www.ytn.co.kr/_ln/0103_202411111701171735",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "代价：以大理石纹为中心的分级拉长育肥期、推高成本，2019 年改版下调 1++ 门槛以缩短饲养期。",
+     "en": "The cost: marbling-led grading lengthened finishing and raised costs, prompting the 2019 revision.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+       "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+       "kind": "媒体"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "checkoff",
+   "title_zh": "自助金营销：农户自己出钱做广告",
+   "title_en": "The checkoff: farmers paying for their own marketing",
+   "facts": [
+    {
+     "zh": "2005 年起每屠宰一头牛征 2 万韩元，年筹约 180 亿韩元，政府配套后约 300 亿韩元。",
+     "en": "Since 2005, KRW 20,000 per head slaughtered — about KRW 18bn a year, ~30bn with government matching.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "YTN 라디오 2024-11-11 이동활 한우자조금관리위원장 인터뷰",
+       "url": "https://www.ytn.co.kr/_ln/0103_202411111701171735",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "11 月 1 日「韩牛日」配合大卖场最高五成到六成五的折扣、烤肉节、곰탕 赠饭。",
+     "en": "Hanwoo Day on 1 Nov brings retail discounts of up to 50–65%, grilling festivals and free gomtang.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "한국경제 2025-10-29 「11월 1일 '한우데이'…반값 세일」",
+       "url": "https://www.hankyung.com/amp/2025102988911",
+       "kind": "媒体"
+      },
+      {
+       "title": "세계일보 2024-10-28 한우의 날（2008 한우협회 지정·11월 1일）",
+       "url": "https://www.segye.com/newsView/20241028514096",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "自助金还做艺人代言（如李升基任「韩牛守护者」）、纪录片支持、团餐以韩牛替换进口牛的差价补贴、低脂部位推广。",
+     "en": "It also funds celebrity ambassadors (e.g. Lee Seung-gi), documentaries, subsidies for swapping imported beef for Hanwoo in canteens, and promotion of lean cuts.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "매일신문 2013-11-11 한우자조금 「한우의 날」",
+       "url": "https://www.imaeil.com/page/view/2013111107375946293",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "每月在会刊推荐「性价比韩牛店」，前一年指定 51 家。",
+     "en": "A monthly newsletter lists value Hanwoo restaurants; 51 were designated in the prior year.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "YTN 라디오 2024-11-11 이동활 한우자조금관리위원장 인터뷰",
+       "url": "https://www.ytn.co.kr/_ln/0103_202411111701171735",
+       "kind": "媒体"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nonghyup",
+   "title_zh": "农协与国家：从口号到种牛",
+   "title_en": "NH and the state: from slogans to sires",
+   "facts": [
+    {
+     "zh": "1989 年农协推出「身土不二」爱用国货运动，为后来韩牛的国产认同打底。",
+     "en": "NACF's 1989 'sintoburi' campaign laid the ground for Hanwoo's domestic-identity branding.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "itwiki 「신토불이」(1989 농협 구호·1993 배일호 노래)",
+       "url": "https://itwiki.kr/w/%EC%8B%A0%ED%86%A0%EB%B6%88%EC%9D%B4",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "zh": "国立畜产科学院负责全国遗传评估与种公牛选拔，农协韩牛改良事业所负责精液生产与分发。",
+     "en": "The National Institute of Animal Science runs genetic evaluation and sire selection; NH's Hanwoo Improvement Center produces and distributes semen.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」(국립축산과학원 보증씨수소)",
+       "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "每年约 30 头种公牛，每头精液限 10–12 万支；世代间隔约 4 年，育种目标以 20 年为期。",
+     "en": "About 30 proven bulls a year, 100,000–120,000 straws each; generation interval ~4 years, breeding goals set 20 years out.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」(국립축산과학원 보증씨수소)",
+       "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "农协 Hanaro Mart 直销场是韩牛日折扣主战场。",
+     "en": "NH's Hanaro Mart direct-sale markets are the main venue for Hanwoo Day discounts.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "한국경제 2025-10-29 「11월 1일 '한우데이'…반값 세일」",
+       "url": "https://www.hankyung.com/amp/2025102988911",
+       "kind": "媒体"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "jeongyuk",
+   "title_zh": "精肉食堂：「肉铺 + 餐厅」",
+   "title_en": "Jeongyuk sikdang: butcher counter plus grill room",
+   "facts": [
+    {
+     "zh": "模式：在肉铺按产地、重量、等级自己挑肉，拿去隔壁餐厅付「상차림」桌位费自己烤。",
+     "en": "Pick meat at the butcher by origin, weight and grade, then pay a table fee next door and grill it yourself.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "서울시 미디어허브 2011-11 「이 고깃집에서는 고기 팔지 않아요」(마장동 상차림 식당)",
+       "url": "https://mediahub.seoul.go.kr/archives/193564",
+       "kind": "官方"
+      },
+      {
+       "title": "Food Talk Central — Netflix: Hanwoo Rhapsody",
+       "url": "https://foodtalkcentral.com/t/netflix-hanwoo-rhapsody/13724",
+       "kind": "二手"
+      }
+     ]
+    },
+    {
+     "zh": "马场洞「고기 익는 마을」2011 年桌位费成人 4,000 韩元、儿童 2,000 韩元，被认为约为普通韩牛店价格的三分之一。",
+     "en": "At Majang-dong's 'Gogi Ingneun Maeul' (2011), the table fee was KRW 4,000 per adult and 2,000 per child — reportedly about a third of regular Hanwoo restaurant prices.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "서울시 미디어허브 2011-11 「이 고깃집에서는 고기 팔지 않아요」(마장동 상차림 식당)",
+       "url": "https://mediahub.seoul.go.kr/archives/193564",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "马场洞畜产市场 1963 年随崇仁洞屠宰场迁来形成，约 3,000 家店、1.2 万从业者，承担首都圈约 70% 畜产品流通（2011 年数据）。",
+     "en": "Majang-dong's market formed when the Sungin-dong slaughterhouse moved there in 1963; ~3,000 shops and 12,000 workers handle ~70% of the capital region's meat (2011 figures).",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "서울시 미디어허브 2011-11 「이 고깃집에서는 고기 팔지 않아요」(마장동 상차림 식당)",
+       "url": "https://mediahub.seoul.go.kr/archives/193564",
+       "kind": "官方"
+      },
+      {
+       "title": "주간경향 2021-06-25 「마장동—고기에 의한, 고기를 위한, 고기의 마을」",
+       "url": "https://weekly.khan.co.kr/article/202106251620541",
+       "kind": "媒体"
+      }
+     ],
+     "alt": "주간경향 2021 年写约 1,000 家店、首尔过半牛肉经此交易（当地说法）。"
+    },
+    {
+     "zh": "KREI 把「精肉店型餐厅」列为 2011 年后扩大韩牛消费的主要手段之一。",
+     "en": "KREI lists butcher-style restaurants among the main post-2011 measures to expand Hanwoo consumption.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "KREI 현안분석 제12호 「쇠고기 자급률 동향과 전망」 2016-05-03（우병준·이형우）",
+       "url": "https://repository.krei.re.kr/bitstream/2018.oak/22026/1/%ec%87%a0%ea%b3%a0%ea%b8%b0%20%ec%9e%90%ea%b8%89%eb%a5%a0%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%a0%84%eb%a7%9d.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "餐厅加价显著：1++ 등심 1 kg 在大邱餐厅约 9 万韩元，首尔、水原约 18 万韩元。",
+     "en": "Restaurant markups are steep: 1 kg of 1++ loin is ~KRW 90,000 in Daegu restaurants versus ~180,000 in Seoul or Suwon.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "YTN 라디오 2024-11-11 이동활 한우자조금관리위원장 인터뷰",
+       "url": "https://www.ytn.co.kr/_ln/0103_202411111701171735",
+       "kind": "媒体"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gifts",
+   "title_zh": "名节礼盒经济与《请托禁止法》",
+   "title_en": "Holiday gift sets and the graft law",
+   "facts": [
+    {
+     "zh": "2016 年 9 月《请托禁止法》把礼品上限定在 5 万韩元，高价韩牛礼盒首当其冲。",
+     "en": "The Sept 2016 graft law capped gifts at KRW 50,000, hitting premium Hanwoo sets first.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "경향신문 2024-07-22 청탁금지법 선물·식사 한도 변천",
+       "url": "https://www.khan.co.kr/article/202407221856001",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "USDA 指出该法对高端牛肉需求的冲击让养殖户放慢扩群，小牛产量连续下滑。",
+     "en": "USDA noted that the law's hit to high-end beef demand made farmers pull back on herd expansion, cutting calf crops.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "USDA FAS — South Korea: Livestock and Products Annual",
+       "url": "https://www.fas.usda.gov/data/south-korea-livestock-and-products-annual-1",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "农畜水产品礼品上限 2018 年提至 10 万，2022 年名节 20 万，2023 年平时 15 万、名节 30 万韩元。",
+     "en": "The farm-produce gift cap rose to KRW 100,000 (2018), 200,000 at holidays (2022), then 150,000 normally and 300,000 at holidays (2023).",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "경향신문 2024-07-22 청탁금지법 선물·식사 한도 변천",
+       "url": "https://www.khan.co.kr/article/202407221856001",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "名节前四周是屠宰高峰：2026 年中秋前预计约 9.6 万头（上年 11.2 万）。",
+     "en": "The four weeks before a holiday are peak slaughter: ~96,000 head expected before Chuseok 2026 (112,000 a year earlier).",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "파이낸셜뉴스 2026-09-03 KREI 축산관측 9월호（2026-06 한육우 328.9만 두）",
+       "url": "https://www.fnnews.com/news/202609031023207489",
+       "kind": "媒体"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "regional",
+   "title_zh": "区域品牌：横城等",
+   "title_en": "Regional brands: Hoengseong and others",
+   "facts": [
+    {
+     "zh": "横城 KC 屠宰场 2025 年 1 月获阿联酋清真屠宰认证，成为中东出口窗口。",
+     "en": "Hoengseong KC's plant won UAE halal certification in Jan 2025, opening a Middle East channel.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+       "url": "https://www.segye.com/newsView/20250820518577",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "马来西亚检疫按道（省）评估，江原道屠宰场的牛肉曾被视为可出口来源。",
+     "en": "Malaysia assesses origin by province, so Gangwon-slaughtered beef was seen as eligible.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "서울신문 2023-05-11 「4년 만에 한우 구제역 발생…청정국 지위 앞두고 날벼락」",
+       "url": "https://m.seoul.co.kr/news/2023/05/11/20230511500173",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "区域品牌（横城韩牛、咸平天地韩牛、高敞韩牛等）的地理标志登记年份本轮未核实。",
+     "en": "GI registration years for regional brands (Hoengseong, Hampyeong Cheonji, Gochang, etc.) were not verified in this round.",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+       "url": "https://www.segye.com/newsView/20250820518577",
+       "kind": "媒体"
+      }
+     ],
+     "note": "可查 국립농산물품질관리원 지리적표시 등록부。"
+    }
+   ]
+  },
+  {
+   "id": "state_genetics",
+   "title_zh": "国家控制种牛与遗传资源",
+   "title_en": "State control of breeding stock",
+   "facts": [
+    {
+     "zh": "1993 年依《畜产法》第 5 条，国立畜产科学院被指定为家畜改良机构。",
+     "en": "Under Article 5 of the Livestock Act, NIAS was designated the improvement agency in 1993.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "농촌진흥청 웹진 2022-05 「우수 종축의 선발 및 보급」(국립축산과학원 보증씨수소)",
+       "url": "https://rda.go.kr/webzine/2022/05/sub1-3.html",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "济州黑牛 2013 年列天然纪念物，FAO 2004 年登记四个韩牛系统，为非黄牛系统保种。",
+     "en": "Jeju black cattle became a natural monument in 2013 and FAO registered four lines in 2004, conserving non-yellow strains.",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "파이낸셜뉴스 2020-10-28 제주흑우（1938 한우표준·2004 FAO 등록·2013 천연기념물）",
+       "url": "https://www.fnnews.com/news/202010281156059895",
+       "kind": "媒体"
+      },
+      {
+       "title": "데일리벳 2013-07-23 「토종 제주흑우, 6번째 가축 천연기념물로 지정」",
+       "url": "https://www.dailyvet.co.kr/?p=8469",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "2025 年韩牛法规定遗传资源保护与国家管理，并限制企业资本进入养殖。",
+     "en": "The 2025 Hanwoo Act mandates protection and state management of genetic resources and limits corporate entry into farming.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "축산신문(livesnews) 한우법 재의결 2025-07-03（찬성 263·반대 0·기권 3）",
+       "url": "https://www.livesnews.com/news/article.html?no=52516",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "结果：海外没有「韩牛」品类可与美澳和牛对应；韩牛的品牌价值几乎全部留在韩国国内。",
+     "en": "The upshot: there is no overseas 'Hanwoo' counterpart to American or Australian wagyu; nearly all of the brand's value stays in Korea.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "세계일보 2025-08-22 「5개국 넘어 중동 유통망 확대 노려」(한우 수출)",
+       "url": "https://www.segye.com/newsView/20250820518577",
+       "kind": "媒体"
+      },
+      {
+       "title": "nippon.com 2026 农林水产品出口（2025 年牛肉出口 731 亿日元）",
+       "url": "https://www.nippon.com/ja/japan-data/h02743/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "这一条是对上面事实的归纳，可用于验证简报立论。"
+    }
+   ]
+  }
+ ],
  "cuts": [
   {
    "id": "moksim",
@@ -236,8 +1961,8 @@
    "price_rank": "中低",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -293,8 +2018,8 @@
    "price_rank": "最高档",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -335,8 +2060,8 @@
    "price_rank": "高",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -377,8 +2102,8 @@
    "price_rank": "最高档",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -439,8 +2164,8 @@
    "price_rank": "中",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -516,8 +2241,8 @@
    "price_rank": "高",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -563,8 +2288,8 @@
    "price_rank": "中低",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -625,8 +2350,8 @@
    "price_rank": "中低",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -697,8 +2422,8 @@
    "price_rank": "中",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -766,8 +2491,8 @@
    "price_rank": "低至中",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -799,8 +2524,8 @@
    "price_rank": "最高档",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -828,8 +2553,8 @@
    "price_rank": "最高档",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -857,8 +2582,8 @@
    "price_rank": "高",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -886,8 +2611,8 @@
    "price_rank": "高",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -915,8 +2640,8 @@
    "price_rank": "高（稀少）",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -944,8 +2669,8 @@
    "price_rank": "高（稀少）",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -973,8 +2698,8 @@
    "price_rank": "中高",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -1002,8 +2727,8 @@
    "price_rank": "中",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -1031,8 +2756,8 @@
    "price_rank": "高（稀少）",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -1060,8 +2785,8 @@
    "price_rank": "最高档（稀少）",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -1089,8 +2814,8 @@
    "price_rank": "中",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {
@@ -1118,8 +2843,8 @@
    "price_rank": "中",
    "sources": [
     {
-     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
-     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "title": "국가법령정보센터 — 「소·돼지 식육의 표시방법 및 부위 구분기준」(소 대분할 10·소분할 39；本研究未直接打开条文，需在 law.go.kr 检索)",
+     "url": "https://www.law.go.kr/",
      "kind": "官方"
     },
     {

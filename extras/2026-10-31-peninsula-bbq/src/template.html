@@ -18,7 +18,7 @@
 :root{
   --bg:#ECE7DE;--paper:#FFF5D0;--paper-2:#E2DCD0;--ink:#0B0B0B;--ink-2:#3A3632;--muted:#6E675F;
   --red:#D7141B;--red-ink:#B8070D;--yellow:#F4CB36;--line:#0B0B0B;--line-2:rgba(11,11,11,.16);--wash:rgba(215,20,27,.08);
-  --band:#0B0B0B;--band-ink:#F6EFE3;--band-ink-2:#CFC6B8;--band-line:rgba(246,239,227,.22);
+  --land:#D6CEBF;--band:#0B0B0B;--band-ink:#F6EFE3;--band-ink-2:#CFC6B8;--band-line:rgba(246,239,227,.22);
   --nav-h:56px;--gut:clamp(16px,3.4vw,48px);--ruler-h:72px;
   --pop:cubic-bezier(.34,1.56,.64,1);--ease:cubic-bezier(.22,1,.36,1);
   --en:"Jost","Futura","Futura PT",system-ui,sans-serif;
@@ -28,10 +28,10 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0E0C0B;--paper:#1B1714;--paper-2:#26201B;--ink:#F3ECE0;--ink-2:#CFC6B8;--muted:#8F877C;
-  --red:#FF3B30;--red-ink:#FF6A5E;--line:#F3ECE0;--line-2:rgba(243,236,224,.16);--wash:rgba(255,59,48,.10);color-scheme:dark}}
+  --red:#FF3B30;--red-ink:#FF6A5E;--line:#F3ECE0;--line-2:rgba(243,236,224,.16);--wash:rgba(255,59,48,.10);--land:#3A322A;color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0E0C0B;--paper:#1B1714;--paper-2:#26201B;--ink:#F3ECE0;--ink-2:#CFC6B8;--muted:#8F877C;
-  --red:#FF3B30;--red-ink:#FF6A5E;--line:#F3ECE0;--line-2:rgba(243,236,224,.16);--wash:rgba(255,59,48,.10);color-scheme:dark}
+  --red:#FF3B30;--red-ink:#FF6A5E;--line:#F3ECE0;--line-2:rgba(243,236,224,.16);--wash:rgba(255,59,48,.10);--land:#3A322A;color-scheme:dark}
 html[lang="zh-CN"] .en, html[lang="en"] .zh{display:none!important}
 *{box-sizing:border-box}
 html{scroll-padding-top:calc(var(--nav-h) + 16px);-webkit-text-size-adjust:100%}
@@ -143,6 +143,7 @@ html[lang="en"] .lede{line-height:1.55}
 .stage .lane .pill[aria-pressed="true"]{background:var(--red);border-color:var(--red)}
 .stage .card{position:absolute;left:var(--gut);top:72px;bottom:calc(var(--ruler-h) + 20px);width:min(520px,calc(100% - 2*var(--gut)));z-index:3;display:flex;flex-direction:column;justify-content:flex-end}
 .stage .yr{font:800 clamp(56px,8vw,112px)/.9 var(--en);color:var(--yellow);letter-spacing:-.02em}
+.stage .yr.long{font-size:clamp(40px,5.2vw,72px)}
 .stage .era{font:700 13px/18px var(--en);letter-spacing:.14em;text-transform:uppercase;color:var(--band-ink-2);margin:8px 0 8px}
 .stage .card h3{font-size:clamp(24px,2.8vw,36px);line-height:1.15;color:#fff;margin-bottom:12px}
 .stage .card p{color:var(--band-ink-2);font-size:16px;line-height:26px;margin:0 0 12px}
@@ -299,15 +300,18 @@ html[lang="en"] .lede{line-height:1.55}
 .ns figcaption a{color:inherit}
 
 /* 03 WORLD */
-.map{position:relative;border:2px solid var(--line);background:var(--paper);overflow:hidden}
+.map{position:relative;border:2px solid var(--line);background:var(--paper);overflow-x:auto;overflow-y:hidden}
+.map svg{min-width:760px}
 .map svg{display:block;width:100%;height:auto}
-.map .land{fill:var(--paper-2);stroke:var(--bg);stroke-width:.5}
+.map .land{fill:var(--land);stroke:none}
 .map .node circle{fill:var(--ink);stroke:var(--paper);stroke-width:1.2;transition:r .3s var(--pop),fill .2s}
 .map .node.on circle{fill:var(--red)}
+.map .node.kr circle,.map .node.kp circle{fill:var(--yellow);stroke:var(--ink)}
+.map .node.kr.on circle,.map .node.kp.on circle{fill:var(--red)}
 .map .node.off{opacity:0}
 .map .node text{font:700 9px/1 var(--sans);fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px}
 .map .node.hide-l text{display:none}
-.map .hud{position:absolute;left:16px;top:12px;font:800 56px/1 var(--en);color:var(--red);pointer-events:none}
+.map .hud{position:sticky;float:left;left:16px;top:12px;font:800 56px/1 var(--en);color:var(--red);pointer-events:none}
 .map .hud span{display:block;font:600 13px/18px var(--sans);color:var(--ink-2);margin-top:4px}
 .mapctl{display:flex;gap:12px;align-items:center;padding:12px 16px;border-top:2px solid var(--line);background:var(--bg)}
 .mapctl input{flex:1;accent-color:var(--red)}
@@ -355,6 +359,12 @@ details.fold .fb li{margin-bottom:6px}
   .tbl .tp{min-height:280px}
   .grill .gp{min-height:240px}
   .hero .cred{display:none}
+  .ruler .tk{font-size:0;line-height:0}
+  .ruler .tk.on{font-size:12px;line-height:16px;z-index:2;background:rgba(11,11,11,.9);padding:0 4px}
+  .ruler .tk:first-of-type,.ruler .tk:last-child{font-size:11px;line-height:16px}
+  .cutmap .pr span,.cutmap .pr i{display:none}
+  .cutmap .pr{padding:6px}
+  .stage .yr.long{font-size:40px}
 }
 @media (prefers-reduced-motion: reduce){
   *{animation:none!important;transition:none!important}

@@ -61,7 +61,7 @@
     var all = D.stage, laneSel = 'south', steps = [], idx = -1;
     var card = $('.card', st), ruler = $('.ruler', st), head = $('.hd', ruler), ph = $('.ph', st), cap = $('.cap', st);
     var imgs = {};
-    all.forEach(function (s) { if (s.img && !imgs[s.img]) { var im = new Image(); im.alt = ''; im.decoding = 'async'; im.loading = 'lazy'; im.src = s.img; ph.appendChild(im); imgs[s.img] = im; } });
+    all.forEach(function (s) { if (s.img && !imgs[s.img]) { var im = new Image(); im.alt = ''; im.decoding = 'async'; im.loading = 'lazy'; im.src = s.img; if (s.fit === 'contain') im.className = 'contain'; ph.appendChild(im); imgs[s.img] = im; } });
     function pick() { steps = all.filter(function (s) { return s.lane === 'both' || s.lane === laneSel; }); st.style.setProperty('--steps', steps.length); }
     function ticks() { ruler.innerHTML = '<div class="hd"></div>'; head = $('.hd', ruler); steps.forEach(function (s, i) { var b = document.createElement('div'); b.className = 'tk'; b.style.left = pos(i) + '%'; b.textContent = s.label; b.addEventListener('click', function () { go(i); }); ruler.appendChild(b); }); }
     function pos(i) { var pad = innerWidth < 700 ? 8 : 5; return steps.length < 2 ? 50 : pad + (100 - 2 * pad) * i / (steps.length - 1); }
@@ -69,7 +69,7 @@
     function show(i, force) {
       i = clamp(i, 0, steps.length - 1); if (i === idx && !force) return; idx = i; var s = steps[i];
       $$('.tk', ruler).forEach(function (t, k) { t.classList.toggle('on', k === i); });
-      for (var k in imgs) imgs[k].classList.toggle('on', k === s.img);
+      for (var k in imgs) imgs[k].classList.toggle('on', k === s.img); st.classList.toggle('painting', s.fit === 'contain');
       card.classList.add('out');
       setTimeout(function () {
         var yt = L(s.yr || s.label); card.innerHTML = '<div class="mv"><div class="yr' + (yt.length > 8 ? ' long' : '') + '">' + esc(yt) + '</div><div class="era">' + esc(L(s.era)) + '</div><h3>' + esc(L(s.title)) + '</h3><p>' + L(s.text) + '</p>' +

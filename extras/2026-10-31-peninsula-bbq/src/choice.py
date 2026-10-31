@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+"""页面槽位 → images_D.json 里的图（id, 中文说明, 英文说明[, 最长边]）。说明只写画面里看得到的东西与拍摄地。"""
+CHOICE = {
+    # 卷首与章首图版
+    'hero': ('hero-13', '桌边圆烤盘上的牛肉被火舌包住，四周是小菜', 'Beef engulfed in flame on a tabletop grill, side dishes all around', 2200),
+    'plate-fire': ('hero-16', '烤盘上窜起的火焰', 'Flames leaping off a tabletop grill', 2000),
+    'plate-cut': ('cuts-01', '横城韩牛，细密的大理石纹', 'Hoengseong Hanwoo with fine marbling', 1400),
+    'plate-table': ('table-06', '一整桌韩烤：中央烤炉、生肉、几十碟小菜，前景是剪刀与夹子', 'A full Korean barbecue table: grill in the middle, raw meat, dozens of side dishes, scissors and tongs in front', 2000),
+    'plate-world': ('us-01', '洛杉矶韩国城 Chosun Galbee 烤盘上的排骨与洋葱圈', 'Galbi and onion rings on the grill at Chosun Galbee, LA Koreatown', 1400),
+    # 00 FIRE 舞台
+    'h-maek': ('hero-04', '炭火上翻动的韩牛（庆南陕川）', 'Hanwoo turned over charcoal (Hapcheon, South Gyeongsang)', 1400),
+    'h-goryeo': ('cattle-02', '草地上的黄牛母子（韩国）', 'A Korean cow and calf at pasture', 1400),
+    'h-ssam': ('ssam-02', '苏子叶与生菜包着肉', 'Meat wrapped in perilla and lettuce leaves', 1400),
+    'h-joseon': ('history-01', '成夹（19 世纪）《野宴》：士人围着炭火铁板烤肉饮酒', 'Seong Hyeop (19th c.), <i>Night Banquet</i>: scholars grilling meat on an iron plate over charcoal', 1200),
+    'h-bulgogi': ('history-02', '传金弘道《平安监司飨宴图》局部：大同江边的平壤夜宴（18 世纪）', 'Attrib. Kim Hong-do, <i>Feast for the Pyongyang Governor</i> (detail): a night feast on the Taedong (18th c.)', 1400),
+    'galbi': ('galbi-01', '烤网上的调味牛排骨（양념갈비）', 'Marinated beef short ribs (yangnyeom galbi) on the grill', 1400),
+    'bulgogi-pan': ('galbi-05', '带汤槽的烤盘里的불고기与蔬菜', 'Bulgogi and vegetables in a pan with a broth moat', 1400),
+    'grill-pork': ('grill-pork-02', '圆铁盘上的五花肉与洋葱', 'Pork belly and onion on a round iron grill', 1400),
+    'smokeless': ('table-04', '首尔一家烤肉店：桌上烤盘，头顶排烟管', 'A Seoul barbecue restaurant: grills on the tables, extraction hoods overhead', 1400),
+    'aged': ('hero-02', '炭火上的厚切雪花韩牛', 'A thick block of marbled Hanwoo over charcoal', 1400),
+    'h-seoul': ('butcher-01', '首尔马场洞美食街入口', 'Entrance to the Majang-dong food alley, Seoul', 1400),
+    'n-okryu': ('north-05', '春节当天平壤玉流馆门前排队的人群', 'Queues outside Okryugwan, Pyongyang, on Lunar New Year', 1400),
+    'n-farm': ('cattle-03', '芦苇地里的黄牛（摄于韩国）', 'A Korean cow among reeds (photographed in the South)', 1400),
+    'n-duck': ('north-06', '平壤的烤鸭肉', 'Duck barbecue in Pyongyang', 1400),
+    'n-clam': ('north-02', '南浦海边点火烤蛤蜊', 'Clams set alight on the shore at Nampo', 1400),
+    'n-rest': ('cn-04', '北京望京的「玉流馆」分店', 'An “Okryugwan” branch in Wangjing, Beijing', 1400),
+    'n-pyongyang': ('north-01', '平壤一家餐馆，长桌中央嵌着烤炉', 'A Pyongyang restaurant with grills set into a long table', 1400),
+    # 01 CUT
+    'cuts': ('cuts-02', '白盘上码放的陕川韩牛各部位', 'Cuts of Hapcheon Hanwoo laid out on a plate', 1400),
+    'cut-deungsim': ('cuts-05', '铁板上的生里脊（등심）长条与金针菇', 'Strips of raw sirloin (deungsim) with enoki on an iron plate', 1400),
+    'cut-galbi': ('cuts-04', '摆盘的韩牛排骨肉', 'Plated Hanwoo short rib', 1400),
+    'cut-yangji': ('cuts-03', '一盘横溪韩牛生肉', 'A plate of raw Hoenggye Hanwoo', 1400),
+    'grill-beef': ('hero-05', '明火炭烤架上的三片雪花韩牛（庆南陕川）', 'Three slices of marbled Hanwoo over open charcoal (Hapcheon)', 1400),
+    'grill-kkotdeungsim': ('hero-03', '炭火铁网上的厚切雪花韩牛', 'Thick marbled Hanwoo on a charcoal grill', 1400),
+    'grill-ansim_b': ('hero-01', '炭火铁网上冒烟的韩牛块', 'Cubes of Hanwoo smoking over charcoal', 1400),
+    'grill-galbisal': ('grill-beef-03', '不锈钢烤网上的带骨牛肋与牛肉块', 'Bone-in rib and beef chunks on a steel grill', 1400),
+    'grill-eopjinsal': ('grill-beef-05', '炭火网上切块的韩牛，外层已上色', 'Hanwoo cut into pieces and browning over charcoal', 1400),
+    'ops-grading_trace': ('cattle-04', '带耳标的韩牛：耳标上是 12 位个体识别号', 'A Hanwoo with ear tags — the 12-digit traceability ID', 1400),
+    'ops-checkoff': ('grill-beef-02', '横溪韩牛在圆烤盘上，周围是小菜', 'Hoenggye Hanwoo on a round grill with side dishes', 1400),
+    'ops-jeongyuk': ('butcher-02', '首尔广藏市场的韩牛肉铺', 'A Hanwoo butcher in Gwangjang Market, Seoul', 1400),
+    'ops-gifts': ('cuts-03', '一盘横溪韩牛生肉', 'A plate of raw Hoenggye Hanwoo', 1400),
+    'ops-regional': ('cattle-01', '横城韩牛在牛棚食槽前', 'Hoengseong Hanwoo at the feed trough', 1400),
+    'ops-state_genetics': ('cattle-02', '草地上的黄牛母子', 'A Korean cow and calf at pasture', 1400),
+    # 02 TABLE
+    'table': ('table-01', '俯拍一整桌五花肉韩烤：圆烤盘、几十碟小菜、生菜', 'Overhead: a pork-belly table — round grill, dozens of banchan, lettuce', 1400),
+    'staff': ('grill-beef-08', '夹子提起烤好的牛肉', 'Tongs lifting a seared piece of beef', 1400),
+    'scissors': ('scissors-01', '戴手套的手用剪刀在烤盘上剪五花肉', 'A gloved hand cutting pork belly with scissors on the grill', 1400),
+    'ssam': ('ssam-01', '手托生菜，包着烤韩牛、蒜片与酱', 'A lettuce wrap with grilled Hanwoo, garlic and sauce', 1400),
+    'banchan': ('table-03', '圆烤盘周围摆满二十多碟小菜', 'Twenty-odd side dishes around a round grill', 1400),
+    'soju': ('table-04', '首尔一家烤肉店的桌面：烤盘、汤、小菜与啤酒', 'A Seoul barbecue table: grill, soup, banchan and beer', 1400),
+    'finish': ('table-02', '俯拍：烤盘上的牛排，四周是黄铜碗小菜与生菜（美国达拉斯）', 'Overhead: steak on the grill with brass bowls of banchan and lettuce (Dallas)', 1400),
+    'grills': ('galbi-06', '铜罩炉下炭火网上的排骨', 'Galbi over charcoal under a copper hood', 1400),
+    # 03 WORLD 现场
+    'w-cote': ('us-05', '纽约 Cote 门前', 'Outside Cote, New York', 1400),
+    'w-la': ('us-04', '洛杉矶 Wilshire 大道 Young Dong 餐馆', 'Young Dong restaurant on Wilshire Blvd, Los Angeles', 1400),
+    'w-yanji': ('cn-01', '北京马连道一家延吉串店，韩汉双语招牌', 'A Yanji skewer house on Maliandao, Beijing, with Korean–Chinese signage', 1400),
+    'w-baekjeong': ('cn-02', '北京万红路的姜虎东白丁', 'Kang Ho-dong Baekjeong on Wanhong Road, Beijing', 1400),
+}
+MOBILE = {'hero': 'hero-09'}
+CONTAIN = {'h-joseon', 'h-bulgogi'}   # 古画：舞台上完整显示，不裁

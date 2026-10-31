@@ -51,7 +51,7 @@ STAGE = [
          title=T('中原人学「貊炙」', 'China copies the “Maek roast”'),
          text=T('东晋干宝《搜神记》记西晋泰始年间（265–274）以来，中原贵族竞相吃「羌煮、貊炙」，认作「翟之食」。东汉《释名》说貊炙是整只烤熟、各人用刀割着吃。「貊」是不是高句丽、扶余的先人，学界两说。',
                 'Gan Bao’s <i>Soushen Ji</i> records that from the Taishi era (265–274) Chinese nobles vied to eat “Qiang stew and Maek roast,” foods of the barbarians. The Han-era <i>Shiming</i> says Maek roast was a whole animal, carved by each diner with his own knife. Whether the “Maek” were ancestors of Goguryeo and Buyeo is still debated.'),
-         dishes=[T('貊炙', 'Maekjeok', ko='맥적')], img='history'),
+         dishes=[T('貊炙', 'Maekjeok', ko='맥적')], img='h-maek'),
     dict(id='goryeo', y=1123, lane='both', label='1123', yr=T('1123', '1123'), era=T('高丽 · 崇佛少肉', 'Goryeo · Buddhist restraint'),
          title=T('「只有王与宰相才吃肉」', '“Only the king and ministers eat meat”'),
          text=T('北宋使臣徐兢 1123 年出使高丽，在《宣和奉使高丽图经》里写：高丽人好佛戒杀，只有王与宰相吃羊、猪；宰杀时把牲畜捆起投进火里，肉有腥味。另一种看法是：牛是耕畜、肉源稀少，才是根本原因。',
@@ -92,7 +92,7 @@ STAGE = [
          title=T('烤肉店换了排烟，韩牛有了等级', 'New extraction, and Hanwoo gets graded'),
          text=T('桌下排烟的烤炉技术源自日本（1980 年代的几项专利），连锁烤肉店普及了它和天花板上垂下的伸缩排烟管。同一时期，1993 年牛肉分级、2001 年进口全面放开、2008 年溯源制度——韩牛的故事从这里开始，见下一章。',
                 'Under-table extraction came from Japanese yakiniku patents of the 1980s; Korean chains spread it alongside the telescoping hoods that hang from the ceiling. In the same years came beef grading (1993), full import liberalisation (2001) and traceability (2008) — where the Hanwoo story begins. See the next chapter.'),
-         dishes=[T('韩牛', 'Hanwoo', ko='한우')], img='grill-beef'),
+         dishes=[T('韩牛', 'Hanwoo', ko='한우')], img='smokeless'),
     dict(id='aged', y=2015, lane='south', label='2010s', yr=T('2010 年代', '2010s'), era=T('南 · 熟成与高端', 'South · aging and fine dining'),
          title=T('种、切、熟、火', 'Breed, cut, age, fire'),
          text=T('干式熟成在韩国本无传统，约 2008 年后随留美厨师回国流行起来，又扩展到猪肉。高端店讲究品种、自家分切、熟成与炭种（白炭、备长炭、稻草火收尾），由店员全程代烤，有的进了米其林必比登名单。',
@@ -139,20 +139,20 @@ STAGE = [
 # ---------- 02 TABLE ----------
 TABLE = [
     dict(id='center', title=T('火在桌子中间', 'Fire at the centre'), text=T('桌面嵌炉、自己翻肉，是韩烤最显眼的形态；雏形可追溯到朝鲜后期两班的暖炉会。', 'A grill set into the table, and you turn the meat — the most visible trait, going back to late-Joseon brazier parties.'), img='table'),
-    dict(id='staff', title=T('或者，店员替你烤', 'Or the staff grill for you'), text=T('2010 年代以后的高端店多由店员全程代烤，讲火候、讲切法——另一种服务形态。', 'High-end places since the 2010s have staff cook every piece, minding heat and cut.'), img='grill-beef'),
+    dict(id='staff', title=T('或者，店员替你烤', 'Or the staff grill for you'), text=T('2010 年代以后的高端店多由店员全程代烤，讲火候、讲切法——另一种服务形态。', 'High-end places since the 2010s have staff cook every piece, minding heat and cut.'), img='staff'),
     dict(id='scissors', title=T('剪刀', 'Scissors'), text=T('在烤盘上直接剪肉并非传统，一般认为始于 1970 年代：先剪冷面，后来剪烤肉、泡菜，省了刀和砧板。', 'Cutting meat on the grill with scissors is not old — usually dated to the 1970s, first for cold noodles, then meat and kimchi.'), img='scissors'),
     dict(id='ssam', title=T('生菜包', 'Ssam — the wrap'), text=T('用叶菜包饭至少可追溯到高丽：元代马端临说「高丽人以生菜包饭」。烤肉 + 生菜 + 包饭酱（大酱拌辣酱）是现代烤肉店的定式。', 'Wrapping rice in leaves goes back at least to Goryeo — a Yuan writer noted “Koreans wrap rice in raw greens.” Meat + lettuce + ssamjang is the modern standard.'), img='ssam'),
     dict(id='banchan', title=T('小菜会再上', 'Side dishes come back'), text=T('小菜随烤肉一起上、吃完可以再要，是外国人最常提到的特点之一；背后是韩式「饭 + 汤 + 多碟」的饭桌结构。', 'Banchan arrive with the meat and are refilled on request — the thing foreigners mention most, rooted in the rice-soup-many-dishes table.'), img='banchan'),
     dict(id='soju', title=T('烧酒', 'Soju'), text=T('烤肉配烧酒是固定搭配，1940 年代平壤的报纸已把「烧酒与불고기」并提；平壤的烤鸭餐厅也配烧酒。', 'Barbecue and soju belong together — 1940s Pyongyang papers already paired them; the North’s duck houses pour it too.'), img='soju'),
     dict(id='finish', title=T('收尾：冷面或炒饭', 'The finish: noodles or fried rice'), text=T('烤完以冷面或在烤盘上炒饭收尾；铜盘时代把饭拌进槽里的甜汤；平壤烤鸭餐厅则用鸭汤饭或冷面。', 'End with cold noodles or rice fried on the grill; in the dome-pan days rice went into the broth moat; in Pyongyang, duck soup-rice or naengmyeon.'), img='finish'),
-    dict(id='grills', title=T('炉子的演变', 'How the grill changed'), text=T('铁板与炭炉（1849 年已有记载）→ 铁丝网直火 → 穹顶汤盘 → 蜂窝煤 → 便携燃气炉 → 桌下排烟 / 天花板伸缩排烟管 → 讲究炭种。', 'Iron plate over charcoal (recorded 1849) → wire grill → domed broth pan → coal briquettes → portable gas → under-table and ceiling extraction → charcoal as a selling point.'), img='grill-pork'),
+    dict(id='grills', title=T('炉子的演变', 'How the grill changed'), text=T('铁板与炭炉（1849 年已有记载）→ 铁丝网直火 → 穹顶汤盘 → 蜂窝煤 → 便携燃气炉 → 桌下排烟 / 天花板伸缩排烟管 → 讲究炭种。', 'Iron plate over charcoal (recorded 1849) → wire grill → domed broth pan → coal briquettes → portable gas → under-table and ceiling extraction → charcoal as a selling point.'), img='grills'),
 ]
 
 NS = dict(
     s=dict(h=T('南 · 首尔的一桌', 'South · a table in Seoul'), k=T('牛、猪都上桌，按部位点', 'Beef and pork, ordered by cut'),
            li=[T('按部位点肉：牛里脊、牛排骨、五花、猪颈肉，菜单就是一张分割图。', 'You order by cut — sirloin, short rib, pork belly, neck: the menu is a butchery chart.'),
                T('韩牛与进口牛分开标价，等级与溯源号写在牌子上。', 'Hanwoo and imported beef are priced apart, with the grade and traceability number on display.'),
-               T('2024 年立法终结食用狗肉，罚则 2027 年生效。', 'Dog meat is being legislated out; penalties apply from 2027.')], img='table'),
+               T('2024 年立法终结食用狗肉，罚则 2027 年生效。', 'Dog meat is being legislated out; penalties apply from 2027.')], img='smokeless'),
     n=dict(h=T('北 · 平壤的一桌', 'North · a table in Pyongyang'), k=T('牛肉稀缺，鸭、猪、蛤蜊上桌', 'Beef is scarce: duck, pork, clams'),
            li=[T('牛是国家财产，牛肉主要流向干部、军官与外国人。', 'Cattle belong to the state; beef goes mainly to officials, officers and foreigners.'),
                T('烤鸭肉餐厅的流程与南边相同：自烤、生菜包、烧酒、冷面收尾。', 'The duck house runs the Southern script: grill it yourself, wrap, soju, noodles.'),

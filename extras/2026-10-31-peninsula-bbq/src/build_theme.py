@@ -98,14 +98,25 @@ def ch_table():
 def phases(k):
     out = ''
     for p in C[k]['phases']:
-        lis = ''.join(f'<li>{bi({"zh": esc(f["zh"]), "en": esc(f["en"])})}</li>' for f in p['facts'] if f.get('conf') != '低')
-        out += f'<div class="phase fade"><div class="yy">{p["from"]}–{p["to"] if p["to"] < 2026 else ""}</div><div><h4>{bi({"zh": esc(p["title_zh"]), "en": esc(p["title_en"])})}</h4><ul>{lis}</ul></div></div>'
+        fs = [f for f in p['facts'] if f.get('conf') != '低']
+        li = lambda f: f'<li>{bi({"zh": esc(f["zh"]), "en": esc(f["en"])})}</li>'
+        more = (f'<details class="more"><summary>{bi(T(f"再看 {len(fs) - 2} 条", f"{len(fs) - 2} more"))}</summary><ul>' + ''.join(li(f) for f in fs[2:]) + '</ul></details>') if len(fs) > 2 else ''
+        out += f'<div class="phase fade"><div class="yy">{p["from"]}–{p["to"] if p["to"] < 2026 else ""}</div><div><h4>{bi({"zh": esc(p["title_zh"]), "en": esc(p["title_en"])})}</h4><ul>{"".join(li(f) for f in fs[:2])}</ul>{more}</div></div>'
     return out
+
+def photo_row(keys):
+    figs = ''
+    for k in keys:
+        im = img(k)
+        if not im: continue
+        figs += f'<figure><img src="{im["file"]}" alt="" loading="lazy"><figcaption>{bi(cred(k))}</figcaption></figure>'
+    return f'<div class="prow fade">{figs}</div>' if figs else ''
 
 def ch_world():
     return (f'<section class="ch" id="world">{plate("world", "plate-world")}<div class="wide"><p class="lede fade">{bi(E.CH["world"]["lede"])}</p>'
             f'<div class="sec">{sec_h("MAP · 1900–2026", T("扩张地图", "Expansion map"), T("拖动年份或按 ▶ 播放；点任一节点看说明。", "Drag the year or press ▶; tap any point."))}'
             f'<div><div class="map" id="map"><div class="hud"></div><svg></svg></div><div class="mapctl"><button class="pill" data-act="play" type="button">▶</button><input type="range" min="1900" max="2026" value="2026" step="1" aria-label="Year"></div><div class="mapnote"></div></div></div>'
+            + photo_row(['w-la', 'w-cote', 'w-yanji', 'w-baekjeong']) +
             f'<div class="sec">{sec_h("US / CN", T("两条曲线", "Two curves"), E.WORLD_NOTE)}'
             f'<div class="twin"><div class="side"><h4><span class="sticker red">USA</span>{bi(T("美国：从社区食堂到纳斯达克", "US: from canteen to Nasdaq"))}</h4>{phases("us")}</div>'
             f'<div class="side"><h4><span class="sticker">CHINA</span>{bi(T("中国：从延边炭火到本土赛道", "China: from Yanbian charcoal to a local category"))}</h4>{phases("cn")}</div></div></div>'
@@ -126,7 +137,12 @@ def ch_end():
     add(C['global'], 'C'); add(C['kfood'], 'C')
     names = {'A': T('火 · 一张桌子（历史、北半岛）', 'Fire · Table (history, North Korea)'), 'B': T('刀（韩牛、分割、等级）', 'Cut (Hanwoo, butchery, grades)'), 'C': T('出海（美国、中国）', 'Abroad (US, China)')}
     rf = ''.join(f'<h5 style="margin:16px 0 8px;font-size:14px">{bi(names[g])}</h5><ul>' + ''.join(f'<li><a href="{html.escape(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for u, t in refs[g].items()) + '</ul>' for g in ('A', 'B', 'C') if g in refs)
-    creds = ''.join(f'<li>{esc(im["zh"])} — <a href="{html.escape(im["page"])}" target="_blank" rel="noopener">{esc(im["author"])}</a>，{esc(im["license"])}</li>' for im in IMGS.values() if im.get('used', True))
+    seen, creds = set(), ''
+    for im in IMGS.values():
+        if im['id'] in seen: continue
+        seen.add(im['id'])
+        lic = f'<a href="{html.escape(im["license_url"])}" target="_blank" rel="noopener">{esc(im["license"])}</a>' if im.get('license_url') else esc(im['license'])
+        creds += f'<li>{bi(T(esc(im["zh"]), esc(im["en"])))} — <a href="{html.escape(im["page"])}" target="_blank" rel="noopener">{esc(im["author"])}</a> · {lic}</li>'
     method = E.METHOD if hasattr(E, 'METHOD') else T('', '')
     pending = E.PENDING if hasattr(E, 'PENDING') else []
     return (f'<section class="ch" id="end"><div class="wide"><div class="sec endm">{sec_h("END", T("卷末", "Notes"))}'
@@ -142,7 +158,8 @@ def data():
     stage = []
     for s in E.STAGE:
         d = {k: s[k] for k in ('id', 'y', 'lane', 'label', 'yr', 'era', 'title', 'text', 'dishes')}
-        d['img'] = src(s['img']) or src('history'); d['cap'] = cred(s['img']) if src(s['img']) else cred('history')
+        k = s['img'] if src(s['img']) else 'plate-fire'
+        d['img'] = src(k); d['cap'] = cred(k); d['fit'] = (img(k) or {}).get('fit')
         stage.append(d)
     cuts = []
     for c in B['cuts']:

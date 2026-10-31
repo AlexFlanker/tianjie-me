@@ -1,0 +1,1274 @@
+{
+ "timeline": [],
+ "series": {
+  "imports": [],
+  "selfsuff": [],
+  "head": [],
+  "percap": [],
+  "notes_zh": "",
+  "sources": []
+ },
+ "grades": [
+  {
+   "grade": "1++",
+   "marbling_no": "7–9（2019-12 前为 8–9）",
+   "zh": "最高肉质等级；근내지방도（大理石纹）7、8、9 号，肌内脂肪约 15.6% 以上；2019 年改版后零售时须加注具体号数，如 1++(9)。",
+   "en": "Top quality grade: marbling score No. 7–9, roughly ≥15.6% intramuscular fat; since Dec 2019 the exact number is shown, e.g. 1++(9).",
+   "share_pct": null,
+   "year": 2019,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "MAFRA 보도자료 「12월 1일부터 쇠고기 등급 기준 개편」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/68/322105/artclView.do",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    },
+    {
+     "title": "MAFRA 「소고기 1++등급 근내지방도 번호 구분 표기」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/69/322199/artclView.do",
+     "kind": "官方"
+    }
+   ],
+   "note": "各等级单独占比未查到可靠年度数据；BMS 9 号约占韩牛出栏 9%（二手，未注年份）。"
+  },
+  {
+   "grade": "1+",
+   "marbling_no": "6（2019-12 前为 6–7）",
+   "zh": "大理石纹 6 号，肌内脂肪约 12.3%–15.6%。",
+   "en": "Marbling No. 6, about 12.3–15.6% intramuscular fat.",
+   "share_pct": null,
+   "year": 2019,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "MAFRA 보도자료 「12월 1일부터 쇠고기 등급 기준 개편」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/68/322105/artclView.do",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "grade": "1",
+   "marbling_no": "4–5",
+   "zh": "大理石纹 4–5 号。1993 年分级刚推出时，韩牛 1 等级出现率仅约 10.7%。",
+   "en": "Marbling No. 4–5. When grading began in 1993, only about 10.7% of Hanwoo graded 1.",
+   "share_pct": 10.7,
+   "year": 1993,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "MAFRA 보도자료 「12월 1일부터 쇠고기 등급 기준 개편」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/68/322105/artclView.do",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    },
+    {
+     "title": "brunch @architect-y 「소고기 3/4 등급과 맛」2026-05-10（1993 1등급 10.7%、2019 79.3%、2025 78.4%）",
+     "url": "https://brunch.co.kr/@architect-y/1601",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "grade": "2",
+   "marbling_no": "2–3",
+   "zh": "大理石纹 2–3 号，多用于汤、炖等。",
+   "en": "Marbling No. 2–3; mostly for soups and braises.",
+   "share_pct": null,
+   "year": null,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "MAFRA 보도자료 「12월 1일부터 쇠고기 등급 기준 개편」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/68/322105/artclView.do",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "grade": "3",
+   "marbling_no": "1",
+   "zh": "大理石纹 1 号，几乎无肌内脂肪。",
+   "en": "Marbling No. 1, almost no intramuscular fat.",
+   "share_pct": null,
+   "year": null,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    },
+    {
+     "title": "MAFRA 보도자료 「12월 1일부터 쇠고기 등급 기준 개편」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/68/322105/artclView.do",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「등급표 앞에서 우리가 놓치는 것들」(1993 도입·1997 1+·2004 1++)",
+     "url": "https://brunch.co.kr/@bonastory/399",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "grade": "1등급 이상（合计）",
+   "marbling_no": "4–9",
+   "zh": "韩牛 1 等级及以上（1++、1+、1）合计占比：2019 年 79.3%，2022 年 75.2%，2025 年 78.4%；阉牛（거세）2025 年达 92.0%。",
+   "en": "Share of Hanwoo grading 1 or above (1++, 1+, 1 combined): 79.3% in 2019, 75.2% in 2022, 78.4% in 2025; 92.0% for steers in 2025.",
+   "share_pct": 78.4,
+   "year": 2025,
+   "series": [
+    {
+     "year": 1993,
+     "pct": 10.7
+    },
+    {
+     "year": 2019,
+     "pct": 79.3
+    },
+    {
+     "year": 2022,
+     "pct": 75.2
+    },
+    {
+     "year": 2025,
+     "pct": 78.4
+    }
+   ],
+   "conf": "中",
+   "sources": [
+    {
+     "title": "메트로신문 2023-03-27 축평원 2022년 등급판정 결과(한우 1등급 이상 75.2%)",
+     "url": "https://www.metroseoul.co.kr/article/20230327500553",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @architect-y 「소고기 3/4 등급과 맛」2026-05-10（1993 1등급 10.7%、2019 79.3%、2025 78.4%）",
+     "url": "https://brunch.co.kr/@architect-y/1601",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "grade": "육량등급 A/B/C",
+   "marbling_no": "—",
+   "zh": "另有产肉量等级 A、B、C（按胴体可食肉比例），与肉质等级组合标示，如 1++A。2019 年改为按品种与性别分六套公式计算。",
+   "en": "A separate yield grade A/B/C (saleable meat ratio) is combined with the quality grade, e.g. 1++A; since 2019 it uses six formulas by breed and sex.",
+   "share_pct": null,
+   "year": 2019,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스 2019-11-25 「12월 1일부터 쇠고기 등급 기준 개편」(MAFRA 발표)",
+     "url": "https://www.newsis.com/view/NISX20191125_0000839787",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ],
+ "wagyu_vs": [],
+ "price": [],
+ "ops": [],
+ "cuts": [
+  {
+   "id": "moksim",
+   "kind": "primal",
+   "primal_ko": "목심",
+   "primal_zh": "颈肉（上脑前段）",
+   "primal_en": "Chuck roll / neck",
+   "pos": {
+    "x": 0.12,
+    "y": 0.3
+   },
+   "subs": [
+    {
+     "ko": "목심살",
+     "zh": "颈肉",
+     "en": "Chuck roll"
+    }
+   ],
+   "where_zh": "颈部到第 1 胸椎之间，背线前端。",
+   "texture_zh": "运动量大，肉纹较粗、略有嚼劲，夹有适量脂肪。",
+   "texture_en": "A hard-working muscle: coarse grain, some chew, moderate fat.",
+   "how_zh": "切薄片做烤肉、불고기，或切块做汤料。",
+   "how_en": "Thin-sliced for grilling or bulgogi; cubed for soup.",
+   "grill_sec": "薄片每面约 20–30 秒",
+   "price_rank": "中低",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "deungsim",
+   "kind": "primal",
+   "primal_ko": "등심",
+   "primal_zh": "里脊（肋眼、上脑）",
+   "primal_en": "Loin (chuck eye to ribeye)",
+   "pos": {
+    "x": 0.35,
+    "y": 0.18
+   },
+   "subs": [
+    {
+     "ko": "윗등심살",
+     "zh": "上里脊（前段）",
+     "en": "Upper loin / chuck eye"
+    },
+    {
+     "ko": "꽃등심살",
+     "zh": "花里脊（肋眼）",
+     "en": "Ribeye ('flower' loin)"
+    },
+    {
+     "ko": "아래등심살",
+     "zh": "下里脊（后段）",
+     "en": "Lower loin"
+    },
+    {
+     "ko": "살치살",
+     "zh": "上脑边（板腱尾）",
+     "en": "Chuck flap tail"
+    }
+   ],
+   "where_zh": "背部胸椎段（约第 1–13 胸椎）两侧的背最长肌一带。",
+   "texture_zh": "大理石纹最集中的部位，加热后脂肪融化，柔嫩多汁。",
+   "texture_en": "The most marbled primal; fat melts on heat, tender and juicy.",
+   "how_zh": "厚切烤（구이）或做牛排，韩烤的招牌部位。",
+   "how_en": "Thick-cut grilling or steak; the signature Korean BBQ primal.",
+   "grill_sec": "1.5–2 cm 厚片每面约 1 分钟至三分熟（medium-rare），再剪成一口大小",
+   "price_rank": "最高档",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "chaekkeut",
+   "kind": "primal",
+   "primal_ko": "채끝",
+   "primal_zh": "外脊（西冷）",
+   "primal_en": "Striploin",
+   "pos": {
+    "x": 0.55,
+    "y": 0.18
+   },
+   "subs": [
+    {
+     "ko": "채끝살",
+     "zh": "西冷",
+     "en": "Striploin"
+    }
+   ],
+   "where_zh": "里脊之后、腰椎段的背部肌肉。",
+   "texture_zh": "比里脊略精瘦，肉质紧实、纹理细，有嚼劲。",
+   "texture_en": "Leaner and firmer than the ribeye, fine-grained with some bite.",
+   "how_zh": "牛排、厚切烤。",
+   "how_en": "Steak and thick-cut grilling.",
+   "grill_sec": "厚片每面约 1 分钟，三至五分熟",
+   "price_rank": "高",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "ansim",
+   "kind": "primal",
+   "primal_ko": "안심",
+   "primal_zh": "里脊（菲力）",
+   "primal_en": "Tenderloin",
+   "pos": {
+    "x": 0.58,
+    "y": 0.32
+   },
+   "subs": [
+    {
+     "ko": "안심살",
+     "zh": "菲力",
+     "en": "Tenderloin"
+    }
+   ],
+   "where_zh": "腰椎内侧、外脊下方，几乎不运动的肌肉。",
+   "texture_zh": "最嫩，脂肪少，味道清淡。",
+   "texture_en": "The tenderest cut; lean and mild.",
+   "how_zh": "厚切烤、牛排，也可做生拌（육회）。",
+   "how_en": "Thick-cut grilling, steak; also used for yukhoe.",
+   "grill_sec": "2–3 cm 方块每面 40–60 秒，一至三分熟",
+   "price_rank": "最高档",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "apdari",
+   "kind": "primal",
+   "primal_ko": "앞다리",
+   "primal_zh": "前腿（肩肉）",
+   "primal_en": "Shoulder (blade & clod)",
+   "pos": {
+    "x": 0.2,
+    "y": 0.52
+   },
+   "subs": [
+    {
+     "ko": "꾸리살",
+     "zh": "嫩肩（肩胛里脊）",
+     "en": "Chuck tender"
+    },
+    {
+     "ko": "부채살",
+     "zh": "板腱（扇形肉）",
+     "en": "Top blade / flat iron"
+    },
+    {
+     "ko": "앞다리살",
+     "zh": "前腿肉",
+     "en": "Clod"
+    },
+    {
+     "ko": "갈비덧살",
+     "zh": "肋盖肉",
+     "en": "Rib-side shoulder cap"
+    },
+    {
+     "ko": "부채덮개살",
+     "zh": "板腱盖",
+     "en": "Blade cover"
+    }
+   ],
+   "where_zh": "肩胛骨周围与前腿上部。",
+   "texture_zh": "精瘦、略有筋；부채살 中间有一条筋膜，两侧肉很嫩。",
+   "texture_en": "Lean with some sinew; top blade has a central seam with tender meat either side.",
+   "how_zh": "불고기、육회、장조림；부채살 可烤。",
+   "how_en": "Bulgogi, yukhoe, soy-braise; top blade for grilling.",
+   "grill_sec": "부채살 1 cm 片每面约 40 秒",
+   "price_rank": "中",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "galbi",
+   "kind": "primal",
+   "primal_ko": "갈비",
+   "primal_zh": "肋排",
+   "primal_en": "Rib / short rib",
+   "pos": {
+    "x": 0.38,
+    "y": 0.5
+   },
+   "subs": [
+    {
+     "ko": "본갈비",
+     "zh": "本肋（第 1–5 肋）",
+     "en": "Chuck short rib (ribs 1–5)"
+    },
+    {
+     "ko": "꽃갈비",
+     "zh": "花肋（第 6–8 肋）",
+     "en": "Prime short rib (ribs 6–8)"
+    },
+    {
+     "ko": "참갈비",
+     "zh": "真肋（第 9–13 肋）",
+     "en": "Back short rib (ribs 9–13)"
+    },
+    {
+     "ko": "갈비살",
+     "zh": "肋条肉",
+     "en": "Rib finger / intercostal"
+    },
+    {
+     "ko": "마구리",
+     "zh": "肋排端",
+     "en": "Rib ends"
+    },
+    {
+     "ko": "토시살",
+     "zh": "护心肉（悬垂膈肌）",
+     "en": "Hanger steak"
+    },
+    {
+     "ko": "안창살",
+     "zh": "横膈膜肉",
+     "en": "Outside skirt"
+    },
+    {
+     "ko": "제비추리",
+     "zh": "颈脊条",
+     "en": "Neck chain"
+    }
+   ],
+   "where_zh": "胸腔两侧的肋骨及肋间肉，含横膈膜一带的 토시살、안창살。",
+   "texture_zh": "带骨，脂肪与肉层交替，味浓；横膈膜部位肉味最重、有嚼劲。",
+   "texture_en": "Bone-in, layered fat and meat, rich; the diaphragm cuts are the most beefy and chewy.",
+   "how_zh": "갈비구이（생갈비/양념갈비）、갈비찜、갈비탕。",
+   "how_en": "Grilled (plain or marinated), braised (galbi-jjim), soup (galbitang).",
+   "grill_sec": "切成蝴蝶片的 생갈비 每面约 1–2 分钟，至五分熟后剪开",
+   "price_rank": "高",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "udun",
+   "kind": "primal",
+   "primal_ko": "우둔",
+   "primal_zh": "臀肉（和尚头内侧）",
+   "primal_en": "Topside (inside round)",
+   "pos": {
+    "x": 0.82,
+    "y": 0.35
+   },
+   "subs": [
+    {
+     "ko": "우둔살",
+     "zh": "臀肉",
+     "en": "Topside"
+    },
+    {
+     "ko": "홍두깨살",
+     "zh": "牛霖条（眼肉）",
+     "en": "Eye of round"
+    }
+   ],
+   "where_zh": "后腿臀部内侧。",
+   "texture_zh": "几乎无脂肪，肉纹细，颜色鲜红。",
+   "texture_en": "Almost fat-free, fine-grained, deep red.",
+   "how_zh": "육회（生拌）、장조림（酱牛肉）、육포（肉干）、산적。",
+   "how_en": "Yukhoe, soy-braised jangjorim, jerky, skewers.",
+   "grill_sec": "不宜久烤；多生食或炖",
+   "price_rank": "中低",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "seoldo",
+   "kind": "primal",
+   "primal_ko": "설도",
+   "primal_zh": "后腿外侧（米龙、膝圆）",
+   "primal_en": "Rump, outside round & knuckle",
+   "pos": {
+    "x": 0.86,
+    "y": 0.55
+   },
+   "subs": [
+    {
+     "ko": "보섭살",
+     "zh": "臀腰肉",
+     "en": "Rump"
+    },
+    {
+     "ko": "설깃살",
+     "zh": "米龙（外侧后腿）",
+     "en": "Outside flat"
+    },
+    {
+     "ko": "설깃머리살",
+     "zh": "米龙盖",
+     "en": "Outside round cap"
+    },
+    {
+     "ko": "도가니살",
+     "zh": "膝圆",
+     "en": "Knuckle"
+    },
+    {
+     "ko": "삼각살",
+     "zh": "三角肉",
+     "en": "Knuckle triangle / tri-tip"
+    }
+   ],
+   "where_zh": "后腿外侧与膝盖上方。",
+   "texture_zh": "精瘦、肉纹略粗，部位间口感差异大。",
+   "texture_en": "Lean, slightly coarse; texture varies by muscle.",
+   "how_zh": "불고기、육회、산적、샤브샤브、장조림。",
+   "how_en": "Bulgogi, yukhoe, skewers, shabu-shabu, braise.",
+   "grill_sec": "薄片每面约 20 秒",
+   "price_rank": "中低",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "yangji",
+   "kind": "primal",
+   "primal_ko": "양지",
+   "primal_zh": "胸腹肉（牛腩）",
+   "primal_en": "Brisket & flank",
+   "pos": {
+    "x": 0.42,
+    "y": 0.78
+   },
+   "subs": [
+    {
+     "ko": "양지머리",
+     "zh": "胸口肉",
+     "en": "Brisket"
+    },
+    {
+     "ko": "차돌박이",
+     "zh": "雪花牛胸（胸口油）",
+     "en": "Brisket point / deckle"
+    },
+    {
+     "ko": "업진살",
+     "zh": "腹肉（五花）",
+     "en": "Short plate / navel"
+    },
+    {
+     "ko": "업진안살",
+     "zh": "内腹肉",
+     "en": "Inner short plate"
+    },
+    {
+     "ko": "치마양지",
+     "zh": "腹胁肉",
+     "en": "Flank"
+    },
+    {
+     "ko": "치마살",
+     "zh": "裙肉",
+     "en": "Flank steak"
+    },
+    {
+     "ko": "앞치마살",
+     "zh": "围裙肉",
+     "en": "Inside flank flap"
+    }
+   ],
+   "where_zh": "前胸到腹部下侧。",
+   "texture_zh": "肉与脂肪层层相间，筋膜多；차돌박이 白色脂肪呈点状分布。",
+   "texture_en": "Layers of meat, fat and connective tissue; the deckle is studded with white fat.",
+   "how_zh": "양지머리 熬汤（설렁탕·곰탕·육개장）、做수육；차돌박이·업진살·치마살 薄切烤。",
+   "how_en": "Brisket for long-simmered soups and boiled slices; deckle, plate and flank are thin-sliced for grilling.",
+   "grill_sec": "차돌박이 薄片每面 5–10 秒，卷起即可",
+   "price_rank": "中",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    },
+    {
+     "title": "MAFRA 보도자료 「쇠고기 '앞치마살', '업진안살' 구워먹어 볼까?」",
+     "url": "https://www.mafra.go.kr/bbs/mafra/71/303387/artclView",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "satae",
+   "kind": "primal",
+   "primal_ko": "사태",
+   "primal_zh": "腱子",
+   "primal_en": "Shank",
+   "pos": {
+    "x": 0.2,
+    "y": 0.88,
+    "x2": 0.86,
+    "y2": 0.88
+   },
+   "subs": [
+    {
+     "ko": "앞사태",
+     "zh": "前腱",
+     "en": "Fore shank"
+    },
+    {
+     "ko": "뒷사태",
+     "zh": "后腱",
+     "en": "Hind shank"
+    },
+    {
+     "ko": "뭉치사태",
+     "zh": "腱子心（后腿团块）",
+     "en": "Heel muscle"
+    },
+    {
+     "ko": "아롱사태",
+     "zh": "花腱",
+     "en": "Shank centre (heel)"
+    },
+    {
+     "ko": "상박살",
+     "zh": "上臂肉",
+     "en": "Upper arm"
+    }
+   ],
+   "where_zh": "前后腿下段。",
+   "texture_zh": "筋腱多，久煮后胶质化，越炖越香；아롱사태 纹路如花。",
+   "texture_en": "Sinew-rich, turns gelatinous with long cooking; the shank centre shows a flower-like grain.",
+   "how_zh": "장조림、찜、탕、수육；아롱사태 也做육회或烤。",
+   "how_en": "Braises, soups, boiled slices; the shank centre also for yukhoe or grilling.",
+   "grill_sec": "아롱사태 薄片每面约 30 秒",
+   "price_rank": "低至中",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "kkotdeungsim",
+   "kind": "bbq",
+   "primal_ko": "꽃등심",
+   "primal_zh": "花里脊（肋眼）",
+   "primal_en": "Ribeye",
+   "parent": "등심",
+   "subs": [],
+   "where_zh": "属 등심 大分割",
+   "texture_zh": "大理石纹最发达，脂肪融化后香甜多汁。",
+   "texture_en": "Heavily marbled, sweet and juicy as the fat renders.",
+   "how_zh": "厚切整片上网，两面焦后用剪刀剪块，蘸盐或芥末。",
+   "how_en": "Grill a thick slab, scissor into bites once seared; eat with salt or wasabi.",
+   "grill_sec": "1.5–2 cm 每面 60–90 秒，三分熟",
+   "price_rank": "最高档",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "ansim_b",
+   "kind": "bbq",
+   "primal_ko": "안심",
+   "primal_zh": "菲力",
+   "primal_en": "Tenderloin",
+   "parent": "안심",
+   "subs": [],
+   "where_zh": "属 안심 大分割",
+   "texture_zh": "最嫩，几乎无脂肪，味清淡。",
+   "texture_en": "Tenderest, nearly fat-free, mild.",
+   "how_zh": "切 2–3 cm 方块，四面快煎，内里留红。",
+   "how_en": "Cut into 2–3 cm cubes, sear all sides, keep the centre rare.",
+   "grill_sec": "每面 40–60 秒，一至三分熟",
+   "price_rank": "最高档",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "chaekkeut_b",
+   "kind": "bbq",
+   "primal_ko": "채끝",
+   "primal_zh": "西冷",
+   "primal_en": "Striploin",
+   "parent": "채끝",
+   "subs": [],
+   "where_zh": "属 채끝 大分割",
+   "texture_zh": "肉味浓、纹理细、略有嚼劲。",
+   "texture_en": "Beefy, fine-grained, a little bite.",
+   "how_zh": "厚切，烤法同꽃등심。",
+   "how_en": "Thick-cut, grilled like ribeye.",
+   "grill_sec": "每面约 60 秒，三至五分熟",
+   "price_rank": "高",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "galbisal",
+   "kind": "bbq",
+   "primal_ko": "갈비살",
+   "primal_zh": "肋条肉",
+   "primal_en": "Rib finger meat",
+   "parent": "갈비",
+   "subs": [],
+   "where_zh": "属 갈비 大分割",
+   "texture_zh": "肋骨间的条状肉，脂多味浓、嚼劲适中。",
+   "texture_en": "Strips from between the ribs; fatty, rich, moderately chewy.",
+   "how_zh": "切一口大小，烤至表面焦脆。",
+   "how_en": "Bite-sized pieces, grilled until crisp-edged.",
+   "grill_sec": "每面 30–60 秒，五分熟",
+   "price_rank": "高",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "anchangsal",
+   "kind": "bbq",
+   "primal_ko": "안창살",
+   "primal_zh": "横膈膜肉（外裙）",
+   "primal_en": "Outside skirt",
+   "parent": "갈비",
+   "subs": [],
+   "where_zh": "属 갈비 大分割",
+   "texture_zh": "横膈膜肌，肉味最浓，纤维粗、有弹性，一头牛产量很少。",
+   "texture_en": "Diaphragm muscle: the beefiest, coarse-fibred and springy; tiny yield per animal.",
+   "how_zh": "先去膜，逆纹切，猛火烤。",
+   "how_en": "Trim the membrane, cut across the grain, grill hot.",
+   "grill_sec": "每面 40–60 秒，五分熟",
+   "price_rank": "高（稀少）",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "jebichuri",
+   "kind": "bbq",
+   "primal_ko": "제비추리",
+   "primal_zh": "颈脊条",
+   "primal_en": "Neck chain",
+   "parent": "갈비",
+   "subs": [],
+   "where_zh": "属 갈비 大分割",
+   "texture_zh": "沿颈椎到肋骨的细长肌肉，纹理呈条状，口感有咬劲。",
+   "texture_en": "A long thin muscle along the neck vertebrae; stringy grain, springy bite.",
+   "how_zh": "整条或切段快烤。",
+   "how_en": "Grill whole strips or segments quickly.",
+   "grill_sec": "每面约 30 秒",
+   "price_rank": "高（稀少）",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "chimasal",
+   "kind": "bbq",
+   "primal_ko": "치마살",
+   "primal_zh": "裙肉",
+   "primal_en": "Flank steak",
+   "parent": "양지",
+   "subs": [],
+   "where_zh": "属 양지 大分割",
+   "texture_zh": "纹路粗、脂肪呈细线，肉汁多、略有嚼劲。",
+   "texture_en": "Coarse grain with fine fat streaks; juicy with chew.",
+   "how_zh": "薄切或逆纹切条快烤。",
+   "how_en": "Thin-slice or cut across the grain, grill fast.",
+   "grill_sec": "每面 20–30 秒",
+   "price_rank": "中高",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "eopjinsal",
+   "kind": "bbq",
+   "primal_ko": "업진살",
+   "primal_zh": "腹肉（牛五花）",
+   "primal_en": "Short plate / navel",
+   "parent": "양지",
+   "subs": [],
+   "where_zh": "属 양지 大分割",
+   "texture_zh": "脂肪与肉层交错，类似猪五花的口感，油香重。",
+   "texture_en": "Layered fat and lean like pork belly; very rich.",
+   "how_zh": "薄切，烤到油脂透明。",
+   "how_en": "Thin-sliced, grilled until the fat turns translucent.",
+   "grill_sec": "每面 15–30 秒",
+   "price_rank": "中",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "tosisal",
+   "kind": "bbq",
+   "primal_ko": "토시살",
+   "primal_zh": "护心肉（悬垂肉）",
+   "primal_en": "Hanger steak",
+   "parent": "갈비",
+   "subs": [],
+   "where_zh": "属 갈비 大分割",
+   "texture_zh": "挂在横膈膜上，肉汁多、味浓，中间有筋。",
+   "texture_en": "Hangs from the diaphragm; juicy and intense, with a central sinew.",
+   "how_zh": "去中筋，切块或条，大火快烤。",
+   "how_en": "Remove the centre sinew, cut into pieces, high heat.",
+   "grill_sec": "每面 40–60 秒，三至五分熟",
+   "price_rank": "高（稀少）",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "salchisal",
+   "kind": "bbq",
+   "primal_ko": "살치살",
+   "primal_zh": "上脑边（板腱尾）",
+   "primal_en": "Chuck flap tail",
+   "parent": "등심",
+   "subs": [],
+   "where_zh": "属 등심 大分割",
+   "texture_zh": "大理石纹极密的小块部位，入口即化。",
+   "texture_en": "A small, intensely marbled piece that melts in the mouth.",
+   "how_zh": "1 cm 片快烤，避免过熟出油变柴。",
+   "how_en": "1 cm slices seared fast; overcooking renders it dry.",
+   "grill_sec": "每面 20–40 秒，一至三分熟",
+   "price_rank": "最高档（稀少）",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "buchaesal",
+   "kind": "bbq",
+   "primal_ko": "부채살",
+   "primal_zh": "板腱（扇形肉）",
+   "primal_en": "Top blade / flat iron",
+   "parent": "앞다리",
+   "subs": [],
+   "where_zh": "属 앞다리 大分割",
+   "texture_zh": "中间一道筋，两侧肉细嫩，价格较亲民。",
+   "texture_en": "A central seam of sinew with tender meat either side; good value.",
+   "how_zh": "横切成片（筋呈一线可嚼），或去筋。",
+   "how_en": "Slice across so the seam is a thin line, or remove it.",
+   "grill_sec": "1 cm 片每面约 40 秒",
+   "price_rank": "中",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  },
+  {
+   "id": "chadolbagi",
+   "kind": "bbq",
+   "primal_ko": "차돌박이",
+   "primal_zh": "雪花牛胸（胸口油）",
+   "primal_en": "Brisket point (deckle), shaved",
+   "parent": "양지",
+   "subs": [],
+   "where_zh": "属 양지 大分割",
+   "texture_zh": "白色脂肪点状分布，冷冻刨成薄片，入口脆而油香。",
+   "texture_en": "White fat speckled through; shaved frozen into paper-thin slices, crisp and rich.",
+   "how_zh": "刨片上烤盘，卷起即熟，常配大酱汤或葱丝。",
+   "how_en": "Shaved slices hit the plate and curl; often with doenjang stew or scallion salad.",
+   "grill_sec": "每面 5–10 秒",
+   "price_rank": "中",
+   "sources": [
+    {
+     "title": "MAFRA / 식약처 「소·돼지 식육의 표시방법 및 부위 구분기준」(현 식품등의 표시기준 중 식육 부위 구분) — 소 대분할 10·소분할 39",
+     "url": "https://www.law.go.kr/행정규칙/소·돼지식육의표시방법및부위구분기준",
+     "kind": "官方"
+    },
+    {
+     "title": "brunch @bonastory 「소 한 마리의 해부학」(대분할 10개·소분할 39개 정리)",
+     "url": "https://brunch.co.kr/@bonastory/398",
+     "kind": "二手"
+    }
+   ],
+   "note": "grill_sec 为韩烤店常见做法的经验区间（明火/炭火、肉厚度不同差异大），非官方标准。"
+  }
+ ],
+ "rhapsody": [
+  {
+   "zh": "韩文片名《한우 랩소디》，英文 Hanwoo Rhapsody，是 KBS1《다큐 인사이트》播出的两集美食人文纪录片，主持/讲述人白种元（백종원）。",
+   "en": "Korean title 한우 랩소디 (Hanwoo Rhapsody): a two-part food-and-culture documentary on KBS1's Docu Insight, presented by Paik Jong-won.",
+   "year": 2021,
+   "num": "2 集，各约 48–50 分钟",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Netflix — Hanwoo Rhapsody (title 81473623)",
+     "url": "https://www.netflix.com/th-en/title/81473623",
+     "kind": "官方"
+    },
+    {
+     "title": "MyDramaList — Hanwoo Rhapsody (한우 랩소디), KBS1, 2021-12-09 ~ 12-16",
+     "url": "https://mydramalist.com/716523-hanwoo-rhapsody",
+     "kind": "二手"
+    },
+    {
+     "title": "텐아시아 2021-07-26 「냉면 랩소디」 (KBS 다큐인사이트; 한우 랩소디 12월 예정)",
+     "url": "https://www.tenasia.co.kr/article/2021072692574",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "KBS1 首播：第 1 集 2021 年 12 月 9 日、第 2 集 12 月 16 日（周四晚）；Netflix 同期上线，Netflix 页面标年份为 2021。",
+   "en": "KBS1 premiere: episode 1 on 9 Dec 2021, episode 2 on 16 Dec 2021 (Thursday nights), with a simultaneous Netflix release; Netflix lists it as 2021.",
+   "date": "2021-12-09",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "MyDramaList — Hanwoo Rhapsody (한우 랩소디), KBS1, 2021-12-09 ~ 12-16",
+     "url": "https://mydramalist.com/716523-hanwoo-rhapsody",
+     "kind": "二手"
+    },
+    {
+     "title": "TheTVDB — 한우 랩소디 Episode 1 (2021-12-09)",
+     "url": "https://www.thetvdb.com/series/415006-/episodes/8960408",
+     "kind": "二手"
+    },
+    {
+     "title": "Netflix — Hanwoo Rhapsody (title 81473623)",
+     "url": "https://www.netflix.com/th-en/title/81473623",
+     "kind": "官方"
+    }
+   ],
+   "note": "简报写 2022 年，实为 2021 年 12 月；Netflix 是否与 KBS 同日上线只见二手站点（TheTVDB 标 2021-12-09），未见 Netflix 新闻稿。"
+  },
+  {
+   "zh": "它是 KBS 与制作公司이엘TV 的「K-FOOD 랩소디」系列第三部：2020《삼겹살 랩소디》、2021 年 7–8 月《냉면 랩소디》之后；该系列入选韩国放送影像内容制作支援项目，以全球发行为目标同步上 Netflix。",
+   "en": "It is the third in the 'K-Food Rhapsody' series by KBS and producer EL TV, after Samgyeopsal Rhapsody (2020) and Naengmyeon Rhapsody (Jul–Aug 2021); the series received Korean state content-production funding and was planned for global release via Netflix.",
+   "year": 2021,
+   "conf": "高",
+   "sources": [
+    {
+     "title": "KOCCA N 인터뷰 vol.20 — 이엘TV 백헌석 대표（랩소디 시리즈 제작사）",
+     "url": "https://www.kocca.kr/n_content/vol20/sub/interview1.html",
+     "kind": "官方"
+    },
+    {
+     "title": "텐아시아 2021-07-26 「냉면 랩소디」 (KBS 다큐인사이트; 한우 랩소디 12월 예정)",
+     "url": "https://www.tenasia.co.kr/article/2021072692574",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "第 1 集：从불고기、갈비到韩牛，讲韩国人对牛肉的偏爱和一头牛能分出的众多部位与风味；介绍牛肉溯源制度——买肉时可查到这头牛从出生到出售的记录；也回溯朝鲜时代起牛肉进入饭桌的历史。",
+   "en": "Episode 1: from bulgogi and galbi to Hanwoo — Koreans' love of beef and the many cuts and flavours one animal yields; it shows the traceability system (look up an animal's record from birth to sale) and traces beef eating back to the Joseon era.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Netflix — Hanwoo Rhapsody (title 81473623)",
+     "url": "https://www.netflix.com/th-en/title/81473623",
+     "kind": "官方"
+    },
+    {
+     "title": "Leisurebyte — Hanwoo Rhapsody (2021) Review",
+     "url": "https://leisurebyte.com/hanwoo-rhapsody-2021-review-paik-jong-won/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "第 2 集：「一头牛没有浪费的部分」——长时间熬煮的곰탕、설렁탕等汤，以及头、尾、内脏、牛舌、骨与骨髓的吃法，并讲到牛的育种。",
+   "en": "Episode 2: 'nothing goes to waste' — long-simmered soups such as gomtang and seolleongtang, and the head, tail, offal, tongue, bones and marrow; it also touches on cattle breeding.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Netflix — Hanwoo Rhapsody (title 81473623)",
+     "url": "https://www.netflix.com/th-en/title/81473623",
+     "kind": "官方"
+    },
+    {
+     "title": "MyDramaList — Hanwoo Rhapsody (한우 랩소디), KBS1, 2021-12-09 ~ 12-16",
+     "url": "https://mydramalist.com/716523-hanwoo-rhapsody",
+     "kind": "二手"
+    },
+    {
+     "title": "Leisurebyte — Hanwoo Rhapsody (2021) Review",
+     "url": "https://leisurebyte.com/hanwoo-rhapsody-2021-review-paik-jong-won/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "片中白种元走访「肉铺 + 餐厅」式的韩牛超市：顾客从上百种分割中挑选韩牛，付少量桌位费就在隔壁餐厅自己烤来吃，即韩国的「정육식당」模式。",
+   "en": "Paik visits a Hanwoo butcher-supermarket where shoppers pick from 'a hundred cuts' and, for a small table charge, grill their purchase in the adjoining restaurant — Korea's jeongyuk-sikdang model.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Food Talk Central — Netflix: Hanwoo Rhapsody",
+     "url": "https://foodtalkcentral.com/t/netflix-hanwoo-rhapsody/13724",
+     "kind": "二手"
+    }
+   ],
+   "note": "具体店名、城市（横城/마장동？）未查到；需看片确认。"
+  },
+  {
+   "zh": "片中及简介引用「牛肉可分出 120 个部位/风味」的说法；这一数字常被归于人类学者 Margaret Mead 的比较（英法约 35、东非博迪人 51、韩国 120），但原始出处不明。韩国官方零售标示标准为大分割 10、小分割 39。",
+   "en": "The show and its synopsis cite '120 cuts and flavours'; the figure is commonly attributed to anthropologist Margaret Mead (35 in Britain/France, 51 among East Africa's Bodi, 120 in Korea), but the original source is unclear. Korea's official retail standard lists 10 primals and 39 sub-primals.",
+   "num": "120 vs 39",
+   "conf": "低",
+   "alt": "120 这一数字亦被解释为包括内脏、骨、头蹄在内的「可食部位」总数。",
+   "sources": [
+    {
+     "title": "TheTVDB — 한우 랩소디 Episode 1 (2021-12-09)",
+     "url": "https://www.thetvdb.com/series/415006-/episodes/8960408",
+     "kind": "二手"
+    },
+    {
+     "title": "머니투데이 2026-07-22 「비계 삼겹살 따로 판다더니…'돈차돌' 명칭 신설 제동」(현행 소 소분할 39개·돼지 25개)",
+     "url": "https://www.mt.co.kr/economy/2026/07/22/2026072214532519721",
+     "kind": "媒体"
+    }
+   ],
+   "note": "Margaret Mead 出处属坊间流传，页面若用请标「据说」。"
+  }
+ ]
+}

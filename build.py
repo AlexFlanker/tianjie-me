@@ -41,6 +41,21 @@ themes.sort(key=lambda m: (m['date'], m.get('no', 0)))
 for i, m in enumerate(themes): m.setdefault('no', i + 1)
 latest = themes[-1] if themes else None
 
+# ---------- 号外（extras/）：与周更分开的专题，不占题号，地址 /x/<slug>/ ----------
+EXTRAS = os.path.join(ROOT, 'extras')
+extras = []
+if os.path.isdir(EXTRAS):
+    for d in sorted(os.listdir(EXTRAS)):
+        p = os.path.join(EXTRAS, d)
+        if not os.path.isdir(p) or not re.match(r'^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$', d): continue
+        if not os.path.exists(os.path.join(p, 'index.html')) or not os.path.exists(os.path.join(p, 'meta.json')): continue
+        m = json.load(open(os.path.join(p, 'meta.json'), encoding='utf-8'))
+        m.setdefault('slug', d[11:]); m.setdefault('date', d[:10]); m.setdefault('tags', []); m.setdefault('format', '')
+        m['dir'] = p; m['url'] = f"/x/{m['slug']}/"
+        if m.get('draft'): continue
+        extras.append(m)
+extras.sort(key=lambda m: m['date'])
+
 # ---------- 输出目录 ----------
 if os.path.exists(OUT): shutil.rmtree(OUT)
 os.makedirs(os.path.join(OUT, 't'))
@@ -65,8 +80,13 @@ def bar_html(m, prev_m, next_m):
     nav.append(f'<a href="{next_m["url"]}" title="{esc(next_m["title"])}">下一题 →</a>' if next_m else '<span>下一题 →</span>')
     return f'{BAR_CSS}\n<div class="yzyt-bar" role="navigation" aria-label="一周一题">{left}<div class="nav">{"".join(nav)}</div></div>\n'
 
-def inject(page, m, prev_m, next_m):
-    bar = bar_html(m, prev_m, next_m)
+def extra_bar_html(m):
+    left = f'<div class="lhs"><a class="brand" href="/">{esc(site["name"])}<b>号外</b></a><span class="dt">{esc(m["date"])}</span></div>'
+    nav = '<div class="nav"><a href="/#extras">号外</a><a href="/#archive">归档</a></div>'
+    return f'{BAR_CSS}\n<div class="yzyt-bar" role="navigation" aria-label="一周一题 · 号外">{left}{nav}</div>\n'
+
+def inject(page, m, prev_m, next_m, bar=None):
+    bar = bar or bar_html(m, prev_m, next_m)
     # 注入到 <body> 之后；顺带加 feed 链接与 OG 图
     page = re.sub(r'(<body[^>]*>)', lambda mm: mm.group(1) + '\n' + bar, page, count=1)
     head_extra = (f'<link rel="alternate" type="application/atom+xml" title="{esc(site["name"])}" href="/feed.xml">\n'
@@ -82,6 +102,16 @@ for i, m in enumerate(themes):
     dst = os.path.join(OUT, 't', m['slug']); os.makedirs(dst)
     page = open(os.path.join(m['dir'], 'index.html'), encoding='utf-8').read()
     open(os.path.join(dst, 'index.html'), 'w', encoding='utf-8').write(inject(page, m, prev_m, next_m))
+    for extra in ('cover.png', 'assets'):
+        src = os.path.join(m['dir'], extra)
+        if os.path.isdir(src): shutil.copytree(src, os.path.join(dst, extra))
+        elif os.path.exists(src): shutil.copy(src, dst)
+    m['has_cover'] = os.path.exists(os.path.join(m['dir'], 'cover.png'))
+
+for m in extras:
+    dst = os.path.join(OUT, 'x', m['slug']); os.makedirs(dst)
+    page = open(os.path.join(m['dir'], 'index.html'), encoding='utf-8').read()
+    open(os.path.join(dst, 'index.html'), 'w', encoding='utf-8').write(inject(page, m, None, None, bar=extra_bar_html(m)))
     for extra in ('cover.png', 'assets'):
         src = os.path.join(m['dir'], extra)
         if os.path.isdir(src): shutil.copytree(src, os.path.join(dst, extra))
@@ -108,9 +138,18 @@ if latest:
             f'{"<div class=sub>"+esc(latest["subtitle"])+"</div>" if latest.get("subtitle") else ""}<p>{esc(latest.get("summary",""))}</p>'
             f'<div class="cta"><a class="btn" href="{latest["url"]}">打开这一题 →</a>{"<span class=meta>"+esc(latest["reading_time"])+"</span>" if latest.get("reading_time") else ""}</div></div></section>')
 archive = ''.join(card(m) for m in reversed(themes))
+def xcard(m):
+    cover = f'<img src="{m["url"]}cover.png" alt="" loading="lazy">' if m['has_cover'] else '<div class="nocover"></div>'
+    tags = ''.join(f'<span>{esc(t)}</span>' for t in m['tags'])
+    return (f'<a class="card" href="{m["url"]}"><div class="cv">{cover}</div><div class="cb"><div class="no">号外 <time datetime="{m["date"]}">{esc(m["date"])}</time></div>'
+            f'<h3>{esc(m["title"])}</h3><p>{esc(m.get("subtitle") or m.get("summary",""))}</p><div class="tags">{tags}{"<i>"+esc(m["format"])+"</i>" if m["format"] else ""}</div></div></a>')
+extras_html = ''
+if extras:
+    extras_html = (f'<section class="sec" id="extras"><div class="sec-h"><h2>号外</h2><span>周更之外的定制专题 · 共 {len(extras)} 篇</span></div>'
+                   f'<div class="grid">{"".join(xcard(m) for m in reversed(extras))}</div></section>')
 projects = ''.join(f'<a class="proj" href="{esc(p["url"])}"><b>{esc(p["title"])}</b><span>{esc(p["desc"])}</span></a>' for p in site.get('projects', []))
 home = (tpl.replace('{{SITE_NAME}}', esc(site['name'])).replace('{{TAGLINE}}', esc(site['tagline'])).replace('{{ABOUT}}', site['about'])
-           .replace('{{HERO}}', hero).replace('{{ARCHIVE}}', archive).replace('{{PROJECTS}}', projects)
+           .replace('{{HERO}}', hero).replace('{{EXTRAS}}', extras_html).replace('{{ARCHIVE}}', archive).replace('{{PROJECTS}}', projects)
            .replace('{{COUNT}}', str(len(themes))).replace('{{BASE}}', BASE)
            .replace('{{OG_IMAGE}}', f"{BASE}{latest['url']}cover.png" if latest and latest['has_cover'] else '')
            .replace('{{YEAR}}', str(dt.date.today().year)))
@@ -139,7 +178,7 @@ feed = f"""<?xml version="1.0" encoding="utf-8"?>
 """
 open(os.path.join(OUT, 'feed.xml'), 'w', encoding='utf-8').write(feed)
 urls = [f"  <url><loc>{BASE}/</loc><lastmod>{latest['date'] if latest else dt.date.today()}</lastmod><changefreq>weekly</changefreq></url>"] + \
-       [f"  <url><loc>{BASE}{m['url']}</loc><lastmod>{m['date']}</lastmod></url>" for m in themes] + \
+       [f"  <url><loc>{BASE}{m['url']}</loc><lastmod>{m['date']}</lastmod></url>" for m in themes + extras] + \
        [f"  <url><loc>{BASE}{p['url']}</loc></url>" for p in site.get('projects', []) if p['url'].startswith('/')]
 open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(urls) + '\n</urlset>\n')
 open(os.path.join(OUT, 'robots.txt'), 'w').write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")

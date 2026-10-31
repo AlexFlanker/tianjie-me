@@ -223,16 +223,6 @@ RHAPSODY = dict(
 
 VS_HEAD = (T('', ''), T('韩牛 Hanwoo', 'Hanwoo'), T('和牛 Wagyu', 'Wagyu'))
 
-# ---------- 地图：半岛与周边节点（美中节点取自 C 路 map） ----------
-MAP_EXTRA = [
-    dict(lat=39.03, lon=125.75, year=1935, dy=-8, city=T('平壤', 'Pyongyang'), text=T('牡丹台松林的露天烤肉已是名物，1935 年因烟害被禁。', 'Open-air grilling in the Moranbong pines is famous enough to be banned for smoke in 1935.'), c='kp'),
-    dict(lat=37.26, lon=127.03, year=1956, city=T('水原', 'Suwon'), text=T('华春屋开卖炭火烤牛排骨，后来的「水原王갈비」。', 'Hwachun-ok starts charcoal-grilled short ribs — the future “king galbi.”'), c='kr', minor=True),
-    dict(lat=37.57, lon=126.99, year=1983, city=T('首尔', 'Seoul'), text=T('三角洞被称作「五花肉胡同」；马场洞畜产市场（1963 年形成）据 2011 年数据承担首都圈约七成的畜产流通。', 'Samgak-dong is “Samgyeopsal Alley”; Majang-dong market (formed 1963) handled about 70% of the capital area’s meat as of 2011.'), c='kr'),
-    dict(lat=22.30, lon=114.17, year=2015, city=T('香港', 'Hong Kong'), text=T('12 月韩牛第一次出口；2024 年香港约占韩牛出口量的八成。', 'First Hanwoo export in December; Hong Kong took about 80% of 2024 export volume.'), c='kr', ta='end', dx=-6),
-    dict(lat=29.87, lon=121.55, year=2016, city=T('宁波', 'Ningbo'), text=T('一家朝鲜餐厅 13 名员工集体出走韩国。', 'Thirteen staff of a North Korean restaurant defect to the South.'), c='kp', minor=True),
-    dict(lat=40.12, lon=124.38, year=2017, city=T('丹东', 'Dandong'), text=T('安理会第 2375 号决议后，最大的海外朝鲜餐厅「平壤高丽馆」停业。', 'After UN Resolution 2375, the largest North Korean restaurant abroad, Pyongyang Koryo-gwan, closes.'), c='kp', ta='end', dx=-6, minor=True),
-]
-
 METHOD = T('研究分三部分：火与桌（半岛吃肉史、北半岛、狗肉、桌上规矩、烤具）、刀（韩牛品牌化、分割、等级、和牛对照、运营）、出海（美国与中国的阶段与节点）。优先用官方、企业文件与学术来源（韩国农林畜产食品部与 aT、KREI、美国 SEC 文件、洛杉矶公共图书馆、学术论文、主要媒体）；百科多作线索，少数条目（玉流馆、Kogi、Cote 等）暂以英文维基为唯一来源。底稿里置信度「低」的事实一般不上正文，个别保留的（如「120 个部位」）在正文里注明出处不明。烤肉计时器的秒数是按常见厚度给的经验估计。分割图是示意，不按比例。北半岛的资料多来自脱北者媒体、朝中社与游客记录，可信度比南边低一档。页面写完后另做了一轮逐条核查，改正了口径混用、两说写成一说之类的问题。',
            'Research came in three parts: fire and table (history, North Korea, dog meat, table customs, grills); cut (Hanwoo branding, butchery, grades, wagyu comparison, operations); abroad (phases and milestones in the US and China). Official, corporate and academic sources first (MAFRA and aT, KREI, SEC filings, the LA Public Library, journal papers, major media); encyclopedias mostly as leads, though a few entries (Okryugwan, Kogi, Cote) still rest on Wikipedia alone. Low-confidence facts are generally kept off the page; the few kept (such as “120 cuts”) are flagged as unsourced. Grill times are rule-of-thumb estimates. The butchery chart is schematic. Sources on North Korea lean on defector media, KCNA and travellers, a notch less reliable than for the South. After writing, every claim went through a separate check, which fixed mixed-up bases and disputed points stated as settled.')
 
@@ -250,16 +240,36 @@ PENDING = [
     T('「剪刀始于 1970 年代」只有一位专栏作者的说法。', 'The 1970s date for table scissors rests on one columnist.'),
 ]
 
-# 地图节点短名（覆盖 C 路 city 字段）；minor = 只在刚亮起时显示标签
-MAP_NAME = {
-    'Honolulu': (T('檀香山', 'Honolulu'), False), 'Riverside, CA': (T('河滨', 'Riverside'), True),
-    'Los Angeles Koreatown': (T('洛杉矶韩国城', 'LA Koreatown'), False), 'Manhattan Koreatown (W 32nd St)': (T('纽约 32 街', 'NYC 32nd St'), False),
-    'Woodside, Queens': (T('皇后区 H Mart', 'Queens · H Mart'), True), 'Los Angeles (Kogi)': (T('Kogi 餐车', 'Kogi truck'), True),
-    'Tustin, CA': (T('塔斯廷 · GEN', 'Tustin · GEN'), True), 'New York Flatiron': (T('Cote 纽约', 'Cote NYC'), True),
-    'Miami Design District': (T('迈阿密', 'Miami'), True), 'San Jose Valley Fair': (T('圣何塞', 'San Jose'), False), 'Las Vegas': (T('拉斯维加斯', 'Las Vegas'), True),
-    '延吉 Yanji': (T('延吉', 'Yanji'), False), '深圳 Shenzhen': (T('深圳', 'Shenzhen'), False), '北京朝阳 Beijing Chaoyang': (T('北京', 'Beijing'), False),
-    '上海虹泉路 Hongquan Rd': (T('上海虹泉路', 'Shanghai'), False),
-}
-MAP_DROP = {'北京霍营 Huoying'}
-
-MAP_POS = {'北京朝阳 Beijing Chaoyang': dict(ta='end', dx=-7), '深圳 Shenzhen': dict(dy=12), 'Manhattan Koreatown (W 32nd St)': dict(ta='end', dx=-7), 'Miami Design District': dict(ta='end', dx=-7)}
+# ---------- 03 WORLD：可播放的两国时间轴（替代地图；2026-10-31 天杰：「不用地图了，出一个按中美两国市场大事件的可播放时间轴」）----------
+# (泳道, 阶段 id, 底稿 facts 下标, 显示年份, 短标题)；正文与来源取自 market_C.json（经 fixes.py 改正后）
+TL_EVENTS = [
+    ('us', 'us1', 0, '1903', T('首批移民到夏威夷', 'First immigrants reach Hawaii')),
+    ('us', 'us2', 0, '1965', T('新移民法', 'The 1965 immigration act')),
+    ('us', 'us2', 2, '1969', T('「新韩国餐厅」开业', 'New Korea Restaurant opens')),
+    ('us', 'us2', 3, '1980', T('韩国城获官方认可', 'Koreatown made official')),
+    ('us', 'us6', 4, '1982', T('H Mart 起家', 'H Mart’s first store')),
+    ('us', 'us2', 4, '1985', T('吃到饱的雏形', 'Proto all-you-can-eat')),
+    ('us', 'us3', 1, '1992', T('洛杉矶骚乱', 'The LA riots')),
+    ('us', 'us4', 0, '2008', T('Kogi 韩式塔可车', 'The Kogi taco truck')),
+    ('us', 'us4', 3, '2011', T('GEN 首店', 'The first GEN')),
+    ('us', 'us5', 0, '2012', T('白丁进美国', 'Baekjeong arrives')),
+    ('us', 'us5', 1, '2017', T('Cote 纽约', 'Cote New York')),
+    ('us', 'us6', 0, '2023', T('GEN 上市', 'GEN goes public')),
+    ('us', 'us6', 3, '2023', T('白丁湾区首店', 'Baekjeong in San Jose')),
+    ('us', 'us6', 1, '2024', T('GEN 营收 2.08 亿美元', 'GEN: $208M revenue')),
+    ('us', 'us6', 2, '2025', T('在美门店 1,106 家', '1,106 outlets in the US')),
+    ('cn', 'cn1', 0, '19C–1940s', T('朝鲜族落户延边', 'Koreans settle in Yanbian')),
+    ('cn', 'cn2', 0, '1992', T('中韩建交', 'China–South Korea ties')),
+    ('cn', 'cn2', 1, '1998', T('汉阳馆深圳首店', 'Hanyangguan opens in Shenzhen')),
+    ('cn', 'cn2', 2, '2004', T('汉拿山公司注册', 'Hannashan registered')),
+    ('cn', 'cn3', 1, '2014', T('炸鸡啤酒热', 'The chimaek craze')),
+    ('cn', 'cn3', 2, '2015', T('汉拿山约 260 家', 'Hannashan at ~260')),
+    ('cn', 'cn4', 0, '2017', T('萨德与「限韩令」', 'THAAD and the “Korea ban”')),
+    ('cn', 'cn3', 0, '2017', T('韩餐馆 15,985 家', '15,985 Korean restaurants')),
+    ('cn', 'cn4', 3, '2021', T('汉拿山减至 205 家', 'Hannashan down to 205')),
+    ('cn', 'cn5', 0, '2024', T('韩式成烤肉三大赛道之一', 'Korean-style: one of three BBQ lanes')),
+    ('cn', 'cn5', 3, '2025', T('在华门店 830 家', '830 outlets in China')),
+]
+TL_LANES = {'us': T('美国', 'USA'), 'cn': T('中国', 'China')}
+TL_NOTE = T('按 ▶ 播放，或拖动、点任意一个点；‹ › 在事件之间一件件跳。1965 年以前压缩显示。每条下面都有来源。',
+            'Press ▶, drag, or tap any dot; ‹ › step from event to event. Years before 1965 are compressed. Every event links to its source.')

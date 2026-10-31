@@ -3,7 +3,7 @@
 import json, os, html, re
 HERE = os.path.dirname(os.path.abspath(__file__)); OUTD = os.path.dirname(HERE)
 import sys; sys.path.insert(0, HERE)
-import editorial as E, geo
+import editorial as E
 
 def esc(s): return html.escape(str(s), quote=False)
 def J(n): return json.load(open(os.path.join(HERE, 'research', n), encoding='utf-8'))
@@ -116,12 +116,15 @@ def photo_row(keys):
 
 def ch_world():
     return (f'<section class="ch" id="world">{plate("world", "plate-world")}<div class="wide"><p class="lede fade">{bi(E.CH["world"]["lede"])}</p>'
-            f'<div class="sec">{sec_h("MAP · 1900–2026", T("扩张地图", "Expansion map"), T("拖动年份或按 ▶ 播放；点任一节点看说明。", "Drag the year or press ▶; tap any point."))}'
-            f'<div><div class="map" id="map"><div class="hud"></div><div class="panels"><figure data-p="asia"><figcaption></figcaption><svg></svg></figure><figure data-p="usa"><figcaption></figcaption><svg></svg></figure></div></div><div class="mapctl"><button class="pill" data-act="play" type="button">▶</button><input type="range" min="1900" max="2026" value="2026" step="1" aria-label="Year"></div><div class="mapnote"></div></div></div>'
+            f'<div class="sec">{sec_h("1900–2026", T("两国大事件", "The big moments, side by side"), E.TL_NOTE)}'
+            f'<div class="tl2" id="tl2"><div class="tl2-hud"></div><div class="tl2-track" tabindex="0" role="slider" aria-label="1900–2026"></div>'
+            f'<div class="tl2-ctl"><button class="pill" data-act="prev" type="button" aria-label="Previous event">‹</button><button class="pill" data-act="play" type="button" aria-label="Play">▶</button><button class="pill" data-act="next" type="button" aria-label="Next event">›</button><input type="range" min="0" max="1000" value="1000" step="1" aria-label="Year"></div>'
+            f'<div class="tl2-read"><div class="tl2-card" data-l="us"></div><div class="tl2-card" data-l="cn"></div></div></div></div>'
             + photo_row(['w-la', 'w-cote', 'w-yanji', 'w-baekjeong']) +
-            f'<div class="sec">{sec_h("US / CN", T("两条曲线", "Two curves"), E.WORLD_NOTE)}'
+            f'<div class="sec">{sec_h("US / CN", T("两国各阶段", "Phase by phase"), E.WORLD_NOTE)}'
+            f'<details class="fold"><summary>{bi(T("展开两国各阶段的全部事实", "Show every fact, phase by phase"))}</summary><div class="fb">'
             f'<div class="twin"><div class="side"><h4><span class="sticker red">USA</span>{bi(T("美国：从社区食堂到纳斯达克", "US: from canteen to Nasdaq"))}</h4>{phases("us")}</div>'
-            f'<div class="side"><h4><span class="sticker">CHINA</span>{bi(T("中国：从建交后的连锁到本土赛道", "China: from post-1992 chains to a local category"))}</h4>{phases("cn")}</div></div></div>'
+            f'<div class="side"><h4><span class="sticker">CHINA</span>{bi(T("中国：从建交后的连锁到本土赛道", "China: from post-1992 chains to a local category"))}</h4>{phases("cn")}</div></div></div></details></div>'
             '</div></section>')
 
 def ch_end():
@@ -188,21 +191,21 @@ def data():
         facts = [dict(zh=f['zh'], en=f['en'], src=(f.get('sources') or [{}])[0].get('url')) for f in o['facts'] if f.get('conf') != '低']
         ops.append(dict(id=o['id'], title=T(o['title_zh'].split('：')[0], o['title_en'].split(':')[0]), one=T((o['title_zh'].split('：') + [''])[1], (o['title_en'].split(':') + [''])[1].strip()), facts=facts, img=src('ops-' + o['id']), cap=cred('ops-' + o['id'])))
     table = [dict(title=t['title'], text=t['text'], img=src(t['img']), cap=cred(t['img'])) for t in E.TABLE]
-    # 地图节点：两块分图（东亚 / 美国本土 + 夏威夷插图）
-    nodes = []
-    for k in ('us', 'cn'):
-        for m in C[k]['map']:
-            if m.get('note') or m['city'] in E.MAP_DROP: continue
-            nm, minor = E.MAP_NAME[m['city']]
-            nd = dict(lat=m['lat'], lon=m['lon'], year=m['year'], city=nm, minor=minor, text=T(m['zh'], m['en']), c=k); nd.update(E.MAP_POS.get(m['city'], {})); nodes.append(nd)
-    nodes += [dict(n) for n in E.MAP_EXTRA]
-    for n in nodes:
-        n['p'], n['x'], n['y'] = geo.place(n.pop('lat'), n.pop('lon'))
-    nodes.sort(key=lambda n: n['year'])
+    # 两国时间轴（替代地图）
+    def short(x, sep): return x.split(sep)[0].strip()
+    lanes = []
+    for lane in ('us', 'cn'):
+        ph = [dict(a=max(1900, p['from']), b=min(2026, p['to']), t=T(short(p['title_zh'], '：'), short(p['title_en'], ':'))) for p in C[lane]['phases']]
+        lanes.append(dict(id=lane, name=E.TL_LANES[lane], phases=ph, events=[]))
+    L = {l['id']: l for l in lanes}
+    for lane, pid, fi, yl, t in E.TL_EVENTS:
+        f = [x for x in C[lane]['phases'] if x['id'] == pid][0]['facts'][fi]
+        assert f.get('conf') != '低', (pid, fi)
+        s0 = (f.get('sources') or [{}])[0]
+        L[lane]['events'].append(dict(y=int(f['year']), yl=yl, t=t, x=T(f['zh'], f['en']), src=s0.get('url'), st=s0.get('title')))
+    for l in lanes: l['events'].sort(key=lambda e: e['y'])
     return dict(meta=dict(title_zh=E.META['title_zh'], title_en=E.META['title_en']), stage=stage, cuts=cuts, grill=grill, series=series, ops=ops, table=table,
-                map=dict(panels=[dict(id='asia', name=T('东亚', 'East Asia'), vb=geo.ASIA.vb(), land=geo.ASIA.land()),
-                                 dict(id='usa', name=T('美国', 'United States'), vb=geo.USA.vb(), land=geo.USA.land(), inset=dict(geo.hawaii_inset(), name=T('夏威夷', 'Hawaii')))],
-                         nodes=nodes))
+                tl=dict(y0=1900, y1=2026, brk=1965, fb=0.16, lanes=lanes))
 
 def main():
     body = hero() + thesis() + nav() + '<main>' + ch_fire() + ch_cut() + ch_table() + ch_world() + ch_end() + '</main>'

@@ -33,6 +33,9 @@ FIX = [
     # 美国：El Camino Real 一句没有来源
     ('C', 'us.us6.facts[3]', lambda C: _ph(C, 'us', 'us6')['facts'][3], 'zh', '；湾区韩烤此前集中在圣克拉拉 El Camino Real 沿线的韩裔商圈。', '。'),
     ('C', 'us.us6.facts[3]', lambda C: _ph(C, 'us', 'us6')['facts'][3], 'en', "; Bay Area KBBQ had long clustered along El Camino Real in Santa Clara's Korean business strip.", '.'),
+    # 美国：1,106 家门店以炸鸡、面包连锁为主（全部海外门店里炸鸡 39%、面包店 25.5%）
+    ('C', 'us.us6.facts[2]', lambda C: _ph(C, 'us', 'us6')['facts'][2], 'zh', '美国取代中国成为韩餐企业最大海外市场。', '美国取代中国成为韩餐企业最大海外市场；这批海外门店以炸鸡、面包连锁为主（全部海外门店里炸鸡占 39%、面包店 25.5%）。'),
+    ('C', 'us.us6.facts[2]', lambda C: _ph(C, 'us', 'us6')['facts'][2], 'en', 'making the U.S. their largest overseas market, ahead of China.', 'making the U.S. their largest overseas market, ahead of China; these outlets are mostly fried-chicken and bakery chains (39% and 25.5% of all overseas outlets).'),
     # 中国：收缩不宜单归因于萨德
     ('C', 'cn.cn4.facts[3]', lambda C: _ph(C, 'cn', 'cn4')['facts'][3], 'zh', '萨德之后，「韩国」招牌在中国餐饮中的号召力减弱，多家韩式烤肉品牌在之后几年收缩：汉拿山门店从2015年约260家减至2021年4月的205家。', '萨德之后几年，多家韩式烤肉品牌收缩（也与疫情、同质化有关）：汉拿山门店从 2015 年约 260 家（企业自述）减至 2021 年 4 月的 205 家（NCBD）。'),
     ('C', 'cn.cn4.facts[3]', lambda C: _ph(C, 'cn', 'cn4')['facts'][3], 'en', "After THAAD the 'Korean' label lost pull in Chinese dining and several Korean BBQ brands contracted; Hannashan fell from about 260 stores in 2015 to 205 in April 2021.", 'In the years after THAAD several Korean BBQ brands shrank — also amid the pandemic and copycat competition: Hannashan went from about 260 stores in 2015 (company figure) to 205 in April 2021 (NCBD).'),

@@ -214,35 +214,74 @@
     render(); addEventListener('langchange', render);
   })();
 
-  /* ---------- 03 WORLD：扩张地图（两块分图：东亚 / 美国本土 + 夏威夷插图） ---------- */
+  /* ---------- 03 WORLD：两国大事件时间轴（可播放；替代地图） ---------- */
   (function () {
-    var m = $('#map'); if (!m || !D.map) return;
-    var M = D.map, hud = $('.hud', m), rng = $('input', m.parentNode), note = $('.mapnote', m.parentNode), yr = +rng.value, play = $('[data-act=play]', m.parentNode), pt = 0;
-    var P = {}, gs = [];
-    M.panels.forEach(function (p) {
-      var fig = $('figure[data-p="' + p.id + '"]', m); if (!fig) return;
-      var svg = $('svg', fig); svg.setAttribute('viewBox', p.vb.join(' ')); svg.setAttribute('role', 'img');
-      var html = '<path class="land" d="' + p.land + '"/>';
-      if (p.inset) { var I = p.inset; html += '<rect class="inset" x="' + I.x + '" y="' + I.y + '" width="' + I.w + '" height="' + I.h + '"/><g transform="translate(' + I.dx + ',' + I.dy + ')"><path class="land" d="' + I.land + '"/></g><text class="insetl" data-zh="' + esc(I.name.zh) + '" data-en="' + esc(I.name.en) + '" x="' + (I.x + 3) + '" y="' + (I.y - 3) + '"></text>'; }
-      M.nodes.forEach(function (n, i) { if (n.p !== p.id) return; html += '<g class="node ' + (n.c || '') + '" data-i="' + i + '" transform="translate(' + n.x + ',' + n.y + ')"><circle r="3"/><text text-anchor="' + (n.ta || 'start') + '"></text></g>'; });
-      svg.innerHTML = html; P[p.id] = { svg: svg, cap: $('figcaption', fig), p: p };
+    var box = $('#tl2'); if (!box || !D.tl) return;
+    var TL = D.tl, track = $('.tl2-track', box), rng = $('.tl2-ctl input', box), play = $('.tl2-ctl [data-act=play]', box), hud = $('.tl2-hud', box);
+    var Y0 = TL.y0, Y1 = TL.y1, YB = TL.brk, FB = TL.fb;
+    function fx(y) { y = clamp(y, Y0, Y1); return y <= YB ? (y - Y0) / (YB - Y0) * FB : FB + (y - YB) / (Y1 - YB) * (1 - FB); }
+    function fy(f) { f = clamp(f, 0, 1); return f <= FB ? Y0 + f / FB * (YB - Y0) : YB + (f - FB) / (1 - FB) * (Y1 - YB); }
+    var all = [];
+    TL.lanes.forEach(function (l) { l.events.forEach(function (e, i) { e.lane = l.id; e.k = l.id + i; var same = l.events.filter(function (o) { return o.y === e.y; }); e.dup = same.length > 1 ? same.indexOf(e) : -1; all.push(e); }); });
+    all.sort(function (a, b) { return a.y - b.y; });
+    var ticks = [1900, 1965, 1980, 1990, 2000, 2010, 2020, 2026];
+    function pct(y) { return (fx(y) * 100).toFixed(3) + '%'; }
+    var html = '<div class="tl2-head"></div>';
+    TL.lanes.forEach(function (l) {
+      html += '<div class="tl2-lane" data-l="' + l.id + '"><span class="tl2-lab sticker' + (l.id === 'us' ? ' red' : '') + '" data-k="name"></span><div class="tl2-line"></div>';
+      l.phases.forEach(function (p, i) { html += '<div class="tl2-band" data-i="' + i + '" style="left:' + pct(p.a) + ';width:calc(' + pct(p.b + 1) + ' - ' + pct(p.a) + ')"><span></span></div>'; });
+      l.events.forEach(function (e) { html += '<button class="tl2-dot" type="button" data-k="' + e.k + '" style="left:' + pct(e.y) + (e.dup >= 0 ? ';margin-top:' + (e.dup ? 8 : -8) + 'px' : '') + '"></button>'; });
+      html += '<span class="tl2-tag"></span></div>';
     });
-    gs = $$('.node', m);
-    function sc() {
-      for (var id in P) { var o = P[id], k = o.p.vb[2] / Math.max(1, o.svg.clientWidth);
-        $$('.node', o.svg).forEach(function (g) { var n = M.nodes[+g.getAttribute('data-i')]; $('circle', g).setAttribute('r', (n.c === 'kr' || n.c === 'kp' ? 5 : 4) * k); var t = $('text', g); t.style.fontSize = (12 * k) + 'px'; t.style.strokeWidth = (3 * k) + 'px'; t.setAttribute('x', (n.dx || 7) * k); t.setAttribute('y', (n.dy || 4) * k); });
-        var il = $('.insetl', o.svg); if (il) { il.style.fontSize = (11 * k) + 'px'; il.setAttribute('y', +o.p.inset.y - 4 * k); }
-      }
+    html += '<div class="tl2-axis">' + ticks.map(function (y) { return '<span class="tl2-tick' + ([1980, 2000, 2020].indexOf(y) >= 0 ? ' minor' : '') + '" style="left:' + pct(y) + '">' + y + '</span>'; }).join('') + '<span class="tl2-brk" style="left:' + pct(1932) + '">≈</span></div>';
+    track.innerHTML = html;
+    var head = $('.tl2-head', track), cur = Y1, pin = {}, lastOn = {};
+    function evByK(k) { return all.filter(function (e) { return e.k === k; })[0]; }
+    function latest(lane) { if (pin[lane]) return pin[lane]; var r = null; all.forEach(function (e) { if (e.lane === lane && e.y <= cur + 1e-6) r = e; }); return r; }
+    function card(l, e) {
+      var c = $('.tl2-card[data-l="' + l.id + '"]', box);
+      var ph = l.phases.filter(function (p) { return cur >= p.a && cur < p.b + 1; })[0];
+      c.innerHTML = '<span class="kick">' + esc(L(l.name)) + (ph ? ' · ' + esc(L(ph.t)) : '') + '</span>' + (e ? '<b>' + esc(e.yl) + '</b><h4>' + esc(L(e.t)) + '</h4><p>' + esc(L(e.x)) + (e.src ? ' <a href="' + esc(e.src) + '" target="_blank" rel="noopener" title="' + esc(e.st || '') + '">' + esc(L({ zh: '来源', en: 'Source' })) + ' ↗</a>' : '') + '</p>' : '<p class="small">' + esc(L({ zh: '到这一年还没有标出的大事。', en: 'Nothing marked yet by this year.' })) + '</p>');
     }
-    function labels() { for (var id in P) { var o = P[id]; o.cap.textContent = L(o.p.name); var il = $('.insetl', o.svg); if (il) il.textContent = L({ zh: il.getAttribute('data-zh'), en: il.getAttribute('data-en') }); } }
-    var rt; addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(sc, 80); });
-    function upd() { yr = +rng.value; var last = null; gs.forEach(function (g) { var n = M.nodes[+g.getAttribute('data-i')], on = n.year <= yr, fresh = on && n.year > yr - 6; g.classList.toggle('off', !on); g.classList.toggle('on', fresh); $('text', g).textContent = L(n.city); g.classList.toggle('hide-l', !!n.minor && !fresh); if (on && (!last || n.year >= last.year)) last = n; });
-      var cnt = M.nodes.filter(function (n) { return n.year <= yr; }).length;
-      hud.innerHTML = '<b>' + yr + '</b><span>' + esc(L({ zh: '已标出 ' + cnt + ' 个节点 · 红点是最近 5 年亮起的', en: cnt + ' milestones · red = lit in the last 5 years' })) + '</span>';
-      note.innerHTML = last ? '<b>' + last.year + ' · ' + esc(L(last.city)) + '</b> — ' + L(last.text) : ''; }
-    gs.forEach(function (g) { g.style.cursor = 'pointer'; g.addEventListener('click', function () { var n = M.nodes[+g.getAttribute('data-i')]; note.innerHTML = '<b>' + n.year + ' · ' + esc(L(n.city)) + '</b> — ' + L(n.text); }); });
-    rng.addEventListener('input', upd);
-    if (play) play.addEventListener('click', function () { if (pt) { clearInterval(pt); pt = 0; play.textContent = '▶'; return; } if (+rng.value >= +rng.max) rng.value = rng.min; play.textContent = '❚❚'; pt = setInterval(function () { rng.value = +rng.value + 1; upd(); if (+rng.value >= +rng.max) { clearInterval(pt); pt = 0; play.textContent = '▶'; } }, RM ? 30 : 160); });
-    addEventListener('langchange', function () { labels(); upd(); }); labels(); sc(); upd();
+    function upd(fromPlay) {
+      var f = fx(cur); head.style.left = (f * 100) + '%'; rng.value = Math.round(f * 1000);
+      TL.lanes.forEach(function (l) {
+        var lane = $('.tl2-lane[data-l="' + l.id + '"]', track), now = latest(l.id);
+        $$('.tl2-dot', lane).forEach(function (d) { var e = evByK(d.getAttribute('data-k')), on = e.y <= cur + 1e-6; d.classList.toggle('on', on); d.classList.toggle('now', !!now && e === now); d.title = e.yl + ' · ' + L(e.t); d.setAttribute('aria-label', d.title); });
+        $$('.tl2-band', lane).forEach(function (b, i) { var p = l.phases[i]; b.classList.toggle('on', cur >= p.a && cur < p.b + 1); $('span', b).textContent = L(p.t); });
+        $('[data-k=name]', lane).textContent = L(l.name);
+        var tag = $('.tl2-tag', lane);
+        if (now) { var tf = fx(now.y); tag.textContent = now.yl + ' · ' + L(now.t); tag.style.left = (tf * 100) + '%'; tag.className = 'tl2-tag show' + (tf < 0.18 ? ' l' : tf > 0.82 ? ' r' : ''); if (fromPlay && lastOn[l.id] !== now.k && !RM) { tag.classList.remove('pop'); void tag.offsetWidth; tag.classList.add('pop'); } }
+        else tag.className = 'tl2-tag';
+        lastOn[l.id] = now ? now.k : null;
+        card(l, now);
+      });
+      var nu = all.filter(function (e) { return e.lane === 'us' && e.y <= cur + 1e-6; }).length, nc = all.filter(function (e) { return e.lane === 'cn' && e.y <= cur + 1e-6; }).length;
+      hud.innerHTML = '<b>' + Math.round(cur) + '</b><span>' + esc(L({ zh: '美国 ' + nu + ' 件 · 中国 ' + nc + ' 件', en: 'US ' + nu + ' · China ' + nc })) + '</span>';
+    }
+    function setY(y, fromPlay) { cur = clamp(y, Y0, Y1); pin = {}; upd(fromPlay); }
+    /* 播放：在横轴上匀速走（1965 年以前压缩，所以走得快），全程约 14 秒 */
+    var raf = 0, t0 = 0, f0 = 0, DUR = 14000;
+    function stop() { if (raf) cancelAnimationFrame(raf); raf = 0; play.textContent = '▶'; play.setAttribute('aria-label', 'Play'); }
+    function step(now) { var f = f0 + (now - t0) / DUR; if (f >= 1) { setY(Y1, true); stop(); return; } setY(fy(f), true); raf = requestAnimationFrame(step); }
+    play.addEventListener('click', function () { if (raf) { stop(); return; } pin = {}; f0 = fx(cur) >= 0.999 ? 0 : fx(cur); if (RM) { setY(Y1); return; } t0 = performance.now(); play.textContent = '❚❚'; play.setAttribute('aria-label', 'Pause'); raf = requestAnimationFrame(step); });
+    rng.addEventListener('input', function () { stop(); setY(fy(+rng.value / 1000)); });
+    /* 拖动：在轨道上按住左右拖 */
+    var dn = false, sx = 0, moved = false;
+    function fAt(cx) { var lane = $('.tl2-lane', track), r = lane.getBoundingClientRect(); return (cx - r.left) / r.width; }
+    track.addEventListener('pointerdown', function (e) { if (e.target.classList.contains('tl2-dot')) return; dn = true; moved = false; sx = e.clientX; stop(); track.setPointerCapture(e.pointerId); setY(fy(fAt(e.clientX))); });
+    track.addEventListener('pointermove', function (e) { if (!dn) return; if (Math.abs(e.clientX - sx) > 4) moved = true; setY(fy(fAt(e.clientX))); });
+    track.addEventListener('pointerup', function () { dn = false; }); track.addEventListener('pointercancel', function () { dn = false; });
+    $$('.tl2-dot', track).forEach(function (d) { d.addEventListener('click', function () { stop(); var e = evByK(d.getAttribute('data-k')); cur = e.y; pin = {}; pin[e.lane] = e; upd(false); }); });
+    function nextEv() { stop(); var ys = all.map(function (x) { return x.y; }), n = ys.filter(function (y) { return y > cur + 1e-6; })[0]; setY(n == null ? Y1 : n, true); }
+    function prevEv() { stop(); var ys = all.map(function (x) { return x.y; }), p = ys.filter(function (y) { return y < cur - 1e-6; }).pop(); setY(p == null ? Y0 : p, true); }
+    $('[data-act=next]', box).addEventListener('click', nextEv); $('[data-act=prev]', box).addEventListener('click', prevEv);
+    track.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); nextEv(); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); prevEv(); }
+      else if (e.key === 'Home') { e.preventDefault(); setY(Y0); } else if (e.key === 'End') { e.preventDefault(); setY(Y1); }
+    });
+    addEventListener('langchange', function () { upd(false); });
+    setY(Y1);
   })();
 })();

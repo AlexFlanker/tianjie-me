@@ -12,6 +12,9 @@
 {"id": "rules-zh", "q": "一周一题的研究员要遵守哪些规则？", "expect": "answer", "must_cite": ["how#rules"]}
 {"id": "who-zh", "q": "一周一题里哪些是 AI 做的，哪些是人决定的？", "expect": "answer", "must_cite": ["how#who", "card/how-pages-are-made"]}
 {"id": "issue6", "q": "第 6 题讲的是什么？", "expect": "answer", "must_cite": ["t/time-reckoning"]}
+{"id": "issue7", "q": "第 7 题讲的是什么？", "expect": "answer", "must_cite": ["t/winter-threshold"]}
+{"id": "dead-en", "q": "Which page is about festivals for the dead?", "expect": "answer", "must_cite": ["t/winter-threshold"]}
+{"id": "bbq", "q": "Is there anything on the site about Korean barbecue?", "expect": "answer", "must_cite": ["x/peninsula-bbq"]}
 {"id": "calendar-en", "q": "Which issue covered calendars and leap seconds?", "expect": "answer", "must_cite": ["t/time-reckoning"]}
 {"id": "issue1", "q": "第 1 题是什么？", "expect": "answer", "must_cite": ["t/cuisine-atlas"]}
 {"id": "nobel", "q": "Is there an issue about Nobel Prize experiments?", "expect": "answer", "must_cite": ["t/nobel-machines"]}

@@ -1,5 +1,20 @@
 [
  {
+  "id": "hero-s69-33855",
+  "subject": "Apollo 10 夜间停在 39B 号发射台（1969-05-04）",
+  "file": "hero-s69-33855-2400.jpg",
+  "w": 2400,
+  "h": 1200,
+  "author": "NASA (JSC)",
+  "year": "1969-05-04",
+  "license": "公有领域（美国政府作品，NASA 图像不受版权保护）",
+  "source_page": "https://images.nasa.gov/details/S69-33855",
+  "source_file": "https://images-assets.nasa.gov/image/S69-33855/S69-33855~orig.jpg",
+  "caption": "1969 年 5 月 4 日夜，肯尼迪航天中心 39B 号发射台上的 Apollo 10（土星五号 SA-505），拍摄时活动服务塔正在撤离；5 月 18 日发射，5 月 26 日返回地球时 39,897 km/h。",
+  "status": "ok",
+  "note": "NASA 图库 S69-33855，美国政府作品，不受版权保护。原片 3660×4698 竖幅；卷首横幅（3200/2400/1600 宽）裁去原片上方约 19.5%、下方约 3.5%，手机竖幅（1440/960 宽）裁去右侧约 30%、下方约 4%（只含夜空、地面与远处的灯），缩放后放进纯黑画布（两侧或上方以黑色补齐，贴边处羽化），全图黑场压低 3/255；火箭与发射台没有修饰或合成。"
+ },
+ {
   "id": "rocket",
   "subject": "Stephenson's Rocket（1829）",
   "file": "rocket.jpg",
@@ -225,21 +240,6 @@
   "h": 925
  },
  {
-  "id": "stapp",
-  "subject": "John Stapp 火箭滑车",
-  "file": "stapp.jpg",
-  "status": "ok",
-  "note": "美国海军国家博物馆（NMUSN）Flickr 页面标 Public Domain Mark，照片编号 330-PS-6748 / 111-SC-1500220，为美国军方官方照片，PD-USGov",
-  "author": "美国陆军通信兵 / 美国国防部（111-SC-1500220），美国海军国家博物馆 Flickr",
-  "year": "1954",
-  "license": "公有领域（美国政府作品；Flickr 标 Public Domain Mark）",
-  "source_page": "https://www.flickr.com/photos/national_museum_of_the_us_navy/16667413368",
-  "source_file": "https://live.staticflickr.com/7645/16667413368_2f753d3388_h.jpg",
-  "caption": "1954 年，新墨西哥州霍洛曼空军基地，航空医学实验室主任约翰·斯塔普中校被绑进火箭滑车，准备以 421 mph（678 km/h）测试人体耐受极限；同年 12 月他更以 1,017 km/h 的滑车速度承受了 46.2 g 的减速。",
-  "w": 1280,
-  "h": 1536
- },
- {
   "id": "rainhill",
   "subject": "1829 雨山试车版画 / 飞剪船版画",
   "file": "rainhill.jpg",
@@ -278,7 +278,7 @@
  },
  {
   "subject": "飞剪船版画（Flying Cloud，1852）",
-  "author": "James E. Buttersworth 绘，N. Currier 出版（纽约大都会艺术博物馆藏）",
+  "author": "据 James E. Buttersworth 原画，Eliphalet M. Brown Jr. 绘石，N. Currier 出版（纽约大都会艺术博物馆藏）",
   "year": "1852",
   "license": "公有领域（大都会艺术博物馆 Open Access / CC0）",
   "source_page": "https://www.metmuseum.org/art/collection/search/769236",

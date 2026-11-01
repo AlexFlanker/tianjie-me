@@ -4,7 +4,7 @@
   "title": "时间的刻度：各文明怎样给年、月、日、时、秒立规矩",
   "subtitle": "从埃及的 365 天、巴比伦的 19 年 7 闰、郭守敬的 365.2425 日、1582 年被跳过的 10 天，到 1884 年的格林尼治零点与 2027 年闰秒的终结——历法沿革与对表的历程，按时间轴与世界地图展开。",
   "date": "2026-10-24",
-  "summary": "天不给整数：一年不是整数天，一月不是整数天，一天也不是整数秒。每个文明都在拿自己的办法凑这笔账——置闰、跳日、改历、拨表、闰秒——而且越凑越全球化。世界地图 + 时间轴 + 九条文明泳道，五面「为什么对不上」的演示墙，四个可以自己动手的小工具。",
+  "summary": "天不给整数：一年不是整数天，一月不是整数天，一天也不是整数秒。每个文明都在拿自己的办法凑这笔账——置闰、跳日、改历、拨表、闰秒——而且越凑越全球化。十二座城、十四个年份的对历对表舞台，四张可拖的主图（新年落在哪个季节、谁的正午、每天差多少、地球这只钟），四十五个节点，三个动手的小工具。",
   "tags": [
     "表",
     "历法",
@@ -12,15 +12,15 @@
     "天文",
     "全球史"
   ],
-  "format": "图谱 · 动手舞台 · 五面演示墙 · 四个小工具",
+  "format": "全屏舞台 · 四张主图 · 四十五个节点 · 三个小工具",
   "cover": "cover.png",
-  "cover_focus": "#jstage",
+  "cover_focus": "#top",
   "cover_scheme": "dark",
-  "reading_time": "35 分钟",
+  "reading_time": "25 分钟",
   "sources": [
-    "BIPM（第 27、28 届 CGPM 决议、CCTF 主席声明、SI 手册）、IERS 公报 C 72（经 IANA tz 列表转发）、USNO tai-utc.dat 与 deltat.data、NIST、GPS.gov",
+    "BIPM（第 27、28 届 CGPM 决议、CCTF 主席声明、SI 手册）、IERS 公报 C 72（经 IANA tz 列表转发）、USNO tai-utc.dat 与 deltat.data、NIST、USNO GPS Time Transfer、GPS World",
     "1884 年国际子午线会议记录（Gutenberg）、英国 1750 与 1880 年法案（legislation.gov.uk）、美国法典 15 U.S.C. §§260–267、EUR-Lex 2000/84/EC、gov.uk、IANA tz 数据库源文件与 theory.html、国务院公报页码、国家授时中心",
-    "Inter gravissimas 英译（Wikisource）、Reingold & Dershowitz《Calendrical Calculations》、IANA tz calendars 文件（Grotefend / Nørby 采用表）、香港天文台公历农历对照与朔望表、国家标准全文公开系统（GB/T 33661-2017）、新华社、紫金山天文台、UNESCO、史密森尼 NMAI、Britannica",
-    "图片 18 张：大都会博物馆 Open Access（CC0）、美国国会图书馆、NIST、Wellcome Collection、geograph.org.uk（CC BY-SA 2.0）；逐张署名见页面卷末与 src/images.json"
+    "Inter gravissimas 英译（Wikisource）、Reingold & Dershowitz《Calendrical Calculations》、Meeus《天文算法》、IANA tz calendars 文件（Grotefend 表）、Toke Nørby 各国改历日期表、香港天文台公历与农历对照表、国家标准全文公开系统（GB/T 33661-2017）、新华社、紫金山天文台、UNESCO、史密森尼 NMAI、Britannica",
+    "图片 24 张：ESO（CC BY 4.0）、NASA 与 NOAA、美国国会图书馆、大都会博物馆 Open Access（CC0）、NIST、Wellcome Collection、geograph.org.uk（CC BY-SA 2.0）；逐张署名见页面卷末与 src/images.json"
   ]
 }

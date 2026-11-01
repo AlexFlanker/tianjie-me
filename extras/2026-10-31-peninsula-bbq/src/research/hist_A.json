@@ -1,0 +1,1434 @@
+{
+ "eras": [
+  {
+   "id": "e1_ancient",
+   "era_zh": "史前至三国：貊炙",
+   "era_en": "Antiquity to the Three Kingdoms: Maekjeok",
+   "from": "c. 300 BCE",
+   "to": "668",
+   "facts": [
+    {
+     "zh": "东晋干宝《搜神记》卷七记：「胡床、貊槃，翟之器也；羌煮、貊炙，翟之食也。自太始以来，中国尚之。」意思是西晋泰始年间（265–274）起，中原贵族流行吃「羌煮」「貊炙」这类「翟（夷狄）之食」。",
+     "en": "Gan Bao's Soushen ji (4th c., juan 7) records that hu-style folding chairs and Maek platters were 'barbarian utensils', and Qiang stew and Maek roast (maekjeok) 'barbarian foods', fashionable among China's elite from the Taishi era (265–274).",
+     "year": "4th c. (text); 265–274 (events)",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Wikipedia, 'Jeok'",
+       "url": "https://en.wikipedia.org/wiki/Jeok",
+       "kind": "百科"
+      },
+      {
+       "title": "이규진, 「불고기의 역사적 계보 연구—맥적·설야멱·너비아니에 대한 문헌고찰」, 한국식생활문화학회지 34(6):671-682, 2019",
+       "url": "https://koreascience.kr/article/JAKO201909358631096.page?lang=en",
+       "kind": "学术"
+      }
+     ],
+     "note": "简报写的「羌煮貊炙，翟之器也」不准确：原文「器」指胡床、貊槃，「食」才指羌煮、貊炙。原文据 Wikipedia 转引与通行本，宜对照四库本《搜神记》卷七再核一字。"
+    },
+    {
+     "zh": "同一事又见《晋书·五行志上》：「泰始之后，中国相尚用胡床貊槃，及为羌煮貊炙，贵人富室，必畜其器，吉享嘉会，皆以为先。」被史家归入「服妖」，视作胡人将入中原的前兆。",
+     "en": "The Book of Jin (Treatise on the Five Phases) repeats the record: after the Taishi era, rich households all owned these utensils and served Qiang stew and Maek roast first at feasts — listed as an ill omen foreshadowing nomadic conquest.",
+     "year": "648 (compiled)",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "國立臺東大學華語文學系論文（引《晉書》卷27〈五行志上〉，鼎文書局本頁823）",
+       "url": "https://wcoh.nttu.edu.tw/var/file/31/1031/img/881/746493841.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "东汉刘熙《释名·释饮食》解释貊炙：整只牲畜烤熟，食者各自用刀割取，「出于胡貊之为也」。",
+     "en": "Liu Xi's Shiming (late 2nd c.) defines maekjeok as an animal roasted whole, each diner carving his own portion with a knife — 'a practice of the Hu and Maek peoples'.",
+     "year": "c. 200",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia, 'Jeok'",
+       "url": "https://en.wikipedia.org/wiki/Jeok",
+       "kind": "百科"
+      }
+     ],
+     "note": "《释名》原文为「貊炙，全体炙之，各自以刀割，出于胡貊之为也」，据记忆与 Wikipedia 转述，宜对原书再核。"
+    },
+    {
+     "zh": "「貊」是否就是高句丽（或濊貊）先人，学界两说：韩国食物史学界（崔南善 1937 年起、李盛雨等）多把貊炙视为高句丽/扶余系的调味烤肉，是韩国烤肉的源头；另一说认为汉晋文献里「貊」「胡貊」常泛指北方、东北诸族，貊炙未必专指高句丽。",
+     "en": "Whether 'Maek' means the Goguryeo (Yemaek) ancestors of Koreans is debated: Korean food historians since Choe Nam-seon (1937) treat maekjeok as a seasoned Buyeo–Goguryeo roast and the ancestor of Korean barbecue; others note that 'Maek' and 'Hu-Maek' in Han–Jin texts loosely denote northern and northeastern peoples in general.",
+     "year": "1937 (Choe's claim)",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "이규진, 「불고기의 역사적 계보 연구—맥적·설야멱·너비아니에 대한 문헌고찰」, 한국식생활문화학회지 34(6):671-682, 2019",
+       "url": "https://koreascience.kr/article/JAKO201909358631096.page?lang=en",
+       "kind": "学术"
+      },
+      {
+       "title": "Wikipedia, 'Jeok'",
+       "url": "https://en.wikipedia.org/wiki/Jeok",
+       "kind": "百科"
+      }
+     ],
+     "alt": "说一：貊=濊貊/高句丽，貊炙是韩式调味烤肉的祖型（崔南善《每日申报》1937；李盛雨）。说二：貊是泛称，且《释名》描述的是整只烤后各自切割，与「先调味再烤」的后世韩式烤肉做法并不相同。"
+    },
+    {
+     "zh": "崔南善 1937 年在《每日申报》首次把貊炙描述为「扶余·高句丽式」的肉类烤法：用多种肉（或含野猪）整块调味后烧烤。",
+     "en": "Choe Nam-seon first framed maekjeok in the Maeil Sinbo in 1937 as a 'Buyeo–Goguryeo' roast: various meats, possibly wild boar, seasoned and roasted whole.",
+     "year": 1937,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "이규진, 「불고기의 역사적 계보 연구—맥적·설야멱·너비아니에 대한 문헌고찰」, 한국식생활문화학회지 34(6):671-682, 2019",
+       "url": "https://koreascience.kr/article/JAKO201909358631096.page?lang=en",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "dish": [
+    {
+     "name_zh": "貊炙",
+     "name_ko": "맥적",
+     "name_en": "Maekjeok",
+     "what_zh": "古代文献中的「貊人烤肉」：整只或整块烤熟，各自以刀割食；韩国学界多视为调味烤肉之祖。",
+     "what_en": "The 'Maek roast' of ancient Chinese texts: meat roasted whole and carved at the table; claimed by Korean scholars as the ancestor of seasoned Korean barbecue."
+    }
+   ]
+  },
+  {
+   "id": "e2_buddhist",
+   "era_zh": "统一新罗与高丽：崇佛少肉",
+   "era_en": "Unified Silla & Goryeo: Buddhist restraint",
+   "from": "668",
+   "to": "c. 1270",
+   "facts": [
+    {
+     "zh": "统一新罗与高丽以佛教为国教，王室屡颁禁杀令；通行叙述认为这一时期肉食与屠宰技艺衰退，貊炙一类烤肉「被遗忘」。",
+     "en": "With Buddhism as state religion in Unified Silla and Goryeo, kings repeatedly decreed bans on killing; the standard account holds that meat-eating and butchery skills declined and the maekjeok tradition was 'forgotten'.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "이규진·조미숙, 「문헌에 나타난 불고기의 개념과 의미 변화」, 한국식생활문화학회지 25(5):508-515, 2010",
+       "url": "https://koreascience.kr/article/JAKO201006652483259.pdf",
+       "kind": "学术"
+      },
+      {
+       "title": "경북매일, 황광해 칼럼（고려도경 도재 조）(2019-04-11)",
+       "url": "https://kbmaeil.com/article/201904100248104",
+       "kind": "媒体"
+      }
+     ],
+     "note": "具体禁杀诏的王名/年份（如新罗圣德王、高丽成宗、显宗等）本轮未找到一手出处，未写入；可查 encykorea「살생금지」相关条目。"
+    },
+    {
+     "zh": "北宋使臣徐兢 1123 年出使高丽约一个月，在《宣和奉使高丽图经》卷二十三〈杂俗二·屠宰〉中写道：高丽人好佛戒杀，只有王与宰相才吃羊、猪肉；宰杀时把牲畜捆起投入火中，肉煮或烤都有腥臭。",
+     "en": "Song envoy Xu Jing, in Goryeo for about a month in 1123, wrote in the Gaoli tujing (juan 23, 'Butchering') that Goryeo people, devoted to Buddhism, shunned killing; only the king and high ministers ate mutton and pork, and animals were tied and thrown into fire, so the meat smelled foul whether stewed or grilled.",
+     "year": 1123,
+     "conf": "高",
+     "sources": [
+      {
+       "title": "경북매일, 황광해 칼럼（고려도경 도재 조）(2019-04-11)",
+       "url": "https://kbmaeil.com/article/201904100248104",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "另一种看法认为「崇佛」只是表面理由：牛是耕畜、肉源稀少，才是限制肉食的根本原因；且徐兢的记录本身说明猪肉汤、烤猪肉并未绝迹。",
+     "en": "A counter-view holds that Buddhism was a pretext: cattle were draft animals and meat scarce, which mattered more; Xu Jing's own account shows pork soup and grilled pork still existed.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "경북매일, 황광해 칼럼（고려도경 도재 조）(2019-04-11)",
+       "url": "https://kbmaeil.com/article/201904100248104",
+       "kind": "媒体"
+      }
+     ],
+     "alt": "说一：佛教禁杀导致肉食衰退（主流叙述）。说二：经济与耕畜保护才是主因，佛教是说辞（黄光海等）。"
+    }
+   ],
+   "dish": []
+  },
+  {
+   "id": "e3_yuan",
+   "era_zh": "元干涉期：肉食回流",
+   "era_en": "Mongol (Yuan) period: meat returns",
+   "from": "c. 1270",
+   "to": "1392",
+   "facts": [
+    {
+     "zh": "13 世纪蒙古入侵与元干涉期，被普遍视为半岛肉食文化复兴的外因：蒙古在济州设牧场养马牛，屠宰与吃肉的习惯随之传入。",
+     "en": "The Mongol invasions and the century of Yuan overlordship are widely seen as reviving meat-eating on the peninsula; the Mongols ran pastures on Jeju and brought their butchering and meat-eating habits.",
+     "year": "1270s–1350s",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "경북매일, 황광해 칼럼（고려도경 도재 조）(2019-04-11)",
+       "url": "https://kbmaeil.com/article/201904100248104",
+       "kind": "媒体"
+      },
+      {
+       "title": "이종수, 「13세기 고려의 탕(湯) 음식문화 변동 분석」, 한국전통문화연구 16, 2015",
+       "url": "https://www.earticle.net/Article/A261532",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "朝鲜世祖二年（1456）梁诚之上疏提到，「禾尺」「鞑靼」等北方系集团世代以屠宰为业，被视为高丽以来屠宰业的来源之一。",
+     "en": "A 1456 memorial by Yang Seong-ji (Sejo 2) names groups such as the hwacheok and 'Tatars' — of northern, Khitan/Mongol-linked origin — as hereditary butchers.",
+     "year": 1456,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "경북매일, 황광해 칼럼（고려도경 도재 조）(2019-04-11)",
+       "url": "https://kbmaeil.com/article/201904100248104",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "韩国食物史通说：高丽后期「雪夜觅」（설야멱）出现，被视为貊炙传统的复归，也是后来너비아니与불고기的前身；常说它是开城一带的名物。",
+     "en": "Korean food historians hold that seoryamyeok ('snowy-night roast') emerged in late Goryeo as maekjeok's revival and the forerunner of neobiani and bulgogi; it is often called a Kaesong specialty.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "이규진·조미숙, 「문헌에 나타난 불고기의 개념과 의미 변화」, 한국식생활문화학회지 25(5):508-515, 2010",
+       "url": "https://koreascience.kr/article/JAKO201006652483259.pdf",
+       "kind": "学术"
+      },
+      {
+       "title": "이규진, 「불고기의 역사적 계보 연구—맥적·설야멱·너비아니에 대한 문헌고찰」, 한국식생활문화학회지 34(6):671-682, 2019",
+       "url": "https://koreascience.kr/article/JAKO201909358631096.page?lang=en",
+       "kind": "学术"
+      }
+     ],
+     "alt": "李规珍 2019 文献梳理：雪夜觅的确切文字记录始于朝鲜（1609 年仪轨，用猪肉），高丽起源属后人推定。",
+     "note": "「高丽开城」说出自 1985 年李盛雨及近代《海东竹枝》（1925）一类文献，属于口传/推定。"
+    },
+    {
+     "zh": "雪浓汤（설렁탕）起源有两说：一说源自朝鲜国王在先农坛祭祀后煮牛与百姓分食；一说源自蒙古语「shülen/슐루」（肉汤），是元代传入。两说都缺乏确证，属传说层面。",
+     "en": "Two origin stories exist for seolleongtang: one traces it to Joseon kings boiling an ox after rites at the Seonnongdan altar and sharing it with commoners; the other derives the name from Mongolian shülen (broth) brought under the Yuan. Neither is proven.",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "푸드투데이（한우자조금 협조 기사, 2026-04-16）",
+       "url": "https://www.foodtoday.or.kr/news/article.html?no=203993",
+       "kind": "媒体"
+      }
+     ],
+     "alt": "说一：先农坛起源（朝鲜）；说二：蒙古语 shülen 起源（元代）。",
+     "note": "先农坛说来源为韩牛自助金合作稿；蒙古语说为常见通说，本轮未找到学术一手出处，标「传说」处理。"
+    }
+   ],
+   "dish": [
+    {
+     "name_zh": "雪夜觅（雪夜覓炙）",
+     "name_ko": "설야멱(적)",
+     "name_en": "Seoryamyeok",
+     "what_zh": "名字意为「雪夜里寻来吃的烤肉」：肉片调味后在炭火上烤，半熟时浸冷水再烤，以求软嫩。",
+     "what_en": "Literally 'sought on a snowy night': seasoned meat grilled over charcoal, dipped in cold water mid-way and grilled again for tenderness."
+    }
+   ]
+  },
+  {
+   "id": "e4_joseon",
+   "era_zh": "朝鲜王朝：牛禁与雪夜觅",
+   "era_en": "Joseon: the cattle ban and the snowy-night roast",
+   "from": "1392",
+   "to": "1897",
+   "facts": [
+    {
+     "zh": "太祖七年（1398）首次颁布「牛禁令」禁止宰杀耕牛，此后附带罚则屡次重申；宰他人之牛重于宰自家之牛，盗牛而宰者可处绞刑。",
+     "en": "The first cattle-slaughter ban (ugeum) was issued in 1398 (Taejo 7) and reissued with penalties many times; slaughtering another's ox was punished more heavily than one's own, and stealing and slaughtering an ox could bring hanging.",
+     "year": 1398,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "전북일보, 윤주 「겨울철 ‘난로회’와 온정」(2020-12-16)",
+       "url": "https://www.jjan.kr/article/20201216722623",
+       "kind": "媒体"
+      },
+      {
+       "title": "머니투데이, 「명절에 소 3만 마리 도축…소고기를 향한 ‘조선’의 탐식」(2018-04-14；评김동진《조선, 소고기 맛에 빠지다》)",
+       "url": "https://www.mt.co.kr/culture/2018/04/14/2018041213475104883",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "牛禁执行效果有限：据金东珍《朝鲜，沉迷于牛肉之味》引 1775 年（英祖五十一年）记录，仅节日就宰牛二万至三万头；《世宗实录》也有一年为祭祀与待客宰杀数千头的记载。",
+     "en": "Enforcement was weak: historian Kim Dong-jin cites a 1775 record of 20,000–30,000 cattle slaughtered for holidays alone, and the Sejong Sillok notes thousands killed yearly for rites and guests.",
+     "year": 1775,
+     "num": "2–3 万头（节日宰牛，1775 年记录）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "머니투데이, 「명절에 소 3만 마리 도축…소고기를 향한 ‘조선’의 탐식」(2018-04-14；评김동진《조선, 소고기 맛에 빠지다》)",
+       "url": "https://www.mt.co.kr/culture/2018/04/14/2018041213475104883",
+       "kind": "媒体"
+      }
+     ],
+     "note": "1775 年数字的原始史料（实录/备边司誊录？）报道未具名，宜核。"
+    },
+    {
+     "zh": "汉城唯一官许的宰牛处在成均馆，供应儒生后余肉在「悬房」（현방）出售，收入补贴儒生。",
+     "en": "In Seoul the only licensed slaughter site belonged to the Seonggyungwan academy; surplus beef was sold at shops called hyeonbang, funding the students.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "머니투데이, 「명절에 소 3만 마리 도축…소고기를 향한 ‘조선’의 탐식」(2018-04-14；评김동진《조선, 소고기 맛에 빠지다》)",
+       "url": "https://www.mt.co.kr/culture/2018/04/14/2018041213475104883",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "冬季十月初一起，两班士大夫流行「暖炉会」：围着火炉烤牛肉驱寒，17 世纪后期由中国传入汉阳，18 世纪遍及八道；《东国岁时记》（1849）记载在炭火上放铁板，牛肉以油、酱、鸡蛋、葱、蒜、辣椒粉调味后烤食。金弘道《四季风俗图·烤肉》等画作描绘了这一场景。",
+     "en": "From the first day of the tenth lunar month, Joseon gentry held 'brazier gatherings' (nanrohoe), grilling beef around a charcoal brazier; the custom arrived from China in the late 17th century and spread nationwide in the 18th. The Dongguk sesigi (1849) describes beef seasoned with oil, soy sauce, egg, scallion, garlic and chili powder grilled on an iron pan over charcoal; paintings attributed to Kim Hong-do depict the scene.",
+     "year": "17th–19th c.; 1849",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "전북일보, 윤주 「겨울철 ‘난로회’와 온정」(2020-12-16)",
+       "url": "https://www.jjan.kr/article/20201216722623",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "「雪夜觅」见于朝鲜《仪轨》等宫廷记录，也在民间流传：1609 年的记录用猪肉，后来改用牛肉；19 世纪以后做法简化。",
+     "en": "Seoryamyeok appears in Joseon court uigwe records and was also eaten outside the palace; the 1609 record uses pork, later versions beef, and the recipe simplified from the 19th century.",
+     "year": 1609,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "이규진, 「불고기의 역사적 계보 연구—맥적·설야멱·너비아니에 대한 문헌고찰」, 한국식생활문화학회지 34(6):671-682, 2019",
+       "url": "https://koreascience.kr/article/JAKO201909358631096.page?lang=en",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "「너비아니」（宽片烤牛肉）常被说成宫廷菜，但官方记录中并无此名；最早见于 19 世纪末的食谱《是议全书》（写作「너비안이」），1880 年《韩法字典》收「너부할미」，1897 年《韩英字典》收「너비아니」。",
+     "en": "Neobiani (broad-sliced grilled beef) is often called royal cuisine but is absent from court records; it first appears in the late-19th-century cookbook Siuijeonseo (as 'neobiani'), with 'neobuhalmi' in the 1880 Korean–French dictionary and 'neobiani' in the 1897 Korean–English dictionary.",
+     "year": "late 19th c.; 1880; 1897",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "이규진, 「불고기의 역사적 계보 연구—맥적·설야멱·너비아니에 대한 문헌고찰」, 한국식생활문화학회지 34(6):671-682, 2019",
+       "url": "https://koreascience.kr/article/JAKO201909358631096.page?lang=en",
+       "kind": "学术"
+      },
+      {
+       "title": "이규진·조미숙, 「문헌에 나타난 불고기의 개념과 의미 변화」, 한국식생활문화학회지 25(5):508-515, 2010",
+       "url": "https://koreascience.kr/article/JAKO201006652483259.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "18–19 世纪的家用百科与食谱都收有烤肉条目：洪万选《山林经济》（约 1715）与柳重临《增补山林经济》（1766）载「雪夜觅」法——牛肉切片用刀背捶松，以油、酱调味后炭火烤，半熟时浸冷水再烤，反复数次；凭虚阁李氏《閨閤丛书》（1809）作「설하멱（雪下覓）」；19 世纪末《是议全书》则改名「너비아니」。",
+     "en": "Eighteenth- and nineteenth-century household manuals carry grilled-meat recipes: Hong Man-seon's Sallim gyeongje (c.1715) and Yu Jung-rim's expanded edition (1766) give 'seoryamyeok' — beef slices tenderised with the back of a knife, seasoned with oil and soy, charcoal-grilled, plunged in cold water half-cooked and grilled again several times; Lady Bingheogak's Gyuhap chongseo (1809) calls it 'seolhamyeok'; the late-19th-c. Siuijeonseo renames it neobiani.",
+     "year": "c.1715; 1766; 1809; late 19th c.",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "이규진, 「불고기의 역사적 계보 연구—맥적·설야멱·너비아니에 대한 문헌고찰」, 한국식생활문화학회지 34(6):671-682, 2019",
+       "url": "https://koreascience.kr/article/JAKO201909358631096.page?lang=en",
+       "kind": "学术"
+      },
+      {
+       "title": "이규진·조미숙, 「문헌에 나타난 불고기의 개념과 의미 변화」, 한국식생활문화학회지 25(5):508-515, 2010",
+       "url": "https://koreascience.kr/article/JAKO201006652483259.pdf",
+       "kind": "学术"
+      }
+     ],
+     "note": "各书条目名与做法细节据记忆与通行转述，本轮搜索未拿到原文；务必对照韩国古典综合 DB 或李规珍 2019 正文核实后再上页面。"
+    }
+   ],
+   "dish": [
+    {
+     "name_zh": "宽片烤牛肉",
+     "name_ko": "너비아니",
+     "name_en": "Neobiani",
+     "what_zh": "牛肉切宽薄片，用酱油、糖、葱蒜、芝麻油调味后直火烤，是近代불고기的直接前身。",
+     "what_en": "Beef cut into broad thin slices, marinated in soy, sugar, scallion, garlic and sesame oil, grilled over direct fire — bulgogi's direct ancestor."
+    },
+    {
+     "name_zh": "烤牛心",
+     "name_ko": "우심적",
+     "name_en": "Usimjeok",
+     "what_zh": "烤牛心，士大夫待客的敬意之菜；丁若镛流放康津时曾写到未能以此款待友人。",
+     "what_en": "Grilled ox heart, a dish of honour among scholars; Jeong Yak-yong lamented in exile being unable to serve it to a visiting friend."
+    }
+   ]
+  },
+  {
+   "id": "e5_colonial",
+   "era_zh": "日据时期：「불고기」一词登场",
+   "era_en": "Colonial era: the word 'bulgogi' appears",
+   "from": "1910",
+   "to": "1945",
+   "facts": [
+    {
+     "zh": "「불고기」（火+肉）一词在 19 世纪末的韩法、韩英字典与 1938 年文世荣《朝鲜语辞典》中都没有；已知最早的报刊用例在 1930 年代初：1931 年 2 月 9 日《东亚日报》连载小说中已出现，1932 年《东亚日报》健康专栏也列出「불고기一块 15 卡路里」。",
+     "en": "The word bulgogi ('fire meat') is absent from late-19th-century bilingual dictionaries and from Mun Se-yeong's 1938 Korean dictionary; the earliest known print uses date to the early 1930s — a Dong-a Ilbo serial novel of 9 Feb 1931, and a 1932 Dong-a Ilbo health column listing one piece of bulgogi at 15 calories.",
+     "year": "1931–1932",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "경향신문, 「‘불고기’는 일본말 야키니쿠의 번역어?」(2018-10-12)",
+       "url": "https://www.khan.co.kr/article/201810121057001/amp",
+       "kind": "媒体"
+      },
+      {
+       "title": "클리앙 게시글（동아일보 1932-03-20·1935-05-05·1940-02-08 기사, 이효석 1939 수필 인용 정리）",
+       "url": "https://www.clien.net/service/board/park/12696120",
+       "kind": "二手"
+      }
+     ]
+    },
+    {
+     "zh": "1935 年 5 月 5 日《东亚日报》平壤电：以烟熏伤松、气味扰客为由，禁止在牡丹台松林里露天烤肉，标题称「牡丹台的名物『불고기』禁止」——说明当时平壤烤肉已是有名的户外吃法。",
+     "en": "A Pyongyang-datelined Dong-a Ilbo report of 5 May 1935 announced a ban on outdoor grilling in the pine groves of Moran Hill, because smoke harmed the trees and the smell bothered visitors — headlined 'Moran Hill's famous bulgogi banned'.",
+     "year": 1935,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "클리앙 게시글（동아일보 1932-03-20·1935-05-05·1940-02-08 기사, 이효석 1939 수필 인용 정리）",
+       "url": "https://www.clien.net/service/board/park/12696120",
+       "kind": "二手"
+      }
+     ],
+     "note": "据网络帖子转述原报，未见原版面；可在 NAVER 뉴스라이브러리 1935-05-05 东亚日报核对。"
+    },
+    {
+     "zh": "语言学家李基文（2006）认为「불고기」原是 1945 年前平壤乃至平安道的方言词，首尔以南解放前并无炭火烤肉习俗，故早期文献少见；1950 年韩文学会《大辞典》首次收录。",
+     "en": "Linguist Lee Ki-moon (2006) argued bulgogi was a Pyongyang/Pyeongan dialect word before 1945, since Seoul and the south lacked a charcoal-grilling custom then; the Hangeul Society's Keun Sajeon of 1950 was the first dictionary to list it.",
+     "year": "2006 (argument); 1950 (dictionary)",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "경향신문, 「‘불고기’는 일본말 야키니쿠의 번역어?」(2018-10-12)",
+       "url": "https://www.khan.co.kr/article/201810121057001/amp",
+       "kind": "媒体"
+      },
+      {
+       "title": "이규진·조미숙, 「문헌에 나타난 불고기의 개념과 의미 변화」, 한국식생활문화학회지 25(5):508-515, 2010",
+       "url": "https://koreascience.kr/article/JAKO201006652483259.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "另一说（饮食评论家黄教益）认为「불고기」是日语「焼肉（yakiniku）」的译词，最早也只能是 1920 年代以后才出现；语言学家多反对此说。作家李孝石 1939 年在平壤写的随笔里用的仍是「야끼니꾸」，并嫌这个名字「寒碜又俗气」。",
+     "en": "Food critic Hwang Kyo-ik argues bulgogi is a calque of Japanese yakiniku, coined no earlier than the 1920s; most linguists reject this. Writer Lee Hyo-seok, living in Pyongyang, still used 'yakiniku' in a 1939 essay, complaining the name sounded 'shabby and vulgar'.",
+     "year": 1939,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "경향신문, 「‘불고기’는 일본말 야키니쿠의 번역어?」(2018-10-12)",
+       "url": "https://www.khan.co.kr/article/201810121057001/amp",
+       "kind": "媒体"
+      },
+      {
+       "title": "클리앙 게시글（동아일보 1932-03-20·1935-05-05·1940-02-08 기사, 이효석 1939 수필 인용 정리）",
+       "url": "https://www.clien.net/service/board/park/12696120",
+       "kind": "二手"
+      }
+     ],
+     "alt": "说一：平安道方言固有词（李基文、金良镇）。说二：日语焼肉的翻译词（黄教益）。"
+    },
+    {
+     "zh": "同期平壤冷面已成城市名物：19 世纪末平壤出现冷面馆，1920 年代全城有数十家，并在 1920 年代初进入汉城、1930 年代有外卖；「烤肉配冷面」的平壤吃法由此成形。",
+     "en": "Pyongyang naengmyeon was already an urban specialty: noodle houses appeared in the late 19th century, dozens operated by the 1920s, and the style reached Seoul in the early 1920s with delivery by the 1930s — the 'grilled meat then cold noodles' pairing grew from this Pyongyang scene.",
+     "year": "1920s–1930s",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "머니투데이/월간 외식경영, 박경아(2011-08-08)",
+       "url": "https://www.mt.co.kr/article/2011080817280732852",
+       "kind": "媒体"
+      }
+     ],
+     "note": "「烤肉+冷面」配对作为平壤固定吃法的直接史料未查到，此句后半为概括。"
+    }
+   ],
+   "dish": [
+    {
+     "name_zh": "平壤烤肉",
+     "name_ko": "평양 불고기",
+     "name_en": "Pyongyang bulgogi",
+     "what_zh": "1930 年代平壤牡丹台一带的炭火烤肉，被视为「불고기」一词的发源地。",
+     "what_en": "Charcoal-grilled meat of 1930s Pyongyang's Moran Hill, often cited as the cradle of the word bulgogi."
+    }
+   ]
+  },
+  {
+   "id": "e6_postwar",
+   "era_zh": "战后至 1970 年代：갈비与五花肉",
+   "era_en": "Postwar to the 1970s: galbi and pork belly",
+   "from": "1950",
+   "to": "1979",
+   "facts": [
+    {
+     "zh": "水原「华春屋」1945 年在水原营洞市场开业，以解酒汤里放牛排骨出名，1956 年起供应炭火烤갈비；1979 年歇业后厨师散入东水原的갈비店，1985 年 4 月 12 日水原市把水原갈비定为乡土饮食。水原갈비以盐调味、排骨大块著称（「水原王갈비」）。",
+     "en": "Suwon's Hwachunok opened in 1945 at Yeongdong Market, known for galbi in hangover soup, and began serving charcoal-grilled galbi in 1956; after it closed in 1979 its cooks spread to east Suwon, and on 12 April 1985 the city designated Suwon galbi a local traditional food — salt-seasoned, with outsized ribs ('king galbi').",
+     "year": "1945; 1956; 1985",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "머니투데이, 「갈비 중에 ‘왕’이오, ‘수원갈비’」(2025-08-11)",
+       "url": "https://www.mt.co.kr/policy/2025/08/11/2025081113437884317",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "首尔麻浦一带在 1950 年代起出现面向劳工的猪排骨、猪皮烤肉店，「麻浦真正元祖崔大炮」自 1956 年在原址营业，号称最早把猪皮做成菜，被列为首尔未来遗产。",
+     "en": "Mapo in Seoul grew a cluster of cheap pork-rib and pork-rind grill houses for workers from the 1950s; 'Choi Daepo' has operated on the same spot since 1956, claims to have been the first to serve pork rind, and is a designated Seoul Future Heritage.",
+     "year": 1956,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "에스콰이어 코리아, 노포 고깃집 기사（최대포 1956 등）",
+       "url": "https://www.esquirekorea.co.kr/article/74030",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "「세겹살」（三层肉）一词最早见于 1934 年《东亚日报》，1957 年食谱说的是把세겹살煮熟切片；作为烤肉的삼겹살专门店，《韩国民族文化大百科》定为 1970 年代后期出现，1983 年报纸已称首尔三角洞为「삼겹살胡同」。国语辞典 1994 年才收「삼겹살」。",
+     "en": "'Segyeopsal' (three-layer meat) first appears in a 1934 Dong-a Ilbo; a 1957 cookbook boils and slices it. Specialist grilled-samgyeopsal restaurants date to the late 1970s per the Encyclopedia of Korean Culture, a 1983 paper called Samgak-dong 'samgyeopsal alley', and the word entered the standard dictionary only in 1994.",
+     "year": "1934; late 1970s; 1983; 1994",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "주간경향, 「삼겹살도 감자탕도 ‘전통음식’이 아니었다」(2026-09)",
+       "url": "https://weekly.khan.co.kr/article/202609250600031",
+       "kind": "媒体"
+      },
+      {
+       "title": "서울신문, 「구우면 노릇, 입에선 야들…서민과 울고 웃는 삼겹살」(2017-04-10)",
+       "url": "https://m.seoul.co.kr/news/2017/04/10/20170410017001",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "五花肉烤肉大众化有多种起源说：1970 年代江原道矿工下井后吃肥肉「洗喉咙的煤尘」；建筑工人在石板瓦（슬레이트）上烤肉；1960 年代烧酒降价后以廉价猪肉下酒；开城商人发明「三层」养猪法；1970 年代猪里脊出口日本、五花留在国内。这些说法均无确证。",
+     "en": "Several origin stories exist for grilled pork belly: 1970s Gangwon coal miners eating fat to 'wash out' coal dust; construction workers grilling on slate roofing; cheap pork as a soju snack after 1960s price drops; Kaesong merchants breeding for layered belly; and 1970s pork-loin exports to Japan leaving belly at home. None is substantiated.",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "경북매일, 삼겹살 기원 관련 기사(2019-09-26)",
+       "url": "https://kbmaeil.com/article/201909260261171",
+       "kind": "媒体"
+      },
+      {
+       "title": "위키트리, 「삼겹살에 대한 흔한 오해 6가지」",
+       "url": "https://www.wikitree.co.kr/articles/1029876",
+       "kind": "媒体"
+      }
+     ],
+     "alt": "矿工说；石板瓦说；烧酒下酒说；开城商人说；对日出口说——并列为传说。",
+     "note": "开城商人说与对日出口说在本轮所查文章中均未出现，属网络常见说法，来源较弱，可考虑只放矿工/石板瓦两说。"
+    },
+    {
+     "zh": "学界较可靠的解释是结构性的：1970 年代政府为压牛肉价格鼓励吃猪肉，养猪业现代化与外食业扩张带来廉价猪肉，1980 年代中期便携式燃气炉与丁烷罐普及，「烤五花」由此成为全民吃法。",
+     "en": "The better-supported explanation is structural: in the 1970s the government promoted pork to curb beef prices, modern pig farming and restaurant growth made pork cheap, and portable butane stoves spread in the mid-1980s, turning grilled belly into a national habit.",
+     "year": "1970s–1980s",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "주간경향, 「삼겹살도 감자탕도 ‘전통음식’이 아니었다」(2026-09)",
+       "url": "https://weekly.khan.co.kr/article/202609250600031",
+       "kind": "媒体"
+      },
+      {
+       "title": "서울신문, 「구우면 노릇, 입에선 야들…서민과 울고 웃는 삼겹살」(2017-04-10)",
+       "url": "https://m.seoul.co.kr/news/2017/04/10/20170410017001",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "牛肉源流的另一线索是「肉汤불고기」：1960–1990 年代流行在中间隆起、四周有汤槽的铜盘上烤腌牛肉、边烤边浸汤，与此前的直火너비아니式불고기不同。",
+     "en": "Another beef strand was 'broth bulgogi': from the 1960s to 1990s marinated beef was cooked on a domed pan with a moat of broth around it, unlike the earlier direct-fire neobiani-style bulgogi.",
+     "year": "1960s–1990s",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Kyou Jin Lee & Mi Sook Cho, 'The Evolution of Bulgogi over the Past 100 Years', Korea Journal 53(4):168-194, 2013",
+       "url": "https://pure.ewha.ac.kr/en/publications/the-evolution-of-bulgogi-over-the-past-100-years/",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "dish": [
+    {
+     "name_zh": "水原排骨",
+     "name_ko": "수원갈비",
+     "name_en": "Suwon galbi",
+     "what_zh": "大块牛排骨以盐（而非酱油）调味，炭火烤。",
+     "what_en": "Oversized beef short ribs seasoned with salt rather than soy, grilled over charcoal."
+    },
+    {
+     "name_zh": "猪排骨",
+     "name_ko": "돼지갈비",
+     "name_en": "Dwaeji-galbi",
+     "what_zh": "酱油糖腌猪排骨，常用蜂窝煤或炭火烤，是工人区的平价烤肉。",
+     "what_en": "Soy-and-sugar marinated pork ribs grilled over briquettes or charcoal — working-class barbecue."
+    },
+    {
+     "name_zh": "五花肉",
+     "name_ko": "삼겹살",
+     "name_en": "Samgyeopsal",
+     "what_zh": "不腌的生猪五花肉片，直接上烤盘，蘸盐油或包菜吃。",
+     "what_en": "Unmarinated pork belly slices grilled plain, dipped in salted sesame oil or wrapped in leaves."
+    }
+   ]
+  },
+  {
+   "id": "e7_1980s",
+   "era_zh": "1980 年代：经济起飞与外食",
+   "era_en": "1980s: boom years and eating out",
+   "from": "1980",
+   "to": "1989",
+   "facts": [
+    {
+     "zh": "1980 年代烤五花肉成为全民吃法：1983 年报纸已有「삼겹살胡同」，1980 年代中期便携燃气炉与丁烷罐普及，烤肉从餐馆延伸到家里和野外；家用冰箱普及也方便储存猪肉。",
+     "en": "Grilled pork belly went national in the 1980s: newspapers wrote of a 'samgyeopsal alley' by 1983; portable gas stoves and butane spread in the mid-1980s, taking grilling into homes and outdoors, and home refrigerators made storing pork easier.",
+     "year": "1983; mid-1980s",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "주간경향, 「삼겹살도 감자탕도 ‘전통음식’이 아니었다」(2026-09)",
+       "url": "https://weekly.khan.co.kr/article/202609250600031",
+       "kind": "媒体"
+      },
+      {
+       "title": "서울신문, 「구우면 노릇, 입에선 야들…서민과 울고 웃는 삼겹살」(2017-04-10)",
+       "url": "https://m.seoul.co.kr/news/2017/04/10/20170410017001",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "黄义真、郑宪穆 2025 年研究把 1970–80 年代首尔烤肉店的扩张与城市化、中产阶层成长联系起来；2019 年出版的《삼겹살의 시작》把 1980 年代称为「五花肉共和国的开端」。",
+     "en": "A 2025 study by Hwang Ui-jin and Jeong Heon-mok links the spread of Seoul grill restaurants in the 1970s–80s to urbanisation and a growing middle class; the 2019 book 'The Beginning of Samgyeopsal' calls the 1980s 'the start of the samgyeopsal republic'.",
+     "year": "1980s",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "주간경향, 「삼겹살도 감자탕도 ‘전통음식’이 아니었다」(2026-09)",
+       "url": "https://weekly.khan.co.kr/article/202609250600031",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "同一时期地方政府开始把烤肉包装成乡土名物：1985 年 4 月水原市指定水原갈비为乡土饮食。",
+     "en": "Local governments began branding grilled meat as heritage: Suwon designated Suwon galbi a local traditional food in April 1985.",
+     "year": 1985,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "머니투데이, 「갈비 중에 ‘왕’이오, ‘수원갈비’」(2025-08-11)",
+       "url": "https://www.mt.co.kr/policy/2025/08/11/2025081113437884317",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "1988 年汉城奥运前后，불고기与갈비被当作招待外国人的「代表性韩食」推出，这是韩式烤肉对外形象的起点之一。",
+     "en": "Around the 1988 Seoul Olympics, bulgogi and galbi were presented as signature Korean dishes for foreign visitors — one starting point of Korean barbecue's international image.",
+     "year": 1988,
+     "conf": "低",
+     "sources": [
+      {
+       "title": "Kyou Jin Lee & Mi Sook Cho, 'The Evolution of Bulgogi over the Past 100 Years', Korea Journal 53(4):168-194, 2013",
+       "url": "https://pure.ewha.ac.kr/en/publications/the-evolution-of-bulgogi-over-the-past-100-years/",
+       "kind": "学术"
+      }
+     ],
+     "note": "本轮未找到奥运期间官方推广烤肉的一手文献，仅为通行叙述；可查 1988 年奥组委/交通部「대표 한식」资料或请主会话决定是否保留。"
+    }
+   ],
+   "dish": []
+  },
+  {
+   "id": "e8_1990s",
+   "era_zh": "1990–2000 年代：无烟烤炉与精肉食堂",
+   "era_en": "1990s–2000s: smokeless roasters and butcher-restaurants",
+   "from": "1990",
+   "to": "2009",
+   "facts": [
+    {
+     "zh": "桌下排烟的烤肉台技术起源于日本：1980 年日本人 Kiyomitu Kurotaki（黑泷）申请经地板下管道排烟的餐桌烤炉美国专利；1983–84 年日本 Sanko Sosetsu Kogyo 公司的 Akinari Abe（阿部）把「无需排气管的불고기桌」在韩国申请实用新案（1987 年公告）；1987 年名古屋 Shinpo 公司申请下吸式无烟烤炉专利。",
+     "en": "Downdraft table grills began in Japan: Kiyomitu Kurotaki filed a US patent in 1980 for a table roaster exhausting smoke through underfloor ducts; Akinari Abe of a Japanese firm filed a Korean utility model for a 'ductless bulgogi table' in 1984 (Japanese priority 1983, published 1987); Nagoya's Shinpo filed a downdraft smokeless-roaster patent in 1987.",
+     "year": "1980; 1983–1987",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "US Patent 4,335,705 'Smoke collecting and exhausting system for a roaster' (Kiyomitu Kurotaki, filed 1980-07-01)",
+       "url": "https://patents.google.com/patent/US4335705A/en",
+       "kind": "官方"
+      },
+      {
+       "title": "KR870000298Y1 「덕트가 없는 불고기 테이블」(Akinari Abe / 산고오 소오세츠 고오교오, 출원 1984-04-03, 일본 우선권 1983)",
+       "url": "https://patents.google.com/patent/KR870000298Y1/en",
+       "kind": "官方"
+      },
+      {
+       "title": "US Patent 4,796,601 'Smokeless roaster' (Takeshi Yamada / Shinpo KK, filed 1987-11-12)",
+       "url": "https://patents.google.com/patent/US4796601A/en",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "韩国烤肉店常见两种排烟：从天花板垂下的伸缩式（자바라）上吸排烟管，与桌面下吸式（하향식）无烟烤炉；后者在 1990–2000 年代随连锁烤肉店普及。",
+     "en": "Korean grill houses use two exhaust styles: telescoping overhead hoods (jabara) and table-level downdraft (hahyangsik) smokeless roasters, the latter spreading with chain grill restaurants in the 1990s–2000s.",
+     "year": "1990s–2000s",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "KR870000298Y1 「덕트가 없는 불고기 테이블」(Akinari Abe / 산고오 소오세츠 고오교오, 출원 1984-04-03, 일본 우선권 1983)",
+       "url": "https://patents.google.com/patent/KR870000298Y1/en",
+       "kind": "官方"
+      }
+     ],
+     "note": "韩国本土首个하향식로스터厂商/专利与普及年代未查到可靠来源，需补；可查 KIPRIS「하향식 로스터」最早申请。"
+    },
+    {
+     "zh": "1990 年代猪肉消费从冷冻转向冷藏，五花肉专门店扩张；1993 年白种元在首尔论岘洞开店，1996 年注册「대패삼겹살」（刨片五花）商标。",
+     "en": "In the 1990s pork shifted from frozen to chilled and samgyeopsal specialists multiplied; Baek Jong-won opened in Nonhyeon-dong in 1993 and trademarked 'daepae samgyeopsal' (shaved pork belly) in 1996.",
+     "year": "1990s; 1993; 1996",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "주간경향, 「삼겹살도 감자탕도 ‘전통음식’이 아니었다」(2026-09)",
+       "url": "https://weekly.khan.co.kr/article/202609250600031",
+       "kind": "媒体"
+      },
+      {
+       "title": "서울신문, 「구우면 노릇, 입에선 야들…서민과 울고 웃는 삼겹살」(2017-04-10)",
+       "url": "https://m.seoul.co.kr/news/2017/04/10/20170410017001",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "1997 年金融危机后，公司聚餐从牛里脊、牛갈비转向五花肉。",
+     "en": "After the 1997 financial crisis, company dinners shifted from beef sirloin and galbi to pork belly.",
+     "year": "1997–",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "서울신문, 「구우면 노릇, 입에선 야들…서민과 울고 웃는 삼겹살」(2017-04-10)",
+       "url": "https://m.seoul.co.kr/news/2017/04/10/20170410017001",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "불고기本身在 1990 年代一度式微，之后以多种新做法复兴（李规珍、赵美淑 2013 的分期）。",
+     "en": "Bulgogi itself declined for a time, then revived after the 1990s in many new forms (periodisation by Lee & Cho, 2013).",
+     "year": "1990s",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Kyou Jin Lee & Mi Sook Cho, 'The Evolution of Bulgogi over the Past 100 Years', Korea Journal 53(4):168-194, 2013",
+       "url": "https://pure.ewha.ac.kr/en/publications/the-evolution-of-bulgogi-over-the-past-100-years/",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "dish": [
+    {
+     "name_zh": "刨片五花",
+     "name_ko": "대패삼겹살",
+     "name_en": "Daepae samgyeopsal",
+     "what_zh": "冷冻五花肉用刨片机刨成薄卷，几秒即熟。",
+     "what_en": "Frozen pork belly shaved paper-thin on a slicer; cooks in seconds."
+    }
+   ]
+  },
+  {
+   "id": "e9_2010s",
+   "era_zh": "2010 年代以后：熟成与高端化",
+   "era_en": "2010s onward: aging and fine dining",
+   "from": "2010",
+   "to": "2026",
+   "facts": [
+    {
+     "zh": "干式熟成在韩国并无传统（潮湿季风气候不利风干）；1990 年代初美都波百货已卖熟成韩牛（多不足一周），约 2008 年后随留美厨师回国、2010 年前后的牛排馆与韩牛烤肉店（如扶余瑞东韩牛）开始流行干式/湿式熟成。",
+     "en": "Dry-aging has no Korean tradition — the humid monsoon climate discouraged air-drying; Midopa department store sold aged Hanwoo in the early 1990s (mostly under a week), and dry- and wet-aging spread around 2008–2010 via US-trained chefs, steakhouses and Hanwoo grill houses such as Buyeo's Seodong Hanwoo.",
+     "year": "early 1990s; c. 2008–2010",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "에스콰이어 코리아, 박세회 「種切熟火」(2021-11-08)",
+       "url": "https://www.esquirekorea.co.kr/article/61005",
+       "kind": "媒体"
+      },
+      {
+       "title": "레이디경향, 숙성육 트렌드 기사(2015-11-26)",
+       "url": "https://lady.khan.co.kr/cooking/article/201511261823311",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "熟成扩展到猪肉：2008 年大邱「맛찬들왕소금구이」打出熟成猪肉，2014–2015 年弘大一带出现熟成猪肉店，2016–2018 年形成热潮并固定为一个品类。",
+     "en": "Aging spread to pork: Daegu's Matchandeul promoted aged pork in 2008, aged-pork shops opened around Hongdae in 2014–15, and a 2016–18 boom made it a fixed category.",
+     "year": "2008; 2014–2018",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "에스콰이어 코리아, 박세회 「種切熟火」(2021-11-08)",
+       "url": "https://www.esquirekorea.co.kr/article/61005",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "2010 年代后期起，高端烤肉店讲究「种、切、熟、火」：品种猪（如济州난축맛돈）、自家分切、熟成、炭种（白炭、备长炭、稻草火收尾）；部分店由店员全程代烤，并被米其林必比登推荐收录。",
+     "en": "From the late 2010s, high-end grill houses compete on breed, cut, aging and fire — heritage pigs such as Jeju's Nanchukmatdon, in-house butchery, aging, and charcoal type (white charcoal, binchotan, straw-fire finishing) — with staff grilling throughout and some listed as Michelin Bib Gourmand.",
+     "year": "late 2010s–2021",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "에스콰이어 코리아, 박세회 「種切熟火」(2021-11-08)",
+       "url": "https://www.esquirekorea.co.kr/article/61005",
+       "kind": "媒体"
+      }
+     ],
+     "note": "韩牛 omakase（코스형 한우 오마카세）的具体年代与数量属 B 路范围，这里只写形态。"
+    }
+   ],
+   "dish": [
+    {
+     "name_zh": "熟成肉",
+     "name_ko": "숙성육",
+     "name_en": "Aged meat",
+     "what_zh": "牛或猪肉在恒温恒湿室中干式或湿式熟成数周，风味更浓、肉更嫩。",
+     "what_en": "Beef or pork aged dry or wet for weeks in a controlled room for deeper flavour and tenderness."
+    }
+   ]
+  }
+ ],
+ "north": [
+  {
+   "zh": "「불고기」一词被语言学家认为源出 1945 年前的平壤—平安道方言，1930 年代平壤牡丹台松林里的露天烤肉已是城市名物（1935 年因烟害被禁）。",
+   "en": "Linguists trace the word bulgogi to pre-1945 Pyongyang–Pyeongan dialect, and outdoor grilling in the pine groves of Moran Hill was a Pyongyang institution in the 1930s (banned in 1935 over smoke damage).",
+   "year": "1930s",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "경향신문, 「‘불고기’는 일본말 야키니쿠의 번역어?」(2018-10-12)",
+     "url": "https://www.khan.co.kr/article/201810121057001/amp",
+     "kind": "媒体"
+    },
+    {
+     "title": "클리앙 게시글（동아일보 1932-03-20·1935-05-05·1940-02-08 기사, 이효석 1939 수필 인용 정리）",
+     "url": "https://www.clien.net/service/board/park/12696120",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "zh": "平壤玉流馆位于大同江畔，1960–61 年开业（资料有 1960 与 1961 两说），可容约 2,000 人，以平壤冷面闻名，菜单还有갈비탕、绿豆煎饼、神仙炉等；烤肉并非其招牌。",
+   "en": "Pyongyang's Okryu-gwan on the Taedong River opened in 1960–61 (sources differ), seats about 2,000 and is famous for Pyongyang naengmyeon, with galbitang, mung-bean pancakes and sinseollo; grilled meat is not its signature.",
+   "year": "1960/1961",
+   "num": "约 2,000 座；建筑 12,000 m²",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wikipedia, 'Okryu-gwan'",
+     "url": "https://en.wikipedia.org/wiki/Okryu-gwan",
+     "kind": "百科"
+    }
+   ],
+   "note": "开业年份 Wikipedia 写 1960，朝方常说 1961 年 8 月；宜以朝鲜官方资料核定。"
+  },
+  {
+   "zh": "平壤统一大街有专门的「平壤烤鸭肉餐厅」：食客在桌中央自烤鸭肉，用生菜蘸大酱、辣酱包着吃，配烧酒，最后以鸭汤饭或平壤冷面收尾——与南边的韩式烤肉流程几乎相同。",
+   "en": "Pyongyang's Duck Barbecue Restaurant on Tongil Street has diners grill duck at the table, wrap it in lettuce with soybean and chili pastes, drink soju, and finish with duck soup and rice or Pyongyang naengmyeon — almost the same ritual as South Korean barbecue.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Koryo Tours, 'Pyongyang Duck Barbecue Restaurant' travel guide",
+     "url": "https://koryogroup.com/blog/pyongyang-duck-barbecue-restaurant-north-korea-travel-guide",
+     "kind": "二手"
+    }
+   ],
+   "note": "餐厅朝鲜语正式名（평양오리고기전문식당？）与开业年份本轮未能核实。"
+  },
+  {
+   "zh": "朝鲜自 1990 年代饥荒后大力推广养鸭作为蛋白质来源，金正日多次视察鸭场，如 2011 年视察改造后的平壤斗湍鸭场；鸭肉烧烤由此成为平壤的代表性外食之一。",
+   "en": "After the 1990s famine North Korea pushed duck farming as a protein source; Kim Jong Il repeatedly inspected duck farms, e.g. the upgraded Tudan Duck Farm in 2011, and duck barbecue became a signature Pyongyang dining-out dish.",
+   "year": "1990s–2011",
+   "conf": "低",
+   "sources": [
+    {
+     "title": "KCNA via GlobalSecurity, 'Kim Jong Il Provides Field Guidance to Technologically Updated Tudan Duck Farm' (2011-10-11)",
+     "url": "https://www.globalsecurity.org/wmd/library/news/dprk/2011/dprk-111011-kcna01.htm",
+     "kind": "官方"
+    }
+   ],
+   "note": "「鸭肉烧烤推广年代」缺直接来源；KCNA 只证实鸭场视察。"
+  },
+  {
+   "zh": "南浦海边有「汽油烤蛤蜊」：把蛤蜊口朝下排成圆圈，直接浇汽油点火烧 5–10 分钟，熟后撬开吃，常配烧酒，是外国游客团的固定节目。",
+   "en": "Nampo's 'petrol clams': clams are laid face-down in a circle, doused with petrol and set alight for 5–10 minutes, then pried open and eaten with soju — a fixture of foreign tour itineraries.",
+   "num": "5–10 分钟",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Koryo Tours, 'Nampo Petrol Clam BBQ' travel guide",
+     "url": "https://koryogroup.com/blog/nampo-petrol-clam-bbq-north-korea-travel-guide",
+     "kind": "二手"
+    },
+    {
+     "title": "Malay Mail (AFP), 'Shellfish, fire and party praise: Beach breaks North Korea-style' (2017-08-03)",
+     "url": "https://www.malaymail.com/news/eat/drink/2017/08/03/shellfish-fire-and-party-praise-beach-breaks-north-korea-style/1435063",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "在朝鲜，牛作为耕畜与运输力由国家管理，被视为国家财产；个人不得拥有、宰杀或买卖，私宰按破坏国家财产甚至政治犯罪论处，脱北者普遍说可能被处死。",
+   "en": "In North Korea cattle, used for ploughing and haulage, are managed by the state as state property; individuals may not own, slaughter or sell them, and unauthorised slaughter is treated as destruction of state property or even a political crime — defectors widely say it can bring execution.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "ASIAPRESS Rimjin-gang, 'Cows are the Property of the State — Severe Punishment for Unauthorized Slaughtering' (2014)",
+     "url": "https://www.asiapress.org/rimjin-gang/2014/07/news/cows-punishment-unauthorized-slaughtering/",
+     "kind": "媒体"
+    },
+    {
+     "title": "RFA 자유아시아방송, 「북한에선 소고기를 못 먹어 봤다고요?」(2023-12-18)",
+     "url": "https://www.rfa.org/korean/weekly_program/c870bbf8c601c758-c9c8bb38c788c5b4c694/havequestion-12182023094626.html",
+     "kind": "媒体"
+    }
+   ],
+   "note": "未找到具体刑法条文；只写「普遍认为可判死刑」。"
+  },
+  {
+   "zh": "据 Daily NK 日本版与 RFA 报道，2023 年 8 月 30 日两江道惠山市以「倒卖 2017 年以来病死的约 2,100 头牛」为由公开处决 9 人（7 男 2 女）。",
+   "en": "According to Daily NK Japan and RFA, nine people (seven men, two women) were publicly executed in Hyesan on 30 August 2023 for selling the meat of about 2,100 cattle that had died of disease since 2017.",
+   "year": 2023,
+   "num": "9 人；约 2,100 头牛",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "The Asia Business Daily, 'North Korea publicly executes 9 … for selling beef' (2023-12-16, citing Daily NK Japan & RFA)",
+     "url": "https://www.asiae.co.kr/en/article/2023121609194592441",
+     "kind": "媒体"
+    }
+   ],
+   "note": "单一来源系统（Daily NK/RFA 线人），无法独立核实。"
+  },
+  {
+   "zh": "病死或事故死亡的牛须上报并由兽医认定为「许可牛肉」，名义上送孤儿院等机构，但大量在途中被截留流入黑市；牛肉主要流向干部、军官与外国人，普通居民多只在节日偶尔吃到肉，猪肉、鸡肉在市场公开出售。",
+   "en": "Cattle that die of age or accident must be reported and certified as 'authorised beef', nominally for orphanages, but much is diverted to the black market; beef mostly reaches officials, officers and foreigners, while ordinary people eat meat only on holidays and buy pork and chicken openly at markets.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "ASIAPRESS Rimjin-gang, 'Cows are the Property of the State — Severe Punishment for Unauthorized Slaughtering' (2014)",
+     "url": "https://www.asiapress.org/rimjin-gang/2014/07/news/cows-punishment-unauthorized-slaughtering/",
+     "kind": "媒体"
+    },
+    {
+     "title": "RFA 자유아시아방송, 「북한에선 소고기를 못 먹어 봤다고요?」(2023-12-18)",
+     "url": "https://www.rfa.org/korean/weekly_program/c870bbf8c601c758-c9c8bb38c788c5b4c694/havequestion-12182023094626.html",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "脱北记者认为，若无严厉的牛禁，1990 年代中期饥荒中耕牛可能早已被吃光。",
+   "en": "A defector-journalist argues that without the strict ban, the country's cattle would likely have been eaten out during the mid-1990s famine.",
+   "year": "mid-1990s",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "ASIAPRESS Rimjin-gang, 'Cows are the Property of the State — Severe Punishment for Unauthorized Slaughtering' (2014)",
+     "url": "https://www.asiapress.org/rimjin-gang/2014/07/news/cows-punishment-unauthorized-slaughtering/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "朝鲜海外餐厅自 1990 年代起由各道、机关开设，2010 年已超 100 家，遍布中国（北京望京玉流馆 2003 年开业、上海、青岛、丹东等）与越南、泰国、柬埔寨、老挝、蒙古、俄罗斯、尼泊尔、迪拜；每家每年须上缴 10–30 万美元，主打冷面、갈비汤与泡菜，服务员兼演唱。",
+   "en": "North Korean state restaurants abroad, opened from the 1990s by provinces and agencies, numbered over 100 by 2010 — across China (Beijing's Okryu-gwan in Wangjing opened 2003; Shanghai, Qingdao, Dandong) and Vietnam, Thailand, Cambodia, Laos, Mongolia, Russia, Nepal and Dubai; each had to remit US$100,000–300,000 a year, serving naengmyeon, galbitang and kimchi with singing waitresses.",
+   "year": "1990s–2010",
+   "num": ">100 家（2010）；每店年上缴 10–30 万美元",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "North Korean Economy Watch, 'North Korean restaurants generate revenue overseas' (2010-12-15, citing Chosun Ilbo)",
+     "url": "https://www.nkeconwatch.com/2010/12/15/north-korean-restaurants-generate-revenue-overseas/",
+     "kind": "媒体"
+    },
+    {
+     "title": "Wikipedia, 'Okryu-gwan'",
+     "url": "https://en.wikipedia.org/wiki/Okryu-gwan",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "zh": "2016 年 4 月，在中国宁波一家朝鲜餐厅工作的 13 人（经理 1 人、女服务员 12 人）集体投奔韩国；同月韩国国情院称约 130 家、分布约 12 国的朝鲜海外餐厅中约 20 家已停业，年收入约 1,000 万美元。",
+   "en": "In April 2016, 13 workers (a manager and 12 waitresses) from a North Korean restaurant in Ningbo, China, defected to South Korea; that month South Korea's NIS said about 20 of some 130 such restaurants in about 12 countries had closed, earning around US$10 million a year.",
+   "year": 2016,
+   "num": "13 人；约 130 家/12 国；约 20 家停业；年约 1,000 万美元",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "The Korea Times, '13 North Korean workers at overseas restaurants defect to S. Korea' (2016-04-08)",
+     "url": "https://www.koreatimes.co.kr/amp/foreignaffairs/northkorea/20160408/13-north-korean-workers-at-overseas-restaurants-defect-to-s-korea",
+     "kind": "媒体"
+    },
+    {
+     "title": "The Korea Times, '20 overseas N. Korean restaurants closed: spy agency' (2016-04-27)",
+     "url": "https://www.koreatimes.co.kr/southkorea/20160427/20-overseas-n-korean-restaurants-closed-spy-agency",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "2017 年 9 月 11 日联合国安理会第 2375 号决议后，中国商务部要求朝鲜企业 120 天内关闭；最大的海外朝鲜餐厅、丹东「平壤高丽馆」（原有员工约 200 人）于 2017 年 11 月停业，员工分批遣返。",
+   "en": "After UN Security Council Resolution 2375 (11 Sept 2017), China ordered North Korean firms closed within 120 days; the largest overseas restaurant, Dandong's Pyongyang Koryo Pavilion (about 200 staff), shut in November 2017 and its workers were repatriated in groups.",
+   "year": 2017,
+   "num": "120 天；约 200 名员工",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "38 North / North Korean Economy Watch, 'North Korea's largest overseas restaurant closed down' (2018-02)",
+     "url": "https://www.38north.org/articles/affiliates/north-korean-economy-watch/14626/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "中国东北的朝鲜族（延边等地）饮食与朝鲜北部（咸镜、平安道）一脉相承：冷面、狗肉、烤肉都是共同项；上海等地还有由朝鲜族员工经营、借用「玉流馆」名号的仿冒店。",
+   "en": "The cuisine of ethnic Koreans in northeast China (Yanbian and elsewhere) descends from that of northern Korea (Hamgyong, Pyeongan): cold noodles, dog meat and grilled meat are shared staples; in Shanghai a knock-off 'Okryu-gwan' was staffed by ethnic-Korean Chinese.",
+   "conf": "低",
+   "sources": [
+    {
+     "title": "Wikipedia, 'Okryu-gwan'",
+     "url": "https://en.wikipedia.org/wiki/Okryu-gwan",
+     "kind": "百科"
+    },
+    {
+     "title": "North Korean Economy Watch, 'North Korean restaurants generate revenue overseas' (2010-12-15, citing Chosun Ilbo)",
+     "url": "https://www.nkeconwatch.com/2010/12/15/north-korean-restaurants-generate-revenue-overseas/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "延边烤肉/烤串细节留给 C 路；本句前半为概括，缺直接来源。"
+  }
+ ],
+ "table": [
+  {
+   "zh": "桌边自烤：桌面中央嵌炉、食客自己翻肉，是韩式烤肉最显眼的形态；其雏形可追溯到朝鲜后期士大夫的「暖炉会」——围着炭火炉一边烤牛肉一边吃。",
+   "en": "Grilling at the table — a burner set into the table, diners turning the meat — is Korean barbecue's defining form; its precursor is the late-Joseon gentry's nanrohoe, eating beef as they grilled it around a brazier.",
+   "year": "17th–19th c. (precursor)",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "전북일보, 윤주 「겨울철 ‘난로회’와 온정」(2020-12-16)",
+     "url": "https://www.jjan.kr/article/20201216722623",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "代烤：高端烤肉店多由店员全程代烤并按「种、切、熟、火」讲究火候，桌边自烤之外形成另一种服务形态。",
+   "en": "Staff grilling: high-end grill houses increasingly have staff cook every piece, a service style alongside self-grilling.",
+   "year": "late 2010s–",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "에스콰이어 코리아, 박세회 「種切熟火」(2021-11-08)",
+     "url": "https://www.esquirekorea.co.kr/article/61005",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "剪刀：用剪刀在烤盘上直接剪肉并非传统，一般认为始于 1970 年代——先是用来剪冷面，后来扩展到烤肉、泡菜；省去刀和砧板，直接在烤盘上剪。",
+   "en": "Scissors: snipping meat on the grill is not traditional; it is generally dated to the 1970s, first for cutting cold noodles, then meat and kimchi — no knife or board needed.",
+   "year": "1970s",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Stars and Stripes Korea, 'Scissors make the cut in Korean kitchens'",
+     "url": "https://korea.stripes.com/food-drink/scissors-make-the-cut-in-korean-kitchens.html",
+     "kind": "媒体"
+    }
+   ],
+   "note": "唯一来源转引《韩国时报》专栏作者 Yang Dong-hee，宜补原文。"
+  },
+  {
+   "zh": "쌈（生菜包）：用叶菜包饭的吃法至少可追溯到高丽：1236 年前后《乡药救急方》已记生吃莴苣；元代高丽贡女把生菜包带到大都，称「高丽样」，马端临《文献通考》说「高丽人以生菜包饭」，杨允孚《滦京杂咏》咏高丽莴苣，高丽莴苣被称「千金菜」。",
+   "en": "Ssam: wrapping food in leaves dates at least to Goryeo — the c.1236 Hyangyak gugeupbang records raw lettuce; Goryeo women in Yuan Dadu spread lettuce wraps as 'Goryeo style', Ma Duanlin wrote that Goryeo people wrap rice in raw greens, Yang Yunfu praised Goryeo lettuce in verse, and it was nicknamed 'thousand-gold vegetable'.",
+   "year": "13th–14th c.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "서울신문, 정종수 「상추와 쌈밥」(2022-07-25)",
+     "url": "https://www.seoul.co.kr/news/2022/07/25/20220725026009",
+     "kind": "媒体"
+    }
+   ],
+   "note": "来源文章称杨允孚诗出《元宫词》；通行出处为杨允孚《滦京杂咏》，宜核。"
+  },
+  {
+   "zh": "朝鲜时代쌈已是日常：李瀷《星湖僿说》说大叶蔬菜都包着吃、以莴苣包为第一；《农家月令歌》写农人用生菜、辣椒酱包大麦饭；李德懋提醒吃生菜包时别张大嘴失仪。烤肉+쌈+쌈장（大酱与辣酱调成的包饭酱）的组合则是现代烤肉店的定式。",
+   "en": "In Joseon ssam was everyday food: Yi Ik ranked lettuce wraps first among leaf wraps, the Nongga wollyeongga shows farmhands wrapping barley rice in lettuce with gochujang, and Yi Deok-mu warned against opening the mouth too wide; pairing grilled meat with ssam and ssamjang (a soybean-chili paste blend) is the modern grill-house standard.",
+   "year": "18th–19th c.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "서울신문, 정종수 「상추와 쌈밥」(2022-07-25)",
+     "url": "https://www.seoul.co.kr/news/2022/07/25/20220725026009",
+     "kind": "媒体"
+    }
+   ],
+   "note": "쌈장作为调好的商品酱的出现年代未查。"
+  },
+  {
+   "zh": "반찬（小菜）免费续：小菜随烤肉一起上并可无限续，是外国人最常提到的韩式烤肉特点之一；其背后是韩式「饭+汤+多碟」的饭桌结构。",
+   "en": "Free banchan refills: side dishes come with the meat and are replenished at no charge — one of the features foreign diners mention most — rooted in the Korean rice-soup-many-plates table.",
+   "conf": "低",
+   "sources": [
+    {
+     "title": "위키트리, 「외국인들이 한국 고깃집에서 가장 신기해하는 문화 5가지」",
+     "url": "https://www.wikitree.co.kr/articles/1143266",
+     "kind": "媒体"
+    }
+   ],
+   "note": "免费续小菜成为惯例的年代缺来源。"
+  },
+  {
+   "zh": "酒：烤肉配烧酒是固定搭配，1940 年代平壤已有「烧酒与불고기」并提的报纸文字；朝鲜的烤鸭餐厅同样配烧酒。",
+   "en": "Drink: soju with grilled meat is the fixed pairing — a 1940 Pyongyang newspaper feature already mentions 'soju and bulgogi', and Pyongyang's duck barbecue is served with soju too.",
+   "year": 1940,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "클리앙 게시글（동아일보 1932-03-20·1935-05-05·1940-02-08 기사, 이효석 1939 수필 인용 정리）",
+     "url": "https://www.clien.net/service/board/park/12696120",
+     "kind": "二手"
+    },
+    {
+     "title": "Koryo Tours, 'Pyongyang Duck Barbecue Restaurant' travel guide",
+     "url": "https://koryogroup.com/blog/pyongyang-duck-barbecue-restaurant-north-korea-travel-guide",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "zh": "收尾：烤完肉以冷面或在烤盘上炒饭收尾；早年肉汤불고기时代，食客把饭拌进烤盘槽里的甜汤里吃；平壤烤鸭餐厅则以鸭汤饭或平壤冷面收尾。",
+   "en": "Finish: the meal ends with cold noodles or fried rice made on the grill; in the broth-bulgogi era diners mixed rice into the sweet broth in the pan's moat, and Pyongyang's duck restaurant ends with duck soup or naengmyeon.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "서울시 미디어허브, 「달콤한 국물에 침이 꼴깍 ‘불고기’ 이야기」",
+     "url": "https://mediahub.seoul.go.kr/archives/1269849",
+     "kind": "官方"
+    },
+    {
+     "title": "Koryo Tours, 'Pyongyang Duck Barbecue Restaurant' travel guide",
+     "url": "https://koryogroup.com/blog/pyongyang-duck-barbecue-restaurant-north-korea-travel-guide",
+     "kind": "二手"
+    }
+   ],
+   "note": "烤盘炒饭（볶음밥）普及年代未查。"
+  }
+ ],
+ "grills": [
+  {
+   "zh": "铁板（번철）与炭火炉：《东国岁时记》（1849）记汉阳人在炭火炉上置铁板（번철）烤调味牛肉，围炉而食。",
+   "en": "Iron griddle over a brazier: the Dongguk sesigi (1849) describes Seoul people setting an iron griddle (beoncheol) on a charcoal brazier to grill seasoned beef.",
+   "year": 1849,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "전북일보, 윤주 「겨울철 ‘난로회’와 온정」(2020-12-16)",
+     "url": "https://www.jjan.kr/article/20201216722623",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "铁丝网（석쇠）直火：너비아니及 1920–60 年代的불고기多在铁丝网上直火烤；今天首尔龙山「驿前会馆」的바싹불고기仍用석쇠快烤。",
+   "en": "Wire grill (seoksoe) over direct fire: neobiani and 1920s–60s bulgogi were grilled on wire grills; Seoul's Yeokjeon Hoegwan still flash-grills its crisp bulgogi on one.",
+   "year": "1920s–1960s",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Kyou Jin Lee & Mi Sook Cho, 'The Evolution of Bulgogi over the Past 100 Years', Korea Journal 53(4):168-194, 2013",
+     "url": "https://pure.ewha.ac.kr/en/publications/the-evolution-of-bulgogi-over-the-past-100-years/",
+     "kind": "学术"
+    },
+    {
+     "title": "서울시 미디어허브, 「달콤한 국물에 침이 꼴깍 ‘불고기’ 이야기」",
+     "url": "https://mediahub.seoul.go.kr/archives/1269849",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "zh": "穹顶汤盘：1960–90 年代首尔流行中间隆起、布满孔洞、四周有汤槽的불고기盘，肉在穹顶上烤，汁水流进槽里成甜汤，食客把饭拌进去吃（「肉汤불고기」）。",
+   "en": "Domed broth pan: from the 1960s to 1990s Seoul's bulgogi pan had a perforated raised centre and a moat around it; meat cooked on the dome while juices pooled into sweet broth for mixing with rice.",
+   "year": "1960s–1990s",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Kyou Jin Lee & Mi Sook Cho, 'The Evolution of Bulgogi over the Past 100 Years', Korea Journal 53(4):168-194, 2013",
+     "url": "https://pure.ewha.ac.kr/en/publications/the-evolution-of-bulgogi-over-the-past-100-years/",
+     "kind": "学术"
+    },
+    {
+     "title": "서울시 미디어허브, 「달콤한 국물에 침이 꼴깍 ‘불고기’ 이야기」",
+     "url": "https://mediahub.seoul.go.kr/archives/1269849",
+     "kind": "官方"
+    }
+   ],
+   "note": "穹顶盘的发明者/首家店未查到；1960 年代电动切片机普及使薄切成为可能。"
+  },
+  {
+   "zh": "蜂窝煤（연탄）：1950–80 年代平价猪排骨、猪皮店多用蜂窝煤炉烤，至今首尔东大门等老店仍以「연탄돼지갈비」为招牌；坊间还流传石板瓦（슬레이트）、锅盖（솥뚜껑）烤五花的说法。",
+   "en": "Coal briquettes (yeontan): cheap pork-rib and rind houses of the 1950s–80s grilled over briquette stoves, and old Seoul shops still advertise briquette pork ribs; folk stories also tell of grilling belly on slate roofing or cauldron lids.",
+   "year": "1950s–1980s",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "에스콰이어 코리아, 노포 고깃집 기사（최대포 1956 등）",
+     "url": "https://www.esquirekorea.co.kr/article/74030",
+     "kind": "媒体"
+    },
+    {
+     "title": "위키트리, 「삼겹살에 대한 흔한 오해 6가지」",
+     "url": "https://www.wikitree.co.kr/articles/1029876",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "便携燃气炉：1980 年代中期便携式丁烷燃气炉普及，让五花肉烤肉走进家庭和野外。",
+   "en": "Portable gas stoves: butane camping stoves spread in the mid-1980s, taking pork-belly grilling into homes and outdoors.",
+   "year": "mid-1980s",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "주간경향, 「삼겹살도 감자탕도 ‘전통음식’이 아니었다」(2026-09)",
+     "url": "https://weekly.khan.co.kr/article/202609250600031",
+     "kind": "媒体"
+    },
+    {
+     "title": "경북매일, 삼겹살 기원 관련 기사(2019-09-26)",
+     "url": "https://kbmaeil.com/article/201909260261171",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "下吸式无烟烤炉：桌面下排烟技术来自日本焼肉业——1980 年 Kiyomitu Kurotaki 的地板下排烟餐桌烤炉美国专利，1984 年日本公司在韩国申请「无需排气管的불고기桌」实用新案（1987 年公告），1987 年名古屋 Shinpo 的下吸式无烟烤炉专利；韩国烤肉店另有天花板伸缩上吸排烟管（자바라）一派。",
+   "en": "Downdraft smokeless roasters came from Japan's yakiniku trade — Kiyomitu Kurotaki's 1980 US patent for an underfloor-exhaust table roaster, a Japanese firm's 1984 Korean utility model for a 'ductless bulgogi table' (published 1987), and Shinpo's 1987 downdraft roaster patent; Korean grill houses also use telescoping overhead hoods.",
+   "year": "1980–1987",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "US Patent 4,335,705 'Smoke collecting and exhausting system for a roaster' (Kiyomitu Kurotaki, filed 1980-07-01)",
+     "url": "https://patents.google.com/patent/US4335705A/en",
+     "kind": "官方"
+    },
+    {
+     "title": "KR870000298Y1 「덕트가 없는 불고기 테이블」(Akinari Abe / 산고오 소오세츠 고오교오, 출원 1984-04-03, 일본 우선권 1983)",
+     "url": "https://patents.google.com/patent/KR870000298Y1/en",
+     "kind": "官方"
+    },
+    {
+     "title": "US Patent 4,796,601 'Smokeless roaster' (Takeshi Yamada / Shinpo KK, filed 1987-11-12)",
+     "url": "https://patents.google.com/patent/US4796601A/en",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "zh": "炭种讲究：2010 年代后高端店区分白炭、备长炭（비장탄）、稻草火（짚불）收尾，以及铝板半直火、燃气平底锅等，「火」成为卖点之一。",
+   "en": "Fuel as a selling point: since the 2010s high-end shops distinguish white charcoal, binchotan, straw-fire finishing, semi-direct aluminium plates and gas pans.",
+   "year": "2010s–",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "에스콰이어 코리아, 박세회 「種切熟火」(2021-11-08)",
+     "url": "https://www.esquirekorea.co.kr/article/61005",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ],
+ "dogmeat": [
+  {
+   "zh": "朝鲜时代洪锡谟《东国岁时记》（1849）记三伏习俗：把狗煮烂加葱炖成「狗酱」（개장국），撒辣椒粉配饭吃，出汗以补虚。",
+   "en": "Hong Seok-mo's Dongguk sesigi (1849) records the dog-days custom of boiling dog with scallions into gaejangguk, eaten with chili powder and rice to sweat and restore strength.",
+   "year": 1849,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "서울신문, 정종수 「복날과 개고기」(2020-07-27)",
+     "url": "https://m.seoul.co.kr/news/2020/07/27/20200727030009",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "南边「보신탕」（补身汤）一名据说始于李承晚时期：总统夫人问「개장국」是什么后，招牌改称보신탕；1988 年汉城奥运前后因国际批评，又出现「사철탕」「영양탕」等委婉名，此后狗肉争议延续数十年。",
+   "en": "In the South the name bosintang ('body-strengthening soup') reportedly replaced gaejangguk in the Syngman Rhee era after an anecdote involving his Austrian wife; around the 1988 Olympics, amid foreign criticism, euphemisms such as sacheoltang and yeongyangtang spread, and the controversy ran for decades.",
+   "year": "1950s; 1988",
+   "conf": "低",
+   "sources": [
+    {
+     "title": "서울신문, 정종수 「복날과 개고기」(2020-07-27)",
+     "url": "https://m.seoul.co.kr/news/2020/07/27/20200727030009",
+     "kind": "媒体"
+    },
+    {
+     "title": "뉴시스, 「3년 후 ‘보신탕집’ 역사 속으로…」(2024-01-12)",
+     "url": "https://www.newsis.com/view/NISX20240112_0002589860",
+     "kind": "媒体"
+    }
+   ],
+   "note": "李承晚轶事属传闻；1984 年首尔市把狗肉汤列为「嫌恶食品」的行政措施本轮未核实，故未写。"
+  },
+  {
+   "zh": "2024 年 1 月 9 日韩国国会通过《关于终结以食用为目的的狗的饲养、屠宰及流通等的特别法》：禁止为食用而饲养、繁殖、屠宰狗及流通、销售狗肉食品；屠宰最高处 3 年徒刑或 3,000 万韩元罚金，饲养、流通最高 2 年或 2,000 万韩元；给予 3 年宽限期，罚则 2027 年起生效，公布之日起禁止新开狗场、屠宰场和狗肉餐馆。",
+   "en": "On 9 January 2024 South Korea's National Assembly passed the Special Act on Ending the Breeding, Slaughter and Distribution of Dogs for Food: slaughter carries up to 3 years in prison or ₩30 million, breeding or selling up to 2 years or ₩20 million; after a 3-year grace period the penalties apply from 2027, and new dog farms, slaughterhouses and restaurants were barred from promulgation.",
+   "year": 2024,
+   "num": "3 年 / 3,000 万韩元；2 年 / 2,000 万韩元；宽限 3 年",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "데일리벳, 「2027년 개식용 금지된다…개식용 종식 특별법 국회 통과」(2024-01-09)",
+     "url": "https://www.dailyvet.co.kr/?p=202021",
+     "kind": "媒体"
+    },
+    {
+     "title": "뉴시스, 「3년 후 ‘보신탕집’ 역사 속으로…」(2024-01-12)",
+     "url": "https://www.newsis.com/view/NISX20240112_0002589860",
+     "kind": "媒体"
+    }
+   ],
+   "note": "法律于 2024 年 2 月公布，罚则约自 2027 年 2 月生效；具体公布日与生效日宜以 law.go.kr 核。"
+  },
+  {
+   "zh": "立法时政府调查显示，韩国约有 1,100 家狗肉养殖场、约 1,600 家狗肉餐馆、约 52 万只待售食用犬；养犬业者团体要求每只 200 万韩元补偿，法案最终删去「正当补偿」字样，只规定对转业、关闭给予支援。",
+   "en": "Government surveys at the time counted about 1,100 dog farms, 1,600 dog-meat restaurants and some 520,000 dogs; farmers demanded ₩2 million per dog, but the final act dropped 'fair compensation' in favour of support for closure or conversion.",
+   "year": 2024,
+   "num": "约 1,100 场；约 1,600 家餐馆；约 52 万只",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "뉴시스, 「3년 후 ‘보신탕집’ 역사 속으로…」(2024-01-12)",
+     "url": "https://www.newsis.com/view/NISX20240112_0002589860",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "北边把狗肉称为「단고기」（甜肉），官方称狗肉汤为「民族料理」并列入非物质文化遗产，举办狗肉烹饪比赛并在黄金时段播出；平壤有多家大型단고기店，「平壤단고기집」2023 年获「三重 26 号模范机台荣誉奖」，金正恩 2021 年批准在大同江畔玉流馆对面新建大型狗肉餐厅的设计。",
+   "en": "The North calls dog meat dangogi ('sweet meat'); the state hails dog-meat soup as a national dish and intangible heritage and airs cooking contests in prime time. Pyongyang has several large dangogi restaurants; the Pyongyang Dangogi-jip received a high state honour in 2023, and Kim Jong Un approved designs in 2021 for a lavish new dog-meat restaurant on the Taedong riverfront opposite Okryu-gwan.",
+   "year": "2021; 2023",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "NK News / NK Pro, Colin Zwirko, 'Kim Jong Un approves lavish new dog meat restaurant on Pyongyang riverfront' (2023-03-01)",
+     "url": "https://nknews.org/pro/kim-jong-un-approves-lavish-new-dog-meat-restaurant-on-pyongyang-riverfront",
+     "kind": "媒体"
+    },
+    {
+     "title": "머니투데이, 「北, 개식용 식당에 최고 명예호칭」(2023-06-03)",
+     "url": "https://www.mt.co.kr/politics/2023/06/03/2023060216021138428",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "zh": "胡床、貊槃，是夷狄的器物；羌煮、貊炙，是夷狄的食物。自泰始年间以来，中原人竞相崇尚。",
+   "en": "Hu folding chairs and Maek platters are barbarian utensils; Qiang stew and Maek roast are barbarian foods. Since the Taishi era the Central States have prized them.",
+   "orig": "胡床、貊槃，翟之器也；羌煮、貊炙，翟之食也。自太始以來，中國尚之。",
+   "work": "干宝《搜神记》卷七",
+   "year": "4th c.",
+   "sources": [
+    {
+     "title": "Wikipedia, 'Jeok'",
+     "url": "https://en.wikipedia.org/wiki/Jeok",
+     "kind": "百科"
+    }
+   ],
+   "note": "原文字形（太始/泰始、槃/盘）以四库本为准再核。"
+  },
+  {
+   "zh": "泰始以后，中原竞相使用胡床、貊盘，做羌煮、貊炙；贵人富室必备其器，吉庆宴会都以此为先。",
+   "en": "After the Taishi era, the Central States vied to use Hu chairs and Maek platters and to make Qiang stew and Maek roast; noble and wealthy houses all kept the utensils, and served them first at every feast.",
+   "orig": "泰始之後，中國相尚用胡牀貊槃，及為羌煮貊炙，貴人富室，必畜其器，吉享嘉會，皆以為先。",
+   "work": "《晋书》卷二十七〈五行志上〉",
+   "year": 648,
+   "sources": [
+    {
+     "title": "國立臺東大學華語文學系論文（引《晉書》卷27〈五行志上〉，鼎文書局本頁823）",
+     "url": "https://wcoh.nttu.edu.tw/var/file/31/1031/img/881/746493841.pdf",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "zh": "（貊炙）整只烤熟，各人用刀自割，源自胡貊的吃法。",
+   "en": "(Maek roast:) the whole animal is roasted, and each person carves it with his own knife — a custom of the Hu and Maek.",
+   "orig": "貊炙，全體炙之，各自以刀割，出於胡貊之為也。",
+   "work": "刘熙《释名·释饮食》",
+   "year": "c. 200",
+   "sources": [
+    {
+     "title": "Wikipedia, 'Jeok'",
+     "url": "https://en.wikipedia.org/wiki/Jeok",
+     "kind": "百科"
+    }
+   ],
+   "note": "原文据记忆/转引，宜对原书核字。"
+  },
+  {
+   "zh": "「야끼니꾸」这个名字寒碜又俗气，总让我放不下心。",
+   "en": "The name 'yakiniku' is shabby and vulgar; it always bothers me.",
+   "orig": "야끼니꾸라는 이름이 초라하고 속되어서 늘 마음에 걸닙니다.",
+   "work": "李孝石 随笔（《女性》杂志）",
+   "year": 1939,
+   "sources": [
+    {
+     "title": "클리앙 게시글（동아일보 1932-03-20·1935-05-05·1940-02-08 기사, 이효석 1939 수필 인용 정리）",
+     "url": "https://www.clien.net/service/board/park/12696120",
+     "kind": "二手"
+    },
+    {
+     "title": "경향신문, 「‘불고기’는 일본말 야키니쿠의 번역어?」(2018-10-12)",
+     "url": "https://www.khan.co.kr/article/201810121057001/amp",
+     "kind": "媒体"
+    }
+   ],
+   "note": "转引自网络帖，篇名未核；可放在「불고기一词之争」处。"
+  }
+ ]
+}

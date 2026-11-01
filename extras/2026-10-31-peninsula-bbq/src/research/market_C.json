@@ -1,0 +1,1432 @@
+{
+ "us": {
+  "phases": [
+   {
+    "id": "us1",
+    "from": 1903,
+    "to": 1964,
+    "title_zh": "移民前史：夏威夷甘蔗园到洛杉矶",
+    "title_en": "Pre-history: from Hawaiian plantations to Los Angeles",
+    "facts": [
+     {
+      "zh": "1903年1月，第一批约百名韩国移民乘「盖尔号」抵达檀香山，进入夏威夷甘蔗种植园工作，这被视为韩裔美国移民史的起点。",
+      "en": "In January 1903 the first group of roughly 100 Korean immigrants arrived in Honolulu aboard the SS Gaelic to work on Hawaiian sugar plantations, conventionally the start of Korean American immigration.",
+      "year": 1903,
+      "num": "约102人（首批）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Koreatown, Los Angeles (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Koreatown,_Los_Angeles",
+        "kind": "百科"
+       }
+      ],
+      "note": "首批人数常见102人/101人两说；LAPL文未提1903，建议主会话以韩国历史类一手资料补核"
+     },
+     {
+      "zh": "1904–1905年，安昌浩在加州河滨（Riverside）组建以家庭为单位的韩人聚落「帕恰帕营地」（Pachappa Camp）；1913年柑橘业遭霜冻后，安家迁往洛杉矶邦克山。",
+      "en": "In 1904–05 Ahn Chang-ho formed Pachappa Camp, a family-based Korean settlement in Riverside, California; after a 1913 freeze hit the citrus industry his family moved to Bunker Hill in Los Angeles.",
+      "year": 1905,
+      "conf": "高",
+      "sources": [
+       {
+        "title": "The History of Koreatown: A Heartbeat of Los Angeles (LA Public Library)",
+        "url": "https://lapl.org/collections-resources/blogs/lapl/history-koreatown-heartbeat-los-angeles",
+        "kind": "官方"
+       }
+      ]
+     },
+     {
+      "zh": "1965年前，美国移民配额制度严格限制亚洲移民，洛杉矶韩裔人口规模很小。",
+      "en": "Before 1965, U.S. national-origin quotas sharply restricted Asian immigration and the Korean community in Los Angeles remained small.",
+      "year": 1964,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "The History of Koreatown: A Heartbeat of Los Angeles (LA Public Library)",
+        "url": "https://lapl.org/collections-resources/blogs/lapl/history-koreatown-heartbeat-los-angeles",
+        "kind": "官方"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "us2",
+    "from": 1965,
+    "to": 1989,
+    "title_zh": "1965 移民法与韩国城成形：最早的韩餐馆",
+    "title_en": "After 1965: Koreatown takes shape, the first Korean restaurants",
+    "facts": [
+     {
+      "zh": "1965年《哈特-塞勒移民法》废除国籍配额，韩国移民大量涌入，洛杉矶公共图书馆称这是韩裔社区壮大的关键转折。",
+      "en": "The 1965 Hart-Celler Act ended national-origin quotas and opened the door to large-scale Korean immigration, which the LA Public Library calls the turning point for the community's growth.",
+      "year": 1965,
+      "conf": "高",
+      "sources": [
+       {
+        "title": "The History of Koreatown: A Heartbeat of Los Angeles (LA Public Library)",
+        "url": "https://lapl.org/collections-resources/blogs/lapl/history-koreatown-heartbeat-los-angeles",
+        "kind": "官方"
+       }
+      ]
+     },
+     {
+      "zh": "1968年移民至洛杉矶的李喜德（Hi Duk Lee）在奥林匹克大道开设「奥林匹克市场」，成为当时约一万名洛杉矶韩裔的采购中心，常被视为韩国城的起点。",
+      "en": "Hi Duk Lee, who immigrated in 1968, opened the Olympic Market on Olympic Boulevard, a destination for the roughly 10,000 Koreans then living in LA and often cited as Koreatown's seed.",
+      "year": 1971,
+      "num": "约1万名在洛韩裔（当时）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "The History of Koreatown: A Heartbeat of Los Angeles (LA Public Library)",
+        "url": "https://lapl.org/collections-resources/blogs/lapl/history-koreatown-heartbeat-los-angeles",
+        "kind": "官方"
+       }
+      ],
+      "note": "市场开业年份LAPL未给；常见说法1971年"
+     },
+     {
+      "zh": "「新韩国餐厅」（New Korea Restaurant）1969年在奥林匹克大道开业，是洛杉矶最早一批韩餐馆之一；1978年「东一庄」在第八街开业（2020年歇业），1983年「江南会馆」在奥林匹克大道开业并延续至今。",
+      "en": "New Korea Restaurant opened on Olympic Boulevard in 1969, among LA's first Korean restaurants; Dong Il Jang opened on 8th Street in 1978 (closed 2020), and Gangnam Hoegwan opened on Olympic in 1983 and is still run by the same owner.",
+      "year": 1969,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "The Rise and Legacy of Korean Restaurants in LA Koreatown (Korea Daily)",
+        "url": "https://en.koreadaily.com/?p=57800",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "1980年韩国城被定为洛杉矶官方认可的街区，1982年在10号高速与诺曼底大道附近竖起「Koreatown」路牌。",
+      "en": "Koreatown was recognized as an official Los Angeles neighborhood in 1980, and Koreatown signs went up near the 10 Freeway and Normandie Avenue in 1982.",
+      "year": 1980,
+      "conf": "高",
+      "sources": [
+       {
+        "title": "The History of Koreatown: A Heartbeat of Los Angeles (LA Public Library)",
+        "url": "https://lapl.org/collections-resources/blogs/lapl/history-koreatown-heartbeat-los-angeles",
+        "kind": "官方"
+       }
+      ]
+     },
+     {
+      "zh": "1985年开业的「清云自助」（Choeng Wun Buffet）最初是自助餐馆，被LAist称为洛杉矶「吃到饱」韩式烤肉的雏形，2000年代改为AYCE烤肉。",
+      "en": "Choeng Wun Buffet, opened in 1985 as a cafeteria-style buffet, is described by LAist as a proto-AYCE Korean barbecue spot; it rebranded as all-you-can-eat BBQ in the 2000s.",
+      "year": 1985,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Love All-You-Can-Eat Korean BBQ? Honor Choeng Wun Buffet's History (LAist)",
+        "url": "https://laist.com/news/food/love-all-you-can-eat-korean-bbq-its-time-to-honor-choeng-wun-buffets-history",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "纽约曼哈顿32街一带在1980年代出现韩文书店和少量韩餐馆，后来发展为「韩国街」（Korea Way）。",
+      "en": "In the 1980s a Korean bookstore and a handful of restaurants appeared around West 32nd Street in Manhattan, the core of what became Korea Way.",
+      "year": 1980,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Koreatown, Manhattan (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Koreatown,_Manhattan",
+        "kind": "百科"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "us3",
+    "from": 1990,
+    "to": 2007,
+    "title_zh": "社区食堂时代：以韩裔顾客为主",
+    "title_en": "Community era: Korean BBQ for Korean Americans",
+    "facts": [
+     {
+      "zh": "1990年代起，洛杉矶韩国城的烤肉店（如 Park's BBQ、朝鲜排骨 Chosun Galbee、水原排骨等）主要服务韩裔社区，以木炭或燃气桌边烤为特色。",
+      "en": "From the 1990s, LA Koreatown BBQ houses such as Park's BBQ, Chosun Galbee and Suwon Galbi mostly served the Korean community, built around tableside charcoal or gas grills.",
+      "year": 1995,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "The Rise and Legacy of Korean Restaurants in LA Koreatown (Korea Daily)",
+        "url": "https://en.koreadaily.com/?p=57800",
+        "kind": "媒体"
+       }
+      ],
+      "note": "各店具体开业年份未核"
+     },
+     {
+      "zh": "1992年洛杉矶骚乱中韩国城商户损失惨重；LAist记载的一家韩国城餐馆「江边」即在骚乱后关闭。",
+      "en": "Koreatown businesses suffered heavy losses in the 1992 Los Angeles riots; LAist notes the Koreatown restaurant Kangbyun closed after the riots.",
+      "year": 1992,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Love All-You-Can-Eat Korean BBQ? Honor Choeng Wun Buffet's History (LAist)",
+        "url": "https://laist.com/news/food/love-all-you-can-eat-korean-bbq-its-time-to-honor-choeng-wun-buffets-history",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "2000–2010年间，曼哈顿韩裔人口几乎翻倍至约2万人，32街韩国街集中了上百家小商户。",
+      "en": "Between 2000 and 2010 Manhattan's Korean population nearly doubled to about 20,000, and Korea Way on 32nd Street had more than 100 small businesses.",
+      "year": 2010,
+      "num": "约2万人（2010年人口普查，曼哈顿韩裔）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Koreatown, Manhattan (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Koreatown,_Manhattan",
+        "kind": "百科"
+       }
+      ]
+     },
+     {
+      "zh": "2000年代，随着韩流兴起，部分韩国城自助餐馆改为「吃到饱」（AYCE）烤肉形式，客群开始超出韩裔。",
+      "en": "In the 2000s, as the Korean Wave grew, some Koreatown buffets rebranded as all-you-can-eat (AYCE) barbecue, drawing customers beyond Korean Americans.",
+      "year": 2005,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Love All-You-Can-Eat Korean BBQ? Honor Choeng Wun Buffet's History (LAist)",
+        "url": "https://laist.com/news/food/love-all-you-can-eat-korean-bbq-its-time-to-honor-choeng-wun-buffets-history",
+        "kind": "媒体"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "us4",
+    "from": 2008,
+    "to": 2012,
+    "title_zh": "Kogi 塔可车：韩味进入主流",
+    "title_en": "Kogi and the crossover moment",
+    "facts": [
+     {
+      "zh": "2008年11月19日，马克·曼圭拉（Mark Manguera）与卡罗琳·申创办 Kogi 韩式烤肉餐车，崔洛伊（Roy Choi）任主厨，把韩式烤肉夹进墨西哥塔可饼。",
+      "en": "On November 19, 2008, Mark Manguera and Caroline Shin launched the Kogi Korean BBQ truck with Roy Choi as chef, putting Korean barbecue into Mexican tacos.",
+      "year": 2008,
+      "conf": "高",
+      "sources": [
+       {
+        "title": "Kogi Korean BBQ (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kogi_Korean_BBQ",
+        "kind": "百科"
+       }
+      ]
+     },
+     {
+      "zh": "Kogi 用 Twitter 实时公布餐车位置，2009年年中已有约3.6万关注者，被视为社交媒体驱动餐饮的早期范例。",
+      "en": "Kogi used Twitter to post its truck locations in real time, reaching about 36,000 followers by mid-2009, an early case of social-media-driven food business.",
+      "year": 2009,
+      "num": "约3.6万 Twitter 关注者（2009年中）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Kogi Korean BBQ (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kogi_Korean_BBQ",
+        "kind": "百科"
+       }
+      ]
+     },
+     {
+      "zh": "2010年崔洛伊获《Food & Wine》「最佳新厨师」，是首位获此奖的餐车厨师；2011年年中 Kogi 扩至5辆餐车。",
+      "en": "In 2010 Roy Choi was named a Food & Wine Best New Chef, the first food-truck chef to win it; by mid-2011 Kogi ran five trucks.",
+      "year": 2010,
+      "num": "5辆餐车（2011年中）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Kogi Korean BBQ (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kogi_Korean_BBQ",
+        "kind": "百科"
+       }
+      ]
+     },
+     {
+      "zh": "2011年，韩裔移民金大卫（David Kim）与张在（Jae Chang）在加州塔斯廷开出第一家 GEN Korean BBQ，以平价「吃到饱」模式进入郊区购物中心。",
+      "en": "In 2011 Korean immigrants David Kim and Jae Chang opened the first GEN Korean BBQ in Tustin, California, bringing affordable all-you-can-eat barbecue to suburban malls.",
+      "year": 2011,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Gen Korean BBQ (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gen_Korean_BBQ",
+        "kind": "百科"
+       },
+       {
+        "title": "Love All-You-Can-Eat Korean BBQ? Honor Choeng Wun Buffet's History (LAist)",
+        "url": "https://laist.com/news/food/love-all-you-can-eat-korean-bbq-its-time-to-honor-choeng-wun-buffets-history",
+        "kind": "媒体"
+       }
+      ],
+      "alt": "部分资料称GEN创立于洛杉矶；首店塔斯廷（Tustin）"
+     }
+    ]
+   },
+   {
+    "id": "us5",
+    "from": 2013,
+    "to": 2019,
+    "title_zh": "连锁扩张：AYCE 与高端双线并进",
+    "title_en": "Scaling up: AYCE chains and high-end KBBQ",
+    "facts": [
+     {
+      "zh": "首尔连锁「姜虎东白丁」2012年在洛杉矶韩国城开出美国首店，2014年12月进驻曼哈顿32街，当时在美已有洛杉矶、法拉盛、夏威夷、亚特兰大等店。",
+      "en": "Seoul-based Kang Ho Dong Baekjeong opened its first U.S. branch in LA Koreatown in 2012 and reached West 32nd Street in Manhattan in December 2014, joining branches in LA, Flushing, Hawaii and Atlanta.",
+      "year": 2012,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Korean BBQ Chain Kang Ho Dong Baekjeong Turns Up the Heat in NYC (Character Media)",
+        "url": "https://charactermedia.com/korean-bbq-chain-kang-ho-dong-baekjeong-turns-up-the-heat-in-nyc/",
+        "kind": "媒体"
+       },
+       {
+        "title": "Popular KBBQ chain Baekjeong opens first Bay Area location at Valley Fair (KRON4, 2023-08-17)",
+        "url": "https://digital-release.kron4.com/news/bay-area/popular-kbbq-chain-baekjeong-opens-first-bay-area-location-at-valley-fair/amp/",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "2017年6月8日，金西蒙（Simon Kim）在纽约熨斗区开设韩式牛排馆 Cote，开业一年内获米其林一星；迈阿密店2021年2月开业，2022年获一星；拉斯维加斯店2025年10月开业。",
+      "en": "Simon Kim opened the Korean steakhouse Cote in New York's Flatiron District on June 8, 2017; it earned a Michelin star within a year. Cote Miami opened in February 2021 and won a star in 2022; a Las Vegas branch opened in October 2025.",
+      "year": 2017,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Cote (restaurant) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Cote_(restaurant)",
+        "kind": "百科"
+       }
+      ]
+     },
+     {
+      "zh": "据 Circana 统计，2018年以来美国新开约450家韩餐门店，其中36%集中在洛杉矶、旧金山和纽约三大市场。",
+      "en": "Circana counts about 450 new Korean restaurant locations in the U.S. since 2018, 36% of them in Los Angeles, San Francisco and New York.",
+      "year": 2024,
+      "num": "约450家新店（2018–2024）；36%集中于三城",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "South Korean Restaurant Locations in the U.S. Grow 10% Over the Past Year (Circana, 2024-09-11)",
+        "url": "https://www.circana.com/intelligence/press-releases/2024/south-korean-restaurant-locations-in-the-u-s-grow-10-over-the-past-year-amid-surge-in-demand-for-korean-cuisine/",
+        "kind": "媒体"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "us6",
+    "from": 2020,
+    "to": 2026,
+    "title_zh": "韩流时代：上市、超市与全国化",
+    "title_en": "Hallyu era: IPO, supermarkets, nationwide reach",
+    "facts": [
+     {
+      "zh": "2023年6月，GEN Restaurant Group 在纳斯达克上市（代码 GENK），募资约4320万美元，成为美国首家上市的韩式烤肉连锁。",
+      "en": "In June 2023 GEN Restaurant Group listed on Nasdaq under GENK, raising about $43.2 million, the first U.S.-listed Korean barbecue chain.",
+      "year": 2023,
+      "num": "IPO 募资约4320万美元",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Gen Korean BBQ (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Gen_Korean_BBQ",
+        "kind": "百科"
+       }
+      ],
+      "note": "「首家上市韩烤连锁」为常见媒体说法，未见官方表述"
+     },
+     {
+      "zh": "GEN 2024年营收2.084亿美元，较2023年的1.81亿美元增长15.1%；年底门店43家（上年37家），但可比门店销售下降5.6%。",
+      "en": "GEN's 2024 revenue was $208.4 million, up 15.1% from $181.0 million in 2023; it ended the year with 43 restaurants (37 a year earlier), while comparable sales fell 5.6%.",
+      "year": 2024,
+      "num": "营收2.084亿美元；43店；同店-5.6%",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "GEN Restaurant Group Q4 & FY2024 results (SEC 8-K Ex.99.1)",
+        "url": "https://sec.gov/Archives/edgar/data/1891856/000095017025034595/genk-ex99_1.htm",
+        "kind": "官方"
+       }
+      ]
+     },
+     {
+      "zh": "据韩国农林畜产食品部与 aT 调查，韩国餐饮企业在美门店从2020年的528家增至2025年的约1,106家，增长约1.1倍，美国取代中国成为韩餐企业最大海外市场。",
+      "en": "Per a MAFRA/aT survey, outlets of Korean food-service companies in the U.S. rose from 528 in 2020 to about 1,106 in 2025, making the U.S. their largest overseas market, ahead of China.",
+      "year": 2025,
+      "num": "528→1,106家（2020→2025）",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "U.S. tops China to become No. 1 'K-dining' market (Korea JoongAng Daily, 2026-02-05)",
+        "url": "https://www.koreajoongangdaily.com/business/us-tops-china-to-become-no-1-k-dining-market/12091309",
+        "kind": "媒体"
+       },
+       {
+        "title": "Korean restaurant chains operating over 4,600 overseas outlets (Korea Times/Yonhap, 2026-02-06)",
+        "url": "https://www.koreatimes.co.kr/business/20260206/korean-restaurant-chains-operating-over-4600-overseas-outlets-data",
+        "kind": "媒体"
+       }
+      ],
+      "alt": "韩国时报引同一调查为1,104家（56个品牌）"
+     },
+     {
+      "zh": "2023年8月，白丁在圣何塞 Westfield Valley Fair 购物中心开出湾区首店（位于 Stevens Creek 大道，紧邻圣克拉拉），全美约8家门店；湾区韩烤此前集中在圣克拉拉 El Camino Real 沿线的韩裔商圈。",
+      "en": "In August 2023 Baekjeong opened its first Bay Area location at Westfield Valley Fair in San Jose, on the Santa Clara border, bringing it to about eight U.S. restaurants; Bay Area KBBQ had long clustered along El Camino Real in Santa Clara's Korean business strip.",
+      "year": 2023,
+      "num": "全美约8家（2023）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Popular KBBQ chain Baekjeong opens first Bay Area location at Valley Fair (KRON4, 2023-08-17)",
+        "url": "https://digital-release.kron4.com/news/bay-area/popular-kbbq-chain-baekjeong-opens-first-bay-area-location-at-valley-fair/amp/",
+        "kind": "媒体"
+       }
+      ],
+      "note": "El Camino Real 韩裔商圈部分无专门来源，属常识性描述，需主会话补源或删去"
+     },
+     {
+      "zh": "韩裔超市 H Mart 起源于1982年权一渊在纽约皇后区伍德赛德开的小店「韩亚龙」（Han Ah Reum），如今在美加有100多家门店、年销售额约20亿美元，并持续向佛州、得州等阳光地带扩张。",
+      "en": "H Mart began in 1982 as Il Yeon Kwon's small Han Ah Reum store in Woodside, Queens; it now has 100+ stores in the U.S. and Canada and about $2 billion in annual sales, and is expanding across the Sun Belt.",
+      "year": 1982,
+      "num": "100+门店；年销售约20亿美元",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "H Mart expansion in the Sun Belt (Commercial Observer, 2026-07)",
+        "url": "https://commercialobserver.com/2026/07/h-mart-expansion-sun-belt/",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "Circana 数据显示，2024年美国韩式炸鸡连锁（7个品牌）门店405家，同比增22%；韩式热狗连锁242家，同比增52%。",
+      "en": "Circana data show U.S. Korean fried chicken chains (7 brands) had 405 locations in 2024, up 22% year over year, and Korean corn-dog chains had 242, up 52%.",
+      "year": 2024,
+      "num": "炸鸡405店（+22%）；热狗242店（+52%）",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "South Korean Restaurant Locations in the U.S. Grow 10% Over the Past Year (Circana, 2024-09-11)",
+        "url": "https://www.circana.com/intelligence/press-releases/2024/south-korean-restaurant-locations-in-the-u-s-grow-10-over-the-past-year-amid-surge-in-demand-for-korean-cuisine/",
+        "kind": "媒体"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "players": [
+   {
+    "name": "GEN Korean BBQ House",
+    "zh": "美式「吃到饱」韩烤连锁，2011年塔斯廷首店，2023年纳斯达克上市（GENK），2024年底43家、营收2.084亿美元。",
+    "en": "U.S. AYCE Korean BBQ chain; first store Tustin 2011; Nasdaq IPO 2023 (GENK); 43 stores and $208.4M revenue in 2024.",
+    "founded": 2011,
+    "city": "Tustin, CA",
+    "num": "43店（2024年末）",
+    "sources": [
+     {
+      "title": "Gen Korean BBQ (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gen_Korean_BBQ",
+      "kind": "百科"
+     },
+     {
+      "title": "GEN Restaurant Group Q4 & FY2024 results (SEC 8-K Ex.99.1)",
+      "url": "https://sec.gov/Archives/edgar/data/1891856/000095017025034595/genk-ex99_1.htm",
+      "kind": "官方"
+     }
+    ]
+   },
+   {
+    "name": "Kang Ho Dong Baekjeong",
+    "zh": "韩国综艺明星姜虎东挂名的首尔烤肉连锁，先进洛杉矶韩国城，2014年12月进纽约32街。",
+    "en": "Seoul chain bearing TV host Kang Ho-dong's name; entered LA Koreatown first, NYC's 32nd Street in December 2014.",
+    "founded": 2012,
+    "city": "Los Angeles, CA",
+    "num": "约8店（2023）",
+    "sources": [
+     {
+      "title": "Korean BBQ Chain Kang Ho Dong Baekjeong Turns Up the Heat in NYC (Character Media)",
+      "url": "https://charactermedia.com/korean-bbq-chain-kang-ho-dong-baekjeong-turns-up-the-heat-in-nyc/",
+      "kind": "媒体"
+     },
+     {
+      "title": "Popular KBBQ chain Baekjeong opens first Bay Area location at Valley Fair (KRON4, 2023-08-17)",
+      "url": "https://digital-release.kron4.com/news/bay-area/popular-kbbq-chain-baekjeong-opens-first-bay-area-location-at-valley-fair/amp/",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "name": "Cote",
+    "zh": "金西蒙的韩式牛排馆，2017年纽约开业，一年内获米其林一星；迈阿密（2021）、拉斯维加斯（2025）。",
+    "en": "Simon Kim's Korean steakhouse; NYC 2017, Michelin star within a year; Miami (2021), Las Vegas (2025).",
+    "founded": 2017,
+    "city": "New York, NY",
+    "num": "米其林一星（纽约、迈阿密）",
+    "sources": [
+     {
+      "title": "Cote (restaurant) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cote_(restaurant)",
+      "kind": "百科"
+     }
+    ]
+   },
+   {
+    "name": "Kogi BBQ",
+    "zh": "2008年洛杉矶韩式塔可餐车，崔洛伊主厨，以 Twitter 定位走红。",
+    "en": "LA Korean-taco truck launched 2008 with chef Roy Choi, famous for Twitter-announced stops.",
+    "founded": 2008,
+    "city": "Los Angeles, CA",
+    "num": "5辆餐车（2011）",
+    "sources": [
+     {
+      "title": "Kogi Korean BBQ (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kogi_Korean_BBQ",
+      "kind": "百科"
+     }
+    ]
+   },
+   {
+    "name": "Choeng Wun Buffet",
+    "zh": "1985年开业的洛杉矶自助餐馆，被视为AYCE韩烤雏形。",
+    "en": "LA buffet opened 1985, regarded as a proto-AYCE Korean BBQ.",
+    "founded": 1985,
+    "city": "Los Angeles, CA",
+    "num": null,
+    "sources": [
+     {
+      "title": "Love All-You-Can-Eat Korean BBQ? Honor Choeng Wun Buffet's History (LAist)",
+      "url": "https://laist.com/news/food/love-all-you-can-eat-korean-bbq-its-time-to-honor-choeng-wun-buffets-history",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "name": "H Mart",
+    "zh": "1982年皇后区起家的韩裔超市，100多家门店、年销约20亿美元。",
+    "en": "Korean-American supermarket founded in Queens in 1982; 100+ stores, ~$2B sales.",
+    "founded": 1982,
+    "city": "Woodside, NY",
+    "num": "100+店",
+    "sources": [
+     {
+      "title": "H Mart expansion in the Sun Belt (Commercial Observer, 2026-07)",
+      "url": "https://commercialobserver.com/2026/07/h-mart-expansion-sun-belt/",
+      "kind": "媒体"
+     }
+    ]
+   }
+  ],
+  "map": [
+   {
+    "city": "Honolulu",
+    "lat": 21.307,
+    "lon": -157.858,
+    "year": 1903,
+    "zh": "首批韩国移民抵达",
+    "en": "First Korean immigrants arrive"
+   },
+   {
+    "city": "Riverside, CA",
+    "lat": 33.953,
+    "lon": -117.396,
+    "year": 1905,
+    "zh": "帕恰帕营地韩人聚落",
+    "en": "Pachappa Camp settlement"
+   },
+   {
+    "city": "Los Angeles Koreatown",
+    "lat": 34.0618,
+    "lon": -118.3006,
+    "year": 1969,
+    "zh": "新韩国餐厅；1980年定为官方街区",
+    "en": "New Korea Restaurant; official neighborhood 1980"
+   },
+   {
+    "city": "Manhattan Koreatown (W 32nd St)",
+    "lat": 40.7477,
+    "lon": -73.9869,
+    "year": 1980,
+    "zh": "32街韩国街",
+    "en": "Korea Way on 32nd Street"
+   },
+   {
+    "city": "Woodside, Queens",
+    "lat": 40.7454,
+    "lon": -73.9054,
+    "year": 1982,
+    "zh": "H Mart（韩亚龙）起家",
+    "en": "H Mart (Han Ah Reum) founded"
+   },
+   {
+    "city": "Los Angeles (Kogi)",
+    "lat": 34.05,
+    "lon": -118.25,
+    "year": 2008,
+    "zh": "Kogi 韩式塔可车",
+    "en": "Kogi Korean taco truck"
+   },
+   {
+    "city": "Tustin, CA",
+    "lat": 33.7458,
+    "lon": -117.8262,
+    "year": 2011,
+    "zh": "GEN 首店",
+    "en": "First GEN Korean BBQ"
+   },
+   {
+    "city": "New York Flatiron",
+    "lat": 40.7406,
+    "lon": -73.9918,
+    "year": 2017,
+    "zh": "Cote 开业，米其林一星",
+    "en": "Cote opens, Michelin star"
+   },
+   {
+    "city": "Miami Design District",
+    "lat": 25.8128,
+    "lon": -80.1928,
+    "year": 2021,
+    "zh": "Cote 迈阿密",
+    "en": "Cote Miami"
+   },
+   {
+    "city": "San Jose Valley Fair",
+    "lat": 37.3255,
+    "lon": -121.9455,
+    "year": 2023,
+    "zh": "白丁湾区首店",
+    "en": "Baekjeong's first Bay Area store"
+   },
+   {
+    "city": "Las Vegas",
+    "lat": 36.1215,
+    "lon": -115.1696,
+    "year": 2025,
+    "zh": "Cote 拉斯维加斯",
+    "en": "Cote Las Vegas"
+   }
+  ],
+  "stats": [
+   {
+    "zh": "全美韩餐馆（全部口径）：2009→2017年增长约3.1倍，2017年达3,293家（韩食振兴院调查）。",
+    "en": "All Korean restaurants in the U.S.: about 3.1x growth 2009–2017, reaching 3,293 in 2017 (Korean Food Promotion Institute).",
+    "year": 2017,
+    "num": "3,293家（2017）",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "파이낸셜뉴스 칼럼 (2018-01-19)",
+      "url": "https://www.fnnews.com/news/201801191712006381",
+      "kind": "媒体"
+     }
+    ],
+    "note": "口径与 aT 连锁门店调查不同；Trader Joe's 韩式烤肉冷冻品等主流超市渗透未检索（额度用尽）"
+   },
+   {
+    "zh": "韩牛不在美国销售：截至2025年底韩牛出口市场仅香港、马来西亚、柬埔寨、老挝、阿联酋。",
+    "en": "Hanwoo is not sold in the U.S.: as of late 2025 its only export markets were Hong Kong, Malaysia, Cambodia, Laos and the UAE.",
+    "year": 2025,
+    "conf": "中",
+    "sources": [
+     {
+      "title": "Korea exports premium beef to UAE (Korea Times, 2025-10-30)",
+      "url": "https://www.koreatimes.co.kr/economy/20251030/korea-exports-premium-beef-to-uae-marking-5th-overseas-market-for-hanwoo",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "zh": "韩国餐饮企业在美门店：2020年528家→2025年约1,106家（农林畜产食品部/aT 调查）。",
+    "en": "Korean food-service company outlets in the U.S.: 528 (2020) → about 1,106 (2025), per MAFRA/aT.",
+    "year": 2025,
+    "num": "528→1,106",
+    "conf": "高",
+    "sources": [
+     {
+      "title": "U.S. tops China to become No. 1 'K-dining' market (Korea JoongAng Daily, 2026-02-05)",
+      "url": "https://www.koreajoongangdaily.com/business/us-tops-china-to-become-no-1-k-dining-market/12091309",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "zh": "美国韩餐门店2023–2024年增长10%，约三分之一的美国电视市场区（DMA）仍没有韩餐馆（Circana）。",
+    "en": "U.S. Korean restaurant locations grew 10% in 2023–24, yet about a third of U.S. designated market areas still had none (Circana).",
+    "year": 2024,
+    "num": "+10%；1/3 DMA 无韩餐",
+    "conf": "高",
+    "sources": [
+     {
+      "title": "South Korean Restaurant Locations in the U.S. Grow 10% Over the Past Year (Circana, 2024-09-11)",
+      "url": "https://www.circana.com/intelligence/press-releases/2024/south-korean-restaurant-locations-in-the-u-s-grow-10-over-the-past-year-amid-surge-in-demand-for-korean-cuisine/",
+      "kind": "媒体"
+     }
+    ]
+   }
+  ]
+ },
+ "cn": {
+  "phases": [
+   {
+    "id": "cn1",
+    "from": 1860,
+    "to": 1991,
+    "title_zh": "延边底色：朝鲜族与黄牛",
+    "title_en": "Yanbian roots: Korean-Chinese and their cattle",
+    "facts": [
+     {
+      "zh": "19世纪至1940年代，大批朝鲜半岛移民越过图们江进入今吉林延边一带定居，形成中国朝鲜族聚居区。",
+      "en": "From the 19th century to the 1940s, waves of migrants from the Korean Peninsula crossed the Tumen River and settled in today's Yanbian, Jilin, forming China's main Korean-Chinese community.",
+      "year": 1900,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "アジアと日本 食と味覚の旅（立命館大学 研究者エッセイ）",
+        "url": "https://www.ritsumei.ac.jp/research/aji/publication/essay1/vol3/number11/",
+        "kind": "学术"
+       }
+      ]
+     },
+     {
+      "zh": "清代自朝鲜咸镜北道引入的牛种，后来在当地发展为「延边黄牛」，是朝鲜族烤牛肉的本地原料。",
+      "en": "Cattle brought in from North Hamgyong Province during the Qing dynasty later developed into the local Yanbian Yellow Cattle, the native beef behind Korean-Chinese grilled beef.",
+      "year": 1880,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "アジアと日本 食と味覚の旅（立命館大学 研究者エッセイ）",
+        "url": "https://www.ritsumei.ac.jp/research/aji/publication/essay1/vol3/number11/",
+        "kind": "学术"
+       }
+      ]
+     },
+     {
+      "zh": "延边朝鲜族的炭火烤肉与小串烧烤，以牛肉、猪五花和各类小串为主，自烤、蘸辣酱或芝麻盐，是今天「延吉烧烤」的原型。",
+      "en": "Yanbian Korean-Chinese charcoal grilling of beef, pork belly and small skewers, eaten self-grilled with chili paste or sesame salt, is the prototype of today's 'Yanji barbecue'.",
+      "conf": "低",
+      "sources": [
+       {
+        "title": "延吉旅行攻略（腾讯新闻，2026-04-24）",
+        "url": "https://news.qq.com/rain/a/20260424A05BFB00",
+        "kind": "二手"
+       }
+      ],
+      "note": "延吉烤串向全国扩散的年代（常说1990年代起随朝鲜族外出务工与劳务输出扩散）本路未能找到可靠来源，30次搜索已用尽；需主会话补核"
+     }
+    ]
+   },
+   {
+    "id": "cn2",
+    "from": 1992,
+    "to": 2005,
+    "title_zh": "建交之后：第一代韩式烤肉连锁",
+    "title_en": "After diplomatic ties: the first Korean BBQ chains",
+    "facts": [
+     {
+      "zh": "1992年8月中韩建交，此后韩国企业、留学生与外派人员大量进入北京、上海、青岛、沈阳等城市，形成北京望京、上海虹泉路等韩国人聚居区。",
+      "en": "China and South Korea established diplomatic relations in August 1992; Korean companies, students and expatriates followed into Beijing, Shanghai, Qingdao and Shenyang, forming enclaves such as Wangjing in Beijing and Hongquan Road in Shanghai.",
+      "year": 1992,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "China–South Korea relations (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/China%E2%80%93South_Korea_relations",
+        "kind": "百科"
+       },
+       {
+        "title": "'My Love from the Star' sparks fried chicken craze（中国日报双语，2014-02-19）",
+        "url": "https://language.chinadaily.com.cn/2014-02/19/content_17291216.htm",
+        "kind": "媒体"
+       }
+      ],
+      "note": "建交日期高可信；望京形成年代、人口峰值未单独核"
+     },
+     {
+      "zh": "1998年，车顺爱在深圳开出第一家「汉阳馆」韩式烤肉，后在深圳、上海、佛山、南京、福州、海口6城开到15家，如今已全部歇业。",
+      "en": "In 1998 Cha Soon-ae opened the first Hanyangguan Korean BBQ in Shenzhen; it grew to 15 outlets in six cities including Shanghai and Nanjing, all now closed.",
+      "year": 1998,
+      "num": "15家（峰值，6城）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+        "url": "https://m.jiemian.com/article/9981709.html",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "「汉拿山」是中国市场第一代韩式烤肉连锁之一，其运营公司北京汉拿山餐饮管理有限公司2004年在北京朝阳注册，旗下另有韩罗苑等品牌。",
+      "en": "Hannashan, one of China's first-generation Korean BBQ chains, is run by Beijing Hannashan Catering Management, registered in Chaoyang, Beijing, in 2004; it also owns brands such as Hanluoyuan.",
+      "year": 2004,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "汉拿山 项目页（36氪）",
+        "url": "https://pitchhub.36kr.com/project/1679614247817992",
+        "kind": "二手"
+       },
+       {
+        "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+        "url": "https://m.jiemian.com/article/9981709.html",
+        "kind": "媒体"
+       }
+      ],
+      "alt": "品牌方与部分媒体称汉拿山品牌起于1990年代后期（常见1997年），与2004年公司注册日期不同，本路未核到一手来源"
+     }
+    ]
+   },
+   {
+    "id": "cn3",
+    "from": 2006,
+    "to": 2015,
+    "title_zh": "韩流高峰：韩餐在中国最快的十年",
+    "title_en": "Hallyu peak: Korean dining's fastest decade in China",
+    "facts": [
+     {
+      "zh": "据韩食振兴院调查，中国的韩餐馆从2009年起8年间增长约7.8倍，2017年达15,985家，是海外韩餐馆最多的国家。",
+      "en": "Per Korean Food Promotion Institute surveys, Korean restaurants in China grew about 7.8-fold over eight years from 2009, reaching 15,985 in 2017, the most of any foreign country.",
+      "year": 2017,
+      "num": "15,985家（2017）；约7.8倍",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "파이낸셜뉴스 칼럼 (2018-01-19)",
+        "url": "https://www.fnnews.com/news/201801191712006381",
+        "kind": "媒体"
+       }
+      ],
+      "note": "全部韩餐馆口径（含朝鲜族/个体店）"
+     },
+     {
+      "zh": "2014年初韩剧《来自星星的你》热播，女主角一句「下初雪要吃炸鸡配啤酒」带动中国炸鸡啤酒热，上海虹泉路韩国街的韩式炸鸡、烤肉店出现排队数小时的盛况。",
+      "en": "The early-2014 hit K-drama My Love from the Star, whose heroine craves fried chicken and beer on the first snow, set off a chimaek craze in China; Korean shops on Shanghai's Hongquan Road saw hours-long lines.",
+      "year": 2014,
+      "conf": "高",
+      "sources": [
+       {
+        "title": "'My Love from the Star' sparks fried chicken craze（中国日报双语，2014-02-19）",
+        "url": "https://language.chinadaily.com.cn/2014-02/19/content_17291216.htm",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "据汉拿山副总裁焦斌2015年的说法，汉拿山全国门店约260家；同年12月公司完成由普思资本投资的A轮融资。",
+      "en": "Hannashan VP Jiao Bin said in 2015 that the chain had about 260 stores nationwide; in December 2015 it closed a Series A round led by Prospect Capital.",
+      "year": 2015,
+      "num": "约260家（2015）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+        "url": "https://m.jiemian.com/article/9981709.html",
+        "kind": "媒体"
+       },
+       {
+        "title": "汉拿山 项目页（36氪）",
+        "url": "https://pitchhub.36kr.com/project/1679614247817992",
+        "kind": "二手"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "cn4",
+    "from": 2016,
+    "to": 2019,
+    "title_zh": "萨德与「限韩令」：韩国招牌遇冷",
+    "title_en": "THAAD and the 'Korea ban': Korean brands chill",
+    "facts": [
+     {
+      "zh": "2016年韩国决定部署美国「萨德」反导系统，2017年3月起中国出现针对韩国企业、旅游和文化产品的一系列限制，民间称「限韩令」。",
+      "en": "After Seoul agreed in 2016 to deploy the U.S. THAAD missile-defense system, China from March 2017 imposed a series of restrictions on Korean companies, tourism and cultural content, informally called the 'Korea ban'.",
+      "year": 2017,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "萨德影响下的乐天玛特（澎湃新闻）",
+        "url": "https://www.thepaper.cn/newsDetail_forward_1791901",
+        "kind": "媒体"
+       },
+       {
+        "title": "South Korea's China Businesses Can't Find Cover in Spat over Missile Defense（财新Global，2017-04-05）",
+        "url": "https://www.caixinglobal.com/2017-04-05/south-korea-china-businesses-cant-find-cover-in-spat-over-missile-defense-101074620.html",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "乐天集团因提供萨德部署用地成为焦点：截至2017年，乐天在华99家乐天玛特中有87家因消防检查等原因停业，年内损失预计达1万亿韩元。",
+      "en": "Lotte, which supplied land for THAAD, became the main target: by 2017, 87 of its 99 Lotte Mart stores in China were shut, largely after fire-safety inspections, with losses projected at 1 trillion won for the year.",
+      "year": 2017,
+      "num": "99店中87家停业；预计损失约1万亿韩元",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "萨德影响下的乐天玛特（澎湃新闻）",
+        "url": "https://www.thepaper.cn/newsDetail_forward_1791901",
+        "kind": "媒体"
+       },
+       {
+        "title": "South Korea's China Businesses Can't Find Cover in Spat over Missile Defense（财新Global，2017-04-05）",
+        "url": "https://www.caixinglobal.com/2017-04-05/south-korea-china-businesses-cant-find-cover-in-spat-over-missile-defense-101074620.html",
+        "kind": "媒体"
+       }
+      ],
+      "alt": "财新2017年4月报道为99家中75家关闭（时间点较早）"
+     },
+     {
+      "zh": "韩国现代经济研究院估计，萨德事件到2017年底给韩国经济造成约8.5万亿韩元损失，其中旅游业7.1万亿韩元。",
+      "en": "The Hyundai Research Institute estimated THAAD fallout would cost the Korean economy about 8.5 trillion won by end-2017, including 7.1 trillion in tourism.",
+      "year": 2017,
+      "num": "8.5万亿韩元（其中旅游7.1万亿）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "萨德影响下的乐天玛特（澎湃新闻）",
+        "url": "https://www.thepaper.cn/newsDetail_forward_1791901",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "萨德之后，「韩国」招牌在中国餐饮中的号召力减弱，多家韩式烤肉品牌在之后几年收缩：汉拿山门店从2015年约260家减至2021年4月的205家。",
+      "en": "After THAAD the 'Korean' label lost pull in Chinese dining and several Korean BBQ brands contracted; Hannashan fell from about 260 stores in 2015 to 205 in April 2021.",
+      "year": 2021,
+      "num": "约260→205家（2015→2021.4）",
+      "conf": "中",
+      "sources": [
+       {
+        "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+        "url": "https://m.jiemian.com/article/9981709.html",
+        "kind": "媒体"
+       }
+      ],
+      "note": "两组数据口径不同（企业自述 vs NCBD），且收缩亦与疫情、同质化有关，不宜单归因于萨德"
+     }
+    ]
+   },
+   {
+    "id": "cn5",
+    "from": 2020,
+    "to": 2026,
+    "title_zh": "本土化：韩式烤肉变成中国烤肉的一支",
+    "title_en": "Localization: Korean BBQ becomes a Chinese category",
+    "facts": [
+     {
+      "zh": "据红餐大数据，截至2024年1月全国烤肉门店约16.4万家，同比增长2.4%；韩式、日式、中式是烤肉三大细分赛道。",
+      "en": "Per Hongcan data, China had about 164,000 barbecue (kaorou) restaurants as of January 2024, up 2.4% year on year, with Korean, Japanese and Chinese styles the three main segments.",
+      "year": 2024,
+      "num": "16.4万家（2024.1）",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "红餐产业研究院《烤肉品类发展报告2024》（界面新闻转载）",
+        "url": "https://www.jiemian.com/article/10837735.html",
+        "kind": "媒体"
+       },
+       {
+        "title": "《烤肉品类发展报告2024》（红餐智库，虎嗅转载 2024-02-23）",
+        "url": "https://m.huxiu.com/article/2704183.html",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "红餐报告称韩式烤肉品牌大多走亲民、高性价比路线，人均消费约85元；九田家料理烤肉门店超过900家，规模居烤肉品牌首位。",
+      "en": "Hongcan says most Korean-style BBQ brands target value, at about 85 yuan per person; Jiutianjia, with more than 900 stores, is the largest barbecue brand.",
+      "year": 2024,
+      "num": "人均约85元；九田家900+店",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "红餐产业研究院《烤肉品类发展报告2024》（界面新闻转载）",
+        "url": "https://www.jiemian.com/article/10837735.html",
+        "kind": "媒体"
+       },
+       {
+        "title": "《烤肉品类发展报告2024》（红餐智库，虎嗅转载 2024-02-23）",
+        "url": "https://m.huxiu.com/article/2704183.html",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "红餐《中国烧烤品类发展报告2023》指出，随着市场趋于饱和，日韩烤肉品牌纷纷陷入发展瓶颈；原因包括疫情、韩流退潮、口味创新不足与同质化。",
+      "en": "Hongcan's 2023 barbecue report said Japanese and Korean BBQ brands had hit a growth ceiling as the market saturated, citing the pandemic, a fading Korean Wave, little flavor innovation and homogeneity.",
+      "year": 2023,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+        "url": "https://m.jiemian.com/article/9981709.html",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "韩国餐饮企业在华门店从2020年的1,368家降至2025年的830家，减少39.3%，但2025年较2024年回升15%；中国退居韩餐企业第二大海外市场。",
+      "en": "Outlets of Korean food-service companies in China fell from 1,368 in 2020 to 830 in 2025 (−39.3%), though up 15% on 2024; China slipped to second place behind the U.S.",
+      "year": 2025,
+      "num": "1,368→830家（2020→2025）",
+      "conf": "高",
+      "sources": [
+       {
+        "title": "U.S. tops China to become No. 1 'K-dining' market (Korea JoongAng Daily, 2026-02-05)",
+        "url": "https://www.koreajoongangdaily.com/business/us-tops-china-to-become-no-1-k-dining-market/12091309",
+        "kind": "媒体"
+       },
+       {
+        "title": "Korean restaurant chains operating over 4,600 overseas outlets (Korea Times/Yonhap, 2026-02-06)",
+        "url": "https://www.koreatimes.co.kr/business/20260206/korean-restaurant-chains-operating-over-4600-overseas-outlets-data",
+        "kind": "媒体"
+       }
+      ]
+     },
+     {
+      "zh": "中国自2001年日本暴发疯牛病起禁止进口日本牛肉；2019年两国签署动物卫生检疫协定，2025年日方宣布协定生效，但中方实际何时放开仍取决于检疫技术谈判。",
+      "en": "China has banned Japanese beef since Japan's 2001 BSE outbreak; the two signed an animal-health agreement in 2019 and Japan said it took effect in 2025, but actual reopening still hinged on quarantine technical talks.",
+      "year": 2025,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Japan–China beef import agreement takes effect (Japan Times)",
+        "url": "https://www.japantimes.co.jp/article/628463",
+        "kind": "媒体"
+       }
+      ],
+      "note": "2025年底中日关系紧张后是否再次搁置，本路未核；中国市场上的「和牛」多为澳洲和牛，走私日本和牛查获新闻未检索（搜索额度用尽）"
+     },
+     {
+      "zh": "韩国牛肉（韩牛）目前没有进入中国市场：截至2025年底韩牛仅出口香港、马来西亚、柬埔寨、老挝和阿联酋。",
+      "en": "Hanwoo beef has not entered mainland China: as of late 2025 it was exported only to Hong Kong, Malaysia, Cambodia, Laos and the UAE.",
+      "year": 2025,
+      "conf": "中",
+      "sources": [
+       {
+        "title": "Korea exports premium beef to UAE, marking 5th overseas market for Hanwoo (Korea Times, 2025-10-30)",
+        "url": "https://www.koreatimes.co.kr/economy/20251030/korea-exports-premium-beef-to-uae-marking-5th-overseas-market-for-hanwoo",
+        "kind": "媒体"
+       }
+      ],
+      "note": "中国大陆市场的「韩式烤肉」用牛多为国产或澳洲、巴西等进口牛"
+     }
+    ]
+   }
+  ],
+  "players": [
+   {
+    "name": "Hannashan 汉拿山",
+    "zh": "第一代韩式烤肉连锁，北京汉拿山餐饮管理有限公司2004年注册；2015年约260店，2021年4月205店。",
+    "en": "First-generation Korean BBQ chain; operating company registered in Beijing 2004; ~260 stores (2015), 205 (Apr 2021).",
+    "founded": 2004,
+    "city": "北京",
+    "num": "205店（2021.4）",
+    "sources": [
+     {
+      "title": "汉拿山 项目页（36氪）",
+      "url": "https://pitchhub.36kr.com/project/1679614247817992",
+      "kind": "二手"
+     },
+     {
+      "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+      "url": "https://m.jiemian.com/article/9981709.html",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "name": "Hanyangguan 汉阳馆",
+    "zh": "1998年深圳创立，峰值6城15店，现已全部歇业。",
+    "en": "Founded in Shenzhen 1998; peaked at 15 stores in six cities; all closed.",
+    "founded": 1998,
+    "city": "深圳",
+    "num": "15店（峰值）",
+    "sources": [
+     {
+      "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+      "url": "https://m.jiemian.com/article/9981709.html",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "name": "Jiutianjia 九田家",
+    "zh": "料理烤肉连锁，2024年1月门店900家以上，烤肉品牌规模第一。",
+    "en": "Barbecue chain with 900+ stores as of Jan 2024, the largest in the category.",
+    "founded": null,
+    "city": null,
+    "num": "900+店（2024.1）",
+    "sources": [
+     {
+      "title": "红餐产业研究院《烤肉品类发展报告2024》（界面新闻转载）",
+      "url": "https://www.jiemian.com/article/10837735.html",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "name": "Xinshiqi 新石器烤肉",
+    "zh": "韩式/融合烤肉连锁，门店较高峰期缩水。",
+    "en": "Korean/fusion BBQ chain whose store count has shrunk from its peak.",
+    "founded": null,
+    "city": null,
+    "num": null,
+    "sources": [
+     {
+      "title": "韩式烤肉连锁品牌沉浮（界面新闻）",
+      "url": "https://m.jiemian.com/article/9981709.html",
+      "kind": "媒体"
+     }
+    ],
+    "note": "创立年份、门店数未核"
+   },
+   {
+    "name": "Lotte Mart 乐天玛特（参照）",
+    "zh": "2007年进入中国，约百家门店；2017年萨德后大部分停业并撤出。",
+    "en": "Entered China 2007 with ~100 stores; most shut after THAAD in 2017.",
+    "founded": 2007,
+    "city": "北京/华东",
+    "num": "99店中87家停业（2017）",
+    "sources": [
+     {
+      "title": "乐天超市北京霍营店关闭（界面新闻，2017）",
+      "url": "https://m.jiemian.com/article/1143651.html",
+      "kind": "媒体"
+     },
+     {
+      "title": "萨德影响下的乐天玛特（澎湃新闻）",
+      "url": "https://www.thepaper.cn/newsDetail_forward_1791901",
+      "kind": "媒体"
+     }
+    ]
+   }
+  ],
+  "map": [
+   {
+    "city": "延吉 Yanji",
+    "lat": 42.904,
+    "lon": 129.513,
+    "year": 1900,
+    "zh": "朝鲜族聚居与延边黄牛",
+    "en": "Korean-Chinese heartland, Yanbian cattle"
+   },
+   {
+    "city": "深圳 Shenzhen",
+    "lat": 22.543,
+    "lon": 114.058,
+    "year": 1998,
+    "zh": "汉阳馆首店",
+    "en": "First Hanyangguan"
+   },
+   {
+    "city": "北京朝阳 Beijing Chaoyang",
+    "lat": 39.921,
+    "lon": 116.443,
+    "year": 2004,
+    "zh": "汉拿山公司注册",
+    "en": "Hannashan company registered"
+   },
+   {
+    "city": "北京望京 Wangjing",
+    "lat": 39.996,
+    "lon": 116.47,
+    "year": 1995,
+    "zh": "北京韩国城",
+    "en": "Beijing's Koreatown",
+    "note": "年份为大致形成期，未核"
+   },
+   {
+    "city": "上海虹泉路 Hongquan Rd",
+    "lat": 31.181,
+    "lon": 121.384,
+    "year": 2014,
+    "zh": "「炸鸡啤酒」热潮排队",
+    "en": "Chimaek craze queues"
+   },
+   {
+    "city": "北京霍营 Huoying",
+    "lat": 40.072,
+    "lon": 116.358,
+    "year": 2017,
+    "zh": "乐天超市关店",
+    "en": "Lotte supermarket closes"
+   },
+   {
+    "city": "沈阳西塔 Shenyang Xita",
+    "lat": 41.806,
+    "lon": 123.405,
+    "year": 1995,
+    "zh": "东北朝鲜族/韩国人街区",
+    "en": "Korean district in Shenyang",
+    "note": "未核，仅作节点候选"
+   },
+   {
+    "city": "青岛 Qingdao",
+    "lat": 36.067,
+    "lon": 120.383,
+    "year": 1992,
+    "zh": "建交后韩企聚集城市",
+    "en": "Hub for Korean firms after 1992",
+    "note": "未核，仅作节点候选"
+   }
+  ],
+  "stats": [
+   {
+    "zh": "中国韩餐馆（全部口径）：2017年15,985家，为2009年的约7.8倍。",
+    "en": "Korean restaurants in China (all types): 15,985 in 2017, about 7.8x 2009.",
+    "year": 2017,
+    "num": "15,985家",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "파이낸셜뉴스 칼럼 (2018-01-19)",
+      "url": "https://www.fnnews.com/news/201801191712006381",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "zh": "韩国餐饮企业在华门店：2020年1,368家→2025年830家。",
+    "en": "Korean food-service company outlets in China: 1,368 (2020) → 830 (2025).",
+    "year": 2025,
+    "num": "1,368→830",
+    "conf": "高",
+    "sources": [
+     {
+      "title": "U.S. tops China to become No. 1 'K-dining' market (Korea JoongAng Daily, 2026-02-05)",
+      "url": "https://www.koreajoongangdaily.com/business/us-tops-china-to-become-no-1-k-dining-market/12091309",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "zh": "全国烤肉门店约16.4万家（2024年1月），韩式品牌人均约85元。",
+    "en": "About 164,000 barbecue restaurants nationwide (Jan 2024); Korean-style brands average ~85 yuan per head.",
+    "year": 2024,
+    "num": "16.4万家",
+    "conf": "高",
+    "sources": [
+     {
+      "title": "红餐产业研究院《烤肉品类发展报告2024》（界面新闻转载）",
+      "url": "https://www.jiemian.com/article/10837735.html",
+      "kind": "媒体"
+     }
+    ]
+   }
+  ]
+ },
+ "global": [
+  {
+   "zh": "2009年5月，韩国政府成立推动韩食海外推广的机构（韩食全球化推进团），目标是到2017年把海外韩餐馆增至4万家；时任第一夫人金润玉出任韩食财团名誉职务，主导相关宣传。",
+   "en": "In May 2009 Seoul launched a body to promote Korean food abroad, aiming for 40,000 Korean restaurants overseas by 2017; then–first lady Kim Yoon-ok led the Korean Food Foundation's promotional push.",
+   "year": 2009,
+   "num": "目标：2017年海外韩餐馆4万家",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Body launched to promote Korean food abroad (Korea Times, 2009-05-04)",
+     "url": "https://www.koreatimes.co.kr/southkorea/20090504/body-launched-to-promote-korean-food-abroad",
+     "kind": "媒体"
+    },
+    {
+     "title": "Globalization of Korean food hits snag (Korea Herald via HanCinema)",
+     "url": "https://c.hancinema.net/globalization-of-korean-food-hits-snag-48468.html",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「2017年跻身世界五大料理」的口号常被引用，本路未在一手报道中核到"
+  },
+  {
+   "zh": "该项目总预算约800亿韩元，其中计划50亿韩元在纽约开设旗舰韩餐馆、10亿韩元建设网站；国会国政监查中有议员批评其为「典型的行政浪费」，纽约旗舰店计划未能落地。",
+   "en": "The program was allotted about 80 billion won, including 5 billion won for a flagship New York restaurant and 1 billion for a website; in a parliamentary audit a lawmaker called it 'a typical administrative waste,' and the Manhattan flagship never materialized.",
+   "year": 2012,
+   "num": "约800亿韩元（总预算）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Globalization of Korean food hits snag (Korea Herald via HanCinema)",
+     "url": "https://c.hancinema.net/globalization-of-korean-food-hits-snag-48468.html",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "据韩食振兴院调查，海外韩餐馆从2009年的9,253家增至2017年的33,499家（90个国家），约为3.6倍；其中中国15,985家、日本9,238家、美国3,293家。",
+   "en": "Per the Korean Food Promotion Institute, overseas Korean restaurants rose from 9,253 in 2009 to 33,499 in 90 countries in 2017, about 3.6x; China had 15,985, Japan 9,238 and the U.S. 3,293.",
+   "year": 2017,
+   "num": "9,253→33,499家（2009→2017）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "파이낸셜뉴스 칼럼 (2018-01-19)",
+     "url": "https://www.fnnews.com/news/201801191712006381",
+     "kind": "媒体"
+    }
+   ],
+   "note": "原始数据为韩食振兴院/农食品部「海外韩食馆实态调查」，二手转引；全部韩餐馆口径（含个体店），与下条连锁门店口径不同"
+  },
+  {
+   "zh": "据农林畜产食品部与 aT 调查，2025年底韩国餐饮企业（连锁品牌）在56个国家共运营4,644家海外门店，较2020年的3,722家增长24.8%；美国（约1,106家）首次超过中国（830家，较2020年减少39.3%）。",
+   "en": "A MAFRA/aT survey found Korean food-service brands ran 4,644 overseas outlets in 56 countries at end-2025, up 24.8% from 3,722 in 2020; the U.S. (about 1,106) overtook China (830, down 39.3% from 2020).",
+   "year": 2025,
+   "num": "4,644家（2025）；美1,106 / 中830",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "U.S. tops China to become No. 1 'K-dining' market (Korea JoongAng Daily)",
+     "url": "https://www.koreajoongangdaily.com/business/us-tops-china-to-become-no-1-k-dining-market/12091309",
+     "kind": "媒体"
+    },
+    {
+     "title": "Korean restaurant chains operating over 4,600 overseas outlets (Korea Times)",
+     "url": "https://www.koreatimes.co.kr/business/20260206/korean-restaurant-chains-operating-over-4600-overseas-outlets-data",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "2025年韩国「K-Food+」（农食品加相关产业）出口额创新高，达136.2亿美元，同比增5.1%；其中农食品出口104.1亿美元。美国为最大市场（18亿美元，+13.2%），中国次之（15.8亿美元，+5.1%）；拉面出口首破15亿美元。",
+   "en": "Korea's 'K-Food Plus' exports hit a record $13.62 billion in 2025, up 5.1%, including $10.41 billion of agrifood; the U.S. was the top market ($1.8B, +13.2%) ahead of China ($1.58B, +5.1%), and ramyeon passed $1.5 billion for the first time.",
+   "year": 2025,
+   "num": "136.2亿美元（K-Food+）；104.1亿美元（农食品）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Food exports hit record high in 2025 (Korea JoongAng Daily)",
+     "url": "https://www.koreajoongangdaily.com/business/food-exports-hit-record-high-in-2025/12391090",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "截至2025年底，韩牛的出口市场只有香港、马来西亚、柬埔寨、老挝和阿联酋（2025年10月30日首批约1.5吨）五地，美国和中国都不在列。",
+   "en": "As of late 2025 Hanwoo beef was exported only to Hong Kong, Malaysia, Cambodia, Laos and the UAE (first ~1.5-ton shipment on Oct. 30, 2025); neither the U.S. nor China is a market.",
+   "year": 2025,
+   "num": "5个出口市场；阿联酋首批约1.5吨/2.5亿韩元",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Korea exports premium beef to UAE, marking 5th overseas market for Hanwoo (Korea Times, 2025-10-30)",
+     "url": "https://www.koreatimes.co.kr/economy/20251030/korea-exports-premium-beef-to-uae-marking-5th-overseas-market-for-hanwoo",
+     "kind": "媒体"
+    }
+   ],
+   "note": "支持立论：走出去的是吃法不是韩牛。香港为首个市场（常见说法2015年起），未核；美国在售「Korean BBQ」多用美国牛"
+  }
+ ],
+ "kfood": [
+  {
+   "zh": "白种元1994年创办 TheBorn Korea（더본코리아），旗下有本家（Bornga）、白家面馆、香港饭店、白茶房等约25个餐饮品牌；2024年11月国内门店2,917家，上一年销售额创纪录达4,107亿韩元。",
+   "en": "Paik Jong-won founded TheBorn Korea in 1994; it runs about 25 brands including Bornga, Paik's Noodle, Hong Kong Banjeom and Paik's Coffee, with 2,917 shops in Korea as of November 2024 and record 2023 sales of 410.7 billion won.",
+   "year": 1994,
+   "num": "约25个品牌；国内2,917店；2023年销售4,107亿韩元",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "'Culinary Class Wars' judge Paik Jong-won to expand K-food empire overseas (Korea JoongAng Daily/Yonhap, 2024-11-13)",
+     "url": "https://www.koreajoongangdaily.com/lifestyle/culinary-class-wars-judge-paik-jongwon-to-expand-kfood-empire-overseas/12402982",
+     "kind": "媒体"
+    },
+    {
+     "title": "Will Paik Jong-won achieve IPO dream for TheBorn Korea (Korea Times, 2024)",
+     "url": "https://www.koreatimes.co.kr/www/biz/2024/10/602_375666.html",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "截至2024年11月，TheBorn Korea 在14个国家有149家海外门店，覆盖中国、日本、泰国、马来西亚和美国等，海外主力品牌为烤肉店「本家」和「新村食堂」；2023年与台湾企业签订主加盟协议。",
+   "en": "As of November 2024 TheBorn Korea had 149 overseas outlets in 14 countries including China, Japan, Thailand, Malaysia and the U.S., led by the Korean BBQ brand Bornga and Saemaeul Sikdang; it signed a master-franchise deal with a Taiwanese firm in 2023.",
+   "year": 2024,
+   "num": "149家海外门店，14国",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "'Culinary Class Wars' judge Paik Jong-won to expand K-food empire overseas (Korea JoongAng Daily/Yonhap, 2024-11-13)",
+     "url": "https://www.koreajoongangdaily.com/lifestyle/culinary-class-wars-judge-paik-jongwon-to-expand-kfood-empire-overseas/12402982",
+     "kind": "媒体"
+    }
+   ],
+   "note": "美、中分国门店数未查到"
+  },
+  {
+   "zh": "TheBorn Korea 2024年11月6日在韩国综合股价指数（KOSPI）上市，首日收盘51,400韩元；2018年曾尝试上市未果。",
+   "en": "TheBorn Korea listed on the KOSPI on November 6, 2024, closing at 51,400 won on day one; an earlier 2018 IPO attempt had failed.",
+   "year": 2024,
+   "num": "首日收盘51,400韩元",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Celebrity chef Paik Jong-won held over the flames amid roiling controversies (Korea JoongAng Daily, 2025)",
+     "url": "https://www.koreajoongangdaily.com/business/celebrity-chef-paik-jong-won-held-over-the-flames-amid-roiling-controversies/12315684",
+     "kind": "媒体"
+    },
+    {
+     "title": "Will Paik Jong-won achieve IPO dream for TheBorn Korea (Korea Times, 2024)",
+     "url": "https://www.koreatimes.co.kr/www/biz/2024/10/602_375666.html",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "2025年初起，TheBorn Korea 接连遭质疑：春节火腿礼盒的猪肉含量与定价、「白石大酱」宣称国产却含中国产原料的原产地标示问题、宣称支持本地农户的套餐使用巴西鸡肉等；白种元3月14日公开道歉，3月17日股价跌至27,800韩元，约为上市首日的一半。",
+   "en": "From early 2025 TheBorn Korea faced a run of complaints: a Lunar New Year ham set's pork content and pricing, origin labeling on a doenjang marketed as domestic but containing Chinese ingredients, and a 'support local farmers' meal kit found to use Brazilian chicken. Paik apologized on March 14; on March 17 shares hit 27,800 won, about half the debut close.",
+   "year": 2025,
+   "num": "股价最低27,800韩元（2025-03-17）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Celebrity chef Paik Jong-won held over the flames amid roiling controversies (Korea JoongAng Daily, 2025)",
+     "url": "https://www.koreajoongangdaily.com/business/celebrity-chef-paik-jong-won-held-over-the-flames-amid-roiling-controversies/12315684",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "2025年5月前后，白种元宣布暂停电视活动、专注处理公司问题。",
+   "en": "Around May 2025 Paik announced he would step away from television to focus on the troubled company.",
+   "year": 2025,
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Chef Paik Jong-won to step away from TV to focus on scandal-hit TheBorn Korea (Korea JoongAng Daily)",
+     "url": "https://www.koreajoongangdaily.com/entertainment/chef-paik-jong-won-to-step-away-from-tv-to-focus-on-scandal-hit-theborn-korea/11947593",
+     "kind": "媒体"
+    }
+   ],
+   "note": "具体宣布日期未在页面核实，仅据标题"
+  },
+  {
+   "zh": "2025年11月，首尔江南警察署对《食品标示广告法》相关嫌疑作出处理：认为难以认定白种元本人违法、不予移送；公司 TheBorn Korea 及两名负责日常业务的员工被不拘留移送检方。",
+   "en": "In November 2025 Seoul's Gangnam police said it was hard to establish that Paik personally violated the Food Labeling and Advertising Act and did not refer him; TheBorn Korea and two staff in charge of daily operations were referred to prosecutors without detention.",
+   "year": 2025,
+   "date": "2025-11-10",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Paik Jongwon Cleared of Ingredient Origin Mislabeling Allegations; Staff Referred to Prosecution (Asia Economy, 2025-11-10)",
+     "url": "https://www.asiae.co.kr/en/article/2025111019232770430",
+     "kind": "媒体"
+    }
+   ],
+   "note": "仅涉该案；其他投诉（如原产地标示法、农地法等）结果未逐一核实"
+  }
+ ]
+}

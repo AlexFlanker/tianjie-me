@@ -47,6 +47,7 @@ POST = [
     ('"subject": "Denise Mueller-Korenek 领骑自行车 296 km/h"', '"subject": "Denise Mueller-Korenek 领骑自行车"', '同上（弹窗）'),
     ('431 km/h（2003 年起商业运营最高速度，龙阳路—浦东机场）', '431 km/h（2003 年 10 月试运营、2004 年起商业运营的最高速度，龙阳路—浦东机场；2021 年 5 月起降为 300 km/h）', '上海磁浮口径'),
     ('公有领域（No known copyright restrictions，美国国会图书馆 Flickr Commons）', '无已知版权限制（Flickr Commons 声明；1915 年前的美国作品，视为公有领域）', 'Flickr Commons 的权利声明不等于公有领域宣告'),
+    ('是乘客能买票坐到的最快速度。', '是普通乘客能坐到的最快速度（1976–2003）。', 'v2 核查后补：2001 年起已有自费太空游客，「买票能坐到的最快」改与论点同口径'),
 ]
 
 def apply(page):
@@ -76,4 +77,8 @@ def patch_data(A, B, C):
     for c in B['cells']:
         if c['track'] == 'body' and c['era'] == 2 and c['kmh'] < 100: c['kmh'] = 100; log.append('Murphy 96.6 → 100（1 英里 57.8 s）')
         if c['track'] == 'body' and c['era'] == 0: c['note'] = (c.get('note') or '') + ' 本页三处用了三个数：矩阵 65（估计）、速度尺 70.76（现代赛马纪录）、总线 60（前工业时代估计），都是「马能跑多快」的不同口径。'; log.append('马：三处口径说明')
+    for c in B['cells']:
+        al = c.get('also') or {}
+        if c['track'] == 'air' and c['era'] == 3 and '1931-09-13' in (al.get('speed') or ''):
+            al['speed'] = al['speed'].replace('1931-09-13', '1931-09-29'); log.append('S.6B 407.5 mph 是 1931-09-29（9-13 是施耐德杯比赛日）')
     return log

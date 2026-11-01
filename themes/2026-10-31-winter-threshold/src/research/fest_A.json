@@ -1,0 +1,1471 @@
+{
+  "route": "A",
+  "nodes": [
+    {
+      "id": "samhain",
+      "name": "萨温节 Samhain",
+      "name_local": "Samhain / Samonios",
+      "lane": "celtic",
+      "region": "爱尔兰、苏格兰、马恩岛（盖尔语区）",
+      "city": {
+        "name": "都柏林",
+        "lat": 53.35,
+        "lon": -6.26,
+        "elev_m": 20,
+        "koppen": "Cfb",
+        "koppen_note": "温带海洋性（Beck 2018 图：Cfb）",
+        "climate": {
+          "season": "收成结束、草停生长、牲口回圈的门槛：10 月平均气温 10.4 °C、11 月 7.3 °C；10 月平均 0.8 个空气霜日、4.9 个地面霜日，11 月 3.3 / 9.5 个——第一次空气霜通常落在 10 月底到 11 月（Met Éireann 都柏林机场 1991–2020 平均值）。",
+          "harvest": "爱尔兰主粮是春大麦、冬小麦与燕麦，8–9 月收完；马铃薯主季 9–10 月起收；草地畜牧是主体，牧草生长在 10–11 月停止，牲口转入舍饲（作物月份为通行农业口径）。",
+          "rain": "全年湿润、无旱雨季之分：10 月 78.4 mm、11 月 82.7 mm，为一年中最湿的月份之一（年 772.5 mm）。",
+          "frost": "都柏林机场 1991–2020：10 月平均空气霜 0.8 天、11 月 3.3 天、12 月 6.7 天，全年 35 天；地面霜 10 月 4.9 天、11 月 9.5 天。",
+          "sources": [
+            {
+              "title": "Met Éireann: Dublin Airport 1991–2020 climate averages",
+              "url": "https://www.met.ie/cms/assets/uploads/2023/09/www_met_ie_dublin_9120.htm"
+            },
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "高"
+        }
+      },
+      "date_rule": "固定 10/31 日落 → 11/1",
+      "date_2026": "2026-10-31",
+      "date_range": "固定",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "有争议。「萨温节是凯尔特新年」是 1901 年 John Rhys 据马恩岛等晚期民俗提出、Frazer 推广的解读；中世纪爱尔兰文献只把它写成「夏末」（samfuin）与四季分点之一，Hutton 1996 认为证据单薄。",
+      "origin": {
+        "year_label": "科利尼历（公元 1–2 世纪）SAMON 月 → 10 世纪《求婚于 Emer》列四季分点",
+        "text": "Samhain 在爱尔兰语里字面是「夏末」。Kuno Meyer 1888 年译出的中世纪故事《求婚于 Emer》（Tochmarc Emire）里的注释说「一年旧分两段：夏自 Beltaine（5 月 1 日）起，冬自 Samuin 即夏末起」，并把 Samuin、Oimolc、Beltine、Brón Trogaill 四个分点并列。更早的物证是法国出土的高卢科利尼铜历（Coligny），其中一个月名 SAMON（SAMONIOS），第 17 日标注 TRINOX SAMONI（「萨蒙三夜」），学界多认为对应一个节期，但该历是否以此月为岁首并无定论。"
+      },
+      "threshold": "《求婚于 Emer》的注释把一年切成夏（Beltaine 起）与冬（Samuin 起）两半；早期爱尔兰法典 Senchas Már 的注释说牲口 5 月初赶上夏牧场、11 月初赶回。Samhain 因此是清点牲口与存粮、决定宰杀哪些牲口过冬的时点，也是盖尔语区「夏」与「冬」的接缝（来源：CELT 电子文本库 Tochmarc Emire 译本第 232 页；Hutton 1996 第 35 章；Koch 2006）。",
+      "three": {
+        "dead": "中世纪文献写的是集会、宴饮、休战与超自然故事常在 Samhain 发生；「亡灵回家」的具体做法主要见于近代爱尔兰、苏格兰民俗记录，学界（Hutton、Fimi）提醒不能把后世民俗直接回推到前基督教时期。",
+        "light": "《Togail Bruidne Dá Derga》等文献提到 Samhain 篝火；近代爱尔兰、苏格兰高地的万圣节篝火有大量 18–19 世纪记录。Frazer 把 Beltaine 的火节推广到四个分点，Hutton 认为是误推。",
+        "food": "牲口回圈后的宰杀季：盐腌与鲜肉；近代民俗里的 colcannon（卷心菜土豆泥）、barmbrack（藏戒指的果子面包）属爱尔兰万圣节食物，年代较晚。"
+      },
+      "spread": "native",
+      "spread_text": "本土节日。盖尔语区（爱尔兰、苏格兰、马恩岛）的「夏末」与牲口回圈节点；随基督教日历，11/1 诸圣节与它重合，前夜被叫作 All Hallows' Eve；19 世纪随爱尔兰、苏格兰移民进入北美后，与气候、牲口的联系基本脱落。",
+      "timeline": [
+        {
+          "year": 150,
+          "year_label": "约 1–2 世纪",
+          "label": "科利尼铜历",
+          "text": "高卢科利尼历有 SAMON（SAMONIOS）月，第 17 日注 TRINOX SAMONI。",
+          "sources": [
+            {
+              "title": "Wikipedia: Samhain（引 Koch 2006；科利尼历条目）",
+              "url": "https://en.wikipedia.org/wiki/Samhain"
+            }
+          ]
+        },
+        {
+          "year": 950,
+          "year_label": "10 世纪",
+          "label": "《求婚于 Emer》",
+          "text": "注释把一年分为夏（Beltaine 起）与冬（Samuin 即「夏末」起），并列 Samuin、Oimolc、Beltine、Brón Trogaill 四分点。",
+          "sources": [
+            {
+              "title": "CELT (UCC): Tochmarc Emire, Kuno Meyer 译, Archaeological Review 1 (1888) p. 232",
+              "url": "https://celt.ucc.ie/published/T301021.html"
+            }
+          ]
+        },
+        {
+          "year": 1901,
+          "year_label": "1901",
+          "label": "Rhys 提出「凯尔特新年」",
+          "text": "John Rhys《Celtic Folklore: Welsh and Manx》据马恩岛把 10/31 叫「新年夜」等晚期民俗，推断 Samhain 是凯尔特新年；Frazer《金枝》推广此说。",
+          "sources": [
+            {
+              "title": "Wikipedia: Samhain（引 Rhys 1901 pp. 315–16；Frazer）",
+              "url": "https://en.wikipedia.org/wiki/Samhain"
+            },
+            {
+              "title": "Dimitra Fimi, 'Samhain, Halloween and the Celtic New Year'",
+              "url": "https://dimitrafimi.org/?p=2373"
+            }
+          ]
+        },
+        {
+          "year": 1996,
+          "year_label": "1996",
+          "label": "Hutton《Stations of the Sun》",
+          "text": "第 35 章「Samhain」认为「凯尔特新年」证据单薄，中世纪记录不能证明 11/1 是泛凯尔特大节。",
+          "sources": [
+            {
+              "title": "Ronald Hutton, The Stations of the Sun (OUP 1996), ch. 35–37",
+              "url": "https://archive.org/details/stationsofsunhis0000hutt"
+            }
+          ]
+        }
+      ],
+      "numbers": [],
+      "dispute": "① 是否「凯尔特新年」：Rhys 1901、Frazer 以晚期民俗推断「是」；Hutton 1996（第 35 章）认为证据「flimsy」，「中世纪记录不能证明 11/1 是泛凯尔特大节」；Fimi 指出唯一的前基督教凯尔特历——科利尼历——似以夏季开头，重建尚无定论（Minard 2006）。② 词源：传统释为「夏末」（*semo-）；Delamarre、Matasović 另提「集会」（*samoni-）一说。③ 科利尼历 SAMONIOS 是否即 Samhain、是否岁首，学界并未定论。",
+      "why": "它是整张图谱的「西端锚点」：北纬 53° 海洋性气候下，牲口回圈与夏冬接缝落在 11 月初，后来被诸圣节与万圣节叠上。",
+      "text": "萨温（Samhain）在爱尔兰语里就是「夏末」。10 世纪的故事《求婚于 Emer》给一年切成两半：夏从 5 月 1 日的 Beltaine 开始，冬从 Samhain 开始；早期爱尔兰法典的注释也说牲口 5 月初上夏牧场、11 月初赶回。所以这一天的实际内容是清点牲口、决定宰杀哪些过冬、储粮入仓——北纬 53° 的海洋性气候里，草停止生长、白昼缩到 9 小时多一点的时候。更早的高卢科利尼铜历里有一个 SAMONIOS 月，第 17 日标着「三夜」。至于「凯尔特新年」，那是 1901 年 John Rhys 从马恩岛晚期民俗推出来、Frazer 推广的解读；牛津的 Ronald Hutton 在《Stations of the Sun》里认为证据单薄。今天的万圣节篝火、面具、讨糖，哪些真能回溯到前基督教时代，学界并不乐观。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "CELT, University College Cork: Tochmarc Emire（Kuno Meyer 译，Archaeological Review 1, 1888）",
+          "url": "https://celt.ucc.ie/published/T301021.html",
+          "note": "一手（中世纪原典译本）"
+        },
+        {
+          "title": "Ronald Hutton, The Stations of the Sun: A History of the Ritual Year in Britain, OUP 1996, ch. 35 'Samhain'",
+          "url": "https://archive.org/details/stationsofsunhis0000hutt",
+          "note": "专著（目录核过，正文引文经维基与 Fimi 转引）"
+        },
+        {
+          "title": "Dimitra Fimi (Cardiff / Glasgow), 'Samhain, Halloween and the Celtic New Year'",
+          "url": "https://dimitrafimi.org/?p=2373",
+          "note": "学者博文（引 Hutton 1996、Davis 2009、Minard 2006）"
+        },
+        {
+          "title": "Wikipedia: Samhain",
+          "url": "https://en.wikipedia.org/wiki/Samhain",
+          "note": "二手（线索：Koch 2006、Rhys 1901、Senchas Már 注释）"
+        }
+      ],
+      "unverified": [
+        "Hutton 第 35 章的原话页码（361–369）只经维基转引，未见原书扫描页",
+        "Senchas Már 关于 5 月 / 11 月赶牛的注释原文未核"
+      ]
+    },
+    {
+      "id": "halloween",
+      "name": "万圣节 Halloween",
+      "name_local": "Halloween / Hallowe'en / Oíche Shamhna",
+      "lane": "celtic",
+      "region": "爱尔兰、苏格兰 → 北美 → 全球",
+      "city": {
+        "name": "纽约",
+        "lat": 40.7,
+        "lon": -74.0,
+        "elev_m": 10,
+        "koppen": "Cfa",
+        "koppen_note": "湿润亚热带（Beck 2018 图：Cfa，北缘）",
+        "climate": {
+          "season": "纽约 10 月 31 日处在初霜之前：中央公园 1991–2020 平均初霜 11 月 20 日（最早 10 月 15 日、最晚 12 月 22 日）；纽瓦克 11 月 8 日，肯尼迪机场 11 月 17 日。这一天是「秋末、霜前」，与爱尔兰的「草停牛归」不是同一个门槛。",
+          "harvest": "纽约州：苹果、南瓜 9–10 月采收（南瓜灯的季节性正来自此），玉米 10 月；都市本身无农事。",
+          "rain": "全年湿润、无旱雨季之分（Cfa）。",
+          "frost": "中央公园平均初霜 11 月 20 日（NYBG 引 1991–2020 数据）；NOAA 东北区域气候中心：纽约市区平均初霜（≤32 °F）在 11 月中下旬。",
+          "sources": [
+            {
+              "title": "New York Botanical Garden LibAnswers: first fall frost in the NYC area (1991–2020 data)",
+              "url": "https://libanswers.nybg.org/faq/377020"
+            },
+            {
+              "title": "NOAA Northeast Regional Climate Center blog 2019-10-08: first fall frost",
+              "url": "https://www.nrcc.cornell.edu/services/blog/2019/10/08/index.html"
+            },
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "高"
+        }
+      },
+      "date_rule": "固定 10/31",
+      "date_2026": "2026-10-31",
+      "date_range": "固定",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否（它是诸圣节前夜；「凯尔特新年」的说法见 Samhain 一卡的「岁首」争议）",
+      "origin": {
+        "year_label": "All Hallows' Eve（诸圣节前夜）→ 19 世纪爱尔兰 / 苏格兰移民 → 1917 / 1927 年加拿大报纸「trick or treat」→ 1950 年代以后的糖果与装饰生意",
+        "text": "Halloween 是 All Hallows' Eve（诸圣节前夜）的缩写，即 10 月 31 日夜。爱尔兰人在这一夜把大头菜（turnip）挖空刻成鬼脸、放蜡烛吓人——爱尔兰国家博物馆藏有 1943 年从多尼戈尔郡 Fintown 收来的一盏，捐赠者说那是当地 1900 年前后一直在做的样子；博物馆明说「今天流行的南瓜是这一爱尔兰传统在美洲的发展」。19 世纪爱尔兰与苏格兰移民把这一夜带到北美。「trick or treat」的最早印刷记录在加拿大：不列颠哥伦比亚大学《加拿大语历史原则词典》（DCHP-3）把 1917 年安大略 Sault Ste. Marie 报纸的「tricks or treats」列为最早，1927 年阿尔伯塔 Blackie 的报道是今天这一固定说法的最早出处。"
+      },
+      "threshold": "在爱尔兰，10 月底是牲口回圈、收成入仓、草停止生长的时点（见 Samhain 一卡）；到了纽约（北纬 40.7°，Cfa），万圣节与农事脱钩：它钉在公历 10/31，跟着移民走、跟着零售日历走，纽约 10 月底的平均初霜与它只是巧合地相邻。NRF 的调查显示 2026 年 49% 的消费者在 9 月或更早就开始买万圣节用品——节日的「门槛」已经从霜期变成了货架期。",
+      "three": {
+        "dead": "爱尔兰、苏格兰民俗：这一夜亡魂与「另一边」的生灵出来走动；面具与化装（guising）原为混在其中、不被认出。北美的 trick-or-treat 是 20 世纪的发展，与亡灵的关系已淡。",
+        "light": "爱尔兰的大头菜灯（jack-o'-lantern）→ 北美的南瓜灯；苏格兰、爱尔兰、威尔士的万圣节篝火。",
+        "food": "爱尔兰 barmbrack 果子面包（藏戒指）、colcannon；北美的糖果（NRF 2025：糖果 39 亿美元）、太妃苹果。"
+      },
+      "spread": "migration",
+      "spread_text": "移民 → 商业：19 世纪爱尔兰、苏格兰移民把前夜习俗带到北美，20 世纪前半叶在加拿大、美国定型为 trick-or-treat，1950 年代后由糖果、服装、装饰零售推动成全国性消费节日（NRF 自 2005 年起每年调查），再经影视与零售返销回欧洲、日本、澳大利亚——此时它与 10 月底的气候与农事已无关系。",
+      "timeline": [
+        {
+          "year": 1900,
+          "year_label": "约 1900",
+          "label": "多尼戈尔的大头菜灯",
+          "text": "爱尔兰国家博物馆藏 Fintown 的「鬼脸大头菜」（F1943.350），捐赠者称 1900 年前后当地一直这样做。",
+          "sources": [
+            {
+              "title": "National Museum of Ireland: Ghost turnip",
+              "url": "https://cms.museum.ie/en-IE/Collections-Research/Collection/Top-things-to-see-in-the-Irish-Folklife-Collection/Artefact/Ghost-turnip/b202e8ea-0728-4b3d-b0f1-82660fe45ce9"
+            }
+          ]
+        },
+        {
+          "year": 1917,
+          "year_label": "1917",
+          "label": "「tricks or treats」见报",
+          "text": "DCHP-3 列出安大略 Sault Ste. Marie《Sault Daily Star》1917 年 11 月 1 日「Tricks or treats you could hear the gangs call out」为最早记录。",
+          "sources": [
+            {
+              "title": "DCHP-3 (UBC): trick or treat",
+              "url": "https://dchp.arts.ubc.ca/entries/trick or treat"
+            }
+          ]
+        },
+        {
+          "year": 1927,
+          "year_label": "1927",
+          "label": "Blackie 的「trick or treat」",
+          "text": "阿尔伯塔 Blackie 1927 年 11 月的报道是今天固定说法的最早出处（CBC 作《Blackie Times》11 月 3 日；通行说法作《Lethbridge Herald》11 月 4 日）。",
+          "sources": [
+            {
+              "title": "CBC: Albertans may have been 1st to say 'trick or treat'",
+              "url": "https://amp.cbc.ca/lite/story/1.3829669"
+            },
+            {
+              "title": "City of Edmonton Archives: trick or treat",
+              "url": "https://www.edmonton.ca/city_government/edmonton_archives/trick-or-treat"
+            }
+          ]
+        },
+        {
+          "year": 1974,
+          "year_label": "1974",
+          "label": "格林威治村万圣节游行",
+          "text": "木偶与面具艺术家 Ralph Lee 发起，起初是邻里的孩子与朋友的巡游；2023 年办第 50 届。",
+          "sources": [
+            {
+              "title": "Wikipedia: New York's Village Halloween Parade",
+              "url": "https://en.wikipedia.org/wiki/New_York%27s_Village_Halloween_Parade"
+            },
+            {
+              "title": "Baruch College NYCdata: Halloween",
+              "url": "https://www.baruch.cuny.edu/nycdata/uniquely_nyc/halloween.htm"
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "year_label": "2025",
+          "label": "NRF：131 亿美元",
+          "text": "NRF / Prosper 调查：2025 年美国万圣节消费预计 131 亿美元，人均 114.45 美元，73% 的人过节。",
+          "sources": [
+            {
+              "title": "NRF press release 2025-09-18",
+              "url": "https://nrf.com/media-center/press-releases/nrf-consumer-survey-finds-halloween-spending-to-reach-record-13-1-billion"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026",
+          "label": "NRF：135 亿美元",
+          "text": "NRF / Prosper 2026 年 9 月 1–9 日调查：预计 135 亿美元，人均 115.14 美元，74% 的人过节。",
+          "sources": [
+            {
+              "title": "NRF: Halloween data and trends",
+              "url": "https://nrf.com/research-insights/holiday-data-and-trends/halloween"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "美国万圣节消费（2026 预期）",
+          "value": "135",
+          "unit": "亿美元",
+          "basis": "NRF / Prosper Insights & Analytics，2026 年 9 月 1–9 日调查 7,889 名消费者，误差 ±1.1 个百分点",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "NRF: Halloween data and trends",
+              "url": "https://nrf.com/research-insights/holiday-data-and-trends/halloween"
+            }
+          ]
+        },
+        {
+          "label": "美国万圣节消费（2025，创纪录）",
+          "value": "131",
+          "unit": "亿美元",
+          "basis": "NRF / Prosper，2025 年 9 月 2–9 日调查 8,045 人；人均 114.45 美元；服装 43 亿、装饰 42 亿、糖果 39 亿、贺卡 7 亿美元",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "NRF press release 2025-09-18",
+              "url": "https://nrf.com/media-center/press-releases/nrf-consumer-survey-finds-halloween-spending-to-reach-record-13-1-billion"
+            }
+          ]
+        },
+        {
+          "label": "人均万圣节支出（2026）",
+          "value": "115.14",
+          "unit": "美元",
+          "basis": "NRF 2026（2025 年 114.45 美元）",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "NRF: Halloween data and trends",
+              "url": "https://nrf.com/research-insights/holiday-data-and-trends/halloween"
+            }
+          ]
+        },
+        {
+          "label": "计划过万圣节的美国消费者比例（2026）",
+          "value": "74",
+          "unit": "%",
+          "basis": "NRF 2026（2025 年 73%）",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "NRF: Halloween data and trends",
+              "url": "https://nrf.com/research-insights/holiday-data-and-trends/halloween"
+            }
+          ]
+        },
+        {
+          "label": "9 月或更早开始采购的比例（2026）",
+          "value": "49",
+          "unit": "%",
+          "basis": "NRF 2026（2016 年为 34%）",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "NRF: Halloween data and trends",
+              "url": "https://nrf.com/research-insights/holiday-data-and-trends/halloween"
+            }
+          ]
+        },
+        {
+          "label": "格林威治村万圣节游行",
+          "value": "约 5 万化装参与者 / 约 200 万观众（主办方口径）",
+          "unit": "",
+          "basis": "主办方 halloween-nyc.com 历史页（经维基转引）；2024 年报 6.5 万参与、150 万观众",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "Wikipedia: New York's Village Halloween Parade",
+              "url": "https://en.wikipedia.org/wiki/New_York%27s_Village_Halloween_Parade"
+            }
+          ]
+        }
+      ],
+      "dispute": "① trick or treat 最早印刷记录：通行说法是 1927 年 11 月 4 日阿尔伯塔 Blackie《Lethbridge Herald》；CBC 2016 年报道引历史学家 Nicholas Rogers 称 1927 年 11 月 3 日《Blackie Times》；UBC 的 DCHP-3 词典则把 1917 年 11 月 1 日安大略 Sault Ste. Marie《Sault Daily Star》的「Tricks or treats」列为最早（变体），1924 年埃德蒙顿《Edmonton Bulletin》「Treat up—or tricks」，1927 年 Blackie 为「trick or treat」固定形式最早。② 村游行创办年：主办方与 NY1（2023 年「第 50 届」）口径为 1974 年；Baruch College NYCdata 作 1973 年。③ 游行路线：维基 / Time Out 作第六大道 Spring St → 16th St，Baruch 页作到 23rd St。",
+      "why": "它是「气候门槛」被移民与零售彻底置换的样本：爱尔兰的牲口季 → 北美的糖果季，日子不动，内容换光。",
+      "text": "Halloween 是 All Hallows' Eve——诸圣节前夜——的缩写。在爱尔兰，这一夜的灯是挖空的大头菜：爱尔兰国家博物馆藏着 1943 年从多尼戈尔郡收来的一盏「鬼脸大头菜」，捐赠者说这是当地 1900 年前后一直在做的东西，博物馆也明说「今天流行的南瓜，是这一爱尔兰传统在美洲的发展」。19 世纪爱尔兰、苏格兰移民把这一夜带到北美。「trick or treat」的最早印刷记录在加拿大：UBC 的《加拿大语历史原则词典》把 1917 年安大略的「tricks or treats」列为最早，而 1927 年阿尔伯塔小镇 Blackie 的报道，是今天这个固定说法的第一次见报。此后它成了零售日历上的节日：美国零售联合会的调查说，2025 年美国人为万圣节花了创纪录的 131 亿美元，2026 年预计 135 亿、人均 115 美元，近一半的人 9 月就开始采购。纽约格林威治村的万圣节游行从 1974 年一群邻居孩子的巡游，长成主办方口径 5 万化装者、200 万观众的夜游。日子还是 10 月 31 日，门槛已经从初霜换成了货架。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "NRF: Halloween Data and Trends（2026）",
+          "url": "https://nrf.com/research-insights/holiday-data-and-trends/halloween",
+          "note": "官方"
+        },
+        {
+          "title": "NRF press release, 2025-09-18: Halloween spending to reach record $13.1 billion",
+          "url": "https://nrf.com/media-center/press-releases/nrf-consumer-survey-finds-halloween-spending-to-reach-record-13-1-billion",
+          "note": "官方"
+        },
+        {
+          "title": "DCHP-3 (UBC): trick or treat",
+          "url": "https://dchp.arts.ubc.ca/entries/trick or treat",
+          "note": "大学词典（一手引文）"
+        },
+        {
+          "title": "CBC News 2016: Albertans may have been 1st to say 'trick or treat'",
+          "url": "https://amp.cbc.ca/lite/story/1.3829669",
+          "note": "媒体（引 Nicholas Rogers）"
+        },
+        {
+          "title": "City of Edmonton Archives: trick or treat",
+          "url": "https://www.edmonton.ca/city_government/edmonton_archives/trick-or-treat",
+          "note": "官方档案"
+        },
+        {
+          "title": "National Museum of Ireland: Ghost turnip (F1943.350)",
+          "url": "https://cms.museum.ie/en-IE/Collections-Research/Collection/Top-things-to-see-in-the-Irish-Folklife-Collection/Artefact/Ghost-turnip/b202e8ea-0728-4b3d-b0f1-82660fe45ce9",
+          "note": "博物馆"
+        },
+        {
+          "title": "Baruch College NYCdata: Halloween Parade",
+          "url": "https://www.baruch.cuny.edu/nycdata/uniquely_nyc/halloween.htm",
+          "note": "大学"
+        },
+        {
+          "title": "Wikipedia: New York's Village Halloween Parade",
+          "url": "https://en.wikipedia.org/wiki/New_York%27s_Village_Halloween_Parade",
+          "note": "二手"
+        }
+      ],
+      "unverified": [
+        "1927 年 Blackie 报道的报名与日期（Blackie Times 11/3 vs Lethbridge Herald 11/4）未见原件",
+        "「Hallowe'en」一词 1745 年首见（OED）未核；Burns 1785 年诗《Halloween》未核",
+        "主办方 halloween-nyc.com 官网未直接打开（经维基存档转引）"
+      ]
+    },
+    {
+      "id": "all-saints-souls",
+      "name": "诸圣节与诸灵节 All Saints' / All Souls'",
+      "name_local": "Sollemnitas Omnium Sanctorum / Commemoratio Omnium Fidelium Defunctorum",
+      "lane": "christian",
+      "region": "罗马 → 拉丁教会全境",
+      "city": {
+        "name": "罗马",
+        "lat": 41.9,
+        "lon": 12.5,
+        "elev_m": 20,
+        "koppen": "Csa",
+        "koppen_note": "地中海气候（Beck 2018 图：Csa）",
+        "climate": {
+          "season": "罗马 11 月初是地中海秋雨季的开始、橄榄采收与葡萄收后的季节；无霜、无长夜之迫（北纬 41.9°）。",
+          "harvest": "意大利中部：葡萄 9–10 月、橄榄 10 月底–12 月采收；冬小麦 10–11 月播种、次年 6–7 月收。",
+          "rain": "Csa：夏干冬湿，10–11 月为全年最湿的月份（通行气候口径）。",
+          "frost": "罗马市区冬季偶有霜，无固定「初霜日」口径。",
+          "sources": [
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "低"
+        }
+      },
+      "date_rule": "固定 11/1（诸圣）、11/2（诸灵）",
+      "date_2026": "2026-11-01",
+      "date_range": "固定",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否",
+      "origin": {
+        "year_label": "609 年万神殿改献 → 731–741 年格里高利三世 → 835 / 837 年格里高利四世 → 998 年或 1030 年后奥迪洛定诸灵节",
+        "text": "罗马原本在 5 月 13 日纪念众殉道者：609 年教宗博尼法斯四世把万神殿改献为「圣母与众殉道者」教堂（《教宗名录》Liber Pontificalis）。11 月 1 日的最早证据是教宗格里高利三世（731–741）在圣彼得大殿献了一座「诸圣」小堂；英格兰的阿尔昆 800 年已在 11/1 守此节。12 世纪根布卢的西吉贝尔《编年史》835 年条记：「在教宗格里高利（四世）的建议下、全体主教同意，皇帝路易（虔诚者）下令高卢与日耳曼在 11 月朔日守诸圣节」。诸灵节（11/2）由克吕尼修院院长奥迪洛为克吕尼系修院所定，传统系于 998 年。"
+      },
+      "threshold": "教会日历把「众圣」与「众亡者」放在 11 月初，是日耳曼—法兰克教区的决定（Fimi 引 Davis 2009），而不是从罗马 5 月的殉道者节、更不是从爱尔兰 Samhain 搬来的；罗马本地的 Csa 地中海气候 11 月初正值秋雨季开始、橄榄采收期，与北方「收成结束、牲口回圈」的门槛并不同步。所以这一组节日是「历法定日、气候跟着各地走」的典型。",
+      "three": {
+        "dead": "诸灵节为炼狱中的亡者祈祷、扫墓、点烛；中世纪英格兰的 souling：穷人挨户要「灵魂饼」（soul cake），每得一块便为施主家亡者祈祷一次（John Mirk《Festial》约 1380 年已称之为旧俗）。",
+        "light": "墓地点烛（意大利、波兰、法国等天主教地区 11/1–2 夜间墓园灯火）；中世纪英格兰诸圣夜鸣钟为亡魂祈祷。",
+        "food": "soul cakes（英格兰、威尔士），意大利各地的 ossa dei morti、fave dei morti 等「亡者骨头」「亡者蚕豆」甜点。"
+      },
+      "spread": "church-calendar",
+      "spread_text": "随拉丁教会日历传遍西欧，再随殖民与传教到美洲、菲律宾等地；日子钉在公历 11/1–2，不随当地气候移动——这正是南半球安第斯「春天过亡灵节」的来源。",
+      "timeline": [
+        {
+          "year": 609,
+          "year_label": "609",
+          "label": "万神殿改献",
+          "text": "教宗博尼法斯四世把万神殿改献为圣母与众殉道者教堂，纪念日 5 月 13 日。",
+          "sources": [
+            {
+              "title": "Britannica: All Saints' Day",
+              "url": "https://www.britannica.com/topic/All-Saints-Day"
+            },
+            {
+              "title": "Roger Pearse: 'All Saints: the edict of Louis in 835'（引 Liber Pontificalis；该文作 607 年）",
+              "url": "https://roger-pearse.com/weblog/2019/10/08/all-saints-the-edict-of-louis-in-835-establishing-the-date-as-1st-november"
+            }
+          ]
+        },
+        {
+          "year": 735,
+          "year_label": "731–741",
+          "label": "格里高利三世",
+          "text": "在圣彼得大殿献「诸圣」小堂，Britannica 称这是 11 月 1 日的最早证据。",
+          "sources": [
+            {
+              "title": "Britannica: All Saints' Day",
+              "url": "https://www.britannica.com/topic/All-Saints-Day"
+            }
+          ]
+        },
+        {
+          "year": 835,
+          "year_label": "835 / 837",
+          "label": "格里高利四世与路易",
+          "text": "西吉贝尔《编年史》835 年条：教宗格里高利建议、皇帝路易下令高卢与日耳曼在 11 月朔日守诸圣节；Britannica 作 837 年。",
+          "sources": [
+            {
+              "title": "Roger Pearse 引 Sigebert of Gembloux, Chronographia, MGH SS 6",
+              "url": "https://roger-pearse.com/weblog/2019/10/08/all-saints-the-edict-of-louis-in-835-establishing-the-date-as-1st-november"
+            },
+            {
+              "title": "Britannica: All Saints' Day",
+              "url": "https://www.britannica.com/topic/All-Saints-Day"
+            }
+          ]
+        },
+        {
+          "year": 998,
+          "year_label": "998（或 1030 年后）",
+          "label": "奥迪洛定诸灵节",
+          "text": "克吕尼院长奥迪洛（994–1049 在任）命克吕尼系修院于 11/2 为众亡者祈祷。",
+          "sources": [
+            {
+              "title": "Wikipedia: Odilo of Cluny（引 Catholic Encyclopedia 1911 'St. Odilo'）",
+              "url": "https://en.wikipedia.org/wiki/Odilo_of_Cluny"
+            }
+          ]
+        },
+        {
+          "year": 1380,
+          "year_label": "约 1380",
+          "label": "Mirk 记 souling",
+          "text": "John Mirk《Festial》把买饼施穷人、为亡者赎炼狱写成旧俗。",
+          "sources": [
+            {
+              "title": "Medieval Histories: Soul Cakes and Souling（引 Mirk, Festial, ed. Powell 2009, p. 270）",
+              "url": "https://www.medieval.eu/soul-cakes-and-souling/"
+            }
+          ]
+        }
+      ],
+      "numbers": [],
+      "dispute": "① 定 11/1 的教宗：一说格里高利三世（731–741）为圣彼得大殿诸圣小堂献堂（Britannica 称最早证据）；一说格里高利四世于 835 年（西吉贝尔《编年史》，路易皇帝敕令）或 837 年（Britannica）推行全教会。两说可并存：前者是罗马本地日期，后者是法兰克帝国推行。② 万神殿改献年份：609（Britannica）、610（通行）、607（Pearse 引《教宗名录》）。③ 奥迪洛定诸灵节：传统 998 年（Catholic Encyclopedia）；维基引 Löffler 称「大概不在 998 而在 1030 年后」。",
+      "why": "它是整个欧洲 11 月初「亡灵节」的历法骨架：日子由教会定死，气候各地各走各的。",
+      "text": "罗马起初在 5 月 13 日纪念众殉道者——609 年教宗博尼法斯四世把万神殿改献为圣母与众殉道者教堂，用的就是这个日子。11 月 1 日的最早证据，是教宗格里高利三世（731–741 年在位）在圣彼得大殿献了一座「诸圣」小堂；英格兰的阿尔昆 800 年已在这天过节。真正把它推向整个西方教会的是 835 年（一说 837 年）：根布卢的西吉贝尔《编年史》记载，「在教宗格里高利的建议下、全体主教同意」，皇帝虔诚者路易下令高卢与日耳曼在 11 月朔日守诸圣节。第二天的诸灵节，则是克吕尼修院院长奥迪洛为克吕尼系修院定的，传统系于 998 年。从此西欧的「亡者之日」被钉在公历 11 月 1–2 日：罗马这时秋雨初来、橄榄正收，北海沿岸是草停牛归，安第斯高原却是春天——日子一样，门槛各异。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Britannica: All Saints' Day",
+          "url": "https://www.britannica.com/topic/All-Saints-Day",
+          "note": "权威百科"
+        },
+        {
+          "title": "Roger Pearse, 'All Saints: the edict of Louis in 835 establishing the date as 1st November'（引 Sigebert of Gembloux, Chronographia, ed. Bethmann, MGH SS 6, 1844）",
+          "url": "https://roger-pearse.com/weblog/2019/10/08/all-saints-the-edict-of-louis-in-835-establishing-the-date-as-1st-november",
+          "note": "学者博文，引一手拉丁文"
+        },
+        {
+          "title": "Wikipedia: Odilo of Cluny（引 Catholic Encyclopedia 1911）",
+          "url": "https://en.wikipedia.org/wiki/Odilo_of_Cluny",
+          "note": "二手"
+        },
+        {
+          "title": "Medieval Histories: Soul Cakes and Souling（引 Mirk, Festial, ed. Powell 2009）",
+          "url": "https://www.medieval.eu/soul-cakes-and-souling/",
+          "note": "二手，引原典"
+        }
+      ],
+      "unverified": [
+        "Catholic Encyclopedia 1913 'All Saints' Day' 原文（wikisource 404），Gregory III 一说只据 Britannica",
+        "奥迪洛 998 年敕令原文（Jotsald, Vita Odilonis）未核"
+      ]
+    },
+    {
+      "id": "rome-contrast",
+      "name": "罗马的亡灵节在别处：Parentalia 与 Lemuria",
+      "name_local": "Parentalia / Lemuria",
+      "lane": "rome",
+      "region": "古罗马",
+      "city": {
+        "name": "罗马",
+        "lat": 41.9,
+        "lon": 12.5,
+        "elev_m": 20,
+        "koppen": "Csa",
+        "koppen_note": "地中海气候（Beck 2018 图：Csa）",
+        "climate": {
+          "season": "Parentalia 的 2 月是冬雨季尾、春播前；Lemuria 的 5 月是麦收前——罗马自己的亡灵节避开了秋雨季。",
+          "harvest": "意大利中部：葡萄 9–10 月、橄榄 10 月底–12 月采收；冬小麦 10–11 月播种、次年 6–7 月收。",
+          "rain": "Csa：夏干冬湿，10–11 月为全年最湿的月份（通行气候口径）。",
+          "frost": "罗马市区冬季偶有霜，无固定「初霜日」口径。",
+          "sources": [
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "低"
+        }
+      },
+      "date_rule": "Parentalia 2/13–21；Lemuria 5/9、11、13",
+      "date_2026": "2026-02-13 → 02-21（Parentalia）；2026-05-09 / 11 / 13（Lemuria）",
+      "date_range": "固定（罗马历）",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否",
+      "origin": {
+        "year_label": "奥维德《岁时记》（公元 8 年前后）",
+        "text": "古罗马自己的「亡者之日」不在 11 月：Parentalia 从 2 月 13 日到 21 日的 Feralia 共九天，家人到墓前献花环、麦粒、盐、浸酒的面包和紫罗兰（奥维德《岁时记》卷二 533 行起），期间神庙关门、不办婚礼、官员不佩徽章；22 日 Caristia 家族聚餐。5 月 9、11、13 日的 Lemuria 则是家长夜里撒黑豆、驱逐无主游魂。11 月初在罗马历里没有亡灵节。"
+      },
+      "threshold": "罗马（Csa 地中海气候）的 2 月是冬雨季尾、春播前的闲月，5 月是麦收前；亡灵节落在农闲与「旧年末」（罗马历旧岁首在 3 月，2 月是年终月）而不是秋末。这说明「秋末祭亡」不是地中海本地的必然，欧洲 11 月的诸圣、诸灵是教会日历定下来的：8–9 世纪定诸圣，10–11 世纪定诸灵。",
+      "three": {
+        "dead": "Parentalia 到墓前献祭、Caristia 家族团聚；Lemuria 撒黑豆九次说「以此豆赎我与我家人」。",
+        "light": "无篝火传统记录；Parentalia 期间神庙熄火关门。",
+        "food": "墓前的盐、麦、浸酒面包；Caristia 家宴。"
+      },
+      "spread": "native",
+      "spread_text": "未传播；中世纪教会未沿用这两个日期。个别作者把 5 月 13 日的 Lemuria 与 609 年万神殿改献日（5 月 13 日）联系起来，属推测。",
+      "timeline": [
+        {
+          "year": 8,
+          "year_label": "约公元 8 年",
+          "label": "奥维德《岁时记》",
+          "text": "卷二记 Parentalia / Feralia / Caristia，卷五记 Lemuria。",
+          "sources": [
+            {
+              "title": "Wikipedia: Parentalia（引 Ovid, Fasti 2.533–616, 2.617–638）",
+              "url": "https://en.wikipedia.org/wiki/Parentalia"
+            }
+          ]
+        }
+      ],
+      "numbers": [],
+      "dispute": "Lemuria 5/13 与万神殿 5/13 改献是否有意承接，仅为部分作者推测，无一手证据。",
+      "why": "反例：同一座城（罗马）本地的亡灵节在 2 月与 5 月，说明 11 月的日子是教会后来定的，不是地中海气候长出来的。",
+      "text": "罗马人自己的亡灵节不在秋末。奥维德《岁时记》写得很细：2 月 13 日到 21 日的 Parentalia，家人到墓前放花环、麦粒、盐、浸过酒的面包和紫罗兰，这九天神庙关门、不办婚事、官员不佩徽章；21 日 Feralia 收尾，22 日 Caristia 全家聚餐。5 月 9、11、13 日的 Lemuria，一家之主半夜赤脚撒黑豆、驱走无主的游魂。这两个日子一个在冬雨季末、春播之前（罗马旧历以 3 月为岁首，2 月正是年终月），一个在麦收之前——都与「秋末」无关。所以后来欧洲 11 月 1–2 日的诸圣、诸灵，是教会定下的日期（8–9 世纪由罗马教宗与法兰克皇帝定诸圣，10–11 世纪由克吕尼修院推开诸灵），不是地中海气候自己长出来的门槛。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Wikipedia: Parentalia（引 Ovid, Fasti II）",
+          "url": "https://en.wikipedia.org/wiki/Parentalia",
+          "note": "二手，引原典行号"
+        },
+        {
+          "title": "Medieval Histories: Soul Cakes and Souling（引 Ovid, Fasti 2, Theoi 译本）",
+          "url": "https://www.medieval.eu/soul-cakes-and-souling/",
+          "note": "二手"
+        }
+      ],
+      "unverified": [
+        "奥维德《岁时记》卷五 Lemuria 黑豆段落的原文行号未开原典核",
+        "罗马 Csa 气候与 2 月 / 5 月农事的对应未查气象或 FAO 口径"
+      ]
+    },
+    {
+      "id": "bonfire-night",
+      "name": "篝火夜 Bonfire Night / Guy Fawkes Night",
+      "name_local": "Bonfire Night / Guy Fawkes Night",
+      "lane": "celtic",
+      "region": "英格兰 → 英联邦部分地区",
+      "city": {
+        "name": "刘易斯 Lewes",
+        "lat": 50.87,
+        "lon": 0.01,
+        "elev_m": 30,
+        "koppen": "Cfb",
+        "koppen_note": "温带海洋性（Beck 2018 图：Cfb）",
+        "climate": {
+          "season": "英格兰南岸 11 月 5 日：收成已毕、田里有秸秆与枯枝可烧、牧草停长、日落约 16:30——篝火夜落在「最黑的季节开始」的时点。",
+          "harvest": "英格兰：小麦、大麦 8–9 月收完；苹果 9–10 月；冬小麦 10–11 月播。",
+          "rain": "Cfb，全年湿润；10–12 月偏湿。",
+          "frost": "英格兰南岸初霜通常在 11 月（通行气候口径）。",
+          "sources": [
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "低"
+        }
+      },
+      "date_rule": "固定 11/5",
+      "date_2026": "2026-11-05",
+      "date_range": "固定",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否",
+      "origin": {
+        "year_label": "1605 年 11 月 5 日火药阴谋 → 1606 年《11 月 5 日纪念法》→ 1859 年废止",
+        "text": "1605 年 11 月 5 日，Guy Fawkes 在上议院地窖看守火药时被捕。次年 1 月议会提出、5 月 27 日御准《11 月 5 日纪念法》（Observance of 5th November Act 1605，3 Jas. 1 c. 1，1606 年 5 月 27 日御准），要求各教堂每年这天晨祷感恩、宣读法案，人人到场。这部法律在 1859 年 3 月 25 日被《纪念日纪念法》（Anniversary Days Observance Act 1859，22 Vict. c. 2）废止，但民间篝火与焰火延续至今。苏塞克斯的刘易斯（Lewes）是最大的一处：它同时纪念 1555–1557 年玛丽一世治下在镇上被烧死的 17 名新教徒，游行里抬 17 支燃烧的十字架。"
+      },
+      "threshold": "这是一个「议会定日」的节日，日子来自事件而非农事。但英格兰 11 月初本就是收成后田里有可烧之物、夜长、草停的时候——Hutton 与 Cressy 都认为英格兰的 11 月 5 日篝火与北威尔士、马恩岛、苏格兰中部的万圣节篝火之间「没有任何联系」，Cressy 把「源于国王得救之外的别的东西」的说法称作「臆测的胡说」；Frazer、Underdown 则视之为旧俗的新形态或万圣节的新教替代品。两说并列，学界主流偏向「替代而非承接」。",
+      "three": {
+        "dead": "无亡灵内容；烧的是 Guy Fawkes 与教宗的人偶——刘易斯 1850 年起加烧，今天只有 Cliffe 篝火会还烧，烧的是 1605 年在位的保罗五世，刘易斯的 17 支十字架纪念新教殉道者。",
+        "light": "篝火、焰火、燃烧的柏油桶（刘易斯 1832 年起就有把点燃的柏油桶滚下街道的记录；今天游行把第一只扔进乌斯河，纪念 1847 年治安官被扔下河）。",
+        "food": "烤土豆、parkin 姜饼、太妃糖（bonfire toffee）——通行的民俗说法。"
+      },
+      "spread": "native",
+      "spread_text": "本土（事件定日）：由 1606 年议会立法与《公祷书》的专用祷文维持了 250 多年，1859 年废止后靠地方篝火会延续；随英帝国传到纽芬兰、新西兰等地（南半球春天过篝火夜）；20 世纪末以来在英格兰面临美式万圣节的挤压（Cannadine 的观察）。",
+      "timeline": [
+        {
+          "year": 1605,
+          "year_label": "1605-11-05",
+          "label": "火药阴谋",
+          "text": "Guy Fawkes 在上议院地窖被捕。",
+          "sources": [
+            {
+              "title": "Wikipedia: Guy Fawkes Night（引 Cressy、Hutton）",
+              "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night"
+            }
+          ]
+        },
+        {
+          "year": 1606,
+          "year_label": "1606",
+          "label": "《11 月 5 日纪念法》",
+          "text": "3 Jas. 1 c. 1，1606 年 1 月提出、5 月 27 日御准：每年 11/5 教堂感恩晨祷、宣读法案。",
+          "sources": [
+            {
+              "title": "Wikipedia: Observance of 5th November Act 1605（引 Statutes at Large IV, 1811, pp. 631–2）",
+              "url": "https://en.wikipedia.org/wiki/Observance_of_5th_November_Act_1605"
+            }
+          ]
+        },
+        {
+          "year": 1679,
+          "year_label": "1679",
+          "label": "刘易斯最早记录",
+          "text": "刘易斯自 1679 年起有英格兰最铺张的 11 月 5 日庆祝记录。",
+          "sources": [
+            {
+              "title": "Wikipedia: Guy Fawkes Night",
+              "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night"
+            }
+          ]
+        },
+        {
+          "year": 1853,
+          "year_label": "1853",
+          "label": "刘易斯篝火会成立",
+          "text": "1846–1847 年与治安官、警察冲突后，1853 年 Cliffe 与 Lewes Borough 两个篝火会（Bonfire Societies）最早成立；1850 年起加烧教宗人偶。",
+          "sources": [
+            {
+              "title": "History (UK): Lewes and the Sussex bonfire season",
+              "url": "https://www.history.co.uk/articles/lewes-and-the-sussex-bonfire-season"
+            },
+            {
+              "title": "Wikipedia: Sussex Bonfire Societies",
+              "url": "https://en.wikipedia.org/wiki/Sussex_Bonfire_Societies"
+            }
+          ]
+        },
+        {
+          "year": 1859,
+          "year_label": "1859-03-25",
+          "label": "法案废止",
+          "text": "《纪念日纪念法》（22 Vict. c. 2）废止 1606 年法案。",
+          "sources": [
+            {
+              "title": "Wikipedia: Observance of 5th November Act 1605",
+              "url": "https://en.wikipedia.org/wiki/Observance_of_5th_November_Act_1605"
+            },
+            {
+              "title": "Wikipedia: Guy Fawkes Night",
+              "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "刘易斯篝火夜人流",
+          "value": "最多约 8 万",
+          "unit": "人",
+          "basis": "History (UK) 频道文章「regularly attended by as many as 80,000」；媒体口径，非官方统计",
+          "confidence": "低",
+          "sources": [
+            {
+              "title": "History (UK): Lewes and the Sussex bonfire season",
+              "url": "https://www.history.co.uk/articles/lewes-and-the-sussex-bonfire-season"
+            }
+          ]
+        },
+        {
+          "label": "刘易斯纪念的新教殉道者",
+          "value": "17",
+          "unit": "人",
+          "basis": "1555–1557 年在刘易斯被烧死；游行抬 17 支燃烧十字架",
+          "confidence": "中",
+          "sources": [
+            {
+              "title": "Wikipedia: Sussex Bonfire Societies",
+              "url": "https://en.wikipedia.org/wiki/Sussex_Bonfire_Societies"
+            },
+            {
+              "title": "History (UK)",
+              "url": "https://www.history.co.uk/articles/lewes-and-the-sussex-bonfire-season"
+            }
+          ]
+        }
+      ],
+      "dispute": "① 与 Samhain / 万圣节篝火的关系：Frazer 称之为「旧俗以新形态复现」，Underdown 视为万圣节的替代；Cressy（1992）称除国王得救外的来源说法是「speculative nonsense」，Hutton（Stations of the Sun）认为北威尔士、马恩岛、苏格兰中部的万圣节篝火与英格兰 11/5 篝火之间无任何联系。② 刘易斯篝火会成立年：History (UK) 作 1853；维基「Sussex Bonfire Societies」只说 1846 年冲突后、1850 年新会成立。③ 法案通过年：称「1605 年法」是按当时以 3 月 25 日为岁首的旧历，实际 1606 年 1 月提出、5 月御准。",
+      "why": "反例：一个由议会立法钉在 11 月 5 日的节日，却长在和 Samhain 篝火同一个「草停夜长」的季节里——它说明「同季节」未必「同来源」。",
+      "text": "1605 年 11 月 5 日，Guy Fawkes 在上议院地窖看守火药时被捕。次年 1 月议会提出、5 月御准《11 月 5 日纪念法》：全国教堂每年这天晨祷感恩、宣读法案、人人到场。这部法律一直用到 1859 年才废止，但篝火和焰火早已不靠法律活着。苏塞克斯小镇刘易斯是最大的一处：七个篝火会抬着 17 支燃烧的十字架游行，纪念 1555–1557 年在镇上被烧死的 17 名新教徒，再把点着的柏油桶滚下街道、扔进乌斯河——这套做法是 19 世纪中叶几次与治安官冲突之后定型的。它与萨温节篝火的关系，学界两派：Frazer 说这是「旧俗换了新形态」；Cressy 和 Hutton 则认为英格兰的 11 月 5 日篝火与威尔士、马恩岛、苏格兰的万圣节篝火「没有任何联系」。同一个草停夜长的季节，未必是同一个来源。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Wikipedia: Observance of 5th November Act 1605（引 Statutes at Large IV, 1811）",
+          "url": "https://en.wikipedia.org/wiki/Observance_of_5th_November_Act_1605",
+          "note": "二手，引一手"
+        },
+        {
+          "title": "Wikipedia: Guy Fawkes Night（引 Cressy 1992、Hutton 1996/2001、Cannadine）",
+          "url": "https://en.wikipedia.org/wiki/Guy_Fawkes_Night",
+          "note": "二手，引专著"
+        },
+        {
+          "title": "Susan Longfield Karr, 'Powder Treason, Bonfire Night, and the English Art of Reinventing the Past', Origins (Ohio State University), Oct 2025",
+          "url": "https://origins.osu.edu/read/gun-powder-plot-bonfire-guy-fawkes",
+          "note": "大学"
+        },
+        {
+          "title": "History (UK): Lewes and the Sussex bonfire season",
+          "url": "https://www.history.co.uk/articles/lewes-and-the-sussex-bonfire-season",
+          "note": "媒体"
+        },
+        {
+          "title": "Wikipedia: Sussex Bonfire Societies（引 Lewes Bonfire Council）",
+          "url": "https://en.wikipedia.org/wiki/Sussex_Bonfire_Societies",
+          "note": "二手"
+        }
+      ],
+      "unverified": [
+        "legislation.gov.uk 上 1606 年法与 1859 年废止法的页面未打开（Google Books 的 Statutes at Large 页被 robots 拒绝），年份据维基引的 Statutes at Large",
+        "Lewes Bonfire Council 官网未打开，8 万人流为媒体口径"
+      ]
+    },
+    {
+      "id": "martinmas",
+      "name": "圣马丁节 Martinmas / Sint-Maarten",
+      "name_local": "Sint-Maarten / Martinstag / Saint-Martin",
+      "lane": "christian",
+      "region": "荷兰、比利时、德国、法国、北欧部分地区",
+      "city": {
+        "name": "乌得勒支",
+        "lat": 52.09,
+        "lon": 5.12,
+        "elev_m": 5,
+        "koppen": "Cfb",
+        "koppen_note": "温带海洋性（Beck 2018 图：Cfb）",
+        "climate": {
+          "season": "11 月 11 日：牧草停长、牲口舍饲，宰杀腌制（鹅、猪）的季节；也是雇工合同续签的结账日。",
+          "harvest": "荷兰：谷物 8 月收完、马铃薯与甜菜 9–11 月收（甜菜收获常延至 11 月中）；之后进入冬闲。",
+          "rain": "Cfb，全年湿润，10–12 月偏湿（通行气候口径）。",
+          "frost": "荷兰中部初霜通常在 10 月底–11 月（通行气候口径）。",
+          "sources": [
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            },
+            {
+              "title": "Gemeente Herk-de-Stad (BE): 'Sinte-Matte en Herrek'（11/11 雇工续约、猪可宰）",
+              "url": "https://www.herk-de-stad.be/sites/default/files/public/SINTE-MATTE%20EN%20HERREK.pdf"
+            }
+          ],
+          "confidence": "低"
+        }
+      },
+      "date_rule": "固定 11/11",
+      "date_2026": "2026-11-11",
+      "date_range": "固定",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否，但它是农事年的「结算日」：荷兰 / 比利时佃农与雇工的合同在 11/11 续签（比利时 Herk-de-Stad 市政文件）；苏格兰把 Martinmas 列为法定 term day（租约、雇佣的起止日），1990 年法案把它改定为 11 月 28 日。",
+      "origin": {
+        "year_label": "图尔的圣马丁（397 年卒）→ 11/11 下葬日 → 低地国家、德国的灯笼与鹅",
+        "text": "圣马丁是 4 世纪图尔主教，传说他在亚眠城门把斗篷割半给乞丐；397 年去世，11 月 11 日是他的下葬纪念日。在荷兰、比利时、德国西部，这一晚孩子提着自制灯笼挨户唱歌讨糖（RTL Nieuws 的市镇调查发现它在天主教地区反而少见、北布拉班特仍偏宗教性；Meertens 研究所的民族学家 Irene Stengs 说它已成为一个世俗化的、越来越流行的节日）；乌得勒支近几十年发展出灯光雕塑游行，芬洛的游行以篝火收尾。德国有 Martinsgans（圣马丁鹅）的晚餐。在农事年里，11/11 是夏季工结束、雇工合同续签、牲口宰杀腌制的时点。"
+      },
+      "threshold": "北纬 52° 的 Cfb 气候里，11 月 11 日是牧草停长、牲口只能靠干草过冬的时候，所以是宰杀与腌制（鹅、猪）的季节，也是一年农事的结账日：荷兰与比利时的雇工合同这天续签（Herk-de-Stad 市政文件：「11 月 11 日，家仆与农场长工的合同续签」），苏格兰法律把 Martinmas 与 Whitsunday 并列为两个 term day，是租金与雇佣的法定节点。法国博若莱新酒的上市日原定 11 月 15 日（1951 年），1985 年 INAO 改为 11 月第三个周四，正是「新酒在圣马丁节前后开桶」的工业化版本。",
+      "three": {
+        "dead": "无亡灵内容；是圣人纪念日。",
+        "light": "孩子的手工灯笼（甜菜根、纸灯笼）挨户游行；部分地区有圣马丁篝火（Sint-Maartensvuur）；乌得勒支的灯光雕塑游行。",
+        "food": "鹅（Martinsgans）、新酒；荷兰孩子讨到的糖果与水果。"
+      },
+      "spread": "church-calendar",
+      "spread_text": "宗教日历：随圣人纪念日固定在 11/11，但习俗内容（灯笼、鹅、结账日）与北海沿岸的农事年紧扣；荷兰 2010 年代以来灯笼游行在新教地区复兴，带有「本土回应万圣节」的色彩（媒体口径）。",
+      "timeline": [
+        {
+          "year": 397,
+          "year_label": "397",
+          "label": "圣马丁去世",
+          "text": "图尔主教马丁去世，11 月 11 日为其纪念日。",
+          "sources": [
+            {
+              "title": "Herk-de-Stad (BE) 市政文件 'Sinte-Matte en Herrek'",
+              "url": "https://www.herk-de-stad.be/sites/default/files/public/SINTE-MATTE%20EN%20HERREK.pdf"
+            }
+          ]
+        },
+        {
+          "year": 1951,
+          "year_label": "1951",
+          "label": "博若莱新酒 11/15",
+          "text": "规则允许新酒自 11 月 15 日起上市（1937 年 AOC 原规定 12 月 15 日后）。",
+          "sources": [
+            {
+              "title": "Decanter: International Beaujolais Nouveau Day",
+              "url": "https://www.decanter.com/wine/wine-regions/burgundy-wine/beaujolais/international-beaujolais-nouveau-day-468715/"
+            }
+          ]
+        },
+        {
+          "year": 1985,
+          "year_label": "1985",
+          "label": "改为 11 月第三个周四",
+          "text": "INAO 把博若莱新酒上市日定为 11 月第三个周四。",
+          "sources": [
+            {
+              "title": "Decanter: International Beaujolais Nouveau Day",
+              "url": "https://www.decanter.com/wine/wine-regions/burgundy-wine/beaujolais/international-beaujolais-nouveau-day-468715/"
+            }
+          ]
+        },
+        {
+          "year": 1990,
+          "year_label": "1990",
+          "label": "苏格兰 term day 改日",
+          "text": "《Term and Quarter Days (Scotland) Act 1990》第 1 条：Martinmas 在租约等文件中指 11 月 28 日。",
+          "sources": [
+            {
+              "title": "legislation.gov.uk: Term and Quarter Days (Scotland) Act 1990 s.1",
+              "url": "https://www.legislation.gov.uk/ukpga/1990/22/section/1"
+            }
+          ]
+        }
+      ],
+      "numbers": [],
+      "dispute": "佃租日：比利时 Herk-de-Stad 文件说佃租在 11/30 圣安德烈日交、11/11 只是雇工续约日；苏格兰法律把 Martinmas 作租约 term day（1990 年前为 11/11，之后 11/28）。各地口径不同，11/11 并非普遍的交租日。",
+      "why": "它把「牲口回圈」往后推了 10 天、往东推到北海对岸：同一个纬度带上，宰鹅、结账、点灯的农事年终点。",
+      "text": "11 月 11 日是图尔主教圣马丁（397 年卒）的纪念日。在荷兰、比利时和德国西部，这一晚孩子提着自制的灯笼挨家唱歌讨糖；乌得勒支近几十年发展出灯光雕塑的游行，芬洛的游行以篝火收尾，德国人则吃圣马丁鹅。荷兰 Meertens 研究所的民族学家说，这个节近年在新教为主的北部和中部越来越流行。在农事年里它是结账日：比利时的市政文件写着，11 月 11 日「家仆与农场长工的合同续签」；苏格兰法律把 Martinmas 与 Whitsunday 并列为两个 term day，是租约与雇佣的法定起止点——1990 年的法案才把它改到 11 月 28 日。北纬 52° 的海洋性气候里，这正是牧草停长、牲口只能靠干草过冬的时候，所以也是宰杀腌制的季节。连法国博若莱新酒的上市日，也原定在 11 月 15 日，1985 年才改成 11 月第三个周四。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "NL Times 2025-11-11: Sint Maarten increasingly popular（引 Meertens Instituut Irene Stengs、RTL Nieuws 市镇调查）",
+          "url": "https://nltimes.nl/2025/11/11/kids-lanterns-singing-candy-sint-maarten-increasingly-popular-netherlands",
+          "note": "媒体，引研究机构"
+        },
+        {
+          "title": "Gemeente Herk-de-Stad (BE): 'Sinte-Matte en Herrek'",
+          "url": "https://www.herk-de-stad.be/sites/default/files/public/SINTE-MATTE%20EN%20HERREK.pdf",
+          "note": "政府（市政）"
+        },
+        {
+          "title": "legislation.gov.uk: Term and Quarter Days (Scotland) Act 1990, s.1",
+          "url": "https://www.legislation.gov.uk/ukpga/1990/22/section/1",
+          "note": "一手（法律）"
+        },
+        {
+          "title": "Decanter: International Beaujolais Nouveau Day（1951 / 1985 INAO）",
+          "url": "https://www.decanter.com/wine/wine-regions/burgundy-wine/beaujolais/international-beaujolais-nouveau-day-468715/",
+          "note": "行业媒体"
+        }
+      ],
+      "unverified": [
+        "Martinsgans 与「圣马丁节宰牲」的德语一手或博物馆来源未核（只有比利时市政文件的「猪可以在此时宰」）",
+        "INAO 1985 年法令原文未核",
+        "乌得勒支灯光游行（Sint Maarten Parade）主办方页面未开"
+      ]
+    },
+    {
+      "id": "lucia",
+      "name": "圣露西亚节 Sankta Lucia",
+      "name_local": "Luciadagen / Sankta Lucia",
+      "lane": "nordic",
+      "region": "瑞典、挪威、丹麦、芬兰（瑞典语区）",
+      "city": {
+        "name": "斯德哥尔摩",
+        "lat": 59.33,
+        "lon": 18.07,
+        "elev_m": 20,
+        "koppen": "Dfb",
+        "koppen_note": "湿润大陆性、温夏（Beck 2018 图：Dfb）",
+        "climate": {
+          "season": "12 月 13 日：白昼约 6 小时、地面常已积雪封冻，农事全停；它是「长夜」而非「收成」的门槛。",
+          "harvest": "瑞典中部：谷物 8–9 月收完，马铃薯 9–10 月；12 月无农事。",
+          "rain": "Dfb，全年有降水，冬季为雪。",
+          "frost": "斯德哥尔摩初霜通常在 10 月（通行气候口径）。",
+          "sources": [
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "低"
+        }
+      },
+      "date_rule": "固定 12/13",
+      "date_2026": "2026-12-13",
+      "date_range": "固定",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否",
+      "origin": {
+        "year_label": "13 世纪前后圣露西亚纪念日 → 1764 年西瑞典庄园的最早记录 → 1928 年斯德哥尔摩报纸选 Lucia",
+        "text": "北欧博物馆（Nordiska museet）的说法：在瑞典的天主教日历里，12 月 13 日是圣露西亚的纪念日（她的殉道日），16 世纪宗教改革后仍留着；这一夜在民间叫「Lusse 长夜」，被视为危险与超自然生灵出没的夜晚。最早的 Lucia 记录是 1764 年西瑞典 Horn 庄园；头戴灯烛的白衣 Lucia 最早见于 1820 年代西曼兰 Skinnskatteberg 庄园的一名雇工；1928 年《Stockholms Dagblad》办 Lucia 选美，获胜者头戴电灯烛冠游行，从此成为全国节目。这种面包 19 世纪末才开始加藏红花（源自荷兰的 duivekater），与 12 月 13 日绑定后才改叫 lussekatter——馆方未给出年代。"
+      },
+      "threshold": "斯德哥尔摩北纬 59.3°，12 月 13 日的白昼只有 6 小时上下；它是本题「越往北、光的节日越晚」的纬度延伸：都柏林的灯在 10 月底点，低地国家 11 月 11 日，瑞典 12 月 13 日——越靠近冬至、越靠北，点灯的日子越晚、越靠近真正的长夜。这是相关，不是因果：日子来自圣人日历，但它在瑞典被民俗重新解释为「一年最长的夜」。",
+      "three": {
+        "dead": "无亡灵内容；但「Lusse 长夜」被视为超自然生灵出没之夜（Nordiska museet）。",
+        "light": "白衣 Lucia 头戴烛冠，率队唱歌游行；学校、教堂、工作场所清晨的 Lucia 游行。",
+        "food": "lussekatter（藏红花 S 形面包）、姜饼、glögg 热酒。"
+      },
+      "spread": "church-calendar",
+      "spread_text": "宗教日历 → 20 世纪媒体与学校定型：1928 年报纸选美后成为全国习俗，再随瑞典移民与大使馆传到北美与各国。",
+      "timeline": [
+        {
+          "year": 1764,
+          "year_label": "1764",
+          "label": "最早记录",
+          "text": "西瑞典 Horn 庄园的 Lucia 记录。",
+          "sources": [
+            {
+              "title": "Nordiska museet: Lucia",
+              "url": "https://www.nordiskamuseet.se/en/traditions-celebrations/lucia/"
+            }
+          ]
+        },
+        {
+          "year": 1820,
+          "year_label": "1820 年代",
+          "label": "头戴灯烛的 Lucia",
+          "text": "西曼兰 Skinnskatteberg 庄园一名雇工头戴灯烛扮 Lucia。",
+          "sources": [
+            {
+              "title": "Nordiska museet: Lucia",
+              "url": "https://www.nordiskamuseet.se/en/traditions-celebrations/lucia/"
+            }
+          ]
+        },
+        {
+          "year": 1928,
+          "year_label": "1928",
+          "label": "报纸 Lucia 选美",
+          "text": "Stockholms Dagblad 办 Lucia 选美，获胜者戴电灯烛冠游行。",
+          "sources": [
+            {
+              "title": "Nordiska museet: Lucia",
+              "url": "https://www.nordiskamuseet.se/en/traditions-celebrations/lucia/"
+            }
+          ]
+        }
+      ],
+      "numbers": [],
+      "dispute": "「12 月 13 日曾是儒略历下的一年最长夜」是常见说法（瑞典对外机构常引），Nordiska museet 页面未作此说，只把它写成圣人纪念日与民俗「Lusse 长夜」；报纸选美年份 Nordiska museet 作 1928，通行作 1927。",
+      "why": "纬度阶梯的北端：北纬 59°，光的节日落在 12 月 13 日。",
+      "text": "斯德哥尔摩北纬 59°，12 月 13 日白昼只有六小时上下。这一天是圣露西亚的纪念日——北欧博物馆说，它在瑞典天主教日历里一直是 12 月 13 日，宗教改革后民间仍把这一夜叫「Lusse 长夜」，视为超自然生灵出没的夜晚。白衣、烛冠的 Lucia 其实很新：最早的记录是 1764 年西瑞典的一处庄园，头戴灯烛的形象见于 1820 年代，而 1928 年斯德哥尔摩一家报纸办了 Lucia 选美，获胜者戴着电灯烛冠游行，这才成了全国的节目。把它放进这张图谱，是因为它是「越往北、光的节日越晚」那条纬度阶梯的最北一级：都柏林 10 月底，低地国家 11 月 11 日，瑞典 12 月 13 日。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Nordiska museet: Lucia",
+          "url": "https://www.nordiskamuseet.se/en/traditions-celebrations/lucia/",
+          "note": "博物馆"
+        }
+      ],
+      "unverified": [
+        "「儒略历下 12/13 接近冬至」的说法未在官方页面核到",
+        "1927 vs 1928 报纸选美年份"
+      ]
+    },
+    {
+      "id": "todos-santos-andes",
+      "name": "安第斯的诸圣节 Todos Santos / Día de los Difuntos",
+      "name_local": "Todos Santos / Día de los Difuntos / Aya Markay Killa",
+      "lane": "andes",
+      "region": "玻利维亚、秘鲁高原（艾马拉 / 盖丘亚地区）",
+      "city": {
+        "name": "拉巴斯",
+        "lat": -16.5,
+        "lon": -68.15,
+        "elev_m": 3640,
+        "koppen": "Cwb",
+        "koppen_note": "高原气候：海拔 3,640 m，Beck 2018 图上市区高处为 ET（苔原），谷底为 Cwb/Cwc（冬干高地）；按 FAO 与艾马拉口径以「旱季 / 雨季」而非「冬 / 夏」划分",
+        "climate": {
+          "season": "南半球春天、雨季之初：艾马拉农事年把 10 月中到 11 月初视作旱季（Awtipacha）转雨季（Jallupacha）的交接，播种随雨开始；亡灵节落在「播种前求雨」而不是「收成后过冬」的门槛上。SENAMHI 2025 年 11 月气候摘要：La Paz–El Alto 站 11 月降水高于常年，La Paz Centro 11 月 11 日最低气温仍到 0.0 °C——高原春天仍有霜。",
+          "harvest": "玻利维亚高原：马铃薯、藜麦、蚕豆 10–12 月随雨播种，次年 3–6 月收；FAO GIEWS 2026-09-09 简报：主季收割 7 月开始、冬季作物 9 月仍在收，水稻 4 月收完，小季玉米 5 月播。",
+          "rain": "雨季 11 月–3 月、旱季 5 月–8 月（艾马拉农事年的 Jallupacha / Awtipacha；SENAMHI 2025 年 11 月摘要记 La Paz–El Alto 站 11 月降水高于常年）。",
+          "frost": "高原旱季（5–8 月）为霜季；11 月偶有霜（SENAMHI 2025-11-11 La Paz Centro 0.0 °C）。",
+          "sources": [
+            {
+              "title": "Edwin Conde Villarreal, 'Todos Santos en Bolivia'（Cambio；andesacd.org 转载）",
+              "url": "https://www.andesacd.org/wp-content/uploads/2016/12/Todos-Santos-en-Bolivia.pdf"
+            },
+            {
+              "title": "SENAMHI Bolivia: Resumen climático noviembre 2025",
+              "url": "https://senamhi.gob.bo/climatologia/2025/11_RESUMEN_CLIM%C3%81TICO_NOVIEMBRE_2025.pdf"
+            },
+            {
+              "title": "FAO GIEWS Country Brief: Bolivia (2026-09-09)",
+              "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=BOL"
+            },
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "中"
+        }
+      },
+      "date_rule": "固定 11/1（迎）、11/2（送）",
+      "date_2026": "2026-11-01",
+      "date_range": "固定",
+      "calendar_basis": "gregorian-fixed",
+      "was_new_year": "否；但在艾马拉农事年里它是旱季转雨季、播种开始的接缝。",
+      "origin": {
+        "year_label": "前西班牙时期的亡者崇拜（蒂瓦纳库、印加）→ 16 世纪末托莱多总督把亡者迁入教堂墓地 → 天主教 11/1–2 叠在艾马拉 / 盖丘亚的亡灵习俗上",
+        "text": "玻利维亚高原的 Todos Santos 把天主教的诸圣、诸灵节与安第斯的亡灵习俗叠在一起。马德里康普顿斯大学《Revista Española de Antropología Americana》2006 年的民族志（Fernández Juárez）记艾马拉人的做法：11 月 1 日正午，家里的 apxata（祭桌）要摆好、点上蜡烛，亡魂（ajayu）此刻走完长路回到家；祭桌铺黑布、架甘蔗，摆 ch'uñu 冻干薯、煮马铃薯、玉米、古柯叶、香烟与酒，墙边立「面包梯子」和 t'anta wawa（面包娃娃）、t'anta achachi（面包老人）——蜡烛点燃后要给这些面包人「施洗」；亡魂 11 月 1 日正午到家，2 日夜里返回，3 日正午 kacharpaya 送别（Conde 则作次日送别），之后孩子抱着面包娃娃玩、最后吃掉。殖民期文献（Arriaga）记载安第斯人在播种开始时向亡者献祭祈求丰收，Guamán Poma 画中亡者如种子、与雨相连。"
+      },
+      "threshold": "这是本题「历法搬家、气候不搬」的关键对照：日子来自罗马教会的 11/1–2，可拉巴斯（南纬 16.5°、海拔 3,640 m）这时是旱季转雨季、马铃薯随雨播种的春天。艾马拉农事年把 10 月中到 11 月初视作 Awtipacha（旱季）向 Jallupacha（雨季）的交接，所以亡魂回家被理解为「把雨和丰收带回来」——「亡者参与生产过程」（Fernández Juárez 2006, p. 167）。北半球是收成后请亡灵，安第斯是播种前请亡灵；同一个日期，门槛相反。",
+      "three": {
+        "dead": "11/1 正午点烛迎亡魂（有的人家放炸药迎接），apxata 祭桌摆亡者的照片、食物、古柯、酒；11/2 夜亡魂返回，11/3 正午 kacharpaya 送别。",
+        "light": "祭桌上的蜡烛是亡魂到家的信号；墓园守夜。",
+        "food": "t'anta wawa 面包娃娃、t'anta achachi 面包老人、面包梯子（助亡魂升天）、ch'uñu 冻干马铃薯、玉米、古柯叶与酒；送别后面包分食。"
+      },
+      "spread": "church-calendar",
+      "spread_text": "宗教日历叠本土：16 世纪西班牙殖民把 11/1–2 的教会日历带到安第斯；托莱多总督（16 世纪末）把亡者从家宅迁入教堂与新墓地，但亡魂回家、面包人、播种前献祭等习俗延续至今，与天主教的十字架、念珠并存于同一张祭桌。",
+      "timeline": [
+        {
+          "year": 1580,
+          "year_label": "16 世纪末",
+          "label": "托莱多的措施",
+          "text": "总督托莱多把亡者迁出生者空间、迁入教堂与新墓地。",
+          "sources": [
+            {
+              "title": "Fernández Juárez 2006, REAA 36, p. 168",
+              "url": "https://revistas.ucm.es/index.php/REAA/article/download/REAA0606120163A/23307/24468"
+            }
+          ]
+        },
+        {
+          "year": 2006,
+          "year_label": "2006",
+          "label": "艾马拉 apxata 民族志",
+          "text": "Fernández Juárez《Apxatas de difuntos en el altiplano aymara de Bolivia》记录玻利维亚高原的祭桌与面包人。",
+          "sources": [
+            {
+              "title": "Revista Española de Antropología Americana 36: 163–180",
+              "url": "https://revistas.ucm.es/index.php/REAA/article/download/REAA0606120163A/23307/24468"
+            }
+          ]
+        }
+      ],
+      "numbers": [],
+      "dispute": "前西班牙连续性：民族志与媒体把今天的习俗上溯到蒂瓦纳库与印加的亡者崇拜（Conde Villarreal）；Fernández Juárez 2006 的农事材料全来自殖民期文献（Arriaga、Guamán Poma），当代艾马拉节日里「亡魂带雨」的说法是解释而非一手的前殖民证据。亡魂离开时间：Conde 作停留 24 小时（11/2 正午），Fernández Juárez 作 11/2 夜返回、11/3 正午送别。",
+      "why": "它是「历法搬家、气候不搬」最干净的对照：同一个 11 月 1 日，北海是草停牛归，安第斯是雨来播种。",
+      "text": "拉巴斯海拔 3,640 米、南纬 16.5°，11 月 1 日是春天——旱季正在转成雨季，马铃薯要随雨下种。可这一天过的正是罗马教会定下的诸圣、诸灵节。康普顿斯大学 2006 年的民族志记下艾马拉人的做法：11 月 1 日正午，家里的祭桌（apxata）铺黑布、架甘蔗、点上蜡烛，亡魂此刻走完长路回到家；桌上摆冻干薯、煮马铃薯、玉米、古柯叶、香烟和酒，墙边立着面包梯子和 t'anta wawa 面包娃娃——点烛之后还要给面包人「施洗」。亡魂 1 日正午到家，2 日夜里回去，3 日正午 kacharpaya 送别，孩子抱着面包娃娃玩，最后吃掉。殖民期文献早就记载，安第斯人在播种开始时向亡者献祭求丰收，Guamán Poma 的画里亡者像种子、和雨连在一起。北半球是收成后请亡灵回家，安第斯是播种前请亡灵带雨来：同一个日期，门槛正好相反。",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Gerardo Fernández Juárez, 'Apxatas de difuntos en el altiplano aymara de Bolivia', Revista Española de Antropología Americana 36 (2006): 163–180（UCM）",
+          "url": "https://revistas.ucm.es/index.php/REAA/article/download/REAA0606120163A/23307/24468",
+          "note": "大学期刊（民族志一手）"
+        },
+        {
+          "title": "Edwin Conde Villarreal, 'Todos Santos en Bolivia'（Cambio）",
+          "url": "https://www.andesacd.org/wp-content/uploads/2016/12/Todos-Santos-en-Bolivia.pdf",
+          "note": "媒体 / 二手"
+        },
+        {
+          "title": "SENAMHI Bolivia: Resumen climático noviembre 2025",
+          "url": "https://senamhi.gob.bo/climatologia/2025/11_RESUMEN_CLIM%C3%81TICO_NOVIEMBRE_2025.pdf",
+          "note": "气象部门"
+        },
+        {
+          "title": "FAO GIEWS Country Brief: Bolivia",
+          "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=BOL",
+          "note": "官方"
+        }
+      ],
+      "unverified": [
+        "Guamán Poma 的 Aya Marcay Quilla（11 月「抬亡者之月」）原文未核",
+        "拉巴斯 1991–2020 月降水常年值（SENAMHI 月报只给图不给数）",
+        "库斯科 / 秘鲁一侧的习俗（Puno 等）未核",
+        "拉巴斯柯本类型（ET vs Cwc）未在 Beck 2018 图上逐点核"
+      ]
+    },
+    {
+      "id": "halloween-south",
+      "name": "南半球春天里的万圣节",
+      "name_local": "Halloween (Australia / New Zealand)",
+      "lane": "contrast",
+      "region": "澳大利亚、新西兰",
+      "city": {
+        "name": "悉尼",
+        "lat": -33.87,
+        "lon": 151.21,
+        "elev_m": 20,
+        "koppen": "Cfa",
+        "koppen_note": "湿润亚热带（Beck 2018 图：Cfa）",
+        "climate": {
+          "season": "南半球仲春：悉尼 10 月 31 日白昼约 13 小时、日落 19 时以后，正是草长花开、夏令时已开始的季节——「黑夜与寒冷」的门槛整个缺席。",
+          "harvest": "新南威尔士：冬小麦 11–12 月收割，10 月底是收割前的灌浆期；悉尼本身无农事。",
+          "rain": "Cfa，全年有雨，夏秋偏多（通行气候口径）。",
+          "frost": "悉尼沿海几乎无霜。",
+          "sources": [
+            {
+              "title": "Beck et al. 2018, Present and future Köppen-Geiger climate classification maps at 1-km resolution, Scientific Data 5:180214 (1980–2016), doi:10.1038/sdata.2018.214",
+              "url": "https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959"
+            }
+          ],
+          "confidence": "低"
+        }
+      },
+      "date_rule": "固定 10/31",
+      "date_2026": "2026-10-31",
+      "date_range": "固定",
+      "calendar_basis": "southern-transplant",
+      "was_new_year": "否",
+      "origin": {
+        "year_label": "20 世纪末–21 世纪随美式零售与影视传入 → 2010 年代以来零售协会逐年统计",
+        "text": "澳大利亚的万圣节是整体移植：日子、南瓜、服装、trick-or-treat 全部照搬北半球，却落在南半球的仲春。澳大利亚零售协会（ARA；2026 年 2 月与 NRA 合并为澳大利亚零售理事会 ARC）与 Roy Morgan 的年度调查：2025 年约 480 万、超过五分之一的成年人过节，预计花 5 亿澳元、人均 103 澳元，比上年多 11%；2026 年 9 月 29 日–10 月 3 日调查 5,237 人，预计 5.1 亿澳元、440 万人（18%）、人均 117 澳元。零售协会称它「已成为跨代的社区庆祝」。"
+      },
+      "threshold": "没有门槛：悉尼 10 月 31 日白昼约 13 小时、已入夏令时、花开草长，「长夜、初霜、收成结束」全部缺席；参与率两成上下、按年波动，说明它靠的是零售与社区活动，而不是季节。它是「钉死在公历上的节日」最直白的反例。",
+      "three": {
+        "dead": "无亡灵内容。",
+        "light": "南瓜灯与装饰照搬；天黑在 19 时以后，讨糖在黄昏进行。",
+        "food": "糖果；南瓜在澳大利亚是全年蔬菜，无季节性。"
+      },
+      "spread": "transplant",
+      "spread_text": "移植 / 商业：随美国影视与零售进入，2010 年代起零售协会每年发布消费预测；参与率 18–21%，远低于美国的 73–74%。",
+      "timeline": [
+        {
+          "year": 2025,
+          "year_label": "2025",
+          "label": "ARA / Roy Morgan",
+          "text": "预计 5 亿澳元、约 480 万人、人均 103 澳元。",
+          "sources": [
+            {
+              "title": "Australian Retailers Association, 2025-10-15",
+              "url": "https://www.retail.org.au/media/halloween-to-cast-a-record-breaking-spell-over-aussie-shoppers"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "year_label": "2026",
+          "label": "ARC / Roy Morgan",
+          "text": "预计 5.1 亿澳元、约 440 万人（18%）、人均 117 澳元。",
+          "sources": [
+            {
+              "title": "Roy Morgan, 2026-10-20",
+              "url": "https://www.roymorgan.com/findings/10367-arc-roy-morgan-halloween-spending-forecasts-2026-aussies-keep-the-halloween-spirit-alive"
+            }
+          ]
+        }
+      ],
+      "numbers": [
+        {
+          "label": "澳大利亚万圣节消费（2026 预期）",
+          "value": "5.1",
+          "unit": "亿澳元",
+          "basis": "ARC / Roy Morgan，2026-09-29 至 10-03 调查 5,237 名 18 岁以上澳大利亚人；约 440 万人（18%）过节，人均 117 澳元",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "Roy Morgan 2026-10-20",
+              "url": "https://www.roymorgan.com/findings/10367-arc-roy-morgan-halloween-spending-forecasts-2026-aussies-keep-the-halloween-spirit-alive"
+            }
+          ]
+        },
+        {
+          "label": "澳大利亚万圣节消费（2025 预期）",
+          "value": "5.0",
+          "unit": "亿澳元",
+          "basis": "ARA / Roy Morgan 2025-10-15：约 480 万人（超过五分之一的成年人），人均 103 澳元",
+          "confidence": "高",
+          "sources": [
+            {
+              "title": "ARA 2025-10-15",
+              "url": "https://www.retail.org.au/media/halloween-to-cast-a-record-breaking-spell-over-aussie-shoppers"
+            }
+          ]
+        }
+      ],
+      "dispute": "2025 年数字：ARA 10 月稿作约 5 亿澳元 / 480 万人；部分媒体引用更早的 4.3 亿澳元 / 530 万人口径。本页取 ARA / Roy Morgan 的官方稿。",
+      "why": "反例：同一个日期搬到南半球仲春，「冬天的门槛」整个缺席，节日照过——说明日子一旦钉在公历上，气候就不再是必要条件。",
+      "text": "悉尼 10 月 31 日白昼约 13 小时，夏令时已经开始，天黑要到 19 时以后——万圣节在这里是仲春的节日，长夜、初霜、收成结束一样都没有。它是整体移植来的：日子、南瓜、服装、讨糖全照搬北半球。澳大利亚零售协会与 Roy Morgan 的年度调查说，2025 年约 480 万、超过五分之一的成年人过节，花了约 5 亿澳元；2026 年预计 5.1 亿澳元、440 万人、人均 117 澳元。参与率两成上下、按年起落，和美国的七成多不在一个量级。它是「钉死在公历上的节日」最直白的反例：日子一旦脱离季节，气候就只是背景。",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Roy Morgan / ARC: Halloween spending forecasts 2026 (2026-10-20)",
+          "url": "https://www.roymorgan.com/findings/10367-arc-roy-morgan-halloween-spending-forecasts-2026-aussies-keep-the-halloween-spirit-alive",
+          "note": "调查机构官方"
+        },
+        {
+          "title": "Australian Retailers Association: Halloween to cast a record-breaking spell over Aussie shoppers (2025-10-15)",
+          "url": "https://www.retail.org.au/media/halloween-to-cast-a-record-breaking-spell-over-aussie-shoppers",
+          "note": "行业协会官方"
+        }
+      ],
+      "unverified": [
+        "新西兰的零售数字未核",
+        "悉尼气象局（BoM）气候统计与日出日落未开（页面自算昼长即可）"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "nrf-halloween-2026",
+      "text": "美国零售联合会（NRF）与 Prosper 的年度调查：2026 年美国万圣节消费预计 135 亿美元、人均 115.14 美元、74% 的消费者过节；2025 年为创纪录的 131 亿美元、人均 114.45 美元、73%（服装 43 亿、装饰 42 亿、糖果 39 亿、贺卡 7 亿美元）。2026 年调查于 9 月 1–9 日访问 7,889 人，误差 ±1.1 个百分点。",
+      "value": "135 亿美元（2026）/ 131 亿美元（2025）",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "NRF: Halloween data and trends",
+          "url": "https://nrf.com/research-insights/holiday-data-and-trends/halloween"
+        },
+        {
+          "title": "NRF press release 2025-09-18",
+          "url": "https://nrf.com/media-center/press-releases/nrf-consumer-survey-finds-halloween-spending-to-reach-record-13-1-billion"
+        }
+      ]
+    },
+    {
+      "id": "ireland-cattle-samhain",
+      "text": "早期爱尔兰法典 Senchas Már 的注释说牲口 5 月初（Beltaine）赶上夏牧场、11 月初（Samhain）赶回；10 世纪《求婚于 Emer》把一年分为夏（Beltaine 起）与冬（Samhain 即「夏末」起）两半——10 月底在爱尔兰是草停、牛归、清点存粮与宰杀的门槛；都柏林机场 1991–2020 的平均值里，第一次空气霜通常落在 10 月底到 11 月。",
+      "value": "",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "CELT (UCC): Tochmarc Emire, Meyer 译 p. 232",
+          "url": "https://celt.ucc.ie/published/T301021.html"
+        },
+        {
+          "title": "Wikipedia: Samhain（引 Senchas Már 注释）",
+          "url": "https://en.wikipedia.org/wiki/Samhain"
+        },
+        {
+          "title": "Met Éireann: Dublin Airport 1991–2020 climate averages",
+          "url": "https://www.met.ie/cms/assets/uploads/2023/09/www_met_ie_dublin_9120.htm"
+        }
+      ]
+    },
+    {
+      "id": "all-saints-two-popes",
+      "text": "诸圣节定在 11 月 1 日有两说：一说教宗格里高利三世（731–741）在圣彼得大殿献「诸圣」小堂，这是 11/1 的最早证据；一说教宗格里高利四世在 835 年（西吉贝尔《编年史》，虔诚者路易敕令高卢与日耳曼）或 837 年（Britannica）推向全教会。罗马原来在 5 月 13 日纪念众殉道者（609 年万神殿改献）。",
+      "value": "731–741 / 835 或 837",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Britannica: All Saints' Day",
+          "url": "https://www.britannica.com/topic/All-Saints-Day"
+        },
+        {
+          "title": "Roger Pearse 引 Sigebert of Gembloux, Chronographia s.a. 835",
+          "url": "https://roger-pearse.com/weblog/2019/10/08/all-saints-the-edict-of-louis-in-835-establishing-the-date-as-1st-november"
+        }
+      ]
+    },
+    {
+      "id": "trick-or-treat-first-print",
+      "text": "「trick or treat」的最早印刷记录在加拿大：UBC《加拿大语历史原则词典》（DCHP-3）列 1917 年安大略 Sault Ste. Marie 的「tricks or treats」为最早变体，1927 年阿尔伯塔 Blackie 的报道是今天固定说法的最早出处。",
+      "value": "1917 / 1927",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "DCHP-3 (UBC): trick or treat",
+          "url": "https://dchp.arts.ubc.ca/entries/trick or treat"
+        },
+        {
+          "title": "CBC 2016",
+          "url": "https://amp.cbc.ca/lite/story/1.3829669"
+        }
+      ]
+    },
+    {
+      "id": "bonfire-act",
+      "text": "英格兰《11 月 5 日纪念法》（3 Jas. 1 c. 1）1606 年 1 月提出、5 月 27 日御准，要求每年 11/5 教堂感恩晨祷、宣读法案；1859 年 3 月 25 日被《纪念日纪念法》（22 Vict. c. 2）废止。",
+      "value": "1606–1859",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Wikipedia: Observance of 5th November Act 1605（引 Statutes at Large IV, 1811）",
+          "url": "https://en.wikipedia.org/wiki/Observance_of_5th_November_Act_1605"
+        }
+      ]
+    },
+    {
+      "id": "martinmas-term-day",
+      "text": "苏格兰法律把 Martinmas 与 Whitsunday 并列为租约与雇佣的两个 term day；《Term and Quarter Days (Scotland) Act 1990》第 1 条把 Martinmas 定为 11 月 28 日（此前为 11 月 11 日）。比利时 Herk-de-Stad 市政文件：11 月 11 日「家仆与农场长工的合同续签」。",
+      "value": "11/11 → 11/28（1990）",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "legislation.gov.uk: Term and Quarter Days (Scotland) Act 1990 s.1",
+          "url": "https://www.legislation.gov.uk/ukpga/1990/22/section/1"
+        },
+        {
+          "title": "Gemeente Herk-de-Stad: Sinte-Matte en Herrek",
+          "url": "https://www.herk-de-stad.be/sites/default/files/public/SINTE-MATTE%20EN%20HERREK.pdf"
+        }
+      ]
+    },
+    {
+      "id": "australia-halloween-2026",
+      "text": "澳大利亚零售协会（ARC）与 Roy Morgan 2026 年 10 月 20 日预测：万圣节消费 5.1 亿澳元、约 440 万人（18% 的成年人）、人均 117 澳元；2025 年约 5 亿澳元、480 万人、人均 103 澳元。",
+      "value": "5.1 亿澳元 / 18%",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "Roy Morgan 2026-10-20",
+          "url": "https://www.roymorgan.com/findings/10367-arc-roy-morgan-halloween-spending-forecasts-2026-aussies-keep-the-halloween-spirit-alive"
+        }
+      ]
+    },
+    {
+      "id": "beaujolais-nouveau",
+      "text": "博若莱新酒上市日：1937 年 AOC 规定 12 月 15 日后，1951 年改为 11 月 15 日，1985 年 INAO 定为 11 月第三个周四。",
+      "value": "1951 / 1985",
+      "confidence": "中",
+      "sources": [
+        {
+          "title": "Decanter: International Beaujolais Nouveau Day",
+          "url": "https://www.decanter.com/wine/wine-regions/burgundy-wine/beaujolais/international-beaujolais-nouveau-day-468715/"
+        }
+      ]
+    },
+    {
+      "id": "turnip-to-pumpkin",
+      "text": "爱尔兰国家博物馆藏 1943 年从多尼戈尔郡 Fintown 收来的「鬼脸大头菜」灯（F1943.350），捐赠者称 1900 年前后当地一直这样做；博物馆称「今天流行的南瓜是这一爱尔兰传统在美洲的发展」。",
+      "value": "",
+      "confidence": "高",
+      "sources": [
+        {
+          "title": "National Museum of Ireland: Ghost turnip",
+          "url": "https://cms.museum.ie/en-IE/Collections-Research/Collection/Top-things-to-see-in-the-Irish-Folklife-Collection/Artefact/Ghost-turnip/b202e8ea-0728-4b3d-b0f1-82660fe45ce9"
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "id": "tochmarc-emire-two-divisions",
+      "source_title": "Tochmarc Emire（《求婚于 Emer》），Kuno Meyer 英译，Archaeological Review 1 (1888), p. 232 注释",
+      "text": "For two divisions were formerly on the year, viz., summer from Beltaine (the first of May) … [and winter] from Samuin, i.e., the end of summer.",
+      "translation_or_gloss": "一年旧分两段：夏从 Beltaine（5 月 1 日）起，冬从 Samuin——即「夏末」——起。",
+      "edition_url": "https://celt.ucc.ie/published/T301021.html",
+      "confidence": "高"
+    },
+    {
+      "id": "tochmarc-emire-beltine-cattle",
+      "source_title": "Tochmarc Emire，Meyer 译 p. 232 注释",
+      "text": "To Beldine, i.e. Beltine, viz., a favouring fire. … [the druids] used to make two fires … to drive the cattle between them against the plagues, every year.",
+      "translation_or_gloss": "Beltine 即「吉火」：德鲁伊每年生两堆火，把牲口从中间赶过去以避瘟疫。",
+      "edition_url": "https://celt.ucc.ie/published/T301021.html",
+      "confidence": "高"
+    },
+    {
+      "id": "hutton-no-pan-celtic",
+      "source_title": "Ronald Hutton, The Stations of the Sun (OUP 1996), ch. 35 'Samhain'",
+      "text": "the medieval records furnish no evidence that 1 November was a major pan-Celtic festival",
+      "translation_or_gloss": "中世纪的记录不能证明 11 月 1 日是一个泛凯尔特的大节。（经维基百科 Samhain 条目转引，页码 361 附近；原书扫描受限）",
+      "edition_url": "https://archive.org/details/stationsofsunhis0000hutt",
+      "confidence": "中"
+    },
+    {
+      "id": "sigebert-835",
+      "source_title": "Sigebert of Gembloux, Chronographia, s.a. 835（MGH SS 6, ed. Bethmann 1844）",
+      "text": "Monente Gregorio papa et omnibus episcopis assentientibus, Ludowicus imperator statuit …",
+      "translation_or_gloss": "在教宗格里高利的建议下、全体主教同意，皇帝路易下令（高卢与日耳曼在 11 月朔日守诸圣节）。",
+      "edition_url": "https://roger-pearse.com/weblog/2019/10/08/all-saints-the-edict-of-louis-in-835-establishing-the-date-as-1st-november",
+      "confidence": "中"
+    },
+    {
+      "id": "fernandez-juarez-apxata",
+      "source_title": "Gerardo Fernández Juárez, 'Apxatas de difuntos en el altiplano aymara de Bolivia', REAA 36 (2006), p. 169 / p. 167",
+      "text": "La apxata debe estar dispuesta y sus velas encendidas justo el mediodía del primero de noviembre. … Los difuntos están implicados en el proceso productivo.",
+      "translation_or_gloss": "祭桌必须在 11 月 1 日正午摆好、点上蜡烛。……亡者参与生产过程。",
+      "edition_url": "https://revistas.ucm.es/index.php/REAA/article/download/REAA0606120163A/23307/24468",
+      "confidence": "高"
+    }
+  ],
+  "unverified": [
+    "Hutton《Stations of the Sun》第 35–38 章原文页码与原话只经维基 / Fimi 转引，archive.org 扫描受限",
+    "Catholic Encyclopedia 1913「All Saints' Day」原文（wikisource 404）",
+    "legislation.gov.uk 上的 1606 年法与 1859 年废止法页面未打开；Statutes at Large 的 Google Books 页被 robots 拒绝",
+    "1927 年 Blackie 报道的原件（Blackie Times 11/3 vs Lethbridge Herald 11/4）",
+    "「Hallowe'en」一词 1745 年首见（OED）与 Burns 1785《Halloween》未核",
+    "罗马、刘易斯、乌得勒支、斯德哥尔摩、悉尼的气象部门初霜 / 降水口径未开（只有 Köppen 类型据 Beck 2018，农事月份为通行口径）",
+    "FAO GIEWS 无爱尔兰、英国、意大利、荷兰、瑞典、澳大利亚国别简报；玻利维亚简报无完整作物日历",
+    "拉巴斯 1991–2020 月降水常年值（SENAMHI 月报只给图不给数）",
+    "Guamán Poma 的 Aya Marcay Quilla、Arriaga 的原文未开",
+    "Lewes Bonfire Council 官网未打开；8 万人流为媒体口径",
+    "格林威治村游行主办方官网 halloween-nyc.com 未直接打开",
+    "Martinsgans 的德语一手来源；INAO 1985 年法令原文",
+    "Lucia「儒略历下 12/13 接近冬至」的说法未在官方页面核到；报纸选美 1927 vs 1928",
+    "Parentalia / Lemuria 的奥维德原文行号未开原典（经维基转引）",
+    "西班牙（castañada / Don Juan Tenorio）与意大利 11/1 习俗（可选项）未搜，facts 中未写"
+  ]
+}

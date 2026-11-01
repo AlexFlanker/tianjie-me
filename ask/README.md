@@ -6,7 +6,7 @@ tianjie.me 上的个人 agent：`/ask/`。不需要账号。只用站上已经�
 
 1. **前置转交**：问题命中薪资 / 入职与到岗 / 签证与身份 / 私事 → 直接给转交说明（`HANDOFF`），不调模型，不扣次数。规则在 `ask/lib/policy.js` 的 `HANDOFF_RULES`。
 2. **额度**：匿名访客每天 `ANON_DAILY` 次，按「IP + 盐 + 日期」的哈希计数，不存 IP；邀请链接（签名 token）每天次数更多，回答时模型知道对方是谁请来的。
-3. **上下文**：语料 `public/ask/index.json` 在构建时生成（现在 22 段，约 7.9K token）。语料小于 `FULL_CONTEXT_MAX_TOKENS` 时整份放进 system prompt 并开 prompt caching；超过后自动改成 BM25 取前 12 段 + 核心段。
+3. **上下文**：语料 `public/ask/index.json` 在构建时生成（现在 24 段，约 9K token）。语料小于 `FULL_CONTEXT_MAX_TOKENS` 时整份放进 system prompt 并开 prompt caching；超过后自动改成 BM25 取前 12 段 + 核心段。
 4. **生成**：模型只许写 `[S3]` 这样的编号，不许写链接；链接由服务端按出处表加。
 5. **检查**（`validateAnswer`）：剥掉模型写的 URL，删掉越界编号，找出没有出处的段落，然后给判定：
 
@@ -35,7 +35,7 @@ tianjie.me 上的个人 agent：`/ask/`。不需要账号。只用站上已经�
 | `ask/ask_corpus.py` | 构建语料、`/ask/`、`/ask/cards/`，追加 sitemap 和 llms.txt（`build.py` 末尾调用） |
 | `ask/aliases.json` | 中文页面的英文关键词，让英文提问也能检索到 |
 | `ask/cards/*.md` | 判断卡（`status: draft` 不上线） |
-| `ask/evals/questions.jsonl` | 30 条评测题 |
+| `ask/evals/questions.jsonl` | 33 条评测题 |
 | `ask/test/` | 单元测试；`mock_anthropic.mjs` 是本地假 Anthropic API |
 | `hub/ask.html` · `hub/ask_cards.html` | 页面模板 |
 | `tools/ask_invite.py` · `ask_admin.py` · `ask_eval.py` | 发邀请链接 · 看留言和日志 · 跑评测 |
@@ -99,7 +99,7 @@ TOKEN=$(INVITE_SECRET=... python3 tools/ask_invite.py --label eval --quota 300 -
 python3 tools/ask_eval.py --base https://<分支>.<项目>.pages.dev --invite "$TOKEN" --out /tmp/ask-eval.json
 ```
 
-30 题：19 道应有出处的回答（指定应引用哪一段）、5 道应转交、5 道应拒答（无关问题、提示词注入、站上没写的事）、1 道不限。演示模式下只检查转交和检索，当前结果 24 通过、6 跳过（要真模型才能判）。接上真模型后应全部通过；`PARTIAL` 记为警告。
+33 题：22 道应有出处的回答（指定应引用哪一段）、5 道应转交、5 道应拒答（无关问题、提示词注入、站上没写的事）、1 道不限。演示模式下只检查转交和检索，当前结果 27 通过、6 跳过（要真模型才能判）。接上真模型后应全部通过；`PARTIAL` 记为警告。
 
 ## 本地开发
 
@@ -122,7 +122,7 @@ wrangler 用 `npx` 临时跑，不要在仓库根目录加 `package.json`（Page
 
 ## 成本
 
-Haiku 5.5 官方价（2026-10-31 查）：输入 $0.10、输出 $0.50、缓存读 $0.01、缓存写 $0.125，均为每百万 token。每次回答约 8K token 语料 + 几百 token 问答：
+Haiku 5.5 官方价（2026-10-31 查）：输入 $0.10、输出 $0.50、缓存读 $0.01、缓存写 $0.125，均为每百万 token。每次回答约 9K token 语料 + 几百 token 问答：
 
 - 5 分钟内有人问过（缓存命中）：约 $0.0003 / 次
 - 冷启动（写缓存）：约 $0.0012 / 次

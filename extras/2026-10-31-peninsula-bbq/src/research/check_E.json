@@ -1,0 +1,515 @@
+[
+ {
+  "where": "THESIS.nums[2].k",
+  "kind": "错",
+  "quote": "2025 年韩国「K-Food+」出口额，创新高；美国 18 亿美元居首，中国 15.8 亿美元第二。",
+  "issue": "口径混用：136.2 亿美元是 K-Food+（农食品＋农机、兽药等前后方产业）总额；美国 18 亿、中国 15.8 亿是「农食品」（104.1 亿美元）的国别数，来源没有给 K-Food+ 的国别数。英文同样把两种口径接在一起。",
+  "fix_zh": "2025 年韩国「K-Food+」（农食品加农机、兽药等相关产业）出口额，创新高；其中农食品出口 104.1 亿美元，美国 18 亿美元居首，中国 15.8 亿美元第二。",
+  "fix_en": "K-Food+ exports (agrifood plus related industries such as farm machinery and veterinary drugs) in 2025, a record. Of the $10.41B in agrifood alone, the US ($1.8B) was first and China ($1.58B) second.",
+  "evidence": "Korea JoongAng Daily「Food exports hit record high in 2025」：总额 $13.62 billion（K-Food Plus，含 farm machinery、veterinary medicine）；\"outbound shipments of agricultural and food products rose 4.3 percent on year to $10.41 billion\"；\"the United States was the biggest importer of Korean agro-food products … $1.8 billion\"；\"Exports to China went up 5.1 percent to $1.58 billion\"。国别段落是农食品口径。https://www.koreajoongangdaily.com/business/food-exports-hit-record-high-in-2025/12391090"
+ },
+ {
+  "where": "THESIS.nums[1].k",
+  "kind": "疑",
+  "quote": "美国首次超过中国成为第一大海外市场。",
+  "issue": "①「首次」没有来源：JoongAng 与 Korea Times 两篇报道都只说 2025 年美国第一、中国第二，没说「首次」；调查只比了 2020 与 2025 两个年份，美国可能在 2025 年以前就已超过中国（Korea Times 说中国 830 家比 2024 年还回升了 15%）。② 这批「韩国餐饮企业海外门店」大多不是烤肉店：全部 4,644 家海外门店中炸鸡占 39%、面包店 25.5%，韩餐馆只有 550 家（11.8%）。放在「韩烤端上了世界的餐桌」下面当证据，口径对不上。③ Korea Times 引同一调查为 1,104 家（56 个品牌），JoongAng 为 1,106 家。",
+  "fix_zh": "美国已取代中国成为第一大海外市场（这批海外门店以炸鸡、面包连锁为主）。",
+  "fix_en": "— now ahead of China (mostly fried-chicken and bakery chains).",
+  "evidence": "Korea JoongAng Daily 2026-02-05「U.S. tops China to become No. 1 'K-dining' market」：总数 4,644 家/56 国（2020 年 3,722）；美国 1,106（2020 年 528）；中国 830（2020 年 1,368）；业态：炸鸡 39%、面包店 25.5%、韩餐馆 550 家（11.8%）；文中无 first time。https://www.koreajoongangdaily.com/business/us-tops-china-to-become-no-1-k-dining-market/12091309 ；Korea Times 2026-02-06：\"the U.S. accounted for nearly 24 percent, or 1,104\"，同样没说首次。https://www.koreatimes.co.kr/business/20260206/korean-restaurant-chains-operating-over-4600-overseas-outlets-data"
+ },
+ {
+  "where": "THESIS.nums[0].k",
+  "kind": "疑",
+  "quote": "个地方能买到出口的韩牛：香港、马来西亚、柬埔寨、老挝、阿联酋（截至 2025 年底）。",
+  "issue": "出口目的地名单各来源互相矛盾，「5」这个大数字不稳：Korea Times（2025-10-30，阿联酋首运）说阿联酋是继香港、马来西亚、柬埔寨、老挝之后的第 5 个；世界日报（2025-08-22）列香港、马来西亚、柬埔寨、阿联酋、澳门共 5 国；etoday（2025-07-31，全国韩牛协会）说老挝是「继香港、澳门、马来西亚、柬埔寨、蒙古、阿联酋之后」的新市场。底稿 B（timeline[31]，含澳门无老挝）与 C（global[5]，含老挝无澳门）也互相矛盾。另，最晚的来源是 2025-10-30，「截至 2025 年底」无据。",
+  "fix_zh": "个地方能买到出口的韩牛：香港、马来西亚、柬埔寨、老挝、阿联酋（按韩国政府 2025 年 10 月的说法；也有报道把澳门、蒙古算进去）。",
+  "fix_en": "places import Hanwoo: Hong Kong, Malaysia, Cambodia, Laos and the UAE (Seoul’s count, Oct 2025; some reports also list Macau and Mongolia).",
+  "evidence": "Korea Times 2025-10-30：\"The UAE became Korea's fifth export market for hanwoo, following Hong Kong, Malaysia, Cambodia and Laos.\" https://www.koreatimes.co.kr/economy/20251030/korea-exports-premium-beef-to-uae-marking-5th-overseas-market-for-hanwoo ；世界日报 2025-08-22：「말레이시아, 캄보디아, 아랍에미리트(UAE), 마카오 등 총 5개국에 수출」https://www.segye.com/newsView/20250820518577 ；etoday 2025-07-31：「한우 수출은 홍콩, 마카오, 말레이시아, 캄보디아, 몽골, 아랍에미리트(UAE)에 이어 6번째다」（老挝首批 150 kg，7 月 22 日）https://www.etoday.co.kr/news/view/2493048 。建议把名单分歧列进 PENDING。"
+ },
+ {
+  "where": "THESIS.zh / THESIS.en（另见 META.desc「在本国顶住进口牛」、CH.cut.lede「守住家门」）",
+  "kind": "疑",
+  "quote": "('守住了', 0), ('本国的', 0), ('餐桌，', 0)",
+  "issue": "立论说过头，而且和页面自己的图表矛盾：SERIES 图显示牛肉自给率 2009、2013 年约 50%，2015 年 46.2%，2020–22 年约 35%；美国牛肉一家就占进口一半，2026 年关税归零。韩牛守住的是高端与礼品那一层（分级溢价、名节礼盒、精肉食堂），不是「本国的餐桌」整体。简报写明立论要「去验证或反驳」，数据只支持弱化版本。",
+  "fix_zh": "('守住了', 0), ('本国的', 0), ('高端餐桌，', 0)（英文同步；META.desc「在本国顶住进口牛」可改「在本国守住高端市场」）",
+  "fix_en": "Hanwoo held the top of the home table. Korean barbecue set the world's.",
+  "evidence": "hanwoo_B series.selfsuff（KREI 现案分析第 12 号 2016：2013 年 50.1%、2015 年 46.2%；USDA PSD 推算 2020–22 年 35/34/35%）；Asia Economy 2026-01-07：美国牛肉 2022 年创纪录 25.7 万吨、约占进口一半，2026-01-01 关税 0%。https://www.asiae.co.kr/en/article/2026010721371820180 ；https://repository.krei.re.kr/bitstream/2018.oak/22026/1/%ec%87%a0%ea%b3%a0%ea%b8%b0%20%ec%9e%90%ea%b8%89%eb%a5%a0%20%eb%8f%99%ed%96%a5%ea%b3%bc%20%ec%a0%84%eb%a7%9d.pdf"
+ },
+ {
+  "where": "HERO.sub.en",
+  "kind": "文",
+  "quote": "Fire: 1,700 years ago Chinese courts were already copying",
+  "issue": "中文是「中原人」，底稿是「中原贵族 / 贵人富室」（China's elite）；英文 courts 会被读成朝廷、宫廷。",
+  "fix_zh": "",
+  "fix_en": "Fire: 1,700 years ago China’s elite were already copying",
+  "evidence": "hist_A eras[0].facts[0]–[1]（《搜神记》「中国尚之」、《晋书·五行志》「贵人富室，必畜其器」）。"
+ },
+ {
+  "where": "CH.cut.lede",
+  "kind": "错",
+  "quote": "2025 年 1–7 月只出口了 27.2 吨，八成去了香港。",
+  "issue": "口径混用：「约 80%」是香港占 2024 年出口量的比例，不是 2025 年 1–7 月那 27.2 吨的去向。英文 \"four-fifths to Hong Kong\" 同。",
+  "fix_zh": "2025 年 1–7 月只出口了 27.2 吨（约 180 万美元）；按 2024 年的出口量算，约八成去了香港。",
+  "fix_en": "Jan–Jul 2025 exports came to just 27.2 tonnes (about $1.8M); in 2024 about four-fifths of the volume went to Hong Kong.",
+  "evidence": "世界日报 2025-08-22：「지난달 말까지 올해 한우 수출 물량은 27.2t」；「지난해 기준 한우 최대 수출국은 전체 수출 물량의 약 80%를 차지한 홍콩이다」。https://www.segye.com/newsView/20250820518577"
+ },
+ {
+  "where": "CH.cut.lede",
+  "kind": "疑",
+  "quote": "2008 年做到每头牛可溯源，2005 年起农户每卖一头牛交 2 万韩元做广告",
+  "issue": "① 2008 年 12 月只在饲养阶段实施，流通环节全面溯源是 2009 年 6 月（页面 SERIES 的 2008、2009 两条也这么写），「2008 年做到」说早了，英文 \"every animal traceable by 2008\" 同。② 自助金是屠宰时按头征收，用途是宣传与供需调节，不只「做广告」。",
+  "fix_zh": "2008–09 年建立从农场到肉铺的个体溯源，2005 年起农户每屠宰一头牛交 2 万韩元自助金做宣传",
+  "fix_en": "farm-to-counter traceability for every animal in 2008–09, farmers paying ₩20,000 a head at slaughter since 2005 for promotion",
+  "evidence": "hanwoo_B timeline[17]（KREI《农业展望 2010》：2009 年 6 月流通环节全面实施）、timeline[13]（YTN 2024-11-11 自助金委员长：每屠宰一头 2 万韩元，用于宣传与供需调节）。https://repository.krei.re.kr/bitstream/2018.oak/30302/1/e04-2010-22.pdf ；https://www.ytn.co.kr/_ln/0103_202411111701171735"
+ },
+ {
+  "where": "CH.world.lede（另见 build_theme.py 小标题「中国：从延边炭火到本土赛道」）",
+  "kind": "疑",
+  "quote": "中国从延边的炭火做到上百家连锁，又在 2017 年之后被本土品牌吸收成「中国烤肉的一支」",
+  "issue": "①「延边炭火→连锁」的因果没有来源：底稿里延边烤肉一条（cn.phases[0].facts[2]）置信度「低」，页面已按规则不显示；第一代连锁汉阳馆（1998 深圳，创办人车顺爱）、汉拿山（北京）都是 1992 年建交后的韩式路线，底稿没说它们从延边起家。②「2017 年之后被本土品牌吸收」是编辑归纳：底稿的「本土化」阶段从 2020 年算起，依据是红餐把韩式列为烤肉三大赛道之一、汉拿山缩店（底稿自注收缩不宜单归因于萨德）。③ 引号让「中国烤肉的一支」像引文，其实是底稿的阶段标题。",
+  "fix_zh": "中国从建交后的第一代连锁（汉阳馆、汉拿山）做到上百家门店，2017 年萨德之后韩国招牌遇冷，到 2020 年代，韩式成了中国烤肉的三大赛道之一",
+  "fix_en": "in China from the first post-1992 chains (Hanyangguan, Hannashan) to hundreds of outlets; after THAAD in 2017 the Korean label cooled, and by the 2020s Korean-style had become one of three lanes of Chinese barbecue",
+  "evidence": "market_C cn.phases[0].facts[2]（conf 低，note：延吉烤串扩散年代无可靠来源）；cn.phases[1].facts[1]–[2]；cn.phases[3].facts[3] note；cn.phases[4].facts[0]（红餐《烤肉品类发展报告 2024》：韩式、日式、中式三大细分赛道）https://www.jiemian.com/article/10837735.html"
+ },
+ {
+  "where": "CH.world.lede",
+  "kind": "文",
+  "quote": "在两个最大的海外市场走出了相反的曲线",
+  "issue": "「两个最大」只在农食品部/aT 连锁门店口径下成立（美 1,106、中 830）；按韩食振兴院全部韩餐馆口径（2017），日本 9,238 家多于美国 3,293 家。WORLD_NOTE 已强调两种口径不能混，这里应点明口径。",
+  "fix_zh": "在韩国餐饮企业的两个最大海外市场走出了相反的曲线",
+  "fix_en": "in the two biggest foreign markets for Korean restaurant brands",
+  "evidence": "market_C global[2]（2017：中国 15,985、日本 9,238、美国 3,293）与 global[3]（2025 aT：美 1,106、中 830）。https://www.fnnews.com/news/201801191712006381"
+ },
+ {
+  "where": "CH.fire.lede",
+  "kind": "疑",
+  "quote": "佛教与牛禁一再把肉从餐桌上拿走",
+  "issue": "两说写成一说：页面高丽一步自己写了「另一种看法：牛是耕畜、肉源稀少，才是根本原因」，朝鲜一步也写牛禁执行不力（1775 年节日宰牛两三万头）。导语把佛教与牛禁当作拿走肉的主因，与正文不一致。",
+  "fix_zh": "佛教戒杀、耕牛稀缺与牛禁一再让肉难上餐桌",
+  "fix_en": "Buddhist strictures, scarce oxen and cattle bans kept meat scarce",
+  "evidence": "hist_A eras[1].facts[2]（alt：经济与耕畜保护才是主因）；eras[3].facts[1]（1775 年 2–3 万头）；경북매일 2019-04-11 黄光海专栏：佛教是借口、肉贵才是本质。https://kbmaeil.com/article/201904100248104"
+ },
+ {
+  "where": "STAGE.maek.era",
+  "kind": "错",
+  "quote": "三国以前 · 貊炙",
+  "issue": "约 270 年正处在半岛三国时代（高句丽等，前 57–668），也在中国三国（220–280）之末，不是「三国以前」。底稿该时期标题是「史前至三国：貊炙」（c. 300 BCE–668）。英文 Antiquity 没问题。",
+  "fix_zh": "史前至三国 · 貊炙",
+  "fix_en": "Antiquity to the Three Kingdoms · Maekjeok",
+  "evidence": "hist_A eras[0]：era_zh「史前至三国：貊炙」，from c. 300 BCE to 668。"
+ },
+ {
+  "where": "STAGE.maek.text",
+  "kind": "文",
+  "quote": "认作「翟之食」",
+  "issue": "「翟之食」是作者干宝的评语，不是中原贵族自己「认作」夷狄之食。原文：「羌煮、貊炙，翟之食也。自太始以来，中国尚之。」",
+  "fix_zh": "干宝称之为「翟之食」",
+  "fix_en": "which Gan Bao called foods of the barbarians",
+  "evidence": "hist_A quotes[0].orig；Wikipedia「Jeok」引《搜神记》：「羌煮,貊炙,翟之食也。自太始以來,中國尚之。」https://en.wikipedia.org/wiki/Jeok"
+ },
+ {
+  "where": "STAGE.goryeo.title",
+  "kind": "文",
+  "quote": "「只有王与宰相才吃肉」",
+  "issue": "加了引号像原文，但徐兢写的是只有王与宰相才吃羊、猪（不是一切肉）；正文与底稿都写「吃羊、猪」，底稿还指出徐兢自己的记录说明猪肉汤、烤猪肉并未绝迹。英文标题 \"eat meat\" 同。",
+  "fix_zh": "只有王与宰相才吃羊、猪",
+  "fix_en": "Only the king and ministers ate mutton and pork",
+  "evidence": "경북매일 2019-04-11（黄光海引《高丽图经》）：「국왕이나 상신(相臣)이 아니면, 양과 돼지의 고기를 먹지 못한다」。https://kbmaeil.com/article/201904100248104 ；hist_A eras[1].facts[1]–[2]。"
+ },
+ {
+  "where": "STAGE.yuan.text",
+  "kind": "疑",
+  "quote": "高丽后期出现「雪夜觅」，被视为貊炙的复归",
+  "issue": "两说写成定论：底稿 alt 指出李规珍 2019 的文献梳理里，雪夜觅确切的文字记录始于朝鲜（1609 年仪轨，用猪肉），「高丽开城起源」属后人推定（1925《海东竹枝》、1985 李盛雨）。英文 \"Late Goryeo’s … seoryamyeok\" 同。",
+  "fix_zh": "通说认为高丽后期出现「雪夜觅」（文字记录最早见于 1609 年的朝鲜仪轨），被视为貊炙的复归",
+  "fix_en": "Food historians date the “snowy-night roast” (seoryamyeok) to late Goryeo — though its first written record is a 1609 Joseon court text — and read it as Maekjeok’s return.",
+  "evidence": "hist_A eras[2].facts[2]（alt 与 note）、eras[3].facts[4]（1609 年记录用猪肉）；이규진 2019，한국식생활문화학회지 34(6)。https://koreascience.kr/article/JAKO201909358631096.page?lang=en"
+ },
+ {
+  "where": "STAGE.dome.era（另见 TABLE.finish「铜盘时代」）",
+  "kind": "疑",
+  "quote": "南 · 铜盘",
+  "issue": "「铜」这个材质没有来源：底稿（grills[2]、eras[5].facts[5]）与首尔市媒体中心原文都只写「中间隆起、布满孔、有汤槽的불고기盘」，没有提铜（文中的「놋그릇」是盛바싹불고기的碗，不是烤盘）。英文作 \"the dome pan\"，中英不一致；TABLE.finish 叫「铜盘时代」、TABLE.grills 叫「穹顶汤盘」，全页叫法也不统一。",
+  "fix_zh": "南 · 穹顶汤盘（TABLE.finish 的「铜盘时代」同改为「穹顶汤盘时代」）",
+  "fix_en": "South · the dome pan",
+  "evidence": "首尔市媒体中心「달콤한 국물에 침이 꼴깍 ‘불고기’ 이야기」：「가운데가 불쑥 솟아나고 구멍이 숭숭 뚫린 불판」「국물받이가 있어서 거기에 밥을 비벼 먹는 맛이 일품」，无材质。https://mediahub.seoul.go.kr/archives/1269849 ；Lee & Cho 2013 摘要只给 1960s–90s 肉汤불고기的分期，也无材质。"
+ },
+ {
+  "where": "STAGE.samgyeop.text",
+  "kind": "文",
+  "quote": "可靠的解释是结构性的",
+  "issue": "底稿原话是「学界较可靠的解释」，页面改成「可靠的解释」、英文 \"The solid explanation\"，语气说满了。（「政府为压牛价鼓励吃猪肉」有据：首尔新闻 2017 转述周永河著作；周刊京乡 2026 原文没有这一句，引用时以首尔新闻为准。）",
+  "fix_zh": "较可靠的解释是结构性的",
+  "fix_en": "The better-supported explanation is structural",
+  "evidence": "hist_A eras[5].facts[4]；首尔新闻 2017-04-10：「1970년대 정부가 소고기값 폭등을 막기 위해 돼지고기 소비 육성책을 썼다」https://m.seoul.co.kr/news/2017/04/10/20170410017001 ；周刊京乡（2026-09）只写养猪现代化、外食扩张与 1980 年代中期便携燃气炉。https://weekly.khan.co.kr/article/202609250600031"
+ },
+ {
+  "where": "STAGE.smokeless.text",
+  "kind": "疑",
+  "quote": "连锁烤肉店普及了它和天花板上垂下的伸缩排烟管",
+  "issue": "「下吸式随连锁烤肉店在 1990–2000 年代普及」在底稿 eras[7].facts[1] 置信度为「低」（自注：韩国本土首家厂商与普及年代未查到可靠来源），按 METHOD 不该上正文；底稿也没说天花板伸缩排烟管是连锁店普及的。日本 1980 年代专利部分（grills[5]，conf 高）有据。英文 \"Korean chains spread it alongside the telescoping hoods\" 同。",
+  "fix_zh": "如今韩国烤肉店常见的是它和天花板上垂下的伸缩排烟管两种",
+  "fix_en": "today Korean grill houses use it or telescoping ceiling hoods",
+  "evidence": "hist_A eras[7].facts[1]（conf 低，note）；grills[5]（conf 高：Kurotaki 1980 美国专利、Abe 1984 韩国实用新案、Shinpo 1987 专利；「韩国烤肉店另有天花板伸缩上吸排烟管一派」）。https://patents.google.com/patent/KR870000298Y1/en"
+ },
+ {
+  "where": "STAGE.aged.text",
+  "kind": "疑",
+  "quote": "约 2008 年后随留美厨师回国流行起来",
+  "issue": "猜测写成定论：Esquire 原文是作者的推测——「아마도 2008년 리먼브라더스 금융위기로 미국에서 공부하고 활동하던 셰프들이 귀국하면서 생긴 현상은 아닐지 추측해본다」。英文 \"took off after about 2008 with chefs back from America\" 同。",
+  "fix_zh": "约 2008 年后流行起来（有人推测与金融危机后回国的留美厨师有关）",
+  "fix_en": "it took off after about 2008 (one writer guesses with chefs returning from America after the financial crisis)",
+  "evidence": "Esquire Korea 2021-11-08「種切熟火」。https://www.esquirekorea.co.kr/article/61005"
+ },
+ {
+  "where": "STAGE.aged.text",
+  "kind": "文",
+  "quote": "由店员全程代烤，有的进了米其林必比登名单",
+  "issue": "写成高端店一律代烤；底稿 eras[8].facts[2] 是「部分店由店员全程代烤」，Esquire 原文「직원들이 일일이 고기를 다 구워주고 잘라주는 경우가 많다」（很多店）。TABLE.staff 写「多由店员全程代烤」，两处宜一致。",
+  "fix_zh": "多由店员全程代烤，有的进了米其林必比登名单",
+  "fix_en": "with staff often cooking every piece — some on the Michelin Bib Gourmand list",
+  "evidence": "hist_A eras[8].facts[2]、table[1]；https://www.esquirekorea.co.kr/article/61005"
+ },
+ {
+  "where": "STAGE.okryu.text",
+  "kind": "疑",
+  "quote": "北边的「烤肉配冷面」，更多是战前平壤留下的记忆",
+  "issue": "无来源的编辑归纳：底稿 eras[4].facts[4] 自注「『烤肉+冷面』配对作为平壤固定吃法的直接史料未查到，此句后半为概括」；也没有资料说今天北边已没有这种吃法——页面自己写平壤烤鸭肉餐厅以冷面收尾。英文同。",
+  "fix_zh": "烤肉并不是它的主角。（删去破折号后半句）",
+  "fix_en": "Barbecue is not its star.",
+  "evidence": "hist_A eras[4].facts[4] note、north[1]、north[2]；Wikipedia「Okryu-gwan」（菜单只列冷面、鲻鱼汤饭、排骨汤、绿豆煎饼、神仙炉）。https://en.wikipedia.org/wiki/Okryu-gwan"
+ },
+ {
+  "where": "STAGE.duck.text（及 label / yr「2000 年代–2011」）",
+  "kind": "疑",
+  "quote": "饥荒之后朝鲜大力推广养鸭，金正日多次视察鸭场。",
+  "issue": "底稿 north[3] 置信度「低」（自注：推广年代缺直接来源，KCNA 只证实 2011 年一次斗湍鸭场视察），按 METHOD 不该上正文；「多次」只有一次有据。Koryo Tours 原文也没有任何养鸭史。时间标签「2000 年代–2011」也是由这条推出来的。",
+  "fix_zh": "2011 年金正日视察改造后的平壤斗湍鸭场（朝中社报道）。（label / yr 相应改为 2011，或删去此句）",
+  "fix_en": "Kim Jong Il toured the upgraded Tudan Duck Farm in 2011 (KCNA).",
+  "evidence": "hist_A north[3]（conf 低）；KCNA via GlobalSecurity 2011-10-11 https://www.globalsecurity.org/wmd/library/news/dprk/2011/dprk-111011-kcna01.htm ；Koryo Tours 原文只写统一大街、桌中自烤、生菜包、烧酒、鸭汤饭或冷面收尾，无开业年份与养鸭史。https://koryogroup.com/blog/pyongyang-duck-barbecue-restaurant-north-korea-travel-guide"
+ },
+ {
+  "where": "STAGE.nrest.text",
+  "kind": "错",
+  "quote": "丹东最大的「平壤高丽馆」当年停业",
+  "issue": "来源说它是「朝鲜所有海外餐厅里最大的」，不只是丹东最大；MAP_EXTRA 丹东条写「最大的海外朝鲜餐厅」，两处不一致。英文 \"Dandong’s largest\" 同。停业月份是 11 月。",
+  "fix_zh": "最大的海外朝鲜餐厅、丹东的「平壤高丽馆」当年 11 月停业",
+  "fix_en": "the largest North Korean restaurant abroad, Pyongyang Koryo-gwan in Dandong, shut that November",
+  "evidence": "38 North / NKEW（2018-02）：\"the largest of North Korea's overseas restaurants\"，\"shut down in November\"，\"originally employed 200 people\"。https://www.38north.org/articles/affiliates/north-korean-economy-watch/14626/"
+ },
+ {
+  "where": "STAGE.nrest.text",
+  "kind": "文",
+  "quote": "遍布中国东北、东南亚等地",
+  "issue": "缩窄了：来源列的中国网点是北京（望京玉流馆 2003）、上海、青岛、丹东，并非只在东北；国家还有越南、泰国、柬埔寨、老挝、蒙古、俄罗斯、尼泊尔、迪拜。英文 \"northeast China\" 同。",
+  "fix_zh": "遍布中国各地与东南亚、俄罗斯、中东等地",
+  "fix_en": "across China, Southeast Asia, Russia and the Gulf",
+  "evidence": "NKEW 2010-12-15：\"Okryugwan has outlets in China, Vietnam, Thailand, Cambodia, Laos, Mongolia, Russia, Nepal and Dubai\"；首家中国分店 2003 年北京。https://www.nkeconwatch.com/2010/12/15/north-korean-restaurants-generate-revenue-overseas/ ；hist_A north[9]。"
+ },
+ {
+  "where": "STAGE.dangogi.text",
+  "kind": "文",
+  "quote": "在大同江畔、玉流馆对面新建大型狗肉餐厅",
+  "issue": "NK News 原文是「玉流馆附近」（near the famous Okryugwan，位于玉流桥路对面、更靠近金日成广场），不是「玉流馆对面」；批准的是设计，日期 2021 年 8 月 16 日（年份对）。英文 \"opposite Okryugwan\" 同。",
+  "fix_zh": "批准在大同江畔、玉流馆附近新建大型狗肉餐厅的设计",
+  "fix_en": "approved the design of a large new dangogi restaurant on the Taedong near Okryugwan",
+  "evidence": "NK News / NK Pro 2023-03-01：\"Kim even personally approved the design of the new Dog Meat Delicacy House on Aug. 16, 2021\"；\"a prime riverfront location near the famous Okryugwan noodle restaurant\"。https://nknews.org/pro/kim-jong-un-approves-lavish-new-dog-meat-restaurant-on-pyongyang-riverfront"
+ },
+ {
+  "where": "STAGE.nban.text",
+  "kind": "文",
+  "quote": "1990 年代的饥荒里耕牛早被吃光",
+  "issue": "底稿是「可能早已被吃光」（一位脱北记者的推断），页面去掉了「可能」；英文写成复数 \"Defector journalists say\"，来源是 ASIAPRESS 一位记者的单篇文章。",
+  "fix_zh": "1990 年代的饥荒里耕牛很可能早被吃光",
+  "fix_en": "A defector journalist argues that without the ban the oxen would probably have been eaten in the 1990s famine.",
+  "evidence": "hist_A north[8]（en：\"A defector-journalist argues … would likely have been eaten out\"）；https://www.asiapress.org/rimjin-gang/2014/07/news/cows-punishment-unauthorized-slaughtering/"
+ },
+ {
+  "where": "TABLE.soju.text",
+  "kind": "错",
+  "quote": "1940 年代平壤的报纸已把「烧酒与불고기」并提",
+  "issue": "来源（Clien 帖子转述）是 1940 年 2 月 8 日《东亚日报》（汉城出版）一篇介绍平壤风俗与平壤人性格的特稿〈화문행각〉，不是「平壤的报纸」，也是单篇而非「1940 年代」的报纸；原文句子帖子没有给出，只有转述。英文 \"1940s Pyongyang papers\" 同。",
+  "fix_zh": "1940 年《东亚日报》一篇写平壤风俗的特稿已把「烧酒与불고기」并提",
+  "fix_en": "a 1940 Dong-a Ilbo feature on Pyongyang already paired them",
+  "evidence": "Clien 帖：「1940년 2월 8일 동아일보 기사 (화문행각) — 평양의 풍속과 평양 사람의 성격을 소개한 기사…『소주와 불고기』가 언급」（原文只有图片，无文字）。https://www.clien.net/service/board/park/12696120 ；hist_A table[6]。建议在 PENDING 补一句「未见原版面」。"
+ },
+ {
+  "where": "TABLE.ssam.text",
+  "kind": "疑",
+  "quote": "元代马端临说「高丽人以生菜包饭」",
+  "issue": "引号里的文言是从韩文回译的：来源首尔新闻（정종수 2022）只有韩译「고려 사람들은 생채로 밥을 싸 먹는다」，没有汉文原句，《文献通考》原文未核。中文读者会把它当原文引语。",
+  "fix_zh": "元代马端临的《文献通考》记高丽人用生菜包饭",
+  "fix_en": "a Yuan-era encyclopedia records Koreans wrapping rice in raw greens",
+  "evidence": "首尔新闻 2022-07-25 정종수「상추와 쌈밥」：马端临一句只有韩文译文、无汉字原文。https://www.seoul.co.kr/news/2022/07/25/20220725026009 。建议在 PENDING 补「马端临一句据韩文转述，未见原文」。"
+ },
+ {
+  "where": "TABLE.scissors.text",
+  "kind": "疑",
+  "quote": "一般认为始于 1970 年代：先剪冷面，后来剪烤肉、泡菜",
+  "issue": "唯一来源是 Stars and Stripes 转引《韩国时报》客座专栏作者梁东熙（Yang Dong-hee）一人的说法，谈不上「一般认为」；原文只说 1970 年代开始用剪刀剪冷面，没给剪烤肉、泡菜的先后与年代（底稿 note 也说宜补原文）。英文 \"usually dated to the 1970s\" 同。",
+  "fix_zh": "据《韩国时报》专栏作者梁东熙的说法，始于 1970 年代，起初用来剪冷面；如今烤肉、泡菜也都用剪刀剪",
+  "fix_en": "a Korea Times columnist dates table scissors to the 1970s, first for cold noodles; today they cut meat and kimchi too",
+  "evidence": "Stars and Stripes Korea「Scissors make the cut in Korean kitchens」：\"using scissors at the dining table started in the 1970s\"（Yang Dong-hee）；剪烤肉、泡菜一句是作者自述，无年代。https://korea.stripes.com/food-drink/scissors-make-the-cut-in-korean-kitchens.html"
+ },
+ {
+  "where": "TABLE.banchan.text（另见 CH.table.lede「小菜吃完还会再上」）",
+  "kind": "疑",
+  "quote": "小菜随烤肉一起上、吃完可以再要，是外国人最常提到的特点之一",
+  "issue": "底稿 table[5] 置信度「低」（来源是网媒 위키트리，免费续成惯例的年代也缺），按 METHOD 不该上正文；英文 \"the thing foreigners mention most\" 又把「之一」说成「最」。",
+  "fix_zh": "小菜随烤肉一起上、吃完通常可以再要",
+  "fix_en": "Banchan arrive with the meat and are usually refilled on request",
+  "evidence": "hist_A table[5]（conf 低，source wikitree.co.kr/articles/1143266）。"
+ },
+ {
+  "where": "TABLE.grills.text",
+  "kind": "文",
+  "quote": "铁丝网直火 → 穹顶汤盘 → 蜂窝煤",
+  "issue": "箭头暗示一个接一个，但按底稿年代，蜂窝煤（1950–80 年代，猪排骨、猪皮店）早于或并行于穹顶汤盘（1960–90 年代，牛肉불고기），是猪、牛两条线并存。",
+  "fix_zh": "铁丝网直火 → 蜂窝煤（猪）/ 穹顶汤盘（牛）",
+  "fix_en": "wire grill → coal briquettes (pork) / domed broth pan (beef)",
+  "evidence": "hist_A grills[1]（1920s–60s）、grills[2]（1960s–90s）、grills[3]（1950s–80s）。"
+ },
+ {
+  "where": "NS.s.li[1]",
+  "kind": "疑",
+  "quote": "等级与溯源号写在牌子上。",
+  "issue": "底稿没有「餐馆展示等级与溯源号」的来源；有据的是 2008 年 12 月起餐馆须标原产地、2009 年起消费者可凭 12 位个体识别号查询（零售标签）。把肉铺标签的做法套到「首尔的一桌」上，说过头。",
+  "fix_zh": "餐馆须标原产地，肉铺的标签上有等级与 12 位溯源号。",
+  "fix_en": "restaurants must show origin, and butcher labels carry the grade and the 12-digit traceability number.",
+  "evidence": "hanwoo_B timeline[17]（KREI《农业展望 2010》：2008-12 餐馆原产地标示；2009-06 流通环节全面溯源，12 位识别号）。https://repository.krei.re.kr/bitstream/2018.oak/30302/1/e04-2010-22.pdf"
+ },
+ {
+  "where": "NS.n.li[1]",
+  "kind": "文",
+  "quote": "烤鸭肉餐厅的流程与南边相同",
+  "issue": "正文 STAGE.duck、导语与底稿都是「几乎相同」，这里说成「相同」；英文 \"runs the Southern script\" 同。",
+  "fix_zh": "烤鸭肉餐厅的流程与南边几乎相同",
+  "fix_en": "The duck house runs almost the Southern script",
+  "evidence": "hist_A north[2]：「与南边的韩式烤肉流程几乎相同」。"
+ },
+ {
+  "where": "NS.s.li[0] ＋ hanwoo_B.cuts 分割图（见下条）",
+  "kind": "文",
+  "quote": "按部位点肉：牛里脊、牛排骨、五花、猪颈肉",
+  "issue": "「牛里脊」英文译作 sirloin，而分割图里同一个 등심 的英文是 \"Loin (chuck eye to ribeye)\"，中英名都不统一；且分割图里 등심、안심 两个大块都叫「里脊」，读者分不清点的是哪块。",
+  "fix_zh": "按部位点肉：牛肉眼、牛排骨、五花、猪颈肉",
+  "fix_en": "You order by cut — ribeye, short rib, pork belly, neck",
+  "evidence": "hanwoo_B cuts[1]（deungsim：里脊（肋眼、上脑）/ Loin (chuck eye to ribeye)）、cuts[3]（ansim：里脊（菲力）/ Tenderloin）。"
+ },
+ {
+  "where": "CUT_INTRO",
+  "kind": "文",
+  "quote": "「一头牛能分出 120 种味道」",
+  "issue": "Netflix 第 1 集简介原文是 \"the cow provides 120 different cuts and flavors\"（120 种部位与风味），页面只说「味道」；英文 \"120 flavours\" 同。（这条底稿 rhapsody[6] 置信度「低」，已用「原始出处找不到」对冲，可以保留，但与 METHOD「低置信度不上正文」冲突，见 METHOD 条。）",
+  "fix_zh": "「一头牛能分出 120 种部位与风味」",
+  "fix_en": "“120 cuts and flavours in one cow”",
+  "evidence": "Netflix「Hanwoo Rhapsody」(title 81473623) 第 1 集简介：\"the cow provides 120 different cuts and flavors\"；页面无 Margaret Mead。https://www.netflix.com/th-en/title/81473623"
+ },
+ {
+  "where": "GRADES_NOTE",
+  "kind": "文",
+  "quote": "肉质等级看大理石纹（1–9 号）",
+  "issue": "2019 年改版后，肉质等级是大理石纹、肉色、脂肪色、组织感分别评级、取最低一项；只说「看大理石纹」不准确。英文 \"Quality grade follows marbling\" 同。",
+  "fix_zh": "肉质等级以大理石纹（1–9 号）为主，肉色、脂肪色、组织感也分别评级、取最低一项",
+  "fix_en": "Quality grade rests mainly on marbling (No. 1–9), with meat colour, fat colour and texture graded separately and the lowest applying",
+  "evidence": "Newsis 2019-11-25（农食品部发布）：「근내지방도·육색·조직감·지방색 모든 항목을 각각 평가한 후 항목별로 가장 낮은 등급을 최종 등급으로 적용」；1++ 由「17% 이상(근내지방도 8, 9번)」改为「15.6% 이상(7, 8, 9번)」；育肥期「31.2개월에서 29개월로」——这几处页面写对了。https://www.newsis.com/view/NISX20191125_0000839787"
+ },
+ {
+  "where": "GRADES_NOTE",
+  "kind": "疑",
+  "quote": "2025 年 78.4%（阉牛 92.0%）",
+  "issue": "2025 年这两个数只出自一篇 brunch 个人博客，且该文没给出处，92.0% 原文是「接近 92.0%（육박）」。1993 年 10.7% 有农振厅网志可证。宜换成有出处的年份，或注明二手。",
+  "fix_zh": "2022 年 75.2%（畜产品品质评价院）",
+  "fix_en": "and 75.2% in 2022 (KAPE)",
+  "evidence": "brunch @architect-y：「2025년 전체 한우의 육질 1등급 이상 출현율이 78.4%이고 거세우의 1등급 이상 출현율은 92.0%에 육박」，无出处；2019 年 79.3% 才注明「축산물품질평가원 2020년 통계」。https://brunch.co.kr/@architect-y/1601 ；农振厅网志 2022-05：「한우 육질 1등급 이상 출현율은 1993년 10.7%에서 거세우를 기준으로 2019년 88.8%로」https://rda.go.kr/webzine/2022/05/sub1-3.html ；메트로신문 2023-03-27（据축산물품질평가원《2022 축산물등급판정 통계연보》）：「한우 육질 1등급 이상 출현율은 75.2%로 전년 대비 0.3% 포인트 증가」（全体韩牛）。https://www.metroseoul.co.kr/article/20230327500553"
+ },
+ {
+  "where": "GRILL[salchisal].tip.en",
+  "kind": "文",
+  "quote": "So marbled it turns greasy if overcooked — be quick.",
+  "issue": "中文「一过火就出油变柴」是脂肪化掉后肉变干变柴，英文写成 \"turns greasy\"（变油腻），意思反了；底稿英文是 \"overcooking renders it dry\"。",
+  "fix_zh": "",
+  "fix_en": "So marbled that overcooking renders the fat out and leaves it dry — be quick.",
+  "evidence": "hanwoo_B cuts[19]（salchisal）how_zh「避免过熟出油变柴」/ how_en「overcooking renders it dry」。"
+ },
+ {
+  "where": "GRILL_NOTE（另见 METHOD「烤肉计时器的秒数是店里常见做法的参考值」）",
+  "kind": "疑",
+  "quote": "秒数是韩国烤肉店常见做法的参考值（取区间中值）",
+  "issue": "底稿 grill_sec 没有任何来源：cuts 各条的 sources 只是分割标准与分割图，note 自称「经验区间」。说成「韩国烤肉店常见做法」，是把研究员的经验估计写成了对店家做法的描述。另：차돌박이 区间 5–10 秒，页面用 [8, 6]，不是「中值」。",
+  "fix_zh": "秒数是按常见厚度给的经验估计（取区间中值）",
+  "fix_en": "Times are rule-of-thumb estimates for typical thickness (mid-point of the range)",
+  "evidence": "hanwoo_B cuts[10]–[21] 的 note：「grill_sec 为韩烤店常见做法的经验区间…非官方标准」；sources 只有 law.go.kr 首页、머니투데이 2026-07-22（39 个小分割）、brunch「소 한 마리의 해부학」。"
+ },
+ {
+  "where": "SERIES.note（及图表 2025 年进口点）",
+  "kind": "错",
+  "quote": "2020–2022 年自给率与 2021、2025 年进口量按 USDA 胴体当量与新闻口径",
+  "issue": "① 图上 2025 年进口量 423.7 千吨只是 1–10 月累计，被当成全年画进折线，读者会以为 2025 年进口比 2021 年少很多；② 2021 年 471.2 千吨是 USDA「产品重量」，不是胴体当量。note 两处都没交代。",
+  "fix_zh": "2020–2022 年自给率按 USDA 胴体当量推算；2021 年进口量是 USDA 产品重量，2025 年只有 1–10 月的海关累计（非全年）",
+  "fix_en": "2020–22 self-sufficiency is derived from USDA carcass-weight data; 2021 imports are USDA product weight, and 2025 covers Jan–Oct only (customs), not the full year",
+  "evidence": "Expana「Korea's Oct 2025 beef imports nosedive…」：\"year-to-date (YTD) beef imports … reached 423,673 mt\"（1–10 月）。https://www.expanamarkets.com/insights/article/koreas-oct-2025-beef-imports-nosedive-as-safeguard-barriers-kick-in/ ；hanwoo_B series.imports：2021「千吨（产品重量，USDA）」、2025「千吨（1–10 月，海关，Expana）」。也可干脆不画 2025 点，或在点上标「1–10 月」。"
+ },
+ {
+  "where": "SERIES.events[2023]（另见 hanwoo_B.wagyu_vs[5]）",
+  "kind": "文",
+  "quote": "申请国际无疫地位的计划落空",
+  "issue": "韩国申请的是 WOAH「口蹄疫免疫无疫」（백신접종 청정국）地位，不是「无疫」；两种地位不同（不免疫无疫要求更高）。英文 \"FMD-free status\" 同。",
+  "fix_zh": "申请 WOAH「口蹄疫免疫无疫」地位的计划落空",
+  "fix_en": "derails Korea’s bid for WOAH “FMD-free with vaccination” status",
+  "evidence": "首尔新闻 2023-05-11：「구제역 백신접종 청정국 지위」；清州 4 处韩牛场，距上次 4 年 4 个月；出口目标 200 吨、新加坡越南等市场受阻——这几处页面写对了。https://m.seoul.co.kr/news/2023/05/11/20230511500173"
+ },
+ {
+  "where": "SERIES.events[2025]",
+  "kind": "文",
+  "quote": "2026 年 1 月 1 日美国牛肉关税归零。",
+  "issue": "2026 年的事挂在 2025 年的节点上；图的年份轴到 2026，宜单列一个 2026 节点。事实本身无误。",
+  "fix_zh": "（移到 year=2026 的新事件）1 月 1 日美国牛肉关税归零。",
+  "fix_en": "(new event, year=2026) 1 January: the US beef tariff hits zero.",
+  "evidence": "Asia Economy 2026-01-07：\"adjusted to 0% as of January 1\"。https://www.asiae.co.kr/en/article/2026010721371820180"
+ },
+ {
+  "where": "RHAPSODY.li[0]",
+  "kind": "疑",
+  "quote": "Netflix 同期上线",
+  "issue": "「同期上线」只见 TheTVDB 等二手站点，底稿 rhapsody[1] 自注未见 Netflix 新闻稿；Netflix 页面只标年份 2021、主持白种元、2 集（这几处已核对无误）。",
+  "fix_zh": "Netflix 也在 2021 年上线",
+  "fix_en": "and released on Netflix the same year",
+  "evidence": "Netflix title 81473623：Year 2021，2 episodes，cast Paik Jong-won。https://www.netflix.com/th-en/title/81473623 ；hanwoo_B rhapsody[1] note。"
+ },
+ {
+  "where": "hanwoo_B.wagyu_vs[4].hanwoo_zh（页面「韩牛与和牛」表）",
+  "kind": "错",
+  "quote": "2025 年 1–7 月出口 27.2 吨、约 180 万美元，五个市场，香港占八成。",
+  "issue": "同 CH.cut.lede：香港「八成」是 2024 年出口量的比例，不是 2025 年 1–7 月的；「五个市场」的名单各来源不一（见 THESIS.nums[0]）。hanwoo_en 同。和牛一栏（731 亿日元、十年 6.6 倍、第二位）已核对无误。",
+  "fix_zh": "2025 年 1–7 月出口 27.2 吨、约 180 万美元；2024 年出口量约八成去了香港。",
+  "fix_en": "27.2 t, about USD 1.8m in Jan–Jul 2025; Hong Kong took ~80% of 2024 volume.",
+  "evidence": "世界日报 2025-08-22（同上）。https://www.segye.com/newsView/20250820518577 ；nippon.com：「25年の牛肉の輸出額は10年前の6.6倍の731億円」「13位から2位へ」https://www.nippon.com/ja/japan-data/h02743/"
+ },
+ {
+  "where": "hanwoo_B.wagyu_vs[5].hanwoo_zh",
+  "kind": "文",
+  "quote": "口蹄疫反复，未获 WOAH 无疫地位；美、中、新加坡等大市场长期进不去，每次疫情都中断出口。",
+  "issue": "① 应为「免疫无疫」地位（同 SERIES 2023 条）；② 新加坡已签韩牛检疫协议（底稿 timeline[34]，2026），「长期进不去」宜改；③「美、中进不去」底稿 timeline[35] 置信度低、无一手文件（PENDING 已列），这里写成定论。",
+  "fix_zh": "口蹄疫反复，未获 WOAH「免疫无疫」地位；美、中至今不在出口名单上，新加坡到 2026 年才签检疫协议；每次疫情都中断出口。",
+  "fix_en": "Recurring FMD has kept WOAH “FMD-free with vaccination” status out of reach; the US and China are still not on the export list, Singapore signed a quarantine deal only in 2026, and each outbreak halts exports.",
+  "evidence": "首尔新闻 2023-05-11（同上）；hanwoo_B timeline[34]（파이낸셜뉴스 2026-08-31）、timeline[35]（conf 低，note）。"
+ },
+ {
+  "where": "hanwoo_B.wagyu_vs[8].hanwoo_zh",
+  "kind": "文",
+  "quote": "首尔 1+ 등심约 13,105 韩元/100g（2025-11），约合 40 美元/磅。",
+  "issue": "① 来源没说是首尔，数据出自畜产品品质评价院；底稿 price[0] 又写「全国平均（KAMIS）」，两处不一致。② 13,105 是韩牛日折扣结束后的冲高价（11 月初 9,623 韩元，半个多月涨 38.4%），单拿它作参考价偏高。",
+  "fix_zh": "1+ 등심零售约 9,600–13,100 韩元/100g（2025 年 11 月，畜产品品质评价院），约合 30–40 美元/磅。",
+  "fix_en": "1+ Hanwoo loin retailed at about KRW 9,600–13,100/100 g in Nov 2025 (KAPE), roughly USD 30–40/lb.",
+  "evidence": "아시아경제 2025-11-27：100g 13,105원（축산물품질평가원，25일），「이달 초(9623원)와 비교하면 38.4% 급등」，未写地区。https://view.asiae.co.kr/article/2025112516064327993"
+ },
+ {
+  "where": "hanwoo_B.ops[jeongyuk].facts[1].zh（页面「七招」）",
+  "kind": "错",
+  "quote": "马场洞「고기 익는 마을」2011 年桌位费成人 4,000 韩元、儿童 2,000 韩元，被认为约为普通韩牛店价格的三分之一。",
+  "issue": "读错了：原文「三分之一」说的是在这里吃最高等级韩牛的花费约为一般韩牛专门店的三分之一（消费者反应），不是桌位费本身。英文同。",
+  "fix_zh": "马场洞「고기 익는 마을」2011 年桌位费成人 4,000 韩元、儿童 2,000 韩元；据消费者说，在这里吃最高等级韩牛，只要一般韩牛店约三分之一的价钱。",
+  "fix_en": "At Majang-dong's 'Gogi Ingneun Maeul' (2011) the table fee was KRW 4,000 per adult and 2,000 per child; diners said top-grade Hanwoo there cost about a third of what a regular Hanwoo restaurant charges.",
+  "evidence": "首尔市媒体中心 2011-11：「최상등급 한우 고기를 한우 전문점에서 먹으려면 가격이 만만치 않은데, 시중의 한우 전문점 가격의 1/3 정도면 된다는 게 소비자들의 반응이다」。https://mediahub.seoul.go.kr/archives/193564"
+ },
+ {
+  "where": "hanwoo_B.ops[grading_trace].facts[1].zh（页面「七招」）",
+  "kind": "疑",
+  "quote": "2025 年 78.4%，阉牛达 92%",
+  "issue": "同 GRADES_NOTE 条：2025 年数字只出自无出处的个人博客，且原文是「接近 92.0%」。",
+  "fix_zh": "2022 年 75.2%",
+  "fix_en": "75.2% (2022)",
+  "evidence": "https://brunch.co.kr/@architect-y/1601 ；农振厅网志（1993 10.7%、2019 阉牛 88.8%）https://rda.go.kr/webzine/2022/05/sub1-3.html ；메트로신문 2023-03-27（2022 年 75.2%，축평원统计年报）https://www.metroseoul.co.kr/article/20230327500553"
+ },
+ {
+  "where": "hanwoo_B.cuts[deungsim].primal_zh / cuts[ansim].primal_zh（分割图）",
+  "kind": "文",
+  "quote": "里脊（肋眼、上脑）",
+  "issue": "등심 与 안심 两个大块都叫「里脊」（「里脊（肋眼、上脑）」「里脊（菲力）」），分割图上会出现两个同名大块；中国通行分割命名里「里脊」= tenderloin（即 안심），등심 对应眼肉/上脑。목심 又标「上脑前段」，「上脑」两处重叠。",
+  "fix_zh": "肉眼（眼肉、上脑）；小分割相应改为「上肉眼（前段）」「花肉眼（肋眼）」「下肉眼（后段）」",
+  "fix_en": "",
+  "evidence": "中国农业行业标准 NY/T 676《牛肉等级规格》分割名：里脊（tenderloin）、外脊（striploin）、眼肉（cube roll）、上脑（high rib）；页面 cuts[3] ansim 已用「里脊（菲力）」。"
+ },
+ {
+  "where": "MAP_EXTRA[Seoul 1983].text",
+  "kind": "文",
+  "quote": "马场洞畜产市场 1963 年起承担首都圈约七成的畜产流通",
+  "issue": "「约七成」是首尔市媒体中心 2011 年的数据，不是 1963 年起一贯如此；周刊京乡 2021 另说约 1,000 家店、首尔过半牛肉经此交易。中文时间口径错位（英文 \"Majang-dong market (since 1963) handles about 70%\" 勉强可读，但也宜注年份）。",
+  "fix_zh": "马场洞畜产市场（1963 年形成）据 2011 年数据承担首都圈约七成的畜产流通",
+  "fix_en": "Majang-dong market (formed 1963) handled about 70% of the capital area’s meat as of 2011",
+  "evidence": "首尔市媒体中心 2011-11（마장동 상차림 식당）https://mediahub.seoul.go.kr/archives/193564 ；hanwoo_B ops[3].facts[2]（「2011 年数据」）与 alt。"
+ },
+ {
+  "where": "MAP_EXTRA[Hong Kong 2015].text",
+  "kind": "文",
+  "quote": "香港至今仍占韩牛出口约八成",
+  "issue": "约八成是 2024 年出口量的比例，「至今」说宽了（同 CH.cut.lede 条）。",
+  "fix_zh": "2024 年香港约占韩牛出口量的八成",
+  "fix_en": "Hong Kong took about 80% of 2024 export volume",
+  "evidence": "世界日报 2025-08-22：「지난해 기준 … 약 80%를 차지한 홍콩」。https://www.segye.com/newsView/20250820518577"
+ },
+ {
+  "where": "METHOD",
+  "kind": "文",
+  "quote": "置信度「低」的事实不上正文",
+  "issue": "与页面实际不符。至少这些用了底稿置信度「低」的条目：STAGE.smokeless（连锁店普及下吸式，A eras[7].facts[1]）、STAGE.duck（饥荒后推广养鸭，A north[3]）、TABLE.banchan（A table[5]）、CUT_INTRO（120 / 米德，B rhapsody[6]）、CH.world 导语与 build_theme.py 小标题里的「延边炭火」（C cn.phases[0].facts[2]）、hanwoo_B.wagyu_vs[5]「美、中进不去」（B timeline[35]）。要么把这些改掉（见各条），要么改 METHOD 措辞。",
+  "fix_zh": "置信度「低」的事实一般不上正文；个别保留的，在正文里注明「据说」或「出处不明」",
+  "fix_en": "low-confidence facts are generally kept off the page, and the few kept are flagged in the text as unproven",
+  "evidence": "hist_A / hanwoo_B / market_C 各条 conf 字段（逐条见上）。"
+ },
+ {
+  "where": "METHOD",
+  "kind": "文",
+  "quote": "百科只作线索",
+  "issue": "与实际不符：多条上页事实的唯一来源是 Wikipedia——玉流馆（STAGE.okryu）、《释名》定义（STAGE.maek）、美国阶段里的 1903 年首批移民、曼哈顿韩国城两条、Kogi 三条、Cote、GEN 上市。另，METHOD 列举的「畜产品品质评价院」「韩国民族文化大百科」在底稿里没有被直接引用（只经新闻转引：메트로신문、周刊京乡）。",
+  "fix_zh": "百科多作线索，少数条目（玉流馆、Kogi、Cote 等）暂以英文维基为唯一来源",
+  "fix_en": "encyclopedias mostly as leads, though a few entries (Okryugwan, Kogi, Cote) still rest on Wikipedia alone",
+  "evidence": "market_C us.phases 各条 sources.kind 全为「百科」的有 8 条；hist_A north[1]、eras[0].facts[2]；三份底稿均无 ekape.or.kr、encykorea.aks.ac.kr 网址（只有一处 note 提到 encykorea）。METHOD 来源清单里的这两家宜删去或注「经新闻转引」。"
+ },
+ {
+  "where": "METHOD",
+  "kind": "文",
+  "quote": "研究分三路",
+  "issue": "「三路」是底稿内部分工用语（代码注释里的「B 路」「C 路」），给读者看换成平常说法更好。不算严重泄漏。",
+  "fix_zh": "研究分三部分",
+  "fix_en": "",
+  "evidence": "editorial.py 注释「B 路 grill_sec」「C 路 map」；BRIEF.md 规则 4。"
+ },
+ {
+  "where": "PENDING（补充）",
+  "kind": "文",
+  "quote": "Cote 纽约获米其林一星的确切年份（开业一年内，2017 或 2018）。",
+  "issue": "建议补列几条本次核查发现、正文仍依赖二手或互相矛盾来源的点（PENDING 是给读者看的，这里写「未核」没问题）。",
+  "fix_zh": "保留原句，并在 PENDING 末尾追加四条：T('韩牛出口目的地名单各报道不一：除香港、马来西亚、柬埔寨、老挝、阿联酋外，也有报道列入澳门、蒙古。', …)；T('马端临《文献通考》「高丽人用生菜包饭」一句据韩文转述，未见原文。', …)；T('1940 年《东亚日报》「烧酒与불고기」一句只见二手转述，未见原版面。', …)；T('2025 年韩牛 1 等级以上比例只见二手资料，未见畜产品品质评价院原表。', …)（若采纳 GRADES_NOTE 改用 2022 年数字，最后一条可省）",
+  "fix_en": "Add: 'Reports differ on Hanwoo’s export markets: some also list Macau and Mongolia.' / 'Ma Duanlin’s line on lettuce-wrapped rice is known only via a Korean paraphrase.' / 'The 1940 Dong-a Ilbo “soju and bulgogi” line is from a secondary account.' / '2025 grade shares come from a secondary source, not KAPE’s own tables.'",
+  "evidence": "见 THESIS.nums[0]、TABLE.ssam、TABLE.soju、GRADES_NOTE 各条。"
+ },
+ {
+  "where": "market_C.us.phases[us6].facts[3].zh（页面美国阶段列表）",
+  "kind": "疑",
+  "quote": "湾区韩烤此前集中在圣克拉拉 El Camino Real 沿线的韩裔商圈。",
+  "issue": "底稿自注「El Camino Real 韩裔商圈部分无专门来源，属常识性描述，需主会话补源或删去」，但这条 conf=中，照样上了页面。白丁 2023 年 8 月进 Valley Fair、全美约 8 家有 KRON4 来源。",
+  "fix_zh": "（删去此句，或补一条来源）",
+  "fix_en": "(drop the sentence, or add a source)",
+  "evidence": "market_C us.phases[5].facts[3] note；KRON4 2023-08-17 只讲白丁开店。https://digital-release.kron4.com/news/bay-area/popular-kbbq-chain-baekjeong-opens-first-bay-area-location-at-valley-fair/amp/"
+ },
+ {
+  "where": "market_C.cn.phases[cn4].facts[3].zh（页面中国阶段列表）",
+  "kind": "疑",
+  "quote": "萨德之后，「韩国」招牌在中国餐饮中的号召力减弱，多家韩式烤肉品牌在之后几年收缩",
+  "issue": "因果说过头：底稿自注「两组数据口径不同（企业自述 vs NCBD），且收缩亦与疫情、同质化有关，不宜单归因于萨德」，页面显示时这层限定没了，读者看到的是「萨德→号召力减弱→收缩」。",
+  "fix_zh": "萨德之后几年，多家韩式烤肉品牌收缩（也与疫情、同质化有关）：汉拿山门店从 2015 年约 260 家（企业自述）减至 2021 年 4 月的 205 家（NCBD）。",
+  "fix_en": "In the years after THAAD several Korean BBQ brands shrank — also amid the pandemic and copycat competition: Hannashan went from about 260 stores in 2015 (company figure) to 205 in April 2021 (NCBD).",
+  "evidence": "market_C cn.phases[3].facts[3] note；界面新闻「韩式烤肉连锁品牌沉浮」https://m.jiemian.com/article/9981709.html"
+ },
+ {
+  "where": "market_C.cn.phases[cn3].facts[0].zh（页面中国阶段列表）",
+  "kind": "文",
+  "quote": "中国的韩餐馆从2009年起8年间增长约7.8倍",
+  "issue": "「增长约 7.8 倍」按中文习惯是净增 7.8 倍（即 8.8 倍），实际意思是「为 2009 年的约 7.8 倍」（cn.stats[0] 的写法）；同文件 global[2] 用的是「约为 3.6 倍」，两处写法不一。",
+  "fix_zh": "中国的韩餐馆 2017 年为 2009 年的约 7.8 倍",
+  "fix_en": "",
+  "evidence": "market_C cn.stats[0]：「2017年15,985家，为2009年的约7.8倍」；global[2]。"
+ }
+]

@@ -159,7 +159,7 @@ def card_html(body, esc):
     return '\n'.join(out)
 
 
-def build_ask(root, out, hub, base, site, person, themes, latest, esc, today):
+def build_ask(root, out, hub, base, site, person, themes, latest, esc, today, extras=None):
     chunks = []
 
     def add(cid, title, url, text, date=None, kind='page'):
@@ -224,6 +224,15 @@ def build_ask(root, out, hub, base, site, person, themes, latest, esc, today):
                 f"阅读时间：{m['reading_time']}" if m.get('reading_time') else '',
                 f"主要出处：{srcs}" if srcs else ''])), date=m['date'], kind='theme')
 
+    # 号外 extras: specials outside the weekly series, /x/<slug>/ (metadata only, like themes)
+    for m in reversed(extras or []):
+        add(f"x/{m['slug']}", f"号外 · {m['title']}", m['url'],
+            '\n'.join(filter(None, [
+                f"号外（周更之外的专题，不占题号）· {m['date']}", m['title'], m.get('subtitle'), m.get('summary'),
+                f"形式：{m['format']}" if m.get('format') else '',
+                f"标签：{'、'.join(m.get('tags') or [])}" if m.get('tags') else '',
+                f"阅读时间：{m['reading_time']}" if m.get('reading_time') else ''])), date=m['date'], kind='extra')
+
     # 合读 podcast
     pod = site.get('podcast')
     pod_dir = os.path.join(root, 'podcast', 'episodes')
@@ -262,6 +271,9 @@ def build_ask(root, out, hub, base, site, person, themes, latest, esc, today):
     for m in themes:
         if m.get('keywords_en'):
             aliases[f"t/{m['slug']}"] = m['keywords_en']
+    for m in extras or []:
+        if m.get('keywords_en'):
+            aliases[f"x/{m['slug']}"] = m['keywords_en']
     for c in chunks:
         base_id = re.sub(r'-\d+$', '', c['id'])
         if base_id in aliases:

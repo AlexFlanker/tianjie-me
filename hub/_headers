@@ -19,3 +19,10 @@
 /llms.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=600
+
+/api/*
+  Cache-Control: no-store
+
+/ask/index.json
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *

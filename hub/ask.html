@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ask Tianjie · 问天杰</title>
+<meta name="description" content="An assistant that answers questions about Tianjie Sun only from the public material on tianjie.me, citing a source for every paragraph. 只按站上公开材料回答、每段标出处。">
+<meta name="author" content="Tianjie Sun">
+<meta name="theme-color" content="#f3f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16181b" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="{{BASE}}/ask/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ask Tianjie · 问天杰">
+<meta property="og:description" content="Answers only from tianjie.me, every paragraph cited. No source, no answer.">
+<meta property="og:url" content="{{BASE}}/ask/">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b5432c'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Noto Serif SC,Songti SC,serif' font-weight='900' fill='%23fff'%3E题%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('yzyt-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+{{TURNSTILE_SCRIPT}}
+<style>
+:root{--bg:#f3f4ef;--surface:#fbfbf8;--surface-2:#eceee6;--ink:#1c1e1a;--ink-2:#4c4f49;--muted:#7d817a;--line:#d8dad2;--line-2:#c5c8bf;--accent:#b5432c;--accent-ink:#fff;--good:#2f7d4f;--warn:#a26a00;--bad:#b3261e}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#16181b;--surface:#1e2125;--surface-2:#262a2f;--ink:#ecebe4;--ink-2:#b9bbb3;--muted:#8b8e88;--line:#33373c;--line-2:#444950;--accent:#e2694f;--accent-ink:#1a1a1a;--good:#6cc08f;--warn:#e0b04a;--bad:#f2867c}}
+:root[data-theme="dark"]{--bg:#16181b;--surface:#1e2125;--surface-2:#262a2f;--ink:#ecebe4;--ink-2:#b9bbb3;--muted:#8b8e88;--line:#33373c;--line-2:#444950;--accent:#e2694f;--accent-ink:#1a1a1a;--good:#6cc08f;--warn:#e0b04a;--bad:#f2867c}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;text-wrap:balance;margin:0}
+.wrap{max-width:780px;margin:0 auto;padding-inline:clamp(16px,3vw,36px);padding-block:8px 56px}
+.mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:22px 14px;border-bottom:2px solid var(--ink)}
+.brand{font-family:"Noto Serif SC",serif;font-weight:900;letter-spacing:.12em;font-size:18px;text-decoration:none}
+.brand b{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:11px;letter-spacing:.1em;padding:1px 6px;border-radius:2px;margin-left:8px;vertical-align:2px;font-family:"Noto Sans SC",sans-serif;font-weight:500}
+.nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13.5px;align-items:center}
+.nav a,.nav button{text-decoration:none;color:var(--ink-2);letter-spacing:.06em}.nav a:hover{color:var(--accent)}
+.pill{font:inherit;font-size:12px;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;background:var(--surface);cursor:pointer}
+.pill:hover{border-color:var(--accent);color:var(--accent)}
+.hero{padding-block:34px 18px}
+.kicker{font-size:12.5px;letter-spacing:.2em;color:var(--accent);font-weight:500}
+.hero h1{font-size:clamp(30px,4.6vw,44px);font-weight:900;line-height:1.15;margin-top:8px}
+.hero p{color:var(--ink-2);margin:12px 0 0;max-width:62ch}
+.banner{margin-top:14px;padding:10px 14px;border:1px solid var(--accent);border-radius:10px;background:color-mix(in srgb,var(--accent) 8%,transparent);font-size:14px}
+.status{margin-top:10px;font-size:12.5px;color:var(--muted)}
+form.ask{margin-top:18px;display:grid;gap:10px}
+textarea,input[type=email]{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--surface);border:1px solid var(--line-2);border-radius:12px;padding:12px 14px;resize:vertical}
+textarea:focus,input:focus{outline:2px solid color-mix(in srgb,var(--accent) 45%,transparent);border-color:var(--accent)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.btn{font:inherit;font-size:15px;font-weight:500;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:10px 20px;cursor:pointer}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}.btn:disabled{opacity:.5;cursor:default}
+.hint{font-size:12.5px;color:var(--muted)}
+.examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.examples button{font:inherit;font-size:13px;color:var(--ink-2);background:var(--surface-2);border:1px solid transparent;border-radius:999px;padding:4px 12px;cursor:pointer;text-align:left}
+.examples button:hover{border-color:var(--accent);color:var(--accent)}
+.out{margin-top:26px;display:grid;gap:14px}
+.box{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:16px 18px}
+.box h2{font-size:15px;letter-spacing:.08em;margin-bottom:8px}
+.cands{font-size:13px;color:var(--muted)}
+.cands ol{margin:4px 0 0;padding-left:20px}
+.answer p{margin:0 0 12px}.answer p:last-child{margin-bottom:0}
+.answer p.uncited{border-left:3px solid var(--warn);padding-left:10px}
+.answer p.uncited::after{content:attr(data-flag);display:block;font-size:12px;color:var(--warn)}
+.answer sup a{color:var(--accent);text-decoration:none;font-weight:700;padding:0 1px}
+.answer .mk{color:var(--muted);font-size:12px}
+.answer.streaming{color:var(--ink-2)}
+.srcs ol{margin:0;padding-left:22px}
+.srcs li{margin:4px 0}.srcs a{color:var(--ink);text-decoration-color:var(--line-2)}.srcs a:hover{color:var(--accent)}
+.srcs .d{color:var(--muted);font-size:12.5px;margin-left:6px}
+.verdict{display:inline-block;font-size:12.5px;font-weight:700;border-radius:999px;padding:2px 10px;border:1px solid currentColor}
+.v-ALL_CITED{color:var(--good)}.v-PARTIAL{color:var(--warn)}.v-UNCITED,.v-ERROR{color:var(--bad)}.v-NO_SOURCE,.v-HANDOFF{color:var(--ink-2)}
+details.receipt summary{cursor:pointer;font-size:13.5px;color:var(--ink-2)}
+details.receipt table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}
+details.receipt td{padding:5px 8px;border-top:1px solid var(--line);vertical-align:top}
+details.receipt td:first-child{color:var(--muted);white-space:nowrap;width:9.5em}
+details.receipt code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.contact{margin-top:34px;border-top:2px solid var(--ink);padding-top:16px}
+.contact h2{font-size:20px;margin-bottom:6px}
+.contact form{display:grid;gap:10px;margin-top:10px}
+.ok{color:var(--good)}.err{color:var(--bad)}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted)}
+footer a{color:var(--ink-2);text-decoration:none}footer a:hover{color:var(--accent)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <a class="brand" href="/">{{SITE_NAME}}<b>ASK</b></a>
+    <nav class="nav"><a href="/about/" data-i="navAbout">关于</a><a href="/how/" data-i="navHow">制作说明</a><a href="/ask/cards/" data-i="navCards">判断卡</a><button class="pill" id="langbtn" type="button">EN</button><button class="pill" id="themebtn" type="button" aria-label="theme">◐</button></nav>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">ASK TIANJIE · 问天杰</div>
+    <h1 data-i="title">问问天杰的网站</h1>
+    <p data-i="lede">这个助手只按 tianjie.me 上的公开材料回答，每一段都标出处，点开就能核对。材料里没有的，它直说没有；薪资、入职时间这类问题由天杰本人回答。它是 AI，不是本人实时回复。</p>
+    <div class="banner" id="banner" hidden></div>
+    <div class="status" id="status"></div>
+  </section>
+
+  <form class="ask" id="askform">
+    <textarea id="q" rows="3" maxlength="500" data-ph="ph" placeholder="比如：他在 hireEZ 负责什么？"></textarea>
+    <div class="cf-turnstile" data-sitekey="{{TURNSTILE_SITE_KEY}}" id="ts"></div>
+    <div class="row">
+      <span class="hint" id="quota"></span>
+      <button class="btn" id="go" type="submit" data-i="ask">提问</button>
+    </div>
+    <div class="examples" id="examples"></div>
+  </form>
+
+  <section class="out" id="out" hidden>
+    <div class="box cands" id="cands" hidden><span data-i="looking">正在查看的材料</span><ol id="candlist"></ol></div>
+    <div class="box"><div class="answer" id="answer"></div></div>
+    <div class="box srcs" id="srcs" hidden><h2 data-i="sources">出处</h2><ol id="srclist"></ol></div>
+    <div class="box" id="rbox" hidden>
+      <details class="receipt" id="receipt"><summary><span class="verdict" id="verdict"></span> <span data-i="receipt">回执：这条回答是怎么来的</span></summary><table id="rtable"></table></details>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 data-i="cTitle">想直接问天杰</h2>
+    <p class="hint" data-i="cLede">留个邮箱，他会亲自回复。邮箱只用来回复你，不会公开。</p>
+    <form id="cform">
+      <input type="email" id="email" required autocomplete="email" data-ph="cEmail" placeholder="你的邮箱">
+      <textarea id="msg" rows="3" maxlength="2000" data-ph="cMsg" placeholder="想聊什么（可选）"></textarea>
+      <div class="row"><span class="hint" id="cstatus"></span><button class="btn" type="submit" data-i="cSend">发送</button></div>
+    </form>
+  </section>
+
+  <p class="hint" style="margin-top:22px" data-i="privacy">提问会保存 30 天用来改进回答，不记录 IP，不关联邮箱（除非你主动留邮箱）。语料是站上全部公开页面：</p>
+  <p class="hint"><a href="/ask/index.json">/ask/index.json</a> · {{CHUNKS}} chunks · corpus {{CORPUS_VERSION}}</p>
+
+  <footer><span>© {{YEAR}} <a href="/about/">Tianjie Sun</a></span><a href="/">一周一题</a><a href="/how/">制作说明</a><a href="/ask/cards/">判断卡</a></footer>
+</div>
+<script>
+(function () {
+  var I = {
+    zh: { navAbout: '关于', navHow: '制作说明', navCards: '判断卡', title: '问问天杰的网站', lede: '这个助手只按 tianjie.me 上的公开材料回答，每一段都标出处，点开就能核对。材料里没有的，它直说没有；薪资、入职时间这类问题由天杰本人回答。它是 AI，不是本人实时回复。', ph: '比如：他在 hireEZ 负责什么？', ask: '提问', looking: '正在查看的材料', sources: '出处', receipt: '回执：这条回答是怎么来的', cTitle: '想直接问天杰', cLede: '留个邮箱，他会亲自回复。邮箱只用来回复你，不会公开。', cEmail: '你的邮箱', cMsg: '想聊什么（可选）', cSend: '发送', privacy: '提问会保存 30 天用来改进回答，不记录 IP，不关联邮箱（除非你主动留邮箱）。语料是站上全部公开页面：', left: function (n) { return '今天还能问 ' + n + ' 次'; }, none: '今天的次数用完了，明天再来，或直接留言。', demo: '演示模式：还没接模型密钥，回答由检索到的材料拼成。', invite: function (l) { return '你好' + (l ? '，' + l : '') + '。这是天杰发给你的专属链接：提问次数更多，也可以在下面直接约时间或留言，他会亲自回复。'; }, badInvite: '这个邀请链接无效或已过期，现在按普通访客使用。', uncited: '这一段没有出处', thinking: '思考中…', sent: '已发送，天杰会亲自回复你。', sendErr: '没发出去，请检查邮箱格式后再试。', ex: ['他在 hireEZ 负责什么？', '一周一题的页面是怎么做出来、怎么核查的？', '第 6 题讲的是什么？', '合读这档播客讲什么？', '怎么联系他？'],
+      v: { ALL_CITED: '每段都有出处', PARTIAL: '有段落没有出处', UNCITED: '没有出处，已拦下', NO_SOURCE: '材料里没有，未作答', HANDOFF: '转天杰本人', ERROR: '出错，不扣次数' },
+      r: { verdict: '结论', cited: '引用的出处', checks: '检查', model: '模型', time: '耗时', tokens: 'Tokens', cost: '估算成本', corpus: '语料', id: '回执编号', mode: '访问方式' } },
+    en: { navAbout: 'About', navHow: 'How it’s made', navCards: 'Cards', title: 'Ask about Tianjie', lede: 'This assistant answers only from the public material on tianjie.me and cites a source for every paragraph, so you can check it. If the material doesn’t say, it says so. Compensation and timing questions go to Tianjie himself. It is an AI, not Tianjie replying live.', ph: 'e.g. What does he do at hireEZ?', ask: 'Ask', looking: 'Looking at', sources: 'Sources', receipt: 'Receipt: how this answer was produced', cTitle: 'Ask Tianjie directly', cLede: 'Leave an email and he will reply himself. It is only used to reply to you and is never published.', cEmail: 'Your email', cMsg: 'What would you like to talk about? (optional)', cSend: 'Send', privacy: 'Questions are kept for 30 days to improve answers. No IP is stored and nothing is tied to an email unless you leave one. The corpus is every public page on the site:', left: function (n) { return n + ' question' + (n === 1 ? '' : 's') + ' left today'; }, none: 'You’ve used today’s questions. Come back tomorrow, or leave a note below.', demo: 'Demo mode: no model key yet, so answers are stitched from the retrieved material.', invite: function (l) { return 'Hi' + (l ? ' ' + l : '') + ', this is a personal link from Tianjie: more questions, and you can ask for a time or leave a note below. He replies himself.'; }, badInvite: 'This invite link is invalid or expired; you are browsing as a regular visitor.', uncited: 'no source for this paragraph', thinking: 'Thinking…', sent: 'Sent. Tianjie will reply to you himself.', sendErr: 'Not sent. Please check the email address and try again.', ex: ['What does Tianjie do at hireEZ?', 'How are the 一周一题 pages researched and checked?', 'What is the podcast 合读 about?', 'Which issue covered calendars and leap seconds?', 'How can I contact him?'],
+      v: { ALL_CITED: 'Every paragraph cited', PARTIAL: 'Some paragraphs uncited', UNCITED: 'No sources, blocked', NO_SOURCE: 'Not in the material', HANDOFF: 'For Tianjie himself', ERROR: 'Error, not counted' },
+      r: { verdict: 'Verdict', cited: 'Sources cited', checks: 'Checks', model: 'Model', time: 'Time', tokens: 'Tokens', cost: 'Est. cost', corpus: 'Corpus', id: 'Receipt id', mode: 'Access' } }
+  };
+  var $ = function (s) { return document.getElementById(s); };
+  var lang = 'zh';
+  try { lang = localStorage.getItem('ask-lang') || ((navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en'); } catch (e) {}
+  var invite = '';
+  try { invite = new URLSearchParams(location.search).get('i') || sessionStorage.getItem('ask-invite') || ''; if (invite) sessionStorage.setItem('ask-invite', invite); } catch (e) {}
+  var status = null, last = { q: '', id: '' }, busy = false;
+
+  function T(k) { return I[lang][k]; }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function applyLang() {
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    document.querySelectorAll('[data-i]').forEach(function (el) { var v = T(el.getAttribute('data-i')); if (typeof v === 'string') el.textContent = v; });
+    document.querySelectorAll('[data-ph]').forEach(function (el) { el.placeholder = T(el.getAttribute('data-ph')); });
+    $('langbtn').textContent = lang === 'zh' ? 'EN' : '中文';
+    var ex = $('examples'); ex.innerHTML = '';
+    T('ex').forEach(function (q) { var b = document.createElement('button'); b.type = 'button'; b.textContent = q; b.onclick = function () { $('q').value = q; ask(); }; ex.appendChild(b); });
+    renderStatus();
+  }
+  function renderStatus() {
+    if (!status) return;
+    var s = [];
+    if (status.demo) s.push(T('demo'));
+    $('status').textContent = s.join(' ');
+    var left = status.quota ? status.quota.left : null;
+    $('quota').textContent = left === null ? '' : (left > 0 ? T('left')(left) : T('none'));
+    var b = $('banner');
+    if (status.mode === 'invite') { b.hidden = false; b.textContent = T('invite')(status.label); }
+    else if (invite && status.invite_error) { b.hidden = false; b.textContent = T('badInvite'); }
+    else b.hidden = true;
+  }
+  function loadStatus() {
+    fetch('/api/ask' + (invite ? '?i=' + encodeURIComponent(invite) : ''), { cache: 'no-store' })
+      .then(function (r) { return r.json(); }).then(function (j) { status = j; renderStatus(); }).catch(function () {});
+  }
+
+  // [S12] markers -> numbered superscript links, numbered by first appearance
+  function renderAnswer(text, sources, uncited) {
+    var order = [], byN = {};
+    (sources || []).forEach(function (s) { byN[s.n] = s; });
+    String(text).replace(/\[S(\d+)\]/g, function (m, d) { if (order.indexOf(+d) < 0 && byN[+d]) order.push(+d); return m; });
+    var paras = String(text).split(/\n\s*\n/);
+    var html = paras.map(function (p, i) {
+      var body = esc(p).replace(/\[S(\d+)\]/g, function (m, d) {
+        var s = byN[+d]; if (!s) return '';
+        return '<sup><a href="' + esc(s.url) + '" title="' + esc(s.title) + '">' + (order.indexOf(+d) + 1) + '</a></sup>';
+      }).replace(/\n/g, '<br>');
+      var flag = (uncited || []).indexOf(i) >= 0;
+      return '<p' + (flag ? ' class="uncited" data-flag="' + esc(T('uncited')) + '"' : '') + '>' + body + '</p>';
+    }).join('');
+    $('answer').innerHTML = html;
+    var list = $('srclist'); list.innerHTML = '';
+    order.forEach(function (n) { var s = byN[n]; var li = document.createElement('li'); li.innerHTML = '<a href="' + esc(s.url) + '">' + esc(s.title) + '</a>' + (s.date ? '<span class="d">' + esc(s.date) + '</span>' : ''); list.appendChild(li); });
+    $('srcs').hidden = order.length === 0;
+  }
+  function renderStreaming(raw) {
+    $('answer').className = 'answer streaming';
+    $('answer').innerHTML = String(raw).split(/\n\s*\n/).map(function (p) { return '<p>' + esc(p).replace(/\[S(\d+)\]/g, '<span class="mk">[$1]</span>').replace(/\n/g, '<br>') + '</p>'; }).join('');
+  }
+  function renderReceipt(r) {
+    var v = $('verdict'); v.className = 'verdict v-' + r.verdict; v.textContent = (I[lang].v[r.verdict] || r.verdict);
+    var R = I[lang].r, rows = [];
+    function row(k, val) { if (val !== undefined && val !== null && val !== '') rows.push('<tr><td>' + esc(k) + '</td><td>' + val + '</td></tr>'); }
+    row(R.verdict, '<code>' + esc(r.verdict) + '</code>' + (r.topic ? ' · ' + esc(r.topic) : ''));
+    row(R.cited, (r.cited || []).map(function (c) { return '<code>' + esc(c) + '</code>'; }).join(' '));
+    if (r.checks) row(R.checks, esc('paragraphs ' + r.checks.paragraphs + ' · uncited ' + r.checks.uncited + ' · invalid markers ' + r.checks.invalid_markers + ' · stripped links ' + r.checks.stripped_urls));
+    row(R.mode, esc(r.mode));
+    row(R.model, esc(r.provider + ' · ' + r.model) + (r.context ? ' · context ' + esc(r.context) + ' (' + esc(r.sources_in_context) + ')' : ''));
+    row(R.time, r.total_ms != null ? esc((r.ttfb_ms != null ? 'first token ' + r.ttfb_ms + ' ms · ' : '') + 'total ' + r.total_ms + ' ms') : '');
+    if (r.tokens) row(R.tokens, esc('in ' + r.tokens.input + ' · cache read ' + r.tokens.cache_read + ' · cache write ' + r.tokens.cache_write + ' · out ' + r.tokens.output));
+    row(R.cost, r.cost_usd != null ? esc('$' + r.cost_usd.toFixed(5)) : '');
+    row(R.corpus, r.corpus_version ? '<code>' + esc(r.corpus_version) + '</code>' : '');
+    row(R.id, '<code>' + esc(r.id) + '</code>');
+    $('rtable').innerHTML = rows.join('');
+    $('rbox').hidden = false;
+  }
+
+  function ask() {
+    if (busy) return;
+    var q = $('q').value.trim(); if (!q) return;
+    busy = true; $('go').disabled = true; last = { q: q, id: '' };
+    $('out').hidden = false; $('cands').hidden = true; $('srcs').hidden = true; $('rbox').hidden = true;
+    $('answer').className = 'answer streaming'; $('answer').textContent = T('thinking');
+    var ts = '';
+    try { if (window.turnstile) ts = window.turnstile.getResponse() || ''; } catch (e) {}
+    var raw = '';
+    fetch('/api/ask', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ q: q, lang: lang, invite: invite, turnstile: ts }) })
+      .then(function (res) {
+        if (!res.ok) return res.json().then(function (j) { throw j; });
+        var reader = res.body.getReader(), dec = new TextDecoder(), buf = '';
+        function pump() {
+          return reader.read().then(function (x) {
+            if (x.done) return;
+            buf += dec.decode(x.value, { stream: true });
+            var i;
+            while ((i = buf.indexOf('\n\n')) >= 0) {
+              var block = buf.slice(0, i); buf = buf.slice(i + 2);
+              var ev = 'message', data = '';
+              block.split('\n').forEach(function (line) { if (line.indexOf('event:') === 0) ev = line.slice(6).trim(); else if (line.indexOf('data:') === 0) data += line.slice(5).trim(); });
+              if (!data) continue;
+              var d; try { d = JSON.parse(data); } catch (e) { continue; }
+              if (ev === 'meta') { if (status) { status.quota = status.quota || {}; } }
+              else if (ev === 'candidates') {
+                var cl = $('candlist'); cl.innerHTML = '';
+                d.forEach(function (c) { var li = document.createElement('li'); li.textContent = c.title; cl.appendChild(li); });
+                $('cands').hidden = d.length === 0;
+              } else if (ev === 'delta') { raw += d.t; renderStreaming(raw); }
+              else if (ev === 'done') {
+                $('cands').hidden = true;
+                $('answer').className = 'answer';
+                var unc = d.receipt && d.receipt.checks ? d.receipt.checks.uncited_paragraphs : [];
+                renderAnswer(d.answer, d.sources, unc);
+                if (d.receipt) { renderReceipt(d.receipt); last.id = d.receipt.id; }
+                if (status && status.quota) { status.quota.left = d.quota_left; renderStatus(); }
+                if (d.receipt && (d.receipt.verdict === 'HANDOFF' || d.receipt.verdict === 'NO_SOURCE')) $('email').focus({ preventScroll: true });
+              }
+            }
+            return pump();
+          });
+        }
+        return pump();
+      })
+      .catch(function (j) {
+        $('answer').className = 'answer';
+        if (j && j.error === 'quota') { $('answer').textContent = T('none'); if (status && status.quota) { status.quota.left = 0; renderStatus(); } }
+        else $('answer').textContent = (lang === 'zh' ? '出错了：' : 'Error: ') + (j && j.error ? j.error : 'network');
+      })
+      .then(function () { busy = false; $('go').disabled = false; try { if (window.turnstile) window.turnstile.reset(); } catch (e) {} });
+  }
+
+  $('askform').addEventListener('submit', function (e) { e.preventDefault(); ask(); });
+  $('q').addEventListener('keydown', function (e) { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); ask(); } });
+  $('cform').addEventListener('submit', function (e) {
+    e.preventDefault();
+    fetch('/api/contact', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email: $('email').value, message: $('msg').value, question: last.q, answer_id: last.id, invite: invite }) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { var s = $('cstatus'); if (j.ok) { s.className = 'hint ok'; s.textContent = T('sent'); $('cform').reset(); } else { s.className = 'hint err'; s.textContent = T('sendErr'); } })
+      .catch(function () { var s = $('cstatus'); s.className = 'hint err'; s.textContent = T('sendErr'); });
+  });
+  $('langbtn').addEventListener('click', function () { lang = lang === 'zh' ? 'en' : 'zh'; try { localStorage.setItem('ask-lang', lang); } catch (e) {} applyLang(); });
+  var r = document.documentElement, tb = $('themebtn');
+  tb.addEventListener('click', function () { var d = r.getAttribute('data-theme') === 'dark' || (!r.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches); r.setAttribute('data-theme', d ? 'light' : 'dark'); try { localStorage.setItem('yzyt-theme', r.getAttribute('data-theme')); } catch (e) {} });
+  if (!document.querySelector('.cf-turnstile').getAttribute('data-sitekey')) $('ts').remove();
+  applyLang();
+  loadStatus();
+})();
+</script>
+</body>
+</html>

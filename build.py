@@ -317,3 +317,13 @@ if POD and os.path.isdir(PODDIR):
     add = ''.join(f"  <url><loc>{BASE}{e['url']}</loc><lastmod>{e['date']}</lastmod></url>\n" for e in eps)
     open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(sm.replace('</urlset>', add + '</urlset>'))
     print(f"podcast: {len(eps)} episode(s) → {PBASE}")
+
+# ======================================================================
+# Ask Tianjie /ask/：只按站上公开材料回答、每段带出处的助手
+# 语料与页面由 ask/ask_corpus.py 生成；后端在 functions/api/（Cloudflare Pages Functions）
+# ======================================================================
+import sys
+sys.path.insert(0, os.path.join(ROOT, 'ask'))
+import ask_corpus
+_ask = ask_corpus.build_ask(ROOT, OUT, HUB, BASE, site, person, themes, latest, esc, str(dt.date.today()))
+print(f"ask: {_ask['chunks']} chunks, {_ask['cards']} cards, ~{_ask['est_tokens']} tokens → /ask/ (corpus {_ask['version']})")

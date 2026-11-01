@@ -6,6 +6,7 @@
 - `hub/` 首页模板与站点信息（含 podcast_home / podcast_episode 模板）
 - `podcast/episodes/` 播客每期一个文件夹（meta.json + notes.html + cover.png + audio/）→ 输出到 `/listen/`
 - `static/` 原样复制到站点根的独立小页面
+- `ask/` + `functions/api/` 问天杰（`/ask/`）：只用站上公开材料回答、每段标出处的个人 agent，配置见 `ask/README.md`
 - `build.py` 生成 `public/`（Cloudflare Pages 构建命令）
 - `queue.md` 选题池 · `WORKFLOW.md` 出题与发布流程
 

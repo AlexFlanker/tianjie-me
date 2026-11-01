@@ -1,0 +1,17 @@
+{
+  "_note": "English retrieval keywords for sources whose text is Chinese only. Translate the title, subtitle and tags; add nothing that is not on the page. New themes can put the same line in meta.json as keywords_en.",
+  "t/time-reckoning": "Issue 6. Time reckoning: how civilizations set the rules for years, months, days, hours and seconds. Calendars, calendar reform, leap years, leap months, leap seconds, the Egyptian 365-day year, the Babylonian 19-year cycle, Guo Shoujing, 1582 Gregorian reform and the 10 skipped days, the 1884 Greenwich prime meridian conference, UTC, the end of leap seconds in 2027, clocks, time standards, astronomy, world history.",
+  "t/pursuit-of-speed": "Issue 5. The ladder of speed: the human pursuit of going faster, from running, horses and sailing ships to trains, cars, aircraft and rockets; why speed records kept climbing while everyday travel speed stalled after the 1970s. Speed records, cars, railways, aviation, spaceflight.",
+  "t/nobel-machines": "Issue 4. Building the prediction: twelve machines behind the Nobel Prize in Physics, from an 1887 stone slab floating on mercury to a cubic kilometre under the Antarctic ice; twelve mission briefs, ten engineering principles, and the next machines to build. Nobel Prize in Physics, experimental apparatus, instruments, engineering.",
+  "t/dance-atlas": "Issue 3. Dance grew out of labour: an atlas of five thousand years of dance across China, with teaching material and an appreciation guide from two Beijing Dance Academy teachers. Dance, intangible cultural heritage, ethnic and folk dance.",
+  "t/military-uniforms-p5": "Issue 2. How military uniforms changed colour: three hundred years of uniforms of the five permanent UN Security Council members (US, China, Russia, UK, France), from red coats and khaki to camouflage and multi-terrain patterns. Military uniforms, history, design.",
+  "t/cuisine-atlas": "Issue 1. An evolutionary atlas of Chinese regional cuisines: four thousand years of the geography of the Chinese table, from bronze cooking vessels to mala. Food, maps, history.",
+  "listen": "Podcast 合读 (Reading Together): several books read together on one question, about twenty minutes an episode, narrated with text-to-speech in several voices.",
+  "listen/three-books": "Podcast episode: building is cheap, trust is expensive. Clean Architecture, AI Engineering and A Brief History of Intelligence read together: where AI's limits are, how to structure systems so any component, including AI, fails safely, and how to evaluate and guard AI components.",
+  "how#intro": "How the pages are made: the weekly, agent-assisted publishing pipeline behind 一周一题.",
+  "how#pipeline": "Weekly pipeline: topic queue, shared research brief, four research agents, build, independent fact-check, preview branch, human approval to publish.",
+  "how#rules": "Rules for the research agents: search budgets, primary sources over Wikipedia, confidence levels for every number, disputes listed side by side, no editorial notes on the page.",
+  "how#who": "Division of work: what Claude does (research, writing, building, checking) and what Tianjie decides (topics, rules, style, publish or revise).",
+  "how#layout": "Repository layout of one issue: index.html, meta.json, cover image, research files, design brief, work log, build script.",
+  "site": "Homepage of tianjie.me: a weekly topic (一周一题) published every Saturday as a map, timeline, interactive page or small tool; long-term projects including the podcast and the Alcatraz photo tour."
+}

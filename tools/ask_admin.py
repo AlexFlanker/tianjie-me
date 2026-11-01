@@ -15,7 +15,7 @@ a = ap.parse_args()
 token = os.environ.get('ADMIN_TOKEN')
 if not token:
     sys.exit('set ADMIN_TOKEN')
-req = urllib.request.Request(f"{a.base.rstrip('/')}/api/admin?kind={a.kind}&limit={a.limit}", headers={'authorization': f'Bearer {token}'})
+req = urllib.request.Request(f"{a.base.rstrip('/')}/api/admin?kind={a.kind}&limit={a.limit}", headers={'authorization': f'Bearer {token}', 'user-agent': 'tianjie-ask-admin/1.0'})  # Cloudflare blocks the default Python-urllib agent (error 1010)
 data = json.load(urllib.request.urlopen(req, timeout=30))
 if a.kind == 'stats':
     print(json.dumps(data, ensure_ascii=False, indent=2))

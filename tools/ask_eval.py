@@ -23,7 +23,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def ask(base, q, invite):
     req = urllib.request.Request(f"{base.rstrip('/')}/api/ask", method='POST',
                                  data=json.dumps({'q': q, 'invite': invite}).encode(),
-                                 headers={'content-type': 'application/json'})
+                                 headers={'content-type': 'application/json',
+                                          # Cloudflare answers the default Python-urllib agent with 403 / error 1010
+                                          'user-agent': 'tianjie-ask-eval/1.0'})
     events, t0 = {}, time.time()
     try:
         with urllib.request.urlopen(req, timeout=90) as res:

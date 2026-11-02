@@ -194,33 +194,36 @@ function renderChapters(){
 }
 function curChapter(){const ch=T().ch,t=au.currentTime;let k=0;for(let i=0;i<ch.length;i++)if(t>=ch[i]-.5)k=i;return k}
 function hiliteChapter(){const k=curChapter();[...$("chapters").children].forEach((li,i)=>li.classList.toggle("on",i===k));now.textContent=CH[k]}
-function load(i,autoplay,keepPos){
-  const prevT=au.currentTime||0;
+function load(i,autoplay){
   ti=(i+TRACKS.length)%TRACKS.length;store.set("track",ti);
-  au.src=T().src;au.playbackRate=spd;
-  const pos=keepPos?prevT*(T().dur/ (TRACKS[(i-1+TRACKS.length)%TRACKS.length]&&keepPos.from?keepPos.from:T().dur)):store.get("pos:"+T().id);
+  renderTracks();renderChapters();
+  if(NORANGE&&!blobs[T().id]){loadBlob(T(),autoplay);return}
+  au.src=blobs[T().id]||T().src;au.playbackRate=spd;
+  const pos=store.get("pos:"+T().id);
   au.addEventListener("loadedmetadata",()=>{if(pos&&pos<dur()-5)au.currentTime=pos;paint();hiliteChapter();ensureSeekable()},{once:true});
-  renderTracks();renderChapters();paint();hiliteChapter();
+  paint();hiliteChapter();
   if(autoplay)au.play().catch(()=>{});
 }
-/* 服务器不给 Range（*.pages.dev 预览域）时拖不了进度：整段下载成 blob 再播；下载期间的拖动与跳章先记下，载好后执行 */
-const blobs={};let pendingSeek=null,loadingBlob=null;
+/* *.pages.dev 预览域不给 Range：浏览器拖不了进度、跳不了章。那里先把整段下载成 blob（只下一次，显示百分比），期间的跳章 / 拖动 / 播放先记下，载好后执行。正式站 tianjie.me 直接流式播放。 */
+const blobs={};let pendingSeek=null,pendingPlay=false,loadingBlob=null;
 const NORANGE=/\.pages\.dev$/.test(location.hostname);
 function seek(t){ if(loadingBlob===T().id||au.readyState<1){pendingSeek=t;now.textContent="载入中，稍后跳到 "+fmt(t)+"…";return} au.currentTime=t;paint();hiliteChapter() }
-function ensureSeekable(){
-  const t=T();if(blobs[t.id]||au.src.startsWith("blob:")||loadingBlob===t.id)return;
-  const ok=()=>au.seekable.length&&au.seekable.end(au.seekable.length-1)>=dur()-1;
-  const go=async()=>{
-    if(!NORANGE&&ok())return;
-    loadingBlob=t.id;now.textContent="载入整段，让进度条可拖…";
-    try{const r=await fetch(t.src);const b=await r.blob();blobs[t.id]=URL.createObjectURL(b);
-      if(T().id!==t.id){loadingBlob=null;return}
-      const pos=pendingSeek!==null?pendingSeek:au.currentTime,playing=!au.paused||pendingSeek!==null;pendingSeek=null;
-      au.src=blobs[t.id];au.playbackRate=spd;
-      au.addEventListener("loadedmetadata",()=>{loadingBlob=null;au.currentTime=pos;paint();hiliteChapter();if(playing)au.play().catch(()=>{})},{once:true});
-    }catch(e){loadingBlob=null;hiliteChapter()}
-  };
-  NORANGE?go():setTimeout(go,400);
+async function loadBlob(t,autoplay){
+  if(loadingBlob===t.id)return;loadingBlob=t.id;pendingPlay=!!autoplay;
+  const storedPos=store.get("pos:"+t.id);tot.textContent=fmt(t.dur);
+  try{
+    const r=await fetch(t.src);const total=+r.headers.get("content-length")||0;const rd=r.body.getReader();const chunks=[];let got=0;
+    for(;;){const {done,value}=await rd.read();if(done)break;chunks.push(value);got+=value.length;if(T().id===t.id)now.textContent="载入整段 "+(total?Math.round(got/total*100)+"%":fmt(0))+"，载好就能拖进度、跳章…"}
+    blobs[t.id]=URL.createObjectURL(new Blob(chunks,{type:"audio/mpeg"}));
+  }catch(e){loadingBlob=null;now.textContent="载入失败，改为直接播放";au.src=t.src;au.playbackRate=spd;return}
+  loadingBlob=null;if(T().id!==t.id)return;
+  const pos=pendingSeek!==null?pendingSeek:(storedPos&&storedPos<t.dur-5?storedPos:0),play=pendingPlay||pendingSeek!==null;pendingSeek=null;pendingPlay=false;
+  au.src=blobs[t.id];au.playbackRate=spd;
+  au.addEventListener("loadedmetadata",()=>{au.currentTime=pos;paint();hiliteChapter();if(play)au.play().catch(()=>{})},{once:true});
+}
+function ensureSeekable(){ // 非预览域、但服务器仍不给 Range 的情况
+  const t=T();if(NORANGE||blobs[t.id]||au.src.startsWith("blob:")||loadingBlob===t.id)return;
+  setTimeout(()=>{const ok=au.seekable.length&&au.seekable.end(au.seekable.length-1)>=dur()-1;if(!ok){const pos=au.currentTime,pl=!au.paused;pendingSeek=pos;pendingPlay=pl;loadBlob(t,pl)}},400);
 }
 function setPlaying(p){$("iplay").hidden=p;$("ipause").hidden=!p;$("play").setAttribute("aria-label",p?"暂停":"播放");$("heroplay").lastChild.textContent=p?"正在播放":"开始收听"}
 function paint(){
@@ -235,14 +238,15 @@ au.addEventListener("play",()=>setPlaying(true));
 au.addEventListener("pause",()=>setPlaying(false));
 au.addEventListener("ended",()=>{store.set("pos:"+T().id,0);setPlaying(false)});
 au.addEventListener("progress",paint);
-$("play").onclick=()=>au.paused?au.play().catch(()=>{}):au.pause();
-$("heroplay").onclick=()=>{if(au.paused){au.play().catch(()=>{})}else{au.pause()}};
+$("play").onclick=()=>{if(loadingBlob===T().id){pendingPlay=!pendingPlay;now.textContent=(pendingPlay?"载好就播放…":"载入中…");return}au.paused?au.play().catch(()=>{}):au.pause()};
+$("heroplay").onclick=()=>$("play").click();
 function switchVoice(i){ // 换声音：按比例保住进度
   const frac=dur()?au.currentTime/dur():0,playing=!au.paused;
   ti=(i+TRACKS.length)%TRACKS.length;store.set("track",ti);
+  renderTracks();renderChapters();
+  if(!blobs[T().id]&&NORANGE){pendingSeek=frac*T().dur;loadBlob(T(),playing);return}
   au.src=blobs[T().id]||T().src;au.playbackRate=spd;
   au.addEventListener("loadedmetadata",()=>{au.currentTime=frac*dur();paint();hiliteChapter();if(playing)au.play().catch(()=>{});ensureSeekable()},{once:true});
-  renderTracks();renderChapters();
 }
 $("prev").onclick=()=>switchVoice(ti-1);
 $("next").onclick=()=>switchVoice(ti+1);

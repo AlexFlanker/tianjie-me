@@ -15,7 +15,7 @@
   public/t/<slug>/cover.png    封面 / OG 图
   public/feed.xml  sitemap.xml  robots.txt  404.html  _headers  _redirects
 """
-import json, os, re, shutil, html, datetime as dt
+import sys, json, os, re, shutil, html, datetime as dt
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 THEMES = os.path.join(ROOT, 'themes')
@@ -186,6 +186,8 @@ for f in ('_headers', '_redirects', '404.html'):
     src = os.path.join(HUB, f)
     if os.path.exists(src): shutil.copy(src, OUT)
 # ---------- static/：原样复制到站点根（独立小页面，如 /listen/） ----------
+if os.path.exists(os.path.join(ROOT, 'cc', 'build_cc.py')):
+    import subprocess; subprocess.run([sys.executable, os.path.join(ROOT, 'cc', 'build_cc.py')], check=True)
 STATIC = os.path.join(ROOT, 'static')
 if os.path.isdir(STATIC):
     shutil.copytree(STATIC, OUT, dirs_exist_ok=True)
@@ -233,6 +235,7 @@ if POD and os.path.isdir(PODDIR):
                 .replace('{{EP_DESC}}', esc(e.get('summary', '')[:150])).replace('{{EP_DATE}}', e['date']).replace('{{EP_NO}}', str(e['no'])).replace('{{EP_MIN}}', str(e['min']))
                 .replace('{{EP_URL}}', e['url']).replace('{{POD_NAME}}', esc(POD['name'])).replace('{{BASE}}', BASE).replace('{{YEAR}}', str(dt.date.today().year))
                 .replace('{{BOOKS}}', ''.join(f'<span>{esc(b)}</span>' for b in e.get('books', []))).replace('{{NOTES}}', notes)
+                .replace('{{COVER_IMG}}', f'<img src="{e["sq"]}" alt="">' if e['has_cover'] and os.path.exists(os.path.join(e['dir'], 'cover-sq.png')) else '')
                 .replace('{{PREV}}', f'<a href="{prev_e["url"]}" title="{esc(prev_e["title"])}">← 上一期</a>' if prev_e else '<span>← 上一期</span>')
                 .replace('{{NEXT}}', f'<a href="{next_e["url"]}" title="{esc(next_e["title"])}">下一期 →</a>' if next_e else '<span>下一期 →</span>'))
         open(os.path.join(dst, 'index.html'), 'w', encoding='utf-8').write(page)

@@ -56,7 +56,7 @@ img{max-width:100%}
 .player{max-width:560px;margin:0 auto;display:grid;gap:22px;padding-block:28px 8px}
 .cover{width:min(300px,78vw);aspect-ratio:1;max-width:100%;margin:0 auto;border-radius:14px;overflow:hidden;
   box-shadow:0 18px 40px -22px rgba(0,0,0,.45)}
-.cover canvas{width:100%;height:100%;display:block}
+.cover canvas{width:100%;height:100%;display:block}.cover img{width:100%;height:100%;display:block;object-fit:cover}.cover img+canvas{display:none}
 .meta{text-align:center}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 h1{font-family:var(--display);font-weight:700;font-size:clamp(22px,5vw,28px);line-height:1.3;margin:4px 0 2px;text-wrap:balance}
@@ -136,7 +136,7 @@ footer a{color:var(--ink-2);text-decoration:none}footer a:hover{color:var(--acce
   </div>
 
 <div class="player">
-  <div class="cover" aria-hidden="true"><canvas id="cv" width="900" height="900"></canvas></div>
+  <div class="cover" aria-hidden="true">{{COVER_IMG}}<canvas id="cv" width="900" height="900"></canvas></div>
 
   <div class="meta">
     <div class="eyebrow">{{POD_NAME}} · 第 {{EP_NO}} 期 · {{EP_DATE}}</div>
@@ -221,7 +221,7 @@ function drawCover(){
   g.font="700 78px 'Noto Serif SC',Georgia,serif";g.fillText(EP.coverTitle||EP.title,cx,H*.86);
   g.font="500 28px 'Noto Sans SC',system-ui,sans-serif";g.globalAlpha=.65;g.fillText(EP.coverSub||"",cx,H*.92);g.globalAlpha=1;
 }
-document.fonts&&document.fonts.ready.then(drawCover);drawCover();
+if(!document.querySelector(".cover img")){document.fonts&&document.fonts.ready.then(drawCover);drawCover();}
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",drawCover);
 new MutationObserver(drawCover).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
 

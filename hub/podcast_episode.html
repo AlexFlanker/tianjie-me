@@ -199,9 +199,28 @@ function load(i,autoplay,keepPos){
   ti=(i+TRACKS.length)%TRACKS.length;store.set("track",ti);
   au.src=T().src;au.playbackRate=spd;
   const pos=keepPos?prevT*(T().dur/ (TRACKS[(i-1+TRACKS.length)%TRACKS.length]&&keepPos.from?keepPos.from:T().dur)):store.get("pos:"+T().id);
-  au.addEventListener("loadedmetadata",()=>{if(pos&&pos<dur()-5)au.currentTime=pos;paint();hiliteChapter()},{once:true});
+  au.addEventListener("loadedmetadata",()=>{if(pos&&pos<dur()-5)au.currentTime=pos;paint();hiliteChapter();ensureSeekable()},{once:true});
   renderTracks();renderChapters();paint();hiliteChapter();
   if(autoplay)au.play().catch(()=>{});
+}
+/* 服务器不给 Range（*.pages.dev 预览域）时拖不了进度：整段下载成 blob 再播；下载期间的拖动与跳章先记下，载好后执行 */
+const blobs={};let pendingSeek=null,loadingBlob=null;
+const NORANGE=/\.pages\.dev$/.test(location.hostname);
+function seek(t){ if(loadingBlob===T().id||au.readyState<1){pendingSeek=t;now.textContent="载入中，稍后跳到 "+fmt(t)+"…";return} au.currentTime=t;paint();hiliteChapter() }
+function ensureSeekable(){
+  const t=T();if(blobs[t.id]||au.src.startsWith("blob:")||loadingBlob===t.id)return;
+  const ok=()=>au.seekable.length&&au.seekable.end(au.seekable.length-1)>=dur()-1;
+  const go=async()=>{
+    if(!NORANGE&&ok())return;
+    loadingBlob=t.id;now.textContent="载入整段，让进度条可拖…";
+    try{const r=await fetch(t.src);const b=await r.blob();blobs[t.id]=URL.createObjectURL(b);
+      if(T().id!==t.id){loadingBlob=null;return}
+      const pos=pendingSeek!==null?pendingSeek:au.currentTime,playing=!au.paused||pendingSeek!==null;pendingSeek=null;
+      au.src=blobs[t.id];au.playbackRate=spd;
+      au.addEventListener("loadedmetadata",()=>{loadingBlob=null;au.currentTime=pos;paint();hiliteChapter();if(playing)au.play().catch(()=>{})},{once:true});
+    }catch(e){loadingBlob=null;hiliteChapter()}
+  };
+  NORANGE?go():setTimeout(go,400);
 }
 function setPlaying(p){$("iplay").hidden=p;$("ipause").hidden=!p;$("play").setAttribute("aria-label",p?"暂停":"播放");$("heroplay").lastChild.textContent=p?"正在播放":"开始收听"}
 function paint(){
@@ -221,25 +240,25 @@ $("heroplay").onclick=()=>{if(au.paused){au.play().catch(()=>{})}else{au.pause()
 function switchVoice(i){ // 换声音：按比例保住进度
   const frac=dur()?au.currentTime/dur():0,playing=!au.paused;
   ti=(i+TRACKS.length)%TRACKS.length;store.set("track",ti);
-  au.src=T().src;au.playbackRate=spd;
-  au.addEventListener("loadedmetadata",()=>{au.currentTime=frac*dur();paint();hiliteChapter();if(playing)au.play().catch(()=>{})},{once:true});
+  au.src=blobs[T().id]||T().src;au.playbackRate=spd;
+  au.addEventListener("loadedmetadata",()=>{au.currentTime=frac*dur();paint();hiliteChapter();if(playing)au.play().catch(()=>{});ensureSeekable()},{once:true});
   renderTracks();renderChapters();
 }
 $("prev").onclick=()=>switchVoice(ti-1);
 $("next").onclick=()=>switchVoice(ti+1);
-$("back").onclick=()=>au.currentTime=Math.max(0,au.currentTime-15);
-$("fwd").onclick=()=>au.currentTime=Math.min(dur(),au.currentTime+30);
+$("back").onclick=()=>seek(Math.max(0,au.currentTime-15));
+$("fwd").onclick=()=>seek(Math.min(dur(),au.currentTime+30));
 $("speed").onclick=()=>{spd=SPEEDS[(SPEEDS.indexOf(spd)+1)%SPEEDS.length];au.playbackRate=spd;$("speed").textContent=spd.toFixed(spd===1?1:2).replace(/0$/,"")+"×";store.set("speed",spd)};
 $("vol").oninput=e=>{au.volume=+e.target.value;au.muted=false;$("volic").textContent=au.volume===0?"静音":"音量";store.set("vol",au.volume)};
 $("trackselect").onchange=e=>switchVoice(+e.target.value);
 $("voices").onclick=e=>{const b=e.target.closest("button");if(b)switchVoice(+b.dataset.i)};
-$("chapters").onclick=e=>{const li=e.target.closest("li");if(!li)return;const go=()=>{au.currentTime=T().ch[+li.dataset.c];hiliteChapter();if(au.paused)au.play().catch(()=>{})};if(au.readyState>=1)go();else au.addEventListener("loadedmetadata",go,{once:true})};
-function seekTo(clientX){const r=bar.getBoundingClientRect();const p=Math.min(1,Math.max(0,(clientX-r.left)/r.width));au.currentTime=p*dur();paint();hiliteChapter()}
+$("chapters").onclick=e=>{const li=e.target.closest("li");if(!li)return;seek(T().ch[+li.dataset.c]);if(au.paused&&loadingBlob!==T().id)au.play().catch(()=>{})};
+function seekTo(clientX){const r=bar.getBoundingClientRect();const p=Math.min(1,Math.max(0,(clientX-r.left)/r.width));seek(p*dur())}
 bar.addEventListener("pointerdown",e=>{dragging=true;bar.classList.add("drag");bar.setPointerCapture(e.pointerId);seekTo(e.clientX)});
 bar.addEventListener("pointermove",e=>{if(dragging)seekTo(e.clientX)});
 bar.addEventListener("pointerup",()=>{dragging=false;bar.classList.remove("drag")});
 bar.addEventListener("pointercancel",()=>{dragging=false;bar.classList.remove("drag")});
-bar.addEventListener("keydown",e=>{if(e.key==="ArrowLeft"){au.currentTime-=5;e.preventDefault()}if(e.key==="ArrowRight"){au.currentTime+=5;e.preventDefault()}});
+bar.addEventListener("keydown",e=>{if(e.key==="ArrowLeft"){seek(Math.max(0,au.currentTime-5));e.preventDefault()}if(e.key==="ArrowRight"){seek(Math.min(dur(),au.currentTime+5));e.preventDefault()}});
 document.addEventListener("keydown",e=>{
   const tg=e.target.tagName;if(tg==="INPUT"||tg==="TEXTAREA"||tg==="SELECT"||e.target===bar||e.target.isContentEditable)return;
   if(e.code==="Space"){e.preventDefault();$("play").click()}

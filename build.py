@@ -221,42 +221,53 @@ if POD and os.path.isdir(PODDIR):
     def mmss(s): return f"{int(s)//60}:{int(s)%60:02d}"
     def hhmmss(s): s = int(s); return f"{s//3600:02d}:{s%3600//60:02d}:{s%60:02d}"
     ep_tpl = open(os.path.join(HUB, 'podcast_episode.html'), encoding='utf-8').read()
+    skin_css = open(os.path.join(HUB, 'skin_cc.css'), encoding='utf-8').read()
+    def thesis_html(th):
+        if not th: return ''
+        keys = set(th.get('keys', []))
+        lines = ''.join('<span class="ln">' + ''.join(f'<span class="w{" k" if w in keys else ""}">{esc(w)}</span>' for w in ln) + '</span>' for ln in th['lines'])
+        rest = f'<p class="tagrest">{esc(th["rest"])}</p>' if th.get('rest') else ''
+        return f'<section class="band tagsec" aria-label="论点"><div class="tagstick"><div class="wide"><p class="tagl">{lines}</p>{rest}</div></div></section>'
     for i, e in enumerate(eps):
         dst = os.path.join(pod_out, e['slug']); os.makedirs(dst, exist_ok=True)
-        for extra in ('cover.png', 'cover-sq.png', 'audio', 'script.md'):
+        for extra in ('cover.png', 'cover-sq.png', 'hero.jpg', 'hero-portrait.jpg', 'plate.jpg', 'audio', 'script.md'):
             src = os.path.join(e['dir'], extra)
             if os.path.isdir(src): shutil.copytree(src, os.path.join(dst, extra), dirs_exist_ok=True)
             elif os.path.exists(src): shutil.copy(src, dst)
-        notes = open(os.path.join(e['dir'], 'notes.html'), encoding='utf-8').read() if os.path.exists(os.path.join(e['dir'], 'notes.html')) else ''
+        rd = lambda name: open(os.path.join(e['dir'], name), encoding='utf-8').read() if os.path.exists(os.path.join(e['dir'], name)) else ''
+        notes, sections = rd('notes.html'), rd('sections.html')
+        nav_extra = ''.join(f'<a href="#{m.group(1)}"><small>{esc(m.group(2))}</small>{esc(m.group(3))}</a>' for m in re.finditer(r'<section[^>]*\sid="([^"]+)"[^>]*data-nav="([^"|]*)\|([^"]*)"', sections))
+        has = lambda name: os.path.exists(os.path.join(e['dir'], name))
+        hero_img = ('<picture>' + (f'<source media="(max-aspect-ratio: 4/5)" srcset="hero-portrait.jpg">' if has('hero-portrait.jpg') else '') + f'<img src="hero.jpg" alt="{esc(e["title"])}"></picture>') if has('hero.jpg') else (f'<img src="cover.png" alt="{esc(e["title"])}">' if e['has_cover'] else '')
+        plate_img = '<img src="plate.jpg" alt="" loading="lazy">' if has('plate.jpg') else ''
         prev_e = eps[i - 1] if i > 0 else None; next_e = eps[i + 1] if i + 1 < len(eps) else None
-        epjson = json.dumps({'slug': e['slug'], 'title': e['title'], 'coverTitle': e.get('cover_title', e['title']), 'coverSub': e.get('cover_sub', ''),
-                             'chapters': e['chapters'], 'tracks': [{'id': t['id'], 'title': t['title'], 'sub': t.get('sub', ''), 'src': t['file'], 'dur': t['dur'], 'ch': t['ch']} for t in e['tracks']]}, ensure_ascii=False)
-        page = (ep_tpl.replace('{{EP_JSON}}', epjson).replace('{{EP_TITLE}}', esc(e['title'])).replace('{{EP_SUB}}', esc(e.get('subtitle', '')))
-                .replace('{{EP_DESC}}', esc(e.get('summary', '')[:150])).replace('{{EP_DATE}}', e['date']).replace('{{EP_NO}}', str(e['no'])).replace('{{EP_MIN}}', str(e['min']))
+        epjson = json.dumps({'slug': e['slug'], 'title': e['title'], 'chapters': e['chapters'], 'tracks': [{'id': t['id'], 'title': t['title'], 'sub': t.get('sub', ''), 'src': t['file'], 'dur': t['dur'], 'ch': t['ch']} for t in e['tracks']]}, ensure_ascii=False)
+        page = (ep_tpl.replace('{{SKIN}}', skin_css).replace('{{SKIN_OVERRIDE}}', e.get('skin_css', '')).replace('{{EP_JSON}}', epjson).replace('{{EP_TITLE}}', esc(e['title'])).replace('{{H1_CLASS}}', 'long' if len(e['title']) > 6 else '').replace('{{EP_TITLE_HTML}}', e.get('title_html') or esc(e['title'])).replace('{{EP_SUB}}', esc(e.get('subtitle', '')))
+                .replace('{{EP_DESC}}', esc(e.get('summary', '')[:150])).replace('{{EP_SUMMARY}}', esc(e.get('summary', ''))).replace('{{EP_KICKER}}', esc(e.get('kicker', e['date']))).replace('{{EP_DATE}}', e['date']).replace('{{EP_NO}}', str(e['no'])).replace('{{EP_MIN}}', str(e['min']))
                 .replace('{{EP_URL}}', e['url']).replace('{{POD_NAME}}', esc(POD['name'])).replace('{{BASE}}', BASE).replace('{{YEAR}}', str(dt.date.today().year))
-                .replace('{{BOOKS}}', ''.join(f'<span>{esc(b)}</span>' for b in e.get('books', []))).replace('{{NOTES}}', notes)
-                .replace('{{COVER_IMG}}', f'<img src="{e["sq"]}" alt="">' if e['has_cover'] and os.path.exists(os.path.join(e['dir'], 'cover-sq.png')) else '')
+                .replace('{{BOOKS}}', ''.join(f'<span>{esc(b)}</span>' for b in e.get('books', []))).replace('{{NOTES}}', notes).replace('{{SECTIONS}}', sections).replace('{{NAV_EXTRA}}', nav_extra)
+                .replace('{{HERO_IMG}}', hero_img).replace('{{HERO_CAP}}', esc(e.get('hero_caption', ''))).replace('{{THESIS}}', thesis_html(e.get('thesis')))
+                .replace('{{PLATE0_IMG}}', plate_img).replace('{{PLATE0_CAP}}', esc(e.get('plate_caption', '')))
                 .replace('{{PREV}}', f'<a href="{prev_e["url"]}" title="{esc(prev_e["title"])}">← 上一期</a>' if prev_e else '<span>← 上一期</span>')
                 .replace('{{NEXT}}', f'<a href="{next_e["url"]}" title="{esc(next_e["title"])}">下一期 →</a>' if next_e else '<span>下一期 →</span>'))
         open(os.path.join(dst, 'index.html'), 'w', encoding='utf-8').write(page)
 
-    # 播客首页
+    # 播客首页（骨架与节目页同一皮肤）
     latest_e = eps[-1] if eps else None
     def ep_card(e):
         cover = f'<img src="{e["url"]}{e["sq"]}" alt="" loading="lazy">' if e['has_cover'] else ''
         tags = ''.join(f'<span>{esc(t)}</span>' for t in e['tags'])
-        return (f'<a class="ep" href="{e["url"]}"><div class="cv">{cover}</div><div><div class="no">第 {e["no"]} 期 <time datetime="{e["date"]}">{e["date"]}</time> · {e["min"]} 分钟</div>'
-                f'<h3>{esc(e["title"])}</h3><p>{esc(e.get("subtitle") or e.get("summary", ""))}</p><div class="tags">{tags}<i>{len(e["tracks"])} 个声音版本</i></div></div></a>')
-    hero = ''
+        return (f'<li><a href="{e["url"]}"><div class="d">{e["date"]}<b>第 {e["no"]} 期</b></div><div class="cv">{cover}</div>'
+                f'<div><h3>{esc(e["title"])}</h3><p>{esc(e.get("subtitle") or e.get("summary", ""))}</p><div class="meta"><span>{e["min"]} 分钟</span><span>{len(e["tracks"])} 个声音版本</span>{tags}</div></div></a></li>')
+    hero = hero_fig = ''
     if latest_e:
-        cover = f'<img src="{latest_e["url"]}cover.png" alt="{esc(latest_e["title"])}">' if latest_e['has_cover'] else ''
-        hero = (f'<section class="hero"><div class="hero-cv">{cover}</div><div class="hero-tx"><div class="kicker">最新 · 第 {latest_e["no"]} 期 · {nice_date(latest_e["date"])}</div>'
-                f'<h2><a href="{latest_e["url"]}">{esc(latest_e["title"])}</a></h2>'
-                f'{"<div class=sub>"+esc(latest_e["subtitle"])+"</div>" if latest_e.get("subtitle") else ""}<p>{esc(latest_e.get("summary", ""))}</p>'
-                f'<div class="cta"><a class="btn" href="{latest_e["url"]}"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>开始收听</a><span class="meta">{latest_e["min"]} 分钟 · {len(latest_e["tracks"])} 个声音版本</span></div></div></section>')
+        hero = (f'<p class="latest">最新 · 第 {latest_e["no"]} 期 · {nice_date(latest_e["date"])}</p><p class="hp"><b>{esc(latest_e["title"])}</b>　{esc(latest_e.get("summary", ""))}</p>'
+                f'<div class="ha"><a class="btn" href="{latest_e["url"]}">开始收听<svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a><span class="hm">{latest_e["min"]} 分钟 · {len(latest_e["tracks"])} 个声音版本</span></div>')
+        img = f'{latest_e["url"]}hero.jpg' if os.path.exists(os.path.join(latest_e['dir'], 'hero.jpg')) else (f'{latest_e["url"]}cover.png' if latest_e['has_cover'] else '')
+        hero_fig = f'<figure class="hfig rise"><a href="{latest_e["url"]}"><img src="{img}" alt="{esc(latest_e["title"])}"></a><figcaption>{esc(latest_e.get("hero_caption", latest_e["title"]))}</figcaption></figure>' if img else ''
     ptpl = open(os.path.join(HUB, 'podcast_home.html'), encoding='utf-8').read()
-    home_p = (ptpl.replace('{{POD_NAME}}', esc(POD['name'])).replace('{{POD_TAGLINE}}', esc(POD['tagline'])).replace('{{POD_ABOUT}}', POD['about'])
-              .replace('{{HERO}}', hero).replace('{{EPISODES}}', ''.join(ep_card(e) for e in reversed(eps))).replace('{{COUNT}}', str(len(eps)))
+    home_p = (ptpl.replace('{{SKIN}}', skin_css).replace('{{POD_NAME}}', esc(POD['name'])).replace('{{POD_TAGLINE}}', esc(POD['tagline'].split('。')[0] + '。')).replace('{{POD_ABOUT}}', POD['about'])
+              .replace('{{HERO}}', hero).replace('{{HERO_FIG}}', hero_fig).replace('{{EPISODES}}', ''.join(ep_card(e) for e in reversed(eps))).replace('{{COUNT}}', str(len(eps)))
               .replace('{{BASE}}', BASE).replace('{{YEAR}}', str(dt.date.today().year))
               .replace('{{OG_IMAGE}}', f"{BASE}{latest_e['url']}cover.png" if latest_e and latest_e['has_cover'] else ''))
     open(os.path.join(pod_out, 'index.html'), 'w', encoding='utf-8').write(home_p)

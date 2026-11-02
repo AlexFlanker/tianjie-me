@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>判断卡 · Judgment cards · {{SITE_NAME}}</title>
+<meta name="description" content="Short, dated statements the Ask Tianjie assistant cites, each with the conditions under which it holds and what it does not imply.">
+<meta name="author" content="Tianjie Sun">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="{{BASE}}/ask/cards/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b5432c'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Noto Serif SC,Songti SC,serif' font-weight='900' fill='%23fff'%3E题%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('yzyt-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<style>
+:root{--bg:#f3f4ef;--surface:#fbfbf8;--ink:#1c1e1a;--ink-2:#4c4f49;--muted:#7d817a;--line:#d8dad2;--accent:#b5432c;--accent-ink:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#16181b;--surface:#1e2125;--ink:#ecebe4;--ink-2:#b9bbb3;--muted:#8b8e88;--line:#33373c;--accent:#e2694f;--accent-ink:#1a1a1a}}
+:root[data-theme="dark"]{--bg:#16181b;--surface:#1e2125;--ink:#ecebe4;--ink-2:#b9bbb3;--muted:#8b8e88;--line:#33373c;--accent:#e2694f;--accent-ink:#1a1a1a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:15.5px;line-height:1.75}
+a{color:inherit}
+h1,h2,h3{font-family:"Noto Serif SC","Songti SC",serif;margin:0}
+.wrap{max-width:780px;margin:0 auto;padding:8px clamp(16px,3vw,36px) 56px}
+.mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:22px 14px;border-bottom:2px solid var(--ink)}
+.brand{font-family:"Noto Serif SC",serif;font-weight:900;letter-spacing:.12em;font-size:18px;text-decoration:none}
+.brand b{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:11px;letter-spacing:.1em;padding:1px 6px;border-radius:2px;margin-left:8px;vertical-align:2px;font-family:"Noto Sans SC",sans-serif;font-weight:500}
+.nav{display:flex;gap:16px;font-size:13.5px}.nav a{text-decoration:none;color:var(--ink-2)}.nav a:hover{color:var(--accent)}
+.hero{padding-block:30px 10px}.hero h1{font-size:clamp(28px,4vw,38px);font-weight:900}
+.hero p{color:var(--ink-2);max-width:62ch}
+.kicker{font-size:12.5px;letter-spacing:.2em;color:var(--accent);font-weight:500}
+.card{margin-top:22px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.card h2{font-size:21px;margin:6px 0 4px}.card h2 small{display:block;font-family:"Noto Sans SC",sans-serif;font-size:13px;font-weight:400;color:var(--muted)}
+.card h3{font-size:15px;margin:14px 0 4px;color:var(--ink-2)}
+.card p{margin:4px 0}
+.see{font-size:13px;color:var(--muted)}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted)}
+footer a{color:var(--ink-2);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast"><a class="brand" href="/">{{SITE_NAME}}<b>CARDS</b></a><nav class="nav"><a href="/ask/">Ask</a><a href="/about/">关于</a><a href="/how/">制作说明</a></nav></header>
+  <section class="hero">
+    <div class="kicker">判断卡 · JUDGMENT CARDS · {{COUNT}}</div>
+    <h1>助手引用的判断，写明在什么条件下成立</h1>
+    <p>只把原文丢给模型，它会断章取义。所以每张卡写清四件事：结论、成立条件、不能推出什么、回答前先问清什么。<a href="/ask/">问天杰</a>的回答引用这些卡时，链接就指到这里。</p>
+  </section>
+  {{CARDS}}
+  <footer><span>© {{YEAR}} <a href="/about/">Tianjie Sun</a></span><a href="/ask/">Ask</a><a href="/">一周一题</a></footer>
+</div>
+</body>
+</html>

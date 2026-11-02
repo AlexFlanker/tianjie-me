@@ -8,6 +8,7 @@
 themes/<YYYY-MM-DD>-<slug>/
   index.html     自包含单页（内联 CSS/JS，图片用 data: 或放 assets/），完整 HTML 文档，lang=zh-CN，含 <title>/description/OG
   meta.json      {no, slug, title, subtitle, date, summary, tags[], format, reading_time, sources[], cover_focus?}
+                 可选 keywords_en：一行英文关键词（只翻译标题、副标题和标签），供 /ask/ 检索英文提问
   cover.png      1200×630 封面 / 分享图（tools/cover.py 生成）
   src/           可选：模板、数据、生成脚本（便于以后改内容重建）
 hub/             首页模板、站点信息（site.json：名称、长期专题）、_headers、_redirects、404

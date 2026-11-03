@@ -225,7 +225,7 @@ function ensureSeekable(){ // 非预览域、但服务器仍不给 Range 的情�
   const t=T();if(NORANGE||blobs[t.id]||au.src.startsWith("blob:")||loadingBlob===t.id)return;
   setTimeout(()=>{const ok=au.seekable.length&&au.seekable.end(au.seekable.length-1)>=dur()-1;if(!ok){const pos=au.currentTime,pl=!au.paused;pendingSeek=pos;pendingPlay=pl;loadBlob(t,pl)}},400);
 }
-function setPlaying(p){$("iplay").hidden=p;$("ipause").hidden=!p;$("play").setAttribute("aria-label",p?"暂停":"播放");$("heroplay").lastChild.textContent=p?"正在播放":"开始收听"}
+function setPlaying(p){$("iplay").toggleAttribute("hidden",p);$("ipause").toggleAttribute("hidden",!p);/* <svg> 没有 .hidden 属性，得改 attribute */$("play").setAttribute("aria-label",p?"暂停":"播放");$("heroplay").lastChild.textContent=p?"正在播放":"开始收听"}
 function paint(){
   const d=dur(),t=au.currentTime||0,p=d?t/d*100:0;
   fill.style.width=p+"%";knob.style.left=p+"%";

@@ -66,23 +66,23 @@ BAR_CSS = """<style id="yzyt-bar-css">
 .yzyt-bar a{color:var(--yi);text-decoration:none}.yzyt-bar a:hover{color:var(--ya)}
 .yzyt-bar .brand{font-family:"Noto Serif SC","Songti SC",serif;font-weight:900;letter-spacing:.12em;color:var(--yi)}
 .yzyt-bar .brand b{display:inline-block;background:var(--ya);color:#fff;font-size:11px;letter-spacing:.1em;padding:1px 6px;border-radius:2px;margin-left:8px;vertical-align:1px;font-family:"Noto Sans SC",sans-serif;font-weight:500}
-.yzyt-bar .lhs{display:flex;gap:14px;align-items:center}.yzyt-bar .dt{color:var(--y2)}
+.yzyt-bar .lhs{display:flex;gap:14px;align-items:center}.yzyt-bar .dt{color:var(--y2)}.yzyt-bar .home{color:var(--y2);letter-spacing:.08em}.yzyt-bar .home:after{content:"/";margin-left:14px;color:var(--yl)}
 .yzyt-bar .nav{display:flex;gap:16px;align-items:center}.yzyt-bar .nav span{color:var(--yl)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .yzyt-bar{--yb:#141618;--yi:#ecebe4;--y2:#a9aca6;--yl:#2b2f33;--ya:#e2694f}}
 :root[data-theme="dark"] .yzyt-bar{--yb:#141618;--yi:#ecebe4;--y2:#a9aca6;--yl:#2b2f33;--ya:#e2694f}
 </style>"""
 
 def bar_html(m, prev_m, next_m):
-    left = f'<div class="lhs"><a class="brand" href="/">{esc(site["name"])}<b>第 {m["no"]} 题</b></a><span class="dt">{esc(m["date"])}</span></div>'
+    left = f'<div class="lhs"><a class="home" href="/">{esc(site.get("person", {}).get("name", "首页"))}</a><a class="brand" href="/t/">{esc(site["name"])}<b>第 {m["no"]} 题</b></a><span class="dt">{esc(m["date"])}</span></div>'
     nav = []
     nav.append(f'<a href="{prev_m["url"]}" title="{esc(prev_m["title"])}">← 上一题</a>' if prev_m else '<span>← 上一题</span>')
-    nav.append('<a href="/#archive">归档</a>')
+    nav.append('<a href="/t/#archive">归档</a>')
     nav.append(f'<a href="{next_m["url"]}" title="{esc(next_m["title"])}">下一题 →</a>' if next_m else '<span>下一题 →</span>')
     return f'{BAR_CSS}\n<div class="yzyt-bar" role="navigation" aria-label="一周一题">{left}<div class="nav">{"".join(nav)}</div></div>\n'
 
 def extra_bar_html(m):
-    left = f'<div class="lhs"><a class="brand" href="/">{esc(site["name"])}<b>号外</b></a><span class="dt">{esc(m["date"])}</span></div>'
-    nav = '<div class="nav"><a href="/#extras">号外</a><a href="/#archive">归档</a></div>'
+    left = f'<div class="lhs"><a class="home" href="/">{esc(site.get("person", {}).get("name", "首页"))}</a><a class="brand" href="/t/">{esc(site["name"])}<b>号外</b></a><span class="dt">{esc(m["date"])}</span></div>'
+    nav = '<div class="nav"><a href="/t/#extras">号外</a><a href="/t/#archive">归档</a></div>'
     return f'{BAR_CSS}\n<div class="yzyt-bar" role="navigation" aria-label="一周一题 · 号外">{left}{nav}</div>\n'
 
 def inject(page, m, prev_m, next_m, bar=None):
@@ -153,7 +153,8 @@ home = (tpl.replace('{{SITE_NAME}}', esc(site['name'])).replace('{{TAGLINE}}', e
            .replace('{{COUNT}}', str(len(themes))).replace('{{BASE}}', BASE)
            .replace('{{OG_IMAGE}}', f"{BASE}{latest['url']}cover.png" if latest and latest['has_cover'] else '')
            .replace('{{YEAR}}', str(dt.date.today().year)))
-open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(home)
+os.makedirs(os.path.join(OUT, 't'), exist_ok=True)
+open(os.path.join(OUT, 't', 'index.html'), 'w', encoding='utf-8').write(home)   # 一周一题首页搬到 /t/，站点根 / 是门户（见文末）
 
 # ---------- feed / sitemap / robots / 404 / headers / redirects ----------
 def rfc3339(s): return s + 'T08:00:00-07:00'
@@ -177,7 +178,8 @@ feed = f"""<?xml version="1.0" encoding="utf-8"?>
 {entries}</feed>
 """
 open(os.path.join(OUT, 'feed.xml'), 'w', encoding='utf-8').write(feed)
-urls = [f"  <url><loc>{BASE}/</loc><lastmod>{latest['date'] if latest else dt.date.today()}</lastmod><changefreq>weekly</changefreq></url>"] + \
+urls = [f"  <url><loc>{BASE}/</loc><lastmod>{latest['date'] if latest else dt.date.today()}</lastmod><changefreq>weekly</changefreq></url>",
+        f"  <url><loc>{BASE}/t/</loc><lastmod>{latest['date'] if latest else dt.date.today()}</lastmod><changefreq>weekly</changefreq></url>"] + \
        [f"  <url><loc>{BASE}{m['url']}</loc><lastmod>{m['date']}</lastmod></url>" for m in themes + extras] + \
        [f"  <url><loc>{BASE}{p['url']}</loc></url>" for p in site.get('projects', []) if p['url'].startswith('/')]
 open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(urls) + '\n</urlset>\n')
@@ -309,3 +311,109 @@ if POD and os.path.isdir(PODDIR):
     add = ''.join(f"  <url><loc>{BASE}{e['url']}</loc><lastmod>{e['date']}</lastmod></url>\n" for e in eps)
     open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(sm.replace('</urlset>', add + '</urlset>'))
     print(f"podcast: {len(eps)} episode(s) → {PBASE}")
+
+# ======================================================================
+# 门户 /：孙天杰的首页。看（一周一题 + 号外）/ 听（合读 + CC 读书会）/ 玩（Game Studio）/ 走（摄影导览）
+# 数据：themes、extras、eps（上面播客段算出来的）、cc/cc.json、site.json 的 person / lines / games / tour
+# ======================================================================
+PERSON = site.get('person', {'name': '首页', 'en': site['author'], 'lead': site['tagline']})
+LINES = site.get('lines', {})
+GAMES = site.get('games', [])
+TOUR = site.get('tour', {})
+try: eps
+except NameError: eps = []
+CC = None
+cc_path = os.path.join(ROOT, 'cc', 'cc.json')
+if os.path.exists(cc_path): CC = json.load(open(cc_path, encoding='utf-8'))
+
+def cn_md(s):
+    d = dt.date.fromisoformat(s); return f"{d.month} 月 {d.day} 日", f"周{WEEKDAY[d.weekday()]}"
+def num_only(s):
+    mm = re.search(r'\d+', s or ''); return mm.group(0) if mm else ''
+
+# --- 日志：四条线最近更新的 ---
+log = []
+for m in themes: log.append({'date': m['date'], 'ch': '看', 'title': m['title'], 'sub': f"一周一题 第 {m['no']} 题" + (f"，{m['reading_time']}" if m.get('reading_time') else ''), 'url': m['url']})
+for m in extras: log.append({'date': m['date'], 'ch': '看', 'title': m['title'], 'sub': '号外' + ('，' + '，'.join(t for t in m['tags'] if '双语' in t) if any('双语' in t for t in m['tags']) else ''), 'url': m['url']})
+for e in eps: log.append({'date': e['date'], 'ch': '听', 'title': e['title'], 'sub': f"合读 第 {e['no']} 期" + (f"，{e['kicker'].replace(' · ', ' ')}" if e.get('kicker') else ''), 'url': e['url']})
+for g in GAMES:
+    if g.get('date'): log.append({'date': g['date'], 'ch': '玩', 'title': g.get('log', g['title']), 'sub': g.get('log_sub', ''), 'url': g['url']})
+if TOUR.get('date'): log.append({'date': TOUR['date'], 'ch': '走', 'title': f"{TOUR['title']}：{TOUR['place']}", 'sub': TOUR.get('kicker', ''), 'url': TOUR['url']})
+log.sort(key=lambda x: x['date'], reverse=True)
+log = log[:6]
+log_html = ''.join(f'<a{" class=new" if i == 0 else ""} href="{x["url"]}"><span class="d"><b>{cn_md(x["date"])[0]}</b>{cn_md(x["date"])[1]}</span>'
+                   f'<span class="t"><span class="ch">{x["ch"]}</span><span>{esc(x["title"])}</span>{"<small>"+esc(x["sub"])+"</small>" if x["sub"] else ""}</span></a>' for i, x in enumerate(log))
+
+# --- 目录 ---
+latest_e = eps[-1] if eps else None
+toc = [('看', '#kan', site['name'], LINES.get('kan', {}).get('desc', ''), f"第 {latest['no']} 题" if latest else ''),
+       ('听', '#ting', POD['name'] if POD else '合读', LINES.get('ting', {}).get('desc', ''), f"第 {latest_e['no']} 期" if latest_e else ''),
+       ('玩', '#wan', 'Game Studio', LINES.get('wan', {}).get('desc', ''), f"作品 {GAMES[-1]['no']:02d}" if GAMES else ''),
+       ('走', '#zou', TOUR.get('title', '摄影导览'), LINES.get('zou', {}).get('desc', ''), TOUR.get('place', '').split(' ')[-1] if TOUR else '')]
+toc_html = ''.join(f'<li><a href="{h}"><span class="ch">{ch}</span><span class="nm">{esc(nm)}<span class="sub">{esc(sub)}</span></span><span class="dots"></span><span class="pg">{esc(pg)}</span></a></li>' for ch, h, nm, sub, pg in toc)
+
+# --- 看 ---
+def plate(img, cap, url, sq=False):
+    return f'<figure{" class=sq" if sq else ""}><a href="{url}"><img src="{img}" alt="" loading="lazy"></a>{"<figcaption>"+esc(cap)+"</figcaption>" if cap else ""}</figure>'
+kan = ''
+if latest:
+    md, wd = cn_md(latest['date'])
+    cap = '第 %d 题封面' % latest['no']
+    kan_feat = (f'<div class="entry">{plate(latest["url"]+"cover.png", cap, latest["url"]) if latest["has_cover"] else "<div></div>"}'
+                f'<div><div class="no">本周 第 {latest["no"]} 题，{md}</div><h3>{esc(latest["title"])}</h3><p>{esc(latest.get("subtitle") or latest.get("summary", ""))}</p><a class="go" href="{latest["url"]}">打开这一题</a></div></div>')
+    rows = ''.join(f'<li><span>第 {m["no"]} 题</span><a href="{m["url"]}">{esc(m["title"])}</a><em>{cn_md(m["date"])[0]}</em></li>' for m in list(reversed(themes))[1:4])
+    rows += ''.join(f'<li><span>号外</span><a href="{m["url"]}">{esc(m["title"])}</a><em>{cn_md(m["date"])[0]}</em></li>' for m in list(reversed(extras))[:2])
+    kan = (f'<section class="ch-sec" id="kan"><div class="big">看</div><h2>{esc(site["name"])}<span>共 {len(themes)} 题，每周六</span></h2><p class="lead">{esc(LINES.get("kan", {}).get("lead", site["tagline"]))}</p>'
+           f'{kan_feat}<ul class="rows">{rows}</ul><a class="go" href="/t/">全部 {len(themes)} 题{"与号外" if extras else ""}</a></section>')
+
+# --- 听 ---
+ting = ''
+if latest_e or CC:
+    ent = ''
+    if latest_e:
+        md, wd = cn_md(latest_e['date'])
+        cap = '第 %d 期' % latest_e['no']
+        ent += (f'<div class="entry">{plate(latest_e["url"]+latest_e["sq"], cap, latest_e["url"], sq=True) if latest_e["has_cover"] else "<div></div>"}'
+                f'<div><div class="no">最新 第 {latest_e["no"]} 期，{md}，{latest_e["min"]} 分钟</div><h3 class="disp">{esc(latest_e["title"])}</h3><p>{esc(latest_e.get("subtitle", ""))}</p><a class="go" href="{latest_e["url"]}">开始收听</a></div></div>')
+    if CC:
+        weeks = CC.get('weeks', [])
+        today = str(dt.date.today())
+        cur = next((w for w in weeks if w.get('status') == 'now'), None) or next((w for w in reversed(weeks) if w['date'] <= today), weeks[0] if weeks else None)
+        nxt = next((w for w in weeks if cur and w['no'] == cur['no'] + 1), None)
+        wk = ''
+        if cur: wk += f'<dt>本周 第 {cur["no"]} 周</dt><dd>{esc(cur["author"])}{esc(cur["work"])} {esc(cur["read"])}</dd>'
+        if nxt: wk += f'<dt>下周 {cn_md(nxt["date"])[0]}</dt><dd>{esc(nxt["author"])}{esc(nxt["work"])} {esc(nxt["read"])}</dd>'
+        cc_img = '/cc/img/hero-athens.jpg' if os.path.exists(os.path.join(ROOT, 'static', 'cc', 'img', 'hero-athens.jpg')) else ''
+        ent += (f'<div class="entry">{plate(cc_img, "CC 读书会，雅典", "/cc/") if cc_img else "<div></div>"}'
+                f'<div><div class="no">{esc(CC["title"])}，跟着哥大书单读十二周</div><h3>一周一本，每周一期节目、一份测验、一页纸</h3><dl class="week">{wk}</dl><a class="go" href="/cc/">十二周路径与书库</a></div></div>')
+    ting = (f'<section class="ch-sec" id="ting"><div class="big">听</div><h2>{esc(POD["name"] if POD else "合读")}<span>共 {len(eps)} 期</span></h2><p class="lead">{esc(LINES.get("ting", {}).get("lead", POD["tagline"] if POD else ""))}</p>{ent}</section>')
+
+# --- 玩 ---
+wan = ''
+if GAMES:
+    ent = ''.join(f'<div class="entry">{plate(g["cover"], g.get("caption", ""), g["url"]) if g.get("cover") else "<div></div>"}'
+                  f'<div><div class="no">{esc(g.get("kicker", ""))}</div><h3 class="disp">{esc(g["title"])}</h3><p>{esc(g.get("desc", ""))}</p><a class="btn" href="{g.get("play", g["url"])}">在浏览器里玩</a> <a class="go" href="{g["url"]}" style="margin-left:14px">作品页</a></div></div>' for g in GAMES)
+    wan = f'<section class="ch-sec" id="wan"><div class="big">玩</div><h2>Game Studio<span>一个人的游戏工作室</span></h2><p class="lead">{esc(LINES.get("wan", {}).get("lead", ""))}</p>{ent}</section>'
+
+# --- 走 ---
+zou = ''
+if TOUR:
+    stops = TOUR.get('stops', [])
+    n = max(len(stops), 2)
+    pts = [(90 + i * (1020 / (n - 1)), 520 - i * (430 / (n - 1)) + (60 if i % 2 else -20)) for i in range(n)]
+    path = f'M{pts[0][0]:.0f} {pts[0][1]:.0f} ' + ' '.join(f'Q{(pts[i-1][0]+pts[i][0])/2:.0f} {pts[i-1][1]:.0f} {pts[i][0]:.0f} {pts[i][1]:.0f}' for i in range(1, n))
+    dots = ''.join(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="12"/>' for x, y in pts)
+    labels = ''.join(f'<text x="{x+18:.0f}" y="{y+ (38 if i % 2 else -16):.0f}">{esc(s)}</text>' for i, ((x, y), s) in enumerate(zip(pts, stops)))
+    svg = (f'<svg class="route" viewBox="0 0 1200 630" aria-hidden="true"><path d="{path}" fill="none" stroke="var(--ink)" stroke-width="4" stroke-dasharray="12 10"/>'
+           f'<g fill="var(--ink)">{dots}</g><g font-family="Noto Sans SC,sans-serif" font-size="26" fill="var(--ink2)">{labels}</g></svg>')
+    zou = (f'<section class="ch-sec" id="zou"><div class="big">走</div><h2>{esc(TOUR["title"])}<span>{esc(TOUR["place"])}</span></h2><p class="lead">{esc(LINES.get("zou", {}).get("lead", ""))}</p>'
+           f'<div class="entry"><figure><a href="{TOUR["url"]}">{svg}</a><figcaption>路线示意，{len(stops)} 个落脚点</figcaption></figure>'
+           f'<div><div class="no">{esc(TOUR.get("kicker", ""))}</div><h3>{esc(TOUR["place"])} 的一条拍摄路线</h3><p>{esc(TOUR.get("desc", ""))}</p><a class="go" href="{TOUR["url"]}">打开 3D 路线地图</a></div></div></section>')
+
+ptl = open(os.path.join(HUB, 'portal.html'), encoding='utf-8').read()
+portal = (ptl.replace('{{NAME}}', esc(PERSON['name'])).replace('{{EN}}', esc(PERSON.get('en', site['author']))).replace('{{LEAD}}', esc(PERSON.get('lead', '')))
+             .replace('{{TOC}}', toc_html).replace('{{LOG}}', log_html).replace('{{KAN}}', kan).replace('{{TING}}', ting).replace('{{WAN}}', wan).replace('{{ZOU}}', zou)
+             .replace('{{BASE}}', BASE).replace('{{YEAR}}', str(dt.date.today().year))
+             .replace('{{OG_IMAGE}}', f"{BASE}{latest['url']}cover.png" if latest and latest['has_cover'] else ''))
+open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(portal)
+print(f"portal: / ({len(log)} log entries; 看 {len(themes)} 听 {len(eps)} 玩 {len(GAMES)} 走 {1 if TOUR else 0})")

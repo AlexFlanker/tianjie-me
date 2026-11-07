@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{NAME}} · {{EN}}</title>
+<meta name="description" content="{{LEAD}}">
+<meta name="author" content="{{EN}}">
+<meta name="theme-color" content="#f3f5f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161a21" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="{{BASE}}/">
+<link rel="alternate" type="application/atom+xml" title="一周一题" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="合读" href="/listen/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{NAME}} · {{EN}}">
+<meta property="og:description" content="{{LEAD}}">
+<meta property="og:url" content="{{BASE}}/">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231e2740'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' font-family='Noto Serif SC,Songti SC,serif' font-weight='700' fill='%23f3f5f4'%3E孙%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('yzyt-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f3f5f4;--grid:#e3e7e4;--ink:#1e2740;--ink2:#4c5568;--mute:#7b8494;--rule:#c9cfd3;--mark:#ffe566;--tab:#1e2740;--tabink:#f3f5f4;
+  --disp:"ZCOOL XiaoWei","Noto Serif SC","Songti SC",serif;--sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161a21;--grid:#20262e;--ink:#e8eaee;--ink2:#b6bcc6;--mute:#7f8794;--rule:#39414b;--mark:#5a4d1c;--tab:#e8eaee;--tabink:#161a21}}
+:root[data-theme="dark"]{--bg:#161a21;--grid:#20262e;--ink:#e8eaee;--ink2:#b6bcc6;--mute:#7f8794;--rule:#39414b;--mark:#5a4d1c;--tab:#e8eaee;--tabink:#161a21}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px;color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.8;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+img{display:block;max-width:100%}
+.page{max-width:720px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 80px}
+
+/* 拇指索引 */
+.tabs{position:fixed;right:0;top:50%;transform:translateY(-50%);display:grid;gap:10px;z-index:9}
+.tabs a{display:grid;place-items:center;width:52px;height:88px;background:var(--tab);color:var(--tabink);font-family:var(--disp);font-size:30px;line-height:1;border-radius:8px 0 0 8px;box-shadow:-2px 2px 0 rgba(30,39,64,.18);transition:width .15s}
+.tabs a small{font-family:var(--sans);font-size:10px;letter-spacing:.1em;opacity:.75;margin-top:4px}
+.tabs a:hover{width:60px}
+@media (max-width:980px){.tabs{position:sticky;top:0;transform:none;grid-template-columns:repeat(4,1fr);gap:0;margin:0;width:100%;background:var(--tab)}.tabs a{width:auto;height:54px;border-radius:0;box-shadow:none;font-size:22px}.tabs a:hover{width:auto}.tabs a small{margin-top:2px}}
+@media (prefers-reduced-motion:reduce){.tabs a{transition:none}}
+
+/* 扉页 */
+.title{padding:56px 0 30px;border-bottom:1px solid var(--ink)}
+.title h1{font-family:var(--disp);font-weight:400;font-size:clamp(44px,8vw,72px);letter-spacing:.18em;line-height:1;margin:0}
+.title .en{font-size:13px;color:var(--mute);letter-spacing:.12em;margin-top:10px}
+.title p{font-family:var(--disp);font-size:21px;line-height:1.6;color:var(--ink2);margin:26px 0 0;max-width:30ch}
+
+/* 目录 */
+.toc{margin:34px 0 0}
+.toc h2,.log h2{font-family:var(--disp);font-weight:400;font-size:17px;letter-spacing:.3em;color:var(--mute);margin:0 0 10px}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li a{display:flex;align-items:baseline;gap:12px;padding:10px 0;font-size:17px}
+.toc li .ch{font-family:var(--disp);font-size:30px;line-height:1;width:40px;flex:none}
+.toc li .nm{font-weight:500}
+.toc li .sub{color:var(--mute);font-size:13.5px;font-weight:400;margin-left:8px}
+.toc li .dots{flex:1;border-bottom:1px dotted var(--rule);transform:translateY(-5px);margin:0 6px;min-width:24px}
+.toc li .pg{color:var(--ink2);font-size:14px;white-space:nowrap}
+
+/* 日志（最新） */
+.log{margin-top:48px}
+.log h2{margin-bottom:6px}
+.log a{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:10px 0;border-top:1px solid var(--rule);align-items:baseline}
+.log a:last-child{border-bottom:1px solid var(--rule)}
+.log .d{color:var(--mute);font-size:13.5px;line-height:1.5}
+.log .d b{display:block;font-weight:500;color:var(--ink2)}
+.log .t{font-size:16px;line-height:1.55}
+.log .t small{display:block;font-size:13px;color:var(--mute)}
+.log .t .ch{font-family:var(--disp);font-size:18px;margin-right:8px;color:var(--ink2)}
+.log .new .t > span:not(.ch){background:linear-gradient(transparent 55%,var(--mark) 55%,var(--mark) 92%,transparent 92%);padding:0 2px}
+@media (max-width:520px){.log a{grid-template-columns:1fr;gap:2px}}
+
+/* 章 */
+.ch-sec{margin-top:72px;padding-top:18px;border-top:1px solid var(--ink);position:relative;scroll-margin-top:70px}
+.ch-sec .big{font-family:var(--disp);font-size:120px;line-height:1;position:absolute;left:-150px;top:10px;color:var(--ink)}
+.ch-sec h2{font-family:var(--disp);font-weight:400;font-size:30px;letter-spacing:.1em;margin:0}
+.ch-sec h2 span{font-family:var(--sans);font-size:13px;letter-spacing:0;color:var(--mute);margin-left:14px}
+.ch-sec .lead{margin:6px 0 20px;color:var(--ink2);max-width:46ch}
+.entry{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:18px 0;border-top:1px dotted var(--rule)}
+.entry:first-of-type{border-top:0}
+.entry figure{margin:0}
+.entry figure img{border:1px solid var(--rule);width:100%;object-fit:cover;aspect-ratio:1200/630;background:var(--grid)}
+.entry figure.sq img{aspect-ratio:1}
+.entry figcaption{font-size:11.5px;color:var(--mute);margin-top:5px;line-height:1.5}
+.entry .no{font-size:13px;color:var(--mute)}
+.entry h3{font-size:20px;line-height:1.4;margin:2px 0 6px;font-weight:700;letter-spacing:.01em;font-family:var(--sans)}
+.entry h3.disp{font-family:var(--disp);font-weight:400;font-size:28px;letter-spacing:.06em}
+.entry p{margin:0;color:var(--ink2);font-size:14.5px}
+.go{display:inline-block;margin-top:10px;font-size:14px;border-bottom:1px solid var(--ink)}
+.btn{display:inline-block;margin-top:12px;padding:8px 18px;background:var(--ink);color:var(--bg);font-size:14.5px;letter-spacing:.06em}
+.rows{list-style:none;margin:6px 0 0;padding:0}
+.rows li{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:7px 0;border-top:1px dotted var(--rule);font-size:14.5px}
+.rows li span{color:var(--mute)}.rows li em{font-style:normal;color:var(--mute);font-size:13px}
+.week{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;font-size:14.5px;margin:4px 0 0}
+.week dt{color:var(--mute)}.week dd{margin:0}
+.route{border:1px solid var(--rule);width:100%;aspect-ratio:1200/630;background:var(--bg)}
+@media (max-width:1200px){.ch-sec .big{position:static;font-size:64px;display:inline-block;margin-right:14px;vertical-align:-8px}}
+@media (max-width:640px){.entry{grid-template-columns:1fr}.entry figure{max-width:280px}.rows li{grid-template-columns:56px 1fr}.rows li em{display:none}}
+
+footer{margin-top:80px;padding-top:14px;border-top:1px solid var(--ink);font-size:13px;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;align-items:center}
+footer a{color:var(--ink2)}
+footer .r{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.theme-btn{font:inherit;font-size:12px;color:var(--ink2);border:1px solid var(--rule);border-radius:999px;padding:3px 10px;background:transparent;cursor:pointer}
+</style>
+</head>
+<body>
+<nav class="tabs" aria-label="索引">
+  <a href="#kan">看<small>一周一题</small></a>
+  <a href="#ting">听<small>合读</small></a>
+  <a href="#wan">玩<small>游戏</small></a>
+  <a href="#zou">走<small>导览</small></a>
+</nav>
+
+<div class="page">
+  <header class="title">
+    <h1>{{NAME}}</h1>
+    <div class="en">{{EN}} · tianjie.me</div>
+    <p>{{LEAD}}</p>
+  </header>
+
+  <section class="toc" aria-label="目录">
+    <h2>目录</h2>
+    <ol>{{TOC}}</ol>
+  </section>
+
+  <section class="log" aria-label="最新">
+    <h2>日志</h2>
+    {{LOG}}
+  </section>
+
+  {{KAN}}
+  {{TING}}
+  {{WAN}}
+  {{ZOU}}
+
+  <footer><span>© {{YEAR}} {{EN}}</span><div class="r"><a href="/feed.xml">一周一题 RSS</a><a href="/listen/feed.xml">合读 RSS</a><a href="/sitemap.xml">Sitemap</a><button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></div></footer>
+</div>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('themebtn');if(!b)return;function L(){var t=r.getAttribute('data-theme');b.textContent=t==='dark'?'☀ 浅色':t==='light'?'☾ 深色':'◐ 深浅色'}
+b.addEventListener('click',function(){var d=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);r.setAttribute('data-theme',d?'light':'dark');try{localStorage.setItem('yzyt-theme',r.getAttribute('data-theme'))}catch(e){}L()});L()})();
+</script>
+</body>
+</html>

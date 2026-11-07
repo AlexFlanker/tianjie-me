@@ -10,8 +10,12 @@ themes/<YYYY-MM-DD>-<slug>/
   meta.json      {no, slug, title, subtitle, date, summary, tags[], format, reading_time, sources[], cover_focus?}
   cover.png      1200×630 封面 / 分享图（tools/cover.py 生成）
   src/           可选：模板、数据、生成脚本（便于以后改内容重建）
-hub/             首页模板、站点信息（site.json：名称、长期专题）、_headers、_redirects、404
-build.py         生成 public/（顶栏注入、首页、feed、sitemap）；Cloudflare Pages 用 `python3 build.py` 构建，输出目录 public
+hub/             模板与站点信息、_headers、_redirects、404
+  portal.html    站点根 / ＝ 孙天杰的门户：看（一周一题+号外）/ 听（合读+CC 读书会）/ 游（Game Studio）/ 走（摄影导览），
+                 顶部「日志」自动汇总四条线最近 6 条更新。数据来自 site.json 的 person / lines / games / tour 与各线的 meta
+  home.html      一周一题自己的首页，输出到 /t/（本周题 + 号外 + 归档；RSS 仍是 /feed.xml，题目地址 /t/<slug>/ 不变）
+  site.json      名称、人物（person）、四条线简介（lines）、游戏（games：发新版时改 date/version/log）、导览（tour）、长期专题（projects，只用于 sitemap）
+build.py         生成 public/（顶栏注入、/t/ 首页、门户 /、feed、sitemap、播客 /listen/）；Cloudflare Pages 用 `python3 build.py` 构建，输出目录 public
 queue.md         选题池
 ```
 
@@ -27,7 +31,7 @@ queue.md         选题池
 4. **核查**：派一个子代理逐条核对年代、数字、引文；桌面 / 手机 / 深色各截一张图检查布局；修正后更新 `sources`。
 5. **预览**：提交到分支 `draft/<slug>` 并推送（Cloudflare 会给分支预览地址）；如果这个会话没有推送权限，就把主题打包成 zip 放到会话输出，并把页面发布成 Claude Artifact 作为预览。
 6. **通知**：把预览链接、一句话摘要、核查中发现的争议点发给 Tianjie，然后等待。
-7. **发布**：收到"发"之后合并到 `main`（或推送 main），把 `queue.md` 里的条目移到「已完成」，确认 https://tianjie.me/ 首页已更新；收到修改意见就改完再发预览。
+7. **发布**：收到"发"之后合并到 `main`（或推送 main），把 `queue.md` 里的条目移到「已完成」，确认 https://tianjie.me/t/ 与门户 https://tianjie.me/ 的「日志」已更新；收到修改意见就改完再发预览。
 
 ## 本地操作
 

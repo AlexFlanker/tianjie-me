@@ -119,7 +119,7 @@ page = f'''<!doctype html>
 </style>
 </head>
 <body>
-<div class="sitebar"><div class="wide"><a class="brand" href="/">一周一题</a><span class="tag">长期专题</span><span class="dt">CC 读书会 · 第 {cur["no"]} 周 / 12</span><div class="r"><a href="/listen/">合读</a><a href="/#projects">长期专题</a><a href="/">归档</a></div></div></div>
+<div class="sitebar"><div class="wide"><a class="brand" href="/">孙天杰</a><span class="tag">长期专题</span><span class="dt">CC 读书会 · 第 {cur["no"]} 周 / 12</span><div class="r"><a href="/listen/">合读</a><a href="/t/">一周一题</a></div></div></div>
 
 <header class="band hero">
   <div class="wide grid">
@@ -222,7 +222,7 @@ page = f'''<!doctype html>
       <div><h4>书单来源</h4><ul><li><a href="{e(D["source"]["course"])}" rel="noopener">课程页</a>（哥伦比亚学院核心课程）</li><li><a href="{e(D["source"]["bulletin"])}" rel="noopener">Bulletin</a>：当前要求的作者与单元</li><li><a href="{e(D["source"]["list"])}" rel="noopener">2021–22 必读书单（PDF）</a>；书单每三年修订一次</li></ul></div>
     </div>
     <details class="fold big"><summary><h3>图片</h3></summary><ul>{credits}</ul></details>
-    <div class="seal"><span>© {today.year} Tianjie Sun</span><a href="/">一周一题</a><a href="/listen/">合读</a><a href="/listen/feed.xml">播客 RSS</a></div>
+    <div class="seal"><span>© {today.year} Tianjie Sun</span><a href="/t/">一周一题</a><a href="/listen/">合读</a><a href="/listen/feed.xml">播客 RSS</a></div>
   </div>
 </section>
 </main>

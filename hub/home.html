@@ -9,12 +9,12 @@
 <meta name="theme-color" content="#f3f4ef" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16181b" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
-<link rel="canonical" href="{{BASE}}/">
+<link rel="canonical" href="{{BASE}}/t/">
 <link rel="alternate" type="application/atom+xml" title="{{SITE_NAME}}" href="/feed.xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{SITE_NAME}}">
 <meta property="og:description" content="{{TAGLINE}}">
-<meta property="og:url" content="{{BASE}}/">
+<meta property="og:url" content="{{BASE}}/t/">
 <meta property="og:image" content="{{OG_IMAGE}}">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
@@ -45,6 +45,7 @@ h1,h2,h3{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;text-wr
 .nav{display:flex;gap:18px;font-size:13.5px;align-items:center}
 .nav a{text-decoration:none;color:var(--ink-2);letter-spacing:.06em}
 .nav a:hover{color:var(--accent)}
+.nav a.home{color:var(--ink);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px}
 .theme-btn{font:inherit;font-size:12px;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;background:var(--surface);cursor:pointer}
 .theme-btn:hover{border-color:var(--accent);color:var(--accent)}
 
@@ -97,7 +98,7 @@ footer a{color:var(--ink-2);text-decoration:none}footer a:hover{color:var(--acce
       <div class="seal">每周六更新</div>
       <div><h1>{{SITE_NAME}}</h1><div class="tg">{{TAGLINE}}</div></div>
     </div>
-    <nav class="nav"><a href="#archive">归档</a><a href="#projects">长期专题</a><a href="/feed.xml">RSS</a><button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></nav>
+    <nav class="nav"><a href="#archive">归档</a><a href="#extras">号外</a><a href="/feed.xml">RSS</a><a href="/" class="home">孙天杰 ↗</a><button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></nav>
   </header>
 
   {{HERO}}
@@ -109,12 +110,7 @@ footer a{color:var(--ink-2);text-decoration:none}footer a:hover{color:var(--acce
     <div class="grid">{{ARCHIVE}}</div>
   </section>
 
-  <section class="sec" id="projects">
-    <div class="sec-h"><h2>长期专题</h2><span>不按周更新的大项目</span></div>
-    <div class="projs">{{PROJECTS}}</div>
-  </section>
-
-  <footer><span>© {{YEAR}} Tianjie Sun</span><a href="/feed.xml">RSS 订阅</a><a href="/sitemap.xml">Sitemap</a></footer>
+  <footer><span>© {{YEAR}} Tianjie Sun</span><a href="/">孙天杰的首页</a><a href="/listen/">合读</a><a href="/cc/">CC 读书会</a><a href="https://games.tianjie.me/">Game Studio</a><a href="/feed.xml">RSS 订阅</a><a href="/sitemap.xml">Sitemap</a></footer>
 </div>
 <script>
 (function(){var r=document.documentElement,b=document.getElementById('themebtn');if(!b)return;function L(){var t=r.getAttribute('data-theme');b.textContent=t==='dark'?'☀ 浅色':t==='light'?'☾ 深色':'◐ 深浅色'}

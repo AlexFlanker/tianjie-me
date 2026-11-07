@@ -1,0 +1,1301 @@
+{
+ "nodes": [
+  {
+   "id": "cleisthenes-508",
+   "year": -508,
+   "year_label": "前 508/507",
+   "date": null,
+   "place": "雅典（Athens），阿提卡（Attica）",
+   "lane": "draw",
+   "title_zh": "克里斯提尼重划阿提卡",
+   "what": "克里斯提尼废四个血缘部落，把阿提卡的德莫编成 30 个三分区、10 个新部落。",
+   "ruler": "代表权的基本单位从血缘改为地域，并刻意把城区、海岸、内陆「混编」进同一部落。",
+   "text": "前 508/507 年，克里斯提尼（Cleisthenes）把阿提卡分成城区（asty）、海岸（paralia）、内陆（mesogeia）三带，每带 10 个三分区（trittys），共 30 个；每个新部落抽签各取一带一个三分区，10 部落各出 50 人组成五百人议事会。德莫为基层单位，Traill（1975）据铭文复原古典期德莫 139 个（斯特拉波所记 170/174 不被采信）。《雅典政制》21 章说目的是「把他们混合起来，好让更多人参与政治」。",
+   "quote": "wishing to mix them up, in order that more might take part in the government",
+   "quote_src": "Aristotle, Athenaion Politeia 21.2, trans. H. Rackham (Loeb)，转引自 Cecchet 2017 p. 52",
+   "numbers": [
+    {
+     "label": "新部落",
+     "value": 10,
+     "unit": "个"
+    },
+    {
+     "label": "三分区 trittyes",
+     "value": 30,
+     "unit": "个"
+    },
+    {
+     "label": "德莫（Traill 1975 复原）",
+     "value": 139,
+     "unit": "个"
+    },
+    {
+     "label": "议事会",
+     "value": 500,
+     "unit": "人（每部落 50）"
+    }
+   ],
+   "dispute": "德莫数：Traill 1975 复原为 139；斯特拉波记 170 或 174，学界多认为不可靠。年份：通行写前 508/507，部分教科书写前 508。",
+   "confidence": "高",
+   "verify": false,
+   "note": "Trittys 维基页仅作线索。Cecchet 章（Brill 2017）是学术一手转述，引 Traill 1975 及 Ath. Pol. 21（Rackham 译）。建议编辑另核 Loeb 原文页码。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Lucia Cecchet, 'Re-shaping and Re-founding Citizen Bodies: The Case of Athens, Cyrene and Camarina' (Brill, 2017), pp. 51–61",
+     "url": "https://air.unimi.it/retrieve/handle/2434/893724/2346462/9789004352612-B9789004352612_004.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "John S. Traill, The Political Organization of Attica (Hesperia Supplement 14, 1975) — ASCSA 目录",
+     "url": "https://ambrosia.ascsa.net/id/agora/publication/hesperia%20supplement%2014",
+     "kind": "academic"
+    },
+    {
+     "title": "Wikipedia: Trittys",
+     "url": "https://en.wikipedia.org/wiki/Trittys",
+     "kind": "wiki"
+    }
+   ],
+   "image_hint": "Wikimedia Commons 有 Traill 式阿提卡 trittyes 分布图（CC BY-SA，搜 'Attica trittyes map' / 'Cleisthenes tribes map'）；ArcGIS StoryMap『Demes of Attica (2022)』有现代底图。",
+   "text_long": "前 508/507 年，克里斯提尼把阿提卡分成城区（asty）、海岸（paralia）、内陆（mesogeia）三带，每带 10 个三分区（trittys），共 30 个；每个新部落抽签各取一带的一个三分区，10 个部落各出 50 人组成五百人议事会。德莫是基层单位，Traill《The Political Organization of Attica》（1975）据铭文复原的古典期德莫数为 139（斯特拉波所记 170/174 不被采信）。亚里士多德《雅典政制》第 21 章说他这样做是「想把他们混合起来，好让更多人参与政治」，并把部落以本地英雄命名。"
+  },
+  {
+   "id": "ming-nanbei-1397",
+   "year": 1397,
+   "year_label": "1397 / 1425",
+   "date": null,
+   "place": "明·南京（Nanjing）",
+   "lane": "count",
+   "title_zh": "南北榜案与南北卷",
+   "what": "洪武三十年会试 51 人皆南方人，朱元璋另榜 61 人皆北方人；洪熙元年起会试按地域分卷定额。",
+   "ruler": "把「分名额」的单位从全国一张榜改为按地域分卷定比，名额与人口、文教不再一一对应。",
+   "text": "洪武三十年丁丑科，主考刘三吾、白信蹈取中 51 人皆南士，北方举子不服；朱元璋命复阅，仍无北士，遂处置考官，亲自策问另取韩克忠等 61 人，史称「南北榜」。洪熙元年（1425），仁宗采杨士奇议，会试分南北卷取士，初定南六北四（通行表述为「南十之六，北十之四」）；宣德、正统间又分南、北、中三卷，以百名为率，南取 55、北取 35、中取 10。此后明清会试均带地域配额，清代进一步发展为分省定额取中。",
+   "quote": "宣德、正统间，分为南、北、中卷，以百名为率，则南取五十五名，北取三十五名，中取十名。",
+   "quote_src": "《明史》卷七十·选举志二（中华书局点校本）——待核原文字句",
+   "numbers": [
+    {
+     "label": "洪武三十年春榜取中",
+     "value": 51,
+     "unit": "人（皆南士）"
+    },
+    {
+     "label": "夏榜另取",
+     "value": 61,
+     "unit": "人（皆北士）"
+    },
+    {
+     "label": "南 / 北 / 中卷比例",
+     "value": "55 / 35 / 10",
+     "unit": "每百名"
+    }
+   ],
+   "dispute": "南北榜春榜取中人数有 51、52 两说；南北卷初定比例有「南六北四」与「南十六北十四」等不同表述。李新峰（2018）指出南北卷设置依据「史载不详」，并主张洪熙改制系依洪武旧制匹配会试与各省解额。",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：《明史·选举志二》原文页面未能打开（维基文库 url_not_found），引文字句凭通行版本，需对中华书局本或 ctext 核对；南北榜案人数（51 vs 52）与「南六北四」原文出处待核。李新峰文仅获摘要。",
+   "sources": [
+    {
+     "title": "《明史》卷七十·选举志二（维基文库）",
+     "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B770",
+     "kind": "wiki"
+    },
+    {
+     "title": "李新峰《明代南北卷与南北解额》，《明代研究》第 30 期（2018），pp. 71–101",
+     "url": "https://ming.cnhis.ncnu.edu.tw/wp-content/uploads/2018/08/ming30_02li.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "《明史》卷一三七·刘三吾传（维基文库）",
+     "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2/%E5%8D%B7137",
+     "kind": "wiki"
+    }
+   ],
+   "image_hint": "公有领域：明代贡院/科举放榜图（如《徐显卿宦迹图》、《南都繁会图》局部，Wikimedia Commons）；或清代会试分省录取定额表（扫描古籍）。"
+  },
+  {
+   "id": "washington-veto-1792",
+   "year": 1792,
+   "year_label": "1792",
+   "date": "1792-04-05",
+   "place": "美国·费城（Philadelphia）",
+   "lane": "count",
+   "title_zh": "华盛顿否决分配法案",
+   "what": "华盛顿行使美国史上第一次总统否决，退回 120 席分配法案；4 月 14 日改按杰斐逊法分 105 席。",
+   "ruler": "余数法（汉密尔顿）让位于除数法（杰斐逊），沿用到 1840 年。",
+   "text": "1790 年首次普查后，国会通过把众院设为 120 席的法案（汉密尔顿 Alexander Hamilton 的最大余数法）。杰斐逊（Thomas Jefferson）当日递交备忘录，指该法没有统一比率、部分州超过宪法「每三万人一名」上限。1792 年 4 月 5 日华盛顿否决，次日众院复议未达三分之二。4 月 14 日新法（1 Stat. 253）按杰斐逊除数法、每 33,000 人一席，共 105 席。杰斐逊法用到 1840 年，1842 年改韦伯斯特法。",
+   "quote": null,
+   "quote_src": null,
+   "numbers": [
+    {
+     "label": "被否决法案席位",
+     "value": 120,
+     "unit": "席"
+    },
+    {
+     "label": "最终法案席位",
+     "value": 105,
+     "unit": "席"
+    },
+    {
+     "label": "除数（比率）",
+     "value": 33000,
+     "unit": "人 / 席"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": false,
+   "note": "LoC 法律图书馆博客给出否决日 1792-04-05、复议 04-06、新法 04-14（1 Stat. 253）。「每 33,000 人一席」来自 1 Stat. 253 原文（通行），LoC 页未写数字——若要在页面显示请再核 Statutes at Large。否决信原文可引 Founders Online（未开）。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Library of Congress Law Library blog: 'Apportionment and the First Presidential Veto' (2014)",
+     "url": "https://blogs.loc.gov/law/2014/11/apportionment-and-the-first-presidential-veto/",
+     "kind": "official"
+    },
+    {
+     "title": "Mathematics & Democracy Institute: Apportionment (方法沿革 1792–1941)",
+     "url": "https://mathematics-democracy-institute.org/apportionment/",
+     "kind": "academic"
+    },
+    {
+     "title": "National Archives Prologue blog（首次否决）",
+     "url": "https://prologue.blogs.archives.gov/?p=34624",
+     "kind": "official"
+    }
+   ],
+   "image_hint": "公有领域：华盛顿 1792-04-05 致众院否决信手稿（国家档案馆 / LoC），Gilbert Stuart 华盛顿像；1790 年普查分配表扫描（census.gov history）。",
+   "text_long": "1790 年首次普查后，国会通过把众院设为 120 席的法案（按汉密尔顿 Alexander Hamilton 的最大余数法，各州先取整再把剩余席位给余数最大者）。杰斐逊（Thomas Jefferson）当天向华盛顿递交备忘录，认为该法没有统一的比率、且某些州超过宪法「每三万人一名」上限。1792 年 4 月 5 日华盛顿否决，次日众院复议未达三分之二。4 月 14 日新法（1 Stat. 253）生效：按杰斐逊的除数法、每 33,000 人一席，共 105 席。杰斐逊法用到 1840 年，1842 年改用韦伯斯特法。"
+  },
+  {
+   "id": "gerry-mander-1812",
+   "year": 1812,
+   "year_label": "1812",
+   "date": "1812-03-26",
+   "place": "美国·马萨诸塞州埃塞克斯县（Essex County）",
+   "lane": "draw",
+   "title_zh": "Gerry-mander 之名",
+   "what": "Gerry 1812-02-11 签署州参议院选区法；3-26《波士顿公报》刊出「Gerry-mander」版画。",
+   "ruler": "「画线」第一次有了名字：形状本身成为不公的证据。",
+   "text": "1812 年马萨诸塞州议会重划州参议院选区，州长 Elbridge Gerry 虽不喜方案仍于 2 月 11 日签署。《波士顿公报》3 月 9 日号外先登地图；3 月 26 日刊出把埃塞克斯南区画成有翼怪兽的版画，题为「The Gerry-mander. A new species of Monster」。版画一般归于雕版师 Elkanah Tisdale（旧说 Gilbert Stuart）；造词者未定，John Russell、Benjamin Russell、Nathan Hale、Richard Alsop 诸说并列。同年 Gerry 连任落败。",
+   "quote": "The Gerry-mander. A new species of Monster, which appeared in the Essex South District in January last.",
+   "quote_src": "Boston Gazette, 26 March 1812（转引自 wordorigins.org，据 OED 2nd ed.）",
+   "numbers": [
+    {
+     "label": "签署日",
+     "value": "1812-02-11",
+     "unit": ""
+    },
+    {
+     "label": "版画刊出",
+     "value": "1812-03-26",
+     "unit": ""
+    }
+   ],
+   "dispute": "画者：Tisdale（LoC、wordorigins 主流）vs Gilbert Stuart（旧说）。造词者：John Russell / Benjamin Russell / Nathan Hale（wordorigins）；Richard Alsop（Dean 1892，据 LoC 博客读者留言）；LoC 2024 博客称「从未确认」。",
+   "confidence": "高",
+   "verify": false,
+   "note": "签署日 02-11 来自 LoC 法律图书馆博客 2017；其余来自 LoC 2024 博客与 wordorigins（引 OED）。Alsop 说仅见读者留言，页面上写「另有一说」即可。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Library of Congress blog: 'Gerrymandering: The Origin Story' (2024)",
+     "url": "https://blogs.loc.gov/loc/2024/07/gerrymandering-the-origin-story/",
+     "kind": "official"
+    },
+    {
+     "title": "Library of Congress Law Library blog: 'Elbridge Gerry and the Monstrous Gerrymander' (2017)",
+     "url": "https://blogs.loc.gov/law/2017/02/elbridge-gerry-and-the-monstrous-gerrymander/",
+     "kind": "official"
+    },
+    {
+     "title": "wordorigins.org: gerrymander（引 OED、Boston Gazette 1812-03-09/26）",
+     "url": "https://www.wordorigins.org/big-list-entries/gerrymander",
+     "kind": "academic"
+    },
+    {
+     "title": "Leventhal Map Center: 'Natural and political history of the Gerry-mander' (1813)",
+     "url": "https://collections.leventhalmap.org/search/commonwealth:3t947b80f",
+     "kind": "official"
+    }
+   ],
+   "image_hint": "公有领域：Tisdale 版画 'The Gerry-Mander'（1812，LoC Rare Book Division 藏；Wikimedia Commons 'The Gerry-Mander Edit.png'）；波士顿公共图书馆 Leventhal 中心 1813 小册子扫描。",
+   "text_long": "1812 年马萨诸塞州议会重划州参议院选区，州长 Gerry 虽认为方案「highly disagreeable」仍签署（1812-02-11）。《波士顿公报》3 月 9 日号外先登出埃塞克斯与伍斯特两县地图；3 月 26 日刊出版画，标题「The Gerry-mander. A new species of Monster, which appeared in the Essex South District in January last」。版画一般归于雕版师 Elkanah Tisdale（旧说 Gilbert Stuart）。造词者未定：《公报》编辑 John Russell、其兄 Benjamin Russell、Nathan Hale，以及 1892 年 John W. Dean 所记的诗人 Richard Alsop 等说并列。同年 Gerry 竞选连任落败，党派仍保住议会。"
+  },
+  {
+   "id": "reform-act-1832",
+   "year": 1832,
+   "year_label": "1832",
+   "date": "1832-06-07",
+   "place": "英国·威斯敏斯特",
+   "lane": "count",
+   "title_zh": "英国改革法案废腐败选区",
+   "what": "《1832 年人民代表法》附表 A 废 56 个选区、附表 B 把 30 个减为 1 席，新设曼彻斯特等 42 处代表。",
+   "ruler": "席位从「历史上曾有的镇」改为跟人口走。",
+   "text": "改革前 Old Sarum（威尔特郡）是一座弃置山城，1830 年《泰晤士报》称「没有一栋房子」，1754–1790 年仅 7 名选民、其后不超过 11 名，却回送 2 名议员；曼彻斯特二十万人没有议席。1831 年麦考莱（T. B. Macaulay）在下院说：「Old Sarum 没有居民，却有两名议员。」1832 年 6 月 7 日法案：附表 A 的 56 个选区不再回送议员，附表 B 的 30 个减为 1 席，附表 C/D 新增 22 处各 2 席、20 处各 1 席；市镇选举权扩至年值 10 镑户主。",
+   "quote": "Old Sarum, with no inhabitants, has two members.",
+   "quote_src": "T. B. Macaulay, House of Commons, 1831（转引自 L. W. Cowie, History Today）",
+   "numbers": [
+    {
+     "label": "附表 A 废除选区",
+     "value": 56,
+     "unit": "个"
+    },
+    {
+     "label": "附表 B 减为 1 席",
+     "value": 30,
+     "unit": "个"
+    },
+    {
+     "label": "Old Sarum 选民（1790–1832）",
+     "value": "≤11",
+     "unit": "人"
+    },
+    {
+     "label": "Old Sarum 议席",
+     "value": 2,
+     "unit": "席"
+    }
+   ],
+   "dispute": "Old Sarum 选民数各处说法为 7 或 11（视年代）；本条用 Newcastle 大学 ECPPEC 项目口径。",
+   "confidence": "高",
+   "verify": false,
+   "note": "法案原文可在 legislation.gov.uk 核（未打开，通过 Peel Web 转述的附表原文）。6 月 7 日为法案标题所载日期（王室批准）。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "ECPPEC (Newcastle University): 'Rotten Boroughs' by Hillary Burlock",
+     "url": "https://ecppec.ncl.ac.uk/features/rotten-boroughs/",
+     "kind": "academic"
+    },
+    {
+     "title": "The Peel Web: Representation of the People Act 1832 provisions",
+     "url": "https://historyhome.co.uk/peel/refact/refact.htm",
+     "kind": "academic"
+    },
+    {
+     "title": "L. W. Cowie, 'Old Sarum', History Today",
+     "url": "https://www.historytoday.com/archive/old-sarum",
+     "kind": "press"
+    },
+    {
+     "title": "Wikipedia: Rotten and pocket boroughs",
+     "url": "https://en.wikipedia.org/wiki/Rotten_and_pocket_boroughs",
+     "kind": "wiki"
+    }
+   ],
+   "image_hint": "公有领域：Old Sarum 土丘版画 / John Constable 等 19 世纪画作；1832 年改革法案议会场景画（Wikimedia Commons）。",
+   "text_long": "改革前，Old Sarum（威尔特郡）是一座已弃置的山城，1830 年《泰晤士报》称「没有一栋房子，也没有房屋的痕迹」，1754–1790 年只有 7 名选民、1790–1832 年不超过 11 名，却回送 2 名议员；而曼彻斯特二十万人没有议席。1831 年麦考莱（T. B. Macaulay）在下院辩论中说：「Old Sarum, with no inhabitants, has two members.」1832 年 6 月 7 日法案通过：附表 A 的 56 个选区「自本届议会结束起不再回送任何议员」，附表 B 的 30 个选区减为 1 席，附表 C 的 22 处各得 2 席、附表 D 的 20 处各得 1 席；市镇选举权扩至年值 10 镑以上的户主。"
+  },
+  {
+   "id": "apportionment-act-1842",
+   "year": 1842,
+   "year_label": "1842",
+   "date": "1842-06-25",
+   "place": "美国·华盛顿",
+   "lane": "draw",
+   "title_zh": "美国首次强制单席位选区",
+   "what": "1842 年分配法（5 Stat. 491）首次要求众议员「由连续地域组成、数目与议员数相等的选区」选出，每区只选一人。",
+   "ruler": "联邦第一次给画线立规：连续；1872 加人数相等，1901 加紧凑。",
+   "text": "1842 年分配法（5 Stat. 491）规定各州众议员须由「连续地域组成、数目与议员数相等」的选区选出，每区只选一人；1843 年仍有三州全州不分区，众院照样让其就职。1872 年法（17 Stat. 492）加入「人数尽可能相等」，1901 年法加入「连续且紧凑」，1911 年重复；1929 年法未写任何划区标准，直到 1967 年法（2 U.S.C. 2c）重新要求单席位选区。同年国会把分配法由杰斐逊法改为韦伯斯特法。",
+   "quote": "elected by districts composed of contiguous territory equal in number to the number of Representatives",
+   "quote_src": "Apportionment Act of 1842, 5 Stat. 491（转引自 CRS RS21585）",
+   "numbers": [
+    {
+     "label": "法规",
+     "value": "5 Stat. 491",
+     "unit": ""
+    },
+    {
+     "label": "重新要求单席位",
+     "value": 1967,
+     "unit": "年（2 U.S.C. 2c）"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": true,
+   "note": "缺：法案签署确切日期（通行 1842-06-25）未从一手核到，date 字段待核；其余引文来自 CRS 报告 RS21585（2003）。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "CRS Report RS21585: Congressional Redistricting — at-large vs single-member (2003)",
+     "url": "https://www.everycrsreport.com/files/20030807_RS21585_281be58b5219d8012b76923b8d97404331064bd1.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Deschler's Precedents, Vol. 2, Ch. 8（govinfo）",
+     "url": "https://www.govinfo.gov/content/pkg/GPO-HPREC-DESCHLERS-V2/html/GPO-HPREC-DESCHLERS-V2-2-2-3.htm",
+     "kind": "official"
+    },
+    {
+     "title": "FairVote archive: History of Single Member Districts for Congress",
+     "url": "https://archive.fairvote.org/?page=526",
+     "kind": "press"
+    }
+   ],
+   "image_hint": "公有领域：1842 年法案 Statutes at Large 扫描页（LoC 'A Century of Lawmaking'）；1843 年国会选区图（Wikimedia Commons）。",
+   "text_long": "1842 年法案规定各州众议员「should be elected by districts composed of contiguous territory equal in number to the number of Representatives」且「no one district electing more than one Representative」。1843 年仍有三州全州不分区选举，众院照样让其就职。1872 年法（17 Stat. 492）加入「as nearly as practicable an equal number of inhabitants」，1901 年法加入「contiguous and compact territory」，1911 年法重复之；1929 年法未再写任何划区标准，直到 1967 年法（2 U.S.C. 2c）重新规定只能单席位选区。同年国会还把分配法由杰斐逊法改为韦伯斯特法。"
+  },
+  {
+   "id": "alabama-paradox-1880",
+   "year": 1880,
+   "year_label": "1880",
+   "date": null,
+   "place": "美国·普查局（Census Office）",
+   "lane": "count",
+   "title_zh": "阿拉巴马悖论",
+   "what": "普查局 Seaton 试算 1880 年分配表：众院 299 席时阿拉巴马得 8 席，300 席时只得 7 席。",
+   "ruler": "证明余数法可以不单调：总席位增加，某州反而减席。",
+   "text": "Seaton 把众院规模从 275 到 350 逐一试算，发现汉密尔顿（最大余数）法下阿拉巴马在 299 席得 8、300 席得 7，史称「阿拉巴马悖论」；1901 年普查局再示范科罗拉多在 357 席时少一席。1900 年前后又见「人口悖论」：弗吉尼亚人口增长比缅因快约 60%，却是弗吉尼亚失一席、缅因得一席。1907 年俄克拉荷马建州得 5 席，众院由 386 增至 391，重算后纽约 38→37、缅因 3→4，称「新州悖论」。这些悖论促使 1911 年后弃用汉密尔顿法。",
+   "quote": null,
+   "quote_src": null,
+   "numbers": [
+    {
+     "label": "阿拉巴马：299 席时",
+     "value": 8,
+     "unit": "席"
+    },
+    {
+     "label": "阿拉巴马：300 席时",
+     "value": 7,
+     "unit": "席"
+    },
+    {
+     "label": "1907 年众院扩增",
+     "value": "386→391",
+     "unit": "席"
+    },
+    {
+     "label": "俄克拉荷马新得",
+     "value": 5,
+     "unit": "席"
+    }
+   ],
+   "dispute": "发现年份：多数资料写「1880 年普查后」，部分数学教材写 1881（Seaton 致国会信）或 1882（国会辩论）。",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：Seaton 1881 致国会信原文（常被引为 '…it is impossible…'）未在打开的页面找到，故不写 quote；人口悖论年份 1900 vs 1901 两说，本条写「1900 年前后」。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Wikipedia: Apportionment paradox（线索；引 Balinski & Young 1982、Caulfield 2010 MAA Convergence）",
+     "url": "https://en.wikipedia.org/wiki/Apportionment_paradox",
+     "kind": "wiki"
+    },
+    {
+     "title": "Tufts MATH 19 'Apportionment Notes' (2016)",
+     "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/a/4132/files/2018/01/apportionment.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "Alex Bogomolny, 'The Constitution and Paradoxes', Cut The Knot（引 Balinski & Young 1982；Szpiro 2010）",
+     "url": "https://www.cut-the-knot.org/ctk/Democracy.shtml",
+     "kind": "academic"
+    },
+    {
+     "title": "Mathematics & Democracy Institute: Apportionment",
+     "url": "https://mathematics-democracy-institute.org/apportionment/",
+     "kind": "academic"
+    }
+   ],
+   "image_hint": "公有领域：1880 年普查局分配表扫描（census.gov history PDF）；可自绘 299/300 席对比条形图。",
+   "text_long": "Seaton 把众院规模从 275 到 350 逐一试算，发现汉密尔顿（最大余数）法下阿拉巴马在 299 席得 8、300 席得 7，史称「阿拉巴马悖论」；1901 年普查局再示范：科罗拉多在 350–400 席间除 357 席外都得 3 席，357 席时只得 2 席。1900 年前后又发现「人口悖论」：弗吉尼亚人口增长比缅因快约 60%，却是弗吉尼亚失一席、缅因得一席。1907 年俄克拉荷马建州，众院由 386 席增至 391 席（新州得 5 席），重算后纽约从 38 席降为 37、缅因从 3 升为 4，称「新州悖论」。这些悖论促使 1911 年后弃用汉密尔顿法。"
+  },
+  {
+   "id": "house-435-1911",
+   "year": 1911,
+   "year_label": "1911 / 1929 / 1941",
+   "date": "1911-08-08",
+   "place": "美国·华盛顿",
+   "lane": "count",
+   "title_zh": "众院定额 435 与等比例法",
+   "what": "1911 年法定众院 435 席；1920 年后未重分配；1929 年法设自动分配；1941 年法采等比例法。",
+   "ruler": "总席位冻结为 435，此后算术都是固定总数下分 50 份。",
+   "text": "1911 年 8 月 8 日法案把众院定为 433 席，另为亚利桑那、新墨西哥各留 1 席，合 435。1920 年普查后国会未能通过分配法，整个 1920 年代沿用 1910 年分配。1929 年 6 月 18 日《重新分配与普查法》（46 Stat. 21）规定 1930 年普查后自动分配、总数 435，且不再写划区标准。1941 年 11 月 15 日法案（55 Stat. 761）规定以「等比例法」（Huntington–Hill，以几何平均为门槛的除数法）分配 435 席，沿用至今。",
+   "quote": null,
+   "quote_src": null,
+   "numbers": [
+    {
+     "label": "1911 年法席位",
+     "value": "433 + 2",
+     "unit": "席"
+    },
+    {
+     "label": "定额",
+     "value": 435,
+     "unit": "席"
+    },
+    {
+     "label": "1941 年法",
+     "value": "55 Stat. 761",
+     "unit": ""
+    }
+   ],
+   "dispute": "1929 年法通称「Permanent Apportionment Act」，census.gov 页题作「Reapportionment and Census Act of 1929」。",
+   "confidence": "高",
+   "verify": true,
+   "note": "缺：1941 年法原文 PDF（census.gov/history/pdf/1941_Apportionment_Act.pdf）打开后未返回正文，「method of equal proportions」字句据 CRS 与 census.gov 页面转述；55 Stat. 761 来自 CRS RS21585。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "U.S. Census Bureau: Apportionment Legislation 1890–Present",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1890-present.html",
+     "kind": "official"
+    },
+    {
+     "title": "CRS Report RS21585 (2003)（1929 年法 46 Stat. 21；1941 年法 55 Stat. 761）",
+     "url": "https://www.everycrsreport.com/files/20030807_RS21585_281be58b5219d8012b76923b8d97404331064bd1.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "U.S. House History: Determining Apportionment（UNT web archive）",
+     "url": "https://webarchive.library.unt.edu/web/20130214085344/http://history.house.gov/Institution/Apportionment/Determining-Apportionment",
+     "kind": "official"
+    }
+   ],
+   "image_hint": "公有领域：1941 年法案 Statutes at Large 扫描（census.gov）；众院议场 1911 年照片（LoC）。",
+   "text_long": "1911 年 8 月 8 日法案把众院定为 433 席，另为未来建州的亚利桑那、新墨西哥各留 1 席，合 435。1920 年普查后国会未能通过分配法，整个 1920 年代沿用 1910 年分配。1929 年 6 月 18 日《重新分配与普查法》规定 1930 年普查后自动分配，总数维持 435，且不再写任何划区标准。1941 年 11 月 15 日法案规定以「等比例法」（Huntington–Hill，几何平均为门槛的除数法）分配 435 席，沿用至今。1941 年法同时规定各州在重划前的过渡安排（2 U.S.C. 2a(c)）。"
+  },
+  {
+   "id": "boundary-commissions-1944",
+   "year": 1944,
+   "year_label": "1944 / 1964",
+   "date": "1944-10-26",
+   "place": "英国·威斯敏斯特；加拿大·渥太华",
+   "lane": "draw",
+   "title_zh": "英加设常设边界委员会",
+   "what": "英国 1944 年法设四个常设边界委员会；加拿大 1964 年《选区边界再调整法》把划区交给各省独立委员会。",
+   "ruler": "「谁来画线」从议员自己改为常设、非党派的委员会，并写进定期复核与人数偏差上限。",
+   "text": "英国《1944 年下议院（席位再分配）法》（10 月 26 日批准）第 1 条设「四个常设边界委员会」，分管英格兰、苏格兰、威尔士、北爱尔兰，报告间隔 3–7 年。加拿大 1964 年前由下院自定选区，1903 年起交全党委员会仍高度党派化；1964 年 11 月 20 日《选区边界再调整法》获批：每省设三人委员会，主席通常为省首席法官指定的法官，另两人由议长任命，现任议员不得入选；每区人口须在省商数的 75%–125% 之间，报告「终局且不得上诉」。首次依法重划 1966 年完成。",
+   "quote": "there shall be constituted four permanent Boundary Commissions",
+   "quote_src": "House of Commons (Redistribution of Seats) Act 1944, s. 1(1)",
+   "numbers": [
+    {
+     "label": "英国委员会",
+     "value": 4,
+     "unit": "个"
+    },
+    {
+     "label": "英国复核间隔",
+     "value": "3–7",
+     "unit": "年"
+    },
+    {
+     "label": "加拿大偏差上限",
+     "value": "±25",
+     "unit": "%"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": false,
+   "note": "加拿大法原始引用 S.C. 1964-65 c. 31（维基作 S.C. 1965 c. 31）；1944 年法原文取自 vlex 转载，legislation.gov.uk 未开。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "House of Commons (Redistribution of Seats) Act 1944 (7 & 8 Geo. 6 c. 41) 全文",
+     "url": "https://vlex.co.uk/vid/861242095",
+     "kind": "official"
+    },
+    {
+     "title": "House of Commons Procedure and Practice (3rd ed.), Ch. 4: Readjustment of Electoral Boundaries",
+     "url": "https://www.ourcommons.ca/procedure/procedure-and-practice-3/ch_04_2-e.html",
+     "kind": "official"
+    },
+    {
+     "title": "Wikipedia: Electoral Boundaries Readjustment Act",
+     "url": "https://en.wikipedia.org/wiki/Electoral_Boundaries_Readjustment_Act",
+     "kind": "wiki"
+    },
+    {
+     "title": "ACE Project: Boundary Delimitation — Canada",
+     "url": "https://aceproject.org/main/english/bd/bdy_ca.htm",
+     "kind": "academic"
+    }
+   ],
+   "image_hint": "公有领域 / OGL：英国边界委员会报告地图（Open Government Licence）；加拿大 1966 年代表令地图（Elections Canada，需核授权）。",
+   "text_long": "英国《1944 年下议院（席位再分配）法》（7 & 8 Geo. 6 c. 41，1944-10-26 王室批准）第 1 条规定「there shall be constituted four permanent Boundary Commissions」，分别管英格兰、苏格兰、威尔士、北爱尔兰；此后各次报告间隔「不少于三年、不多于七年」，选民超过 10 万的选区按每 5 万人拆分。加拿大在 1964 年前由下院自己定选区，1903 年起交全党委员会但仍高度党派化；1964 年 11 月 20 日《选区边界再调整法》获王室批准，每省设一个三人委员会，主席通常由省首席法官指定的高等法院法官担任，另两人由下院议长任命，现任议员不得入选；每区人口不得低于省商数的 75% 或高于 125%，委员会报告经议长提交后「final and without appeal」。首次依法重划于 1966 年完成。"
+  },
+  {
+   "id": "one-person-one-vote-1962",
+   "year": 1962,
+   "year_label": "1962–1964",
+   "date": "1964-06-15",
+   "place": "美国最高法院",
+   "lane": "count",
+   "title_zh": "「一人一票」三判决",
+   "what": "Baker（1962）准法院审划区；Wesberry（1964）要国会选区人口相等；Reynolds 推至州议会两院。",
+   "ruler": "「人数相等」成为宪法硬尺，陈年选区必须按人口重画。",
+   "text": "Baker v. Carr（1962）裁定州议会分配可依平等保护条款审查。Wesberry v. Sanders（1964-02-17，Black 执笔）据宪法第一条第二款裁定：一人在国会选举中的一票应「尽可能」与他人等值。Reynolds v. Sims（1964-06-15，Warren 执笔，8:1）裁定州议会两院都须以人口为基础分配；阿拉巴马州参议院选区自 1901 年未调整、州宪规定每县一名参议员，被判违宪。判词名句：「议员代表的是人，不是树木或土地。」",
+   "quote": "Legislators represent people, not trees or acres.",
+   "quote_src": "Reynolds v. Sims, 377 U.S. 533, 562 (1964), Warren, C.J.",
+   "numbers": [
+    {
+     "label": "Baker v. Carr",
+     "value": "369 U.S. 186",
+     "unit": "1962-03-26"
+    },
+    {
+     "label": "Wesberry v. Sanders",
+     "value": "376 U.S. 1",
+     "unit": "1964-02-17"
+    },
+    {
+     "label": "Reynolds v. Sims",
+     "value": "377 U.S. 533",
+     "unit": "1964-06-15，8:1"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": true,
+   "note": "Reynolds 原文页码 562 与 Baker 判决日 1962-03-26 为通行引用，本次未从 govinfo PDF 核到页码；Wesberry 票数（维基列 6 位加入多数意见）未写「6:3」。govinfo 的 USREPORTS-377-533.pdf 可作终核。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Reynolds v. Sims, 377 U.S. 533 — U.S. Reports PDF (govinfo)",
+     "url": "https://www.govinfo.gov/content/pkg/USREPORTS-377/pdf/USREPORTS-377-533.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Teaching American History: Reynolds v. Sims 判决全文",
+     "url": "https://teachingamericanhistory.org/document/reynolds-v-sims-2/",
+     "kind": "academic"
+    },
+    {
+     "title": "Wikipedia: Wesberry v. Sanders（线索，引 Justia 全文）",
+     "url": "https://en.wikipedia.org/wiki/Wesberry_v._Sanders",
+     "kind": "wiki"
+    },
+    {
+     "title": "Connecticut General Assembly Redistricting 2011: Court Cases 汇编",
+     "url": "https://www.cga.ct.gov/red2011/cases.asp",
+     "kind": "official"
+    }
+   ],
+   "image_hint": "公有领域：Warren 法院 1964 年合影（最高法院官方照片）；阿拉巴马 1901 年参议院选区图（州档案馆）。",
+   "text_long": "Baker v. Carr, 369 U.S. 186（1962）推翻 Colegrove v. Green（1946）「政治丛林」的态度，裁定田纳西州议会分配可依平等保护条款审查。Wesberry v. Sanders, 376 U.S. 1（1964-02-17，Black 大法官执笔）据宪法第一条第二款裁定：「as nearly as practicable one man's vote in a congressional election is to be worth as much as another's」。Reynolds v. Sims, 377 U.S. 533（1964-06-15，Warren 首席大法官执笔，8:1）裁定州议会两院都须以人口为基础分配，阿拉巴马州参议院选区自 1901 年起未调整、州宪规定每县一名参议员，被判违反平等保护；判词写道：「Legislators represent people, not trees or acres. Legislators are elected by voters, not farms or cities or economic interests.」"
+  },
+  {
+   "id": "voting-rights-act-1965",
+   "year": 1965,
+   "year_label": "1965 / 1986",
+   "date": "1965-08-06",
+   "place": "美国·华盛顿；北卡罗来纳州",
+   "lane": "draw",
+   "title_zh": "投票权法与 Gingles",
+   "what": "1965 年《投票权法》第 2、5 节；1982 年第 2 节改「结果标准」；1986 年 Gingles 案定三要件。",
+   "ruler": "「画线」多了一把种族尺：少数族裔足够多且地理上紧凑时，不能把他们拆散或淹没。",
+   "text": "《投票权法》1965 年 8 月 6 日签署：第 2 节适用全国；第 5 节要求有歧视历史的辖区改变选举规则（含选区图）前获联邦预审。1982 年修订第 2 节：只要「基于全部情况」证明选举程序对受保护群体「不平等开放」即违法，无需证明意图。Thornburg v. Gingles, 478 U.S. 30（1986-06-30）审查北卡 1982 年多席位州议会选区，提出三前提：少数群体足够多且地理上紧凑、能在单席位选区成多数；政治上凝聚；多数群体集体投票通常足以击败其属意候选人。法院一致撤销四个多席位选区。",
+   "quote": "sufficiently large and geographically compact to constitute a majority in a single-member district",
+   "quote_src": "Thornburg v. Gingles, 478 U.S. 30, 50 (1986)，转引自 Bartlett v. Strickland (2009) 判决摘要（law.cornell.edu）",
+   "numbers": [
+    {
+     "label": "投票权法签署",
+     "value": "1965-08-06",
+     "unit": ""
+    },
+    {
+     "label": "第 2 节修订",
+     "value": 1982,
+     "unit": "年"
+    },
+    {
+     "label": "Gingles 要件",
+     "value": 3,
+     "unit": "项"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": true,
+   "note": "第二、三要件原文（'politically cohesive'；'white majority votes sufficiently as a bloc to enable it … usually to defeat the minority's preferred candidate'）未在打开页面逐字核到，text 中第三要件用转述；Gingles 原判决 PDF 在 supremecourt.gov / justia 可终核。签署日 1965-08-06 为通行日期，本次未开官方页。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Bartlett v. Strickland, 556 U.S. 1 (2009) syllabus（引 Gingles 三要件）— LII",
+     "url": "https://www.law.cornell.edu/supremecourt/text/07-689.ZS.html",
+     "kind": "official"
+    },
+    {
+     "title": "American Redistricting Project: Thornburg v. Gingles case summary",
+     "url": "https://thearp.org/litigation/thornburg-v-gingles",
+     "kind": "academic"
+    },
+    {
+     "title": "Tufts MGGG VRDI: 'Mapping VRA' (2020)",
+     "url": "https://sites.tufts.edu/vrdi/files/2020/07/Mapping-VRA.pdf",
+     "kind": "academic"
+    }
+   ],
+   "image_hint": "公有领域：1965-08-06 约翰逊签署《投票权法》照片（LBJ Library / 白宫摄影，公有领域）。",
+   "text_long": "《投票权法》1965 年 8 月 6 日签署。第 2 节适用全国；第 5 节要求有歧视历史的辖区在改变任何选举规则（含选区图）前获联邦预先批准。1982 年国会修订第 2 节：只要「基于全部情况」证明选举程序对受保护群体「not equally open to participation」即构成违法，无需证明歧视意图。Thornburg v. Gingles, 478 U.S. 30（1986-06-30）审查北卡罗来纳州 1982 年多席位州议会选区，提出三个前提：少数群体「sufficiently large and geographically compact to constitute a majority in a single-member district」、「politically cohesive」、多数群体通常集体投票足以击败少数群体属意的候选人；法院一致撤销其中四个多席位选区。"
+  },
+  {
+   "id": "derry-1968",
+   "year": 1968,
+   "year_label": "1968–1969",
+   "date": "1968-10-05",
+   "place": "北爱尔兰·伦敦德里 / 德里（Londonderry / Derry）",
+   "lane": "draw",
+   "title_zh": "德里三选区与民权运动",
+   "what": "德里市三选区：天主教占多数的南区只选 8 人，北区与沃特赛德合选 12 人；Cameron 报告认定系蓄意。",
+   "ruler": "「划区」被官方调查认定为维持某一方控制的工具，本地选举权随后改为普遍成年投票。",
+   "text": "Cameron 报告（Cmd. 532，1969 年 9 月）第 134 段列表：北区天主教选民 2,530、其他 3,946，8 席皆统一派；沃特赛德区 1,852 对 3,697，4 席皆统一派；南区 10,047 对 1,138，8 席皆非统一派。全市天主教徒约占成年人口六成，却只占 20 席中的 8 席。报告称选区安排造成「与两群体人数比例几无关系的永久统一派多数」，并「有充分理由相信是蓄意作出并维持的」；地方选举权仅限住宅占用人及配偶。1968 年 10 月 5 日民权游行被禁改道后发生冲突；北爱随后改为普遍成年选举权。",
+   "quote": "a permanent Unionist majority which bears little or no resemblance to the relative numerical strength",
+   "quote_src": "Cameron Report, Disturbances in Northern Ireland, Cmd. 532 (1969), para. 10",
+   "numbers": [
+    {
+     "label": "南区选民（天主教 / 其他）",
+     "value": "10,047 / 1,138",
+     "unit": "人，8 席"
+    },
+    {
+     "label": "北区选民（天主教 / 其他）",
+     "value": "2,530 / 3,946",
+     "unit": "人，8 席"
+    },
+    {
+     "label": "沃特赛德区（天主教 / 其他）",
+     "value": "1,852 / 3,697",
+     "unit": "人，4 席"
+    },
+    {
+     "label": "议会构成",
+     "value": "12 : 8",
+     "unit": "席（统一派 : 非统一派）"
+    }
+   ],
+   "dispute": "Cameron 第 134 段写成年人口中天主教徒占 60%，Irish Legal News 转述为 62%。选区划分可追溯到 1936 年（Purdie 1990）。",
+   "confidence": "高",
+   "verify": false,
+   "note": "Cameron 报告全文见 CAIN（HMSO 转载）；表格数字来自 ¶134。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Cameron Report: Disturbances in Northern Ireland, Cmd. 532 (HMSO, Belfast, Sept 1969) — CAIN 转载",
+     "url": "https://cain.ulster.ac.uk/hmso/cameronx.htm",
+     "kind": "official"
+    },
+    {
+     "title": "Bob Purdie, Politics in the Streets (1990), ch. 5 — CAIN",
+     "url": "https://cain.ulster.ac.uk/events/crights/purdie/purdie90_chap5.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "Irish Legal News: 'Irish Legal Heritage: One Man, One Vote' (2018-10-12)",
+     "url": "https://irishlegal.com/article/irish-legal-heritage-one-man-one-vote",
+     "kind": "press"
+    }
+   ],
+   "image_hint": "CAIN 有 1968-10-05 游行照片（需核授权）；Wikimedia Commons 有 Derry 三选区示意图（CC BY-SA，搜 'Derry gerrymander 1966 map'）。",
+   "text_long": "Cameron 报告（Cmd. 532，1969 年 9 月）第 134 段列表：北区天主教选民 2,530、其他 3,946，8 席皆统一派；沃特赛德区 1,852 对 3,697，4 席皆统一派；南区 10,047 对 1,138，8 席皆非统一派。全市天主教徒约占成年人口六成，却只占 20 席中的 8 席。报告第 10 段称选区安排造成「a permanent Unionist majority which bears little or no resemblance to the relative numerical strength」，并说「有充分理由相信这些安排是蓄意作出并维持的」；第 136 段称其理由「rationalised a determination to achieve and maintain Unionist electoral control」。当时地方选举权仅限住宅占用人及其配偶（第 143 段）。1968 年 10 月 5 日北爱民权协会在德里的游行被禁改道后发生冲突，成为调查起点；北爱政府随后决定地方选举改为普遍成年选举权（第 147 段）。"
+  },
+  {
+   "id": "balinski-young-1982",
+   "year": 1982,
+   "year_label": "1982",
+   "date": null,
+   "place": "美国（Yale University Press）",
+   "lane": "count",
+   "title_zh": "分配不可能定理",
+   "what": "Balinski 与 Young 证明：三个及以上州分固定席位时，没有分配法能既守配额又免于人口悖论。",
+   "ruler": "分配法的「公平」被证明不能同时满足所有直觉：选哪把尺子（配额或单调）是一种取舍。",
+   "text": "Michel Balinski 与 H. Peyton Young《Fair Representation》（Yale UP，1982；2001 年二版）把分配问题公理化。两条直觉：「配额规则」——每州所得是应得份额上下取整两数之一；「人口单调」——A 州人口相对增加时不会把席位输给 B 州。定理：席位总数固定、三个及以上州时，没有方法能同时满足两者。推论：对人口变化行为良好的方法必是除数法（杰斐逊、韦伯斯特、Huntington–Hill），而除数法都不能保证配额。两人主张韦伯斯特法最优，与 1941 年起法定的等比例法不同。",
+   "quote": "There is no neutral apportionment method that satisfies the quota rule and is free from the population paradox.",
+   "quote_src": "Tufts MATH 19 Apportionment Notes (2016)，转述 Balinski & Young 1982",
+   "numbers": [
+    {
+     "label": "出版",
+     "value": 1982,
+     "unit": "年（Yale UP）"
+    },
+    {
+     "label": "适用州数",
+     "value": "≥3",
+     "unit": ""
+    }
+   ],
+   "dispute": "适用门槛：electowiki 写「三个及以上」，维基 Apportionment paradox 页写「四个及以上」；定理年份有 1982（书）与 1983 两种写法。本条取书的出版年。",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：书中定理原文页码（通行引 Theorem 4.1 / 6.1）；建议编辑按 Balinski & Young 2001 第二版核。AMS Feature Column 作者未在页面显示。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "AMS Feature Column: 'Apportionment: Balinski and Young's Contribution'",
+     "url": "https://www.ams.org/featurecolumn/archive/apportionII3.html",
+     "kind": "academic"
+    },
+    {
+     "title": "Electowiki: Balinski–Young theorem（引 Balinski & Young 1982 / 2001；PNAS 1974）",
+     "url": "https://electowiki.org/wiki/Balinski%E2%80%93Young_theorem",
+     "kind": "wiki"
+    },
+    {
+     "title": "MathWorld: Balinski–Young Impossibility Theorem",
+     "url": "https://mathworld.wolfram.com/Balinski-YoungImpossibilityTheorem.html",
+     "kind": "academic"
+    },
+    {
+     "title": "Tufts MATH 19 'Apportionment Notes' (2016)",
+     "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/a/4132/files/2018/01/apportionment.pdf",
+     "kind": "academic"
+    }
+   ],
+   "image_hint": "无公有领域人物照；可自绘「配额 vs 单调」二维示意图。书封面受版权保护。",
+   "text_long": "Michel Balinski 与 H. Peyton Young 的《Fair Representation: Meeting the Ideal of One Man, One Vote》（Yale University Press，1982；2001 年 Brookings 第二版）把分配问题公理化。两条直觉要求：「配额规则」——每州所得是其应得份额上下取整两数之一；「人口单调性」——A 州人口相对增加、B 州不变时，A 不会把席位输给 B。定理：席位总数固定、三个及以上州时，没有分配法能同时满足两者。推论是：对人口变化「行为良好」的方法必是除数法（杰斐逊、韦伯斯特、Huntington–Hill 等），而除数法都不能保证配额。两人在该书中主张韦伯斯特法最优，与 1941 年起法定的等比例法不同。"
+  },
+  {
+   "id": "pasqua-1986",
+   "year": 1986,
+   "year_label": "1986 / 2010",
+   "date": "1986-11-24",
+   "place": "法国·巴黎",
+   "lane": "draw",
+   "title_zh": "法国 Pasqua 重划",
+   "what": "1986 年法国恢复单席位两轮制，内政部长 Pasqua 主持重划 577 区；该图用到 2009–2010 年重划。",
+   "ruler": "宪法委员会定「±20%」人口偏差尺，2008 年后独立委员会先出意见。",
+   "text": "1986 年 7 月 11 日法律废除比例代表制、恢复单席位两轮制；11 月 24 日法律按 1982 年普查划定 577 个选区，内政部长 Charles Pasqua 主持。宪法委员会确立选区人口不得偏离本省平均 ±20%，2008 年又裁定「每省至少两席」惯例无宪法价值。1986 年图沿用 23 年：到 2007 年，577 区中 150 区不足 95,000 人、24 区不足 74,000 人。反对者称之为「charcutage」（切肉式划区）。2008 年修宪设独立委员会；2009 年 7 月 29 日政令重划，339 个选区改动，海外法国人得 11 席。",
+   "quote": "charcutage électoral : pratique qui consiste à découper les circonscriptions de manière politiquement biaisée",
+   "quote_src": "Slate.fr, 'Comment redécoupe-t-on la carte électorale ?'（Isabelle Hanne & Grégoire Fleurot）",
+   "numbers": [
+    {
+     "label": "选区",
+     "value": 577,
+     "unit": "个"
+    },
+    {
+     "label": "人口偏差上限",
+     "value": "±20",
+     "unit": "%"
+    },
+    {
+     "label": "2009 年重划改动",
+     "value": 339,
+     "unit": "个选区"
+    },
+    {
+     "label": "海外法国人席位",
+     "value": 11,
+     "unit": "席"
+    }
+   ],
+   "dispute": "「charcutage」一词的首用者与年代无定说；Slate 引述的是 2009 年议员 Jacques Valax 用语。1986 年图的偏向：Perrineau 认为当年乡村过度代表，Bussi 认为到 2000 年代效应已反转。",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：1986 年两部法律的法律编号（通行 n° 86-825、n° 86-1197）与宪法委员会 86-208 DC 的日期（通行 1986-07-02）未从官方页核到——Légifrance / conseil-constitutionnel.fr 未开；±20% 尺度在 SFDS 记录中记为 2008 年 12 月决定重申。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Sénat, Commission des lois, conclusions sur le projet de loi n° 116 (2009-2010) ratifiant l'ordonnance n° 2009-935",
+     "url": "https://conferenceconsensuslogement.senat.fr/rap/l09-115/l09-115-syn.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "SFDS Stat-Café 2009-01-13 'Découpages électoraux' (Perrineau, Bussi)",
+     "url": "https://www.sfds.asso.fr/sdoc-2016-02b5a56850c837bdca3f9f6db42a37aa-cr_statcafe_2009_13_01_decoupages_electoraux.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "Slate.fr: 'Comment redécoupe-t-on la carte électorale ?'",
+     "url": "https://www.slate.fr/story/3945/comment-redecouper-t-la-carte-electorale",
+     "kind": "press"
+    },
+    {
+     "title": "Wikipedia: 2010 redistricting of French legislative constituencies",
+     "url": "https://Www.Wikipedia.org/wiki/2010_Redistricting_of_French_Legislative_Constituencies",
+     "kind": "wiki"
+    }
+   ],
+   "image_hint": "Wikimedia Commons 有 1986 与 2010 法国立法选区图（CC BY-SA）；Pasqua 官方肖像受版权保护。",
+   "text_long": "1986 年 7 月 11 日法律废除 1985 年引入的比例代表制、恢复单席位两轮制；11 月 24 日法律按 1982 年普查划定 577 个选区，由内政部长 Pasqua 主持（后来的 2009 年重划负责人 Alain Marleix 当年即是「主要专家」）。宪法委员会在 1986 年决定（86-208 DC）中确立选区人口不得偏离本省平均 ±20% 的尺度，2008 年又裁定「每省至少两席」惯例无宪法价值。1986 年图沿用 23 年：到 2007 年，577 区中 150 区人口不足 95,000，24 区不足 74,000。反对者称之为「charcutage électoral」（切肉式划区）。2008 年 7 月 23 日修宪把众议员上限定为 577、设独立委员会（宪法第 25 条）；2009 年 7 月 29 日政令重划，339 个选区边界改动，并为海外法国人设 11 席。"
+  },
+  {
+   "id": "shaw-v-reno-1993",
+   "year": 1993,
+   "year_label": "1993",
+   "date": "1993-06-28",
+   "place": "美国最高法院；北卡罗来纳州",
+   "lane": "draw",
+   "title_zh": "Shaw v. Reno",
+   "what": "最高法院 5:4 裁定北卡第 12 区「约 160 英里长、大部分不宽于 I-85 走廊」，可依平等保护条款起诉。",
+   "ruler": "形状被写进宪法尺子：「怪异到一望即知」可成证据。",
+   "text": "1990 年普查后北卡罗来纳州得 12 席，司法部依第 5 节要求第二个黑人多数区，州议会画出沿 85 号州际公路的第 12 区。O'Connor 大法官多数意见（1993-06-28，5:4）：该区「约 160 英里长，大部分路段不宽于 I-85 走廊」，「像蛇一样蜿蜒穿过烟草乡」；一个形状怪异到只能理解为按种族分隔选民的划区「与政治种族隔离有令人不安的相似」。法院承认一项「分析上独立」的平等保护诉因，发回适用严格审查。Miller v. Johnson（1995）后标准定为「种族是划区的主导因素」。",
+   "quote": "approximately 160 miles long and, for much of its length, no wider than the I-85 corridor",
+   "quote_src": "Shaw v. Reno, 509 U.S. 630, 635 (1993), O'Connor, J.",
+   "numbers": [
+    {
+     "label": "第 12 区长度",
+     "value": 160,
+     "unit": "英里（约）"
+    },
+    {
+     "label": "票数",
+     "value": "5:4",
+     "unit": ""
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": false,
+   "note": "页码 635 为通行引用（findlaw 页显示为 p.3 的分页）；judgments 原文可在 supremecourt.gov 或 LII 终核。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Shaw v. Reno, 509 U.S. 630 (1993) 全文 — FindLaw",
+     "url": "https://caselaw.findlaw.com/us-supreme-court/509/630.html",
+     "kind": "official"
+    },
+    {
+     "title": "Shaw v. Hunt, 517 U.S. 899 (1996) — LII (Shaw II)",
+     "url": "https://www.law.cornell.edu/supct/html/94-923.ZO.html",
+     "kind": "official"
+    },
+    {
+     "title": "O'Connor Institute: Shaw v. Reno",
+     "url": "https://library.oconnorinstitute.org/supreme-court/shaw-v-reno-1992/",
+     "kind": "academic"
+    }
+   ],
+   "image_hint": "公有领域：北卡 1992 年国会选区图（美国政府作品，Wikimedia Commons 'NC 12th district 1992'）。",
+   "text_long": "1990 年普查后北卡罗来纳州得 12 席，司法部依投票权法第 5 节要求第二个黑人多数区；州议会于是画出沿 85 号州际公路的第 12 区。O'Connor 大法官执笔的多数意见写道，该区「approximately 160 miles long and, for much of its length, no wider than the I-85 corridor」，「winds in snake like fashion through tobacco country」；一个「so bizarre on its face」、只能理解为按种族分隔选民的划区「bears an uncomfortable resemblance to political apartheid」。法院承认一项「analytically distinct」的平等保护诉因，案件发回适用严格审查。此后 Miller v. Johnson（1995）、Shaw v. Hunt（1996）把标准定为「种族是划区的主导因素」。"
+  },
+  {
+   "id": "japan-ippyo-2011",
+   "year": 2011,
+   "year_label": "2011 / 2013 / 2015",
+   "date": "2011-03-23",
+   "place": "日本·最高裁判所大法廷",
+   "lane": "count",
+   "title_zh": "日本「违宪状态」三判决",
+   "what": "最高裁大法庭三判众院小选区「违宪状态」：2011（2.30 倍）、2013（2.43 倍）、2015（2.13 倍）。",
+   "ruler": "「一人别枠方式」被认定失去合理性，日本走向 0 增 5 减与亚当斯方式。",
+   "text": "日本 1996 年起众院小选区按「一人别枠方式」分配：每都道府县先各得 1 席，余席按人口，最大较差长期超过 2 倍。2011 年 3 月 23 日大法庭判 2009 年大选（2.304 倍）区划基准处于「违宪状态」，称该方式的合理性「有时间上的界限」。2012 年 11 月国会通过「0 增 5 减」。2013 年 11 月 20 日判 2012 年大选（2.425 倍）仍违宪状态；2015 年 11 月 25 日判 2014 年大选（2.129 倍）违宪状态但国会已在合理期间着手纠正。三次均未判选举无效。框架来自 1976 年判决。",
+   "quote": "一人別枠方式は、おのずからその合理性に時間的な限界があるものというべきであり",
+   "quote_src": "最高裁大法廷 平成 23 年 3 月 23 日判決，转引自横尾日出雄《CHUKYO LAWYER》Vol. 24 (2016)",
+   "numbers": [
+    {
+     "label": "2009 年大选最大较差",
+     "value": 2.304,
+     "unit": "倍（2011 判决）"
+    },
+    {
+     "label": "2012 年大选最大较差",
+     "value": 2.425,
+     "unit": "倍（2013 判决）"
+    },
+    {
+     "label": "2014 年大选最大较差",
+     "value": 2.129,
+     "unit": "倍（2015 判决）"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": true,
+   "note": "三份判决日期与较差来自横尾 2016（学术）与 imidas / Westlaw Japan 专栏；courts.go.jp 判例原文未开（搜索预算所限），引文系二手转引，建议编辑用 courts.go.jp 裁判例検索终核。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "横尾日出雄《憲法の予定している司法権と立法権の関係について》，CHUKYO LAWYER Vol. 24 (2016)",
+     "url": "https://chukyo-u.repo.nii.ac.jp/record/10393/files/141010240101_Yokoo.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "imidas 時事用語事典：衆議院「0増5減」",
+     "url": "https://imidas.jp/genre/detail/C-104-0303.html",
+     "kind": "press"
+    },
+    {
+     "title": "小林直三，WLJ 判例コラム第 37 号（Westlaw Japan, 2014）",
+     "url": "https://www.thomsonreuters.co.jp/ja/westlaw-japan/pdf/column_law/20141201.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "nippon.com：一票の格差と一人別枠方式",
+     "url": "https://www.nippon.com/ja/currents/d00150/",
+     "kind": "press"
+    }
+   ],
+   "image_hint": "公有领域 / CC：最高裁判所大法廷外观照（Wikimedia Commons，CC BY-SA）；可自绘三次较差倍数条形图。",
+   "text_long": "日本 1996 年起众议院小选区席位按「一人别枠方式」分配：每都道府县先各得 1 席，余席按人口分配，实际最大较差长期超过 2 倍。2011 年 3 月 23 日大法庭判决 2009 年大选（最大较差 2.304 倍）的区划基准处于「违宪状态」，指出「一人别枠方式……おのずからその合理性に時間的な限界がある」。2012 年 11 月国会通过「0 增 5 减」（山梨、福井、德岛、高知、佐贺各减 1 席）。2013 年 11 月 20 日判决 2012 年大选（2.425 倍）仍属违宪状态；2015 年 11 月 25 日判决 2014 年大选（2.129 倍）亦属违宪状态，但认为国会在合理期间内已着手纠正，故区划规定不违宪。判断框架来自 1976 年（昭和 51 年）判决：不平等达到「一般的に合理性を有するものとは到底考えられない程度」时推定超出国会裁量。"
+  },
+  {
+   "id": "chen-rodden-2013",
+   "year": 2013,
+   "year_label": "2013",
+   "date": null,
+   "place": "美国（密歇根大学 / 斯坦福大学）",
+   "lane": "measure",
+   "title_zh": "「非故意的划区」",
+   "what": "Chen 与 Rodden 用自动划区模拟证明：不看党派画图，城市选民的地理集中也会让席位份额低于票数份额。",
+   "ruler": "量尺把「人文地理」从「画线」里分离：基线是模拟地图分布。",
+   "text": "论文刊于 Quarterly Journal of Political Science 8(3): 239–269（2013）。作者用 2000 年投票点数据，按「连续、人口相等、不看党派」规则自动生成选区：佛罗里达在 50:50 假想选举中，紧凑程序下共和党平均赢 25 席的 61.2%，非紧凑程序 63.5%；2002 年实际地图落在紧凑模拟区间内。原因是民主党选民集中于迈阿密、奥兰多、坦帕等城市核心，被「自然打包」。作者称之为「非故意的划区」，并在多州（各 50 次模拟）验证了城市集中度越高、偏向越大的关系。",
+   "quote": "unintentional gerrymandering",
+   "quote_src": "Chen & Rodden, QJPS 8(3), 2013, 标题与摘要",
+   "numbers": [
+    {
+     "label": "佛州紧凑模拟：共和党席位份额（50:50 选举）",
+     "value": 61.2,
+     "unit": "%（25 席）"
+    },
+    {
+     "label": "佛州非紧凑模拟",
+     "value": 63.5,
+     "unit": "%"
+    },
+    {
+     "label": "其他州模拟次数",
+     "value": 50,
+     "unit": "次 / 州"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": false,
+   "note": "期刊卷期页码来自 RePEc 记录；数字来自作者页 PDF。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Chen & Rodden, 'Unintentional Gerrymandering' — 作者页 PDF (U. Michigan)",
+     "url": "https://jowei.polisci.lsa.umich.edu/florida.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "RePEc: Quarterly Journal of Political Science 8(3): 239–269 (2013)",
+     "url": "https://ideas.repec.org/a/now/jlqjps/100.00012033.html",
+     "kind": "academic"
+    },
+    {
+     "title": "Brennan Center: Gill v. Whitford amicus brief of political geography scholars",
+     "url": "https://www.brennancenter.org/sites/default/files/legal-work/Gill_AmicusBrief_%20Political%20Geography%20Scholars_InSupportofAppellees.pdf",
+     "kind": "official"
+    }
+   ],
+   "image_hint": "论文图受版权保护；可自绘「城市打包」示意或用 Census TIGER 公有领域底图。",
+   "text_long": "论文《Unintentional Gerrymandering: Political Geography and Electoral Bias in Legislatures》刊于 Quarterly Journal of Political Science 8(3): 239–269（2013）。作者用 2000 年各州精细投票点数据，按「连续、人口相等、不看党派」的规则自动生成选区：以佛罗里达为例，在 50:50 的假想选举中，紧凑程序下共和党平均赢得 25 个国会席位的 61.2%，非紧凑程序下 63.5%；2002 年实际国会地图落在紧凑模拟的区间内。原因是民主党选民集中在迈阿密、奥兰多、坦帕等城市核心区与小工业镇，被「自然打包」。作者把这称为「unintentional gerrymandering」，并在多州（每州 50 次模拟）验证了「城市集中度越高、偏向越大」的关系。"
+  },
+  {
+   "id": "efficiency-gap-2015",
+   "year": 2015,
+   "year_label": "2014 / 2015",
+   "date": null,
+   "place": "美国（芝加哥大学法学院 / PPIC）",
+   "lane": "measure",
+   "title_zh": "效率差",
+   "what": "McGhee（2014）提出相对浪费票；Stephanopoulos 与 McGhee（2015）命名效率差并提司法门槛。",
+   "ruler": "把「打包」与「拆散」折算成同一单位：一方多浪费的票数占总票数的比例。",
+   "text": "Eric McGhee 2014 年在 Legislative Studies Quarterly 以「浪费票」衡量偏向；Nicholas Stephanopoulos 与 McGhee 2015 年在 University of Chicago Law Review 第 82 卷定义效率差为「两党各自浪费票之差除以总票数」。浪费票 = 败方全部票 + 胜方超出所需的票；两党、人口相等时可化简为 EG = 席位差 − 2 × 得票差。作者建议国会地图 2 席、州众院 8% 为推定门槛，超过者推定违宪，州可举证系合法政策或政治地理所致以反驳。该指标后用于 Gill v. Whitford 诉讼。",
+   "quote": "Efficiency Gap = Seat Margin – (2 × Vote Margin)",
+   "quote_src": "Stephanopoulos & McGhee, 82 U. Chi. L. Rev. 831 (2015)",
+   "numbers": [
+    {
+     "label": "州众院门槛",
+     "value": 8,
+     "unit": "%"
+    },
+    {
+     "label": "国会地图门槛",
+     "value": 2,
+     "unit": "席"
+    }
+   ],
+   "dispute": "门槛与指标本身后来受到批评（例如在竞争性州波动大、与比例代表无关），本条不评价。",
+   "confidence": "高",
+   "verify": false,
+   "note": "LSQ 文章页码 55–85 为通行引用，Brennan 版 PDF 仅引第 55 页起。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Stephanopoulos & McGhee, 'Partisan Gerrymandering and the Efficiency Gap', 82 U. Chi. L. Rev. 831 (2015) — PDF",
+     "url": "https://www.brennancenter.org/sites/default/files/events/Efficiency_Gap_Stephanopoulos_McGhee_2015.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "Harvard Law School bibliography entry",
+     "url": "https://hls.harvard.edu/bibliography/partisan-gerrymandering-and-the-efficiency-gap",
+     "kind": "academic"
+    },
+    {
+     "title": "Election Law Blog (Rick Hasen) 2014: SSRN 预印公告",
+     "url": "https://electionlawblog.org/2014/partisan-gerrymandering-and-the-efficiency-gap/",
+     "kind": "academic"
+    },
+    {
+     "title": "Brennan Center: 'How the Efficiency Gap Works'",
+     "url": "https://www.brennancenter.org/sites/default/files/legal-work/How-the-Efficiency-Gap-Works.pdf",
+     "kind": "academic"
+    }
+   ],
+   "image_hint": "可自绘浪费票计算示例表；无需照片。",
+   "text_long": "Eric McGhee 在《Measuring Partisan Bias in Single-Member District Electoral Systems》（Legislative Studies Quarterly 39(1), 2014）提出以「浪费票」衡量偏向；Nicholas Stephanopoulos 与 McGhee 的《Partisan Gerrymandering and the Efficiency Gap》（82 U. Chi. L. Rev. 831, 2015；2014 年 SSRN 预印）把它定义为「the difference between the parties' respective wasted votes, divided by the total number of votes cast」。浪费票 = 败选方全部票 + 胜选方超过所需的票。两党、人口相等时可化简为 EG = 席位差 − 2 × 得票差。作者建议以国会地图 2 席、州众院 8% 为推定门槛，超过者推定违宪，州可举证系合法政策或政治地理所致以反驳。该指标后被用于 Gill v. Whitford 诉讼。"
+  },
+  {
+   "id": "ensemble-methods-2017",
+   "year": 2017,
+   "year_label": "2014–2021",
+   "date": "2017-02-28",
+   "place": "美国（杜克、卡内基梅隆、塔夫茨 / MIT）",
+   "lane": "measure",
+   "title_zh": "集合法：用随机地图当基线",
+   "what": "用马尔可夫链生成大量合规地图作基线：Mattingly（2014）、Chikina 等（2017）、ReCom（2021）。",
+   "ruler": "参照系从 50/50 换成「同样规则下随机画一万张图」。",
+   "text": "2014 年 Mattingly 与 Vaughn（杜克）以北卡为例随机生成大量合规国会地图，对比实际结果。2017 年 2 月 28 日 Chikina、Frieze、Pegden 在 PNAS 提出「ε 检验」：无需证明链已混合，从现行地图随机游走，现行地图若是轨迹上的离群值即显著；宾州 18 区地图 p 值约 10⁻⁴–10⁻⁷，但只说明「不典型」。2021 年 3 月 31 日 DeFord、Duchin、Solomon 在 Harvard Data Science Review 发表 ReCom：合并相邻两区、抽生成树、沿平衡边切开，数百步即得近似独立样本；MGGG 开源为 GerryChain。",
+   "quote": "Section 2 cannot require courts to judge a contest of computers when there is no reliable way to determine who wins",
+   "quote_src": "Allen v. Milligan, 599 U.S. 1 (2023), Roberts, C.J.（对模拟地图作为基准的态度）",
+   "numbers": [
+    {
+     "label": "Chikina 等：宾州 p 值",
+     "value": "2.5e-4 ~ 8.1e-7",
+     "unit": ""
+    },
+    {
+     "label": "PNAS 卷期",
+     "value": "114(11): 2860–2864",
+     "unit": "2017"
+    },
+    {
+     "label": "ReCom 发表",
+     "value": "2021-03-31",
+     "unit": "HDSR 3.1"
+    }
+   ],
+   "dispute": "法院对集合法的接受度不一：州法院（宾州 2018、北卡 2019）采信；最高法院在 Rucho（2019）与 Milligan（2023，对「两百万张模拟图」）持保留。",
+   "confidence": "高",
+   "verify": true,
+   "note": "缺：Mattingly & Vaughn 2014 arXiv 编号（通行 arXiv:1410.8796）及 Herschlag 等 2018 的期刊信息未从页面核到；Mattingly 部分依据 ReCom 论文与 PNAS 文献综述。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Chikina, Frieze & Pegden, 'Assessing significance in a Markov chain without mixing', PNAS 114(11) (2017) — PMC",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5358383",
+     "kind": "academic"
+    },
+    {
+     "title": "DeFord, Duchin & Solomon, 'Recombination: A Family of Markov Chains for Redistricting', Harvard Data Science Review 3.1 (2021)",
+     "url": "https://hdsr.mitpress.mit.edu/pub/1ds8ptxu/download/pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "MGGG: ReCom",
+     "url": "https://mggg.org/ReCom",
+     "kind": "academic"
+    },
+    {
+     "title": "arXiv 1911.05725 (ReCom 预印本)",
+     "url": "https://export.arxiv.org/abs/1911.05725",
+     "kind": "academic"
+    }
+   ],
+   "image_hint": "MGGG / GerryChain 文档图多为 MIT 或 CC 许可（需逐张核）；可自绘「集合分布直方图 + 现行地图位置」示意。",
+   "text_long": "2014 年 Jonathan Mattingly 与 Christy Vaughn（杜克）以北卡罗来纳州为例，随机生成大量满足连续、人口相等、紧凑的国会地图，对比 2012 年实际结果，开创「集合」比较。2017 年 2 月 28 日 Chikina、Frieze、Pegden 在 PNAS 114(11): 2860–2864 提出「ε 检验」：无需证明链已混合，只要从现行地图出发随机游走 k 步，现行地图若是游走轨迹上的 ε 离群值，则在 p = 2ε 水平显著；对宾州 18 区国会地图得到 p 值约 2.5×10⁻⁴ 到 8.1×10⁻⁷，并强调该检验只说明「不典型」，不估计应得席位。2021 年 3 月 31 日 DeFord、Duchin、Solomon 在 Harvard Data Science Review 3.1 发表 ReCom：每步合并两个相邻选区、抽一棵生成树、沿平衡边切开，数百步即可得到近似不相关样本，而逐点翻转链可能需要数十亿步；该算法由 Duchin 的 MGGG 实验室开源为 GerryChain。集合分析曾用于宾州、北卡、密歇根、威斯康星、俄亥俄等州法院诉讼；2019 年 Rucho 案多数意见认为联邦法院无法判断「多离群算太离群」。"
+  },
+  {
+   "id": "rucho-2019",
+   "year": 2019,
+   "year_label": "2018–2019",
+   "date": "2019-06-27",
+   "place": "美国最高法院；宾夕法尼亚州最高法院",
+   "lane": "draw",
+   "title_zh": "Gill、宾州与 Rucho",
+   "what": "Gill（2018）以原告资格发回；宾州最高法院（2018）依州宪推翻地图；Rucho（2019）判党派划区不可司法。",
+   "ruler": "联邦尺子收回：党派划区由州宪、州法院量。",
+   "text": "Gill v. Whitford（2018-06-18）：选票稀释的原告须证明自己住在被「拆散」或「打包」的选区，发回重审。宾州最高法院 2018-01-22 命令、02-07 意见认定 2011 年国会地图违反州宪「选举应自由且平等」条款，「被稀释的一票不是平等的一票」，并列出紧凑、连续、人口相等、少拆分县市的标准，02-19 自行采用补救地图。Rucho v. Common Cause（2019-06-27，5:4，Roberts 执笔）：党派划区主张「属于联邦法院无法触及的政治问题」，但州法与州宪「可为州法院提供标准与指引」。",
+   "quote": "We conclude that partisan gerrymandering claims present political questions beyond the reach of the federal courts.",
+   "quote_src": "Rucho v. Common Cause, No. 18-422, slip op. at 30 (2019), Roberts, C.J.",
+   "numbers": [
+    {
+     "label": "Rucho 票数",
+     "value": "5:4",
+     "unit": ""
+    },
+    {
+     "label": "宾州补救地图拆分县数",
+     "value": 13,
+     "unit": "个"
+    },
+    {
+     "label": "马里兰第 6 区移入 / 移出选民",
+     "value": "约 350,000 / 360,000",
+     "unit": "人（Rucho 判词）"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": false,
+   "note": "Gill 判决日 2018-06-18 为通行日期（本次从 Rucho 判词核到其持有，未开 Gill 原文）；宾州意见作者为 per curiam（Todd 大法官另有意见，通行说法有误，已按法院文件写法）。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Rucho v. Common Cause, No. 18-422 (2019) slip opinion — supremecourt.gov",
+     "url": "https://www.supremecourt.gov/opinions/18pdf/18-422_9ol1.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "League of Women Voters of Pa. v. Commonwealth, No. 159 MM 2017, per curiam opinion (Feb. 2018) — pacourts.us",
+     "url": "https://www.pacourts.us/assets/opinions/Supreme/out/j-1-2018pco.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Rucho v. Common Cause — LII PDF",
+     "url": "https://ceri.law.cornell.edu/supct/pdf/18-422.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Wikipedia: Rucho v. Common Cause（线索）",
+     "url": "https://en.wikipedia.org/wiki/Rucho_v._Common_Cause",
+     "kind": "wiki"
+    }
+   ],
+   "image_hint": "公有领域：宾州 2011 年与 2018 年补救国会选区图（州政府作品 / 法院附图）；北卡 2016 年地图（ncleg.gov）。",
+   "text_long": "威斯康星州案 Gill v. Whitford 的原告以效率差为核心证据，最高法院 2018 年 6 月 18 日裁定选票稀释的原告「must establish standing by showing he lives in an allegedly 'cracked' or 'packed' district」，发回重审。宾州最高法院 2018 年 1 月 22 日命令、2 月 7 日意见（per curiam）认定 2011 年国会地图「clearly, plainly and palpably」违反宾州宪法第一条第五款「Elections shall be free and equal」，写道「a diluted vote is not an equal vote」，并列出紧凑、连续、人口相等、尽量不拆分县市乡镇的中性标准；2 月 19 日法院自行采用补救地图（只拆 13 个县，最大人口差 1 人）。2019 年 6 月 27 日 Rucho v. Common Cause（北卡 2016 年地图与马里兰 2011 年第 6 区合并审理），Roberts 首席大法官多数意见：「We conclude that partisan gerrymandering claims present political questions beyond the reach of the federal courts」，「Federal judges have no license to reallocate political power between the two major political parties」，同时指出「Provisions in state statutes and state constitutions can provide standards and guidance for state courts to apply」。"
+  },
+  {
+   "id": "allen-v-milligan-2023",
+   "year": 2023,
+   "year_label": "2023",
+   "date": "2023-06-08",
+   "place": "美国最高法院；阿拉巴马州",
+   "lane": "draw",
+   "title_zh": "Milligan 案",
+   "what": "最高法院 5:4 维持裁定：阿拉巴马 2021 年国会地图（7 区中 1 个黑人多数区）可能违反第 2 节。",
+   "ruler": "Gingles 三要件原样保留；「模拟地图当尺子」被拒。",
+   "text": "2023 年 6 月 8 日，Roberts 首席大法官执笔（Sotomayor、Kagan、Jackson 全部加入，Kavanaugh 加入大部分；Thomas、Alito 异议）。法院认定地区法院「忠实适用了先例」，并称 Gingles「37 年来一直支配本院的投票权法判例」。阿拉巴马主张以不考虑种族的电脑生成地图为基准，法院回应可能的地图数「至少在万亿万亿级」，两百万张模拟图「实际上几乎无关」；第 2 节「不能要求法院裁判一场无法判定胜负的电脑竞赛」。第 2 节亦不要求证明歧视意图。",
+   "quote": "Gingles has governed our Voting Rights Act jurisprudence since it was decided 37 years ago.",
+   "quote_src": "Allen v. Milligan, 599 U.S. 1, 19 (2023), Roberts, C.J.",
+   "numbers": [
+    {
+     "label": "票数",
+     "value": "5:4",
+     "unit": ""
+    },
+    {
+     "label": "阿拉巴马国会选区",
+     "value": 7,
+     "unit": "个（2021 年图 1 个黑人多数区）"
+    },
+    {
+     "label": "阿拉巴马主张的模拟图数",
+     "value": 2000000,
+     "unit": "张"
+    }
+   ],
+   "dispute": null,
+   "confidence": "高",
+   "verify": false,
+   "note": "openjurist 为公有领域判决文本；页码按 preliminary print。「黑人占全州人口约 27%」常见于报道但未在判决页核到，故 text 未写。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Allen v. Milligan, 599 U.S. 1 (2023) — 公有领域全文（OpenJurist）",
+     "url": "https://openjurist.org/599/us/1",
+     "kind": "official"
+    },
+    {
+     "title": "Syracuse Law Review: 'Allen v. Milligan: Section 2 … Lives to See Another Day'",
+     "url": "https://lawreview.syr.edu/allen-v-milligan-section-2-of-the-voting-rights-act-of-1965-lives-to-see-another-day/",
+     "kind": "academic"
+    },
+    {
+     "title": "SCOTUSblog case page: Merrill / Allen v. Milligan",
+     "url": "https://www.scotusblog.com/cases/merrill-v-milligan-2/",
+     "kind": "press"
+    },
+    {
+     "title": "Wikipedia: Allen v. Milligan（线索）",
+     "url": "https://en.wikipedia.org/wiki/Allen_v._Milligan",
+     "kind": "wiki"
+    }
+   ],
+   "image_hint": "公有领域：阿拉巴马 2021 年 HB1 地图与 2023 年法院补救地图（州 / 法院文件）。",
+   "text_long": "2023 年 6 月 8 日，Roberts 首席大法官执笔（Sotomayor、Kagan、Jackson 全部加入，Kavanaugh 加入除 III-B-1 外各部分；Thomas、Alito 异议）。法院认定地区法院「faithfully applied our precedents and correctly determined that, under existing law, HB1 violated § 2」，并说「Gingles has governed our Voting Rights Act jurisprudence since it was decided 37 years ago」。阿拉巴马主张应以不考虑种族的电脑生成地图为基准，法院回应：可能的地图数量「at least in the 'trillion trillions'」，两百万张模拟图「close to irrelevant in practice」；「Section 2 cannot require courts to judge a contest of computers when there is no reliable way to determine who wins」。法院也重申第 2 节不要求证明歧视意图。此后阿拉巴马由法院指定特别专家绘制 2023 年补救地图；2026 年 Louisiana v. Callais 判决后，该州 2023 年立法地图的使用再起诉讼（见 2025 节点）。"
+  },
+  {
+   "id": "mid-decade-2025",
+   "year": 2025,
+   "year_label": "2025–2026",
+   "date": "2026-11-03",
+   "place": "美国多州",
+   "lane": "draw",
+   "title_zh": "十年中途重划",
+   "what": "2025–2026 多州在普查周期中途重画国会选区，程序各异；2026-11-03 中期选举首次在这批地图上投票。",
+   "ruler": "「何时可以重画」成新变量：州宪、公投程序与 Purcell 原则决定哪张图上票。",
+   "text": "截至 2026-11-05：得克萨斯（特别会期 2025-08-29 签署；联邦合议庭 11-18 禁用，最高法院 12-04 中止）、加利福尼亚（第 50 号提案 2025-11-04 公投通过）、北卡罗来纳（2025-10-22 立法）、俄亥俄（委员会 2025-10-31 一致通过）、犹他（法院 2025-11-10 采用原告地图）、佛罗里达（2026-05-04）、田纳西（05-07）、路易斯安那（05-29）用新图；阿拉巴马恢复 2023 年图。密苏里 2025 年图因公投请愿被搁置，用 2022 年图；弗吉尼亚修宪公投通过后被州最高法院撤销，用 2021 年图。印第安纳、马里兰、南卡、纽约未成案。",
+   "quote": "The application for stay presented to JUSTICE KAVANAUGH and by him referred to the Court is granted.",
+   "quote_src": "People Not Politicians v. Onder, No. 26A388 (U.S. Sept. 25, 2026), per curiam",
+   "numbers": [
+    {
+     "label": "2026 年启用新图的州",
+     "value": "TX, CA, NC, OH, UT, FL, TN, LA",
+     "unit": "（AL 恢复 2023 年图）"
+    },
+    {
+     "label": "新图被法院 / 公投程序拦下",
+     "value": "MO, VA",
+     "unit": ""
+    },
+    {
+     "label": "加州第 50 号提案赞成率",
+     "value": 64.4,
+     "unit": "%"
+    },
+    {
+     "label": "中期选举",
+     "value": "2026-11-03",
+     "unit": ""
+    }
+   ],
+   "dispute": "各追踪页对「谁最先」「是否算中途重划」口径不同（俄亥俄系州宪要求、犹他与阿拉巴马系法院驱动）；弗吉尼亚公投被撤销后 2026 年沿用 2021 年图（NCSL），Ballotpedia 未写明。",
+   "confidence": "中",
+   "verify": true,
+   "note": "每州至少一官方/法院来源：TX（supremecourt.gov 25A608 docket）、CA（sos.ca.gov）、MO（governor.mo.gov；supremecourt.gov 26A388）、OH（ohiohouse.gov）、NC（ncleg.gov 点名表决）、UT（第三地区法院 2025-11-10 命令 PDF）、FL（flsenate.gov HB 1-D）；缺：TN、LA、AL、VA 仅有 NCSL 与 Ballotpedia / 新闻，未开州官网或法院原文（搜索预算用尽）；Louisiana v. Callais 判决原文（24-109）未开，日期 2026-04-29 来自 Ballotpedia。加州赞成票数来自 sos.ca.gov 结果表，未标「certified」。页面不写席位得失。（text_long 为含原文引述的长版，供编辑取材，页面用 text。）",
+   "sources": [
+    {
+     "title": "Supreme Court docket No. 25A608, Abbott v. LULAC（得克萨斯）",
+     "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25A608.html",
+     "kind": "official"
+    },
+    {
+     "title": "People Not Politicians v. Onder, No. 26A388, per curiam (Sept. 25, 2026)（密苏里）",
+     "url": "https://www.supremecourt.gov/opinions/25pdf/26a388_q86b.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Governor of Missouri: 'Governor Kehoe Signs Missouri First Map into Law' (2025-09-28)",
+     "url": "https://governor.mo.gov/press-releases/archive/governor-kehoe-signs-missouri-first-map-law",
+     "kind": "official"
+    },
+    {
+     "title": "California Secretary of State: California Redistricting（Prop 50）",
+     "url": "https://sos.ca.gov/elections/california-redistricting",
+     "kind": "official"
+    },
+    {
+     "title": "California SOS: Nov 4, 2025 Special Election ballot measure results",
+     "url": "https://elections.cdn.sos.ca.gov/sov/2025-special/ssov/ballot-measure-summary.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "NC General Assembly: Senate Roll Call #494 (2025)",
+     "url": "https://ncleg.gov/Legislation/Votes/RollCallVoteTranscript/2025/S/494",
+     "kind": "official"
+    },
+    {
+     "title": "Ohio House: Speaker statement on unanimous passage of congressional plan (2025-10-31)",
+     "url": "https://ohiohouse.gov/news/republican/speaker-huffman-issues-statement-following-unanimous-passage-of-a-congressional-district-plan-139030",
+     "kind": "official"
+    },
+    {
+     "title": "Utah Third Judicial District Court, Ruling and Order (2025-11-10)",
+     "url": "https://www.democracydocket.com/wp-content/uploads/2022/03/2025-11-10-Order.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Florida Senate: HB 1-D (2026 Special Session D) 'Establishing the Congressional Districts of the State'",
+     "url": "https://www.flsenate.gov/Session/Bill/2026D/1",
+     "kind": "official"
+    },
+    {
+     "title": "NCSL: 'Changing the Maps: Tracking Mid-Decade Redistricting'",
+     "url": "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+     "kind": "official"
+    },
+    {
+     "title": "Ballotpedia: Redistricting ahead of the 2026 elections（2026-11-05 更新）",
+     "url": "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+     "kind": "press"
+    },
+    {
+     "title": "Wikipedia: 2025–2026 United States redistricting（线索）",
+     "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting",
+     "kind": "wiki"
+    }
+   ],
+   "image_hint": "各州官方地图为政府作品（多数公有领域，加州 / 得州议会 GIS 文件需核）；可自绘「州 × 程序 × 法院状态」矩阵图。",
+   "text_long": "按州列程序与法院状态（截至 2026-11-05）：得克萨斯——立法特别会期，2025-08-29 签署；联邦三法官合议庭 2025-11-18 禁用，最高法院 11-21 行政中止、12-04 批准中止（No. 25A608，Alito 协同、Kagan 异议），2025 年图用于 2026。加利福尼亚——议会起草，第 50 号提案 2025-11-04 公投通过（赞成 7,453,339 票、64.4%），临时取代公民重划委员会地图至 2030 年普查后；联邦合议庭 2026-01 维持，最高法院 2026-02-04 拒绝受理。密苏里——特别会期 HB 1，2025-09-28 签署；公投请愿 2025-12-09 提交，州务卿 2026-08-04 拒绝认证，州最高法院 2026-09-03 认定请愿有效、2025 年图「is not the law」；联邦地区法院 09-08 临时禁令，最高法院 09-10 中止、09-25 再次中止（No. 26A388，per curiam，援引 Purcell），2022 年图用于 2026，2025 年图交 11 月公投。北卡罗来纳——立法 2025-10-22 通过（无需州长签署），联邦合议庭 2025-11-26 允许使用。俄亥俄——议会错过期限后由重划委员会 2025-10-31 一致通过，依州宪两党通过的图有效至 2031 年。犹他——第三地区法院 2025-08-25 判 2021 年图违反第 4 号提案程序，议会 10-06 重画后法院 11-10 采用原告地图，州最高法院 2026-02-20 驳回上诉。佛罗里达——特别会期 HB 1-D，2026-04-29 两院通过、05-04 签署，州法院诉讼进行中。田纳西——特别会期 2026-05-07 签署；联邦法官 05-26 拒绝临时禁止。路易斯安那——Louisiana v. Callais（2026-04-29）后 SB 121 于 05-29 签署，初选延至 11-03、大选 12-12。阿拉巴马——最高法院 2026-06-02 解除 Milligan 禁令，2023 年立法图使用。弗吉尼亚——修宪案 2026-02-10 两院通过、04-21 公投通过，州最高法院 05-08 以程序不合宪撤销，最高法院 05-15 拒绝中止，沿用 2021 年图。未成案：印第安纳（参议院 2025-12-11 否决）、马里兰、南卡罗来纳（参议院 2026-05-26 未达三分之二）、纽约（最高法院 2026-03-02 中止州法院重画令）。"
+  }
+ ]
+}

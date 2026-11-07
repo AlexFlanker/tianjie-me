@@ -1,0 +1,2558 @@
+{
+ "meta": {
+  "file": "metrics_C.json",
+  "lane": "measure",
+  "author": "研究员 C（量尺与分配算术）",
+  "date": "2026-11-06",
+  "theme": "2026-11-07-gerrymander-geometry",
+  "counts": {
+   "metrics": 12,
+   "apportionment": 6,
+   "paradoxes": 4,
+   "datasets": 7,
+   "cube_law_rows": 8,
+   "demo_plans": 3
+  },
+  "note": "所有公式按可直接编码的形式写出；verify=true 的条目见各自 note。复算脚本：Hamilton/Webster/Huntington–Hill 的除数二分实现与 10×10 画线器校验（见 meta.scripts）。",
+  "scripts": {
+   "apportionment_check": "parse2020.py / build_hist.py（Hamilton=最大余数；除数法用二分找 D；HH 阈值 sqrt(n(n+1))；Webster 阈值 n+0.5）",
+   "grid": "grid.py（断言 20 格/连通/全覆盖，计算浪费票、EG、MM）"
+  }
+ },
+ "metrics": [
+  {
+   "id": "efficiency_gap",
+   "name_zh": "效率差",
+   "name_en": "efficiency gap (EG)",
+   "what": "两党「浪费票」之差占总票的比例，衡量 pack/crack 的净效果",
+   "formula": "每区：若 A 胜，W_A += v_A − 需胜票数，W_B += v_B；若 B 胜，对称。「浪费票」= 输方全部票 + 赢方超过 50% 的票（S&M 2015 用「超过 50%」；Gill v. Whitford 转述原告定义用「超过 50%+1」，两者在大样本下差异可忽略）。EG = (W_B − W_A) / 总票（正值表示划区对 A 有利，按 S&M 符号约定：EG = (对方浪费票 − 本方浪费票)/总票）。各区同票数且两党制时等价于 EG = (S_A − 0.5) − 2 (V_A − 0.5)，即「席位差 − 2×选票差」（S&M 2015 p.853）。",
+   "range": "理论 −0.5 … +0.5；0 = 两党浪费票相等。S&M 2015 建议门槛：州议会 |EG| ≥ 8%（0.08），国会地图 ≥ 2 席（席位换算：EG×总席位 ≥ 2），且须经敏感性检验在本周期内持续（p.837）。Gill 法院意见记载原告主张 7%–10% 触发审查。",
+   "fails": "不满足各区同票数假设、无对手选区需补齐票数时失真；一党得票远超 50% 时（如 V≈0.75）全赢也会给出大 EG；席位极少的州（1–2 席）无意义；只用一次选举易受摇摆影响。",
+   "origin": "Eric McGhee 2014《Measuring Partisan Bias in Single-Member District Electoral Systems》(Legislative Studies Quarterly 39:55) 提出「相对浪费票」；Nicholas Stephanopoulos & Eric McGhee 2015《Partisan Gerrymandering and the Efficiency Gap》82 U. Chi. L. Rev. 831 命名并给出门槛；Gill v. Whitford (2018) 为其进入最高法院的案件。",
+   "sources": [
+    {
+     "title": "Stephanopoulos & McGhee, Partisan Gerrymandering and the Efficiency Gap, 82 U. Chi. L. Rev. 831 (2015)",
+     "url": "https://www.brennancenter.org/sites/default/files/events/Efficiency_Gap_Stephanopoulos_McGhee_2015.pdf",
+     "type": "学术一手"
+    },
+    {
+     "title": "University of Chicago Law Review 刊页",
+     "url": "https://lawreview.uchicago.edu/publication/partisan-gerrymandering-and-efficiency-gap-0",
+     "type": "学术一手"
+    },
+    {
+     "title": "Brennan Center, How the Efficiency Gap Works",
+     "url": "https://www.brennancenter.org/sites/default/files/legal-work/How-the-Efficiency-Gap-Works.pdf",
+     "type": "可靠二手"
+    },
+    {
+     "title": "McGhee, Measuring Partisan Bias in Single-Member District Electoral Systems, 39 Legislative Studies Quarterly 55 (2014)（S&M 2015 脚注 12 所引）",
+     "url": "https://www.brennancenter.org/sites/default/files/events/Efficiency_Gap_Stephanopoulos_McGhee_2015.pdf",
+     "type": "学术一手（经 S&M 2015 转引）"
+    },
+    {
+     "title": "Gill v. Whitford, No. 16-1161 (U.S. June 18, 2018)，Roberts 首席大法官法院意见",
+     "url": "https://law.cornell.edu/supremecourt/text/16-1161",
+     "type": "法院判决全文"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "McGhee 2014 的页码（55, 68–69）来自 S&M 2015 脚注 12 转引，未直接核 LSQ 原文。"
+  },
+  {
+   "id": "mean_median",
+   "name_zh": "均值—中位数差",
+   "name_en": "mean–median difference",
+   "what": "某党各区得票率的中位数减均值，衡量得票分布的偏斜",
+   "formula": "取某党在 n 个区的两党得票率 p_1..p_n；MM = median(p) − mean(p)。McDonald & Best 符号：正值表示分布对该党有利（中位区比平均区更易赢）；PlanScore 等实现用 mean − median，符号相反，页面须注明约定。",
+   "range": "理论 −0.5 … +0.5；0 = 对称。McDonald & Best 未给硬门槛，视为「潜在伤害的先行指标」，须再检查该党在得多数票时能否得多数席。",
+   "fails": "对非竞争性州无信息（一党大胜时分布偏斜不等于不公）；受各区投票人数不均与无对手选区影响；1–2 席州无意义；偏斜也可能来自居住地理而非划区。",
+   "origin": "McDonald & Best 2015 Election Law Journal 14(4):312–330 将其系统用于六案；他们溯源到 Edgeworth 1898 与 David Butler 1950 年代对英国大选偏差的分析（脚注 4）。",
+   "sources": [
+    {
+     "title": "McDonald & Best, Unfair Partisan Gerrymanders in Politics and Law: A Diagnostic Applied to Six Cases, 14 Election Law Journal 312–330 (2015), doi:10.1089/elj.2015.0358",
+     "url": "https://www.brennancenter.org/sites/default/files/legal-work/McDonald_Best_Unfair_Gerrymanders_2015.pdf",
+     "type": "学术一手"
+    },
+    {
+     "title": "PlanScore, Mean-Median Difference（量尺说明页）",
+     "url": "https://planscore.org/metrics/meanmedian/",
+     "type": "可靠二手"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": ""
+  },
+  {
+   "id": "partisan_symmetry",
+   "name_zh": "党派对称性 / 席位—选票曲线偏差",
+   "name_en": "partisan symmetry / partisan bias",
+   "what": "两党在相同得票率下能否得到相同席位份额",
+   "formula": "设席位—选票函数 S(V)（A 党得 V 的全州两党票时可得席位份额）。对称性要求 S(V) = 1 − S(1 − V)。偏差 bias(V) = S(V) − [1 − S(1 − V)]，常报 V = 0.5 处：bias = S(0.5) − 0.5。曲线估计：均匀摆动法——对每个区得票率 p_i 加同一位移 δ（使全州均值达到 V），数 p_i + δ > 0.5 的区占比即 S(V)；King–Gelman 法用「近似均匀摆动」回归并给出误差带。另一量：响应度 responsiveness = dS/dV|_{V=0.5}。",
+   "range": "bias 理论 −0.5 … +0.5，0 = 对称；Grofman & King 不给固定门槛，主张法院按统计显著性判断。",
+   "fails": "需要反事实（「若 A 得 55% 会如何」），非竞争性州无法可靠估计（文中例：80% 一党州「无经验方法可用」）；均匀摆动假设「几乎被所有真实数据违反」（p.11）；长期一党控制时「不可行也不相关」（n.70）。",
+   "origin": "对称性概念见 King & Browning 1987 等；Bernard Grofman & Gary King 2007《The Future of Partisan Symmetry as a Judicial Test for Partisan Gerrymandering after LULAC v. Perry》Election Law Journal 6(1)，doi:10.1089/elj.2006.6002。",
+   "sources": [
+    {
+     "title": "Grofman & King, The Future of Partisan Symmetry as a Judicial Test for Partisan Gerrymandering after LULAC v. Perry, 6 Election Law Journal 2 (2007), doi:10.1089/elj.2006.6002",
+     "url": "https://sites.socsci.uci.edu/~bgrofman/147-Grofman-King-%20Future%20of%20Partisan%20Symmetry.pdf",
+     "type": "学术一手"
+    },
+    {
+     "title": "Gary King 个人页（同文）",
+     "url": "https://gking.harvard.edu/publication/the-future-of-partisan-symmetry-as-a-judicial-test-for-partisan-gerrymandering-after-lulac-v.-perry/",
+     "type": "学术一手"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "公式 S(V)=1−S(1−V) 与 bias=S(0.5)−0.5 是本路据文中文字定义写成的可编码形式，原文为文字定义（p.6, p.20）。"
+  },
+  {
+   "id": "declination",
+   "name_zh": "倾角",
+   "name_en": "declination (δ)",
+   "what": "把各区得票率按序排列，看赢区与输区两段平均值相对 50% 线的角度差",
+   "formula": "设 N 区，P 党得票率 p_i 升序；k 个区 p_i ≤ 1/2（P 输），k' = N − k 个区 P 赢。ȳ = P 在输区的平均得票率，z̄ = P 在赢区的平均得票率。θ_P = arctan((2z̄ − 1)/(k'/N))，θ_Q = arctan((1 − 2ȳ)/(k/N))。δ = 2(θ_P − θ_Q)/π。缩放版：δ_N = δ·N/2（约等于席位数），δ̃ = δ·ln(N)/2（跨州可比）。",
+   "range": "−1 … +1；0 = 两段对称；Warrington 符号约定正值对 Republicans 有利（页面可改为「正值对 Q 有利」）；一个 pack/crack 区约改变 δ ≈ ±2/N。",
+   "fails": "一党几乎全赢时失灵（k 或 k' = 0 时未定义，为 1 时极敏感）；对称分布但一党占优时也可能很大；无对手选区需补齐；单次选举不足为凭。",
+   "origin": "Gregory S. Warrington 2018《Quantifying Gerrymandering Using the Vote Distribution》Election Law Journal 17(1):39–57（arXiv:1705.09393, 2017）。",
+   "sources": [
+    {
+     "title": "Warrington, Quantifying Gerrymandering Using the Vote Distribution, arXiv:1705.09393（刊于 Election Law Journal 17(1) 39–57, 2018）",
+     "url": "https://arxiv.org/pdf/1705.09393",
+     "type": "学术一手（预印本）"
+    },
+    {
+     "title": "Warrington declination.R 参考实现",
+     "url": "https://gswarrin.w3.uvm.edu/research/declination.R",
+     "type": "作者代码"
+    }
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "ELJ 的卷期页（17(1):39–57）来自通行引用，本路只核到 arXiv 预印本；公式按预印本。"
+  },
+  {
+   "id": "polsby_popper",
+   "name_zh": "Polsby–Popper 紧凑度",
+   "name_en": "Polsby–Popper (isoperimetric quotient)",
+   "what": "区面积与同周长圆面积之比",
+   "formula": "PP = 4π·A / P²，A 为区面积，P 为周长。",
+   "range": "0 … 1；1 = 圆。无法定门槛，常与同州其他区或集合法基线比较。",
+   "fails": "对边界分辨率极敏感（海岸线、河流、锯齿状普查块会压低分值）；不区分「形状怪」与「地理所迫」；形状好看不等于不偏。",
+   "origin": "等周商本身见 Cox 1927（砂粒圆度）；用于选区的命名来自 Daniel Polsby & Robert Popper 1991《The Third Criterion: Compactness as a Procedural Safeguard Against Partisan Gerrymandering》9 Yale Law & Policy Review 301–353。",
+   "sources": [
+    {
+     "title": "Polsby & Popper, The Third Criterion: Compactness as a Procedural Safeguard Against Partisan Gerrymandering, 9 Yale Law & Policy Review 301–353 (1991)",
+     "url": "https://typeset.io/pdf/the-third-criterion-compactness-as-a-procedural-safeguard-1otzu5qu70.pdf",
+     "type": "学术一手"
+    },
+    {
+     "title": "redist (R 包) redist.compactness 文档：各紧凑度公式与参考文献",
+     "url": "https://alarm-redist.org/redist/reference/redist.compactness.html",
+     "type": "可靠二手（含原始文献清单）"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": ""
+  },
+  {
+   "id": "reock",
+   "name_zh": "Reock 紧凑度",
+   "name_en": "Reock",
+   "what": "区面积与其最小外接圆面积之比",
+   "formula": "Reock = A(d) / A(MBC)，MBC = 区的最小外接圆（minimum bounding circle）。",
+   "range": "0 … 1；1 = 圆。",
+   "fails": "只看「伸展」不看边界锯齿：一个圆形区里再怎么犬牙交错分值不变；细长但对称的区分值很低。",
+   "origin": "Ernest C. Reock Jr. 1961《A Note: Measuring Compactness as a Requirement of Legislative Apportionment》Midwest Journal of Political Science 5(1):70–74。",
+   "sources": [
+    {
+     "title": "Reock, A Note: Measuring Compactness as a Requirement of Legislative Apportionment, 5 Midwest Journal of Political Science 70–74 (1961)（经 redist 文档转引）",
+     "url": "https://alarm-redist.org/redist/reference/redist.compactness.html",
+     "type": "学术一手（转引）"
+    },
+    {
+     "title": "redist (R 包) redist.compactness 文档：各紧凑度公式与参考文献",
+     "url": "https://alarm-redist.org/redist/reference/redist.compactness.html",
+     "type": "可靠二手（含原始文献清单）"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "原文未直接打开，引文来自 redist 文档参考文献。"
+  },
+  {
+   "id": "schwartzberg",
+   "name_zh": "Schwartzberg 紧凑度",
+   "name_en": "Schwartzberg",
+   "what": "区周长与同面积圆周长之比",
+   "formula": "原始定义 Sch = P / (2π·sqrt(A/π))（≥1，越小越紧凑）；redist 等实现取倒数 1/Sch 使其落在 0…1 且越大越紧凑。注意 (1/Sch)² = PP，两者单调等价。",
+   "range": "原始 ≥ 1（1 = 圆）；倒数版 0 … 1。",
+   "fails": "与 PP 同病：对边界分辨率敏感；只是 PP 的开方，不提供新信息。",
+   "origin": "Joseph E. Schwartzberg 1966《Reapportionment, Gerrymanders, and the Notion of Compactness》50 Minnesota Law Review 443。",
+   "sources": [
+    {
+     "title": "Schwartzberg, Reapportionment, Gerrymanders, and the Notion of Compactness, 50 Minnesota Law Review 443 (1966)（经 redist 文档转引）",
+     "url": "https://alarm-redist.org/redist/reference/redist.compactness.html",
+     "type": "学术一手（转引）"
+    },
+    {
+     "title": "redist (R 包) redist.compactness 文档：各紧凑度公式与参考文献",
+     "url": "https://alarm-redist.org/redist/reference/redist.compactness.html",
+     "type": "可靠二手（含原始文献清单）"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "redist 文档页码写作「1701」，通行引用为 443；原文未直接核。"
+  },
+  {
+   "id": "convex_hull",
+   "name_zh": "凸包比",
+   "name_en": "convex hull ratio",
+   "what": "区面积与其凸包面积之比",
+   "formula": "CH = A(d) / A(ConvexHull(d))。",
+   "range": "0 … 1；1 = 凸形。",
+   "fails": "对海岸线等「被迫凹陷」的区不公平；凸的细长条分值为 1 却可能很不紧凑。",
+   "origin": "通行几何量，无单一出处；redist 文档未归于某文献。",
+   "sources": [
+    {
+     "title": "redist (R 包) redist.compactness 文档：各紧凑度公式与参考文献",
+     "url": "https://alarm-redist.org/redist/reference/redist.compactness.html",
+     "type": "可靠二手（含原始文献清单）"
+    }
+   ],
+   "confidence": "中",
+   "verify": false,
+   "note": ""
+  },
+  {
+   "id": "cut_edges",
+   "name_zh": "切割边数",
+   "name_en": "cut edges",
+   "what": "对偶图中两端点属不同区的边数（离散周长）",
+   "formula": "把州切成基本单元（普查块/选区），相邻单元连边得对偶图 G；cut_edges(plan) = |{(u,v) ∈ E(G): district(u) ≠ district(v)}|。越小越紧凑。派生：fraction kept = 1 − cut_edges/|E|。",
+   "range": "0 … |E|；无绝对门槛，只在同一对偶图上比较（如与集合法样本比较）。",
+   "fails": "依赖单元划分（块级与县级数值不可比）；与人口无关，人口稠密处一条边代表更多人。",
+   "origin": "DeFord, Duchin & Solomon 2021 (HDSR) 以其作为集合法中的紧凑度量，并指出其与各区生成树数近似反相关。",
+   "sources": [
+    {
+     "title": "DeFord, Duchin & Solomon, Recombination: A Family of Markov Chains for Redistricting, Harvard Data Science Review 3.1 (2021), doi:10.1162/99608f92.eb30390f",
+     "url": "https://hdsr.mitpress.mit.edu/pub/1ds8ptxu/download/pdf",
+     "type": "学术一手"
+    },
+    {
+     "title": "redist (R 包) redist.compactness 文档：各紧凑度公式与参考文献",
+     "url": "https://alarm-redist.org/redist/reference/redist.compactness.html",
+     "type": "可靠二手（含原始文献清单）"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": ""
+  },
+  {
+   "id": "ensemble_outlier",
+   "name_zh": "集合法离群检验",
+   "name_en": "ensemble / outlier analysis",
+   "what": "用随机生成的大量合规地图做基线，看现行地图的统计量落在分布的哪里",
+   "formula": "1) 建对偶图并附人口、投票数据；2) 用马尔可夫链生成地图集合：Flip 链每步改一个边界单元归属（需拒绝不连通提案）；ReCom 链每步随机选两相邻区合并，在合并子图上按 Wilson 算法均匀抽一棵生成树，枚举能把树切成两块且人口差在容差 ε 内的边，均匀选一条切开（无可切边则重抽树）；3) 对每张图算统计量 f（席位数、EG、MM、cut edges…）；4) 报告现行图 f₀ 在集合分布中的位置：经验分位 = #{f_i ≤ f₀}/M，或直接画箱线图。严格 p 值可用 Chikina–Frieze–Pegden 的 √ε 检验：从现行图出发跑可逆链，若 f₀ 在轨迹上属最极端的 ε 比例，则在「现行图来自平稳分布」的零假设下显著性 p = √(2ε)。",
+   "range": "分位 0…1；两侧分位 < 0.05 或 √ε 检验 p 很小时称离群（Pegden 对宾州国会图报 p ≈ 2.5×10⁻⁴ … 8.1×10⁻⁷）。",
+   "fails": "集合只是「近似目标分布」（ReCom 近似生成树分布），混合时间无法证明，只能靠启发式收敛诊断；结果依赖约束设定（人口容差、是否保县界、VRA）；基线不等于「公平」，只说明是否异常。",
+   "origin": "Chen & Rodden 2013 用随机图作基线；Chikina, Frieze & Pegden 2017 PNAS 给出无需混合的显著性检验；DeFord, Duchin & Solomon 2021 HDSR 提出 ReCom 并系统比较。",
+   "sources": [
+    {
+     "title": "DeFord, Duchin & Solomon, Recombination: A Family of Markov Chains for Redistricting, Harvard Data Science Review 3.1 (2021), doi:10.1162/99608f92.eb30390f",
+     "url": "https://hdsr.mitpress.mit.edu/pub/1ds8ptxu/download/pdf",
+     "type": "学术一手"
+    },
+    {
+     "title": "MGGG ReCom 页",
+     "url": "https://mggg.org/ReCom",
+     "type": "作者机构页"
+    },
+    {
+     "title": "Chikina, Frieze & Pegden, Assessing significance in a Markov chain without mixing, PNAS 114(11) 2860–2864 (2017), doi:10.1073/pnas.1617540114",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5358383",
+     "type": "学术一手"
+    },
+    {
+     "title": "同文 arXiv:1608.02014 摘要（p = √(2ε)）",
+     "url": "https://arxiv.org/abs/1608.02014",
+     "type": "学术一手"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "Chen & Rodden 2013（Quarterly Journal of Political Science 8:239）未核，仅作背景。"
+  },
+  {
+   "id": "cube_law",
+   "name_zh": "立方律",
+   "name_en": "cube law",
+   "what": "两党制单席位多数制下席位比约为选票比的三次方",
+   "formula": "S/(1 − S) = (V/(1 − V))^k，k = 3；S、V 为某党在两大党中的席位份额与选票份额。推广：k 由数据拟合，k = ln(S/(1−S)) / ln(V/(1−V))；k = 1 即纯比例。Kendall & Stuart 1950 的推导假设各区得票率近似正态分布、标准差约 0.137 时 k ≈ 3。",
+   "range": "k = 3 为经典值；后来英国估计降到 2–2.5（Laakso 1979 讨论「两倍半律」；Maloney 等估六国 k 介于 2 与 3）。",
+   "fails": "三党以上、区域性政党、两党票地理分布变化（区间差异变大则 k 变小）时失效；它是经验规律而非定律；一党过半过多时席位饱和。",
+   "origin": "James Parker Smith 据 Percy MacMahon 的计算向 1909 年英国 Royal Commission on Systems of Election 作证提出（Minutes of Evidence, HMSO 1910）；M. G. Kendall & A. Stuart 1950《The Law of Cubic Proportion in Election Results》British Journal of Sociology 1(3):183–196 给出统计推导并命名；Tufte 1973 APSR 67:540–554 提出摇摆比与偏差的两参数替代。",
+   "sources": [
+    {
+     "title": "Laakso, Should a Two-and-a-Half Law Replace the Cube Law in British Elections?, 9 British Journal of Political Science 355–362 (1979)",
+     "url": "https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/should-a-twoandahalf-law-replace-the-cube-law-in-british-elections/CCFB25CAFB62E4A2EE6D6119B0B9E921",
+     "type": "学术一手"
+    },
+    {
+     "title": "Maloney, Pearson & Pickering, Behind the cube rule, Univ. of Exeter DP 0103 (2001) / Environment and Planning A 35(8) 1405–1414 (2003)",
+     "url": "https://ideas.repec.org/p/exe/wpaper/0103.html",
+     "type": "学术一手"
+    },
+    {
+     "title": "Royal Commission on Systems of Election, Minutes of Evidence (HMSO, 1910, 203 p.)",
+     "url": "https://dspace.gipe.ac.in/xmlui/handle/10973/25862?show=full",
+     "type": "一手（档案目录页）"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "Kendall & Stuart 1950 与 1910 Minutes of Evidence 正文未能打开（JSTOR/档案），Parker Smith—MacMahon 关系与 σ≈0.137 的推导细节为通行说法；Laakso 摘要仅证实「Parker Smith 六十余年前提出」与 K&S 引文。"
+  },
+  {
+   "id": "pack_crack",
+   "name_zh": "pack 与 crack",
+   "name_en": "packing and cracking",
+   "what": "划区的两种基本手法：把对方选民塞进少数区 / 把对方选民摊薄到多个区",
+   "formula": "Packing（集中）：把某党支持者集中到少数几个区，使其以压倒性多数赢（浪费超额票）。Cracking（分割）：把某党支持者分散到多个区，使其在每个区都达不到多数（浪费输方票）。两者都体现在效率差的浪费票里：pack 增加赢方超额票，crack 增加输方票。",
+   "range": "不适用（定义性条目）。",
+   "fails": "不适用。",
+   "origin": "Gill v. Whitford (2018) 法院意见转述原告诉状定义：「Cracking means dividing a party's supporters among multiple districts so that they fall short of a majority in each one. Packing means concentrating one party's backers in a few districts that they win by overwhelming margins.」S&M 2015 亦以此二者解释效率差。",
+   "sources": [
+    {
+     "title": "Gill v. Whitford, No. 16-1161 (U.S. June 18, 2018)，Roberts 首席大法官法院意见",
+     "url": "https://law.cornell.edu/supremecourt/text/16-1161",
+     "type": "法院判决全文"
+    },
+    {
+     "title": "Gill v. Whitford 判决 PDF（supremecourt.gov）",
+     "url": "https://www.supremecourt.gov/opinions/17pdf/16-1161_dc8f.pdf",
+     "type": "法院判决全文"
+    },
+    {
+     "title": "Stephanopoulos & McGhee, Partisan Gerrymandering and the Efficiency Gap, 82 U. Chi. L. Rev. 831 (2015)",
+     "url": "https://www.brennancenter.org/sites/default/files/events/Efficiency_Gap_Stephanopoulos_McGhee_2015.pdf",
+     "type": "学术一手"
+    }
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "术语最早出处未考（学界 1980 年代已通用，如 Grofman 的文献）；页面只引判决与 S&M 的定义即可。"
+  }
+ ],
+ "apportionment": [
+  {
+   "id": "hamilton",
+   "name_zh": "汉密尔顿法（最大余数法）",
+   "name_en": "Hamilton",
+   "also": "Vinton 法（美国 1850 法案称呼）；largest remainder；比例代表制中的 Hare 配额最大余数法",
+   "rule": "1) 配额 q_i = p_i × H / Σp；2) 先给每州 floor(q_i)（美国宪法下至少 1 席）；3) 余下 H − Σfloor(q_i) 席按小数部分 q_i − floor(q_i) 从大到小各加 1 席。",
+   "divisor": "固定除数 D = Σp / H（标准配额），不调整；舍入靠余数排序。",
+   "used_by": "美国 1850 法案起法定（Vinton），1850–1900 年各次分配名义上用它（实际常与 Webster 结果一致或经国会修改）；1911 年改用 Webster。比例代表制中（Hare 最大余数）多国沿用。",
+   "sources": [
+    {
+     "title": "U.S. Census Bureau, Methods of Apportionment",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/methods.html",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Apportionment Legislation 1840–1880",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1840-1880.html",
+     "type": "官方"
+    },
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": ""
+  },
+  {
+   "id": "jefferson",
+   "name_zh": "杰斐逊法",
+   "name_en": "Jefferson",
+   "also": "D'Hondt（比例代表制同一算法）；greatest divisors；向下取整除数法",
+   "rule": "找除数 D 使 Σ floor(p_i / D) = H（美国版每州至少 1：Σ max(1, floor(p_i/D)) = H）。等价的逐席算法：每席给当前 p_i / (a_i + 1) 最大的州（a_i 为已得席）。",
+   "divisor": "向下取整：a_i = floor(p_i / D)，D 用二分法调到总席位恰为 H。",
+   "used_by": "美国 1792–1832 年（1790–1830 普查）；D'Hondt 形式用于比利时、西班牙、荷兰、以色列、日本比例区、欧洲议会多数成员国等。",
+   "sources": [
+    {
+     "title": "U.S. Census Bureau, Methods of Apportionment",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/methods.html",
+     "type": "官方"
+    },
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    }
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "美国使用年份（1790–1830 普查）据 Young 文与通行说法，census.gov Methods 页未列年份。"
+  },
+  {
+   "id": "adams",
+   "name_zh": "亚当斯法",
+   "name_en": "Adams",
+   "also": "smallest divisors；向上取整除数法",
+   "rule": "找除数 D 使 Σ ceil(p_i / D) = H。逐席算法：每席给 p_i / a_i 最大的州（a_i 从 0 起，p_i/0 视为无穷，即每州先得 1 席）。",
+   "divisor": "向上取整：a_i = ceil(p_i / D)。",
+   "used_by": "John Quincy Adams 1832 年提出，美国从未采用；倾向小州（与 Jefferson 相反）。",
+   "sources": [
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    },
+    {
+     "title": "Tufts Math 19 (Math of Social Choice) Apportionment Notes, Spring 2016",
+     "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/a/4132/files/2018/01/apportionment.pdf",
+     "type": "大学讲义（二手）"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "「从未采用」据 Young 文叙述与讲义。"
+  },
+  {
+   "id": "webster",
+   "name_zh": "韦伯斯特法",
+   "name_en": "Webster",
+   "also": "Sainte-Laguë（比例代表制同一算法）；major fractions；四舍五入除数法",
+   "rule": "找除数 D 使 Σ round(p_i / D) = H，round 为常规四舍五入（阈值 n + 0.5）。逐席算法：每席给 p_i / (a_i + 0.5) 最大的州（Sainte-Laguë 除数 1,3,5,…）。",
+   "divisor": "算术平均舍入：阈值 (n + (n+1))/2 = n + 0.5。",
+   "used_by": "美国 1842 法案（1840 普查）、1911 法案（1910 普查）、1931（1930 普查，与 Hill 结果相同）；Sainte-Laguë 形式用于新西兰、挪威、瑞典（修正版）、德国联邦议院（2008 年起）等。",
+   "sources": [
+    {
+     "title": "U.S. Census Bureau, Methods of Apportionment",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/methods.html",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Apportionment Legislation 1840–1880",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1840-1880.html",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Apportionment Legislation 1890–Present",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1890-present.html",
+     "type": "官方"
+    },
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    }
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "census.gov 法案页明确 1842 用 Webster；1911 年改回 Webster 据 Young 文；Sainte-Laguë 各国使用年份未逐一核。"
+  },
+  {
+   "id": "dean",
+   "name_zh": "迪恩法",
+   "name_en": "Dean",
+   "also": "harmonic mean；调和平均舍入法",
+   "rule": "找除数 D 使 Σ r_H(p_i / D) = H，其中 r_H(x) 在 n 与 n+1 之间以调和平均 2n(n+1)/(2n+1) 为阈值取整。逐席算法：每席给 p_i × (2a_i + 1) / (2 a_i (a_i + 1)) 最大的州。",
+   "divisor": "调和平均舍入：阈值 2n(n+1)/(2n+1)。",
+   "used_by": "James Dean（达特茅斯学院）1832 年提出，美国从未采用；使每州「每席人口」最接近全国除数。",
+   "sources": [
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    },
+    {
+     "title": "Balinski & Young, Fair Representation: Meeting the Ideal of One Man, One Vote (Yale UP 1982; 2nd ed. Brookings 2001)",
+     "url": "https://mathworld.wolfram.com/Balinski-YoungImpossibilityTheorem.html",
+     "type": "专著（经 MathWorld / Young 转引）"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "阈值公式为调和平均的标准定义；历史叙述据 Young 文与 Balinski–Young。"
+  },
+  {
+   "id": "huntington_hill",
+   "name_zh": "亨廷顿—希尔法",
+   "name_en": "Huntington–Hill",
+   "also": "method of equal proportions（等比例法）；geometric mean 舍入法",
+   "rule": "census.gov 算法：1) 50 州各得 1 席；2) 对每州计算优先值 PV_i(n) = p_i / sqrt(n(n−1))，n 为该州若得下一席后的席数（n = 2, 3, …）；3) 第 51 席起，每席给当前优先值最高的州，直到 435 席。等价于找除数 D 使 Σ r_G(p_i/D) = H，r_G 在 n 与 n+1 之间以几何平均 sqrt(n(n+1)) 为阈值取整。",
+   "divisor": "几何平均舍入：阈值 sqrt(n(n+1))；商小于 1 的州因 sqrt(0×1) = 0 自动向上取整到 1 席。",
+   "used_by": "美国：1941 年 11 月 15 日法案（Pub. L. 77-291）起法定，用于 1940 普查以来每次分配，含 2020（Title 2 U.S.C. §2a, 2b）。本路用 2020 年 50 州分配人口复算，结果与官方 435 席逐州一致。",
+   "sources": [
+    {
+     "title": "U.S. Census Bureau, Computing Apportionment",
+     "url": "https://www.census.gov/topics/public-sector/congressional-apportionment/about/computing.html",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Methods of Apportionment",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/methods.html",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Apportionment Legislation 1890–Present",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1890-present.html",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Table 1. Apportionment Population and Number of Representatives by State: 2020 Census",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/apportionment-2020-table01.xlsx",
+     "type": "官方"
+    },
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "Pub. L. 编号未核，census.gov 只写「November 15, 1941」。"
+  }
+ ],
+ "paradoxes": [
+  {
+   "id": "alabama_paradox",
+   "title_zh": "阿拉巴马悖论",
+   "year": 1880,
+   "statement": "总席位增加、各州人口不变，某州席位反而减少。",
+   "numbers": "1880 普查后，普查局总书记 C. W. Seaton 用 Hamilton 法计算 275–350 席的所有方案，发现 299 席时阿拉巴马得 8 席，300 席时只得 7 席。Seaton 致国会信：「Such a result as this is to me conclusive proof that the process employed in obtaining it is defective.」",
+   "mechanism": "Hamilton 法余数排序：席位增加时大州配额增长更快，小州余数相对下滑而失去补席。任何除数法（Jefferson、Webster、Hill 等）不会出现。",
+   "replication": "本路用 1880 年 38 州总人口（Working Paper 56 Table A-17，非精确分配人口）复算 Hamilton：299 席阿拉巴马 8 席，300 席 7 席，复现成功；325 席时 Hamilton 与 Webster 结果均与 1882 法案逐州一致。",
+   "sources": [
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    },
+    {
+     "title": "U.S. Census Bureau, Apportionment Legislation 1840–1880",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1840-1880.html",
+     "type": "官方"
+    },
+    {
+     "title": "Tufts Math 19 (Math of Social Choice) Apportionment Notes, Spring 2016",
+     "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/a/4132/files/2018/01/apportionment.pdf",
+     "type": "大学讲义（二手）"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "Young 文引 Congressional Record, 47th Congress, 1st session, 1881, Vol. 12, pp. 704–705。讲义把年份写作 1882（法案年），Seaton 计算在 1881。"
+  },
+  {
+   "id": "population_paradox",
+   "title_zh": "人口悖论",
+   "year": 1900,
+   "statement": "人口增长更快（或增长）的州把席位输给增长更慢（或减少）的州。",
+   "numbers": "通行例：1900 普查后弗吉尼亚人口增速比缅因快约 60%，但 Hamilton 法下弗吉尼亚失 1 席、缅因得 1 席（讲义表述）。Young 文另给 1960/1961 假想例：北达科他配额 1.541→1.519 仍从宾夕法尼亚（27.576→27.350）手里得 1 席。另：1901 年报告显示 350–400 席间缅因席位在 3 与 4 间反复：350–382 席 3；383–385 席 4；386 席 3；387–388 席 4；389–390 席 3；391–400 席 4（Young Table 5；本路用总人口复算得到完全相同的序列）。",
+   "mechanism": "Hamilton 法下席位优先级由余数决定，大州增长慢时余数跌得更快；所有经典除数法免疫。",
+   "sources": [
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    },
+    {
+     "title": "Tufts Math 19 (Math of Social Choice) Apportionment Notes, Spring 2016",
+     "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/a/4132/files/2018/01/apportionment.pdf",
+     "type": "大学讲义（二手）"
+    },
+    {
+     "title": "Balinski & Young, Fair Representation: Meeting the Ideal of One Man, One Vote (Yale UP 1982; 2nd ed. Brookings 2001)",
+     "url": "https://mathworld.wolfram.com/Balinski-YoungImpossibilityTheorem.html",
+     "type": "专著（经 MathWorld / Young 转引）"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "弗吉尼亚/缅因例的具体人口与席位（弗吉尼亚 10→9？缅因 3→4？）只在二手讲义见到，Balinski–Young 书中原表未核；页面若用此例应标「据 Balinski & Young」。"
+  },
+  {
+   "id": "new_states_paradox",
+   "title_zh": "新州悖论",
+   "year": 1907,
+   "statement": "新增一州并按其配额增加席位，其他州之间的席位分配却发生变化。",
+   "numbers": "1907 年俄克拉荷马建州，国会按其人口增加 5 席（386 → 391）。若用 Hamilton 法重算 391 席，纽约从 38 席降为 37 席，缅因从 3 席升为 4 席——即「缅因因为俄克拉荷马出现而拿到了纽约的一席」。",
+   "mechanism": "新州加入改变总人口与除数，余数排序重排。",
+   "replication": "本路用 1900 总人口口径（含 Oklahoma 与 Indian Territory 合计 790,391）复算 Hamilton 391 席得 NY 38 / ME 4 / OK 4，与经典叙述（NY 37 / ME 4 / OK 5）不一致，应是口径问题（分配人口扣除 Indians not taxed，且 1907 年俄克拉荷马席位按法律定为 5 而非配额）。",
+   "sources": [
+    {
+     "title": "Tufts Math 19 (Math of Social Choice) Apportionment Notes, Spring 2016",
+     "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/a/4132/files/2018/01/apportionment.pdf",
+     "type": "大学讲义（二手）"
+    },
+    {
+     "title": "Balinski & Young, Fair Representation: Meeting the Ideal of One Man, One Vote (Yale UP 1982; 2nd ed. Brookings 2001)",
+     "url": "https://mathworld.wolfram.com/Balinski-YoungImpossibilityTheorem.html",
+     "type": "专著（经 MathWorld / Young 转引）"
+    },
+    {
+     "title": "Census 2000 PHC-3, Table 3. Apportionment of Membership of the U.S. House of Representatives: 1789 to 2000",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2000/data/apportionment/2000PHC3Table%203.pdf",
+     "type": "官方"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "需以 Balinski & Young 书中 1907 表核实；PHC-3 Table 3 脚注证实 1900 普查周期「Oklahoma (5 representatives)」为国会额外指派。"
+  },
+  {
+   "id": "balinski_young",
+   "title_zh": "Balinski–Young 定理（不可能定理）",
+   "year": 1982,
+   "statement": "对四个及以上州，不存在既总是满足配额规则（每州席位为其配额向下或向上取整之一）又免于人口悖论（人口单调）的分配方法。MathWorld 表述：「for four or more states, no apportionment method can always satisfy the quota rule」while being「free of the population paradox」。推论：Hamilton 满足配额但有阿拉巴马悖论与人口悖论；所有除数法免于两种悖论但可能违反配额；Young 文：Webster 是「本质上唯一」无偏且免于两悖论的方法（Balinski & Young 2002, Theorem 5.3）。",
+   "numbers": "无数字；定理。",
+   "sources": [
+    {
+     "title": "Balinski & Young, Fair Representation: Meeting the Ideal of One Man, One Vote (Yale UP 1982; 2nd ed. Brookings 2001)",
+     "url": "https://mathworld.wolfram.com/Balinski-YoungImpossibilityTheorem.html",
+     "type": "专著（经 MathWorld / Young 转引）"
+    },
+    {
+     "title": "Balinski & Young, Apportionment Schemes and the Quota Method, 84 American Mathematical Monthly 450–455 (1977)",
+     "url": "https://mathworld.wolfram.com/Balinski-YoungImpossibilityTheorem.html",
+     "type": "学术一手（转引）"
+    },
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    },
+    {
+     "title": "Tufts Math 19 (Math of Social Choice) Apportionment Notes, Spring 2016",
+     "url": "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/a/4132/files/2018/01/apportionment.pdf",
+     "type": "大学讲义（二手）"
+    }
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "书中定理编号与精确条件（「中立」「人口单调」的技术定义）未对照原书；首版 Yale UP 1982，二版 Brookings 2001（版权页写 2002 亦常见）。"
+  }
+ ],
+ "datasets": [
+  {
+   "id": "us_apportionment_history",
+   "title_zh": "美国历次分配人口与席位表（下载方式）",
+   "year": 2020,
+   "how": "1) 1910–2020 各州 resident population、席位与变化：census.gov「Historical Apportionment Data」页，直接下载 apportionment.csv / apportionment-data-table.xlsx（本路已用 curl 下载 csv，685 行，年份 1910–2020，列：Name, Geography Type, Year, Resident Population, …, Number of Representatives）。2) 1789–2000 各州席位（不含人口）：Census 2000 PHC-3 Table 3。3) 2020 分配人口（含海外）、优先值、海外计数：www2.census.gov/programs-surveys/decennial/2020/data/apportionment/ 目录下 table01/02/03/A/B/C、2020PriorityValues.xlsx、2020CensusOverseasCounts.xlsx。4) 1880/1900 各州人口：Working Paper 56 Tables A-17/A-14（总人口口径）；分配人口扫描件见 1880/1900 Results and Notes（OCR 质量差）。",
+   "caveat": "csv 的「Resident Population」不是分配人口：1970 年与 1990 年起分配人口把海外军人与联邦雇员按「home of record」记回本州（1990 年 922,819 名海外军人，Franklin v. Massachusetts 1992 记载此举把 1 席从马萨诸塞移到华盛顿州）。本路用 1990 resident population 跑 Huntington–Hill 得 MA 11 / WA 8，与官方 MA 10 / WA 9 正好差这一席，印证口径差异。",
+   "sources": [
+    {
+     "title": "U.S. Census Bureau, Historical Apportionment Data (1910–2020)",
+     "url": "https://www.census.gov/data/tables/time-series/dec/apportionment-data-text.html",
+     "type": "官方"
+    },
+    {
+     "title": "apportionment.csv（1910–2020 各州 resident population 与席位）",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/apportionment.csv",
+     "type": "官方"
+    },
+    {
+     "title": "Census 2000 PHC-3, Table 3. Apportionment of Membership of the U.S. House of Representatives: 1789 to 2000",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2000/data/apportionment/2000PHC3Table%203.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "census.gov 2020 apportionment 数据目录（table01/02/03/A/B/C、priority values、overseas counts）",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/",
+     "type": "官方"
+    },
+    {
+     "title": "Gibson & Jung, Historical Census Statistics on Population Totals by Race, 1790 to 1990 …, Census Working Paper 56 (2002), Tables A-14 (1900) / A-17 (1880)",
+     "url": "https://www2.census.gov/library/working-papers/2002/demo/pop-twps0056/pop-twps0056.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "Franklin v. Massachusetts, 505 U.S. 788 (1992), decided June 26, 1992",
+     "url": "https://www.law.cornell.edu/supremecourt/text/505/788",
+     "type": "法院判决全文"
+    }
+   ],
+   "confidence": "高",
+   "verify": false
+  },
+  {
+   "id": "us_2020_states",
+   "title_zh": "美国 2020 年 50 州分配人口与席位",
+   "year": 2020,
+   "basis": "apportionment population（2020 年 4 月 1 日）：50 州常住人口 + 海外美军与联邦文职雇员及随行家属按本州计入；不含哥伦比亚特区与波多黎各。总计 331,108,434 人、435 席，方法 Method of Equal Proportions（2 U.S.C. §2a, 2b）。",
+   "check": "本路用 Huntington–Hill（每州 1 席起、优先值 p/sqrt(n(n−1))）复算，50 州席位与官方 Table 1 全部一致。",
+   "rows": [
+    {
+     "state": "Alabama",
+     "pop": 5030053,
+     "seats": 7
+    },
+    {
+     "state": "Alaska",
+     "pop": 736081,
+     "seats": 1
+    },
+    {
+     "state": "Arizona",
+     "pop": 7158923,
+     "seats": 9
+    },
+    {
+     "state": "Arkansas",
+     "pop": 3013756,
+     "seats": 4
+    },
+    {
+     "state": "California",
+     "pop": 39576757,
+     "seats": 52
+    },
+    {
+     "state": "Colorado",
+     "pop": 5782171,
+     "seats": 8
+    },
+    {
+     "state": "Connecticut",
+     "pop": 3608298,
+     "seats": 5
+    },
+    {
+     "state": "Delaware",
+     "pop": 990837,
+     "seats": 1
+    },
+    {
+     "state": "Florida",
+     "pop": 21570527,
+     "seats": 28
+    },
+    {
+     "state": "Georgia",
+     "pop": 10725274,
+     "seats": 14
+    },
+    {
+     "state": "Hawaii",
+     "pop": 1460137,
+     "seats": 2
+    },
+    {
+     "state": "Idaho",
+     "pop": 1841377,
+     "seats": 2
+    },
+    {
+     "state": "Illinois",
+     "pop": 12822739,
+     "seats": 17
+    },
+    {
+     "state": "Indiana",
+     "pop": 6790280,
+     "seats": 9
+    },
+    {
+     "state": "Iowa",
+     "pop": 3192406,
+     "seats": 4
+    },
+    {
+     "state": "Kansas",
+     "pop": 2940865,
+     "seats": 4
+    },
+    {
+     "state": "Kentucky",
+     "pop": 4509342,
+     "seats": 6
+    },
+    {
+     "state": "Louisiana",
+     "pop": 4661468,
+     "seats": 6
+    },
+    {
+     "state": "Maine",
+     "pop": 1363582,
+     "seats": 2
+    },
+    {
+     "state": "Maryland",
+     "pop": 6185278,
+     "seats": 8
+    },
+    {
+     "state": "Massachusetts",
+     "pop": 7033469,
+     "seats": 9
+    },
+    {
+     "state": "Michigan",
+     "pop": 10084442,
+     "seats": 13
+    },
+    {
+     "state": "Minnesota",
+     "pop": 5709752,
+     "seats": 8
+    },
+    {
+     "state": "Mississippi",
+     "pop": 2963914,
+     "seats": 4
+    },
+    {
+     "state": "Missouri",
+     "pop": 6160281,
+     "seats": 8
+    },
+    {
+     "state": "Montana",
+     "pop": 1085407,
+     "seats": 2
+    },
+    {
+     "state": "Nebraska",
+     "pop": 1963333,
+     "seats": 3
+    },
+    {
+     "state": "Nevada",
+     "pop": 3108462,
+     "seats": 4
+    },
+    {
+     "state": "New Hampshire",
+     "pop": 1379089,
+     "seats": 2
+    },
+    {
+     "state": "New Jersey",
+     "pop": 9294493,
+     "seats": 12
+    },
+    {
+     "state": "New Mexico",
+     "pop": 2120220,
+     "seats": 3
+    },
+    {
+     "state": "New York",
+     "pop": 20215751,
+     "seats": 26
+    },
+    {
+     "state": "North Carolina",
+     "pop": 10453948,
+     "seats": 14
+    },
+    {
+     "state": "North Dakota",
+     "pop": 779702,
+     "seats": 1
+    },
+    {
+     "state": "Ohio",
+     "pop": 11808848,
+     "seats": 15
+    },
+    {
+     "state": "Oklahoma",
+     "pop": 3963516,
+     "seats": 5
+    },
+    {
+     "state": "Oregon",
+     "pop": 4241500,
+     "seats": 6
+    },
+    {
+     "state": "Pennsylvania",
+     "pop": 13011844,
+     "seats": 17
+    },
+    {
+     "state": "Rhode Island",
+     "pop": 1098163,
+     "seats": 2
+    },
+    {
+     "state": "South Carolina",
+     "pop": 5124712,
+     "seats": 7
+    },
+    {
+     "state": "South Dakota",
+     "pop": 887770,
+     "seats": 1
+    },
+    {
+     "state": "Tennessee",
+     "pop": 6916897,
+     "seats": 9
+    },
+    {
+     "state": "Texas",
+     "pop": 29183290,
+     "seats": 38
+    },
+    {
+     "state": "Utah",
+     "pop": 3275252,
+     "seats": 4
+    },
+    {
+     "state": "Vermont",
+     "pop": 643503,
+     "seats": 1
+    },
+    {
+     "state": "Virginia",
+     "pop": 8654542,
+     "seats": 11
+    },
+    {
+     "state": "Washington",
+     "pop": 7715946,
+     "seats": 10
+    },
+    {
+     "state": "West Virginia",
+     "pop": 1795045,
+     "seats": 2
+    },
+    {
+     "state": "Wisconsin",
+     "pop": 5897473,
+     "seats": 8
+    },
+    {
+     "state": "Wyoming",
+     "pop": 577719,
+     "seats": 1
+    }
+   ],
+   "sources": [
+    {
+     "title": "U.S. Census Bureau, Table 1. Apportionment Population and Number of Representatives by State: 2020 Census",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/apportionment-2020-table01.xlsx",
+     "type": "官方"
+    },
+    {
+     "title": "census.gov 2020 apportionment 数据目录（table01/02/03/A/B/C、priority values、overseas counts）",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/",
+     "type": "官方"
+    }
+   ],
+   "confidence": "高",
+   "verify": false
+  },
+  {
+   "id": "us_1990_states",
+   "title_zh": "美国 1990 年 50 州人口与席位（resident population 口径）",
+   "year": 1990,
+   "basis": "census.gov apportionment.csv 的 Resident Population（不含海外），席位为官方 435 席分配。",
+   "check": "Huntington–Hill 复算：MA 11 / WA 8 ≠ 官方 MA 10 / WA 9（见 us_apportionment_history.caveat）；Webster 复算另在 MS/NJ/OK 不同；Hamilton 在 8 州不同。",
+   "rows": [
+    {
+     "state": "Alabama",
+     "pop": 4040587,
+     "seats": 7
+    },
+    {
+     "state": "Alaska",
+     "pop": 550043,
+     "seats": 1
+    },
+    {
+     "state": "Arizona",
+     "pop": 3665228,
+     "seats": 6
+    },
+    {
+     "state": "Arkansas",
+     "pop": 2350725,
+     "seats": 4
+    },
+    {
+     "state": "California",
+     "pop": 29760021,
+     "seats": 52
+    },
+    {
+     "state": "Colorado",
+     "pop": 3294394,
+     "seats": 6
+    },
+    {
+     "state": "Connecticut",
+     "pop": 3287116,
+     "seats": 6
+    },
+    {
+     "state": "Delaware",
+     "pop": 666168,
+     "seats": 1
+    },
+    {
+     "state": "Florida",
+     "pop": 12937926,
+     "seats": 23
+    },
+    {
+     "state": "Georgia",
+     "pop": 6478216,
+     "seats": 11
+    },
+    {
+     "state": "Hawaii",
+     "pop": 1108229,
+     "seats": 2
+    },
+    {
+     "state": "Idaho",
+     "pop": 1006749,
+     "seats": 2
+    },
+    {
+     "state": "Illinois",
+     "pop": 11430602,
+     "seats": 20
+    },
+    {
+     "state": "Indiana",
+     "pop": 5544159,
+     "seats": 10
+    },
+    {
+     "state": "Iowa",
+     "pop": 2776755,
+     "seats": 5
+    },
+    {
+     "state": "Kansas",
+     "pop": 2477574,
+     "seats": 4
+    },
+    {
+     "state": "Kentucky",
+     "pop": 3685296,
+     "seats": 6
+    },
+    {
+     "state": "Louisiana",
+     "pop": 4219973,
+     "seats": 7
+    },
+    {
+     "state": "Maine",
+     "pop": 1227928,
+     "seats": 2
+    },
+    {
+     "state": "Maryland",
+     "pop": 4781468,
+     "seats": 8
+    },
+    {
+     "state": "Massachusetts",
+     "pop": 6016425,
+     "seats": 10
+    },
+    {
+     "state": "Michigan",
+     "pop": 9295297,
+     "seats": 16
+    },
+    {
+     "state": "Minnesota",
+     "pop": 4375099,
+     "seats": 8
+    },
+    {
+     "state": "Mississippi",
+     "pop": 2573216,
+     "seats": 5
+    },
+    {
+     "state": "Missouri",
+     "pop": 5117073,
+     "seats": 9
+    },
+    {
+     "state": "Montana",
+     "pop": 799065,
+     "seats": 1
+    },
+    {
+     "state": "Nebraska",
+     "pop": 1578385,
+     "seats": 3
+    },
+    {
+     "state": "Nevada",
+     "pop": 1201833,
+     "seats": 2
+    },
+    {
+     "state": "New Hampshire",
+     "pop": 1109252,
+     "seats": 2
+    },
+    {
+     "state": "New Jersey",
+     "pop": 7730188,
+     "seats": 13
+    },
+    {
+     "state": "New Mexico",
+     "pop": 1515069,
+     "seats": 3
+    },
+    {
+     "state": "New York",
+     "pop": 17990455,
+     "seats": 31
+    },
+    {
+     "state": "North Carolina",
+     "pop": 6628637,
+     "seats": 12
+    },
+    {
+     "state": "North Dakota",
+     "pop": 638800,
+     "seats": 1
+    },
+    {
+     "state": "Ohio",
+     "pop": 10847115,
+     "seats": 19
+    },
+    {
+     "state": "Oklahoma",
+     "pop": 3145585,
+     "seats": 6
+    },
+    {
+     "state": "Oregon",
+     "pop": 2842321,
+     "seats": 5
+    },
+    {
+     "state": "Pennsylvania",
+     "pop": 11881643,
+     "seats": 21
+    },
+    {
+     "state": "Rhode Island",
+     "pop": 1003464,
+     "seats": 2
+    },
+    {
+     "state": "South Carolina",
+     "pop": 3486703,
+     "seats": 6
+    },
+    {
+     "state": "South Dakota",
+     "pop": 696004,
+     "seats": 1
+    },
+    {
+     "state": "Tennessee",
+     "pop": 4877185,
+     "seats": 9
+    },
+    {
+     "state": "Texas",
+     "pop": 16986510,
+     "seats": 30
+    },
+    {
+     "state": "Utah",
+     "pop": 1722850,
+     "seats": 3
+    },
+    {
+     "state": "Vermont",
+     "pop": 562758,
+     "seats": 1
+    },
+    {
+     "state": "Virginia",
+     "pop": 6187358,
+     "seats": 11
+    },
+    {
+     "state": "Washington",
+     "pop": 4866692,
+     "seats": 9
+    },
+    {
+     "state": "West Virginia",
+     "pop": 1793477,
+     "seats": 3
+    },
+    {
+     "state": "Wisconsin",
+     "pop": 4891769,
+     "seats": 9
+    },
+    {
+     "state": "Wyoming",
+     "pop": 453588,
+     "seats": 1
+    }
+   ],
+   "sources": [
+    {
+     "title": "apportionment.csv（1910–2020 各州 resident population 与席位）",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/apportionment.csv",
+     "type": "官方"
+    },
+    {
+     "title": "Census 2000 PHC-3, Table 3. Apportionment of Membership of the U.S. House of Representatives: 1789 to 2000",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2000/data/apportionment/2000PHC3Table%203.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "Franklin v. Massachusetts, 505 U.S. 788 (1992), decided June 26, 1992",
+     "url": "https://www.law.cornell.edu/supremecourt/text/505/788",
+     "type": "法院判决全文"
+    }
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "缺 1990 年含海外的分配人口逐州表（官方总数通行为 249,022,783，未核）。"
+  },
+  {
+   "id": "us_1900_states",
+   "title_zh": "美国 1900 年 45 州人口与席位（386 席，1901 年法案）",
+   "year": 1900,
+   "basis": "人口为 Working Paper 56 Table A-14 的总人口（含 Indians not taxed；分配人口需扣除，1900 年注记全国约 44,617 人），不含 Oklahoma/Indian Territory、夏威夷等领地；席位为 PHC-3 Table 3 1900 列（扣除 1907 年俄克拉荷马 5 席后合计 386）。",
+   "check": "本路复算：Hamilton 386 席与法案在 Maine(4 vs 3)、New York(37 vs 38)、Pennsylvania(32 vs 33)、Nebraska(6 vs 5) 不同；Webster 386 席在 Iowa(11 vs 12)、Nebraska(6 vs 5) 不同——Nebraska 配额约 5.497、Iowa 约 11.50，均在舍入边缘，口径差即可翻转。",
+   "rows": [
+    {
+     "state": "Alabama",
+     "pop": 1828697,
+     "seats": 9
+    },
+    {
+     "state": "Arkansas",
+     "pop": 1311564,
+     "seats": 7
+    },
+    {
+     "state": "California",
+     "pop": 1485053,
+     "seats": 8
+    },
+    {
+     "state": "Colorado",
+     "pop": 539700,
+     "seats": 3
+    },
+    {
+     "state": "Connecticut",
+     "pop": 908420,
+     "seats": 5
+    },
+    {
+     "state": "Delaware",
+     "pop": 184735,
+     "seats": 1
+    },
+    {
+     "state": "Florida",
+     "pop": 528542,
+     "seats": 3
+    },
+    {
+     "state": "Georgia",
+     "pop": 2216331,
+     "seats": 11
+    },
+    {
+     "state": "Idaho",
+     "pop": 161772,
+     "seats": 1
+    },
+    {
+     "state": "Illinois",
+     "pop": 4821550,
+     "seats": 25
+    },
+    {
+     "state": "Indiana",
+     "pop": 2516462,
+     "seats": 13
+    },
+    {
+     "state": "Iowa",
+     "pop": 2231853,
+     "seats": 11
+    },
+    {
+     "state": "Kansas",
+     "pop": 1470495,
+     "seats": 8
+    },
+    {
+     "state": "Kentucky",
+     "pop": 2147174,
+     "seats": 11
+    },
+    {
+     "state": "Louisiana",
+     "pop": 1381625,
+     "seats": 7
+    },
+    {
+     "state": "Maine",
+     "pop": 694466,
+     "seats": 4
+    },
+    {
+     "state": "Maryland",
+     "pop": 1188044,
+     "seats": 6
+    },
+    {
+     "state": "Massachusetts",
+     "pop": 2805346,
+     "seats": 14
+    },
+    {
+     "state": "Michigan",
+     "pop": 2420982,
+     "seats": 12
+    },
+    {
+     "state": "Minnesota",
+     "pop": 1751394,
+     "seats": 9
+    },
+    {
+     "state": "Mississippi",
+     "pop": 1551270,
+     "seats": 8
+    },
+    {
+     "state": "Missouri",
+     "pop": 3106665,
+     "seats": 16
+    },
+    {
+     "state": "Montana",
+     "pop": 243329,
+     "seats": 1
+    },
+    {
+     "state": "Nebraska",
+     "pop": 1066300,
+     "seats": 6
+    },
+    {
+     "state": "Nevada",
+     "pop": 42335,
+     "seats": 1
+    },
+    {
+     "state": "New Hampshire",
+     "pop": 411588,
+     "seats": 2
+    },
+    {
+     "state": "New Jersey",
+     "pop": 1883669,
+     "seats": 10
+    },
+    {
+     "state": "New York",
+     "pop": 7268894,
+     "seats": 37
+    },
+    {
+     "state": "North Carolina",
+     "pop": 1893810,
+     "seats": 10
+    },
+    {
+     "state": "North Dakota",
+     "pop": 319146,
+     "seats": 2
+    },
+    {
+     "state": "Ohio",
+     "pop": 4157545,
+     "seats": 21
+    },
+    {
+     "state": "Oregon",
+     "pop": 413536,
+     "seats": 2
+    },
+    {
+     "state": "Pennsylvania",
+     "pop": 6302115,
+     "seats": 32
+    },
+    {
+     "state": "Rhode Island",
+     "pop": 428556,
+     "seats": 2
+    },
+    {
+     "state": "South Carolina",
+     "pop": 1340316,
+     "seats": 7
+    },
+    {
+     "state": "South Dakota",
+     "pop": 401570,
+     "seats": 2
+    },
+    {
+     "state": "Tennessee",
+     "pop": 2020616,
+     "seats": 10
+    },
+    {
+     "state": "Texas",
+     "pop": 3048710,
+     "seats": 16
+    },
+    {
+     "state": "Utah",
+     "pop": 276749,
+     "seats": 1
+    },
+    {
+     "state": "Vermont",
+     "pop": 343641,
+     "seats": 2
+    },
+    {
+     "state": "Virginia",
+     "pop": 1854184,
+     "seats": 10
+    },
+    {
+     "state": "Washington",
+     "pop": 518103,
+     "seats": 3
+    },
+    {
+     "state": "West Virginia",
+     "pop": 958800,
+     "seats": 5
+    },
+    {
+     "state": "Wisconsin",
+     "pop": 2069042,
+     "seats": 11
+    },
+    {
+     "state": "Wyoming",
+     "pop": 92531,
+     "seats": 1
+    }
+   ],
+   "sources": [
+    {
+     "title": "Gibson & Jung, Historical Census Statistics on Population Totals by Race, 1790 to 1990 …, Census Working Paper 56 (2002), Tables A-14 (1900) / A-17 (1880)",
+     "url": "https://www2.census.gov/library/working-papers/2002/demo/pop-twps0056/pop-twps0056.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "Census 2000 PHC-3, Table 3. Apportionment of Membership of the U.S. House of Representatives: 1789 to 2000",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2000/data/apportionment/2000PHC3Table%203.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Apportionment Legislation 1890–Present",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1890-present.html",
+     "type": "官方"
+    },
+    {
+     "title": "census.gov 1900 Apportionment Results and Notes（扫描件）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/legislation-1890-present/1900-results-notes.pdf",
+     "type": "官方"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "需用 1900 年分配人口口径逐州核对；1901 法案 386 席「无州失席」的分配是否严格等于某一方法，Balinski & Young 书中有表，本路未核。"
+  },
+  {
+   "id": "us_1880_states",
+   "title_zh": "美国 1880 年 38 州人口与席位（325 席，1882 年法案）",
+   "year": 1880,
+   "basis": "人口为 Working Paper 56 Table A-17 总人口（含 Indians not taxed），38 州（不含 1889–1890 建州的 ID/MT/ND/SD/WA/WY）；席位为 PHC-3 Table 3 1880 列。",
+   "check": "本路复算：Hamilton 与 Webster 在 325 席均与法案逐州一致（census.gov 亦称两法在 325 席一致）；Hamilton 299 席阿拉巴马 8、300 席 7，复现阿拉巴马悖论。",
+   "rows": [
+    {
+     "state": "Alabama",
+     "pop": 1262505,
+     "seats": 8
+    },
+    {
+     "state": "Arkansas",
+     "pop": 802525,
+     "seats": 5
+    },
+    {
+     "state": "California",
+     "pop": 864694,
+     "seats": 6
+    },
+    {
+     "state": "Colorado",
+     "pop": 194327,
+     "seats": 1
+    },
+    {
+     "state": "Connecticut",
+     "pop": 622700,
+     "seats": 4
+    },
+    {
+     "state": "Delaware",
+     "pop": 146608,
+     "seats": 1
+    },
+    {
+     "state": "Florida",
+     "pop": 269493,
+     "seats": 2
+    },
+    {
+     "state": "Georgia",
+     "pop": 1542180,
+     "seats": 10
+    },
+    {
+     "state": "Illinois",
+     "pop": 3077871,
+     "seats": 20
+    },
+    {
+     "state": "Indiana",
+     "pop": 1978301,
+     "seats": 13
+    },
+    {
+     "state": "Iowa",
+     "pop": 1624615,
+     "seats": 11
+    },
+    {
+     "state": "Kansas",
+     "pop": 996096,
+     "seats": 7
+    },
+    {
+     "state": "Kentucky",
+     "pop": 1648690,
+     "seats": 11
+    },
+    {
+     "state": "Louisiana",
+     "pop": 939946,
+     "seats": 6
+    },
+    {
+     "state": "Maine",
+     "pop": 648936,
+     "seats": 4
+    },
+    {
+     "state": "Maryland",
+     "pop": 934943,
+     "seats": 6
+    },
+    {
+     "state": "Massachusetts",
+     "pop": 1783085,
+     "seats": 12
+    },
+    {
+     "state": "Michigan",
+     "pop": 1636937,
+     "seats": 11
+    },
+    {
+     "state": "Minnesota",
+     "pop": 780773,
+     "seats": 5
+    },
+    {
+     "state": "Mississippi",
+     "pop": 1131597,
+     "seats": 7
+    },
+    {
+     "state": "Missouri",
+     "pop": 2168380,
+     "seats": 14
+    },
+    {
+     "state": "Nebraska",
+     "pop": 452402,
+     "seats": 3
+    },
+    {
+     "state": "Nevada",
+     "pop": 62266,
+     "seats": 1
+    },
+    {
+     "state": "New Hampshire",
+     "pop": 346991,
+     "seats": 2
+    },
+    {
+     "state": "New Jersey",
+     "pop": 1131116,
+     "seats": 7
+    },
+    {
+     "state": "New York",
+     "pop": 5082871,
+     "seats": 34
+    },
+    {
+     "state": "North Carolina",
+     "pop": 1399750,
+     "seats": 9
+    },
+    {
+     "state": "Ohio",
+     "pop": 3198062,
+     "seats": 21
+    },
+    {
+     "state": "Oregon",
+     "pop": 174768,
+     "seats": 1
+    },
+    {
+     "state": "Pennsylvania",
+     "pop": 4282891,
+     "seats": 28
+    },
+    {
+     "state": "Rhode Island",
+     "pop": 276531,
+     "seats": 2
+    },
+    {
+     "state": "South Carolina",
+     "pop": 995577,
+     "seats": 7
+    },
+    {
+     "state": "Tennessee",
+     "pop": 1542359,
+     "seats": 10
+    },
+    {
+     "state": "Texas",
+     "pop": 1591749,
+     "seats": 11
+    },
+    {
+     "state": "Vermont",
+     "pop": 332286,
+     "seats": 2
+    },
+    {
+     "state": "Virginia",
+     "pop": 1512565,
+     "seats": 10
+    },
+    {
+     "state": "West Virginia",
+     "pop": 618457,
+     "seats": 4
+    },
+    {
+     "state": "Wisconsin",
+     "pop": 1315497,
+     "seats": 9
+    }
+   ],
+   "sources": [
+    {
+     "title": "Gibson & Jung, Historical Census Statistics on Population Totals by Race, 1790 to 1990 …, Census Working Paper 56 (2002), Tables A-14 (1900) / A-17 (1880)",
+     "url": "https://www2.census.gov/library/working-papers/2002/demo/pop-twps0056/pop-twps0056.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "Census 2000 PHC-3, Table 3. Apportionment of Membership of the U.S. House of Representatives: 1789 to 2000",
+     "url": "https://www2.census.gov/programs-surveys/decennial/2000/data/apportionment/2000PHC3Table%203.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "U.S. Census Bureau, Apportionment Legislation 1840–1880",
+     "url": "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/legislation-1840-1880.html",
+     "type": "官方"
+    },
+    {
+     "title": "census.gov 1880 Apportionment Results and Notes（扫描件）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/legislation-1840-1880/1880-results-notes.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "H. Peyton Young, Fairness in Apportionment（census.gov 存档稿）",
+     "url": "https://www2.census.gov/about/history/historical-censuses-surveys/survey-census-history/decennial/fairness-in-apportionment-young.pdf",
+     "type": "学术一手（官方存档）"
+    }
+   ],
+   "confidence": "高",
+   "verify": false
+  },
+  {
+   "id": "japan_2022_ratio",
+   "title_zh": "日本 2022 年众院小选区「十增十减」后最大/最小选区人口比",
+   "year": 2022,
+   "numbers": "改定案（令和 2 年国势调查「日本国民の人口」口径）：最大 福冈 2 区 547,664 人，最小 鸟取 2 区 273,973 人，最大较差 1.999 倍；改定前（同口径）最大 东京 22 区 574,264 人 vs 鸟取 2 区，2.096 倍；上次（平成 27 年人口）神奈川 16 区 554,516 vs 鸟取 2 区 283,502，1.956 倍。都道府县间每席人口比：冈山 465,829 vs 鸟取 274,549 = 1.697 倍（改定前 1.976 倍）。涉及 25 都道府县 140 选区；2022-06-16 审议会向首相勧告；改正公选法 2022-12-28 施行。",
+   "basis": "人口口径为「日本国民の人口」（国势调查扣除外国人），非选民数；较差 = 最大区人口 / 最小区人口。",
+   "sources": [
+    {
+     "title": "総務省 衆議院議員選挙区画定審議会 勧告 参考資料（令和4年6月16日）",
+     "url": "https://www.soumu.go.jp/main_content/000820217.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "総務省 衆議院小選挙区選出議員の選挙区の改定案についての勧告（令和4年6月16日）",
+     "url": "https://www.soumu.go.jp/main_content/000820221.pdf",
+     "type": "官方"
+    },
+    {
+     "title": "総務省 衆議院議員選挙区画定審議会 勧告一覧页",
+     "url": "https://www.soumu.go.jp/main_sosiki/singi/senkyoku/senkyoku_shingi_06.html",
+     "type": "官方"
+    },
+    {
+     "title": "稲城市 市報 r0406（区割り改定说明：最大较差 1.999 倍、福冈 2 区 / 鸟取 2 区）",
+     "url": "https://www.city.inagi.tokyo.jp/_res/projects/default_project/_page_/001/003/013/r0406_10.pdf",
+     "type": "地方政府（二手）"
+    }
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "法案成立日（2022-11-18）本路未核，施行日 2022-12-28 见稲城市市报。"
+  },
+  {
+   "id": "malaysia_ratio",
+   "title_zh": "马来西亚 GE15（2022）最大/最小国会选区选民数之比",
+   "year": 2022,
+   "numbers": "最大 Bangi（雪兰莪）303,430 名选民；最小 Igan（砂拉越）28,290 名选民；比值 303,430 / 28,290 ≈ 10.73。ISEAS（Ostwald 2024）表述为「最大约 303k，最小 28k，超过十倍」。2018 年：ISEAS 称仅雪兰莪两个选区超过 15 万选民（未给最小值）。",
+   "basis": "选民数（registered voters）口径，来源为选举委员会（SPR）2022-11-05 提名日公布的 GE15 选民名册数据（经 The Star 转引）。",
+   "sources": [
+    {
+     "title": "The Star, INTERACTIVE: These are GE15's record-holding seats (2022-11-10)，引用选举委员会 11 月 5 日提名日数据",
+     "url": "https://thestar.com.my/news/nation/2022/11/10/interactive-these-are-ge15s-record-holding-seats",
+     "type": "大报（二手，引官方数据）"
+    },
+    {
+     "title": "Ostwald, The Power of a Vote in Malaysia: Malapportionment under UNDI18, AVR, and MA63, ISEAS Perspective 2024/30",
+     "url": "https://www.iseas.edu.sg/articles-commentaries/iseas-perspective/2024-30-the-power-of-a-vote-in-malaysia-malapportionment-under-undi18-avr-and-ma63-by-kai-ostwald/",
+     "type": "智库（学术二手）"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "spr.gov.my 原始表未直接打开；GE14（2018）最大/最小选区数字未核（通行说法：Bangi 178,790 vs Igan 18,977，约 9.4 倍，待核）。"
+  }
+ ],
+ "cube_law_data": {
+  "title_zh": "英国大选两大党得票与席位（1945–1970）",
+  "how_to_plot": "横轴 V = Con/(Con+Lab) 两党票份额，纵轴 S = Con 席/(Con+Lab 席)；参考线 S = V^k/(V^k + (1−V)^k)，k = 3（立方律）、k = 1（比例）、k = 2.5（Laakso 讨论值）。各点旁可标 k_implied。",
+  "basis": "票数与席位来自 ukpolitical.info 各年页面（二手汇编）；Conservative 口径在各年页面不一致（1945 单列 National Liberal，1955 起单列 Ulster Unionist），两党份额只用 Con 与 Lab 两行，故影响有限但存在。Kendall & Stuart 1950 原表与 Butler 的 Nuffield 附录未能打开；House of Commons Library CBP-7529 PDF 被 Cloudflare 拦截。",
+  "rows": [
+   {
+    "year": 1945,
+    "con_votes": 9988306,
+    "con_seats": 213,
+    "lab_votes": 11995152,
+    "lab_seats": 393,
+    "V_con_two_party": 0.4544,
+    "S_con_two_party": 0.3515,
+    "k_implied": 3.35,
+    "source": {
+     "title": "ukpolitical.info 1945 general election",
+     "url": "https://www.ukpolitical.info/1945-general-election",
+     "type": "二手汇编"
+    },
+    "note": "Conservative 不含 National Liberal 13 席与 National 2 席；Labour 不含 ILP"
+   },
+   {
+    "year": 1950,
+    "con_votes": 12502567,
+    "con_seats": 298,
+    "lab_votes": 13266592,
+    "lab_seats": 315,
+    "V_con_two_party": 0.4852,
+    "S_con_two_party": 0.4861,
+    "k_implied": 0.94,
+    "source": {
+     "title": "ukpolitical.info 1950 general election",
+     "url": "https://www.ukpolitical.info/1950-general-election",
+     "type": "二手汇编"
+    },
+    "note": "页面 Conservative 似含 Ulster Unionists / National Liberal（未单列）"
+   },
+   {
+    "year": 1951,
+    "con_votes": 13717538,
+    "con_seats": 321,
+    "lab_votes": 13948605,
+    "lab_seats": 295,
+    "V_con_two_party": 0.4958,
+    "S_con_two_party": 0.5211,
+    "k_implied": -5.06,
+    "source": {
+     "title": "ukpolitical.info 1951 general election",
+     "url": "https://www.ukpolitical.info/1951-general-election",
+     "type": "二手汇编"
+    },
+    "note": "同上"
+   },
+   {
+    "year": 1955,
+    "con_votes": 13286569,
+    "con_seats": 344,
+    "lab_votes": 12404970,
+    "lab_seats": 277,
+    "V_con_two_party": 0.5172,
+    "S_con_two_party": 0.5539,
+    "k_implied": 3.16,
+    "source": {
+     "title": "ukpolitical.info 1955 general election",
+     "url": "https://www.ukpolitical.info/1955-general-election",
+     "type": "二手汇编"
+    },
+    "note": "Ulster Unionist 10 席单列，未计入 Conservative"
+   },
+   {
+    "year": 1959,
+    "con_votes": 13749830,
+    "con_seats": 365,
+    "lab_votes": 12215538,
+    "lab_seats": 258,
+    "V_con_two_party": 0.5295,
+    "S_con_two_party": 0.5859,
+    "k_implied": 2.93,
+    "source": {
+     "title": "ukpolitical.info 1959 general election",
+     "url": "https://www.ukpolitical.info/1959-general-election",
+     "type": "二手汇编"
+    },
+    "note": "Ulster Unionist 12 席单列"
+   },
+   {
+    "year": 1964,
+    "con_votes": 12001396,
+    "con_seats": 304,
+    "lab_votes": 12205814,
+    "lab_seats": 317,
+    "V_con_two_party": 0.4958,
+    "S_con_two_party": 0.4895,
+    "k_implied": 2.48,
+    "source": {
+     "title": "ukpolitical.info 1964 general election",
+     "url": "https://www.ukpolitical.info/1964-general-election",
+     "type": "二手汇编"
+    },
+    "note": "Ulster Unionist 12 席单列；页面各行相加 643 席与当时 630 席不符，疑有重复"
+   },
+   {
+    "year": 1966,
+    "con_votes": 11418433,
+    "con_seats": 253,
+    "lab_votes": 13064951,
+    "lab_seats": 363,
+    "V_con_two_party": 0.4664,
+    "S_con_two_party": 0.4107,
+    "k_implied": 2.68,
+    "source": {
+     "title": "ukpolitical.info 1966 general election",
+     "url": "https://www.ukpolitical.info/1966-general-election",
+     "type": "二手汇编"
+    },
+    "note": "Ulster Unionist 12 席单列；各行相加 642 席与 630 不符，疑重复"
+   },
+   {
+    "year": 1970,
+    "con_votes": 13145123,
+    "con_seats": 330,
+    "lab_votes": 12179341,
+    "lab_seats": 287,
+    "V_con_two_party": 0.5191,
+    "S_con_two_party": 0.5348,
+    "k_implied": 1.83,
+    "source": {
+     "title": "ukpolitical.info 1970 general election",
+     "url": "https://www.ukpolitical.info/1970-general-election",
+     "type": "二手汇编"
+    },
+    "note": "Ulster Unionist 8 席单列"
+   }
+  ],
+  "sources": [
+   {
+    "title": "ukpolitical.info 1945 general election",
+    "url": "https://www.ukpolitical.info/1945-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "ukpolitical.info 1950 general election",
+    "url": "https://www.ukpolitical.info/1950-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "ukpolitical.info 1951 general election",
+    "url": "https://www.ukpolitical.info/1951-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "ukpolitical.info 1955 general election",
+    "url": "https://www.ukpolitical.info/1955-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "ukpolitical.info 1959 general election",
+    "url": "https://www.ukpolitical.info/1959-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "ukpolitical.info 1964 general election",
+    "url": "https://www.ukpolitical.info/1964-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "ukpolitical.info 1966 general election",
+    "url": "https://www.ukpolitical.info/1966-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "ukpolitical.info 1970 general election",
+    "url": "https://www.ukpolitical.info/1970-general-election",
+    "type": "二手汇编"
+   },
+   {
+    "title": "House of Commons Library, UK Election Statistics: 1918–2023 (CBP-7529)",
+    "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7529/",
+    "type": "官方（PDF 本路无法下载）"
+   },
+   {
+    "title": "Laakso, Should a Two-and-a-Half Law Replace the Cube Law in British Elections?, 9 British Journal of Political Science 355–362 (1979)",
+    "url": "https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/should-a-twoandahalf-law-replace-the-cube-law-in-british-elections/CCFB25CAFB62E4A2EE6D6119B0B9E921",
+    "type": "学术一手"
+   }
+  ],
+  "confidence": "中",
+  "verify": true,
+  "note": "建议编辑用 CBP-7529 附表（官方）替换本表数字后去掉 verify；1964/1966 页面席位行相加超过 630，但 Con/Lab 两行数字与通行记载一致。k_implied 在 V≈0.5 附近数值不稳定：1951 年保守党两党票 49.6% 却得 52.1% 席（得票少者得席多），ln 比值异号故 k 为负——这是席位—选票曲线的偏差（bias）而非指数，页面画参考线时这两点（1950、1951）只标点不标 k。"
+ },
+ "demo_grid": {
+  "title_zh": "画线器 10×10 布局建议（60 A / 40 B，5 区各 20 格）",
+  "layout": "cells 为 100 个 0/1，按行优先（index = row×10 + col）；1 = A 党选民（60 个，第 4–9 行），0 = B 党选民（40 个，第 0–3 行整块）。同一张选民图可画出 A 得 5:0、3:2、2:3 三种结果。",
+  "cells": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "rules": "每区恰 20 格、四邻连通、互不重叠、覆盖全部 100 格（本路脚本已断言通过）；每区 11 票胜。",
+  "plans": {
+   "5:0": {
+    "desc": "竖切五条（列 0–1、2–3、4–5、6–7、8–9）：每区 12 A / 8 B，A 全胜。B 被「crack」。",
+    "districts": [
+     {
+      "cells": [
+       0,
+       1,
+       10,
+       11,
+       20,
+       21,
+       30,
+       31,
+       40,
+       41,
+       50,
+       51,
+       60,
+       61,
+       70,
+       71,
+       80,
+       81,
+       90,
+       91
+      ],
+      "A": 12,
+      "B": 8,
+      "winner": "A"
+     },
+     {
+      "cells": [
+       2,
+       3,
+       12,
+       13,
+       22,
+       23,
+       32,
+       33,
+       42,
+       43,
+       52,
+       53,
+       62,
+       63,
+       72,
+       73,
+       82,
+       83,
+       92,
+       93
+      ],
+      "A": 12,
+      "B": 8,
+      "winner": "A"
+     },
+     {
+      "cells": [
+       4,
+       5,
+       14,
+       15,
+       24,
+       25,
+       34,
+       35,
+       44,
+       45,
+       54,
+       55,
+       64,
+       65,
+       74,
+       75,
+       84,
+       85,
+       94,
+       95
+      ],
+      "A": 12,
+      "B": 8,
+      "winner": "A"
+     },
+     {
+      "cells": [
+       6,
+       7,
+       16,
+       17,
+       26,
+       27,
+       36,
+       37,
+       46,
+       47,
+       56,
+       57,
+       66,
+       67,
+       76,
+       77,
+       86,
+       87,
+       96,
+       97
+      ],
+      "A": 12,
+      "B": 8,
+      "winner": "A"
+     },
+     {
+      "cells": [
+       8,
+       9,
+       18,
+       19,
+       28,
+       29,
+       38,
+       39,
+       48,
+       49,
+       58,
+       59,
+       68,
+       69,
+       78,
+       79,
+       88,
+       89,
+       98,
+       99
+      ],
+      "A": 12,
+      "B": 8,
+      "winner": "A"
+     }
+    ],
+    "seats_A": 5,
+    "seats_B": 0,
+    "wasted_A": 10,
+    "wasted_B": 40,
+    "efficiency_gap_A": 0.3,
+    "wasted_A_50plus1": 5,
+    "wasted_B_50plus1": 40,
+    "efficiency_gap_A_50plus1": 0.35,
+    "eg_simplified_seatmargin_minus_2x_votemargin": 0.3,
+    "mean_median_A": 0.0,
+    "district_A_shares_sorted": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ]
+   },
+   "3:2": {
+    "desc": "横切五条（行 0–1、2–3、4–5、6–7、8–9）：两区 20 B，三区 20 A，A 3:2。B 被「pack」（每区 10 张超额票）。",
+    "districts": [
+     {
+      "cells": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       19
+      ],
+      "A": 0,
+      "B": 20,
+      "winner": "B"
+     },
+     {
+      "cells": [
+       20,
+       21,
+       22,
+       23,
+       24,
+       25,
+       26,
+       27,
+       28,
+       29,
+       30,
+       31,
+       32,
+       33,
+       34,
+       35,
+       36,
+       37,
+       38,
+       39
+      ],
+      "A": 0,
+      "B": 20,
+      "winner": "B"
+     },
+     {
+      "cells": [
+       40,
+       41,
+       42,
+       43,
+       44,
+       45,
+       46,
+       47,
+       48,
+       49,
+       50,
+       51,
+       52,
+       53,
+       54,
+       55,
+       56,
+       57,
+       58,
+       59
+      ],
+      "A": 20,
+      "B": 0,
+      "winner": "A"
+     },
+     {
+      "cells": [
+       60,
+       61,
+       62,
+       63,
+       64,
+       65,
+       66,
+       67,
+       68,
+       69,
+       70,
+       71,
+       72,
+       73,
+       74,
+       75,
+       76,
+       77,
+       78,
+       79
+      ],
+      "A": 20,
+      "B": 0,
+      "winner": "A"
+     },
+     {
+      "cells": [
+       80,
+       81,
+       82,
+       83,
+       84,
+       85,
+       86,
+       87,
+       88,
+       89,
+       90,
+       91,
+       92,
+       93,
+       94,
+       95,
+       96,
+       97,
+       98,
+       99
+      ],
+      "A": 20,
+      "B": 0,
+      "winner": "A"
+     }
+    ],
+    "seats_A": 3,
+    "seats_B": 2,
+    "wasted_A": 30,
+    "wasted_B": 20,
+    "efficiency_gap_A": -0.1,
+    "wasted_A_50plus1": 27,
+    "wasted_B_50plus1": 18,
+    "efficiency_gap_A_50plus1": -0.09,
+    "eg_simplified_seatmargin_minus_2x_votemargin": -0.1,
+    "mean_median_A": 0.4,
+    "district_A_shares_sorted": [
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "2:3": {
+    "desc": "三个区各 11 B / 9 A（B 险胜），剩余两区 15 A/5 B 与 18 A/2 B（A 大胜被 pack）：少数党 B 以 40% 票拿 3 席。区形见 districts 索引。",
+    "districts": [
+     {
+      "cells": [
+       0,
+       1,
+       2,
+       10,
+       11,
+       12,
+       20,
+       21,
+       22,
+       30,
+       31,
+       40,
+       41,
+       42,
+       50,
+       51,
+       52,
+       60,
+       61,
+       62
+      ],
+      "A": 9,
+      "B": 11,
+      "winner": "B"
+     },
+     {
+      "cells": [
+       3,
+       4,
+       5,
+       13,
+       14,
+       15,
+       23,
+       24,
+       25,
+       32,
+       33,
+       43,
+       53,
+       54,
+       63,
+       64,
+       73,
+       74,
+       83,
+       84
+      ],
+      "A": 9,
+      "B": 11,
+      "winner": "B"
+     },
+     {
+      "cells": [
+       6,
+       7,
+       8,
+       16,
+       17,
+       18,
+       26,
+       27,
+       28,
+       36,
+       37,
+       46,
+       47,
+       48,
+       56,
+       57,
+       58,
+       66,
+       67,
+       68
+      ],
+      "A": 9,
+      "B": 11,
+      "winner": "B"
+     },
+     {
+      "cells": [
+       9,
+       19,
+       29,
+       38,
+       39,
+       49,
+       59,
+       69,
+       76,
+       77,
+       78,
+       79,
+       86,
+       87,
+       88,
+       89,
+       96,
+       97,
+       98,
+       99
+      ],
+      "A": 15,
+      "B": 5,
+      "winner": "A"
+     },
+     {
+      "cells": [
+       34,
+       35,
+       44,
+       45,
+       55,
+       65,
+       70,
+       71,
+       72,
+       75,
+       80,
+       81,
+       82,
+       85,
+       90,
+       91,
+       92,
+       93,
+       94,
+       95
+      ],
+      "A": 18,
+      "B": 2,
+      "winner": "A"
+     }
+    ],
+    "seats_A": 2,
+    "seats_B": 3,
+    "wasted_A": 40,
+    "wasted_B": 10,
+    "efficiency_gap_A": -0.3,
+    "wasted_A_50plus1": 38,
+    "wasted_B_50plus1": 7,
+    "efficiency_gap_A_50plus1": -0.31,
+    "eg_simplified_seatmargin_minus_2x_votemargin": -0.3,
+    "mean_median_A": -0.15,
+    "district_A_shares_sorted": [
+     0.45,
+     0.45,
+     0.45,
+     0.75,
+     0.9
+    ]
+   }
+  },
+  "computation_note": "浪费票按 S&M 2015 定义：输方全部票 + 赢方超过 10 票（50%）的票；另列「50%+1」版本（赢方超过 11 票）。EG_A = (W_B − W_A)/100，正值对 A 有利；simplified = (S_A − 0.5) − 2(V_A − 0.5)，V_A = 0.6。mean_median_A = median − mean（A 党各区得票率）。",
+  "verify": false
+ }
+}

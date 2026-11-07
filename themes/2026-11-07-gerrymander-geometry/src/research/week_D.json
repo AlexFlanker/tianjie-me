@@ -1,0 +1,288 @@
+{
+ "meta": {
+  "researcher": "D",
+  "date": "2026-11-06",
+  "scope": "2026-11-03 中期选举的法定事实；2025–2026 年十年周期中途重划众议院选区的各州（只记事实与法院状态）；AAPOR 2016/2020 民调评估报告；Samuels & Snyder 2001 出版信息",
+  "note": "本路只写法定事实、通过日期、法院状态与原文。不写席位得失预期、不写谁得利；来源里的「可能多拿 N 席」之类预测一律未录入。党名只作事实主语。"
+ },
+ "election": {
+  "date": "2026-11-03",
+  "weekday": "星期二",
+  "house_seats_up": 435,
+  "senate_seats_up": 35,
+  "senate_breakdown": "33 席为第二类（Class II）常规改选 + 2 席特别选举（佛罗里达、俄亥俄，分别补足 2022 年当选者的剩余任期）",
+  "legal_basis": [
+   {
+    "cite": "2 U.S.C. § 7",
+    "text_en": "The Tuesday next after the 1st Monday in November, in every even numbered year, is established as the day for the election, in each of the States and Territories of the United States, of Representatives and Delegates to the Congress commencing on the 3d day of January next thereafter.",
+    "text_zh": "每个偶数年 11 月第一个星期一之后的星期二，为各州与领地选举众议员及代表的日期；新一届国会于次年 1 月 3 日开始。",
+    "url": "https://www.law.cornell.edu/uscode/text/2/7"
+   },
+   {
+    "cite": "2 U.S.C. § 1",
+    "text_zh": "参议员任期届满前、该州依法常规选举众议员的那次选举中由该州人民选出。",
+    "url": "https://www.law.cornell.edu/uscode/text/2/1"
+   },
+   {
+    "cite": "2 U.S.C. § 2a",
+    "text_zh": "众议院席位依每次十年普查按「等比例法」（method of equal proportions）在「当时既有的众议员总数」间分配，每州至少 1 席；总数 435 源自 1929 年《重新分配法》（Reapportionment Act of 1929），1941 年法定采用等比例法。",
+    "url": "https://www.law.cornell.edu/uscode/text/2/2a"
+   }
+  ],
+  "sources": [
+   "https://www.law.cornell.edu/uscode/text/2/7",
+   "https://www.law.cornell.edu/uscode/text/2/1",
+   "https://www.law.cornell.edu/uscode/text/2/2a",
+   "https://ballotpedia.org/United_States_Senate_elections,_2026"
+  ],
+  "confidence": "高",
+  "verify": false,
+  "note": "435 席为法定总数（2 U.S.C. § 2a 下 1929 年法确定的「既有总数」）；本周期按 2020 年普查分配，2021-04-26 普查局公布。参院 35 席之说来自 Ballotpedia（第二类 33 + 特别 2），senate.gov 未另开。"
+ },
+ "mid_decade": [
+  {
+   "state": "Texas（得克萨斯）",
+   "when": "2025-08-23 州议会第 89 届第 2 次特别会议通过 H.B. 4；2025-08-29 州长签署",
+   "by": "州议会（legislature）",
+   "what": "重划全部 38 个国会选区；地图编号 PLANC2333（替换 2021 年的 PLANC2193）",
+   "court": "LULAC v. Abbott（美国得克萨斯西区联邦地区法院埃尔帕索分院，三法官合议庭）：2025-11-18 裁定禁止使用 PLANC2333、2026 年选举继续用 PLANC2193；州政府上诉至联邦最高法院（Abbott v. League of United Latin American Citizens）。2025-11-21 大法官 Alito 签发行政性暂停令；2025-12-04 最高法院批准「上诉期间中止执行」（stay pending appeal），PLANC2333 自 2026 年初选起生效。截至 2026-11：PLANC2333 为 2026-11-03 选举所用地图；案件实体上诉仍在最高法院待审。",
+   "sources": [
+    "https://redistricting.capitol.texas.gov/2020s_timeline",
+    "https://www.scotusblog.com/cases/case-files/abbott-v-league-of-united-latin-american-citizens/",
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://rollcall.com/2025/12/04/supreme-court-lets-texas-use-gop-redrawn-congressional-map/"
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "得州议会重划官网时间轴为一手来源。最高法院 2025-12-04 命令的投票分布（来源称 6–3）未从 supremecourt.gov 原文核对，正文如需引用请标 verify。"
+  },
+  {
+   "state": "California（加利福尼亚）",
+   "when": "2025-08-21 州议会通过 ACA 8（宪法修正案提案）与 AB 604（地图法案），州长同日签署 AB 604；2025-11-04 特别选举，选民通过 Proposition 50",
+   "by": "州议会提案 + 选民公投（legislature + referendum）",
+   "what": "全部 52 个国会选区改用州议会（AB 604）地图，适用于 2026–2030 年国会选举；2031 年起恢复由公民重划委员会（Citizens Redistricting Commission）划线。正式票面标题「Authorizes Temporary Changes to Congressional District Maps」，提案方称「Election Rigging Response Act」。认证结果：赞成 7,453,339（64.42%），反对 4,116,998（35.58%）",
+   "court": "Tangipa v. Newsom（美国加利福尼亚中区联邦地区法院，三法官合议庭）：2026-01-14 以 2–1 裁定地图不构成违宪的种族划区（Staton、Hsu 多数，Lee 异议）；2026-02-04 联邦最高法院拒绝原告阻止使用该地图的申请。截至 2026-11：Prop 50 地图为 2026 年所用地图（初选 2026-06-02）。",
+   "sources": [
+    "https://ballotpedia.org/California_Changes_to_Congressional_Redistricting_Amendment_(2025)",
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://www.nbcsandiego.com/news/local/prop-50-upheld-federal-court-newsom-trump/3961239"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：加州州务卿（sos.ca.gov）认证日期与官方结果页；ACA 8 / AB 604 的两院表决日期（Ballotpedia 只给签署日 2025-08-21）。票数来自 Ballotpedia 转录的认证结果。"
+  },
+  {
+   "state": "Missouri（密苏里）",
+   "when": "2025-09-09 众议院、2025-09-12 参议院通过 H.B. 1（特别会议）；2025-09-28 州长签署",
+   "by": "州议会（legislature）",
+   "what": "重划全部 8 个国会选区，法案称「Missouri First Map」；主要改动在圣路易斯地区第 1 区",
+   "court": "（1）公投程序：People Not Politicians 于 2025-12-09 提交否决性公投（veto referendum）签名（报道称约 30.5 万份）；2026-08-04 州务卿拒绝认证，称国会选区法案不属公投范围；2026-08-19 Cole 郡巡回法院维持；2026-09-03 密苏里州最高法院一致裁定推翻，命令认证公投（编号 2026-R004，票面为 Proposition A）并载入 2026-11 选票，裁定「若请愿有效，H.B. 1 从未生效」，2026 年 11 月选举使用 2022 年地图；2026-09-04 该院拒绝暂停。（2）联邦：2026-09-08 大法官 Kavanaugh 驳回州务卿的紧急申请；同日密苏里东区联邦地区法院发出临时限制令要求用 2025 年地图，第八巡回法院 9-09 / 9-21 两度支持，联邦最高法院 9-10 / 9-25 两度中止，最终 2022 年地图用于 2026-11-03 选举；H.B. 1 地图则用于 2026-08-04 州初选。（3）另：2026-03-24 州最高法院 4–3 裁定地图不违反州宪法实体条款；2026-05-12 裁定签名审核期间地图继续有效。",
+   "sources": [
+    "https://news.ballotpedia.org/2026/09/09/missouri-voters-to-decide-congressional-map-referendum-in-november-after-court-ruling/",
+    "https://themissouritimes.com/breaking-supreme-court-clears-map-referendum-for-november-ballot/",
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：密苏里州最高法院 2026-09-03 判决的正式案名（courts.mo.gov 未开）；联邦案名（E.D. Mo.）与最高法院命令编号；「Proposition A」票面名来自维基线索，需对州务卿选票样本核。2026-11-03 公投结果本文件未录（选举尚在进行）。"
+  },
+  {
+   "state": "North Carolina（北卡罗来纳）",
+   "when": "2025-10-21 参议院（26–20）、2025-10-22 众议院（66–48）通过 S.B. 249；2025-10-22 批准（ratified）；州法规定重划法案无需州长签署",
+   "by": "州议会（legislature）",
+   "what": "法案标题「An Act to Realign the North Carolina Congressional Districts」，修改 G.S. 163-201(a)；14 个选区中实质改动第 1 区与第 3 区（部分郡自第 1 区移入第 3 区），其余沿用 2023 年地图",
+   "court": "Williams v. Hall 与 NAACP v. Berger（美国北卡中区联邦地区法院，三法官合议庭）：2025-11-26 驳回初步禁令申请，允许 2025 年地图用于 2026 年；2026-01-16 原告提交自愿撤诉，案件以「有既判力」（with prejudice）方式驳回。截至 2026-11：2025 年地图为 2026 年所用地图（初选 2026-03-03）。",
+   "sources": [
+    "https://library.ncleg.gov/Sessions/2025/Bills/Senate/PDF/S249v3.pdf",
+    "https://www.pbs.org/newshour/politics/judges-allow-north-carolina-to-use-a-map-drawn-in-bid-to-give-republicans-another-u-s-house-seat",
+    "https://www.carolinajournal.com/nc-congressional-map-critics-drop-federal-lawsuits/",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections"
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "缺：Session Law 编号（S.L. 2025-xx）；两院表决数来自 Ballotpedia，ncleg.gov 表决记录未另开。"
+  },
+  {
+   "state": "Ohio（俄亥俄）",
+   "when": "2025-10-31 俄亥俄重划委员会（Ohio Redistricting Commission）一致通过",
+   "by": "委员会（commission；7 人：州长、审计长、州务卿及两院两党各指派的 4 名议员）",
+   "what": "15 个国会选区新地图，有效至 2030 年普查后重划（来源称「至 2031 年」）。背景：2018 年州宪法修正案（Issue 1，Article XIX）规定无两党支持通过的国会地图只能用 4 年，2022 年地图因此在 2024 年后到期；州议会 2025-09-30 期限内未通过，转由委员会在 10-31 前通过，否则议会可于 11 月以简单多数通过",
+   "court": "截至 2026-11：NCSL 与 Ballotpedia 均未列出针对该地图的诉讼；地图用于 2026 年选举（初选 2026-05-05）。",
+   "sources": [
+    "https://news.ballotpedia.org/2025/11/03/ohio-redistricting-commission-approves-new-congressional-map-in-the-only-state-required-by-law-to-redistrict-before-2026/",
+    "https://www.bricker.com/insights/publications/ohio-approves-new-congressional-map-what-it-means-for-2026-elections",
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：委员会表决数（来源只说「一致」）；Article XIX 的 4 年 / 10 年条款原文未从 ohio.gov 核；委员会 7 人构成为通行说法。"
+  },
+  {
+   "state": "Utah（犹他）",
+   "when": "2025-11-10 犹他第三地区法院（Third District Court）法官 Dianna Gibson 选定原告提交的补救地图（报道称「Map 1」）",
+   "by": "法院（court）",
+   "what": "4 个国会选区；新地图使盐湖郡大部分划入同一选区。背景：2018 年选民通过 Proposition 4（独立重划委员会与反划区标准），2020 年议会以 S.B. 200 修改；2024-07 犹他州最高法院裁定议会越权；2025-08-25 Gibson 裁定 2021 年地图违反 Prop 4 并禁止使用；议会 2025-10-06 另行通过的地图亦被裁定不符 Prop 4",
+   "court": "League of Women Voters of Utah v. Utah State Legislature（州法院）：2026-02-20 犹他州最高法院三法官合议（Durrant、Petersen、Pohlman）以无管辖权为由驳回议会上诉并拒绝中止（议会未在 30 日内对 2025-08 裁定上诉，Rule 54(b) 认证不当）；2026-02 联邦三法官合议庭亦拒绝阻止新地图。截至 2026-11：法院选定地图为 2026 年所用地图；废除 Prop 4 的公民提案未能上票。",
+   "sources": [
+    "https://www.ksl.com/article/51451605/supreme-court-declines-legislatures-request-to-block-new-congressional-map",
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+    "https://www.deseret.com/politics/2026/02/20/utah-supreme-court-denies-legislature-request-to-bring-back-2021-congressional-map-ahead-of-midterm-elections"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：utcourts.gov 判决原文与案号；联邦案名；议会 2025-10-06 地图的法案编号；S.B. 200（2020）年份为通行说法。"
+  },
+  {
+   "state": "Virginia（弗吉尼亚）",
+   "when": "宪法修正案：2025-10-29 众议院（51–42）、2025-10-31 参议院（21–16）第一次通过（特别会议）；2026-01-16 两院第二次通过；2026-02-04 州长签署公投授权法；2026-02-20 两院通过国会地图法案并由州长签署（以公投通过为生效条件）；2026-04-21 特别公投：赞成 1,604,276（51.69%）、反对 1,499,393（48.31%）",
+   "by": "州议会提案 + 选民公投（legislature + referendum）",
+   "what": "拟由议会重划 11 个国会选区（原为 2021 年地图）；修正案与地图最终未生效",
+   "court": "McDougle v. Nardo（Tazewell 郡巡回法院，案号 CL25001582-00，法官 Jack Hurley Jr.）：2026-01-27 裁定修正案程序不合法；2026-02-13 弗吉尼亚州最高法院允许公投照常举行；2026-02-19 Hurley 另发禁令，2026-03-04 州最高法院中止该禁令；2026-04-22 Hurley 终审判决授权法无效并永久禁止认证公投结果；2026-04-28 州最高法院拒绝中止；2026-05-08 州最高法院 4–3 裁定修正案因议会未遵守州宪法程序要件而「无效」（null and void）；2026-05-15 联邦最高法院拒绝州方申请。截至 2026-11：2021 年地图用于 2026-11-03 选举（初选 2026-08-04）。",
+   "sources": [
+    "https://www.wtvr.com/news/virginia-politics/supreme-court-virginia-redistricting-ruling-may-8-2026",
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+    "https://en.wikipedia.org/wiki/2026_Virginia_redistricting_referendum"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：州最高法院 2026-05-08 判决的正式案名与所引宪法条款（通行说法为 Article XII § 1「两届会期之间须有众议院选举」，未从判决原文核）；公投票数与 4–3 之说来自维基线索与 Ballotpedia，需对 elections.virginia.gov 核；地图法案编号（线索为 HB 29）。"
+  },
+  {
+   "state": "Florida（佛罗里达）",
+   "when": "2026-04-29 众议院（83–28）与参议院（21–17）通过 H.B. 1-D（2026 年特别会议 D）；2026-05-04 州长签署",
+   "by": "州议会（legislature）",
+   "what": "重划全部 28 个国会选区（替换 2022 年地图）",
+   "court": "州法院：原告依州宪法 Article III § 20（2010 年「Fair Districts」修正案）起诉，案件并入 Leon 郡巡回法院法官 Joshua Hawkes；2026-05-26 拒绝初步禁令；原告上诉第一地区上诉法院；2026-06-10 佛罗里达州最高法院以无管辖权驳回紧急申请（Labarga 一人异议）。2026-02 该院另驳回对州长召集特别会议权限的质疑。截至 2026-11：新地图用于 2026 年选举（候选人登记截止 2026-06-12，初选 2026-08-18）；州法院实体诉讼仍在进行。",
+   "sources": [
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+    "https://floridaphoenix.com/2026/05/27/florida-judge-wont-toss-desantis-new-congressional-map/",
+    "https://www.fox35orlando.com/news/florida-supreme-court-lets-new-congressional-map-stand-2026-elections"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "众议院表决数两来源不一致（Ballotpedia 83–23，维基 83–28）→ dispute；法案编号 H.B. 1-D 来自维基线索，需对 flsenate.gov 核；案名未得。"
+  },
+  {
+   "state": "Louisiana（路易斯安那）",
+   "when": "2026-05-29 州议会通过（参议院 28–10）；州长签署",
+   "by": "州议会（legislature）",
+   "what": "重划 6 个国会选区（改动第 6 区），替换 2024 年 S.B. 8 地图",
+   "court": "Louisiana v. Callais（联邦最高法院，2026-04-29 / 05 判决）：裁定 2024 年地图为违宪的种族划区；2026-04-30 州长推迟众议院初选。截至 2026-11：新地图用于 2026 年国会选举；该州国会初选改在 2026-11-03，决选 2026-12-12。针对新地图的诉讼有报道但未核。",
+   "sources": [
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：法案编号、州长签署日、Callais 判决日期（Ballotpedia 写 04-29，NCSL 写「2026 年 5 月意见」）→ dispute；supremecourt.gov 判决原文未开。"
+  },
+  {
+   "state": "Tennessee（田纳西）",
+   "when": "2026-05-05 特别会议开始；2026-05-07 两院通过并由州长签署；议会先废止了禁止十年中途重划国会选区的州法",
+   "by": "州议会（legislature）",
+   "what": "重划 9 个国会选区（改动孟菲斯第 9 区）",
+   "court": "美国田纳西中区联邦地区法院（首席法官 William L. Campbell Jr.）：2026-05-26 拒绝临时阻止，待三法官合议庭审理。截至 2026-11：新地图用于 2026 年选举（初选 2026-08-06）。",
+   "sources": [
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+    "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：法案编号、两院表决数、案名；联邦案信息只来自维基线索。"
+  },
+  {
+   "state": "Alabama（阿拉巴马）",
+   "when": "2023 年州议会通过的地图（S.B. 5，2023-07）经 2026 年联邦最高法院命令恢复使用；2026-05-04 特别会议另通过州议会选区地图",
+   "by": "州议会（legislature）+ 法院命令（court order）",
+   "what": "7 个国会选区：2026 年使用 2023 年议会地图，取代 2023-10-05 三法官合议庭选定的补救地图",
+   "court": "Allen v. Milligan 系列：2026-05-11 联邦最高法院解除「2030 年前不得重划」的禁令（引 Louisiana v. Callais）；2026-05-26 下级法院再次阻止 2023 年地图；2026-06-02 联邦最高法院（未署名命令，报道称 6–3）撤销，允许 2023 年地图用于 2026 年；受影响选区特别初选定于 2026-08-11。",
+   "sources": [
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+    "https://rollcall.com/2026/06/02/supreme-court-allows-alabama-to-use-new-congressional-map/"
+   ],
+   "confidence": "中",
+   "verify": true,
+   "dispute": "Ballotpedia 表格一处写「2023 年法院批准地图」用于 2026 年；NCSL 标题栏与 Roll Call / 维基均写 2023 年议会地图用于 2026 年。本文件取后者，待对 supremecourt.gov 2026-06-02 命令原文核。",
+   "note": "S.B. 5（2023）编号为通行说法。"
+  },
+  {
+   "state": "其他（未通过新地图）",
+   "when": "—",
+   "by": "—",
+   "what": "Indiana：2025-12-05 众议院通过（57–41），2025-12-11 参议院否决（31–19）。Maryland：2026 年常会 H.B. 488 未经参议院表决即休会（2026-04-13）；2026-08-04 通过 H.B. 2100 将宪法修正案交 2026-11-03 公投，2026-09-03 州最高法院命令改写票面文字后上票。South Carolina：2026-05-15 特别会议，众议院 05-20 通过（74–37），参议院 05-26 未能结束辩论、休会。Kansas、Georgia（2026-06-17 特别会议未处理）、Mississippi、Washington（HJR 4209 2026-03-12 休会失效）、New York（S.B. 10637 2026-06-17 首次通过，须 2027 再过）均无新国会地图。",
+   "court": "New York：2026-01-21 州法院裁定第 11 区违反州宪法并限期重划，2026-03-02 联邦最高法院中止，2026-03-19 当事人撤案。",
+   "sources": [
+    "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting",
+    "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections"
+   ],
+   "confidence": "中",
+   "verify": false,
+   "note": "此条供编辑决定是否列入「未成」名单；只有两条二手汇总来源。"
+  }
+ ],
+ "polls": [
+  {
+   "year": 2016,
+   "title": "An Evaluation of 2016 Election Polls in the U.S.",
+   "org": "American Association for Public Opinion Research (AAPOR), Ad Hoc Committee on 2016 Election Polling（主席 Courtney Kennedy）",
+   "released": "2017-05-04",
+   "url": "https://aapor.org/wp-content/uploads/2022/11/AAPOR-2016-Election-Polling-Report.pdf",
+   "url_alt": "https://www.aapor.org/Education-Resources/Reports/An-Evaluation-of-2016-Election-Polls-in-the-U-S.aspx",
+   "quote_en": "Adjusting for over-representation of college graduates was critical, but many polls did not do it.",
+   "quote_zh": "校正大学毕业生被过度代表的问题至关重要，但许多民调没有这样做。",
+   "quote2_en": "National polls were generally correct and accurate by historical standards.",
+   "quote3_en": "Real change in vote preference during the final week or so of the campaign.",
+   "sources": [
+    "https://aapor.org/wp-content/uploads/2022/11/AAPOR-2016-Election-Polling-Report.pdf",
+    "https://www.pewresearch.org/short-reads/2017/05/04/qa-political-polls-and-the-2016-election/",
+    "https://cossa.org/?p=9011"
+   ],
+   "confidence": "高",
+   "verify": false,
+   "note": "原文引自 PDF 执行摘要（本地已核）；发布日 2017-05-04 以 Pew 同日问答为据，PDF 元数据生成日 2017-05-12（修订版）。"
+  },
+  {
+   "year": 2020,
+   "title": "Task Force on 2020 Pre-Election Polling: An Evaluation of the 2020 General Election Polls",
+   "org": "AAPOR Task Force on 2020 Pre-Election Polling（主席 Josh Clinton）",
+   "released": "2021-07-19",
+   "url": "https://aapor.org/wp-content/uploads/2022/11/AAPOR-Task-Force-on-2020-Pre-Election-Polling_Report-FNL.pdf",
+   "quote_en": "Polling error was not caused by a failure to weight by education.",
+   "quote_zh": "民调误差并非由未按教育程度加权造成。",
+   "quote2_en": "Every mode of interviewing and every mode of sampling overstated the Democratic-Republican margin relative to the final certified vote margin.",
+   "quote3_en": "The average error on the margin in either direction was 4.5 points for national popular vote polls and 5.1 points for state-level presidential polls.",
+   "stat": "2020 年最后两周：全国民调差距平均绝对误差 4.5 点，州级总统民调 5.1 点；为 40 年来全国民调最大误差。",
+   "sources": [
+    "https://aapor.org/wp-content/uploads/2022/11/AAPOR-Task-Force-on-2020-Pre-Election-Polling_Report-FNL.pdf"
+   ],
+   "confidence": "高",
+   "verify": true,
+   "note": "原文引自 PDF 执行摘要（本地已核）。发布日 2021-07-19 为通行说法，PDF 元数据生成日 2021-07-14，aapor.org 公告页未开 → verify 发布日。用法提示：两份报告合起来说明「同一方向、跨州相关的误差」是统计问题（2016 归因教育加权缺失，2020 排除该因并指出各模式同向偏差）；只作方法卡片，不评价任何机构。"
+  }
+ ],
+ "index_note": {
+  "authors": "David Samuels; Richard Snyder",
+  "title": "The Value of a Vote: Malapportionment in Comparative Perspective",
+  "journal": "British Journal of Political Science",
+  "volume": 31,
+  "issue": 4,
+  "pages": "651–671",
+  "date": "2001-10",
+  "publisher": "Cambridge University Press",
+  "doi": "10.1017/S0007123401000254",
+  "coverage": "78 个国家的上下两院不成比例程度（malapportionment）测量",
+  "sources": [
+   "https://ideas.repec.org/a/cup/bjposi/v31y2001i04p651-671_00.html",
+   "https://resolve.cambridge.org/core/journals/british-journal-of-political-science/article/abs/value-of-a-vote-malapportionment-in-comparative-perspective/7EEA266A0EF903AFFB0F113AA5BB0EE6"
+  ],
+  "confidence": "高",
+  "verify": false,
+  "note": "DOI 由 Cambridge 标识符 S0007123401000254 推得（10.1017/ 前缀），Cambridge 页面本身未开。"
+ }
+}

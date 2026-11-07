@@ -1,0 +1,26 @@
+{
+  "no": 8,
+  "slug": "gerrymander-geometry",
+  "title": "蝾螈的几何：选区怎么画、席位怎么分、公平怎么量",
+  "subtitle": "从 1812 年《波士顿公报》的那只蝾螈到今天的一万张随机地图：同样的选民、同样的票，换一种画法就是另一个结果。两百年来各国发明了各种画法，也发明了各种量尺。",
+  "date": "2026-11-07",
+  "summary": "一张 10×10 的格子里，六成人投甲、四成人投乙，你可以画出 5:0，也能画出 2:3。序章先让你看五种画法，再沿两条线走：纵向从前 508 年的雅典到 2026 年，横向看 23 个政体谁来画线、怎么分席位；中间是一把把量尺的说明书，最后三件可以上手的工具：画线器、随机地图集合、席位分配计算器。",
+  "tags": [
+    "选举制度",
+    "统计",
+    "几何",
+    "历史",
+    "全球"
+  ],
+  "format": "图谱 · 序章舞台 · 时间轴 · 量尺 · 世界地图 · 分配计算器 · 画线器",
+  "cover": "cover.png",
+  "cover_focus": "#top",
+  "cover_scheme": "light",
+  "reading_time": "25 分钟",
+  "sources": [
+    "法院判决与法律条文：Baker、Wesberry、Reynolds、Gingles、Shaw、Gill、Rucho、Milligan（supremecourt.gov / LII / govinfo）；1842、1911、1929、1941 年分配法；英国 1832、1944、2020 年法；日本最高裁 2011–2023 判决；Cameron 报告（1969）",
+    "机构与数据：美国普查局（分配方法与历次分配表）、各国选举委员会与边界委员会、总务省、OSCE/ODIHR、Samuels & Snyder 2001",
+    "论文：Stephanopoulos & McGhee 2015、McDonald & Best 2015、Grofman & King 2007、Warrington 2018、Polsby & Popper 1991、Chen & Rodden 2013、Chikina–Frieze–Pegden 2017、DeFord–Duchin–Solomon 2021、Kendall & Stuart 1950、Balinski & Young 1982",
+    "图片 12 张：美国国会图书馆、大都会艺术博物馆 Open Access、美国最高法院判决附录、美国普查局、维基共享资源（CC BY-SA）；逐张署名见页面卷末与 src/images.json"
+  ]
+}

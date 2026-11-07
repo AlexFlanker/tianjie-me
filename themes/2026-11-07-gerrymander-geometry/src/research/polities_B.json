@@ -1,0 +1,1461 @@
+{
+ "polities": [
+  {
+   "id": "usa",
+   "name_zh": "美国",
+   "name_en": "United States",
+   "iso3": "USA",
+   "lat": 38.895,
+   "lon": -77.037,
+   "who_draws": "mixed",
+   "who_text": "多数州由州议会立法；AZ/CA/CO/MI 等公民委员会；僵局或违宪时法院委任特别主事官画图",
+   "system": "smd",
+   "system_text": "众议院 435 个单席位选区，简单多数制",
+   "pathology": "gerrymander",
+   "pathology_text": "1964 年后州内人口近乎相等，病症转为划线形状；2019 年 Rucho 案判党派划区为联邦法院不审的政治问题",
+   "cadence": "每十年普查后（宪法第 1 条第 2 款）；以普查总人口为基准",
+   "event": {
+    "year": 2022,
+    "text": "纽约 Harkenrider v. Hochul 案：州法院判议会绕过独立委员会程序、国会地图违反州宪，2022 年 5 月由特别主事官重绘"
+   },
+   "text": "美国众议院选区每十年普查后由各州自行划定，三种模式并存：约 33 州由州议会立法画线；10 州由委员会负主责，其中亚利桑那、加州、科罗拉多、密歇根排除现任议员，新泽西、华盛顿等由议会领袖指定成员；议会僵局或地图被判违宪时由法院委任特别主事官画图，2022 年纽约即为一例。1964 年 Wesberry 案确立选区人口须尽可能相等，2019 年 Rucho 案以 5 比 4 判党派划区「属联邦法院无法裁决的政治问题」，诉讼此后转向州宪。",
+   "numbers": [
+    {
+     "label": "由州议会划国会选区的州",
+     "value": "约 33",
+     "unit": "州",
+     "year": 2024
+    },
+    {
+     "label": "委员会负主责的州",
+     "value": 10,
+     "unit": "州",
+     "year": 2024
+    },
+    {
+     "label": "Rucho v. Common Cause 判决",
+     "value": "5–4",
+     "unit": "",
+     "year": 2019
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "AZ Prop 106（2000）、CA Prop 11/20（2008/2010）年份为通说，NCSL 页面只给宪法条文不给年份；Harkenrider 终审法院为纽约州上诉法院（Court of Appeals），LLS 页面称 state supreme court 系泛称。",
+   "sources": [
+    {
+     "title": "NCSL – Redistricting Commissions: Congressional Plans",
+     "url": "https://www.ncsl.org/redistricting-and-census/redistricting-commissions-congressional-plans",
+     "kind": "official"
+    },
+    {
+     "title": "Supreme Court – Rucho v. Common Cause, 588 U.S. ___ (2019) slip opinion",
+     "url": "https://Www.Supremecourt.gov/opinions/18pdf/588us2r71_h3ci.pdf",
+     "kind": "court"
+    },
+    {
+     "title": "LII Cornell – Rucho v. Common Cause",
+     "url": "https://law.cornell.edu/supremecourt/text/18-422",
+     "kind": "court"
+    },
+    {
+     "title": "Loyola Law School All About Redistricting – Harkenrider v. Hochul",
+     "url": "https://redistricting.lls.edu/case/harkenrider-v-hochul/",
+     "kind": "academic"
+    },
+    {
+     "title": "New York Official Reports – Matter of Harkenrider v Hochul (2022 NY Slip Op 02833)",
+     "url": "https://www.nycourts.gov/REPORTER/3dseries/2022/2022_02833.htm",
+     "kind": "court"
+    }
+   ],
+   "detail": "美国众议院选区每十年普查后由各州自行划定，三种模式并存。多数州（NCSL 列表外约 33 州）由州议会立法划线；10 州由委员会负主责，其中亚利桑那（2000 年公投）、加利福尼亚（2008/2010 年公投，成员部分抽签产生）、科罗拉多与密歇根（均 2018 年 11 月 6 日修宪）排除现任议员；新泽西、夏威夷、华盛顿等州委员会成员由议会领袖指定；另有咨询型与备用型委员会，爱荷华由无党派议会幕僚起草。第三种模式是法院画图：当议会僵局或地图被判违宪，法院委任特别主事官重绘，2022 年纽约即为一例。联邦最高法院 1964 年 Wesberry v. Sanders 确立国会选区人口须尽可能相等，2019 年 Rucho v. Common Cause 以 5 比 4 判定党派划区诉求「属联邦法院无法裁决的政治问题」，此后相关诉讼转向州法院与州宪。"
+  },
+  {
+   "id": "gbr",
+   "name_zh": "英国",
+   "name_en": "United Kingdom",
+   "iso3": "GBR",
+   "lat": 51.507,
+   "lon": -0.128,
+   "who_draws": "independent-commission",
+   "who_text": "英、苏、威、北爱四个法定边界委员会；1986 年议会选区法",
+   "system": "smd",
+   "system_text": "650 个单席位选区，简单多数制",
+   "pathology": "malapportionment",
+   "pathology_text": "2020 年法定 ±5% 容差前，选区选民数差距可达数倍；此后被压入 69,724–77,062 区间",
+   "cadence": "每 8 年一次；以登记选民册为基准",
+   "event": {
+    "year": 2023,
+    "text": "第七次评议：英格兰委员会 2023 年 6 月 27 日提交最终建议，英格兰 533→543 席，全国维持 650 席，选民数须在 69,724–77,062 之间"
+   },
+   "text": "英国下院选区由四个法定独立边界委员会分别划定，议长名义主持、法官任副主席。2020 年《议会选区法》把评议周期定为 8 年，并要求除怀特岛等法定例外外每个选区选民数落在全英配额 ±5% 内（2023 评议为 69,724–77,062）。委员会经两轮公众咨询和听证后提交最终报告，政府须在四个月内以枢密院令实施，议会不再对最终建议表决。2023 评议后新选区用于 2024 年大选。",
+   "numbers": [
+    {
+     "label": "选区选民数法定区间",
+     "value": "69,724–77,062",
+     "unit": "选民",
+     "year": 2023
+    },
+    {
+     "label": "英格兰席位",
+     "value": "533→543",
+     "unit": "席",
+     "year": 2023
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "配额中值 73,393 由 69,724/0.95 推算，未在官网原文看到；2024 大选首次使用一事来自通行说法，官方新闻稿只写「下次大选」。",
+   "sources": [
+    {
+     "title": "BCE – 2023 Review Volume One report",
+     "url": "https://boundarycommissionforengland.independent.gov.uk/2023-review/2023-review-volume-one-report",
+     "kind": "official"
+    },
+    {
+     "title": "BCE – Final recommendations press release 2023-06-28",
+     "url": "https://boundarycommissionforengland.independent.gov.uk/wp-content/uploads/2023/06/2023-06-28-BCE-final-recommendations-press-release.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Wikipedia – 2023 review of Westminster constituencies（线索）",
+     "url": "https://en.wikipedia.org/wiki/2023_review_of_Westminster_constituencies",
+     "kind": "wiki"
+    }
+   ],
+   "detail": "英国下院选区由四个法定独立边界委员会分别划定，委员会由议长名义主持、由法官任副主席。2020 年《议会选区法》把评议周期定为 8 年，并要求除怀特岛等法定例外外每个选区选民数落在全英选民配额 ±5% 内（2023 评议为 69,724–77,062）。委员会先发布初步建议，经两轮公众咨询和公开听证后提交最终报告，政府须在四个月内以枢密院令实施，议会不再对最终建议表决。2023 评议后，新选区于 2024 年 7 月大选首次使用。"
+  },
+  {
+   "id": "can",
+   "name_zh": "加拿大",
+   "name_en": "Canada",
+   "iso3": "CAN",
+   "lat": 45.421,
+   "lon": -75.697,
+   "who_draws": "independent-commission",
+   "who_text": "每省三人委员会（主席由省首席大法官任命）；EBRA（选区重划法）",
+   "system": "smd",
+   "system_text": "单席位选区，简单多数制",
+   "pathology": "malapportionment",
+   "pathology_text": "法定允许偏离省配额 ±25%，并有「参议院底线」「祖父条款」保小省席位，使小省每席人口明显少于安大略等大省",
+   "cadence": "每次十年普查后；以普查人口为基准",
+   "event": {
+    "year": 2022,
+    "text": "2022 年重划：各省委员会公布草案、听证、2023 年初交报告；议员可联署异议但委员会自行处置；代表令 2023 年 9 月发布，338→343 席"
+   },
+   "text": "加拿大众议院选区每次十年普查后重划。各省设三人委员会，主席由该省首席大法官任命，另两人由下院议长任命。委员会发布草案、公开听证、提交报告；议员可联署异议，经下院委员会转回，但由边界委员会「审议并处置」，议会无否决权。法律允许选区人口偏离省配额最多 25%。省间席位由《1867 年宪法法》公式决定，2022 年修法保证魁北克不少于 78 席；新代表令最早于 2024 年 4 月生效。",
+   "numbers": [
+    {
+     "label": "众议院席位",
+     "value": "338→343",
+     "unit": "席",
+     "year": 2023
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "338→343 与 ±25% 规则来自维基与 EBRA 条文通行说法，官方总览页未直接列出，建议引 EBRA s.15 原文复核。",
+   "sources": [
+    {
+     "title": "Federal electoral districts redistribution 2022 – Overview (官方)",
+     "url": "https://www.redecoupage-redistribution-2022.ca/red/over/index_e.aspx",
+     "kind": "official"
+    },
+    {
+     "title": "Quebec commission final report – foreword (官方)",
+     "url": "https://redecoupage-redistribution-2022.ca/com/qc/rprt/repfin/fwd_e.aspx",
+     "kind": "official"
+    },
+    {
+     "title": "Wikipedia – 2022 Canadian federal electoral redistribution（线索）",
+     "url": "https://en.wikipedia.org/wiki/2022_Canadian_federal_electoral_redistribution",
+     "kind": "wiki"
+    }
+   ],
+   "detail": "加拿大众议院选区每次十年普查后重划。各省由总督会同枢密院设立三人委员会，主席由该省首席大法官任命，另两名成员由下院议长任命。委员会发布草案、举行公开听证、提交报告；议员可联署异议，经下院委员会转回，但由边界委员会「审议并处置」，议会无否决权。法律允许选区人口偏离省配额最多 25%，特殊情况可超出。席位在省间的分配由《1867 年宪法法》公式决定，2022 年 6 月修法保证魁北克不少于 78 席。2022 年重划后新代表令最早于 2024 年 4 月生效，适用于其后首次解散议会后的大选。"
+  },
+  {
+   "id": "aus",
+   "name_zh": "澳大利亚",
+   "name_en": "Australia",
+   "iso3": "AUS",
+   "lat": -35.282,
+   "lon": 149.129,
+   "who_draws": "independent-commission",
+   "who_text": "AEC 两级机构：重划委员会与扩大选举委员会；1918 年联邦选举法",
+   "system": "smd",
+   "system_text": "众议院单席位选区，偏好投票（排序复选）",
+   "pathology": "neither",
+   "pathology_text": "联邦层面差距压在 ±10%（现时）与 ±3.5%（投影时点）内；历史上州级曾有明显城乡权重",
+   "cadence": "席位配额变动、满 7 年或选民失衡时触发；以登记选民为基准",
+   "event": {
+    "year": 1984,
+    "text": "《联邦选举法》修订设立独立重划程序，规定 Redistribution Committee 划图、议会无权否决最终决定；此后重划由 AEC 周期性进行"
+   },
+   "text": "澳大利亚众议院选区由选举委员会体系内两级机构划定：Redistribution Committee（选举专员、州选举官、测量总监、审计总长）提出建议，augmented Electoral Commission 处理异议并作最终决定。每区登记选民数偏离配额不超过 10%，投影时点尽可能不偏离 3.5%。州席位配额变化、满 7 年或选区失衡时必须启动重划。联邦议会无权否决或修改最终决定，各州席位按《联邦选举法》第 48 条以人口计算。",
+   "numbers": [
+    {
+     "label": "现时容差",
+     "value": "±10",
+     "unit": "%",
+     "year": 2025
+    },
+    {
+     "label": "投影时点容差",
+     "value": "±3.5",
+     "unit": "%",
+     "year": 2025
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "1984 年改革年份与昆士兰州级历史为通行说法（ACE 专题有记载），未逐条核；事件年份若页面只讲当代可改用 2023–2025 年新州/维州/西澳重划。",
+   "sources": [
+    {
+     "title": "AEC – What is a redistribution",
+     "url": "https://aec.gov.au/redistributions/about/what-is-a-redistribution.html",
+     "kind": "official"
+    },
+    {
+     "title": "AEC – Who makes the proposed redistribution (2017 QLD)",
+     "url": "https://www.aec.gov.au/electorates/Redistributions/2017/qld/committee.htm",
+     "kind": "official"
+    },
+    {
+     "title": "ACE Project – Boundary delimitation: Australia",
+     "url": "https://aceproject.org/main/english/bd/bdy_au.htm",
+     "kind": "academic"
+    }
+   ],
+   "detail": "澳大利亚联邦众议院选区由选举委员会体系内的两级机构划定：Redistribution Committee（选举专员、该州选举官、测量总监、审计总长）提出建议，augmented Electoral Commission 处理异议并作最终决定。法律规定每个选区登记选民数可偏离配额不超过 10%，并要求在投影时点尽可能不偏离平均投影选民数 3.5%。重划在三种情形下必须启动：州或领地席位配额变化、距上次重划满 7 年、选区选民数失衡。联邦议会无权否决或修改最终决定。各州席位配额按《联邦选举法》第 48 条以人口计算。"
+  },
+  {
+   "id": "nzl",
+   "name_zh": "新西兰",
+   "name_en": "New Zealand",
+   "iso3": "NZL",
+   "lat": -41.286,
+   "lon": 174.776,
+   "who_draws": "independent-commission",
+   "who_text": "Representation Commission（法官主持，含测量总监、统计官、选举官、两党代表）",
+   "system": "mmp",
+   "system_text": "混合比例制：72 席选区（含 7 毛利选区）+ 名单席",
+   "pathology": "neither",
+   "pathology_text": "法定 ±5% 容差；南岛固定 16 个普通选区作为配额锚点，北岛与毛利选区数由此推算",
+   "cadence": "每次五年普查后；以普通与毛利选举人口为基准",
+   "event": {
+    "year": 2025,
+    "text": "2025 年评议以 2023 年普查为基准定北岛普通 48、南岛 16、毛利 7 共 71 个选区；报告 2025 年 8 月 8 日提交总督即生效"
+   },
+   "text": "新西兰选区由 Representation Commission 划定，主席为法官，成员含测量总监、政府统计官、首席选举官、地方政府委员会主席及政府与反对党各一名提名人；划毛利选区时加入毛利成员。法律将南岛普通选区固定为 16 个，以南岛普通选举人口除以 16 得配额，再推算北岛与毛利选区数；每区人口须在配额 ±5% 内。2025 年评议定 71 个选区，报告 2025 年 8 月 8 日生效，独立于议会。",
+   "numbers": [
+    {
+     "label": "北岛普通选区配额",
+     "value": 69875,
+     "unit": "人",
+     "year": 2025
+    },
+    {
+     "label": "毛利选区配额",
+     "value": 74367,
+     "unit": "人",
+     "year": 2025
+    },
+    {
+     "label": "选区总数",
+     "value": 71,
+     "unit": "个",
+     "year": 2025
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "system_text 写 72 席为旧数，2025 评议后为 71，已在 numbers 以 71 为准。",
+   "sources": [
+    {
+     "title": "Report of the Representation Commission 2025 (elections.nz)",
+     "url": "https://elections.nz/assets/pagecomponent-file-files/REPORT-OF-THE-REPRESENTATION-COMMISSION-2025-WEB.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Electoral Commission NZ – Boundary Review 2025",
+     "url": "https://www.elections.nz/boundary-review",
+     "kind": "official"
+    },
+    {
+     "title": "RNZ – Representation Commission to review electorate boundaries (2024-12-12)",
+     "url": "https://www.rnz.co.nz/news/top/536471/representation-commission-to-review-electorate-boundaries",
+     "kind": "press"
+    }
+   ],
+   "detail": "新西兰选区由 Representation Commission 划定，主席为法官，成员包括测量总监、政府统计官、首席选举官、地方政府委员会主席，以及政府与反对党各提名一人；划毛利选区时再加入毛利成员。法律将南岛普通选区固定为 16 个，以南岛普通选举人口除以 16 得配额，再据此推算北岛普通选区与毛利选区数量；每个选区人口须落在配额 ±5% 内。2025 年评议以 2023 年普查为基准，北岛普通选区 48、毛利选区 7，共 71 个选区，报告 2025 年 8 月 8 日生效，独立于议会。"
+  },
+  {
+   "id": "irl",
+   "name_zh": "爱尔兰",
+   "name_en": "Ireland",
+   "iso3": "IRL",
+   "lat": 53.35,
+   "lon": -6.26,
+   "who_draws": "independent-commission",
+   "who_text": "An Coimisiún Toghcháin（2023 年设立）；2022 年选举改革法",
+   "system": "stv",
+   "system_text": "单记可让渡投票，3–5 席多席位选区",
+   "pathology": "neither",
+   "pathology_text": "宪法要求每 2 万–3 万人口一名议员且各选区比例「尽可能相等」；委员会按普查调整席位，偏差通常在个位数百分比",
+   "cadence": "每次普查后 3 个月内报告；以普查人口为基准",
+   "event": {
+    "year": 2023,
+    "text": "选举委员会首份选区评议报告建议下院由 160 席 39 选区增至 174 席 43 选区，每选区 3、4 或 5 席；随后由议会立法采纳"
+   },
+   "text": "爱尔兰下院采用单记可让渡投票，每个选区选出 3 至 5 名议员。宪法第 16.2 条规定每名议员代表 2 万至 3 万人口，各选区比例须尽可能相等。2022 年《选举改革法》设立独立的选举委员会接替以往的临时委员会，法律要求下院总数在 171 至 181 之间、选区为 3/4/5 席、尽量不跨县界。2023 年首份报告按 2022 年普查建议 174 席 43 选区，增加 14 席。多席位 STV 使边界对席位结果的影响远小于单席位制。",
+   "numbers": [
+    {
+     "label": "下院席位",
+     "value": "160→174",
+     "unit": "席",
+     "year": 2023
+    },
+    {
+     "label": "选区数",
+     "value": "39→43",
+     "unit": "个",
+     "year": 2023
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "报告日期（2023 年 8 月 30 日）与普查人口（5,149,139）来自搜索结果新闻标题，官网页未直接列出。",
+   "sources": [
+    {
+     "title": "Electoral Commission (Ireland) – Constituency Reviews",
+     "url": "https://electoralcommission.ie/constituency-reviews",
+     "kind": "official"
+    },
+    {
+     "title": "RTÉ – Electoral Commission report 2023-08-30",
+     "url": "https://www.rte.ie/news/politics/2023/0830/1402354-electoral-commission",
+     "kind": "press"
+    },
+    {
+     "title": "Irish Times – Boundary review will lead to larger Dáil with 14 more TDs",
+     "url": "https://www.irishtimes.com/politics/2023/08/31/boundary-review-will-lead-to-larger-dail-with-14-more-tds",
+     "kind": "press"
+    }
+   ],
+   "detail": "爱尔兰下院采用单记可让渡投票（STV），每个选区选出 3 至 5 名议员。宪法第 16.2 条规定每名议员代表的人口不少于 2 万、不多于 3 万，各选区的人口/席位比须尽可能相等。2022 年《选举改革法》设立独立的选举委员会（An Coimisiún Toghcháin）接替以往的临时委员会；法律要求下院总数在 171 至 181 之间、选区为 3/4/5 席、尽量不跨县界。2023 年首份报告按 2022 年普查建议 174 席 43 选区，较此前增加 14 席 4 选区。多席位 STV 使单一选区边界对席位结果的影响远小于单席位制。"
+  },
+  {
+   "id": "fra",
+   "name_zh": "法国",
+   "name_en": "France",
+   "iso3": "FRA",
+   "lat": 48.857,
+   "lon": 2.352,
+   "who_draws": "mixed",
+   "who_text": "政府以法令划线，经宪法第 25 条独立委员会意见、议会批准法与宪法委员会审查",
+   "system": "smd",
+   "system_text": "577 个单席位选区，两轮多数制",
+   "pathology": "malapportionment",
+   "pathology_text": "1986 至 2010 年 24 年未重划，省内选区人口偏离可超 20% 法定上限；2010 年重划后各省内偏差压回 ±20%",
+   "cadence": "无固定周期，实际 1986、2010 两次；INSEE 人口",
+   "event": {
+    "year": 2010,
+    "text": "2009 年 7 月 29 日第 2009-935 号法令重划 577 选区（含首次设 11 个海外法国人选区），经 2010 年批准法与宪法委员会审查后用于 2012 年大选"
+   },
+   "text": "法国国民议会 577 个单席位选区由政府主导划分：1986 年法律确立选区图，此后 24 年未动。2008 年修宪设独立委员会对划分文本发表公开意见；宪法委员会 2009 年 1 月判决明确同一省内选区人口偏离省均值不得超过 20%。2009 年 7 月 29 日第 2009-935 号法令以 2006 年人口为基准重划，撤并与新设各 33 个选区，首设 11 个海外法国人选区；批准法 2010 年通过，新图用于 2012 年大选。",
+   "numbers": [
+    {
+     "label": "省内人口偏离上限",
+     "value": 20,
+     "unit": "%",
+     "year": 2009
+    },
+    {
+     "label": "选区数",
+     "value": 577,
+     "unit": "个",
+     "year": 2009
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：批准法编号（通说 loi n° 2010-165 du 23 février 2010）与宪法委员会 2010-602 DC 判决日期（通说 2010 年 2 月 18 日）未在打开的页面核到；33 撤 33 设来自 maire-info 标题与通说。",
+   "sources": [
+    {
+     "title": "Assemblée nationale – Rapport n° 2207 sur le projet de loi ratifiant l'ordonnance n° 2009-935",
+     "url": "https://www.assemblee-nationale.fr/13/pdf/rapports/r2207.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Ordonnance portant répartition des sièges et délimitation des circonscriptions (texte)",
+     "url": "https://www.banquedesterritoires.fr/sites/default/files/ra/Ordonnance%20portant%20r%C3%A9partition%20des%20si%C3%A8ges%20et%20d%C3%A9limitation%20des%20circonscriptions%20pour%20l%27%C3%A9lection%20des%20d%C3%A9put%C3%A9s%20.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Maire-info – 33 circonscriptions supprimées selon un projet de redécoupage (2009-04-14)",
+     "url": "https://www.maire-info.com/33-circonscriptions-supprimees-selon-un-projet-de-redecoupage-electoral-article2-11169",
+     "kind": "press"
+    }
+   ],
+   "detail": "法国国民议会 577 个单席位选区的划分由政府主导：1986 年 11 月 24 日法律确立现行选区图，此后 24 年未动。2008 年修宪在第 25 条设立独立委员会，对选区划分文本发表公开意见；2009 年 1 月 13 日授权法授权政府以法令重划，宪法委员会 2009 年 1 月 8 日第 2008-573 DC 号判决明确同一省内选区人口偏离省均值不得超过 20%。2009 年 7 月 29 日第 2009-935 号法令发布，以 2006 年 1 月 1 日人口为基准，撤并与新设各 33 个选区，并首次设立 11 个海外法国人选区；批准法案在参议院一度被否后于 2010 年通过，新图用于 2012 年大选。"
+  },
+  {
+   "id": "deu",
+   "name_zh": "德国",
+   "name_en": "Germany",
+   "iso3": "DEU",
+   "lat": 52.52,
+   "lon": 13.405,
+   "who_draws": "independent-commission",
+   "who_text": "联邦总统任命的 Wahlkreiskommission 提建议，联邦议院立法定案；BWahlG §3",
+   "system": "mmp",
+   "system_text": "299 个单席位选区 + 政党名单，席位按第二票比例分配",
+   "pathology": "neither",
+   "pathology_text": "选区人口偏离平均值应不超过 15%、不得超过 25%；因席位由第二票比例决定，选区线对总席位分布影响很小",
+   "cadence": "每届任期内委员会报告一次；以德国籍人口为基准",
+   "event": {
+    "year": 2023,
+    "text": "2023 年 3 月 17 日联邦议院通过改革：总数固定 630 席，取消超额与平衡席，选区胜者须有第二票覆盖；联邦宪法法院 2024 年 7 月 30 日判决基本维持"
+   },
+   "text": "德国联邦议院采用混合比例制：第一票选 299 个单席位选区候选人，第二票决定各党全国席位比例。《联邦选举法》第 3 条规定选区须连片、每区人口偏离全国平均应不超过 15%、不得超过 25%；由联邦总统任命的选区委员会提建议，议会立法确定。因为最终席位由第二票比例决定，选区边界几乎不改变各党总席位，是比例制削弱划区效应的典型。2023 年改革把总数固定在 630 席并取消超额与平衡席，联邦宪法法院 2024 年判决基本维持。",
+   "numbers": [
+    {
+     "label": "选区数",
+     "value": 299,
+     "unit": "个",
+     "year": 2023
+    },
+    {
+     "label": "法定席位",
+     "value": 630,
+     "unit": "席",
+     "year": 2023
+    },
+    {
+     "label": "选区人口偏离",
+     "value": "应≤15%，不得>25%",
+     "unit": "",
+     "year": 2023
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "BVerfG 2024-07-30 判决具体要件来自 beck-aktuell 搜索结果标题与通说，正文未打开；Wahlkreiskommission 成员构成（联邦统计局局长、联邦行政法院法官等）为 BWahlG §3(2) 原文通说，未逐字核。",
+   "sources": [
+    {
+     "title": "bpb – Wahlkreiseinteilung",
+     "url": "https://www.bpb.de/themen/politisches-system/wahlen-in-deutschland/558536/wahlkreiseinteilung/",
+     "kind": "official"
+    },
+    {
+     "title": "Bundestag – Glossar: Wahlrechtsreform 2023",
+     "url": "https://www.bundestag.de/services/glossar/wahlrechtsreform2023-974280",
+     "kind": "official"
+    },
+    {
+     "title": "Bundeswahlgesetz (gesetze-im-internet.de)",
+     "url": "https://www.gesetze-im-internet.de/bwahlg/BJNR003830956.html",
+     "kind": "law"
+    },
+    {
+     "title": "beck-aktuell – Wahlrechtsreform teilweise verfassungswidrig (BVerfG 2024)",
+     "url": "https://www.beck-aktuell.de/daily/meldung/detail/bverfg-urteil-wahlrecht-teilweise-verfassungswidrig",
+     "kind": "press"
+    }
+   ],
+   "detail": "德国联邦议院采用混合比例制：选民投两票，第一票选 299 个单席位选区的候选人，第二票决定各党在全国的席位比例。《联邦选举法》第 3 条规定选区须是连片区域、各州选区数与其人口份额相称、每个选区人口偏离全国平均应不超过 15%、不得超过 25%；由联邦总统任命的选区委员会提出调整建议，由议会立法确定。因为最终席位由第二票比例决定，选区边界的走向几乎不改变各党总席位，这是比例制削弱划区效应的典型例子。2023 年改革把总数固定在 630 席并取消超额与平衡席；联邦宪法法院 2024 年 7 月 30 日判决基本维持改革，但 5% 门槛的配套（基本席条款）暂按旧法继续适用。"
+  },
+  {
+   "id": "jpn",
+   "name_zh": "日本",
+   "name_en": "Japan",
+   "iso3": "JPN",
+   "lat": 35.676,
+   "lon": 139.65,
+   "who_draws": "independent-commission",
+   "who_text": "衆議院議員選挙区画定審議会（设于总务省）提出建议，由国会修改《公職選挙法》定案",
+   "system": "parallel",
+   "system_text": "并立制：289 小选区 + 176 比例代表（11 区块）",
+   "pathology": "malapportionment",
+   "pathology_text": "「一票之差」：2012 年最大 2.43 倍（「违宪状态」）；Adams 方式后 2021 年 2.079 倍，十增十减后约 2 倍以下",
+   "cadence": "每十年普查后按 Adams 方式重算；以国势调查人口为基准",
+   "event": {
+    "year": 2022,
+    "text": "2022 年改正公職選挙法施行「十增十减」：东京 +5、神奈川 +2、埼玉/千叶/爱知各 +1，宫城等 10 县各 -1，15 都县 140 选区改动，最大差距降至约 2 倍以下"
+   },
+   "text": "日本众议院 289 个小选区由总务省下设的选区划定审议会提出建议，由国会修法定案。核心病症是「一票之差」：最高裁大法庭 2011、2013、2015 年三次认定选举处于「违宪状态」但不撤销结果；2016 年修法引入按人口比例分配的 Adams 方式。2022 年依据 2020 年国势调查实施「十增十减」，东京增 5 席、10 县各减 1 席。最高裁 2023 年 1 月 25 日判 2021 年众院选（2.079 倍）合宪。",
+   "numbers": [
+    {
+     "label": "2021 年众院选最大差距",
+     "value": 2.079,
+     "unit": "倍",
+     "year": 2021
+    },
+    {
+     "label": "2023-01-25 大法庭判决",
+     "value": "合憲（14:1）",
+     "unit": "",
+     "year": 2023
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": true,
+   "note": "缺：「15 都县 140 选区改动」与改后「1.999 倍」只来自通说；2011/2013/2015 三次「违宪状态」判决为总务省图表与通说，判决日期未逐一核；2.43 倍（2012）来自总务省图表配对，需复核。2023-01-25 判决日期、2.079 倍、14:1 已由有斐閣 Online 核到。",
+   "sources": [
+    {
+     "title": "総務省 – 一票の較差に関する最高裁判決の経緯（資料）",
+     "url": "https://www.soumu.go.jp/main_content/000603112.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "弁護士ドットコム – 一票の格差 解説",
+     "url": "https://www.bengo4.com/c_18/n_17512/",
+     "kind": "press"
+    },
+    {
+     "title": "琉球新報 社説 2022-02-04 – 10増10減",
+     "url": "https://ryukyushimpo.jp/editorial/entry-1465663.html",
+     "kind": "press"
+    },
+    {
+     "title": "衆議院 – 公職選挙法改正案要綱（2022）",
+     "url": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/honbun/youkou/g18105001.htm",
+     "kind": "official"
+    },
+    {
+     "title": "有斐閣 Online – 中川淳司「衆議院選挙区割りの比較法」(2024-02-13)",
+     "url": "https://yuhikaku.com/articles/-/18982",
+     "kind": "academic"
+    },
+    {
+     "title": "裁判所 – 最高裁判例 PDF（検索時メンテナンス中、待开）",
+     "url": "https://www.courts.go.jp/app/files/hanrei_jp/653/091653_hanrei.pdf",
+     "kind": "court"
+    }
+   ],
+   "detail": "日本众议院 289 个小选区由总务省下设的选区划定审议会提出建议，再由国会修改《公职选举法》定案。日本的核心病症是「一票之差」：最高裁大法庭多次就众院小选区人口比作出判断，2011、2013、2015 年三次判决认定选举处于「违宪状态」但不撤销结果；2016 年修法引入按人口比例分配的 Adams 方式，先以「0 增 6 减」过渡。2022 年依据 2020 年国势调查实施「十增十减」（令和 4 年法律第 89 号），东京增 5 席、10 个县各减 1 席，使最大差距压到约 2 倍以下。最高裁 2023 年 1 月 25 日大法庭以 14 比 1 判定 2021 年众院选（最大 2.079 倍）合宪。"
+  },
+  {
+   "id": "kor",
+   "name_zh": "韩国",
+   "name_en": "South Korea",
+   "iso3": "KOR",
+   "lat": 37.566,
+   "lon": 126.978,
+   "who_draws": "mixed",
+   "who_text": "中央选举管理委员会下设国会议员选区划定委员会提案，国会以《公职选举法》修正定案",
+   "system": "parallel",
+   "system_text": "并立制：254 地区区 + 46 比例代表（2024）",
+   "pathology": "malapportionment",
+   "pathology_text": "宪裁 1995 年定人口比上限 4:1、2001 年 3:1、2014 年改 2:1；2024 年区间 136,000–273,200",
+   "cadence": "每次大选前依法划定，实际常拖至选前数周；以住民登录人口为基准",
+   "event": {
+    "year": 2024,
+    "text": "2024 年 2 月 29 日国会在大选前 41 天通过第 22 届选区案：地区区 253→254、比例 47→46；划定委员会原案全北减 1 区被两党协商改回"
+   },
+   "text": "韩国国会地区区由中央选举管理委员会下设的选区划定委员会提出方案，再由国会修法定案，划线权最终在立法机关。硬约束来自宪法裁判所：1995 年判人口比上限 4:1，2001 年收紧为 3:1，2014 年判超过 2:1 违宪。2016 年首次按 2:1 划定。2024 年国会 2 月 29 日、距投票 41 天才通过方案，地区区 254、比例 46；划定委员会原案把全北由 4 区减为 3 区，被两党协商改回，并减 1 个比例席补地区席。",
+   "numbers": [
+    {
+     "label": "人口比上限",
+     "value": "2:1",
+     "unit": "",
+     "year": 2014
+    },
+    {
+     "label": "2024 选区人口区间",
+     "value": "136,000–273,200",
+     "unit": "人",
+     "year": 2024
+    },
+    {
+     "label": "2024 地区区/比例",
+     "value": "254 / 46",
+     "unit": "席",
+     "year": 2024
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：1995/2001 宪裁判决年份、2014-10-30 判决为通说未核；划定委员会 2024 年原案提交日期（通说 2023-12-05）未核。",
+   "sources": [
+    {
+     "title": "뉴시스 – '비례 1석 축소' 선거구 획정안, 국회 본회의 통과 (2024-02-29)",
+     "url": "https://www.newsis.com/view/NISX20240229_0002644995",
+     "kind": "press"
+    },
+    {
+     "title": "데일리안 – 박영수 획정위원장 \"불가피한 농어촌 축소 안타까워\" (2016-02-28)",
+     "url": "https://www.dailian.co.kr/news/view/559052/",
+     "kind": "press"
+    },
+    {
+     "title": "아이뉴스24 – 20대 총선 선거구 획정 합의 (2016-02-23)",
+     "url": "https://www.inews24.com/view/944076",
+     "kind": "press"
+    },
+    {
+     "title": "韩国地方行政研究院 KRILA – 선거구 획정 focus",
+     "url": "https://krila.re.kr/download/focus/142",
+     "kind": "academic"
+    },
+    {
+     "title": "서울신문 – 총선 41일 앞두고 선거구 획정안 합의 (2024-02-29)",
+     "url": "https://www.seoul.co.kr/news/politics/2024/02/29/20240229500186",
+     "kind": "press"
+    }
+   ],
+   "detail": "韩国国会地区区由中央选举管理委员会下设的国会议员选区划定委员会提出方案，再由国会通过《公职选举法》修正案定案，划线权最终仍在立法机关。划线的硬约束来自宪法裁判所：1995 年判定人口比上限 4:1，2001 年收紧为 3:1，2014 年 10 月 30 日再判定超过 2:1 违宪并限期修法。2016 年第 20 届大选首次按 2:1 划定，地区区增至 253 席，委员会主席称为满足宪法标准「农渔村选区的缩减不可避免」。2024 年第 22 届大选再现「迟到的划区」：国会 2 月 29 日、距投票 41 天才通过方案，地区区 254、比例 46，选区人口区间 136,000–273,200；划定委员会原案把全北由 4 区减为 3 区，被两党协商以调整群山两个面的归属改回 4 区，并把比例席减 1 以补地区席。"
+  },
+  {
+   "id": "sgp",
+   "name_zh": "新加坡",
+   "name_en": "Singapore",
+   "iso3": "SGP",
+   "lat": 1.29,
+   "lon": 103.852,
+   "who_draws": "executive",
+   "who_text": "总理召集的选区范围检讨委员会（EBRC，由总理公署官员组成）报告，政府接受后以白皮书送国会",
+   "system": "bloc",
+   "system_text": "集选区（GRC，4–5 席整组当选）+ 单选区（SMC）",
+   "pathology": "gerrymander",
+   "pathology_text": "委员会不公开划线理由，报告常在大选前数周发布；2025 年 33 个选区中多数边界有改动（反对党公开质疑），每席选民数要求与上届大致持平",
+   "cadence": "无固定周期，每届大选前由总理召集；以选民册为基准",
+   "event": {
+    "year": 2025,
+    "text": "EBRC 2025 年 3 月 7 日提交报告、3 月 11 日作为白皮书送国会：18 个集选区 + 15 个单选区共 97 席，选民 2,753,226 人"
+   },
+   "text": "新加坡国会选区由总理召集的选区范围检讨委员会（EBRC）划定，成员为公务员，2025 年主席为 Tan Kee Yong。职权范围要求以选民数为基准建议集选区与单选区的数量与边界，并把集选区平均规模、单选区议员占比、每席平均选民数维持在上届水平。集选区整组当选。2025 年报告建议 18 个集选区与 15 个单选区共 97 席，理由是选民增加 101,791 人且「增长在各选区分布不均」；政府全盘接受。委员会不设公开咨询。",
+   "numbers": [
+    {
+     "label": "议席",
+     "value": 97,
+     "unit": "席",
+     "year": 2025
+    },
+    {
+     "label": "选民",
+     "value": 2753226,
+     "unit": "人",
+     "year": 2025
+    }
+   ],
+   "dispute": "关于边界改动是否带政治考量，政府方面称改动「恰当、反映人口增长」（Janil Puthucheary），反对党（工人党、前进党）称改动「显著」「剧烈」；本条只记两说。",
+   "confidence": "高",
+   "verify": false,
+   "note": "30% 偏差规则（通说 EBRC 职权范围以往含每席选民数 ±30%）在 2025 白皮书未出现，未写入字段。",
+   "sources": [
+    {
+     "title": "ELD – White Paper on the Report of the EBRC 2025",
+     "url": "https://www.eld.gov.sg/pdf/White_Paper_on_the_Report_of_the_Electoral_Boundaries_Review_Committee_2025.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "NTU SSS – Increase in number of voters (2025-03-12)",
+     "url": "https://ntu.edu.sg/sss/news-events/news/detail/increase-in-number-of-voters",
+     "kind": "academic"
+    },
+    {
+     "title": "Wikipedia – Electoral boundary changes of the 2025 Singaporean general election（线索）",
+     "url": "https://en.wikipedia.org/wiki/Electoral_boundary_changes_of_the_2025_Singaporean_general_election",
+     "kind": "wiki"
+    }
+   ],
+   "detail": "新加坡国会选区由总理召集的选区范围检讨委员会（EBRC）划定，委员会由公务员组成，2025 年主席为 Tan Kee Yong。总理在职权范围内要求委员会以选民数为基准建议集选区与单选区的数量与边界，并把集选区平均规模、单选区议员占比、每席平均选民数维持在上届水平。集选区制度下选民按组投票，一个集选区整组当选。2025 年报告建议 18 个集选区与 15 个单选区共 97 席，理由是自 2020 年起选民增加 101,791 人且「增长在各选区分布不均」；政府全盘接受并于下届大选实施。委员会不设公开咨询，报告与大选间隔通常很短。"
+  },
+  {
+   "id": "mys",
+   "name_zh": "马来西亚",
+   "name_en": "Malaysia",
+   "iso3": "MYS",
+   "lat": 3.139,
+   "lon": 101.687,
+   "who_draws": "mixed",
+   "who_text": "选举委员会（SPR/EC）依联邦宪法第 113 条与第十三附表检讨，下议院简单多数通过",
+   "system": "smd",
+   "system_text": "222 个单席位选区，简单多数制",
+   "pathology": "both",
+   "pathology_text": "1957 年宪法定偏差上限 15%，1962、1973 年删除；2018 年沙白安南 37,126 对白沙罗 150,439 选民",
+   "cadence": "两次检讨间隔不少于 8 年；以选民册为基准",
+   "event": {
+    "year": 2018,
+    "text": "2018 年 3 月 28 日下议院一日内以简单多数通过选举委员会重划报告，距第 14 届大选约六周；222 席总数不变，白沙罗选民数增 76.16%"
+   },
+   "text": "马来西亚下议院选区由选举委员会依《联邦宪法》第 113 条检讨，报告由下议院简单多数通过。1957 年宪法规定偏差不超过 15%；1962 年修宪改为乡村选区选民可「少至城市选区的一半」，1973 年再删除此限，只留「大致相等」并对乡村「给予面积权重」的原则表述。2018 年检讨于 3 月 28 日一天内获下议院通过，222 席不变。研究者指出该次重划同时存在选民数悬殊（约 1:4）与族群构成变动。",
+   "numbers": [
+    {
+     "label": "联邦选区",
+     "value": 222,
+     "unit": "个",
+     "year": 2018
+    },
+    {
+     "label": "白沙罗 vs 沙白安南选民数",
+     "value": "150,439 vs 37,126",
+     "unit": "人",
+     "year": 2018
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": false,
+   "note": "Kapar 数字转引自 ISEAS Perspective 2018/65；下次检讨最早 2026 年 3 月为马来西亚律师公会文章推算。",
+   "sources": [
+    {
+     "title": "ISEAS Perspective 2018/65 (2018-05-17)",
+     "url": "https://www.iseas.edu.sg/?p=6095",
+     "kind": "academic"
+    },
+    {
+     "title": "Malaysian Bar CPD – Redelineation and the Federal Constitution",
+     "url": "https://cpd.malaysianbar.org.my/?p=2685",
+     "kind": "academic"
+    },
+    {
+     "title": "Cambridge – Winning Elections by Rigging Borders? (in The Defeat of Barisan Nasional)",
+     "url": "https://cambridge.org/core/books/defeat-of-barisan-nasional/winning-elections-by-rigging-borders-barisan-nasionals-brazen-and-failed-attempt/2D1B0152B52A5A396079B5A1D1562759",
+     "kind": "academic"
+    },
+    {
+     "title": "The Star, Redelineation: a look at which seats will grow, which ones will shrink (2018-03-28)，引选举委员会 2016 年选民册",
+     "url": "https://thestar.com.my/news/nation/2018/03/28/redelineation-a-look-at-which-seats-will-grow-which-ones-will-shrink",
+     "kind": "press"
+    }
+   ],
+   "detail": "马来西亚国会下议院选区由选举委员会依《联邦宪法》第 113 条检讨，报告由下议院以简单多数通过。1957 年宪法第 116(4) 条规定选区选民数偏差不得超过 15%；1962 年修宪将规则移入第十三附表并改为乡村选区选民可「少至城市选区的一半」，1973 年修宪再删除此限，只留下「大致相等」并对乡村「给予面积权重」的原则性表述。2018 年检讨在 2016 年 9 月与 2018 年 1 月两次公示后，于 2018 年 3 月 28 日一天内获下议院通过，222 席总数不变。研究者指出该次重划同时存在选民数悬殊（沙白安南对白沙罗约 1:4）与族群构成变动（如 Kapar 马来选民占比由 55% 升至 71%）。"
+  },
+  {
+   "id": "ind",
+   "name_zh": "印度",
+   "name_en": "India",
+   "iso3": "IND",
+   "lat": 28.614,
+   "lon": 77.209,
+   "who_draws": "independent-commission",
+   "who_text": "议会依宪法第 82 条立法设划界委员会（退休最高法院法官主持），决定具法律效力",
+   "system": "smd",
+   "system_text": "人民院 543 个单席位选区，简单多数制",
+   "pathology": "malapportionment",
+   "pathology_text": "各邦席位自 1976 年起冻结在 1971 年普查基础上，2001 年再延至 2026 年后首次普查；邦间每席人口差距随人口增长差异扩大",
+   "cadence": "宪法要求每次普查后调整，1976、2001 年两度冻结",
+   "event": {
+    "year": 2001,
+    "text": "第 84 修正案把邦间席位冻结延至「2026 年后首次普查」公布，同时允许按新普查重划邦内边界；2002 年《划界法》设第四次划界委员会"
+   },
+   "text": "印度宪法第 82 条规定每次普查后议会立法调整人民院席位与选区，由划界委员会执行，1952 年以来设过四次委员会。1976 年第 42 修正案把邦间席位冻结在 1971 年普查基础上；2001 年第 84 修正案再延至 2026 年后首次普查公布，但允许按 2001 年普查重划邦内边界，形成现行 543 个选区。2023 年《女性保留席法》规定保留席在下次普查后的划界完成后生效。核心病症是邦间冻结。",
+   "numbers": [
+    {
+     "label": "人民院选区",
+     "value": 543,
+     "unit": "个",
+     "year": 2008
+    },
+    {
+     "label": "历次划界委员会",
+     "value": "1952/1963/1973/2002",
+     "unit": "",
+     "year": 2002
+    }
+   ],
+   "dispute": "关于 2026 年后是否按新普查重新分配邦间席位，南部各邦与北部各邦立场不同（南部邦人口约占 18%），属政策争议，本条不评价。",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：第 87 修正案（2003）改用 2001 年普查一事与 2002 委员会主席（通说 Kuldip Singh 法官）未在打开页面核到；搜索结果有「2026 年第 131 修正案延长冻结被否决」的备考网站页面，无日期、无官方来源，未采信，需查 Lok Sabha/PIB。",
+   "sources": [
+    {
+     "title": "Drishti IAS – Delimitation Concerns in Women's Reservation Bill 2023",
+     "url": "https://www.drishtiias.com/daily-updates/daily-news-analysis/delimitation-concerns-in-women-reservation-bill-2023",
+     "kind": "secondary"
+    },
+    {
+     "title": "The Wire – Why Women's Reservation May Not Be Implemented Even in 2029 (2023-09-21)",
+     "url": "https://thewire.in/government/women-reservation-implementation-article-81-82-census-delimitation",
+     "kind": "press"
+    },
+    {
+     "title": "Election Commission of India – Delimitation（待开）",
+     "url": "https://eci.gov.in/",
+     "kind": "official"
+    }
+   ],
+   "detail": "印度宪法第 82 条规定每次普查后议会立法重新调整人民院席位分配与选区，具体由划界委员会执行，历史上依 1952、1962、1972、2002 年四部《划界法》设立四次委员会。1976 年第 42 修正案把邦间席位分配冻结在 1971 年普查基础上直至 2001 年普查；2001 年第 84 修正案再延至 2026 年后首次普查结果公布，但允许按 2001 年普查重划邦内边界，2002 年委员会据此在 2008 年完成现行 543 个选区。2023 年《女性保留席法》（第 106 修正案）规定三分之一保留席「在下一次普查后的划界完成后」才生效，使划界时间表与保留席挂钩。印度的核心病症是邦间冻结造成的人口差距，而非邦内划线。"
+  },
+  {
+   "id": "hun",
+   "name_zh": "匈牙利",
+   "name_en": "Hungary",
+   "iso3": "HUN",
+   "lat": 47.498,
+   "lon": 19.04,
+   "who_draws": "legislature",
+   "who_text": "国会以三分之二多数的基本法（cardinal law）直接规定选区边界（2011 年选举法）",
+   "system": "parallel",
+   "system_text": "并立制：106 单席位选区 + 93 全国名单",
+   "pathology": "malapportionment",
+   "pathology_text": "ODIHR 2022：106 个选区中 25 个偏差超 10%，最高 33%；18 个超 15%、7 个超法定 20% 上限，均在佩斯州",
+   "cadence": "超 20% 偏差时国会须修法，无独立定期检讨",
+   "event": {
+    "year": 2011,
+    "text": "2011 年新选举法把国会由 386 席减为 199 席，106 个单席位选区边界以基本法写入法律；2014 年首次使用，此后未再调整"
+   },
+   "text": "匈牙利 2011 年新选举法把国会由 386 席减为 199 席，106 席由单席位选区产生、93 席由全国名单产生，选区边界写入需三分之二多数修改的基本法，不设独立划界机构。法律允许偏离平均 15%、极端 20%，超过 20% 时国会必须修法。OSCE/ODIHR 2022 年报告写道：「选区划分自 2014 年以来没有变化」，「106 个选区中 25 个偏差超过 10%，最高达 33%」，并建议由独立机构重新划定现有边界。",
+   "numbers": [
+    {
+     "label": "偏差超 10% 的选区",
+     "value": "25/106",
+     "unit": "个",
+     "year": 2022
+    },
+    {
+     "label": "最大偏差",
+     "value": 33,
+     "unit": "%",
+     "year": 2022
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "386→199 与 Act CCIII 编号为通说，ODIHR 报告正文未点名法律编号；引文为 ODIHR 报告英文原句的中译。",
+   "sources": [
+    {
+     "title": "OSCE/ODIHR – Hungary Parliamentary Elections and Referendum 3 April 2022, Final Report (PDF)",
+     "url": "https://odihr.osce.org/sites/default/files/f/documents/2/6/523568.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "OSCE/ODIHR – Hungary 2022 final report landing page",
+     "url": "https://odihr.osce.org/odihr/elections/523568",
+     "kind": "official"
+    },
+    {
+     "title": "Hungarian Helsinki Committee – Election Threat Assessment Feb 2022",
+     "url": "https://helsinki.hu/en/wp-content/uploads/sites/2/2022/02/HHC_ElectionThreatAssessment_February2022.pdf",
+     "kind": "ngo"
+    }
+   ],
+   "detail": "匈牙利 2011 年通过的新选举法（2011 年第 CCIII 号法）把国会由 386 席减为 199 席，其中 106 席由单席位选区产生、93 席由全国名单产生，选区边界直接写入需三分之二多数修改的基本法，而不设独立划界机构。法律允许选区选民数偏离平均值最多 15%、极端情况 20%，超过 20% 时国会必须修法。OSCE/ODIHR 2022 年大选观察团最终报告写道：「选区划分自 2014 年以来没有变化」，「106 个选区中 25 个偏差超过 10%，最高达 33%」，「超过法定 20% 上限的选区边界修订并未进行」，并建议「由独立机构以透明、包容的方式在下次选举前充分提前重新划定现有边界」。威尼斯委员会《选举事务良好做法准则》建议偏差不超过 10%。"
+  },
+  {
+   "id": "chl",
+   "name_zh": "智利",
+   "name_en": "Chile",
+   "iso3": "CHL",
+   "lat": -33.449,
+   "lon": -70.669,
+   "who_draws": "legislature",
+   "who_text": "国会以宪法性组织法（Ley 18.700 及 2015 年 Ley 20.840）直接规定选区与席位",
+   "system": "pr",
+   "system_text": "2017 年起 28 区各 3–8 席共 155 席，顿特法；此前二名制",
+   "pathology": "malapportionment",
+   "pathology_text": "二名制下 60 区各 2 席与人口脱钩，Samuels & Snyder 指数 0.15；一份名单须得票达另一名单两倍才包揽 2 席",
+   "cadence": "无定期重划；1989 年定图后至 2015 年改革才变动",
+   "event": {
+    "year": 2015,
+    "text": "Ley 20.840（2015 年 4 月 27 日颁布）以比例制取代二名制：众院 60 区 120 席改为 28 区 155 席，参院 19 区 38 席改为 15 区 50 席"
+   },
+   "text": "智利 1989 年回归民主时采用「二名制」：全国分 60 个众院选区、19 个参院选区，每区各选 2 席，一份名单只有得票达到第二名单的两倍才能包揽 2 席，否则两大名单各得 1 席。每区固定 2 席使席位与人口脱钩，Samuels & Snyder 测得智利下院指数 0.15。2015 年 Ley 20.840 以比例制取代二名制，众院改为 28 区各选 3–8 席共 155 席，参院 15 区 50 席，2017 年首次使用。",
+   "numbers": [
+    {
+     "label": "二名制众院",
+     "value": "60 区 × 2 = 120",
+     "unit": "席",
+     "year": 1989
+    },
+    {
+     "label": "改革后众院",
+     "value": "28 区 155",
+     "unit": "席",
+     "year": 2017
+    },
+    {
+     "label": "Samuels & Snyder 指数",
+     "value": 0.1509,
+     "unit": "",
+     "year": 2001
+    }
+   ],
+   "dispute": "关于二名制的设计目的，通说称其意在保障少数派联盟席位，CIPER 等分析称其压缩小党；本条只记制度规则，不评价。",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：Ley 18.799 与 Ley 18.700 的关系（CIPER 称前者于 1988-05-06 引入二名制）需核 BCN 法条；「两倍规则」为通说，未在打开的页面逐字核到。",
+   "sources": [
+    {
+     "title": "BCN (智利国会图书馆) – Conformación de nuevos distritos y circunscripciones, reforma al Sistema Binominal",
+     "url": "https://www.bcn.cl/siit/actualidad-territorial/conformacion-de-nuevos-distritos-y-circunscripciones",
+     "kind": "official"
+    },
+    {
+     "title": "CIPER Chile – Los cambios que se vienen en la representatividad regional del Poder Legislativo (2016-08-12)",
+     "url": "https://www.ciperchile.cl/2016/08/12/los-cambios-que-se-vienen-en-la-representatividad-regional-del-poder-legislativo/",
+     "kind": "press"
+    },
+    {
+     "title": "International IDEA – Electoral system for national legislature: Chile",
+     "url": "https://www.idea.int/answer/ans9380477707513",
+     "kind": "official"
+    }
+   ],
+   "detail": "智利 1989 年回归民主时采用「二名制」：Ley 18.799（1988 年 5 月 6 日）修改组织法 Ley 18.700，全国分 60 个众院选区、19 个参院选区，每区各选 2 席。一份名单只有得票达到第二名单的两倍才能同时拿下 2 席，否则两大名单各得 1 席。这一设计把每区席位固定为 2，使席位与人口脱钩，Samuels & Snyder 2001 年测得智利下院 malapportionment 指数 0.15，居 78 国前列。2015 年 4 月 27 日颁布的 Ley 20.840 以「包容性比例制」取代二名制，众院改为 28 个选区各选 3–8 席共 155 席，参院改为 15 个与大区一致的选区各选 2–5 席共 50 席，采用顿特法，2017 年大选首次使用；研究者指出改革后首都大区席位增至 15 席，区域间代表权仍存争议。"
+  },
+  {
+   "id": "nir",
+   "name_zh": "北爱尔兰",
+   "name_en": "Northern Ireland",
+   "iso3": "GBR",
+   "lat": 54.597,
+   "lon": -5.93,
+   "who_draws": "legislature",
+   "who_text": "1920–72 年北爱议会与地方政府划定地方选区；1973 年后由独立的地方政府边界专员划定",
+   "system": "other",
+   "system_text": "当年地方政府分区多席位、纳税人选举权；1973 年起改 STV",
+   "pathology": "gerrymander",
+   "pathology_text": "Cameron 报告 §134：德里成年人口六成天主教徒，市议会六成席位由统一派占；南区 10,047 对 1,138 选民选 8 席",
+   "cadence": "无周期性重划；1936 年德里分区后至 1969 年未变",
+   "event": {
+    "year": 1969,
+    "text": "Cameron 报告（Cmd 532，1969 年 9 月）列出 1967 年德里三个分区选民与席位表，指分区「以小多数回报统一派、以极大多数回报非统一派」；市议会随后解散"
+   },
+   "text": "北爱尔兰是英国本土被官方文件直接以「gerrymandering」描述的案例。1969 年 Cameron 报告第 134 段写道：「最突出的案例是伦敦德里郡自治市，那里成年人口的六成是天主教徒……而市议会六成席位由统一派持有」，手段是「使用统一派代表以小多数当选、而非统一派代表以极大多数当选的分区」。1967 年南区 10,047 名天主教选民对 1,138 名其他选民选出 8 名非统一派议员，另两区合计选出 12 名统一派议员。",
+   "numbers": [
+    {
+     "label": "德里南区天主教/其他选民",
+     "value": "10,047 / 1,138 → 8 席",
+     "unit": "",
+     "year": 1967
+    },
+    {
+     "label": "德里北区",
+     "value": "2,530 / 3,946 → 8 席",
+     "unit": "",
+     "year": 1967
+    },
+    {
+     "label": "德里河滨区",
+     "value": "1,852 / 3,697 → 4 席",
+     "unit": "",
+     "year": 1967
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": true,
+   "note": "缺：1936 年分区法令与 1973 年改 STV 的一手来源；报告原文 §129/§132/§147 用词为 gerrymandering/manipulation，中文字段已按简报规则用「划区」表述，引文除外。",
+   "sources": [
+    {
+     "title": "CAIN – Cameron Report: Disturbances in Northern Ireland (Cmd 532, 1969) chapters 1–9",
+     "url": "https://cain.ulster.ac.uk/hmso/cameron.htm",
+     "kind": "official"
+    },
+    {
+     "title": "CAIN – Cameron Report chapters 10–16 (para. 134 table)",
+     "url": "https://cain.ulster.ac.uk/hmso/cameron2.htm",
+     "kind": "official"
+    },
+    {
+     "title": "CAIN – Whyte, How much discrimination was there under the Unionist regime?",
+     "url": "https://www.cain.ulst.ac.uk/issues/discrimination/whyte.htm",
+     "kind": "academic"
+    }
+   ],
+   "detail": "北爱尔兰是英国本土被官方文件直接以「gerrymandering」描述的案例。1969 年 9 月发布的 Cameron 报告（Disturbances in Northern Ireland, Cmd 532）第 134 段写道：「最突出的案例是伦敦德里郡自治市，那里成年人口的六成是天主教徒……而市议会六成席位由统一派持有」，其手段是「使用统一派代表以小多数当选、而非统一派代表以极大多数当选的分区」。报告表格列出 1967 年三个分区：南区 10,047 名天主教选民对 1,138 名其他选民选出 8 名非统一派议员，北区与河滨区合计 4,382 对 7,643 选出 12 名统一派议员。报告第 132 段将此概括为「为取得并维持对地方政府的党派控制而进行的 gerrymandering 与选举边界操作」。德里市议会随后被解散并由任命的委员会取代；1973 年地方政府改革后北爱地方选举改用单记可让渡投票。"
+  },
+  {
+   "id": "zaf",
+   "name_zh": "南非",
+   "name_en": "South Africa",
+   "iso3": "ZAF",
+   "lat": -25.746,
+   "lon": 28.188,
+   "who_draws": "legislature",
+   "who_text": "无选区可画；国会以《1998 年第 73 号选举法》规定名单制，选举委员会（IEC）执行",
+   "system": "pr",
+   "system_text": "400 席封闭名单比例代表：200 席按 9 省区域名单、200 席全国补偿",
+   "pathology": "neither",
+   "pathology_text": "无选区故无划线问题；区域 200 席按各省登记选民比例分配，malapportionment 指数按定义为 0",
+   "cadence": "无需重划；每次大选前按登记选民数在省间分配 200 个区域席",
+   "event": {
+    "year": 2020,
+    "text": "宪法法院 2020 年 6 月判选举法「只允许经由政党成员身份当选」部分无效、暂缓 24 个月；2023 年修正案保留 200+200 名单制并允许独立候选人竞逐区域席"
+   },
+   "text": "南非是「不画线」的参照系：宪法第 46(1)(d) 条要求选举制度「总体上导致比例代表」，1998 年《选举法》据此设封闭名单比例代表制，国民议会 400 席中 200 席按 9 省区域名单依登记选民比例分配、200 席由全国名单补偿，无法定门槛。没有选区，就没有边界可划，也没有人口不均可言。2020 年 6 月宪法法院判选举法仅允许政党党员当选违宪，责成国会修法；2023 年修正案保留 200+200 结构，允许独立候选人竞逐区域席。",
+   "numbers": [
+    {
+     "label": "国民议会",
+     "value": "200 区域 + 200 全国 = 400",
+     "unit": "席",
+     "year": 1998
+    }
+   ],
+   "dispute": "关于 200/200 的分配对独立候选人是否公平，Constitutional Court 2023 年驳回了挑战（Daily Dispatch 2023-12-04 报道），本条只记结果。",
+   "confidence": "高",
+   "verify": false,
+   "note": "2024 年首次适用为通说；1998 年法本身未直接打开。",
+   "sources": [
+    {
+     "title": "PMG – Electoral Amendment Bill Memorandum (2021-12-07)",
+     "url": "https://static.pmg.org.za/211207Electoral_Amendment_Bill_-_Memorandum_final.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "SAFLII – Constitutional Court ZACC 41 (2023)",
+     "url": "https://www.saflii.org/za/cases/ZACC/2023/41.pdf",
+     "kind": "court"
+    },
+    {
+     "title": "Norton Rose Fulbright – Electoral reform and the inclusion of independent candidates",
+     "url": "https://nortonrosefulbright.com/en/knowledge/publications/164b7635/electoral-reform-and-the-inclusion-of-independent-candidates-into-our-electoral-process",
+     "kind": "secondary"
+    }
+   ],
+   "detail": "南非是「不画线」的参照系：1996 年宪法第 46(1)(d) 条要求选举制度「总体上导致比例代表」，1998 年《选举法》据此设封闭名单比例代表制，国民议会 400 席中 200 席由 9 个省的区域名单按登记选民比例分配、200 席由全国名单补偿，没有法定门槛。因为没有选区，就没有边界可以划，也没有人口不均可言；唯一的分配动作是每次大选前按登记选民数把 200 个区域席分到各省。2020 年 6 月宪法法院在 New Nation Movement 案中判定选举法仅允许政党党员当选的规定违反宪法第 19(3)(b) 条，责成国会两年内修法；国会 2023 年修正案选择「最小改动」方案，保留 200+200 结构，让独立候选人可在单一省区域票上参选、但不能分配补偿席，2024 年大选首次适用。"
+  },
+  {
+   "id": "nld",
+   "name_zh": "荷兰",
+   "name_en": "Netherlands",
+   "iso3": "NLD",
+   "lat": 52.37,
+   "lon": 4.895,
+   "who_draws": "legislature",
+   "who_text": "无选区可画；宪法与《选举法》（Kieswet）定全国一区，选举委员会（Kiesraad）执行分配",
+   "system": "pr",
+   "system_text": "众议院 150 席全国一区名单比例代表，无法定门槛（自然门槛 1/150）",
+   "pathology": "neither",
+   "pathology_text": "全国一区，不存在选区边界与席位分配问题；20 个 kieskringen 仅作提名与计票行政单位",
+   "cadence": "无需重划；每次选举以全国有效票 ÷150 得选举商数",
+   "event": {
+    "year": 1917,
+    "text": "1917 年修宪以比例代表制取代 1849 年以来的绝对多数单席位选区制（每 4.5 万居民一席），同时实行男性普选；1918 年首次按比例代表制选举众议院"
+   },
+   "text": "荷兰是「全国一区」的样本。1849 年起众议院按单席位选区以绝对多数选出，标准为每 4.5 万居民一名议员；1917 年修宪换成比例代表制并引入男性普选，1918 年首次实施。此后荷兰「没有选区」（Kiesraad：Nederland kent geen kiesdistricten），众议院 150 席按全国有效票除以 150 的选举商数分配给各党名单，无法定门槛。20 个 kieskringen 只用于提名与分区计票。",
+   "numbers": [
+    {
+     "label": "众议院席位",
+     "value": 150,
+     "unit": "席",
+     "year": 2025
+    },
+    {
+     "label": "kieskringen",
+     "value": 20,
+     "unit": "个",
+     "year": 2012
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：150 席自 1956 年起（通说）与宪法第 53 条「比例代表」条文的一手来源；Kiesraad 手册只确认 150 席与「无选区」。",
+   "sources": [
+    {
+     "title": "Kiesraad – Brochure Verkiezingen en kiesrecht",
+     "url": "https://www.kiesraad.nl/binaries/kiesraad/documenten/publicaties/2009/11/16/brochure-over-verkiezingen-en-kiesrecht/publicaties-brochures-verkiezingen-en-kiesrecht.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Parlement.com – Historische ontwikkeling kiesstelsels en kiesrecht",
+     "url": "https://www.parlement.com/id/vhnnmt7ltkw9/historische_ontwikkeling_kiesstelsels_en",
+     "kind": "secondary"
+    },
+    {
+     "title": "Parlement.com – Evenredige vertegenwoordiging / kieskringen",
+     "url": "https://www.parlement.com/id/vh8lnhrp1x0a/evenredige_vertegenwoordiging",
+     "kind": "secondary"
+    }
+   ],
+   "detail": "荷兰是「全国一区」的样本。1849 年起众议院按单席位选区以绝对多数选出，划区标准为每 4.5 万居民一名议员；1917 年修宪把它换成比例代表制并引入男性普选，1918 年首次实施。此后荷兰「没有选区」（Kiesraad 原文：Nederland kent geen kiesdistricten），众议院 150 席按全国有效票除以 150 的选举商数分配给各政党名单，没有法定门槛。全国分 20 个 kieskringen（2012 年加入博奈尔后），但它们只用于提交候选名单与分区计票，不影响席位分配。由于不存在边界，也就不存在划线与人口不均的问题，是比较研究里 malapportionment 指数为 0 的基准案例。"
+  },
+  {
+   "id": "isr",
+   "name_zh": "以色列",
+   "name_en": "Israel",
+   "iso3": "ISR",
+   "lat": 31.769,
+   "lon": 35.216,
+   "who_draws": "legislature",
+   "who_text": "无选区可画；《基本法：议会》第 4 条定全国一区比例选举，中央选举委员会执行",
+   "system": "pr",
+   "system_text": "议会 120 席全国一区封闭名单比例代表，门槛 3.25%",
+   "pathology": "neither",
+   "pathology_text": "全国一区，无边界与人口不均；制度争议集中在门槛高低（1% → 1.5% → 2% → 3.25%）",
+   "cadence": "无需重划",
+   "event": {
+    "year": 2014,
+    "text": "2014 年 3 月 11 日通过的治理法把当选门槛由 2% 提高到 3.25%，是全国一区制度下唯一可调的「几何参数」"
+   },
+   "text": "以色列《基本法：议会》第 4 条规定议会「以普遍、全国、直接、平等、秘密和比例的选举产生」，「全国构成单一选区」，120 席按各党全国得票比例分配，候选人按名单顺序递补。没有选区，就没有划线与人口不均的问题；制度调节只剩门槛与分配公式：门槛从建国初的 1% 逐步提高，2014 年 3 月 11 日治理法把它从 2% 提至 3.25%。以色列与荷兰、南非同属「不画线」的参照组，malapportionment 指数按定义为 0。",
+   "numbers": [
+    {
+     "label": "议会席位",
+     "value": 120,
+     "unit": "席",
+     "year": 1949
+    },
+    {
+     "label": "门槛",
+     "value": 3.25,
+     "unit": "%",
+     "year": 2014
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：1% → 1.5%（1992）→ 2%（2003/2006）的门槛沿革一手来源与 Bader-Ofer 分配法；页面只核到 2% 与 2014 年 3.25%。",
+   "sources": [
+    {
+     "title": "Jewish Virtual Library – Israel Elections: Overview & Explanation",
+     "url": "https://www.jewishvirtuallibrary.org/overview-and-explanation-of-israeli-elections",
+     "kind": "secondary"
+    },
+    {
+     "title": "Wikipedia – Basic Law: The Knesset（线索）",
+     "url": "https://en.wikipedia.org/wiki/Basic_Law:_The_Knesset",
+     "kind": "wiki"
+    },
+    {
+     "title": "Knesset – Basic Law: The Knesset（待开 knesset.gov.il）",
+     "url": "https://www.knesset.gov.il/",
+     "kind": "official"
+    }
+   ],
+   "detail": "以色列《基本法：议会》第 4 条规定议会「以普遍、全国、直接、平等、秘密和比例的选举产生」，「全国构成单一选区」，120 席按各党全国得票比例分配，候选人按名单顺序递补。因为没有选区，就没有划线与人口不均的问题；制度调节只剩门槛与分配公式：门槛从建国初的 1% 逐步提高，2014 年 3 月 11 日治理法把它从 2% 提至 3.25%。以色列与荷兰、南非同属「不画线」的参照组，也是比较研究中 malapportionment 指数按定义为 0 的案例。"
+  },
+  {
+   "id": "esp",
+   "name_zh": "西班牙",
+   "name_en": "Spain",
+   "iso3": "ESP",
+   "lat": 40.417,
+   "lon": -3.704,
+   "who_draws": "legislature",
+   "who_text": "宪法第 68 条定省为选区；LOREG（1985）第 162 条定分配规则；每次选举召集令按人口分配",
+   "system": "pr",
+   "system_text": "52 个省级选区封闭名单顿特法，350 席",
+   "pathology": "malapportionment",
+   "pathology_text": "每省保底 2 席、休达与梅利利亚各 1 席，余 248 席按人口分；Samuels & Snyder 指数 0.0963，西欧最高之一",
+   "cadence": "每次大选召集令按最新人口重算各省席位；省界不变故无划线",
+   "event": {
+    "year": 1977,
+    "text": "1977 年 3 月 18 日王室法令 20/1977 为首次民主选举设定省为选区并保底席位，1978 年宪法第 68 条与 1985 年 LOREG 延续此框架"
+   },
+   "text": "西班牙众议院 350 席以省为选区，宪法第 68 条规定以省为选区并保障每省最低代表；LOREG 第 162 条给每省保底 2 席、休达与梅利利亚各 1 席，其余按人口分配，省内用顿特法。省界固定，没有「画线」，不均衡全部来自省间席位分配。Samuels & Snyder 测得西班牙下院指数约 0.10；2008 年大选塞哥维亚一份名单每席 26,669 票得 2 席，巴塞罗那另一名单每席 81,823 票得 16 席。",
+   "numbers": [
+    {
+     "label": "Samuels & Snyder 指数",
+     "value": 0.0963,
+     "unit": "",
+     "year": 2001
+    },
+    {
+     "label": "2008 年每席票数：塞哥维亚 vs 巴塞罗那",
+     "value": "26,669 vs 81,823",
+     "unit": "票/席",
+     "year": 2008
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：LOREG 第 162 条与宪法第 68 条原文（通说 350、保底 2、248 按人口）未在打开页面逐字核；1977 年法令日期为通说。",
+   "sources": [
+    {
+     "title": "Simón Cosano, P. (2009) La desigualdad y el valor de un voto: el malapportionment de las cámaras bajas en perspectiva comparada, REP 143",
+     "url": "https://www.cepc.es/sites/default/files/2021-12/27335pablo-simon-cosano.pdf",
+     "kind": "academic"
+    },
+    {
+     "title": "International IDEA – Electoral system for national legislature: Spain",
+     "url": "https://www.idea.int/answer/ans938034586905",
+     "kind": "official"
+    },
+    {
+     "title": "CEPC – Revista de Estudios Políticos (LOREG 相关文献)",
+     "url": "https://www.cepc.es/sites/default/files/2021-12/16795repne079310.pdf",
+     "kind": "academic"
+    }
+   ],
+   "detail": "西班牙众议院 350 席以省为选区，宪法第 68 条规定众议员 300 至 400 名、以省为选区并保障每省最低代表；LOREG 第 162 条据此给每省保底 2 席、休达与梅利利亚各 1 席，其余按人口以最大余额分配，省内名单用顿特法。因为省界由行政区划固定，西班牙没有「画线」，不均衡全部来自省间席位分配：小省保底席使其每席人口远低于马德里、巴塞罗那。Simón Cosano（2009）转引 Samuels & Snyder 数据，西班牙下院 malapportionment 指数约 0.10，并举 2008 年大选为例：塞哥维亚一份名单以 53,399 票得 2 席（每席 26,669 票），巴塞罗那另一名单以 1,309,171 票得 16 席（每席 81,823 票）。这一框架源自 1977 年过渡时期的王室法令 20/1977。"
+  },
+  {
+   "id": "swe",
+   "name_zh": "瑞典",
+   "name_en": "Sweden",
+   "iso3": "SWE",
+   "lat": 59.329,
+   "lon": 18.069,
+   "who_draws": "legislature",
+   "who_text": "选区即省级行政区，由《政府组织法》第 3 章与《选举法》第 4 章规定；选举局分配固定席",
+   "system": "pr",
+   "system_text": "29 选区 310 固定席 + 39 平衡席 = 349，修正圣拉格",
+   "pathology": "neither",
+   "pathology_text": "固定席按各选区选举权人数分配、39 个平衡席保证全国比例；Samuels & Snyder 指数 0.011（1998）",
+   "cadence": "大选年 4 月 30 日前按选举权人数分配固定席",
+   "event": {
+    "year": 2018,
+    "text": "2018 年大选起修正 Sainte-Laguë 的首除数由 1.4 降为 1.2「以提高比例性」，固定席与平衡席结构不变"
+   },
+   "text": "瑞典议会 349 席中 310 席为固定选区席、39 席为全国平衡席。全国分 29 个选区，选举局在大选年 4 月 30 日前按各选区 3 月 1 日的选举权人数分配固定席，边界随行政区而定、席位随人口而动，没有划线空间。党内分配用修正 Sainte-Laguë（首除数 2018 年起由 1.4 改为 1.2），全国 4% 或单一选区 12% 方可参与分配；平衡席补足全国比例。Samuels & Snyder 指数 0.011。",
+   "numbers": [
+    {
+     "label": "议会席位",
+     "value": "310 + 39 = 349",
+     "unit": "席",
+     "year": 2022
+    },
+    {
+     "label": "选区",
+     "value": 29,
+     "unit": "个",
+     "year": 2022
+    },
+    {
+     "label": "门槛",
+     "value": "全国 4% 或单选区 12%",
+     "unit": "",
+     "year": 2022
+    }
+   ],
+   "dispute": "",
+   "confidence": "高",
+   "verify": false,
+   "note": "",
+   "sources": [
+    {
+     "title": "Valmyndigheten – Manual mandatfördelning (2022)",
+     "url": "https://www.val.se/download/18.75995f7b17f5a986a4e252b/1759909114563/manual-mandatfordelning-val-v785-05.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Valmyndigheten – Riksdagsval 2022 beslut med bilagor",
+     "url": "https://val.se/download/18.14c1f613181ed0043d56ddb/1663579810019/riksdag-val-2022-beslut-med-bilagor.pdf",
+     "kind": "official"
+    },
+    {
+     "title": "Charvát (2011) 转引 Samuels & Snyder 2001 表 3",
+     "url": "https://czechpolsci.eu/article/download/34782/29672/56404",
+     "kind": "academic"
+    }
+   ],
+   "detail": "瑞典议会 349 席中 310 席为固定选区席、39 席为全国平衡席。全国分 29 个选区（大体对应省），选举局在大选年 4 月 30 日前按各选区 3 月 1 日的选举权人数分配固定席，因此选区边界随行政区而定、席位随人口而动，没有划线空间。党内分配用修正 Sainte-Laguë（首除数 2018 年起由 1.4 改为 1.2），全国得票 4% 或单一选区 12% 方可参与分配；39 个平衡席补给在固定席分配中少于全国比例应得数的政党，使最终席位接近全国得票比例。Samuels & Snyder 测得瑞典 1998 年下院 malapportionment 指数 0.011，接近完全均等。"
+  },
+  {
+   "id": "bra",
+   "name_zh": "巴西",
+   "name_en": "Brazil",
+   "iso3": "BRA",
+   "lat": -15.794,
+   "lon": -47.882,
+   "who_draws": "legislature",
+   "who_text": "宪法第 45 条 §1 与补充法 78/1993 定各州席位；州为选区，TSE 执行",
+   "system": "pr",
+   "system_text": "26 州 + 联邦区为多席位选区，开放名单比例代表，513 席",
+   "pathology": "malapportionment",
+   "pathology_text": "每州最少 8 席、最多 70 席使小州每席人口远低于圣保罗；指数 0.0913；1993 年后分配未随普查更新",
+   "cadence": "宪法要求每次普查后调整，实际沿用 1986 年普查基础",
+   "event": {
+    "year": 2025,
+    "text": "最高法院 2023 年裁定须按 2022 年普查重分；参院 2025 年 6 月通过增至 531 席案，总统 7 月否决；9 月 Fux 中止重分，2026 年沿用现行分配"
+   },
+   "text": "巴西众议院以州为选区，513 席按人口分配到 26 州与联邦区，但宪法第 45 条规定每州最少 8 席、最多 70 席，补充法 78/1993 据 1986 年普查固定现行分配。上下限使小州每席人口远低于圣保罗。宪法要求每次普查后重分，但 1993 年后未动；2023 年最高法院裁定国会不作为，限期按 2022 年普查更新。国会选择只增不减：2025 年参院通过增至 531 席的法案，总统否决；9 月 Fux 大法官中止判决效力。",
+   "numbers": [
+    {
+     "label": "众院席位",
+     "value": 513,
+     "unit": "席",
+     "year": 1993
+    },
+    {
+     "label": "州席位上下限",
+     "value": "8–70",
+     "unit": "席",
+     "year": 1988
+    },
+    {
+     "label": "Samuels & Snyder 指数",
+     "value": 0.0913,
+     "unit": "",
+     "year": 2001
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：国会对第 20/2025 号否决的最终处理（截至 2025-09-29 仍待审）；Fux 单独裁定需 STF 全院确认，后续未核；补充法 78/1993 原文未开。",
+   "sources": [
+    {
+     "title": "Agência Senado – Senado aprova ampliação da Câmara para 531 deputados a partir de 2027 (2025-06-25)",
+     "url": "https://www12.senado.leg.br/noticias/materias/2025/06/25/senado-aprova-ampliacao-da-camara-para-531-deputados-a-partir-de-2027",
+     "kind": "official"
+    },
+    {
+     "title": "Senado – TD 5: Sobre a representação dos estados na Câmara dos Deputados",
+     "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/textos-para-discussao/td-5-sobre-a-representacao-dos-estados-na-camara-dos-deputados",
+     "kind": "official"
+    },
+    {
+     "title": "Câmara dos Deputados – Number of members per state",
+     "url": "https://www2.camara.leg.br/espanol/number-of-members-per-state",
+     "kind": "official"
+    },
+    {
+     "title": "Agência Câmara – Balanço do semestre: aumento do número de deputados foi vetado (2025-07-21)",
+     "url": "https://www.camara.leg.br/noticias/1182123-balanco-do-semestre-aumento-do-numero-de-deputados-foi-vetado",
+     "kind": "official"
+    },
+    {
+     "title": "Diário do Pará/Folhapress – Fux mantém número de deputados por estado para eleição 2026 (2025-09-29)",
+     "url": "https://diariodopara.com.br/noticias/brasil/fux-mantem-numero-de-deputados-por-estado-para-eleicao-2026/",
+     "kind": "press"
+    }
+   ],
+   "detail": "巴西众议院以州为选区，513 席按人口分配到 26 州与联邦区，但宪法第 45 条 §1 规定每州最少 8 席、人口最多的州最多 70 席，补充法 78/1993 据 1986 年普查固定了现行分配。上下限使罗赖马等小州每席人口远低于圣保罗，Samuels & Snyder 测得巴西下院 malapportionment 指数 0.091，在拉美仅次于智利、阿根廷。宪法要求每次普查后重分，但 1993 年后一直未动；2023 年 8 月联邦最高法院应帕拉州之诉裁定国会不作为，限期按 2022 年普查更新，否则由选举最高法院代为执行。国会选择的方案是只增不减：2025 年 6 月参院以 41:33 通过 PLP 177/2023，拟增至 531 席，14 席给代表不足的州、4 席修正倒挂，按比例本应减席的 7 个州保留原数；总统 2025 年 7 月整体否决（第 20/2025 号否决），否决待国会审议。2025 年 9 月 29 日最高法院大法官 Fux 应国会主席之请中止 ADO 38 判决效力，2026 年大选沿用现行分配，重分最早 2030 年生效。"
+  },
+  {
+   "id": "arg",
+   "name_zh": "阿根廷",
+   "name_en": "Argentina",
+   "iso3": "ARG",
+   "lat": -34.604,
+   "lon": -58.382,
+   "who_draws": "legislature",
+   "who_text": "宪法第 45 条与 1983 年法令 22.847 定各省席位；省为选区",
+   "system": "pr",
+   "system_text": "24 个省级选区封闭名单顿特法，257 席，每两年改选一半",
+   "pathology": "malapportionment",
+   "pathology_text": "1983 年法令按 1980 年普查每 16.1 万人 1 席、每省加 3 席且不少于 5 席，此后未更新；布省应得 100 实得 70",
+   "cadence": "宪法要求每次普查后调整，实际 1983 年后未更新",
+   "event": {
+    "year": 1983,
+    "text": "1983 年法令 22.847 以 1980 年普查定众院 254 席：每 161,000 人 1 席（余数超 80,500 进位），每省另加 3 席、保底 5 席；此后未调整"
+   },
+   "text": "阿根廷众议院 257 席以省为选区分配。各省席位由 1983 年法令 22.847 按 1980 年普查确定：每 161,000 名居民 1 席，每省再加 3 席，保底 5 席，合计 254 席；1991 年火地岛建省增 3 席。宪法第 45 条要求每次普查后调整，但 1983 年以来三次普查均未触发。按 2010 年普查套用原公式，布宜诺斯艾利斯省应得 100 席而实得 70。Samuels & Snyder 指数 0.1405。",
+   "numbers": [
+    {
+     "label": "众院席位",
+     "value": 257,
+     "unit": "席",
+     "year": 1991
+    },
+    {
+     "label": "布宜诺斯艾利斯省应得/实得",
+     "value": "100 / 70",
+     "unit": "席",
+     "year": 2010
+    },
+    {
+     "label": "Samuels & Snyder 指数",
+     "value": 0.1405,
+     "unit": "",
+     "year": 2001
+    }
+   ],
+   "dispute": "",
+   "confidence": "中",
+   "verify": true,
+   "note": "缺：宪法第 45 条「每 33,000 居民不少于 1 席」原文未核；搜索结果显示 2025–26 年有更新席位分配的法案（diariodecuyo 报道「San Juan 将减 2 席」），未打开。",
+   "sources": [
+    {
+     "title": "Chequeado – Elegimos diputados como si estuviéramos en 1980 (y para la CABA, 1970)",
+     "url": "https://chequeado.com/el-explicador/elegimos-diputados-como-si-estuvieramos-en-1980-para-la-caba-1970/",
+     "kind": "press"
+    },
+    {
+     "title": "Chequeado – Claves para entender los tres proyectos de actualización de bancas en Diputados",
+     "url": "https://chequeado.com/el-explicador/claves-para-entender-los-tres-proyectos-de-actualizacion-de-bancas-en-diputados/",
+     "kind": "press"
+    },
+    {
+     "title": "HCDN – Proyecto 4878-D-2020 (actualización de bancas)",
+     "url": "https://www4.hcdn.gob.ar/dependencias/dsecretaria/Periodo2020/PDF2020/TP2020/4878-D-2020.pdf",
+     "kind": "official"
+    }
+   ],
+   "detail": "阿根廷众议院 257 席以省为选区按封闭名单顿特法分配。各省席位由 1983 年过渡时期法令 22.847 按 1980 年普查确定：每 161,000 名居民 1 席（余数超过 80,500 进位），每省再加 3 席，保底 5 席且不低于 1973 年席数，合计 254 席；1991 年火地岛建省增 3 席成 257。宪法第 45 条要求每次普查后重新调整并只许增不许减每席人口基数，但 1983 年以来三次普查均未触发调整。按 2010 年普查套用原公式，布宜诺斯艾利斯省应得 100 席而实得 70，科尔多瓦少 6 席，首都则多 5 席；若沿用 1983 年公式总数应为 324 席。Samuels & Snyder 测得阿根廷下院指数 0.1405，居 78 国前列。"
+  }
+ ],
+ "index": {
+  "source": "Samuels, David & Richard Snyder (2001), 'The Value of a Vote: Malapportionment in Comparative Perspective', British Journal of Political Science 31(4): 651–671, Tables 3–4 (pp. 660–661), lower chambers, 1990s data",
+  "values": {
+   "USA": 0.0144,
+   "GBR": 0.0456,
+   "AUS": 0.0241,
+   "IRL": 0.0255,
+   "FRA": 0.0695,
+   "DEU": 0.0344,
+   "SWE": 0.011,
+   "HUN": 0.0274,
+   "KOR": 0.2075,
+   "CHL": 0.1509,
+   "ESP": 0.0963,
+   "ARG": 0.1405,
+   "BRA": 0.0913,
+   "TZA": 0.2619,
+   "ECU": 0.204,
+   "KEN": 0.1946,
+   "ISL": 0.1684,
+   "BOL": 0.1677,
+   "COL": 0.1324,
+   "TUR": 0.0859,
+   "DNK": 0.0524,
+   "FIN": 0.0088,
+   "POL": 0.0174,
+   "AUT": 0.0643,
+   "SVK": 0.0131,
+   "CZE": 0.0271
+  },
+  "note": "指数定义：MAL = ½·Σ|s_i − v_i|，s_i 为选区 i 席位份额，v_i 为人口份额，0 为完全均等。数值转引自 Charvát (2011) Politologický časopis 4/2011 表 1–2（注明出自 Samuels & Snyder 2001 第 660–661 页表 3–4），非直接自原文；原文 Cambridge Core 为付费墙。日本、加拿大、新西兰、印度、马来西亚、新加坡等未在转引表中，原文表 3 含 78 国，需查原文补。南非、荷兰、以色列为全国一区，指数为 0（定义使然）。",
+  "verify": true,
+  "alternatives": [
+   {
+    "title": "Kollman, Hicken, Caramani, Backer, Lublin – Constituency-Level Elections Archive (CLEA)",
+    "note": "CLEA 提供各国选区层级选票与席位，可自行计算 malapportionment；配套 Lublin 等人有 district-level 数据集",
+    "url": "https://electiondataarchive.org/"
+   },
+   {
+    "title": "International IDEA – Electoral System Design Database / ACE Boundary Delimitation 专题",
+    "note": "提供各国选区划分机构、周期与容差的分类，不含指数",
+    "url": "https://aceproject.org/ace-en/topics/bd"
+   },
+   {
+    "title": "Ansolabehere, Snyder & Ting (2002/2003) Bargaining in Bicameral Legislatures",
+    "note": "脚注 1 转引 Samuels & Snyder 上院指数 ≥0.20 的国家名单（阿根廷、巴西、美国、瑞士、俄罗斯、智利、澳大利亚、西班牙、德国、南非等）",
+    "url": "https://core.ac.uk/download/4385886.pdf"
+   },
+   {
+    "title": "R 包 ElectDecomp::malapportionment_index",
+    "note": "按 Samuels & Snyder 公式计算的开源实现",
+    "url": "https://rdrr.io/cran/ElectDecomp/man/malapportionment_index.html"
+   }
+  ],
+  "years": {
+   "USA": 1992,
+   "GBR": 1997,
+   "AUS": 1996,
+   "IRL": 1992,
+   "FRA": 1998,
+   "DEU": 1994,
+   "SWE": 1998,
+   "HUN": 1998,
+   "DNK": 1997,
+   "FIN": 1991,
+   "POL": 1997,
+   "AUT": 1994,
+   "SVK": 1994,
+   "CZE": 1996,
+   "others": "1993–1998 区间"
+  }
+ }
+}

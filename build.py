@@ -313,7 +313,7 @@ if POD and os.path.isdir(PODDIR):
     print(f"podcast: {len(eps)} episode(s) → {PBASE}")
 
 # ======================================================================
-# 门户 /：孙天杰的首页。看（一周一题 + 号外）/ 听（合读 + CC 读书会）/ 玩（Game Studio）/ 走（摄影导览）
+# 门户 /：站点首页。看（一周一题 + 号外）/ 听（合读 + CC 读书会）/ 玩（Game Studio）/ 走（摄影导览）
 # 数据：themes、extras、eps（上面播客段算出来的）、cc/cc.json、site.json 的 person / lines / games / tour
 # ======================================================================
 PERSON = site.get('person', {'name': '首页', 'en': site['author'], 'lead': site['tagline']})

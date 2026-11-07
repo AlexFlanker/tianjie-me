@@ -23,10 +23,10 @@
 <script>try{var t=localStorage.getItem('yzyt-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
 <style>
 :root{--bg:#f3f5f4;--grid:#e3e7e4;--ink:#1e2740;--ink2:#4c5568;--mute:#7b8494;--rule:#c9cfd3;--mark:#ffe566;--tab:#1e2740;--tabink:#f3f5f4;
-  --disp:"ZCOOL XiaoWei","Noto Serif SC","Songti SC",serif;--sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif}
+  --disp:"Noto Serif SC","Songti SC","STSong",serif;--sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161a21;--grid:#20262e;--ink:#e8eaee;--ink2:#b6bcc6;--mute:#7f8794;--rule:#39414b;--mark:#5a4d1c;--tab:#e8eaee;--tabink:#161a21}}
 :root[data-theme="dark"]{--bg:#161a21;--grid:#20262e;--ink:#e8eaee;--ink2:#b6bcc6;--mute:#7f8794;--rule:#39414b;--mark:#5a4d1c;--tab:#e8eaee;--tabink:#161a21}
 *{box-sizing:border-box}
@@ -39,7 +39,7 @@ img{display:block;max-width:100%}
 
 /* 拇指索引 */
 .tabs{position:fixed;right:0;top:50%;transform:translateY(-50%);display:grid;gap:10px;z-index:9}
-.tabs a{display:grid;place-items:center;width:52px;height:88px;background:var(--tab);color:var(--tabink);font-family:var(--disp);font-size:30px;line-height:1;border-radius:8px 0 0 8px;box-shadow:-2px 2px 0 rgba(30,39,64,.18);transition:width .15s}
+.tabs a{display:grid;place-items:center;width:52px;height:88px;background:var(--tab);color:var(--tabink);font-family:var(--disp);font-weight:900;font-size:30px;line-height:1;border-radius:8px 0 0 8px;box-shadow:-2px 2px 0 rgba(30,39,64,.18);transition:width .15s}
 .tabs a small{font-family:var(--sans);font-size:10px;letter-spacing:.1em;opacity:.75;margin-top:4px}
 .tabs a:hover{width:60px}
 @media (max-width:980px){.tabs{position:sticky;top:0;transform:none;grid-template-columns:repeat(4,1fr);gap:0;margin:0;width:100%;background:var(--tab)}.tabs a{width:auto;height:54px;border-radius:0;box-shadow:none;font-size:22px}.tabs a:hover{width:auto}.tabs a small{margin-top:2px}}
@@ -47,16 +47,16 @@ img{display:block;max-width:100%}
 
 /* 扉页 */
 .title{padding:56px 0 30px;border-bottom:1px solid var(--ink)}
-.title h1{font-family:var(--disp);font-weight:400;font-size:clamp(44px,8vw,72px);letter-spacing:.18em;line-height:1;margin:0}
+.title h1{font-family:var(--disp);font-weight:900;font-size:clamp(44px,8vw,72px);letter-spacing:.12em;line-height:1;margin:0}
 .title .en{font-size:13px;color:var(--mute);letter-spacing:.12em;margin-top:10px}
-.title p{font-family:var(--disp);font-size:21px;line-height:1.6;color:var(--ink2);margin:26px 0 0;max-width:30ch}
+.title p{font-family:var(--disp);font-weight:500;font-size:20px;line-height:1.7;color:var(--ink2);margin:26px 0 0;max-width:30ch}
 
 /* 目录 */
 .toc{margin:34px 0 0}
-.toc h2,.log h2{font-family:var(--disp);font-weight:400;font-size:17px;letter-spacing:.3em;color:var(--mute);margin:0 0 10px}
+.toc h2,.log h2{font-family:var(--disp);font-weight:700;font-size:15px;letter-spacing:.3em;color:var(--mute);margin:0 0 10px}
 .toc ol{list-style:none;margin:0;padding:0}
 .toc li a{display:flex;align-items:baseline;gap:12px;padding:10px 0;font-size:17px}
-.toc li .ch{font-family:var(--disp);font-size:30px;line-height:1;width:40px;flex:none}
+.toc li .ch{font-family:var(--disp);font-weight:900;font-size:28px;line-height:1;width:40px;flex:none}
 .toc li .nm{font-weight:500}
 .toc li .sub{color:var(--mute);font-size:13.5px;font-weight:400;margin-left:8px}
 .toc li .dots{flex:1;border-bottom:1px dotted var(--rule);transform:translateY(-5px);margin:0 6px;min-width:24px}
@@ -71,14 +71,14 @@ img{display:block;max-width:100%}
 .log .d b{display:block;font-weight:500;color:var(--ink2)}
 .log .t{font-size:16px;line-height:1.55}
 .log .t small{display:block;font-size:13px;color:var(--mute)}
-.log .t .ch{font-family:var(--disp);font-size:18px;margin-right:8px;color:var(--ink2)}
+.log .t .ch{font-family:var(--disp);font-weight:700;font-size:16px;margin-right:8px;color:var(--ink2)}
 .log .new .t > span:not(.ch){background:linear-gradient(transparent 55%,var(--mark) 55%,var(--mark) 92%,transparent 92%);padding:0 2px}
 @media (max-width:520px){.log a{grid-template-columns:1fr;gap:2px}}
 
 /* 章 */
 .ch-sec{margin-top:72px;padding-top:18px;border-top:1px solid var(--ink);position:relative;scroll-margin-top:70px}
-.ch-sec .big{font-family:var(--disp);font-size:120px;line-height:1;position:absolute;left:-150px;top:10px;color:var(--ink)}
-.ch-sec h2{font-family:var(--disp);font-weight:400;font-size:30px;letter-spacing:.1em;margin:0}
+.ch-sec .big{font-family:var(--disp);font-weight:900;font-size:112px;line-height:1;position:absolute;left:-150px;top:10px;color:var(--ink)}
+.ch-sec h2{font-family:var(--disp);font-weight:900;font-size:30px;letter-spacing:.06em;margin:0}
 .ch-sec h2 span{font-family:var(--sans);font-size:13px;letter-spacing:0;color:var(--mute);margin-left:14px}
 .ch-sec .lead{margin:6px 0 20px;color:var(--ink2);max-width:46ch}
 .entry{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:18px 0;border-top:1px dotted var(--rule)}
@@ -89,7 +89,7 @@ img{display:block;max-width:100%}
 .entry figcaption{font-size:11.5px;color:var(--mute);margin-top:5px;line-height:1.5}
 .entry .no{font-size:13px;color:var(--mute)}
 .entry h3{font-size:20px;line-height:1.4;margin:2px 0 6px;font-weight:700;letter-spacing:.01em;font-family:var(--sans)}
-.entry h3.disp{font-family:var(--disp);font-weight:400;font-size:28px;letter-spacing:.06em}
+.entry h3.disp{font-family:var(--disp);font-weight:900;font-size:26px;letter-spacing:.04em}
 .entry p{margin:0;color:var(--ink2);font-size:14.5px}
 .go{display:inline-block;margin-top:10px;font-size:14px;border-bottom:1px solid var(--ink)}
 .btn{display:inline-block;margin-top:12px;padding:8px 18px;background:var(--ink);color:var(--bg);font-size:14.5px;letter-spacing:.06em}

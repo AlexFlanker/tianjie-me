@@ -315,10 +315,10 @@ def world_svg():
         v = pol_index(p['id']); x = (p['lon'] + 180) / 360 * W; y = (90 - p['lat']) / 180 * H
         r = 3 + (0 if v is None else (v ** 0.5) * 26)
         cls = 'pol' + (' none' if v is None else '') + (' zero' if v == 0 else '')
-        LAB = {'nir': (-6, -10, 'end'), 'irl': (-6, 14, 'end'), 'gbr': (r + 3, -8, 'start'), 'nld': (r + 2, -12, 'start'), 'deu': (r + 3, 2, 'start'), 'fra': (-(r + 3), 12, 'end'), 'esp': (0, r + 11, 'middle'), 'hun': (r + 3, 10, 'start'), 'swe': (r + 3, -4, 'start'), 'isr': (r + 3, 10, 'start'), 'sgp': (r + 3, 10, 'start'), 'mys': (r + 3, -4, 'start'), 'twn': (r + 3, 4, 'start'), 'kor': (-(r + 3), -4, 'end'), 'jpn': (r + 3, 4, 'start'), 'nzl': (-(r + 3), 12, 'end'), 'aus': (-(r + 3), 12, 'end'), 'chl': (-(r + 3), 4, 'end'), 'arg': (r + 3, 12, 'start'), 'zaf': (r + 3, 4, 'start'), 'ind': (r + 3, 4, 'start'), 'bra': (r + 3, 4, 'start'), 'can': (r + 3, -4, 'start'), 'usa': (r + 3, 10, 'start')}
+        LAB = {'nir': (-6, -10, 'end'), 'irl': (-6, 14, 'end'), 'gbr': (r + 3, -8, 'start'), 'nld': (r + 2, -12, 'start'), 'deu': (r + 3, 2, 'start'), 'fra': (-(r + 3), 12, 'end'), 'esp': (0, r + 11, 'middle'), 'hun': (r + 3, 10, 'start'), 'swe': (r + 3, -4, 'start'), 'isr': (r + 3, 10, 'start'), 'sgp': (r + 3, 10, 'start'), 'mys': (r + 3, -4, 'start'), 'kor': (-(r + 3), -4, 'end'), 'jpn': (r + 3, 4, 'start'), 'nzl': (-(r + 3), 12, 'end'), 'aus': (-(r + 3), 12, 'end'), 'chl': (-(r + 3), 4, 'end'), 'arg': (r + 3, 12, 'start'), 'zaf': (r + 3, 4, 'start'), 'ind': (r + 3, 4, 'start'), 'bra': (r + 3, 4, 'start'), 'can': (r + 3, -4, 'start'), 'usa': (r + 3, 10, 'start')}
         dx, dy, anc = LAB.get(p['id'], (r + 4, 4, 'start'))
         dots += f'<g class="{cls}" data-id="{esc(p["id"])}" transform="translate({x:.1f},{y:.1f})"><circle class="r" r="{r:.1f}"/><circle r="{max(r, 9):.0f}" fill="transparent"/><text x="{dx}" y="{dy}" text-anchor="{anc}">{esc(p["name_zh"])}</text></g>'
-    return f'<svg class="wm" id="wmsvg" viewBox="0 0 {W} {H}" role="img" aria-label="24 个政体在世界地图上"><g>{grat}</g><path class="land" d="{WORLD["d"]}"/><g id="wmdots">{dots}</g></svg>'
+    return f'<svg class="wm" id="wmsvg" viewBox="0 0 {W} {H}" role="img" aria-label="23 个政体在世界地图上"><g>{grat}</g><path class="land" d="{WORLD["d"]}"/><g id="wmdots">{dots}</g></svg>'
 
 def ch_world():
     tabs = ''.join(f'<button type="button" role="tab" data-lens="{k}" aria-selected="{"true" if k == "who" else "false"}">{esc(t)}</button>' for k, t in E.WORLD_LENSES)

@@ -162,7 +162,7 @@ page = f'''<!doctype html>
         </dl>
         <div class="ha">{'<a class="btn" href="'+e(cur["ep"])+'">听这一期<svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>' if cur.get("ep") else ''}<span class="hm">{done_n} / 12 周交了一页纸</span></div>
       </div>
-      {fig('wk-leviathan', 'pimg rise')}
+      {fig(cur.get('img', 'wk-leviathan'), 'pimg rise')}
     </div>
   </div>
 </section>

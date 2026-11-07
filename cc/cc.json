@@ -103,17 +103,20 @@
       "paper": "反方 → 一份给 agent 的信约 → 「责任在谁」的答案哪里要改",
       "lib": "有",
       "ep": "/listen/cc-leviathan/",
-      "status": "now"
+      "img": "wk-leviathan"
     },
     {
       "no": 2,
       "date": "2026-11-09",
       "author": "柏拉图",
       "work": "《理想国》",
-      "read": "卷二（居盖斯）+ 卷六「船长」487–489",
+      "read": "卷二整卷 + 卷六「船」487–489",
       "for": "「没有人会发现」时你做不做；选谁当负责人",
       "paper": "你戴不戴戒指；给「选负责人」补柏拉图的反方",
-      "lib": "有"
+      "lib": "有",
+      "ep": "/listen/cc-republic/",
+      "status": "now",
+      "img": "wk-republic"
     },
     {
       "no": 3,

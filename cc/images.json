@@ -1,86 +1,93 @@
 {
- "hero-athens": {
-  "cap": "《雅典学院》，Giovanni Volpato 据拉斐尔湿壁画所作的铜版画，约 1781 年。大都会艺术博物馆藏，CC0。",
-  "alt": "雅典学院铜版画：柏拉图与亚里士多德走在拱廊中央，两旁是古代的哲学家",
-  "credit": "《雅典学院》，Giovanni Volpato 据拉斐尔湿壁画所作的铜版画，约 1781 年。大都会艺术博物馆藏，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，35.85.45；CC0。https://www.metmuseum.org/art/collection/search/716834",
-  "src": "https://www.metmuseum.org/art/collection/search/716834",
-  "license": "CC0"
- },
- "plate-academy": {
-  "cap": "《巴乔·班迪内利的学院》，Enea Vico 刻，1544 年：烛光下的夜读与素描。大都会艺术博物馆藏，CC0。",
-  "alt": "十六世纪的学院：烛光下读书、素描的人们",
-  "credit": "《巴乔·班迪内利的学院》，Enea Vico 刻，1544 年：烛光下的夜读与素描。大都会艺术博物馆藏，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，17.50.16-135；CC0。https://www.metmuseum.org/art/collection/search/358113",
-  "src": "https://www.metmuseum.org/art/collection/search/358113",
-  "license": "CC0"
- },
- "plate-low": {
-  "cap": "哥伦比亚大学 Low 图书馆与「母校」像，约 1905 年，Detroit Publishing Co. 摄。美国国会图书馆藏，无已知版权限制。",
-  "alt": "1905 年前后的哥伦比亚大学 Low 图书馆",
-  "credit": "哥伦比亚大学 Low 图书馆与「母校」像，约 1905 年，Detroit Publishing Co. 摄。美国国会图书馆藏，无已知版权限制。 — Library of Congress, Prints and Photographs Division，LC-DIG-det-4a12619 (Detroit Publishing Co. no. 018537)；No known restrictions。https://www.loc.gov/item/2016804796/",
-  "src": "https://www.loc.gov/item/2016804796/",
-  "license": "No known restrictions"
- },
- "wk-leviathan": {
-  "cap": "《利维坦》1651 年初版扉页（Abraham Bosse 刻）细部，巨人的身躯由无数小人组成。大英图书馆藏品扫描，公有领域；按哥大蓝双色处理。",
-  "alt": "利维坦扉页：由无数小人组成的巨人",
-  "credit": "《利维坦》1651 年初版扉页，Abraham Bosse 刻 — 大英图书馆藏品扫描，公有领域（页面上做了双色处理）。https://commons.wikimedia.org/wiki/File:Leviathan_by_Thomas_Hobbes.jpg",
-  "src": "https://commons.wikimedia.org/wiki/File:Leviathan_by_Thomas_Hobbes.jpg",
-  "license": "Public Domain"
- },
- "s01": {
-  "cap": "红绘钟形陶瓶上的会饮场景，公元前 5 世纪。大都会艺术博物馆，CC0。",
-  "alt": "古希腊红绘陶瓶上的会饮",
-  "credit": "红绘钟形陶瓶上的会饮场景，公元前 5 世纪。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，2013.158；CC0。https://www.metmuseum.org/art/collection/search/259196",
-  "src": "https://www.metmuseum.org/art/collection/search/259196",
-  "license": "CC0"
- },
- "s02": {
-  "cap": "马格里布体《古兰经》页，约 1300 年。大都会艺术博物馆，CC0。",
-  "alt": "约 1300 年的古兰经书页",
-  "credit": "马格里布体《古兰经》页，约 1300 年。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，42.63；CC0。https://www.metmuseum.org/art/collection/search/450486",
-  "src": "https://www.metmuseum.org/art/collection/search/450486",
-  "license": "CC0"
- },
- "s03": {
-  "cap": "拉苏里王朝的星盘，1291 年。大都会艺术博物馆，CC0。",
-  "alt": "1291 年的黄铜星盘",
-  "credit": "拉苏里王朝的星盘，1291 年。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，91.1.535a–h；CC0。https://www.metmuseum.org/art/collection/search/444408",
-  "src": "https://www.metmuseum.org/art/collection/search/444408",
-  "license": "CC0"
- },
- "s04": {
-  "cap": "Diego Gutiérrez《美洲图》，1562 年。美国国会图书馆，无已知版权限制。",
-  "alt": "1562 年的美洲地图",
-  "credit": "Diego Gutiérrez《美洲图》，1562 年。美国国会图书馆，无已知版权限制。 — Library of Congress, Geography and Map Division，G3290 1562 .G7 (Rosenwald Collection no. 1303)；Public Domain。https://www.loc.gov/item/map49000970/",
-  "src": "https://www.loc.gov/item/map49000970/",
-  "license": "Public Domain"
- },
- "s05": {
-  "cap": "《利维坦》扉页细部，Abraham Bosse 刻，1651 年。大英图书馆藏品扫描，公有领域。",
-  "alt": "利维坦扉页细部：小人组成的身躯",
-  "credit": "《利维坦》扉页细部，1651 — 大英图书馆藏品扫描，公有领域。",
-  "src": "https://commons.wikimedia.org/wiki/File:Leviathan_by_Thomas_Hobbes.jpg",
-  "license": "Public Domain"
- },
- "s06": {
-  "cap": "《磨光平板玻璃的技艺》，1747 年版画。惠康收藏，公有领域标记。",
-  "alt": "1747 年的玻璃工场版画",
-  "credit": "《磨光平板玻璃的技艺》，1747 年版画。惠康收藏，公有领域标记。 — Wellcome Collection, London，Wellcome Collection work n7jqayk4 / image V0024060；Public Domain。https://wellcomecollection.org/works/n7jqayk4",
-  "src": "https://wellcomecollection.org/works/n7jqayk4",
-  "license": "Public Domain"
- },
- "s07": {
-  "cap": "Charles Thévenin《攻占巴士底狱》，1790 年。大都会艺术博物馆，CC0。",
-  "alt": "攻占巴士底狱的版画",
-  "credit": "Charles Thévenin《攻占巴士底狱》，1790 年。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，2008.592；CC0。https://www.metmuseum.org/art/collection/search/384288",
-  "src": "https://www.metmuseum.org/art/collection/search/384288",
-  "license": "CC0"
- },
- "s08": {
-  "cap": "W. E. B. 杜波依斯，Cornelius M. Battey 摄，1918 年。美国国会图书馆，无已知版权限制。",
-  "alt": "杜波依斯 1918 年肖像",
-  "credit": "W. E. B. 杜波依斯，Cornelius M. Battey 摄，1918 年。美国国会图书馆，无已知版权限制。 — Library of Congress, Prints and Photographs Division，LC-DIG-ppmsca-38818；No known restrictions。https://www.loc.gov/item/2003681451/",
-  "src": "https://www.loc.gov/item/2003681451/",
-  "license": "No known restrictions"
- }
+  "hero-athens": {
+    "cap": "《雅典学院》，Giovanni Volpato 据拉斐尔湿壁画所作的铜版画，约 1781 年。大都会艺术博物馆藏，CC0。",
+    "alt": "雅典学院铜版画：柏拉图与亚里士多德走在拱廊中央，两旁是古代的哲学家",
+    "credit": "《雅典学院》，Giovanni Volpato 据拉斐尔湿壁画所作的铜版画，约 1781 年。大都会艺术博物馆藏，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，35.85.45；CC0。https://www.metmuseum.org/art/collection/search/716834",
+    "src": "https://www.metmuseum.org/art/collection/search/716834",
+    "license": "CC0"
+  },
+  "plate-academy": {
+    "cap": "《巴乔·班迪内利的学院》，Enea Vico 刻，1544 年：烛光下的夜读与素描。大都会艺术博物馆藏，CC0。",
+    "alt": "十六世纪的学院：烛光下读书、素描的人们",
+    "credit": "《巴乔·班迪内利的学院》，Enea Vico 刻，1544 年：烛光下的夜读与素描。大都会艺术博物馆藏，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，17.50.16-135；CC0。https://www.metmuseum.org/art/collection/search/358113",
+    "src": "https://www.metmuseum.org/art/collection/search/358113",
+    "license": "CC0"
+  },
+  "plate-low": {
+    "cap": "哥伦比亚大学 Low 图书馆与「母校」像，约 1905 年，Detroit Publishing Co. 摄。美国国会图书馆藏，无已知版权限制。",
+    "alt": "1905 年前后的哥伦比亚大学 Low 图书馆",
+    "credit": "哥伦比亚大学 Low 图书馆与「母校」像，约 1905 年，Detroit Publishing Co. 摄。美国国会图书馆藏，无已知版权限制。 — Library of Congress, Prints and Photographs Division，LC-DIG-det-4a12619 (Detroit Publishing Co. no. 018537)；No known restrictions。https://www.loc.gov/item/2016804796/",
+    "src": "https://www.loc.gov/item/2016804796/",
+    "license": "No known restrictions"
+  },
+  "wk-leviathan": {
+    "cap": "《利维坦》1651 年初版扉页（Abraham Bosse 刻）细部，巨人的身躯由无数小人组成。大英图书馆藏品扫描，公有领域；按哥大蓝双色处理。",
+    "alt": "利维坦扉页：由无数小人组成的巨人",
+    "credit": "《利维坦》1651 年初版扉页，Abraham Bosse 刻 — 大英图书馆藏品扫描，公有领域（页面上做了双色处理）。https://commons.wikimedia.org/wiki/File:Leviathan_by_Thomas_Hobbes.jpg",
+    "src": "https://commons.wikimedia.org/wiki/File:Leviathan_by_Thomas_Hobbes.jpg",
+    "license": "Public Domain"
+  },
+  "s01": {
+    "cap": "红绘钟形陶瓶上的会饮场景，公元前 5 世纪。大都会艺术博物馆，CC0。",
+    "alt": "古希腊红绘陶瓶上的会饮",
+    "credit": "红绘钟形陶瓶上的会饮场景，公元前 5 世纪。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，2013.158；CC0。https://www.metmuseum.org/art/collection/search/259196",
+    "src": "https://www.metmuseum.org/art/collection/search/259196",
+    "license": "CC0"
+  },
+  "s02": {
+    "cap": "马格里布体《古兰经》页，约 1300 年。大都会艺术博物馆，CC0。",
+    "alt": "约 1300 年的古兰经书页",
+    "credit": "马格里布体《古兰经》页，约 1300 年。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，42.63；CC0。https://www.metmuseum.org/art/collection/search/450486",
+    "src": "https://www.metmuseum.org/art/collection/search/450486",
+    "license": "CC0"
+  },
+  "s03": {
+    "cap": "拉苏里王朝的星盘，1291 年。大都会艺术博物馆，CC0。",
+    "alt": "1291 年的黄铜星盘",
+    "credit": "拉苏里王朝的星盘，1291 年。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，91.1.535a–h；CC0。https://www.metmuseum.org/art/collection/search/444408",
+    "src": "https://www.metmuseum.org/art/collection/search/444408",
+    "license": "CC0"
+  },
+  "s04": {
+    "cap": "Diego Gutiérrez《美洲图》，1562 年。美国国会图书馆，无已知版权限制。",
+    "alt": "1562 年的美洲地图",
+    "credit": "Diego Gutiérrez《美洲图》，1562 年。美国国会图书馆，无已知版权限制。 — Library of Congress, Geography and Map Division，G3290 1562 .G7 (Rosenwald Collection no. 1303)；Public Domain。https://www.loc.gov/item/map49000970/",
+    "src": "https://www.loc.gov/item/map49000970/",
+    "license": "Public Domain"
+  },
+  "s05": {
+    "cap": "《利维坦》扉页细部，Abraham Bosse 刻，1651 年。大英图书馆藏品扫描，公有领域。",
+    "alt": "利维坦扉页细部：小人组成的身躯",
+    "credit": "《利维坦》扉页细部，1651 — 大英图书馆藏品扫描，公有领域。",
+    "src": "https://commons.wikimedia.org/wiki/File:Leviathan_by_Thomas_Hobbes.jpg",
+    "license": "Public Domain"
+  },
+  "s06": {
+    "cap": "《磨光平板玻璃的技艺》，1747 年版画。惠康收藏，公有领域标记。",
+    "alt": "1747 年的玻璃工场版画",
+    "credit": "《磨光平板玻璃的技艺》，1747 年版画。惠康收藏，公有领域标记。 — Wellcome Collection, London，Wellcome Collection work n7jqayk4 / image V0024060；Public Domain。https://wellcomecollection.org/works/n7jqayk4",
+    "src": "https://wellcomecollection.org/works/n7jqayk4",
+    "license": "Public Domain"
+  },
+  "s07": {
+    "cap": "Charles Thévenin《攻占巴士底狱》，1790 年。大都会艺术博物馆，CC0。",
+    "alt": "攻占巴士底狱的版画",
+    "credit": "Charles Thévenin《攻占巴士底狱》，1790 年。大都会艺术博物馆，CC0。 — The Metropolitan Museum of Art, New York (Open Access)，2008.592；CC0。https://www.metmuseum.org/art/collection/search/384288",
+    "src": "https://www.metmuseum.org/art/collection/search/384288",
+    "license": "CC0"
+  },
+  "s08": {
+    "cap": "W. E. B. 杜波依斯，Cornelius M. Battey 摄，1918 年。美国国会图书馆，无已知版权限制。",
+    "alt": "杜波依斯 1918 年肖像",
+    "credit": "W. E. B. 杜波依斯，Cornelius M. Battey 摄，1918 年。美国国会图书馆，无已知版权限制。 — Library of Congress, Prints and Photographs Division，LC-DIG-ppmsca-38818；No known restrictions。https://www.loc.gov/item/2003681451/",
+    "src": "https://www.loc.gov/item/2003681451/",
+    "license": "No known restrictions"
+  },
+  "wk-republic": {
+    "cap": "希腊化时期的金戒指，约公元前 4 世纪末至前 3 世纪，戒面刻着一个男子头像——居盖斯的戒指。大都会艺术博物馆藏（10.132.1），公有领域（CC0）。",
+    "alt": "一枚希腊金戒指，戒面刻着一个头像",
+    "credit": "金戒指，希腊化时期，约公元前 4 世纪末至前 3 世纪 — 大都会艺术博物馆藏（10.132.1，1910 年购入），公有领域（CC0）。https://www.metmuseum.org/art/collection/search/248265",
+    "src": "https://www.metmuseum.org/art/collection/search/248265",
+    "license": "CC0"
+  }
 }

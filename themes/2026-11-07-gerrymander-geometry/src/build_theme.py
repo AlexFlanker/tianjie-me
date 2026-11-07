@@ -9,8 +9,26 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
 def esc(s): return html.escape(str(s), quote=True)
 def J(name): return json.load(open(os.path.join(HERE, 'research', name), encoding='utf-8'))
-A = J('timeline_A.json'); B = J('polities_B.json'); C = J('metrics_C.json'); D = J('week_D.json')
-IM = {i['id']: i for i in json.load(open(os.path.join(HERE, 'images.json'), encoding='utf-8'))}
+import fixes
+def J2(path, key):
+    t = open(path, encoding='utf-8').read()
+    for item in fixes.POST:
+        k, old, new = item[:3]; n = item[3] if len(item) > 3 else 1
+        if k != key: continue
+        c = t.count(old)
+        if c != n: raise SystemExit(f'fixes.POST 命中 {c} 次（期望 {n}）：{old[:40]}')
+        t = t.replace(old, new)
+    return json.loads(t)
+A = J2(os.path.join(HERE, 'research', 'timeline_A.json'), 'A'); B = J2(os.path.join(HERE, 'research', 'polities_B.json'), 'B'); C = J2(os.path.join(HERE, 'research', 'metrics_C.json'), 'C'); D = J('week_D.json')
+IM = {i['id']: i for i in J2(os.path.join(HERE, 'images.json'), 'I')}
+def _patch(obj, path, val):
+    cur = obj
+    for p in path[:-1]: cur = cur[p]
+    cur[path[-1]] = val
+for k, path, val in fixes.PATCH:
+    root = {'A': {n['id']: n for n in A['nodes']}, 'B': {p['id']: p for p in B['polities']}}[k]
+    _patch(root, path, val)
+print('fixes:', len(fixes.POST), 'POST +', len(fixes.PATCH), 'PATCH 全部命中')
 STAGE = json.load(open(os.path.join(HERE, 'stage.json'), encoding='utf-8'))
 WORLD = json.load(open(os.path.join(os.path.dirname(OUT), '2026-10-10-nobel-machines', 'src', 'world.json'), encoding='utf-8'))
 NODES = {n['id']: n for n in A['nodes']}
@@ -32,6 +50,17 @@ def img_tag(iid, alt='', cls='', lazy=True, w=None):
     im = IM[iid]; USED_IMG.append(iid) if iid not in USED_IMG else None
     return f'<img src="assets/{esc(im["file"])}" alt="{esc(alt or im["subject"])}" width="{im["width"]}" height="{im["height"]}"{" loading=\"lazy\"" if lazy else " fetchpriority=\"high\""} decoding="async">'
 def credit(iid): im = IM[iid]; return f'<span class="cr">图：{esc(im["author_short"])}，{esc(im["license_short"])}。</span>'
+def fmtnum(v):
+    return f'{v:,}' if isinstance(v, int) and abs(v) >= 10000 else str(v)
+def brief(s, n):
+    """截到 n 字以内的最后一个「；」「，」「。」处，没有就硬截加「…」。"""
+    s = str(s or '')
+    if len(s) <= n: return s
+    cut = s[:n]
+    for sep in '；。，':
+        i = cut.rfind(sep)
+        if i >= n // 2: return cut[:i]
+    return cut.rstrip('（(') + '…'
 def clean(s):
     """清掉底稿里写给编辑看的话。"""
     s = str(s or '')
@@ -126,7 +155,7 @@ def week_sec():
         cards += f'<div class="wcard fade"><p class="k">{esc(c["k"])}</p><h3>{esc(c["title"])}</h3><p>{esc(c["text"])}</p>{extra}</div>'
     rows = ''.join(f'<tr><td>{esc(r[0])}</td><td>{esc(r[1])}</td><td>{esc(r[2])}</td><td>{esc(r[3])}</td><td>{esc(r[4])}</td></tr>' for r in W['table'])
     table = f'''<details class="fold big"><summary><h3>十年中途重划：谁通过、什么时候、改了多少、法院怎么说（截至 2026-11-05）</h3></summary>
-<div class="wtable"><table><thead><tr><th>州</th><th>通过方式</th><th>日期</th><th>改动</th><th>法院状态 · 2026 年用哪张图</th></tr></thead><tbody>{rows}</tbody></table></div>
+<div class="wtable"><table><thead><tr><th>州</th><th>谁定的图</th><th>日期</th><th>改动</th><th>法院状态 · 2026 年用哪张图</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="small" style="margin-top:12px">{esc(W['table_note'])}</p></details>'''
     return f'''<section class="week" id="week" aria-label="这一周"><div class="wide"><div class="weekin">
 <div class="weekk"><h2>这一周</h2><p class="small">{esc(W['lede'])}</p></div>
@@ -148,7 +177,7 @@ HIST = hist_groups()
 def hist_row(nid):
     n = NODES[nid]; y = node_year(n); lane = n['lane']
     attrs = ' '.join(f'data-g-{lens}="{next((g["k"] for g in groups if nid in g["ids"]), "")}"' for lens, groups in HIST.items())
-    nums = ''.join(f'<div><span>{esc(x["label"])}</span><b>{esc(x["value"])}{(" " + esc(x["unit"])) if x.get("unit") else ""}</b></div>' for x in (n.get('numbers') or [])[:4])
+    nums = ''.join(f'<div><span>{esc(x["label"])}</span><b>{esc(fmtnum(x["value"]))}{(" " + esc(x["unit"])) if x.get("unit") else ""}</b></div>' for x in (n.get('numbers') or [])[:4])
     q = f'<blockquote class="lquote">{esc(n["quote"])}<small>{esc(clean(n.get("quote_src", "")))}</small></blockquote>' if n.get('quote') else ''
     disp = f'<p class="dispute"><b>两说</b>{esc(n["dispute"])}</p>' if n.get('dispute') else ''
     fig = ''
@@ -202,7 +231,7 @@ def ruler_year(mid):
 def ruler_groups():
     ids = E.RULER_ORDER
     out = {'what': [dict(k=k, label=l, ids=[i for i in ids if E.RULER_GROUP[i] == k]) for k, l in E.RULER_GROUP_NAME]}
-    out['year'] = [dict(k='old', label='1991 年以前提出', ids=[i for i in ids if ruler_year(i) < 1991]), dict(k='mid', label='1991–2014', ids=[i for i in ids if 1991 <= ruler_year(i) < 2015]), dict(k='new', label='2015 年以后', ids=[i for i in ids if ruler_year(i) >= 2015])]
+    out['year'] = [dict(k='old', label='1991 年以前的代表作', ids=[i for i in ids if ruler_year(i) < 1991]), dict(k='mid', label='1991–2014 年的代表作', ids=[i for i in ids if 1991 <= ruler_year(i) < 2015]), dict(k='new', label='2015 年以后的代表作', ids=[i for i in ids if ruler_year(i) >= 2015])]
     return {k: [g for g in v if g['ids']] for k, v in out.items()}
 RUL = ruler_groups()
 def ruler_row(mid):
@@ -223,7 +252,7 @@ def ruler_row(mid):
 </div></div></article>'''
 
 def ch_rulers():
-    tabs = ''.join(f'<button type="button" role="tab" data-lens="{k}" aria-selected="{"true" if k == "what" else "false"}">{esc(t)}</button>' for k, t in [('what', '量什么'), ('year', '提出年代')])
+    tabs = ''.join(f'<button type="button" role="tab" data-lens="{k}" aria-selected="{"true" if k == "what" else "false"}">{esc(t)}</button>' for k, t in [('what', '量什么'), ('year', '用于选区研究的年代')])
     body = ''
     for g in RUL['what']:
         body += f'<div class="lgh" data-g="{g["k"]}"><b>{esc(g["label"])}</b><small>{len(g["ids"])} 把</small></div>' + ''.join(ruler_row(i) for i in g['ids'])
@@ -240,10 +269,14 @@ def ch_rulers():
 </div></section>'''
 
 # ---------- 第三章 · 各国
+def pol_index(pid):
+    p = POLS[pid]
+    if p['id'] in ('zaf', 'nld', 'isr'): return 0.0
+    if pid == 'nir': return None
+    return B['index']['values'].get(p['iso3'])
 def pol_groups():
     ids = [p['id'] for p in B['polities']]
-    idx = B['index']['values']
-    def iv(pid): p = POLS[pid]; return idx.get(p['iso3']) if p['id'] != 'nir' else None
+    def iv(pid): return pol_index(pid)
     byidx = lambda L: sorted(L, key=lambda i: (-(iv(i) if iv(i) is not None else -1), POLS[i]['name_zh']))
     out = {}
     out['who'] = [dict(k=k, label=l, ids=byidx([i for i in ids if POLS[i]['who_draws'] == k])) for k, l in E.WHO_NAME.items()]
@@ -252,24 +285,19 @@ def pol_groups():
     out['region'] = [dict(k=k, label=l, ids=byidx([i for i in ids if E.POL_REGION[i] == k])) for k, l in E.POL_REGION_NAME]
     return {k: [g for g in v if g['ids']] for k, v in out.items()}
 POL = pol_groups()
-def pol_index(pid):
-    p = POLS[pid]
-    if p['pathology'] == 'neither' and p['system'] == 'pr' and p['id'] in ('zaf', 'nld', 'isr'): return 0.0
-    if pid == 'nir': return None
-    return B['index']['values'].get(p['iso3'])
 def pol_row(pid):
     p = POLS[pid]; v = pol_index(pid)
     attrs = ' '.join(f'data-g-{lens}="{next((g["k"] for g in groups if pid in g["ids"]), "")}"' for lens, groups in POL.items())
     idx = (f'<span class="lidx"><b>{v:.3f}</b>指数<u><i style="width:{min(100, v / 0.21 * 100):.0f}%"></i></u></span>' if v is not None else '<span class="lidx"><b>—</b>指数缺</span>')
-    nums = ''.join(f'<div><span>{esc(x["label"])}{(" · " + esc(x["year"])) if x.get("year") else ""}</span><b>{esc(x["value"])}{(" " + esc(x["unit"])) if x.get("unit") else ""}</b></div>' for x in (p.get('numbers') or [])[:4])
+    nums = ''.join(f'<div><span>{esc(x["label"])}{(" · " + esc(x["year"])) if x.get("year") else ""}</span><b>{esc(fmtnum(x["value"]))}{(" " + esc(x["unit"])) if x.get("unit") else ""}</b></div>' for x in (p.get('numbers') or [])[:4])
     disp = f'<p class="dispute"><b>两说</b>{esc(p["dispute"])}</p>' if p.get('dispute') else ''
     ev = p.get('event') or {}
     return f'''<article class="lrow" id="n-{esc(pid)}" data-id="{esc(pid)}" {attrs}>
 <button type="button" class="lhead" aria-expanded="false" aria-controls="lm-{esc(pid)}">
 <span class="lname"><b>{esc(p['name_zh'])}</b><small>{esc(p['name_en'])}</small></span>
-<span class="lwho"><span class="tag">{esc(E.WHO_NAME[p['who_draws']])}</span>{esc(p['who_text'][:38])}</span>
-<span class="lsys"><span class="tag">{esc(E.SYS_NAME[p['system']])}</span>{esc(p['system_text'][:30])}</span>
-<span class="lpath {esc(p['pathology'])}">{esc(E.PATH_NAME[p['pathology']])}：{esc(p['pathology_text'][:44])}</span>
+<span class="lwho"><span class="tag">{esc(E.WHO_NAME[p['who_draws']])}</span>{esc(brief(p['who_text'], 38))}</span>
+<span class="lsys"><span class="tag">{esc(E.SYS_NAME[p['system']])}</span>{esc(brief(p['system_text'], 30))}</span>
+<span class="lpath {esc(p['pathology'])}">{esc(E.PATH_NAME[p['pathology']])}：{esc(brief(p['pathology_text'], 44))}</span>
 {idx}<span class="lchev" aria-hidden="true"></span></button>
 <div class="lmore" id="lm-{esc(pid)}" role="region" aria-label="{esc(p['name_zh'])} 详情"><div class="lmore-in">
 <p class="ltext">{esc(clean(p['text']))}</p>
@@ -310,7 +338,7 @@ def ch_world():
 def ch_count():
     cards = ''
     for c in E.PARADOX_CARDS:
-        btn = f'<button type="button" class="sbtn red" data-demo="{esc(c["btn"][0])}">{esc(c["btn"][1])}</button>' if c.get('btn') else ''
+        btn = ' '.join(f'<button type="button" class="sbtn red" data-demo="{esc(k)}">{esc(t)}</button>' for k, t in c.get('btns', []))
         cards += f'<div class="pcard fade"><p class="k">{esc(c["year"])}</p><h3>{esc(c["title"])}</h3><p>{esc(c["text"])}</p>{btn}</div>'
     methods = ''.join(f'<label><input type="checkbox" data-m="{k}" {"checked" if k in ("hamilton", "webster", "huntington_hill") else ""}> {esc(E.METHOD_SHORT[k])}</label>' for k in E.METHOD_SHORT)
     opts = ''.join(f'<option value="{y}">{lab}</option>' for y, lab in (('1880', '1880 年普查 · 38 州（1882 年法案 325 席）'), ('1900', '1900 年普查 · 45 州（1901 年法案 386 席）'), ('2020', '2020 年普查 · 50 州（435 席）')))
@@ -402,7 +430,7 @@ def data():
         stage=dict(n=STAGE['n'], K=STAGE['K'], cells=STAGE['cells'], plans=STAGE['plans'], steps=[dict(id=s['id'], plan=s['plan'], name=s['name'], short=s['short'], how=s['how'], read=s['read']) for s in STEPS]),
         nodes=nodes, laneName=E.LANE_NAME,
         lens={'history': HIST, 'rulers': RUL, 'world': POL},
-        lensName={'history': dict(E.HISTORY_LENSES), 'rulers': {'what': '量什么', 'year': '提出年代'}, 'world': dict(E.WORLD_LENSES)},
+        lensName={'history': dict(E.HISTORY_LENSES), 'rulers': {'what': '量什么', 'year': '用于选区研究的年代'}, 'world': dict(E.WORLD_LENSES)},
         ap=ap, methodName=E.METHOD_SHORT,
         pols=[dict(id=p['id'], name=p['name_zh']) for p in B['polities']],
     )

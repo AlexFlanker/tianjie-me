@@ -65,6 +65,20 @@
       "log": "《AGI前夜》网页版上线",
       "log_sub": "2.0.6，五种语言，浏览器直接玩",
       "caption": "作品 01，像素 2.5D 办公室"
+    },
+    {
+      "no": 2,
+      "title": "死线 DEADLINE",
+      "url": "https://games.tianjie.me/deadline/",
+      "play": "https://games.tianjie.me/deadline/play/",
+      "cover": "https://games.tianjie.me/deadline/media/cover.png",
+      "date": "2026-11-07",
+      "version": "M0.6",
+      "kicker": "双摇杆射击，昼夜生存，一局约 20 分钟，手机横屏可玩",
+      "desc": "周五 18:00 准时下班。白天在工位间潜行搜刮，夜里守住路障撑过四个加班夜，带齐四件道具冲进电梯。",
+      "log": "《死线》上线",
+      "log_sub": "作品 02，双摇杆射击 × 昼夜生存",
+      "caption": "作品 02，深夜的 17 层"
     }
   ],
   "tour": {

@@ -1,0 +1,650 @@
+[
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=raw-60].zh",
+  "lang": "zh",
+  "old": "这套规定 1950 年写入联邦法规（21 CFR 133），软质熟成奶酪一节（133.182）原文就是这一句。",
+  "new": "这条规定可追溯到 1949 年联邦政府发布的奶酪身份标准，现行条文收在 21 CFR 第 133 部分，软质熟成奶酪一节（133.182）写得最明白。",
+  "why": "两处问题：(1) 年份。联邦奶酪身份标准的终版规则 1949 年 4 月刊登于联邦公报（Knoll 2005 引 14 F.R. 1960）；1950 只见于 Food Safety News 等二手时间线。「可追溯到 1949 年」可辩护，与 hist_A 的 raw60 条一致。(2) 「1950 年写入 21 CFR 133」是时代错置：Part 133 这个编号是 1977 年重编时才有的（133.182 / 133.165 的来源行都是 42 FR 14366, 1977 年 3 月 15 日），此前在 Part 19。另外 133.182 原文是「If the milk used is not pasteurized, the cheese so made is cured at a temperature of not less than 35 °F for not less than 60 days」，页面是转述，不宜说「原文就是这一句」。",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Knoll, Origins of the 60-day rule (Harvard LEDA paper, 2005): final rule published 22 Apr 1949",
+    "url": "https://dash.harvard.edu/bitstream/handle/1/8852188/Knoll05.pdf"
+   },
+   {
+    "title": "21 CFR 133.182 Soft ripened cheeses (LII / Cornell; source line 42 FR 14366, Mar. 15, 1977)",
+    "url": "https://www.law.cornell.edu/cfr/text/21/133.182"
+   },
+   {
+    "title": "Food Safety News, Publisher's Platform: 60-Day Rule, the Facts (2011) — gives 1950",
+    "url": "https://www.foodsafetynews.com/2011/02/publishers-platform-60-day-rule-the-facts/"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=raw-60].en",
+  "lang": "en",
+  "old": "The requirement entered federal regulations (21 CFR 133) in 1950; the soft-ripened cheese section (133.182) states it verbatim.",
+  "new": "The rule goes back to the federal cheese standards of identity issued in 1949 and now sits in 21 CFR Part 133; the soft-ripened cheese section (§133.182) spells it out.",
+  "why": "Same as zh: the standards were published as a final rule in April 1949 (1950 is a secondary-source date), and \"21 CFR 133\" is a 1977 numbering, so it could not have been \"entered\" in 1950. The page paraphrases rather than quotes 133.182, so \"verbatim\" is overstated.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Knoll, Origins of the 60-day rule (Harvard LEDA paper, 2005): final rule published 22 Apr 1949",
+    "url": "https://dash.harvard.edu/bitstream/handle/1/8852188/Knoll05.pdf"
+   },
+   {
+    "title": "21 CFR 133.182 Soft ripened cheeses (LII / Cornell; source line 42 FR 14366, Mar. 15, 1977)",
+    "url": "https://www.law.cornell.edu/cfr/text/21/133.182"
+   },
+   {
+    "title": "Food Safety News, Publisher's Platform: 60-Day Rule, the Facts (2011) — gives 1950",
+    "url": "https://www.foodsafetynews.com/2011/02/publishers-platform-60-day-rule-the-facts/"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "THESIS.nums[60 天].k.en",
+  "lang": "en",
+  "old": "is the US minimum: cheese from unpasteurised milk must be aged at least 60 days above 35 °F (about 1.7 °C) before sale",
+  "new": "is the US federal minimum: cheese from unpasteurised milk must be aged at least 60 days at 35 °F (about 1.7 °C) or warmer before sale",
+  "why": "The regulation says \"not less than 35 °F\", i.e. 35 °F or warmer, not strictly \"above\". \"Federal\" added because the rule lives in the FDA standards of identity (and the interstate raw-milk ban, 21 CFR 1240.61). The zh「35°F 以上」already reads as inclusive and needs no change.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "21 CFR 133.182 Soft ripened cheeses (LII / Cornell; source line 42 FR 14366, Mar. 15, 1977)",
+    "url": "https://www.law.cornell.edu/cfr/text/21/133.182"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=pgi].zh",
+  "lang": "zh",
+  "old": "例如法国 Gruyère 是 PGI，要标「French Gruyère」。",
+  "new": "例如法国产的 Gruyère 是 PGI（2013 年登记），标签上必须在名称旁用同样大小的字写明产国「France」，英文里因此常叫 French Gruyère。",
+  "why": "欧盟第 110/2013 号实施条例把法国 Gruyère 登记为 PGI，条件是标签在同一视野内、用与名称同样大小的字标明原产国 France；法规没有规定必须写成「French Gruyère」这几个字，那是通行叫法。",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Commission Implementing Regulation (EU) No 110/2013 registering Gruyère (PGI, France)",
+    "url": "https://www.legislation.gov.uk/eur/2013/110/data.xht"
+   },
+   {
+    "title": "Gruyère cheese (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=pgi].en",
+  "lang": "en",
+  "old": "Among cheeses PDO is far more common than PGI; French Gruyère, for one, is a PGI sold as",
+  "new": "Among cheeses PDO is far more common than PGI; French Gruyère, for one, is a PGI (registered 2013) whose label must show “France” next to the name in letters of the same size, hence the usual English name",
+  "why": "Regulation (EU) No 110/2013 requires the country of origin, France, in the same field of vision and the same letter size as the name; \"French Gruyère\" is the customary name rather than a mandated wording. The rest of the sentence in the file (\"French Gruyère.\") follows on unchanged.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Commission Implementing Regulation (EU) No 110/2013 registering Gruyère (PGI, France)",
+    "url": "https://www.legislation.gov.uk/eur/2013/110/data.xht"
+   },
+   {
+    "title": "Gruyère cheese (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=parmesan-name].zh",
+  "lang": "zh",
+  "old": "联邦标准（21 CFR 133.165）只要求牛奶制、熟成 10 个月以上，产地、做法都不限。联盟规定美国门店不得写",
+  "new": "联邦标准（21 CFR 133.165）规定用牛奶、含水不超过 32%、固形物中乳脂不少于 32%、熟成至少 10 个月，还写了基本做法，只是不限产地。联盟给美国门店的指南明确说不能写",
+  "why": "133.165 不只要求牛奶和 10 个月：还规定含水 ≤32%、固形物乳脂 ≥32%，并在 (b) 段写明了做法（加乳酸菌、凝乳酶，切到麦粒大小，加热到 115–125°F，入模、压、盐渍、熟成），所以「做法不限」不对；真正不限的是产地。联盟的美国指南本身声明不具法律约束力，用「指南明确说不能」比「规定」更准（指南原话是 NOT ALLOWED）。",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "21 CFR 133.165 Parmesan and reggiano cheese (eCFR)",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.165"
+   },
+   {
+    "title": "Consorzio Parmigiano Reggiano, Guidelines for the USA market (rev. 08/2025)",
+    "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=parmesan-name].en",
+  "lang": "en",
+  "old": "asks only for cow's milk and 10-plus months of curing, with no origin or method rules. The Consortium bars U.S. retailers from hybrids like",
+  "new": "sets cow's milk, at most 32% moisture, at least 32% milkfat in the solids, a basic make procedure and at least 10 months of curing, but no place of origin. The Consortium's U.S. retail guidelines say hybrids are not allowed, such as",
+  "why": "21 CFR 133.165 also fixes moisture, milkfat and a make procedure (para. b), so \"only\" and \"no method rules\" are wrong; only geography is unrestricted. The Consortium guidelines state they are not a legally binding interpretation, so \"bars\" is softened to what the guidelines say (\"NOT ALLOWED\"). The quoted examples that follow in the file stay as they are.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "21 CFR 133.165 Parmesan and reggiano cheese (eCFR)",
+    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.165"
+   },
+   {
+    "title": "Consorzio Parmigiano Reggiano, Guidelines for the USA market (rev. 08/2025)",
+    "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "buying[id=parm-piece].zh",
+  "lang": "zh",
+  "old": "联盟规定美国店里现切的每一块都要带",
+  "new": "联盟给美国门店的指南要求现切包装的每一块都带一段",
+  "why": "指南原文是 should feature（应当带），且文件自称不具法律约束力；联盟 FAQ 也说切块可带皮可不带皮、从上下平面切下的块可能看不到字。「规定」改成「指南要求」。",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "Consorzio Parmigiano Reggiano, Guidelines for the USA market (rev. 08/2025)",
+    "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf"
+   },
+   {
+    "title": "Parmigiano Reggiano FAQ",
+    "url": "https://parmigianoreggiano.com/faq"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "buying[id=parm-piece].en",
+  "lang": "en",
+  "old": "which the Consortium requires for every piece cut in U.S. stores",
+  "new": "which the Consortium's U.S. retail guidelines call for on every piece cut and wrapped in store",
+  "why": "The guidelines say every portion cut and wrapped in store \"should feature\" a piece of rind with part of the pin-dot wording, and describe themselves as non-binding; \"requires\" is too strong.",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "Consorzio Parmigiano Reggiano, Guidelines for the USA market (rev. 08/2025)",
+    "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf"
+   },
+   {
+    "title": "Parmigiano Reggiano FAQ",
+    "url": "https://parmigianoreggiano.com/faq"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "TWO[wholefoods][3].zh",
+  "lang": "zh",
+  "old": "每年 12 月有「12 Days of Cheese」，12 天里每天一款特价。",
+  "new": "每年 12 月中旬有「12 Days of Cheese」：2025 年是 12 月 13–24 日，一批精选奶酪 12 天里一直打折（Prime 会员 7 折，非会员 78 折）。",
+  "why": "「每天一款」是往年的玩法；2025 年官方新闻稿写明整批精选奶酪在全部 12 天里都打折，Prime 会员 30% off、非会员 22% off，日期 12 月 13–24 日。",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Whole Foods Market newsroom: 12 Days of Cheese Returns… (3 Dec 2025)",
+    "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market"
+   },
+   {
+    "title": "Business Wire, 12 Days of Cheese 2025 (3 Dec 2025)",
+    "url": "https://www.businesswire.com/news/home/20251203197986/en"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "TWO[wholefoods][3].en",
+  "lang": "en",
+  "old": "every December “12 Days of Cheese” puts one cheese on sale each day.",
+  "new": "every December “12 Days of Cheese” discounts a curated set of cheeses (in 2025: Dec 13–24, 30% off with Prime and 22% off without, for all twelve days).",
+  "why": "The one-cheese-a-day format is out of date: the Dec 2025 release says each featured cheese is \"available at 30% off with Prime and 22% off without Prime for all 12 days\", Dec 13–24.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Whole Foods Market newsroom: 12 Days of Cheese Returns… (3 Dec 2025)",
+    "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market"
+   },
+   {
+    "title": "Business Wire, 12 Days of Cheese 2025 (3 Dec 2025)",
+    "url": "https://www.businesswire.com/news/home/20251203197986/en"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "buying[id=deal-12days].zh",
+  "lang": "zh",
+  "old": "全食每年 12 月中旬的「12 Days of Cheese」每天一款特价（2025 年 Prime 会员最多 7 折）",
+  "new": "全食每年 12 月中旬的「12 Days of Cheese」（2025 年是 12 月 13–24 日）让一批精选奶酪 12 天里一直打折，2025 年 Prime 会员 7 折、非会员 78 折",
+  "why": "同上：2025 年不是每天一款，而是整批精选奶酪全程打折；非会员也有 22% off。",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Whole Foods Market newsroom: 12 Days of Cheese Returns… (3 Dec 2025)",
+    "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market"
+   },
+   {
+    "title": "Business Wire, 12 Days of Cheese 2025 (3 Dec 2025)",
+    "url": "https://www.businesswire.com/news/home/20251203197986/en"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "buying[id=deal-12days].en",
+  "lang": "en",
+  "old": "Whole Foods' mid-December 12 Days of Cheese discounts one cheese a day (up to 30% off for Prime members in 2025)",
+  "new": "Whole Foods' mid-December 12 Days of Cheese (Dec 13–24 in 2025) discounts a curated set of cheeses for all twelve days, at 30% off with Prime and 22% off without in 2025",
+  "why": "The 2025 event discounted the whole featured assortment for all 12 days (30% Prime / 22% non-Prime), not one cheese per day.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Whole Foods Market newsroom: 12 Days of Cheese Returns… (3 Dec 2025)",
+    "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market"
+   },
+   {
+    "title": "Business Wire, 12 Days of Cheese 2025 (3 Dec 2025)",
+    "url": "https://www.businesswire.com/news/home/20251203197986/en"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "local[id=wf-ocean].best_for_zh",
+  "lang": "zh",
+  "old": "12 月「12 Days of Cheese」每天去捡一款特价",
+  "new": "12 月「12 Days of Cheese」期间买打折的精选奶酪",
+  "why": "与上两条一致：2025 年的活动不是每天换一款。",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Whole Foods Market newsroom: 12 Days of Cheese Returns… (3 Dec 2025)",
+    "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "local[id=wf-ocean].best_for_en",
+  "lang": "en",
+  "old": "daily December 12 Days of Cheese deals",
+  "new": "December's 12 Days of Cheese markdowns",
+  "why": "Consistent with the fixes above: the 2025 event was not a daily single-cheese deal.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Whole Foods Market newsroom: 12 Days of Cheese Returns… (3 Dec 2025)",
+    "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "TWO[wholefoods][1].zh",
+  "lang": "zh",
+  "old": "Ocean Ave 店的门店页就列着这项服务。",
+  "new": "Ocean Ave 店的门店页就列着这项服务，并注明在岗时间要问门店，专程去可以先打电话。",
+  "why": "Ocean Ave 门店页确实列了 Certified Cheese Professional，但旁注「Check with store for available hours」——CCP 不一定全天在岗。对专程去的读者有用。",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Whole Foods Market Ocean Ave store page",
+    "url": "https://www.wholefoodsmarket.com/stores/ocean"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "TWO[wholefoods][1].en",
+  "lang": "en",
+  "old": "The Ocean Ave store lists the service on its page.",
+  "new": "The Ocean Ave store lists the service on its page, with a note to check with the store for hours, so call ahead if you are making a trip of it.",
+  "why": "The store page lists Certified Cheese Professional with \"Check with store for available hours\"; the CCP is not necessarily on the floor all day.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Whole Foods Market Ocean Ave store page",
+    "url": "https://www.wholefoodsmarket.com/stores/ocean"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "BOARD_NOTE.zh",
+  "lang": "zh",
+  "old": "三盘都按 Ocean Ave 全食常见的品种配",
+  "new": "三盘都用全食常见的品种配（各店货品不同，Ocean Ave 店没有逐样核对）",
+  "why": "底稿没有核过 Ocean Ave 店的具体货品，$90 那盘的总价注里也写了 Rogue River Blue 与 Harbison「是否有货未逐店核实」；「Ocean Ave 店常见」说过头了。",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Whole Foods Market Ocean Ave store page",
+    "url": "https://www.wholefoodsmarket.com/stores/ocean"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "BOARD_NOTE.en",
+  "lang": "en",
+  "old": "All three use cheeses usually stocked at the Ocean Ave Whole Foods",
+  "new": "All three use cheeses Whole Foods commonly carries (stock varies by store and was not checked item by item at Ocean Ave)",
+  "why": "Store-level stock was never verified; the $90 board itself notes Rogue River Blue and Harbison availability at Ocean Ave was not checked.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Whole Foods Market Ocean Ave store page",
+    "url": "https://www.wholefoodsmarket.com/stores/ocean"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "TWO[eataly][3].zh",
+  "lang": "zh",
+  "old": "楼上的烹饪学校 La Scuola 开过「Hands-On: Mozzarella」实操课，两小时，跟主厨一起做。",
+  "new": "店里的烹饪学校 La Scuola 开过「Hands-On: Mozzarella」实操课（最近一期在 2026 年 7 月），两小时，跟主厨一起做。",
+  "why": "课程本身已核（Eventbrite：2026-07-10，18:00–20:00，Scuola 主厨带做），但没有任何来源说学校在楼上；三层的楼层分布未核，去掉「楼上」。",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Eventbrite: Hands-On: Mozzarella, Eataly Silicon Valley (10 Jul 2026)",
+    "url": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1990676399699"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "TWO[eataly][3].en",
+  "lang": "en",
+  "old": "Upstairs, the La Scuola cooking school has run two-hour “Hands-On: Mozzarella” classes with a chef.",
+  "new": "The in-store La Scuola cooking school has run two-hour “Hands-On: Mozzarella” classes with a chef, most recently in July 2026.",
+  "why": "The class is confirmed (Eventbrite, 10 Jul 2026, 6–8 pm, led by a Scuola chef); no source places the school upstairs.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Eventbrite: Hands-On: Mozzarella, Eataly Silicon Valley (10 Jul 2026)",
+    "url": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1990676399699"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "boards[id=board-25].items[marin-french-brie].why_zh",
+  "lang": "zh",
+  "old": "最便宜的加州软质",
+  "new": "加州软质里很便宜的一款",
+  "why": "「最便宜」是无法核实的最高级说法（价格是估算区间）；改为相对说法。",
+  "verdict": "overstated",
+  "sources": []
+ },
+ {
+  "file": "counter_D.json",
+  "where": "boards[id=board-25].items[marin-french-brie].why_en",
+  "lang": "en",
+  "old": "the cheapest California soft cheese",
+  "new": "one of the cheapest California soft cheeses",
+  "why": "Superlative not supported by the estimated price ranges.",
+  "verdict": "overstated",
+  "sources": []
+ },
+ {
+  "file": "counter_D.json",
+  "where": "boards[id=board-50].items[laura-chenel-chevre].why_zh",
+  "lang": "zh",
+  "old": "是 Chez Panisse 用了几十年的那一款",
+  "new": "Alice Waters 上世纪 80 年代初开始为 Chez Panisse 订的就是这一家",
+  "why": "有据的是 Waters 在 1980/1981 年尝到后开始每周订 50 磅、做成招牌沙拉；「用了几十年」意味着至今仍在用，没有 2026 年的来源。改成有据的起点说法（底稿自己也记了 1980 vs 1981 两说，所以写「80 年代初」）。",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Laura Chenel (Wikipedia): Waters tried it at a farmers' market in 1981; Santa Rosa factory 1981",
+    "url": "https://en.wikipedia.org/wiki/Laura_Chenel"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "boards[id=board-50].items[laura-chenel-chevre].why_en",
+  "lang": "en",
+  "old": "the one Chez Panisse has used for decades",
+  "new": "from the maker Alice Waters began buying from for Chez Panisse in the early 1980s",
+  "why": "Documented: Waters tasted it in 1980/81 and ordered 50 lb a week for a salad that became a house staple. Continuous use \"for decades\" up to now is not sourced.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Laura Chenel (Wikipedia): Waters tried it at a farmers' market in 1981; Santa Rosa factory 1981",
+    "url": "https://en.wikipedia.org/wiki/Laura_Chenel"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "cheeses[id=pecorino-romano].origin_zh",
+  "lang": "zh",
+  "old": "意大利 · 撒丁岛",
+  "new": "意大利 · 撒丁岛与拉齐奥",
+  "why": "Pecorino Romano DOP 的产区是撒丁岛、拉齐奥和托斯卡纳的格罗塞托省；大部分产量在撒丁岛，但只写撒丁岛会让读者奇怪名字里的「Romano」从哪来。",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Consorzio Pecorino Romano DOP — production area Sardinia, Lazio, province of Grosseto",
+    "url": "https://www.pecorinoromano.com/"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "cheeses[id=pecorino-romano].origin_en",
+  "lang": "en",
+  "old": "Italy · Sardinia",
+  "new": "Italy · Sardinia & Lazio",
+  "why": "The DOP area is Sardinia, Lazio and the province of Grosseto; most is made in Sardinia.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Consorzio Pecorino Romano DOP — production area Sardinia, Lazio, province of Grosseto",
+    "url": "https://www.pecorinoromano.com/"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "boards[id=board-50].total_note_zh",
+  "lang": "zh",
+  "old": "估算奶酪约 $25–33、配菜 $14–17，合计约 $39–50",
+  "new": "估算奶酪约 $21–32、配菜 $14–17，合计约 $35–49",
+  "why": "按页面自己的每磅区间重算：山羊 4 oz（$3.5–5.5）+ Mt Tam 7 oz（$10.5–15.75）+ Comté 3 oz（$4.1–6.4）+ Original Blue 2 oz（$3–4.25）= $21.1–31.9，原写 $25–33 下限偏高。另两盘（$12–19、$45–68）算得对。价格区间本身都合理，不改。",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "counter_D.json",
+  "where": "boards[id=board-50].total_note_en",
+  "lang": "en",
+  "old": "estimated $25–33 for cheese plus $14–17 for extras, about $39–50",
+  "new": "estimated $21–32 for cheese plus $14–17 for extras, about $35–49",
+  "why": "Recomputed from the page's own per-lb ranges: 4 oz chèvre + 7 oz Mt Tam + 3 oz Comté + 2 oz Original Blue = $21.1–31.9. The other two boards add up correctly.",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "counter_D.json",
+  "where": "storage[id=how-long].zh",
+  "lang": "zh",
+  "old": "硬质（Parmigiano 等）约 6 周；半硬（Cheddar、Gouda）约 4 周；软质和新鲜（ricotta、Gorgonzola）约 2 周。",
+  "new": "硬质和半硬（Parmigiano、Cheddar、Gouda、Gruyère）约 3–4 周；软质和新鲜（Brie、mozzarella、山羊奶酪、ricotta）约 1 周。",
+  "why": "美国农业部（USDA）的开封后冷藏口径是：硬质（cheddar、Swiss、整块 Parmesan）3–4 周，软质（brie、feta、mozzarella、ricotta、chèvre 等）1 周。原文 6 周 / 2 周都比官方口径长一倍，ricotta 开封两周有食品安全风险。底稿 note 自己也说「两周偏宽」。",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "Ask USDA: How long can you keep dairy products like yogurt, milk and cheese in the refrigerator?",
+    "url": "https://ask.usda.gov/s/article/How-long-can-you-keep-dairy-products-like-yogurt-milk-and-cheese-in-the-refrigerator"
+   },
+   {
+    "title": "Healthline, How long does cheese last in the fridge (table citing USDA: soft 1 week, hard 3–4 weeks opened)",
+    "url": "https://www.healthline.com/nutrition/how-long-does-cheese-last-in-the-fridge"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "storage[id=how-long].en",
+  "lang": "en",
+  "old": "hard cheeses like Parmigiano about 6 weeks; semi-hard like cheddar and Gouda about 4 weeks; soft and fresh like ricotta and Gorgonzola about 2 weeks.",
+  "new": "hard and semi-hard cheeses like Parmigiano, cheddar, Gouda and Gruyère about 3–4 weeks; soft and fresh ones like brie, mozzarella, chèvre and ricotta about a week.",
+  "why": "USDA guidance for opened cheese: hard (cheddar, Swiss, block Parmesan) 3–4 weeks; soft (brie, mozzarella, ricotta, chèvre, feta) about 1 week. The original doubles both; two weeks for opened ricotta is a safety concern. The unopened \"6 months\" for vacuum-packed Parmigiano matches USDA and stays.",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "Ask USDA: How long can you keep dairy products like yogurt, milk and cheese in the refrigerator?",
+    "url": "https://ask.usda.gov/s/article/How-long-can-you-keep-dairy-products-like-yogurt-milk-and-cheese-in-the-refrigerator"
+   },
+   {
+    "title": "Healthline, How long does cheese last in the fridge (table citing USDA: soft 1 week, hard 3–4 weeks opened)",
+    "url": "https://www.healthline.com/nutrition/how-long-does-cheese-last-in-the-fridge"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "storage[id=mold].zh",
+  "lang": "zh",
+  "old": "硬质、半硬奶酪把霉点四周和下方约 1 英寸（2.5 厘米）切掉，其余可吃；软质和新鲜奶酪一旦长了不该有的霉，整块扔掉。",
+  "new": "硬质、半硬奶酪把霉点四周和下方至少 1 英寸（2.5 厘米）切掉，刀别碰到霉，切完换新纸包好，其余可吃；软质和新鲜奶酪，以及刨丝、切片、弄碎的奶酪（不论哪种），一旦长了不该有的霉，整块扔掉。",
+  "why": "USDA FSIS 的说法是「至少」1 英寸、刀不要碰到霉以免带到别处，并且刨丝、切片、碎奶酪（任何种类）长霉一律扔掉——原文漏了这一条，读者可能把长霉的硬质奶酪丝也切一切接着吃。",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "USDA FSIS, Molds on Food: Are They Dangerous?",
+    "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/molds-food-are-they-dangerous"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "storage[id=mold].en",
+  "lang": "en",
+  "old": "on hard and semi-hard cheese, cut away about an inch around and below the spot and eat the rest; throw out soft and fresh cheeses that grow unexpected mold.",
+  "new": "on hard and semi-hard cheese, cut away at least an inch around and below the spot, keeping the knife out of the mold, then rewrap and eat the rest; throw out soft and fresh cheeses, and any shredded, sliced or crumbled cheese, that grow unexpected mold.",
+  "why": "USDA FSIS: cut off \"at least 1 inch\", keep the knife out of the mold, rewrap; discard soft cheese and shredded, sliced or crumbled cheese of any type. The shredded/sliced exception is a safety point the original omits.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "USDA FSIS, Molds on Food: Are They Dangerous?",
+    "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/molds-food-are-they-dangerous"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=label-milk].zh",
+  "lang": "zh",
+  "old": "美国联邦标准要求非牛奶的奶酪写明「made from」哪种奶，按重量多少排列",
+  "new": "美国联邦的奶酪标准里（例如软质熟成奶酪一节 133.182），用了牛奶以外的奶，名称里要写明「made from」哪种奶，按重量多少排列",
+  "why": "「made from ___」的规定已核于 133.182 (e)；底稿 note 提醒其它品类各有标准，不宜写成适用所有奶酪的统一条款。改为举例说法。",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "21 CFR 133.182 Soft ripened cheeses (LII / Cornell; source line 42 FR 14366, Mar. 15, 1977)",
+    "url": "https://www.law.cornell.edu/cfr/text/21/133.182"
+   }
+  ]
+ },
+ {
+  "file": "counter_D.json",
+  "where": "labels[id=label-milk].en",
+  "lang": "en",
+  "old": "U.S. standards require non-cow's-milk cheeses to say",
+  "new": "U.S. cheese standards (the soft-ripened section, §133.182, for one) require cheeses made with milk other than cow's to say",
+  "why": "Verified for §133.182(e) only; the research note warns against presenting it as a rule for every cheese. The following words in the file (\"made from\" which milk…) continue unchanged.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "21 CFR 133.182 Soft ripened cheeses (LII / Cornell; source line 42 FR 14366, Mar. 15, 1977)",
+    "url": "https://www.law.cornell.edu/cfr/text/21/133.182"
+   }
+  ]
+ },
+ {
+  "file": "hist_A.json",
+  "where": "regs[id=american].zh",
+  "lang": "zh",
+  "old": "可加磷酸盐、柠檬酸盐等乳化盐（固形物不超过 3%）",
+  "new": "可加磷酸盐、柠檬酸盐等乳化盐（乳化盐固形物不超过成品重量的 3%）",
+  "why": "133.169(c) 原文是乳化剂固形物「not more than 3 percent of the weight of the pasteurized process cheese」，比例的分母是成品重量；原写法容易读成「奶酪固形物的 3%」。",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "21 CFR 133.169 Pasteurized process cheese (LII / Cornell)",
+    "url": "https://www.law.cornell.edu/cfr/text/21/133.169"
+   }
+  ]
+ },
+ {
+  "file": "hist_A.json",
+  "where": "regs[id=american].en",
+  "lang": "en",
+  "old": "with emulsifying salts such as phosphates or citrates up to 3% of solids.",
+  "new": "with emulsifying salts such as phosphates or citrates, their solids at most 3% of the finished cheese's weight.",
+  "why": "133.169(c): the weight of the emulsifier solids may not exceed 3% of the weight of the pasteurized process cheese; \"3% of solids\" misstates the base.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "21 CFR 133.169 Pasteurized process cheese (LII / Cornell)",
+    "url": "https://www.law.cornell.edu/cfr/text/21/133.169"
+   }
+  ]
+ },
+ {
+  "file": "hist_A.json",
+  "where": "regs[id=stresa-typical].zh",
+  "lang": "zh",
+  "old": "这就是为什么 Camembert、Brie、Gouda、Edam 这类名字世界各地都能用，",
+  "new": "这就是 Camembert、Brie、Gouda、Edam 这类名字在欧洲各国都能用的由来（美国不是缔约国，这些名字在美国本来就是通用名），",
+  "why": "斯特雷萨公约的缔约国全是欧洲国家，管不到美国；读者在旧金山看到的美国产 Brie、Gouda，是因为这些名字在美国法律下本来就是通用名，不是因为公约。原句把公约说成「世界各地」的原因，说过头了。",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Consorzio Pecorino Romano press release on the Stresa Convention (signatories 'tutti europei')",
+    "url": "https://www.pecorinoromano.com/download_file/603/1116"
+   }
+  ]
+ },
+ {
+  "file": "hist_A.json",
+  "where": "regs[id=stresa-typical].en",
+  "lang": "en",
+  "old": "That is why names like Camembert, Brie, Gouda and Edam are used worldwide,",
+  "new": "That is how names like Camembert, Brie, Gouda and Edam came to be shared across Europe (the US never signed; there these names are simply generic),",
+  "why": "All Stresa signatories were European, so the convention explains European usage, not why Brie and Gouda are made in the US.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Consorzio Pecorino Romano press release on the Stresa Convention (signatories 'tutti europei')",
+    "url": "https://www.pecorinoromano.com/download_file/603/1116"
+   }
+  ]
+ },
+ {
+  "confirmed": [
+   "60-day rule: 'not less than 35 °F for not less than 60 days' for unpasteurized milk confirmed verbatim in 21 CFR 133.182(a); fresh raw-milk cheese cannot be sold at US counters in practice (federal standards + 21 CFR 1240.61 interstate ban). Zh THESIS「35°F 以上」fine. Origin year: use 'traces to 1949' (final rule published 22 Apr 1949 per Knoll 2005); 1950 is a secondary-source date. The 13 Oct 2026 amendment to Part 133 (91 FR 65059) is the salt-substitutes rule and does not touch the 60-day requirement.",
+   "21 CFR 133.182 'made from ___' milk labelling confirmed (para. e); 21 CFR 133.165 and 133.169 cited sections exist and say what is described, apart from the fixes listed.",
+   "Gruyère: TTAB found GRUYERE generic; E.D. Va. (Judge Ellis) granted summary judgment in 2021 (575 F. Supp. 3d 627); Fourth Circuit affirmed 3 Mar 2023 (No. 22-1041). Opposers USDEC, Atalanta, Intercibus; court relied on FDA standard 21 CFR 133.149 (no geography) and gruyere made in Germany, Wisconsin (Emmi Roth) and Idaho (Glanbia, Blackfoot). hist_A gruyere entry and counter_D swiss-aop text are correct.",
+   "Swiss Gruyère: AOC 2001, AOP from 2013. French Gruyère is an EU PGI (Reg. (EU) No 110/2013), with holes and a mandatory 'France' indication (wording clarified above).",
+   "Parmigiano Reggiano: pin-dot band carries PARMIGIANO-REGGIANO, dairy number, month/year and DOP (FAQ); Mezzano = parallel grooves, second grade, eat young; age bands 12–19 / 20–26 / 27–34 / 35–45 months; Export = first grade checked at 18 months, Premium = checked at 24 months plus sensory score, Prodotto di montagna = mountain area, checked at 20 months; grated PR may not contain anti-caking agents or cellulose; 'naturally lactose-free' is in the Consortium FAQ and US guidelines (but the parm-lactose label is not shown on the page). CJEU 2008 (C-132/05): 'Parmesan' evokes the PDO, so in the EU it may be used only for Parmigiano Reggiano: fine as written.",
+   "Whole Foods: 8 stores in SF (Stanyan, 2001 Market, Stonestown 3251 20th Ave Ste 340, Noe 3950 24th St, Potrero 450 Rhode Island, Ocean 1150 Ocean Ave, 1765 California, 399 4th St). Ocean Ave store open, 8 am–10 pm daily, lists Certified Cheese Professional; Stonestown page lists none. 370+ CCPs of 1,000+ worldwide, 40 added in 2024 (Business Wire 24 Oct 2024); goal of at least one CCP per store, cut to exact weight, tastes offered, Parmigiano wheels cracked in-store at 24 months (culture, Mar 2025). Mt Tam is sold as a 7 oz piece at Whole Foods (board-50 OK).",
+   "Eataly Silicon Valley: opened 16 June 2022 at Westfield Valley Fair, 2855 Stevens Creek Blvd, Santa Clara; three stories, ~45,000 sq ft; Salumi & Formaggi counter 8:30 am–9 pm; mozzarella made in-house daily from cow's milk; buffalo mozzarella for the Neapolitan pizza imported from Italy (RWC Pulse, 2022); Hands-On: Mozzarella 2-hour class ran 10 Jul 2026; still operating, no closure reports. No Eataly in San Francisco.",
+   "Local shops, all with no closure found as of 2026: 24th Street Cheese Co., 3893 24th St (hours as stated); Say Cheese, 856 Cole St (SF Standard, Sept 2026); Cheese Plus, 2001 Polk St (20th anniversary 2025, events May 2026); Bi-Rite, three markets 3639 18th St / 550 Divisadero / 2140 Polk, 8 am–9 pm; Rainbow Grocery, 1745 Folsom, 9 am–9 pm, worker-owned, since 1975, ~350 cheeses (Devour, updated Jul 2026); Cheese Boutique (Glen Park) and La Fromagerie (Dogpatch, opened 2012) still listed in Devour's July 2026 update, no street numbers shown on the page, which is fine; Ferry Plaza Saturday market with rotating cheese vendors. Cowgirl Creamery's Ferry Building shop closed April 2021 (hidden entry and LOCAL_NOTE correct).",
+   "The Cheese School of SF: 2023 move into Daily Driver's Dogpatch flagship is reported; 2026 status could not be confirmed (site blocks fetching). The ADDR text already tells readers to check the website, which is enough.",
+   "California cheeses: Humboldt Fog = Cypress Grove, Arcata, pasteurized goat, ash line; Mt Tam (organic triple-cream bloomy, firm and silky) and Red Hawk (organic washed-rind triple cream) = Cowgirl Creamery. Their 'Marin' origin is acceptable: a Marin brand using Straus milk from Marin, though production moved to Petaluma (Sonoma County) in 2008. Point Reyes Original Blue = raw farmstead milk, since 2000; Bay Blue = pasteurized, fudgy, salted-caramel finish; Marin French (Petaluma address, Marin County, 1865 claim); Laura Chenel = Sonoma; Vella Dry Jack = pasteurized (culture), rind of cocoa, vegetable oil and black pepper, Sonoma since 1931. Rogue River Blue = 2019 World Champion, wrapped in pear-spirit-soaked Syrah leaves, autumn release.",
+   "Laura Chenel in STAGE[artisan] (history chapter) already reads 'began making goat cheese in Sonoma in 1979, the year her company counts as its founding' in the current editorial.py, which is defensible (Wikipedia: 1979 basement start, 1981 Santa Rosa plant and first Chez Panisse orders); no change needed.",
+   "Cowgirl Creamery founding: 1997 is the defensible year for opening Cowgirl Creamery in Point Reyes Station (the editorial STAGE wording 'opened in Point Reyes Station in 1997' is right). 1994 (Wikipedia) is when Conley and Smith started the business (Tomales Bay Foods). The Point Reyes Station retail shop has since closed (Sonoma Magazine), which does not affect the 1997 sentence.",
+   "Prices: all price_lb ranges look plausible for SF in 2026 (no clearly implausible ones). Board-25 ($12–19) and board-90 ($45–68) subtotals match the per-lb ranges; board-50 corrected above.",
+   "Storage and buying: wrapping, vegetable drawer at 34–38 °F, fresh cheese at 38–40 °F (at or below the FDA 40 °F line), flipping soft cheese, freezing advice (hard and shredded only, 2–3 months, thaw in the fridge; not bloomy, fresh or burrata) and saving rinds are all safe and fine; the only safety fixes are the how-long times and the mould rule above. Tyrosine crystals note and portion/count rules OK. Phrases OK.",
+   "Site rules: no Taiwan-related or political content in the counter chapter or the checked hist_A regs."
+  ]
+ }
+]

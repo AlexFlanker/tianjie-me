@@ -29,7 +29,7 @@ THESIS = dict(
     nums=[
         T('前 6500', '6500 BC', k=T('年前后，安纳托利亚西北部的陶器里已有乳脂残留——人类加工奶的最早化学证据之一（分不出是奶、酸奶还是奶酪）。', 'or so: milk fat in pottery from north-western Anatolia, among the earliest chemical evidence of dairying (it cannot tell milk from yoghurt or cheese).')),
         T('400 升', '400 L', k=T('奶做一只约 40 公斤的孔泰轮子。一户人家的奶不够，所以汝拉山区的村子八百多年来一直把奶凑到合作奶坊（fruitière）里一起做。', 'of milk make one 40 kg wheel of Comté — more than a single small farm could supply, which is why Jura villages have pooled milk in co-operative dairies (fruitières) for some eight hundred years.')),
-        T('60 天', '60 days', k=T('在美国，用未经巴氏杀菌的生乳做的奶酪，必须在 35°F（约 1.7°C）以上熟成至少 60 天才能卖。所以柜台上见不到生乳的新鲜奶酪。', 'is the US minimum: cheese from unpasteurised milk must be aged at least 60 days above 35 °F (about 1.7 °C) before sale — which is why no fresh raw-milk cheese reaches the counter.')),
+        T('60 天', '60 days', k=T('在美国，用未经巴氏杀菌的生乳做的奶酪，必须在不低于 35°F（约 1.7°C）的温度下熟成至少 60 天才能卖。所以柜台上见不到生乳的新鲜奶酪。', 'is the US federal minimum: cheese from unpasteurised milk must be aged at least 60 days at 35 °F (about 1.7 °C) or warmer before sale — which is why no fresh raw-milk cheese reaches the counter.')),
     ],
 )
 
@@ -127,8 +127,8 @@ STAGE = [
          tags=[T('加工奶酪', 'Process cheese'), T('温斯利代尔', 'Wensleydale')], img='h-ration'),
     dict(id='aoc', label=T('1925', '1925'), yr=T('1925 – 1996', '1925–1996'), era=T('原产地保护', 'Protected origin'),
          title=T('名字也要有产地', 'A name tied to a place'),
-         text=T('1925 年 7 月 26 日，法国立法保护罗克福尔的原产地名称——法国第一个受法律保护的奶酪产地名。1951 年欧洲多国签订斯特雷萨公约，把名字分成只能在原产地做的「原产地名称」，和别国按标准也能做的「典型名称」（所以世界各地都能卖 Camembert、Gouda，受保护的是「Camembert de Normandie」「Gouda Holland」这样的全名）。1992 年欧共体建立 PDO / PGI 两级制度，1996 年公布首批名单。',
-                'On 26 July 1925 France protected the name Roquefort by law — the country’s first legally protected cheese origin. The 1951 Stresa Convention split names into “appellations of origin”, made only in their place, and “typical names” anyone may make to a standard (which is why Camembert and Gouda are made everywhere, while “Camembert de Normandie” and “Gouda Holland” are protected). In 1992 the EEC created the PDO and PGI tiers; the first list came out in 1996.'),
+         text=T('1925 年 7 月 26 日，法国立法保护罗克福尔的原产地名称——法国第一个受法律保护的奶酪产地名。1951 年欧洲多国签订斯特雷萨公约，把名字分成只能在原产地做的「原产地名称」，和别国按标准也能做的「典型名称」（所以 Camembert、Gouda 在许多国家都能做，受保护的是「Camembert de Normandie」「Gouda Holland」这样的全名）。1992 年欧共体建立 PDO / PGI 两级制度，1996 年公布首批名单。',
+                'On 26 July 1925 France protected the name Roquefort by law — the country’s first legally protected cheese origin. The 1951 Stresa Convention split names into “appellations of origin”, made only in their place, and “typical names” anyone may make to a standard (which is why Camembert and Gouda can be made in many countries, while “Camembert de Normandie” and “Gouda Holland” are protected). In 1992 the EEC created the PDO and PGI tiers; the first list came out in 1996.'),
          tags=[T('AOC', 'AOC'), T('斯特雷萨', 'Stresa'), T('PDO / PGI', 'PDO / PGI')], img='h-aoc'),
     dict(id='artisan', label=T('1983', '1983'), yr=T('1983 – 今天', '1983 – today'), era=T('手工复兴', 'The artisan revival'),
          title=T('从康奈尔到马林县', 'From Cornell to Marin'),
@@ -168,7 +168,7 @@ DECODE = [  # (来源, id, 标题)
     ('D', 'pdo', T('PDO · DOP · AOP', 'PDO · DOP · AOP')), ('D', 'pgi', T('PGI · IGP', 'PGI · IGP')), ('D', 'swiss-aop', T('瑞士 AOP', 'Swiss AOP')),
     ('D', 'raw-60', T('Raw milk · 生乳', 'Raw milk')), ('D', 'raw-practical', T('所以柜台上……', 'Which is why…')), ('D', 'parmesan-name', T('Parmesan ≠ Parmigiano Reggiano', 'Parmesan ≠ Parmigiano Reggiano')),
     ('D', 'parm-rind-read', T('帕玛森的针点字皮', 'The pin-dot rind')), ('D', 'aging-marks', T('熟成月数', 'Months of age')), ('A', 'gruyere', T('美国的 Gruyère', 'Gruyère in America')),
-    ('A', 'american', T('American cheese 的法定名', 'What “American cheese” is')), ('A', 'stresa-typical', T('为什么到处都有 Brie 和 Gouda', 'Why Brie and Gouda are made everywhere')), ('D', 'label-milk', T('奶源', 'Which milk')),
+    ('A', 'american', T('American cheese 的法定名', 'What “American cheese” is')), ('A', 'stresa-typical', T('名字分两种', 'Two kinds of names')), ('D', 'label-milk', T('奶源', 'Which milk')),
     ('D', 'rind', T('皮能不能吃', 'Can you eat the rind?')),
 ]
 BUY_HEAD = T('开口要一片', 'Asking for a slice')
@@ -177,7 +177,7 @@ BUY = [('say-use', T('先说三件事', 'Say three things first')), ('ask-taste'
        ('variety', T('怎么配', 'How to mix')), ('blue-small', T('蓝纹买小块', 'Buy blue small')), ('cut-to-order', T('现切还是预切', 'Cut to order or pre-cut')), ('check-face', T('看切面', 'Check the cut face')),
        ('parm-piece', T('帕玛森要带皮', 'Parmigiano with rind')), ('buy-small', T('临吃再买', 'Buy close to eating')), ('cut-shape', T('回家怎么切', 'How to cut at home')), ('deal-12days', T('省钱', 'Saving money'))]
 BOARD_HEAD = T('四个人，三种预算', 'Four people, three budgets')
-BOARD_NOTE = T('三盘都按 Ocean Ave 全食常见的品种配，每盘至少一种加州奶酪。价格是估算，饼干、水果另算。', 'All three use cheeses usually stocked at the Ocean Ave Whole Foods, each with at least one Californian. Totals are estimates; crackers and fruit extra.')
+BOARD_NOTE = T('三盘都用全食常见的品种配（各店货品不同，Ocean Ave 店没有逐样核对），每盘至少一种加州奶酪。价格是估算，饼干、水果另算。', 'All three use cheeses Whole Foods commonly carries (stock varies by store and was not checked item by item at Ocean Ave), each with at least one Californian. Totals are estimates; crackers and fruit extra.')
 STORE_HEAD = T('带回家', 'Taking it home')
 STORE = [('wrap', T('怎么包', 'Wrapping')), ('where', T('放哪', 'Where')), ('fresh', T('新鲜奶酪', 'Fresh cheese')), ('how-long', T('能放多久', 'How long')),
          ('soft-flip', T('软质翻面', 'Turn soft cheese')), ('mold', T('长了霉', 'If it moulds')), ('freeze', T('冷冻', 'Freezing')), ('rind-save', T('留皮煮汤', 'Save the rind'))]
@@ -190,18 +190,25 @@ ADDR = {'cheese-boutique': T('Glen Park', 'Glen Park'), 'la-fromagerie': T('Dogp
 TWO = [
     ('wholefoods', T('离 City College 最近', 'Closest to City College'), [
         T('旧金山市内有 8 家全食。最近的是 Ocean Ave 店（1150 Ocean Avenue），其次是 Stonestown 店（3251 20th Ave）。', 'San Francisco has eight Whole Foods. The closest is on Ocean Avenue (1150 Ocean Avenue), then Stonestown (3251 20th Ave).'),
-        T('全食的奶酪部大量配备美国奶酪协会认证的奶酪师（CCP）。2024 年它在全球 1,000 多名 CCP 中占 370 多名，目标是每家店至少一名；Ocean Ave 店的门店页就列着这项服务。', 'Its cheese departments are staffed with American Cheese Society Certified Cheese Professionals: in 2024 it employed 370-plus of the world’s 1,000-plus CCPs, aiming for at least one per store. The Ocean Ave store lists the service on its page.'),
+        T('全食的奶酪部大量配备美国奶酪协会认证的奶酪师（CCP）。2024 年它在全球 1,000 多名 CCP 中占 370 多名，目标是每家店至少一名；Ocean Ave 店的门店页就列着这项服务，并注明在岗时间要问门店，专程去可以先打电话。', 'Its cheese departments are staffed with American Cheese Society Certified Cheese Professionals: in 2024 it employed 370-plus of the world’s 1,000-plus CCPs, aiming for at least one per store. The Ocean Ave store lists the service on its page, with a note to check with the store for hours, so call ahead if you are making a trip of it.'),
         T('CCP 按你要的重量或厚度现切，会主动请你尝没吃过的；帕玛森整轮在店里开，用的是 24 个月的轮子。', 'CCPs cut to the weight or thickness you ask for and offer tastes; Parmigiano is cracked in-store from 24-month wheels.'),
-        T('自有品牌 365 的预切块在自选冷柜里，比现切便宜；每年 12 月有「12 Days of Cheese」，12 天里每天一款特价。', 'Pre-cut 365-brand pieces in the self-serve case cost less than cut-to-order; every December “12 Days of Cheese” puts one cheese on sale each day.'),
+        T('自有品牌 365 的预切块在自选冷柜里，比现切便宜；每年 12 月中旬有「12 Days of Cheese」：2025 年是 12 月 13–24 日，一批精选奶酪 12 天里一直打折（Prime 会员 7 折，非会员 78 折）。', 'Pre-cut 365-brand pieces in the self-serve case cost less than cut-to-order; every December “12 Days of Cheese” discounts a curated set of cheeses (in 2025: Dec 13–24, 30% off with Prime and 22% off without, for all twelve days).'),
     ]),
     ('eataly', T('周末专程 · 圣克拉拉', 'Weekend trip · Santa Clara'), [
         T('旧金山市内没有 Eataly。最近的 Eataly Silicon Valley 在圣克拉拉 Westfield Valley Fair 商场（2855 Stevens Creek Blvd.），2022 年 6 月开业，三层；从 City College 走 I-280 不堵车约一小时。', 'There is no Eataly in San Francisco. The nearest, Eataly Silicon Valley, is at Westfield Valley Fair in Santa Clara (2855 Stevens Creek Blvd.), three floors, opened June 2022 — about an hour from City College via I-280 without traffic.'),
         T('奶酪和熟肉合成一个「Salumi e Formaggi」现切柜台，营业 8:30–21:00，有多个年份的帕玛森；店员鼓励先尝再买。', 'Cheese and cured meats share one “Salumi e Formaggi” counter, open 8:30–21:00, with Parmigiano at several ages; staff encourage you to taste first.'),
         T('mozzarella 每天在店里现做，可以看师傅拉伸凝乳；那不勒斯披萨上的水牛 mozzarella 则从意大利进口。', 'Mozzarella is made in-store daily — you can watch the curd being stretched; the buffalo mozzarella on the Neapolitan pizza is imported from Italy.'),
-        T('楼上的烹饪学校 La Scuola 开过「Hands-On: Mozzarella」实操课，两小时，跟主厨一起做。', 'Upstairs, the La Scuola cooking school has run two-hour “Hands-On: Mozzarella” classes with a chef.'),
+        T('店里的烹饪学校 La Scuola 开过「Hands-On: Mozzarella」实操课（最近一期在 2026 年 7 月），两小时，跟主厨一起做。', 'The in-store La Scuola cooking school has run two-hour “Hands-On: Mozzarella” classes with a chef, most recently in July 2026.'),
     ]),
 ]
 PRIN_TITLES = [T('强度匹配', 'Match intensity'), T('脂肪对单宁', 'Fat versus tannin'), T('甜配咸、配冲', 'Sweet with salty or funky'), T('气泡与酸度清口', 'Bubbles and acid cleanse'),
                T('同乡搭配', 'Grows together, goes together'), T('找桥，或找反差', 'Bridge or contrast'), T('奶酪会「压」红酒', 'Cheese mutes red wine'), T('拿不准时', 'When in doubt')]
 TASTE_TITLES = [T('提前回温', 'Temper first'), T('适饮温度', 'Serving temperature'), T('从淡到浓', 'Mild to strong'), T('看、摸、闻、尝', 'Look, touch, smell, taste'),
                 T('记下来', 'Take notes'), T('份量', 'Portions'), T('清口', 'Cleanse'), T('外皮与刀具', 'Rinds and tools')]
+
+PENDING = [
+    T('《齐民要术》作干酪法、《洛阳伽蓝记》「酪奴」与《涅槃经》五味的引文与通行校本一致，但这次没能在线打开全文逐字核对。', 'The quotations from the Qimin Yaoshu, the Luoyang Qielan Ji and the Nirvana Sutra match standard editions but could not be re-read in full online.'),
+    T('菲达约 18°C 的预熟成取自 PDO 摘要的转述，希腊原文规范没有打开。', 'Feta’s ~18 °C pre-ripening comes from a summary of the PDO; the Greek specification itself was not opened.'),
+    T('The Cheese School of San Francisco 2026 年的地址与课表、Glen Park 的 Cheese Boutique 与 Dogpatch 的 La Fromagerie 的门牌，只有导览文章为据，出发前请看店家官网。', 'The Cheese School of San Francisco’s 2026 address and schedule, and the street numbers of Cheese Boutique (Glen Park) and La Fromagerie (Dogpatch), rest on guide articles only — check before you go.'),
+    T('柜台价格是按公开价和同级别零售价整理的区间，全食与 Eataly 的门店实价没法在线取得。', 'Counter prices are ranges from public and comparable retail prices; in-store prices at Whole Foods and Eataly could not be read online.'),
+]

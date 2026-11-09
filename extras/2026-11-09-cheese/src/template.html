@@ -313,6 +313,9 @@ details.fold .fb li{margin-bottom:6px}
 .stamp b{font:700 14px/20px var(--serif);color:var(--amber-ink);letter-spacing:.08em}
 
 @media (max-width:900px){
+  .case .glass{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-auto-rows:68px !important}
+  .case .zone{grid-column:auto !important}
+  .case .zone:last-child{grid-column:1/-1 !important}
   .bench .g b{font-size:18px;white-space:normal;line-height:1.3}
   .boards.two{grid-template-columns:minmax(0,1fr)}
   .counter .case{position:static}

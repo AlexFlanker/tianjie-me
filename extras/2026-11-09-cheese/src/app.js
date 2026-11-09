@@ -95,7 +95,8 @@
     var list = $('.styles', b), shot = $('.shot', b), lab = $('.lab', shot), capEl = $('.cap', shot), rail = $('.rail .steps', b), say = $('.say', b), playBtn = $('[data-act=play]', b);
     var imgs = {};
     function img(src) { if (!src) return null; if (!imgs[src]) { var im = new Image(); im.alt = ''; im.loading = 'lazy'; im.src = src; shot.insertBefore(im, shot.firstChild); imgs[src] = im; } return imgs[src]; }
-    function renderList() { list.innerHTML = styles.map(function (s, i) { return '<button type="button" class="' + (s === cur ? 'on' : '') + '" data-i="' + i + '"><i style="background:' + famColor(s.fam) + '"></i><b>' + esc(L(s.name)) + '</b><em>' + esc(L(s.origin)) + '</em></button>'; }).join(''); $$('button', list).forEach(function (bt) { bt.addEventListener('click', function () { stop(); cur = styles[+bt.getAttribute('data-i')]; si = 0; renderList(); renderRail(); show(); }); }); }
+    var famBox = $('.fam', b);
+    function renderList() { if (famBox) famBox.innerHTML = cur.famdef ? '<b>' + esc(L(cur.famName)) + '</b> ' + esc(L(cur.famdef)) : ''; list.innerHTML = styles.map(function (s, i) { return '<button type="button" class="' + (s === cur ? 'on' : '') + '" data-i="' + i + '"><i style="background:' + famColor(s.fam) + '"></i><b>' + esc(L(s.name)) + '</b><em>' + esc(L(s.origin)) + '</em></button>'; }).join(''); $$('button', list).forEach(function (bt) { bt.addEventListener('click', function () { stop(); cur = styles[+bt.getAttribute('data-i')]; si = 0; renderList(); renderRail(); show(); }); }); }
     function renderRail() { rail.innerHTML = cur.steps.map(function (s, i) { return '<button type="button" data-i="' + i + '" class="' + (i < si ? 'done' : '') + (i === si ? ' on' : '') + '">' + (i + 1) + '<b>' + esc(L(s.title)) + '</b></button>'; }).join(''); $$('button', rail).forEach(function (bt) { bt.addEventListener('click', function () { stop(); si = +bt.getAttribute('data-i'); show(); }); }); }
     function gauge(sel, val, frac, txt) { var g = $(sel, b); $('b', g).textContent = txt; $('.bar i', g).style.width = (clamp(frac, 0, 1) * 100) + '%'; }
     function show() {
@@ -103,8 +104,8 @@
       for (var k in imgs) imgs[k].classList.toggle('on', imgs[k] === im);
       lab.innerHTML = '<div class="stepno">' + esc(L(cur.name)) + ' · ' + (si + 1) + ' / ' + cur.steps.length + '</div><h4>' + esc(L(s.title)) + '</h4>';
       capEl.innerHTML = s.cap ? L(s.cap) : (cur.cap ? L(cur.cap) : '');
-      gauge('.g.t', s.temp, s.temp == null ? 0 : s.temp / 95, s.temp == null ? '—' : (lang() === 'en' ? Math.round(s.temp * 9 / 5 + 32) + '°F · ' + s.temp + '°C' : s.temp + ' °C'));
-      gauge('.g.ph', s.ph, s.ph == null ? 0 : (6.8 - s.ph) / (6.8 - 4.4), s.ph == null ? '—' : 'pH ' + s.ph);
+      gauge('.g.t', s.temp, s.temp == null ? 0 : clamp(s.temp, 0, 95) / 95, s.td ? L(s.td) : '—');
+      gauge('.g.ph', s.ph, s.ph == null ? 0 : (6.8 - s.ph) / (6.8 - 4.4), s.phd ? 'pH ' + s.phd : '—');
       gauge('.g.time', null, s.tf == null ? 0 : s.tf, L(s.time) || '—');
       gauge('.g.step', null, (si + 1) / cur.steps.length, (si + 1) + ' / ' + cur.steps.length);
       say.innerHTML = '<p>' + L(s.text) + '</p>' + (s.sci ? '<p class="sci">' + L(s.sci) + '</p>' : '');
@@ -153,15 +154,32 @@
       for (var v = 1; v <= 10; v++) { g += '<line class="ax" x1="' + X(v) + '" x2="' + X(v) + '" y1="' + m.t + '" y2="' + (H - m.b) + '" opacity=".5"/><line class="ax" x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + Y(v) + '" y2="' + Y(v) + '" opacity=".5"/>'; }
       g += '<text x="' + ((W + m.l) / 2) + '" y="' + (H - 8) + '" text-anchor="middle">' + esc(L({ zh: '风味强度：温和 → 浓烈', en: 'Intensity: mild → bold' })) + '</text>';
       g += '<text transform="translate(12,' + ((H - m.b + m.t) / 2) + ') rotate(-90)" text-anchor="middle">' + esc(L({ zh: '质地：软 → 硬', en: 'Texture: soft → hard' })) + '</text>';
-      if (flight.length > 1) { var fl = flight.slice().sort(function (a, b) { return a.x - b.x || a.y - b.y; }); g += '<polyline class="flight" points="' + fl.map(function (c) { return X(c.x) + ',' + Y(c.y); }).join(' ') + '"/>'; }
-      var narrow = W < 520;
-      S.forEach(function (c, i) {
-        var on = c === sel, inF = flight.indexOf(c) >= 0, vis = shown(c);
-        var jitter = ((i * 37) % 7 - 3) * 1.6;
-        g += '<g><circle class="dot' + (vis ? '' : ' dim') + '" data-i="' + i + '" cx="' + (X(c.x) + jitter) + '" cy="' + (Y(c.y) - jitter * 0.6) + '" r="' + (on ? 9 : inF ? 8 : 6) + '" fill="' + famColor(c.fam) + '" stroke="' + (on || inF ? 'var(--ink)' : 'var(--bg)') + '" stroke-width="' + (on || inF ? 2 : 1) + '"/>';
-        if (on || inF || (!narrow && vis && c.label)) g += '<text class="lbl" x="' + (X(c.x) + jitter + 10) + '" y="' + (Y(c.y) - jitter * 0.6 + 4) + '"' + (on ? ' style="fill:var(--ink);font-weight:700"' : '') + '>' + esc(L(c.name)) + '</text>';
-        g += '</g>';
+      
+      var narrow = W < 520, boxes = [], pos = {}, seen = {};
+      // 同一格的点围成小圈，避免完全重叠
+      S.forEach(function (c, i) { var k = c.x + ',' + c.y; seen[k] = (seen[k] || 0) + 1; c._k = seen[k] - 1; });
+      S.forEach(function (c, i) { var n = seen[c.x + ',' + c.y], a = c._k / n * 2 * Math.PI - Math.PI / 2, r = n > 1 ? 9 : 0; pos[i] = [X(c.x) + r * Math.cos(a), Y(c.y) + r * Math.sin(a)]; });
+      function fits(b) { if (b[0] < m.l || b[2] > W - 4) return false; for (var j = 0; j < boxes.length; j++) { var o = boxes[j]; if (b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]) return false; } return true; }
+      var order = S.map(function (c, i) { return i; }).sort(function (a, b) { var A = S[a], Bc = S[b]; var pa = (A === sel ? 0 : flight.indexOf(A) >= 0 ? 1 : A.label ? 2 : 3), pb = (Bc === sel ? 0 : flight.indexOf(Bc) >= 0 ? 1 : Bc.label ? 2 : 3); return pa - pb; });
+      S.forEach(function (c, i) { var p = pos[i]; boxes.push([p[0] - 7, p[1] - 7, p[0] + 7, p[1] + 7]); });
+      var labels = '';
+      order.forEach(function (i) {
+        var c = S[i], on = c === sel, inF = flight.indexOf(c) >= 0, vis = shown(c);
+        if (!(on || inF || (!narrow && vis && c.label))) return;
+        var t = L(c.name), w = t.length * (lang() === 'en' ? 6.6 : 12) + 4, p = pos[i];
+        var cands = [[p[0] + 10, p[1] + 4, 'start'], [p[0] - 10, p[1] + 4, 'end'], [p[0] - w / 2, p[1] - 12, 'start'], [p[0] - w / 2, p[1] + 20, 'start']];
+        for (var q = 0; q < cands.length; q++) {
+          var cx = cands[q][0], cy = cands[q][1], an = cands[q][2], x0 = an === 'end' ? cx - w : cx, b = [x0, cy - 11, x0 + w, cy + 3];
+          if (fits(b) || (on && q === cands.length - 1)) { boxes.push(b); labels += '<text class="lbl" x="' + cx + '" y="' + cy + '" text-anchor="' + an + '"' + (on ? ' style="fill:var(--ink);font-weight:700"' : '') + '>' + esc(t) + '</text>'; break; }
+        }
       });
+      var dots = '';
+      S.forEach(function (c, i) {
+        var on = c === sel, inF = flight.indexOf(c) >= 0, vis = shown(c), p = pos[i];
+        dots += '<circle class="dot' + (vis ? '' : ' dim') + '" data-i="' + i + '" cx="' + p[0] + '" cy="' + p[1] + '" r="' + (on ? 9 : inF ? 8 : 6) + '" fill="' + famColor(c.fam) + '" stroke="' + (on || inF ? 'var(--ink)' : 'var(--bg)') + '" stroke-width="' + (on || inF ? 2 : 1) + '"/>';
+      });
+      if (flight.length > 1) { var fl = flight.slice().sort(function (a, b) { return a.x - b.x || a.y - b.y; }); g += '<polyline class="flight" points="' + fl.map(function (c) { var p = pos[S.indexOf(c)]; return p[0] + ',' + p[1]; }).join(' ') + '"/>'; }
+      g += dots + labels;
       plot.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" height="' + H + '" role="img" aria-label="' + esc(L({ zh: '奶酪品鉴光谱', en: 'Cheese tasting spectrum' })) + '">' + g + '</svg>';
       $$('.dot', plot).forEach(function (d) { d.addEventListener('click', function () { var c = S[+d.getAttribute('data-i')]; sel = c; draw(); renderSide(); }); });
     }
@@ -210,7 +228,7 @@
     function renderInfo() {
       if (selA === null) { info.innerHTML = '<h4>' + esc(L(D.wheel.title)) + '</h4><p>' + L(D.wheel.intro) + '</p>' + (D.wheel.src ? '<p class="src">' + L(D.wheel.src) + '</p>' : ''); return; }
       var a = A[selA];
-      if (selI === null) { info.innerHTML = '<span class="kick">' + esc(L(a)) + '</span><h4>' + esc(L(a.desc ? a : a)) + '</h4><p>' + L(a.desc || '') + '</p><p class="small">' + a.items.map(function (it) { return esc(L(it)); }).join(' · ') + '</p>'; return; }
+      if (selI === null) { info.innerHTML = '<span class="kick">' + esc(L({ zh: '气味族', en: 'Aroma family' })) + '</span><h4>' + esc(L(a)) + '</h4><p>' + esc(L(a.desc || '')) + '</p><p class="small">' + a.items.map(function (it) { return esc(L(it)); }).join(' · ') + '</p>'; return; }
       var it = a.items[selI];
       info.innerHTML = '<span class="kick">' + esc(L(a)) + '</span><h4>' + esc(L(it)) + '</h4>' + (it.cheese ? '<p><b>' + esc(L({ zh: '典型：', en: 'Typical in: ' })) + '</b>' + esc(L(it.cheese)) + '</p>' : '') + (it.compound ? '<p><b>' + esc(L({ zh: '来自：', en: 'From: ' })) + '</b>' + esc(L(it.compound)) + '</p>' : '');
     }

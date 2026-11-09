@@ -62,7 +62,21 @@
      "kind": "学术"
     }
    ],
-   "note": ""
+   "note": "",
+   "name_short_zh": "库鲁特",
+   "name_short_en": "Qurut",
+   "region_en": "Central Asia (Kazakhstan, Kyrgyzstan, Uzbekistan)",
+   "animal_en": "Cow, sheep, goat",
+   "method_id": "dry",
+   "method_also_ids": [
+    "acid",
+    "salt"
+   ],
+   "shelf_en": "Once sun-dried, keeps over a year at ambient temperature (traditional Kazakh practice).",
+   "one_zh": "晒干的咸酸奶球，常温放一年以上",
+   "one_en": "Salted, sun-dried yogurt balls; keep over a year",
+   "area": "steppe",
+   "drop": false
   },
   {
    "id": "aaruul",
@@ -110,16 +124,29 @@
      ]
     }
    ],
-   "num": "",
+   "num": "鲁布鲁克：晒干后「硬如铁渣」（定性描述）",
    "conf": "中",
    "sources": [
     {
-     "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
+     "title": "William of Rubruck, Journey (1253–55), tr. Rockhill 1900, Silk Road Seattle",
      "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
      "kind": "官方"
     }
    ],
-   "note": "做法为综合描述，未找到蒙古一手现代研究；奶酒蒸馏一说待核"
+   "note": "做法为综合描述，未找到蒙古现代一手研究；先蒸馏奶酒再取凝乳一说尚未核实",
+   "name_short_zh": "阿如勒",
+   "name_short_en": "Aaruul",
+   "region_en": "Mongolian Plateau",
+   "animal_en": "Cow (also yak, sheep, camel)",
+   "method_id": "dry",
+   "method_also_ids": [
+    "acid"
+   ],
+   "shelf_en": "Fully dried, keeps months to over a year at ambient temperature — a winter store and travel food for herders.",
+   "one_zh": "风干的蒙古奶凝块，可存数月到一年",
+   "one_en": "Wind-dried Mongolian curd; keeps months to a year",
+   "area": "steppe",
+   "drop": false
   },
   {
    "id": "airag",
@@ -132,7 +159,7 @@
    "animal": "马",
    "method": "发酵",
    "method_also": [],
-   "shelf_zh": "传统上随挤随酿、边喝边续，夏秋季节饮用；不是长期储存品，作用是把夏季过剩的马奶转成可饮用、不易坏的酸性低度酒。",
+   "shelf_zh": "随挤随酿、边喝边续，主要在夏秋产奶季饮用；不是长期储存品，作用是把夏季过剩、乳糖很高的马奶转成不易坏的酸性低度酒。",
    "flavor_zh": "酸、微咸、带气泡与轻微酒感，有类似酸奶与青草的气味，口感比牛奶稀薄。",
    "flavor_en": "Sour, faintly salty, lightly fizzy and boozy, with yogurt-like and grassy notes; thinner than cow's milk.",
    "how_zh": "把鲜马奶倒入牛皮囊（khokhuur），加入上一批留下的酒底作引子，反复搅打数百次，让乳酸菌和酵母同时发酵，产生酸味、少量酒精和气泡。",
@@ -179,10 +206,24 @@
      ],
      "alt": "后续古 DNA 研究显示博泰马并非现代家马的主要祖先，挤奶解释也有学者质疑",
      "note": "未打开原文，依据作者记忆"
+    },
+    {
+     "zh": "2016 年对乌兰巴托市售艾日格的分析：酒精 1.44–2.33%，乳酸 1.08–1.62%，残余乳糖 0.10–3.36%；分离出的 18 株乳酸菌中一半是瑞士乳杆菌。",
+     "en": "A 2016 analysis of airag from Ulaanbaatar found 1.44–2.33% ethanol, 1.08–1.62% lactic acid and 0.10–3.36% residual lactose; half of 18 lactic acid bacteria isolates were Lactobacillus helveticus.",
+     "year": 2016,
+     "num": "酒精 1.44–2.33%",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Choi S.-H. Characterization of airag collected in Ulaanbaatar, Mongolia with emphasis on isolated lactic acid bacteria. J. Animal Science and Technology 58(3) (2016)",
+       "url": "https://koreascience.kr/article/JAKO201611758627272.page",
+       "kind": "学术"
+      }
+     ]
     }
    ],
-   "num": "酒精度约 1–3%（口径因做法而异）",
-   "conf": "中",
+   "num": "乌兰巴托样本酒精 1.44–2.33%，乳酸 1.08–1.62%",
+   "conf": "高",
    "sources": [
     {
      "title": "UNESCO ICH: Traditional technique of making Airag in Khokhuur and its associated customs (Mongolia, 14.COM, 2019)",
@@ -193,9 +234,27 @@
      "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
      "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
      "kind": "官方"
+    },
+    {
+     "title": "Choi S.-H. Characterization of airag collected in Ulaanbaatar, Mongolia with emphasis on isolated lactic acid bacteria. J. Animal Science and Technology 58(3) (2016)",
+     "url": "https://koreascience.kr/article/JAKO201611758627272.page",
+     "kind": "学术"
     }
    ],
-   "note": "酒精度数待后续文献核实；Botai 马奶脂质证据另条补"
+   "note": "",
+   "name_short_zh": "马奶酒",
+   "name_short_en": "Airag",
+   "region_en": "Mongolian and Kazakh steppe",
+   "animal_en": "Mare",
+   "method_id": "alcohol",
+   "method_also_ids": [
+    "acid"
+   ],
+   "shelf_en": "Brewed and topped up continuously, drunk mainly in the summer–autumn milking season; not a long-term store, it turns surplus, lactose-rich mare's milk into a sour, lightly alcoholic drink that resists spoiling.",
+   "one_zh": "皮囊搅打的马奶低度酒，夏秋随酿随喝",
+   "one_en": "Lightly alcoholic mare's milk, brewed fresh each summer",
+   "area": "steppe",
+   "drop": false
   },
   {
    "id": "chhurpi",
@@ -278,7 +337,20 @@
      "kind": "官方"
     }
    ],
-   "note": "BBC 原文被拦截；做法细节为综合描述，未找到实测水分 / pH 数据"
+   "note": "BBC 原文被拦截；做法细节为综合描述，未找到实测水分 / pH 数据",
+   "name_short_zh": "硬曲拉",
+   "name_short_en": "Hard chhurpi",
+   "region_en": "Himalaya (eastern Nepal, Sikkim, Bhutan)",
+   "animal_en": "Yak; yak–cow hybrid (chauri)",
+   "method_id": "dry",
+   "method_also_ids": [
+    "smoke"
+   ],
+   "shelf_en": "Well-dried pieces keep months to years at ambient temperature; media report nearly two decades in yak-skin bags (a media claim, not measured).",
+   "one_zh": "熏干的牦牛奶块，硬到能嚼两三小时",
+   "one_en": "Smoked yak-milk chew, hard enough to last hours",
+   "area": "steppe",
+   "drop": false
   },
   {
    "id": "tibetan-butter",
@@ -336,7 +408,21 @@
      "kind": "官方"
     }
    ],
-   "note": "酥油茶本身的起源年代未找到可靠一手材料，未写"
+   "note": "酥油茶本身的起源年代未找到可靠一手材料，未写",
+   "name_short_zh": "酥油",
+   "name_short_en": "Yak butter",
+   "region_en": "Tibetan Plateau",
+   "animal_en": "Yak (also yak–cow hybrid)",
+   "method_id": "fat",
+   "method_also_ids": [
+    "acid",
+    "cold"
+   ],
+   "shelf_en": "Wrapped in hide or rumen, keeps one to two years without moulding (water falls to about 3% with age, but it turns stale).",
+   "one_zh": "皮囊包裹的牦牛酥油，可存一到两年",
+   "one_en": "Hide-wrapped yak butter; keeps one to two years",
+   "area": "steppe",
+   "drop": false
   },
   {
    "id": "labneh",
@@ -384,7 +470,7 @@
      ]
     }
    ],
-   "num": "",
+   "num": "浸油可存 >1 年（通俗口径）",
    "conf": "中",
    "sources": [
     {
@@ -393,7 +479,22 @@
      "kind": "百科"
     }
    ],
-   "note": "未找到拉布内的一手历史文献；保存期为通俗来源口径"
+   "note": "未找到拉布内的一手历史文献；保存期为通俗来源口径",
+   "name_short_zh": "拉布内",
+   "name_short_en": "Labneh",
+   "region_en": "Levant (Lebanon, Syria, Jordan, Palestine)",
+   "animal_en": "Cow, goat, sheep",
+   "method_id": "acid",
+   "method_also_ids": [
+    "salt",
+    "dry",
+    "fat"
+   ],
+   "shelf_en": "Fresh labneh keeps about one to two weeks chilled; oil-packed balls reportedly keep over a year, growing sourer with age.",
+   "one_zh": "滤干的咸酸奶，搓球浸油可存一年",
+   "one_en": "Strained salted yogurt; oil-packed balls keep a year",
+   "area": "westasia",
+   "drop": false
   },
   {
    "id": "kashk",
@@ -464,7 +565,7 @@
      ]
     }
    ],
-   "num": "",
+   "num": "中古波斯语 kašk；10 世纪文献已有记载",
    "conf": "中",
    "sources": [
     {
@@ -483,7 +584,20 @@
      "kind": "学术"
     }
    ],
-   "note": ""
+   "note": "",
+   "name_short_zh": "卡什克",
+   "name_short_en": "Kashk",
+   "region_en": "Iran",
+   "animal_en": "Sheep, goat, cow",
+   "method_id": "dry",
+   "method_also_ids": [
+    "acid"
+   ],
+   "shelf_en": "Dried kashk keeps months to a year at ambient temperature — winter food for peasants and rations for soldiers and travellers; liquid kashk must be chilled.",
+   "one_zh": "晒干的酪浆球，常温可放数月到一年",
+   "one_en": "Sun-dried buttermilk balls; keep months to a year",
+   "area": "westasia",
+   "drop": false
   },
   {
    "id": "jameed",
@@ -518,6 +632,21 @@
        "kind": "学术"
       }
      ]
+    },
+    {
+     "zh": "2022 年，「约旦的曼萨夫：节庆宴席及其社会文化意义」列入联合国教科文组织人类非遗代表作名录：大块绵羊或山羊肉与香料在酸奶酱中煮，盖在薄饼与米饭上，五到七人围一盘共食。",
+     "en": "In 2022 'Al-Mansaf in Jordan, a festive banquet and its social and cultural meanings' was inscribed on UNESCO's Representative List: large pieces of sheep or goat meat boiled with spices in a yogurt sauce, served over thin bread and rice, five to seven people to a platter.",
+     "year": 2022,
+     "num": "每盘 5–7 人",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "UNESCO ICH: Al-Mansaf in Jordan, a festive banquet and its social and cultural meanings (17.COM, 2022)",
+       "url": "https://ich.unesco.org/en/RL/al-mansaf-in-jordan-a-festive-banquet-and-its-social-and-cultural-meanings-01849?RL=01849",
+       "kind": "官方"
+      }
+     ],
+     "note": "UNESCO 页面只写 yogurt sauce，未点名 jameed"
     }
    ],
    "num": "盐平均 15.68%；固形物 84.57%",
@@ -527,9 +656,28 @@
      "title": "Hilali M. et al. Nutritional and Food Safety Characteristics of Jameed – A Traditional Dairy Product of Drylands. Applied Sciences 14(2) (2024)",
      "url": "https://icarda.org/node/18607",
      "kind": "学术"
+    },
+    {
+     "title": "UNESCO ICH: Al-Mansaf in Jordan, a festive banquet and its social and cultural meanings (17.COM, 2022)",
+     "url": "https://ich.unesco.org/en/RL/al-mansaf-in-jordan-a-festive-banquet-and-its-social-and-cultural-meanings-01849?RL=01849",
+     "kind": "官方"
     }
    ],
-   "note": "mansaf 入选 UNESCO（2022）未核；保存期口径待核"
+   "note": "保存期为牧区一般口径，未找到实测",
+   "name_short_zh": "贾米德",
+   "name_short_en": "Jameed",
+   "region_en": "Jordan (Karak and the south)",
+   "animal_en": "Sheep, goat",
+   "method_id": "salt",
+   "method_also_ids": [
+    "dry",
+    "acid"
+   ],
+   "shelf_en": "Once sun-dried, keeps about a year or more at ambient temperature (herders' estimate), bridging the season without milk.",
+   "one_zh": "重盐晒硬的酸奶球，常温约一年，做曼萨夫",
+   "one_en": "Heavily salted dried yogurt for mansaf; keeps a year",
+   "area": "westasia",
+   "drop": false
   },
   {
    "id": "smen",
@@ -592,7 +740,21 @@
      "kind": "媒体"
     }
    ],
-   "note": ""
+   "note": "",
+   "name_short_zh": "斯门",
+   "name_short_en": "Smen",
+   "region_en": "Morocco and the Maghreb",
+   "animal_en": "Cow, sheep, goat",
+   "method_id": "salt",
+   "method_also_ids": [
+    "acid",
+    "fat"
+   ],
+   "shelf_en": "At least six months at ambient temperature; smen aged one to two years, even six or more, is sold in markets.",
+   "one_zh": "加盐陈放的发酵黄油，可陈数年",
+   "one_en": "Salted, aged butter that keeps — and funks — for years",
+   "area": "westasia",
+   "drop": false
   },
   {
    "id": "ghee",
@@ -658,7 +820,18 @@
      "kind": "百科"
     }
    ],
-   "note": "常温保存期口径需看 Sserunjogi 综述原文"
+   "note": "常温保存期口径需看 Sserunjogi 综述原文",
+   "name_short_zh": "印度酥油",
+   "name_short_en": "Ghee",
+   "region_en": "South Asia (India, Pakistan, Nepal)",
+   "animal_en": "Cow, water buffalo",
+   "method_id": "fat",
+   "method_also_ids": [],
+   "shelf_en": "About 0.2% water; sealed and kept from light, it lasts months at room temperature — the limit is oxidative rancidity, not bacteria.",
+   "one_zh": "熬干水分的澄清黄油，常温放数月",
+   "one_en": "Butter boiled dry and clarified; keeps months unchilled",
+   "area": "southasia",
+   "drop": false
   },
   {
    "id": "khoa",
@@ -724,7 +897,18 @@
      "kind": "学术"
     }
    ],
-   "note": "khoa 本身并不耐放，严格说是浓缩而非保存；如页面需要「保存」故事，可改用加糖的 peda，或换成罐装 rasgulla"
+   "note": "khoa 本身并不耐放，严格说是浓缩而非保存；如页面需要「保存」故事，可改用加糖的 peda，或换成罐装 rasgulla",
+   "name_short_zh": "奶膏",
+   "name_short_en": "Khoa",
+   "region_en": "Northern India",
+   "animal_en": "Water buffalo, cow",
+   "method_id": "sugar",
+   "method_also_ids": [],
+   "shelf_en": "Khoa itself (aw about 0.97) lasts only about two days at ambient temperature; made into sugared peda it keeps about two weeks chilled, or about 30 days at 20 °C in modified-atmosphere packs.",
+   "one_zh": "炒干的奶膏，常温只放两天",
+   "one_en": "Milk boiled to a paste; lasts only about two days",
+   "area": "southasia",
+   "drop": true
   },
   {
    "id": "skyr",
@@ -787,7 +971,7 @@
      ]
     }
    ],
-   "num": "",
+   "num": "2015 年入选慢食 Presidia",
    "conf": "中",
    "sources": [
     {
@@ -801,7 +985,18 @@
      "kind": "官方"
     }
    ],
-   "note": "分类上属于酸凝鲜奶酪，但按酸奶食用；萨迦中提及 skyr 的具体章节未核"
+   "note": "分类上属于酸凝鲜奶酪，但按酸奶食用；萨迦中提及 skyr 的具体章节未核",
+   "name_short_zh": "斯基尔",
+   "name_short_en": "Skyr",
+   "region_en": "Iceland",
+   "animal_en": "Cow (historically also sheep)",
+   "method_id": "acid",
+   "method_also_ids": [],
+   "shelf_en": "Fresh skyr keeps a few weeks chilled; historically the real long-keeper was the sour whey (sýra), in which food lasted through winter.",
+   "one_zh": "冰岛滤干酸凝乳，酸乳清能腌食过冬",
+   "one_en": "Thick Icelandic curd; its sour whey pickled food for winter",
+   "area": "europe",
+   "drop": false
   },
   {
    "id": "viili",
@@ -851,7 +1046,7 @@
      ]
     }
    ],
-   "num": "",
+   "num": "约 20 °C 室温发酵约一天（家庭做法口径）",
    "conf": "中",
    "sources": [
     {
@@ -865,7 +1060,18 @@
      "kind": "百科"
     }
    ],
-   "note": "历史年代证据不足；林奈 1737《拉普兰植物志》用捕虫堇叶子做黏奶一说未核"
+   "note": "历史年代证据不足；林奈 1737《拉普兰植物志》用捕虫堇叶子做黏奶一说未核",
+   "name_short_zh": "维利",
+   "name_short_en": "Viili",
+   "region_en": "Finland, Sweden",
+   "animal_en": "Cow",
+   "method_id": "acid",
+   "method_also_ids": [],
+   "shelf_en": "About two weeks chilled; the culture can be passed on at room temperature from batch to batch at home.",
+   "one_zh": "拉丝的北欧发酵奶，冷藏约两周",
+   "one_en": "Ropy Nordic soured milk; about two weeks chilled",
+   "area": "europe",
+   "drop": false
   },
   {
    "id": "kefir",
@@ -905,19 +1111,24 @@
      ]
     },
     {
-     "zh": "2024 年中国科学院古脊椎动物与古人类研究所团队在《细胞》发表研究：新疆小河墓地约 3600 年前的乳制品残留是开菲尔奶酪，从中测出开菲尔乳杆菌的古 DNA。",
-     "en": "In 2024 a team led from the Institute of Vertebrate Paleontology and Paleoanthropology (CAS) reported in Cell that roughly 3,600-year-old dairy residues from the Xiaohe cemetery in Xinjiang are kefir cheese, recovering ancient DNA of Lactobacillus kefiranofaciens.",
+     "zh": "2024 年中国科学院古脊椎动物与古人类研究所付巧妹团队在《细胞》发表研究：新疆小河墓地青铜时代约 3600 年前的乳制品残留是开菲尔奶酪，检出开菲尔乳杆菌和库德毕赤酵母的古 DNA，是已知最古老的奶酪样本；其开菲尔乳杆菌与今天西藏的菌株亲缘最近。",
+     "en": "In 2024 Fu Qiaomei's team at the CAS Institute of Vertebrate Paleontology and Paleoanthropology reported in Cell that roughly 3,600-year-old Bronze Age dairy residues from the Xiaohe cemetery in Xinjiang are kefir cheese — the oldest known cheese — with ancient DNA of Lactobacillus kefiranofaciens and Pichia kudriavzevii; the bacterium is most closely related to strains from Tibet today.",
      "year": 2024,
      "num": "约 3600 年前",
-     "conf": "中",
+     "conf": "高",
      "sources": [
       {
-       "title": "Liu Y. et al. Bronze Age cheese reveals human–Lactobacillus interactions over evolutionary history. Cell 187 (2024)",
+       "title": "Liu Y. et al. Bronze Age cheese reveals human–Lactobacillus interactions over evolutionary history. Cell (2024)",
        "url": "https://doi.org/10.1016/j.cell.2024.08.008",
        "kind": "学术"
+      },
+      {
+       "title": "Smithsonian Magazine: The World's Oldest Cheese Was Buried in a Chinese Tomb 3,600 Years Ago (2024-09)",
+       "url": "https://www.smithsonianmag.com/smart-news/the-worlds-oldest-cheese-was-buried-in-a-chinese-tomb-3600-years-ago-now-scientists-have-sequenced-its-dna-180985152",
+       "kind": "媒体"
       }
      ],
-     "note": "未打开原文，依据作者记忆与维基引文；与研究员 A/B 的奶酪起源部分可能重叠"
+     "note": "与研究员 A/B 的奶酪起源部分可能重叠"
     },
     {
      "zh": "相传 1908 年前后，莫斯科布兰多夫兄弟的乳品厂派女职员伊琳娜·萨哈罗娃去高加索向一位王公求取开菲尔粒，遭「抢婚」后获救，沙皇判王公赔给她十磅开菲尔粒；1908 年 9 月莫斯科开始出售瓶装开菲尔。这个故事细节多无出处，宜视为传说。",
@@ -949,17 +1160,35 @@
      "kind": "学术"
     },
     {
-     "title": "Liu Y. et al. Bronze Age cheese reveals human–Lactobacillus interactions over evolutionary history. Cell 187 (2024)",
+     "title": "Russian Life: Magical Kefir (Philip Seifi, 2016-08-22)",
+     "url": "https://russianlife.com/stories/online-archive/magical-kefir/",
+     "kind": "媒体"
+    },
+    {
+     "title": "Liu Y. et al. Bronze Age cheese reveals human–Lactobacillus interactions over evolutionary history. Cell (2024)",
      "url": "https://doi.org/10.1016/j.cell.2024.08.008",
      "kind": "学术"
     },
     {
-     "title": "Russian Life: Magical Kefir (Philip Seifi, 2016-08-22)",
-     "url": "https://russianlife.com/stories/online-archive/magical-kefir/",
+     "title": "Smithsonian Magazine: The World's Oldest Cheese Was Buried in a Chinese Tomb 3,600 Years Ago (2024-09)",
+     "url": "https://www.smithsonianmag.com/smart-news/the-worlds-oldest-cheese-was-buried-in-a-chinese-tomb-3600-years-ago-now-scientists-have-sequenced-its-dna-180985152",
      "kind": "媒体"
     }
    ],
-   "note": ""
+   "note": "",
+   "name_short_zh": "开菲尔",
+   "name_short_en": "Kefir",
+   "region_en": "North Caucasus",
+   "animal_en": "Cow, goat, sheep",
+   "method_id": "acid",
+   "method_also_ids": [
+    "alcohol"
+   ],
+   "shelf_en": "About one to a few weeks chilled; the grains themselves can be propagated indefinitely as long as they are fed milk.",
+   "one_zh": "开菲尔粒发酵的微泡酸奶，粒可无限传代",
+   "one_en": "Fizzy grain-fermented milk; grains live on indefinitely",
+   "area": "europe",
+   "drop": false
   },
   {
    "id": "clotted-cream",
@@ -1043,7 +1272,18 @@
      "kind": "百科"
     }
    ],
-   "note": "保存期为一般商品口径，未找到一手标准"
+   "note": "保存期为一般商品口径，未找到一手标准",
+   "name_short_zh": "凝脂奶油",
+   "name_short_en": "Clotted cream",
+   "region_en": "Cornwall and Devon, England",
+   "animal_en": "Cow",
+   "method_id": "fat",
+   "method_also_ids": [],
+   "shelf_en": "About one to two weeks chilled (retail figure); historically a way to stretch easily soured fresh cream by a few days.",
+   "one_zh": "加热凝出的厚奶油，冷藏一两周",
+   "one_en": "Scalded, crusted cream; one to two weeks chilled",
+   "area": "europe",
+   "drop": false
   },
   {
    "id": "bog-butter",
@@ -1133,7 +1373,20 @@
      "kind": "官方"
     }
    ],
-   "note": ""
+   "note": "",
+   "name_short_zh": "沼泽黄油",
+   "name_short_en": "Bog butter",
+   "region_en": "Ireland (and Scotland)",
+   "animal_en": "Cow",
+   "method_id": "cold",
+   "method_also_ids": [
+    "fat"
+   ],
+   "shelf_en": "Excavated finds lay in the peat for centuries to over 3,000 years; radiocarbon dates show the burial tradition running from about 1700 BC to the 17th century AD.",
+   "one_zh": "埋进泥炭沼泽的黄油，存了三千多年",
+   "one_en": "Butter buried in peat bogs, kept for 3,000+ years",
+   "area": "europe",
+   "drop": false
   },
   {
    "id": "brunost",
@@ -1218,7 +1471,18 @@
      "kind": "媒体"
     }
    ],
-   "note": "严格说是乳清制品而非凝乳奶酪；糖来自乳糖本身，不另加糖"
+   "note": "严格说是乳清制品而非凝乳奶酪；糖来自乳糖本身，不另加糖",
+   "name_short_zh": "棕奶酪",
+   "name_short_en": "Brunost",
+   "region_en": "Gudbrandsdalen, Norway",
+   "animal_en": "Cow, goat (whey)",
+   "method_id": "sugar",
+   "method_also_ids": [],
+   "shelf_en": "Sliceable brunost (under 25% water) keeps for months chilled; spreadable prim (over 30% water) keeps for less.",
+   "one_zh": "乳清熬成焦糖色的甜奶酪，冷藏数月",
+   "one_en": "Whey boiled down to fudge-like cheese; months chilled",
+   "area": "europe",
+   "drop": false
   },
   {
    "id": "niter-kibbeh",
@@ -1265,7 +1529,7 @@
      ]
     }
    ],
-   "num": "",
+   "num": "2005 研究：4 种调味植物精油均有抗氧化活性",
    "conf": "中",
    "sources": [
     {
@@ -1279,7 +1543,18 @@
      "kind": "学术"
     }
    ],
-   "note": "常温保存期为一般口径；香料清单除四种实测植物外为通俗食谱口径"
+   "note": "常温保存期为一般口径；香料清单除四种实测植物外为通俗食谱口径",
+   "name_short_zh": "尼特基贝",
+   "name_short_en": "Niter kibbeh",
+   "region_en": "Ethiopia",
+   "animal_en": "Cow",
+   "method_id": "fat",
+   "method_also_ids": [],
+   "shelf_en": "Keeps far longer than butter — months at room temperature; antioxidants in the spices are thought to slow rancidity.",
+   "one_zh": "加香料熬的澄清黄油，常温放数月",
+   "one_en": "Spiced clarified butter; keeps months at room temp",
+   "area": "africa",
+   "drop": false
   },
   {
    "id": "kule-naoto",
@@ -1354,7 +1629,20 @@
      "kind": "学术"
     }
    ],
-   "note": "原候选为马赛 kule naoto；马赛葫芦炭熏的直接描述较少（Mureithi 文中仅引 Miyamoto 1985），故合并卡伦金 mursik 一起写；保存期口径来自农户自述"
+   "note": "原候选为马赛 kule naoto；马赛葫芦炭熏的直接描述较少（Mureithi 文中仅引 Miyamoto 1985），故合并卡伦金 mursik 一起写；保存期口径来自农户自述",
+   "name_short_zh": "炭熏葫芦奶",
+   "name_short_en": "Smoked gourd milk",
+   "region_en": "Kenyan Rift Valley (Maasai, Kalenjin)",
+   "animal_en": "Cow",
+   "method_id": "smoke",
+   "method_also_ids": [
+    "acid"
+   ],
+   "shelf_en": "Usually drunk after 3–5 days of fermenting and keeps for weeks; one study cites up to three months for some groups, and a Pokot product reportedly lasts over a year.",
+   "one_zh": "炭熏葫芦里发酵的酸奶，可放数周",
+   "one_en": "Milk soured in charcoal-smoked gourds; keeps weeks",
+   "area": "africa",
+   "drop": false
   },
   {
    "id": "dulce-de-leche",
@@ -1443,7 +1731,18 @@
      "kind": "学术"
     }
    ],
-   "note": "cajeta de Celaya 的具体年代未核；阿根廷 2003 年申遗被他国反对一事属于国家间争议，未写入"
+   "note": "cajeta de Celaya 的具体年代未核；阿根廷 2003 年申遗被他国反对一事属于国家间争议，未写入",
+   "name_short_zh": "牛奶焦糖酱",
+   "name_short_en": "Dulce de leche",
+   "region_en": "Argentina, Uruguay; Mexico (cajeta)",
+   "animal_en": "Cow; goat (cajeta)",
+   "method_id": "sugar",
+   "method_also_ids": [],
+   "shelf_en": "High in sugar and low in water, it keeps months unopened at room temperature; refrigerate once opened.",
+   "one_zh": "牛奶加糖熬成的焦糖酱，常温放数月",
+   "one_en": "Milk and sugar cooked to caramel; keeps months",
+   "area": "americas",
+   "drop": false
   },
   {
    "id": "condensed-milk",
@@ -1456,7 +1755,7 @@
    "animal": "牛",
    "method": "浓缩加糖",
    "method_also": [],
-   "shelf_zh": "甜炼乳水分活度约 0.80–0.87，未开罐常温可存放一年以上（商品口径）；开罐后冷藏约一两周。",
+   "shelf_zh": "甜炼乳靠糖自我保存，装罐后不再加热杀菌，未开罐常温可存放很久（一般商品标一年左右）；无糖淡炼乳需罐内高温灭菌，UHT 版保质期 6–9 个月。",
    "flavor_zh": "极甜、浓稠，带熟奶与淡淡焦糖味；在东南亚、拉美用来调咖啡、做甜点。",
    "flavor_en": "Very sweet and thick, with cooked-milk and faint caramel notes; stirred into coffee and desserts across Southeast Asia and Latin America.",
    "how_zh": "在真空锅中低温蒸发鲜奶的大部分水分，再装罐密封；后来普遍加入大量蔗糖做成甜炼乳，靠高糖把水分活度压低，开罐前可常温存放。",
@@ -1498,9 +1797,23 @@
        "kind": "学术"
       }
      ]
+    },
+    {
+     "zh": "甜炼乳的保存关键在「糖比」：糖占水相的 62.5–64.5%，低于 62.5% 有微生物风险，高于 64.5% 糖会结晶；美式标准含蔗糖 45%、水 27%，英式含蔗糖 43.5%、水 25.5%。",
+     "en": "The key to sweetened condensed milk is the sugar ratio — sugar as 62.5–64.5% of the water phase; below that microbes are a risk, above it sugar crystallises. American-type product has 45% sucrose and 27% water, British-type 43.5% sucrose and 25.5% water.",
+     "num": "糖比 62.5–64.5%",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Tetra Pak Dairy Processing Handbook, Chapter 17: Condensed milk",
+       "url": "https://dairyprocessinghandbook.tetrapak.com/chapter/condensed-milk",
+       "kind": "企业"
+      }
+     ],
+     "alt": "水分活度：Tetra Pak 手册约 0.78；Beuchat/Fontana 表列 0.80–0.87"
     }
    ],
-   "num": "aw 约 0.80–0.87（甜炼乳）",
+   "num": "甜炼乳：蔗糖 43.5–45%，水 25.5–27%；水相糖浓度须在 62.5–64.5%；aw 约 0.78",
    "conf": "高",
    "sources": [
     {
@@ -1512,9 +1825,25 @@
      "title": "Handbook of Texas Online: Borden, Gail, Jr.",
      "url": "https://www.tshaonline.org/handbook/entries/borden-gail-jr",
      "kind": "学术"
+    },
+    {
+     "title": "Tetra Pak Dairy Processing Handbook, Chapter 17: Condensed milk",
+     "url": "https://dairyprocessinghandbook.tetrapak.com/chapter/condensed-milk",
+     "kind": "企业"
     }
    ],
-   "note": "专利本身是无糖浓缩；甜炼乳含糖比例未取得一手标准，暂不写具体百分比"
+   "note": "",
+   "name_short_zh": "炼乳",
+   "name_short_en": "Condensed milk",
+   "region_en": "Northeastern United States",
+   "animal_en": "Cow",
+   "method_id": "sugar",
+   "method_also_ids": [],
+   "shelf_en": "Sweetened condensed milk preserves itself with sugar and is not heat-treated after canning; unopened it keeps a long time (usually labelled about a year). Unsweetened evaporated milk is sterilised in the can; UHT versions last 6–9 months.",
+   "one_zh": "真空浓缩加糖的罐装奶，未开罐放约一年",
+   "one_en": "Vacuum-condensed, sugared canned milk; about a year",
+   "area": "americas",
+   "drop": false
   },
   {
    "id": "milk-powder",
@@ -1577,6 +1906,20 @@
        "kind": "学术"
       }
      ]
+    },
+    {
+     "zh": "截至 2024 年 4 月的一年里，新西兰奶粉出口额 97 亿新西兰元，占该国出口总额的 14%，是其第一大出口商品；其中约 30% 销往中国。",
+     "en": "In the year to April 2024 New Zealand exported NZ$9.7 billion of milk powder — 14% of all its exports and its largest export commodity — with about 30% going to China.",
+     "year": 2024,
+     "num": "97 亿新西兰元；占出口 14%",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Stats NZ press release via Scoop: Growth in export markets for New Zealand milk powder (2024-05-24)",
+       "url": "https://www.scoop.co.nz/stories/BU2405/S00403/growth-in-export-markets-for-new-zealand-milk-powder.htm",
+       "kind": "官方"
+      }
+     ]
     }
    ],
    "num": "含水 <4%",
@@ -1586,9 +1929,25 @@
      "title": "Carić M., Gregurek Lj. Retrospektiva razvoja tehnologije koncentriranih i sušenih mliječnih proizvoda (Retrospective of concentrated and dried dairy products development). Mljekarstvo 53(4):293–307 (2003)",
      "url": "https://hrcak.srce.hr/file/2709",
      "kind": "学术"
+    },
+    {
+     "title": "Stats NZ press release via Scoop: Growth in export markets for New Zealand milk powder (2024-05-24)",
+     "url": "https://www.scoop.co.nz/stories/BU2405/S00403/growth-in-export-markets-for-new-zealand-milk-powder.htm",
+     "kind": "官方"
     }
    ],
-   "note": "新西兰出口份额未核，坐标仅作排序用"
+   "note": "新西兰在全球全脂奶粉出口中的份额未核；坐标仅作排序用",
+   "name_short_zh": "奶粉",
+   "name_short_en": "Milk powder",
+   "region_en": "Global; since industrialisation, New Zealand, the EU and others lead exports",
+   "animal_en": "Cow",
+   "method_id": "dry",
+   "method_also_ids": [],
+   "shelf_en": "Under 4% water; sealed at room temperature it keeps about a year or more (whole-milk powder less, because its fat oxidises; skim powder longer).",
+   "one_zh": "喷雾干燥到含水 4% 以下，可放一年以上",
+   "one_en": "Milk spray-dried below 4% water; keeps a year+",
+   "area": "global",
+   "drop": false
   },
   {
    "id": "rushan",
@@ -1654,7 +2013,20 @@
      "kind": "二手"
     }
    ],
-   "note": "古籍记载（明清方志）未找到可靠出处；技术上属酸凝拉伸型奶酪，靠晒干保存。乳饼（石林、路南）未单列"
+   "note": "古籍记载（明清方志）未找到可靠出处；技术上属酸凝拉伸型奶酪，靠晒干保存。乳饼（石林、路南）未单列",
+   "name_short_zh": "乳扇",
+   "name_short_en": "Rushan",
+   "region_en": "Eryuan area, Dali, Yunnan",
+   "animal_en": "Cow",
+   "method_id": "dry",
+   "method_also_ids": [
+    "acid"
+   ],
+   "shelf_en": "Dried rushan is a thin, hard sheet that keeps weeks to months at ambient temperature (workshop figure).",
+   "one_zh": "拉成薄片晾干的大理奶片，可放数周",
+   "one_en": "Stretched, air-dried milk sheets from Dali; keep weeks",
+   "area": "eastasia",
+   "drop": false
   },
   {
    "id": "so",
@@ -1667,7 +2039,7 @@
    "animal": "牛",
    "method": "浓缩加糖",
    "method_also": [],
-   "shelf_zh": "",
+   "shelf_zh": "熬成的块状蘇水分很低，古代作为可存放、可远途进贡的滋补品；现代复原品一般冷藏保存。",
    "flavor_zh": "焦糖般的米褐色，带乳糖本身的甜味，质地像半干的奶糖或软奶酪。",
    "flavor_en": "Caramel-coloured with the natural sweetness of lactose; texture somewhere between fudge and a firm cheese.",
    "how_zh": "把牛奶用极小的火慢慢熬煮 7–8 小时，不让它焦糊，熬到原体积的约十分之一、变得黏稠，倒入木模冷却成块。",
@@ -1742,7 +2114,18 @@
      "kind": "企业"
     }
    ],
-   "note": "《续日本纪》700 年遣使造蘇的记载未经一手核实，暂不写入"
+   "note": "《续日本纪》700 年遣使造蘇的记载未经一手核实，暂不写入",
+   "name_short_zh": "蘇",
+   "name_short_en": "So",
+   "region_en": "Japan (Nara–Heian court)",
+   "animal_en": "Cow",
+   "method_id": "sugar",
+   "method_also_ids": [],
+   "shelf_en": "Boiled-down blocks are very low in water; in antiquity a storable tonic sent to court as tribute, while modern reconstructions are kept chilled.",
+   "one_zh": "牛奶熬到十分之一的古代贡品，耐存",
+   "one_en": "Milk boiled to a tenth; a storable tribute food of old Japan",
+   "area": "eastasia",
+   "drop": false
   }
  ],
  "methods": [
@@ -1771,7 +2154,11 @@
      "url": "https://doi.org/10.3389/fmicb.2015.01177",
      "kind": "学术"
     }
-   ]
+   ],
+   "short_zh": "乳酸发酵",
+   "short_en": "Souring",
+   "aw_note_zh": "pH 降到 4.5 以下（kule naoto 实测）",
+   "aw_note_en": "pH below 4.5 (measured in kule naoto)"
   },
   {
    "id": "alcohol",
@@ -1795,7 +2182,11 @@
      "kind": "学术"
     }
    ],
-   "note": "马奶成分对比为通识，未单独取证"
+   "note": "马奶成分对比为通识，未单独取证",
+   "short_zh": "酒精发酵",
+   "short_en": "Alcohol",
+   "aw_note_zh": "酒精约 1.4–2.3%（乌兰巴托艾日格实测）",
+   "aw_note_en": "About 1.4–2.3% alcohol (Ulaanbaatar airag)"
   },
   {
    "id": "dry",
@@ -1822,7 +2213,11 @@
      "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-technical-guides/water-activity-aw-foods",
      "kind": "官方"
     }
-   ]
+   ],
+   "short_zh": "脱水",
+   "short_en": "Drying",
+   "aw_note_zh": "aw<0.90 多数细菌停；<0.61 霉菌酵母停；<0.60 无繁殖",
+   "aw_note_en": "aw<0.90 stops most bacteria; <0.60 stops all growth"
   },
   {
    "id": "salt",
@@ -1852,7 +2247,11 @@
      "url": "https://icarda.org/node/18607",
      "kind": "学术"
     }
-   ]
+   ],
+   "short_zh": "加盐",
+   "short_en": "Salting",
+   "aw_note_zh": "jameed 平均含盐约 15.7%",
+   "aw_note_en": "Jameed averages about 15.7% salt"
   },
   {
    "id": "fat",
@@ -1878,7 +2277,11 @@
      "url": "https://www.ajol.info/index.php/epj/article/view/35086",
      "kind": "学术"
     }
-   ]
+   ],
+   "short_zh": "熬油封脂",
+   "short_en": "Rendering",
+   "aw_note_zh": "ghee 含水约 0.2%",
+   "aw_note_en": "Ghee holds about 0.2% water"
   },
   {
    "id": "sugar",
@@ -1909,7 +2312,11 @@
      "url": "https://basu.org.in/wp-content/uploads/2020/05/8th-PPT-of-Microbiology-of-Indigenous-Milk-Products-Desiccated-Milk-Based-Products.pdf",
      "kind": "学术"
     }
-   ]
+   ],
+   "short_zh": "浓缩加糖",
+   "short_en": "Concentrating",
+   "aw_note_zh": "糖占水相 62.5–64.5%，aw 约 0.78–0.87（甜炼乳）",
+   "aw_note_en": "Sugar 62.5–64.5% of water phase; aw ≈0.78–0.87"
   },
   {
    "id": "smoke",
@@ -1933,7 +2340,11 @@
      "kind": "学术"
     }
    ],
-   "note": "烟中酚类抑菌为通识；Mureithi 2000 只记录农户认知，未做抑菌实测"
+   "note": "烟中酚类抑菌为通识；Mureithi 2000 只记录农户认知，未做抑菌实测",
+   "short_zh": "烟熏",
+   "short_en": "Smoking",
+   "aw_note_zh": null,
+   "aw_note_en": null
   },
   {
    "id": "cold",
@@ -1951,7 +2362,11 @@
      "url": "https://www.nature.com/articles/s41598-019-40975-y",
      "kind": "学术"
     }
-   ]
+   ],
+   "short_zh": "低温埋藏",
+   "short_en": "Cold storage",
+   "aw_note_zh": "沼泽黄油埋藏传统 ≥3500 年",
+   "aw_note_en": "Bog-butter burials span 3,500+ years"
   }
  ]
 }

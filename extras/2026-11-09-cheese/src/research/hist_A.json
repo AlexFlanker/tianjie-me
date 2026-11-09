@@ -921,8 +921,134 @@
    "era_en": "Protected origin",
    "from": 1925,
    "to": 2000,
-   "facts": [],
-   "cheeses": []
+   "facts": [
+    {
+     "zh": "1925 年 7 月 26 日，法国通过保护罗克福尔原产地名称的法律，罗克福尔由此成为法国第一个受法律保护的奶酪原产地名称（AOC 的前身）。2025 年产区为此办了百年庆典；2023 年从罗克福尔村洞窟运出的奶酪共 14336 吨，由 7 家奶酪商生产，出口占 28%。",
+     "en": "On 26 July 1925 France passed a law protecting the name Roquefort, making it the first French cheese with a legally protected designation of origin, forerunner of the AOC. The region marked the centenary in 2025; in 2023, 14,336 tonnes left the Roquefort caves, made by seven houses, with exports at 28%.",
+     "year": "1925-07-26",
+     "num": "2023 年 14336 吨；7 家；出口 28%",
+     "kind": "法律 + 产区统计",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "INAO: 100 ans de l'appellation Roquefort",
+       "url": "https://inao.gouv.fr/node/34745/printable/pdf",
+       "kind": "官方"
+      },
+      {
+       "title": "Cahier des charges de l'AOP Roquefort (2006), eAmbrosia",
+       "url": "https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59837",
+       "kind": "官方"
+      },
+      {
+       "title": "Pleinchamp: Le roquefort célèbre 100 ans d'appellation",
+       "url": "https://www.pleinchamp.com/actualite/le-roquefort-celebre-100-ans-d-appellation-esperant-relancer-des-ventes-en-berne",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "1934 年，帕尔马与雷焦一带的奶农成立帕玛森奶酪联合会，起因是廉价仿品冲击。1955 年 10 月意大利第 1269 号行政令规定，只有在产区内按规定特性生产的奶酪才能叫 Parmigiano Reggiano。2009 年产量为 2947292 只，每只约 39 公斤、用奶约 550 升，约 409 家奶酪坊参与。",
+     "en": "In 1934 dairy farmers around Parma and Reggio formed the Parmigiano Reggiano consortium in response to cheap imitations. Italian Executive Order No. 1269 of October 1955 reserved the name for cheese made in the area to set standards. In 2009 output was 2,947,292 wheels, each about 39 kg and taking about 550 litres of milk, from some 409 dairies.",
+     "year": "1934；1955；2009（产量）",
+     "num": "2947292 只（2009）；约 550 升奶 / 只；约 39 kg；约 409 家奶酪坊",
+     "kind": "法令 + 行业统计",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "WIPO Magazine (2011): Parmesan – The King of Cheeses",
+       "url": "https://www.wipo.int/en/web/wipo-magazine/articles/parmesan-the-king-of-cheeses-37602",
+       "kind": "官方"
+      }
+     ],
+     "note": "产量是 2009 年数据，偏旧；需要最新数据可查联合会年报。"
+    },
+    {
+     "zh": "1951 年 6 月 1 日，欧洲多国在意大利斯特雷萨签订《奶酪原产地名称与名称使用国际公约》（斯特雷萨公约），1953 年 7 月 12 日生效，承诺禁止在本国使用虚假的奶酪产地名称。公约把名称分两类：只能在原产地做的「原产地名称」，和按形状、重量、脂肪含量等特征定义、别国也可按标准生产的「典型名称」（须注明生产国）。",
+     "en": "On 1 June 1951 several European states signed the International Convention on the Use of Designations of Origin and Names for Cheeses at Stresa, Italy, in force from 12 July 1953, pledging to ban false cheese origins at home. It set two classes: designations of origin, which may only be made in their home region, and 'typical names' defined by shape, weight, fat content and so on, which others may make to standard if the country of production is shown.",
+     "year": "1951-06-01（签订）；1953-07-12（生效）",
+     "num": "",
+     "kind": "国际条约",
+     "conf": "高",
+     "alt": "首批「原产地名称」：Pecorino Romano 联合会称只有 Pecorino Romano 与 Roquefort 两种；另有资料列为 Roquefort、Pecorino Romano、Gorgonzola、Parmigiano Reggiano 四种。",
+     "sources": [
+      {
+       "title": "Netherlands Treaty Database: International Convention on the use of designations of origin and names for cheeses (Stresa, 1951)",
+       "url": "https://treatydatabase.overheid.nl/en/Treaty/Details/007228",
+       "kind": "官方"
+      },
+      {
+       "title": "Consorzio Pecorino Romano: 70 anni della Convenzione di Stresa (press release, 2021)",
+       "url": "https://www.pecorinoromano.com/download_file/603/1116",
+       "kind": "企业"
+      },
+      {
+       "title": "WIPO Magazine (2011): Parmesan – The King of Cheeses",
+       "url": "https://www.wipo.int/en/web/wipo-magazine/articles/parmesan-the-king-of-cheeses-37602",
+       "kind": "官方"
+      }
+     ],
+     "note": "WIPO 文章称签约国为法、意、荷、瑞四国；其他资料还列奥地利、丹麦、挪威、瑞典等。缔约国名单与附件 A 需看条约原文。"
+    },
+    {
+     "zh": "法国侏罗山区的孔泰在 1958 年取得 AOC，是最早获得这一身份的奶酪之一。今天约有 2500–2700 家奶农、140–160 家 fruitière 合作社，年产约 150–170 万只。",
+     "en": "Comté from the French Jura gained its AOC in 1958, one of the first cheeses to do so. Today about 2,500–2,700 dairy farms and 140–160 fruitière co-ops make roughly 1.5–1.7 million wheels a year.",
+     "year": "1958",
+     "num": "约 2500–2700 家奶农；140–160 家 fruitière；年 150–170 万只",
+     "kind": "产区资料",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Comté Cheese Association: 1,000 Years of Artisanal Cheesemaking (PDF)",
+       "url": "https://media.comte-usa.com/pos/1000YearsofArtisanalCheesemaking.pdf",
+       "kind": "企业"
+      }
+     ],
+     "note": "该 PDF 两个版本数字不一致，故给区间。"
+    },
+    {
+     "zh": "1992 年 7 月 14 日，欧洲经济共同体通过第 2081/92 号条例，建立「受保护原产地名称」（PDO）和「受保护地理标志」（PGI）两级制度，把各国的产地保护统一到欧盟层面。1996 年 6 月 12 日第 1107/96 号条例公布首批名单，帕玛森、罗克福尔等都在其中。瑞士的格吕耶尔 2001 年获本国 AOC，2011 年获欧盟 AOP 承认。",
+     "en": "On 14 July 1992 the EEC adopted Regulation 2081/92, creating the two-tier system of Protected Designation of Origin (PDO) and Protected Geographical Indication (PGI) and lifting national origin protection to EU level. The first list followed in Regulation 1107/96 of 12 June 1996, including Parmigiano Reggiano and Roquefort. Switzerland's Gruyère gained a national AOC in 2001 and EU recognition as an AOP in 2011.",
+     "year": "1992-07-14；1996-06-12；2001；2011",
+     "num": "",
+     "kind": "欧盟法规",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "WIPO Magazine (2011): Parmesan – The King of Cheeses (Reg. 1107/96)",
+       "url": "https://www.wipo.int/en/web/wipo-magazine/articles/parmesan-the-king-of-cheeses-37602",
+       "kind": "官方"
+      },
+      {
+       "title": "Interprofession du Gruyère: History",
+       "url": "https://www.gruyere.com/en/history",
+       "kind": "官方"
+      },
+      {
+       "title": "Council Regulation (EEC) No 2081/92, EUR-Lex",
+       "url": "https://eur-lex.europa.eu/eli/reg/1992/2081/oj",
+       "kind": "官方"
+      }
+     ],
+     "note": "2081/92 日期与 EUR-Lex 链接凭记忆，未打开核对；该条例已被 510/2006、1151/2012 及 2024/1143 先后取代。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "斐达",
+     "name_en": "Feta",
+     "origin": "希腊本土与莱斯沃斯岛",
+     "what_zh": "绵羊奶（可掺不超过 30% 山羊奶）做的盐水熟成白奶酪，2002 年成为欧盟 PDO。",
+     "what_en": "A brined white cheese of sheep's milk, with up to 30% goat's milk, registered as an EU PDO in 2002."
+    },
+    {
+     "name_zh": "罗马绵羊奶酪",
+     "name_en": "Pecorino Romano",
+     "origin": "拉齐奥、撒丁岛、格罗塞托省",
+     "what_zh": "硬质咸味绵羊奶酪，斯特雷萨公约最早承认的原产地名称之一。",
+     "what_en": "A hard, salty sheep's cheese, among the first designations of origin recognised at Stresa."
+    }
+   ]
   },
   {
    "id": "artisan",
@@ -930,8 +1056,134 @@
    "era_en": "Artisan revival and today",
    "from": 1980,
    "to": 2026,
-   "facts": [],
-   "cheeses": []
+   "facts": [
+    {
+     "zh": "1983 年，康奈尔大学食品科学教授 Frank Kosikowski 创立美国奶酪协会（American Cheese Society），把各地分散的小型手工奶酪作坊联合起来，此后协会每年举办评比，成为美国手工奶酪复兴的标志。",
+     "en": "In 1983 Frank Kosikowski, a food science professor at Cornell University, founded the American Cheese Society to bring scattered small cheesemakers together; its annual competition became a marker of the American artisan cheese revival.",
+     "year": "1983",
+     "num": "评比现有 20 个大类、123 个小类",
+     "kind": "机构官方史",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "American Cheese Society: History & Archives",
+       "url": "https://www.cheesesociety.org/about-us/history/",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "旧金山湾区北部是美国手工奶酪复兴的重镇：佩塔卢马的 Marin French Cheese Co. 创立于 1865 年，自称美国连续经营最久的奶酪厂；1979 年 Laura Chenel 在索诺玛开始商业生产山羊奶酪，被视为美国山羊奶酪的开端；1997 年 Sue Conley 与 Peggy Smith 在雷斯岬站（Point Reyes Station）创办 Cowgirl Creamery；2000 年 Giacomini 家族的 Point Reyes Farmstead Cheese Co. 推出蓝纹奶酪 Original Blue。",
+     "en": "The North Bay is a centre of the American artisan revival. Marin French Cheese Co. in Petaluma, founded in 1865, calls itself the oldest continuously operating cheesemaker in the US; in 1979 Laura Chenel began making goat cheese commercially in Sonoma, seen as the start of American goat cheese; in 1997 Sue Conley and Peggy Smith founded Cowgirl Creamery in Point Reyes Station; and in 2000 the Giacomini family's Point Reyes Farmstead Cheese Co. launched its Original Blue.",
+     "year": "1865；1979；1997；2000",
+     "num": "",
+     "kind": "企业史",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Marin French Cheese Co.: About",
+       "url": "https://www.marinfrenchcheese.com/",
+       "kind": "企业"
+      },
+      {
+       "title": "Laura Chenel: Our Story",
+       "url": "https://laurachenel.com/",
+       "kind": "企业"
+      },
+      {
+       "title": "Cowgirl Creamery: About",
+       "url": "https://www.cowgirlcreamery.com/",
+       "kind": "企业"
+      },
+      {
+       "title": "Point Reyes Farmstead Cheese Co.: Our Story",
+       "url": "https://www.pointreyescheese.com/",
+       "kind": "企业"
+      }
+     ],
+     "note": "四家年份凭记忆，各企业官网均未打开核对（搜索额度用尽）；Cowgirl 2016 年被瑞士 Emmi 收购一说未列入。"
+    },
+    {
+     "zh": "美国农业部统计：2024 年美国奶酪总产量（不含茅屋奶酪）为 142.5 亿磅，约合 646 万吨，比 2023 年增长 0.7%。威斯康星以 35.9 亿磅（25.2%，116 家工厂）居首，加州 24.8 亿磅次之。意式奶酪占 42.3%（其中马苏里拉占意式的 79.5%），美式奶酪（切达等）占 39.1%。",
+     "en": "USDA figures: US cheese output in 2024, excluding cottage cheese, was 14.25 billion lb, about 6.46 million tonnes, up 0.7% on 2023. Wisconsin led with 3.59 billion lb (25.2%, 116 plants), followed by California with 2.48 billion lb. Italian types made up 42.3% (mozzarella 79.5% of those) and American types such as Cheddar 39.1%.",
+     "year": "2024（2025 年 4 月发布）",
+     "num": "142.49 亿磅 ≈ 646 万吨；威斯康星 35.86 亿磅（25.2%）；加州 24.81 亿磅",
+     "kind": "官方统计",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "USDA NASS, Dairy Products 2024 Summary (April 2025)",
+       "url": "https://esmis.nal.usda.gov/sites/default/release-files/jm214p131/r781zd41r/vm410p055/daryan25.txt",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "全球奶酪年产量约 2600 万吨（2024 年，市场研究机构估算），美国约占四分之一，德国约 300 万吨，意大利约 210 万吨。人均消费排名各家口径差异很大（法国常见约 27 公斤 / 年，也有统计把意大利、德国排在前面），不宜给出单一「冠军」。",
+     "en": "World cheese output is about 26 million tonnes a year (2024, a market-research estimate), with the US about a quarter, Germany about 3 million tonnes and Italy about 2.1 million. Per-capita rankings vary widely by method (France is often put at about 27 kg a year; other series rank Italy or Germany first), so no single 'champion' should be named.",
+     "year": "2024",
+     "num": "约 2600 万吨；美国约 25%",
+     "kind": "市场研究估算",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "IndexBox: Cheese – World Market Overview 2024",
+       "url": "https://www.indexbox.io/blog/cheese-world-market-overview-2024-11/",
+       "kind": "企业"
+      },
+      {
+       "title": "AVM (Ukraine dairy analysts): Cheese trend, figures, facts",
+       "url": "https://avm-ua.org/en/post/cheese-trend-figures-facts-and-perspective-markets",
+       "kind": "二手"
+      }
+     ],
+     "note": "没拿到 FAOSTAT / IDF 一手数；IndexBox 的人均数（意大利 35 kg）与其他来源冲突。建议页面只写「约 2500 万吨量级」并标估算。"
+    },
+    {
+     "zh": "1990 年 3 月，美国食品药品监督管理局确认用重组大肠杆菌 K-12 生产的凝乳酶（chymosin）「一般认为安全」（GRAS），这是美国第一个通过监管的基因重组食品原料，工艺由辉瑞开发。这类「发酵生产的凝乳酶」与小牛胃里的凝乳酶分子相同；据 2012 年业内估计，美国约九成商业奶酪用的是它。",
+     "en": "In March 1990 the US FDA affirmed chymosin made by recombinant E. coli K-12 as generally recognised as safe, the first food substance from recombinant DNA to be regulated in the US; Pfizer developed the process. Such fermentation-produced chymosin is the same molecule as calf rennet, and a 2012 industry estimate put it in about 90% of US commercial cheese.",
+     "year": "1990-03（联邦公报 1990-03-23）",
+     "num": "约 90%（2012 年业内估计）",
+     "kind": "监管文件 + 行业估计",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "J. H. Maryanski (FDA), FDA's Policy for Foods Developed by Biotechnology, in Genetically Modified Foods: Safety Issues, ACS Symposium Series 605 (1995)",
+       "url": "https://corpora.tika.apache.org/base/docs/govdocs1/389/389204.html",
+       "kind": "官方"
+      },
+      {
+       "title": "Vegetarian Resource Group: Microbial Rennets and Fermentation-Produced Chymosin (2012)",
+       "url": "https://www.vrg.org/blog/2012/08/21/microbial-rennets-and-fermentation-produced-chymosin-fpc-how-vegetarian-are-they/",
+       "kind": "二手"
+      }
+     ],
+     "note": "Maryanski 文中引作「vol. 57, pp. 10932」，1990 年联邦公报应为第 55 卷，疑为原文笔误。「约 90%」是行业估计不是统计。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "Mt Tam",
+     "name_en": "Mt Tam",
+     "origin": "加州雷斯岬站（Cowgirl Creamery）",
+     "what_zh": "牛奶三倍奶油白霉软奶酪，湾区手工奶酪的代表作之一。",
+     "what_en": "A triple-cream, bloomy-rind cow's milk cheese, one of the Bay Area's signature artisan cheeses."
+    },
+    {
+     "name_zh": "Original Blue",
+     "name_en": "Original Blue",
+     "origin": "加州雷斯岬（Point Reyes Farmstead）",
+     "what_zh": "用自家牧场生牛奶做的蓝纹奶酪，2000 年推出。",
+     "what_en": "A blue cheese made from the farm's own raw cow's milk, launched in 2000."
+    },
+    {
+     "name_zh": "蒙特雷杰克 / 干杰克",
+     "name_en": "Monterey Jack / Dry Jack",
+     "origin": "加州蒙特雷、索诺玛",
+     "what_zh": "19 世纪加州的半软牛奶奶酪；久存脱水的「干杰克」质地接近帕玛森。",
+     "what_en": "A 19th-century Californian semi-soft cow's milk cheese; aged 'Dry Jack' becomes hard and grating, close to Parmesan."
+    }
+   ]
   }
  ],
  "asia": [
@@ -1076,7 +1328,7 @@
      "kind": "二手"
     }
    ],
-   "note": "《南诏野史》一句的出处来自一篇转载台湾报纸的光明网稿，按站规不引用该稿；需另找方志或学术来源核。路南乳饼「撒尼人」归属凭通行说法。"
+   "note": "《南诏野史》一句的出处来自一篇光明网转载稿（原稿来源不符合站规，不引用）；需另找方志或学术来源核。路南乳饼「撒尼人」归属凭通行说法。"
   },
   {
    "id": "mn",
@@ -1180,6 +1432,229 @@
    ]
   }
  ],
- "regs": [],
- "quotes": []
+ "regs": [
+  {
+   "id": "parmesan",
+   "zh": "在欧盟，「Parmesan」不能随便用。2008 年 2 月 26 日欧洲法院在 C-132/05 案（欧委会诉德国）中驳回德国「Parmesan 已是通用名」的主张，认定它是对 PDO「Parmigiano Reggiano」的「联想性使用」（evocation），受欧盟法禁止。而在美国，联邦法规 21 CFR 133.165 直接给「Parmesan and reggiano cheese」定了标准：牛奶制、水分不超过 32%、干物质含脂不低于 32%、熟成不少于 10 个月，没有产地限制。正宗 Parmigiano Reggiano 的 PDO 规定是熟成至少 12 个月。",
+   "en": "In the EU 'Parmesan' is off-limits: on 26 February 2008, in Case C-132/05 (Commission v Germany), the Court of Justice rejected Germany's claim that the word had become generic and held it to be an evocation of the PDO Parmigiano Reggiano, which EU law forbids. In the US, 21 CFR 133.165 sets a standard for 'Parmesan and reggiano cheese': cow's milk, no more than 32% moisture, at least 32% fat in solids, cured at least 10 months, with no place of origin. The PDO Parmigiano Reggiano must age at least 12 months.",
+   "year": "2008-02-26（欧洲法院）；21 CFR 133.165（现行）",
+   "num": "美标：≥10 个月；PDO：≥12 个月",
+   "kind": "法院判决 + 联邦法规",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "eCFR 21 CFR 133.165 Parmesan and reggiano cheese",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.165",
+     "kind": "官方"
+    },
+    {
+     "title": "WIPO Magazine (2011): Parmesan – The King of Cheeses (C-132/05; 12-month minimum)",
+     "url": "https://www.wipo.int/en/web/wipo-magazine/articles/parmesan-the-king-of-cheeses-37602",
+     "kind": "官方"
+    },
+    {
+     "title": "CURIA: Case C-132/05 Commission v Germany",
+     "url": "https://curia.europa.eu/juris/liste.jsf?num=C-132/05",
+     "kind": "官方"
+    }
+   ],
+   "note": "有趣点：美国标准里连「reggiano」都是可用的品类名。"
+  },
+  {
+   "id": "feta",
+   "zh": "斐达（Feta）2002 年登记为希腊的欧盟 PDO，须用希腊本土和莱斯沃斯岛的绵羊奶（可掺不超过 30% 山羊奶）在盐水中熟成。德国和丹麦起诉要求撤销，2005 年 10 月 25 日欧洲法院驳回（C-465/02、C-466/02 合并案），理由之一是消费者普遍把 feta 与希腊联系在一起。2022 年 7 月 14 日，欧洲法院又在 C-159/20 案中判定丹麦允许本国企业以「feta」名义向欧盟以外出口白奶酪，违反了欧盟法。",
+   "en": "Feta was registered as a Greek EU PDO in 2002: brined cheese of sheep's milk, with up to 30% goat's milk, from mainland Greece and Lesbos. Germany and Denmark sued to annul it; on 25 October 2005 the Court of Justice dismissed the case (joined Cases C-465/02 and C-466/02), partly because consumers associate feta with Greece. On 14 July 2022, in Case C-159/20, the Court ruled that Denmark had broken EU law by letting Danish firms export white cheese as 'feta' to non-EU countries.",
+   "year": "2002；2005-10-25；2022-07-14",
+   "num": "山羊奶 ≤30%",
+   "kind": "欧盟登记 + 法院判决",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "CURIA: Joined Cases C-465/02 and C-466/02 Germany and Denmark v Commission",
+     "url": "https://curia.europa.eu/juris/liste.jsf?num=C-465/02",
+     "kind": "官方"
+    },
+    {
+     "title": "CURIA: Case C-159/20 Commission v Denmark",
+     "url": "https://curia.europa.eu/juris/liste.jsf?num=C-159/20",
+     "kind": "官方"
+    }
+   ],
+   "note": "案号、日期与 30% 山羊奶凭记忆，搜索额度用尽未打开核对。"
+  },
+  {
+   "id": "gruyere",
+   "zh": "在美国，「Gruyère」被法院认定为通用名。瑞士和法国的格吕耶尔行业组织申请把 GRUYERE 注册为美国产地证明商标，遭美国乳品出口委员会等反对；2023 年 3 月 3 日美国第四巡回上诉法院维持原判，认为美国消费者把 Gruyère 理解为一种奶酪类型。理由包括 FDA 的身份标准 21 CFR 133.149 为「Gruyere cheese」规定了成分却没有产地限制，以及德国、威斯康星、爱达荷等地产的「gruyere」长期在美国销售。",
+   "en": "In the US, 'Gruyère' has been ruled generic. Swiss and French Gruyère bodies sought a US certification mark for GRUYERE, opposed by the US Dairy Export Council and others; on 3 March 2023 the Fourth Circuit affirmed that American consumers understand Gruyère as a type of cheese. Its reasons included the FDA standard of identity for 'Gruyere cheese' (21 CFR 133.149), which sets composition but no geography, and long-standing US sales of gruyere made in Germany, Wisconsin and Idaho.",
+   "year": "2023-03-03",
+   "num": "",
+   "kind": "联邦上诉法院判决",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Interprofession du Gruyère v. U.S. Dairy Export Council, No. 22-1041 (4th Cir. 2023), Justia",
+     "url": "https://law.justia.com/cases/federal/appellate-courts/ca4/22-1041/22-1041-2023-03-03.html",
+     "kind": "官方"
+    }
+   ],
+   "note": "同一名称在欧盟与瑞士受 AOP 保护（2011 / 2001），在美国是通用名，可做对照卡片。"
+  },
+  {
+   "id": "american",
+   "zh": "美国俗称的「American cheese」，法定名称是「pasteurized process cheese」（巴氏杀菌加工奶酪，21 CFR 133.169）：把一种或几种奶酪粉碎混合、加热到至少 150°F 保持至少 30 秒，可加磷酸盐、柠檬酸盐等乳化盐（固形物不超过 3%）。用切达、科尔比、洗凝块或颗粒奶酪做成的，可以叫「pasteurized process American cheese」。奶酪含量更低的品类另有「process cheese food」「process cheese spread」等名称；不符合任何标准的则只能写「prepared cheese product」之类。",
+   "en": "What Americans call 'American cheese' is legally 'pasteurized process cheese' (21 CFR 133.169): one or more cheeses ground and mixed, heated to at least 150°F for at least 30 seconds, with emulsifying salts such as phosphates or citrates up to 3% of solids. Made from Cheddar, Colby, washed-curd or granular cheese, it may be called 'pasteurized process American cheese'. Products with less cheese have their own names, such as 'process cheese food' and 'process cheese spread', and those meeting no standard must use labels like 'prepared cheese product'.",
+   "year": "现行 21 CFR 133.169",
+   "num": "≥150°F、≥30 秒；乳化盐固形物 ≤3%",
+   "kind": "联邦法规",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "eCFR 21 CFR 133.169 Pasteurized process cheese",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.169",
+     "kind": "官方"
+    }
+   ],
+   "note": "133.169 已核；「process cheese food 奶酪含量≥51%」（133.173）与 Kraft Singles 标「pasteurized prepared cheese product」两点凭记忆，law.cornell.edu 133.173 页权限超时未读到。"
+  },
+  {
+   "id": "raw60",
+   "zh": "美国的奶酪身份标准规定：用未经巴氏消毒的奶做的奶酪，必须在不低于 35°F 下熟成至少 60 天才能销售（如 21 CFR 133.113 切达）。所以在美国买不到合法的生乳嫩布里或生乳卡芒贝尔，只能买巴氏奶做的版本。",
+   "en": "US standards of identity require cheese made from unpasteurised milk to be cured at no less than 35°F for at least 60 days before sale (for example 21 CFR 133.113, Cheddar). That is why young raw-milk Brie or Camembert cannot be sold legally in the US, only pasteurised versions.",
+   "year": "现行",
+   "num": "≥60 天，≥35°F",
+   "kind": "联邦法规",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "eCFR 21 CFR 133.113 Cheddar cheese",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.113",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "roquefort-rules",
+   "zh": "Roquefort 的 PDO 规范写明：只能用 Lacaune 品种绵羊的生全脂奶，必须在罗克福尔村 Combalou 山崩塌岩体里的天然洞窟中熟成，自制作之日起至少 90 天；洞窟靠石灰岩裂缝 fleurines 吹进的冷湿空气通风。",
+   "en": "The Roquefort PDO rules require raw whole milk from Lacaune ewes and ripening in natural caves in the Combalou rockfall at Roquefort-sur-Soulzon for at least 90 days from making, the caves ventilated by cool, damp air through limestone fissures called fleurines.",
+   "year": "规范书 2006 年版",
+   "num": "≥90 天",
+   "kind": "PDO 规范书",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'AOP Roquefort (2006), eAmbrosia",
+     "url": "https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59837",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "stresa-typical",
+   "zh": "斯特雷萨公约（1951）的「典型名称」一类，允许别国按统一的形状、重量、脂肪含量等标准生产同名奶酪，但要注明生产国。这就是为什么 Camembert、Brie、Gouda、Edam 这类名字世界各地都能用，而受保护的是带产地的全名，如「Camembert de Normandie」「Brie de Meaux」「Gouda Holland」。",
+   "en": "The Stresa Convention's 'typical names' class lets other countries make a cheese of the same name to shared standards of shape, weight and fat, provided the country of production is shown. That is why names like Camembert, Brie, Gouda and Edam are used worldwide, while protection attaches to fuller names with a place, such as Camembert de Normandie, Brie de Meaux or Gouda Holland.",
+   "year": "1951",
+   "num": "",
+   "kind": "国际条约 + 欧盟登记",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Consorzio Pecorino Romano: 70 anni della Convenzione di Stresa (2021)",
+     "url": "https://www.pecorinoromano.com/download_file/603/1116",
+     "kind": "企业"
+    }
+   ],
+   "note": "Camembert/Brie/Gouda/Edam 归入公约附件 B 凭记忆；Camembert de Normandie、Brie de Meaux、Gouda Holland 为欧盟登记名称，未逐一核登记年份。"
+  },
+  {
+   "id": "swiss",
+   "zh": "美国的「Swiss cheese」也有联邦身份标准（21 CFR 133.195，又名 emmentaler cheese），条文要求奶酪内部要有发酵形成的孔洞（eyes）。",
+   "en": "American 'Swiss cheese' has its own federal standard (21 CFR 133.195, also 'emmentaler cheese'), which requires holes, or eyes, formed throughout the cheese.",
+   "year": "现行",
+   "num": "",
+   "kind": "联邦法规",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "eCFR 21 CFR 133.195 Swiss and emmentaler cheese",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.195",
+     "kind": "官方"
+    }
+   ],
+   "note": "eCFR 该页被拦截、law.cornell.edu 页权限超时，条文措辞未核。"
+  }
+ ],
+ "quotes": [
+  {
+   "zh": "于是他立刻把一半白奶凝结起来，收进柳条编的筐里放好；另一半盛在器皿里，留着喝，当晚饭。",
+   "en": "Then presently he curdled half the white milk, and gathered it in wicker baskets and laid it away, and the other half he set in vessels that he might have it to take and drink, and that it might serve him for supper.",
+   "orig": "αὐτίκα δ᾽ ἥμισυ μὲν θρέψας λευκοῖο γάλακτος / πλεκτοῖς ἐν ταλάροισιν ἀμησάμενος κατέθηκεν",
+   "work": "荷马《奥德赛》第 9 卷 246–247 行（英译：A. T. Murray, 1919）",
+   "year": "约公元前 8 世纪",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Homer, Odyssey 9 (Murray tr.), Perseus Digital Library",
+     "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136:book=9:card=231",
+     "kind": "官方"
+    }
+   ],
+   "note": "英译已核；希腊原文两行凭记忆，Perseus 希腊文页未打开。中文为本稿自译。"
+  },
+  {
+   "zh": "通常用羔羊或小山羊的凝乳酶使它凝结，不过野蓟的花、红花的籽也能做到，无花果树的乳汁同样可以——划破它青绿的树皮，汁就流出来了。",
+   "en": "It is usually curdled with the rennet of a lamb or a kid, though it can also be set with the flower of the wild thistle, with safflower seed, and no less with the milky juice that the fig tree gives out if you cut its green bark.",
+   "orig": "et id plerumque cogi agni aut haedi coagulo, quamvis possit et agrestis cardui flore conduci et seminibus cneci nec minus ficulneo lacte, quod emittit arbor, si eius virentem saucies corticem.",
+   "work": "科卢梅拉《论农业》（De re rustica）第 7 卷 8 章 2 节",
+   "year": "约公元 60–65 年",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Columella, De re rustica 7.8 (The Latin Library)",
+     "url": "https://www.thelatinlibrary.com/columella/columella.rr7.shtml",
+     "kind": "官方"
+    }
+   ],
+   "alt": "同章 6 节短句可替换：「Hoc genus casei potest etiam trans maria permitti」——这种奶酪甚至可以运过海去。",
+   "note": "拉丁原文已核（分段取回后拼接）；中英译为本稿自译。"
+  },
+  {
+   "zh": "（干酪）得经数年不坏，以供远行。",
+   "en": "It keeps for several years without spoiling, and serves for long journeys.",
+   "orig": "得經數年不壞，以供遠行。",
+   "work": "贾思勰《齐民要术》卷六·养羊第五十七·作干酪法",
+   "year": "约 533–544 年",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "贾思勰《齐民要术》（维基文库）",
+     "url": "https://zh.wikisource.org/zh-hans/%E9%BD%8A%E6%B0%91%E8%A6%81%E8%A1%93",
+     "kind": "官方"
+    }
+   ],
+   "alt": "作干酪法全段（凭记忆）：七月、八月中作之。日中炙酪，酪上皮成，掠取。更炙之，又掠。肥尽无皮，乃止。得一斗许，于铛中炒少许时，即出于盘上，日曝。浥浥时作团，大如梨许。又曝使干。得经数年不坏，以供远行。",
+   "note": "原文页本次打不开，引文凭记忆，上页面前务必对照缪启愉《齐民要术校释》或维基文库卷六核字。"
+  },
+  {
+   "zh": "没有奶酪的甜点，就像少了一只眼睛的美人。",
+   "en": "A dessert without cheese is like a beautiful woman who has lost an eye.",
+   "orig": "Un dessert sans fromage est une belle à qui il manque un œil.",
+   "work": "布里亚-萨瓦兰《味觉生理学》（Physiologie du goût）卷首格言第 14 条",
+   "year": "1825",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Brillat-Savarin, Physiologie du goût, Aphorisme XIV (Project Gutenberg #22741)",
+     "url": "https://www.gutenberg.org/ebooks/22741",
+     "kind": "官方"
+    },
+    {
+     "title": "The Physiology of Taste, English translation, Aphorism XIV (Project Gutenberg #5434)",
+     "url": "https://www.gutenberg.org/cache/epub/5434/pg5434.html",
+     "kind": "官方"
+    }
+   ],
+   "alt": "常见英文转述为「…like a beautiful woman with only one eye」；Gutenberg 英译本作「who has lost an eye」。",
+   "note": "法文原句与英译均从 Gutenberg 全文核对。书出版于 1825 年 12 月，扉页常署 1826。"
+  }
+ ]
 }

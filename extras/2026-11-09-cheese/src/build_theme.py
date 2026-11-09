@@ -59,6 +59,11 @@ def plate(cid, key):
 def sec_h(kick, h, p=None):
     return f'<div class="sec-h fade"><span class="kick">{kick}</span><h3>{bi(h)}</h3>' + (f'<p>{bi(p)}</p>' if p else '') + '</div>'
 
+def after(x, sep):
+    a, b, c = x.partition(sep)
+    if not b or len(a) > 30: return x
+    c = c.strip(); return c[0].upper() + c[1:] if c and sep == ':' else c
+
 def yk(y):
     if not y: return None
     y = str(y); return T(y, '' if re.search(r'[\u4e00-\u9fff]', y) else y)
@@ -105,12 +110,12 @@ def ch_make():
 
 # ---------- 02 品鉴 ----------
 def ch_taste():
-    tips = ''.join(f'<div><b>{bi(T(t["zh"].split("：")[0], t["en"].split(":")[0]))}</b><p>{bi(T(esc(t["zh"].split("：", 1)[-1]), esc(t["en"].split(":", 1)[-1].strip())))}</p></div>' for t in B['tasting'])
+    tips = ''.join(f'<div><b>{bi(tt)}</b><p>{bi(T(esc(after(t["zh"], "：")), esc(after(t["en"], ":"))))}</p></div>' for tt, t in zip(E.TASTE_TITLES, B['tasting']))
     return (f'<section class="ch" id="taste">{plate("taste", "plate-taste")}{lede("taste")}<div class="wide">'
             f'<div class="sec">{sec_h("HOW TO", E.TASTE_HEAD)}<div class="decode fade">{tips}</div></div>'
             f'<div class="sec">{sec_h("SPECTRUM", E.SPEC_HEAD, E.SPEC_NOTE)}<div class="spec" id="spec"><div><div class="filters lens"></div><div class="plot"><div class="cv"></div></div></div><div class="side"></div></div></div>'
             f'<div class="sec">{sec_h("WHEEL", E.WHEEL["title"])}<div class="wheelwrap" id="wheel"><div class="wheel"></div><div class="wheelinfo"></div></div></div>'
-            f'<div class="sec" id="pairs">{sec_h("PAIRING", E.PAIR_HEAD)}<ul class="principles fade">' + ''.join(f'<li>{bi(T(esc(x["zh"]), esc(x["en"])))}</li>' for x in B['pairing']['principles']) + '</ul><div class="lens"></div><div class="pairs"></div></div>'
+            f'<div class="sec" id="pairs">{sec_h("PAIRING", E.PAIR_HEAD)}<div class="decode" style="margin-bottom:24px">' + ''.join(f'<div class="fade"><b>{bi(t)}</b><p>{bi(T(esc(after(x["zh"], "：")), esc(after(x["en"], ":"))))}</p></div>' for t, x in zip(E.PRIN_TITLES, B['pairing']['principles'])) + '</div><div class="lens"></div><div class="pairs"></div></div>'
             '</div></section>')
 
 # ---------- 03 全球 ----------
@@ -179,7 +184,7 @@ def ch_end():
 def data():
     world, wl = world_data()
     d = dict(meta=dict(title_zh=E.META['title_zh'], title_en=E.META['title_en']), stage=stage_data(), asia=asia_data(), world=world, lenses=dict(world=wl))
-    d.update(make_data()); d.update(taste_data()); d.update(counter_data())
+    d.update(make_data()); d.update(taste_data()); cd = counter_data(); d['lenses']['local'] = cd.pop('lenses_local'); d.update(cd)
     return d
 
 def main():
@@ -219,7 +224,8 @@ def make_data():
             g = STEPS[p['step']]
             ik = 'step-' + p['step']
             # 最后一步（熟成 / 鲜食）用这种奶酪自己的成品图；其余用工序图
-            use = sk if p['step'] == 'ripen' and src(sk) else (ik if src(ik) else sk)
+            ov = f'step-{p["step"]}-{sid}'
+            use = sk if p['step'] == 'ripen' and src(sk) else (ov if src(ov) else (ik if src(ik) else sk))
             sec = p.get('time_sec')
             steps.append(dict(title=T(g['zh'], g['en']), text=T(esc(p['note_zh']), esc(p['note_en'])), sci=T(esc(g['science_zh']), esc(g['science_en'])),
                               temp=p.get('temp_num'), td=T(p['temp_disp_zh'], p['temp_disp_en']) if p.get('temp_disp_zh') else None,
@@ -252,10 +258,57 @@ def taste_data():
     items = [dict(kind=PKIND.get(p['kind'], p['kind']), cheese=T(p['cheese_zh'], p['cheese_en']), **{'with': T(p['with_zh'], p['with_en'])}, why=T(p['why_zh'], p['why_en'])) for p in B['pairing']['pairs']]
     return dict(spec=spec, fams=fams, flightTip=E.FLIGHT_TIP, wheel=dict(title=E.WHEEL['title'], intro=E.WHEEL['intro'], axes=axes), pairs=dict(kinds=kinds, items=items))
 
-# ---------- 04 柜台（占位，待 D 完成后替换） ----------
+# ---------- 04 柜台 ----------
+ZONES = [('fresh', 2), ('bloomy', 2), ('washed', 2), ('alpine', 2), ('hard', 2), ('blue', 2), ('american', 6)]
+def _by(lst, key='id'): return {x[key]: x for x in lst}
+
 def ch_counter():
-    return '<section class="ch" id="counter"><div class="wide"><div class="sec"></div></div></section>'
+    S = _by(D['stores'])
+    two = ''.join(f'<div class="board fade"><span class="kick">{bi(k)}</span><h5>{esc(S[sid]["en"])}</h5><ul>' + ''.join(f'<li>{bi(x)}</li>' for x in items) + '</ul></div>' for sid, k, items in E.TWO)
+    LB = _by(D['labels']); RG = _by(A['regs'])
+    dec = ''.join(f'<div class="fade"><b>{bi(t)}</b><p>{bi(T(esc((LB if src_ == "D" else RG)[i]["zh"]), esc((LB if src_ == "D" else RG)[i]["en"])))}</p></div>' for src_, i, t in E.DECODE)
+    BU = _by(D['buying'])
+    buy = ''.join(f'<div class="fade"><b>{bi(t)}</b><p>{bi(T(esc(BU[i]["zh"]), esc(BU[i]["en"])))}</p></div>' for i, t in E.BUY if i in BU)
+    phr = ''.join(f'<div class="fade"><q>{esc(p["en"])}</q><span class="zh">{esc(p["zh"])}</span></div>' for p in D['phrases'])
+    CH_ = _by(D['cheeses'])
+    boards = ''
+    for b in D['boards']:
+        lis = ''.join(f'<li><b>{esc(CH_[it["cheese_id"]]["name"])}</b> · {it["oz"]} oz — {bi(T(esc(it["why_zh"]), esc(it["why_en"])))}</li>' for it in b['items'])
+        boards += (f'<div class="board fade"><span class="kick">${b["budget_usd"]}</span><h5>{bi(T(esc(b["title_zh"]), esc(b["title_en"])))}</h5><ul>{lis}</ul>'
+                   + (f'<p class="small" style="margin:10px 0 0">{bi(T(esc(b["extras_zh"]), esc(b["extras_en"])))}</p>' if b.get('extras_zh') else '')
+                   + (f'<div class="tot">{bi(T(esc(b["total_note_zh"]), esc(b["total_note_en"])))}</div>' if b.get('total_note_zh') else '') + '</div>')
+    SO = _by(D['storage'])
+    store = ''.join(f'<div class="fade"><b>{bi(t)}</b><p>{bi(T(esc(SO[i]["zh"]), esc(SO[i]["en"])))}</p></div>' for i, t in E.STORE if i in SO)
+    r0, r1 = E.CASE_RAIL
+    return (f'<section class="ch" id="counter">{plate("counter", "plate-counter")}{lede("counter")}<div class="wide">'
+            f'<div class="sec">{sec_h("THE CASE", E.CASE_HEAD, E.CASE_NOTE)}<div class="counter" id="counter-case"><div class="case fade"><div class="glass"></div><div class="rail2"><span>{bi(r0)}</span><span>{bi(r1)}</span></div></div>'
+            f'<div><div class="zonehead"></div><div class="tags2"></div></div></div></div>'
+            f'<div class="sec">{sec_h("TWO COUNTERS", E.TWO_HEAD)}<div class="boards two">{two}</div></div>'
+            f'<div class="sec">{sec_h("LABELS", E.DECODE_HEAD)}<div class="decode">{dec}</div></div>'
+            f'<div class="sec">{sec_h("ASK", E.BUY_HEAD, E.PHRASE_NOTE)}<div class="phr">{phr}</div><div class="decode" style="margin-top:24px">{buy}</div></div>'
+            f'<div class="sec">{sec_h("BOARDS", E.BOARD_HEAD, E.BOARD_NOTE)}<div class="boards">{boards}</div></div>'
+            f'<div class="sec">{sec_h("AT HOME", E.STORE_HEAD)}<div class="decode">{store}</div></div>'
+            f'<div class="sec">{sec_h("SAN FRANCISCO", E.LOCAL_HEAD, E.LOCAL_NOTE)}<div data-list="local"><div class="lens"></div><div class="list"></div></div></div>'
+            '</div></section>')
+
 def counter_data():
-    return {}
+    Z = _by(D['zones'])
+    cheeses = {}
+    for c in D['cheeses']:
+        cheeses[c['id']] = dict(name=c['name'], zhname=c['name_zh'], fam=c['fam_key'], origin=T(c['origin_zh'], c['origin_en']), labels=c.get('label_tags') or [],
+                                price=c.get('price_lb'), taste=T(c['taste_zh'], c['taste_en']), pair=T(c['pair_zh'], c['pair_en']) if c.get('pair_zh') else None)
+    zones = []
+    for zid, span in ZONES:
+        z = Z[zid]; ids = [c['id'] for c in D['cheeses'] if c.get('zone') == zid]
+        zones.append(dict(id=zid, zh=z['zh'].split('（')[0], en=z['en'], span=span, sub=T(f'{len(ids)} 种', f'{len(ids)} cheeses'), what=T(esc(z['what_zh']), esc(z['what_en'])), cheeses=ids))
+    loc = []
+    for l in sorted([x for x in D['local'] if x.get('kind') and 'closed' not in (x.get('dist_en') or '')], key=lambda x: x.get('order', 99)):
+        addr = E.ADDR.get(l['id']) or T(l['address'], l['address'])
+        facts = [dict(k=T('地址', 'Address'), zh=esc(addr['zh']), en=esc(addr['en'])), dict(k=T('是什么', 'What'), zh=esc(l['what_zh']), en=esc(l['what_en'])),
+                 dict(k=T('适合', 'Best for'), zh=esc(l['best_for_zh']), en=esc(l['best_for_en']))]
+        loc.append(dict(id=l['id'], title=T(l['zh'], l['en']), sub=T(l['dist_zh'], l['dist_en']), one=T(l['best_for_zh'], l['best_for_en']), facts=facts, g=dict(kind=l['kind'], near='all')))
+    lenses = [dict(id='near', zh='由近到远', en='Nearest first', groups=[dict(id='all', zh='从 City College 出发', en='From City College')]),
+              dict(id='kind', zh='按类型', en='By type', groups=[dict(id=k, **n) for k, n in E.LOCAL_KINDS])]
+    return dict(counter=dict(zones=zones, cheeses=cheeses), local=loc, lenses_local=lenses)
 
 if __name__ == '__main__': main()

@@ -253,7 +253,7 @@
     $$('[data-list]').forEach(function (host) {
       var key = host.getAttribute('data-list'), items = D[key]; if (!items) return;
       var lensBox = $('.lens', host), list = $('.list', host), lenses = (D.lenses && D.lenses[key]) || null, lens = lenses ? lenses[0].id : null, open = {};
-      function row(it) { return '<div class="item' + (open[it.id] ? ' open' : '') + '" data-id="' + it.id + '"><button aria-expanded="' + (open[it.id] ? 'true' : 'false') + '"><span class="thumb">' + (it.img ? '<img src="' + it.img + '" alt="" loading="lazy">' : '') + '</span><span class="tt"><b>' + esc(L(it.title)) + (it.sub ? '<small>' + esc(L(it.sub)) + '</small>' : '') + '</b><span>' + esc(L(it.one)) + '</span></span><span class="pl">+</span></button><div class="body"><ul>' + (it.facts || []).map(function (f) { return '<li>' + (f.k ? '<em>' + esc(L(f.k)) + '</em>' : '') + L(f) + (f.src ? ' <a class="src" href="' + esc(f.src) + '" target="_blank" rel="noopener">↗</a>' : '') + '</li>'; }).join('') + '</ul>' + (it.img ? '<figure><img src="' + it.img + '" alt="" loading="lazy"><figcaption>' + L(it.cap || '') + '</figcaption></figure>' : '<div></div>') + '</div></div>'; }
+      function row(it) { return '<div class="item' + (open[it.id] ? ' open' : '') + (it.img ? '' : ' noimg') + '" data-id="' + it.id + '"><button aria-expanded="' + (open[it.id] ? 'true' : 'false') + '">' + (it.img ? '<span class="thumb"><img src="' + it.img + '" alt="" loading="lazy"></span>' : '') + '<span class="tt"><b>' + esc(L(it.title)) + (it.sub ? '<small>' + esc(L(it.sub)) + '</small>' : '') + '</b><span>' + esc(L(it.one)) + '</span></span><span class="pl">+</span></button><div class="body"><ul>' + (it.facts || []).map(function (f) { return '<li>' + (f.k ? '<em>' + esc(L(f.k)) + '</em>' : '') + L(f) + (f.src ? ' <a class="src" href="' + esc(f.src) + '" target="_blank" rel="noopener">↗</a>' : '') + '</li>'; }).join('') + '</ul>' + (it.img ? '<figure><img src="' + it.img + '" alt="" loading="lazy"><figcaption>' + L(it.cap || '') + '</figcaption></figure>' : '<div></div>') + '</div></div>'; }
       function render() {
         if (lensBox && lenses) lensBox.innerHTML = lenses.map(function (l) { return '<button class="chip" type="button" aria-pressed="' + (l.id === lens ? 'true' : 'false') + '" data-l="' + l.id + '">' + esc(L(l)) + '</button>'; }).join('');
         var html = '';
@@ -269,14 +269,14 @@
 
   /* ---------- 04 柜台：分区 → 价签 ---------- */
   (function () {
-    var box = $('#counter'); if (!box || !D.counter) return;
+    var box = $('#counter-case'); if (!box || !D.counter) return;
     var C = D.counter, glass = $('.glass', box), tags = $('.tags2', box), head = $('.zonehead', box), cur = C.zones[0].id;
     function render() {
       glass.innerHTML = C.zones.map(function (z) { return '<button type="button" class="zone' + (z.id === cur ? ' on' : '') + '" data-z="' + z.id + '" style="grid-column:span ' + (z.span || 2) + '"><b>' + esc(L(z)) + '</b><span>' + esc(L(z.sub)) + '</span></button>'; }).join('');
       $$('.zone', glass).forEach(function (b) { b.addEventListener('click', function () { cur = b.getAttribute('data-z'); render(); }); });
       var z = C.zones.filter(function (x) { return x.id === cur; })[0];
-      head.innerHTML = '<span class="kick">' + esc(L(z)) + '</span><p style="margin:6px 0 12px;color:var(--ink-2)">' + L(z.what) + '</p>';
-      tags.innerHTML = z.cheeses.map(function (id) { var c = C.cheeses[id]; if (!c) return ''; return '<div class="tag" style="--fam:' + famColor(c.fam) + '"><h5>' + esc(L(c.name)) + '</h5><div class="o">' + esc(L(c.origin)) + (c.labels ? ' · ' + c.labels.map(function (l) { return '<span class="lb">' + esc(l) + '</span>'; }).join('') : '') + '</div>' + (c.price ? '<div class="p">' + esc(c.price) + ' <small>/ lb</small></div>' : '') + '<p>' + esc(L(c.taste)) + '</p>' + (c.pair ? '<p><b>' + esc(L({ zh: '配：', en: 'With: ' })) + '</b>' + esc(L(c.pair)) + '</p>' : '') + '</div>'; }).join('');
+      head.innerHTML = '<span class="kick">' + esc(L(z)) + '</span><p style="margin:6px 0 16px;color:var(--ink-2);font-size:15px;line-height:25px">' + L(z.what) + '</p>';
+      tags.innerHTML = z.cheeses.map(function (id) { var c = C.cheeses[id]; if (!c) return ''; return '<div class="tag" style="--fam:' + famColor(c.fam) + '"><h5>' + esc(c.name) + '</h5><div class="o">' + (lang() === 'zh' ? esc(c.zhname) + ' · ' : '') + esc(L(c.origin)) + '</div>' + (c.labels.length ? '<div style="margin-top:4px">' + c.labels.map(function (l) { return '<span class="lb">' + esc(l) + '</span>'; }).join('') + '</div>' : '') + (c.price ? '<div class="p">' + esc(c.price) + ' <small>/ lb</small></div>' : '') + '<p>' + esc(L(c.taste)) + '</p>' + (c.pair ? '<p><b>' + esc(L({ zh: '配：', en: 'With: ' })) + '</b>' + esc(L(c.pair)) + '</p>' : '') + '</div>'; }).join('');
     }
     addEventListener('langchange', render); render();
   })();

@@ -183,6 +183,7 @@ const T=()=>TRACKS[ti];
 const dur=()=>isFinite(au.duration)&&au.duration>0?au.duration:T().dur;
 $("herochap").textContent=CH.length;
 function renderTracks(){
+  const one=TRACKS.length<2;$("trackselect").toggleAttribute("hidden",one);$("voices").toggleAttribute("hidden",one);/* 只有一个声音时不显示切换 */
   $("trackselect").innerHTML=TRACKS.map((t,i)=>`<option value="${i}"${i===ti?" selected":""}>${t.title}</option>`).join("");
   $("voices").innerHTML=`<span>声音：</span>`+TRACKS.map((t,i)=>`<button type="button" data-i="${i}" aria-pressed="${i===ti}" title="${t.sub||""}">${t.title}</button>`).join("");
   $("trackhint").textContent=TRACKS.length>1?`${TRACKS.length} 个声音版本：${TRACKS.map(t=>t.title+(t.sub?"（"+t.sub+"）":"")).join("、")}。换声音不丢进度。`:"";

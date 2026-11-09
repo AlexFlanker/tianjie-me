@@ -11,7 +11,7 @@ CHOICE = {
     # 00 沿革舞台
     'h-pot': ('making-04', '从容器里倒下的丝滑凝乳', 'Silky curd pouring from a container', 1280),
     'h-sieve': ('styles-fresh-03', '带篮纹的新鲜里科塔：至今仍用带孔的模子沥乳清', 'Fresh ricotta with basket marks — still drained in perforated moulds', 1280),
-    'h-ur': ('making-02', '刚捞出的凝乳裹在布里沥乳清', 'Fresh curd hanging in cloth to drain', 1280),
+    'h-ur': ('history-21', '苏美尔「乳品饰带」局部：挤奶、过滤与搅打乳品（伊拉克博物馆藏）', 'The Sumerian “dairy frieze”: milking, straining and churning (Iraq Museum)', 1600),
     'h-xiaohe': ('world-kefir-01', '纱布封口的玻璃罐里正在发酵的奶', 'Milk fermenting in a cloth-covered jar', 1280),
     'h-homer': ('styles-fresh-02', '几块带细皱外皮的小山羊奶酪', 'Small goat cheeses with wrinkled rinds', 1280),
     'h-rome': ('cave-03', '木架上的大奶酪轮', 'Large wheels on wooden shelves', 1280),
@@ -26,7 +26,7 @@ CHOICE = {
     'step-milk': ('making-07', '奶酪师在倒钟形铜锅前，锅里是加热中的奶', 'A cheesemaker at a bell-shaped copper vat of warming milk', 1280),
     'step-heat': ('making-07', '奶酪师在倒钟形铜锅前，锅里是加热中的奶', 'A cheesemaker at a bell-shaped copper vat of warming milk', 1280),
     'step-starter': ('making-07', '奶酪师在倒钟形铜锅前，锅里是加热中的奶', 'A cheesemaker at a bell-shaped copper vat of warming milk', 1280),
-    'step-rennet': ('making-10', '检验凝乳是否「断得干净」', 'Testing the curd for a clean break', 1280),
+    'step-rennet': ('making-07', '奶酪师在倒钟形铜锅前，锅里是加热中的奶', 'A cheesemaker at a bell-shaped copper vat of warming milk', 1280),
     'step-cut': ('making-08', '槽里凝乳与乳清已经分开，工人搅动凝乳粒', 'Curd and whey separated in the vat; a worker stirs the grains', 1280),
     'step-cook': ('making-01', '在铜锅旁搅动凝乳', 'Stirring the curd beside the copper vats', 1280),
     'step-drain': ('making-02', '刚捞出的凝乳裹在布里沥乳清', 'Fresh curd hanging in cloth to drain', 1280),
@@ -39,25 +39,27 @@ CHOICE = {
     's-mozzarella': ('styles-fresh-01', '一盒刚做好的马苏里拉球', 'A tub of freshly made mozzarella', 1280),
     's-feta': ('styles-brine-01', '浅盘上的一块白色盐水奶酪', 'A block of white brined cheese on a plate', 1280),
     's-camembert': ('styles-bloomy-03', '木盒里的卡芒贝尔', 'Camembert in its wooden box', 1280),
-    's-epoisses': ('counter-09', '法国奶酪柜，价签上可见 Époisses', 'A French cheese case, with an Époisses tag', 1280),
-    's-roquefort': ('cave-11', '罗克福尔-叙尔-苏尔宗的熟成洞', 'A ripening cave at Roquefort-sur-Soulzon', 1280),
+    's-epoisses': ('styles-washed-02', '切开的埃普瓦斯：橙红色洗皮包着柔滑的芯', 'Époisses cut open: an orange washed rind around a soft centre', 1280),
+    's-roquefort': ('cave-17', '罗克福尔洞穴里，刚入窖的白色奶酪立在木架上', 'Fresh white Roquefort loaves standing on racks in the cave', 1280),
     's-gouda': ('cave-06', '木架上的黄色小奶酪轮', 'Small yellow wheels ripening on shelves', 1280),
     's-cheddar': ('cave-10', '纽约州 Chaseholm 农场的熟成库', 'The ageing room at Chaseholm Farm, New York', 1280),
     's-emmental': ('styles-semihard-01', '两块带小孔的半硬质黄奶酪', 'Two wedges of semi-hard cheese with small eyes', 1280),
-    's-comte': ('cave-02', '木架上一排排正在熟成的奶酪', 'Rows of wheels ripening on wooden boards', 1280),
+    's-comte': ('hero-08', '汝拉山区圣安托万要塞的孔泰熟成库，云杉板上一整面墙的轮子', 'Comté ageing on spruce boards at Fort Saint-Antoine in the Jura', 1280),
     's-parmigiano': ('cave-05', '层层堆放的帕玛森式奶酪轮', 'Parmigiano-style wheels stacked high', 1280),
     # 03 全球
-    'w-qurut': ('world-qurut-01', '吉尔吉斯斯坦，正在晾晒的库鲁特', 'Qurut drying in the sun, Kyrgyzstan', 900),
+    'w-qurut': ('world-qurut-02', '吉尔吉斯斯坦奥什巴扎上一袋袋待售的库鲁特', 'Bags of qurut for sale at the Osh bazaar, Kyrgyzstan', 900),
+    'w-aaruul': ('world-aaruul-01', '装袋出售的蒙古奶干', 'Mongolian aaruul, bagged for sale', 900),
+    'w-skyr': ('world-skyr-02', '一碗斯基尔配黑莓', 'A bowl of skyr with blackberries', 900),
     'w-airag': ('world-airag-02', '彩绘瓷缸里的马奶酒', 'Airag in a painted porcelain vat', 900),
     'w-chhurpi': ('world-chhurpi-01', '喜马拉雅东部的硬曲拉', 'Hard chhurpi from the eastern Himalaya', 900),
     'w-tibetan-butter': ('world-buttertea-01', '一碗酥油茶', 'A bowl of butter tea', 900),
     'w-labneh': ('world-labneh-02', '浸在橄榄油里的拉布内', 'Labneh in olive oil', 900),
     'w-ghee': ('world-ghee-01', '一罐澄清黄油', 'A jar of ghee', 900),
-    'w-kefir': ('world-kefir-01', '纱布封口的玻璃罐里正在发酵的奶', 'Milk fermenting in a cloth-covered jar', 900),
+    'w-kefir': ('world-kefir-03', '盘里的开菲尔粒，旁边是刻度尺', 'Kefir grains on a plate, with a ruler', 900),
     'w-dulce-de-leche': ('world-dulce-01', '一罐顺着罐口流下的牛奶焦糖酱', 'A jar of dulce de leche running over the rim', 900),
     'w-rushan': ('world-rushan-01', '云南大理街头，摊主在炭火上烤乳扇', 'Grilling rushan over charcoal on a street in Dali, Yunnan', 900),
     'a-cn-yunnan': ('world-rushan-01', '云南大理街头，摊主在炭火上烤乳扇', 'Grilling rushan over charcoal on a street in Dali, Yunnan', 900),
 }
 MOBILE = {'hero': 'hero-06'}
-CONTAIN = {'h-abbey', 'h-market'}
-ART = {'plate-hist', 'h-abbey', 'h-market'}
+CONTAIN = {'h-abbey', 'h-market', 'h-ur'}
+ART = {'plate-hist', 'h-abbey', 'h-market', 'h-ur'}

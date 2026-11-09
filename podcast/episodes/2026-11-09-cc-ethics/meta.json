@@ -26,8 +26,24 @@
   ],
   "tracks": [
     {
+      "id": "hanbaba",
+      "title": "讲故事版（定稿）",
+      "sub": "男声 · 东北味、带点痞，讲书带梗",
+      "file": "audio/hanbaba.mp3",
+      "dur": 1973,
+      "ch": [
+        0,
+        177,
+        493,
+        815,
+        1041,
+        1374,
+        1779
+      ]
+    },
+    {
       "id": "yunjian",
-      "title": "云健版（定稿）",
+      "title": "平实版 · 云健",
       "sub": "男声 · 偏低、磁性",
       "file": "audio/yunjian.mp3",
       "dur": 1957,
@@ -43,7 +59,7 @@
     },
     {
       "id": "xiaoxiao",
-      "title": "晓晓版",
+      "title": "平实版 · 晓晓",
       "sub": "女声 · 清晰、播音感",
       "file": "audio/xiaoxiao.mp3",
       "dur": 2008,
@@ -59,7 +75,7 @@
     },
     {
       "id": "yunxi",
-      "title": "云希版",
+      "title": "平实版 · 云希",
       "sub": "男声 · 明亮、讲述感",
       "file": "audio/yunxi.mp3",
       "dur": 1906,

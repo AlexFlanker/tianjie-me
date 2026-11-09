@@ -1,0 +1,4296 @@
+{
+ "_meta": {
+  "researcher": "B",
+  "status": "done",
+  "updated": "2026-11-08",
+  "note": "steps/styles 每条附 conf 与 sources；styles.process 的数字优先取 PDO/AOP 规范，规范未给的取教科书（U. Guelph Cheese Making Technology e-Book、NZIC）/ 行业报道，并在 note 里标明。process[].step 对应 steps[].id。pairing.pairs[].kind 在原枚举外增加了 cider 与 sake 两类。spectrum 全部为推定位置（basis_zh 已标），无公开品鉴图表可直接引用。2026-11-08 补充：双语 / 数值展示字段（*_en、*_disp_*、temp_num、time_sec、ph_num 等）为展示用，temp_num 取区间中值或上 / 下限，time_sec 为粗略时长；高达盐水时长原写「4.5 kg 轮约 2–3 天」为粗估，已按 Guelph 公式（1 h / 磅 / 英寸厚）改为约 1.5–2 天。"
+ },
+ "steps": [
+  {
+   "id": "milk",
+   "zh": "选奶与标准化",
+   "en": "Milk selection & standardisation",
+   "what_zh": "选定牛、羊或水牛奶，按目标奶酪调整脂肪与蛋白比例（撇去部分奶油或混合脱脂奶）。切达常把蛋白/脂肪比调到约 0.80，马苏里拉约 1.46。",
+   "what_en": "Choose cow, sheep, goat or buffalo milk and adjust the fat-to-protein ratio (skimming or blending). Cheddar milk is typically standardised to a protein:fat ratio of about 0.80, Mozzarella to about 1.46.",
+   "science_zh": "牛奶约 87% 是水，奶酪主要留住其中的酪蛋白和脂肪。酪蛋白以直径约 100 纳米的胶束存在，由钙和磷酸钙微簇维系；脂肪球被困在凝乳网里，决定成品的脂肪含量与口感。",
+   "science_en": "Cheese concentrates milk's casein and fat. Casein exists as micelles about 100 nm across held together by calcium-phosphate nanoclusters; fat globules are trapped in the curd network and set final fat content and mouthfeel.",
+   "num": "切达奶：脂肪 4.24%、蛋白 3.38%、乳糖 4.85%（P/F 0.80）；马苏里拉奶：脂肪 2.37%、蛋白 3.47%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "zh": "巴氏杀菌或生乳",
+   "en": "Pasteurisation — or raw milk",
+   "what_zh": "多数工业奶酪先做巴氏杀菌（72°C 保持 15 秒），杀死致病菌和大部分原生菌；不少原产地保护奶酪规定用生乳，例如诺曼底卡芒贝尔的乳不得加热超过 40°C，帕玛森用生乳。",
+   "what_en": "Most industrial cheese milk is pasteurised (72 °C for 15 s), killing pathogens and most native flora. Many PDO cheeses require raw milk: Camembert de Normandie milk may not be heated above 40 °C, Parmigiano Reggiano uses raw milk.",
+   "science_zh": "生乳里的本土乳酸菌和酶会参与熟成，带来更复杂、更有地域差异的风味；杀菌后需要靠添加的发酵剂和辅助菌补回。美国规定生乳奶酪须在不低于 1.7°C 下熟成至少 60 天才能销售。",
+   "science_en": "Native bacteria and enzymes in raw milk take part in ripening and give more complex, place-specific flavour; after pasteurisation that role falls to added starters and adjunct cultures. In the US, raw-milk cheese must be aged at least 60 days at no less than 1.7 °C (35 °F) before sale.",
+   "num": "巴氏杀菌 72°C×15–16 s 或 62–63°C×30 min（美 161°F×15 s / 145°F×30 min）；Camembert de Normandie 乳加热上限 40°C；美国生乳奶酪 ≥60 天",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "21 CFR 133.3 (definition of pasteurized) & 133.113 Cheddar cheese (eCFR, US FDA)",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.113",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "starter",
+   "zh": "加发酵剂（酸化）",
+   "en": "Adding starter culture (acidification)",
+   "what_zh": "把奶温升到约 30–37°C，加入乳酸菌发酵剂，静置让奶慢慢变酸。中温菌（乳球菌）用于切达、高达、卡芒贝尔；耐热菌（嗜热链球菌、瑞士乳杆菌等）用于帕玛森、埃曼塔、马苏里拉。帕玛森用前一天的天然乳清作发酵剂。",
+   "what_en": "Warm the milk to about 30–37 °C and add lactic acid bacteria, letting the milk slowly acidify. Mesophilic Lactococcus is used for Cheddar, Gouda and Camembert; thermophilic Streptococcus thermophilus and Lactobacillus helveticus for Parmigiano, Emmental and Mozzarella. Parmigiano uses the previous day's naturally fermented whey as starter.",
+   "science_zh": "乳酸菌把乳糖发酵成乳酸，pH 从约 6.6 开始下降。酸度帮助凝乳、抑制杂菌、溶出胶束里的钙，从而决定凝乳的弹性与最终质地；乳糖在帕玛森里 48 小时内就被耗尽。",
+   "science_en": "Lactic acid bacteria ferment lactose to lactic acid and pH starts falling from about 6.6. Acidity aids coagulation, suppresses spoilage organisms and dissolves calcium out of the micelles, which governs curd elasticity and final texture. In Parmigiano Reggiano lactose is gone within the first 48 hours.",
+   "num": "起始 pH ≈6.6；马苏里拉：33°C 加 4% 发酵剂 65 分钟，pH 6.6→6.3",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano – Product guide glossary (Consorzio)",
+     "url": "https://www.parmigianoreggiano.com/product-guide-glossary",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "rennet",
+   "zh": "加凝乳酶",
+   "en": "Adding rennet",
+   "what_zh": "加入凝乳酶（小牛皱胃提取的凝乳酶 chymosin，或微生物 / 发酵生产的同种酶），30–40 分钟内整锅奶凝成像豆腐一样的凝块。",
+   "what_en": "Add rennet (chymosin from calf abomasum, or microbial / fermentation-produced chymosin). Within about 30–40 minutes the whole vat sets into a tofu-like gel.",
+   "science_zh": "凝乳酶专门切断 κ-酪蛋白第 105 位苯丙氨酸与第 106 位甲硫氨酸之间的肽键，切掉胶束表面带负电、起「毛刷」保护作用的糖巨肽。失去保护的副 κ-酪蛋白胶束在钙离子存在下（温度高于约 15°C）互相黏连，形成三维凝胶网。",
+   "science_en": "Chymosin specifically cleaves the Phe105–Met106 bond of κ-casein, shaving off the negatively charged caseinomacropeptide 'hairs' that keep micelles apart. The destabilised para-κ-casein micelles then stick together in the presence of calcium (above about 15 °C) to form a three-dimensional gel.",
+   "num": "切达：32°C，150 mL 凝乳酶 / 1000 L 奶，30–40 分钟；Camembert 规范：凝乳温度 ≤37°C",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "cut",
+   "zh": "凝乳与切割",
+   "en": "Cutting the curd",
+   "what_zh": "用刀架或「琴弦」把凝块切成小块，块越小、排出的乳清越多、奶酪越硬。卡芒贝尔几乎不切（规范最多两刀、间距不小于 2.5 厘米），切达切成约 9 毫米小方块，帕玛森用 spino 打碎到米粒大小。",
+   "what_en": "Cut the gel with knives or a wire harp. Smaller pieces release more whey and make harder cheese. Camembert de Normandie is barely cut (at most two passes, blades ≥2.5 cm apart); Cheddar curd is cut to about 9 mm cubes; Parmigiano curd is broken with the spino to rice-grain size.",
+   "science_zh": "切割增加凝块表面积，启动「脱水收缩」（syneresis）：蛋白网收紧，把水和乳清挤出来。切割大小是控制奶酪含水量的第一个旋钮。",
+   "science_en": "Cutting multiplies surface area and starts syneresis: the protein network contracts and squeezes out whey. Curd size is the first dial for final moisture.",
+   "num": "切达 ≈5–9 mm；洗凝乳类 ≈5 mm；软质白霉 ≈2 cm（Camembert 规范 ≥2.5 cm、最多 2 刀）；意式硬质 / 帕玛森 米粒大",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Cheese Making Step-by-Step – Cheese Making Technology e-Book (Hill & Ferrer, U. Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "cook",
+   "zh": "加热与搅拌",
+   "en": "Cooking & stirring",
+   "what_zh": "一边搅拌一边慢慢加温，让凝乳粒继续出水、变结实。温度越高，奶酪越干越硬：切达约 38°C，高达约 36°C 并「洗凝乳」，埃曼塔约 52–55°C，孔泰规范 ≥53°C 且 ≥30 分钟，帕玛森 51–55°C。",
+   "what_en": "Stir while slowly raising the temperature so curd grains keep expelling whey and firm up. Higher temperature means drier, harder cheese: Cheddar about 38 °C, Gouda about 36 °C with curd washing, Emmental about 52–55 °C, Comté ≥53 °C for ≥30 min by its PDO rules, Parmigiano 51–55 °C.",
+   "science_zh": "热量与持续产酸共同加速脱水收缩；高温（>50°C）还会筛选掉中温菌、只留下耐热乳酸菌，并使部分凝乳酶失活，这也是超硬奶酪能熟成数年的原因之一。",
+   "science_en": "Heat and ongoing acid production accelerate syneresis. Scalding above about 50 °C selects for thermophilic bacteria and partly inactivates the coagulant, one reason cooked hard cheeses can age for years.",
+   "num": "切达 38°C（Guelph 配方 39°C）；高达洗凝乳后 36–38°C；埃曼塔 52–55°C；孔泰 ≥53°C；帕玛森 51–55°C（低于 60°C 仍算生乳）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Firm to Hard Cheese: Low Temperature: Provolone, Cheddar – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-3-firm-to-hard-cheese-low-temperature-provolone-cheddar/",
+     "kind": "学术"
+    },
+    {
+     "title": "Semi-Hard Cheese — Washed (Gouda, Brick, Colby, Montasio) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-2-camembert-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Firm to Hard Cheese: High Temperature: Romano, Swiss – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-4-firm-to-hard-cheese-high-temperature-romano-swiss/",
+     "kind": "学术"
+    },
+    {
+     "title": "Daly, McSweeney & Sheehan (2010) Split defect and secondary fermentation in Swiss-type cheeses – A review. Dairy Science & Technology 90:3–26",
+     "url": "https://www.dairy-journal.org/articles/dst/full_html/2010/01/dst0880/dst0880.html",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'AOP « Comté » (INAO, version 2013)",
+     "url": "https://extranet.inao.gouv.fr/fichier/cdccomte.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "drain",
+   "zh": "排乳清",
+   "en": "Draining the whey",
+   "what_zh": "凝乳粒沉底后放出乳清。每 10 升奶大约只留下 1 公斤左右的硬质奶酪，其余大部分成为乳清（孔泰约 400 升奶出一只 40 公斤的轮子；帕玛森约 550 升出一只约 40 公斤的轮子）。",
+   "what_en": "Once the grains settle, the whey is run off. Roughly 10 L of milk yields about 1 kg of cheese; the rest leaves as whey (Comté: about 400 L per 40 kg wheel; Parmigiano: about 550 L per ~40 kg wheel).",
+   "science_zh": "乳清带走大部分乳糖、乳清蛋白和水溶性矿物质。放乳清时的 pH 决定凝乳里留多少钙：放得早（pH 高）钙多、质地有弹性（如埃曼塔、高达）；放得晚（pH 低）钙少、质地易碎或易拉伸（如切达、菲达）。",
+   "science_en": "Whey removes most lactose, whey proteins and soluble minerals. The pH at drainage sets how much calcium stays in the curd: early drainage (higher pH) leaves more calcium and an elastic body (Emmental, Gouda); late drainage (lower pH) leaves less, giving crumbly or stretchy curd (Cheddar, Feta).",
+   "num": "切达：凝乳进入排乳清带时含水 ≈65%→55%；孔泰 400 L 奶 / 40 kg 轮（≈10 L/kg）；帕玛森 550 L 奶 / 轮、平均约 40 kg（≈13.8 L/kg）",
+   "conf": "中",
+   "alt": "出品率随品种差异很大：软质奶酪约 6–7 L/kg，帕玛森约 14 L/kg；「10 升出 1 公斤」只是硬质 / 半硬奶酪的常见近似。",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Parmigiano Reggiano – Product guide glossary (Consorzio)",
+     "url": "https://www.parmigianoreggiano.com/product-guide-glossary",
+     "kind": "官方"
+    },
+    {
+     "title": "Dossier de presse Comté 2014 (Comité Interprofessionnel de Gestion du Comté)",
+     "url": "https://comte.com/documents/dossier-de-presse-comte-2014",
+     "kind": "官方"
+    },
+    {
+     "title": "Cheese Making Step-by-Step – Cheese Making Technology e-Book (Hill & Ferrer, U. Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "form",
+   "zh": "成型、堆酿与压榨",
+   "en": "Moulding, cheddaring & pressing",
+   "what_zh": "把凝乳装模。软质奶酪靠自重自然沥水（卡芒贝尔用半球形勺分至少 5 次入模，每次间隔不少于 40 分钟，沥水至少 18 小时）；切达先做「堆酿」（cheddaring）——把凝乳块反复叠压翻面，再「碾碎」（milling）；硬质奶酪最后上压榨机。",
+   "what_en": "Curd goes into moulds. Soft cheeses drain under their own weight (Camembert de Normandie is ladled in at least 5 passes, ≥40 minutes apart, then drains ≥18 hours). Cheddar is first 'cheddared' — slabs stacked and turned — and then milled; hard cheeses are finally pressed.",
+   "science_zh": "堆酿时乳酸继续积累，pH 从约 6.2 降到 5.3–5.4，凝乳失钙后从颗粒状变成像熟鸡胸肉一样的纤维状；压榨把颗粒熔合成整体、挤出残余乳清、定出外形。",
+   "science_en": "During cheddaring acid keeps building, pH dropping from about 6.2 to 5.3–5.4; the demineralised curd turns from granular to fibrous, like cooked chicken breast. Pressing fuses the grains, expels residual whey and sets the shape.",
+   "num": "切达堆酿 pH 6.2→5.3–5.4、含水 55%→≈42%；Camembert 入模 ≥5 次、间隔 ≥40 分钟、沥水 ≥18 h",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "salt",
+   "zh": "加盐或泡盐水",
+   "en": "Salting or brining",
+   "what_zh": "三种方式：碾碎后的凝乳直接拌干盐（切达）、表面抹干盐（卡芒贝尔、洛克福）、整块泡在饱和盐水里（高达、帕玛森约 19–20 天、菲达直接在盐水中保存）。",
+   "what_en": "Three methods: dry-salting milled curd (Cheddar), rubbing salt on the surface (Camembert, Roquefort), or immersing whole cheeses in brine (Gouda; Parmigiano for about 19–20 days; Feta is even stored in brine).",
+   "science_zh": "盐降低水分活度、抑制杂菌、停住乳酸菌的发酵，并调节蛋白酶活性；同时把表层水分抽出，帮助形成外皮。",
+   "science_en": "Salt lowers water activity, controls unwanted microbes, halts starter activity and modulates proteolysis, while drawing moisture from the surface to help form a rind.",
+   "num": "盐水常用 20–23% NaCl（16–25%），约 1 小时 / 0.9 kg / cm 厚；帕玛森盐水约 19–20 天；切达拌盐约为预计出品 2.5%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Cheese Making Step-by-Step – Cheese Making Technology e-Book (Hill & Ferrer, U. Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/",
+     "kind": "学术"
+    },
+    {
+     "title": "Firm to Hard Cheese: Low Temperature: Provolone, Cheddar – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-3-firm-to-hard-cheese-low-temperature-provolone-cheddar/",
+     "kind": "学术"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "ripen",
+   "zh": "熟成（翻面、刷洗、穿刺）",
+   "en": "Ripening (turning, washing, piercing)",
+   "what_zh": "在控温控湿的熟成室或洞穴里放置几周到几年，期间定期翻面；洗皮奶酪用盐水或酒反复刷洗，蓝纹奶酪用针穿刺让空气进入，瑞士类奶酪先在暖室里「发孔」。",
+   "what_en": "Cheeses rest for weeks to years in temperature- and humidity-controlled rooms or caves and are turned regularly. Washed-rind cheeses are rubbed with brine or spirits; blue cheeses are pierced to let air in; Swiss-type cheeses spend time in a warm room to form eyes.",
+   "science_zh": "熟成的三条化学主线：①糖酵解——残余乳糖与乳酸被继续代谢；②脂解——脂肪被切出短链脂肪酸，蓝纹里的青霉再把它们变成甲基酮；③蛋白水解——酪蛋白被切成肽和氨基酸，产生鲜味、苦味，久熟后酪氨酸析出成脆脆的白色结晶。",
+   "science_en": "Ripening runs on three pathways: glycolysis (residual lactose and lactate are metabolised), lipolysis (fats release short-chain fatty acids, which blue moulds turn into methyl ketones) and proteolysis (casein is broken into peptides and amino acids, giving savoury and bitter notes; in long-aged cheese tyrosine precipitates as crunchy white crystals).",
+   "num": "帕玛森 ≥12 个月，可见结晶约 18 个月起",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ],
+ "styles": [
+  {
+   "id": "parmigiano",
+   "name_zh": "帕玛森（帕尔马干酪）Parmigiano Reggiano",
+   "name_en": "Parmigiano Reggiano PDO",
+   "family": "extra-hard",
+   "origin": "意大利艾米利亚-罗马涅与伦巴第（帕尔马、雷焦艾米利亚、摩德纳、博洛尼亚以西、曼托瓦以南）",
+   "milk": "牛奶，生乳，部分脱脂（晚奶自然上浮撇脂后与早奶混合）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": ">=18（存放下限）",
+     "time": "挤奶后 2 小时内送达",
+     "ph": null,
+     "note_zh": "晚奶在开口钢槽里静置，奶油自然上浮后撇去，次晨与全脂早奶混合；乳不得冷到 18°C 以下。",
+     "note_en": "Evening milk rests in open vats so cream rises and is skimmed; it is mixed with whole morning milk. Milk may not be cooled below 18 °C.",
+     "temp_disp_zh": "≥18 °C（存放下限）",
+     "temp_disp_en": "≥18 °C (storage minimum)",
+     "temp_num": 18,
+     "time_zh": "挤奶后 2 小时内送达",
+     "time_en": "Delivered within 2 h",
+     "time_sec": 7200,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "heat",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "不杀菌（生乳）。煮凝乳最高约 55°C，仍低于巴氏杀菌温度。",
+     "note_en": "No pasteurisation (raw milk); the curd is cooked to about 55 °C, still below pasteurising conditions.",
+     "temp_disp_zh": "不杀菌（生乳）",
+     "temp_disp_en": "Raw milk, not pasteurised",
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": "36–37",
+     "time": null,
+     "ph": null,
+     "note_zh": "加入前一天天然发酵的乳清作发酵剂（siero-innesto），每锅约 27–30 升；规范禁止添加其他菌种。",
+     "note_en": "Starter is the previous day's naturally fermented whey (siero-innesto), about 27–30 L per vat; other cultures are banned.",
+     "temp_disp_zh": "36–37 °C",
+     "temp_disp_en": "36–37 °C",
+     "temp_num": 36.5,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": "36–37",
+     "time": "约 7–8 分钟成凝块",
+     "ph": null,
+     "note_zh": "只许用小牛凝乳酶，在倒钟形铜锅中进行，每锅约 1100 升奶。",
+     "note_en": "Calf rennet only, in inverted-bell copper vats holding about 1,100 L.",
+     "temp_disp_zh": "36–37 °C",
+     "temp_disp_en": "36–37 °C",
+     "temp_num": 36.5,
+     "time_zh": "约 7–8 分钟凝结",
+     "time_en": "~7–8 min to set",
+     "time_sec": 450,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "用 spino（带球头的打碎器）把凝块打碎成米粒大小。",
+     "note_en": "The curd is broken with the spino to rice-grain size.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cook",
+     "temp_c": "51–55",
+     "time": null,
+     "ph": null,
+     "note_zh": "边搅拌边加热，凝乳粒脱水收紧。",
+     "note_en": "Stirred and heated; the grains firm and expel whey.",
+     "temp_disp_zh": "51–55 °C",
+     "temp_disp_en": "51–55 °C",
+     "temp_num": 55,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "drain",
+     "temp_c": null,
+     "time": "锅底静置约 1 小时",
+     "ph": null,
+     "note_zh": "凝乳粒沉到锅底聚成一团，用布兜起，一切为二，成为一对「双胞胎」（gemelle）。",
+     "note_en": "Grains settle into a mass at the bottom, are lifted in cloth and cut in two — the 'twins'.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "锅底静置约 1 小时",
+     "time_en": "~1 h resting in the vat",
+     "time_sec": 3600,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": "约 3 天",
+     "ph": null,
+     "note_zh": "先入直模 1 天、塑料印模 1 夜（压上产地点阵字样与编号），再入不锈钢模 2 天定形。",
+     "note_en": "One day in a straight mould, a night in a plastic matrix that imprints the dotted name and dairy number, then two days in steel moulds.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "约 3 天",
+     "time_en": "~3 days",
+     "time_sec": 259200,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": "约 19–20 天",
+     "ph": null,
+     "note_zh": "整轮浸泡在饱和盐水中。",
+     "note_en": "Whole wheels soak in saturated brine.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "盐水约 19–20 天",
+     "time_en": "~19–20 days in brine",
+     "time_sec": 1684800,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "ripen",
+     "temp_c": ">=16（夏季库温下限）",
+     "time": "最少 12 个月（常见 24 个月）",
+     "ph": null,
+     "note_zh": "约每 10 天翻面一次；满 12 个月由协会专家用小锤敲击检验后打火印。18 月可得 Export、24 月可得 Premium 标识。",
+     "note_en": "Turned about every 10 days; at 12 months consortium experts test each wheel with a hammer before fire-branding. 'Export' from 18 months, 'Premium' from 24.",
+     "temp_disp_zh": "≥16 °C（夏季库温下限）",
+     "temp_disp_en": "≥16 °C (summer minimum)",
+     "temp_num": 16,
+     "time_zh": "≥12 个月，常见 24 个月",
+     "time_en": "≥12 months, often 24",
+     "time_sec": 62208000,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "最少 12 个月（规范，自成型起算）；常见 24 个月；协会描述口径：12–19 个月 delicato、约 20–26 个月 armonico、约 27–34 个月 aromatico、约 35–45 个月 intenso",
+   "moisture_pct": "≈30（成品常见值；规范只给擦碎产品 25–35%）",
+   "fat_pct": "脂肪占干物质 ≥32%（规范）；总脂肪 ≈26–29（常见值）",
+   "microbes_zh": "天然乳清发酵剂中的耐热乳杆菌（瑞士乳杆菌、德氏乳杆菌乳酸亚种等）与嗜热链球菌，熟成期非发酵剂乳杆菌",
+   "flavor_zh": "咸鲜、坚果、熟牛奶与黄油，久熟后带菠萝 / 干果香和肉汤味",
+   "flavor_en": "Savoury-salty, nutty, cooked milk and butter; with age, pineapple-like fruitiness, dried fruit and broth.",
+   "texture_zh": "致密、颗粒状，片状碎裂，内有酪氨酸等白色小结晶（约 18 个月起明显）",
+   "conf": "高",
+   "note": "铜锅形状：规范原文写「troncoconiche」（截锥形），通称倒钟形；温度、成型、盐水天数取自 FoodNavigator 对 Ciaolatte 乳品厂的报道（协会人员受访），规范未写具体温度与盐水天数。",
+   "sources": [
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano – Product guide glossary (Consorzio)",
+     "url": "https://www.parmigianoreggiano.com/product-guide-glossary",
+     "kind": "官方"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    }
+   ],
+   "name_short_zh": "帕玛森",
+   "name_short_en": "Parmigiano Reggiano",
+   "origin_en": "Emilia-Romagna and Lombardy, Italy (Parma, Reggio Emilia, Modena, Bologna west of the Reno, Mantua south of the Po)",
+   "milk_en": "Cow's milk, raw, partly skimmed (evening milk naturally creamed, then mixed with whole morning milk)",
+   "age_en": "Minimum 12 months from moulding (PDO); commonly 24 months. Consortium bands: 12–19 months delicato, ~20–26 armonico, ~27–34 aromatico, ~35–45 intenso",
+   "texture_en": "Dense and granular, breaking into flakes, with small white tyrosine crystals (noticeable from about 18 months)",
+   "age_days_min": 365,
+   "age_days_max": 1095
+  },
+  {
+   "id": "camembert",
+   "name_zh": "诺曼底卡芒贝尔 Camembert de Normandie",
+   "name_en": "Camembert de Normandie PDO",
+   "family": "soft-bloomy",
+   "origin": "法国诺曼底",
+   "milk": "牛奶，生乳（加热不得超过 40°C），牧场至少一半为诺曼底种牛",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": "≤22（冷熟化）",
+     "time": "奶龄 ≤72 小时",
+     "ph": null,
+     "note_zh": "部分撇脂标准化；冷熟化 ≤24 小时、≤22°C，可再做 ≤2 小时、≤38°C 的二次熟化。",
+     "note_en": "Partly skimmed; cold maturation ≤24 h at ≤22 °C, optional second maturation ≤2 h at ≤38 °C.",
+     "temp_disp_zh": "≤22 °C（冷熟化）",
+     "temp_disp_en": "≤22 °C (cold maturing)",
+     "temp_num": 22,
+     "time_zh": "冷熟化 ≤24 小时",
+     "time_en": "Cold maturing ≤24 h",
+     "time_sec": 86400,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "heat",
+     "temp_c": "≤40",
+     "time": null,
+     "ph": null,
+     "note_zh": "禁止巴氏杀菌、离心除菌、超滤、微滤。",
+     "note_en": "Pasteurisation, bactofugation, ultrafiltration and microfiltration are banned.",
+     "temp_disp_zh": "≤40 °C（不杀菌）",
+     "temp_disp_en": "≤40 °C (no pasteurising)",
+     "temp_num": 40,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": "≤38",
+     "time": null,
+     "ph": null,
+     "note_zh": "加乳酸菌，奶在熟化期间慢慢变酸。",
+     "note_en": "Lactic cultures; milk acidifies during maturation.",
+     "temp_disp_zh": "≤38 °C",
+     "temp_disp_en": "≤38 °C",
+     "temp_num": 38,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": "≤37",
+     "time": null,
+     "ph": null,
+     "note_zh": "凝乳酶用量 ≤23 mL / 100 L（相当于 520 mg/L 凝乳酶标准）；凝乳锅 ≤330 升。",
+     "note_en": "Rennet ≤23 mL per 100 L; vats ≤330 L.",
+     "temp_disp_zh": "≤37 °C",
+     "temp_disp_en": "≤37 °C",
+     "temp_num": 37,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "凝块可轻切，最多两道，刀距 ≥2.5 cm；入模前禁止先排乳清。",
+     "note_en": "Light cutting only: at most two passes, ≥2.5 cm apart; no whey drained before moulding.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": "入模 ≥5 次，每次间隔 ≥40 分钟；沥水 ≥18 小时",
+     "ph": null,
+     "note_zh": "用半球形勺（cuilleron，俗称 louche）手工一层层舀进圆模；最多翻一次面，再压一块薄金属板。",
+     "note_en": "Ladled by hand with hemispherical ladles in at least five passes; turned at most once, then lightly weighted with a metal plate.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "≥5 次入模，沥水 ≥18 小时",
+     "time_en": "≥5 ladlings; drain ≥18 h",
+     "time_sec": 64800,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "表面撒干盐。",
+     "note_en": "Dry-salted on the surface.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "ripen",
+     "temp_c": "10–18（hâloir）",
+     "time": "≥13 天才能包装，≥22 天才能交到顾客",
+     "ph": null,
+     "note_zh": "白色表层霉菌 Penicillium candidum（= P. camemberti）长满表面；熟透时可出现亚麻短杆菌带来的红褐斑。",
+     "note_en": "White mould Penicillium candidum (= P. camemberti) covers the surface; when ripe, Brevibacterium linens may add reddish spots.",
+     "temp_disp_zh": "10–18 °C（熟成室）",
+     "temp_disp_en": "10–18 °C (hâloir)",
+     "temp_num": 14,
+     "time_zh": "≥22 天才交到顾客",
+     "time_en": "≥22 days before sale",
+     "time_sec": 1900800,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "规范：凝乳后第 13 天起可包装、第 17 天起可出厂、第 22 天起可交付消费者；规范第 9 节表格写「hâloir ≥12 天」，与第 5.6 节有出入",
+   "moisture_pct": "≤54（由每块干物质 ≥115 g、净重 ≥250 g 推算）；常见 ≈52",
+   "fat_pct": "干物质中脂肪 ≥45%（规范）；总脂肪 ≈22–24",
+   "microbes_zh": "中温乳酸菌；表面 Penicillium candidum / camemberti、Geotrichum candidum；可有 Brevibacterium linens",
+   "flavor_zh": "奶油、蘑菇、熟后带白菜 / 氨味与泥土气",
+   "flavor_en": "Cream, mushroom; when ripe, cabbage, ammonia and earthy notes.",
+   "texture_zh": "外皮绒毛白霉，内里从中心略带白芯到熟透时柔软流淌（由外向内熟成）",
+   "conf": "高",
+   "note": "所引规范为 INAO 未修订版（2008 年后版本）；2021 年起 AOP 已统一为生乳，仍保留勺子入模要求。pH 规范未给。",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ],
+   "name_short_zh": "卡芒贝尔",
+   "name_short_en": "Camembert de Normandie",
+   "origin_en": "Normandy, France",
+   "milk_en": "Cow's milk, raw (never heated above 40 °C); at least half the herd of the Normande breed",
+   "age_en": "PDO: packed from day 13 after renneting, leaves the dairy from day 17, reaches consumers from day 22 (the spec's summary table says ≥12 days in the hâloir, which conflicts with section 5.6)",
+   "texture_en": "Velvety white bloomy rind; the paste goes from a chalky core to soft and runny when ripe (ripens from the rind inward)",
+   "age_days_min": 22,
+   "age_days_max": 35
+  },
+  {
+   "id": "cheddar",
+   "name_zh": "切达 Cheddar",
+   "name_en": "Cheddar",
+   "family": "hard-pressed",
+   "origin": "英国萨默塞特切达村；今日多产于英国、美国、加拿大、新西兰、澳大利亚",
+   "milk": "牛奶，多为巴氏杀菌（亦有生乳农场切达）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": null,
+     "time": null,
+     "ph": 6.6,
+     "note_zh": "蛋白 / 脂肪比标准化到约 0.80：脂肪 4.24%、蛋白 3.38%。",
+     "note_en": "Standardised to protein:fat ≈0.80 (4.24% fat, 3.38% protein).",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": "6.6",
+     "ph_num": 6.6
+    },
+    {
+     "step": "heat",
+     "temp_c": "72",
+     "time": "15 秒",
+     "ph": null,
+     "note_zh": "多数商业切达用巴氏杀菌奶；美国标准规定生乳切达须在 ≥1.7°C（35°F）熟成 ≥60 天。",
+     "note_en": "Usually pasteurised; under US standards raw-milk Cheddar must cure ≥60 days at ≥35 °F.",
+     "temp_disp_zh": "72 °C",
+     "temp_disp_en": "72 °C",
+     "temp_num": 72,
+     "time_zh": "15 秒",
+     "time_en": "15 s",
+     "time_sec": 15,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": "32",
+     "time": null,
+     "ph": 6.6,
+     "note_zh": "中温乳球菌发酵剂，用量为奶的 1.25–2.0%。",
+     "note_en": "Mesophilic Lactococcus starter at 1.25–2.0% of the milk.",
+     "temp_disp_zh": "32 °C",
+     "temp_disp_en": "32 °C",
+     "temp_num": 32,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": "6.6",
+     "ph_num": 6.6
+    },
+    {
+     "step": "rennet",
+     "temp_c": "32",
+     "time": "30–40 分钟凝结",
+     "ph": null,
+     "note_zh": "凝乳酶 150 mL / 1000 L 奶。",
+     "note_en": "Rennet 150 mL per 1,000 L.",
+     "temp_disp_zh": "32 °C",
+     "temp_disp_en": "32 °C",
+     "temp_num": 32,
+     "time_zh": "30–40 分钟凝结",
+     "time_en": "30–40 min to set",
+     "time_sec": 2100,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": "32",
+     "time": null,
+     "ph": null,
+     "note_zh": "切成约 9 毫米小方块。",
+     "note_en": "Cut to about 9 mm cubes.",
+     "temp_disp_zh": "32 °C",
+     "temp_disp_en": "32 °C",
+     "temp_num": 32,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cook",
+     "temp_c": "38",
+     "time": null,
+     "ph": null,
+     "note_zh": "边搅拌边升温到 38°C。",
+     "note_en": "Stirred and scalded to 38 °C.",
+     "temp_disp_zh": "38 °C",
+     "temp_disp_en": "38 °C",
+     "temp_num": 38,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "drain",
+     "temp_c": "38",
+     "time": "加凝乳酶后约 2.5 小时",
+     "ph": 6.2,
+     "note_zh": "移到排乳清带，含水从约 65% 降到 55%。",
+     "note_en": "Transferred to the draining belt; moisture falls from ~65% to 55%.",
+     "temp_disp_zh": "38 °C",
+     "temp_disp_en": "38 °C",
+     "temp_num": 38,
+     "time_zh": "加酶后约 2.5 小时",
+     "time_en": "~2.5 h after renneting",
+     "time_sec": null,
+     "ph_disp": "6.2",
+     "ph_num": 6.2
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": null,
+     "ph": "6.2→5.3–5.4",
+     "note_zh": "堆酿（cheddaring）：凝乳块熔成板、反复叠放翻面，含水降到约 42%，质地变得像鸡胸肉；随后碾碎（milling）成手指大小。",
+     "note_en": "Cheddaring: curd fuses into slabs that are stacked and turned, moisture falls to ~42% and texture becomes like cooked chicken breast; then milled into finger-sized pieces.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "堆酿约 2 小时",
+     "time_en": "Cheddaring ~2 h",
+     "time_sec": 7200,
+     "ph_disp": "6.2→5.3–5.4",
+     "ph_num": 5.35
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": "5.3–5.4",
+     "note_zh": "碾碎后的凝乳直接拌干盐，再装模、真空压成约 20 公斤的块。",
+     "note_en": "Milled curd is dry-salted, then hooped and vacuum-pressed into ~20 kg blocks.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": "5.3–5.4",
+     "ph_num": 5.35
+    },
+    {
+     "step": "ripen",
+     "temp_c": "10（库温；24 小时内先降到 18）",
+     "time": "3 个月（mild）到 2 年以上（extra mature / vintage）",
+     "ph": null,
+     "note_zh": "传统农场切达用布包裹、刷猪油，熟成期更长。",
+     "note_en": "Traditional clothbound Cheddar is wrapped in lard-rubbed cloth and aged longer.",
+     "temp_disp_zh": "10 °C（库温）",
+     "temp_disp_en": "10 °C (store)",
+     "temp_num": 10,
+     "time_zh": "3 个月到 2 年以上",
+     "time_en": "3 months to 2+ years",
+     "time_sec": 31536000,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "无统一法定下限（生乳者美标 ≥60 天）；零售口径常见 mild ≈3 个月、mature ≈9–12 个月、extra mature / vintage ≥15 个月以上（各国零售口径不一）",
+   "moisture_pct": "≤39（美国标准上限）；常见 ≈37",
+   "fat_pct": "脂肪占固形物 ≥50%（美国标准）；总脂肪 ≈33",
+   "microbes_zh": "Lactococcus lactis 发酵剂；熟成期非发酵剂乳杆菌（如副干酪乳杆菌）",
+   "flavor_zh": "奶香、黄油、坚果，越熟越尖锐（sharp）带硫味、肉汤味",
+   "flavor_en": "Milky, buttery, nutty; sharper with age, with sulfur and brothy notes.",
+   "texture_zh": "致密、平滑到略易碎，久熟可见乳酸钙白色结晶",
+   "conf": "高",
+   "note": "NZIC 原文的成品组成字段读作「约 37% 脂肪、33% 水分」，与 USDA 常见值（水分 ≈37%、脂肪 ≈33%）正好相反，疑为原文或抽取顺序颠倒，此处取 USDA 口径。熟成分级口径为零售惯例，无统一法规，conf 中。",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "21 CFR 133.3 (definition of pasteurized) & 133.113 Cheddar cheese (eCFR, US FDA)",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.113",
+     "kind": "官方"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ],
+   "name_short_zh": "切达",
+   "name_short_en": "Cheddar",
+   "origin_en": "Cheddar, Somerset, England; now made mainly in the UK, US, Canada, New Zealand and Australia",
+   "milk_en": "Cow's milk, usually pasteurised (some raw-milk farmhouse Cheddar)",
+   "age_en": "No single legal minimum (raw-milk Cheddar ≥60 days under US rules); retail bands commonly mild ~3 months, mature ~9–12 months, extra mature / vintage 15+ months (bands vary by country)",
+   "texture_en": "Dense, smooth to slightly crumbly; long-aged cheese may show white calcium lactate crystals",
+   "age_days_min": 90,
+   "age_days_max": 730
+  },
+  {
+   "id": "roquefort",
+   "name_zh": "洛克福 Roquefort",
+   "name_en": "Roquefort PDO",
+   "family": "blue",
+   "origin": "法国阿韦龙省 Roquefort-sur-Soulzon（Combalou 山崩塌岩堆中的洞穴）",
+   "milk": "绵羊奶，生乳、全脂（Lacaune 种）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": "≤10（农场存放）",
+     "time": null,
+     "ph": null,
+     "note_zh": "挤奶后在农场 ≤10°C 存放；最早一次挤奶后 48 小时内必须加凝乳酶。",
+     "note_en": "Stored on farm at ≤10 °C; renneting within 48 h of the oldest milking.",
+     "temp_disp_zh": "≤10 °C（农场存放）",
+     "temp_disp_en": "≤10 °C (farm storage)",
+     "temp_num": 10,
+     "time_zh": "挤奶后 48 小时内凝乳",
+     "time_en": "Renneted within 48 h",
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "heat",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "生乳、全脂；只允许把奶回温到凝乳温度。",
+     "note_en": "Raw whole milk; only rewarming to renneting temperature is allowed.",
+     "temp_disp_zh": "生乳，只许回温",
+     "temp_disp_en": "Raw; rewarming only",
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": "28–34",
+     "time": null,
+     "ph": null,
+     "note_zh": "乳酸菌发酵剂；同时把 Penicillium roqueforti 孢子加入奶中（菌株须来自 Roquefort 洞穴传统菌株）。",
+     "note_en": "Lactic starter; Penicillium roqueforti spores, from traditional strains isolated in the Roquefort caves, are added to the milk.",
+     "temp_disp_zh": "28–34 °C",
+     "temp_disp_en": "28–34 °C",
+     "temp_num": 31,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": "28–34",
+     "time": null,
+     "ph": null,
+     "note_zh": "动物凝乳酶。",
+     "note_en": "Animal rennet.",
+     "temp_disp_zh": "28–34 °C",
+     "temp_disp_en": "28–34 °C",
+     "temp_num": 31,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "切块、搅拌。",
+     "note_en": "Cut and stirred.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "预沥后入模，不压榨，让凝乳粒之间留下缝隙供霉菌生长。",
+     "note_en": "Moulded after pre-draining and not pressed, leaving openings for mould to grow.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "表面擦干盐。",
+     "note_en": "Dry-salted.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "ripen",
+     "temp_c": "≥-5（熟成温度下限）",
+     "time": "合计 ≥90 天；在洞穴裸放 ≥2 周",
+     "ph": null,
+     "note_zh": "用针穿刺（piquage）让空气进入，穿刺后 2 天内入洞；洞穴由天然岩缝「fleurines」通风，凉爽潮湿；随后包锡箔低温延续熟成。",
+     "note_en": "Pierced (piquage) to let air in and taken to the caves within 2 days; the caves are ventilated by natural fissures (fleurines); later wrapped in foil for cold maturation.",
+     "temp_disp_zh": "≥−5 °C（下限）",
+     "temp_disp_en": "≥−5 °C (minimum)",
+     "temp_num": null,
+     "time_zh": "≥90 天，洞穴 ≥2 周",
+     "time_en": "≥90 days; ≥2 weeks in caves",
+     "time_sec": 7776000,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "自制作日起最少 90 天（规范）；其中在 Combalou 洞穴不包裹熟成至少 2 周",
+   "moisture_pct": "≤45（由干物质 ≥55% 推算）；常见 ≈39",
+   "fat_pct": "干物质中脂肪 ≥52%（规范）；总脂肪 ≈31",
+   "microbes_zh": "乳酸菌发酵剂；Penicillium roqueforti（洞穴传统菌株）",
+   "flavor_zh": "辛辣刺鼻（甲基酮）、咸、羊奶的油润与甜感，回味带金属感",
+   "flavor_en": "Sharp and piquant (methyl ketones), salty, rich sweet ewe's-milk fat with a mineral finish.",
+   "texture_zh": "湿润、可涂抹到易碎，蓝绿色霉纹分布在缝隙中，无硬皮",
+   "conf": "高",
+   "note": "所引为 2025-11-19 提交国家异议程序的修订稿，数字可能在定稿时微调；旧版亦为 ≥90 天。洞穴温湿度规范未给数字。",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'AOP « Roquefort » – projet soumis à PNO, 2025-11-19 (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCPNORoquefort-20251119.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ],
+   "name_short_zh": "洛克福",
+   "name_short_en": "Roquefort",
+   "origin_en": "Roquefort-sur-Soulzon, Aveyron, France (caves in the Combalou scree)",
+   "milk_en": "Sheep's milk, raw and whole (Lacaune breed)",
+   "age_en": "At least 90 days from making (PDO), including at least 2 weeks uncovered in the Combalou caves",
+   "texture_en": "Moist, spreadable to crumbly, with blue-green mould in the openings; no hard rind",
+   "age_days_min": 90,
+   "age_days_max": 150
+  },
+  {
+   "id": "comte",
+   "name_zh": "孔泰 Comté",
+   "name_en": "Comté PDO",
+   "family": "hard-pressed",
+   "origin": "法国汝拉山区（弗朗什-孔泰）",
+   "milk": "牛奶，生乳（Montbéliarde 或法国西门塔尔牛）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": "10–18（一天一收时存放）",
+     "time": "挤奶到制作 ≤24 小时",
+     "ph": null,
+     "note_zh": "挤奶后立即冷到 18°C 以下；收奶圈直径 25 公里；约 400 升奶做一只 40 公斤的轮子。",
+     "note_en": "Cooled below 18 °C after milking; collection within a 25 km-diameter circle; about 400 L of milk per 40 kg wheel.",
+     "temp_disp_zh": "10–18 °C（存放）",
+     "temp_disp_en": "10–18 °C (storage)",
+     "temp_num": 14,
+     "time_zh": "挤奶到制作 ≤24 小时",
+     "time_en": "Milking to vat ≤24 h",
+     "time_sec": 86400,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "heat",
+     "temp_c": "≤40",
+     "time": null,
+     "ph": null,
+     "note_zh": "凝乳前加热不得超过 40°C（生乳）。",
+     "note_en": "No heating above 40 °C before renneting (raw milk).",
+     "temp_disp_zh": "≤40 °C（不杀菌）",
+     "temp_disp_en": "≤40 °C (no pasteurising)",
+     "temp_num": 40,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "天然或选育的乳酸菌发酵剂（常含嗜热菌）。",
+     "note_en": "Natural or selected lactic starters (often thermophilic).",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "只用小牛皱胃凝乳酶，凝乳酶含量 ≥520 mg/L，禁用牛胃蛋白酶。",
+     "note_en": "Calf rennet only (≥520 mg chymosin/L); bovine pepsin banned.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "切成小米粒大小。",
+     "note_en": "Cut fine.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cook",
+     "temp_c": "≥53",
+     "time": "≥30 分钟",
+     "ph": null,
+     "note_zh": "必须在铜锅中加热搅拌。",
+     "note_en": "Cooked and stirred in copper vats.",
+     "temp_disp_zh": "≥53 °C",
+     "temp_disp_en": "≥53 °C",
+     "temp_num": 53,
+     "time_zh": "≥30 分钟",
+     "time_en": "≥30 min",
+     "time_sec": 1800,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "form",
+     "temp_c": "≥12（压榨室）",
+     "time": "≥6 小时",
+     "ph": null,
+     "note_zh": "压力 ≥100 g/cm²。",
+     "note_en": "Pressed at ≥100 g/cm².",
+     "temp_disp_zh": "≥12 °C（压榨室）",
+     "temp_disp_en": "≥12 °C (press room)",
+     "temp_num": 12,
+     "time_zh": "≥6 小时",
+     "time_en": "≥6 h",
+     "time_sec": 21600,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": "脱模后 24 小时内；或泡盐水 ≤12 小时",
+     "ph": null,
+     "note_zh": "表面与外皮擦干盐，或短时盐水浸泡。",
+     "note_en": "Dry salt rubbed on surface and rind, or brief brining.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "脱模后 24 小时内",
+     "time_en": "Within 24 h of unmoulding",
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "ripen",
+     "temp_c": "预熟成 10–15；之后 ≤19",
+     "time": "预熟成 ≥21 天；合计 ≥120 天",
+     "ph": null,
+     "note_zh": "放在云杉木板上，定期翻面、擦盐水；暖库湿度 ≥92%、冷库 ≥85%。",
+     "note_en": "Ripened on spruce boards, regularly turned and rubbed with brine; humidity ≥92% (warm cellar) or ≥85% (cold cellar).",
+     "temp_disp_zh": "10–15 → ≤19 °C",
+     "temp_disp_en": "10–15 → ≤19 °C",
+     "temp_num": 15,
+     "time_zh": "合计 ≥120 天",
+     "time_en": "≥120 days in total",
+     "time_sec": 10368000,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "最少 120 天 / 4 个月（规范，自凝乳至出窖）；常见 8–24 个月",
+   "moisture_pct": "≤38（由干物质 ≥62% 推算）",
+   "fat_pct": "干物质中脂肪 45–54%（规范）；总脂肪 ≈29–33（推算）",
+   "microbes_zh": "嗜热乳酸菌发酵剂；生乳本土乳杆菌；部分轮子内有丙酸菌产生零星小孔",
+   "flavor_zh": "榛子、杏干、软焦糖、融化黄油、熟牛奶，久熟带肉汤与烘烤味；行业香气轮列出 83 个常见描述词（乳香、果香、烘烤、植物、动物、辛香 6 族）",
+   "flavor_en": "Hazelnut, dried apricot, soft caramel, melted butter and cooked milk; with age, broth and roasted notes. The industry aroma wheel lists 83 common descriptors in 6 families.",
+   "texture_zh": "紧实、柔韧有弹性，久熟后带结晶",
+   "conf": "高",
+   "note": "规范还要求质量评分 ≥14/20 才可称 Comté；轮重 32–45 kg、直径 55–75 cm。所引为 2013 年版规范，INAO 另有 2024-11 提交异议的修订稿。",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'AOP « Comté » (INAO, version 2013)",
+     "url": "https://extranet.inao.gouv.fr/fichier/cdccomte.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Fiche AOP Comté (DRAAF Bourgogne-Franche-Comté)",
+     "url": "https://draaf.bourgogne-franche-comte.agriculture.gouv.fr/IMG/pdf/FicheAOPComte_cle81fe31.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Dossier de presse Comté 2014 (Comité Interprofessionnel de Gestion du Comté)",
+     "url": "https://comte.com/documents/dossier-de-presse-comte-2014",
+     "kind": "官方"
+    }
+   ],
+   "name_short_zh": "孔泰",
+   "name_short_en": "Comté",
+   "origin_en": "Jura Mountains, Franche-Comté, France",
+   "milk_en": "Cow's milk, raw (Montbéliarde or French Simmental cows)",
+   "age_en": "Minimum 120 days / 4 months (PDO, from renneting to leaving the cellar); commonly 8–24 months",
+   "texture_en": "Firm, supple and elastic; crystals appear with long ageing",
+   "age_days_min": 120,
+   "age_days_max": 730
+  },
+  {
+   "id": "emmental",
+   "name_zh": "埃曼塔 Emmentaler",
+   "name_en": "Emmentaler AOP (Swiss-type)",
+   "family": "hard-pressed",
+   "origin": "瑞士伯尔尼州埃曼河谷（Emmental）",
+   "milk": "牛奶（AOP 为生乳、铜锅；工业「瑞士型」奶酪多用巴氏杀菌奶）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": null,
+     "time": null,
+     "ph": 6.6,
+     "note_zh": "工业瑞士型奶酪蛋白 / 脂肪比约 1.1。",
+     "note_en": "Industrial Swiss-type milk standardised to protein:fat ≈1.1.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": "6.6",
+     "ph_num": 6.6
+    },
+    {
+     "step": "starter",
+     "temp_c": "37",
+     "time": "约 15 分钟预熟",
+     "ph": null,
+     "note_zh": "嗜热链球菌 + 保加利亚乳杆菌 / 瑞士乳杆菌，并加入丙酸菌（Propionibacterium freudenreichii）——后者日后负责「打孔」；接种量约 10³–10⁶ cfu/mL。",
+     "note_en": "S. thermophilus with L. bulgaricus / L. helveticus, plus Propionibacterium freudenreichii for eyes, inoculated at about 10³–10⁶ cfu/mL.",
+     "temp_disp_zh": "37 °C",
+     "temp_disp_en": "37 °C",
+     "temp_num": 37,
+     "time_zh": "预熟约 15 分钟",
+     "time_en": "~15 min ripening",
+     "time_sec": 900,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": "37",
+     "time": "20–25 分钟",
+     "ph": null,
+     "note_zh": "凝乳酶在 37°C 下加入，凝结较快。",
+     "note_en": "Rennet added at 37 °C; set is relatively fast.",
+     "temp_disp_zh": "37 °C",
+     "temp_disp_en": "37 °C",
+     "temp_num": 37,
+     "time_zh": "20–25 分钟",
+     "time_en": "20–25 min",
+     "time_sec": 1350,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": "37",
+     "time": null,
+     "ph": null,
+     "note_zh": "切成米粒大小。",
+     "note_en": "Cut to rice-grain size.",
+     "temp_disp_zh": "37 °C",
+     "temp_disp_en": "37 °C",
+     "temp_num": 37,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cook",
+     "temp_c": "37→52（AOP 可达 ~55）",
+     "time": "约 30 分钟升温",
+     "ph": ">=6.3（分离乳清时）",
+     "note_zh": "先慢后快升温，酸度在排乳清前几乎不发展。",
+     "note_en": "Heated slowly at first; little acid develops before draining.",
+     "temp_disp_zh": "37→52 °C（AOP 可达约 55）",
+     "temp_disp_en": "37→52 °C (AOP up to ~55)",
+     "temp_num": 52,
+     "time_zh": "约 30 分钟升温",
+     "time_en": "~30 min heating",
+     "time_sec": 1800,
+     "ph_disp": "≥6.3",
+     "ph_num": 6.3
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": "乳清下压 1 小时，再压 12–18 小时",
+     "ph": "5.2–5.4（压榨后 / 第一天）",
+     "note_zh": "整团凝乳在乳清下成型，避免夹带空气；第一天 pH 低于 5.2 孔少，高于 5.4 易产气过度。",
+     "note_en": "Curd is pressed under whey to avoid trapped air; day-1 pH below 5.2 gives poor eyes, above 5.4 risks excess gas.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "压榨 12–18 小时",
+     "time_en": "Pressed 12–18 h",
+     "time_sec": 54000,
+     "ph_disp": "5.2–5.4",
+     "ph_num": 5.3
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": "约 1 小时 / 0.9 kg / cm 厚",
+     "ph": null,
+     "note_zh": "20–23% 盐水浸泡（工业做法）；AOP 轮子熟成期每周擦盐水。",
+     "note_en": "Brined in 20–23% salt (industrial); AOP wheels are rubbed with brine weekly during ripening.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "1 小时/0.9 kg/cm 厚",
+     "time_en": "1 h per 0.9 kg per cm",
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "ripen",
+     "temp_c": "冷室 10 → 暖室 19–24 → 冷藏 2–5",
+     "time": "冷室 8–10 天；暖室 2–3 周起孔（AOP 约 6–8 周）；合计 ≥120 天",
+     "ph": null,
+     "note_zh": "暖室里丙酸菌吃乳酸，产出丙酸、乙酸和 CO₂；一个 80 kg 的轮子在熟成前后约产 120 升 CO₂，聚在凝乳的薄弱点形成直径约 2–2.5 cm 的孔；丙酸带来甜味与坚果味。",
+     "note_en": "In the warm room propionibacteria convert lactate into propionate, acetate and CO₂; an 80 kg loaf produces about 120 L of CO₂, which collects at weak points into eyes about 2–2.5 cm across; propionate adds sweet, nutty notes.",
+     "temp_disp_zh": "10 → 19–24 → 2–5 °C",
+     "temp_disp_en": "10 → 19–24 → 2–5 °C",
+     "temp_num": 22,
+     "time_zh": "合计 ≥120 天",
+     "time_en": "≥120 days in total",
+     "time_sec": 10368000,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "AOP 最少 120 天（4 个月）；URTYP 等长熟款 ≥12 个月",
+   "moisture_pct": "≈37–40（工业瑞士型标准 40；USDA Swiss ≈37）",
+   "fat_pct": "≈27–30（工业标准 27）",
+   "microbes_zh": "嗜热链球菌、瑞士乳杆菌 / 保加利亚乳杆菌；Propionibacterium freudenreichii（产孔、产丙酸）",
+   "flavor_zh": "甜、坚果、温和的奶香与微酸",
+   "flavor_en": "Sweet, nutty, mild milky with a slight tang.",
+   "texture_zh": "柔韧有弹性，带樱桃到核桃大小的规则圆孔",
+   "conf": "中",
+   "note": "AOP 规范（Pflichtenheft）原文未取到，生乳、铜锅、AOP 煮凝乳温度来自通识与 Daly 2010（Emmental 煮凝乳 >50°C、最高约 55°C），其余工艺数字来自 Guelph 教科书的工业瑞士型配方，需在页面上标注「工业配方示意」。孔变少与干草颗粒：Agroscope 2015 年发现现代挤奶机让落入奶中的干草微粒减少、孔的「核」变少；瑞士联邦行政法院 2025-04 判决允许在规范中使用「起孔粉」（Lochansatzpulver）。",
+   "sources": [
+    {
+     "title": "How does the cheese get its holes? (Emmentaler Switzerland, interprofession)",
+     "url": "https://www.emmentaler.ch/en/how-does-the-cheese-get-its-holes",
+     "kind": "官方"
+    },
+    {
+     "title": "Daly, McSweeney & Sheehan (2010) Split defect and secondary fermentation in Swiss-type cheeses – A review. Dairy Science & Technology 90:3–26",
+     "url": "https://www.dairy-journal.org/articles/dst/full_html/2010/01/dst0880/dst0880.html",
+     "kind": "学术"
+    },
+    {
+     "title": "Firm to Hard Cheese: High Temperature: Romano, Swiss – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-4-firm-to-hard-cheese-high-temperature-romano-swiss/",
+     "kind": "学术"
+    },
+    {
+     "title": "Bundesverwaltungsgericht erlaubt Hilfsmittel für die Löcher im Emmentaler (ZHAW News, 2025-04-28)",
+     "url": "https://www.zhaw.ch/de/ueber-uns/aktuell/news/detailansicht-news/event-news/bundesverwaltungsgericht-erlaubt-hilfsmittel-fuer-die-loecher-im-emmentaler",
+     "kind": "媒体"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ],
+   "name_short_zh": "埃曼塔",
+   "name_short_en": "Emmentaler",
+   "origin_en": "Emme valley (Emmental), canton of Bern, Switzerland",
+   "milk_en": "Cow's milk (raw milk and copper vats for the AOP; industrial Swiss-type cheese is mostly pasteurised)",
+   "age_en": "AOP minimum 120 days (4 months); long-aged styles such as URTYP 12 months or more",
+   "texture_en": "Supple and elastic, with regular round eyes from cherry to walnut size",
+   "age_days_min": 120,
+   "age_days_max": 365
+  },
+  {
+   "id": "gouda",
+   "name_zh": "高达 Gouda",
+   "name_en": "Gouda (Gouda Holland PGI)",
+   "family": "semi-hard",
+   "origin": "荷兰（得名于南荷兰省豪达镇的奶酪市场）",
+   "milk": "牛奶；Gouda Holland PGI 规定巴氏杀菌（≥72°C、15 秒），农场生乳款称 Boerenkaas",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": "≤6（农场冷藏）",
+     "time": "72 小时内运到工厂",
+     "ph": null,
+     "note_zh": "荷兰奶场牛奶，农场冷藏 ≤6°C。",
+     "note_en": "Dutch farm milk cooled to ≤6 °C.",
+     "temp_disp_zh": "≤6 °C（农场冷藏）",
+     "temp_disp_en": "≤6 °C (farm cooling)",
+     "temp_num": 6,
+     "time_zh": "72 小时内运到工厂",
+     "time_en": "At the dairy within 72 h",
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "heat",
+     "temp_c": "≥72",
+     "time": "15 秒",
+     "ph": null,
+     "note_zh": "PGI 规定巴氏杀菌。",
+     "note_en": "Pasteurisation required by the PGI.",
+     "temp_disp_zh": "≥72 °C",
+     "temp_disp_en": "≥72 °C",
+     "temp_num": 72,
+     "time_zh": "15 秒",
+     "time_en": "15 s",
+     "time_sec": 15,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": "30–31",
+     "time": "约 1 小时预熟；2.5–3 小时到可洗凝乳",
+     "ph": 6.4,
+     "note_zh": "中温 Lactococcus + Leuconostoc（L 或 LD 型）发酵剂；Leuconostoc 产少量 CO₂，形成小而少的孔。",
+     "note_en": "Mesophilic Lactococcus + Leuconostoc (L or LD) cultures; Leuconostoc's CO₂ gives a few small eyes.",
+     "temp_disp_zh": "30–31 °C",
+     "temp_disp_en": "30–31 °C",
+     "temp_num": 30.5,
+     "time_zh": "预熟约 1 小时",
+     "time_en": "~1 h ripening",
+     "time_sec": 3600,
+     "ph_disp": "6.4",
+     "ph_num": 6.4
+    },
+    {
+     "step": "rennet",
+     "temp_c": "≈30",
+     "time": "30–40 分钟",
+     "ph": null,
+     "note_zh": "只用小牛凝乳酶（PGI）。",
+     "note_en": "Calf rennet only (PGI).",
+     "temp_disp_zh": "≈30 °C",
+     "temp_disp_en": "≈30 °C",
+     "temp_num": 30,
+     "time_zh": "30–40 分钟",
+     "time_en": "30–40 min",
+     "time_sec": 2100,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": "30",
+     "time": null,
+     "ph": "6.4–6.5（乳清）",
+     "note_zh": "切成 5–8 mm 小块，搅拌 20–30 分钟。",
+     "note_en": "Cut to 5–8 mm and stirred 20–30 min.",
+     "temp_disp_zh": "30 °C",
+     "temp_disp_en": "30 °C",
+     "temp_num": 30,
+     "time_zh": "搅拌 20–30 分钟",
+     "time_en": "Stirred 20–30 min",
+     "time_sec": 1500,
+     "ph_disp": "6.4–6.5",
+     "ph_num": 6.45
+    },
+    {
+     "step": "cook",
+     "temp_c": "36–38",
+     "time": "加水 15–20 分钟后再搅 15 分钟",
+     "ph": 6.3,
+     "note_zh": "洗凝乳：先放掉约三分之一乳清，再加入相当于奶量 20–25% 的 60°C 热水，把锅温带到 36–38°C。洗掉乳糖 → 后期产酸有限，成品 pH 维持在约 5.2，质地柔韧、味甜。",
+     "note_en": "Curd washing: drain about one-third of the whey and add 60 °C water equal to 20–25% of the milk volume, bringing the vat to 36–38 °C. Removing lactose limits later acid, keeping pH around 5.2 and giving a supple, sweet cheese.",
+     "temp_disp_zh": "36–38 °C（加 60 °C 热水）",
+     "temp_disp_en": "36–38 °C (60 °C wash water)",
+     "temp_num": 37,
+     "time_zh": "洗凝乳 + 搅拌约 33 分钟",
+     "time_en": "15–20 min wash + 15 min stir",
+     "time_sec": 1980,
+     "ph_disp": "6.3",
+     "ph_num": 6.3
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": "乳清下预压 10–30 分钟；入模压 5–8 小时",
+     "ph": "5.3–5.5（压后）",
+     "note_zh": "压力 100 kPa，翻面后增至 200 kPa。",
+     "note_en": "Pressed at 100 kPa, then 200 kPa after the first turn.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "压榨 5–8 小时",
+     "time_en": "Pressed 5–8 h",
+     "time_sec": 23400,
+     "ph_disp": "5.3–5.5",
+     "ph_num": 5.4
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": "约 1 小时 / 0.9 kg / cm 厚（按 1 h / 磅 / 英寸推算，4.5 kg、约 10 cm 厚的轮约 1.5–2 天）",
+     "ph": "5.15–5.25",
+     "note_zh": "整轮浸泡 20–25% 盐水；PGI 规定干物质中盐 ≤4.0%。",
+     "note_en": "Whole cheeses are immersed in 20–25% brine; PGI caps salt at 4.0% of dry matter.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "4.5 kg 轮约 1.5–2 天",
+     "time_en": "~1.5–2 days (4.5 kg wheel)",
+     "time_sec": 151200,
+     "ph_disp": "5.15–5.25",
+     "ph_num": 5.2
+    },
+    {
+     "step": "ripen",
+     "temp_c": "≥12（PGI）；教科书 15 → 10",
+     "time": "≥28 天（PGI）；可达一年以上",
+     "ph": null,
+     "note_zh": "表面涂蜡或塑料涂层；PGI 禁止薄膜包裹熟成。",
+     "note_en": "Coated with wax or plastic coating; foil ripening is not permitted under the PGI.",
+     "temp_disp_zh": "≥12 °C（PGI）",
+     "temp_disp_en": "≥12 °C (PGI)",
+     "temp_num": 12,
+     "time_zh": "≥28 天，可达 1 年以上",
+     "time_en": "≥28 days, up to a year+",
+     "time_sec": 2419200,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "Gouda Holland PGI 最少 28 天、≥12°C；荷兰零售口径常见 jong（约 4 周）、jong belegen（约 8 周）、belegen（约 4 个月）、extra belegen（约 7 个月）、oud（约 10 个月）、overjarig（≥1 年）——零售口径各厂略有差异",
+   "moisture_pct": "≤42.5（PGI，制作后第 12 天测）；教科书标准 43",
+   "fat_pct": "干物质中脂肪 48–52%（PGI）；总脂肪 ≈27–28",
+   "microbes_zh": "Lactococcus lactis、Leuconostoc（LD 型发酵剂，产双乙酰与少量 CO₂）",
+   "flavor_zh": "年轻时奶油、黄油（双乙酰）、温和；久熟后焦糖、奶油糖、烤坚果、带咸鲜",
+   "flavor_en": "Young: creamy, buttery (diacetyl), mild. Aged: caramel, butterscotch, toasted nuts, savoury.",
+   "texture_zh": "年轻时柔软有弹性、有少量小孔；久熟后变硬、易碎、带酪氨酸结晶",
+   "conf": "高",
+   "note": "PGI 文件未给洗凝乳水温与盐水天数，工艺数字取自 Guelph 教科书高达配方；零售熟成分级口径为荷兰业内惯例，未逐一核到官方文件（conf 中）。",
+   "sources": [
+    {
+     "title": "Gouda Holland PGI – product specification (EU single document, Dutch submission)",
+     "url": "https://www.gob.mx/cms/uploads/attachment/file/245731/NL_Gouda_Holland.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Semi-Hard Cheese — Washed (Gouda, Brick, Colby, Montasio) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-2-camembert-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Cheese Making Step-by-Step – Cheese Making Technology e-Book (Hill & Ferrer, U. Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-1-milk-structure/",
+     "kind": "学术"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ],
+   "name_short_zh": "高达",
+   "name_short_en": "Gouda",
+   "origin_en": "The Netherlands (named after the cheese-market town of Gouda, South Holland)",
+   "milk_en": "Cow's milk; Gouda Holland PGI requires pasteurisation (≥72 °C for 15 s); raw-milk farmhouse Gouda is sold as Boerenkaas",
+   "age_en": "Gouda Holland PGI: at least 28 days at ≥12 °C. Dutch retail bands commonly jong (~4 weeks), jong belegen (~8 weeks), belegen (~4 months), extra belegen (~7 months), oud (~10 months), overjarig (1 year+); bands vary by maker",
+   "texture_en": "Young: soft and supple with a few small eyes. Aged: hard and crumbly with tyrosine crystals",
+   "age_days_min": 28,
+   "age_days_max": 730
+  },
+  {
+   "id": "mozzarella",
+   "name_zh": "马苏里拉（水牛）Mozzarella di Bufala Campana",
+   "name_en": "Mozzarella di Bufala Campana PDO",
+   "family": "pasta-filata",
+   "origin": "意大利坎帕尼亚、拉齐奥南部等地",
+   "milk": "水牛全脂鲜奶（生乳，或热处理 / 巴氏杀菌皆可），脂肪 ≥7.2%、蛋白 ≥4.2%",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": null,
+     "time": "首次挤奶后 60 小时内加工",
+     "ph": null,
+     "note_zh": "规范要求奶脂 ≥7.2%、蛋白 ≥4.2%。",
+     "note_en": "Milk must contain ≥7.2% fat and ≥4.2% protein.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "挤奶后 60 小时内加工",
+     "time_en": "Made within 60 h of milking",
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "heat",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "可用生乳，也可热处理或巴氏杀菌。",
+     "note_en": "Raw, thermised or pasteurised milk allowed.",
+     "temp_disp_zh": "生乳、热处理或巴氏均可",
+     "temp_disp_en": "Raw, thermised or pasteurised",
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": "33–39",
+     "time": null,
+     "ph": null,
+     "note_zh": "加入前批水牛奶制作留下的天然乳清发酵剂（siero innesto）。",
+     "note_en": "Natural whey starter from previous buffalo-milk batches.",
+     "temp_disp_zh": "33–39 °C",
+     "temp_disp_en": "33–39 °C",
+     "temp_num": 36,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": "33–39",
+     "time": null,
+     "ph": null,
+     "note_zh": "天然小牛凝乳酶。",
+     "note_en": "Natural calf rennet.",
+     "temp_disp_zh": "33–39 °C",
+     "temp_disp_en": "33–39 °C",
+     "temp_num": 36,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "凝块打碎后留在乳清下继续产酸。",
+     "note_en": "Broken curd is left under the whey to acidify.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "drain",
+     "temp_c": null,
+     "time": "加凝乳酶后约 5 小时（随发酵剂活性变化）",
+     "ph": "5.1–5.3（可拉伸时）",
+     "note_zh": "凝乳在乳清下「熟化」到失去足够的钙、能被热水拉丝；然后放到台上沥干、切条。",
+     "note_en": "Curd ripens under whey until enough calcium is lost to stretch in hot water; then drained on tables and cut into strips.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "乳清下熟化约 5 小时",
+     "time_en": "~5 h ripening under whey",
+     "time_sec": 18000,
+     "ph_disp": "5.1–5.3",
+     "ph_num": 5.2
+    },
+    {
+     "step": "form",
+     "temp_c": "水 ≈90；凝乳芯温 ≈67–70",
+     "time": null,
+     "ph": "5.1–5.3",
+     "note_zh": "拉伸（filatura）：用沸腾或近沸的热水浇烫、揉拉凝乳，使蛋白纤维顺向排列；随后手工「掐」（mozzatura，名字由来）出一个个球。",
+     "note_en": "Stretching (filatura): curd is kneaded and stretched in boiling or near-boiling water so protein fibres align; then hand-pinched off (mozzatura, the source of the name) into balls.",
+     "temp_disp_zh": "水约 90 °C，芯温约 67–70 °C",
+     "temp_disp_en": "Water ~90 °C; curd core ~67–70 °C",
+     "temp_num": 90,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": "5.1–5.3",
+     "ph_num": 5.2
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "泡冷水定型后进盐水（研究工厂用 2% 与 5% NaCl 两种盐水）；可做天然烟熏款（affumicata）。",
+     "note_en": "Firmed in cold water then brined (the study plant used 2% and 5% NaCl brines); optional natural smoking ('affumicata').",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "ripen",
+     "temp_c": null,
+     "time": "不熟成，鲜食",
+     "ph": null,
+     "note_zh": "新鲜奶酪，泡在保存液中销售。",
+     "note_en": "Fresh cheese sold in its liquid; no ripening.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "不熟成，鲜食",
+     "time_en": "Not ripened; eaten fresh",
+     "time_sec": 0,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "不熟成（鲜食奶酪）",
+   "moisture_pct": "≤65（规范上限）",
+   "fat_pct": "干物质中脂肪 ≥52%（规范）",
+   "microbes_zh": "天然乳清发酵剂中的嗜热乳酸菌（嗜热链球菌、德氏乳杆菌、瑞士乳杆菌等）",
+   "flavor_zh": "鲜奶、微酸、淡淡麝香 / 青草气、咸",
+   "flavor_en": "Fresh milk, gentle lactic tang, slight musky / grassy note, salty.",
+   "texture_zh": "表面光滑如瓷，内部层层纤维，切开会流出奶白色乳清；有弹性、多汁",
+   "conf": "高",
+   "note": "规范只写「acqua bollente」（沸水），无数值；~90°C 水温、67–70°C 芯温、pH 5.1–5.3 来自 2008 年意大利食品安全杂志对工厂批次的实测。工业牛奶马苏里拉（NZIC）：33°C、pH 6.6→6.3、pH 5.9 排乳清、60–65°C 拉伸；Guelph：拉伸水 >70°C、凝乳芯 >50°C、pH 5.0–5.3。用户给的「~85°C 热水」落在这些区间内。",
+   "alt": "牛奶马苏里拉（fior di latte / 工业 low-moisture mozzarella）工艺与参数不同：可加柠檬酸直接酸化、机械拉伸，低水分型含水约 45–52%。",
+   "sources": [
+    {
+     "title": "Mozzarella di Bufala Campana DOP – disciplinare (ARSIAL scheda, 2025)",
+     "url": "https://www.arsial.it/wp-content/uploads/2025/06/MozzarellaBufalaCampanaDOP.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Italian Journal of Food Safety (2008) – microbiological study of Mozzarella di Bufala Campana production lots",
+     "url": "https://pagepressjournals.org/ijfs/article/download/ijfs.2008.4.39/965/5606",
+     "kind": "学术"
+    },
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Firm to Hard Cheese: Low Temperature: Provolone, Cheddar – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-3-firm-to-hard-cheese-low-temperature-provolone-cheddar/",
+     "kind": "学术"
+    }
+   ],
+   "name_short_zh": "水牛马苏里拉",
+   "name_short_en": "Mozzarella di Bufala",
+   "origin_en": "Campania and southern Lazio, Italy (plus other designated areas)",
+   "milk_en": "Whole fresh buffalo milk (raw, thermised or pasteurised), at least 7.2% fat and 4.2% protein",
+   "age_en": "Not ripened (fresh cheese)",
+   "texture_en": "Porcelain-smooth surface; layered fibres inside that weep milky whey when cut; springy and juicy",
+   "age_days_min": 0,
+   "age_days_max": 3
+  },
+  {
+   "id": "feta",
+   "name_zh": "菲达 Feta",
+   "name_en": "Feta PDO",
+   "family": "brined",
+   "origin": "希腊（马其顿、色雷斯、伊庇鲁斯、色萨利、中希腊、伯罗奔尼撒、莱斯沃斯等）",
+   "milk": "绵羊奶，或绵羊奶与山羊奶混合（山羊奶 ≤30%）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "山羊奶不得超过奶重的 30%。",
+     "note_en": "Goat's milk may not exceed 30% of milk weight.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "heat",
+     "temp_c": "72（工业配方）",
+     "time": "16 秒",
+     "ph": null,
+     "note_zh": "PDO 摘要未写热处理；希腊多数工厂巴氏杀菌，传统小作坊也有生乳。",
+     "note_en": "The PDO summary does not specify heat treatment; most Greek plants pasteurise.",
+     "temp_disp_zh": "72 °C（工业配方）",
+     "temp_disp_en": "72 °C (industrial recipe)",
+     "temp_num": 72,
+     "time_zh": "16 秒",
+     "time_en": "16 s",
+     "time_sec": 16,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": "30–31",
+     "time": "约 1 小时",
+     "ph": null,
+     "note_zh": "中温乳酸菌（传统用酸奶或乳清作发酵剂）。",
+     "note_en": "Mesophilic lactic cultures (traditionally yoghurt or whey).",
+     "temp_disp_zh": "30–31 °C",
+     "temp_disp_en": "30–31 °C",
+     "temp_num": 30.5,
+     "time_zh": "约 1 小时",
+     "time_en": "~1 h",
+     "time_sec": 3600,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": "30–31",
+     "time": "约 60 分钟（30–40 分钟凝结）",
+     "ph": null,
+     "note_zh": "凝乳时间比硬质奶酪长，凝块更软、保水更多。",
+     "note_en": "A longer set than hard cheeses gives a softer, wetter curd.",
+     "temp_disp_zh": "30–31 °C",
+     "temp_disp_en": "30–31 °C",
+     "temp_num": 30.5,
+     "time_zh": "约 60 分钟",
+     "time_en": "~60 min",
+     "time_sec": 3600,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "切成 7–15 mm 小块，搅拌约 20 分钟。",
+     "note_en": "Cut to 7–15 mm, stirred ~20 min.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "搅拌约 20 分钟",
+     "time_en": "Stirred ~20 min",
+     "time_sec": 1200,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "form",
+     "temp_c": "≈20（室温）",
+     "time": "入模后翻 4–6 次，过夜",
+     "ph": "<4.7（脱模）",
+     "note_zh": "入特制模具靠自重自然沥水，不压榨；脱模后切成约 10 cm 的块（希腊语 feta = 「切片」）。",
+     "note_en": "Ladled into moulds and drained by gravity, not pressed; demoulded and cut into blocks (Greek feta, 'slice').",
+     "temp_disp_zh": "≈20 °C（室温）",
+     "temp_disp_en": "≈20 °C (room temp)",
+     "temp_num": 20,
+     "time_zh": "翻面 4–6 次，过夜",
+     "time_en": "Turned 4–6×, overnight",
+     "time_sec": 57600,
+     "ph_disp": "<4.7",
+     "ph_num": 4.7
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": "干盐 24 小时",
+     "ph": "≈4.6（盐水）",
+     "note_zh": "表面撒干盐（教科书：50 g 盐 / kg 奶酪），再放入盐水：PDO 摘要写 7% NaCl，教科书配方 8% NaCl + 0.5% CaCl₂。",
+     "note_en": "Surface dry-salted (textbook: 50 g salt per kg), then into brine: 7% NaCl per the PDO summary, 8% NaCl + 0.5% CaCl₂ in the textbook recipe.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "干盐 24 小时",
+     "time_en": "Dry-salted 24 h",
+     "time_sec": 86400,
+     "ph_disp": "≈4.6",
+     "ph_num": 4.6
+    },
+    {
+     "step": "ripen",
+     "temp_c": "约 18 → 2–4",
+     "time": "约 18°C、RH ≥85% 熟成约 15 天；再冷藏，合计 ≥2 个月",
+     "ph": null,
+     "note_zh": "整块浸在盐水的桶或罐里熟成与销售。",
+     "note_en": "Ripened and sold submerged in brine in barrels or tins.",
+     "temp_disp_zh": "约 18 → 2–4 °C",
+     "temp_disp_en": "~18 → 2–4 °C",
+     "temp_num": 18,
+     "time_zh": "合计 ≥2 个月",
+     "time_en": "≥2 months in total",
+     "time_sec": 5184000,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "PDO 合计最少 2 个月（含约 15 天 18°C 预熟成）",
+   "moisture_pct": "≤55（教科书标准）；常见 ≈55",
+   "fat_pct": "≥22（教科书标准）；常见 ≈21–24",
+   "microbes_zh": "中温乳酸菌（乳球菌、乳杆菌），盐水中的耐盐乳酸菌与酵母",
+   "flavor_zh": "咸、清爽乳酸、羊奶的膻香与奶油感",
+   "flavor_en": "Salty, fresh lactic tang, ovine richness.",
+   "texture_zh": "白色无皮、易碎，带少量不规则小缝隙",
+   "conf": "中",
+   "note": "PDO 摘要原文温度显示为「180C」「2—40C」，应为 18°C 与 2–4°C（排版丢失度符号）。希腊 PDO 原始规范（部长决议 313025/1994）未直接取到，含水 / 脂肪数字取 Guelph 教科书与 USDA；希腊法规常被引述的上限为含水 ≤56%、干物质中脂肪 ≥43%（未核到原文）。",
+   "sources": [
+    {
+     "title": "Feta PDO – product specification summary (EU GI list, Australian DFAT consultation document)",
+     "url": "https://www.dfat.gov.au/sites/default/files/90f.docx",
+     "kind": "官方"
+    },
+    {
+     "title": "Soft-Ripened Cheese (Feta, Camembert, Blue) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-1-feta-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ],
+   "name_short_zh": "菲达",
+   "name_short_en": "Feta",
+   "origin_en": "Greece (Macedonia, Thrace, Epirus, Thessaly, Central Greece, Peloponnese, Lesbos and other areas)",
+   "milk_en": "Sheep's milk, or sheep's and goat's milk with goat at most 30%",
+   "age_en": "At least 2 months in total (PDO), including about 15 days of pre-ripening at ~18 °C",
+   "texture_en": "White, rindless and crumbly, with a few small irregular openings",
+   "age_days_min": 60,
+   "age_days_max": 180
+  },
+  {
+   "id": "epoisses",
+   "name_zh": "埃普瓦斯 Époisses",
+   "name_en": "Époisses PDO",
+   "family": "washed-rind",
+   "origin": "法国勃艮第埃普瓦斯村一带",
+   "milk": "牛奶，全脂（Brune、Montbéliarde、Simmental 种）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "全脂牛奶。",
+     "note_en": "Whole cow's milk.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "starter",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "乳酸菌占主导，奶慢慢酸化。",
+     "note_en": "Lactic cultures dominate.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "rennet",
+     "temp_c": null,
+     "time": "慢速乳酸凝乳 16–24 小时",
+     "ph": null,
+     "note_zh": "以乳酸凝乳为主、凝乳酶为辅——这是它软而易化的根源。",
+     "note_en": "Predominantly lactic (acid) coagulation with a little rennet, the root of its soft, melting body.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "乳酸凝乳 16–24 小时",
+     "time_en": "Lactic set 16–24 h",
+     "time_sec": 72000,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": "≥48 小时后脱模",
+     "ph": null,
+     "note_zh": "凝乳轻轻舀入模中自然沥水。",
+     "note_en": "Curd gently ladled into moulds to drain.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": "≥48 小时后脱模",
+     "time_en": "Unmoulded after ≥48 h",
+     "time_sec": 172800,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "脱模后撒干盐。",
+     "note_en": "Dry-salted after demoulding.",
+     "temp_disp_zh": null,
+     "temp_disp_en": null,
+     "temp_num": null,
+     "time_zh": null,
+     "time_en": null,
+     "time_sec": null,
+     "ph_disp": null,
+     "ph_num": null
+    },
+    {
+     "step": "ripen",
+     "temp_c": "≈15（洗皮通用参考）",
+     "time": "4–8 周；第 5 周起可售",
+     "ph": null,
+     "note_zh": "每周用水刷洗 1–3 次，水中逐步加入勃艮第果渣白兰地（Marc de Bourgogne）；潮湿、偏咸、近中性的表面让亚麻短杆菌（Brevibacterium linens）等「红色菌膜」生长，外皮变成橙红色并散发浓烈气味。",
+     "note_en": "Washed 1–3 times a week with water progressively enriched with Marc de Bourgogne; the moist, salty, near-neutral surface favours Brevibacterium linens and other smear bacteria, turning the rind orange-red and pungent.",
+     "temp_disp_zh": "≈15 °C（洗皮参考值）",
+     "temp_disp_en": "~15 °C (washed-rind ref.)",
+     "temp_num": 15,
+     "time_zh": "4–8 周",
+     "time_en": "4–8 weeks",
+     "time_sec": 3628800,
+     "ph_disp": null,
+     "ph_num": null
+    }
+   ],
+   "age": "4–8 周（第 5 周起可售）",
+   "moisture_pct": "≈50–55（家族典型值，推定）",
+   "fat_pct": "干物质中脂肪 ≥50%（常被引述的规范值，未核到原文）",
+   "microbes_zh": "乳酸菌；表面酵母（Debaryomyces hansenii、Geotrichum）先脱酸，随后 Brevibacterium linens、棒杆菌等红色菌膜",
+   "flavor_zh": "闻起来浓烈（牲口棚、肉味、硫味），吃起来出奇地咸鲜、奶油、带肉汤与微甜",
+   "flavor_en": "Pungent on the nose (barnyard, meaty, sulfurous) but savoury, creamy and brothy, even sweet, on the palate.",
+   "texture_zh": "橙红色湿润外皮，内部柔软到勺挖流淌",
+   "conf": "中",
+   "note": "INAO 规范原文未能读取（站点拒绝抓取），工艺取自产区厂家 Fromagerie Lincet 页面；洗皮的菌群演替（先酵母脱酸、后 B. linens）为教科书通识，Guelph 的 Brick 洗皮配方给出参考条件：约 15°C、RH 90–95%、每天用 3% 盐水刷洗 12–15 天。可替换为 Taleggio（规范可核）。",
+   "sources": [
+    {
+     "title": "Époisses PDO (Fromagerie Lincet)",
+     "url": "https://fromagerie-lincet.net/en/cheese/epoisses-pdo/",
+     "kind": "企业"
+    },
+    {
+     "title": "Semi-Hard Cheese — Washed (Gouda, Brick, Colby, Montasio) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-2-camembert-cheese/",
+     "kind": "学术"
+    }
+   ],
+   "name_short_zh": "埃普瓦斯",
+   "name_short_en": "Époisses",
+   "origin_en": "Around the village of Époisses, Burgundy, France",
+   "milk_en": "Whole cow's milk (Brune, Montbéliarde and Simmental breeds)",
+   "age_en": "4–8 weeks (on sale from the 5th week)",
+   "texture_en": "Sticky orange-red washed rind; soft interior that becomes spoonable and runny",
+   "age_days_min": 28,
+   "age_days_max": 56
+  }
+ ],
+ "families": [
+  {
+   "id": "fresh",
+   "zh": "新鲜奶酪",
+   "en": "Fresh cheese",
+   "def_zh": "不熟成或只放几天。多靠乳酸把奶酸化到 pH 4.6–4.8 凝固（夸克、奶油奶酪），或只用凝乳酶在天然 pH 凝固（鲜奶酪 queso fresco），或把奶加热到 75°C 以上再加酸使乳清蛋白一起沉淀（里科塔、印度 paneer）。含水 50–80%，保质期 2–4 周。",
+   "def_en": "Unripened or barely ripened. Set by lactic acid to pH 4.6–4.8 (quark, cream cheese), by rennet at milk's natural pH (queso fresco), or by heating milk above 75 °C and adding acid so whey proteins co-precipitate (ricotta, paneer). Moisture 50–80%; shelf life 2–4 weeks.",
+   "examples": [
+    "Ricotta",
+    "Fresh chèvre",
+    "Quark",
+    "Cream cheese",
+    "Queso fresco",
+    "Paneer",
+    "Burrata（拉伸外壳 + 奶油碎凝乳内馅）"
+   ],
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Families – Cheese Making Technology e-Book (A. Hill & M.A. Ferrer, University of Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/cheese-families/",
+     "kind": "学术"
+    }
+   ],
+   "short_zh": "新鲜",
+   "short_en": "Fresh"
+  },
+  {
+   "id": "soft-bloomy",
+   "zh": "软质白霉",
+   "en": "Soft, bloomy rind",
+   "def_zh": "凝乳几乎不切、不压，靠自重沥水，第二天 pH 约 4.3–4.6；表面喷或接种白色青霉（Penicillium camemberti）与地霉，霉菌消耗乳酸、使表层 pH 回升，奶酪由外向内变软。含水 45–60%，熟成 2–8 周。",
+   "def_en": "Curd is barely cut or pressed and drains by gravity, reaching pH ~4.3–4.6 the next day. White Penicillium camemberti and Geotrichum on the surface consume lactate and raise surface pH, so the cheese softens from the rind inward. Moisture 45–60%; ripened 2–8 weeks.",
+   "examples": [
+    "Camembert de Normandie",
+    "Brie de Meaux",
+    "Brillat-Savarin",
+    "Chaource"
+   ],
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Families – Cheese Making Technology e-Book (A. Hill & M.A. Ferrer, University of Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/cheese-families/",
+     "kind": "学术"
+    },
+    {
+     "title": "Soft-Ripened Cheese (Feta, Camembert, Blue) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-1-feta-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    }
+   ],
+   "short_zh": "白霉",
+   "short_en": "Bloomy"
+  },
+  {
+   "id": "washed-rind",
+   "zh": "洗皮",
+   "en": "Washed rind (smear-ripened)",
+   "def_zh": "熟成期间反复用盐水、啤酒、葡萄酒或白兰地刷洗外皮，保持表面潮湿、偏咸；先由酵母脱酸，再长出亚麻短杆菌（Brevibacterium linens）等「红色菌膜」，外皮橙红黏润、气味浓烈（硫化物、异戊酸），内里却常常柔和。",
+   "def_en": "The rind is repeatedly washed with brine, beer, wine or spirits, keeping it moist and salty; yeasts first deacidify it, then Brevibacterium linens and other smear bacteria colour it orange and sticky and give pungent sulfur and isovaleric notes, while the paste is often mild.",
+   "examples": [
+    "Époisses",
+    "Munster",
+    "Taleggio",
+    "Reblochon",
+    "Limburger",
+    "Livarot"
+   ],
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Semi-Hard Cheese — Washed (Gouda, Brick, Colby, Montasio) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-2-camembert-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Époisses PDO (Fromagerie Lincet)",
+     "url": "https://fromagerie-lincet.net/en/cheese/epoisses-pdo/",
+     "kind": "企业"
+    },
+    {
+     "title": "Cheese Flavor Wheel (Cheese Science Toolkit)",
+     "url": "https://www.cheesescience.org/wheel",
+     "kind": "二手"
+    },
+    {
+     "title": "Analyse sensorielle par famille fromagère (CNIEL, espace pédagogique produits-laitiers.com)",
+     "url": "https://merchandising.pedago.produits-laitiers.com/wp-content/uploads/2019/05/analyse-sensorielle-par-famille-fromagere.pdf",
+     "kind": "官方"
+    }
+   ],
+   "short_zh": "洗皮",
+   "short_en": "Washed rind"
+  },
+  {
+   "id": "semi-hard",
+   "zh": "半软 / 半硬（洗凝乳类）",
+   "en": "Semi-soft / semi-hard (washed curd)",
+   "def_zh": "凝乳在锅里用水「洗」，换掉部分乳清、带走乳糖，使最终 pH 停在 5.0–5.3 左右，质地柔韧、口味甜润。含水 40–50%，熟成 2 周到 9 个月以上；是品种最多的一大类。",
+   "def_en": "Curd is washed in the vat, replacing some whey with water to remove lactose so the final pH stays around 5.0–5.3, giving a supple, sweet cheese. Moisture 40–50%; ripened from 2 weeks to 9+ months; the largest, most diverse group.",
+   "examples": [
+    "Gouda",
+    "Edam",
+    "Havarti",
+    "Colby",
+    "Fontina",
+    "Saint-Nectaire（未煮压榨）"
+   ],
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Families – Cheese Making Technology e-Book (A. Hill & M.A. Ferrer, University of Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/cheese-families/",
+     "kind": "学术"
+    },
+    {
+     "title": "Semi-Hard Cheese — Washed (Gouda, Brick, Colby, Montasio) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-2-camembert-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Gouda Holland PGI – product specification (EU single document, Dutch submission)",
+     "url": "https://www.gob.mx/cms/uploads/attachment/file/245731/NL_Gouda_Holland.pdf",
+     "kind": "官方"
+    }
+   ],
+   "short_zh": "半硬",
+   "short_en": "Semi-hard"
+  },
+  {
+   "id": "hard-pressed",
+   "zh": "硬质 / 压榨",
+   "en": "Hard, pressed (uncooked or cooked)",
+   "def_zh": "凝乳切小、加热、压榨成大轮或大块，含水一般低于 40%。分两路：中温路线靠「堆酿」控制产酸（切达，含水 35–39%）；高温路线把凝乳煮到 46–55°C 迅速脱水（孔泰、格吕耶尔、埃曼塔，法国称 pâte pressée cuite）。熟成 1–36 个月。",
+   "def_en": "Small, heated curd pressed into large wheels or blocks, usually below 40% moisture. Two routes: mesophilic cheeses control acid by cheddaring (Cheddar, 35–39% moisture); cooked cheeses scald the curd to 46–55 °C for fast syneresis (Comté, Gruyère, Emmental — 'pâte pressée cuite'). Ripened 1–36 months.",
+   "examples": [
+    "Cheddar",
+    "Comté",
+    "Gruyère",
+    "Emmentaler",
+    "Manchego",
+    "Cantal"
+   ],
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Families – Cheese Making Technology e-Book (A. Hill & M.A. Ferrer, University of Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/cheese-families/",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'AOP « Comté » (INAO, version 2013)",
+     "url": "https://extranet.inao.gouv.fr/fichier/cdccomte.pdf",
+     "kind": "官方"
+    }
+   ],
+   "short_zh": "硬质",
+   "short_en": "Hard"
+  },
+  {
+   "id": "extra-hard",
+   "zh": "超硬（格拉纳类）",
+   "en": "Extra-hard (grana)",
+   "def_zh": "高温煮凝乳、长时间盐水浸泡、熟成一年以上，含水约 30%；蛋白水解深、游离氨基酸多，质地颗粒状、带酪氨酸结晶，多用于擦碎。",
+   "def_en": "High-cooked, long-brined and aged a year or more to about 30% moisture; extensive proteolysis and free amino acids give a granular texture with tyrosine crystals; often grated.",
+   "examples": [
+    "Parmigiano Reggiano",
+    "Grana Padano",
+    "Pecorino Romano",
+    "陈年 Gouda（荷兰称 overjarig，按质地常归此类）"
+   ],
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Families – Cheese Making Technology e-Book (A. Hill & M.A. Ferrer, University of Guelph, 2021)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/cheese-families/",
+     "kind": "学术"
+    },
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano – Product guide glossary (Consorzio)",
+     "url": "https://www.parmigianoreggiano.com/product-guide-glossary",
+     "kind": "官方"
+    }
+   ],
+   "short_zh": "超硬",
+   "short_en": "Extra-hard"
+  },
+  {
+   "id": "blue",
+   "zh": "蓝纹",
+   "en": "Blue-veined",
+   "def_zh": "奶或凝乳里加入 Penicillium roqueforti 孢子，凝乳不压、留缝，熟成时用针穿刺通气，霉菌沿缝隙和针孔长成蓝绿纹；霉菌的脂肪酶释放短链脂肪酸，再转化为甲基酮（如 2-庚酮），带来「蓝纹味」与辛辣感。",
+   "def_en": "Penicillium roqueforti is added to milk or curd; unpressed, open curd is pierced during ripening so the mould grows blue-green veins along gaps and needle holes. Its lipases release short-chain fatty acids that are turned into methyl ketones (e.g. 2-heptanone), the signature 'blue' sharpness.",
+   "examples": [
+    "Roquefort",
+    "Stilton",
+    "Gorgonzola",
+    "Bleu d'Auvergne",
+    "Cabrales"
+   ],
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Soft-Ripened Cheese (Feta, Camembert, Blue) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-1-feta-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'AOP « Roquefort » – projet soumis à PNO, 2025-11-19 (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCPNORoquefort-20251119.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Cheddar Lexicon (Cheese Science Toolkit), after Drake M.A. et al. (2001) Development of a descriptive language for Cheddar cheese. J. Food Science 66:1422–1427",
+     "url": "https://www.cheesescience.org/cheddarlexicon.html",
+     "kind": "二手"
+    }
+   ],
+   "short_zh": "蓝纹",
+   "short_en": "Blue"
+  },
+  {
+   "id": "pasta-filata",
+   "zh": "拉伸（帕斯塔菲拉塔）",
+   "en": "Pasta filata (stretched curd)",
+   "def_zh": "凝乳先酸化到约 pH 5.0–5.3（钙流失到恰好能拉丝），再在 70–90°C 热水里揉拉，蛋白纤维顺向排列、形成层层纤维。可鲜食（马苏里拉、布拉塔）也可熟成（波萝伏洛、卡丘卡瓦洛）。",
+   "def_en": "Curd is acidified to about pH 5.0–5.3, when just enough calcium has gone for it to stretch, then kneaded in 70–90 °C water so protein fibres align. Eaten fresh (Mozzarella, Burrata) or aged (Provolone, Caciocavallo).",
+   "examples": [
+    "Mozzarella di Bufala Campana",
+    "Fior di latte",
+    "Burrata",
+    "Provolone",
+    "Caciocavallo",
+    "Oaxaca"
+   ],
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Firm to Hard Cheese: Low Temperature: Provolone, Cheddar – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/8-3-firm-to-hard-cheese-low-temperature-provolone-cheddar/",
+     "kind": "学术"
+    },
+    {
+     "title": "Italian Journal of Food Safety (2008) – microbiological study of Mozzarella di Bufala Campana production lots",
+     "url": "https://pagepressjournals.org/ijfs/article/download/ijfs.2008.4.39/965/5606",
+     "kind": "学术"
+    },
+    {
+     "title": "Mozzarella di Bufala Campana DOP – disciplinare (ARSIAL scheda, 2025)",
+     "url": "https://www.arsial.it/wp-content/uploads/2025/06/MozzarellaBufalaCampanaDOP.pdf",
+     "kind": "官方"
+    }
+   ],
+   "short_zh": "拉伸",
+   "short_en": "Stretched"
+  },
+  {
+   "id": "brined",
+   "zh": "盐水奶酪",
+   "en": "Brined (white) cheese",
+   "def_zh": "凝乳装模自然沥水后切块、撒盐，再长期浸在盐水里熟成和保存，没有外皮，咸而微酸；巴尔干、中东、东地中海一带普遍。",
+   "def_en": "Moulded, drained curd is cut into blocks, salted and then ripened and kept submerged in brine; rindless, salty and tangy; widespread from the Balkans to the Middle East.",
+   "examples": [
+    "Feta",
+    "Halloumi（先煮后泡盐水）",
+    "土耳其 Beyaz peynir",
+    "保加利亚 Sirene",
+    "Domiati（埃及）"
+   ],
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Feta PDO – product specification summary (EU GI list, Australian DFAT consultation document)",
+     "url": "https://www.dfat.gov.au/sites/default/files/90f.docx",
+     "kind": "官方"
+    },
+    {
+     "title": "Soft-Ripened Cheese (Feta, Camembert, Blue) – Cheese Making Technology e-Book (U. Guelph)",
+     "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/16-1-feta-cheese/",
+     "kind": "学术"
+    }
+   ],
+   "short_zh": "盐水",
+   "short_en": "Brined"
+  }
+ ],
+ "wheel": {
+  "source": "维度骨架采用 Bérodier 等 1997 年《硬质与半硬质奶酪嗅觉-味觉评价指南》风味轮（欧盟 AIR-CT94-2039 项目，Agroscope 现行版：三层结构，第一层 8 族——乳香、植物、花香、果香、褐变 / 烘烤、动物、辛香、其他；第三层 71 个描述词）；具体描述词与参比化合物主要取自 Drake 等 2001 年切达风味词表（含参比物与化学参比）和 Cheese Science Toolkit 风味轮。为页面可读，把「其他」族拆成「霉菌·土壤」，并增设「味觉与口感」一环。",
+  "source_refs": [
+   {
+    "title": "Bérodier F., Lavanchy P., Zannoni M., Casals J., Herrero L., Adamo C. (1997) Guide d'évaluation olfacto-gustative des fromages à pâte dure et semi-dure. LWT – Food Science and Technology 30(7):653–664",
+    "url": "https://ira.agroscope.ch/de-CH/publication/10176",
+    "kind": "学术"
+   },
+   {
+    "title": "Aroma wheel for hard and semi-hard cheese (Agroscope; after Bérodier et al. 1997, EU programme AIR-CT94-2039)",
+    "url": "https://www.agroscope.admin.ch/agroscope/en/home/topics/food/sensory-analysis/milchprodukte--kaese/aromarad-kaese-und-milchprodukte.html",
+    "kind": "官方"
+   },
+   {
+    "title": "Cheddar Lexicon (Cheese Science Toolkit), after Drake M.A. et al. (2001) Development of a descriptive language for Cheddar cheese. J. Food Science 66:1422–1427",
+    "url": "https://www.cheesescience.org/cheddarlexicon.html",
+    "kind": "二手"
+   },
+   {
+    "title": "Cheese Flavor Wheel (Cheese Science Toolkit)",
+    "url": "https://www.cheesescience.org/wheel",
+    "kind": "二手"
+   }
+  ],
+  "alt": "孔泰行业协会另有专用香气轮：6 族（乳香、果香、植物、烘烤、动物、辛香）、83 个描述词，2014 年更新；例：乳香族有新鲜黄油、白巧克力、乳清，果香族有杏、蜂蜜、杏仁。",
+  "alt_sources": [
+   {
+    "title": "Comté Cheese Association Updates Aroma Wheel (culture magazine, 2014-04-08)",
+    "url": "https://culturecheesemag.com/cheese-bites/comte-cheese-association-updates-aroma-wheel/",
+    "kind": "媒体"
+   },
+   {
+    "title": "This Famous French Cheese Has 83 Official Descriptors (Food52, 2017-11-28)",
+    "url": "https://food52.com/blog/20433-about-comte-cheese-flavor-wheel",
+    "kind": "媒体"
+   }
+  ],
+  "axes": [
+   {
+    "id": "lactic",
+    "zh": "乳香",
+    "en": "Lactic / dairy",
+    "descriptors": [
+     {
+      "zh": "鲜奶 / 奶油",
+      "en": "Milky / fresh cream",
+      "example_cheese": "Mozzarella、Ricotta",
+      "compound": "δ-十二内酯等内酯（δ-dodecalactone）",
+      "example_en": "Mozzarella, Ricotta",
+      "compound_en": "Lactones (δ-dodecalactone)"
+     },
+     {
+      "zh": "黄油",
+      "en": "Buttery",
+      "example_cheese": "年轻 Gouda、Havarti",
+      "compound": "双乙酰（diacetyl）",
+      "example_en": "Young Gouda, Havarti",
+      "compound_en": "Diacetyl"
+     },
+     {
+      "zh": "乳清",
+      "en": "Whey",
+      "example_cheese": "Ricotta、鲜奶酪",
+      "compound": "新鲜乳清（参比物，无单一化合物）",
+      "example_en": "Ricotta, fresh cheeses",
+      "compound_en": "Fresh whey (reference material; no single compound)"
+     },
+     {
+      "zh": "熟牛奶",
+      "en": "Cooked milk",
+      "example_cheese": "Emmental、年轻 Comté",
+      "compound": "乳清蛋白受热释放的含硫化合物（巯基 / 二硫键）",
+      "example_en": "Emmental, young Comté",
+      "compound_en": "Sulfur compounds released from heated whey proteins (sulfhydryl / disulfide)"
+     },
+     {
+      "zh": "酸奶 / 酸乳",
+      "en": "Sour / yoghurt",
+      "example_cheese": "Feta、鲜山羊奶酪",
+      "compound": "乳酸、乙醛（acetaldehyde）",
+      "example_en": "Feta, fresh goat cheese",
+      "compound_en": "Lactic acid, acetaldehyde"
+     }
+    ],
+    "axis_desc_zh": "来自奶本身和乳酸菌发酵：内酯、双乙酰、乳酸，以及受热的乳蛋白。",
+    "axis_desc_en": "From the milk itself and lactic fermentation: lactones, diacetyl, lactic acid and heated milk proteins."
+   },
+   {
+    "id": "fruity",
+    "zh": "果香",
+    "en": "Fruity",
+    "descriptors": [
+     {
+      "zh": "菠萝 / 热带水果",
+      "en": "Pineapple / fruity ester",
+      "example_cheese": "Parmigiano Reggiano",
+      "compound": "己酸乙酯、丁酸乙酯（ethyl hexanoate, ethyl butyrate）",
+      "example_en": "Parmigiano Reggiano",
+      "compound_en": "Ethyl hexanoate, ethyl butyrate"
+     },
+     {
+      "zh": "杏 / 干果",
+      "en": "Apricot / dried fruit",
+      "example_cheese": "陈年 Comté",
+      "compound": "酯类与内酯（未指认单一化合物）",
+      "example_en": "Aged Comté",
+      "compound_en": "Esters and lactones (no single compound named)"
+     }
+    ],
+    "axis_desc_zh": "主要是熟成时脂肪酸与醇结合生成的酯类，久熟的意式硬质奶酪最常见。",
+    "axis_desc_en": "Mainly esters formed from fatty acids and alcohols during ripening, most typical of long-aged Italian hard cheeses."
+   },
+   {
+    "id": "floral",
+    "zh": "花香",
+    "en": "Floral",
+    "descriptors": [
+     {
+      "zh": "玫瑰",
+      "en": "Rosy",
+      "example_cheese": "陈年 Gouda、部分陈年切达",
+      "compound": "2-苯乙醇（2-phenylethanol）及相关酯",
+      "example_en": "Aged Gouda, some aged Cheddars",
+      "compound_en": "2-Phenylethanol and related esters"
+     },
+     {
+      "zh": "蜂蜜",
+      "en": "Honey",
+      "example_cheese": "Comté、Gruyère",
+      "compound": "未指认单一化合物（苯乙醛常被提及，未单独核源）",
+      "example_en": "Comté, Gruyère",
+      "compound_en": "No single compound named (phenylacetaldehyde often cited; not verified)"
+     }
+    ],
+    "axis_desc_zh": "氨基酸分解产生的苯乙醇等芳香醇，以及牧草带进奶里的香气。",
+    "axis_desc_en": "Aromatic alcohols such as 2-phenylethanol from amino-acid breakdown, plus aromas carried into the milk from forage."
+   },
+   {
+    "id": "brown",
+    "zh": "坚果 · 焦糖 · 烘烤",
+    "en": "Nutty / caramel / roasted (brown)",
+    "descriptors": [
+     {
+      "zh": "坚果 / 榛子",
+      "en": "Nutty / hazelnut",
+      "example_cheese": "Emmental、Comté、陈年切达",
+      "compound": "丙酸与氨基酸降解产物（文献常提 2-/3-甲基丁醛等 Strecker 醛，未单独核源）",
+      "example_en": "Emmental, Comté, aged Cheddar",
+      "compound_en": "Propionic acid and amino-acid breakdown products (Strecker aldehydes such as 2-/3-methylbutanal often cited; not verified)"
+     },
+     {
+      "zh": "焦糖 / 奶油糖",
+      "en": "Caramel / butterscotch",
+      "example_cheese": "陈年 Gouda",
+      "compound": "呋喃酮（furaneol, homofuraneol）",
+      "example_en": "Aged Gouda",
+      "compound_en": "Furaneol, homofuraneol"
+     },
+     {
+      "zh": "肉汤",
+      "en": "Brothy",
+      "example_cheese": "陈年切达、Parmigiano Reggiano",
+      "compound": "甲硫基丙醛（methional）",
+      "example_en": "Aged Cheddar, Parmigiano Reggiano",
+      "compound_en": "Methional"
+     },
+     {
+      "zh": "烘烤",
+      "en": "Roasted",
+      "example_cheese": "久熟 Comté、陈年 Gouda",
+      "compound": "美拉德反应产物（吡嗪类为常见代表，未单独核源）",
+      "example_en": "Long-aged Comté, aged Gouda",
+      "compound_en": "Maillard reaction products (pyrazines typical; not verified)"
+     }
+    ],
+    "axis_desc_zh": "蛋白水解释放的氨基酸、丙酸发酵和美拉德反应，随熟成越来越明显。",
+    "axis_desc_en": "Amino acids released by proteolysis, propionic fermentation and Maillard reactions, growing stronger with age."
+   },
+   {
+    "id": "vegetal",
+    "zh": "植物",
+    "en": "Vegetal",
+    "descriptors": [
+     {
+      "zh": "青草 / 干草",
+      "en": "Grassy / hay",
+      "example_cheese": "夏季高山奶酪（Comté d'été、Beaufort）",
+      "compound": "己醛等醛类（hexanal）",
+      "example_en": "Summer Alpine cheeses (summer Comté, Beaufort)",
+      "compound_en": "Aldehydes such as hexanal"
+     },
+     {
+      "zh": "青椒 / 青菜",
+      "en": "Green",
+      "example_cheese": "部分生乳奶酪",
+      "compound": "甲氧基吡嗪（methoxypyrazine）",
+      "example_en": "Some raw-milk cheeses",
+      "compound_en": "Methoxypyrazine"
+     },
+     {
+      "zh": "洋葱 / 大蒜",
+      "en": "Onion / garlic",
+      "example_cheese": "洗皮奶酪、陈年切达（偶见）",
+      "compound": "含硫化合物（硫代亚磺酸酯等）",
+      "example_en": "Washed-rind cheeses, occasionally aged Cheddar",
+      "compound_en": "Sulfur compounds (thiosulfinates)"
+     }
+    ],
+    "axis_desc_zh": "多半来自牧草和饲料带进奶里的醛类、吡嗪与含硫物质。",
+    "axis_desc_en": "Mostly aldehydes, pyrazines and sulfur compounds carried into the milk from pasture and feed."
+   },
+   {
+    "id": "animal",
+    "zh": "动物",
+    "en": "Animal",
+    "descriptors": [
+     {
+      "zh": "牛棚 / 牲口",
+      "en": "Cowy / barnyard",
+      "example_cheese": "农场切达、部分蓝纹",
+      "compound": "对甲酚（p-cresol）",
+      "example_en": "Farmhouse Cheddar, some blues",
+      "compound_en": "p-Cresol"
+     },
+     {
+      "zh": "山羊膻",
+      "en": "Goaty",
+      "example_cheese": "山羊奶酪（chèvre）",
+      "compound": "中链与支链脂肪酸（辛酸 caprylic acid 等）",
+      "example_en": "Goat's milk cheeses (chèvre)",
+      "compound_en": "Medium- and branched-chain fatty acids (e.g. caprylic acid)"
+     },
+     {
+      "zh": "羊毛 / 绵羊",
+      "en": "Sheepy / lanolin",
+      "example_cheese": "Manchego、Roquefort",
+      "compound": "脂肪酸组成与酚类化合物",
+      "example_en": "Manchego, Roquefort",
+      "compound_en": "Fatty-acid profile and phenolic compounds"
+     },
+     {
+      "zh": "汗味 / 脚味",
+      "en": "Sweaty",
+      "example_cheese": "洗皮奶酪（Époisses、Munster）",
+      "compound": "异戊酸（isovaleric acid）",
+      "example_en": "Washed-rind cheeses (Époisses, Munster)",
+      "compound_en": "Isovaleric acid"
+     },
+     {
+      "zh": "硫 / 煮鸡蛋",
+      "en": "Sulfur",
+      "example_cheese": "洗皮奶酪、陈年切达",
+      "compound": "硫化氢、甲硫醇（H₂S, methanethiol）",
+      "example_en": "Washed-rind cheeses, aged Cheddar",
+      "compound_en": "Hydrogen sulfide, methanethiol"
+     },
+     {
+      "zh": "丁酸 / 酸败",
+      "en": "Butyric",
+      "example_cheese": "Provolone、Parmigiano Reggiano",
+      "compound": "丁酸（butyric acid）",
+      "example_en": "Provolone, Parmigiano Reggiano",
+      "compound_en": "Butyric acid"
+     },
+     {
+      "zh": "氨",
+      "en": "Ammonia",
+      "example_cheese": "熟过头的 Camembert、洗皮奶酪",
+      "compound": "氨（蛋白与氨基酸脱氨）",
+      "example_en": "Over-ripe Camembert, washed-rind cheeses",
+      "compound_en": "Ammonia (deamination of proteins and amino acids)"
+     }
+    ],
+    "axis_desc_zh": "山羊、绵羊奶的中链与支链脂肪酸，含硫氨基酸的分解物，以及洗皮菌膜的代谢产物。",
+    "axis_desc_en": "Medium- and branched-chain fatty acids of goat and sheep milk, breakdown products of sulfur amino acids, and metabolites of washed-rind smear bacteria."
+   },
+   {
+    "id": "mould",
+    "zh": "霉菌 · 土壤",
+    "en": "Mould / earthy",
+    "descriptors": [
+     {
+      "zh": "蘑菇",
+      "en": "Mushroom",
+      "example_cheese": "Camembert、Brie",
+      "compound": "1-辛烯-3-醇（1-octen-3-ol）",
+      "example_en": "Camembert, Brie",
+      "compound_en": "1-Octen-3-ol"
+     },
+     {
+      "zh": "蓝纹 / 酮味",
+      "en": "Blue / ketone",
+      "example_cheese": "Roquefort、Stilton、Gorgonzola",
+      "compound": "甲基酮（2-庚酮、2-壬酮；参比用 2-辛酮）",
+      "example_en": "Roquefort, Stilton, Gorgonzola",
+      "compound_en": "Methyl ketones (2-heptanone, 2-nonanone; 2-octanone as reference)"
+     },
+     {
+      "zh": "泥土 / 地窖",
+      "en": "Earthy / cellar",
+      "example_cheese": "天然外皮与洞穴熟成奶酪",
+      "compound": "土臭素（geosmin）、2-甲基异莰醇",
+      "example_en": "Natural-rind and cave-aged cheeses",
+      "compound_en": "Geosmin, 2-methylisoborneol"
+     },
+     {
+      "zh": "霉味",
+      "en": "Musty",
+      "example_cheese": "天然外皮奶酪的外皮",
+      "compound": "2,4,6-三甲氧基苯甲醛等；土臭素",
+      "example_en": "Rinds of natural-rind cheeses",
+      "compound_en": "2,4,6-Trimethoxybenzaldehyde; geosmin"
+     }
+    ],
+    "axis_desc_zh": "白霉、蓝纹青霉和洞穴环境：辛烯醇、甲基酮、土臭素。",
+    "axis_desc_en": "White and blue moulds and cave environments: octenol, methyl ketones and geosmin."
+   },
+   {
+    "id": "spicy",
+    "zh": "辛香 · 刺激",
+    "en": "Spicy / pungent",
+    "descriptors": [
+     {
+      "zh": "胡椒 / 肉桂",
+      "en": "Pepper / cinnamon",
+      "example_cheese": "洗皮奶酪（Époisses、Munster）、干熟山羊奶酪",
+      "compound": "多种（未指认单一化合物）",
+      "example_en": "Washed-rind cheeses (Époisses, Munster), dry-aged goat cheese",
+      "compound_en": "Various (no single compound named)"
+     },
+     {
+      "zh": "辛辣 / 刺口",
+      "en": "Burn / bite",
+      "example_cheese": "Roquefort、久熟生乳奶酪",
+      "compound": "游离短链脂肪酸、组胺等胺类",
+      "example_en": "Roquefort, long-aged raw-milk cheeses",
+      "compound_en": "Free short-chain fatty acids; histamine and other amines"
+     },
+     {
+      "zh": "麻刺感",
+      "en": "Prickle",
+      "example_cheese": "气孔多的年轻奶酪（偶见）",
+      "compound": "溶解 CO₂（参比物：苏打水）",
+      "example_en": "Young cheeses with many eyes (occasionally)",
+      "compound_en": "Dissolved CO₂ (reference: soda water)"
+     }
+    ],
+    "axis_desc_zh": "游离短链脂肪酸和胺类带来的刺口感，以及洗皮与干熟奶酪的香料样气味。",
+    "axis_desc_en": "The bite of free short-chain fatty acids and amines, plus spice-like aromas of washed-rind and dry-aged cheeses."
+   },
+   {
+    "id": "taste",
+    "zh": "味觉与口感",
+    "en": "Taste & mouthfeel",
+    "descriptors": [
+     {
+      "zh": "咸",
+      "en": "Salty",
+      "example_cheese": "Feta、Roquefort、Pecorino Romano",
+      "compound": "氯化钠",
+      "example_en": "Feta, Roquefort, Pecorino Romano",
+      "compound_en": "Sodium chloride"
+     },
+     {
+      "zh": "鲜",
+      "en": "Umami",
+      "example_cheese": "Parmigiano Reggiano",
+      "compound": "谷氨酸",
+      "example_en": "Parmigiano Reggiano",
+      "compound_en": "Glutamate"
+     },
+     {
+      "zh": "甜",
+      "en": "Sweet",
+      "example_cheese": "Emmental、陈年 Gouda",
+      "compound": "脯氨酸等游离氨基酸（Emmental 中推测）",
+      "example_en": "Emmental, aged Gouda",
+      "compound_en": "Free amino acids such as proline (suspected in Emmental)"
+     },
+     {
+      "zh": "苦",
+      "en": "Bitter",
+      "example_cheese": "过度蛋白水解的奶酪",
+      "compound": "苦味肽",
+      "example_en": "Over-proteolysed cheeses",
+      "compound_en": "Bitter peptides"
+     },
+     {
+      "zh": "酸",
+      "en": "Sour",
+      "example_cheese": "Feta、鲜山羊奶酪",
+      "compound": "乳酸",
+      "example_en": "Feta, fresh goat cheese",
+      "compound_en": "Lactic acid"
+     },
+     {
+      "zh": "沙沙的结晶",
+      "en": "Crunchy crystals",
+      "example_cheese": "Parmigiano Reggiano（约 18 个月起）、陈年 Gouda",
+      "compound": "酪氨酸结晶（tyrosine）；切达外表的白色结晶多为乳酸钙",
+      "example_en": "Parmigiano Reggiano (from ~18 months), aged Gouda",
+      "compound_en": "Tyrosine crystals; white crystals on Cheddar are mostly calcium lactate"
+     },
+     {
+      "zh": "涩",
+      "en": "Astringent",
+      "example_cheese": "高酸或用代盐的奶酪",
+      "compound": "金属离子、高酸度",
+      "example_en": "High-acid or salt-replacer cheeses",
+      "compound_en": "Metal ions, high acidity"
+     }
+    ],
+    "axis_desc_zh": "盐、乳酸，蛋白水解生成的氨基酸与肽，以及酪氨酸结晶等口腔触感。",
+    "axis_desc_en": "Salt, lactic acid, amino acids and peptides from proteolysis, and textures such as tyrosine crystals."
+   }
+  ],
+  "conf": "中",
+  "note": "Bérodier 原轮的 71 个第三层描述词清单未能直接读到（Agroscope 页面只给族名与层级）；此处每个描述词的化合物取自 Drake 2001 词表的化学参比（经 Cheese Science Toolkit 转录）与 Toolkit 风味轮条目，example_cheese 一部分直接来自 Toolkit（如蘑菇-Brie、焦糖-陈年 Gouda、汗味-洗皮），其余按家族推定。胡椒 / 肉桂取自 CNIEL 对洗皮奶酪的描述。乳酸钙结晶一说未单独核源。"
+ },
+ "spectrum": [
+  {
+   "cheese": "Ricotta 里科塔",
+   "x_intensity_1_10": 1,
+   "y_texture_1_10": 1,
+   "milk": "牛 / 羊 / 水牛乳清",
+   "family": "fresh",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA 全脂里科塔含水 ≈72%",
+   "id": "ricotta",
+   "name_zh": "里科塔",
+   "name_en": "Ricotta",
+   "origin_zh": "意大利",
+   "origin_en": "Italy",
+   "milk_tags": [
+    "cow",
+    "sheep",
+    "buffalo"
+   ],
+   "note_zh": "乳清再加热凝成的软絮，清甜奶香",
+   "note_en": "Soft curds from reheated whey; sweet and milky",
+   "pair_zh": "蜂巢蜜 + 松子",
+   "pair_en": "Honeycomb + pine nuts"
+  },
+  {
+   "cheese": "Burrata 布拉塔",
+   "x_intensity_1_10": 2,
+   "y_texture_1_10": 1,
+   "milk": "牛 / 水牛",
+   "family": "pasta-filata",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；内馅为奶油与碎凝乳",
+   "id": "burrata",
+   "name_zh": "布拉塔",
+   "name_en": "Burrata",
+   "origin_zh": "意大利普利亚",
+   "origin_en": "Apulia, Italy",
+   "milk_tags": [
+    "cow",
+    "buffalo"
+   ],
+   "note_zh": "拉伸外壳裹着奶油与碎凝乳，切开即流",
+   "note_en": "Stretched-curd pouch of cream and shreds; oozes when cut",
+   "pair_zh": null,
+   "pair_en": null
+  },
+  {
+   "cheese": "Mozzarella di Bufala 水牛马苏里拉",
+   "x_intensity_1_10": 2,
+   "y_texture_1_10": 3,
+   "milk": "水牛",
+   "family": "pasta-filata",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；规范含水上限 65%，纤维有弹性故质地高于含水推算",
+   "id": "mozzarella-bufala",
+   "name_zh": "水牛马苏里拉",
+   "name_en": "Mozzarella di Bufala Campana",
+   "origin_zh": "意大利坎帕尼亚",
+   "origin_en": "Campania, Italy",
+   "milk_tags": [
+    "buffalo"
+   ],
+   "note_zh": "瓷白光滑、层层纤维，鲜奶微酸多汁",
+   "note_en": "Porcelain-smooth and layered; fresh, lightly tangy, juicy",
+   "pair_zh": null,
+   "pair_en": null
+  },
+  {
+   "cheese": "Fresh chèvre 鲜山羊奶酪",
+   "x_intensity_1_10": 3,
+   "y_texture_1_10": 2,
+   "milk": "山羊",
+   "family": "fresh",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA 软山羊奶酪含水 ≈61%",
+   "id": "fresh-chevre",
+   "name_zh": "鲜山羊奶酪",
+   "name_en": "Fresh chèvre",
+   "origin_zh": "法国卢瓦尔河谷等地",
+   "origin_en": "Loire Valley, France, and elsewhere",
+   "milk_tags": [
+    "goat"
+   ],
+   "note_zh": "柔软微酸，带柠檬与青草感",
+   "note_en": "Soft and tangy, lemony and herbal",
+   "pair_zh": "长相思（桑塞尔）",
+   "pair_en": "Sauvignon Blanc (Sancerre)"
+  },
+  {
+   "cheese": "Brillat-Savarin 布里亚-萨瓦兰（三倍奶油）",
+   "x_intensity_1_10": 3,
+   "y_texture_1_10": 2,
+   "milk": "牛",
+   "family": "soft-bloomy",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；高脂、熟成短",
+   "id": "brillat-savarin",
+   "name_zh": "布里亚-萨瓦兰",
+   "name_en": "Brillat-Savarin",
+   "origin_zh": "法国",
+   "origin_en": "France",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "三倍奶油，黄油般浓滑，微酸",
+   "note_en": "Triple-cream, butter-rich, lightly tangy",
+   "pair_zh": "蜂巢蜜",
+   "pair_en": "Honeycomb"
+  },
+  {
+   "cheese": "Brie 布里",
+   "x_intensity_1_10": 4,
+   "y_texture_1_10": 2,
+   "milk": "牛",
+   "family": "soft-bloomy",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA 含水 ≈48%，由外向内软化",
+   "id": "brie",
+   "name_zh": "布里",
+   "name_en": "Brie",
+   "origin_zh": "法国法兰西岛（莫城一带）",
+   "origin_en": "Île-de-France, France (around Meaux)",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "白霉外皮下柔软，奶油与蘑菇香",
+   "note_en": "Soft under a white rind; creamy and mushroomy",
+   "pair_zh": "香槟",
+   "pair_en": "Champagne"
+  },
+  {
+   "cheese": "Camembert de Normandie 诺曼底卡芒贝尔",
+   "x_intensity_1_10": 6,
+   "y_texture_1_10": 2,
+   "milk": "牛（生乳）",
+   "family": "soft-bloomy",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；含水 ≤54%（规范推算），生乳款比巴氏杀菌款浓",
+   "id": "camembert",
+   "name_zh": "诺曼底卡芒贝尔",
+   "name_en": "Camembert de Normandie",
+   "origin_zh": "法国诺曼底",
+   "origin_en": "Normandy, France",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "生乳的蘑菇与白菜气，熟透软滑",
+   "note_en": "Raw-milk mushroom and cabbage notes; soft when ripe",
+   "pair_zh": "诺曼底苹果酒",
+   "pair_en": "Normandy cidre"
+  },
+  {
+   "cheese": "Feta 菲达",
+   "x_intensity_1_10": 5,
+   "y_texture_1_10": 4,
+   "milk": "绵羊（+≤30% 山羊）",
+   "family": "brined",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA 含水 ≈55%，易碎；咸度高拉高强度",
+   "id": "feta",
+   "name_zh": "菲达",
+   "name_en": "Feta",
+   "origin_zh": "希腊",
+   "origin_en": "Greece",
+   "milk_tags": [
+    "sheep",
+    "goat"
+   ],
+   "note_zh": "泡在盐水里的白奶酪，咸酸易碎",
+   "note_en": "Brine-kept white cheese; salty, tangy, crumbly",
+   "pair_zh": "比利时白啤",
+   "pair_en": "Belgian witbier"
+  },
+  {
+   "cheese": "Halloumi 哈罗米",
+   "x_intensity_1_10": 3,
+   "y_texture_1_10": 5,
+   "milk": "绵羊 / 山羊 / 牛",
+   "family": "brined",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；先煮后泡盐水，质地紧实有咯吱感",
+   "id": "halloumi",
+   "name_zh": "哈罗米",
+   "name_en": "Halloumi",
+   "origin_zh": "塞浦路斯",
+   "origin_en": "Cyprus",
+   "milk_tags": [
+    "sheep",
+    "goat",
+    "cow"
+   ],
+   "note_zh": "先煮后泡盐水，紧实有咯吱感、咸",
+   "note_en": "Cooked then brined; firm, squeaky and salty",
+   "pair_zh": null,
+   "pair_en": null
+  },
+  {
+   "cheese": "Havarti 哈瓦蒂",
+   "x_intensity_1_10": 2,
+   "y_texture_1_10": 4,
+   "milk": "牛",
+   "family": "semi-hard",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；洗凝乳、熟成短",
+   "id": "havarti",
+   "name_zh": "哈瓦蒂",
+   "name_en": "Havarti",
+   "origin_zh": "丹麦",
+   "origin_en": "Denmark",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "柔软、奶油感、温和",
+   "note_en": "Soft, creamy and mild",
+   "pair_zh": "普罗旺斯桃红",
+   "pair_en": "Provence rosé"
+  },
+  {
+   "cheese": "Young Gouda 年轻高达（约 4–8 周）",
+   "x_intensity_1_10": 3,
+   "y_texture_1_10": 5,
+   "milk": "牛",
+   "family": "semi-hard",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；PGI 含水 ≤42.5%（第 12 天）",
+   "id": "young-gouda",
+   "name_zh": "年轻高达",
+   "name_en": "Young Gouda",
+   "origin_zh": "荷兰",
+   "origin_en": "Netherlands",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "黄油奶香，柔韧带少量小孔",
+   "note_en": "Buttery and milky; supple, a few small eyes",
+   "pair_zh": null,
+   "pair_en": null
+  },
+  {
+   "cheese": "Fontina Val d'Aosta 芳提娜",
+   "x_intensity_1_10": 5,
+   "y_texture_1_10": 5,
+   "milk": "牛（生乳）",
+   "family": "semi-hard",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA Fontina 含水 ≈38%，但质地柔软",
+   "id": "fontina",
+   "name_zh": "芳提娜",
+   "name_en": "Fontina Val d'Aosta",
+   "origin_zh": "意大利瓦莱达奥斯塔",
+   "origin_en": "Aosta Valley, Italy",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "柔软、奶油感，带坚果味",
+   "note_en": "Soft, creamy and nutty",
+   "pair_zh": "绿茶",
+   "pair_en": "Green tea"
+  },
+  {
+   "cheese": "Reblochon 瑞布罗申",
+   "x_intensity_1_10": 5,
+   "y_texture_1_10": 3,
+   "milk": "牛（生乳）",
+   "family": "washed-rind",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；洗皮但较温和",
+   "id": "reblochon",
+   "name_zh": "瑞布罗申",
+   "name_en": "Reblochon",
+   "origin_zh": "法国萨瓦",
+   "origin_en": "Savoie, France",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "温和的洗皮，柔软带坚果奶油香",
+   "note_en": "A mild washed rind; soft, nutty and creamy",
+   "pair_zh": null,
+   "pair_en": null
+  },
+  {
+   "cheese": "Taleggio 塔雷吉欧",
+   "x_intensity_1_10": 6,
+   "y_texture_1_10": 3,
+   "milk": "牛",
+   "family": "washed-rind",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表",
+   "id": "taleggio",
+   "name_zh": "塔雷吉欧",
+   "name_en": "Taleggio",
+   "origin_zh": "意大利伦巴第",
+   "origin_en": "Lombardy, Italy",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "橙色湿润外皮，内里柔软咸鲜带果香",
+   "note_en": "Moist orange rind; soft, savoury, fruity paste",
+   "pair_zh": "意式芥末水果酱（mostarda）",
+   "pair_en": "Mostarda"
+  },
+  {
+   "cheese": "Munster 蒙斯特",
+   "x_intensity_1_10": 8,
+   "y_texture_1_10": 3,
+   "milk": "牛",
+   "family": "washed-rind",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA Muenster（美式）含水 ≈42%，与阿尔萨斯 Munster 不同",
+   "id": "munster",
+   "name_zh": "蒙斯特",
+   "name_en": "Munster",
+   "origin_zh": "法国阿尔萨斯–孚日",
+   "origin_en": "Alsace–Vosges, France",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "外皮气味浓烈，内里柔滑带香料感",
+   "note_en": "Pungent rind; supple paste with spicy notes",
+   "pair_zh": "起泡酒",
+   "pair_en": "Sparkling wine"
+  },
+  {
+   "cheese": "Époisses 埃普瓦斯",
+   "x_intensity_1_10": 9,
+   "y_texture_1_10": 1,
+   "milk": "牛",
+   "family": "washed-rind",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；乳酸凝乳、洗皮，熟透可用勺挖",
+   "id": "epoisses",
+   "name_zh": "埃普瓦斯",
+   "name_en": "Époisses",
+   "origin_zh": "法国勃艮第",
+   "origin_en": "Burgundy, France",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "橙红洗皮气味冲，入口咸鲜可勺挖",
+   "note_en": "Pungent orange rind; savoury, spoonable paste",
+   "pair_zh": "勃艮第霞多丽",
+   "pair_en": "White Burgundy (Chardonnay)"
+  },
+  {
+   "cheese": "Gorgonzola dolce 甜味戈贡佐拉",
+   "x_intensity_1_10": 6,
+   "y_texture_1_10": 2,
+   "milk": "牛",
+   "family": "blue",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表",
+   "id": "gorgonzola-dolce",
+   "name_zh": "甜味戈贡佐拉",
+   "name_en": "Gorgonzola dolce",
+   "origin_zh": "意大利皮埃蒙特、伦巴第",
+   "origin_en": "Piedmont & Lombardy, Italy",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "柔软奶油感的温和蓝纹",
+   "note_en": "Soft, creamy, mild blue",
+   "pair_zh": "莫斯卡托阿斯蒂",
+   "pair_en": "Moscato d'Asti"
+  },
+  {
+   "cheese": "Stilton 斯蒂尔顿",
+   "x_intensity_1_10": 8,
+   "y_texture_1_10": 5,
+   "milk": "牛",
+   "family": "blue",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA Blue 含水 ≈42%",
+   "id": "stilton",
+   "name_zh": "斯蒂尔顿",
+   "name_en": "Stilton",
+   "origin_zh": "英国德比郡、莱斯特郡、诺丁汉郡",
+   "origin_en": "Derbyshire, Leicestershire & Nottinghamshire, England",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "咸、辛、复杂，湿润略易碎",
+   "note_en": "Salty, pungent, complex; moist and slightly crumbly",
+   "pair_zh": "陈年波特",
+   "pair_en": "Aged Port"
+  },
+  {
+   "cheese": "Roquefort 洛克福",
+   "x_intensity_1_10": 9,
+   "y_texture_1_10": 4,
+   "milk": "绵羊（生乳）",
+   "family": "blue",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；规范含水 ≤45%（USDA ≈39%），甲基酮与盐带来高强度",
+   "id": "roquefort",
+   "name_zh": "洛克福",
+   "name_en": "Roquefort",
+   "origin_zh": "法国阿韦龙",
+   "origin_en": "Aveyron, France",
+   "milk_tags": [
+    "sheep"
+   ],
+   "note_zh": "羊奶油润配蓝纹辛辣，咸",
+   "note_en": "Rich ewe's milk with a sharp blue bite; salty",
+   "pair_zh": "苏玳甜白",
+   "pair_en": "Sauternes"
+  },
+  {
+   "cheese": "Mild Cheddar 温和切达（约 3 个月）",
+   "x_intensity_1_10": 3,
+   "y_texture_1_10": 6,
+   "milk": "牛",
+   "family": "hard-pressed",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA 含水 ≈37%",
+   "id": "mild-cheddar",
+   "name_zh": "温和切达",
+   "name_en": "Mild Cheddar",
+   "origin_zh": "起源于英国萨默塞特",
+   "origin_en": "Originally Somerset, England",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "奶香黄油、温和平滑",
+   "note_en": "Milky, buttery, mild and smooth",
+   "pair_zh": null,
+   "pair_en": null
+  },
+  {
+   "cheese": "Aged Cheddar 陈年切达（≥2 年）",
+   "x_intensity_1_10": 8,
+   "y_texture_1_10": 7,
+   "milk": "牛",
+   "family": "hard-pressed",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；久熟含水更低、带结晶",
+   "id": "aged-cheddar",
+   "name_zh": "陈年切达",
+   "name_en": "Aged Cheddar",
+   "origin_zh": "起源于英国萨默塞特",
+   "origin_en": "Originally Somerset, England",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "尖锐、坚果与肉汤味，带结晶",
+   "note_en": "Sharp, nutty and brothy, with crystals",
+   "pair_zh": "赤霞珠",
+   "pair_en": "Cabernet Sauvignon"
+  },
+  {
+   "cheese": "Emmentaler 埃曼塔",
+   "x_intensity_1_10": 4,
+   "y_texture_1_10": 6,
+   "milk": "牛（AOP 生乳）",
+   "family": "hard-pressed",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA Swiss 含水 ≈37%，有弹性",
+   "id": "emmentaler",
+   "name_zh": "埃曼塔",
+   "name_en": "Emmentaler",
+   "origin_zh": "瑞士伯尔尼州",
+   "origin_en": "Canton of Bern, Switzerland",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "甜、坚果味，弹性带大圆孔",
+   "note_en": "Sweet and nutty; elastic with large round eyes",
+   "pair_zh": "多数葡萄酒皆宜",
+   "pair_en": "Suits most wines"
+  },
+  {
+   "cheese": "Comté 孔泰（12 个月）",
+   "x_intensity_1_10": 6,
+   "y_texture_1_10": 7,
+   "milk": "牛（生乳）",
+   "family": "hard-pressed",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；规范含水 ≤38%",
+   "id": "comte-12",
+   "name_zh": "孔泰（12 个月）",
+   "name_en": "Comté (12 months)",
+   "origin_zh": "法国汝拉",
+   "origin_en": "Jura, France",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "榛子、软焦糖、融化黄油，紧实柔韧",
+   "note_en": "Hazelnut, soft caramel, melted butter; firm, supple",
+   "pair_zh": "汝拉黄葡萄酒",
+   "pair_en": "Vin jaune"
+  },
+  {
+   "cheese": "Gruyère 格吕耶尔",
+   "x_intensity_1_10": 7,
+   "y_texture_1_10": 7,
+   "milk": "牛（生乳）",
+   "family": "hard-pressed",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA 含水 ≈33%",
+   "id": "gruyere",
+   "name_zh": "格吕耶尔",
+   "name_en": "Gruyère",
+   "origin_zh": "瑞士弗里堡一带",
+   "origin_en": "Fribourg region, Switzerland",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "甜咸、坚果与泥土味，紧实",
+   "note_en": "Sweet-salty, nutty and earthy; firm",
+   "pair_zh": "黑皮诺",
+   "pair_en": "Pinot Noir"
+  },
+  {
+   "cheese": "Manchego curado 曼切戈（半年左右）",
+   "x_intensity_1_10": 6,
+   "y_texture_1_10": 7,
+   "milk": "绵羊",
+   "family": "hard-pressed",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表",
+   "id": "manchego",
+   "name_zh": "曼切戈（curado）",
+   "name_en": "Manchego curado",
+   "origin_zh": "西班牙拉曼恰",
+   "origin_en": "La Mancha, Spain",
+   "milk_tags": [
+    "sheep"
+   ],
+   "note_zh": "温和坚果、青草与羊奶的油润",
+   "note_en": "Mild, nutty, grassy and rich",
+   "pair_zh": "榅桲膏",
+   "pair_en": "Quince paste"
+  },
+  {
+   "cheese": "Aged Gouda 陈年高达（≥18 个月）",
+   "x_intensity_1_10": 8,
+   "y_texture_1_10": 9,
+   "milk": "牛",
+   "family": "extra-hard",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；结晶多、易碎",
+   "id": "aged-gouda",
+   "name_zh": "陈年高达",
+   "name_en": "Aged Gouda",
+   "origin_zh": "荷兰",
+   "origin_en": "Netherlands",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "焦糖奶油糖、烤坚果，硬脆带结晶",
+   "note_en": "Caramel, butterscotch, toasted nuts; hard, crystalline",
+   "pair_zh": "马尔贝克",
+   "pair_en": "Malbec"
+  },
+  {
+   "cheese": "Parmigiano Reggiano 24 个月",
+   "x_intensity_1_10": 8,
+   "y_texture_1_10": 10,
+   "milk": "牛（生乳）",
+   "family": "extra-hard",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA Parmesan 含水 ≈29%",
+   "id": "parmigiano-24",
+   "name_zh": "帕玛森（24 个月）",
+   "name_en": "Parmigiano Reggiano (24 months)",
+   "origin_zh": "意大利艾米利亚-罗马涅",
+   "origin_en": "Emilia-Romagna, Italy",
+   "milk_tags": [
+    "cow"
+   ],
+   "note_zh": "咸鲜、坚果、菠萝般果香，颗粒带结晶",
+   "note_en": "Savoury, nutty, pineapple-fruity; granular, crystalline",
+   "pair_zh": "梨酱或无花果酱",
+   "pair_en": "Pear or fig jam"
+  },
+  {
+   "cheese": "Pecorino Romano 罗马羊奶酪",
+   "x_intensity_1_10": 9,
+   "y_texture_1_10": 10,
+   "milk": "绵羊",
+   "family": "extra-hard",
+   "basis_zh": "推定：按家族、熟成时长与含水量放置，非公开品鉴图表；USDA Romano 含水 ≈31%，含盐高",
+   "id": "pecorino-romano",
+   "name_zh": "罗马羊奶酪",
+   "name_en": "Pecorino Romano",
+   "origin_zh": "意大利撒丁岛、拉齐奥",
+   "origin_en": "Sardinia & Lazio, Italy",
+   "milk_tags": [
+    "sheep"
+   ],
+   "note_zh": "很咸、辛辣的硬质羊奶酪",
+   "note_en": "Very salty, sharp hard sheep's cheese",
+   "pair_zh": "正山小种",
+   "pair_en": "Lapsang souchong"
+  }
+ ],
+ "pairing": {
+  "principles": [
+   {
+    "zh": "强度匹配：清淡的奶酪配清淡的酒，浓重的奶酪配浓重的酒，谁也别盖过谁。Wine Folly 的经验线：酒精度 14.5% 以上的酒配浓味奶酪，12% 以下配清淡奶酪。",
+    "en": "Match intensity: delicate cheese with delicate drinks, bold with bold, so neither overwhelms. Wine Folly's rule of thumb: wines above 14.5% ABV for intense cheeses, below 12% for delicate ones.",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     },
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ],
+    "num": "14.5% / 12% ABV（经验线）"
+   },
+   {
+    "zh": "脂肪对单宁：奶酪越熟越干、相对越油润，脂肪能抵消重单宁红酒的干涩；感官实验表明「涩」与「油润」是一对相互抵消的感觉。",
+    "en": "Fat versus tannin: as cheese ages it becomes drier and relatively fattier, and that fat counters drying tannins; sensory experiments show astringency and fattiness are opposing sensations that offset each other.",
+    "conf": "高",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     },
+     {
+      "title": "Peyrot des Gachons C., Breslin P.A.S. et al. (2012) Opponency of astringent and fat sensations. Current Biology 22(19) – EurekAlert release",
+      "url": "https://www.eurekalert.org/pub_releases/2012-10/cp-wwa100212.php",
+      "kind": "学术"
+     }
+    ],
+    "year": 2012
+   },
+   {
+    "zh": "甜配咸 / 臭：甜型酒（波特、苏玳、晚收、莫斯卡托）或蜂蜜、果酱，与咸而浓烈的蓝纹或洗皮奶酪形成对比；酒越甜，可配的奶酪越强。经典例子是斯蒂尔顿配波特、洛克福配苏玳。",
+    "en": "Sweet with salty or funky: sweet wines (Port, Sauternes, late-harvest, Moscato), honey or jam contrast with salty, pungent blue and washed-rind cheeses; the sweeter the wine, the stronger the cheese can be. Classic: Stilton with Port, Roquefort with Sauternes.",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     },
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     },
+     {
+      "title": "Susman Karp L. (2022-02-16) Why it's Worth Exploring the Magic of Honey Paired with Cheese. The Cheese Professor",
+      "url": "https://cheeseprofessor.com/blog/honey-cheese-pairing",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "zh": "气泡与酸度清口：起泡酒、高酸白葡萄酒、带气的啤酒或苹果酒能「切开」软质奶酪的黏腻脂肪，避免味觉疲劳；苦味（啤酒花）也有同样作用。",
+    "en": "Bubbles and acidity cleanse: sparkling wine, high-acid whites, carbonated beer or cider cut through the sticky fat of soft cheeses and prevent palate fatigue; hop bitterness does the same.",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     },
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ]
+   },
+   {
+    "zh": "同乡搭配（grows together, goes together）：同一产区的奶酪与酒往往经过几代人的磨合，是最稳妥的起点——如卢瓦尔河山羊奶酪配长相思、勃艮第埃普瓦斯配霞多丽、汝拉孔泰配黄葡萄酒（Vin jaune）。",
+    "en": "Regional pairing ('grows together, goes together'): cheeses and drinks from the same place have been matched over generations — Loire goat cheese with Sauvignon Blanc, Burgundy's Époisses with Chardonnay, Jura's Comté with Vin jaune.",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     },
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     },
+     {
+      "title": "Dossier de presse Comté 2014 (Comité Interprofessionnel de Gestion du Comté)",
+      "url": "https://comte.com/documents/dossier-de-presse-comte-2014",
+      "kind": "官方"
+     }
+    ]
+   },
+   {
+    "zh": "找共同味道做「桥」（互补），或找相反味道做平衡（对比）：坚果味奶酪配有坚果 / 焦糖调的酒或啤酒；咸鲜的老奶酪配略带苦味的果酱，苦味与奶酪残余的甜味形成反差。",
+    "en": "Bridge shared flavours (complement) or balance opposites (contrast): nutty cheeses with nutty or caramel-noted drinks; a salty, aged cheese with slightly bitter marmalade, whose bitterness plays against the cheese's residual sweetness.",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     },
+     {
+      "title": "Parmigiano Reggiano – pairings by maturation (Consorzio)",
+      "url": "https://www.parmigianoreggiano.com/en-US/cucina-abbinamenti/vino-parmigiano-reggiano",
+      "kind": "官方"
+     }
+    ]
+   },
+   {
+    "zh": "奶酪会「压」红酒：加州大学戴维斯分校 2006 年让受训评审先吃 5 克奶酪再品红酒（8 种奶酪 × 8 款红酒），几乎所有奶酪都削弱了红酒的莓果、橡木、酸度和涩感，唯一被增强的是黄油香；各组合影响相似，作者认为「几乎任何奶酪都能配几乎任何酒」。",
+    "en": "Cheese mutes red wine: in a 2006 UC Davis study, trained panellists ate 5 g of cheese before tasting red wine (8 cheeses × 8 wines); almost every cheese suppressed berry, oak, sourness and astringency, and only butter aroma increased. Effects were similar across combinations, and the authors concluded 'we should be able to enjoy almost any cheese with almost any wine'.",
+    "conf": "高",
+    "sources": [
+     {
+      "title": "Madrigal-Galan B. & Heymann H. (2006) Sensory effects of consuming cheese prior to evaluating red wine flavor. Am. J. Enol. Vitic. 57(1):12–22 (UC Davis research summary)",
+      "url": "https://wineserver.ucdavis.edu/sites/g/files/dgvnsk2676/files/research-summaries/62%20cheese%20and%20wine.pdf",
+      "kind": "学术"
+     }
+    ],
+    "num": "8 种奶酪 × 8 款红酒，每次 5 g 奶酪、11 名受训评审",
+    "year": 2006,
+    "alt": "品酒行家的配对原则（强度、对比、同乡）多来自经验；这项研究提示配对效果主要是奶酪「抹平」酒的锋芒，而非某些组合特别神奇。"
+   },
+   {
+    "zh": "拿不准时选紧实、带坚果味的奶酪（格吕耶尔、孔泰、埃曼塔、高达）：脂肪足以柔化红酒单宁，又不会盖过白葡萄酒。茶也可以照酒的思路配：红茶单宁重如红葡萄酒，绿茶清淡如白葡萄酒。",
+    "en": "When in doubt, choose a firm, nutty cheese (Gruyère, Comté, Emmental, Gouda): enough fat to soften red tannins, delicate enough for whites. Tea follows wine logic: tannic black teas behave like reds, green teas like whites.",
+    "conf": "中",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     },
+     {
+      "title": "Kosel C. (2018-02-01) How to Pair Tea with Cheese. culture: the word on cheese",
+      "url": "https://culturecheesemag.com/cheese-pairings/how-to-pair-tea-with-cheese",
+      "kind": "媒体"
+     }
+    ]
+   }
+  ],
+  "pairs": [
+   {
+    "cheese": "Stilton",
+    "with_zh": "陈年波特酒",
+    "with_en": "Aged Port",
+    "kind": "wine",
+    "why_zh": "波特的厚重与甜，平衡斯蒂尔顿的咸、辛与复杂；酒越甜，奶酪可以越强。",
+    "why_en": "Port's body and sweetness balance Stilton's salty, pungent complexity.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "斯蒂尔顿",
+    "cheese_en": "Stilton"
+   },
+   {
+    "cheese": "Roquefort",
+    "with_zh": "苏玳甜白",
+    "with_en": "Sauternes",
+    "kind": "wine",
+    "why_zh": "贵腐甜酒的蜂蜜甜感与酸度，对冲蓝纹的咸与甲基酮的辛辣。",
+    "why_en": "Botrytised sweetness and acidity offset the blue's salt and methyl-ketone bite.",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "洛克福",
+    "cheese_en": "Roquefort"
+   },
+   {
+    "cheese": "Brie",
+    "with_zh": "香槟",
+    "with_en": "Champagne",
+    "kind": "wine",
+    "why_zh": "高酸与气泡切开黏腻奶油感，香槟的面包香再添一层烘烤味。",
+    "why_en": "Acidity and bubbles cut the creamy fat; Champagne's brioche notes add toastiness.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "布里",
+    "cheese_en": "Brie"
+   },
+   {
+    "cheese": "Gruyère",
+    "with_zh": "黑皮诺",
+    "with_en": "Pinot Noir",
+    "kind": "wine",
+    "why_zh": "黑皮诺的红莓果香衬托格吕耶尔的坚果味，单宁不重，互不压制。",
+    "why_en": "Red-berry fruit suits the nutty cheese; light tannins mean neither overpowers.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     },
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "格吕耶尔",
+    "cheese_en": "Gruyère"
+   },
+   {
+    "cheese": "Crottin / 卢瓦尔鲜山羊奶酪",
+    "with_zh": "长相思（桑塞尔）",
+    "with_en": "Sauvignon Blanc (Sancerre)",
+    "kind": "wine",
+    "why_zh": "同出卢瓦尔河谷；酒的柑橘与矿物感带出奶酪的青草与坚果味，酸度化解奶酪的厚重。",
+    "why_en": "Both from the Loire; citrus and minerality lift the cheese's herbal notes and acidity cuts its richness.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     },
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "卢瓦尔鲜山羊奶酪（Crottin）",
+    "cheese_en": "Loire fresh goat cheese (Crottin)"
+   },
+   {
+    "cheese": "Époisses",
+    "with_zh": "勃艮第霞多丽",
+    "with_en": "White Burgundy (Chardonnay)",
+    "kind": "wine",
+    "why_zh": "同乡搭配：勃艮第白葡萄酒的圆润与酸度托住洗皮奶酪的浓烈。",
+    "why_en": "A regional match: Burgundy's round, acidic white supports the pungent washed rind.",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "埃普瓦斯",
+    "cheese_en": "Époisses"
+   },
+   {
+    "cheese": "Comté",
+    "with_zh": "汝拉黄葡萄酒",
+    "with_en": "Vin jaune (Jura)",
+    "kind": "wine",
+    "why_zh": "同为汝拉山区出品，孔泰协会称孔泰与汝拉白葡萄酒、尤其是黄葡萄酒「无疑是最美的搭配」；两者都以坚果香见长（协会对孔泰的常见描述有榛子、杏干、软焦糖、融化黄油）。",
+    "why_en": "Both from the Jura; the Comté interprofession calls it the finest match, both noted for nutty aromas (the interprofession cites hazelnut, dried apricot, soft caramel and melted butter for Comté).",
+    "sources": [
+     {
+      "title": "Dossier de presse Comté 2014 (Comité Interprofessionnel de Gestion du Comté)",
+      "url": "https://comte.com/documents/dossier-de-presse-comte-2014",
+      "kind": "官方"
+     }
+    ],
+    "cheese_zh": "孔泰",
+    "cheese_en": "Comté"
+   },
+   {
+    "cheese": "Manchego",
+    "with_zh": "歌海娜",
+    "with_en": "Garnacha",
+    "kind": "wine",
+    "why_zh": "同为西班牙出品的同乡搭配。",
+    "why_en": "A Spanish regional pairing.",
+    "sources": [
+     {
+      "title": "6 Tips on Pairing Wine and Cheese (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/6-tips-on-pairing-wine-and-cheese/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "曼切戈",
+    "cheese_en": "Manchego"
+   },
+   {
+    "cheese": "陈年切达",
+    "with_zh": "赤霞珠",
+    "with_en": "Cabernet Sauvignon",
+    "kind": "wine",
+    "why_zh": "陈年切达的脂肪柔化赤霞珠的干涩单宁，两者都够浓，彼此平衡。",
+    "why_en": "The aged cheese's fat softens drying tannins; both are bold enough to balance.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "陈年切达",
+    "cheese_en": "Aged Cheddar"
+   },
+   {
+    "cheese": "Gorgonzola",
+    "with_zh": "莫斯卡托阿斯蒂微甜起泡",
+    "with_en": "Moscato d'Asti",
+    "kind": "wine",
+    "why_zh": "轻盈微甜、带气泡的莫斯卡托在浓重蓝纹之后清口，比加强酒更清爽。",
+    "why_en": "Light, sweet, gently sparkling Moscato refreshes the palate after a rich blue.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "戈贡佐拉",
+    "cheese_en": "Gorgonzola"
+   },
+   {
+    "cheese": "Pecorino Toscano",
+    "with_zh": "经典基安蒂",
+    "with_en": "Chianti Classico",
+    "kind": "wine",
+    "why_zh": "同为托斯卡纳出品；结实的单宁对应硬质羊奶酪，酒的咸鲜感带出奶酪的草本味。",
+    "why_en": "Both Tuscan; firm tannins match the hard sheep's cheese and savoury notes draw out its herbs.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "托斯卡纳羊奶酪",
+    "cheese_en": "Pecorino Toscano"
+   },
+   {
+    "cheese": "陈年高达",
+    "with_zh": "马尔贝克",
+    "with_en": "Malbec",
+    "kind": "wine",
+    "why_zh": "陈年高达的坚果与焦糖味，对上马尔贝克丝滑浓郁的果味。",
+    "why_en": "Aged Gouda's nutty, caramelised notes complement Malbec's velvety fruit.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "陈年高达",
+    "cheese_en": "Aged Gouda"
+   },
+   {
+    "cheese": "Raclette",
+    "with_zh": "雷司令（Kabinett 或微甜）",
+    "with_en": "Riesling (Kabinett / off-dry)",
+    "kind": "wine",
+    "why_zh": "雷司令的高酸与核果香配黄油般温和的拉克莱特；微甜款不会喧宾夺主。",
+    "why_en": "High acidity and stone fruit suit the buttery, mellow cheese.",
+    "sources": [
+     {
+      "title": "12 Classic Wine and Cheese Pairings You Have to Try (Wine Folly)",
+      "url": "https://winefolly.com/wine-pairing/12-classic-wine-and-cheese-pairings-you-have-to-try/",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "拉克莱特",
+    "cheese_en": "Raclette"
+   },
+   {
+    "cheese": "Camembert",
+    "with_zh": "农舍风塞松啤酒",
+    "with_en": "Saison",
+    "kind": "beer",
+    "why_zh": "卡芒贝尔的泥土、蘑菇和牲口棚气味，与塞松的酵母辛香、干爽气泡相合。",
+    "why_en": "Camembert's earthy, mushroomy, barnyard notes suit a dry, spicy saison.",
+    "sources": [
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "卡芒贝尔",
+    "cheese_en": "Camembert"
+   },
+   {
+    "cheese": "Brie",
+    "with_zh": "比尔森啤酒",
+    "with_en": "Pilsner",
+    "kind": "beer",
+    "why_zh": "奶油黄油般的质地需要「切」：比尔森的苦与气泡把脂肪洗掉。",
+    "why_en": "The buttery texture needs cutting: pilsner's bitterness and carbonation scrub away the fat.",
+    "sources": [
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "布里",
+    "cheese_en": "Brie"
+   },
+   {
+    "cheese": "Stilton / 蓝纹",
+    "with_zh": "帝国世涛或大麦酒",
+    "with_en": "Imperial stout or barley wine",
+    "kind": "beer",
+    "why_zh": "蓝纹强度高，需要同样强劲的啤酒；烘烤麦芽的甜与苦对上咸与辛。",
+    "why_en": "Intense blues need equally bold beers; roasty malt sweetness and bitterness meet salt and bite.",
+    "sources": [
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "斯蒂尔顿等蓝纹",
+    "cheese_en": "Stilton and other blues"
+   },
+   {
+    "cheese": "陈年切达",
+    "with_zh": "英式苦啤或世涛",
+    "with_en": "English bitter or stout",
+    "kind": "beer",
+    "why_zh": "同出英国的「同乡」逻辑；麦芽的焦糖与坚果味搭配尖锐的老切达。",
+    "why_en": "British 'grows together' logic; malty caramel and nut notes meet sharp aged Cheddar.",
+    "sources": [
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "陈年切达",
+    "cheese_en": "Aged Cheddar"
+   },
+   {
+    "cheese": "Gruyère",
+    "with_zh": "双料博克",
+    "with_en": "Doppelbock",
+    "kind": "beer",
+    "why_zh": "格吕耶尔甜、咸、坚果、泥土的复合味，与浓郁麦芽相互呼应。",
+    "why_en": "Gruyère's sweet, salty, nutty, earthy notes pair with rich malt.",
+    "sources": [
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "格吕耶尔",
+    "cheese_en": "Gruyère"
+   },
+   {
+    "cheese": "Feta",
+    "with_zh": "比利时白啤",
+    "with_en": "Belgian witbier",
+    "kind": "beer",
+    "why_zh": "菲达咸酸清爽，配轻盈但有个性的白啤，橙皮芫荽香与盐水味互补。",
+    "why_en": "Feta's briny tang suits a light but characterful wit.",
+    "sources": [
+     {
+      "title": "Storton J. (2017-06-02) Everything You Need to Know About Pairing Beer and Cheese. CraftBeer.com (Brewers Association)",
+      "url": "https://craftbeer.com/?p=82727",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "菲达",
+    "cheese_en": "Feta"
+   },
+   {
+    "cheese": "Parmigiano Reggiano（24 个月以上）",
+    "with_zh": "Helles 淡色拉格 / 比利时金色艾尔",
+    "with_en": "Helles / Belgian blonde ale",
+    "kind": "beer",
+    "why_zh": "协会：24 个月的帕玛森甜咸平衡、百搭；Helles 带来野花蜂蜜般的香气。",
+    "why_en": "Consortium: at 24+ months the cheese balances sweet and salty; Helles adds wildflower-honey tones.",
+    "sources": [
+     {
+      "title": "Parmigiano Reggiano – pairings by maturation (Consorzio)",
+      "url": "https://www.parmigianoreggiano.com/en-US/cucina-abbinamenti/vino-parmigiano-reggiano",
+      "kind": "官方"
+     }
+    ],
+    "cheese_zh": "帕玛森（24 个月以上）",
+    "cheese_en": "Parmigiano Reggiano (24+ months)"
+   },
+   {
+    "cheese": "切达",
+    "with_zh": "英格兰西部单宁型起泡苹果酒",
+    "with_en": "West Country tannic sparkling cider",
+    "kind": "cider",
+    "why_zh": "苹果酒的单宁与涩感撑得住切达的咸鲜浓郁；切达本就出自萨默塞特苹果酒乡。",
+    "why_en": "The cider's tannin and astringency stand up to Cheddar's savoury richness.",
+    "sources": [
+     {
+      "title": "Swinscoe A. (2023-06-05) Matching cheeses with ciders. The Morning Advertiser",
+      "url": "https://www.morningadvertiser.co.uk/Article/2023/06/05/Which-ciders-go-with-different-cheese",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "切达",
+    "cheese_en": "Cheddar"
+   },
+   {
+    "cheese": "Camembert",
+    "with_zh": "诺曼底苹果酒（cidre）",
+    "with_en": "Normandy cidre",
+    "kind": "cider",
+    "why_zh": "同乡搭配；天然微甜、微气泡的诺曼底苹果酒衬托白霉奶酪的黄油奶香。",
+    "why_en": "A regional match: naturally sweet, lightly sparkling cidre suits the buttery bloomy rind.",
+    "sources": [
+     {
+      "title": "Swinscoe A. (2023-06-05) Matching cheeses with ciders. The Morning Advertiser",
+      "url": "https://www.morningadvertiser.co.uk/Article/2023/06/05/Which-ciders-go-with-different-cheese",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "卡芒贝尔",
+    "cheese_en": "Camembert"
+   },
+   {
+    "cheese": "蓝纹（Stichelton 等）",
+    "with_zh": "冰苹果酒",
+    "with_en": "Ice cider",
+    "kind": "cider",
+    "why_zh": "「咸浓的蓝纹遇上甜美的冰苹果酒，再加一点清口的酸」。",
+    "why_en": "'Rich salty blue cheese meets sumptuous sweet ice cider, with a cleansing bit of acid.'",
+    "sources": [
+     {
+      "title": "Swinscoe A. (2023-06-05) Matching cheeses with ciders. The Morning Advertiser",
+      "url": "https://www.morningadvertiser.co.uk/Article/2023/06/05/Which-ciders-go-with-different-cheese",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "蓝纹（Stichelton 等）",
+    "cheese_en": "Blue cheese (e.g. Stichelton)"
+   },
+   {
+    "cheese": "Parmigiano Reggiano（20 个月以上）",
+    "with_zh": "泥煤味苏格兰岛屿单一麦芽（原桶强度）",
+    "with_en": "Peated Scotch island single malt, cask strength",
+    "kind": "spirit",
+    "why_zh": "协会推荐：海风泥煤与柑橘香衬托奶酪的奶香，高酒精度放大烈酒的层次。",
+    "why_en": "Consortium pick: maritime peat and citrus set off the cheese's milky notes.",
+    "sources": [
+     {
+      "title": "Parmigiano Reggiano – pairings by maturation (Consorzio)",
+      "url": "https://www.parmigianoreggiano.com/en-US/cucina-abbinamenti/vino-parmigiano-reggiano",
+      "kind": "官方"
+     }
+    ],
+    "cheese_zh": "帕玛森（20 个月以上）",
+    "cheese_en": "Parmigiano Reggiano (20+ months)"
+   },
+   {
+    "cheese": "Parmigiano Reggiano（35 个月以上）",
+    "with_zh": "陈年清酒（古酒 koshu）",
+    "with_en": "Aged sake (koshu)",
+    "kind": "sake",
+    "why_zh": "协会推荐：古酒的焦糖与坚果香，对上久熟帕玛森的干果与肉汤味。",
+    "why_en": "Consortium pick: koshu's caramel and nutty notes match the cheese's dried-fruit and broth flavours.",
+    "sources": [
+     {
+      "title": "Parmigiano Reggiano – pairings by maturation (Consorzio)",
+      "url": "https://www.parmigianoreggiano.com/en-US/cucina-abbinamenti/vino-parmigiano-reggiano",
+      "kind": "官方"
+     }
+    ],
+    "cheese_zh": "帕玛森（35 个月以上）",
+    "cheese_en": "Parmigiano Reggiano (35+ months)"
+   },
+   {
+    "cheese": "陈年高达或 Époisses",
+    "with_zh": "普洱茶",
+    "with_en": "Pu-erh tea",
+    "kind": "tea",
+    "why_zh": "发酵过的普洱厚重带土香，接得住浓郁的陈年或洗皮奶酪。",
+    "why_en": "Fermented, earthy pu-erh stands up to rich aged or washed-rind cheese.",
+    "sources": [
+     {
+      "title": "Kosel C. (2018-02-01) How to Pair Tea with Cheese. culture: the word on cheese",
+      "url": "https://culturecheesemag.com/cheese-pairings/how-to-pair-tea-with-cheese",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "陈年高达或埃普瓦斯",
+    "cheese_en": "Aged Gouda or Époisses"
+   },
+   {
+    "cheese": "硬质羊奶酪（Pecorino）",
+    "with_zh": "正山小种",
+    "with_en": "Lapsang souchong",
+    "kind": "tea",
+    "why_zh": "烟熏红茶配紧实咸香的羊奶酪，烟熏味与咸鲜互相托举。",
+    "why_en": "Smoky black tea with firm, salty sheep's cheese.",
+    "sources": [
+     {
+      "title": "Kosel C. (2018-02-01) How to Pair Tea with Cheese. culture: the word on cheese",
+      "url": "https://culturecheesemag.com/cheese-pairings/how-to-pair-tea-with-cheese",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "硬质羊奶酪（佩科里诺）",
+    "cheese_en": "Hard sheep's cheese (Pecorino)"
+   },
+   {
+    "cheese": "鲜山羊奶酪 / 三倍奶油奶酪",
+    "with_zh": "煎茶（或玉露）",
+    "with_en": "Sencha (or gyokuro)",
+    "kind": "tea",
+    "why_zh": "绿茶单宁少、带青草香，配温和奶酪不抢味。",
+    "why_en": "Low-tannin, grassy green tea suits mild cheeses.",
+    "sources": [
+     {
+      "title": "Kosel C. (2018-02-01) How to Pair Tea with Cheese. culture: the word on cheese",
+      "url": "https://culturecheesemag.com/cheese-pairings/how-to-pair-tea-with-cheese",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "鲜山羊奶酪 / 三倍奶油奶酪",
+    "cheese_en": "Fresh goat cheese / triple-crème"
+   },
+   {
+    "cheese": "Camembert",
+    "with_zh": "红茶",
+    "with_en": "Black tea",
+    "kind": "tea",
+    "why_zh": "奶酪的脂肪柔化红茶浓重的涩感。",
+    "why_en": "The cheese's fat softens the tea's dark astringency.",
+    "sources": [
+     {
+      "title": "Kosel C. (2018-02-01) How to Pair Tea with Cheese. culture: the word on cheese",
+      "url": "https://culturecheesemag.com/cheese-pairings/how-to-pair-tea-with-cheese",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "卡芒贝尔",
+    "cheese_en": "Camembert"
+   },
+   {
+    "cheese": "Roquefort / Gorgonzola",
+    "with_zh": "栗子蜜",
+    "with_en": "Chestnut honey",
+    "kind": "honey",
+    "why_zh": "栗子蜜带苦尾，需要同样强、咸的蓝纹才压得住；咸与甜互为平衡。",
+    "why_en": "Chestnut honey's bitter edge needs a bold, salty blue; salt and sweet balance.",
+    "sources": [
+     {
+      "title": "Susman Karp L. (2022-02-16) Why it's Worth Exploring the Magic of Honey Paired with Cheese. The Cheese Professor",
+      "url": "https://cheeseprofessor.com/blog/honey-cheese-pairing",
+      "kind": "媒体"
+     },
+     {
+      "title": "Cheese condiments (The Nibble)",
+      "url": "https://thenibble.com/REVIEWS/MAIN/cheese/cheese2/cheese-condiments.asp",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "洛克福 / 戈贡佐拉",
+    "cheese_en": "Roquefort / Gorgonzola"
+   },
+   {
+    "cheese": "Ricotta",
+    "with_zh": "蜂巢蜜 + 松子",
+    "with_en": "Honeycomb + pine nuts",
+    "kind": "honey",
+    "why_zh": "温和的里科塔让蜂蜜与坚果唱主角。",
+    "why_en": "Mild ricotta lets honey and nuts shine.",
+    "sources": [
+     {
+      "title": "Susman Karp L. (2022-02-16) Why it's Worth Exploring the Magic of Honey Paired with Cheese. The Cheese Professor",
+      "url": "https://cheeseprofessor.com/blog/honey-cheese-pairing",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "里科塔",
+    "cheese_en": "Ricotta"
+   },
+   {
+    "cheese": "Manchego",
+    "with_zh": "榅桲膏（membrillo）",
+    "with_en": "Quince paste (membrillo)",
+    "kind": "fruit",
+    "why_zh": "西班牙传统组合：甜中带酸的榅桲膏配咸香的羊奶酪，也适合 Roncal、Mahón。",
+    "why_en": "A Spanish classic: sweet-tart quince paste with salty sheep's cheese.",
+    "sources": [
+     {
+      "title": "Cheese condiments (The Nibble)",
+      "url": "https://thenibble.com/REVIEWS/MAIN/cheese/cheese2/cheese-condiments.asp",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "曼切戈",
+    "cheese_en": "Manchego"
+   },
+   {
+    "cheese": "Parmigiano Reggiano（24 个月以上）",
+    "with_zh": "梨酱、无花果酱或苦橙酱",
+    "with_en": "Pear jam, fig jam or bitter-orange marmalade",
+    "kind": "fruit",
+    "why_zh": "协会：果酱呼应奶酪的果味酸感，苦橙酱的微苦与奶酪残余的甜形成对比。",
+    "why_en": "Consortium: jams echo the cheese's fruity tang, while marmalade's bitterness contrasts its residual sweetness.",
+    "sources": [
+     {
+      "title": "Parmigiano Reggiano – pairings by maturation (Consorzio)",
+      "url": "https://www.parmigianoreggiano.com/en-US/cucina-abbinamenti/vino-parmigiano-reggiano",
+      "kind": "官方"
+     }
+    ],
+    "cheese_zh": "帕玛森（24 个月以上）",
+    "cheese_en": "Parmigiano Reggiano (24+ months)"
+   },
+   {
+    "cheese": "尖锐陈年切达",
+    "with_zh": "番茄酸辣酱（chutney）",
+    "with_en": "Tomato chutney",
+    "kind": "fruit",
+    "why_zh": "酸甜带香料的酱，与尖锐咸鲜的切达是英式经典。",
+    "why_en": "Sweet-sour spiced chutney is a British classic with sharp Cheddar.",
+    "sources": [
+     {
+      "title": "Cheese condiments (The Nibble)",
+      "url": "https://thenibble.com/REVIEWS/MAIN/cheese/cheese2/cheese-condiments.asp",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "尖锐的陈年切达",
+    "cheese_en": "Sharp aged Cheddar"
+   },
+   {
+    "cheese": "Brie / 鲜山羊奶酪",
+    "with_zh": "核桃（配无花果）",
+    "with_en": "Walnuts (with figs)",
+    "kind": "nut",
+    "why_zh": "核桃的微涩油润与奶油质地互补，是奶酪盘的经典坚果。",
+    "why_en": "Walnuts' slightly astringent richness complements creamy cheese.",
+    "sources": [
+     {
+      "title": "Cheese condiments (The Nibble)",
+      "url": "https://thenibble.com/REVIEWS/MAIN/cheese/cheese2/cheese-condiments.asp",
+      "kind": "媒体"
+     }
+    ],
+    "cheese_zh": "布里 / 鲜山羊奶酪",
+    "cheese_en": "Brie / fresh goat cheese"
+   }
+  ]
+ },
+ "tasting": [
+  {
+   "zh": "提前回温：从冰箱取出约 1 小时再吃，冷会压住风味；白霉等软质奶酪至少 1 小时，硬质约半小时。",
+   "en": "Temper first: take cheese out of the fridge about an hour before eating, because cold dulls flavour; mould-ripened soft cheeses at least an hour, hard cheeses about half an hour.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Jimenez M. (2022-01-20) Serving Up the Wide World of Cheese. Tufts Now",
+     "url": "https://now.tufts.edu/2022/01/20/serving-wide-world-cheese",
+     "kind": "媒体"
+    },
+    {
+     "title": "Your expert guide to cheese tasting (delicious. magazine UK)",
+     "url": "https://www.deliciousmagazine.co.uk/?p=61738",
+     "kind": "媒体"
+    },
+    {
+     "title": "How to throw a cheese tasting (Castello, Arla Foods)",
+     "url": "https://castellocheese.com/en-us/articles/how-to-throw-a-cheese-tasting/",
+     "kind": "企业"
+    }
+   ],
+   "num": "软质 ≥1 h；硬质 ≈30 min"
+  },
+  {
+   "zh": "适饮温度：孔泰行业协会建议在 15–18°C 品尝。",
+   "en": "Serving temperature: the Comté interprofession recommends tasting at 15–18 °C.",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Dossier de presse Comté 2014 (Comité Interprofessionnel de Gestion du Comté)",
+     "url": "https://comte.com/documents/dossier-de-presse-comte-2014",
+     "kind": "官方"
+    }
+   ],
+   "num": "15–18°C（孔泰协会口径）"
+  },
+  {
+   "zh": "从淡到浓排序：鲜山羊奶酪或可涂抹的鲜奶酪 → 白霉软质（布里、卡芒贝尔）→ 洗皮或自然皮半软 → 紧实陈年（切达、羊奶托姆、高山奶酪）→ 最后蓝纹。",
+   "en": "Order from mild to strong: fresh chèvre or spreadable cheese → bloomy rind (Brie, Camembert) → semi-soft washed or natural rind → firm aged (Cheddar, sheep tomme, Alpine) → blue last.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Jimenez M. (2022-01-20) Serving Up the Wide World of Cheese. Tufts Now",
+     "url": "https://now.tufts.edu/2022/01/20/serving-wide-world-cheese",
+     "kind": "媒体"
+    },
+    {
+     "title": "How to throw a cheese tasting (Castello, Arla Foods)",
+     "url": "https://castellocheese.com/en-us/articles/how-to-throw-a-cheese-tasting/",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "zh": "看、摸、闻、尝：先看外皮与内里（判断欠熟或过熟），轻按感受软硬，闻有无异味（味重不等于坏），再切一块从中心到外皮、慢慢咀嚼。",
+   "en": "Look, touch, smell, taste: check rind and paste for under- or over-ripeness, press gently for firmness, sniff for off-notes (strong is not necessarily bad), then cut from centre to rind and chew slowly.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Your expert guide to cheese tasting (delicious. magazine UK)",
+     "url": "https://www.deliciousmagazine.co.uk/?p=61738",
+     "kind": "媒体"
+    },
+    {
+     "title": "How to throw a cheese tasting (Castello, Arla Foods)",
+     "url": "https://castellocheese.com/en-us/articles/how-to-throw-a-cheese-tasting/",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "zh": "记录质地、基本味和余味：软滑、奶油、坚硬还是脆；苦、咸、酸、甜还是果香；最后留意吞下后的回味。英国切达匠人 Mary Quicke 把好奶酪在口中逐层展开的过程称为「风味的阶梯」。",
+   "en": "Note texture, basic tastes and the finish: soft, creamy, hard or crisp; bitter, salty, sour, sweet or fruity; then the aftertaste. Cheddar maker Mary Quicke calls the slow unfolding of a good cheese a 'staircase of flavours'.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "How to throw a cheese tasting (Castello, Arla Foods)",
+     "url": "https://castellocheese.com/en-us/articles/how-to-throw-a-cheese-tasting/",
+     "kind": "企业"
+    },
+    {
+     "title": "Your expert guide to cheese tasting (delicious. magazine UK)",
+     "url": "https://www.deliciousmagazine.co.uk/?p=61738",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "zh": "份量：品鉴时每人每种约 1–2 盎司（约 30–60 克），一次 3–5 种为宜。",
+   "en": "Portions: about 1–2 oz (≈30–60 g) per person per cheese, with 3–5 cheeses per tasting.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Jimenez M. (2022-01-20) Serving Up the Wide World of Cheese. Tufts Now",
+     "url": "https://now.tufts.edu/2022/01/20/serving-wide-world-cheese",
+     "kind": "媒体"
+    }
+   ],
+   "num": "1–2 oz ≈ 30–60 g / 人 / 种；3–5 种"
+  },
+  {
+   "zh": "清口：两种奶酪之间喝水、吃一片苹果或原味饼干。",
+   "en": "Cleanse between cheeses with water, a slice of apple or a plain cracker.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Your expert guide to cheese tasting (delicious. magazine UK)",
+     "url": "https://www.deliciousmagazine.co.uk/?p=61738",
+     "kind": "媒体"
+    },
+    {
+     "title": "How to throw a cheese tasting (Castello, Arla Foods)",
+     "url": "https://castellocheese.com/en-us/articles/how-to-throw-a-cheese-tasting/",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "zh": "外皮与刀具：外皮能不能吃先闻一闻，气味讨喜再尝；硬奶酪用锋利的刀，软奶酪常用勺子更顺手。孕妇或免疫力低下者应避开生乳奶酪。",
+   "en": "Rinds and tools: sniff the rind and taste it only if the smell appeals; firm cheeses need a sharp knife, soft ones are often easiest with a spoon. Pregnant or immunocompromised guests should avoid raw-milk cheeses.",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Jimenez M. (2022-01-20) Serving Up the Wide World of Cheese. Tufts Now",
+     "url": "https://now.tufts.edu/2022/01/20/serving-wide-world-cheese",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ]
+}

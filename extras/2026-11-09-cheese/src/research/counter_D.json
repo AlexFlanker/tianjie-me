@@ -1,0 +1,4317 @@
+{
+ "_meta": {
+  "researcher": "D",
+  "topic": "Whole Foods / Eataly 奶酪柜台导购",
+  "status": "complete",
+  "updated": "2026-11-08",
+  "home": "near CCSF, SF",
+  "structure_note": "local = 旧金山可去的柜台 / 店（新字段：id,name,zh,en,area,address,what_*,best_for_*,status,sources）；原加州奶酪厂故事移到 local_cheeses，并加了 where_sf_zh/en。cheeses 每条另有 price_basis（口径 A=有实价锚点，口径 B=估计区间）、conf、note。 boards = 页面用的三套 4 人拼盘（$25/$50/$90，items 引 cheese_id）；boards_scenarios = 早先的四套场景拼盘（两人 $40、八人 $120、意大利、加州），保留备用。cheeses 新增 zone/fam_key/origin_*/milk_en/label_tags/price_lb/good_for_en/pair_en；local 新增 kind/dist_*/order 并按 order 排序。phrases = 柜台英文句。",
+  "searches_used": 30,
+  "doubts": [
+   "价格：全食 / Eataly 门店实价无法线上抓取；cheeses 用 Lunds & Byerlys（明尼苏达高端超市，2026-11）等作口径 A 锚点，其余为口径 B 估计区间。",
+   "The Cheese School of SF 2026 年地址存疑：商会名录写 Ghirardelli Square，48 Hills 2023-01 称已迁 Dogpatch Daily Driver。",
+   "Whole Foods 开轮纪录：2008 年 176 店 >300 轮只见于 Daily Meal；2012 年 Loblaw 先破纪录与 Progressive Grocer 叙述冲突；全食近年是否仍年办未查到一手资料。",
+   "Cowgirl Creamery 创办年 1994（维基）vs 1997（全食 2011 文章与业内说法）；Laura Chenel 首次供货 Chez Panisse 1980 vs 1981。",
+   "Cheese Boutique（Glen Park）与 La Fromagerie 只有导览文章（2026-07 更新）佐证，门牌与营业状态未从店方核实；Eataly 距离为编者估算。"
+  ],
+  "dist_note": "local[].dist_* 为编者按 CCSF Ocean 校区与各店地址估算的非高峰车程 / 步行时间，未经地图服务核实。"
+ },
+ "stores": [
+  {
+   "id": "wholefoods",
+   "name": "Whole Foods Market",
+   "zh": "全食超市（Whole Foods Market）",
+   "en": "Whole Foods Market",
+   "facts": [
+    {
+     "id": "wf-basic",
+     "zh": "1980 年创立于得州奥斯汀，现属亚马逊旗下；2024 年 10 月官方新闻稿称在美国、加拿大、英国共有 530 多家门店。",
+     "en": "Founded in 1980 in Austin, Texas, now part of Amazon; an October 2024 press release counts more than 530 stores across the U.S., Canada and the U.K.",
+     "year": "1980 / 2024",
+     "num": ">530 家门店（2024-10 口径）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Whole Foods Market Elevates Cheese Expertise with 40 New Certified Cheese Professionals (Business Wire, 2024-10-24)",
+       "url": "https://www.businesswire.com/news/home/20241024433129/en/Whole-Foods-Market-Elevates-Cheese-Expertise-with-40-New-Certified-Cheese-Professionals%C2%AE",
+       "kind": "企业"
+      }
+     ],
+     "note": "奥斯汀创立地为常识，新闻稿只写了 1980 年创立。"
+    },
+    {
+     "id": "wf-ccp",
+     "zh": "奶酪部（Specialty）大量配备美国奶酪协会（ACS）认证的「Certified Cheese Professional」（CCP）。2024 年新增 40 名后，全食在全球 1,000 多名 CCP 中占 370 多名，自称全球雇用 CCP 最多的零售商，目标是每家店至少一名。",
+     "en": "The specialty cheese team is staffed with American Cheese Society Certified Cheese Professionals (CCPs). After adding 40 in 2024, Whole Foods employs more than 370 of the 1,000-plus CCPs worldwide and aims for at least one in every store.",
+     "year": "2024",
+     "num": ">370 名 CCP / 全球 >1,000 名；2024 年新增 40 名",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Business Wire 新闻稿 2024-10-24",
+       "url": "https://www.businesswire.com/news/home/20241024433129/en/Whole-Foods-Market-Elevates-Cheese-Expertise-with-40-New-Certified-Cheese-Professionals%C2%AE",
+       "kind": "企业"
+      },
+      {
+       "title": "How Whole Foods Market is Training the Next Generation of Cheese Experts (culture, 2025-03-07)",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "wf-ccp-program",
+     "zh": "全食自 2012 年起系统培养 CCP：13 周课程，含每周网课和在威斯康星州（Dairy Farmers of Wisconsin、威斯康星大学乳品研究中心）的一周实训；ACS 考试为 150 道选择题、覆盖 11 个领域。",
+     "en": "Since 2012 Whole Foods has run a CCP track: 13 weeks of webinars plus a week of hands-on training in Wisconsin with Dairy Farmers of Wisconsin and the UW Center for Dairy Research; the ACS exam has 150 multiple-choice questions across 11 domains.",
+     "year": "2012 起",
+     "num": "13 周；150 题 / 11 个领域",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "culture: How Whole Foods Market is Training the Next Generation of Cheese Experts (2025-03-07)",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "该文对 CCP 续证周期前后矛盾（正文 6 年、边栏 3 年），未采用。"
+    },
+    {
+     "id": "wf-standard",
+     "zh": "全食称其奶酪须符合自家质量标准：不含人工添加剂，不使用注射 rBST（重组牛生长激素）奶牛的奶。",
+     "en": "Whole Foods says every cheese it sells meets its quality standards: free from artificial additives and from milk of cows treated with rBST.",
+     "year": "2024–2025",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Business Wire 新闻稿 2024-10-24",
+       "url": "https://www.businesswire.com/news/home/20241024433129/en/Whole-Foods-Market-Elevates-Cheese-Expertise-with-40-New-Certified-Cheese-Professionals%C2%AE",
+       "kind": "企业"
+      },
+      {
+       "title": "culture 2025-03-07",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "wf-cut",
+     "zh": "柜台做法：CCP 按顾客要求的重量或厚度现切，并会主动请顾客试吃没尝过的奶酪；全食的 Parmigiano Reggiano 整轮都在店里用专用刀具开轮，选用熟成 24 个月的轮子。",
+     "en": "At the counter, CCPs cut to the weight or thickness you ask for and offer tastes of cheeses you have not tried; Whole Foods cracks every Parmigiano Reggiano wheel in store with traditional tools and buys 24-month wheels.",
+     "year": "2025",
+     "num": "Parmigiano Reggiano 24 个月",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "culture 2025-03-07",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      },
+      {
+       "title": "Whole Foods Reclaims Title for Most Cracked Wheels (Progressive Grocer, 2013)",
+       "url": "https://progressivegrocer.com:2087/whole-foods-reclaims-title-cracked-wheels",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "wf-crack-2008",
+     "zh": "「Crack Heard 'Round the World」是全食的年度帕玛森开轮活动，各店同一时刻一起开轮。2008 年首次创下吉尼斯「同时开轮最多 Parmigiano Reggiano」纪录：176 家店开了 300 多轮。",
+     "en": "\"The Crack Heard 'Round the World\" is Whole Foods' annual Parmigiano Reggiano event in which stores crack wheels at the same moment. In 2008 it set the Guinness record for most wheels cracked simultaneously: 300-plus wheels in 176 stores.",
+     "year": "2008",
+     "num": "176 家店，>300 轮",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "The World Record You Probably Didn't Know Whole Foods Held (The Daily Meal, 2022-10)",
+       "url": "https://www.thedailymeal.com/1073305/the-world-record-you-probably-didnt-know-whole-foods-held",
+       "kind": "媒体"
+      },
+      {
+       "title": "Craaaack Goes the Cheese at Whole Foods Market (Houston Press, 2012-03-13)",
+       "url": "https://www.houstonpress.com/restaurants/craaaack-goes-the-cheese-at-whole-foods-market-with-video-6428342",
+       "kind": "媒体"
+      },
+      {
+       "title": "The Crack Heard Around the World (Edible Brooklyn, 2014-03-13)",
+       "url": "https://ediblebrooklyn.com/?p=17606",
+       "kind": "媒体"
+      }
+     ],
+     "note": "2008 年的轮数只见于 Daily Meal（二手汇总）；未直接打开 Guinness 原页。"
+    },
+    {
+     "id": "wf-crack-2013",
+     "zh": "加拿大 Loblaw 在 2012 年以 200 家店 378 轮夺走纪录；2013 年 3 月 9 日全食在美、加、英门店开了 426 轮夺回（当年活动称「Parmeggedon」）。2014 年 3 月 8 日全美 373 家店各开一轮 85 磅的轮子。",
+     "en": "Canada's Loblaw took the record in 2012 with 378 wheels in 200 stores; on March 9, 2013 Whole Foods won it back with 426 wheels across the U.S., Canada and the U.K. (billed as \"Parmeggedon\"). On March 8, 2014 all 373 U.S. stores each cracked an 85-lb wheel.",
+     "year": "2012–2014",
+     "num": "2012：378 轮/200 店（Loblaw）；2013：426 轮；2014：373 店各一轮",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Progressive Grocer 2013",
+       "url": "https://progressivegrocer.com:2087/whole-foods-reclaims-title-cracked-wheels",
+       "kind": "媒体"
+      },
+      {
+       "title": "Perishable News 2013-02-19",
+       "url": "https://perishablenews.com/deli/whole-foods-attempting-to-wheel-home-parmigiano-reggiano-world-record/",
+       "kind": "媒体"
+      },
+      {
+       "title": "The Daily Meal 2022",
+       "url": "https://www.thedailymeal.com/1073305/the-world-record-you-probably-didnt-know-whole-foods-held",
+       "kind": "媒体"
+      },
+      {
+       "title": "Edible Brooklyn 2014-03-13",
+       "url": "https://ediblebrooklyn.com/?p=17606",
+       "kind": "媒体"
+      }
+     ],
+     "alt": "Progressive Grocer 写 2013 年打破的是「全食 2008 年的纪录」，没提 Loblaw 2012；Daily Meal 写 Loblaw 2012 年先破。Edible Brooklyn 称 2014 年又破自家纪录，但 373 少于 426，数字自相矛盾。"
+    },
+    {
+     "id": "wf-crack-now",
+     "zh": "这项吉尼斯纪录目前在加拿大：Loblaw 与 Parmigiano Reggiano 联盟 2014 年开了 1,209 轮，2025 年 6 月 14 日又在 452 家店同时开了 1,672 轮。",
+     "en": "The Guinness record now sits in Canada: Loblaw and the Parmigiano Reggiano Consortium cracked 1,209 wheels in 2014 and 1,672 wheels across 452 stores on June 14, 2025.",
+     "year": "2014 / 2025-06-14",
+     "num": "1,209 轮（2014）；1,672 轮 / 452 店（2025）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Loblaw, Parmigiano Reggiano restore world record with cracking event (Strategy, 2025-06-26)",
+       "url": "https://strategyonline.ca/?p=324645",
+       "kind": "媒体"
+      },
+      {
+       "title": "Loblaw and Parmigiano Reggiano Aim for Cheese Record (Retail Insider, 2025-06)",
+       "url": "https://retail-insider.com/retail-insider/2025/06/loblaw-and-parmigiano-reggiano-aim-for-cheese-record/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "全食 2015 年后是否仍每年办开轮活动未查到 2025–2026 年的一手资料。"
+    },
+    {
+     "id": "wf-365",
+     "zh": "自有品牌 365 by Whole Foods Market 有预包装的块状、刨丝和切片奶酪（如 Parmigiano Reggiano 楔块、Cheddar、Mozzarella），一般在自选冷柜，比现切区便宜。",
+     "en": "The house brand 365 by Whole Foods Market covers pre-packed blocks, shreds and slices (Parmigiano Reggiano wedges, cheddar, mozzarella and more), usually in the grab-and-go case and cheaper than the cut-to-order counter.",
+     "year": "2025–2026",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Whole Foods Market 官网奶酪类目",
+       "url": "https://www.wholefoodsmarket.com/products/cheese",
+       "kind": "企业"
+      }
+     ],
+     "note": "未逐项核对 365 当前 SKU；价格见 cheeses 条目。"
+    },
+    {
+     "id": "wf-12days",
+     "zh": "每年 12 月的「12 Days of Cheese」：由全食的 CCP 选出一组获奖奶酪，12 天里每天特价一款。2025 年是 12 月 13–24 日，Prime 会员最多 7 折（30% off），非会员 78 折（22% off），共 13 款，包括 Jasper Hill Harbison、Keen's Cheddar、Kaltbach 洞穴熟成 Gruyère AOP、Papillon Roquefort、Ca de Ambros Taleggio、Humboldt Fog、Mt Tam 等。",
+     "en": "Every December, \"12 Days of Cheese\" puts one CCP-picked, award-winning cheese on sale each day. In 2025 it ran December 13–24 at up to 30% off for Prime members and 22% off for others, with 13 cheeses including Jasper Hill Harbison, Keen's Cheddar, Kaltbach cave-aged Le Gruyère AOP, Papillon Roquefort, Ca de Ambros Taleggio, Humboldt Fog and Mt Tam.",
+     "year": "2025-12-13 至 12-24",
+     "num": "Prime 最多 30% off；非会员 22% off；13 款",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "12 Days of Cheese Returns for a Season of Exceptional Taste at Whole Foods Market (2025-12-03)",
+       "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+       "kind": "企业"
+      }
+     ],
+     "note": "2026 年档期未公布（今天 2026-11-08），可写「往年 12 月中旬」。新闻稿还写每家店有「数百种」奶酪。"
+    },
+    {
+     "id": "wf-sf",
+     "zh": "旧金山市内有 8 家全食。离 CCSF 最近的是 Ocean Ave 店（1150 Ocean Avenue），官网门店页把「Certified Cheese Professional」列为本店服务；其次是 Stonestown 店（3251 20th Ave）。市区还有 Noe Valley（3950 24th St）、Stanyan（690 Stanyan St）、Market St（2001 Market St）、California St、Potrero Hill、SoMa 4th St。",
+     "en": "San Francisco has eight Whole Foods stores. Closest to City College is Ocean Avenue (1150 Ocean Avenue), whose store page lists a Certified Cheese Professional; next is Stonestown (3251 20th Ave). Others include Noe Valley (3950 24th St), Stanyan (690 Stanyan St), Market Street (2001 Market St), California Street, Potrero Hill and SoMa's 4th Street.",
+     "year": "2026-11",
+     "num": "旧金山 8 家",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Whole Foods Market Ocean 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/ocean",
+       "kind": "企业"
+      },
+      {
+       "title": "Whole Foods Market Stonestown 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/stonestown",
+       "kind": "企业"
+      },
+      {
+       "title": "Whole Foods Market Noe Valley 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/noevalley",
+       "kind": "企业"
+      },
+      {
+       "title": "95 Whole Foods Market Stores in California (storelocators.com, 2026-11-08)",
+       "url": "https://storelocators.com/store-lists/whole_foods/california",
+       "kind": "二手"
+      }
+     ],
+     "note": "详细门店条目见 local。"
+    },
+    {
+     "id": "wf-southbay",
+     "zh": "湾区南湾 / 半岛的全食门店举例：圣何塞 The Alameda 店（2014 年 12 月 9 日开业，开业报道提到奶酪部会当场开一块给顾客试吃）、Cupertino（20955 Stevens Creek Blvd）、Los Altos（4800 El Camino Real）、Palo Alto（774 Emerson St）。官网门店页不列奶酪柜台；按全食「每店至少一名 CCP」的目标，多数门店设有专人现切的奶酪区，规模因店而异。",
+     "en": "Examples in the South Bay and Peninsula: San Jose's The Alameda store (opened December 9, 2014; opening coverage noted the cheese team would open a cheese on the spot for a taste), Cupertino (20955 Stevens Creek Blvd), Los Altos (4800 El Camino Real) and Palo Alto (774 Emerson St). Store pages do not list cheese counters; with a goal of at least one CCP per store, most stores have a staffed cut-to-order cheese area, though size varies.",
+     "year": "2014 / 2026",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Whole Foods San Jose Grand Opening Today (The San Jose Blog, 2014-12-09)",
+       "url": "https://www.thesanjoseblog.com/2014/12/whole-foods-san-jose-grand-opening-today.html",
+       "kind": "媒体"
+      },
+      {
+       "title": "Whole Foods Market Cupertino 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/cupertino",
+       "kind": "企业"
+      },
+      {
+       "title": "Whole Foods Market Los Altos 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/losaltos",
+       "kind": "企业"
+      },
+      {
+       "title": "Whole Foods Market Palo Alto 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/paloalto",
+       "kind": "企业"
+      },
+      {
+       "title": "culture 2025-03-07（每店至少一名 CCP 的目标）",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "次要参考（读者住旧金山）。口径：哪几家店柜台最全没有公开资料，逐店未核；The Alameda 门店页抓取失败。地址取自 2026-11 官网门店页。"
+    }
+   ]
+  },
+  {
+   "id": "eataly",
+   "name": "Eataly",
+   "zh": "Eataly（意大利美食市集）",
+   "en": "Eataly",
+   "facts": [
+    {
+     "id": "eataly-origin",
+     "zh": "Eataly 由 Oscar Farinetti 创办，2002 年 11 月起构想；2007 年 1 月 27 日首店在都灵 Lingotto 区一座旧苦艾酒（vermouth）工厂里开业，把「吃、买、学」放在同一屋檐下。",
+     "en": "Founded by Oscar Farinetti, who sketched the idea in November 2002, Eataly opened its first store on January 27, 2007 in a former vermouth factory in Turin's Lingotto district, putting eating, shopping and learning under one roof.",
+     "year": "2007-01-27",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Eataly: Our History",
+       "url": "https://www.eataly.com/us_en/about-eataly/eataly-history",
+       "kind": "官方"
+      },
+      {
+       "title": "Eataly (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Eataly",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "id": "eataly-nyc",
+     "zh": "美国首店 Eataly NYC Flatiron 于 2010 年 8 月 31 日开业，在麦迪逊广场公园旁的 Toy Center 大楼。",
+     "en": "The first U.S. store, Eataly NYC Flatiron, opened on August 31, 2010 in the Toy Center Building by Madison Square Park.",
+     "year": "2010-08-31",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Eataly (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Eataly",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "id": "eataly-scale",
+     "zh": "官网称在意大利和全球有 40 多家门店；2022 年 9 月，英国投资机构 Investindustrial 以 2 亿欧元取得 52% 控股权。",
+     "en": "Eataly says it has more than 40 locations in Italy and worldwide; in September 2022 Investindustrial bought a 52% majority stake for €200 million.",
+     "year": "2022 / 2026",
+     "num": ">40 家（官网口径）；52% / €2 亿",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Eataly: Our History",
+       "url": "https://www.eataly.com/us_en/about-eataly/eataly-history",
+       "kind": "官方"
+      },
+      {
+       "title": "Eataly (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Eataly",
+       "kind": "百科"
+      }
+     ],
+     "alt": "维基信息框写 59 家（未注明时点），与官网「40 多家」口径不同。"
+    },
+    {
+     "id": "eataly-sv",
+     "zh": "Eataly Silicon Valley 于 2022 年 6 月 16 日在圣克拉拉 Westfield Valley Fair 商场（2855 Stevens Creek Blvd.）开业，三层、约 45,000 平方英尺，是美国第 9 家、加州第 2 家（洛杉矶 Century City 之后）。原定 2020 年前后开业，因疫情推迟。 旧金山市内没有 Eataly；从 CCSF 走 I-280 开车约 45 英里、不堵车约 1 小时。",
+     "en": "Eataly Silicon Valley opened on June 16, 2022 at Westfield Valley Fair, 2855 Stevens Creek Blvd., Santa Clara: three floors, about 45,000 sq ft, Eataly's ninth U.S. store and second in California after Los Angeles. There is no Eataly in San Francisco; from City College it is about 45 miles via I-280, roughly an hour without traffic.",
+     "year": "2022-06-16",
+     "num": "3 层，约 45,000 平方英尺；美国第 9 家",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Long-awaited Eataly Silicon Valley finally has its opening date (Palo Alto Online, 2022-05-17)",
+       "url": "https://n2v.paloaltoonline.com/blogs/p/2022/05/17/long-awaited-eataly-silicon-valley-finally-has-its-opening-date",
+       "kind": "媒体"
+      },
+      {
+       "title": "Eataly to open first Bay Area location (SFist, 2019-12-17)",
+       "url": "https://sfist.com/2019/12/17/eataly-to-open-first-bay-area-location-in-san-jose",
+       "kind": "媒体"
+      },
+      {
+       "title": "Hands-On: Mozzarella (Eataly Silicon Valley, Eventbrite)",
+       "url": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1990676399699",
+       "kind": "企业"
+      }
+     ],
+     "note": "「因疫情推迟」是据 2019 年宣布、2022 年开业推断，en 未写；页面若用请谨慎。商场地址邮编属圣克拉拉，部分媒体写成 San Jose。 里程车程为编者按坐标估算（直线约 39 英里）。",
+     "alt": "Eataly 自家活动页（Eventbrite）把地址写作 2855 Stevens Creek Blvd, San Jose, CA 95128；当地媒体写圣克拉拉。Valley Fair 跨圣何塞 / 圣克拉拉两市。"
+    },
+    {
+     "id": "eataly-mozz",
+     "zh": "Eataly 的奶酪区通常与熟肉区合为「Salumi e Formaggi」现切柜台，旁边有现拉 mozzarella 的工作台（波士顿店叫 Mozzarella Lab），可以看师傅拉伸凝乳、当场试吃；另有预包装自选区。",
+     "en": "Eataly's cheese sits in a cut-to-order \"Salumi e Formaggi\" counter, usually beside a station where mozzarella is stretched by hand (Boston calls it the Mozzarella Lab) and you can watch and taste; a grab-and-go case holds pre-cut pieces.",
+     "year": "2016–2022",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "A Cheese Lover's Guide to Eataly Boston (culture, 2016-11-30)",
+       "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+       "kind": "媒体"
+      },
+      {
+       "title": "Stretching Mozzarella at Eataly (culture 视频)",
+       "url": "https://culturecheesemag.com/video/making-mozzarella-eataly/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "eataly-sv-mozz",
+     "zh": "硅谷店的 mozzarella 用牛奶在店内现做；那不勒斯披萨上的水牛 mozzarella 则从意大利进口，因为当地做不出来。",
+     "en": "At Eataly Silicon Valley fresh mozzarella is made in store from cow's milk; the buffalo mozzarella on the Neapolitan pizzas is imported from Italy because it cannot be replicated locally.",
+     "year": "2022",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "12 can't-miss items at Eataly Silicon Valley, according to an Italian food expert (RWC Pulse / Almanac, 2022-06-22)",
+       "url": "https://www.rwcpulse.com/food/2022/06/22/12-cant-miss-items-at-eataly-silicon-valley-according-to-an-italian-food-expert/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "eataly-la-mozz",
+     "zh": "洛杉矶店（2017 年 11 月开业）的做法可作参照：Pomona 的 Di Stefano 奶酪厂每天早上送来凝乳，两位奶酪师在店里拉制 mozzarella 和 burrata，起初每天约 60 磅。",
+     "en": "Eataly Los Angeles (opened November 2017) shows the model: Di Stefano Cheese in Pomona delivers curd each morning and two of its cheesemakers stretch mozzarella and burrata in store, about 60 lb a day at first.",
+     "year": "2017",
+     "num": "约 60 磅/天（开业初）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Eataly's cheeses (LAist, 2017-10-31, archival)",
+       "url": "https://laist.com/news/food/eatalys-cheeses",
+       "kind": "媒体"
+      }
+     ],
+     "note": "硅谷店凝乳供应商未查到。"
+    },
+    {
+     "id": "eataly-italian",
+     "zh": "柜台以意大利奶酪为主，常见 Parmigiano Reggiano、Grana Padano、Pecorino Romano、Gorgonzola、Taleggio 等 DOP，也混入本地手工奶酪；Eataly 的店员会鼓励顾客先尝再买。",
+     "en": "The counter leans Italian (Parmigiano Reggiano, Grana Padano, Pecorino Romano, Gorgonzola, Taleggio and other DOP cheeses) alongside local artisan cheeses, and mongers encourage you to taste before you buy.",
+     "year": "2016–2017",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "LAist 2017",
+       "url": "https://laist.com/news/food/eatalys-cheeses",
+       "kind": "媒体"
+      },
+      {
+       "title": "culture: Eataly Boston",
+       "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "eataly-sv-counter",
+     "zh": "硅谷店的 Salumi & Formaggi 柜台营业 8:30–21:00，官网称有多个年份的 Parmigiano Reggiano DOP、五种 DOP 火腿和不易买到的地方特产，也采购美国生产者的奶酪；mozzarella 每天店内现做。",
+     "en": "The Salumi & Formaggi counter at Eataly Silicon Valley is open 8:30 a.m.–9 p.m.; Eataly says it carries Parmigiano Reggiano DOP in several ages, five DOP prosciutti and hard-to-find regional specialties, plus cheese from U.S. producers, and makes mozzarella in house daily.",
+     "year": "2026",
+     "num": "8:30–21:00；多个熟成年份",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Eataly Silicon Valley: Market",
+       "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+       "kind": "官方"
+      }
+     ],
+     "note": "官网未写 mozzarella 现拉的固定时段，到店问柜台。"
+    },
+    {
+     "id": "eataly-sv-classes",
+     "zh": "硅谷店的烹饪学校（La Scuola）定期开课，2026 年有「Hands-On: Mozzarella」实操课（如 7 月 10 日周五 18:00–20:00，两小时，由主厨带着做 mozzarella），也有披萨、意面、提拉米苏等课和全店品鉴；私人课可经 ESV-Scuola@eataly.com 预约。未查到固定的帕玛森开轮日。",
+     "en": "Eataly Silicon Valley's cooking school runs regular classes; in 2026 these included a two-hour \"Hands-On: Mozzarella\" class (e.g. Friday, July 10, 6–8 p.m., led by a Scuola chef), along with pasta, pizza and tiramisù classes and storewide tastings. No fixed Parmigiano wheel-cracking day was found.",
+     "year": "2025–2026",
+     "num": "2 小时",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Hands-On: Mozzarella (Eventbrite, Eataly Silicon Valley)",
+       "url": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1990676399699",
+       "kind": "企业"
+      },
+      {
+       "title": "Eataly Silicon Valley Classes & Events (Visit Silicon Valley)",
+       "url": "https://visitsiliconvalley.org/events/eataly-silicon-valley-classes-events",
+       "kind": "官方"
+      }
+     ],
+     "note": "课价未显示；页面若写请让读者看 Eataly 官网 Classes & Events。"
+    }
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "id": "fresh",
+   "zh": "新鲜 / 软质",
+   "en": "Fresh & soft",
+   "what_zh": "没熟成或只熟成几天、无皮或皮极薄，奶香、微酸、多汁。看包装日期和汁水是否清亮，越新越好；买了一两天内吃。Eataly 的现拉 mozzarella 台就属这一区。",
+   "what_en": "Unaged or barely aged, rindless, milky, tangy and moist. Check the pack date and that any liquid is clear; fresher is better, eat within a day or two. Eataly's mozzarella-stretching station belongs here.",
+   "examples": [
+    "Mozzarella / fior di latte",
+    "Mozzarella di Bufala Campana",
+    "Burrata",
+    "Ricotta",
+    "Laura Chenel 新鲜山羊奶酪",
+    "Feta",
+    "Halloumi"
+   ],
+   "sources": [
+    {
+     "title": "culture: Eataly Boston (Mozzarella Lab)",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "bloomy",
+   "zh": "白霉皮（软质熟成）",
+   "en": "Bloomy rind",
+   "what_zh": "表面一层白色绒霉（Penicillium camemberti 等），芯从外向内变软。看皮是否洁白、按下去有弹性；皮发褐、发黏、有氨水味说明过熟。皮可以吃。",
+   "what_en": "A white velvety mold rind (Penicillium camemberti and kin); the paste softens from the outside in. Look for a clean white rind that gives slightly when pressed; brown, sticky or ammoniated means overripe. The rind is edible.",
+   "examples": [
+    "Brie",
+    "Camembert",
+    "Cowgirl Mt Tam",
+    "Marin French Brie",
+    "Humboldt Fog",
+    "Harbison"
+   ],
+   "sources": [
+    {
+     "title": "ICE: Understanding Cheese Rinds (2022)",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "washed",
+   "zh": "洗皮",
+   "en": "Washed rind",
+   "what_zh": "熟成时反复用盐水、酒刷洗，皮呈橙红、略黏，气味冲（Brevibacterium linens），芯往往比气味温和。冰箱里要单独装盒；闻起来是「浓」而不是「臭氨水」。",
+   "what_en": "Washed in brine or spirits during aging; orange, slightly tacky rind and a strong smell (Brevibacterium linens), with a paste usually milder than its aroma. Box it separately at home; it should smell rich, not like ammonia.",
+   "examples": [
+    "Taleggio",
+    "Époisses",
+    "Cowgirl Red Hawk",
+    "Morbier",
+    "Pleasant Ridge Reserve"
+   ],
+   "sources": [
+    {
+     "title": "ICE: Understanding Cheese Rinds",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    },
+    {
+     "title": "Formaticum: Can I Eat the Rind?",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "alpine",
+   "zh": "半硬 / 阿尔卑斯式",
+   "en": "Semi-hard & Alpine",
+   "what_zh": "大轮、压榨、熟成数月到两三年，坚果、焦糖、肉汤味，好融化。看标签上的熟成月数和是否生乳；切面应均匀不干裂。",
+   "what_en": "Big pressed wheels aged months to a few years; nutty, caramel, brothy, great melters. Read the age in months and whether it is raw milk; the face should be even, not cracked or dry.",
+   "examples": [
+    "Comté",
+    "Le Gruyère AOP",
+    "Emmentaler AOP",
+    "Fontina Val d'Aosta",
+    "Pleasant Ridge Reserve",
+    "Beecher's Flagship"
+   ],
+   "sources": [
+    {
+     "title": "Comté cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Comt%C3%A9_cheese",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "hard",
+   "zh": "硬质 / 刨丝类",
+   "en": "Hard & grating",
+   "what_zh": "熟成一年以上，干、碎、有白色结晶，咸鲜重。Parmigiano 看针点字皮和月数；可以要整块「chunk」而不是刨好的丝。",
+   "what_en": "Aged a year or more; dry, crumbly, crystalline and savory. For Parmigiano check the pin-dot rind and the age; ask for a chunk rather than pre-grated.",
+   "examples": [
+    "Parmigiano Reggiano",
+    "Grana Padano",
+    "Pecorino Romano",
+    "Vella Dry Jack",
+    "陈年 Gouda",
+    "Mimolette",
+    "Manchego",
+    "Montgomery's Cheddar"
+   ],
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "blue",
+   "zh": "蓝纹",
+   "en": "Blue",
+   "what_zh": "接种 Penicillium roqueforti，扎针透气长出蓝绿纹，咸、辛、奶油感。看纹路分布均匀、芯不发灰发干；锡纸包的皮下可吃，叶子包的留着保护切面。分人口味，买小块。",
+   "what_en": "Inoculated with Penicillium roqueforti and needled so blue-green veins grow; salty, spicy, creamy. Look for even veining and a paste that is not grey or dry; foil-wrapped rinds are edible underneath, leaf wraps protect the cut face. Polarizing, so buy small.",
+   "examples": [
+    "Roquefort",
+    "Gorgonzola Dolce / Piccante",
+    "Stilton",
+    "Point Reyes Original Blue",
+    "Point Reyes Bay Blue",
+    "Rogue River Blue"
+   ],
+   "sources": [
+    {
+     "title": "Formaticum: Can I Eat the Rind?",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    },
+    {
+     "title": "Bay Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/Bay-Blue",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "goat-sheep",
+   "zh": "山羊 / 绵羊奶",
+   "en": "Goat & sheep",
+   "what_zh": "山羊奶酪偏白、酸、清爽带「羊味」；绵羊奶酪油脂高、甜、坚果味。标签会写「made from goat's / sheep's milk」；「Pecorino」就是绵羊奶。",
+   "what_en": "Goat cheeses are bright white, tangy and grassy; sheep cheeses are rich, sweet and nutty. Labels say \"made from goat's / sheep's milk\"; \"Pecorino\" means sheep.",
+   "examples": [
+    "Humboldt Fog",
+    "Laura Chenel chèvre",
+    "Manchego",
+    "Idiazabal",
+    "Pecorino Romano",
+    "Roquefort",
+    "Feta"
+   ],
+   "sources": [
+    {
+     "title": "21 CFR § 133.182 (made from 标注)",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "american",
+   "zh": "本地 / 美国手工",
+   "en": "Local & American artisan",
+   "what_zh": "全食通常有一块「本地」或「American artisan」陈列；湾区店常见 Cowgirl、Point Reyes、Cypress Grove、Marin French、Vella。看是否 farmstead（自家牧场的奶）、是否生乳，以及得奖标签。",
+   "what_en": "Whole Foods usually has a local or American artisan section; Bay Area stores tend to carry Cowgirl, Point Reyes, Cypress Grove, Marin French and Vella. Check for farmstead (milk from the maker's own herd), raw milk and award stickers.",
+   "examples": [
+    "Point Reyes Original Blue",
+    "Cowgirl Mt Tam",
+    "Humboldt Fog",
+    "Rogue River Blue",
+    "Harbison",
+    "Pleasant Ridge Reserve",
+    "Cabot Clothbound"
+   ],
+   "sources": [
+    {
+     "title": "Taste our American Artisan Cheeses (Whole Foods)",
+     "url": "https://www.wholefoodsmarket.com/tips-and-ideas/archive/taste-our-american-artisan-cheeses",
+     "kind": "企业"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "note": "Taste our American Artisan Cheeses 页未打开，仅凭标题佐证有此陈列主题。"
+  },
+  {
+   "id": "italian-dop",
+   "zh": "意大利 DOP 区",
+   "en": "Italian DOP",
+   "what_zh": "Eataly 的主场：Parmigiano 多个年份、Grana、Pecorino、Gorgonzola、Taleggio、Fontina、水牛 mozzarella。看 DOP 红黄标、熟成月数；Parmigiano 现切块要带针点字皮。",
+   "what_en": "Eataly's home turf: Parmigiano in several ages, Grana, Pecorino, Gorgonzola, Taleggio, Fontina, buffalo mozzarella. Look for the red-and-yellow DOP seal and the age; cut Parmigiano should keep pin-dot rind.",
+   "examples": [
+    "Parmigiano Reggiano",
+    "Grana Padano",
+    "Pecorino Romano",
+    "Gorgonzola",
+    "Taleggio",
+    "Fontina Val d'Aosta",
+    "Asiago",
+    "Mozzarella di Bufala Campana"
+   ],
+   "sources": [
+    {
+     "title": "Eataly Silicon Valley: Market",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "cut-to-order",
+   "zh": "现切区（柜台后）",
+   "en": "Cut-to-order counter",
+   "what_zh": "整轮、整块放在柜台后，按你要的重量现切，可以试吃。适合贵的、要讲究熟成的、想少量多样的。说「a quarter pound」或「about 4 ounces」即可。",
+   "what_en": "Whole wheels and blocks behind the counter, cut to the weight you ask for, with tasting. Best for pricier, age-sensitive cheeses or a small-quantity variety board. Ask for \"a quarter pound\" or \"about 4 ounces.\"",
+   "examples": [
+    "Parmigiano Reggiano 整轮",
+    "Comté",
+    "Gruyère",
+    "Stilton",
+    "Montgomery's Cheddar"
+   ],
+   "sources": [
+    {
+     "title": "culture 2025-03-07（全食 CCP 现切）",
+     "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "grab-and-go",
+   "zh": "预切自选区",
+   "en": "Pre-cut grab-and-go",
+   "what_zh": "已切好、包好贴价的块，以及小盒装软质。快、便宜（全食 365 在这里），但要看包装日期、保鲜膜下是否出水、切面是否发干变色。",
+   "what_en": "Pre-cut, wrapped and priced pieces plus boxed soft cheeses. Fast and cheaper (365 lives here), but check the pack date, any sweating under the film and whether the cut face has dried or darkened.",
+   "examples": [
+    "365 Parmigiano Reggiano 楔块",
+    "预包装 Brie / Camembert",
+    "Feta",
+    "Halloumi",
+    "Tillamook"
+   ],
+   "sources": [
+    {
+     "title": "culture: Eataly Boston（Take Away 区）",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ],
+ "cheeses": [
+  {
+   "id": "parmigiano-reggiano",
+   "name": "Parmigiano Reggiano",
+   "name_zh": "帕玛森干酪（帕尔马-雷焦）",
+   "country": "意大利",
+   "region": "艾米利亚-罗马涅 / 伦巴第（帕尔马、雷焦艾米利亚、摩德纳、博洛尼亚、曼托瓦五省）",
+   "milk": "牛（生乳）",
+   "family": "硬质 / grana",
+   "label": "DOP",
+   "raw": true,
+   "age": "≥12 个月；柜台常见 18、24、30、36 个月",
+   "price_usd_lb": "$22–35",
+   "price_basis": "口径 A：Lunds & Byerlys 自有 24 个月 $29.99/lb（2026-11，明尼苏达）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。 全食 365 预包装楔块通常更低。",
+   "where": "both",
+   "taste_zh": "咸鲜、坚果和熟菠萝般的果香，越陈越碎、结晶越多。",
+   "taste_en": "Savory and nutty with ripe-fruit notes; older wheels are more crumbly and crystalline.",
+   "good_for_zh": "掰块直接吃、刨在意面汤上，皮留着煮汤。",
+   "pair_zh": "意大利起泡酒 Lambrusco、陈年香醋（Aceto Balsamico di Modena）滴几滴、梨。",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano FAQ (Consorzio)",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Lunds & Byerlys: Parmesan Style（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/parmesan-style-id-136",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "",
+   "zone": "hard",
+   "fam_key": "xhard",
+   "origin_zh": "意大利 · 艾米利亚",
+   "origin_en": "Italy · Emilia",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "DOP",
+    "raw"
+   ],
+   "good_for_en": "Break into chunks to eat as is, grate over pasta and soup, save the rind for broth.",
+   "pair_en": "Lambrusco, a few drops of aged balsamic, pears.",
+   "price_lb": "$22–35"
+  },
+  {
+   "id": "grana-padano",
+   "name": "Grana Padano",
+   "name_zh": "格拉娜·帕达诺",
+   "country": "意大利",
+   "region": "波河平原（皮埃蒙特、伦巴第、威尼托、特伦托等）",
+   "milk": "牛（生乳、部分脱脂）",
+   "family": "硬质 / grana",
+   "label": "DOP",
+   "raw": true,
+   "age": "≥9 个月；Riserva 20 个月以上",
+   "price_usd_lb": "$15–24",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "both",
+   "taste_zh": "比 Parmigiano 更温和、甜一些、咸度低。",
+   "taste_en": "Milder, sweeter and less salty than Parmigiano Reggiano.",
+   "good_for_zh": "日常刨丝、做菜的性价比之选。",
+   "pair_zh": "意式肉肠、无花果、轻盈白葡萄酒。",
+   "sources": [
+    {
+     "title": "Grana Padano (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Grana_Padano",
+     "kind": "百科"
+    }
+   ],
+   "note": "产区更大、规定较宽（可用青贮饲料、可加溶菌酶）。",
+   "conf": "中",
+   "zone": "hard",
+   "fam_key": "xhard",
+   "origin_zh": "意大利 · 波河平原",
+   "origin_en": "Italy · Po Valley",
+   "milk_en": "Cow (raw, part-skimmed)",
+   "label_tags": [
+    "DOP",
+    "raw"
+   ],
+   "good_for_en": "The good-value everyday grater for cooking.",
+   "pair_en": "Salami, figs, a light white wine.",
+   "price_lb": "$15–24"
+  },
+  {
+   "id": "pecorino-romano",
+   "name": "Pecorino Romano",
+   "name_zh": "罗马绵羊奶酪",
+   "country": "意大利",
+   "region": "撒丁岛为主（亦可在拉齐奥、格罗塞托省）",
+   "milk": "绵羊",
+   "family": "硬质",
+   "label": "DOP",
+   "raw": null,
+   "age": "≥5 个月",
+   "price_usd_lb": "$14–22",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "both",
+   "taste_zh": "很咸、尖锐、带羊奶香。",
+   "taste_en": "Very salty and sharp with a sheepy tang.",
+   "good_for_zh": "刨在 cacio e pepe、carbonara、amatriciana 上；不太适合单吃。",
+   "pair_zh": "蚕豆、梨、意大利中部红酒。",
+   "sources": [
+    {
+     "title": "Pecorino romano (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Pecorino_romano",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Italian（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/italian-id-131",
+     "kind": "企业"
+    }
+   ],
+   "note": "生乳 / 热处理规则未核。LAist 引 Eataly 供货商：名字里带 Pecorino 的都是绵羊奶。",
+   "conf": "中",
+   "zone": "hard",
+   "fam_key": "xhard",
+   "origin_zh": "意大利 · 撒丁岛",
+   "origin_en": "Italy · Sardinia",
+   "milk_en": "Sheep",
+   "label_tags": [
+    "DOP"
+   ],
+   "good_for_en": "Grate over cacio e pepe, carbonara or amatriciana; too salty to nibble much.",
+   "pair_en": "Fava beans, pears, central-Italian reds.",
+   "price_lb": "$14–22"
+  },
+  {
+   "id": "gorgonzola",
+   "name": "Gorgonzola Dolce / Piccante",
+   "name_zh": "戈贡佐拉（甜 / 辣）",
+   "country": "意大利",
+   "region": "皮埃蒙特、伦巴第",
+   "milk": "牛（巴氏）",
+   "family": "蓝纹",
+   "label": "DOP",
+   "raw": false,
+   "age": "通常 3–4 个月；Piccante 比 Dolce 熟成更久",
+   "price_usd_lb": "$16–26",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。 参照：美国产 AmaGorg $21.99/lb（Lunds & Byerlys 2026-11，非 DOP）。",
+   "where": "both",
+   "taste_zh": "Dolce 软、奶油般、温和；Piccante 硬一些、碎、辛辣。",
+   "taste_en": "Dolce is soft, creamy and gentle; Piccante is firmer, crumbly and spicy.",
+   "good_for_zh": "Dolce 抹面包、拌意面、做酱；Piccante 上拼盘、配沙拉。",
+   "pair_zh": "蜂蜜、核桃、梨；甜白（Moscato d'Asti、Passito）。",
+   "sources": [
+    {
+     "title": "Gorgonzola (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Gorgonzola",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Blue（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/blue-id-128",
+     "kind": "企业"
+    }
+   ],
+   "note": "两种的法定最短熟成未在维基看到，未写天数。",
+   "conf": "中",
+   "zone": "blue",
+   "fam_key": "blue",
+   "origin_zh": "意大利 · 伦巴第 / 皮埃蒙特",
+   "origin_en": "Italy · Lombardy & Piedmont",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "DOP",
+    "pasteurised"
+   ],
+   "good_for_en": "Dolce for spreading, pasta and sauces; Piccante for boards and salads.",
+   "pair_en": "Honey, walnuts, pears; Moscato d'Asti or passito.",
+   "price_lb": "$16–26"
+  },
+  {
+   "id": "taleggio",
+   "name": "Taleggio",
+   "name_zh": "塔雷吉欧",
+   "country": "意大利",
+   "region": "伦巴第（亦含皮埃蒙特部分）",
+   "milk": "牛（多为巴氏）",
+   "family": "洗皮",
+   "label": "DOP",
+   "raw": null,
+   "age": "约 6–10 周（≥40 天口径）",
+   "price_usd_lb": "$18–28",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "both",
+   "taste_zh": "闻着冲，吃起来温和、奶油般、带果酸。",
+   "taste_en": "Pungent nose, mild, creamy, fruity-tangy paste.",
+   "good_for_zh": "拼盘、烤土豆、焗饭、热三明治（很好融化）。",
+   "pair_zh": "苹果、核桃面包、意大利北部红酒（Barbera）。",
+   "sources": [
+    {
+     "title": "Taleggio cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Taleggio_cheese",
+     "kind": "百科"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "note": "全食 2025 年 12 Days of Cheese 选了 Ca de Ambros Taleggio。",
+   "conf": "中",
+   "zone": "washed",
+   "fam_key": "washed",
+   "origin_zh": "意大利 · 伦巴第",
+   "origin_en": "Italy · Lombardy",
+   "milk_en": "Cow (usually pasteurized)",
+   "label_tags": [
+    "DOP"
+   ],
+   "good_for_en": "Boards, baked potatoes, risotto, hot sandwiches; melts beautifully.",
+   "pair_en": "Apples, walnut bread, Barbera.",
+   "price_lb": "$18–28"
+  },
+  {
+   "id": "fontina-vda",
+   "name": "Fontina Val d'Aosta",
+   "name_zh": "瓦莱达奥斯塔芳提娜",
+   "country": "意大利",
+   "region": "瓦莱达奥斯塔",
+   "milk": "牛（生乳，单次挤奶）",
+   "family": "半硬 / 阿尔卑斯式",
+   "label": "DOP",
+   "raw": true,
+   "age": "数月（法定最短未核）",
+   "price_usd_lb": "$26–34",
+   "price_basis": "口径 A：Lunds & Byerlys「Fontina Cheese Valle d'Aosta」$30.99/lb（2026-11）；丹麦 Fontina $16.99/lb；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。",
+   "where": "both",
+   "taste_zh": "土味、蘑菇、木质，越陈坚果味越重；比丹麦 / 瑞典 Fontina 浓得多。",
+   "taste_en": "Earthy, mushroomy and woody, nuttier with age; far bolder than Danish or Swedish fontina.",
+   "good_for_zh": "做 fonduta（奶酪锅）、焗菜、配烤肉和松露。",
+   "pair_zh": "烤栗子、蘑菇、Nebbiolo 红酒。",
+   "sources": [
+    {
+     "title": "Fontina (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Fontina",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Italian（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/italian-id-131",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "买的时候认准「Val d'Aosta / Valle d'Aosta DOP」，只写 Fontina 的多是丹麦或美国产。",
+   "zone": "alpine",
+   "fam_key": "semi",
+   "origin_zh": "意大利 · 瓦莱达奥斯塔",
+   "origin_en": "Italy · Aosta Valley",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "DOP",
+    "raw"
+   ],
+   "good_for_en": "Fonduta, gratins, with roast meats and truffles.",
+   "pair_en": "Roast chestnuts, mushrooms, Nebbiolo.",
+   "price_lb": "$26–34"
+  },
+  {
+   "id": "burrata",
+   "name": "Burrata",
+   "name_zh": "布拉塔",
+   "country": "意大利（美国本地也大量生产）",
+   "region": "普利亚安德里亚（Andria）发源",
+   "milk": "牛（巴氏）",
+   "family": "新鲜 / 拉伸凝乳",
+   "label": "无（Burrata di Andria 为 PGI）",
+   "raw": false,
+   "age": "新鲜，几天内吃",
+   "price_usd_lb": "$14–32（按 8 oz 一颗约 $7–16 折算）",
+   "price_basis": "口径 A：BelGioioso 8 oz 原价 $6.99（Lunds & Byerlys 2026-11，美国产）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。 意大利空运与店内现做更贵。",
+   "where": "both",
+   "taste_zh": "外层是 mozzarella 皮，里面是奶油和碎丝（stracciatella），切开会流出来，清甜奶香。",
+   "taste_en": "A mozzarella shell filled with cream and stracciatella that spills when cut; sweet and milky.",
+   "good_for_zh": "切开配番茄、桃子、烤面包；买当天吃。",
+   "pair_zh": "好橄榄油、海盐、罗勒、熟番茄或桃。",
+   "sources": [
+    {
+     "title": "Burrata (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Burrata",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Fresh Mozzarella（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/fresh-mozzarella-id-135",
+     "kind": "企业"
+    }
+   ],
+   "note": "起源说法不一：常见归于 1956 年 Lorenzo Bianchino；也有更早（1900 / 1920 年代）之说。Burrata di Andria 2016 年获 PGI。",
+   "conf": "中",
+   "zone": "fresh",
+   "fam_key": "pasta",
+   "origin_zh": "意大利 · 普利亚",
+   "origin_en": "Italy · Apulia",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "Tear open over tomatoes, peaches or toast; eat the day you buy it.",
+   "pair_en": "Good olive oil, sea salt, basil, ripe tomatoes or peaches.",
+   "price_lb": "$14–32"
+  },
+  {
+   "id": "mozzarella-di-bufala",
+   "name": "Mozzarella di Bufala Campana",
+   "name_zh": "坎帕尼亚水牛马苏里拉",
+   "country": "意大利",
+   "region": "坎帕尼亚为主，兼拉齐奥南部、莫利塞、普利亚北部局部",
+   "milk": "水牛",
+   "family": "新鲜 / 拉伸凝乳",
+   "label": "DOP",
+   "raw": null,
+   "age": "新鲜",
+   "price_usd_lb": "$20–36（按 125–250 g 一颗折算）",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "both",
+   "taste_zh": "比牛奶 mozzarella 更浓、更酸、更有奶香，切开出白汁。",
+   "taste_en": "Richer, tangier and milkier than cow's-milk mozzarella, weeping milk when cut.",
+   "good_for_zh": "Caprese、那不勒斯披萨（Eataly 硅谷店披萨用的就是意大利进口水牛奶酪）。",
+   "pair_zh": "番茄、罗勒、橄榄油、Falanghina 白酒。",
+   "sources": [
+    {
+     "title": "Mozzarella di Bufala Campana (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mozzarella_di_Bufala_Campana",
+     "kind": "百科"
+    },
+    {
+     "title": "12 can't-miss items at Eataly Silicon Valley (RWC Pulse, 2022-06-22)",
+     "url": "https://www.rwcpulse.com/food/2022/06/22/12-cant-miss-items-at-eataly-silicon-valley-according-to-an-italian-food-expert/",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "高",
+   "note": "EU PDO 2008 年（意大利 DOC 1993）。",
+   "zone": "fresh",
+   "fam_key": "pasta",
+   "origin_zh": "意大利 · 坎帕尼亚",
+   "origin_en": "Italy · Campania",
+   "milk_en": "Water buffalo",
+   "label_tags": [
+    "DOP"
+   ],
+   "good_for_en": "Caprese and Neapolitan pizza.",
+   "pair_en": "Tomatoes, basil, olive oil, Falanghina.",
+   "price_lb": "$20–36"
+  },
+  {
+   "id": "fior-di-latte",
+   "name": "Fresh Mozzarella (fior di latte)",
+   "name_zh": "现做牛奶马苏里拉",
+   "country": "美国（店内现做）",
+   "region": "Eataly 店内",
+   "milk": "牛（巴氏）",
+   "family": "新鲜 / 拉伸凝乳",
+   "label": "无",
+   "raw": false,
+   "age": "当天",
+   "price_usd_lb": "$12–20",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "Eataly",
+   "taste_zh": "奶味干净、有弹性、微咸；好的不该咬得「吱吱响」。",
+   "taste_en": "Clean, milky, springy and lightly salted; good mozzarella shouldn't squeak.",
+   "good_for_zh": "当天吃、做沙拉或夹三明治；能看到现拉就买刚做好的。",
+   "pair_zh": "番茄、橄榄油、普罗旺斯式香草、意式火腿。",
+   "sources": [
+    {
+     "title": "Eataly Silicon Valley: Market",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    },
+    {
+     "title": "12 can't-miss items at Eataly Silicon Valley (RWC Pulse, 2022-06-22)",
+     "url": "https://www.rwcpulse.com/food/2022/06/22/12-cant-miss-items-at-eataly-silicon-valley-according-to-an-italian-food-expert/",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "高",
+   "note": "硅谷店官网写「made in house daily」，RWC Pulse 2022 写用牛奶在店内做。",
+   "zone": "fresh",
+   "fam_key": "pasta",
+   "origin_zh": "美国 · Eataly 店内现做",
+   "origin_en": "USA · made in store at Eataly",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "Eat the same day in salads or sandwiches; buy it fresh off the stretching table.",
+   "pair_en": "Tomatoes, olive oil, herbs, prosciutto.",
+   "price_lb": "$12–20"
+  },
+  {
+   "id": "asiago",
+   "name": "Asiago",
+   "name_zh": "阿夏戈",
+   "country": "意大利",
+   "region": "威尼托、特伦蒂诺（维琴察、特伦托全省及帕多瓦、特雷维索局部）",
+   "milk": "牛",
+   "family": "半硬（Pressato）/ 硬质（d'Allevo）",
+   "label": "DOP",
+   "raw": null,
+   "age": "Pressato 约 20–40 天；d'Allevo Mezzano 4–6 个月、Vecchio 10–16 个月、Stravecchio 15 个月以上",
+   "price_usd_lb": "$14–24",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "both",
+   "taste_zh": "Pressato 软、奶油、温和；d'Allevo 越陈越硬、越有焦糖与微苦辛。",
+   "taste_en": "Pressato is soft, buttery and mild; d'Allevo gets harder, more caramel and gently bitter-spicy with age.",
+   "good_for_zh": "Pressato 夹三明治、融化；陈年 d'Allevo 刨丝或掰块。",
+   "pair_zh": "意式熏火腿、蜂蜜、Valpolicella 红酒。",
+   "sources": [
+    {
+     "title": "Asiago cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Asiago_cheese",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "美国超市的「Asiago」多为美国产仿制，看 DOP 标。",
+   "zone": "alpine",
+   "fam_key": "semi",
+   "origin_zh": "意大利 · 威尼托",
+   "origin_en": "Italy · Veneto",
+   "milk_en": "Cow",
+   "label_tags": [
+    "DOP"
+   ],
+   "good_for_en": "Young Pressato for sandwiches and melting; aged d'Allevo for grating or chunks.",
+   "pair_en": "Speck, honey, Valpolicella.",
+   "price_lb": "$14–24"
+  },
+  {
+   "id": "brie",
+   "name": "Brie（法国巴氏版）",
+   "name_zh": "布里",
+   "country": "法国",
+   "region": "法兰西岛（Meaux、Melun 一带发源）",
+   "milk": "牛（美国市售为巴氏）",
+   "family": "白霉软质",
+   "label": "无（Brie de Meaux / Melun AOP 为生乳，美国基本买不到）",
+   "raw": false,
+   "age": "数周",
+   "price_usd_lb": "$12–22",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "奶油、蘑菇、坚果，微酸。",
+   "taste_en": "Buttery, mushroomy and nutty with a little tang.",
+   "good_for_zh": "拼盘入门款，室温回软后连皮吃；也可烤。",
+   "pair_zh": "法棍、葡萄、无花果酱、香槟。",
+   "sources": [
+    {
+     "title": "Brie (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Brie",
+     "kind": "百科"
+    },
+    {
+     "title": "ICE: Understanding Cheese Rinds (2022)",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "高",
+   "note": "Brie de Meaux 与 Brie de Melun 1980 年获 AOC。",
+   "zone": "bloomy",
+   "fam_key": "bloomy",
+   "origin_zh": "法国 · 法兰西岛",
+   "origin_en": "France · Île-de-France",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "The starter cheese for any board; let it soften and eat the rind, or bake it.",
+   "pair_en": "Baguette, grapes, fig jam, Champagne.",
+   "price_lb": "$12–22"
+  },
+  {
+   "id": "camembert",
+   "name": "Camembert（巴氏版）",
+   "name_zh": "卡门贝尔",
+   "country": "法国",
+   "region": "诺曼底",
+   "milk": "牛（美国市售为巴氏）",
+   "family": "白霉软质",
+   "label": "无（Camembert de Normandie AOP 为生乳）",
+   "raw": false,
+   "age": "约 3–5 周",
+   "price_usd_lb": "$16–28（按 250 g 一盒折算）",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "比 Brie 更浓、更酸，有时略带白垩感，温热后更软滑。",
+   "taste_en": "Stronger and tangier than brie, sometimes chalky, creamier when warm.",
+   "good_for_zh": "整盒烤着蘸面包、拼盘。",
+   "pair_zh": "苹果、苹果酒（cidre）或 Calvados、核桃。",
+   "sources": [
+    {
+     "title": "Camembert (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Camembert",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "Marie Harel 1791 年发明是流传说法，维基称更可能源于 19 世纪末工业化；1890 年 Ridel 发明杨木盒。AOC 1983 年。",
+   "zone": "bloomy",
+   "fam_key": "bloomy",
+   "origin_zh": "法国 · 诺曼底",
+   "origin_en": "France · Normandy",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "Bake whole in its box for dipping, or serve on a board.",
+   "pair_en": "Apples, cider or Calvados, walnuts.",
+   "price_lb": "$16–28"
+  },
+  {
+   "id": "comte",
+   "name": "Comté",
+   "name_zh": "孔泰",
+   "country": "法国",
+   "region": "汝拉（Jura）山区",
+   "milk": "牛（生乳，Montbéliarde / 法国西门塔尔）",
+   "family": "半硬 / 阿尔卑斯式",
+   "label": "AOP",
+   "raw": true,
+   "age": "≥4 个月；常见 12–24 个月，最长约 36 个月",
+   "price_usd_lb": "$22–34",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "坚果、黄油、焦糖、肉汤，越陈越鲜、有结晶。",
+   "taste_en": "Nutty, buttery, caramel and brothy; savory crystals with age.",
+   "good_for_zh": "拼盘主角、做法式火腿三明治、焗烤、奶酪锅。",
+   "pair_zh": "汝拉黄酒（Vin Jaune）或霞多丽、核桃、苹果。",
+   "sources": [
+    {
+     "title": "Comté cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Comt%C3%A9_cheese",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "AOC 1958 年。可问柜台要不同月数各一小块对比。",
+   "zone": "alpine",
+   "fam_key": "hard",
+   "origin_zh": "法国 · 汝拉",
+   "origin_en": "France · Jura",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "AOP",
+    "raw"
+   ],
+   "good_for_en": "Board centerpiece, ham sandwiches, gratins, fondue.",
+   "pair_en": "Vin Jaune or Chardonnay, walnuts, apples.",
+   "price_lb": "$22–34"
+  },
+  {
+   "id": "roquefort",
+   "name": "Roquefort",
+   "name_zh": "罗克福",
+   "country": "法国",
+   "region": "阿韦龙 Roquefort-sur-Soulzon（Combalou 山洞熟成）",
+   "milk": "绵羊（生乳，Lacaune 种）",
+   "family": "蓝纹",
+   "label": "AOP",
+   "raw": true,
+   "age": "约 5 个月起",
+   "price_usd_lb": "$24–40",
+   "price_basis": "口径 A：Lunds & Byerlys Roquefort $23.99/lb（2026-11）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。 名牌（Papillon 等）多在区间中段。",
+   "where": "WF",
+   "taste_zh": "咸、辛、湿润，绵羊奶的甜和油。",
+   "taste_en": "Salty, spicy and moist, with sheep's-milk sweetness and fat.",
+   "good_for_zh": "少量上拼盘、拌沙拉、做牛排酱。",
+   "pair_zh": "苏玳（Sauternes）贵腐甜酒是经典搭配、蜂蜜、核桃。",
+   "sources": [
+    {
+     "title": "Roquefort (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Roquefort",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Roquefort Blue Cheese（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/product/roquefort-blue-cheese-id-00264309000000",
+     "kind": "企业"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "1925 年法国第一个 AOC；1411 年查理六世授予当地熟成专营权。",
+   "zone": "blue",
+   "fam_key": "blue",
+   "origin_zh": "法国 · 阿韦龙",
+   "origin_en": "France · Aveyron",
+   "milk_en": "Sheep (raw)",
+   "label_tags": [
+    "AOP",
+    "raw"
+   ],
+   "good_for_en": "A small piece on a board, crumbled on salad, or in a steak sauce.",
+   "pair_en": "Sauternes, honey, walnuts.",
+   "price_lb": "$24–40"
+  },
+  {
+   "id": "morbier",
+   "name": "Morbier",
+   "name_zh": "莫尔比耶",
+   "country": "法国",
+   "region": "汝拉、杜省",
+   "milk": "牛",
+   "family": "半软 / 中间一道灰线",
+   "label": "AOP",
+   "raw": null,
+   "age": "约 45 天至 3 个月",
+   "price_usd_lb": "$18–28",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "皮略黏、闻着有点冲，芯温和、奶油般；中间一道植物灰线。",
+   "taste_en": "Slightly sticky, aromatic rind; mild, creamy paste with a line of vegetable ash through the middle.",
+   "good_for_zh": "拼盘、融化（口感像 Raclette）。",
+   "pair_zh": "煮土豆、腌黄瓜、汝拉白酒。",
+   "sources": [
+    {
+     "title": "Morbier cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Morbier_cheese",
+     "kind": "百科"
+    }
+   ],
+   "note": "灰线来历：做 Comté 剩的晚间凝乳先撒灰护住，早上再盖上新凝乳。生乳要求未核。",
+   "conf": "中",
+   "zone": "washed",
+   "fam_key": "semi",
+   "origin_zh": "法国 · 汝拉",
+   "origin_en": "France · Jura",
+   "milk_en": "Cow",
+   "label_tags": [
+    "AOP"
+   ],
+   "good_for_en": "Boards and melting, raclette-style.",
+   "pair_en": "Boiled potatoes, cornichons, Jura white wine.",
+   "price_lb": "$18–28"
+  },
+  {
+   "id": "epoisses",
+   "name": "Époisses",
+   "name_zh": "埃普瓦斯",
+   "country": "法国",
+   "region": "勃艮第",
+   "milk": "牛（美国市售为巴氏）",
+   "family": "洗皮软质",
+   "label": "AOP",
+   "raw": false,
+   "age": "数周（法定最短未核）",
+   "price_usd_lb": "$35–55（按 250 g 木盒约 $20–30 折算）",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "橙色湿皮、气味极冲，芯熟透时可用勺舀，咸鲜奶油。",
+   "taste_en": "Orange, damp rind with a very strong smell; when ripe the paste is spoonable, savory and creamy.",
+   "good_for_zh": "懂奶酪的朋友的「终极挑战」；室温放软配面包。",
+   "pair_zh": "勃艮第红 / 白、法棍。",
+   "sources": [
+    {
+     "title": "Époisses (fromage) (Wikipédia 法文)",
+     "url": "https://fr.wikipedia.org/wiki/%C3%89poisses_(fromage)",
+     "kind": "百科"
+    },
+    {
+     "title": "Formaticum: Can I Eat the Rind?",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    }
+   ],
+   "note": "AOC 1991、AOP 1996；熟成中用勃艮第渣酿白兰地（Marc de Bourgogne）刷洗；1956 年 Berthaut 家复兴。2009 年仅约 11% 用生乳。",
+   "conf": "中",
+   "zone": "washed",
+   "fam_key": "washed",
+   "origin_zh": "法国 · 勃艮第",
+   "origin_en": "France · Burgundy",
+   "milk_en": "Cow (pasteurized in the U.S.)",
+   "label_tags": [
+    "AOP",
+    "pasteurised"
+   ],
+   "good_for_en": "The final boss for cheese lovers; let it soften and spoon onto bread.",
+   "pair_en": "Red or white Burgundy, baguette.",
+   "price_lb": "$35–55"
+  },
+  {
+   "id": "gruyere",
+   "name": "Le Gruyère AOP",
+   "name_zh": "格吕耶尔",
+   "country": "瑞士",
+   "region": "弗里堡等西部州",
+   "milk": "牛（生乳）",
+   "family": "硬质 / 阿尔卑斯式",
+   "label": "AOP（瑞士）",
+   "raw": true,
+   "age": "5 个月到 1 年以上；réserve ≥10 个月",
+   "price_usd_lb": "$24–40",
+   "price_basis": "口径 A：Emmi Kaltbach 洞穴熟成 $39.99/lb；Emmi Le Gruyère 5.3 oz $12.99（约 $39/lb）（Lunds & Byerlys 2026-11）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。",
+   "where": "WF",
+   "taste_zh": "坚果、焦糖、微咸，后段带土味；陈年款有结晶。",
+   "taste_en": "Nutty, caramel and lightly salty with an earthy finish; aged wheels have crystals.",
+   "good_for_zh": "奶酪锅、法式洋葱汤、croque monsieur、拼盘。",
+   "pair_zh": "瑞士 Chasselas 白酒、黑面包、腌小洋葱。",
+   "sources": [
+    {
+     "title": "Gruyère cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Swiss（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/swiss-id-134",
+     "kind": "企业"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "美国法院认定「gruyere」为通用名，认准「Le Gruyère AOP」。2025 年起瑞士奶酪进口价明显上涨（见 culture 报道，属贸易政策话题，页面不展开）。",
+   "zone": "alpine",
+   "fam_key": "hard",
+   "origin_zh": "瑞士 · 弗里堡",
+   "origin_en": "Switzerland · Fribourg",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "AOP",
+    "raw"
+   ],
+   "good_for_en": "Fondue, French onion soup, croque monsieur, boards.",
+   "pair_en": "Swiss Chasselas, dark bread, pickled onions.",
+   "price_lb": "$24–40"
+  },
+  {
+   "id": "emmentaler",
+   "name": "Emmentaler AOP",
+   "name_zh": "埃曼塔尔",
+   "country": "瑞士",
+   "region": "伯尔尼州埃曼河谷等",
+   "milk": "牛（生乳）",
+   "family": "硬质 / 阿尔卑斯式（大孔）",
+   "label": "AOP（瑞士）",
+   "raw": true,
+   "age": "≥4 个月",
+   "price_usd_lb": "$18–28",
+   "price_basis": "口径 A：Emmi Emmentaler 5.3 oz $8.99（约 $27/lb）（Lunds & Byerlys 2026-11）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。",
+   "where": "WF",
+   "taste_zh": "温和、甜、坚果味，有樱桃大的孔。",
+   "taste_en": "Mild, sweet and nutty, with cherry-sized holes.",
+   "good_for_zh": "切片夹三明治、焗菜，与 Gruyère 一起做奶酪锅。",
+   "pair_zh": "火腿、黑面包、淡啤酒。",
+   "sources": [
+    {
+     "title": "Emmental cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Emmental_cheese",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Swiss（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/swiss-id-134",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "AOC 2000、AOP 2013。美国「Swiss cheese」是仿制品。",
+   "zone": "alpine",
+   "fam_key": "hard",
+   "origin_zh": "瑞士 · 伯尔尼",
+   "origin_en": "Switzerland · Bern",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "AOP",
+    "raw"
+   ],
+   "good_for_en": "Sliced in sandwiches, gratins, and with Gruyère in fondue.",
+   "pair_en": "Ham, rye bread, a light lager.",
+   "price_lb": "$18–28"
+  },
+  {
+   "id": "montgomery-cheddar",
+   "name": "Montgomery's Cheddar",
+   "name_zh": "蒙哥马利切达",
+   "country": "英国",
+   "region": "萨默塞特 North Cadbury，Manor Farm",
+   "milk": "牛（生乳，小牛皱胃酶）",
+   "family": "硬质 / 布包切达",
+   "label": "无（Slow Food「Artisan Somerset Cheddar」卫戍品）",
+   "raw": true,
+   "age": "通常 12–14 个月，偶有 18–24 个月",
+   "price_usd_lb": "$30–45",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "浓郁、肉香、略带焦糖般的果甜，质地偏干碎。",
+   "taste_en": "Rich, meaty and robust with caramelized-fruit sweetness and a crumbly texture.",
+   "good_for_zh": "拼盘主角，配苹果或做「农夫午餐」。",
+   "pair_zh": "苹果、腌菜（Branston pickle）、英式苦啤或苹果酒。",
+   "sources": [
+    {
+     "title": "Cheddar (Montgomery's) (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/Cheddar-Montgomerys",
+     "kind": "媒体"
+    },
+    {
+     "title": "Artisan Somerset Cheddar (Slow Food Presidia)",
+     "url": "https://www.fondazioneslowfood.com/en/slow-food-presidia/artisan-somerset-cheddar/",
+     "kind": "官方"
+    }
+   ],
+   "conf": "高",
+   "note": "是否带 West Country Farmhouse Cheddar PDO 未核。全食 2025 年 12 Days 选的是同属萨默塞特的 Keen's（PDO）。",
+   "zone": "hard",
+   "fam_key": "hard",
+   "origin_zh": "英国 · 萨默塞特",
+   "origin_en": "England · Somerset",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "raw",
+    "clothbound"
+   ],
+   "good_for_en": "Board centerpiece; a ploughman's lunch with apples.",
+   "pair_en": "Apples, Branston pickle, English bitter or cider.",
+   "price_lb": "$30–45"
+  },
+  {
+   "id": "stilton",
+   "name": "Blue Stilton",
+   "name_zh": "斯提尔顿",
+   "country": "英国",
+   "region": "德比郡、莱斯特郡、诺丁汉郡",
+   "milk": "牛（必须巴氏）",
+   "family": "蓝纹",
+   "label": "PDO",
+   "raw": false,
+   "age": "≥9 周（常见 9–12 周起售）",
+   "price_usd_lb": "$22–34",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "比 Roquefort 温和，奶油、矿物、略带蘑菇味，越陈越绵。",
+   "taste_en": "Milder than Roquefort: creamy, mineral and a bit mushroomy, creamier with age.",
+   "good_for_zh": "圣诞季经典，拼盘、配饼干。",
+   "pair_zh": "波特酒（Port）、核桃、梨。",
+   "sources": [
+    {
+     "title": "Stilton cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Stilton_cheese",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "PDO 1996；2016 年仅 6 家持证奶酪厂；生乳版只能叫 Stichelton。",
+   "zone": "blue",
+   "fam_key": "blue",
+   "origin_zh": "英国 · 莱斯特等三郡",
+   "origin_en": "England · Leicestershire & neighbors",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "PDO",
+    "pasteurised"
+   ],
+   "good_for_en": "A Christmas classic for boards and crackers.",
+   "pair_en": "Port, walnuts, pears.",
+   "price_lb": "$22–34"
+  },
+  {
+   "id": "cabot-clothbound",
+   "name": "Cabot Clothbound Cheddar",
+   "name_zh": "Cabot 布包切达",
+   "country": "美国",
+   "region": "佛蒙特州（Cabot 制作、Jasper Hill 地窖熟成）",
+   "milk": "牛（巴氏）",
+   "family": "硬质 / 布包切达",
+   "label": "无",
+   "raw": false,
+   "age": "约 10–14 个月",
+   "price_usd_lb": "$24–34",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "英式风格：坚果、焦糖、微酸，干而碎。",
+   "taste_en": "English-style: nutty, caramel and gently tangy, dry and crumbly.",
+   "good_for_zh": "和 Montgomery 并排对比美英两地布包切达。",
+   "pair_zh": "苹果、枫糖坚果、IPA。",
+   "sources": [
+    {
+     "title": "Jasper Hill Farm (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Jasper_Hill_Farm",
+     "kind": "百科"
+    }
+   ],
+   "note": "Jasper Hill 2003 年起与 Cabot 合作熟成，2008 年建成地窖。巴氏与熟成月数为编者常识，未在所引页核到。",
+   "conf": "中",
+   "zone": "american",
+   "fam_key": "hard",
+   "origin_zh": "美国 · 佛蒙特",
+   "origin_en": "USA · Vermont",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised",
+    "clothbound"
+   ],
+   "good_for_en": "Taste it next to Montgomery's to compare American and English clothbound cheddar.",
+   "pair_en": "Apples, maple nuts, IPA.",
+   "price_lb": "$24–34"
+  },
+  {
+   "id": "manchego",
+   "name": "Queso Manchego",
+   "name_zh": "曼切戈",
+   "country": "西班牙",
+   "region": "拉曼恰（阿尔瓦塞特、雷阿尔城、昆卡、托莱多）",
+   "milk": "绵羊（Manchega 种；生乳或巴氏）",
+   "family": "半硬 / 硬质",
+   "label": "DOP",
+   "raw": null,
+   "age": "60 天至 2 年；semicurado 至 3–4 个月、curado 3–6 个月、viejo 1–2 年",
+   "price_usd_lb": "$18–28",
+   "price_basis": "口径 A：Lunds & Byerlys 4 个月 $23.99、6 个月 $24.99、Reserva $26.99/lb（2026-11）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。",
+   "where": "WF",
+   "taste_zh": "年轻时奶香、微酸；陈年后咸甜、坚果、带烤羊奶香。皮上的人字编织纹是传统草篮印。",
+   "taste_en": "Young: milky and tangy; aged: sweet-salty, nutty and toasty. The zig-zag rind pattern recalls esparto-grass molds.",
+   "good_for_zh": "切三角薄片上拼盘、配下酒小菜。",
+   "pair_zh": "榅桲膏（membrillo）、Marcona 杏仁、Rioja 红酒。",
+   "sources": [
+    {
+     "title": "Manchego (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Manchego",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Spanish & Hispanic（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/spanish-hispanic-id-133",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "生乳款可标「artesano」。皮多有蜡 / 涂层，不吃。",
+   "zone": "hard",
+   "fam_key": "hard",
+   "origin_zh": "西班牙 · 拉曼恰",
+   "origin_en": "Spain · La Mancha",
+   "milk_en": "Sheep (raw or pasteurized)",
+   "label_tags": [
+    "DOP"
+   ],
+   "good_for_en": "Thin triangles for boards and tapas.",
+   "pair_en": "Membrillo, Marcona almonds, Rioja.",
+   "price_lb": "$18–28"
+  },
+  {
+   "id": "idiazabal",
+   "name": "Idiazabal",
+   "name_zh": "伊迪亚萨瓦尔",
+   "country": "西班牙",
+   "region": "巴斯克地区",
+   "milk": "绵羊（生乳，Latxa 种为主）",
+   "family": "硬质（常见烟熏款）",
+   "label": "DOP",
+   "raw": true,
+   "age": "≥2 个月",
+   "price_usd_lb": "$22–32",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "浓郁、微酸带辛，黄油感；烟熏款更干更冲。",
+   "taste_en": "Bold, slightly acidic and piquant, buttery; smoked versions are drier and stronger.",
+   "good_for_zh": "拼盘里的「烟熏味」担当，配西式下酒菜。",
+   "pair_zh": "巴斯克苹果酒、Txakoli 白酒、核桃。",
+   "sources": [
+    {
+     "title": "Idiazabal cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Idiazabal_cheese",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "DO 1987；烟熏是允许的外部工艺，不是必须。",
+   "zone": "hard",
+   "fam_key": "hard",
+   "origin_zh": "西班牙 · 巴斯克",
+   "origin_en": "Spain · Basque Country",
+   "milk_en": "Sheep (raw)",
+   "label_tags": [
+    "DOP",
+    "raw"
+   ],
+   "good_for_en": "The smoky note on a board, with pintxos.",
+   "pair_en": "Basque cider, Txakoli, walnuts.",
+   "price_lb": "$22–32"
+  },
+  {
+   "id": "aged-gouda",
+   "name": "Aged Gouda",
+   "name_zh": "陈年豪达",
+   "country": "荷兰",
+   "region": "荷兰（Gouda Holland PGI / Noord-Hollandse Gouda PDO 等）",
+   "milk": "牛",
+   "family": "硬质",
+   "label": "PGI（Gouda Holland，视品牌）",
+   "raw": null,
+   "age": "Old 10–12 个月；Very old 12–21 个月；更久的有 2–4 年款",
+   "price_usd_lb": "$20–38",
+   "price_basis": "口径 A：Beemster 预包装 5.3 oz $10.99–12.49（约 $33–38/lb）（Lunds & Byerlys 2026-11）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。 现切大块通常更便宜。",
+   "where": "WF",
+   "taste_zh": "焦糖、奶油糖（butterscotch）、坚果，咬起来有沙沙的结晶。",
+   "taste_en": "Caramel, butterscotch and nuts, with crunchy crystals.",
+   "good_for_zh": "单吃当「甜点奶酪」、配咖啡或黑巧。",
+   "pair_zh": "黑巧克力、波特酒、深色啤酒、苹果。",
+   "sources": [
+    {
+     "title": "Gouda cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Gouda_cheese",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Gouda（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/gouda-id-130",
+     "kind": "企业"
+    }
+   ],
+   "note": "外层蜡或塑料涂层不吃。",
+   "conf": "中",
+   "zone": "hard",
+   "fam_key": "xhard",
+   "origin_zh": "荷兰",
+   "origin_en": "Netherlands",
+   "milk_en": "Cow",
+   "label_tags": [
+    "PGI (some brands)"
+   ],
+   "good_for_en": "A dessert cheese on its own, with coffee or dark chocolate.",
+   "pair_en": "Dark chocolate, port, dark beer, apples.",
+   "price_lb": "$20–38"
+  },
+  {
+   "id": "mimolette",
+   "name": "Mimolette",
+   "name_zh": "米莫莱特",
+   "country": "法国",
+   "region": "北部里尔一带",
+   "milk": "牛",
+   "family": "硬质（球形，橙色）",
+   "label": "无",
+   "raw": null,
+   "age": "2 个月至 2 年（extra-vieille 最受欢迎）",
+   "price_usd_lb": "$20–32",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "年轻时像温和的 Parmesan；陈年后硬、榛子味、甜咸。",
+   "taste_en": "Young it resembles a mild Parmesan; aged it is hard, hazelnutty and sweet-salty.",
+   "good_for_zh": "拼盘里的「颜色担当」，切薄片或刨片。",
+   "pair_zh": "北法 / 比利时啤酒、榛子、干果。",
+   "sources": [
+    {
+     "title": "Mimolette (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Mimolette",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "简报把它列在荷兰，实为法国奶酪（仿荷兰 Edam 起源，路易十四 / 柯尔贝尔时期）。橙色来自胭脂树红；灰色月球表面般的皮是奶酪螨造成的，皮不吃。2013 年 FDA 因螨数量扣货、暂停进口，2014 年解除。",
+   "zone": "hard",
+   "fam_key": "xhard",
+   "origin_zh": "法国 · 里尔",
+   "origin_en": "France · Lille",
+   "milk_en": "Cow",
+   "label_tags": [],
+   "good_for_en": "The color on a board; slice thin or shave.",
+   "pair_en": "Northern French or Belgian beer, hazelnuts, dried fruit.",
+   "price_lb": "$20–32"
+  },
+  {
+   "id": "feta",
+   "name": "Feta",
+   "name_zh": "菲达",
+   "country": "希腊",
+   "region": "希腊本土与莱斯沃斯",
+   "milk": "绵羊，或绵羊 + 不超过 30% 山羊",
+   "family": "新鲜 / 盐水",
+   "label": "PDO",
+   "raw": null,
+   "age": "盐水中 ≥2 个月",
+   "price_usd_lb": "$10–18",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "常见",
+   "taste_zh": "咸、酸、奶油感，好的有羊奶和酸奶香、尾段微辛。",
+   "taste_en": "Salty, tangy and creamy; good feta smells of ewe's milk and yogurt with a peppery finish.",
+   "good_for_zh": "希腊沙拉、烤蔬菜、西瓜沙拉；买块状连盐水的。",
+   "pair_zh": "番茄、黄瓜、橄榄、牛至、Assyrtiko 白酒。",
+   "sources": [
+    {
+     "title": "Feta (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Feta",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "PDO 2002；欧盟外「feta」可指他国仿制品，看「PDO」或「Product of Greece」。",
+   "zone": "fresh",
+   "fam_key": "brine",
+   "origin_zh": "希腊",
+   "origin_en": "Greece",
+   "milk_en": "Sheep (up to 30% goat)",
+   "label_tags": [
+    "PDO"
+   ],
+   "good_for_en": "Greek salad, roasted vegetables, watermelon salad; buy the block in brine.",
+   "pair_en": "Tomato, cucumber, olives, oregano, Assyrtiko.",
+   "price_lb": "$10–18"
+  },
+  {
+   "id": "halloumi",
+   "name": "Halloumi",
+   "name_zh": "哈罗米",
+   "country": "塞浦路斯",
+   "region": "塞浦路斯",
+   "milk": "山羊 / 绵羊（商业款常加牛奶）",
+   "family": "半硬 / 盐水",
+   "label": "PDO",
+   "raw": null,
+   "age": "新鲜或盐水中熟成",
+   "price_usd_lb": "$12–20",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "常见",
+   "taste_zh": "有弹性、咸、带一点薄荷，加热不化。",
+   "taste_en": "Squeaky, salty and faintly minty; holds its shape when heated.",
+   "good_for_zh": "煎或烤到两面金黄，趁热吃。",
+   "pair_zh": "西瓜、柠檬、薄荷、烤蔬菜。",
+   "sources": [
+    {
+     "title": "Halloumi (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Halloumi",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "欧盟 PDO 2021。",
+   "zone": "fresh",
+   "fam_key": "brine",
+   "origin_zh": "塞浦路斯",
+   "origin_en": "Cyprus",
+   "milk_en": "Sheep & goat (often with cow)",
+   "label_tags": [
+    "PDO"
+   ],
+   "good_for_en": "Pan-fry or grill until golden and eat hot.",
+   "pair_en": "Watermelon, lemon, mint, grilled vegetables.",
+   "price_lb": "$12–20"
+  },
+  {
+   "id": "humboldt-fog",
+   "name": "Humboldt Fog",
+   "name_zh": "洪堡迷雾",
+   "country": "美国",
+   "region": "加州 Arcata（Cypress Grove）",
+   "milk": "山羊（巴氏）",
+   "family": "白霉软质（中间一道灰线）",
+   "label": "无",
+   "raw": false,
+   "age": "数周至约 2 个月",
+   "price_usd_lb": "$24–39",
+   "price_basis": "口径 A：Lunds & Byerlys 原价 $38.99/lb、2026-10-29 至 12-03 特价 $29.99/lb；Costco 会员价约 $23.99–25.99/lb（未注明日期，111 家门店汇总）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。",
+   "where": "both",
+   "taste_zh": "外圈靠皮处软滑、味浓，芯清爽、酸、像白垩；中间一道可食的植物灰线。",
+   "taste_en": "Creamy and stronger under the rind, bright, tangy and chalky at the core, with an edible line of ash.",
+   "good_for_zh": "加州拼盘的门面；从中心切三角，让每块都有皮、灰线和芯。",
+   "pair_zh": "蜂蜜、无花果、加州长相思（Sauvignon Blanc）。",
+   "sources": [
+    {
+     "title": "Humboldt Fog (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Humboldt_Fog",
+     "kind": "百科"
+    },
+    {
+     "title": "Heather Paxson, The Conversation 2017 / Brewminate",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Lunds & Byerlys: Cypress Grove Humboldt Fog（2026-10/11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/product/cypress-grove-humboldt-fog-cheese-id-00264120000000",
+     "kind": "企业"
+    },
+    {
+     "title": "Warehouse Runner: Costco Humboldt Fog price per pound（未注明日期）",
+     "url": "https://app.warehouserunner.com/costco/17355-cypress-grove-humboldt-fog-price-per-pound",
+     "kind": "二手"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "1992 年推出；ACS 1998、2002、2005 年第一名。Eataly 是否常备未核，where 写 both 偏宽。",
+   "zone": "american",
+   "fam_key": "bloomy",
+   "origin_zh": "美国 · 加州 Arcata",
+   "origin_en": "USA · Arcata, California",
+   "milk_en": "Goat (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "The face of a California board; cut wedges from the center so each has rind, ash and core.",
+   "pair_en": "Honey, figs, California Sauvignon Blanc.",
+   "price_lb": "$24–39"
+  },
+  {
+   "id": "point-reyes-original-blue",
+   "name": "Point Reyes Original Blue",
+   "name_zh": "雷斯岬原味蓝纹",
+   "country": "美国",
+   "region": "加州 Point Reyes（Tomales Bay 畔）",
+   "milk": "牛（生乳，自家荷斯坦牛）",
+   "family": "蓝纹",
+   "label": "无",
+   "raw": true,
+   "age": "约 3.5 个月",
+   "price_usd_lb": "$24–34",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "非常绵软湿润，咸、奶油、带干草和奶油糖味。",
+   "taste_en": "Very creamy and moist: salty, buttery, with hay and butterscotch notes.",
+   "good_for_zh": "弄碎拌楔形生菜沙拉（wedge salad）、配牛排、上拼盘。",
+   "pair_zh": "蜂蜜、梨、加州晚收甜酒或波特。",
+   "sources": [
+    {
+     "title": "Original Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/original-blue",
+     "kind": "媒体"
+    },
+    {
+     "title": "Point Reyes Cheese: About Us",
+     "url": "https://pointreyescheese.com/pages/about-us",
+     "kind": "官方"
+    }
+   ],
+   "conf": "高",
+   "note": "2000 年 8 月第一批；锡纸下的皮可吃。",
+   "zone": "american",
+   "fam_key": "blue",
+   "origin_zh": "美国 · 加州 Point Reyes",
+   "origin_en": "USA · Point Reyes, California",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "raw"
+   ],
+   "good_for_en": "Crumble over a wedge salad, with steak, or on a board.",
+   "pair_en": "Honey, pears, late-harvest wine or port.",
+   "price_lb": "$24–34"
+  },
+  {
+   "id": "point-reyes-bay-blue",
+   "name": "Point Reyes Bay Blue",
+   "name_zh": "雷斯岬海湾蓝纹",
+   "country": "美国",
+   "region": "加州 Point Reyes",
+   "milk": "牛（巴氏）",
+   "family": "蓝纹（Stilton 式）",
+   "label": "无",
+   "raw": false,
+   "age": "约 3 个月",
+   "price_usd_lb": "$22–30",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "比 Original Blue 温和，土味、蘑菇、咸焦糖，质地像软糖略碎。",
+   "taste_en": "Gentler than Original Blue: earthy, mushroomy, salted caramel, fudgy and slightly crumbly.",
+   "good_for_zh": "给不太敢吃蓝纹的人入门。",
+   "pair_zh": "黑巧、波特酒、烤核桃。",
+   "sources": [
+    {
+     "title": "Bay Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/Bay-Blue",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "高",
+   "note": "按 Stilton 思路设计。",
+   "zone": "american",
+   "fam_key": "blue",
+   "origin_zh": "美国 · 加州 Point Reyes",
+   "origin_en": "USA · Point Reyes, California",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "A gentle first blue for the blue-shy.",
+   "pair_en": "Dark chocolate, port, toasted walnuts.",
+   "price_lb": "$22–30"
+  },
+  {
+   "id": "mt-tam",
+   "name": "Cowgirl Creamery Mt Tam",
+   "name_zh": "塔玛佩斯山",
+   "country": "美国",
+   "region": "加州 Point Reyes Station / Petaluma",
+   "milk": "牛（有机，Straus Family Creamery 供奶，巴氏）",
+   "family": "白霉软质（三倍奶油）",
+   "label": "无",
+   "raw": false,
+   "age": "数周",
+   "price_usd_lb": "$24–36（按 7–10 oz 一块折算）",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "黄油、奶油、带蘑菇和土味，口感紧实细滑。",
+   "taste_en": "Buttery and creamy with earthy, mushroomy notes and a firm, silky texture.",
+   "good_for_zh": "湾区本地「Brie 替代」，拼盘必选；连皮吃。",
+   "pair_zh": "Pinot Noir、Syrah、有机拉格、法棍。",
+   "sources": [
+    {
+     "title": "Behind the Rind Starring Organic Mt. Tam (Whole Foods, 2011-09-01)",
+     "url": "https://www.wholefoodsmarket.com/tips-and-ideas/archive/behind-rind-starring-organic-mt-tam",
+     "kind": "企业"
+    },
+    {
+     "title": "Cowgirl Creamery (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Cowgirl_Creamery",
+     "kind": "百科"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "全食有 7 oz 商品页，2025 年 12 Days of Cheese 入选。",
+   "zone": "american",
+   "fam_key": "bloomy",
+   "origin_zh": "美国 · 加州马林",
+   "origin_en": "USA · Marin, California",
+   "milk_en": "Cow (organic, pasteurized)",
+   "label_tags": [
+    "organic",
+    "pasteurised"
+   ],
+   "good_for_en": "The local alternative to brie and a must for any board; eat the rind.",
+   "pair_en": "Pinot Noir, Syrah, organic lager, baguette.",
+   "price_lb": "$24–36"
+  },
+  {
+   "id": "red-hawk",
+   "name": "Cowgirl Creamery Red Hawk",
+   "name_zh": "红鹰",
+   "country": "美国",
+   "region": "加州 Point Reyes Station / Petaluma",
+   "milk": "牛（有机，巴氏）",
+   "family": "洗皮软质（三倍奶油）",
+   "label": "无",
+   "raw": false,
+   "age": "数周",
+   "price_usd_lb": "$28–40",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "橙色洗皮、闻着冲，芯浓郁、咸鲜奶油。",
+   "taste_en": "Orange washed rind with a pungent nose; rich, savory, creamy paste.",
+   "good_for_zh": "和 Mt Tam 同厂对比白霉与洗皮。",
+   "pair_zh": "比利时修道院啤酒、黑麦面包。",
+   "sources": [
+    {
+     "title": "Cowgirl Creamery (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Cowgirl_Creamery",
+     "kind": "百科"
+    }
+   ],
+   "note": "维基只确认为洗皮三倍奶油；奖项未核。",
+   "conf": "中",
+   "zone": "american",
+   "fam_key": "washed",
+   "origin_zh": "美国 · 加州马林",
+   "origin_en": "USA · Marin, California",
+   "milk_en": "Cow (organic, pasteurized)",
+   "label_tags": [
+    "organic",
+    "pasteurised"
+   ],
+   "good_for_en": "Compare with Mt Tam from the same creamery: bloomy versus washed.",
+   "pair_en": "Belgian abbey ale, rye bread.",
+   "price_lb": "$28–40"
+  },
+  {
+   "id": "marin-french-brie",
+   "name": "Marin French Brie / Triple Crème Brie",
+   "name_zh": "马林法式布里",
+   "country": "美国",
+   "region": "加州马林县 Hicks Valley（Petaluma 附近）",
+   "milk": "牛（巴氏）",
+   "family": "白霉软质",
+   "label": "无",
+   "raw": false,
+   "age": "数周",
+   "price_usd_lb": "$12–20",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "温和、奶油、蘑菇，三倍奶油款更浓滑。",
+   "taste_en": "Mild, buttery and mushroomy; the triple crème is richer and silkier.",
+   "good_for_zh": "有故事的平价本地 Brie（1865 年起的老厂）。",
+   "pair_zh": "葡萄、杏酱、加州起泡酒。",
+   "sources": [
+    {
+     "title": "Marin French Cheese Company (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Marin_French_Cheese_Company",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "2005 年 World Cheese Awards 巴氏 Brie 组金牌（Triple Crème Brie）。",
+   "zone": "american",
+   "fam_key": "bloomy",
+   "origin_zh": "美国 · 加州马林",
+   "origin_en": "USA · Marin, California",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "An affordable local brie with a story (since 1865).",
+   "pair_en": "Grapes, apricot jam, California sparkling wine.",
+   "price_lb": "$12–20"
+  },
+  {
+   "id": "laura-chenel-chevre",
+   "name": "Laura Chenel Fresh Chèvre",
+   "name_zh": "劳拉·谢内尔新鲜山羊奶酪",
+   "country": "美国",
+   "region": "加州索诺马县",
+   "milk": "山羊（巴氏）",
+   "family": "新鲜",
+   "label": "无",
+   "raw": false,
+   "age": "新鲜",
+   "price_usd_lb": "$14–22（按 4–8 oz 一条 / 一盒折算）",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "清爽、柠檬般的酸、奶香，口感细腻。",
+   "taste_en": "Fresh, lemony, milky and smooth.",
+   "good_for_zh": "抹面包、拌沙拉（Chez Panisse 招牌温山羊奶酪沙拉就用它）、配甜菜。",
+   "pair_zh": "甜菜、芝麻菜、蜂蜜、长相思。",
+   "sources": [
+    {
+     "title": "Laura Chenel (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Laura_Chenel",
+     "kind": "百科"
+    }
+   ],
+   "note": "巴氏属编者判断（新鲜奶酪在美国须巴氏），未在所引页核到。",
+   "conf": "中",
+   "zone": "american",
+   "fam_key": "fresh",
+   "origin_zh": "美国 · 加州索诺马",
+   "origin_en": "USA · Sonoma, California",
+   "milk_en": "Goat (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "Spread on bread, toss in salads (the Chez Panisse warm goat cheese salad), with beets.",
+   "pair_en": "Beets, arugula, honey, Sauvignon Blanc.",
+   "price_lb": "$14–22"
+  },
+  {
+   "id": "vella-dry-jack",
+   "name": "Vella Dry Jack",
+   "name_zh": "维拉干杰克",
+   "country": "美国",
+   "region": "加州索诺马",
+   "milk": "牛（巴氏，荷斯坦 + 根西）",
+   "family": "硬质",
+   "label": "无",
+   "raw": false,
+   "age": "Dry Jack 7–10 个月；Special Select ≥1 年；Golden Bear 2–4 年",
+   "price_usd_lb": "$20–30",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "甜、蘑菇、草和干草，像介于陈年 Gouda、Parmigiano 和切达之间；皮上抹可可、油和黑胡椒。",
+   "taste_en": "Sweet, mushroomy, grassy, somewhere between aged Gouda, Parmigiano and cheddar; the rind is rubbed with cocoa, oil and black pepper.",
+   "good_for_zh": "单吃、刨在意面沙拉上；耐放，适合野餐露营。",
+   "pair_zh": "Zinfandel、意式腊肠、杏仁。",
+   "sources": [
+    {
+     "title": "Dry Jack Special Select (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/dry-jack-special-select",
+     "kind": "媒体"
+    },
+    {
+     "title": "Vella Dry Jack (Zingerman's Deli, 2025-02)",
+     "url": "https://www.zingermansdeli.com/2025/02/vella-dry-jack/",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "Slow Food Ark of Taste。",
+   "zone": "american",
+   "fam_key": "hard",
+   "origin_zh": "美国 · 加州索诺马",
+   "origin_en": "USA · Sonoma, California",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "Eat as is or grate over pasta salads; keeps well for picnics and camping.",
+   "pair_en": "Zinfandel, salami, almonds.",
+   "price_lb": "$20–30"
+  },
+  {
+   "id": "rogue-river-blue",
+   "name": "Rogue River Blue",
+   "name_zh": "罗格河蓝纹",
+   "country": "美国",
+   "region": "俄勒冈 Central Point（Rogue Creamery）",
+   "milk": "牛（有机，生乳；另有巴氏外销款）",
+   "family": "蓝纹（葡萄叶包）",
+   "label": "无",
+   "raw": true,
+   "age": "8 个月至 1 年；每年秋分开始做，秋季上市",
+   "price_usd_lb": "$45–60",
+   "price_basis": "口径 A：Janet Fletcher 2019 年记录零售 $52/lb（加州）；2025–2026 年全食价未取到。",
+   "where": "WF",
+   "taste_zh": "外包浸过梨子烈酒的 Syrah 葡萄叶；甜、果香、中等辛辣，像带酒香的焦糖。",
+   "taste_en": "Wrapped in Syrah grape leaves soaked in pear spirits; sweet, fruity and medium-spicy, like boozy caramel.",
+   "good_for_zh": "季节性「大奖奶酪」，压轴上桌；葡萄叶留着护切面。",
+   "pair_zh": "梨、蜂巢、晚收甜酒。",
+   "sources": [
+    {
+     "title": "Rogue River Blue Wins World's Best Cheese (Newswire, 2019-10-21)",
+     "url": "https://www.newswire.com/news/rogue-river-blue-wins-worlds-best-cheese-21018720",
+     "kind": "企业"
+    },
+    {
+     "title": "Janet Fletcher, 100-Point Cheese (Planet Cheese, 2019-10-29)",
+     "url": "https://douglas-fletcher-q629.squarespace.com/blog/2019/10/27/100-point-cheese",
+     "kind": "媒体"
+    },
+    {
+     "title": "Rogue Creamery (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Rogue_Creamery",
+     "kind": "百科"
+    }
+   ],
+   "conf": "高",
+   "note": "2019 年 World Cheese Awards（意大利贝加莫，3,800 多款参赛）满分并经加赛夺冠，首个美国冠军。Rogue Creamery 创办人与索诺马 Vella 同为 Tom Vella（维基前后表述不一）。",
+   "zone": "american",
+   "fam_key": "blue",
+   "origin_zh": "美国 · 俄勒冈",
+   "origin_en": "USA · Oregon",
+   "milk_en": "Cow (raw, organic)",
+   "label_tags": [
+    "raw",
+    "organic"
+   ],
+   "good_for_en": "A seasonal prize-winner to finish the board; keep the leaves on the cut face.",
+   "pair_en": "Pears, honeycomb, late-harvest wine.",
+   "price_lb": "$45–60"
+  },
+  {
+   "id": "harbison",
+   "name": "Jasper Hill Harbison",
+   "name_zh": "哈比森",
+   "country": "美国",
+   "region": "佛蒙特 Greensboro",
+   "milk": "牛（巴氏）",
+   "family": "白霉软质（云杉树皮带）",
+   "label": "无",
+   "raw": false,
+   "age": "6–13 周",
+   "price_usd_lb": "$32–45（按 9 oz 一块折算）",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "WF",
+   "taste_zh": "木质、甜，带柠檬、芥末和蔬菜调，熟透时可用勺舀。",
+   "taste_en": "Woodsy and sweet with lemon, mustard and vegetal notes; spoonable when ripe.",
+   "good_for_zh": "切开顶皮用勺舀，配面包；聚会的「仪式感」担当。",
+   "pair_zh": "橡木桶白酒、桶陈酸啤、水果芥末酱（mostarda）。",
+   "sources": [
+    {
+     "title": "Jasper Hill Farm: Harbison",
+     "url": "https://www.jasperhillfarm.com/harbison",
+     "kind": "官方"
+    },
+    {
+     "title": "Jasper Hill Farm (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Jasper_Hill_Farm",
+     "kind": "百科"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "以「Greensboro 的奶奶」Anne Harbison 命名；ACS 2018 Best of Show。2025 年 12 Days 选的是香槟洗皮版。",
+   "zone": "american",
+   "fam_key": "bloomy",
+   "origin_zh": "美国 · 佛蒙特",
+   "origin_en": "USA · Vermont",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "Cut off the top and spoon it onto bread; a showpiece for a party.",
+   "pair_en": "Oaky white wine, barrel-aged sour beer, fruit mostarda.",
+   "price_lb": "$32–45"
+  },
+  {
+   "id": "pleasant-ridge-reserve",
+   "name": "Uplands Pleasant Ridge Reserve",
+   "name_zh": "宜人山脊珍藏",
+   "country": "美国",
+   "region": "威斯康星 Dodgeville（Driftless 地区）",
+   "milk": "牛（生乳，只用夏季放牧期的奶）",
+   "family": "硬质 / 阿尔卑斯式（洗皮）",
+   "label": "无",
+   "raw": true,
+   "age": "≥9 个月；Extra Aged 1 年以上",
+   "price_usd_lb": "$28–40",
+   "price_basis": "口径 A：Uplands 官网标 $30.00（2026-11，单位未注明，疑为约 1 磅一块）；其余为估计。",
+   "where": "WF",
+   "taste_zh": "甜、果香（芒果、百香果、菠萝）、咸鲜，致密带结晶。",
+   "taste_en": "Sweet, fruity (mango, passionfruit, pineapple) and savory; dense with crunchy crystals.",
+   "good_for_zh": "美国版 Beaufort / Gruyère，拼盘或做洋葱汤。",
+   "pair_zh": "浓郁红酒、橡木白酒、干型雷司令、比利时果味啤酒。",
+   "sources": [
+    {
+     "title": "Uplands Pleasant Ridge Reserve (Wisconsin Cheese)",
+     "url": "https://www.wisconsincheese.com/about-cheese/uplands-pleasant-ridge-reserve",
+     "kind": "企业"
+    },
+    {
+     "title": "Uplands Cheese 官网",
+     "url": "https://www.uplandscheese.com/",
+     "kind": "官方"
+    }
+   ],
+   "conf": "高",
+   "note": "ACS Best of Show 2001、2005、2010，唯一三夺；2003 年美国奶酪锦标赛冠军。",
+   "zone": "american",
+   "fam_key": "hard",
+   "origin_zh": "美国 · 威斯康星",
+   "origin_en": "USA · Wisconsin",
+   "milk_en": "Cow (raw)",
+   "label_tags": [
+    "raw"
+   ],
+   "good_for_en": "America's answer to Beaufort and Gruyère, for boards or onion soup.",
+   "pair_en": "Robust reds, oaky whites, dry Riesling, fruity Belgian beer.",
+   "price_lb": "$28–40"
+  },
+  {
+   "id": "beechers-flagship",
+   "name": "Beecher's Flagship",
+   "name_zh": "比彻旗舰",
+   "country": "美国",
+   "region": "华盛顿州西雅图 Pike Place Market",
+   "milk": "牛（巴氏）",
+   "family": "半硬 / 切达式",
+   "label": "无",
+   "raw": false,
+   "age": "对外称约 12 个月（内部平均已延至 18 个月）",
+   "price_usd_lb": "$18–26",
+   "price_basis": "口径 A：Lunds & Byerlys $20.99/lb（2026-11）；全食 / Eataly 门店实价未能线上取得（页面需登录或禁止抓取），以此为同级别参照。",
+   "where": "WF",
+   "taste_zh": "介于切达和 Gruyère 之间：坚果、微甜、紧实。",
+   "taste_en": "Between cheddar and Gruyère: nutty, slightly sweet and firm.",
+   "good_for_zh": "做芝士通心粉（店里招牌）、夹三明治、拼盘。",
+   "pair_zh": "苹果、啤酒、全麦饼干。",
+   "sources": [
+    {
+     "title": "Beecher's Handmade Cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Beecher%27s_Handmade_Cheese",
+     "kind": "百科"
+    },
+    {
+     "title": "Lunds & Byerlys: Cheddar（2026-11 线上价）",
+     "url": "https://www.lundsandbyerlys.com/categories/cheese-artisan/cheddar-id-129",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "2003 年创办；纽约 Flatiron 店 2011–2022。简报里的「15 个月」与维基不符，未采用。",
+   "zone": "american",
+   "fam_key": "semi",
+   "origin_zh": "美国 · 华盛顿州西雅图",
+   "origin_en": "USA · Seattle, Washington",
+   "milk_en": "Cow (pasteurized)",
+   "label_tags": [
+    "pasteurised"
+   ],
+   "good_for_en": "Mac and cheese (the house specialty), sandwiches, boards.",
+   "pair_en": "Apples, beer, whole-wheat crackers.",
+   "price_lb": "$18–26"
+  },
+  {
+   "id": "tillamook",
+   "name": "Tillamook Cheddar",
+   "name_zh": "蒂拉穆克切达",
+   "country": "美国",
+   "region": "俄勒冈 Tillamook 县",
+   "milk": "牛",
+   "family": "半硬 / 切达",
+   "label": "无",
+   "raw": null,
+   "age": "从 Medium 到 Extra Sharp 不等，看包装",
+   "price_usd_lb": "$6–12",
+   "price_basis": "口径 B：编者据 2024–2026 年美国高端超市 / 奶酪柜台常见标价估计的区间，未取到全食或 Eataly 该品实价；湾区与 Eataly 意大利 DOP 常在区间中上段。",
+   "where": "常见",
+   "taste_zh": "经典美式切达，从顺滑到尖锐。",
+   "taste_en": "Classic American cheddar, from smooth to sharp.",
+   "good_for_zh": "日常、做汉堡和焗菜；拼盘里给小朋友或保守口味。",
+   "pair_zh": "苹果片、饼干、淡啤。",
+   "sources": [
+    {
+     "title": "Tillamook County Creamery Association (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tillamook_County_Creamery_Association",
+     "kind": "百科"
+    }
+   ],
+   "note": "1909 年由十家奶酪厂组成的农民合作社，近 60 家成员牧场；各档熟成月数未核。",
+   "conf": "中",
+   "zone": "american",
+   "fam_key": "semi",
+   "origin_zh": "美国 · 俄勒冈",
+   "origin_en": "USA · Oregon",
+   "milk_en": "Cow",
+   "label_tags": [],
+   "good_for_en": "Everyday cooking, burgers and casseroles; the safe pick for kids and cautious eaters.",
+   "pair_en": "Apple slices, crackers, a light beer.",
+   "price_lb": "$6–12"
+  }
+ ],
+ "labels": [
+  {
+   "id": "pdo",
+   "zh": "PDO（受保护原产地名称）是欧盟最严的产地标：生产、加工、制作的每一步都必须在划定产区内完成。意大利写 DOP，法国写 AOP（旧称 AOC），西班牙也写 DOP。",
+   "en": "PDO (Protected Designation of Origin) is the EU's strictest origin label: every step of production, processing and preparation must take place in the defined area. Italy writes DOP, France AOP (formerly AOC), Spain DOP.",
+   "year": "",
+   "num": "全部环节在产区",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Geographical indications and quality schemes explained (European Commission, DG AGRI)",
+     "url": "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "pgi",
+   "zh": "PGI（受保护地理标志，意大利 / 法国写 IGP）宽一些：至少有一个生产、加工或制作环节在产区，产品的品质或声誉主要来自产地。奶酪里 PDO 远比 PGI 常见；例如法国 Gruyère 是 PGI，要标「French Gruyère」。",
+   "en": "PGI (Protected Geographical Indication; IGP in Italian and French) is looser: at least one stage of production, processing or preparation happens in the area, and the product's quality or reputation is essentially due to its origin. Among cheeses PDO is far more common than PGI; French Gruyère, for one, is a PGI sold as \"French Gruyère.\"",
+   "year": "",
+   "num": "至少一个环节在产区",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "European Commission, GI schemes explained",
+     "url": "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en",
+     "kind": "官方"
+    },
+    {
+     "title": "Gruyère cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "gi-2024",
+   "zh": "2024 年 5 月 13 日起，欧盟新的地理标志条例（EU 2024/1143）生效，把葡萄酒、烈酒和农产品统一进一个框架，并加强了对网上销售和作配料使用时的保护。",
+   "en": "On May 13, 2024 the EU's new geographical-indications regulation (EU 2024/1143) took effect, bringing wine, spirits and agricultural products under one framework and strengthening protection online and when a GI product is used as an ingredient.",
+   "year": "2024-05-13",
+   "num": "Regulation (EU) 2024/1143",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "European Commission, GI schemes explained",
+     "url": "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "swiss-aop",
+   "zh": "瑞士有自己的 AOP 体系（不属欧盟）：Gruyère 2001 年获瑞士 AOC，2013 年改称 AOP，用生乳做。但在美国，联邦法院 2021 年判定「gruyere」已是通用名，第四巡回上诉法院 2023 年 3 月维持，所以美国产的「Gruyere」也合法；要正宗就看「Le Gruyère AOP」字样。",
+   "en": "Switzerland runs its own AOP system outside the EU: Gruyère, made from raw milk, gained Swiss AOC status in 2001, renamed AOP in 2013. In the U.S., however, a federal court ruled in 2021 that \"gruyere\" is generic and the Fourth Circuit affirmed in March 2023, so American-made \"Gruyere\" is legal; look for \"Le Gruyère AOP\" for the Swiss original.",
+   "year": "2001 / 2013 / 2021 / 2023-03",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Gruyère cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese",
+     "kind": "百科"
+    }
+   ],
+   "note": "判决原文未直接打开。"
+  },
+  {
+   "id": "raw-60",
+   "zh": "美国规则：用未经巴氏杀菌的生乳做的奶酪，须在不低于 35°F（约 1.7°C）下熟成至少 60 天才能销售。这套规定 1950 年写入联邦法规（21 CFR 133），软质熟成奶酪一节（133.182）原文就是这一句。",
+   "en": "U.S. rule: cheese made from unpasteurized milk must be cured at no less than 35°F for at least 60 days before sale. The requirement entered federal regulations (21 CFR 133) in 1950; the soft-ripened cheese section (133.182) states it verbatim.",
+   "year": "1950",
+   "num": "≥60 天，≥35°F",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "21 CFR § 133.182 Soft ripened cheeses (Cornell LII)",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    },
+    {
+     "title": "Publisher's Platform: 60-Day Rule — The Facts (Food Safety News, 2011-02)",
+     "url": "https://www.foodsafetynews.com/2011/02/publishers-platform-60-day-rule-the-facts/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "FDA 1996 年起多次复审该规则的有效性（NACMCF 称其作为公共卫生措施「存疑」），可放 alt；2026-10 还有一份生乳奶酪请愿书（marlerblog），未细读。"
+  },
+  {
+   "id": "raw-practical",
+   "zh": "所以柜台上的生乳奶酪多是硬质、半硬质（如 Parmigiano Reggiano、Comté、Gruyère AOP、Point Reyes Original Blue、Pleasant Ridge Reserve），标签会写「raw milk」或「made with unpasteurized milk」。熟成期短的软质奶酪满 60 天往往已过熟，美国卖的 Brie、Camembert、新鲜 mozzarella 基本是巴氏奶版本。",
+   "en": "So the raw-milk cheeses at the counter are mostly hard or semi-hard (Parmigiano Reggiano, Comté, Le Gruyère AOP, Point Reyes Original Blue, Pleasant Ridge Reserve), labeled \"raw milk\" or \"made with unpasteurized milk.\" Short-aged soft cheeses would be past their peak at 60 days, so the brie, camembert and fresh mozzarella sold in the U.S. are almost all pasteurized.",
+   "year": "",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "21 CFR § 133.182",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    },
+    {
+     "title": "Original Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/original-blue",
+     "kind": "媒体"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ],
+   "note": "「软质过 60 天已过熟」为行业常识推论，非法规原文。"
+  },
+  {
+   "id": "parm-rules",
+   "zh": "Parmigiano Reggiano DOP 只用牛奶、盐和凝乳酶，不加任何添加剂和防腐剂，用生乳；只能在帕尔马、雷焦艾米利亚、摩德纳、博洛尼亚（雷诺河以西）和曼托瓦（波河以南）五省生产，最少熟成 12 个月。一轮约 38 公斤，约用 550 升奶。",
+   "en": "Parmigiano Reggiano DOP is made only from raw cow's milk, salt and rennet, with no additives or preservatives, only in Parma, Reggio Emilia, Modena, Bologna (left of the Reno) and Mantua (right of the Po), and aged at least 12 months. A wheel weighs about 38 kg and takes roughly 550 liters of milk.",
+   "year": "",
+   "num": "≥12 个月；约 38 kg / 约 550 L 奶",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano FAQ (Consorzio)",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmesan (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Parmesan",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "parmesan-name",
+   "zh": "「Parmesan」和「Parmigiano Reggiano」不是一回事：欧盟法院 2008 年裁定在欧洲「Parmesan」只能指 Parmigiano Reggiano；在美国它是通用名，联邦标准（21 CFR 133.165）只要求牛奶制、熟成 10 个月以上，产地、做法都不限。联盟规定美国门店不得写「Parmesan Reggiano」「Parmigiano Regg.」之类的混名。",
+   "en": "\"Parmesan\" and \"Parmigiano Reggiano\" are not the same: the EU's Court of Justice ruled in 2008 that in Europe \"Parmesan\" may only mean Parmigiano Reggiano, but in the U.S. it is a generic name whose federal standard (21 CFR 133.165) asks only for cow's milk and 10-plus months of curing, with no origin or method rules. The Consortium bars U.S. retailers from hybrids like \"Parmesan Reggiano\" or \"Parmigiano Regg.\"",
+   "year": "2008",
+   "num": "美国标准：≥10 个月",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmesan (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Parmesan",
+     "kind": "百科"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "parm-rind-read",
+   "zh": "认 Parmigiano Reggiano：轮侧有一圈针点字「PARMIGIANO-REGGIANO」，含奶酪厂编号、生产年月和「DOP」；店里现切的每一块都应带一小段有针点字的皮。皮上刻平行沟纹的是二级品「Mezzano」，适合趁年轻吃。刨丝成品不得加抗结剂或纤维素。",
+   "en": "Spotting real Parmigiano Reggiano: the side of the wheel carries pin-dot lettering \"PARMIGIANO-REGGIANO\" with the dairy number, month and year of production and \"DOP,\" and every piece cut in store should keep a bit of rind with some of that lettering. Parallel grooves on the rind mark second-grade \"Mezzano\" wheels, meant to be eaten young. Grated Parmigiano may not contain anti-caking agents or cellulose.",
+   "year": "2025-10",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano FAQ",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ],
+   "note": "FAQ 也说大轮或从上下平面切下的块可能看不到针点字，不必然是假货。"
+  },
+  {
+   "id": "aging-marks",
+   "zh": "熟成月数怎么看：Parmigiano Reggiano 联盟按 12–19、20–26、27–34、35–45 个月分档；「Export」是 18 个月验级的一级品，「Premium」是 24 个月验级且过感官评分，「Prodotto di montagna」是山区产、20 个月验级。一般月数越长越干、越碎、结晶越多、咸鲜越重。",
+   "en": "Reading the age: the Consortium groups Parmigiano Reggiano into 12–19, 20–26, 27–34 and 35–45 months; \"Export\" means first grade checked at 18 months, \"Premium\" checked at 24 months and passed a sensory score, \"Prodotto di montagna\" made in the mountains and checked at 20 months. Longer usually means drier, more crumbly, more crystals and more savory.",
+   "year": "2025-10",
+   "num": "12–19 / 20–26 / 27–34 / 35–45 个月",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ],
+   "note": "「越长越干越碎」为一般规律，非文件原文。"
+  },
+  {
+   "id": "parm-lactose",
+   "zh": "Parmigiano Reggiano 天然不含乳糖：乳酸菌在做好后的头 48 小时内就把乳糖全部转成乳酸，与熟成时间无关。",
+   "en": "Parmigiano Reggiano is naturally lactose-free regardless of age: lactic bacteria convert all the lactose to lactic acid within the first 48 hours.",
+   "year": "",
+   "num": "48 小时",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano FAQ",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "rind",
+   "zh": "皮能不能吃：用食品级材料的皮都能吃，只是好不好吃。白霉皮（Brie、Camembert、Mt Tam）建议连皮吃，风味很多在皮上；洗皮（Taleggio、Époisses、Red Hawk）能吃但比芯更冲；天然硬皮（Gruyère、Comté、Stilton）能吃、偏土味；Parmigiano 和 Grana 的皮太硬，留着煮汤、炖饭。布包（clothbound cheddar）的布、Gouda 的蜡、Rogue River Blue 的叶子、Harbison 的树皮带不吃。",
+   "en": "Can you eat the rind? Any rind of food-grade material is edible; the question is taste. Bloomy rinds (brie, camembert, Mt Tam) are worth eating since much of the flavor lives there; washed rinds (Taleggio, Époisses, Red Hawk) are edible but stronger than the paste; natural hard rinds (Gruyère, Comté, Stilton) are edible and earthy; Parmigiano and Grana rinds are too hard to chew, so save them for soup or risotto. Skip the cloth on clothbound cheddar, the wax on Gouda, the leaves on Rogue River Blue and the bark band on Harbison.",
+   "year": "2022",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Fundamentals of Cheese: Understanding Cheese Rinds (Institute of Culinary Education, 2022-08-12)",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    },
+    {
+     "title": "Can I Eat the Rind? (Formaticum)",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    },
+    {
+     "title": "Parmigiano Reggiano FAQ（皮可食，食前清理）",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "label-milk",
+   "zh": "奶源看标签：美国联邦标准要求非牛奶的奶酪写明「made from」哪种奶，按重量多少排列；「Pecorino」一词本身就表示绵羊奶。",
+   "en": "Milk type on the label: U.S. standards require non-cow's-milk cheeses to say \"made from\" which milk, listed by predominance by weight; the word \"Pecorino\" itself means sheep's milk.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "21 CFR § 133.182",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    },
+    {
+     "title": "Eataly's cheeses (LAist, 2017)",
+     "url": "https://laist.com/news/food/eatalys-cheeses",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「made from」规定见于 133.182（软质熟成）一节，其它品类各有标准，页面别写成所有奶酪统一条款。"
+  }
+ ],
+ "buying": [
+  {
+   "id": "say-use",
+   "zh": "开口先说三件事：几个人、什么场合（开胃、正餐后、主角是奶酪的聚会、做菜用）、预算。柜台的人会按你的回答调整推荐。",
+   "en": "Open with three things: how many people, what occasion (before dinner, after dinner, a cheese-centered party, or cooking) and your budget. A good monger adjusts the picks to your answers.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "How Much Cheese Do I Need? A Portioning Guide for Cheesemongers (Formaticum)",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "ask-taste",
+   "zh": "要试吃。全食的 CCP 会主动给顾客尝没吃过的奶酪（Ocean Ave 店门店页就列有 CCP）；Eataly 的店员也鼓励「什么都可以先尝」，Dogpatch 的 La Fromagerie 干脆把「必须先尝」当店规。可以直接说「Could I taste this one?」。",
+   "en": "Ask to taste. Whole Foods CCPs offer tastes of cheeses you have not tried (the Ocean Avenue store lists a CCP), Eataly mongers encourage you to taste anything, and La Fromagerie in the Dogpatch makes sampling its house rule. Just ask, \"Could I taste this one?\"",
+   "year": "2014–2025",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "culture 2025-03-07（全食 CCP）",
+     "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+     "kind": "媒体"
+    },
+    {
+     "title": "Whole Foods Market Ocean 门店页",
+     "url": "https://www.wholefoodsmarket.com/stores/ocean",
+     "kind": "企业"
+    },
+    {
+     "title": "culture: Eataly Boston (2016)",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    },
+    {
+     "title": "Devour Tours SF cheese shops",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "portion",
+   "zh": "份量的常用口径：拼盘上每种奶酪每人约 1 盎司（约 28 克）；开胃时每人合计 1.5–3 盎司，奶酪当主角时往上加，旁边还有很多菜时往下减。",
+   "en": "Common portion rule: about 1 oz (28 g) of each cheese per person on a board; 1.5–3 oz per person in total as an appetizer, more when cheese is the centerpiece and less when there is plenty of other food.",
+   "year": "",
+   "num": "每种 1 oz/人；开胃合计 1.5–3 oz/人",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Formaticum portioning guide",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    },
+    {
+     "title": "How to Build a Perfect Cheese Board (Antonelli's Cheese)",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ],
+   "alt": "各家口径不一：有的写开胃每人 1–2 oz、奶酪为主的聚会每人 3–4 oz 甚至更多。"
+  },
+  {
+   "id": "count",
+   "zh": "选几种：一盘 3–5 种最好记住；6 人以上的大盘 5–7 种。也可以只买一块出色的整块当主角。",
+   "en": "How many: 3–5 cheeses on a board is easiest to remember; 5–7 for a grazing board for six or more. Or build around one standout piece.",
+   "year": "",
+   "num": "3–5 种；大盘 5–7 种",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "variety",
+   "zh": "搭配原则：奶源（牛、山羊、绵羊）、质地（新鲜、软、半硬、硬）、风格（白霉、洗皮、蓝纹、阿尔卑斯式）、产地各不相同。例子：一款新鲜山羊奶酪 + 一款白霉牛奶软质 + 一款硬质牛奶 + 一款绵羊硬质 + 一款蓝纹。",
+   "en": "Mix milk (cow, goat, sheep), texture (fresh, soft, semi-hard, hard), style (bloomy, washed, blue, Alpine) and origin. Example: a fresh goat cheese, a bloomy cow's-milk cheese, a firm cow's-milk cheese, a hard sheep's-milk cheese and a blue.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "blue-small",
+   "zh": "蓝纹最分人：买小块蓝纹，配一块大众口味的大块，是柜台常见建议。",
+   "en": "Blue is polarizing: a small piece of blue next to a larger piece of a crowd-pleaser is standard counter advice.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Formaticum portioning guide",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "cut-to-order",
+   "zh": "现切 vs 预切：现切区可以按重量要（例如「a quarter pound」约 113 克、「half a pound」约 227 克），切面新鲜、能先尝；预切自选区方便便宜，但要看包装日期和切面。全食 CCP 受训可按指定重量切块，Eataly 两种都有。",
+   "en": "Cut-to-order vs pre-cut: at the counter you can ask by weight (\"a quarter pound\" ≈ 113 g, \"half a pound\" ≈ 227 g), get a fresh face and taste first; the grab-and-go case is faster and often cheaper, but check the pack date and the cut face. Whole Foods CCPs are trained to cut to an exact weight; Eataly offers both.",
+   "year": "",
+   "num": "1/4 lb ≈ 113 g；1/2 lb ≈ 227 g",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "culture 2025-03-07",
+     "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+     "kind": "媒体"
+    },
+    {
+     "title": "culture: Eataly Boston",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "check-face",
+   "zh": "看切面和包装：切面应湿润、颜色均匀，没有发干的深色边、没有渗油或积水；保鲜膜下奶酪「出汗」、白霉皮发褐发黏、闻起来有氨水味，都说明放久了。硬质奶酪表面的白色小结晶（酪氨酸）是正常的陈年迹象，不是坏了。",
+   "en": "Check the cut face and wrap: the face should look moist and even, with no dried dark edge, oil slick or pooling liquid. Sweating under film, a browned or sticky bloomy rind, or a smell of ammonia means it has sat too long. Small white crystals in aged hard cheeses (tyrosine) are a normal sign of age, not spoilage.",
+   "year": "",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "How to Store Cheese (Wisconsin Cheese)",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "Fundamentals of Cheese: Understanding Cheese Rinds (ICE, 2022)",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「看切面」各条为行业通行经验，所列来源只部分覆盖（氨水味、结晶未在所引页原文中），conf 定中。"
+  },
+  {
+   "id": "parm-piece",
+   "zh": "买 Parmigiano Reggiano 现切块时，看它有没有带一段印着针点字的皮——联盟规定美国店里现切的每一块都要带；同时问一句是几个月的（12、18、24、30、36…），Eataly 硅谷店官网就写有多个年份可选。",
+   "en": "When buying a cut piece of Parmigiano Reggiano, check that it keeps a strip of rind with pin-dot lettering, which the Consortium requires for every piece cut in U.S. stores, and ask its age (12, 18, 24, 30, 36 months…); Eataly Silicon Valley says it stocks several ages.",
+   "year": "2025–2026",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Eataly Silicon Valley: Market",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "buy-small",
+   "zh": "宁少勿多、临用再买：软质和新鲜奶酪尽量在吃的前一两天买；切开的奶酪不再像整轮那样熟成，只会慢慢变干或变质。",
+   "en": "Buy less, closer to the day: get soft and fresh cheeses a day or two before you serve them. Once cut, cheese stops maturing the way a whole wheel does and only dries out or declines.",
+   "year": "",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "What's the Best Way to Store Cheese at Home? (culture, Kate Arding)",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "来源只说「尽快吃完」；「切开后不再熟成」为通行说法。"
+  },
+  {
+   "id": "temp",
+   "zh": "上桌前 30 分钟到 1 小时从冰箱拿出来，回到室温（约 67–70°F / 19–21°C）香气才出来；软质回温比硬质快。",
+   "en": "Take cheese out of the fridge 30 minutes to an hour before serving so it reaches room temperature (about 67–70°F) and opens up; soft cheeses warm faster than hard ones.",
+   "year": "",
+   "num": "30–60 分钟；67–70°F",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese: How to Store Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "cut-shape",
+   "zh": "回家怎么切：软质整块放、配抹刀；半硬的放一大块让客人自己切，先切两三小块示范；阿尔卑斯式切成条；Parmigiano 这类掰成不规则小块；蓝纹整块放刀；新鲜奶酪（chèvre、burrata）放小碗配勺。",
+   "en": "Cutting at home: leave soft cheeses whole with a spreader; set out a big wedge of semi-hard and pre-cut two or three pieces to show the way; cut Alpine cheeses into sticks; break Parmigiano-style cheeses into rough chunks; leave blue whole with a knife; serve fresh cheeses (chèvre, burrata) in a small bowl with a spoon.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Formaticum portioning guide",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    },
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "deal-12days",
+   "zh": "想省钱：全食每年 12 月中旬的「12 Days of Cheese」每天一款特价（2025 年 Prime 会员最多 7 折）；平时 365 自有品牌预包装块比现切便宜。",
+   "en": "To save: Whole Foods' mid-December 12 Days of Cheese discounts one cheese a day (up to 30% off for Prime members in 2025), and 365 house-brand pre-packed blocks cost less than cut-to-order cheese year-round.",
+   "year": "2025",
+   "num": "最多 30% off",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025 新闻稿",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ]
+  }
+ ],
+ "storage": [
+  {
+   "id": "wrap",
+   "zh": "包法：别用保鲜膜贴身裹紧，奶酪需要一点空气。最好用奶酪纸；没有就先包蜡纸或烘焙纸，再在外面松松套一层保鲜膜或放进带盖盒子。每次切完换新纸。",
+   "en": "Wrapping: do not cling-wrap cheese tightly; it needs a little air. Cheese paper is best; otherwise wrap in wax or parchment paper, then loosely in plastic or in a lidded box. Rewrap in fresh paper after each use.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "How to Store Cheese (Wisconsin Cheese)",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "What's the Best Way to Store Cheese at Home? (culture, Kate Arding, 2008)",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "zh": "放哪：冰箱蔬果抽屉最合适，温度稍高、湿度大，奶酪不易干；目标温度约 34–38°F（1–3°C）。远离气味重的食物，奶酪会吸味。洗皮奶酪单独装盒。",
+   "en": "Where: the vegetable drawer is best, slightly warmer and more humid, so cheese stays moist; aim for about 34–38°F. Keep it away from strong-smelling foods, since cheese absorbs odors, and box washed rinds separately.",
+   "year": "",
+   "num": "34–38°F",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "culture, Kate Arding",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "fresh",
+   "zh": "新鲜奶酪（山羊奶酪、ricotta、mozzarella、burrata）当牛奶和酸奶对待，单独密封，约 38–40°F 冷藏，尽快吃完；mozzarella 可连原来的汁水一起存。",
+   "en": "Treat fresh cheeses (chèvre, ricotta, mozzarella, burrata) like milk or yogurt: sealed, separate, at about 38–40°F, and eaten soon; keep mozzarella in its liquid.",
+   "year": "",
+   "num": "38–40°F",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "culture, Kate Arding",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「连汁水一起存」为通行做法，所引页未写。"
+  },
+  {
+   "id": "how-long",
+   "zh": "开封后能放多久（参考口径）：硬质（Parmigiano 等）约 6 周；半硬（Cheddar、Gouda）约 4 周；软质和新鲜（ricotta、Gorgonzola）约 2 周。真空包装的 Parmigiano Reggiano 未开封一般 6 个月，以包装日期为准。",
+   "en": "How long after opening (rule of thumb): hard cheeses like Parmigiano about 6 weeks; semi-hard like cheddar and Gouda about 4 weeks; soft and fresh like ricotta and Gorgonzola about 2 weeks. Vacuum-packed Parmigiano Reggiano typically keeps 6 months unopened; follow the pack date.",
+   "year": "",
+   "num": "硬 ~6 周 / 半硬 ~4 周 / 软 ~2 周；真空 PR ~6 个月",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "Parmigiano Reggiano FAQ",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ],
+   "note": "白霉软质（Brie、Mt Tam）切开后实际常建议几天到一周内吃完，Wisconsin 的「两周」偏宽。"
+  },
+  {
+   "id": "soft-flip",
+   "zh": "整块软质奶酪隔天翻个面，让水分分布均匀；包装里看起来湿了就多给点空气，发干就在盒里垫一块拧干的湿布。",
+   "en": "Flip whole soft cheeses every day or so to spread the moisture; if the cheese looks wet, give it more air, and if it is drying, add a damp (not wet) cloth to its container.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "culture, Kate Arding",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "mold",
+   "zh": "长霉怎么办：硬质、半硬奶酪把霉点四周和下方约 1 英寸（2.5 厘米）切掉，其余可吃；软质和新鲜奶酪一旦长了不该有的霉，整块扔掉。（白霉皮、蓝纹里的霉本来就是奶酪的一部分。）",
+   "en": "Mold: on hard and semi-hard cheese, cut away about an inch around and below the spot and eat the rest; throw out soft and fresh cheeses that grow unexpected mold. (The white bloom on brie and the veins in blue are part of the cheese.)",
+   "year": "",
+   "num": "1 英寸",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "freeze",
+   "zh": "冷冻：会改变口感，一般不建议；可以冻的是 Parmigiano 这类硬质和刨好的丝，冻 2–3 个月，解冻后适合刨碎或做菜。分成半磅以内的小块，真空或密封袋装，放冷藏室慢慢解冻。白霉软质、新鲜奶酪、burrata 不宜冻。",
+   "en": "Freezing changes texture and is generally not advised; hard cheeses like Parmigiano and shredded cheese can be frozen for 2–3 months and then grated or cooked with. Portion into half-pound pieces or less, vacuum- or tightly seal, and thaw slowly in the fridge. Do not freeze bloomy, fresh cheeses or burrata.",
+   "year": "",
+   "num": "2–3 个月；≤1/2 lb 一份",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    }
+   ],
+   "note": "「白霉、burrata 不宜冻」为通行建议，所引页只正面列了可冻品类。"
+  },
+  {
+   "id": "rind-save",
+   "zh": "留皮：Parmigiano Reggiano 和 Grana 的皮洗净、去掉酪蛋白标签后放冷冻，煮汤、炖豆子、做意式炖饭时丢一块进去增鲜。",
+   "en": "Save the rind: wash Parmigiano or Grana rinds, remove the casein plate, freeze them, and drop one into soup, beans or risotto for savory depth.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines（去掉酪蛋白标签，皮可食）",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Formaticum: Can I Eat the Rind?",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    }
+   ],
+   "note": "「冷冻保存」为通行做法。"
+  }
+ ],
+ "boards": [
+  {
+   "id": "board-25",
+   "title_zh": "四人小聚 · 约 $25",
+   "title_en": "Four friends, about $25",
+   "budget_usd": 25,
+   "people": 4,
+   "items": [
+    {
+     "cheese_id": "marin-french-brie",
+     "oz": 8,
+     "why_zh": "一整个 8 oz 小圆饼，1865 年起的马林老厂，最便宜的加州软质，人人能接受。",
+     "why_en": "One whole 8-oz round from a Marin creamery dating to 1865: the cheapest California soft cheese and an easy crowd-pleaser."
+    },
+    {
+     "cheese_id": "manchego",
+     "oz": 3,
+     "why_zh": "换一种奶（绵羊）和一种口感（硬），切薄三角片看着多。",
+     "why_en": "A different milk (sheep) and texture (firm); thin triangles stretch a small piece."
+    },
+    {
+     "cheese_id": "gorgonzola",
+     "oz": 2,
+     "why_zh": "一小块 Dolce 当蓝纹入门，配蜂蜜吃。",
+     "why_en": "A small piece of Dolce as a gentle first blue, with honey."
+    }
+   ],
+   "extras_zh": "一条法棍、一串葡萄、一小罐蜂蜜。",
+   "extras_en": "A baguette, a bunch of grapes, a small jar of honey.",
+   "total_note_zh": "奶酪合计 13 oz，每人约 3 oz（开胃量）；按价格区间估算奶酪约 $12–19、配菜 $6–8，合计约 $18–27，未含税。",
+   "total_note_en": "13 oz of cheese, about 3 oz per person (appetizer portion); estimated $12–19 for cheese plus $6–8 for extras, about $18–27 before tax."
+  },
+  {
+   "id": "board-50",
+   "title_zh": "四人周末夜 · 约 $50",
+   "title_en": "Weekend night for four, about $50",
+   "budget_usd": 50,
+   "people": 4,
+   "items": [
+    {
+     "cheese_id": "laura-chenel-chevre",
+     "oz": 4,
+     "why_zh": "新鲜山羊奶酪开场，清爽带酸，是 Chez Panisse 用了几十年的那一款。",
+     "why_en": "Open with fresh, tangy chèvre, the one Chez Panisse has used for decades."
+    },
+    {
+     "cheese_id": "mt-tam",
+     "oz": 7,
+     "why_zh": "全食常备的 7 oz 整块，湾区本地白霉，连皮吃。",
+     "why_en": "Whole Foods' 7-oz piece of the Bay Area's own bloomy-rind cheese; eat the rind."
+    },
+    {
+     "cheese_id": "comte",
+     "oz": 3,
+     "why_zh": "一块法国阿尔卑斯式，坚果焦糖味，跟两款加州软奶酪形成对照。",
+     "why_en": "A French Alpine for contrast: nutty and caramel against the two soft Californians."
+    },
+    {
+     "cheese_id": "point-reyes-original-blue",
+     "oz": 2,
+     "why_zh": "Tomales Bay 畔的生乳蓝纹，少量压轴。",
+     "why_en": "A raw-milk blue from Tomales Bay, a small piece to finish."
+    }
+   ],
+   "extras_zh": "旧金山酸面包或法棍、一盒饼干、无花果酱、梨、烤坚果。",
+   "extras_en": "Sourdough or a baguette, a box of crackers, fig jam, pears, toasted nuts.",
+   "total_note_zh": "奶酪合计 16 oz，每人约 4 oz（以奶酪为主的晚上）；估算奶酪约 $25–33、配菜 $14–17，合计约 $39–50，未含税与酒。",
+   "total_note_en": "16 oz of cheese, about 4 oz per person (a cheese-centered evening); estimated $25–33 for cheese plus $14–17 for extras, about $39–50 before tax and wine."
+  },
+  {
+   "id": "board-90",
+   "title_zh": "四人奶酪晚餐 · 约 $90",
+   "title_en": "Cheese dinner for four, about $90",
+   "budget_usd": 90,
+   "people": 4,
+   "items": [
+    {
+     "cheese_id": "humboldt-fog",
+     "oz": 6,
+     "why_zh": "加州门面：从中心切楔形，每块都有皮、灰线和芯。",
+     "why_en": "California's showpiece: wedges from the center so each piece has rind, ash and core."
+    },
+    {
+     "cheese_id": "harbison",
+     "oz": 9,
+     "why_zh": "一整个带云杉树皮的小圆饼，切开顶皮用勺舀，最有仪式感。",
+     "why_en": "A whole spruce-bark round; cut off the top and spoon it out for a bit of ceremony."
+    },
+    {
+     "cheese_id": "gruyere",
+     "oz": 4,
+     "why_zh": "瑞士生乳 AOP，阿尔卑斯式的标杆。",
+     "why_en": "Raw-milk Swiss AOP, the Alpine benchmark."
+    },
+    {
+     "cheese_id": "parmigiano-reggiano",
+     "oz": 3,
+     "why_zh": "掰成不规则小块，看结晶、尝咸鲜；看一眼针点字皮。",
+     "why_en": "Break into rough chunks for crystals and savor, and check the pin-dot rind."
+    },
+    {
+     "cheese_id": "rogue-river-blue",
+     "oz": 3,
+     "why_zh": "2019 年世界冠军，秋季上市，正当季；没货就换 Point Reyes Original Blue。",
+     "why_en": "The 2019 world champion, released in autumn and in season now; swap in Point Reyes Original Blue if it's out."
+    }
+   ],
+   "extras_zh": "意式萨拉米或 prosciutto 4 oz、法棍和饼干、蜂巢或榅桲膏、梨和葡萄、Marcona 杏仁。",
+   "extras_en": "4 oz salami or prosciutto, baguette and crackers, honeycomb or membrillo, pears and grapes, Marcona almonds.",
+   "total_note_zh": "奶酪合计 25 oz，每人约 6 oz，可当一顿正餐；估算奶酪约 $45–68、配菜 $34–42，合计约 $79–110，未含税与酒。Rogue River Blue 与 Harbison 在 Ocean Ave 店是否有货未逐店核实。",
+   "total_note_en": "25 oz of cheese, about 6 oz per person, enough for dinner; estimated $45–68 for cheese plus $34–42 for extras, about $79–110 before tax and wine. Store availability of Rogue River Blue and Harbison at Ocean Avenue was not checked."
+  }
+ ],
+ "local": [
+  {
+   "id": "wf-ocean",
+   "name": "Whole Foods Market (Ocean)",
+   "zh": "全食超市 Ocean Ave 店",
+   "en": "Whole Foods Market, Ocean Avenue",
+   "area": "Ocean Ave / Ingleside，紧邻 CCSF Ocean 校区",
+   "address": "1150 Ocean Avenue, San Francisco, CA 94112",
+   "what_zh": "离 CCSF 最近的全食，就在 Ocean Ave 上。官网门店页把「Certified Cheese Professional」列为本店服务之一，有现切奶酪与专人；另有酒、咖啡吧、Market Sandwich。每天 8:00–22:00。",
+   "what_en": "The Whole Foods closest to City College, right on Ocean Avenue. Its store page lists a Certified Cheese Professional among its services, so there is a staffed cheese counter, plus beer and wine, a coffee bar and Market Sandwich. Open 8 a.m.–10 p.m. daily.",
+   "best_for_zh": "日常补货、临时凑一盘、12 月「12 Days of Cheese」每天去捡一款特价；可以直接请 CCP 按人数配盘。",
+   "best_for_en": "Everyday restocking, a last-minute board, and daily December 12 Days of Cheese deals; ask the CCP to build a board for your headcount.",
+   "status": "营业（官网门店页 2026-11 列每日营业时间）",
+   "sources": [
+    {
+     "title": "Whole Foods Market Ocean 门店页",
+     "url": "https://www.wholefoodsmarket.com/stores/ocean",
+     "kind": "企业"
+    },
+    {
+     "title": "95 Whole Foods Market Stores in California (storelocators.com, 2026-11-08 更新)",
+     "url": "https://storelocators.com/store-lists/whole_foods/california",
+     "kind": "二手"
+    }
+   ],
+   "conf": "高",
+   "note": "「紧邻 CCSF」为编者据地址判断（CCSF Ocean 校区在 Ocean Ave 与 Frida Kahlo Way 一带）。",
+   "kind": "wholefoods",
+   "dist_zh": "步行约 5–10 分钟",
+   "dist_en": "5–10 min walk",
+   "order": 1
+  },
+  {
+   "id": "cheese-boutique",
+   "name": "Cheese Boutique",
+   "zh": "Cheese Boutique（Glen Park）",
+   "en": "Cheese Boutique, Glen Park",
+   "area": "Glen Park，离 CCSF 约一站 BART",
+   "address": "Glen Park（具体门牌未核）",
+   "what_zh": "Glen Park 的小奶酪店，精选 100 多种美国与进口奶酪，还卖自制中东食物。是离 CCSF 最近的独立奶酪店。",
+   "what_en": "A small Glen Park shop with a curated range of more than 100 domestic and imported cheeses plus homemade Middle Eastern foods; the closest independent cheese shop to City College.",
+   "best_for_zh": "不想跑远时的独立店体验；可以买奶酪顺便带中东小菜做拼盘。",
+   "best_for_en": "An independent-shop experience close to home; pick up Middle Eastern sides for the board too.",
+   "status": "2026-07 仍被导览文章列入（未从店方一手页面核实）",
+   "sources": [
+    {
+     "title": "9 San Francisco Cheese Shops (+ Local Cheese Producers) (Devour Tours, 2023-01-18 发布，2026-07-16 更新)",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "中",
+   "note": "门牌与营业时间未核；页面若用请写街区不写门牌，或到店前查一下。",
+   "kind": "shop",
+   "dist_zh": "开车约 7 分钟 / BART 一站（Balboa Park → Glen Park）",
+   "dist_en": "~7 min drive or one BART stop",
+   "order": 2
+  },
+  {
+   "id": "wf-stonestown",
+   "name": "Whole Foods Market (Stonestown)",
+   "zh": "全食超市 Stonestown 店",
+   "en": "Whole Foods Market, Stonestown",
+   "area": "Stonestown Galleria / Lakeshore，CCSF 以西约 1.5–2 英里",
+   "address": "3251 20th Ave Suite 340, San Francisco, CA 94132",
+   "what_zh": "在 Stonestown 商场里，离家第二近。门店页列了热食与沙拉吧、披萨、寿司、酒，未单列奶酪专员。每天 8:00–22:00。",
+   "what_en": "Inside Stonestown Galleria, the second-closest store. Its page lists hot and salad bars, pizza, sushi and beer and wine, but no dedicated cheese professional. Open 8 a.m.–10 p.m. daily.",
+   "best_for_zh": "逛商场顺路买预包装奶酪和 365 自有品牌；要讲究的现切还是去 Ocean 店。",
+   "best_for_en": "Pre-packed and 365 cheeses on a mall run; for a proper cut-to-order visit, Ocean Avenue is the better bet.",
+   "status": "营业（官网门店页 2026-11）",
+   "sources": [
+    {
+     "title": "Whole Foods Market Stonestown 门店页",
+     "url": "https://www.wholefoodsmarket.com/stores/stonestown",
+     "kind": "企业"
+    }
+   ],
+   "conf": "中",
+   "note": "距离为编者按地图估算。",
+   "kind": "wholefoods",
+   "dist_zh": "开车约 8 分钟",
+   "dist_en": "~8 min drive",
+   "order": 3
+  },
+  {
+   "id": "wf-noe",
+   "name": "Whole Foods Market (Noe Valley)",
+   "zh": "全食超市 Noe Valley（24th St）店",
+   "en": "Whole Foods Market, Noe Valley",
+   "area": "Noe Valley，24th St",
+   "address": "3950 24th St., San Francisco, CA 94114",
+   "what_zh": "24th St 上的小型店，每天 8:00–22:00。同一条街往东几步就是 24th Street Cheese Co.，适合一次逛两家。",
+   "what_en": "A compact store on 24th Street, open 8 a.m.–10 p.m. daily. 24th Street Cheese Co. is a short walk east on the same street, so you can do both in one trip.",
+   "best_for_zh": "周末去 Noe Valley 散步时顺便对比连锁柜台和独立奶酪店。",
+   "best_for_en": "A Noe Valley weekend walk comparing a chain counter with an independent cheese shop.",
+   "status": "营业（官网门店页 2026-11）",
+   "sources": [
+    {
+     "title": "Whole Foods Market Noe Valley 门店页",
+     "url": "https://www.wholefoodsmarket.com/stores/noevalley",
+     "kind": "企业"
+    }
+   ],
+   "conf": "高",
+   "note": "门店页未提奶酪柜台。",
+   "kind": "wholefoods",
+   "dist_zh": "开车约 12 分钟",
+   "dist_en": "~12 min drive",
+   "order": 4
+  },
+  {
+   "id": "24th-street-cheese",
+   "name": "24th Street Cheese Co.",
+   "zh": "24th Street Cheese Co.（Noe Valley）",
+   "en": "24th Street Cheese Co., Noe Valley",
+   "area": "Noe Valley，24th St",
+   "address": "3893 24th Street, San Francisco, CA 94114",
+   "what_zh": "Noe Valley 24th St 上的独立奶酪店，营业时间：周一至周五 10:00–19:00，周六 10:00–18:00，周日 10:00–17:00。",
+   "what_en": "An independent cheese shop on 24th Street in Noe Valley; open Mon–Fri 10 a.m.–7 p.m., Sat 10 a.m.–6 p.m., Sun 10 a.m.–5 p.m.",
+   "best_for_zh": "周末在 24th St 散步时试吃几款再买；和隔壁街区的全食 Noe Valley 店对比。",
+   "best_for_en": "Tasting a few before buying on a 24th Street stroll, and comparing with the nearby Whole Foods.",
+   "status": "营业（官网 2026-11 列营业时间，无停业公告）",
+   "sources": [
+    {
+     "title": "24th Street Cheese Co. 官网",
+     "url": "https://www.24thstreetcheese.com/",
+     "kind": "官方"
+    }
+   ],
+   "conf": "中",
+   "note": "官网未写品类与创办年份。",
+   "kind": "shop",
+   "dist_zh": "开车约 12 分钟",
+   "dist_en": "~12 min drive",
+   "order": 5
+  },
+  {
+   "id": "say-cheese",
+   "name": "Say Cheese",
+   "zh": "Say Cheese（Cole Valley）",
+   "en": "Say Cheese, Cole Valley",
+   "area": "Cole Valley，离金门公园步行可到",
+   "address": "856 Cole St., San Francisco, CA 94117",
+   "what_zh": "1976 年起的家族酒与奶酪店，卖本地手工奶酪（如 Cowgirl Mt Tam）和意、西、法进口奶酪，奶酪三明治分量足。SF Standard 2026 年 9 月报道称街坊让它「开了 50 年」。",
+   "what_en": "A family-owned wine and cheese shop since 1976, stocking local artisan cheeses such as Cowgirl Mt Tam alongside Italian, Spanish and French imports, and known for generous cheese sandwiches. A September 2026 SF Standard piece says neighbors have kept it open for 50 years.",
+   "best_for_zh": "去金门公园野餐前买奶酪和三明治。",
+   "best_for_en": "Cheese and a sandwich before a Golden Gate Park picnic.",
+   "status": "营业（SF Standard 2026-09-03 提及仍在营业）",
+   "sources": [
+    {
+     "title": "Cole Valley's new restaurants (SF Standard, 2026-09-03)",
+     "url": "https://sfstandard.com/2026/09/03/cole-valley-neighborhood-new-restaurants/",
+     "kind": "媒体"
+    },
+    {
+     "title": "Say Cheese (Time Out San Francisco, 2017)",
+     "url": "https://www.timeout.com/san-francisco/shopping/say-cheese",
+     "kind": "媒体"
+    },
+    {
+     "title": "Devour Tours SF cheese shops (2026-07 更新)",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "中",
+   "note": "店名常见的旧域名现已不是该店网站，页面不要放那个链接。Devour 写「40 多年」，Time Out 写 1976 年起。",
+   "kind": "shop",
+   "dist_zh": "开车约 15 分钟",
+   "dist_en": "~15 min drive",
+   "order": 6
+  },
+  {
+   "id": "wf-stanyan-market",
+   "name": "Whole Foods Market (Stanyan / Market St)",
+   "zh": "全食超市 Stanyan 店与 Market St 店",
+   "en": "Whole Foods Market, Stanyan St and Market St",
+   "area": "Haight-Ashbury / Cole Valley（Stanyan）；Castro / Duboce Triangle（Market St）",
+   "address": "690 Stanyan St., San Francisco, CA 94117；2001 Market Street, San Francisco, CA 94114",
+   "what_zh": "市区里两家较大的全食。Stanyan 店在金门公园东南角，离 Cole Valley 的 Say Cheese 很近。",
+   "what_en": "Two larger in-city stores. Stanyan sits at the southeast corner of Golden Gate Park, close to Say Cheese in Cole Valley.",
+   "best_for_zh": "去金门公园野餐前买奶酪；或和 Say Cheese 连起来逛。",
+   "best_for_en": "Picking up cheese before a Golden Gate Park picnic, or pairing a visit with Say Cheese.",
+   "status": "列于第三方门店表（2026-11-08 更新）；官网门店页未能打开",
+   "sources": [
+    {
+     "title": "95 Whole Foods Market Stores in California (storelocators.com, 2026-11-08 更新)",
+     "url": "https://storelocators.com/store-lists/whole_foods/california",
+     "kind": "二手"
+    }
+   ],
+   "conf": "中",
+   "note": "旧金山另有 1765 California St、450 Rhode Island St（Potrero Hill）、399 4th St（SoMa）三家，共 8 家（同一来源）。",
+   "kind": "wholefoods",
+   "dist_zh": "开车约 15 分钟",
+   "dist_en": "~15 min drive",
+   "order": 7
+  },
+  {
+   "id": "bi-rite",
+   "name": "Bi-Rite Market",
+   "zh": "Bi-Rite Market",
+   "en": "Bi-Rite Market",
+   "area": "Mission（18th St）/ NoPa（Divisadero）/ Polk St",
+   "address": "3639 18th St, SF 94110；550 Divisadero St, SF 94117；2140 Polk St, SF 94109",
+   "what_zh": "旧金山本地精品超市，三家店每天 8:00–21:00；18th St 老店已开 80 多年。奶酪由专门的采购挑选本地与进口品，其奶酪采购 Jon Fancey 也在 The Cheese School 授课。",
+   "what_en": "A local specialty grocer with three markets, all open 8 a.m.–9 p.m.; the 18th Street original has been open more than 80 years. A dedicated cheese buyer, Jon Fancey, who also teaches at The Cheese School, picks local and imported cheeses.",
+   "best_for_zh": "买本地手工奶酪 + 面包、水果、果酱一站搞定；18th St 店可顺便去 Dolores 公园。",
+   "best_for_en": "Local artisan cheese plus bread, fruit and preserves in one stop; the 18th Street store is steps from Dolores Park.",
+   "status": "营业（官网 Locations 页，©2026）",
+   "sources": [
+    {
+     "title": "Bi-Rite Market: Locations",
+     "url": "https://biritemarket.com/locations/",
+     "kind": "官方"
+    },
+    {
+     "title": "Devour Tours SF cheese shops",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "高",
+   "kind": "market",
+   "dist_zh": "开车约 15 分钟（18th St 店）",
+   "dist_en": "~15 min drive (18th St)",
+   "order": 8
+  },
+  {
+   "id": "rainbow",
+   "name": "Rainbow Grocery Cooperative",
+   "zh": "Rainbow Grocery（员工合作社超市）",
+   "en": "Rainbow Grocery Cooperative",
+   "area": "Mission / SoMa 交界，Folsom St",
+   "address": "1745 Folsom St., San Francisco, CA 94103",
+   "what_zh": "1975 年起在 Mission 的员工所有制合作社超市，每天 9:00–21:00；导览文章称奶酪约 350 种。",
+   "what_en": "A worker-owned cooperative grocery in the Mission since 1975, open 9 a.m.–9 p.m. daily; a 2026 guide counts about 350 cheeses.",
+   "best_for_zh": "品类最宽、价格相对友好，适合一次买齐「八人聚会」那一盘。",
+   "best_for_en": "The widest range at friendlier prices; good for buying a whole party board in one go.",
+   "status": "营业（官网列每日营业时间）",
+   "sources": [
+    {
+     "title": "Rainbow Grocery 官网",
+     "url": "https://www.rainbow.coop/",
+     "kind": "官方"
+    },
+    {
+     "title": "Devour Tours SF cheese shops（约 350 种）",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "高",
+   "note": "邮编 94103 为编者补，官网只写 1745 Folsom St。",
+   "kind": "market",
+   "dist_zh": "开车约 15–20 分钟",
+   "dist_en": "~15–20 min drive",
+   "order": 9
+  },
+  {
+   "id": "la-fromagerie",
+   "name": "La Fromagerie",
+   "zh": "La Fromagerie（Dogpatch）",
+   "en": "La Fromagerie, Dogpatch",
+   "area": "Dogpatch，3rd St",
+   "address": "3rd St, Dogpatch（门牌未核）",
+   "what_zh": "2012 年在 Dogpatch 开业，创办人 Ruben Donze 的规矩是「奶酪必须先尝」；有牛、山羊、绵羊奶酪、熟肉和三明治。",
+   "what_en": "Opened in 2012 on 3rd Street in the Dogpatch; founder Ruben Donze's one rule is that cheese must be sampled. Cow, goat and sheep cheeses, cured meats and sandwiches.",
+   "best_for_zh": "想被店主带着一口一口尝的那种买法。",
+   "best_for_en": "Being walked through a tasting by the owner before you buy.",
+   "status": "2026-07 仍被导览文章列入（未从店方一手页面核实）",
+   "sources": [
+    {
+     "title": "Devour Tours SF cheese shops (2026-07-16 更新)",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "中",
+   "kind": "shop",
+   "dist_zh": "开车约 20 分钟",
+   "dist_en": "~20 min drive",
+   "order": 10
+  },
+  {
+   "id": "cheese-school",
+   "name": "The Cheese School of San Francisco",
+   "zh": "旧金山奶酪学校",
+   "en": "The Cheese School of San Francisco",
+   "area": "原在 Ghirardelli Square；2023 年起据报迁入 Dogpatch 的 Daily Driver",
+   "address": "存疑：900 North Point St., Ste. K201, SF 94109（Ghirardelli Square，商会名录）或 Dogpatch Daily Driver 旗舰店内",
+   "what_zh": "2006 年创办的独立奶酪教育机构，开公开课、私人活动与团建，曾附设奶酪柜台、酒吧和酒铺；2018 年搬到 Ghirardelli Square。2023 年 1 月报道称迁入 Dogpatch 的贝果店 Daily Driver 旗舰店，下午和晚上办课程与品鉴。",
+   "what_en": "An independent cheese school founded in 2006, offering public classes, private events and team-building, once with a cheese counter, wine bar and wine shop; it moved to Ghirardelli Square in 2018. A January 2023 report says it moved into Daily Driver's Dogpatch flagship, hosting classes and tastings in the afternoons and evenings.",
+   "best_for_zh": "两人一起上一节品鉴课，当作这个「号外」的线下延伸。",
+   "best_for_en": "A tasting class for two as an offline extension of the feature.",
+   "status": "存疑：未能从官网核实 2026 年地址与课表（官网禁止抓取）",
+   "sources": [
+    {
+     "title": "Good taste: where to sharpen your culinary skills (48 Hills, 2023-01-10)",
+     "url": "https://48hills.org/2023/01/good-taste-where-to-sharpen-your-culinary-skills-online-and-irl/",
+     "kind": "媒体"
+    },
+    {
+     "title": "SF Chamber 会员名录：The Cheese School of San Francisco（页面 2025-02 修改）",
+     "url": "https://business.sfchamber.com/list/member/the-cheese-school-of-san-francisco-110270",
+     "kind": "二手"
+    },
+    {
+     "title": "Exciting news from The Cheese School (Tablehopper, 2021-09-21)",
+     "url": "https://tablehopper.com/chatterbox/exciting-news-from-the-cheese-school-including-a-collaboration-with-daily-driver",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "低",
+   "alt": "商会名录仍写 Ghirardelli Square 地址与每日 11:00–20:00，可能是旧信息；48 Hills 2023 写已迁 Dogpatch。",
+   "note": "页面若用，请只写名字 + 「上课前查官网 thecheeseschool.com 地址」。",
+   "kind": "class",
+   "dist_zh": "开车约 20–25 分钟（视地址）",
+   "dist_en": "~20–25 min drive (depends on location)",
+   "order": 11
+  },
+  {
+   "id": "cheese-plus",
+   "name": "Cheese Plus",
+   "zh": "Cheese Plus（Polk St）",
+   "en": "Cheese Plus, Polk Street",
+   "area": "Russian Hill / Nob Hill，Polk St 与 Pacific Ave 路口",
+   "address": "2001 Polk Street, San Francisco, CA 94109",
+   "what_zh": "2005 年开业的奶酪店，品类多，有熟肉、路边三明治小馆、按顾客选的奶酪做拼盘，还有每月奶酪俱乐部（从整轮现切、手工包好）。周一至周五 10:00–19:30，周六 9:00–19:30，周日 9:00–19:00。",
+   "what_en": "Open since 2005 with a large cheese selection, charcuterie, a sidewalk sandwich café, custom boards built from cheeses you choose and a Cheese of the Month Club cut from the wheel. Mon–Fri 10 a.m.–7:30 p.m., Sat 9 a.m.–7:30 p.m., Sun 9 a.m.–7 p.m.",
+   "best_for_zh": "让店里按你挑的奶酪直接做好一盘带走；送礼篮。",
+   "best_for_en": "Having the shop assemble a board from your picks; gift baskets.",
+   "status": "营业（官网 2026-11 列营业时间，无停业公告）",
+   "sources": [
+    {
+     "title": "Cheese Plus 官网",
+     "url": "https://www.cheeseplus.com/",
+     "kind": "官方"
+    },
+    {
+     "title": "Devour Tours SF cheese shops（2005 年开业）",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "中",
+   "note": "官网版权年为 2024。",
+   "kind": "shop",
+   "dist_zh": "开车约 25 分钟",
+   "dist_en": "~25 min drive",
+   "order": 12
+  },
+  {
+   "id": "ferry-plaza",
+   "name": "Ferry Plaza Farmers Market",
+   "zh": "渡轮大厦周六农夫市集",
+   "en": "Ferry Plaza Farmers Market (Saturdays)",
+   "area": "Embarcadero，渡轮大厦",
+   "address": "One Ferry Building, San Francisco, CA 94111",
+   "what_zh": "每周六的农夫市集，轮换出摊的奶酪商包括 Point Reyes Farmstead Cheese Co.、Tomales Farmstead Creamery、Achadinha Cheese Co.，可以直接跟做奶酪的人买。",
+   "what_en": "The Saturday farmers market, where rotating cheese vendors include Point Reyes Farmstead Cheese Co., Tomales Farmstead Creamery and Achadinha Cheese Co., so you can buy straight from the makers.",
+   "best_for_zh": "买「加州一盘」的本地奶酪，顺便看看西马林的牧场故事。",
+   "best_for_en": "Sourcing a California board from the makers themselves.",
+   "status": "按周六举办（2026-07 导览文章口径）；渡轮大厦 2026 年商户名单里已无 Cowgirl Creamery",
+   "sources": [
+    {
+     "title": "Devour Tours SF cheese shops（Ferry Building Farmers Market）",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    },
+    {
+     "title": "Ferry Building Marketplace: Shops",
+     "url": "https://www.ferrybuildingmarketplace.com/shops/",
+     "kind": "官方"
+    }
+   ],
+   "conf": "中",
+   "note": "具体摊位每周轮换，去前看市集官网。",
+   "kind": "market",
+   "dist_zh": "开车或 BART 约 25 分钟（Balboa Park → Embarcadero）",
+   "dist_en": "~25 min by car or BART",
+   "order": 13
+  },
+  {
+   "id": "eataly-sv-trip",
+   "name": "Eataly Silicon Valley",
+   "zh": "Eataly 硅谷店（周末远足）",
+   "en": "Eataly Silicon Valley (weekend trip)",
+   "area": "圣克拉拉 / 圣何塞交界，Westfield Valley Fair 商场",
+   "address": "2855 Stevens Creek Blvd., Santa Clara, CA 95050（Eataly 活动页写 San Jose, CA 95128）",
+   "what_zh": "旧金山没有 Eataly，最近的就是这家：2022 年 6 月 16 日开业，三层约 45,000 平方英尺。Salumi & Formaggi 柜台有多个年份的 Parmigiano Reggiano DOP 和地方特产，mozzarella 每天店内用牛奶现做；烹饪学校开过「Hands-On: Mozzarella」两小时实操课。从 CCSF 走 I-280 开车约 45 英里，不堵车约 1 小时。",
+   "what_en": "There is no Eataly in San Francisco; the nearest is this one, opened June 16, 2022, three floors and about 45,000 sq ft. The Salumi & Formaggi counter carries Parmigiano Reggiano DOP in several ages and regional specialties, mozzarella is made in house daily from cow's milk, and the cooking school has run two-hour Hands-On: Mozzarella classes. From City College it is about 45 miles down I-280, roughly an hour without traffic.",
+   "best_for_zh": "意大利一盘：一次买齐 Parmigiano 不同月数、Gorgonzola、Taleggio、当天的 mozzarella 和意式熟肉；可以报一节 mozzarella 课当周末活动。",
+   "best_for_en": "An all-Italian board in one stop: Parmigiano in several ages, Gorgonzola, Taleggio, same-day mozzarella and salumi; book a mozzarella class to make a day of it.",
+   "status": "营业（官网 Market 页 2026-11 列柜台 8:30–21:00）",
+   "sources": [
+    {
+     "title": "Eataly Silicon Valley: Market",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    },
+    {
+     "title": "Palo Alto Online 2022-05-17（开业日期、面积）",
+     "url": "https://n2v.paloaltoonline.com/blogs/p/2022/05/17/long-awaited-eataly-silicon-valley-finally-has-its-opening-date",
+     "kind": "媒体"
+    },
+    {
+     "title": "Hands-On: Mozzarella (Eventbrite, 2026-07-10)",
+     "url": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1990676399699",
+     "kind": "企业"
+    },
+    {
+     "title": "RWC Pulse 2022-06-22（牛奶现做 mozzarella）",
+     "url": "https://www.rwcpulse.com/food/2022/06/22/12-cant-miss-items-at-eataly-silicon-valley-according-to-an-italian-food-expert/",
+     "kind": "媒体"
+    }
+   ],
+   "conf": "中",
+   "note": "里程与车程为编者按坐标与 I-280 路线估算（直线约 39 英里 / 63 km），未经地图服务核实。公共交通需 Caltrain + 公交转乘，约 1.5–2 小时（估）。",
+   "kind": "trip",
+   "dist_zh": "开车约 50–60 分钟",
+   "dist_en": "~50–60 min drive",
+   "order": 14
+  },
+  {
+   "id": "cowgirl-ferry",
+   "name": "Cowgirl Creamery（Ferry Building 店）",
+   "zh": "Cowgirl Creamery 渡轮大厦店",
+   "en": "Cowgirl Creamery, Ferry Building shop",
+   "area": "Embarcadero，渡轮大厦",
+   "address": "One Ferry Building（原址）",
+   "what_zh": "曾是旧金山最有名的奶酪柜台之一，2021 年 4 月关闭；渡轮大厦现行商户名单中没有它。Cowgirl 的奶酪（Mt Tam、Red Hawk）仍可在全食等店买到，官网有门店查询。",
+   "what_en": "Once one of San Francisco's best-known cheese counters, it closed in April 2021 and is absent from the Ferry Building's current merchant list. Cowgirl cheeses such as Mt Tam and Red Hawk are still sold at Whole Foods and elsewhere; the Cowgirl site has a store locator.",
+   "best_for_zh": "（已关闭）",
+   "best_for_en": "(Closed)",
+   "status": "已关闭（2021-04）",
+   "sources": [
+    {
+     "title": "Cowgirl Creamery (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Cowgirl_Creamery",
+     "kind": "百科"
+    },
+    {
+     "title": "Ferry Building Marketplace: Shops（2026-11 名单无 Cowgirl）",
+     "url": "https://www.ferrybuildingmarketplace.com/shops/",
+     "kind": "官方"
+    },
+    {
+     "title": "Cowgirl Creamery 官网（Store Locator）",
+     "url": "https://www.cowgirlcreamery.com/",
+     "kind": "官方"
+    }
+   ],
+   "conf": "高",
+   "kind": "shop",
+   "dist_zh": "（已关闭）",
+   "dist_en": "(closed)",
+   "order": 15
+  }
+ ],
+ "local_cheeses": [
+  {
+   "id": "ca-goldrush",
+   "zh": "加州奶酪生意从淘金热后的旧金山码头起步：西马林（West Marin）的牧场把小块奶酪用马车运到 Petaluma，再坐汽船到旧金山，卖给码头上的欧洲装卸工。",
+   "en": "California cheese began with the post–Gold Rush San Francisco waterfront: West Marin ranches carted small cheeses to Petaluma and shipped them by steamboat to the city, where European dockworkers bought them.",
+   "year": "1849–1865 前后",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Heather Paxson (MIT), California entrepreneurs dream of cheese (The Conversation 2017-12-13, Brewminate 转载)",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Marin French Cheese Company (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Marin_French_Cheese_Company",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "marin-french",
+   "zh": "Marin French Cheese Company：1865 年由奶农 Jefferson Thompson 创办（最初叫 Thompson Brothers），在 Petaluma 西南约 11 英里的 Hicks Valley 牧场，自称美国持续经营最久的奶酪厂。汤普森家族经营 133 年，1998 年卖给 Boyce 家，2011 年由法国 Rians 家族收购。",
+   "en": "Marin French Cheese Company was founded in 1865 by dairyman Jefferson Thompson (first as Thompson Brothers) on a Hicks Valley ranch about 11 miles southwest of Petaluma, and claims to be the oldest continuously operating cheesemaker in the U.S. The Thompsons ran it for 133 years, sold it to the Boyce family in 1998, and France's Rians family bought it in 2011.",
+   "year": "1865 / 1998 / 2011",
+   "num": "约 11 英里；133 年",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Marin French Cheese Company (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Marin_French_Cheese_Company",
+     "kind": "百科"
+    },
+    {
+     "title": "Paxson, The Conversation / Brewminate",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    }
+   ],
+   "alt": "维基也记有更早的说法：1854 年已有前身、1857 年 Clara Steele 已在当地做奶酪，早期记录零散。「最老」是企业自述。",
+   "where_sf_zh": "旧金山的全食、Rainbow、Bi-Rite 等综合奶酪柜台较常见，到店问。",
+   "where_sf_en": "Commonly found at Whole Foods, Rainbow and Bi-Rite cheese cases in SF; ask at the counter.",
+   "where_sf_conf": "低"
+  },
+  {
+   "id": "marin-french-products",
+   "zh": "Marin French 最早的产品是小圆饼状的「早餐奶酪」（今名 Petite Breakfast），至今仍在做；品牌 1906–2013 年叫 Rouge et Noir。2005 年其 Triple Crème Brie 在伦敦世界奶酪大奖（World Cheese Awards）巴氏奶 Brie 组拿到该组唯一金牌。",
+   "en": "Marin French's first product, a small \"breakfast cheese\" (now Petite Breakfast), is still made; the brand was Rouge et Noir from 1906 to 2013. In 2005 its Triple Crème Brie won the only gold in the pasteurized-milk brie class at the World Cheese Awards in London.",
+   "year": "1906–2013 / 2005",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Marin French Cheese Company (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Marin_French_Cheese_Company",
+     "kind": "百科"
+    },
+    {
+     "title": "Paxson, The Conversation / Brewminate",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "vella",
+   "zh": "Vella Cheese Company（索诺马）：1931 年，一群奶农请西西里 Gela 来的 Gaetano「Tom」Vella 开奶酪厂、由他们供奶；1969 年起在离 Sonoma Plaza 几个街区、1904 年建成的石头老啤酒厂里手工做奶酪，至今未搬。儿子 Ignazio「Ig」Vella（2011 年去世）2006 年获美国奶酪协会终身成就奖。",
+   "en": "Vella Cheese Company in Sonoma began in 1931 when local dairymen asked Gaetano \"Tom\" Vella, from Gela in Sicily, to open a cheese plant they would supply. Since 1969 it has made cheese by hand in a 1904 stone former brewery a few blocks from Sonoma Plaza. His son Ignazio \"Ig\" Vella (d. 2011) received the American Cheese Society's Lifetime Achievement Award in 2006.",
+   "year": "1931 / 1969 / 2006",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Vella Cheese Company: History",
+     "url": "https://vellacheese.com/history.php",
+     "kind": "官方"
+    },
+    {
+     "title": "Vella Dry Jack Cheese from Sonoma (Zingerman's Deli, 2025-02)",
+     "url": "https://www.zingermansdeli.com/2025/02/vella-dry-jack/",
+     "kind": "企业"
+    }
+   ],
+   "where_sf_zh": "旧金山全食与独立奶酪店常见 Dry Jack，到店问。",
+   "where_sf_en": "Dry Jack often appears at Whole Foods and independent SF cheese shops; ask.",
+   "where_sf_conf": "低"
+  },
+  {
+   "id": "dry-jack",
+   "zh": "Dry Jack 的来历：一战期间旧金山意大利裔杂货商 DeBernardi 进不到意大利的陈年刨丝奶酪，发现一批被遗忘、意外放老了的 Monterey Jack 变硬变香，于是有了「干杰克」。如今只剩不到六家在做，已列入 Slow Food「味之方舟」（Ark of Taste）。",
+   "en": "Dry Jack's origin story: during World War I a San Francisco grocer named DeBernardi, cut off from aged Italian grating cheese, found a forgotten lot of Monterey Jack that had aged hard and nutty. Fewer than half a dozen makers still produce it, and it is on Slow Food's Ark of Taste.",
+   "year": "1914–1918",
+   "num": "<6 家在产",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Zingerman's Deli 2025-02",
+     "url": "https://www.zingermansdeli.com/2025/02/vella-dry-jack/",
+     "kind": "企业"
+    }
+   ],
+   "note": "DeBernardi 故事属行业流传说法，可在页面标「据说」。"
+  },
+  {
+   "id": "laura-chenel",
+   "zh": "Laura Chenel：1979 年从法国学艺回来，在索诺马县自家地下室做山羊奶酪，先在农夫市集卖；Chez Panisse 的 Alice Waters 尝到后每周订 50 磅，用在一道后来成为招牌的沙拉上。她被视为美国商业山羊奶酪的开创者之一。2006 年把奶酪厂卖给 Rians，自己保留约 500 头羊继续供奶。",
+   "en": "Laura Chenel returned from France in 1979 and began making goat cheese in her Sonoma County basement, selling at farmers' markets. Alice Waters of Chez Panisse tasted it and ordered 50 lb a week for a salad that became a house staple. She is counted among the pioneers of commercial American chèvre. In 2006 she sold the cheese business to Rians, keeping her herd of about 500 goats as a milk supplier.",
+   "year": "1979 / 1980–81 / 2006",
+   "num": "50 磅/周；约 500 头山羊",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Laura Chenel (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Laura_Chenel",
+     "kind": "百科"
+    },
+    {
+     "title": "The Goat Ladies Who Built American Chèvre (culture, 2026-04-17)",
+     "url": "https://culturecheesemag.com/stories/goat-ladies-american-goat-cheese-history/",
+     "kind": "媒体"
+    }
+   ],
+   "alt": "首次卖给 Chez Panisse 的年份：culture（2026）写 1980 年，维基写 1981 年在农夫市集被 Waters 尝到。「美国第一家商业山羊奶酪」是常见说法，维基未这样表述。",
+   "where_sf_zh": "旧金山各大超市冷柜常见。",
+   "where_sf_en": "Common in SF supermarket cheese cases.",
+   "where_sf_conf": "低"
+  },
+  {
+   "id": "cypress-grove",
+   "zh": "Cypress Grove（北加州海岸小城 Arcata）：Mary Keehn 1983 年没受过正规训练就开始做山羊奶酪；1992 年去法国品尝传统奶酪后，在回程飞机上梦到 Humboldt Fog 的样子——中间一道像 Morbier 那样的植物灰线。2010 年卖给瑞士 Emmi，她仍日常参与。",
+   "en": "Cypress Grove in Arcata on the North Coast: Mary Keehn started making goat cheese in 1983 with no formal training. After a 1992 tasting trip to France she dreamed up Humboldt Fog on the flight home, with a Morbier-like line of vegetable ash through the middle. She sold the company to Switzerland's Emmi in 2010 and stayed involved day to day.",
+   "year": "1983 / 1992 / 2010",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Paxson, The Conversation / Brewminate",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "culture 2026-04-17",
+     "url": "https://culturecheesemag.com/stories/goat-ladies-american-goat-cheese-history/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「梦里想到」是 Keehn 本人的说法。",
+   "where_sf_zh": "全食（2025 年 12 Days of Cheese 入选 Humboldt Fog），Ocean Ave 店最近。",
+   "where_sf_en": "Whole Foods (Humboldt Fog was in the 2025 12 Days of Cheese); the Ocean Avenue store is closest.",
+   "where_sf_conf": "中"
+  },
+  {
+   "id": "cowgirl",
+   "zh": "Cowgirl Creamery：Sue Conley 与 Peggy Smith 1976 年从田纳西大学毕业后来到旧金山，90 年代初先办 Tomales Bay Foods，把西马林的农产品批发给湾区餐厅，后在 Point Reyes Station 一座改造的干草仓里做奶酪，最早是 fromage blanc、crème fraîche。代表作 Mt Tam（以塔玛佩斯山命名的有机三倍奶油软质）和洗皮的 Red Hawk。2016 年交给瑞士 Emmi，现主要在 Petaluma 生产；旧金山渡轮大厦门店 2021 年 4 月关闭。",
+   "en": "Cowgirl Creamery: Sue Conley and Peggy Smith came to San Francisco in 1976 after the University of Tennessee, started Tomales Bay Foods in the early 1990s to wholesale West Marin farm products to Bay Area chefs, then made cheese in a converted hay barn in Point Reyes Station, starting with fromage blanc and crème fraîche. Best known for Mt Tam, an organic triple-cream named for Mount Tamalpais, and the washed-rind Red Hawk. Emmi took over in 2016; production is now mainly in Petaluma, and the Ferry Building shop closed in April 2021.",
+   "year": "1994 / 1997 / 2016 / 2021",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Cowgirl Creamery: The Cowgirl Story",
+     "url": "https://www.cowgirlcreamery.com/the-cowgirl-story",
+     "kind": "官方"
+    },
+    {
+     "title": "Cowgirl Creamery (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Cowgirl_Creamery",
+     "kind": "百科"
+    }
+   ],
+   "alt": "创办年份两说：维基写 1994 年（多与 Tomales Bay Foods 同年计）；业内常说 1997 年开始在 Point Reyes Station 做奶酪。官网未写年份。",
+   "where_sf_zh": "渡轮大厦门店 2021 年已关；Mt Tam 在全食有商品页，Cole Valley 的 Say Cheese 也有卖；官网有门店查询。",
+   "where_sf_en": "The Ferry Building shop closed in 2021; Mt Tam is listed by Whole Foods and stocked at Say Cheese in Cole Valley; Cowgirl's site has a store locator.",
+   "where_sf_conf": "中"
+  },
+  {
+   "id": "point-reyes",
+   "zh": "Point Reyes Farmstead Cheese Co.：Giacomini 家曾祖 1904 年从意大利北部移民加州；1959 年 Bob 与 Dean Giacomini 买下俯瞰 Tomales Bay 的 710 英亩牧场卖鲜奶。2000 年女儿们回家办奶酪厂，同年 8 月推出第一款 Original Blue——生乳、自家荷斯坦牛、熟成约三个半月，号称加州唯一的经典式蓝纹。2018 年在 Petaluma 开第二座奶酪厂，Original Blue 仍在牧场做。",
+   "en": "Point Reyes Farmstead Cheese Co.: the Giacomini great-grandfather emigrated from northern Italy in 1904; in 1959 Bob and Dean Giacomini bought 710 acres above Tomales Bay and sold milk. Their daughters came home in 2000 to start the cheese company, releasing the first Original Blue that August: raw milk from their own Holsteins, aged about three and a half months, billed as California's only classic-style blue. A second creamery opened in Petaluma in 2018; Original Blue is still made on the farm.",
+   "year": "1904 / 1959 / 2000-08 / 2018",
+   "num": "710 英亩；熟成约 3.5 个月",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Point Reyes Cheese: About Us",
+     "url": "https://pointreyescheese.com/pages/about-us",
+     "kind": "官方"
+    },
+    {
+     "title": "Original Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/original-blue",
+     "kind": "媒体"
+    }
+   ],
+   "note": "官网写「三姐妹」；早年报道多写四个女儿，未采用。",
+   "where_sf_zh": "周六渡轮大厦农夫市集有 Point Reyes 摊位（轮换）；全食 2025 年 12 Days 选了 Tomarashi。",
+   "where_sf_en": "Point Reyes is among the rotating vendors at the Saturday Ferry Plaza Farmers Market; Whole Foods featured its Tomarashi in the 2025 12 Days.",
+   "where_sf_conf": "中"
+  },
+  {
+   "id": "ca-cheese-trail",
+   "zh": "2010 年起有「加州奶酪之路」（California Cheese Trail）地图，2017 年列了 72 家奶酪作坊；全美手工与特色奶酪生产者超过 900 家（美国奶酪协会口径）。",
+   "en": "The California Cheese Trail map, launched in 2010, listed 72 cheesemaking operations as of 2017; the American Cheese Society counts more than 900 artisan and specialty cheese operations nationwide.",
+   "year": "2010 / 2017",
+   "num": "72 家（加州）；>900 家（全美）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Paxson, The Conversation / Brewminate (2017)",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "ca-festival",
+   "zh": "California Artisan Cheese Festival：每年 3 月在索诺马县办的非营利奶酪节，创办人 Tom Birdsall，早年在 Petaluma 喜来登酒店外的大帐篷里办，有农场参观、讲座、品鉴市集。2025 年 3 月 21–23 日为第 20 届；官网列第 21 届为 2027 年 3 月 19–21 日，含 Sebastopol The Barlow 的 Cheese Crawl。",
+   "en": "The California Artisan Cheese Festival is a nonprofit festival held each March in Sonoma County, founded by Tom Birdsall and long staged in a tent outside the Sheraton in Petaluma, with farm tours, seminars and a tasting marketplace. The 20th edition ran March 21–23, 2025; the official site lists the 21st for March 19–21, 2027, including a Cheese Crawl at The Barlow in Sebastopol.",
+   "year": "2007 起 / 2025 / 2027",
+   "num": "100 多家参展（2027 官网口径）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "California Artisan Cheese Festival 官网",
+     "url": "https://artisancheesefestival.com/",
+     "kind": "官方"
+    },
+    {
+     "title": "California Cheese Guild 活动页（2025）",
+     "url": "https://cacheeseguild.org/?p=6651",
+     "kind": "官方"
+    },
+    {
+     "title": "Visit Santa Rosa: 20th Annual California Artisan Cheese Festival",
+     "url": "https://www.visitsantarosa.com/events/20th-annual-california-artisan-cheese-festival",
+     "kind": "官方"
+    },
+    {
+     "title": "Artisan Cheese Festival in Petaluma marks 10 years (Petaluma Argus-Courier)",
+     "url": "https://www.petaluma360.com/news/5409230-181/artisan-cheese-festival-in-petaluma?artslide=0",
+     "kind": "媒体"
+    }
+   ],
+   "note": "创办年 2007 未在本轮打开的页面里直接看到；按届数倒推有出入（疫情年份是否计届不明）。2026 年似未办，官网直接跳到 2027。另有 SF Cheese Fest（2025-09-13）。"
+  },
+  {
+   "id": "ca-counter-list",
+   "zh": "在湾区全食和 Eataly 柜台上比较容易遇到的加州奶酪：Cowgirl Creamery 的 Mt Tam、Red Hawk；Point Reyes 的 Original Blue、Bay Blue、Toma、Tomarashi；Cypress Grove 的 Humboldt Fog；Marin French 的 Brie / Triple Crème / Petite Breakfast；Laura Chenel 的新鲜山羊奶酪；Vella 的 Dry Jack；Eataly 店内用牛奶现做的 mozzarella。全食 2025 年「12 Days of Cheese」就选了 Point Reyes Tomarashi、Humboldt Fog 和 Mt Tam。 在旧金山：全食 Ocean Ave 店离 CCSF 最近；周六渡轮大厦农夫市集可直接跟 Point Reyes、Tomales Farmstead 等奶酪厂买；Say Cheese 有 Mt Tam；Rainbow 约 350 种奶酪。",
+   "en": "California cheeses you are likely to meet at Bay Area Whole Foods and Eataly counters: Cowgirl Creamery Mt Tam and Red Hawk; Point Reyes Original Blue, Bay Blue, Toma and Tomarashi; Cypress Grove Humboldt Fog; Marin French brie, triple crème and Petite Breakfast; Laura Chenel fresh chèvre; Vella Dry Jack; and Eataly's in-house cow's-milk mozzarella. Whole Foods' 2025 12 Days of Cheese featured Point Reyes Tomarashi, Humboldt Fog and Mt Tam. In San Francisco: the Ocean Avenue Whole Foods is closest to City College; the Saturday Ferry Plaza Farmers Market sells direct from Point Reyes, Tomales Farmstead and others; Say Cheese stocks Mt Tam; Rainbow carries about 350 cheeses.",
+   "year": "2025–2026",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "12 Days of Cheese Returns… (Whole Foods Market, 2025-12-03)",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    },
+    {
+     "title": "Cowgirl Creamery Organic Mt Tam (Whole Foods 商品页)",
+     "url": "https://www.wholefoodsmarket.com/grocery/product/cowgirl-creamery-mt-tam-organic-triple-creme-cheese-b07yx4v45c",
+     "kind": "企业"
+    },
+    {
+     "title": "Eataly Silicon Valley Market 页（称也采购美国生产者的奶酪与熟肉）",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    },
+    {
+     "title": "Devour Tours SF cheese shops (2026-07-16 更新)",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    }
+   ],
+   "note": "全食 Mt Tam 有线上商品页、2025 年 12 Days 名单有三款加州奶酪，属已核；其余单品是否在某家门店有货未逐店核实，Eataly 硅谷店具体加州品牌未查到清单，页面宜写「常见」「到店问」。"
+  }
+ ],
+ "home": "near CCSF, SF",
+ "boards_scenarios": [
+  {
+   "id": "date-night-40",
+   "zh": "两个人的周末夜",
+   "en": "Weekend night for two",
+   "budget_usd": 40,
+   "people": 2,
+   "where_zh": "全食 Ocean Ave 店（离家最近，有 CCP）",
+   "where_en": "Whole Foods, Ocean Avenue (closest, with a CCP)",
+   "items": [
+    {
+     "kind": "cheese",
+     "name": "Cowgirl Creamery Mt Tam（白霉，整块约 7 oz）",
+     "qty": "1 块",
+     "est_usd": "13–16"
+    },
+    {
+     "kind": "cheese",
+     "name": "Comté 18–24 个月（阿尔卑斯式）",
+     "qty": "1/4 lb",
+     "est_usd": "6–8"
+    },
+    {
+     "kind": "cheese",
+     "name": "Point Reyes Original Blue（蓝纹）",
+     "qty": "1/8–1/4 lb",
+     "est_usd": "3–8"
+    },
+    {
+     "kind": "side",
+     "name": "法棍或旧金山酸面包",
+     "qty": "1 条",
+     "est_usd": "4–6"
+    },
+    {
+     "kind": "side",
+     "name": "葡萄或梨 + 一小罐蜂蜜",
+     "qty": "",
+     "est_usd": "6–8"
+    }
+   ],
+   "why_zh": "三种奶酪覆盖软、半硬、蓝纹三种口感，两款是西马林本地；每人每种约 1.5–2 oz，正好吃完不剩。蓝纹买最少，配蜂蜜降低门槛。",
+   "why_en": "Three cheeses cover soft, semi-hard and blue, two of them from West Marin; about 1.5–2 oz of each per person, so nothing is left over. The blue is the smallest piece, softened with honey.",
+   "budget_basis": "按 cheeses 条目的价格区间（多为口径 B 估计）折算，未含酒水与税。",
+   "sources": [
+    {
+     "title": "Antonelli's Cheese: How to Build a Perfect Cheese Board（3 种 / 多样性）",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    },
+    {
+     "title": "Formaticum portioning guide（每种每人约 1 oz；蓝纹少买）",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "party-eight-120",
+   "zh": "八人聚会",
+   "en": "Party for eight",
+   "budget_usd": 120,
+   "people": 8,
+   "where_zh": "Rainbow Grocery（约 350 种奶酪，一次买齐）或全食 Ocean Ave 店",
+   "where_en": "Rainbow Grocery (about 350 cheeses, one-stop) or Whole Foods Ocean Avenue",
+   "items": [
+    {
+     "kind": "cheese",
+     "name": "Marin French Brie 或 Triple Crème（白霉，入门款）",
+     "qty": "约 8 oz",
+     "est_usd": "7–10"
+    },
+    {
+     "kind": "cheese",
+     "name": "Humboldt Fog（山羊，加州门面）",
+     "qty": "1/2 lb",
+     "est_usd": "12–20"
+    },
+    {
+     "kind": "cheese",
+     "name": "Manchego curado 6 个月（绵羊）",
+     "qty": "1/2 lb",
+     "est_usd": "9–14"
+    },
+    {
+     "kind": "cheese",
+     "name": "Cabot Clothbound 或 Beecher's Flagship（切达式）",
+     "qty": "1/2 lb",
+     "est_usd": "9–17"
+    },
+    {
+     "kind": "cheese",
+     "name": "Gorgonzola Dolce（蓝纹，少量）",
+     "qty": "1/4 lb",
+     "est_usd": "4–7"
+    },
+    {
+     "kind": "side",
+     "name": "两种饼干 + 两条法棍",
+     "qty": "",
+     "est_usd": "14–18"
+    },
+    {
+     "kind": "side",
+     "name": "意式萨拉米或西班牙 chorizo",
+     "qty": "1/2 lb",
+     "est_usd": "10–15"
+    },
+    {
+     "kind": "side",
+     "name": "榅桲膏（membrillo）、蜂蜜、坚果、葡萄和苹果",
+     "qty": "",
+     "est_usd": "25–30"
+    }
+   ],
+   "why_zh": "五种奶酪分别是牛、山羊、绵羊三种奶和白霉、新鲜熟成、硬质、布包、蓝纹五种风格；每种每人约 1 oz，合计每人约 4 oz，适合奶酪当主角的聚会。大众口味的切大块，蓝纹只买四分之一磅。",
+   "why_en": "Five cheeses span cow, goat and sheep and five styles (bloomy, goat, hard sheep, cheddar, blue); about 1 oz of each per person, roughly 4 oz each in total, right for a cheese-centered party. Crowd-pleasers get big pieces; the blue only a quarter pound.",
+   "budget_basis": "按 cheeses 条目价格区间折算，未含酒水与税；奶酪约 $41–68，其余为配菜。",
+   "sources": [
+    {
+     "title": "Antonelli's Cheese（大盘 5–7 种、奶源与质地多样）",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    },
+    {
+     "title": "Formaticum portioning guide",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    },
+    {
+     "title": "Rainbow Grocery 官网",
+     "url": "https://www.rainbow.coop/",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "italian-80",
+   "zh": "意大利一盘",
+   "en": "An Italian board",
+   "budget_usd": 80,
+   "people": 4,
+   "where_zh": "Eataly 硅谷店（周末远足；Salumi & Formaggi 柜台一次买齐）",
+   "where_en": "Eataly Silicon Valley (weekend trip; everything at the Salumi & Formaggi counter)",
+   "items": [
+    {
+     "kind": "cheese",
+     "name": "Parmigiano Reggiano 两个年份（如 24 与 36 个月）各一小块",
+     "qty": "各 1/8–1/4 lb",
+     "est_usd": "8–15"
+    },
+    {
+     "kind": "cheese",
+     "name": "Gorgonzola Dolce",
+     "qty": "1/4 lb",
+     "est_usd": "4–7"
+    },
+    {
+     "kind": "cheese",
+     "name": "Taleggio",
+     "qty": "1/4 lb",
+     "est_usd": "5–7"
+    },
+    {
+     "kind": "cheese",
+     "name": "当天现做 mozzarella 或 burrata",
+     "qty": "1 颗",
+     "est_usd": "7–16"
+    },
+    {
+     "kind": "side",
+     "name": "Prosciutto di Parma 现切",
+     "qty": "1/4 lb",
+     "est_usd": "8–12"
+    },
+    {
+     "kind": "side",
+     "name": "佛卡夏、番茄、橄榄油、少许陈年香醋、无花果或梨",
+     "qty": "",
+     "est_usd": "18–23"
+    }
+   ],
+   "why_zh": "把同一种奶酪的两个月数并排吃，最能看出熟成的作用；Gorgonzola 和 Taleggio 一蓝一洗皮，mozzarella 当天吃最能体现「新鲜」。全部是 DOP 或店内现做，适合在 Eataly 一次讲清意大利奶酪地图。",
+   "why_en": "Two ages of the same Parmigiano side by side show what aging does; Gorgonzola and Taleggio add a blue and a washed rind; same-day mozzarella shows what fresh means. All DOP or made in house, an Italian cheese map in one stop.",
+   "budget_basis": "按 cheeses 条目价格区间折算（Eataly 意大利 DOP 常在区间中上段），未含酒水、税和来回油费。",
+   "sources": [
+    {
+     "title": "Eataly Silicon Valley: Market（多个年份的 Parmigiano Reggiano DOP；mozzarella 每天现做）",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines（月数分档）",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ],
+   "pair_drink_zh": "Lambrusco（配 Parmigiano 与熟肉）或 Barbera"
+  },
+  {
+   "id": "california-75",
+   "zh": "加州一盘（一种奶 / 一种风格一款）",
+   "en": "A California board, one style each",
+   "budget_usd": 75,
+   "people": 4,
+   "where_zh": "周六渡轮大厦农夫市集（Point Reyes 等奶酪厂直卖）+ 全食 Ocean Ave 店补齐",
+   "where_en": "Saturday Ferry Plaza Farmers Market (Point Reyes and other makers) plus Whole Foods Ocean Avenue for the rest",
+   "items": [
+    {
+     "kind": "cheese",
+     "name": "Laura Chenel 新鲜山羊奶酪（新鲜）",
+     "qty": "1 条 / 盒",
+     "est_usd": "5–8"
+    },
+    {
+     "kind": "cheese",
+     "name": "Cowgirl Mt Tam（白霉）",
+     "qty": "1 块",
+     "est_usd": "13–16"
+    },
+    {
+     "kind": "cheese",
+     "name": "Cowgirl Red Hawk（洗皮）",
+     "qty": "1 块或半块",
+     "est_usd": "9–16"
+    },
+    {
+     "kind": "cheese",
+     "name": "Vella Dry Jack（硬质）",
+     "qty": "1/4 lb",
+     "est_usd": "5–8"
+    },
+    {
+     "kind": "cheese",
+     "name": "Point Reyes Original Blue（蓝纹）",
+     "qty": "1/4 lb",
+     "est_usd": "6–9"
+    },
+    {
+     "kind": "side",
+     "name": "旧金山酸面包、杏干或无花果、本地蜂蜜、烤杏仁",
+     "qty": "",
+     "est_usd": "15–20"
+    }
+   ],
+   "why_zh": "从新鲜到蓝纹按熟成由浅到深排开，五款都来自加州，背后是 1931 年的 Vella、1979 年的 Laura Chenel、90 年代的 Cowgirl 和 2000 年的 Point Reyes——一盘吃出加州奶酪的几代人。",
+   "why_en": "Laid out from fresh to blue in order of age, all five are Californian and carry the stories of Vella (1931), Laura Chenel (1979), Cowgirl (1990s) and Point Reyes (2000): several generations of California cheese on one board.",
+   "budget_basis": "按 cheeses 条目价格区间折算，未含酒水与税。",
+   "sources": [
+    {
+     "title": "Devour Tours SF cheese shops（渡轮大厦市集奶酪摊）",
+     "url": "https://devourtours.com/blog/san-francisco-cheese-shops",
+     "kind": "媒体"
+    },
+    {
+     "title": "Vella Cheese: History",
+     "url": "https://vellacheese.com/history.php",
+     "kind": "官方"
+    },
+    {
+     "title": "Point Reyes Cheese: About Us",
+     "url": "https://pointreyescheese.com/pages/about-us",
+     "kind": "官方"
+    },
+    {
+     "title": "Laura Chenel (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Laura_Chenel",
+     "kind": "百科"
+    }
+   ],
+   "pair_drink_zh": "索诺马 Pinot Noir 或加州长相思",
+   "note": "Red Hawk 在湾区全食是否常备未核；缺货可换 Point Reyes Toma 或 Pleasant Ridge（非加州）。"
+  }
+ ],
+ "phrases": [
+  {
+   "en": "Could I taste the Comté, please?",
+   "zh": "能尝一下这个 Comté 吗？"
+  },
+  {
+   "en": "A quarter pound, please.",
+   "zh": "请切四分之一磅（约 113 克）。"
+  },
+  {
+   "en": "Just a small piece, about two ounces.",
+   "zh": "只要一小块，大概 2 盎司。"
+  },
+  {
+   "en": "What's tasting best this week?",
+   "zh": "这周哪款状态最好？"
+  },
+  {
+   "en": "We're four people, before dinner. What would you put together?",
+   "zh": "我们四个人，饭前吃，你会怎么配？"
+  },
+  {
+   "en": "Is this raw milk or pasteurized?",
+   "zh": "这是生乳还是巴氏杀菌奶做的？"
+  },
+  {
+   "en": "How old is this one?",
+   "zh": "这块熟成多久了？"
+  },
+  {
+   "en": "Something milder, please, nothing too strong.",
+   "zh": "想要温和一点的，别太冲。"
+  },
+  {
+   "en": "Do you have anything local, from Marin or Sonoma?",
+   "zh": "有马林或索诺马本地的吗？"
+  },
+  {
+   "en": "Could you cut it fresh from the wheel?",
+   "zh": "能从整轮上现切一块吗？"
+  }
+ ]
+}

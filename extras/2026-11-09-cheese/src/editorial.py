@@ -20,15 +20,15 @@ HERO = dict(
 NAV = [('hist', '00', T('沿革', 'History')), ('make', '01', T('做一块', 'Make')), ('taste', '02', T('品鉴', 'Taste')),
        ('world', '03', T('全球', 'World')), ('counter', '04', T('柜台', 'Counter')), ('end', '··', T('卷末', 'Notes'))]
 
-HERO_SUB = T('<b>一块奶酪，是一锅奶加上时间。</b>七千多年前，安纳托利亚和波兰的早期农人就在陶罐里分离凝乳；今天，旧金山的柜台上摆着从帕尔马、汝拉到马林县的几百种轮子。这一期讲四件事：它怎么来的，它怎么做的，怎么尝，世界上别的地方怎么存奶——最后站到柜台前，看看怎么买。',
-             '<b>A cheese is a pot of milk plus time.</b> More than seven thousand years ago, early farmers in Anatolia and Poland were already separating curds in clay pots; today a San Francisco counter holds hundreds of wheels, from Parma and the Jura to Marin County. Four things here: where it came from, how it is made, how to taste it, and how the rest of the world keeps milk — and then, at the counter, how to buy.')
+HERO_SUB = T('<b>一块奶酪，是一锅奶加上时间。</b>七千多年前，安纳托利亚的早期农人已在陶罐里加工奶，波兰的农人用带孔的陶滤器分离凝乳；今天，旧金山的柜台上摆着从帕尔马、汝拉到马林县的几百种轮子。这一期讲四件事：它怎么来的，它怎么做的，怎么尝，世界上别的地方怎么存奶——最后站到柜台前，看看怎么买。',
+             '<b>A cheese is a pot of milk plus time.</b> More than seven thousand years ago, early farmers in Anatolia were already processing milk in clay pots, and farmers in Poland were separating curds in perforated clay sieves; today a San Francisco counter holds hundreds of wheels, from Parma and the Jura to Marin County. Four things here: where it came from, how it is made, how to taste it, and how the rest of the world keeps milk — and then, at the counter, how to buy.')
 
 THESIS = dict(
     zh=[('奶', 0), ('会坏，', 0), ('奶酪', 1), ('不会——', 0), ('人类', 0), ('花了', 0), ('七千年，', 1), ('学会', 0), ('让', 0), ('时间', 1), ('替自己', 0), ('干活。', 0)],
     en=[('Milk', 0), ('spoils;', 0), ('cheese', 1), ('keeps.', 0), ('Seven', 1), ('thousand', 1), ('years', 0), ('of', 0), ('letting', 0), ('time', 1), ('do', 0), ('the', 0), ('work.', 0)],
     nums=[
         T('前 6500', '6500 BC', k=T('年前后，安纳托利亚西北部的陶器里已有乳脂残留——人类加工奶的最早化学证据之一（分不出是奶、酸奶还是奶酪）。', 'or so: milk fat in pottery from north-western Anatolia, among the earliest chemical evidence of dairying (it cannot tell milk from yoghurt or cheese).')),
-        T('400 升', '400 L', k=T('奶做一只约 40 公斤的孔泰轮子。一户人家的奶不够，所以汝拉山区的村子八百多年来一直把奶凑到合作奶坊（fruitière）里一起做。', 'of milk make one 40 kg wheel of Comté — more than one farm has, which is why Jura villages have pooled milk in co-operative dairies (fruitières) for some eight hundred years.')),
+        T('400 升', '400 L', k=T('奶做一只约 40 公斤的孔泰轮子。一户人家的奶不够，所以汝拉山区的村子八百多年来一直把奶凑到合作奶坊（fruitière）里一起做。', 'of milk make one 40 kg wheel of Comté — more than a single small farm could supply, which is why Jura villages have pooled milk in co-operative dairies (fruitières) for some eight hundred years.')),
         T('60 天', '60 days', k=T('在美国，用未经巴氏杀菌的生乳做的奶酪，必须在 35°F（约 1.7°C）以上熟成至少 60 天才能卖。所以柜台上见不到生乳的新鲜奶酪。', 'is the US minimum: cheese from unpasteurised milk must be aged at least 60 days above 35 °F (about 1.7 °C) before sale — which is why no fresh raw-milk cheese reaches the counter.')),
     ],
 )
@@ -57,8 +57,8 @@ SPEC_NOTE = T('位置是按家族、熟成时长和含水量做的估计，不�
               'Positions are estimates from family, age and moisture, not taken from any published tasting chart; the same cheese varies a lot by maker and month. Tap a dot for notes, then “Add to tasting flight”.')
 FLIGHT_TIP = T('每人每种约 30–60 克，一次 3–5 种正好。从淡吃到浓，中间喝口水或吃片苹果清口。', 'About 30–60 g per person per cheese, three to five at a time. Go mild to strong; water or a slice of apple in between.')
 WHEEL = dict(title=T('风味轮', 'Flavour wheel'),
-             intro=T('内圈是九族气味，外圈是具体的词。点一格，看它常出现在哪种奶酪里、来自哪种化合物。结构取自欧洲研究项目的硬质与半硬质奶酪风味轮（Bérodier 等，1997），具体词与化合物参考了切达风味词表（Drake 等，2001）；「味觉与口感」一环是为了好用另加的。',
-                     'The inner ring holds nine aroma families, the outer ring the words. Tap a cell to see which cheeses it turns up in and which compound is behind it. The structure follows the European wheel for hard and semi-hard cheeses (Bérodier et al., 1997), with words and compounds from a Cheddar lexicon (Drake et al., 2001); the “taste & mouthfeel” ring is an addition for practical use.'))
+             intro=T('内圈是九族气味，外圈是具体的词。点一格，看它常出现在哪种奶酪里、常与哪种化合物相关。结构取自欧洲研究项目的硬质与半硬质奶酪风味轮（Bérodier 等，1997），具体词与化合物参考了切达风味词表（Drake 等，2001）；「味觉与口感」一环是为了好用另加的。',
+                     'The inner ring holds nine aroma families, the outer ring the words. Tap a cell to see which cheeses it turns up in and which compounds are associated with it. The structure follows the European wheel for hard and semi-hard cheeses (Bérodier et al., 1997), with words and compounds from a Cheddar lexicon (Drake et al., 2001); the “taste & mouthfeel” ring is an addition for practical use.'))
 PAIR_HEAD = T('搭配：按类别找', 'Pairing, by kind')
 PAIR_KINDS = [('wine', T('葡萄酒', 'Wine')), ('beer', T('啤酒', 'Beer')), ('cider', T('苹果酒', 'Cider')), ('tea', T('茶', 'Tea')), ('sweet', T('蜂蜜 · 果酱 · 坚果', 'Honey · fruit · nuts')), ('spirit', T('烈酒 · 清酒', 'Spirits · sake'))]
 TASTE_HEAD = T('先学会怎么吃', 'First, how to eat it')
@@ -97,13 +97,13 @@ STAGE = [
          tags=[T('《奥德赛》', 'Odyssey')], img='h-homer'),
     dict(id='rome', label=T('60–77', 'AD 60–77'), yr=T('公元 60–77', 'AD 60–77'), era=T('罗马 · 农书与口粮', 'Rome · farm manuals and rations'),
          title=T('「甚至可以运过海去」', '“It can even be shipped overseas”'),
-         text=T('科卢梅拉《论农业》（约公元 60–65 年）写下完整工艺：用羔羊或小山羊的凝乳酶，也可用野蓟花、红花籽或无花果树汁使奶凝结；沥乳清、压重物、撒盐晾干，压得紧实、充分干燥的奶酪「甚至可以运过海去」。老普林尼《自然史》（公元 77 年）开出名奶酪榜，卢纳奶酪一只重达千磅。据《罗马帝王纪》，哈德良在军营里与士兵同吃腌肉、奶酪和掺水的酸酒。',
-                'Columella’s <i>On Agriculture</i> (c. AD 60–65) gives a full method: set the milk with lamb or kid rennet, or with wild-thistle flowers, safflower seed or fig sap; drain, press, salt and dry — a firm, well-dried cheese “can even be shipped overseas.” Pliny’s <i>Natural History</i> (AD 77) ranks famous cheeses; one from Luna could weigh a thousand pounds. Hadrian, says the <i>Historia Augusta</i>, ate camp fare with his soldiers: bacon, cheese and sour wine.'),
+         text=T('科卢梅拉《论农业》（约公元 60–65 年）写下完整工艺：用羔羊或小山羊的凝乳酶，也可用野蓟花、红花籽或无花果树汁使奶凝结；沥乳清、压重物、撒盐晾干，压得紧实、充分干燥的奶酪「甚至可以运过海去」。老普林尼《自然史》（公元 77 年）开出名奶酪榜，卢纳奶酪一只重达一千罗马磅（约 330 公斤）。据《罗马帝王纪》，哈德良在军营里与士兵同吃腌肉、奶酪和掺水的酸酒。',
+                'Columella’s <i>On Agriculture</i> (c. AD 60–65) gives a full method: set the milk with lamb or kid rennet, or with wild-thistle flowers, safflower seed or fig sap; drain, press, salt and dry — a firm, well-dried cheese “can even be shipped overseas.” Pliny’s <i>Natural History</i> (AD 77) ranks famous cheeses; one from Luna could weigh a thousand Roman pounds (about 330 kg). Hadrian, says the <i>Historia Augusta</i>, ate camp fare with his soldiers: bacon, cheese and sour wine.'),
          tags=[T('凝乳酶', 'Rennet'), T('罗马军粮', 'Army rations')], img='h-rome'),
     dict(id='qmys', label=T('533', '533'), yr=T('约 533–544', 'c. 533–544'), era=T('北魏 · 《齐民要术》', 'Northern Wei · Qimin Yaoshu'),
          title=T('酪、酥、醍醐与「干酪」', 'Lao, su, tihu — and “dry lao”'),
-         text=T('中国古书里的乳品有几个基本字：「酪」近似发酵变稠的奶，「酥」近似黄油，「醍醐」是从酥里再提的精油。北魏贾思勰《齐民要术》卷六记有作酪、作干酪、抨酥等法，其中「干酪」是把酪晒出表皮、反复撇取、炒后捏成梨大的团再晒干，「得经数年不坏，以供远行」——中国古书里最接近硬质奶酪的记载。',
-                'Classical Chinese has a few basic dairy words: <i>lao</i>, roughly thickened soured milk; <i>su</i>, roughly butter; <i>tihu</i>, an oil refined again from <i>su</i>. Jia Sixie’s <i>Qimin Yaoshu</i> (c. 533–544) gives methods for <i>lao</i>, “dry <i>lao</i>” and churned <i>su</i>. Dry <i>lao</i> was sun-crusted, skimmed again and again, pan-fried, shaped into pear-sized balls and dried — it “keeps for several years without spoiling, and serves for long journeys,” the closest thing to a hard cheese in old Chinese texts.'),
+         text=T('中国古书里的乳品有几个基本字：「酪」近似发酵变稠的奶，「酥」近似黄油，「醍醐」是从酥里再提的精油。北魏贾思勰《齐民要术》卷六记有作酪、作干酪、抨酥等法，其中「干酪」是七八月间把酪放在日头下晒，表面结皮就撇下，反复撇到不再起皮；把撇得的约一斗在锅里略炒，摊盘晒到半干，捏成梨大的团再晒干，「得经数年不坏，以供远行」——中国古书里最接近硬质奶酪的记载之一。',
+                'Classical Chinese has a few basic dairy words: <i>lao</i>, roughly thickened soured milk; <i>su</i>, roughly butter; <i>tihu</i>, an oil refined again from <i>su</i>. Jia Sixie’s <i>Qimin Yaoshu</i> (c. 533–544) gives methods for <i>lao</i>, “dry <i>lao</i>” and churned <i>su</i>. For dry <i>lao</i>, the skin that formed on <i>lao</i> set in the midday sun was skimmed off again and again until no more formed; the skimmings were briefly pan-fried, sun-dried until half dry, shaped into pear-sized balls and dried again — it “keeps for several years without spoiling, and serves for long journeys,” one of the closest things to a hard cheese in old Chinese texts.'),
          tags=[T('酪', 'lao'), T('酥', 'su'), T('醍醐', 'tihu')], img='h-qmys'),
     dict(id='abbey', label=T('1115', '1115'), yr=T('1115 – 1411', '1115–1411'), era=T('中世纪 · 修道院、山牧与特许状', 'Middle Ages · abbeys, alps and charters'),
          title=T('今天的名字，多半这时候有了', 'Most of today’s names appear'),
@@ -132,8 +132,8 @@ STAGE = [
          tags=[T('AOC', 'AOC'), T('斯特雷萨', 'Stresa'), T('PDO / PGI', 'PDO / PGI')], img='h-aoc'),
     dict(id='artisan', label=T('1983', '1983'), yr=T('1983 – 今天', '1983 – today'), era=T('手工复兴', 'The artisan revival'),
          title=T('从康奈尔到马林县', 'From Cornell to Marin'),
-         text=T('1983 年，康奈尔大学的 Frank Kosikowski 创立美国奶酪协会，把散落各地的小作坊连起来。湾区北部是这场复兴的重镇：佩塔卢马的 Marin French Cheese 自称美国连续经营最久的奶酪厂（1865）；Laura Chenel 1979 年在索诺玛开始商业做山羊奶酪；Cowgirl Creamery 1997 年在雷斯岬站开张；Point Reyes 农场 2000 年推出蓝纹 Original Blue。另一头，2024 年全美奶酪产量 142.5 亿磅，威斯康星第一、加州第二。',
-                'In 1983 Frank Kosikowski of Cornell founded the American Cheese Society to link scattered small makers. The North Bay became a centre of the revival: Petaluma’s Marin French Cheese calls itself America’s longest continuously operating cheese company (1865); Laura Chenel began making goat cheese commercially in Sonoma in 1979; Cowgirl Creamery opened in Point Reyes Station in 1997; and Point Reyes Farmstead launched Original Blue in 2000. At the other end of the scale, the US made 14.25 billion lb of cheese in 2024 — Wisconsin first, California second.'),
+         text=T('1983 年，康奈尔大学的 Frank Kosikowski 创立美国奶酪协会，把散落各地的小作坊连起来。湾区北部是这场复兴的重镇：佩塔卢马的 Marin French Cheese 自称美国连续经营最久的奶酪厂（1865）；Laura Chenel 1979 年在索诺玛开始做山羊奶酪（品牌以此为创立年）；Cowgirl Creamery 1997 年在雷斯岬站开张；Point Reyes 农场 2000 年推出蓝纹 Original Blue。另一头，2024 年全美奶酪产量约 142 亿磅（不含茅屋奶酪），威斯康星第一、加州第二。',
+                'In 1983 Frank Kosikowski of Cornell founded the American Cheese Society to link scattered small makers. The North Bay became a centre of the revival: Petaluma’s Marin French Cheese calls itself America’s longest continuously operating cheese company (1865); Laura Chenel began making goat cheese in Sonoma in 1979, the year her company counts as its founding; Cowgirl Creamery opened in Point Reyes Station in 1997; and Point Reyes Farmstead launched Original Blue in 2000. At the other end of the scale, the US made about 14.2 billion lb of cheese in 2024 (excluding cottage cheese) — Wisconsin first, California second.'),
          tags=[T('Mt Tam', 'Mt Tam'), T('Original Blue', 'Original Blue'), T('Dry Jack', 'Dry Jack')], img='h-artisan'),
 ]
 
@@ -141,12 +141,12 @@ ASIA_HEAD = T('东边的酪、酥与奶片', 'Lao, su and milk fans in the East'
 ASIA_NOTE = T('乳品在东亚不只是「舶来品」。下面是中国、蒙古、西藏、日本和印度的几条线索，点开看。', 'Dairy in Asia is not only an import. A few threads from China, Mongolia, Tibet, Japan and India — tap to open.')
 ASIA_ITEMS = [
     ('cn-laonu', T('「酪奴」', '“Slave to lao”'), T('北魏 · 茶与酪孰优', 'Northern Wei · tea versus lao'), T('王肃一句玩笑，让茶在北魏得了个外号。', 'A joke by Wang Su gave tea a nickname in the Northern Wei.')),
-    ('cn-tihu', T('醍醐灌顶', 'Tihu poured on the crown'), T('佛经 · 乳的五个阶段', 'Buddhist sutra · five stages of milk'), T('从乳到醍醐，五步提炼成了一个成语。', 'Five stages of refining milk became an idiom.')),
+    ('cn-tihu', T('醍醐灌顶', 'Tihu poured on the crown'), T('佛经 · 乳的五个阶段', 'Buddhist sutra · five stages of milk'), T('从乳到醍醐的五个阶段，成了一个成语。', 'Five stages of refining milk became an idiom.')),
     ('cn-tang', T('唐代的酥山', 'Tang “butter mountains”'), T('唐 · 宫廷与城市', 'Tang · court and city'), T('冻起来当甜点的酥，和当药用的奶。', 'Frozen su desserts, and milk as medicine.')),
     ('cn-qing', T('清宫的奶与北京的「酪」', 'Qing palace dairy and Beijing lao'), T('清 · 1644–1911', 'Qing · 1644–1911'), T('一万只羊、两千多头牛，供着京城的奶。', 'Ten thousand sheep and 2,400 cattle supplied the capital.')),
     ('cn-yunnan', T('乳扇与乳饼', 'Rushan and rubing'), T('云南 · 大理与石林', 'Yunnan · Dali and Shilin'), T('中国少见的两种「真奶酪」。', 'Two rare “true cheeses” of China.')),
     ('mn', T('蒙古的「白食」', 'Mongolian “white foods”'), T('蒙古高原', 'Mongolian Plateau'), T('奶皮子、奶豆腐、奶干。', 'Milk skin, milk curd, dried curd.')),
-    ('tibet', T('曲拉', 'Chura'), T('青藏高原与喜马拉雅', 'Tibetan Plateau and Himalaya'), T('打完酥油剩下的，晒成能嚼几小时的干酪。', 'What is left after churning, dried hard enough to chew for hours.')),
+    ('tibet', T('曲拉', 'Chura'), T('青藏高原与喜马拉雅', 'Tibetan Plateau and Himalaya'), T('打完酥油剩下的酪乳，晒成碎粒干酪；喜马拉雅的硬 chhurpi 能含上几个小时。', 'Buttermilk left from churning, dried into crumbly curd; Himalayan hard chhurpi can be sucked for hours.')),
     ('jp-so', T('日本的「蘇」', 'So in ancient Japan'), T('奈良—平安', 'Nara–Heian'), T('牛乳一斗煎得蘇一升，作为贡品。', 'Ten parts milk boiled to one, sent as tribute.')),
     ('in-paneer', T('paneer 与 chhena', 'Paneer and chhena'), T('南亚', 'South Asia'), T('用酸点的鲜奶酪，来历有两说。', 'Acid-set fresh cheese, with two origin stories.')),
 ]

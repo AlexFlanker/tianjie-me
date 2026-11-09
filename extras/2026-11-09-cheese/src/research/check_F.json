@@ -1,0 +1,755 @@
+[
+ {
+  "file": "editorial.py",
+  "where": "HERO_SUB",
+  "lang": "zh",
+  "old": "七千多年前，安纳托利亚和波兰的早期农人就在陶罐里分离凝乳；",
+  "new": "七千多年前，安纳托利亚的早期农人已在陶罐里加工奶，波兰的农人用带孔的陶滤器分离凝乳；",
+  "why": "Anatolian pot residues (7th millennium BC) show only that milk was processed — the page itself says (THESIS, STAGE[pot]) they cannot tell milk from cheese. Direct curd-separation evidence is the Kuyavian (Poland) sieves. The hero merges the two claims.",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "Salque et al. 2013, Earliest evidence for cheese making in the sixth millennium BC in northern Europe, Nature 493",
+    "url": "https://www.nature.com/nature/journal/v493/n7433/abs/nature11698.html"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "HERO_SUB",
+  "lang": "en",
+  "old": "early farmers in Anatolia and Poland were already separating curds in clay pots;",
+  "new": "early farmers in Anatolia were already processing milk in clay pots, and farmers in Poland were separating curds in perforated clay sieves;",
+  "why": "Same as zh: Anatolia = milk residues only; curd separation = Kuyavian sieves.",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "Salque et al. 2013, Earliest evidence for cheese making in the sixth millennium BC in northern Europe, Nature 493",
+    "url": "https://www.nature.com/nature/journal/v493/n7433/abs/nature11698.html"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "THESIS.nums[1].k",
+  "lang": "en",
+  "old": "more than one farm has, which is why",
+  "new": "more than a single small farm could supply, which is why",
+  "why": "zh says one household’s milk was not enough (historically true); en \"more than one farm has\" reads as a present-day absolute and is not true of large modern farms.",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[rome].text",
+  "lang": "zh",
+  "old": "卢纳奶酪一只重达千磅",
+  "new": "卢纳奶酪一只重达一千罗马磅（约 330 公斤）",
+  "why": "Pliny 11.97 confirmed (\"a single cheese weighing as much as a thousand pounds\"), but these are Roman librae (~327 g), so ~330 kg — readers will read 千磅 as ~450 kg.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Pliny, Natural History 11.97 (Bostock & Riley translation)",
+    "url": "https://peterburk.github.io/pliny/ChaptersHtml/11.%20Book%20XI.%20The%20Various%20Kinds%20Of%20Insects./97.%20Chap.%2097.%20(42.)-Various%20Kinds%20Of%20Cheese..html"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[rome].text",
+  "lang": "en",
+  "old": "one from Luna could weigh a thousand pounds",
+  "new": "one from Luna could weigh a thousand Roman pounds (about 330 kg)",
+  "why": "Same as zh: Roman pounds, not avoirdupois.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Pliny, Natural History 11.97 (Bostock & Riley translation)",
+    "url": "https://peterburk.github.io/pliny/ChaptersHtml/11.%20Book%20XI.%20The%20Various%20Kinds%20Of%20Insects./97.%20Chap.%2097.%20(42.)-Various%20Kinds%20Of%20Cheese..html"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[qmys].text",
+  "lang": "zh",
+  "old": "其中「干酪」是把酪晒出表皮、反复撇取、炒后捏成梨大的团再晒干，「得经数年不坏，以供远行」——中国古书里最接近硬质奶酪的记载。",
+  "new": "其中「干酪」是七八月间把酪放在日头下晒，表面结皮就撇下，反复撇到不再起皮；把撇得的约一斗在锅里略炒，摊盘晒到半干，捏成梨大的团再晒干，「得经数年不坏，以供远行」——中国古书里最接近硬质奶酪的记载之一。",
+  "why": "Original: 日中炙酪，酪上皮成，掠取；更炙之，又掠。肥盡無皮，乃止。得一斗許，於鐺中炒少許時……日曝，浥浥時作團，大如梨許；又曝使乾。What is fried and balled is the skimmed skin, not the lao itself; current summary blurs that. \"最接近\" softened to \"之一\" (rubing/乳饼-type and 漉酪 also exist).",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "食力 foodNEXT：引《齊民要術》作乾酪法原文",
+    "url": "https://www.foodnext.net/life/culture/paper/5616253362"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[qmys].text",
+  "lang": "en",
+  "old": "Dry <i>lao</i> was sun-crusted, skimmed again and again, pan-fried, shaped into pear-sized balls and dried — it “keeps for several years without spoiling, and serves for long journeys,” the closest thing to a hard cheese in old Chinese texts.",
+  "new": "For dry <i>lao</i>, the skin that formed on <i>lao</i> set in the midday sun was skimmed off again and again until no more formed; the skimmings were briefly pan-fried, sun-dried until half dry, shaped into pear-sized balls and dried again — it “keeps for several years without spoiling, and serves for long journeys,” one of the closest things to a hard cheese in old Chinese texts.",
+  "why": "Same as zh: the skimmed skins are what is fried and shaped.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "食力 foodNEXT：引《齊民要術》作乾酪法原文",
+    "url": "https://www.foodnext.net/life/culture/paper/5616253362"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[artisan].text",
+  "lang": "zh",
+  "old": "Laura Chenel 1979 年在索诺玛开始商业做山羊奶酪；",
+  "new": "Laura Chenel 1979 年在索诺玛开始做山羊奶酪（品牌以此为创立年）；",
+  "why": "1979 is when she set up cheesemaking at home (initially unsuccessful); farmers’-market sales came in the early 1980s and Chez Panisse in 1981. 1979 is the brand’s founding year, but \"commercially in 1979\" is not supported.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Wikipedia: Laura Chenel (1979 home cheesemaking; farmers' markets; Chez Panisse 1981)",
+    "url": "https://en.wikipedia.org/wiki/Laura_Chenel"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[artisan].text",
+  "lang": "en",
+  "old": "Laura Chenel began making goat cheese commercially in Sonoma in 1979;",
+  "new": "Laura Chenel began making goat cheese in Sonoma in 1979, the year her company counts as its founding;",
+  "why": "Same as zh.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Wikipedia: Laura Chenel (1979 home cheesemaking; farmers' markets; Chez Panisse 1981)",
+    "url": "https://en.wikipedia.org/wiki/Laura_Chenel"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[artisan].text",
+  "lang": "zh",
+  "old": "2024 年全美奶酪产量 142.5 亿磅",
+  "new": "2024 年全美奶酪产量约 142 亿磅（不含茅屋奶酪）",
+  "why": "NASS 2024 summary headline: \"Total cheese production, excluding cottage cheeses, was 14.2 billion pounds\"; Wisconsin led (25.2%). Use the official rounded figure and its scope.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "USDA NASS, Dairy Products 2024 Summary (April 2025)",
+    "url": "https://esmis.nal.usda.gov/sites/default/release-files/jm214p131/r781zd41r/vm410p055/daryan25.txt"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "STAGE[artisan].text",
+  "lang": "en",
+  "old": "the US made 14.25 billion lb of cheese in 2024",
+  "new": "the US made about 14.2 billion lb of cheese in 2024 (excluding cottage cheese)",
+  "why": "Same as zh.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "USDA NASS, Dairy Products 2024 Summary (April 2025)",
+    "url": "https://esmis.nal.usda.gov/sites/default/release-files/jm214p131/r781zd41r/vm410p055/daryan25.txt"
+   }
+  ]
+ },
+ {
+  "file": "editorial.py",
+  "where": "ASIA_ITEMS[tibet].one",
+  "lang": "zh",
+  "old": "打完酥油剩下的，晒成能嚼几小时的干酪。",
+  "new": "打完酥油剩下的酪乳，晒成碎粒干酪；喜马拉雅的硬 chhurpi 能含上几个小时。",
+  "why": "Mixes two claims: the entry itself says chura is crumbly sun-dried bits; the \"chew for hours\" property belongs to Himalayan hard chhurpi.",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "editorial.py",
+  "where": "ASIA_ITEMS[tibet].one",
+  "lang": "en",
+  "old": "What is left after churning, dried hard enough to chew for hours.",
+  "new": "Buttermilk left from churning, dried into crumbly curd; Himalayan hard chhurpi can be sucked for hours.",
+  "why": "Same as zh.",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "editorial.py",
+  "where": "ASIA_ITEMS[cn-tihu].one",
+  "lang": "zh",
+  "old": "从乳到醍醐，五步提炼成了一个成语。",
+  "new": "从乳到醍醐的五个阶段，成了一个成语。",
+  "why": "The sutra lists five stages (乳、酪、生酥、熟酥、醍醐), i.e. four refinements, not five steps; en already says \"five stages\".",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "editorial.py",
+  "where": "WHEEL.intro",
+  "lang": "zh",
+  "old": "点一格，看它常出现在哪种奶酪里、来自哪种化合物。",
+  "new": "点一格，看它常出现在哪种奶酪里、常与哪种化合物相关。",
+  "why": "Per craft_B wheel note, many compounds are the lexicon’s chemical reference standards (used to demonstrate an aroma), and several cells say \"no single compound\"; \"comes from / is behind it\" overstates causation.",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "editorial.py",
+  "where": "WHEEL.intro",
+  "lang": "en",
+  "old": "Tap a cell to see which cheeses it turns up in and which compound is behind it.",
+  "new": "Tap a cell to see which cheeses it turns up in and which compounds are associated with it.",
+  "why": "Same as zh.",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "hist_A.json",
+  "where": "asia[cn-laonu].en",
+  "lang": "en",
+  "old": "later quipped that tea was not fit even to be lao's slave, so tea was nicknamed",
+  "new": "later quipped that tea was no match for lao, fit only to be its slave, so tea was nicknamed",
+  "why": "「（唯）茗不中，與酪作奴」 means tea is not up to standard and serves only as lao’s slave; the en (\"not fit even to be lao’s slave\") inverts it and makes the nickname 酪奴 illogical. zh is correct.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "澎湃新闻：叶言都《中国从此走向大唐》节选（王肃「茗不中，与酪作奴」、酪奴）",
+    "url": "https://www.thepaper.cn/newsDetail_forward_12274987"
+   }
+  ]
+ },
+ {
+  "file": "hist_A.json",
+  "where": "asia[cn-laonu].sources[0]",
+  "lang": "both",
+  "old": "\"title\": \"杨衒之《洛阳伽蓝记》卷三·城南·报德寺条（王肃「酪奴」事）\",\n     \"url\": \"https://zh.wikisource.org/zh-hans/%E9%BD%8A%E6%B0%91%E8%A6%81%E8%A1%93\"",
+  "new": "\"title\": \"杨衒之《洛阳伽蓝记》卷三·城南·报德寺条（王肃「酪奴」事）\",\n     \"url\": \"https://zh.wikisource.org/wiki/%E6%B4%9B%E9%99%BD%E4%BC%BD%E8%97%8D%E8%A8%98/%E5%8D%B7%E4%B8%89\"",
+  "why": "The rendered source link for the 洛阳伽蓝记 fact points to the 齐民要术 page (researcher’s placeholder). Replace with 洛陽伽藍記 卷三 (城南, 报德寺/正觉寺 entries hold the 王肃 story).",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "维基文库：洛陽伽藍記/卷三",
+    "url": "https://zh.wikisource.org/wiki/%E6%B4%9B%E9%99%BD%E4%BC%BD%E8%97%8D%E8%A8%98/%E5%8D%B7%E4%B8%89"
+   }
+  ]
+ },
+ {
+  "file": "hist_A.json",
+  "where": "asia[cn-yunnan].en",
+  "lang": "en",
+  "old": "milk curdled with hot sour-papaya water",
+  "new": "milk curdled with hot fermented sour-quince (Chaenomeles, suan mugua) water",
+  "why": "酸木瓜 here is Chaenomeles (Chinese flowering quince), not papaya (番木瓜); world_C’s own rushan entry already names Chaenomeles.",
+  "verdict": "wrong",
+  "sources": []
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[chhurpi].one_zh",
+  "lang": "zh",
+  "old": "熏干的牦牛奶块，硬到能嚼两三小时",
+  "new": "熏干的牦牛奶块，硬到能嚼上好几个小时",
+  "why": "\"Chewed for hours\" is the common (media) claim; the precise \"two to three hours\" is unsourced, and zh one-liner differs from en (\"hours\").",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "cheese.com: Chhurpi",
+    "url": "https://www.cheese.com/chhurpi/"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[chhurpi].flavor_zh",
+  "lang": "zh",
+  "old": "一块可嚼两三个小时。",
+  "new": "一块能在嘴里含嚼好几个小时。",
+  "why": "Same: drop the unsourced precise figure.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "cheese.com: Chhurpi",
+    "url": "https://www.cheese.com/chhurpi/"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[chhurpi].flavor_en",
+  "lang": "en",
+  "old": "One piece can be chewed for two to three hours.",
+  "new": "One piece can last for hours of chewing.",
+  "why": "Same.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "cheese.com: Chhurpi",
+    "url": "https://www.cheese.com/chhurpi/"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[kule-naoto].history[2004].zh",
+  "lang": "zh",
+  "old": "乳酸菌占主导，其中植物乳杆菌约占 60%",
+  "new": "乳酸菌占主导，乳杆菌分离株中植物乳杆菌约占 60%",
+  "why": "Abstract: \"The major Lactobacillus species was Lactobacillus plantarum (60%)\" — 60% of Lactobacillus isolates, not of all LAB/isolates.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Mathara et al. 2004, Int J Food Microbiol — kule naoto abstract",
+    "url": "https://manuscript.isc.ac/Inventory/10/2110967.htm"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[kule-naoto].history[2004].en",
+  "lang": "en",
+  "old": "with Lactobacillus plantarum about 60% of isolates",
+  "new": "with Lactobacillus plantarum making up about 60% of the Lactobacillus isolates",
+  "why": "Same.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Mathara et al. 2004, Int J Food Microbiol — kule naoto abstract",
+    "url": "https://manuscript.isc.ac/Inventory/10/2110967.htm"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[rushan].how_en",
+  "lang": "en",
+  "old": "pre-fermented sour papaya (quince-like Chaenomeles) water",
+  "new": "pre-fermented sour Chinese-quince (Chaenomeles) water",
+  "why": "酸木瓜 is Chaenomeles, not papaya; \"sour papaya\" is a mistranslation even with the gloss.",
+  "verdict": "wrong",
+  "sources": []
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[so].history[927].zh",
+  "lang": "zh",
+  "old": "蘇最早见于平安时代的法典《延喜式》（927 年成书）和《政事要略》，记载了令各地造蘇、按轮次进贡宫廷的「贡蘇」制度。",
+  "new": "平安时代的法典《延喜式》（927 年成书）和《政事要略》记载了令各地造蘇、按轮次进贡宫廷的「贡蘇」制度；蘇的记载其实更早，《续日本纪》已记文武天皇四年（700 年）遣使造蘇。",
+  "why": "\"最早见于《延喜式》\" is wrong and contradicts hist_A jp-so (shown on the same page), which cites the Shoku Nihongi record of 700.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "農林水産省「うちの郷土料理」：蘇（奈良県）",
+    "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/so.html"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[so].history[927].en",
+  "lang": "en",
+  "old": "So first appears in the Heian-era law code Engishiki (completed 927) and the Seiji Yōryaku, which describe a 'kōso' system obliging provinces to make so and send it to court in rotation.",
+  "new": "The Heian-era law code Engishiki (completed 927) and the Seiji Yōryaku describe a 'kōso' system obliging provinces to make so and send it to court in rotation; so is recorded earlier still — the Shoku Nihongi notes that in 700 Emperor Monmu sent officials to have so made.",
+  "why": "Same as zh.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "農林水産省「うちの郷土料理」：蘇（奈良県）",
+    "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/so.html"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[so].history[8–12c].zh",
+  "lang": "zh",
+  "old": "平安末期以后乳利用在日本中断约四百年，直到明治时代才恢复。",
+  "new": "平安末期以后乳品利用在日本长期衰落；江户时代德川吉宗在嶺岡牧养白牛、制「白牛酪」，才重新出现，明治以后普及。",
+  "why": "Dairy reappeared in the Edo period: Yoshimune’s white cattle at Mineoka made 白牛酪 (Chiba calls it the birthplace of Japanese dairying). \"Only in Meiji\" and the \"about 400 years\" gap are both off.",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "千葉県：酪農のさと（徳川吉宗・白牛・嶺岡牧・白牛酪、日本酪農発祥の地）",
+    "url": "https://www.pref.chiba.lg.jp/chikusan/rakunounosato/index.html"
+   }
+  ]
+ },
+ {
+  "file": "world_C.json",
+  "where": "items[so].history[8–12c].en",
+  "lang": "en",
+  "old": "after the late Heian period dairy use vanished from Japan for about four centuries, returning only in the Meiji era.",
+  "new": "after the late Heian period dairy use faded in Japan for centuries; it reappeared in the Edo period, when the shogun Tokugawa Yoshimune kept white cattle at Mineoka to make hakugyūraku, and spread only after the Meiji era.",
+  "why": "Same as zh.",
+  "verdict": "overstated",
+  "sources": [
+   {
+    "title": "千葉県：酪農のさと（徳川吉宗・白牛・嶺岡牧・白牛酪、日本酪農発祥の地）",
+    "url": "https://www.pref.chiba.lg.jp/chikusan/rakunounosato/index.html"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[parmigiano].process[ripen].note_zh",
+  "lang": "zh",
+  "old": "18 月可得 Export、24 月可得 Premium 标识。",
+  "new": "满 18 个月的一级品还可申请加贴「Premium / Export」标识。",
+  "why": "Consortium: \"Starting from the 18th month of maturation, dairies may request… PREMIUM or EXPORT mark\" — one mark with two names, from 18 months; no separate 24-month Premium tier.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Consorzio Parmigiano Reggiano: Product guide — seals and marks",
+    "url": "https://parmigianoreggiano.com/product-guide-seals-and-marks"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[parmigiano].process[ripen].note_en",
+  "lang": "en",
+  "old": "'Export' from 18 months, 'Premium' from 24.",
+  "new": "From 18 months, first-grade wheels may also carry the 'Premium' or 'Export' mark.",
+  "why": "Same as zh.",
+  "verdict": "wrong",
+  "sources": [
+   {
+    "title": "Consorzio Parmigiano Reggiano: Product guide — seals and marks",
+    "url": "https://parmigianoreggiano.com/product-guide-seals-and-marks"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[epoisses].process[rennet].time_zh",
+  "lang": "zh",
+  "old": "\"time_zh\": \"乳酸凝乳 16–24 小时\"",
+  "new": "\"time_zh\": \"乳酸凝乳 >16 小时\"",
+  "why": "AOC spec: \"coagulation à dominante lactique (temps de coagulation supérieur à 16 heures)\"; the 24 h upper bound is not in the spec.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Cahier des charges AOC Époisses (eAmbrosia attachment)",
+    "url": "https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59562"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[epoisses].process[rennet].time_en",
+  "lang": "en",
+  "old": "\"time_en\": \"Lactic set 16–24 h\"",
+  "new": "\"time_en\": \"Lactic set >16 h\"",
+  "why": "Same.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Cahier des charges AOC Époisses (eAmbrosia attachment)",
+    "url": "https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59562"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[epoisses].process[form].time_zh",
+  "lang": "zh",
+  "old": "\"time_zh\": \"≥48 小时后脱模\"",
+  "new": "\"time_zh\": \"脱模时 pH < 4.5\"",
+  "why": "The spec gives no demoulding time; its criterion is pH below 4.5 at demoulding. \"≥48 h\" is unsourced.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Cahier des charges AOC Époisses (eAmbrosia attachment)",
+    "url": "https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59562"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[epoisses].process[form].time_en",
+  "lang": "en",
+  "old": "\"time_en\": \"Unmoulded after ≥48 h\"",
+  "new": "\"time_en\": \"Unmoulded once pH < 4.5\"",
+  "why": "Same.",
+  "verdict": "unverified-soften",
+  "sources": [
+   {
+    "title": "Cahier des charges AOC Époisses (eAmbrosia attachment)",
+    "url": "https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59562"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[mozzarella].process[salt].note_zh",
+  "lang": "zh",
+  "old": "泡冷水定型后进盐水（研究工厂用 2% 与 5% NaCl 两种盐水）；",
+  "new": "泡冷水定型后进盐水，浓度各奶坊不同（常见约 10–18%，也有只用 2% 淡盐水的）；",
+  "why": "\"研究工厂\" is a research note leaking into reader copy, and one plant’s 2% brine is not typical: ONAF gives 10–18%, Rivista di Agraria ~12%. Stretch temps (water ~90 °C, core 70→67 °C) and pH 5.1–5.3 are confirmed by the same study.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "ONAF: Mozzarella di Bufala Campana DOP scheda (salamoia tipicamente 10÷18%)",
+    "url": "https://www.onaf.it/uploads/public/16935_mozzarella-bufala-campana.pdf"
+   },
+   {
+    "title": "Rivista di Agraria 2018: La Mozzarella di Bufala Campana DOP (salata a circa 12%)",
+    "url": "https://rivistadiagraria.org/articoli/anno-2018/la-mozzarella-bufala-campana-dop/?print=pdf"
+   },
+   {
+    "title": "Italian Journal of Food Safety 2008 (one buffalo-mozzarella plant: 2% and 5% NaCl brines; core 70.2→67.4 °C)",
+    "url": "https://pagepressjournals.org/ijfs/article/download/ijfs.2008.4.39/965/5606"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[mozzarella].process[salt].note_en",
+  "lang": "en",
+  "old": "Firmed in cold water then brined (the study plant used 2% and 5% NaCl brines);",
+  "new": "Firmed in cold water, then brined — strength varies by dairy (commonly about 10–18%, though some use a light 2% brine);",
+  "why": "Same as zh.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "ONAF: Mozzarella di Bufala Campana DOP scheda (salamoia tipicamente 10÷18%)",
+    "url": "https://www.onaf.it/uploads/public/16935_mozzarella-bufala-campana.pdf"
+   },
+   {
+    "title": "Rivista di Agraria 2018: La Mozzarella di Bufala Campana DOP (salata a circa 12%)",
+    "url": "https://rivistadiagraria.org/articoli/anno-2018/la-mozzarella-bufala-campana-dop/?print=pdf"
+   },
+   {
+    "title": "Italian Journal of Food Safety 2008 (one buffalo-mozzarella plant: 2% and 5% NaCl brines; core 70.2→67.4 °C)",
+    "url": "https://pagepressjournals.org/ijfs/article/download/ijfs.2008.4.39/965/5606"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "styles[feta].process[heat].note_en",
+  "lang": "en",
+  "old": "The PDO summary does not specify heat treatment; most Greek plants pasteurise.",
+  "new": "The PDO summary does not specify heat treatment; most Greek plants pasteurise, though some small traditional dairies still use raw milk.",
+  "why": "zh also mentions raw milk at small dairies; en drops it (zh/en mismatch). Raw milk is permitted for Feta.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "Wikipedia: Feta (raw milk permitted; most producers pasteurise; 7% brine)",
+    "url": "https://en.wikipedia.org/wiki/Feta"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "pairing.principles[UC Davis].zh",
+  "lang": "zh",
+  "old": "几乎所有奶酪都削弱了红酒的莓果、橡木、酸度和涩感",
+  "new": "几乎所有奶酪都削弱了红酒的干果、橡木等香气以及酸度和涩感（莓果香也降低，但不显著）",
+  "why": "UC Davis summary: significant drops were dried fruit, oak, mushroom, vegetal, bell pepper, sourness, astringency; \"Berry was also reduced, though not significantly.\" Rest of the claim (8×8, 5 g, butter up, quote) confirmed.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "UC Davis research summary: Effect of cheese on red wine flavor (Madrigal-Galan & Heymann 2006)",
+    "url": "https://wineserver.ucdavis.edu/sites/g/files/dgvnsk2676/files/research-summaries/62%20cheese%20and%20wine.pdf"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "pairing.principles[UC Davis].en",
+  "lang": "en",
+  "old": "almost every cheese suppressed berry, oak, sourness and astringency",
+  "new": "almost every cheese suppressed dried-fruit and oak aromas, sourness and astringency (berry dropped too, but not significantly)",
+  "why": "Same as zh.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "UC Davis research summary: Effect of cheese on red wine flavor (Madrigal-Galan & Heymann 2006)",
+    "url": "https://wineserver.ucdavis.edu/sites/g/files/dgvnsk2676/files/research-summaries/62%20cheese%20and%20wine.pdf"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[floral/honey].compound",
+  "lang": "zh",
+  "old": "（苯乙醛常被提及，未单独核源）",
+  "new": "（常提到苯乙醛）",
+  "why": "Editor’s verification note (\"未单独核源\") is rendered to readers; BRIEF rule 4 says such notes go in note, not zh/en. \"常提/常见\" already hedges.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "research/BRIEF.md rule 4 (no editor notes in zh/en)",
+    "url": "file:research/BRIEF.md"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[floral/honey].compound_en",
+  "lang": "en",
+  "old": "(phenylacetaldehyde often cited; not verified)",
+  "new": "(phenylacetaldehyde often cited)",
+  "why": "Same: \"not verified\" is an editor note shown to readers.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "research/BRIEF.md rule 4 (no editor notes in zh/en)",
+    "url": "file:research/BRIEF.md"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[brown/nutty].compound",
+  "lang": "zh",
+  "old": "（文献常提 2-/3-甲基丁醛等 Strecker 醛，未单独核源）",
+  "new": "（文献常提 2-/3-甲基丁醛等 Strecker 醛）",
+  "why": "Editor’s verification note (\"未单独核源\") is rendered to readers; BRIEF rule 4 says such notes go in note, not zh/en. \"常提/常见\" already hedges.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "research/BRIEF.md rule 4 (no editor notes in zh/en)",
+    "url": "file:research/BRIEF.md"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[brown/nutty].compound_en",
+  "lang": "en",
+  "old": "(Strecker aldehydes such as 2-/3-methylbutanal often cited; not verified)",
+  "new": "(Strecker aldehydes such as 2-/3-methylbutanal often cited)",
+  "why": "Same: \"not verified\" is an editor note shown to readers.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "research/BRIEF.md rule 4 (no editor notes in zh/en)",
+    "url": "file:research/BRIEF.md"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[brown/roasted].compound",
+  "lang": "zh",
+  "old": "（吡嗪类为常见代表，未单独核源）",
+  "new": "（吡嗪类为常见代表）",
+  "why": "Editor’s verification note (\"未单独核源\") is rendered to readers; BRIEF rule 4 says such notes go in note, not zh/en. \"常提/常见\" already hedges.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "research/BRIEF.md rule 4 (no editor notes in zh/en)",
+    "url": "file:research/BRIEF.md"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[brown/roasted].compound_en",
+  "lang": "en",
+  "old": "(pyrazines typical; not verified)",
+  "new": "(pyrazines typical)",
+  "why": "Same: \"not verified\" is an editor note shown to readers.",
+  "verdict": "ok-but-clarify",
+  "sources": [
+   {
+    "title": "research/BRIEF.md rule 4 (no editor notes in zh/en)",
+    "url": "file:research/BRIEF.md"
+   }
+  ]
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[vegetal].onion-garlic.compound",
+  "lang": "zh",
+  "old": "\"compound\": \"含硫化合物（硫代亚磺酸酯等）\"",
+  "new": "\"compound\": \"挥发性含硫化合物（如二甲基二硫、二甲基三硫）\"",
+  "why": "Thiosulfinates (allicin-type) form when cut alliums’ alliinase acts on alliin; they are not cheese odorants. Garlic/onion notes in cheese are usually attributed to volatile sulfides (DMDS, DMTS). Not re-sourced online (search budget) — at minimum drop \"thiosulfinates\".",
+  "verdict": "unverified-soften",
+  "sources": []
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[vegetal].onion-garlic.compound_en",
+  "lang": "en",
+  "old": "\"compound_en\": \"Sulfur compounds (thiosulfinates)\"",
+  "new": "\"compound_en\": \"Volatile sulfur compounds (e.g. dimethyl disulfide, dimethyl trisulfide)\"",
+  "why": "Same as zh.",
+  "verdict": "unverified-soften",
+  "sources": []
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[mould].musty.compound",
+  "lang": "zh",
+  "old": "2,4,6-三甲氧基苯甲醛等；土臭素",
+  "new": "未指认单一化合物（常提土臭素）",
+  "why": "\"2,4,6-trimethoxybenzaldehyde\" is not a recognised musty cheese odorant (the classic musty reference is 2,4,6-trichloroanisole) and looks garbled; craft_B note admits the Bérodier descriptor list was not read. Fall back to the page’s own \"no single compound\" pattern.",
+  "verdict": "unverified-soften",
+  "sources": []
+ },
+ {
+  "file": "craft_B.json",
+  "where": "wheel.axes[mould].musty.compound_en",
+  "lang": "en",
+  "old": "2,4,6-Trimethoxybenzaldehyde; geosmin",
+  "new": "No single compound named (geosmin often cited)",
+  "why": "Same as zh.",
+  "verdict": "unverified-soften",
+  "sources": []
+ },
+ {
+  "file": "craft_B.json",
+  "where": "spectrum[pecorino-romano].origin_zh",
+  "lang": "zh",
+  "old": "\"origin_zh\": \"意大利撒丁岛、拉齐奥\"",
+  "new": "\"origin_zh\": \"意大利撒丁岛、拉齐奥与托斯卡纳格罗塞托省\"",
+  "why": "The Pecorino Romano DOP area is Sardinia, Lazio and the province of Grosseto (Tuscany). Not re-sourced online (search budget).",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "file": "craft_B.json",
+  "where": "spectrum[pecorino-romano].origin_en",
+  "lang": "en",
+  "old": "\"origin_en\": \"Sardinia & Lazio, Italy\"",
+  "new": "\"origin_en\": \"Sardinia, Lazio & Grosseto (Tuscany), Italy\"",
+  "why": "Same as zh.",
+  "verdict": "ok-but-clarify",
+  "sources": []
+ },
+ {
+  "confirmed": [
+   "齐民要术卷六·作干酪法 method text (日中炙酪…掠取…炒…大如梨許…又曝使乾) matches the quoted original; closing 「得经数年不坏，以供远行」 matches the standard received text (no full-text page could be opened online; wikisource/ctext blocked)",
+   "洛阳伽蓝记 王肃「（唯）茗不中，与酪作奴」 and the 酪奴 nickname (zh correct; only en mistranslated)",
+   "大般涅槃经「从牛出乳…醍醐最上」 and 顾况《行路难》「岂知灌顶有醍醐，能使清凉头不热」 — standard citations, not re-fetched online",
+   "Columella RR 7.8.1 (lamb/kid rennet, wild-thistle flower, cnecus/safflower seed, fig sap) and 7.8.6 'Hoc genus casei potest etiam trans maria permitti' (Latin Library)",
+   "Pliny NH 11.97: Luna cheese 'a single cheese weighing as much as a thousand pounds' (Roman pounds — see clarify entry)",
+   "Kuyavia sieves: Nature 2013 abstract says sixth millennium BC; press gave 7,500 years; page's 7,000–7,500 years OK; Dalmatia ~5200 BC OK",
+   "Marin French Cheese 1865 (160th anniversary 2025); Cowgirl Creamery 1997, Point Reyes Station; Point Reyes Original Blue first wheels August 2000",
+   "Kraft US 1,186,524, 'Process of sterilizing cheese…', filed 25 Mar 1916, granted 6 Jun 1916",
+   "Wensleydale 176 producers (1939) → 9 (1946) (The Courtyard Dairy)",
+   "Alkmaar cheese trade since 1365, 1593 first year of the cheese market (kaasmarkt.nl); Gouda market since 1395, Waag built 1668",
+   "Roquefort AOC law 26 July 1925 (centenary 2025); Stresa Convention 1951",
+   "Xiaohe: ~3,600-year-old kefir cheese; L. kefiranofaciens + Pichia kudriavzevii; cow and goat milk in separate batches; Tibetan-group strain (Cell 2024, Fu Qiaomei); 2014 study no rennet",
+   "Époisses AOC: whole cow milk; lactic set >16 h; dry salt; washes 1–3×/week with water then Marc de Bourgogne; ≥4 weeks; fat ≥50 g/100 g dry matter (fat field is not rendered)",
+   "Mozzarella di Bufala: stretching water ~90 °C, curd core ~70→67 °C, curd pH 5.1–5.3 (IJFS 2008 study); fat ≥7.2%, protein ≥4.2%, ≤60 h milking-to-vat (ONAF)",
+   "Feta: goat ≤30%, raw milk permitted/most pasteurise, 7% brine, ≥2 months; the 16–18 °C first stage matches the PDO spec as usually cited (EC register page was blocked, not re-read)",
+   "Spectrum classic pairings (Stilton–Port, Roquefort–Sauternes, Comté–vin jaune, Époisses–white Burgundy, chèvre–Sancerre, Manchego–membrillo) fine; nothing else looks wrong",
+   "Chhurpi '20 years in yak skin' claim is the popular one (cheese.com) and the page already hedges it",
+   "Smen: NPR — aged 1–2 years; 'a couple of years old tasted a lot like sharp blue cheese'; 6+ years smoother; burial legend correctly labelled (and not rendered: conf 低)",
+   "Bog butter: UCD/Bristol 2019, 32 samples, dairy fat, Knockdrin 1745–1635 BC, ≥3,500-year tradition to 17th c. AD",
+   "Kule naoto: Mathara 2004 — 22 samples, LAB dominant, Enterobacteriaceae absent in 15/22, pH <4.5",
+   "UC Davis 2006 cheese-before-red-wine study (8×8, 5 g, 11 trained students, butter aroma only increase, 'enjoy almost any cheese with almost any wine')",
+   "Site rules: no Taiwan content found; no political topics. Only note: labneh history line names 'Lebanon, Palestine' as places where the practice exists — geographic, not political; editor may prefer '黎巴嫩等黎凡特地区' if being extra cautious",
+   "Not checked (budget): Wine Folly 14.5%/12% ABV rule, Wisconsin 1,518 factories in 1905, Qing herd figures, Skyr Slow Food 2015, rushan provincial ICH status"
+  ]
+ }
+]

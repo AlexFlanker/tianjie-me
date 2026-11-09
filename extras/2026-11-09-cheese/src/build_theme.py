@@ -6,17 +6,14 @@ import sys; sys.path.insert(0, HERE)
 import editorial as E
 
 def esc(s): return html.escape(str(s), quote=False)
-def J(n): return json.load(open(os.path.join(HERE, 'research', n), encoding='utf-8'))
+import fixes
+def J(n): return fixes.load(n)
 def bi(o, tag='span'):
     return f'<{tag} class="zh">{o["zh"]}</{tag}><{tag} class="en">{o["en"]}</{tag}>'
 def T(z, e): return {'zh': z, 'en': e}
 
 A, B, C, D = J('hist_A.json'), J('craft_B.json'), J('world_C.json'), J('counter_D.json')
-try:
-    import fixes
-    print('  核查改正', fixes.apply(A, B, C, D), '条全部命中')
-except ImportError:
-    pass
+print('  核查改正', fixes.COUNT['n'], '条全部命中')
 IMGS = {im['key']: im for im in json.load(open(os.path.join(HERE, 'images.json'), encoding='utf-8'))} if os.path.exists(os.path.join(HERE, 'images.json')) else {}
 def img(k): return IMGS.get(k)
 def src(k): im = img(k); return im['file'] if im else None

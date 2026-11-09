@@ -2,7 +2,7 @@
  "_meta": {
   "researcher": "D",
   "topic": "Whole Foods / Eataly 奶酪柜台导购",
-  "status": "in progress: local written",
+  "status": "in progress: zones written",
   "updated": "2026-11-08"
  },
  "stores": [
@@ -452,11 +452,915 @@
    ]
   }
  ],
- "zones": [],
+ "zones": [
+  {
+   "id": "fresh",
+   "zh": "新鲜 / 软质",
+   "en": "Fresh & soft",
+   "what_zh": "没熟成或只熟成几天、无皮或皮极薄，奶香、微酸、多汁。看包装日期和汁水是否清亮，越新越好；买了一两天内吃。Eataly 的现拉 mozzarella 台就属这一区。",
+   "what_en": "Unaged or barely aged, rindless, milky, tangy and moist. Check the pack date and that any liquid is clear; fresher is better, eat within a day or two. Eataly's mozzarella-stretching station belongs here.",
+   "examples": [
+    "Mozzarella / fior di latte",
+    "Mozzarella di Bufala Campana",
+    "Burrata",
+    "Ricotta",
+    "Laura Chenel 新鲜山羊奶酪",
+    "Feta",
+    "Halloumi"
+   ],
+   "sources": [
+    {
+     "title": "culture: Eataly Boston (Mozzarella Lab)",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "bloomy",
+   "zh": "白霉皮（软质熟成）",
+   "en": "Bloomy rind",
+   "what_zh": "表面一层白色绒霉（Penicillium camemberti 等），芯从外向内变软。看皮是否洁白、按下去有弹性；皮发褐、发黏、有氨水味说明过熟。皮可以吃。",
+   "what_en": "A white velvety mold rind (Penicillium camemberti and kin); the paste softens from the outside in. Look for a clean white rind that gives slightly when pressed; brown, sticky or ammoniated means overripe. The rind is edible.",
+   "examples": [
+    "Brie",
+    "Camembert",
+    "Cowgirl Mt Tam",
+    "Marin French Brie",
+    "Humboldt Fog",
+    "Harbison"
+   ],
+   "sources": [
+    {
+     "title": "ICE: Understanding Cheese Rinds (2022)",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "washed",
+   "zh": "洗皮",
+   "en": "Washed rind",
+   "what_zh": "熟成时反复用盐水、酒刷洗，皮呈橙红、略黏，气味冲（Brevibacterium linens），芯往往比气味温和。冰箱里要单独装盒；闻起来是「浓」而不是「臭氨水」。",
+   "what_en": "Washed in brine or spirits during aging; orange, slightly tacky rind and a strong smell (Brevibacterium linens), with a paste usually milder than its aroma. Box it separately at home; it should smell rich, not like ammonia.",
+   "examples": [
+    "Taleggio",
+    "Époisses",
+    "Cowgirl Red Hawk",
+    "Morbier",
+    "Pleasant Ridge Reserve"
+   ],
+   "sources": [
+    {
+     "title": "ICE: Understanding Cheese Rinds",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    },
+    {
+     "title": "Formaticum: Can I Eat the Rind?",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "alpine",
+   "zh": "半硬 / 阿尔卑斯式",
+   "en": "Semi-hard & Alpine",
+   "what_zh": "大轮、压榨、熟成数月到两三年，坚果、焦糖、肉汤味，好融化。看标签上的熟成月数和是否生乳；切面应均匀不干裂。",
+   "what_en": "Big pressed wheels aged months to a few years; nutty, caramel, brothy, great melters. Read the age in months and whether it is raw milk; the face should be even, not cracked or dry.",
+   "examples": [
+    "Comté",
+    "Le Gruyère AOP",
+    "Emmentaler AOP",
+    "Fontina Val d'Aosta",
+    "Pleasant Ridge Reserve",
+    "Beecher's Flagship"
+   ],
+   "sources": [
+    {
+     "title": "Comté cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Comt%C3%A9_cheese",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "hard",
+   "zh": "硬质 / 刨丝类",
+   "en": "Hard & grating",
+   "what_zh": "熟成一年以上，干、碎、有白色结晶，咸鲜重。Parmigiano 看针点字皮和月数；可以要整块「chunk」而不是刨好的丝。",
+   "what_en": "Aged a year or more; dry, crumbly, crystalline and savory. For Parmigiano check the pin-dot rind and the age; ask for a chunk rather than pre-grated.",
+   "examples": [
+    "Parmigiano Reggiano",
+    "Grana Padano",
+    "Pecorino Romano",
+    "Vella Dry Jack",
+    "陈年 Gouda",
+    "Mimolette",
+    "Manchego",
+    "Montgomery's Cheddar"
+   ],
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "blue",
+   "zh": "蓝纹",
+   "en": "Blue",
+   "what_zh": "接种 Penicillium roqueforti，扎针透气长出蓝绿纹，咸、辛、奶油感。看纹路分布均匀、芯不发灰发干；锡纸包的皮下可吃，叶子包的留着保护切面。分人口味，买小块。",
+   "what_en": "Inoculated with Penicillium roqueforti and needled so blue-green veins grow; salty, spicy, creamy. Look for even veining and a paste that is not grey or dry; foil-wrapped rinds are edible underneath, leaf wraps protect the cut face. Polarizing, so buy small.",
+   "examples": [
+    "Roquefort",
+    "Gorgonzola Dolce / Piccante",
+    "Stilton",
+    "Point Reyes Original Blue",
+    "Point Reyes Bay Blue",
+    "Rogue River Blue"
+   ],
+   "sources": [
+    {
+     "title": "Formaticum: Can I Eat the Rind?",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    },
+    {
+     "title": "Bay Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/Bay-Blue",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "goat-sheep",
+   "zh": "山羊 / 绵羊奶",
+   "en": "Goat & sheep",
+   "what_zh": "山羊奶酪偏白、酸、清爽带「羊味」；绵羊奶酪油脂高、甜、坚果味。标签会写「made from goat's / sheep's milk」；「Pecorino」就是绵羊奶。",
+   "what_en": "Goat cheeses are bright white, tangy and grassy; sheep cheeses are rich, sweet and nutty. Labels say \"made from goat's / sheep's milk\"; \"Pecorino\" means sheep.",
+   "examples": [
+    "Humboldt Fog",
+    "Laura Chenel chèvre",
+    "Manchego",
+    "Idiazabal",
+    "Pecorino Romano",
+    "Roquefort",
+    "Feta"
+   ],
+   "sources": [
+    {
+     "title": "21 CFR § 133.182 (made from 标注)",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "american",
+   "zh": "本地 / 美国手工",
+   "en": "Local & American artisan",
+   "what_zh": "全食通常有一块「本地」或「American artisan」陈列；湾区店常见 Cowgirl、Point Reyes、Cypress Grove、Marin French、Vella。看是否 farmstead（自家牧场的奶）、是否生乳，以及得奖标签。",
+   "what_en": "Whole Foods usually has a local or American artisan section; Bay Area stores tend to carry Cowgirl, Point Reyes, Cypress Grove, Marin French and Vella. Check for farmstead (milk from the maker's own herd), raw milk and award stickers.",
+   "examples": [
+    "Point Reyes Original Blue",
+    "Cowgirl Mt Tam",
+    "Humboldt Fog",
+    "Rogue River Blue",
+    "Harbison",
+    "Pleasant Ridge Reserve",
+    "Cabot Clothbound"
+   ],
+   "sources": [
+    {
+     "title": "Taste our American Artisan Cheeses (Whole Foods)",
+     "url": "https://www.wholefoodsmarket.com/tips-and-ideas/archive/taste-our-american-artisan-cheeses",
+     "kind": "企业"
+    },
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ],
+   "note": "Taste our American Artisan Cheeses 页未打开，仅凭标题佐证有此陈列主题。"
+  },
+  {
+   "id": "italian-dop",
+   "zh": "意大利 DOP 区",
+   "en": "Italian DOP",
+   "what_zh": "Eataly 的主场：Parmigiano 多个年份、Grana、Pecorino、Gorgonzola、Taleggio、Fontina、水牛 mozzarella。看 DOP 红黄标、熟成月数；Parmigiano 现切块要带针点字皮。",
+   "what_en": "Eataly's home turf: Parmigiano in several ages, Grana, Pecorino, Gorgonzola, Taleggio, Fontina, buffalo mozzarella. Look for the red-and-yellow DOP seal and the age; cut Parmigiano should keep pin-dot rind.",
+   "examples": [
+    "Parmigiano Reggiano",
+    "Grana Padano",
+    "Pecorino Romano",
+    "Gorgonzola",
+    "Taleggio",
+    "Fontina Val d'Aosta",
+    "Asiago",
+    "Mozzarella di Bufala Campana"
+   ],
+   "sources": [
+    {
+     "title": "Eataly Silicon Valley: Market",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "cut-to-order",
+   "zh": "现切区（柜台后）",
+   "en": "Cut-to-order counter",
+   "what_zh": "整轮、整块放在柜台后，按你要的重量现切，可以试吃。适合贵的、要讲究熟成的、想少量多样的。说「a quarter pound」或「about 4 ounces」即可。",
+   "what_en": "Whole wheels and blocks behind the counter, cut to the weight you ask for, with tasting. Best for pricier, age-sensitive cheeses or a small-quantity variety board. Ask for \"a quarter pound\" or \"about 4 ounces.\"",
+   "examples": [
+    "Parmigiano Reggiano 整轮",
+    "Comté",
+    "Gruyère",
+    "Stilton",
+    "Montgomery's Cheddar"
+   ],
+   "sources": [
+    {
+     "title": "culture 2025-03-07（全食 CCP 现切）",
+     "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "grab-and-go",
+   "zh": "预切自选区",
+   "en": "Pre-cut grab-and-go",
+   "what_zh": "已切好、包好贴价的块，以及小盒装软质。快、便宜（全食 365 在这里），但要看包装日期、保鲜膜下是否出水、切面是否发干变色。",
+   "what_en": "Pre-cut, wrapped and priced pieces plus boxed soft cheeses. Fast and cheaper (365 lives here), but check the pack date, any sweating under the film and whether the cut face has dried or darkened.",
+   "examples": [
+    "365 Parmigiano Reggiano 楔块",
+    "预包装 Brie / Camembert",
+    "Feta",
+    "Halloumi",
+    "Tillamook"
+   ],
+   "sources": [
+    {
+     "title": "culture: Eataly Boston（Take Away 区）",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ],
  "cheeses": [],
- "labels": [],
- "buying": [],
- "storage": [],
+ "labels": [
+  {
+   "id": "pdo",
+   "zh": "PDO（受保护原产地名称）是欧盟最严的产地标：生产、加工、制作的每一步都必须在划定产区内完成。意大利写 DOP，法国写 AOP（旧称 AOC），西班牙也写 DOP。",
+   "en": "PDO (Protected Designation of Origin) is the EU's strictest origin label: every step of production, processing and preparation must take place in the defined area. Italy writes DOP, France AOP (formerly AOC), Spain DOP.",
+   "year": "",
+   "num": "全部环节在产区",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Geographical indications and quality schemes explained (European Commission, DG AGRI)",
+     "url": "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "pgi",
+   "zh": "PGI（受保护地理标志，意大利 / 法国写 IGP）宽一些：至少有一个生产、加工或制作环节在产区，产品的品质或声誉主要来自产地。奶酪里 PDO 远比 PGI 常见；例如法国 Gruyère 是 PGI，要标「French Gruyère」。",
+   "en": "PGI (Protected Geographical Indication; IGP in Italian and French) is looser: at least one stage of production, processing or preparation happens in the area, and the product's quality or reputation is essentially due to its origin. Among cheeses PDO is far more common than PGI; French Gruyère, for one, is a PGI sold as \"French Gruyère.\"",
+   "year": "",
+   "num": "至少一个环节在产区",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "European Commission, GI schemes explained",
+     "url": "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en",
+     "kind": "官方"
+    },
+    {
+     "title": "Gruyère cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "gi-2024",
+   "zh": "2024 年 5 月 13 日起，欧盟新的地理标志条例（EU 2024/1143）生效，把葡萄酒、烈酒和农产品统一进一个框架，并加强了对网上销售和作配料使用时的保护。",
+   "en": "On May 13, 2024 the EU's new geographical-indications regulation (EU 2024/1143) took effect, bringing wine, spirits and agricultural products under one framework and strengthening protection online and when a GI product is used as an ingredient.",
+   "year": "2024-05-13",
+   "num": "Regulation (EU) 2024/1143",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "European Commission, GI schemes explained",
+     "url": "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes/geographical-indications-and-quality-schemes-explained_en",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "swiss-aop",
+   "zh": "瑞士有自己的 AOP 体系（不属欧盟）：Gruyère 2001 年获瑞士 AOC，2013 年改称 AOP，用生乳做。但在美国，联邦法院 2021 年判定「gruyere」已是通用名，第四巡回上诉法院 2023 年 3 月维持，所以美国产的「Gruyere」也合法；要正宗就看「Le Gruyère AOP」字样。",
+   "en": "Switzerland runs its own AOP system outside the EU: Gruyère, made from raw milk, gained Swiss AOC status in 2001, renamed AOP in 2013. In the U.S., however, a federal court ruled in 2021 that \"gruyere\" is generic and the Fourth Circuit affirmed in March 2023, so American-made \"Gruyere\" is legal; look for \"Le Gruyère AOP\" for the Swiss original.",
+   "year": "2001 / 2013 / 2021 / 2023-03",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Gruyère cheese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese",
+     "kind": "百科"
+    }
+   ],
+   "note": "判决原文未直接打开。"
+  },
+  {
+   "id": "raw-60",
+   "zh": "美国规则：用未经巴氏杀菌的生乳做的奶酪，须在不低于 35°F（约 1.7°C）下熟成至少 60 天才能销售。这套规定 1950 年写入联邦法规（21 CFR 133），软质熟成奶酪一节（133.182）原文就是这一句。",
+   "en": "U.S. rule: cheese made from unpasteurized milk must be cured at no less than 35°F for at least 60 days before sale. The requirement entered federal regulations (21 CFR 133) in 1950; the soft-ripened cheese section (133.182) states it verbatim.",
+   "year": "1950",
+   "num": "≥60 天，≥35°F",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "21 CFR § 133.182 Soft ripened cheeses (Cornell LII)",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    },
+    {
+     "title": "Publisher's Platform: 60-Day Rule — The Facts (Food Safety News, 2011-02)",
+     "url": "https://www.foodsafetynews.com/2011/02/publishers-platform-60-day-rule-the-facts/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "FDA 1996 年起多次复审该规则的有效性（NACMCF 称其作为公共卫生措施「存疑」），可放 alt；2026-10 还有一份生乳奶酪请愿书（marlerblog），未细读。"
+  },
+  {
+   "id": "raw-practical",
+   "zh": "所以柜台上的生乳奶酪多是硬质、半硬质（如 Parmigiano Reggiano、Comté、Gruyère AOP、Point Reyes Original Blue、Pleasant Ridge Reserve），标签会写「raw milk」或「made with unpasteurized milk」。熟成期短的软质奶酪满 60 天往往已过熟，美国卖的 Brie、Camembert、新鲜 mozzarella 基本是巴氏奶版本。",
+   "en": "So the raw-milk cheeses at the counter are mostly hard or semi-hard (Parmigiano Reggiano, Comté, Le Gruyère AOP, Point Reyes Original Blue, Pleasant Ridge Reserve), labeled \"raw milk\" or \"made with unpasteurized milk.\" Short-aged soft cheeses would be past their peak at 60 days, so the brie, camembert and fresh mozzarella sold in the U.S. are almost all pasteurized.",
+   "year": "",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "21 CFR § 133.182",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    },
+    {
+     "title": "Original Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/original-blue",
+     "kind": "媒体"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ],
+   "note": "「软质过 60 天已过熟」为行业常识推论，非法规原文。"
+  },
+  {
+   "id": "parm-rules",
+   "zh": "Parmigiano Reggiano DOP 只用牛奶、盐和凝乳酶，不加任何添加剂和防腐剂，用生乳；只能在帕尔马、雷焦艾米利亚、摩德纳、博洛尼亚（雷诺河以西）和曼托瓦（波河以南）五省生产，最少熟成 12 个月。一轮约 38 公斤，约用 550 升奶。",
+   "en": "Parmigiano Reggiano DOP is made only from raw cow's milk, salt and rennet, with no additives or preservatives, only in Parma, Reggio Emilia, Modena, Bologna (left of the Reno) and Mantua (right of the Po), and aged at least 12 months. A wheel weighs about 38 kg and takes roughly 550 liters of milk.",
+   "year": "",
+   "num": "≥12 个月；约 38 kg / 约 550 L 奶",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano FAQ (Consorzio)",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmesan (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Parmesan",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "parmesan-name",
+   "zh": "「Parmesan」和「Parmigiano Reggiano」不是一回事：欧盟法院 2008 年裁定在欧洲「Parmesan」只能指 Parmigiano Reggiano；在美国它是通用名，联邦标准（21 CFR 133.165）只要求牛奶制、熟成 10 个月以上，产地、做法都不限。联盟规定美国门店不得写「Parmesan Reggiano」「Parmigiano Regg.」之类的混名。",
+   "en": "\"Parmesan\" and \"Parmigiano Reggiano\" are not the same: the EU's Court of Justice ruled in 2008 that in Europe \"Parmesan\" may only mean Parmigiano Reggiano, but in the U.S. it is a generic name whose federal standard (21 CFR 133.165) asks only for cow's milk and 10-plus months of curing, with no origin or method rules. The Consortium bars U.S. retailers from hybrids like \"Parmesan Reggiano\" or \"Parmigiano Regg.\"",
+   "year": "2008",
+   "num": "美国标准：≥10 个月",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmesan (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Parmesan",
+     "kind": "百科"
+    },
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "parm-rind-read",
+   "zh": "认 Parmigiano Reggiano：轮侧有一圈针点字「PARMIGIANO-REGGIANO」，含奶酪厂编号、生产年月和「DOP」；店里现切的每一块都应带一小段有针点字的皮。皮上刻平行沟纹的是二级品「Mezzano」，适合趁年轻吃。刨丝成品不得加抗结剂或纤维素。",
+   "en": "Spotting real Parmigiano Reggiano: the side of the wheel carries pin-dot lettering \"PARMIGIANO-REGGIANO\" with the dairy number, month and year of production and \"DOP,\" and every piece cut in store should keep a bit of rind with some of that lettering. Parallel grooves on the rind mark second-grade \"Mezzano\" wheels, meant to be eaten young. Grated Parmigiano may not contain anti-caking agents or cellulose.",
+   "year": "2025-10",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano FAQ",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ],
+   "note": "FAQ 也说大轮或从上下平面切下的块可能看不到针点字，不必然是假货。"
+  },
+  {
+   "id": "aging-marks",
+   "zh": "熟成月数怎么看：Parmigiano Reggiano 联盟按 12–19、20–26、27–34、35–45 个月分档；「Export」是 18 个月验级的一级品，「Premium」是 24 个月验级且过感官评分，「Prodotto di montagna」是山区产、20 个月验级。一般月数越长越干、越碎、结晶越多、咸鲜越重。",
+   "en": "Reading the age: the Consortium groups Parmigiano Reggiano into 12–19, 20–26, 27–34 and 35–45 months; \"Export\" means first grade checked at 18 months, \"Premium\" checked at 24 months and passed a sensory score, \"Prodotto di montagna\" made in the mountains and checked at 20 months. Longer usually means drier, more crumbly, more crystals and more savory.",
+   "year": "2025-10",
+   "num": "12–19 / 20–26 / 27–34 / 35–45 个月",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (Consorzio, 2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    }
+   ],
+   "note": "「越长越干越碎」为一般规律，非文件原文。"
+  },
+  {
+   "id": "parm-lactose",
+   "zh": "Parmigiano Reggiano 天然不含乳糖：乳酸菌在做好后的头 48 小时内就把乳糖全部转成乳酸，与熟成时间无关。",
+   "en": "Parmigiano Reggiano is naturally lactose-free regardless of age: lactic bacteria convert all the lactose to lactic acid within the first 48 hours.",
+   "year": "",
+   "num": "48 小时",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano FAQ",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "rind",
+   "zh": "皮能不能吃：用食品级材料的皮都能吃，只是好不好吃。白霉皮（Brie、Camembert、Mt Tam）建议连皮吃，风味很多在皮上；洗皮（Taleggio、Époisses、Red Hawk）能吃但比芯更冲；天然硬皮（Gruyère、Comté、Stilton）能吃、偏土味；Parmigiano 和 Grana 的皮太硬，留着煮汤、炖饭。布包（clothbound cheddar）的布、Gouda 的蜡、Rogue River Blue 的叶子、Harbison 的树皮带不吃。",
+   "en": "Can you eat the rind? Any rind of food-grade material is edible; the question is taste. Bloomy rinds (brie, camembert, Mt Tam) are worth eating since much of the flavor lives there; washed rinds (Taleggio, Époisses, Red Hawk) are edible but stronger than the paste; natural hard rinds (Gruyère, Comté, Stilton) are edible and earthy; Parmigiano and Grana rinds are too hard to chew, so save them for soup or risotto. Skip the cloth on clothbound cheddar, the wax on Gouda, the leaves on Rogue River Blue and the bark band on Harbison.",
+   "year": "2022",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Fundamentals of Cheese: Understanding Cheese Rinds (Institute of Culinary Education, 2022-08-12)",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    },
+    {
+     "title": "Can I Eat the Rind? (Formaticum)",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    },
+    {
+     "title": "Parmigiano Reggiano FAQ（皮可食，食前清理）",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "label-milk",
+   "zh": "奶源看标签：美国联邦标准要求非牛奶的奶酪写明「made from」哪种奶，按重量多少排列；「Pecorino」一词本身就表示绵羊奶。",
+   "en": "Milk type on the label: U.S. standards require non-cow's-milk cheeses to say \"made from\" which milk, listed by predominance by weight; the word \"Pecorino\" itself means sheep's milk.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "21 CFR § 133.182",
+     "url": "https://www.law.cornell.edu/cfr/text/21/133.182",
+     "kind": "官方"
+    },
+    {
+     "title": "Eataly's cheeses (LAist, 2017)",
+     "url": "https://laist.com/news/food/eatalys-cheeses",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「made from」规定见于 133.182（软质熟成）一节，其它品类各有标准，页面别写成所有奶酪统一条款。"
+  }
+ ],
+ "buying": [
+  {
+   "id": "say-use",
+   "zh": "开口先说三件事：几个人、什么场合（开胃、正餐后、主角是奶酪的聚会、做菜用）、预算。柜台的人会按你的回答调整推荐。",
+   "en": "Open with three things: how many people, what occasion (before dinner, after dinner, a cheese-centered party, or cooking) and your budget. A good monger adjusts the picks to your answers.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "How Much Cheese Do I Need? A Portioning Guide for Cheesemongers (Formaticum)",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "ask-taste",
+   "zh": "要试吃。全食的 CCP 会主动给顾客尝没吃过的奶酪，圣何塞 The Alameda 店开业时就说会当场开一块给你尝；Eataly 的店员也鼓励「什么都可以先尝」。可以直接说「Could I taste this one?」。",
+   "en": "Ask to taste. Whole Foods CCPs offer tastes of cheeses you have not tried, and the San Jose Alameda store said at its opening that staff would open a cheese on the spot; Eataly mongers encourage you to taste anything. Just ask, \"Could I taste this one?\"",
+   "year": "2014–2025",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "culture 2025-03-07（全食 CCP）",
+     "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+     "kind": "媒体"
+    },
+    {
+     "title": "The San Jose Blog 2014-12-09",
+     "url": "https://www.thesanjoseblog.com/2014/12/whole-foods-san-jose-grand-opening-today.html",
+     "kind": "媒体"
+    },
+    {
+     "title": "culture: Eataly Boston (2016)",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "portion",
+   "zh": "份量的常用口径：拼盘上每种奶酪每人约 1 盎司（约 28 克）；开胃时每人合计 1.5–3 盎司，奶酪当主角时往上加，旁边还有很多菜时往下减。",
+   "en": "Common portion rule: about 1 oz (28 g) of each cheese per person on a board; 1.5–3 oz per person in total as an appetizer, more when cheese is the centerpiece and less when there is plenty of other food.",
+   "year": "",
+   "num": "每种 1 oz/人；开胃合计 1.5–3 oz/人",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Formaticum portioning guide",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    },
+    {
+     "title": "How to Build a Perfect Cheese Board (Antonelli's Cheese)",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ],
+   "alt": "各家口径不一：有的写开胃每人 1–2 oz、奶酪为主的聚会每人 3–4 oz 甚至更多。"
+  },
+  {
+   "id": "count",
+   "zh": "选几种：一盘 3–5 种最好记住；6 人以上的大盘 5–7 种。也可以只买一块出色的整块当主角。",
+   "en": "How many: 3–5 cheeses on a board is easiest to remember; 5–7 for a grazing board for six or more. Or build around one standout piece.",
+   "year": "",
+   "num": "3–5 种；大盘 5–7 种",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "variety",
+   "zh": "搭配原则：奶源（牛、山羊、绵羊）、质地（新鲜、软、半硬、硬）、风格（白霉、洗皮、蓝纹、阿尔卑斯式）、产地各不相同。例子：一款新鲜山羊奶酪 + 一款白霉牛奶软质 + 一款硬质牛奶 + 一款绵羊硬质 + 一款蓝纹。",
+   "en": "Mix milk (cow, goat, sheep), texture (fresh, soft, semi-hard, hard), style (bloomy, washed, blue, Alpine) and origin. Example: a fresh goat cheese, a bloomy cow's-milk cheese, a firm cow's-milk cheese, a hard sheep's-milk cheese and a blue.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "blue-small",
+   "zh": "蓝纹最分人：买小块蓝纹，配一块大众口味的大块，是柜台常见建议。",
+   "en": "Blue is polarizing: a small piece of blue next to a larger piece of a crowd-pleaser is standard counter advice.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Formaticum portioning guide",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "cut-to-order",
+   "zh": "现切 vs 预切：现切区可以按重量要（例如「a quarter pound」约 113 克、「half a pound」约 227 克），切面新鲜、能先尝；预切自选区方便便宜，但要看包装日期和切面。全食 CCP 受训可按指定重量切块，Eataly 两种都有。",
+   "en": "Cut-to-order vs pre-cut: at the counter you can ask by weight (\"a quarter pound\" ≈ 113 g, \"half a pound\" ≈ 227 g), get a fresh face and taste first; the grab-and-go case is faster and often cheaper, but check the pack date and the cut face. Whole Foods CCPs are trained to cut to an exact weight; Eataly offers both.",
+   "year": "",
+   "num": "1/4 lb ≈ 113 g；1/2 lb ≈ 227 g",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "culture 2025-03-07",
+     "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+     "kind": "媒体"
+    },
+    {
+     "title": "culture: Eataly Boston",
+     "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "check-face",
+   "zh": "看切面和包装：切面应湿润、颜色均匀，没有发干的深色边、没有渗油或积水；保鲜膜下奶酪「出汗」、白霉皮发褐发黏、闻起来有氨水味，都说明放久了。硬质奶酪表面的白色小结晶（酪氨酸）是正常的陈年迹象，不是坏了。",
+   "en": "Check the cut face and wrap: the face should look moist and even, with no dried dark edge, oil slick or pooling liquid. Sweating under film, a browned or sticky bloomy rind, or a smell of ammonia means it has sat too long. Small white crystals in aged hard cheeses (tyrosine) are a normal sign of age, not spoilage.",
+   "year": "",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "How to Store Cheese (Wisconsin Cheese)",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "Fundamentals of Cheese: Understanding Cheese Rinds (ICE, 2022)",
+     "url": "https://www.ice.edu/blog/cheese-rind",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「看切面」各条为行业通行经验，所列来源只部分覆盖（氨水味、结晶未在所引页原文中），conf 定中。"
+  },
+  {
+   "id": "parm-piece",
+   "zh": "买 Parmigiano Reggiano 现切块时，看它有没有带一段印着针点字的皮——联盟规定美国店里现切的每一块都要带；同时问一句是几个月的（12、18、24、30、36…），Eataly 硅谷店官网就写有多个年份可选。",
+   "en": "When buying a cut piece of Parmigiano Reggiano, check that it keeps a strip of rind with pin-dot lettering, which the Consortium requires for every piece cut in U.S. stores, and ask its age (12, 18, 24, 30, 36 months…); Eataly Silicon Valley says it stocks several ages.",
+   "year": "2025–2026",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines (2025-10)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Eataly Silicon Valley: Market",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "buy-small",
+   "zh": "宁少勿多、临用再买：软质和新鲜奶酪尽量在吃的前一两天买；切开的奶酪不再像整轮那样熟成，只会慢慢变干或变质。",
+   "en": "Buy less, closer to the day: get soft and fresh cheeses a day or two before you serve them. Once cut, cheese stops maturing the way a whole wheel does and only dries out or declines.",
+   "year": "",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "What's the Best Way to Store Cheese at Home? (culture, Kate Arding)",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "来源只说「尽快吃完」；「切开后不再熟成」为通行说法。"
+  },
+  {
+   "id": "temp",
+   "zh": "上桌前 30 分钟到 1 小时从冰箱拿出来，回到室温（约 67–70°F / 19–21°C）香气才出来；软质回温比硬质快。",
+   "en": "Take cheese out of the fridge 30 minutes to an hour before serving so it reaches room temperature (about 67–70°F) and opens up; soft cheeses warm faster than hard ones.",
+   "year": "",
+   "num": "30–60 分钟；67–70°F",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese: How to Store Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "cut-shape",
+   "zh": "回家怎么切：软质整块放、配抹刀；半硬的放一大块让客人自己切，先切两三小块示范；阿尔卑斯式切成条；Parmigiano 这类掰成不规则小块；蓝纹整块放刀；新鲜奶酪（chèvre、burrata）放小碗配勺。",
+   "en": "Cutting at home: leave soft cheeses whole with a spreader; set out a big wedge of semi-hard and pre-cut two or three pieces to show the way; cut Alpine cheeses into sticks; break Parmigiano-style cheeses into rough chunks; leave blue whole with a knife; serve fresh cheeses (chèvre, burrata) in a small bowl with a spoon.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Formaticum portioning guide",
+     "url": "https://wholesale.formaticum.com/blogs/news/how-much-cheese-do-i-need-a-portioning-guide-for-cheesemongers",
+     "kind": "企业"
+    },
+    {
+     "title": "Antonelli's Cheese",
+     "url": "https://www.antonellischeese.com/blogs/cheese-101/how-to-build-a-perfect-cheese-board",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "deal-12days",
+   "zh": "想省钱：全食每年 12 月中旬的「12 Days of Cheese」每天一款特价（2025 年 Prime 会员最多 7 折）；平时 365 自有品牌预包装块比现切便宜。",
+   "en": "To save: Whole Foods' mid-December 12 Days of Cheese discounts one cheese a day (up to 30% off for Prime members in 2025), and 365 house-brand pre-packed blocks cost less than cut-to-order cheese year-round.",
+   "year": "2025",
+   "num": "最多 30% off",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Whole Foods 12 Days of Cheese 2025 新闻稿",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    }
+   ]
+  }
+ ],
+ "storage": [
+  {
+   "id": "wrap",
+   "zh": "包法：别用保鲜膜贴身裹紧，奶酪需要一点空气。最好用奶酪纸；没有就先包蜡纸或烘焙纸，再在外面松松套一层保鲜膜或放进带盖盒子。每次切完换新纸。",
+   "en": "Wrapping: do not cling-wrap cheese tightly; it needs a little air. Cheese paper is best; otherwise wrap in wax or parchment paper, then loosely in plastic or in a lidded box. Rewrap in fresh paper after each use.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "How to Store Cheese (Wisconsin Cheese)",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "What's the Best Way to Store Cheese at Home? (culture, Kate Arding, 2008)",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "zh": "放哪：冰箱蔬果抽屉最合适，温度稍高、湿度大，奶酪不易干；目标温度约 34–38°F（1–3°C）。远离气味重的食物，奶酪会吸味。洗皮奶酪单独装盒。",
+   "en": "Where: the vegetable drawer is best, slightly warmer and more humid, so cheese stays moist; aim for about 34–38°F. Keep it away from strong-smelling foods, since cheese absorbs odors, and box washed rinds separately.",
+   "year": "",
+   "num": "34–38°F",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "culture, Kate Arding",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "fresh",
+   "zh": "新鲜奶酪（山羊奶酪、ricotta、mozzarella、burrata）当牛奶和酸奶对待，单独密封，约 38–40°F 冷藏，尽快吃完；mozzarella 可连原来的汁水一起存。",
+   "en": "Treat fresh cheeses (chèvre, ricotta, mozzarella, burrata) like milk or yogurt: sealed, separate, at about 38–40°F, and eaten soon; keep mozzarella in its liquid.",
+   "year": "",
+   "num": "38–40°F",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "culture, Kate Arding",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「连汁水一起存」为通行做法，所引页未写。"
+  },
+  {
+   "id": "how-long",
+   "zh": "开封后能放多久（参考口径）：硬质（Parmigiano 等）约 6 周；半硬（Cheddar、Gouda）约 4 周；软质和新鲜（ricotta、Gorgonzola）约 2 周。真空包装的 Parmigiano Reggiano 未开封一般 6 个月，以包装日期为准。",
+   "en": "How long after opening (rule of thumb): hard cheeses like Parmigiano about 6 weeks; semi-hard like cheddar and Gouda about 4 weeks; soft and fresh like ricotta and Gorgonzola about 2 weeks. Vacuum-packed Parmigiano Reggiano typically keeps 6 months unopened; follow the pack date.",
+   "year": "",
+   "num": "硬 ~6 周 / 半硬 ~4 周 / 软 ~2 周；真空 PR ~6 个月",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    },
+    {
+     "title": "Parmigiano Reggiano FAQ",
+     "url": "https://parmigianoreggiano.com/faq",
+     "kind": "官方"
+    }
+   ],
+   "note": "白霉软质（Brie、Mt Tam）切开后实际常建议几天到一周内吃完，Wisconsin 的「两周」偏宽。"
+  },
+  {
+   "id": "soft-flip",
+   "zh": "整块软质奶酪隔天翻个面，让水分分布均匀；包装里看起来湿了就多给点空气，发干就在盒里垫一块拧干的湿布。",
+   "en": "Flip whole soft cheeses every day or so to spread the moisture; if the cheese looks wet, give it more air, and if it is drying, add a damp (not wet) cloth to its container.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "culture, Kate Arding",
+     "url": "https://culturecheesemag.com/cheese-iq/ask-the-monger/storing-cheese-home/",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "mold",
+   "zh": "长霉怎么办：硬质、半硬奶酪把霉点四周和下方约 1 英寸（2.5 厘米）切掉，其余可吃；软质和新鲜奶酪一旦长了不该有的霉，整块扔掉。（白霉皮、蓝纹里的霉本来就是奶酪的一部分。）",
+   "en": "Mold: on hard and semi-hard cheese, cut away about an inch around and below the spot and eat the rest; throw out soft and fresh cheeses that grow unexpected mold. (The white bloom on brie and the veins in blue are part of the cheese.)",
+   "year": "",
+   "num": "1 英寸",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "freeze",
+   "zh": "冷冻：会改变口感，一般不建议；可以冻的是 Parmigiano 这类硬质和刨好的丝，冻 2–3 个月，解冻后适合刨碎或做菜。分成半磅以内的小块，真空或密封袋装，放冷藏室慢慢解冻。白霉软质、新鲜奶酪、burrata 不宜冻。",
+   "en": "Freezing changes texture and is generally not advised; hard cheeses like Parmigiano and shredded cheese can be frozen for 2–3 months and then grated or cooked with. Portion into half-pound pieces or less, vacuum- or tightly seal, and thaw slowly in the fridge. Do not freeze bloomy, fresh cheeses or burrata.",
+   "year": "",
+   "num": "2–3 个月；≤1/2 lb 一份",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wisconsin Cheese",
+     "url": "https://wisconsincheese.com/the-cheese-life/article/36/how-to-store-cheese",
+     "kind": "企业"
+    }
+   ],
+   "note": "「白霉、burrata 不宜冻」为通行建议，所引页只正面列了可冻品类。"
+  },
+  {
+   "id": "rind-save",
+   "zh": "留皮：Parmigiano Reggiano 和 Grana 的皮洗净、去掉酪蛋白标签后放冷冻，煮汤、炖豆子、做意式炖饭时丢一块进去增鲜。",
+   "en": "Save the rind: wash Parmigiano or Grana rinds, remove the casein plate, freeze them, and drop one into soup, beans or risotto for savory depth.",
+   "year": "",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Parmigiano Reggiano USA Guidelines（去掉酪蛋白标签，皮可食）",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Guidelines_USA_REV_08_2025_2d7db058b6.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Formaticum: Can I Eat the Rind?",
+     "url": "https://www.formaticum.com/blogs/news/can-i-eat-the-rind",
+     "kind": "企业"
+    }
+   ],
+   "note": "「冷冻保存」为通行做法。"
+  }
+ ],
  "boards": [],
  "local": [
   {

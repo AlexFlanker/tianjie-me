@@ -74,12 +74,14 @@
    "lon": 106.92,
    "animal": "牛（亦用牦牛、羊、骆驼）",
    "method": "脱水晒干",
-   "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
+   "method_also": [
+    "发酵"
+   ],
+   "shelf_zh": "完全晒干后常温可存放数月至一年以上，是游牧人的冬储与远行干粮。",
+   "flavor_zh": "酸、微甜或无甜，奶味浓，质地从酥脆到硬如石头不等，要含在嘴里慢慢软化。",
+   "flavor_en": "Sour, faintly sweet or not at all, intensely milky; ranges from crumbly to rock-hard and is softened slowly in the mouth.",
+   "how_zh": "牛奶先发酵成酸奶（常先蒸馏出奶酒，用剩下的酸凝乳），加热使凝块析出，用布包压去乳清，切块或用模子压成花纹，摊在蒙古包顶或木架上风干日晒。",
+   "how_en": "Milk is fermented into yogurt (often after distilling milk vodka from it), heated until curds separate, pressed in cloth, then cut or moulded into patterned pieces and dried in the wind and sun on the ger roof or racks.",
    "history": [
     {
      "zh": "鲁布鲁克（1253–1255）记载：蒙古人把牛奶尽量放酸后煮沸，凝块在日光下晒得「硬如铁渣」，装袋过冬；冬天缺奶时再把干凝块放入皮囊加水搅化，当奶喝。",
@@ -109,7 +111,7 @@
     }
    ],
    "num": "",
-   "conf": "",
+   "conf": "中",
    "sources": [
     {
      "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
@@ -117,7 +119,7 @@
      "kind": "官方"
     }
    ],
-   "note": "骨架，待填"
+   "note": "做法为综合描述，未找到蒙古一手现代研究；奶酒蒸馏一说待核"
   },
   {
    "id": "airag",
@@ -162,6 +164,21 @@
        "kind": "官方"
       }
      ]
+    },
+    {
+     "zh": "2009 年《科学》发表的研究在哈萨克斯坦博泰（Botai）文化约公元前 3500 年的陶片上检出马奶脂肪残留，被视为最早的挤马奶证据。",
+     "en": "A 2009 Science study detected mare's milk fat residues on pottery from the Botai culture of Kazakhstan, about 3500 BC, read as the earliest evidence of horse milking.",
+     "year": "约前3500",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Outram A.K. et al. The Earliest Horse Harnessing and Milking. Science 323(5919):1332–1335 (2009)",
+       "url": "https://doi.org/10.1126/science.1168594",
+       "kind": "学术"
+      }
+     ],
+     "alt": "后续古 DNA 研究显示博泰马并非现代家马的主要祖先，挤奶解释也有学者质疑",
+     "note": "未打开原文，依据作者记忆"
     }
    ],
    "num": "酒精度约 1–3%（口径因做法而异）",
@@ -226,6 +243,20 @@
       }
      ],
      "note": "转引自 The Better India，未直接打开《卫报》原文"
+    },
+    {
+     "zh": "联合国粮农组织《牦牛》一书记载：不丹的 chugo / chuto 把圆形奶酪切片、在奶中煮过，每 20 块串成一串挂在帐篷杆上，直到「硬如石头」。",
+     "en": "FAO's The Yak records that Bhutanese herders slice round cheese, boil the pieces in milk, string them 20 to a cord and hang them on a tent pole until 'rock hard'.",
+     "year": 2003,
+     "num": "每串 20 块",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "FAO, The Yak (2nd ed., Wiener G., Han J., Long R., 2003), Ch. 10 Products from yak and their utilization",
+       "url": "https://www.fao.org/3/ad347e/ad347e0l.htm",
+       "kind": "官方"
+      }
+     ]
     }
    ],
    "num": "一块可嚼 2–3 小时",
@@ -240,6 +271,11 @@
      "title": "North Bengal University thesis, Chapter 1 (churpi in Darjeeling, Sikkim, Nepal, Bhutan; citing Karki 1986)",
      "url": "https://ir.nbu.ac.in/bitstream/123456789/1085/5/05_chapter_01.pdf",
      "kind": "学术"
+    },
+    {
+     "title": "FAO, The Yak (2nd ed., Wiener G., Han J., Long R., 2003), Ch. 10 Products from yak and their utilization",
+     "url": "https://www.fao.org/3/ad347e/ad347e0l.htm",
+     "kind": "官方"
     }
    ],
    "note": "BBC 原文被拦截；做法细节为综合描述，未找到实测水分 / pH 数据"
@@ -254,17 +290,53 @@
    "lon": 91.13,
    "animal": "牦牛（亦用犏牛）",
    "method": "其他",
-   "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
-   "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "method_also": [
+    "发酵"
+   ],
+   "shelf_zh": "包在皮囊或瘤胃里的酥油可存放一到两年不霉变（久存后含水降到约 3%，但会有陈味）。",
+   "flavor_zh": "酥油本身带浓郁奶香与微酸的发酵味，陈酥油有明显「哈喇」气；酥油茶咸、油润、带砖茶的涩香，更像一碗汤。",
+   "flavor_en": "Yak butter is rich and slightly tangy from the soured milk; aged butter turns noticeably rancid. Butter tea is salty, oily and astringent from brick tea — closer to a broth than a drink.",
+   "how_zh": "牦牛奶放一天让它微酸，加温到约 20 °C 倒入高大的木桶，用带圆盘的木杵上下捣 1–4 小时，或装进皮囊摇晃，直到乳脂结成团；捏出水分后用牛犊皮、牦牛瘤胃或宽大硬叶包起来存放。酥油茶是把砖茶熬浓，与酥油、盐一起在长筒里捣匀。",
+   "how_en": "Yak milk is left a day to sour slightly, warmed to about 20 °C and churned in a tall wooden churn for 1–4 hours (or shaken in a hide bag) until the fat gathers; the butter is squeezed and wrapped in calf hide, yak rumen or broad stiff leaves. Butter tea is strong brick tea churned with butter and salt in a long wooden cylinder.",
+   "history": [
+    {
+     "zh": "联合国粮农组织《牦牛》一书记载：新制酥油含水 12–15%、蛋白质约 1%，久存的酥油含水约 3%；每包约 50 kg，可放一两年不霉。",
+     "en": "FAO's The Yak records that fresh yak butter holds 12–15% water and about 1% protein, while old butter drops to about 3% water; packs of about 50 kg keep one to two years without moulding.",
+     "year": 2003,
+     "num": "含水 12–15% → 约 3%；每包约 50 kg",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "FAO, The Yak (2nd ed., Wiener G., Han J., Long R., 2003), Ch. 10 Products from yak and their utilization",
+       "url": "https://www.fao.org/3/ad347e/ad347e0l.htm",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "鲁布鲁克（1253–1255）记录蒙古人把黄油熬干、不加盐装入羊胃过冬，与高原上用瘤胃、皮囊包裹酥油的做法同属一类「脂肪封存」。",
+     "en": "Rubruck (1253–55) saw the Mongols boil butter dry and store it unsalted in sheep paunches for winter — the same family of fat-in-a-bag storage as the plateau's rumen- and hide-wrapped butter.",
+     "year": "1253–1255",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "William of Rubruck, Journey (1253–55), tr. Rockhill 1900, Silk Road Seattle",
+       "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+       "kind": "官方"
+      }
+     ]
+    }
+   ],
+   "num": "可存 1–2 年（FAO 口径）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "FAO, The Yak (2nd ed., Wiener G., Han J., Long R., 2003), Ch. 10 Products from yak and their utilization",
+     "url": "https://www.fao.org/3/ad347e/ad347e0l.htm",
+     "kind": "官方"
+    }
+   ],
+   "note": "酥油茶本身的起源年代未找到可靠一手材料，未写"
   },
   {
    "id": "labneh",
@@ -276,17 +348,52 @@
    "lon": 35.5,
    "animal": "牛、山羊、绵羊",
    "method": "发酵",
-   "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
+   "method_also": [
+    "加盐",
+    "脱水晒干"
+   ],
+   "shelf_zh": "鲜拉布内冷藏约一两周；浸油的拉布内球据称可保存一年以上，越放越酸。",
+   "flavor_zh": "酸、咸、像奶油奶酪一样细滑；配橄榄油、干薄荷或扎塔尔香料，抹在饼上当早餐。",
+   "flavor_en": "Tangy, salty and smooth like cream cheese; eaten with olive oil, dried mint or za'atar on flatbread for breakfast.",
+   "how_zh": "加盐的酸奶装进布袋悬挂过滤，滤得比希腊酸奶更久更干，成为可涂抹的软酪；再滤干后可搓成小球，裹上香草或辣椒粉浸进橄榄油（labaneh bil zayt）。贝都因人还把它压干晒成硬块。",
+   "how_en": "Salted yogurt is hung in cloth and drained longer and drier than Greek yogurt into a spreadable soft cheese; drained further, it is rolled into balls, coated with herbs or chilli and submerged in olive oil (labaneh bil zayt). Bedouin producers also press and sun-dry it into hard pieces.",
+   "history": [
+    {
+     "zh": "浸油拉布内球在黎巴嫩、巴勒斯坦等地是家庭储存做法：滤到很干的拉布内搓成球泡在橄榄油里，油层隔绝空气，可存放一年以上。",
+     "en": "Oil-preserved labneh balls are a household practice in Lebanon, Palestine and nearby: very dry labneh is rolled and submerged in olive oil, which shuts out air and lets it keep for over a year.",
+     "num": ">1 年（浸油）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Labneh (lead to Helou, Lebanese Cuisine 1998; Tamimi & Wigley, Falastin 2020)",
+       "url": "https://en.wikipedia.org/wiki/Labneh",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "zh": "贝都因人的 labaneh malboudeh 是压干晒硬的拉布内，形态上接近中亚的 qurut。",
+     "en": "Bedouin labaneh malboudeh is pressed and dried hard, much like Central Asian qurut.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Labneh (lead to Helou, Lebanese Cuisine 1998; Tamimi & Wigley, Falastin 2020)",
+       "url": "https://en.wikipedia.org/wiki/Labneh",
+       "kind": "百科"
+      }
+     ]
+    }
+   ],
    "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wikipedia: Labneh (lead to Helou, Lebanese Cuisine 1998; Tamimi & Wigley, Falastin 2020)",
+     "url": "https://en.wikipedia.org/wiki/Labneh",
+     "kind": "百科"
+    }
+   ],
+   "note": "未找到拉布内的一手历史文献；保存期为通俗来源口径"
   },
   {
    "id": "kashk",
@@ -298,17 +405,85 @@
    "lon": 51.39,
    "animal": "绵羊、山羊、牛",
    "method": "脱水晒干",
-   "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
+   "method_also": [
+    "发酵"
+   ],
+   "shelf_zh": "干卡什克常温可存放数月至一年，是农民过冬、士兵和旅人的干粮；液态卡什克需冷藏。",
+   "flavor_zh": "强烈的咸、酸和发酵的鲜味，像浓缩的酸奶油加帕玛森；拌在烤茄子泥（kashk-e bademjan）和汤面（ash reshteh）上。",
+   "flavor_en": "Intensely salty, sour and savoury — like concentrated sour cream crossed with Parmesan; spooned over smoky aubergine (kashk-e bademjan) and noodle soup (ash reshteh).",
+   "how_zh": "酸奶搅出黄油后剩下的酸酪浆（doogh）加热浓缩、滤去水分，揉成球或条晒干；用时泡软磨开，现代多以瓶装稠液出售。",
+   "how_en": "The sour buttermilk (doogh) left after churning butter from yogurt is heated, drained and rolled into balls or strips to sun-dry; it is soaked and ground before use, and today is mostly sold as a thick liquid in jars.",
+   "history": [
+    {
+     "zh": "kashk 一词可追溯到中古波斯语 kašk，词根被认为与「干」有关；在 10 世纪的《列王纪》里它指大麦粉，同期一部阿拉伯语食谱则记有小麦加酵头和酸奶两种 kashk。",
+     "en": "The word goes back to Middle Persian kašk, thought to relate to 'dry'; in the 10th-century Shahnameh it means barley flour, while a 10th-century Arabic cookbook describes two kinds, one of wheat and leaven and one of sour milk.",
+     "year": "10 世纪",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Kashk (lead to Aubaile-Sallenave 1994, Perry, Moraba 2016)",
+       "url": "https://en.wikipedia.org/wiki/Kashk",
+       "kind": "百科"
+      },
+      {
+       "title": "Moraba K. The Story of Kashk. Gastronomica 16(4):97–100 (2016)",
+       "url": "https://doi.org/10.1525/gfc.2016.16.4.97",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "学者对词义演变有两说：一说原指大麦制品，牧民类比借用到干奶制品；另一说据 13 世纪阿拉伯语食谱，把干酸奶称为「土库曼式 kashk」。",
+     "en": "Scholars differ: Aubaile-Sallenave argues the original kashk was barley-based and the dairy sense arose by analogy among pastoralists, while Charles Perry points to a 13th-century Arabic cookbook calling dried yogurt a Turkmen-style kashk.",
+     "year": "13 世纪",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Kashk (lead to Aubaile-Sallenave 1994, Perry, Moraba 2016)",
+       "url": "https://en.wikipedia.org/wiki/Kashk",
+       "kind": "百科"
+      },
+      {
+       "title": "Moraba K. The Story of Kashk. Gastronomica 16(4):97–100 (2016)",
+       "url": "https://doi.org/10.1525/gfc.2016.16.4.97",
+       "kind": "学术"
+      }
+     ],
+     "alt": "大麦起源说 / 突厥干酸奶说"
+    },
+    {
+     "zh": "黎凡特的 kishk 与伊朗 kashk 名字相近但不同：前者是碎小麦（burghul）与酸奶一起发酵、晒干、磨粉，以谷物为主；土耳其与希腊的 tarhana / trachanas 也属同一家族。",
+     "en": "Levantine kishk is a different thing despite the name: bulgur fermented with yogurt, dried and ground — mainly a grain product; Turkish tarhana and Greek trachanas belong to the same family.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Kashk (lead to Aubaile-Sallenave 1994, Perry, Moraba 2016)",
+       "url": "https://en.wikipedia.org/wiki/Kashk",
+       "kind": "百科"
+      }
+     ]
+    }
+   ],
    "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wikipedia: Kashk (lead to Aubaile-Sallenave 1994, Perry, Moraba 2016)",
+     "url": "https://en.wikipedia.org/wiki/Kashk",
+     "kind": "百科"
+    },
+    {
+     "title": "Moraba K. The Story of Kashk. Gastronomica 16(4):97–100 (2016)",
+     "url": "https://doi.org/10.1525/gfc.2016.16.4.97",
+     "kind": "学术"
+    },
+    {
+     "title": "Iranmanesh M. et al. SPME/GC-MS characterization of volatile compounds of Iranian traditional dried Kashk. Int. J. Food Properties 21(1):1067–1079 (2018)",
+     "url": "https://doi.org/10.1080/10942912.2018.1466323",
+     "kind": "学术"
+    }
+   ],
+   "note": ""
   },
   {
    "id": "jameed",
@@ -320,12 +495,15 @@
    "lon": 35.7,
    "animal": "绵羊、山羊",
    "method": "加盐",
-   "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
+   "method_also": [
+    "脱水晒干",
+    "发酵"
+   ],
+   "shelf_zh": "晒干后常温可存放约一年以上（牧区口径），用于跨越无奶的季节。",
+   "flavor_zh": "非常咸，带强烈的酸和发酵乳的鲜味，化开后像一锅浓稠的咸酸奶汤。",
+   "flavor_en": "Very salty, sharply sour and savoury; dissolved, it becomes a thick, tangy, salty yogurt broth.",
+   "how_zh": "绵羊奶或山羊奶发酵成酸奶，搅出黄油，剩下的酸酪浆加热、装布袋滤干，按重量揉进大量盐，捏成拳头大小的球或饼，在屋顶晾晒到坚硬。做约旦国菜 mansaf 时，把 jameed 泡软捣成浓酱，与羊肉同煮。",
+   "how_en": "Sheep or goat milk is fermented into yogurt and churned; the sour buttermilk is heated, drained in cloth bags, heavily salted, shaped into fist-sized balls or discs and sun-dried on rooftops until hard. For mansaf it is soaked and pounded into a thick sauce and simmered with lamb.",
    "history": [
     {
      "zh": "2024 年 ICARDA 等机构对约旦传统 jameed 的检测：总固形物平均 84.57%（73–92%），盐平均 15.68%，酸度平均 6.79%；生产者用盐抑制晒干过程中的过度酸化。",
@@ -342,8 +520,8 @@
      ]
     }
    ],
-   "num": "",
-   "conf": "",
+   "num": "盐平均 15.68%；固形物 84.57%",
+   "conf": "中",
    "sources": [
     {
      "title": "Hilali M. et al. Nutritional and Food Safety Characteristics of Jameed – A Traditional Dairy Product of Drylands. Applied Sciences 14(2) (2024)",
@@ -351,7 +529,7 @@
      "kind": "学术"
     }
    ],
-   "note": "骨架，待填"
+   "note": "mansaf 入选 UNESCO（2022）未核；保存期口径待核"
   },
   {
    "id": "smen",
@@ -363,17 +541,58 @@
    "lon": -5.0,
    "animal": "牛、绵羊、山羊",
    "method": "加盐",
-   "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
-   "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "method_also": [
+    "发酵"
+   ],
+   "shelf_zh": "常温至少可存放六个月；市场上有陈放一两年乃至六年以上的老斯门。",
+   "flavor_zh": "陈两年的斯门像辛辣的蓝纹奶酪，六年以上的老斯门香气更圆润；少量拌进古斯古斯、塔吉锅调味。",
+   "flavor_en": "Two-year smen tastes like a sharp blue cheese; six-year-old smen is rounder and less sharp. A spoonful seasons couscous and tagines.",
+   "how_zh": "用发酵奶搅出的黄油洗净、加盐（有时加牛至、百里香煎出的香草水），压去水分装进陶罐或木桶，在常温下陈放数周到数年；脂肪在微生物和酶作用下水解，产生浓烈的「奶酪味」。",
+   "how_en": "Butter churned from soured milk is washed and salted (sometimes worked with an oregano or thyme infusion), pressed dry, packed into clay jars or barrels and aged at room temperature for weeks to years, while microbial and enzymatic lipolysis builds a pungent, cheesy flavour.",
+   "history": [
+    {
+     "zh": "1988 年摩洛哥学者对传统斯门的研究显示，非脂相含盐平均约 8%，熟成中酸价平均 52.3 mg KOH/g 脂肪；脂肪水解是人们追求的风味来源，盐和陈放并不能让它保持原样。",
+     "en": "A 1988 Moroccan study found an average of about 8% salt in smen's non-fat phase and a mean acid value of 52.3 mg KOH/g fat; lipolysis is the prized source of flavour, and salting does not keep the butter unchanged.",
+     "year": 1988,
+     "num": "非脂相盐约 8%；常温 ≥6 个月",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "El Marrakchi A. et al. La flore microbienne du smen marocain. II. Flores lipolytique et caséolytique. Le Lait 68(3):333–348 (1988)",
+       "url": "https://lait.dairy-journal.org/articles/lait/pdf/1988/03/lait_68_1988_3_22.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "非斯（Fez）有专门的「斯门广场」市场；流传的说法是柏柏尔人在女儿出生那天埋下一罐斯门，到她出嫁时再挖出来——这是传说。",
+     "en": "Fez has a dedicated smen market square; a popular story holds that Berber families buried a jar of smen when a daughter was born and dug it up for her wedding — a legend.",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "NPR The Salt: Smen Is Morocco's Funky Fermented Butter That Lasts For Years (Alex Schmidt, 2014-10-09)",
+       "url": "https://www.npr.org/sections/thesalt/2014/10/09/353510171/smen-is-moroccos-funky-fermented-butter-that-lasts-for-years",
+       "kind": "媒体"
+      }
+     ],
+     "note": "传说"
+    }
+   ],
+   "num": "非脂相盐约 8%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "El Marrakchi A. et al. La flore microbienne du smen marocain. II. Flores lipolytique et caséolytique. Le Lait 68(3):333–348 (1988)",
+     "url": "https://lait.dairy-journal.org/articles/lait/pdf/1988/03/lait_68_1988_3_22.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "NPR The Salt: Smen Is Morocco's Funky Fermented Butter That Lasts For Years (Alex Schmidt, 2014-10-09)",
+     "url": "https://www.npr.org/sections/thesalt/2014/10/09/353510171/smen-is-moroccos-funky-fermented-butter-that-lasts-for-years",
+     "kind": "媒体"
+    }
+   ],
+   "note": ""
   },
   {
    "id": "ghee",
@@ -452,16 +671,60 @@
    "animal": "水牛、牛",
    "method": "浓缩加糖",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
-   "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "shelf_zh": "奶膏本身水分活度约 0.97，常温只能放约两天；加糖做成 peda 后，冷藏约两周，气调包装可在 20 °C 放约 30 天。它的作用更多是把鲜奶变成能当天运进城的半成品。",
+   "flavor_zh": "浓郁的熟奶与焦糖香，微颗粒感；做成 peda 后像入口即化的奶糖，常加小豆蔻和藏红花。",
+   "flavor_en": "Rich cooked-milk and caramel flavour with a slightly grainy texture; as peda it melts like milk fudge, often scented with cardamom and saffron.",
+   "how_zh": "水牛奶或牛奶在宽口铁锅中大火不停翻炒蒸发，熬到只剩约五分之一、成为面团状的奶膏（khoa / mawa）；加糖再炒干，就是 peda、burfi 等奶糖类甜点。",
+   "how_en": "Buffalo or cow milk is boiled down in a wide iron pan with constant scraping until about a fifth remains as a dough-like paste (khoa or mawa); cooked further with sugar, it becomes sweets such as peda and burfi.",
+   "history": [
+    {
+     "zh": "印度乳品研究教材指出：市售奶膏常温约 48 小时后就会因微生物而变质；把水分活度从 0.97 降到 0.93 也没有明显增强保存效果。",
+     "en": "Indian dairy-microbiology course material notes that market khoa spoils from microbial action after about 48 hours at ambient temperature, and that lowering its aw from 0.97 to 0.93 does not noticeably improve keeping.",
+     "num": "aw 约 0.97；常温约 48 小时",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Kumar R. Microbiology of Indigenous Milk Products: Desiccated Milk Based Products (course slides DTM-222, Bihar Animal Sciences University, 2020)",
+       "url": "https://basu.org.in/wp-content/uploads/2020/05/8th-PPT-of-Microbiology-of-Indigenous-Milk-Products-Desiccated-Milk-Based-Products.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "2020 年印度乳品科学研究：用水牛奶奶膏加糖制成的 peda 冷藏保质期最长约 15 天；另有研究显示气调包装可使 peda 在 37 °C 下保存 15 天、20 °C 下保存 30 天。",
+     "en": "A 2020 Indian Journal of Dairy Science study gives buffalo-milk khoa-peda a maximum refrigerated shelf life of about 15 days; modified-atmosphere packaging has been reported to extend peda to 15 days at 37 °C and 30 days at 20 °C.",
+     "year": 2020,
+     "num": "冷藏约 15 天",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Kumar R. Microbiology of Indigenous Milk Products: Desiccated Milk Based Products (course slides DTM-222, Bihar Animal Sciences University, 2020)",
+       "url": "https://basu.org.in/wp-content/uploads/2020/05/8th-PPT-of-Microbiology-of-Indigenous-Milk-Products-Desiccated-Milk-Based-Products.pdf",
+       "kind": "学术"
+      },
+      {
+       "title": "Pagire S.G., Warrier A.S., Sawhney I.K. Moisture sorption characteristics of heat desiccated milk sweet 'Khoa-peda' prepared from buffalo milk. Indian Journal of Dairy Science 73(4) (2020)",
+       "url": "https://epubs.icar.org.in/index.php/IJDS/article/view/93342",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "num": "aw 约 0.97（khoa）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Kumar R. Microbiology of Indigenous Milk Products: Desiccated Milk Based Products (course slides DTM-222, Bihar Animal Sciences University, 2020)",
+     "url": "https://basu.org.in/wp-content/uploads/2020/05/8th-PPT-of-Microbiology-of-Indigenous-Milk-Products-Desiccated-Milk-Based-Products.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Pagire S.G., Warrier A.S., Sawhney I.K. Moisture sorption characteristics of heat desiccated milk sweet 'Khoa-peda' prepared from buffalo milk. Indian Journal of Dairy Science 73(4) (2020)",
+     "url": "https://epubs.icar.org.in/index.php/IJDS/article/view/93342",
+     "kind": "学术"
+    }
+   ],
+   "note": "khoa 本身并不耐放，严格说是浓缩而非保存；如页面需要「保存」故事，可改用加糖的 peda，或换成罐装 rasgulla"
   },
   {
    "id": "skyr",
@@ -474,16 +737,71 @@
    "animal": "牛（古时也用绵羊）",
    "method": "发酵",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
+   "shelf_zh": "新鲜斯基尔冷藏约数周；历史上真正用于长期储存的是酸乳清 sýra——浸在其中的食物可以过冬。",
+   "flavor_zh": "浓稠、细滑、酸度清爽，奶味干净，比希腊酸奶更紧实。",
+   "flavor_en": "Thick, smooth and cleanly tart; denser than Greek yogurt.",
+   "how_zh": "脱脂奶加热后，用上一批的斯基尔做引子（后来也加凝乳酶）让它变酸凝固，再用布过滤掉大量乳清，得到稠厚的高蛋白凝乳。滤出的乳清再发酵成 sýra，用来浸泡腌渍肉类等食物过冬。",
+   "how_en": "Skimmed milk is heated and soured with a spoonful of the previous batch (later also with rennet), then strained through cloth to remove much of the whey, leaving a thick, high-protein curd. The whey was fermented further into sýra and used to pickle meat and other foods for winter.",
+   "history": [
+    {
+     "zh": "冰岛早期移民从挪威带来斯基尔的做法；这一传统后来在挪威和其他北欧国家消失，只在冰岛延续下来。",
+     "en": "Iceland's settlers brought skyr-making from Norway; the tradition later died out in Norway and the rest of Scandinavia and survived only in Iceland.",
+     "year": "9—10 世纪（定居时代）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Plédel Jónsson D. The Cheese of the North. FÆÐA | FOOD (icelandicfood.is), 2020",
+       "url": "https://icelandicfood.is/?p=2370",
+       "kind": "二手"
+      }
+     ]
+    },
+    {
+     "zh": "在缺盐、缺柴（难以烟熏）的冰岛，做斯基尔剩下的乳清被用来腌渍肉食，形成「súrmatur（酸食）」，今天主要在冬末的 Þorri 节吃到。",
+     "en": "In salt-poor, wood-poor Iceland, whey from skyr-making was used to pickle meat, creating súrmatur ('sour food'), now eaten mainly at the late-winter Þorri feasts.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Plédel Jónsson D. The Cheese of the North. FÆÐA | FOOD (icelandicfood.is), 2020",
+       "url": "https://icelandicfood.is/?p=2370",
+       "kind": "二手"
+      }
+     ]
+    },
+    {
+     "zh": "传统斯基尔 2015 年入选慢食基金会「守护者」（Presidia）名录，是第一个入选的冰岛产品；2011 年冰岛 Matís 研究所报告称传统斯基尔的菌群有独特之处。",
+     "en": "Traditional skyr joined Slow Food's Presidia in 2015, the first Icelandic product to do so; a 2011 Matís report found its microbiota distinctive.",
+     "year": "2011；2015",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Plédel Jónsson D. The Cheese of the North. FÆÐA | FOOD (icelandicfood.is), 2020",
+       "url": "https://icelandicfood.is/?p=2370",
+       "kind": "二手"
+      },
+      {
+       "title": "Matís: peer-reviewed articles on skyr (incl. Valsdóttir & Sveinsson 2011, The Distinct Qualities of Traditional Skyr)",
+       "url": "https://matis.is/en/tag/skyr",
+       "kind": "官方"
+      }
+     ]
+    }
+   ],
    "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Plédel Jónsson D. The Cheese of the North. FÆÐA | FOOD (icelandicfood.is), 2020",
+     "url": "https://icelandicfood.is/?p=2370",
+     "kind": "二手"
+    },
+    {
+     "title": "Matís: peer-reviewed articles on skyr (incl. Valsdóttir & Sveinsson 2011, The Distinct Qualities of Traditional Skyr)",
+     "url": "https://matis.is/en/tag/skyr",
+     "kind": "官方"
+    }
+   ],
+   "note": "分类上属于酸凝鲜奶酪，但按酸奶食用；萨迦中提及 skyr 的具体章节未核"
   },
   {
    "id": "viili",
@@ -496,16 +814,58 @@
    "animal": "牛",
    "method": "发酵",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
+   "shelf_zh": "冷藏约两周；菌种可在家中以室温代代相传。",
+   "flavor_zh": "温和的酸、带奶油与淡淡蘑菇般的霉香，舀起时会拉出长长的黏丝。",
+   "flavor_en": "Mildly sour, creamy, with a faint mushroomy note from the surface mould; it pulls into long, stretchy strands off the spoon.",
+   "how_zh": "牛奶在室温下接种上一批的维利（或菌种）发酵约一天；嗜温乳酸乳球菌分泌的胞外多糖让它拉出长丝，表面再长出一层天鹅绒般的白色霉菌（白地霉）。",
+   "how_en": "Milk is seeded with a spoonful of the previous batch and left at room temperature for about a day; exopolysaccharide from mesophilic Lactococcus lactis subsp. cremoris makes it stretch into long, ropy strands, and a velvety film of the mould Geotrichum candidum forms on top.",
+   "history": [
+    {
+     "zh": "维利的独特质地来自黏液型乳酸乳球菌产生的含磷杂多糖（viilian）；2008 年芬兰研究从传统维利中分离并鉴定了这些发酵菌。",
+     "en": "Viili's texture comes from a phosphate-containing heteropolysaccharide (viilian) made by slime-forming Lactococcus lactis subsp. cremoris; a 2008 Finnish study isolated and characterised these starter bacteria from traditional viili.",
+     "year": 2008,
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Kahala M. et al. Characterization of starter lactic acid bacteria from the Finnish fermented milk product viili. Journal of Applied Microbiology 105(6):1929–1938 (2008)",
+       "url": "https://doi.org/10.1111/j.1365-2672.2008.03952.x",
+       "kind": "学术"
+      },
+      {
+       "title": "Wikipedia: Viili",
+       "url": "https://en.wikipedia.org/wiki/Viili",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "zh": "瑞典与芬兰西部有一族类似的发酵奶：filmjölk、更黏的 långfil、filbunke 等，挪威称 kulturmelk 或 surmelk。",
+     "en": "Western Finland and Sweden share a family of similar soured milks — filmjölk, the extra-ropy långfil, filbunke — called kulturmelk or surmelk in Norway.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Viili",
+       "url": "https://en.wikipedia.org/wiki/Viili",
+       "kind": "百科"
+      }
+     ]
+    }
+   ],
    "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Kahala M. et al. Characterization of starter lactic acid bacteria from the Finnish fermented milk product viili. Journal of Applied Microbiology 105(6):1929–1938 (2008)",
+     "url": "https://doi.org/10.1111/j.1365-2672.2008.03952.x",
+     "kind": "学术"
+    },
+    {
+     "title": "Wikipedia: Viili",
+     "url": "https://en.wikipedia.org/wiki/Viili",
+     "kind": "百科"
+    }
+   ],
+   "note": "历史年代证据不足；林奈 1737《拉普兰植物志》用捕虫堇叶子做黏奶一说未核"
   },
   {
    "id": "kefir",
@@ -517,17 +877,89 @@
    "lon": 42.44,
    "animal": "牛、山羊、绵羊",
    "method": "发酵",
-   "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
-   "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "method_also": [
+    "酒精发酵"
+   ],
+   "shelf_zh": "冷藏约一至几周；开菲尔粒本身只要持续喂奶可以无限传代。",
+   "flavor_zh": "酸、微微起泡、带酵母和轻微酒香，比酸奶稀，可直接喝。",
+   "flavor_en": "Tart, lightly effervescent, with a yeasty, faintly alcoholic note; thinner than yogurt and drunk from a glass.",
+   "how_zh": "把开菲尔粒（由乳酸菌、酵母包裹在多糖「开菲尔多糖」里形成的菜花状颗粒）按 2–5% 放进牛奶，在约 20–25 °C 下发酵 12–24 小时，滤出颗粒留作下一批，液体即开菲尔。传统上装在山羊皮袋里挂在门边，路过的人顺手拍打搅动。",
+   "how_en": "Kefir grains — cauliflower-like clusters of lactic bacteria and yeasts bound in the polysaccharide kefiran — are added to milk at 2–5% and fermented at about 20–25 °C for 12–24 hours; the grains are strained out for the next batch. Traditionally it was made in goatskin bags hung by the door and knocked by passers-by.",
+   "history": [
+    {
+     "zh": "「kefir」一词源自北高加索语言，卡拉恰伊-巴尔卡尔语称 gıpı，与意为「酒囊 / 皮囊」的词同源；19 世纪末 20 世纪初卡拉恰伊开菲尔曾以「皮囊」之名出售。",
+     "en": "The word kefir is of North Caucasian origin; Karachay-Balkar gıpı is linked to a word for 'wineskin', and Karachay kefir was sold under that name in the late 19th and early 20th centuries.",
+     "year": "19 世纪末—20 世纪初",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Kefir (lead to Prado et al. 2015 Front. Microbiol. doi:10.3389/fmicb.2015.01177 and Karachay-Balkar etymology)",
+       "url": "https://en.wikipedia.org/wiki/Kefir",
+       "kind": "百科"
+      },
+      {
+       "title": "Prado M.R. et al. Milk kefir: composition, microbial cultures, biological activities, and related products. Frontiers in Microbiology 6:1177 (2015)",
+       "url": "https://doi.org/10.3389/fmicb.2015.01177",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "2024 年中国科学院古脊椎动物与古人类研究所团队在《细胞》发表研究：新疆小河墓地约 3600 年前的乳制品残留是开菲尔奶酪，从中测出开菲尔乳杆菌的古 DNA。",
+     "en": "In 2024 a team led from the Institute of Vertebrate Paleontology and Paleoanthropology (CAS) reported in Cell that roughly 3,600-year-old dairy residues from the Xiaohe cemetery in Xinjiang are kefir cheese, recovering ancient DNA of Lactobacillus kefiranofaciens.",
+     "year": 2024,
+     "num": "约 3600 年前",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Liu Y. et al. Bronze Age cheese reveals human–Lactobacillus interactions over evolutionary history. Cell 187 (2024)",
+       "url": "https://doi.org/10.1016/j.cell.2024.08.008",
+       "kind": "学术"
+      }
+     ],
+     "note": "未打开原文，依据作者记忆与维基引文；与研究员 A/B 的奶酪起源部分可能重叠"
+    },
+    {
+     "zh": "相传 1908 年前后，莫斯科布兰多夫兄弟的乳品厂派女职员伊琳娜·萨哈罗娃去高加索向一位王公求取开菲尔粒，遭「抢婚」后获救，沙皇判王公赔给她十磅开菲尔粒；1908 年 9 月莫斯科开始出售瓶装开菲尔。这个故事细节多无出处，宜视为传说。",
+     "en": "A popular story says that around 1908 the Blandov brothers' Moscow dairy sent employee Irina Sakharova to obtain kefir grains from a Caucasian prince, who had her abducted; after her rescue the Tsar ordered him to give her ten pounds of grains, and bottled kefir went on sale in Moscow in September 1908. The details are unsourced and best treated as legend.",
+     "year": 1908,
+     "num": "十磅开菲尔粒（传说）",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "Russian Life: Magical Kefir (Philip Seifi, 2016-08-22)",
+       "url": "https://russianlife.com/stories/online-archive/magical-kefir/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "传说"
+    }
+   ],
+   "num": "酒精含量通常极低（德国市售测得 0.002–0.005%）；20 世纪初俄国小作坊可达 1–2%",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wikipedia: Kefir (lead to Prado et al. 2015 Front. Microbiol. doi:10.3389/fmicb.2015.01177 and Karachay-Balkar etymology)",
+     "url": "https://en.wikipedia.org/wiki/Kefir",
+     "kind": "百科"
+    },
+    {
+     "title": "Prado M.R. et al. Milk kefir: composition, microbial cultures, biological activities, and related products. Frontiers in Microbiology 6:1177 (2015)",
+     "url": "https://doi.org/10.3389/fmicb.2015.01177",
+     "kind": "学术"
+    },
+    {
+     "title": "Liu Y. et al. Bronze Age cheese reveals human–Lactobacillus interactions over evolutionary history. Cell 187 (2024)",
+     "url": "https://doi.org/10.1016/j.cell.2024.08.008",
+     "kind": "学术"
+    },
+    {
+     "title": "Russian Life: Magical Kefir (Philip Seifi, 2016-08-22)",
+     "url": "https://russianlife.com/stories/online-archive/magical-kefir/",
+     "kind": "媒体"
+    }
+   ],
+   "note": ""
   },
   {
    "id": "clotted-cream",
@@ -799,16 +1231,55 @@
    "animal": "牛",
    "method": "澄清熬油",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
+   "shelf_zh": "比黄油耐放得多，常温可放数月；香料中的抗氧化成分被认为能延缓酸败。",
+   "flavor_zh": "浓烈的香料与熟黄油香，带草本（罗勒、koseret）、姜和豆蔻的温热感；是 doro wat 等炖菜的底味。",
+   "flavor_en": "Heady and aromatic — browned butter with herbal basil and koseret, warm ginger and cardamom; the base of stews like doro wat.",
+   "how_zh": "埃塞俄比亚传统上用自然发酵的牛奶搅出黄油（kibe），再与洋葱、大蒜、姜、koseret（Lippia adoensis）、紫罗勒 besobila、korarima 豆蔻、葫芦巴等香料一起慢熬，滤去奶渣，得到带香料的澄清黄油。新鲜的 ayib（酸凝鲜奶酪）则是同一桶酪浆的副产品。",
+   "how_en": "Ethiopian butter (kibe) is churned from naturally fermented milk, then simmered with onion, garlic, ginger, koseret (Lippia adoensis), purple basil (besobila), korarima cardamom, fenugreek and other spices, and strained into a spiced clarified butter. Fresh ayib, a soft acid-curd cheese, comes from the leftover buttermilk.",
+   "history": [
+    {
+     "zh": "2005 年埃塞俄比亚药学研究测试了传统用于给烹饪黄油调香的四种植物：Lippia adoensis var. koseret、紫罗勒（Ocimum basilicum var. purpurascens）、姜、korarima 豆蔻；四者精油都有自由基清除活性，以紫罗勒最强，为「防止黄油酸败」的传统做法提供了一个解释。",
+     "en": "A 2005 Ethiopian study of four plants traditionally used to spice cooking butter — koseret, purple basil, ginger and korarima — found radical-scavenging activity in all their volatile oils, strongest in purple basil, offering one explanation for the tradition of preventing rancidity.",
+     "year": 2005,
+     "num": "DPPH IC50：紫罗勒 0.04 µl/ml，korarima 34.9 µl/ml",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Sishu R., Yonathan M., Seyoum A., Asres K. Radical scavenging activity of volatile oils of herbs traditionally used to spice cooking butter in Ethiopia. Ethiopian Pharmaceutical Journal 23(1):7–14 (2005)",
+       "url": "https://www.ajol.info/index.php/epj/article/view/35086",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "2017 年综述指出，埃塞俄比亚黄油由自然发酵奶搅制而成，是澄清黄油的原料；澄清黄油比黄油更耐储存，但两者在传统条件下的品质数据仍很缺乏。",
+     "en": "A 2017 review notes that Ethiopian butter is churned from naturally fermented milk and is the raw material for ghee, which keeps better than butter, while quality data under traditional conditions remain scarce.",
+     "year": 2017,
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Gemechu A.T., Tola Y.B. Traditional butter and ghee production, processing and handling in Ethiopia: A review. African Journal of Food Science 11(4):95–105 (2017)",
+       "url": "https://doi.org/10.5897/AJFS2016.1544",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
    "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Sishu R., Yonathan M., Seyoum A., Asres K. Radical scavenging activity of volatile oils of herbs traditionally used to spice cooking butter in Ethiopia. Ethiopian Pharmaceutical Journal 23(1):7–14 (2005)",
+     "url": "https://www.ajol.info/index.php/epj/article/view/35086",
+     "kind": "学术"
+    },
+    {
+     "title": "Gemechu A.T., Tola Y.B. Traditional butter and ghee production, processing and handling in Ethiopia: A review. African Journal of Food Science 11(4):95–105 (2017)",
+     "url": "https://doi.org/10.5897/AJFS2016.1544",
+     "kind": "学术"
+    }
+   ],
+   "note": "常温保存期为一般口径；香料清单除四种实测植物外为通俗食谱口径"
   },
   {
    "id": "kule-naoto",
@@ -896,16 +1367,83 @@
    "animal": "牛；山羊（cajeta）",
    "method": "浓缩加糖",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
-   "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "shelf_zh": "高糖低水，开罐前常温可存放数月；开封后冷藏。",
+   "flavor_zh": "浓郁的焦糖、太妃糖与熟奶香，比焦糖酱更圆润厚实；cajeta 带山羊奶的轻微膻香。",
+   "flavor_en": "Deep caramel, toffee and cooked-milk flavour, rounder and thicker than caramel sauce; cajeta adds a light goaty tang.",
+   "how_zh": "牛奶加糖（常加一小撮小苏打）用小火不停搅拌熬 1.5–2 小时，蒸发到原体积约六分之一，乳糖与蛋白质发生美拉德反应和焦糖化，变成棕色浓酱。墨西哥 cajeta 用山羊奶，也常加牛奶混合。",
+   "how_en": "Milk and sugar (often with a pinch of baking soda) are simmered and stirred for 1.5–2 hours until reduced to about a sixth of the volume; Maillard browning and caramelisation turn it into a thick brown spread. Mexican cajeta uses goat's milk, often blended with cow's.",
+   "history": [
+    {
+     "zh": "有据可查的早期记录包括：1693 和 1712 年从智利向阿根廷输入 manjar（牛奶焦糖类甜品）；1773 年巴西米纳斯吉拉斯已有 doce de leite；1818–1825 年瑞士医生伦格尔记录巴拉圭人食用。",
+     "en": "Documented early records include manjar shipped from Chile to Argentina in 1693 and 1712, doce de leite in Minas Gerais, Brazil, in 1773, and Swiss physician Rengger's account of it in Paraguay in 1818–25.",
+     "year": "1693—1825",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Dulce de leche (lead to documented records: Minas Gerais 1773, Chilean manjar imports 1693/1712, Rengger 1818–25; Día Internacional del Dulce de Leche since 1998)",
+       "url": "https://en.wikipedia.org/wiki/Dulce_de_leche",
+       "kind": "百科"
+      },
+      {
+       "title": "El Cronista: Desilusión: el dulce de leche no fue un invento argentino (2016)",
+       "url": "https://www.cronista.com/3dias/Desilusion-el-dulce-de-leche-no-fue-un-invento-argentino-20160923-0027.html",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "阿根廷流行的「1829 年卡涅拉斯」故事——女仆为罗萨斯与拉瓦耶签约时熬奶忘关火而意外发明——是流传的起源神话，没有文献依据。",
+     "en": "The popular Argentine tale that a maid invented it by accident while Rosas and Lavalle met at Cañuelas in 1829 is an origin myth without documentary support.",
+     "year": 1829,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Dulce de leche (lead to documented records: Minas Gerais 1773, Chilean manjar imports 1693/1712, Rengger 1818–25; Día Internacional del Dulce de Leche since 1998)",
+       "url": "https://en.wikipedia.org/wiki/Dulce_de_leche",
+       "kind": "百科"
+      },
+      {
+       "title": "El Cronista: Desilusión: el dulce de leche no fue un invento argentino (2016)",
+       "url": "https://www.cronista.com/3dias/Desilusion-el-dulce-de-leche-no-fue-un-invento-argentino-20160923-0027.html",
+       "kind": "媒体"
+      }
+     ],
+     "note": "传说"
+    },
+    {
+     "zh": "自 1998 年起，每年 10 月 11 日为「国际牛奶焦糖酱日」，由阿根廷相关推广机构发起。",
+     "en": "Since 1998, 11 October has been International Dulce de Leche Day, launched by an Argentine promotion body.",
+     "year": 1998,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Dulce de leche (lead to documented records: Minas Gerais 1773, Chilean manjar imports 1693/1712, Rengger 1818–25; Día Internacional del Dulce de Leche since 1998)",
+       "url": "https://en.wikipedia.org/wiki/Dulce_de_leche",
+       "kind": "百科"
+      }
+     ]
+    }
+   ],
+   "num": "浓缩到约 1/6 体积",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Wikipedia: Dulce de leche (lead to documented records: Minas Gerais 1773, Chilean manjar imports 1693/1712, Rengger 1818–25; Día Internacional del Dulce de Leche since 1998)",
+     "url": "https://en.wikipedia.org/wiki/Dulce_de_leche",
+     "kind": "百科"
+    },
+    {
+     "title": "El Cronista: Desilusión: el dulce de leche no fue un invento argentino (2016)",
+     "url": "https://www.cronista.com/3dias/Desilusion-el-dulce-de-leche-no-fue-un-invento-argentino-20160923-0027.html",
+     "kind": "媒体"
+    },
+    {
+     "title": "McSweeney P.L.H., Fox P.F. (eds). Advanced Dairy Chemistry Vol. 3: Lactose, Water, Salts and Minor Constituents (Springer, 2009)",
+     "url": "https://books.google.com/books?id=hz9U9nzy-rQC",
+     "kind": "学术"
+    }
+   ],
+   "note": "cajeta de Celaya 的具体年代未核；阿根廷 2003 年申遗被他国反对一事属于国家间争议，未写入"
   },
   {
    "id": "condensed-milk",
@@ -918,9 +1456,9 @@
    "animal": "牛",
    "method": "浓缩加糖",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
+   "shelf_zh": "甜炼乳水分活度约 0.80–0.87，未开罐常温可存放一年以上（商品口径）；开罐后冷藏约一两周。",
+   "flavor_zh": "极甜、浓稠，带熟奶与淡淡焦糖味；在东南亚、拉美用来调咖啡、做甜点。",
+   "flavor_en": "Very sweet and thick, with cooked-milk and faint caramel notes; stirred into coffee and desserts across Southeast Asia and Latin America.",
    "how_zh": "在真空锅中低温蒸发鲜奶的大部分水分，再装罐密封；后来普遍加入大量蔗糖做成甜炼乳，靠高糖把水分活度压低，开罐前可常温存放。",
    "how_en": "Milk is evaporated at low temperature in a vacuum pan and sealed in cans; the later sweetened version adds a large dose of sugar, which lowers water activity enough to keep unopened cans at room temperature.",
    "history": [
@@ -962,7 +1500,7 @@
      ]
     }
    ],
-   "num": "",
+   "num": "aw 约 0.80–0.87（甜炼乳）",
    "conf": "高",
    "sources": [
     {
@@ -976,29 +1514,81 @@
      "kind": "学术"
     }
    ],
-   "note": "专利本身是无糖浓缩；甜炼乳加糖比例需另核"
+   "note": "专利本身是无糖浓缩；甜炼乳含糖比例未取得一手标准，暂不写具体百分比"
   },
   {
    "id": "milk-powder",
    "name_zh": "奶粉",
    "name_en": "Milk powder",
    "name_local": "milk powder",
-   "region": "全球；最大出口地新西兰",
+   "region": "全球；工业化后新西兰、欧盟等为主要出口地",
    "lat": -37.79,
    "lon": 175.28,
    "animal": "牛",
    "method": "脱水晒干",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
-   "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "shelf_zh": "含水低于 4%，密封常温可存放约一年以上（全脂奶粉因脂肪氧化较短，脱脂奶粉更长）。",
+   "flavor_zh": "冲调后有淡淡的熟奶与焦糖味，与鲜奶相比香气较闷；直接吃干粉有奶糖般的甜香。",
+   "flavor_en": "Reconstituted, it tastes faintly cooked and caramel-like, flatter than fresh milk; eaten dry it has a milky-sweet, candy-like aroma.",
+   "how_zh": "先把牛奶真空浓缩，再用喷雾干燥（把浓缩奶喷成细雾送进热风室，瞬间变成粉）或滚筒干燥（涂在加热的金属辊上刮下薄片），水分降到 4% 以下。",
+   "how_en": "Milk is first vacuum-concentrated, then spray-dried (atomised into a hot-air chamber where droplets flash into powder) or roller-dried (spread on heated drums and scraped off), bringing moisture below 4%.",
+   "history": [
+    {
+     "zh": "13 世纪马可·波罗的游记中有一种被认为是奶粉的产品；鲁布鲁克同时期记载蒙古人把奶凝块晒得「硬如铁渣」，冬天再兑水搅化当奶喝。",
+     "en": "Marco Polo's 13th-century account describes a product thought to be dried milk; at the same time Rubruck recorded Mongols drying milk curd 'as hard as iron slag' and churning it back into a drink with water in winter.",
+     "year": "13 世纪",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Carić M., Gregurek Lj. Retrospektiva razvoja tehnologije koncentriranih i sušenih mliječnih proizvoda (Retrospective of concentrated and dried dairy products development). Mljekarstvo 53(4):293–307 (2003)",
+       "url": "https://hrcak.srce.hr/file/2709",
+       "kind": "学术"
+      },
+      {
+       "title": "William of Rubruck, Journey (1253–55), tr. Rockhill 1900, Silk Road Seattle",
+       "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+       "kind": "官方"
+      }
+     ],
+     "note": "马可·波罗原文章节未核"
+    },
+    {
+     "zh": "1809 年前后，法国罐头之父阿佩尔把牛奶浓缩到约三分之一，风干后压成片。",
+     "en": "Around 1809 Nicolas Appert, the father of canning, concentrated milk to about a third of its volume, air-dried it and pressed it into tablets.",
+     "year": 1809,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Carić M., Gregurek Lj. Retrospektiva razvoja tehnologije koncentriranih i sušenih mliječnih proizvoda (Retrospective of concentrated and dried dairy products development). Mljekarstvo 53(4):293–307 (2003)",
+       "url": "https://hrcak.srce.hr/file/2709",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "1872 年美国人珀西（Samuel Percy）的专利奠定了喷雾干燥的基础；1902 年 Just 获得早期双滚筒干燥机专利；1955 年前后速溶化工艺让奶粉能快速冲开。",
+     "en": "Samuel Percy's 1872 patent laid the basis for spray drying; Just patented one of the first twin-roller dryers in 1902; instantising around 1955 made powders dissolve quickly.",
+     "year": "1872；1902；1955",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Carić M., Gregurek Lj. Retrospektiva razvoja tehnologije koncentriranih i sušenih mliječnih proizvoda (Retrospective of concentrated and dried dairy products development). Mljekarstvo 53(4):293–307 (2003)",
+       "url": "https://hrcak.srce.hr/file/2709",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "num": "含水 <4%",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Carić M., Gregurek Lj. Retrospektiva razvoja tehnologije koncentriranih i sušenih mliječnih proizvoda (Retrospective of concentrated and dried dairy products development). Mljekarstvo 53(4):293–307 (2003)",
+     "url": "https://hrcak.srce.hr/file/2709",
+     "kind": "学术"
+    }
+   ],
+   "note": "新西兰出口份额未核，坐标仅作排序用"
   },
   {
    "id": "rushan",
@@ -1011,16 +1601,60 @@
    "animal": "牛",
    "method": "脱水晒干",
    "method_also": [],
-   "shelf_zh": "",
-   "flavor_zh": "",
-   "flavor_en": "",
-   "how_zh": "",
-   "how_en": "",
-   "history": [],
-   "num": "",
-   "conf": "",
-   "sources": [],
-   "note": "骨架，待填"
+   "shelf_zh": "晾干的乳扇是薄而硬的片，常温可存放数周到数月（作坊口径）。",
+   "flavor_zh": "浓郁奶香，烤后外脆内韧、微微拉丝，常卷上玫瑰糖或抹果酱；也可油炸或煮。",
+   "flavor_en": "Intensely milky; grilled until crisp outside and chewy within, often rolled around rose-petal jam; also deep-fried or simmered.",
+   "how_zh": "鲜牛奶与预先发酵好的酸木瓜水按比例混合，在锅中加热到凝结成絮状，用木勺搅成奶团、滤去乳清，反复揉捏到光亮，再拉伸折叠成薄片，挂在架子上晾干。",
+   "how_en": "Fresh cow's milk is mixed with pre-fermented sour papaya (quince-like Chaenomeles) water and heated until it curdles; the curd is gathered, drained, kneaded until glossy, stretched and folded into thin sheets and hung on racks to dry.",
+   "history": [
+    {
+     "zh": "乳扇制作技艺是云南省级非物质文化遗产代表性项目；洱源县 2015 年将其列入县级第三批非遗名录。",
+     "en": "Rushan-making is a provincial-level intangible cultural heritage item in Yunnan; Eryuan County listed it in its third batch of county heritage in 2015.",
+     "year": 2015,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "新华网：大理乳扇坊见闻（新华社记者丁怡全，2025-11-24）",
+       "url": "https://www.news.cn/local/20251124/393116f26ffd4b6f8426eacc24ea5635/c.html",
+       "kind": "媒体"
+      },
+      {
+       "title": "Yunnan Explorer: Rushan (Eryuan County ICH 3rd list, 2015)",
+       "url": "https://www.yunnanexplorer.com/culture/item/rushan",
+       "kind": "二手"
+      }
+     ]
+    },
+    {
+     "zh": "大理上关镇一家作坊的数据：约 17 公斤鲜牛奶制得 1 公斤乳扇，每日平均产 300 公斤鲜乳扇。",
+     "en": "A workshop in Shangguan, Dali, reports that about 17 kg of fresh milk yields 1 kg of rushan, with an average daily output of 300 kg.",
+     "year": 2025,
+     "num": "17:1；300 kg/日",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "新华网：大理乳扇坊见闻（新华社记者丁怡全，2025-11-24）",
+       "url": "https://www.news.cn/local/20251124/393116f26ffd4b6f8426eacc24ea5635/c.html",
+       "kind": "媒体"
+      }
+     ]
+    }
+   ],
+   "num": "约 17 kg 鲜奶 → 1 kg 乳扇",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "新华网：大理乳扇坊见闻（新华社记者丁怡全，2025-11-24）",
+     "url": "https://www.news.cn/local/20251124/393116f26ffd4b6f8426eacc24ea5635/c.html",
+     "kind": "媒体"
+    },
+    {
+     "title": "Yunnan Explorer: Rushan (Eryuan County ICH 3rd list, 2015)",
+     "url": "https://www.yunnanexplorer.com/culture/item/rushan",
+     "kind": "二手"
+    }
+   ],
+   "note": "古籍记载（明清方志）未找到可靠出处；技术上属酸凝拉伸型奶酪，靠晒干保存。乳饼（石林、路南）未单列"
   },
   {
    "id": "so",
@@ -1116,73 +1750,208 @@
    "id": "acid",
    "zh": "发酵降 pH",
    "en": "Lactic acid fermentation",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "乳酸菌把乳糖变成乳酸，pH 降到约 4.5 以下，多数致病菌和腐败菌难以生长；先占满的乳酸菌还会争夺营养、产生细菌素，挤走杂菌。用上一批的「老引子」接种，就是把这群赢家代代传下去。",
+   "principle_en": "Lactic acid bacteria turn lactose into lactic acid, dropping pH below about 4.5, where most pathogens and spoilage bacteria struggle; the established culture also outcompetes newcomers for nutrients and makes bacteriocins. Back-slopping from the previous batch passes the winning community on.",
+   "examples": [
+    "kule-naoto",
+    "skyr",
+    "viili",
+    "kefir",
+    "labneh",
+    "qurut"
+   ],
+   "sources": [
+    {
+     "title": "Mathara J.M. et al. kule naoto. Int. J. Food Microbiology 94 (2004) 269–278",
+     "url": "https://doi.org/10.1016/j.ijfoodmicro.2004.01.008",
+     "kind": "学术"
+    },
+    {
+     "title": "Prado M.R. et al. Milk kefir: composition, microbial cultures, biological activities, and related products. Frontiers in Microbiology 6:1177 (2015)",
+     "url": "https://doi.org/10.3389/fmicb.2015.01177",
+     "kind": "学术"
+    }
+   ]
   },
   {
    "id": "alcohol",
    "zh": "酒精发酵",
    "en": "Alcoholic fermentation",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "酵母和乳酸菌一起工作，产生少量酒精、二氧化碳和乳酸；酒精与酸叠加抑菌，也消耗掉大部分乳糖。马奶乳糖高、酪蛋白少，特别适合做成低度奶酒。",
+   "principle_en": "Yeasts working alongside lactic bacteria add a little ethanol and CO2 to the acid; alcohol and acidity together inhibit microbes and use up most of the lactose. Lactose-rich, low-casein mare's milk is especially suited to this.",
+   "examples": [
+    "airag",
+    "kefir"
+   ],
+   "sources": [
+    {
+     "title": "UNESCO ICH: Airag in Khokhuur (2019)",
+     "url": "https://ich.unesco.org/en/RL/traditional-technique-of-making-airag-in-khokhuur-and-its-associated-customs-01172?RL=01172",
+     "kind": "官方"
+    },
+    {
+     "title": "Prado M.R. et al. Milk kefir: composition, microbial cultures, biological activities, and related products. Frontiers in Microbiology 6:1177 (2015)",
+     "url": "https://doi.org/10.3389/fmicb.2015.01177",
+     "kind": "学术"
+    }
+   ],
+   "note": "马奶成分对比为通识，未单独取证"
   },
   {
    "id": "dry",
    "zh": "脱水 / 晒干",
    "en": "Drying",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "微生物需要「可用的水」。水分活度（aw）低于约 0.90 多数细菌停止生长，低于约 0.61 酵母和霉菌也基本停下，低于 0.60 几乎没有微生物能繁殖。晒干的奶球、奶片、奶粉都是把 aw 压到这一线以下。",
+   "principle_en": "Microbes need available water. Below a water activity (aw) of about 0.90 most bacteria stop growing, below about 0.61 yeasts and moulds largely stop, and below 0.60 almost nothing proliferates. Sun-dried curd balls, milk sheets and milk powder all push aw under that line.",
+   "examples": [
+    "qurut",
+    "aaruul",
+    "chhurpi",
+    "kashk",
+    "rushan",
+    "milk-powder"
+   ],
+   "sources": [
+    {
+     "title": "Fontana A.J. Water Activity's Role in Food Safety and Quality (2nd NSF Intl. Conference on Food Safety, 2000; table after Beuchat 1983)",
+     "url": "https://webpages.ciencias.ulisboa.pt/~fjsantos/44388/2006-07/aw&safety.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "US FDA Inspection Technical Guide No. 39: Water Activity (aw) in Foods (1984)",
+     "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-technical-guides/water-activity-aw-foods",
+     "kind": "官方"
+    }
+   ]
   },
   {
    "id": "salt",
    "zh": "加盐",
    "en": "Salting",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "盐溶在水里，把水「绑住」，降低水分活度，同时造成渗透压，让细菌细胞失水；盐还能在晒干过程中抑制过度酸化和杂菌。约旦 jameed 平均含盐约 15.7%。",
+   "principle_en": "Dissolved salt binds water, lowering water activity, and its osmotic pressure pulls water out of bacterial cells; it also restrains excessive souring and stray microbes while drying. Jordanian jameed averages about 15.7% salt.",
+   "examples": [
+    "jameed",
+    "qurut",
+    "smen",
+    "labneh"
+   ],
+   "sources": [
+    {
+     "title": "Fontana A.J. Water Activity's Role in Food Safety and Quality (2nd NSF Intl. Conference on Food Safety, 2000; table after Beuchat 1983)",
+     "url": "https://webpages.ciencias.ulisboa.pt/~fjsantos/44388/2006-07/aw&safety.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "US FDA Inspection Technical Guide No. 39: Water Activity (aw) in Foods (1984)",
+     "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-technical-guides/water-activity-aw-foods",
+     "kind": "官方"
+    },
+    {
+     "title": "Hilali M. et al. Applied Sciences 14(2) (2024) — jameed composition",
+     "url": "https://icarda.org/node/18607",
+     "kind": "学术"
+    }
+   ]
   },
   {
    "id": "fat",
    "zh": "澄清熬油 / 脂肪隔绝",
    "en": "Rendering & fat sealing",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "细菌只能在水相里生长。把黄油熬到几乎无水（ghee 含水约 0.2%）、滤掉蛋白质，剩下的纯脂肪里微生物无处容身；唯一的敌人变成氧化酸败，所以要密封、避光，或加香料抗氧化。反过来，用油（橄榄油）或脂肪把食物封住，也能隔绝空气。",
+   "principle_en": "Bacteria live in the water phase. Boil butter until nearly dry (ghee holds about 0.2% water) and strain out the protein, and pure fat leaves microbes nowhere to grow; the remaining enemy is oxidative rancidity, held off by sealing, darkness or antioxidant spices. Conversely, covering food in oil or fat shuts out air.",
+   "examples": [
+    "ghee",
+    "niter-kibbeh",
+    "tibetan-butter",
+    "labneh",
+    "smen"
+   ],
+   "sources": [
+    {
+     "title": "Sserunjogi M.L. et al. A review paper: current knowledge of ghee and related products. International Dairy Journal 8(8):677–688 (1998)",
+     "url": "https://doi.org/10.1016/S0958-6946(98)00106-X",
+     "kind": "学术"
+    },
+    {
+     "title": "Sishu R., Yonathan M., Seyoum A., Asres K. Radical scavenging activity of volatile oils of herbs traditionally used to spice cooking butter in Ethiopia. Ethiopian Pharmaceutical Journal 23(1):7–14 (2005)",
+     "url": "https://www.ajol.info/index.php/epj/article/view/35086",
+     "kind": "学术"
+    }
+   ]
   },
   {
    "id": "sugar",
    "zh": "浓缩加糖",
    "en": "Concentration & sugar",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "把奶熬掉大部分水，再加上大量糖，溶质浓度极高，水分活度降到约 0.80–0.87，多数细菌无法生长；长时间加热同时杀菌，并通过美拉德反应带来焦糖色和香气。只浓缩不加糖（如 khoa）则保存期很短。",
+   "principle_en": "Boil off most of the water and add lots of sugar, and solute concentration rises until aw falls to about 0.80–0.87, too low for most bacteria; the long heating also sterilises and, through Maillard browning, adds colour and caramel flavour. Concentration without sugar (khoa) keeps only briefly.",
+   "examples": [
+    "condensed-milk",
+    "dulce-de-leche",
+    "brunost",
+    "so",
+    "khoa"
+   ],
+   "sources": [
+    {
+     "title": "Fontana A.J. Water Activity's Role in Food Safety and Quality (2nd NSF Intl. Conference on Food Safety, 2000; table after Beuchat 1983)",
+     "url": "https://webpages.ciencias.ulisboa.pt/~fjsantos/44388/2006-07/aw&safety.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "US FDA Inspection Technical Guide No. 39: Water Activity (aw) in Foods (1984)",
+     "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-technical-guides/water-activity-aw-foods",
+     "kind": "官方"
+    },
+    {
+     "title": "Kumar R. Microbiology of Indigenous Milk Products: Desiccated Milk Based Products (course slides DTM-222, Bihar Animal Sciences University, 2020)",
+     "url": "https://basu.org.in/wp-content/uploads/2020/05/8th-PPT-of-Microbiology-of-Indigenous-Milk-Products-Desiccated-Milk-Based-Products.pdf",
+     "kind": "学术"
+    }
+   ]
   },
   {
    "id": "smoke",
    "zh": "烟熏",
    "en": "Smoking",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "木烟里的酚类等化合物有抑菌和抗氧化作用，烟熏同时烘干表面；东非牧民用特定树木的炭火熏烤葫芦内壁，炭层还能封住葫芦的孔隙。",
+   "principle_en": "Phenolic and other compounds in wood smoke are antimicrobial and antioxidant, and smoking also dries surfaces; East African herders smoke gourds with charcoal from chosen trees, whose coating also seals the gourd's pores.",
+   "examples": [
+    "kule-naoto",
+    "chhurpi"
+   ],
+   "sources": [
+    {
+     "title": "Mathara J.M. et al. kule naoto. Int. J. Food Microbiology 94 (2004) 269–278",
+     "url": "https://doi.org/10.1016/j.ijfoodmicro.2004.01.008",
+     "kind": "学术"
+    },
+    {
+     "title": "Mureithi W. et al. Journal of Ethnobiology 20(1):75–91 (2000)",
+     "url": "http://ethnobiology.org/sites/default/files/pdfs/JoE/20-1/Mureithi.pdf",
+     "kind": "学术"
+    }
+   ],
+   "note": "烟中酚类抑菌为通识；Mureithi 2000 只记录农户认知，未做抑菌实测"
   },
   {
    "id": "cold",
    "zh": "低温与埋藏",
    "en": "Cold & burial",
-   "principle_zh": "",
-   "principle_en": "",
-   "examples": [],
-   "sources": []
+   "principle_zh": "低温让微生物和酶的活动变慢；泥炭沼泽低温、缺氧、偏酸，相当于天然冷库，使爱尔兰的沼泽黄油保存了数百到三千多年。草原和高原的冬季寒冷也是牧民储存黄油、奶块的帮手。",
+   "principle_en": "Cold slows microbes and enzymes; peat bogs are cold, oxygen-poor and acidic — a natural cold store that kept Irish bog butter for centuries to over three millennia. Steppe and plateau winters likewise help herders store butter and curd.",
+   "examples": [
+    "bog-butter",
+    "tibetan-butter"
+   ],
+   "sources": [
+    {
+     "title": "Smyth J. et al. Scientific Reports 9:4559 (2019)",
+     "url": "https://www.nature.com/articles/s41598-019-40975-y",
+     "kind": "学术"
+    }
+   ]
   }
  ]
 }

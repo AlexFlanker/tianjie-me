@@ -404,8 +404,145 @@
    "era_en": "Middle Ages: monasteries, charters, markets",
    "from": 500,
    "to": 1500,
-   "facts": [],
-   "cheeses": []
+   "facts": [
+    {
+     "zh": "罗马帝国瓦解后，欧洲的奶酪技术很大程度上靠修道院和庄园延续。若干法国名奶酪有修院出身的记载，例如北部的 Maroilles 与马鲁瓦耶修道院（10 世纪）、阿尔萨斯的 Munster 与孟斯特河谷的本笃会修士（7 世纪起）。常听到的「洗皮奶酪是修士发明的」是概括性说法：个别品种有修院渊源可查，但并非所有洗皮奶酪都出自修士。",
+     "en": "After Rome fell, European cheese know-how was carried largely by monasteries and manors. Several French cheeses have recorded monastic roots, such as Maroilles and the abbey of Maroilles (10th century) and Munster with the Benedictines of the Munster valley in Alsace (from the 7th century). The popular claim that monks invented washed-rind cheese is a generalisation: some washed rinds do have monastic origins, but not all.",
+     "year": "7–13 世纪",
+     "num": "",
+     "kind": "修院文书 + 后世传统叙述",
+     "conf": "中",
+     "alt": "说法一：洗皮奶酪源于修院（斋期以奶酪代肉、修士用盐水擦洗）。说法二：洗皮工艺在农家与山区同样普遍，修院只是有文书留存的那一部分。",
+     "sources": [
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 6 (monastic and manorial cheese)",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ],
+     "note": "Maroilles 的「约 962 年」与 Munster「660 年代」常见于产区宣传，未找到一手文书；页面只写世纪。"
+    },
+    {
+     "zh": "1411 年，法国国王查理六世颁发特许状，承认罗克福尔（Roquefort-sur-Soulzon）居民的权利，理由是这里「既不长一株葡萄，也不长一粒麦子」。1666 年图卢兹高等法院的判决确认了此前的王室特权，把在当地洞窟里熟成奶酪的垄断权交给罗克福尔村民。",
+     "en": "In 1411 Charles VI of France granted a charter protecting the people of Roquefort-sur-Soulzon, a place 'where neither vine nor wheat will grow'. In 1666 the Parlement of Toulouse confirmed the earlier royal privileges and gave the villagers a monopoly on ripening the cheese in their caves.",
+     "year": "1411；1666",
+     "num": "",
+     "kind": "王室特许状 + 法院判决（今 PDO 规范书引述）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Cahier des charges de l'AOP Roquefort (version consolidée 2006), eAmbrosia",
+       "url": "https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59837",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "帕玛森（Parmigiano Reggiano）最早的文字记录是 1254 年热那亚的一份公证文书，其中出现了「帕尔马奶酪」（caseus parmensis）。一般认为它起源于 12 世纪前后波河平原上的本笃会和熙笃会修道院。约 1350 年，薄伽丘《十日谈》（第八天第三个故事）描写了一座由帕玛森碎屑堆成的山，山上的人只管煮通心粉和饺子往下滚。",
+     "en": "The earliest written record of Parmigiano Reggiano is a 1254 notarial deed from Genoa that mentions 'caseus parmensis', Parma cheese. It is generally traced to Benedictine and Cistercian monasteries of the Po plain around the 12th century. Around 1350 Boccaccio's Decameron (Day 8, Story 3) imagines a mountain of grated Parmesan whose people do nothing but cook macaroni and ravioli and roll them down its slopes.",
+     "year": "1254；约 1350",
+     "num": "",
+     "kind": "公证文书；文学文献",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Emilia Delizia: The Origins of Parmigiano Reggiano",
+       "url": "https://www.emiliadelizia.com/the-legacy-of-parmigiano-reggiano-tracing-the-roots-of-the-king-of-cheese",
+       "kind": "二手"
+      },
+      {
+       "title": "Boccaccio, Decameron VIII.3 (Decameron Web, Brown University)",
+       "url": "https://www.brown.edu/Departments/Italian_Studies/dweb/texts/",
+       "kind": "官方"
+      }
+     ],
+     "note": "1254 文书在多处二手来源里一致，但未见文书原件影印或档案号；奶酪联合会官网历史页本次 404。"
+    },
+    {
+     "zh": "常被引用的「1170 年英王亨利二世买下 10240 磅切达奶酪」并不可靠。国库卷宗（Pipe Roll）原文只记了一位林肯的 Alured 花 11 镑买了 40 wey 奶酪，没写重量，也没写「切达」；10240 磅是 1880 年萨默塞特考古学会成员按每 wey 256 磅推算出来的，而中世纪一 wey 奶酪从 180 到 416 磅不等。",
+     "en": "The oft-quoted claim that Henry II bought 10,240 lb of Cheddar in 1170 is shaky. The Pipe Roll itself records only that Alured of Lincoln paid £11 for 40 weys of cheese, with no weight and no mention of Cheddar. The 10,240 lb figure comes from an 1880 estimate by members of the Somerset archaeological society assuming 256 lb to the wey, when a medieval wey of cheese ranged from about 180 to 416 lb.",
+     "year": "1170/1171",
+     "num": "40 wey 奶酪，11 英镑",
+     "kind": "国库卷宗（一手）+ 19 世纪推算",
+     "conf": "中",
+     "alt": "通行说法：1170 年亨利二世以每磅一法新购入 10240 磅切达奶酪（产区与大量科普沿用）。",
+     "sources": [
+      {
+       "title": "r/AskHistorians answer on the 1170 Pipe Roll and Cheddar (2023), citing the Pipe Roll 17 Henry II",
+       "url": "https://redlib.nohost.network/r/AskHistorians/comments/10pc3m7/comment/j6nes9z/?context=3",
+       "kind": "二手"
+      },
+      {
+       "title": "Cheddar village: The History of Cheddar Cheese",
+       "url": "https://cheddarsomerset.co.uk/History/Cheddar%20Cheese.htm",
+       "kind": "二手"
+      }
+     ],
+     "note": "AskHistorians 属二手，但引了拉丁原文「pro .xl. pensis casei」；如需上页面，最好再核 Pipe Roll Society 印本。"
+    },
+    {
+     "zh": "瑞士格吕耶尔（Gruyère）地区的奶酪生产可追溯到 1115 年；这一名称在 17 世纪获得官方承认。该地与相邻的法国侏罗山区一样，靠夏季把牛群赶上高山牧场、在山上就地做大轮硬质奶酪来保存夏奶。",
+     "en": "Cheesemaking in the Gruyère region of Switzerland is traced to 1115, and the name gained official recognition in the 17th century. Like the neighbouring French Jura, the region kept summer milk by driving herds to high pastures and making large hard wheels on the spot.",
+     "year": "1115",
+     "num": "",
+     "kind": "产区官方年表",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Interprofession du Gruyère: History",
+       "url": "https://www.gruyere.com/en/history",
+       "kind": "官方"
+      }
+     ],
+     "note": "1115 的具体文书（常说是 Rougemont 修道院账目）官网未说明。"
+    },
+    {
+     "zh": "法国侏罗山区的 Comté 产自村庄合作制奶坊 fruitière：一只奶酪轮要用约 400 升奶，单户农家的奶不够，于是各家把奶集中到一处一起做。这种合作形式已有八百多年，常见的最早文书是 13 世纪 Déservillers 与 Levier 两村的记载。",
+     "en": "Comté from the French Jura is made in village co-operative dairies called fruitières. One wheel takes about 400 litres of milk, more than a single farm had, so households pooled their milk. The system is more than 800 years old; the earliest documents usually cited are 13th-century records from the villages of Déservillers and Levier.",
+     "year": "13 世纪（常引 1264 / 1267）",
+     "num": "每轮约 380–400 升奶；今约 140–160 家 fruitière",
+     "kind": "村社文书 + 产区年表",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Comté Cheese Association: 1,000 Years of Artisanal Cheesemaking (PDF)",
+       "url": "https://media.comte-usa.com/pos/1000YearsofArtisanalCheesemaking.pdf",
+       "kind": "企业"
+      }
+     ],
+     "note": "1264/1267 与两村名凭记忆（产区资料常见），本次打开的 PDF 只写「八个多世纪」。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "罗克福尔",
+     "name_en": "Roquefort",
+     "origin": "法国阿韦龙省 Roquefort-sur-Soulzon",
+     "what_zh": "生绵羊奶（Lacaune 羊）做的蓝纹奶酪，在 Combalou 山崩塌岩体中的天然洞窟里熟成至少 90 天，洞内靠岩缝 fleurines 通风，青霉 Penicillium roqueforti 长成蓝纹。",
+     "what_en": "A blue cheese of raw Lacaune ewe's milk, ripened at least 90 days in natural caves in the Combalou rockfall, ventilated by fissures called fleurines, where Penicillium roqueforti forms the veins."
+    },
+    {
+     "name_zh": "帕玛森（帕尔马干酪）",
+     "name_en": "Parmigiano Reggiano",
+     "origin": "意大利艾米利亚—罗马涅（帕尔马、雷焦等地）",
+     "what_zh": "部分脱脂生牛奶做的大轮硬质奶酪，长期熟成，质地起颗粒、带结晶。",
+     "what_en": "A large hard wheel of part-skimmed raw cow's milk, aged long until grainy and crystalline."
+    },
+    {
+     "name_zh": "格吕耶尔",
+     "name_en": "Gruyère",
+     "origin": "瑞士弗里堡州一带",
+     "what_zh": "生牛奶做的压榨熟煮硬质奶酪，坚果与咸鲜味。",
+     "what_en": "A pressed, cooked hard cheese of raw cow's milk with nutty, savoury notes."
+    },
+    {
+     "name_zh": "孔泰",
+     "name_en": "Comté",
+     "origin": "法国侏罗山区",
+     "what_zh": "fruitière 合作社用生牛奶做的大轮硬质奶酪，熟成数月到数年。",
+     "what_en": "A large hard wheel of raw cow's milk made in fruitière co-ops, aged months to years."
+    }
+   ]
   },
   {
    "id": "early-modern",
@@ -413,8 +550,138 @@
    "era_en": "Early modern: Dutch trade and Alpine cooperatives",
    "from": 1500,
    "to": 1850,
-   "facts": [],
-   "cheeses": []
+   "facts": [
+    {
+     "zh": "荷兰阿尔克马尔（Alkmaar）1365 年起已有奶酪过磅交易，当时城里只有一副奶酪秤；1593 年被视为奶酪集市正式开办之年；1612 年秤增至四副；1619 年档案里首次出现搬运奶酪的「奶酪搬运工行会」。17 世纪集市在每年五月到万圣节的周五、周六开市，18 世纪增加到每周四天。",
+     "en": "Cheese was weighed and traded in Alkmaar from 1365, when the town owned one pair of cheese scales. 1593 is taken as the founding year of the cheese market; the scales rose to four pairs in 1612, and the cheese porters' guild first appears in the archives in 1619. In the 17th century the market ran on Fridays and Saturdays from May to All Saints' Day, and four days a week by the 18th.",
+     "year": "1365；1593；1612；1619",
+     "num": "1 副秤（1365）→ 4 副（1612）",
+     "kind": "城市档案（集市官方年表）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Kaasmarkt Alkmaar: History of the Cheese Market",
+       "url": "https://www.kaasmarkt.nl/en-gb/history-of-the-cheese-market",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "豪达（Gouda）在 1395 年取得集市权，1668 年建成城市过磅房（Goudse Waag），奶酪按重量在此计税、成交。豪达奶酪因此以集散地而非产地得名——周边农家做的奶酪都运到这里卖。",
+     "en": "Gouda gained market rights in 1395 and built its weigh house, the Goudse Waag, in 1668, where cheese was weighed, taxed and sold. Gouda cheese is named after the market town rather than a farm district: farmhouse cheese from the surrounding countryside was brought there to be sold.",
+     "year": "1395；1668",
+     "num": "",
+     "kind": "城市建筑与市政记录",
+     "conf": "中",
+     "alt": "常见说法称「豪达奶酪最早见于 1184 年文献」，未找到原件出处。",
+     "sources": [
+      {
+       "title": "Waag (Gouda), Wikipedia (Dutch)",
+       "url": "https://nl.wikipedia.org/wiki/Waag_(Gouda)",
+       "kind": "百科"
+      }
+     ],
+     "note": "1395 / 1668 凭通行资料，百科仅作线索；本次搜索结果里的集市综述页没给年份。"
+    },
+    {
+     "zh": "荷兰在 17 世纪「黄金时代」大量出口奶酪。北荷兰的埃丹（Edam）奶酪小而硬、耐储运，适合远洋船只携带，成为海上贸易里常见的奶酪；埃丹现存的过磅房建于 1778 年。",
+     "en": "The Dutch exported cheese on a large scale in their 17th-century Golden Age. Edam from North Holland, small, firm and a good keeper, travelled well on long voyages and became a staple of seaborne trade; Edam's surviving weigh house dates from 1778.",
+     "year": "17 世纪；1778",
+     "num": "",
+     "kind": "贸易史综述",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Dutch cheese markets (encyclopaedia mirror)",
+       "url": "https://cavac.at/cavacopedia/Dutch%20cheese%20markets",
+       "kind": "百科"
+      },
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 8",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ]
+    },
+    {
+     "zh": "1612 年，帕尔马公爵拉努乔一世·法尔内塞颁令，规定了「帕尔马奶酪」的产区范围，常被视作最早的产地界定之一。",
+     "en": "In 1612 Duke Ranuccio I Farnese of Parma issued a decree defining the area in which Parma cheese could be made, often cited as one of the earliest legal definitions of a cheese's origin.",
+     "year": "1612",
+     "num": "",
+     "kind": "公国法令",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Silvano Romani: Parmigiano Reggiano story",
+       "url": "https://shop.silvanoromaniparma.com/parmigiano-reggiano-story",
+       "kind": "企业"
+      }
+     ],
+     "note": "未打开该页核对；联合会官网历史页 404。凭通行说法。"
+    },
+    {
+     "zh": "笛福在《大不列颠全岛游记》（1724–1727）中写到剑桥郡与亨廷登郡交界的斯蒂尔顿镇以奶酪闻名，称之为「我们英国的帕玛森」。斯蒂尔顿奶酪本身并不在这个镇上做，而是周边莱斯特郡等地生产、在斯蒂尔顿的驿站旅店转卖给北上南下的旅客。",
+     "en": "Daniel Defoe's Tour thro' the Whole Island of Great Britain (1724–27) notes that the town of Stilton is famous for cheese, 'our English Parmesan'. The cheese was not made in Stilton itself but in Leicestershire and nearby, and sold to travellers at Stilton's coaching inn on the Great North Road.",
+     "year": "1724",
+     "num": "",
+     "kind": "游记文献",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Daniel Defoe, A Tour thro' the Whole Island of Great Britain, Letter 7 (Vision of Britain)",
+       "url": "https://www.visionofbritain.org.uk/travellers/Defoe",
+       "kind": "官方"
+      }
+     ],
+     "note": "原句与信件编号凭记忆，需核文本。"
+    },
+    {
+     "zh": "诺曼底卡芒贝尔（Camembert）奶酪常被说成是农妇玛丽·阿雷尔在 1791 年前后、得到一位布里地区来的流亡神父指点而发明，这是流传很广的传说，缺乏同期文献。真正让它走向全国的是 19 世纪中叶通往巴黎的铁路，以及 1890 年前后出现的杨木圆盒包装。",
+     "en": "Camembert is often said to have been invented around 1791 by the Normandy farm woman Marie Harel, helped by a refugee priest from Brie, a widely told legend without contemporary records. What made it national was the railway to Paris in the mid-19th century and the round poplar-wood box that appeared around 1890.",
+     "year": "约 1791（传说）；约 1890（木盒）",
+     "num": "",
+     "kind": "传说 + 产业史",
+     "conf": "中",
+     "alt": "说法一：玛丽·阿雷尔发明（传说）。说法二：卡芒贝尔村一带早有类似软质奶酪，阿雷尔家族只是较早做商业经营的一支。",
+     "sources": [
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 8–9",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ]
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "豪达",
+     "name_en": "Gouda",
+     "origin": "荷兰南荷兰省一带",
+     "what_zh": "洗凝块的半硬质牛奶奶酪，年轻时奶香柔和，久存后出现焦糖味与结晶。",
+     "what_en": "A washed-curd semi-hard cow's milk cheese, mild and milky when young, caramel-like and crystalline when aged."
+    },
+    {
+     "name_zh": "埃丹",
+     "name_en": "Edam",
+     "origin": "荷兰北荷兰省",
+     "what_zh": "部分脱脂牛奶做的小圆球形奶酪，质地紧实，出口版外层裹红蜡。",
+     "what_en": "A small ball of part-skimmed cow's milk cheese, firm-textured; export versions are coated in red wax."
+    },
+    {
+     "name_zh": "斯蒂尔顿",
+     "name_en": "Stilton",
+     "origin": "英格兰德比郡、莱斯特郡、诺丁汉郡",
+     "what_zh": "牛奶蓝纹奶酪，以途经的斯蒂尔顿镇命名。",
+     "what_en": "A blue cow's milk cheese named after the coaching town where it was sold."
+    },
+    {
+     "name_zh": "卡芒贝尔",
+     "name_en": "Camembert",
+     "origin": "法国诺曼底",
+     "what_zh": "白霉软质牛奶奶酪，成熟后中心变软流动。",
+     "what_en": "A soft, white-rinded cow's milk cheese that softens towards the centre as it ripens."
+    }
+   ]
   },
   {
    "id": "industrial",
@@ -422,8 +689,138 @@
    "era_en": "Industrialisation: factories, starters, rennet",
    "from": 1850,
    "to": 1939,
-   "facts": [],
-   "cheeses": []
+   "facts": [
+    {
+     "zh": "1851 年，纽约州奥奈达县罗马镇（Rome）的农场主杰西·威廉斯开始收购邻居的牛奶、集中在一处做切达奶酪，这被视为「奶酪工厂制度」的开端。到 1860 年，纽约州的奶酪产量已占全美近一半。",
+     "en": "In 1851 Jesse Williams, a farmer near Rome in Oneida County, New York, began buying his neighbours' milk and making Cheddar from it in one place, the start of the cheese factory system. By 1860 New York produced almost half of America's cheese.",
+     "year": "1851",
+     "num": "1860 年纽约州约占全美奶酪产量一半",
+     "kind": "历史标牌 + 产业史",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "HMdb: Jesse Williams Historical Marker, Rome, NY (Oneida County, 1970): 'Jesse Williams in 1851 inaugurated the cheese factory system thus revolutionizing dairying.'",
+       "url": "https://www.hmdb.org/m.asp?m=165460",
+       "kind": "官方"
+      },
+      {
+       "title": "Encyclopedia.com: Dairy Industry (Dictionary of American History)",
+       "url": "https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/dairy-industry",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "zh": "工厂制度很快西移。1880 年美国奶酪年产量达 1.72 亿磅，增长最快的是威斯康星；1905 年威斯康星已有 1518 家奶酪厂，成为「头号奶酪州」。1890 年威斯康星大学的巴布科克发明乳脂测定法，让奶酪厂可以按奶的含脂量公平付钱给农户。",
+     "en": "The factory system moved west fast. US cheese output reached 172 million lb in 1880, with Wisconsin growing quickest, and by 1905 Wisconsin had 1,518 cheese factories and was the leading cheese state. In 1890 Stephen Babcock of the University of Wisconsin devised a butterfat test that let factories pay farmers fairly by the fat in their milk.",
+     "year": "1880；1890；1905",
+     "num": "1.72 亿磅（1880）；1518 家工厂（1905，威斯康星）",
+     "kind": "产业史",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Encyclopedia.com: Dairy Industry (Dictionary of American History)",
+       "url": "https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/dairy-industry",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "zh": "1874 年，丹麦药剂师克里斯蒂安·汉森在哥本哈根创立实验室，生产标准化的液体凝乳酶提取液（取自小牛胃），让各家奶酪厂第一次能用强度一致的凝乳酶。",
+     "en": "In 1874 the Danish pharmacist Christian Hansen set up a laboratory in Copenhagen to make standardised liquid rennet extract from calves' stomachs, giving cheese factories rennet of consistent strength for the first time.",
+     "year": "1874",
+     "num": "",
+     "kind": "企业史",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 9",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      },
+      {
+       "title": "Chr. Hansen (now Novonesis): company history",
+       "url": "https://www.novonesis.com/en/about-us",
+       "kind": "企业"
+      }
+     ],
+     "note": "企业历史页未打开核对。"
+    },
+    {
+     "zh": "19 世纪末，巴斯德的加热灭菌法被用到奶上：1893 年纽约的内森·施特劳斯开设牛奶站推广巴氏消毒奶，一战前已有少数城市强制执行。差不多同一时期（约 1890 年），丹麦的 Storch、德国的 Weigmann、美国的 Conn 分别分离出纯种乳酸菌发酵剂，奶酪厂开始用人工接种代替「靠天」的自然发酵。",
+     "en": "In the late 19th century Pasteur's heat treatment was applied to milk: from 1893 Nathan Straus ran milk stations in New York promoting pasteurised milk, and a few cities made it compulsory before the First World War. Around 1890 Storch in Denmark, Weigmann in Germany and Conn in the US isolated pure lactic starter cultures, so factories could inoculate milk instead of relying on chance souring.",
+     "year": "约 1890；1893",
+     "num": "",
+     "kind": "科技史",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Encyclopedia.com: Dairy Industry (Dictionary of American History)",
+       "url": "https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/dairy-industry",
+       "kind": "百科"
+      },
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 9",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ],
+     "note": "发酵剂三人与 1890 年凭二手综述记忆。"
+    },
+    {
+     "zh": "1911 年，瑞士图恩的 Walter Gerber 与 Fritz Stettler 把埃门塔尔奶酪加热熔化并加入柠檬酸钠，做出耐储运的熔化奶酪。1916 年 6 月 6 日，芝加哥的詹姆斯·L·卡夫获得美国专利 1,186,524「奶酪灭菌法及其产品」：把切达类奶酪边搅拌边加热到约 175°F（约 79°C）并保持一段时间，再无菌装进密封容器。",
+     "en": "In 1911 Walter Gerber and Fritz Stettler of Thun, Switzerland, melted Emmental with sodium citrate to make a processed cheese that kept and travelled well. On 6 June 1916 James L. Kraft of Chicago received US Patent 1,186,524, 'Process of sterilizing cheese and an improved product', which heats Cheddar-type cheese while stirring to about 175°F (79°C), holds it there, and packs it sterile into sealed containers.",
+     "year": "1911；1916-06-06",
+     "num": "美国专利 1,186,524；约 175°F",
+     "kind": "专利（一手）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "US Patent 1,186,524, J. L. Kraft, Process of sterilizing cheese and an improved product produced by such process (filed 1916-03-25, granted 1916-06-06), Google Patents",
+       "url": "https://patents.google.com/patent/US1186524A/en",
+       "kind": "官方"
+      },
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 9 (Gerber & Stettler 1911)",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ],
+     "note": "Gerber/Stettler 1911 一条为中等可信，专利一条已核原文。"
+    },
+    {
+     "zh": "美国的工厂化也带来质量危机：1881–1896 年，由于出口了大量撇脂奶酪和掺猪油等外来脂肪的「填充奶酪」，美国在英国市场失去信誉，奶酪出口量下降了 75%。",
+     "en": "Factory scale brought a quality crisis too: between 1881 and 1896 American cheese exports fell by 75% after shipments of skim and 'filled' cheese, made with lard and other foreign fats, ruined its name in Britain.",
+     "year": "1881–1896",
+     "num": "出口量下降 75%",
+     "kind": "产业史",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Encyclopedia.com: Dairy Industry (Dictionary of American History)",
+       "url": "https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/dairy-industry",
+       "kind": "百科"
+      }
+     ],
+     "note": "「掺猪油」为 filled cheese 的通行定义，原条目只写 filled。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "工厂切达",
+     "name_en": "Factory Cheddar",
+     "origin": "美国纽约州，后至威斯康星",
+     "what_zh": "集中收奶、成批生产的切达奶酪，19 世纪美国出口英国的主力。",
+     "what_en": "Cheddar made in bulk from pooled milk, America's main cheese export to Britain in the 19th century."
+    },
+    {
+     "name_zh": "加工奶酪",
+     "name_en": "Processed cheese",
+     "origin": "瑞士图恩（1911）、美国芝加哥（1916）",
+     "what_zh": "把成品奶酪粉碎、加乳化盐加热熔化后重新成形，灭菌、耐放、熔化时不出油。",
+     "what_en": "Finished cheese ground, heated with emulsifying salts and reshaped: sterile, long-keeping, and melting without oiling off."
+    }
+   ]
   },
   {
    "id": "war",
@@ -431,8 +828,92 @@
    "era_en": "War and standardisation",
    "from": 1939,
    "to": 1960,
-   "facts": [],
-   "cheeses": []
+   "facts": [
+    {
+     "zh": "1933 年英国成立牛奶营销局（Milk Marketing Board），统一收购农户鲜奶。农家奶酪作坊本已在减少：一战前全英有 3500 多家，1930 年代约剩 1600 家。",
+     "en": "Britain set up the Milk Marketing Board in 1933 to buy farmers' milk centrally. Farmhouse cheesemaking was already shrinking: over 3,500 makers before the First World War, about 1,600 by the 1930s.",
+     "year": "1933",
+     "num": "3500+（一战前）→ 约 1600（1930 年代）",
+     "kind": "产业史",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "The Courtyard Dairy: A History of British Cheese – The 20th Century and the Eradication of Farmhouse Production",
+       "url": "https://www.thecourtyarddairy.co.uk/blog/history-british-cheese-20th-century-eradication-farmhouse-production",
+       "kind": "企业"
+      }
+     ],
+     "note": "Courtyard Dairy 是专业奶酪店的长文，数字未注一手出处。"
+    },
+    {
+     "zh": "二战期间英国从 1941 年起实行奶酪配给，直到 1954 年。粮食部只允许生产少数几种硬质奶酪，并对用工、出品率、缺陷和出售时的熟成期规定统一标准，统一规格的切达俗称「政府切达」（Government Cheddar）。到战争结束，仍在做奶酪的农家只剩约 100 家。",
+     "en": "Britain rationed cheese from 1941 until 1954. The Ministry of Food allowed only a few hard cheeses, made to fixed standards for labour, yield, defects and age at sale; the standardised Cheddar was nicknamed 'Government Cheddar'. By the end of the war barely 100 farms were still making cheese.",
+     "year": "1941–1954",
+     "num": "战后约 100 家农家作坊",
+     "kind": "产业史 + 政府管制",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "The Courtyard Dairy: A History of British Cheese – The 20th Century",
+       "url": "https://www.thecourtyarddairy.co.uk/blog/history-british-cheese-20th-century-eradication-farmhouse-production",
+       "kind": "企业"
+      },
+      {
+       "title": "Imperial War Museums: What you need to know about rationing in the Second World War",
+       "url": "https://www.iwm.org.uk/history/what-you-need-to-know-about-rationing-in-the-second-world-war",
+       "kind": "官方"
+      }
+     ],
+     "note": "IWM 页只确认奶酪属凭券配给、1954 年配给全部结束；1941 起始年来自 Courtyard Dairy。"
+    },
+    {
+     "zh": "配给对地方奶酪打击最重。约克郡的温斯利代尔奶酪，1939 年有 176 家生产者，1946 年只剩 9 家，最后一家农家作坊在 1957 年停产。",
+     "en": "Rationing hit regional cheeses hardest. Wensleydale had 176 producers in 1939 and 9 in 1946; the last farmhouse maker stopped in 1957.",
+     "year": "1939–1957",
+     "num": "176 → 9",
+     "kind": "产业史",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "The Courtyard Dairy: A History of British Cheese – The 20th Century",
+       "url": "https://www.thecourtyarddairy.co.uk/blog/history-british-cheese-20th-century-eradication-farmhouse-production",
+       "kind": "企业"
+      }
+     ]
+    },
+    {
+     "zh": "美国把「未经巴氏消毒的奶做的奶酪须在不低于 35°F（约 1.7°C）下熟成至少 60 天」写进奶酪身份标准（Standard of Identity），这条规则通常追溯到 1949 年；现行的联邦法规 21 CFR 133.113（切达）仍是这样规定的。所以在美国合法销售的生乳奶酪都至少熟成两个月，生乳布里、卡芒贝尔这类短熟成软奶酪不能进口。",
+     "en": "US cheese standards of identity require cheese made from unpasteurised milk to be cured at no less than 35°F (about 1.7°C) for at least 60 days, a rule usually dated to 1949 and still in force, for example in 21 CFR 133.113 for Cheddar. So raw-milk cheese sold legally in the US is at least two months old, and young raw-milk soft cheeses such as raw Brie or Camembert cannot be imported.",
+     "year": "1949（规则起始，通行说法）；现行 21 CFR 133",
+     "num": "≥60 天，≥35°F",
+     "kind": "联邦法规（一手）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "eCFR 21 CFR 133.113 Cheddar cheese",
+       "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.113",
+       "kind": "官方"
+      }
+     ],
+     "note": "条文已核；「1949」年份未找到联邦公报原件，conf 对年份为中。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "政府切达",
+     "name_en": "Government Cheddar",
+     "origin": "英国，1940s–1950s",
+     "what_zh": "战时统一规格、快速出售的切达，用奶效率高、风味单一，是配给年代的「国民奶酪」。",
+     "what_en": "The standardised, quickly sold Cheddar of the ration years: efficient with milk, uniform in flavour."
+    },
+    {
+     "name_zh": "温斯利代尔",
+     "name_en": "Wensleydale",
+     "origin": "英格兰约克郡",
+     "what_zh": "易碎、清爽带酸的牛奶奶酪，战时几近消失的地方奶酪代表。",
+     "what_en": "A crumbly, fresh, lactic cow's milk cheese, the emblem of the regional cheeses that nearly vanished in the war."
+    }
+   ]
   },
   {
    "id": "protection",
@@ -453,7 +934,252 @@
    "cheeses": []
   }
  ],
- "asia": [],
+ "asia": [
+  {
+   "id": "cn-terms",
+   "zh": "中国古代乳制品的几个基本字：「酪」大致是发酵变稠的奶（近似酸奶或凝乳），东汉《说文解字》已收；「酥」是从奶里提出的油脂，近似黄油；「醍醐」原是汉代的词，在佛经汉译里固定为从酥中再提炼出的精油，近似澄清黄油。《汉书》说西北游牧民族「食肉饮酪」。",
+   "en": "The basic Chinese dairy words: lao (酪), thickened fermented milk close to yoghurt or curd, already defined in the Shuowen jiezi (c. AD 100); su (酥), the fat taken from milk, close to butter; and tihu (醍醐), a Han-era word that in Buddhist translation came to mean the oil refined from su, close to clarified butter. The Han shu says the northwestern nomads 'eat meat and drink lao'.",
+   "year": "东汉（约公元 100 年）起",
+   "num": "",
+   "kind": "字书 + 史书 + 佛典",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Jeffrey Kotyk, Milk, Yogurt and Butter in Medieval East Asia: Dairy Products from China to Japan in Medicine and Buddhism, Religions 12(5):302 (2021)",
+     "url": "https://mdpi.com/2077-1444/12/5/302",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "cn-qmys",
+   "zh": "北魏贾思勰《齐民要术》（约 533–544 年）卷六《养羊》专门记录乳品做法：作酪法、作干酪法、作漉酪法、作马酪酵法、抨酥法。其中「干酪」是把酪在太阳下晒出表皮、反复撇取、炒后捏成梨大的团再晒干，「得经数年不坏，以供远行」，是中国古书里最接近硬质奶酪的记载。",
+   "en": "Jia Sixie's Qimin yaoshu (c. 533–544, Northern Wei), Book 6, 'Raising Sheep', sets out dairy methods: making lao, dried lao, strained lao, a mare's-milk starter, and churning su. The 'dried lao' is skimmed repeatedly as a skin forms in the sun, stir-fried, shaped into balls the size of a pear and dried again, so that it 'keeps for years without spoiling, for long journeys', the closest thing to a hard cheese in early Chinese texts.",
+   "year": "约 533–544 年",
+   "num": "团「大如梨许」；「得经数年不坏」",
+   "kind": "农书文献",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "贾思勰《齐民要术》卷六·养羊第五十七（维基文库）",
+     "url": "https://zh.wikisource.org/zh-hans/%E9%BD%8A%E6%B0%91%E8%A6%81%E8%A1%93",
+     "kind": "官方"
+    },
+    {
+     "title": "Chinese Knowledge and Poetry Medieval Library: Qimin yaoshu (table of contents incl. 養羊第五十七)",
+     "url": "https://estrades-app4.huma-num.fr/chiknowpo/en/corpus/technical-knowledge/qmys.html",
+     "kind": "学术"
+    }
+   ],
+   "note": "维基文库卷六本次打不开（url_not_found / 权限超时），作干酪法原文凭记忆；须对照缪启愉《齐民要术校释》核字。"
+  },
+  {
+   "id": "cn-laonu",
+   "zh": "北魏《洛阳伽蓝记》（547 年）记：南朝降将王肃初到北方吃不惯羊肉酪浆，后来被问起茶与酪孰优，答「茗不中，与酪作奴」，此后茶在北魏有了「酪奴」的戏称，可见酪是当时北方上层的日常饮食。",
+   "en": "The Record of Buddhist Monasteries in Luoyang (547) tells how Wang Su, a southern defector, at first could not stomach mutton and lao in the north, and later quipped that tea was not fit even to be lao's slave, so tea was nicknamed 'lao's slave' at the Northern Wei court, a sign that lao was everyday fare among the northern elite.",
+   "year": "547 年成书",
+   "num": "",
+   "kind": "笔记文献",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "杨衒之《洛阳伽蓝记》卷三·城南·报德寺条（王肃「酪奴」事）",
+     "url": "https://zh.wikisource.org/zh-hans/%E9%BD%8A%E6%B0%91%E8%A6%81%E8%A1%93",
+     "kind": "官方"
+    }
+   ],
+   "note": "出处条目凭记忆；URL 仅为维基文库入口占位，须换成《洛阳伽蓝记》卷三原文链接。"
+  },
+  {
+   "id": "cn-tihu",
+   "zh": "佛经《大般涅槃经》以乳制品五个阶段作比喻：「从牛出乳，从乳出酪，从酪出生酥，从生酥出熟酥，从熟酥出醍醐，醍醐最上。」成语「醍醐灌顶」由此而来，常引唐代顾况《行路难》「岂知灌顶有醍醐，能使清凉头不热」。唐初《新修本草》（659 年）说醍醐是从酥中提取的油，一石好酥只得三四升。",
+   "en": "The Mahaparinirvana Sutra uses five stages of dairy as a parable: from the cow comes milk, from milk lao, from lao raw su, from raw su cooked su, and from cooked su tihu, 'tihu is the finest'. The idiom 'tihu poured on the crown' (sudden enlightenment) comes from this, often cited from Gu Kuang's Tang poem 'Hard Travelling'. The Xinxiu bencao (659) describes tihu as oil drawn from su, three or four sheng from a whole shi of good su.",
+   "year": "佛经汉译 5 世纪；《新修本草》659 年",
+   "num": "一石酥得醍醐三四升",
+   "kind": "佛典 + 诗 + 本草",
+   "conf": "中",
+   "alt": "「醍醐灌顶」出处另有一说指敦煌变文《维摩诘经讲经文》。",
+   "sources": [
+    {
+     "title": "Kotyk 2021, Religions 12(5):302 (Xinxiu bencao on tihu)",
+     "url": "https://mdpi.com/2077-1444/12/5/302",
+     "kind": "学术"
+    },
+    {
+     "title": "J-milk 社会文化研究（2012）『涅槃経』「醍醐最上なり」引用",
+     "url": "https://www.j-milk.jp/tool/kenkyu/h4ogb4000000glbf-att/shakai_study2012-02.pdf",
+     "kind": "二手"
+    }
+   ],
+   "note": "涅槃经句与顾况诗句凭记忆，未见原典页面。"
+  },
+  {
+   "id": "cn-tang",
+   "zh": "唐代宫廷和城市里乳制品很常见：有用酥堆成小山、冷冻后装饰的甜点「酥山」，有加果品炖煮的乳饮，还有加乳的饼和面食。唐太宗据说用牛奶煮荜茇治病，可见乳品在唐代也常当作药物。",
+   "en": "Dairy was common at the Tang court and in its cities: su-shan, a chilled dessert of su piled into a little mountain, milk stewed with fruit, and breads and noodles made with milk. Emperor Taizong is said to have taken milk boiled with long pepper as a remedy, showing dairy was also treated as medicine.",
+   "year": "618–907",
+   "num": "",
+   "kind": "史料综述",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Berkshire Encyclopedia of China: Milk and Dairy Products",
+     "url": "https://www.berkshirepublishing.com/blog/milk-and-dairy-products/",
+     "kind": "二手"
+    },
+    {
+     "title": "Kotyk 2021, Religions 12(5):302",
+     "url": "https://mdpi.com/2077-1444/12/5/302",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "cn-qing",
+   "zh": "清代宫廷有自己的奶牛群；张家口一带 1600 多户牧户为朝廷放养约一万只羊、2400 头牛，每年向京城交约 8000 公斤乳制品。晚清北京街头小贩把奶加糖熬浓、冷却后挑担叫卖「酪」，这是北京甜奶酪的前身。",
+   "en": "The Qing palace kept its own dairy herd, and more than 1,600 herding households near Zhangjiakou tended about 10,000 sheep and 2,400 cattle for the court, sending about 8,000 kg of dairy goods to the capital each year. In late-Qing Beijing, street vendors boiled milk down with sugar and sold it chilled from shoulder-pole vats as lao, the forerunner of Beijing's sweet milk custard.",
+   "year": "1644–1911",
+   "num": "1600 余户；约 1 万只羊、2400 头牛；年约 8000 公斤",
+   "kind": "史料综述",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Berkshire Encyclopedia of China: Milk and Dairy Products",
+     "url": "https://www.berkshirepublishing.com/blog/milk-and-dairy-products/",
+     "kind": "二手"
+    }
+   ]
+  },
+  {
+   "id": "cn-yunnan",
+   "zh": "云南有两种中国少见的「真奶酪」：大理洱源县邓川一带白族的乳扇，用加热的酸木瓜水把牛奶点成凝块，拉成薄片缠在竹竿上晾两三天；石林（旧称路南）撒尼人和大理一带的乳饼，多用山羊奶，压成方块，常油煎后蘸椒盐或糖吃。明代《南诏野史》中「酥花乳线浮杯绿」一句常被引作乳扇的早期记载，有人据此推测乳扇元代已有。",
+   "en": "Yunnan has two of China's few true cheeses. Rushan ('milk fans') of the Bai around Dengchuan in Eryuan county, Dali, is milk curdled with hot sour-papaya water, stretched into sheets on bamboo poles and dried for two or three days. Rubing, made by the Sani of Shilin (formerly Lunan) and around Dali, is usually goat's milk pressed into blocks and often pan-fried. A line in the Ming-dynasty Nanzhao yeshi is often cited as an early mention of rushan, leading some to date it to the Yuan.",
+   "year": "明代文献（元代起源为推测）",
+   "num": "晾晒两三日",
+   "kind": "地方文献 + 民族志 + 食品科学",
+   "conf": "中",
+   "alt": "凝乳剂：酸木瓜水（多数资料）；也有资料写作酸浆草/植物叶。",
+   "sources": [
+    {
+     "title": "Xu, Shu & Zhang 2016, 乳扇贮藏期挥发性成分与感官属性的偏最小二乘回归分析, 现代食品科技 32(12):314–320",
+     "url": "https://xdspkj.ijournals.cn/xdspkj/article/pdf/20161248",
+     "kind": "学术"
+    },
+    {
+     "title": "Goldthread: Rubing, China's must-try deep-fried cheese",
+     "url": "https://www.goldthread2.com/food/rubing-chinas-must-try-deep-fried-cheese/article/3111189",
+     "kind": "媒体"
+    },
+    {
+     "title": "Berkshire Encyclopedia of China: Milk and Dairy Products (rushan method)",
+     "url": "https://www.berkshirepublishing.com/blog/milk-and-dairy-products/",
+     "kind": "二手"
+    }
+   ],
+   "note": "《南诏野史》一句的出处来自一篇转载台湾报纸的光明网稿，按站规不引用该稿；需另找方志或学术来源核。路南乳饼「撒尼人」归属凭通行说法。"
+  },
+  {
+   "id": "mn",
+   "zh": "蒙古族的「白食」（查干伊德）以奶为原料：奶皮子（蒙古语 öröm，ᠥᠷᠦᠮ）是把奶慢火熬煮、晾凉后结在表面的厚脂皮；奶豆腐是把发酸的奶（常是撇过奶皮或提过黄油后的酸奶）加热，使凝块析出、压模成块，晾干后可存很久；彻底晒硬的奶干（aaruul）便于牧民随身携带。",
+   "en": "Mongolian 'white foods' (tsagaan idee) are built on milk. Öröm (milk skin) is the thick fatty skin that forms on milk simmered slowly and left to cool; milk tofu is soured milk, often left after skimming or butter-making, heated until the curd separates and pressed into blocks that keep for a long time once dried; fully sun-hardened aaruul is easy for herders to carry.",
+   "year": "",
+   "num": "",
+   "kind": "民族志",
+   "conf": "中",
+   "alt": "奶豆腐的蒙古语名称各地不一：常见 hurud / khuruud（胡乳达）与 bislag / byaslag（毕希拉格，ᠪᠢᠰᠢᠯᠠᠭ）两种叫法，有的地方二者指不同工艺（酸凝 vs. 加酸奶点制）。",
+   "sources": [
+    {
+     "title": "Berkshire Encyclopedia of China: Milk and Dairy Products (milk skin, nai pizi)",
+     "url": "https://www.berkshirepublishing.com/blog/milk-and-dairy-products/",
+     "kind": "二手"
+    }
+   ],
+   "note": "蒙古文转写凭记忆，ᠪᠢᠰᠢᠯᠭ（简报写法）与 ᠪᠢᠰᠢᠯᠠᠭ 拼写需请懂蒙古文者核；本节未找到一手民族志来源。"
+  },
+  {
+   "id": "tibet",
+   "zh": "藏族的曲拉（藏语 ཕྱུར་བ，phyur ba / chura）是打酥油后剩下的脱脂酪乳加热凝结、晒干的碎粒干酪，可直接嚼食、拌糌粑或泡茶；喜马拉雅一带用牦牛奶晒干熏硬的 chhurpi 硬度极高，能含在嘴里几个小时。",
+   "en": "Tibetan chura (phyur ba) is made from the buttermilk left after churning butter, heated until it curdles and then sun-dried into crumbly bits, eaten as is, mixed into tsampa or dropped into tea. In the Himalaya, hard chhurpi, dried and smoked from yak milk, is so hard it can be sucked for hours.",
+   "year": "",
+   "num": "",
+   "kind": "民族志",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Liu et al. 2024, Cell (Tibetan L. kefiranofaciens strains in inland clade) — context only",
+     "url": "https://doi.org/10.1016/j.cell.2024.08.008",
+     "kind": "学术"
+    }
+   ],
+   "note": "曲拉做法凭通行资料，缺专门来源；建议画面方另找藏区乳制品的学术或官方来源补。"
+  },
+  {
+   "id": "jp-so",
+   "zh": "日本古代的「蘇」是把牛奶小火熬煮浓缩到约十分之一而成的乳制品。孝德天皇（645–654 在位）时有渡来人献乳；《续日本纪》记文武天皇四年（700 年）遣使造蘇；平安时代《延喜式》（927 年）规定各国轮流向朝廷「贡蘇」，并写明「牛乳一斗煎得蘇一升」，由典药寮下的乳户管理，主要当作药物。1987 年奈良国立文化财研究所飞鸟资料馆照文献复原了蘇。",
+   "en": "Ancient Japan's so was milk simmered down to about a tenth of its volume. Milk was presented to Emperor Kōtoku (r. 645–654) by an immigrant; the Shoku Nihongi records that in 700 Emperor Monmu sent officials to have so made; and the Engishiki (927) lays down a rota of provinces sending so to court, with the ratio 'one to of milk boiled down to one shō of so', managed by milk households under the Bureau of Medicine and used mainly as medicine. In 1987 the Asuka Historical Museum of the Nara research institute recreated so from the texts.",
+   "year": "645–654；700；927；1987 复原",
+   "num": "奶浓缩到约 1/10（一斗得一升）；小火 7–8 小时",
+   "kind": "史书 + 法典 + 复原实验",
+   "conf": "中",
+   "alt": "说法一：蘇是奶浓缩成的固形物，近似奶酪（日本农林水产省、J-milk 采用）。说法二：蘇是黄油类油脂（Kotyk 2021 译作 butter）。",
+   "sources": [
+    {
+     "title": "農林水産省「うちの郷土料理」：蘇（奈良県）",
+     "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/so.html",
+     "kind": "官方"
+    },
+    {
+     "title": "J-milk 社会文化研究 2012（延喜式「牛乳一斗を煎じ、蘇一升を得る」）",
+     "url": "https://www.j-milk.jp/tool/kenkyu/h4ogb4000000glbf-att/shakai_study2012-02.pdf",
+     "kind": "二手"
+    },
+    {
+     "title": "Kotyk 2021, Religions 12(5):302 (Engi shiki, Bureau of Medicine)",
+     "url": "https://mdpi.com/2077-1444/12/5/302",
+     "kind": "学术"
+    }
+   ],
+   "note": "「700 年遣使造蘇」出自《续日本纪》为通行说法；J-milk PDF 误写为天武天皇且未写书名，需核原文。醍醐天皇之名与「醍醐」同字，可作花絮。"
+  },
+  {
+   "id": "in-paneer",
+   "zh": "印度的 paneer（压制鲜奶酪）和孟加拉的 chhena（酸凝鲜奶酪，做 rasgulla、sandesh 等甜点的原料）都是用酸把热奶点成凝块。来源有两说：一说受 16–17 世纪在孟加拉沿海定居的葡萄牙人影响，食物史家 K. T. Achaya 认为印度教本把「故意破坏」奶视为不洁，葡萄牙人的做法打破了这一禁忌，孟加拉的烟熏 Bandel 奶酪就是葡萄牙遗产；另一说认为 paneer 源于波斯—阿富汗一带，在德里苏丹国与莫卧儿时期成形，「paneer」一词即波斯语的奶酪，此外也有学者引《遮罗迦本集》等古籍认为热酸凝乳在古印度早已存在。",
+   "en": "India's paneer (pressed fresh cheese) and Bengal's chhena (the acid-set curd behind rasgulla and sandesh) are both made by splitting hot milk with acid. There are two accounts of their origin. One credits the Portuguese settled on the Bengal coast in the 16th–17th centuries: the food historian K. T. Achaya argued that Hindu custom held deliberately splitting milk to be impure and that Portuguese practice lifted the taboo; Bengal's smoked Bandel cheese is a Portuguese legacy. The other traces paneer to the Persian–Afghan world, shaped under the Delhi Sultanate and the Mughals, 'paneer' being the Persian word for cheese; some scholars also cite the Charaka Samhita and other early texts for heat-acid curd in ancient India.",
+   "year": "16–17 世纪（葡萄牙说）；德里苏丹国—莫卧儿时期（波斯说）",
+   "num": "",
+   "kind": "食物史学说",
+   "conf": "中",
+   "alt": "说法一：葡萄牙人影响（Achaya）。说法二：波斯—阿富汗传入 / 印度本土古已有之（Mathur、Kumar 等）。",
+   "sources": [
+    {
+     "title": "Scroll.in: on chhena, Bandel cheese and the Portuguese in Bengal (citing K. T. Achaya, Chitra Banerji)",
+     "url": "https://scroll.in/article/745871/scroll_in",
+     "kind": "媒体"
+    },
+    {
+     "title": "Wikipedia: Paneer (history section, as a lead to Mathur, Kumar et al. 2011, Donnelly 2016)",
+     "url": "https://en.wikipedia.org/wiki/Paneer",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "xj-kefir",
+   "zh": "新疆小河墓地 3600 年前的开菲尔奶酪（见青铜时代一节）把中国境内的奶酪实物证据推到青铜时代早期；2024 年的古 DNA 研究认为，今天西藏等内陆东亚的开菲尔乳杆菌菌株可能与这条古老的发酵乳传统同源。",
+   "en": "The 3,600-year-old kefir cheese of Xiaohe in Xinjiang (see the Bronze Age section) puts physical cheese in China back to the early Bronze Age, and the 2024 ancient-DNA study suggests today's inland East Asian kefir bacteria, including Tibetan strains, may descend from that tradition.",
+   "year": "约公元前 1600 年；研究 2014、2024",
+   "num": "",
+   "kind": "实物 + 古 DNA",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Liu et al. 2024, Cell, doi:10.1016/j.cell.2024.08.008",
+     "url": "https://doi.org/10.1016/j.cell.2024.08.008",
+     "kind": "学术"
+    }
+   ]
+  }
+ ],
  "regs": [],
  "quotes": []
 }

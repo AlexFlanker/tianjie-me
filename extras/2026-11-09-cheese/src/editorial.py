@@ -13,7 +13,7 @@ META = dict(
 
 HERO = dict(
     kick=T('号外 · 给 Daisy 与 Sichao', 'Extra · for Daisy & Sichao'),
-    h1=T('奶会坏，<br>奶酪不会。', 'Milk spoils.<br>Cheese keeps.'),
+    h1=T('酪：<br>时间的手艺', 'Lao:<br>The Craft of Time'),
     cta=T('从一只陶罐开始 ↓', 'Start with a pot ↓'),
 )
 

@@ -5,7 +5,12 @@ editorial.py 的条目已直接改在源文件里，这里跳过。SKIP 里列�
 import json, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKIP = {}
-EXTRA = []  # (file, old, new)
+EXTRA = [  # (file, old, new)：11-08 天杰要求「旧金山去哪买」直接以 Daisy 家为出发点
+    ('counter_D.json', '离 CCSF 最近的全食', '离 Daisy 家最近的全食'), ('counter_D.json', '是离 CCSF 最近的独立奶酪店', '是离 Daisy 家最近的独立奶酪店'),
+    ('counter_D.json', '两小时实操课。从 CCSF 走 I-280', '两小时实操课。从 Daisy 家走 I-280'), ('counter_D.json', 'The Whole Foods closest to City College', 'The Whole Foods closest to Daisy’s place'),
+    ('counter_D.json', 'the closest independent cheese shop to City College', 'the closest independent cheese shop to Daisy’s place'),
+    ('counter_D.json', 'From City College it is about 45 miles', 'From Daisy’s place it is about 45 miles'),
+]
 COUNT = {'n': 0}
 
 def _todo():

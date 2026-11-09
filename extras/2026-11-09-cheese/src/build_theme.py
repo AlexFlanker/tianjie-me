@@ -181,7 +181,7 @@ def ch_end():
 def data():
     world, wl = world_data()
     d = dict(meta=dict(title_zh=E.META['title_zh'], title_en=E.META['title_en']), stage=stage_data(), asia=asia_data(), world=world, lenses=dict(world=wl))
-    d.update(make_data()); d.update(taste_data()); cd = counter_data(); d['lenses']['local'] = cd.pop('lenses_local'); d.update(cd)
+    d.update(make_data()); d.update(taste_data()); d.update(counter_data())
     return d
 
 def main():
@@ -256,56 +256,70 @@ def taste_data():
     return dict(spec=spec, fams=fams, flightTip=E.FLIGHT_TIP, wheel=dict(title=E.WHEEL['title'], intro=E.WHEEL['intro'], axes=axes), pairs=dict(kinds=kinds, items=items))
 
 # ---------- 04 柜台 ----------
-ZONES = [('fresh', 2), ('bloomy', 2), ('washed', 2), ('alpine', 2), ('hard', 2), ('blue', 2), ('american', 6)]
+ZONES = ['fresh', 'bloomy', 'washed', 'alpine', 'hard', 'blue', 'american']
 def _by(lst, key='id'): return {x[key]: x for x in lst}
+import math as _m
 
 def ch_counter():
-    S = _by(D['stores'])
-    two = ''.join(f'<div class="board fade"><span class="kick">{bi(k)}</span><h5>{esc(S[sid]["en"])}</h5><ul>' + ''.join(f'<li>{bi(x)}</li>' for x in items) + '</ul></div>' for sid, k, items in E.TWO)
-    LB = _by(D['labels']); RG = _by(A['regs'])
-    dec = ''.join(f'<div class="fade"><b>{bi(t)}</b><p>{bi(T(esc((LB if src_ == "D" else RG)[i]["zh"]), esc((LB if src_ == "D" else RG)[i]["en"])))}</p></div>' for src_, i, t in E.DECODE)
-    BU = _by(D['buying'])
-    buy = ''.join(f'<div class="fade"><b>{bi(t)}</b><p>{bi(T(esc(BU[i]["zh"]), esc(BU[i]["en"])))}</p></div>' for i, t in E.BUY if i in BU)
-    phr = ''.join(f'<div class="fade"><q>{esc(p["en"])}</q><span class="zh">{esc(p["zh"])}</span></div>' for p in D['phrases'])
-    CH_ = _by(D['cheeses'])
-    boards = ''
-    for b in D['boards']:
-        lis = ''.join(f'<li><b>{esc(CH_[it["cheese_id"]]["name"])}</b> · {it["oz"]} oz — {bi(T(esc(it["why_zh"]), esc(it["why_en"])))}</li>' for it in b['items'])
-        boards += (f'<div class="board fade"><span class="kick">${b["budget_usd"]}</span><h5>{bi(T(esc(b["title_zh"]), esc(b["title_en"])))}</h5><ul>{lis}</ul>'
-                   + (f'<p class="small" style="margin:10px 0 0">{bi(T(esc(b["extras_zh"]), esc(b["extras_en"])))}</p>' if b.get('extras_zh') else '')
-                   + (f'<div class="tot">{bi(T(esc(b["total_note_zh"]), esc(b["total_note_en"])))}</div>' if b.get('total_note_zh') else '') + '</div>')
-    SO = _by(D['storage'])
-    store = ''.join(f'<div class="fade"><b>{bi(t)}</b><p>{bi(T(esc(SO[i]["zh"]), esc(SO[i]["en"])))}</p></div>' for i, t in E.STORE if i in SO)
-    r0, r1 = E.CASE_RAIL
     return (f'<section class="ch" id="counter">{plate("counter", "plate-counter")}{lede("counter")}<div class="wide">'
-            f'<div class="sec">{sec_h("THE CASE", E.CASE_HEAD, E.CASE_NOTE)}<div class="counter" id="counter-case"><div class="case fade"><div class="glass"></div><div class="rail2"><span>{bi(r0)}</span><span>{bi(r1)}</span></div></div>'
-            f'<div><div class="zonehead"></div><div class="tags2"></div></div></div></div>'
-            f'<div class="sec">{sec_h("TWO COUNTERS", E.TWO_HEAD)}<div class="boards two">{two}</div></div>'
-            f'<div class="sec">{sec_h("LABELS", E.DECODE_HEAD)}<div class="decode">{dec}</div></div>'
-            f'<div class="sec">{sec_h("ASK", E.BUY_HEAD, E.PHRASE_NOTE)}<div class="phr">{phr}</div><div class="decode" style="margin-top:24px">{buy}</div></div>'
-            f'<div class="sec">{sec_h("BOARDS", E.BOARD_HEAD, E.BOARD_NOTE)}<div class="boards">{boards}</div></div>'
-            f'<div class="sec">{sec_h("AT HOME", E.STORE_HEAD)}<div class="decode">{store}</div></div>'
-            f'<div class="sec">{sec_h("SAN FRANCISCO", E.LOCAL_HEAD, E.LOCAL_NOTE)}<div data-list="local"><div class="lens"></div><div class="list"></div></div></div>'
+            f'<div class="sec">{sec_h("THE CASE", E.CASE_HEAD, E.CASE_NOTE)}<div class="shop" id="case"><div class="zones"></div><div class="shop-in"><div class="pricechart"></div><div class="cheesecard"></div></div></div></div>'
+            f'<div class="sec">{sec_h("THE TAG", E.TAG_HEAD, E.TAG_NOTE)}<div class="tagbox" id="tagbox"><div class="tagpick lens"></div><div class="tag-in"><div class="pricetag"></div><div class="gloss"></div></div></div></div>'
+            f'<div class="sec">{sec_h("ASK", E.ASK_HEAD, E.ASK_NOTE)}<div class="flips" id="flips"></div></div>'
+            f'<div class="sec">{sec_h("BOARD", E.BOARD_HEAD, E.BOARD_NOTE)}<div class="builder" id="builder"><div class="bctl"><div class="bbudget lens"></div><div class="bppl"><span class="small">{bi(T("几个人", "People"))}</span><button type="button" class="chip" data-p="-1" aria-label="−">−</button><b class="pn">4</b><button type="button" class="chip" data-p="1" aria-label="+">+</button></div></div><div class="bbar"></div><div class="bchecks"></div><div class="blist"></div></div></div>'
+            f'<div class="sec">{sec_h("COUNTER TO TABLE", E.PATH_HEAD)}<div class="path" id="path"><div class="prail"></div><div class="pbody"></div></div></div>'
+            f'<div class="sec">{sec_h("FROM DAISY’S", E.WHERE_HEAD, E.WHERE_NOTE)}<div class="where" id="where"><div class="compass"></div><div class="wcard"></div></div><div class="wlegend" id="wlegend"></div></div>'
             '</div></section>')
 
+def _price(s):
+    m = re.findall(r'\d+', s or '')
+    return (int(m[0]), int(m[1])) if len(m) >= 2 else ((int(m[0]), int(m[0])) if m else (None, None))
+
+def _bearing(a, b):
+    la1, lo1, la2, lo2 = map(_m.radians, (a[0], a[1], b[0], b[1]))
+    y = _m.sin(lo2 - lo1) * _m.cos(la2); x = _m.cos(la1) * _m.sin(la2) - _m.sin(la1) * _m.cos(la2) * _m.cos(lo2 - lo1)
+    return round((_m.degrees(_m.atan2(y, x)) + 360) % 360, 1)
+
 def counter_data():
-    Z = _by(D['zones'])
+    Z = _by(D['zones']); CH_ = _by(D['cheeses'])
     cheeses = {}
     for c in D['cheeses']:
+        lo, hi = _price(c.get('price_lb'))
+        milks = [k for k in ('cow', 'goat', 'sheep', 'buffalo') if k in c['milk_en'].lower()]
         cheeses[c['id']] = dict(name=c['name'], zhname=c['name_zh'], fam=c['fam_key'], origin=T(c['origin_zh'], c['origin_en']), labels=c.get('label_tags') or [],
-                                price=c.get('price_lb'), taste=T(c['taste_zh'], c['taste_en']), pair=T(c['pair_zh'], c['pair_en']) if c.get('pair_zh') else None)
-    zones = []
-    for zid, span in ZONES:
-        z = Z[zid]; ids = [c['id'] for c in D['cheeses'] if c.get('zone') == zid]
-        zones.append(dict(id=zid, zh=z['zh'].split('（')[0], en=z['en'], span=span, sub=T(f'{len(ids)} 种', f'{len(ids)} cheeses'), what=T(esc(z['what_zh']), esc(z['what_en'])), cheeses=ids))
+                                lo=lo, hi=hi, taste=T(c['taste_zh'], c['taste_en']), pair=T(c['pair_zh'], c['pair_en']) if c.get('pair_zh') else None,
+                                milks=milks, ca='California' in c['origin_en'])
+    zones = [dict(id=z, zh=E.ZONE_SHORT[z]['zh'], en=E.ZONE_SHORT[z]['en'], what=T(esc(Z[z]['what_zh']), esc(Z[z]['what_en'])),
+                  cheeses=sorted([c['id'] for c in D['cheeses'] if c.get('zone') == z], key=lambda i: (cheeses[i]['lo'] or 0, cheeses[i]['hi'] or 0))) for z in ZONES]
+    # 价签
+    LB, RG, BU = _by(D['labels']), _by(A['regs']), _by(D['buying'])
+    gloss = {}
+    for k, (sr, i, t) in E.GLOSS.items():
+        x = {'D': LB, 'A': RG, 'B': BU}[sr][i]
+        gloss[k] = dict(t=t, zh=esc(x['zh']), en=esc(x['en']))
+    tags = [dict(id=i, name=n, tokens=[dict(w=w, g=g) for w, g in toks], price=pr) for i, n, toks, pr in E.TAGS]
+    # 柜台英文
+    phrases = [dict(en=p['en'], zh=p['zh']) for p in D['phrases']]
+    # 拼盘
+    boards = []
+    for b in D['boards']:
+        boards.append(dict(id=b['id'], budget=b['budget_usd'], title=T(b['title_zh'], b['title_en']), people=b.get('people', 4),
+                           items=[dict(id=it['cheese_id'], oz=it['oz'], why=T(it['why_zh'], it['why_en'])) for it in b['items']],
+                           extras=T(b.get('extras_zh') or '', b.get('extras_en') or '')))
+    # 从柜台到餐桌
+    SO = _by(D['storage'])
+    path = [dict(id=i, t=t, tips=[dict(t=tt, zh=esc((BU if src_ == 'buying' else SO)[k]['zh']), en=esc((BU if src_ == 'buying' else SO)[k]['en'])) for src_, k, tt in tips]) for i, t, tips in E.PATH]
+    shelf = [dict(t=t, a=a, b=b) for t, a, b in E.SHELF]
+    # 去哪买
     loc = []
-    for l in sorted([x for x in D['local'] if x.get('kind') and 'closed' not in (x.get('dist_en') or '')], key=lambda x: x.get('order', 99)):
+    n = 0
+    for l in sorted([x for x in D['local'] if x['id'] in E.PLACES], key=lambda x: E.PLACES[x['id']][0]):
+        n += 1; mins, la, lo = E.PLACES[l['id']]
         addr = E.ADDR.get(l['id']) or T(l['address'], l['address'])
-        facts = [dict(k=T('地址', 'Address'), zh=esc(addr['zh']), en=esc(addr['en'])), dict(k=T('是什么', 'What'), zh=esc(l['what_zh']), en=esc(l['what_en'])),
-                 dict(k=T('适合', 'Best for'), zh=esc(l['best_for_zh']), en=esc(l['best_for_en']))]
-        loc.append(dict(id=l['id'], title=T(l['zh'], l['en']), sub=T(l['dist_zh'], l['dist_en']), one=T(l['best_for_zh'], l['best_for_en']), facts=facts, g=dict(kind=l['kind'], near='all')))
-    lenses = [dict(id='near', zh='由近到远', en='Nearest first', groups=[dict(id='all', zh='从 City College 出发', en='From City College')]),
-              dict(id='kind', zh='按类型', en='By type', groups=[dict(id=k, **n) for k, n in E.LOCAL_KINDS])]
-    return dict(counter=dict(zones=zones, cheeses=cheeses), local=loc, lenses_local=lenses)
+        more = E.PLACE_MORE.get(l['id'], [])
+        loc.append(dict(id=l['id'], n=n, kind=l['kind'], name=T(l['zh'], l['en']), dist=T(l['dist_zh'], l['dist_en']), mins=mins, brg=_bearing(E.HOME, (la, lo)),
+                        addr=addr, what=T(esc(l['what_zh']), esc(l['what_en'])), best=T(esc(l['best_for_zh']), esc(l['best_for_en'])), more=more))
+    kinds = [dict(id=k, **v) for k, v in E.LOCAL_KINDS]
+    return dict(counter=dict(zones=zones, cheeses=cheeses), tags=dict(list=tags, gloss=gloss), phrases=phrases,
+                boards=dict(list=boards, checks=[dict(id=k, **v) for k, v in E.BOARD_CHECKS]), path=dict(list=path, shelf=shelf, shelfHead=E.SHELF_HEAD), where=dict(list=loc, kinds=kinds))
 
 if __name__ == '__main__': main()

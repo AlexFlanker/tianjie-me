@@ -155,52 +155,85 @@ METHOD = T('研究分四路：沿革（考古与文献、东亚乳品、法规�
            'Research ran in four strands: history (archaeology and texts, East Asian dairy, law and the fight over names); craft and flavour (the ten steps, protected-origin specifications for ten cheeses, the flavour wheel, pairing); other ways to keep milk (twenty-three practices, eight principles); and the counter (Whole Foods and Eataly, labels, San Francisco shops). Figures come first from origin specifications (PDO / AOP / PGI), US federal regulations, papers and official statistics, then from university textbooks, trade bodies and major media; low-confidence facts were generally left out. Spectrum positions are estimates from family, age and moisture; the wheel follows Bérodier et al. (1997), with words and compounds from Drake et al. (2001), a few compounds being common attributions. Counter prices are autumn-2026 ranges from public prices and comparable retailers; trust the tag in the store. The finished page was checked line by line.')
 
 # ---------- 04 柜台 ----------
-CH['counter'] = dict(no='04 · COUNTER', h=T('站到柜台前：在旧金山怎么买', 'At the counter: buying cheese in San Francisco'),
-    lede=T('旧金山没有 Eataly，可从 City College 的 Ocean 校区沿 Ocean Ave 走几分钟，就有一家全食（1150 Ocean Avenue），店里配着美国奶酪协会认证的奶酪师（CCP），能现切、能试吃。下面先认柜台分区，再学看价签、开口要一片、按预算配一盘，最后列出城里值得专程去的几家店——以及周末开一个小时去圣克拉拉的 Eataly。',
-           'There is no Eataly in San Francisco, but a few minutes’ walk along Ocean Avenue from City College’s Ocean campus is a Whole Foods (1150 Ocean Avenue) with an American Cheese Society–certified cheese professional on staff, who will cut to order and offer tastes. First the zones of the case, then how to read a label, how to ask for a slice, how to build a board on a budget — and finally the shops in town worth the trip, plus a weekend hour’s drive to Eataly in Santa Clara.'))
-NAV_COUNTER = None
-CASE_HEAD = T('一个奶酪柜，七个区', 'One case, seven zones')
-CASE_NOTE = T('点一个区，右边是这一区常见的几种。价格是 2026 年秋天按公开价与同级别零售价整理的每磅区间，只作参考，以门店价签为准。', 'Tap a zone; on the right are cheeses you will usually find there. Prices are per-pound ranges compiled in autumn 2026 from public prices and comparable retailers — a guide only; trust the tag in the store.')
-CASE_RAIL = (T('柜台后 · 现切', 'Behind the counter · cut to order'), T('靠你这边 · 预切自选', 'Your side · pre-cut, grab and go'))
-TWO_HEAD = T('两种柜台', 'Two kinds of counter')
-DECODE_HEAD = T('看懂价签', 'Reading the label')
-DECODE = [  # (来源, id, 标题)
-    ('D', 'pdo', T('PDO · DOP · AOP', 'PDO · DOP · AOP')), ('D', 'pgi', T('PGI · IGP', 'PGI · IGP')), ('D', 'swiss-aop', T('瑞士 AOP', 'Swiss AOP')),
-    ('D', 'raw-60', T('Raw milk · 生乳', 'Raw milk')), ('D', 'raw-practical', T('所以柜台上……', 'Which is why…')), ('D', 'parmesan-name', T('Parmesan ≠ Parmigiano Reggiano', 'Parmesan ≠ Parmigiano Reggiano')),
-    ('D', 'parm-rind-read', T('帕玛森的针点字皮', 'The pin-dot rind')), ('D', 'aging-marks', T('熟成月数', 'Months of age')), ('A', 'gruyere', T('美国的 Gruyère', 'Gruyère in America')),
-    ('A', 'american', T('American cheese 的法定名', 'What “American cheese” is')), ('A', 'stresa-typical', T('名字分两种', 'Two kinds of names')), ('D', 'label-milk', T('奶源', 'Which milk')),
-    ('D', 'rind', T('皮能不能吃', 'Can you eat the rind?')),
+CH['counter'] = dict(no='04 · COUNTER', h=T('站到奶酪柜前', 'At the cheese counter'),
+    lede=T('全食、Eataly 这类奶酪集中的专柜，第一次站过去容易发懵：几十块奶酪、一排看不懂的缩写、柜台后面还站着一位等你开口的人。其实柜子分几个区，价签上就那么几个词，要一片尝尝是再平常不过的事。下面从柜子里有什么、价签怎么读、怎么开口、怎么配一盘、拿回家怎么放，一路走到从 Daisy 家出发能去哪儿买。',
+           'A dedicated cheese counter — Whole Foods, Eataly and the like — can be bewildering the first time: dozens of cheeses, a row of abbreviations, and someone behind the glass waiting for you to speak. In fact the case falls into a few zones, a tag uses only a handful of words, and asking for a taste is the most normal thing in the world. Below: what is in the case, how to read a tag, what to say, how to build a board, how to keep it at home — and where to go from Daisy’s place.'))
+
+CASE_HEAD = T('柜子里有什么', 'What’s in the case')
+CASE_NOTE = T('点一个区，看这一区常见的几种奶酪一磅大概多少钱；再点一条，看它什么味道、配什么。价格是 2026 年秋天按公开价和同级别零售价整理的区间，以店里的价签为准。',
+              'Pick a zone to see what its usual cheeses cost per pound; tap a bar for taste and pairings. Prices are autumn-2026 ranges from public and comparable retail prices — the tag in the store wins.')
+ZONE_SHORT = {'fresh': T('新鲜 · 拉伸 · 盐水', 'Fresh · stretched · brined'), 'bloomy': T('白霉皮', 'Bloomy rind'), 'washed': T('洗皮', 'Washed rind'), 'alpine': T('阿尔卑斯式', 'Alpine'),
+              'hard': T('硬质 · 刨丝', 'Hard · grating'), 'blue': T('蓝纹', 'Blue'), 'american': T('加州与美国手工', 'California & US artisan')}
+
+TAG_HEAD = T('读一张价签', 'Read a tag')
+TAG_NOTE = T('价签上的每个词都有讲究。换一张，点亮起来的词。这几张是按常见写法排的示例，不是哪家店的实价。', 'Every word on a tag means something. Switch tags and tap the highlighted words. These are typical examples, not real prices from any store.')
+GLOSS = {  # 词 → (来源, id, 标题)
+    'pdo': ('D', 'pdo', T('DOP · AOP · PDO', 'DOP · AOP · PDO')), 'pgi': ('D', 'pgi', T('IGP · PGI', 'IGP · PGI')), 'swiss': ('D', 'swiss-aop', T('瑞士 AOP', 'Swiss AOP')),
+    'raw': ('D', 'raw-60', T('生乳（raw milk）', 'Raw milk')), 'past': ('D', 'raw-practical', T('为什么软的多是巴氏杀菌', 'Why soft cheeses are pasteurized')),
+    'parmesan': ('D', 'parmesan-name', T('Parmesan 不等于 Parmigiano Reggiano', 'Parmesan is not Parmigiano Reggiano')), 'pr': ('D', 'parm-rind-read', T('认针点字皮', 'Find the pin-dot rind')),
+    'months': ('D', 'aging-marks', T('熟成月数', 'Months of age')), 'gruyere-us': ('A', 'gruyere', T('美国产的「Gruyère」', '“Gruyère” made in America')),
+    'american': ('A', 'american', T('American cheese 到底是什么', 'What “American cheese” is')), 'typical': ('A', 'stresa-typical', T('有的名字谁都能用', 'Names anyone may use')),
+    'milk': ('D', 'label-milk', T('奶源写在哪', 'Where the milk is named')), 'rind': ('D', 'rind', T('皮能不能吃', 'Can you eat the rind?')),
+    'lb': ('B', 'cut-to-order', T('按磅卖，按需切', 'Priced by the pound, cut to order')),
+}
+TAGS = [  # (id, 标签名, [(词, gloss 键或 None)], 价格行)
+    ('parm', T('帕玛森', 'Parmigiano'), [('Parmigiano Reggiano', 'pr'), ('DOP', 'pdo'), ('24 months', 'months'), ("raw cow's milk", 'raw'), ('Emilia-Romagna, Italy', None)], '$29.99 / lb'),
+    ('parmesan', T('美国 Parmesan', 'US Parmesan'), [('Parmesan', 'parmesan'), ('Wisconsin', None), ("pasteurized cow's milk", 'past'), ('aged 10 months', None)], '$15.99 / lb'),
+    ('gruyere', T('瑞士格吕耶尔', 'Swiss Gruyère'), [('Le Gruyère', None), ('AOP', 'swiss'), ('Switzerland', None), ("raw cow's milk", 'raw')], '$31.99 / lb'),
+    ('gruyere-us', T('美国 Gruyère', 'US Gruyère'), [('Gruyère', 'gruyere-us'), ('Wisconsin', None), ("cow's milk", None)], '$19.99 / lb'),
+    ('gruyere-fr', T('法国 Gruyère', 'French Gruyère'), [('Gruyère', None), ('IGP', 'pgi'), ('France', None)], '$24.99 / lb'),
+    ('humboldt', T('洪堡雾', 'Humboldt Fog'), [('Humboldt Fog', None), ('California', None), ("pasteurized goat's milk", 'milk'), ('bloomy rind', 'rind')], '$32.99 / lb'),
+    ('camembert', T('卡芒贝尔', 'Camembert'), [('Camembert', 'typical'), ('France', None), ('pasteurized', 'past')], '$9.99 / 8 oz'),
+    ('american', T('American', 'American'), [('American', None), ('pasteurized process cheese', 'american')], '$6.99 / lb'),
 ]
-BUY_HEAD = T('开口要一片', 'Asking for a slice')
-PHRASE_NOTE = T('柜台上用得上的十句英文。', 'Ten lines that work at any counter.')
-BUY = [('say-use', T('先说三件事', 'Say three things first')), ('ask-taste', T('一定要尝', 'Always taste')), ('portion', T('买多少', 'How much')), ('count', T('买几种', 'How many')),
-       ('variety', T('怎么配', 'How to mix')), ('blue-small', T('蓝纹买小块', 'Buy blue small')), ('cut-to-order', T('现切还是预切', 'Cut to order or pre-cut')), ('check-face', T('看切面', 'Check the cut face')),
-       ('parm-piece', T('帕玛森要带皮', 'Parmigiano with rind')), ('buy-small', T('临吃再买', 'Buy close to eating')), ('cut-shape', T('回家怎么切', 'How to cut at home')), ('deal-12days', T('省钱', 'Saving money'))]
-BOARD_HEAD = T('四个人，三种预算', 'Four people, three budgets')
-BOARD_NOTE = T('三盘都用全食常见的品种配（各店货品不同，Ocean Ave 店没有逐样核对），每盘至少一种加州奶酪。价格是估算，饼干、水果另算。', 'All three use cheeses Whole Foods commonly carries (stock varies by store and was not checked item by item at Ocean Ave), each with at least one Californian. Totals are estimates; crackers and fruit extra.')
-STORE_HEAD = T('带回家', 'Taking it home')
-STORE = [('wrap', T('怎么包', 'Wrapping')), ('where', T('放哪', 'Where')), ('fresh', T('新鲜奶酪', 'Fresh cheese')), ('how-long', T('能放多久', 'How long')),
-         ('soft-flip', T('软质翻面', 'Turn soft cheese')), ('mold', T('长了霉', 'If it moulds')), ('freeze', T('冷冻', 'Freezing')), ('rind-save', T('留皮煮汤', 'Save the rind'))]
-LOCAL_HEAD = T('旧金山去哪买', 'Where to buy in San Francisco')
-LOCAL_NOTE = T('从 City College Ocean 校区出发，由近到远。路程是非高峰时段的估计；营业时间、地址出发前请看店家官网。Cowgirl Creamery 在渡轮大厦的店 2021 年已经关了。', 'From City College’s Ocean campus, nearest first. Travel times are off-peak estimates; check each shop’s site for hours before you go. Cowgirl Creamery’s Ferry Building shop closed in 2021.')
-LOCAL_KINDS = [('wholefoods', T('全食超市', 'Whole Foods')), ('shop', T('奶酪店', 'Cheese shops')), ('market', T('市场与超市', 'Markets & grocers')), ('class', T('学', 'Learn')), ('trip', T('周末专程', 'Weekend trip'))]
+
+ASK_HEAD = T('开口要一片', 'Ask for a slice')
+ASK_NOTE = T('柜台后面的人就是来帮你挑的。这十句够用了——点一张翻过来看意思。', 'The person behind the counter is there to help you choose. These ten lines are enough — tap a card to flip it.')
+
+BOARD_HEAD = T('配一盘', 'Build a board')
+BOARD_NOTE = T('选预算和人数，份量按比例算；钱数按每磅价格区间估算，只算奶酪。三盘都用全食常见的品种，每盘至少一种加州奶酪，当天有没有货以店里为准。', 'Pick a budget and a head count; portions scale with it. Cost is estimated from the per-pound ranges and covers cheese only. All three use cheeses Whole Foods commonly stocks, each with at least one Californian; what is in on the day is up to the store.')
+BOARD_CHECKS = [('milk', T('奶源', 'Milks')), ('fam', T('类型', 'Styles')), ('ca', T('加州', 'California'))]
+
+PATH_HEAD = T('从柜台到餐桌', 'From counter to table')
+PATH = [
+    ('plan', T('出门前', 'Before you go'), [('buying', 'say-use', T('先想好三件事', 'Three things to decide')), ('buying', 'count', T('买几种', 'How many')), ('buying', 'portion', T('买多少', 'How much')), ('buying', 'variety', T('怎么搭', 'How to mix'))]),
+    ('counter', T('在柜台', 'At the counter'), [('buying', 'ask-taste', T('一定要尝', 'Always taste')), ('buying', 'cut-to-order', T('现切还是预切', 'Cut to order or pre-cut')), ('buying', 'check-face', T('看切面', 'Check the cut face')),
+                                              ('buying', 'parm-piece', T('帕玛森要带皮', 'Parmigiano with rind')), ('buying', 'blue-small', T('蓝纹买小块', 'Buy blue small'))]),
+    ('home', T('拿回家', 'Getting home'), [('storage', 'wrap', T('怎么包', 'Wrapping')), ('storage', 'where', T('放哪', 'Where')), ('storage', 'fresh', T('新鲜奶酪', 'Fresh cheese')), ('storage', 'soft-flip', T('软质翻面', 'Turn soft cheese'))]),
+    ('serve', T('上桌', 'Serving'), [('buying', 'temp', T('先回温', 'Let it warm up')), ('buying', 'cut-shape', T('怎么切', 'How to cut'))]),
+    ('later', T('剩下的', 'Leftovers'), [('storage', 'how-long', T('能放多久', 'How long')), ('storage', 'mold', T('长了霉', 'If it moulds')), ('storage', 'freeze', T('冷冻', 'Freezing')), ('storage', 'rind-save', T('留皮煮汤', 'Save the rind'))]),
+    ('save', T('省钱', 'Saving'), [('buying', 'buy-small', T('临吃再买', 'Buy close to eating')), ('buying', 'deal-12days', T('12 月打折', 'December deals'))]),
+]
+SHELF = [(T('硬质、半硬（帕玛森、切达、高达、格吕耶尔）', 'Hard & semi-hard (Parmigiano, cheddar, Gouda, Gruyère)'), 21, 28), (T('软质与新鲜（布里、马苏里拉、山羊奶酪、里科塔）', 'Soft & fresh (Brie, mozzarella, chèvre, ricotta)'), 5, 7)]
+SHELF_HEAD = T('开封后大概能放几天', 'Roughly how many days after opening')
+
+WHERE_HEAD = T('从 Daisy 家出发', 'Starting from Daisy’s')
+WHERE_NOTE = T('圆心是 Daisy 家。方向按地址大致摆，远近按非高峰时段的路程估；最外一圈的 Eataly 在一小时外，图上压缩了。营业时间出发前看店家官网。Cowgirl Creamery 渡轮大厦的店 2021 年已经关了。',
+               'Daisy’s place is at the centre. Directions follow the addresses roughly; distance is off-peak travel time. Eataly, on the outer ring, is an hour away and drawn closer than it is. Check opening hours before you go. Cowgirl Creamery’s Ferry Building shop closed in 2021.')
+HOME = (37.7245, -122.4520)
+PLACES = {  # id: (分钟, 纬度, 经度)
+    'wf-ocean': (7, 37.7233, -122.4560), 'cheese-boutique': (7, 37.7337, -122.4337), 'wf-stonestown': (8, 37.7282, -122.4772), 'wf-noe': (12, 37.7515, -122.4318),
+    '24th-street-cheese': (12, 37.7518, -122.4300), 'say-cheese': (15, 37.7662, -122.4503), 'wf-stanyan-market': (15, 37.7690, -122.4530), 'bi-rite': (15, 37.7617, -122.4256),
+    'rainbow': (18, 37.7695, -122.4153), 'la-fromagerie': (20, 37.7590, -122.3880), 'cheese-school': (23, 37.8058, -122.4224), 'cheese-plus': (25, 37.7945, -122.4215),
+    'ferry-plaza': (25, 37.7955, -122.3937), 'eataly-sv-trip': (55, 37.3249, -121.9466),
+}
+LOCAL_KINDS = [('wholefoods', T('全食超市', 'Whole Foods')), ('shop', T('奶酪店', 'Cheese shop')), ('market', T('市场与超市', 'Market & grocer')), ('class', T('学', 'Learn')), ('trip', T('周末专程', 'Weekend trip'))]
 ADDR = {'cheese-boutique': T('Glen Park', 'Glen Park'), 'la-fromagerie': T('Dogpatch · 3rd St', 'Dogpatch · 3rd St'),
         'cheese-school': T('地址与课表以官网为准（Ghirardelli Square 或 Dogpatch）', 'Check the website for the current address and classes (Ghirardelli Square or Dogpatch)'),
         'eataly-sv-trip': T('2855 Stevens Creek Blvd., Santa Clara（Westfield Valley Fair 商场）', '2855 Stevens Creek Blvd., Santa Clara (Westfield Valley Fair)')}
-TWO = [
-    ('wholefoods', T('离 City College 最近', 'Closest to City College'), [
-        T('旧金山市内有 8 家全食。最近的是 Ocean Ave 店（1150 Ocean Avenue），其次是 Stonestown 店（3251 20th Ave）。', 'San Francisco has eight Whole Foods. The closest is on Ocean Avenue (1150 Ocean Avenue), then Stonestown (3251 20th Ave).'),
-        T('全食的奶酪部大量配备美国奶酪协会认证的奶酪师（CCP）。2024 年它在全球 1,000 多名 CCP 中占 370 多名，目标是每家店至少一名；Ocean Ave 店的门店页就列着这项服务，并注明在岗时间要问门店，专程去可以先打电话。', 'Its cheese departments are staffed with American Cheese Society Certified Cheese Professionals: in 2024 it employed 370-plus of the world’s 1,000-plus CCPs, aiming for at least one per store. The Ocean Ave store lists the service on its page, with a note to check with the store for hours, so call ahead if you are making a trip of it.'),
-        T('CCP 按你要的重量或厚度现切，会主动请你尝没吃过的；帕玛森整轮在店里开，用的是 24 个月的轮子。', 'CCPs cut to the weight or thickness you ask for and offer tastes; Parmigiano is cracked in-store from 24-month wheels.'),
-        T('自有品牌 365 的预切块在自选冷柜里，比现切便宜；每年 12 月中旬有「12 Days of Cheese」：2025 年是 12 月 13–24 日，一批精选奶酪 12 天里一直打折（Prime 会员 7 折，非会员 78 折）。', 'Pre-cut 365-brand pieces in the self-serve case cost less than cut-to-order; every December “12 Days of Cheese” discounts a curated set of cheeses (in 2025: Dec 13–24, 30% off with Prime and 22% off without, for all twelve days).'),
-    ]),
-    ('eataly', T('周末专程 · 圣克拉拉', 'Weekend trip · Santa Clara'), [
-        T('旧金山市内没有 Eataly。最近的 Eataly Silicon Valley 在圣克拉拉 Westfield Valley Fair 商场（2855 Stevens Creek Blvd.），2022 年 6 月开业，三层；从 City College 走 I-280 不堵车约一小时。', 'There is no Eataly in San Francisco. The nearest, Eataly Silicon Valley, is at Westfield Valley Fair in Santa Clara (2855 Stevens Creek Blvd.), three floors, opened June 2022 — about an hour from City College via I-280 without traffic.'),
-        T('奶酪和熟肉合成一个「Salumi e Formaggi」现切柜台，营业 8:30–21:00，有多个年份的帕玛森；店员鼓励先尝再买。', 'Cheese and cured meats share one “Salumi e Formaggi” counter, open 8:30–21:00, with Parmigiano at several ages; staff encourage you to taste first.'),
-        T('mozzarella 每天在店里现做，可以看师傅拉伸凝乳；那不勒斯披萨上的水牛 mozzarella 则从意大利进口。', 'Mozzarella is made in-store daily — you can watch the curd being stretched; the buffalo mozzarella on the Neapolitan pizza is imported from Italy.'),
+PLACE_MORE = {
+    'wf-ocean': [
+        T('全食的奶酪部大量配备美国奶酪协会认证的奶酪师（CCP）：2024 年它在全球 1,000 多名 CCP 中占 370 多名，目标是每家店至少一名。Ocean Ave 店的门店页列着这项服务，在岗时间要问门店，专程去可以先打电话。', 'Whole Foods staffs its cheese departments with American Cheese Society Certified Cheese Professionals — 370-plus of the world’s 1,000-plus in 2024, aiming for one per store. The Ocean Ave store lists the service; call ahead to check hours.'),
+        T('CCP 按你要的重量或厚度现切，会主动请你尝没吃过的；帕玛森整轮在店里开，用的是 24 个月的轮子。自有品牌 365 的预切块在自选冷柜里，比现切便宜。', 'CCPs cut to the weight or thickness you ask for and offer tastes; Parmigiano is cracked in-store from 24-month wheels. Pre-cut 365-brand pieces in the self-serve case cost less.'),
+        T('每年 12 月中旬有「12 Days of Cheese」：2025 年是 12 月 13–24 日，一批精选奶酪 12 天里一直打折（Prime 会员 7 折，非会员 78 折）。', '“12 Days of Cheese” runs in mid-December: in 2025, Dec 13–24, a curated set was 30% off with Prime and 22% off without for all twelve days.'),
+    ],
+    'eataly-sv-trip': [
+        T('旧金山市内没有 Eataly。硅谷店 2022 年 6 月开业，三层，在 Westfield Valley Fair 商场里。', 'There is no Eataly in San Francisco. The Silicon Valley store opened in June 2022 on three floors of Westfield Valley Fair.'),
+        T('奶酪和熟肉合成一个「Salumi e Formaggi」现切柜台，营业 8:30–21:00，有多个年份的帕玛森；店员鼓励先尝再买。mozzarella 每天在店里现做，可以看师傅拉伸凝乳。', 'Cheese and cured meats share the “Salumi e Formaggi” counter (8:30–21:00) with Parmigiano at several ages; staff encourage tasting first. Mozzarella is made in-store daily — you can watch it being stretched.'),
         T('店里的烹饪学校 La Scuola 开过「Hands-On: Mozzarella」实操课（最近一期在 2026 年 7 月），两小时，跟主厨一起做。', 'The in-store La Scuola cooking school has run two-hour “Hands-On: Mozzarella” classes with a chef, most recently in July 2026.'),
-    ]),
-]
+    ],
+}
+
 PRIN_TITLES = [T('强度匹配', 'Match intensity'), T('脂肪对单宁', 'Fat versus tannin'), T('甜配咸、配冲', 'Sweet with salty or funky'), T('气泡与酸度清口', 'Bubbles and acid cleanse'),
                T('同乡搭配', 'Grows together, goes together'), T('找桥，或找反差', 'Bridge or contrast'), T('奶酪会「压」红酒', 'Cheese mutes red wine'), T('拿不准时', 'When in doubt')]
 TASTE_TITLES = [T('提前回温', 'Temper first'), T('适饮温度', 'Serving temperature'), T('从淡到浓', 'Mild to strong'), T('看、摸、闻、尝', 'Look, touch, smell, taste'),

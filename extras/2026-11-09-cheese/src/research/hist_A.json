@@ -1,0 +1,459 @@
+{
+ "eras": [
+  {
+   "id": "neolithic",
+   "era_zh": "新石器时代：乳品与凝乳的起源",
+   "era_en": "Neolithic origins",
+   "from": -7000,
+   "to": -3000,
+   "facts": [
+    {
+     "zh": "对近东与东南欧 2200 余件新石器时代陶器的脂质残留分析显示，安纳托利亚西北部（马尔马拉海周边）在公元前 7 千纪已经加工乳品。这类证据只能说明「用奶」，分不出是鲜奶、酸奶还是奶酪。",
+     "en": "Lipid-residue analysis of more than 2,200 Neolithic pots from the Near East and south-eastern Europe shows that milk was being processed in north-western Anatolia (around the Sea of Marmara) in the 7th millennium BC. Such residues show milk use, not which product was made.",
+     "year": "公元前 7 千纪（约前 6500 年）",
+     "num": "2200 余件陶器",
+     "kind": "陶器脂质残留（化学证据）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Evershed et al. 2008, Earliest date for milk use in the Near East and southeastern Europe linked to cattle herding, Nature 455:528–531",
+       "url": "https://www.nature.com/articles/nature07180",
+       "kind": "学术"
+      }
+     ],
+     "note": "nature.com 本次未能打开，数字按论文摘要通行转述；前 6500 年为常见概括，摘要原文写「7th millennium BC」。"
+    },
+    {
+     "zh": "撒哈拉中部利比亚阿卡库斯山区（Takarkori 岩厦）出土陶器中检出乳脂，表明公元前 5 千纪「绿色撒哈拉」时期的牧民已在加工奶。当地岩画里有牛群与挤奶的场面，但岩画本身很难准确断代，所以年代依据是陶器残留。",
+     "en": "Milk fat in pottery from the Takarkori rock shelter in Libya's Acacus Mountains shows herders in the then-green Sahara processing milk in the 5th millennium BC. Rock art in the region shows cattle and milking, but the paintings are hard to date, so the date rests on the pottery residues.",
+     "year": "公元前 5 千纪（约前 5200 年）",
+     "num": "",
+     "kind": "陶器脂质残留 + 岩画（图像证据，难断代）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Dunne et al. 2012, First dairying in green Saharan Africa in the fifth millennium BC, Nature 486:390–394",
+       "url": "https://www.nature.com/articles/nature11186",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "波兰中北部库亚维亚（Kuyavia）地区线纹陶文化（LBK）遗址出土的穿孔陶滤器，内壁检出大量乳脂。研究者认为它们是用来把富含脂肪的凝乳和含乳糖的乳清分开的，这是欧洲制作奶酪最早的直接化学证据。",
+     "en": "Perforated pottery sieves from Linear Pottery (LBK) sites in Kuyavia, north-central Poland, contain abundant milk fat. The authors read them as strainers for separating fatty curds from lactose-rich whey, the earliest direct chemical evidence of cheese making in Europe.",
+     "year": "公元前 6 千纪（媒体通稿称约 7500 年前）",
+     "num": "34 件穿孔陶器、50 个样品",
+     "kind": "陶滤器 + 脂质残留",
+     "conf": "高",
+     "alt": "具体年代区间各处转述不一：通稿「约 7500 年前」≈ 前 5500 年；也常见「约前 5200–4900 年」的写法。",
+     "sources": [
+      {
+       "title": "Salque et al. 2013, Earliest evidence for cheese making in the sixth millennium BC in northern Europe, Nature 493:522–525",
+       "url": "https://www.nature.com/nature/journal/v493/n7433/abs/nature11698.html",
+       "kind": "学术"
+      },
+      {
+       "title": "Live Science: Holy Cow! First Cheesemakers Date Back 7,500 Years (2012-12-12)",
+       "url": "https://www.livescience.com/25472-first-cheesemakers-discovered.html",
+       "kind": "媒体"
+      }
+     ],
+     "note": "Nature 摘要只写「sixth millennium BC」；精确区间未能从原文核到，页面建议写「约 7000–7500 年前」。"
+    },
+    {
+     "zh": "克罗地亚达尔马提亚沿岸 Pokrovnik、Danilo Bitinj 两处新石器遗址的陶器残留显示：约公元前 5700 年最早的压印纹陶里已有奶；约公元前 5200 年，带足的 rhyton 器里检出奶酪、滤器里检出发酵乳品，这是地中海地区已知最早的奶酪证据。",
+     "en": "Pottery residues from the Neolithic sites of Pokrovnik and Danilo Bitinj on Croatia's Dalmatian coast show milk in the earliest Impressed Ware by about 5700 BC, and by about 5200 BC cheese in footed rhyta and fermented dairy in sieves, the earliest cheese evidence known from the Mediterranean.",
+     "year": "约公元前 5200 年（7200 年前）；奶最早约前 5700 年",
+     "num": "",
+     "kind": "陶器脂质残留（单体脂肪酸 δ13C）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "McClure et al. 2018, Fatty acid specific δ13C values reveal earliest Mediterranean cheese production 7,200 years ago, PLOS ONE 13(9): e0202807",
+       "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0202807",
+       "kind": "学术"
+      }
+     ],
+     "note": "已打开 PLOS 页核对：2018-09-05 发表，作者 McClure, Magill, Podrug 等。"
+    },
+    {
+     "zh": "早期农人成年后大多不能消化乳糖。把奶做成奶酪或酸奶，大部分乳糖会随乳清排出或被发酵掉，所以研究者推测：奶酪先于「成年人喝奶」的能力出现，是早期农人吃得下奶的办法。",
+     "en": "Most early farmers could not digest lactose as adults. Turning milk into cheese or yoghurt removes most lactose with the whey or by fermentation, so researchers suggest cheese came before adult milk-drinking and was how early farmers could use milk at all.",
+     "year": "",
+     "num": "",
+     "kind": "推论（遗传学 + 残留证据）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Salque et al. 2013, Nature 493:522–525",
+       "url": "https://www.nature.com/nature/journal/v493/n7433/abs/nature11698.html",
+       "kind": "学术"
+      },
+      {
+       "title": "Live Science (2012) summary",
+       "url": "https://www.livescience.com/25472-first-cheesemakers-discovered.html",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "关于凝乳如何被发现，流传最广的是一个传说：古代旅人用羊或小牛的胃袋装奶赶路，胃壁里的凝乳酶加上体温和颠簸，奶就变成了凝块和乳清。这一说法没有考古证据，属于推测。另一种看法是，人们最早做的是靠乳酸菌自然变酸凝固的鲜奶酪，用凝乳酶是后来的事。",
+     "en": "The best-known story of how curd was discovered is a legend: a traveller carried milk in a sheep's or calf's stomach, and the rennet in its lining, with warmth and jolting, split the milk into curds and whey. There is no archaeological evidence for it. Another view holds that the first cheeses were fresh cheeses set by souring alone, with rennet coming later.",
+     "year": "",
+     "num": "",
+     "kind": "传说 / 推测",
+     "conf": "低",
+     "alt": "说法一：胃袋储奶→偶然酶凝（传说）。说法二：先有自然酸凝的鲜奶酪，酶凝晚出（学界推测）。",
+     "sources": [
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture: A History of Cheese and Its Place in Western Civilization (Chelsea Green, 2012)",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ],
+     "note": "页面上要明确标「传说」。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "酸凝鲜奶酪（推测形态）",
+     "name_en": "Acid-set fresh cheese (inferred)",
+     "origin": "近东 / 欧洲早期农人",
+     "what_zh": "奶自然变酸后凝结，用陶滤器沥去乳清，得到含乳糖很少的软凝乳，现做现吃或加盐延长存放。",
+     "what_en": "Milk soured naturally, drained through pottery sieves into a soft low-lactose curd, eaten fresh or salted to keep."
+    }
+   ]
+  },
+  {
+   "id": "bronze",
+   "era_zh": "青铜时代：埃及、两河、新疆",
+   "era_en": "Bronze Age: Egypt, Mesopotamia, Xinjiang",
+   "from": -3000,
+   "to": -1000,
+   "facts": [
+    {
+     "zh": "伊拉克乌拜德土丘（Tell al-Ubaid）宁胡尔萨格女神庙出土的镶嵌饰带（约公元前 2500 年），描绘了挤奶和在大罐里处理奶的场面，是两河流域乳品加工最著名的图像。",
+     "en": "An inlaid frieze from the temple of Ninhursag at Tell al-Ubaid, Iraq (c. 2500 BC), shows milking and milk being worked in large jars, the best-known Mesopotamian image of dairying.",
+     "year": "约公元前 2500 年",
+     "num": "",
+     "kind": "图像证据（神庙饰带）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 2",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ],
+     "note": "饰带现藏巴格达伊拉克博物馆；饰带画面是否在「做奶酪」还是做黄油存在解读差异。"
+    },
+    {
+     "zh": "乌尔第三王朝（约公元前 2100–2000 年）的苏美尔楔形文字账目中，奶酪（苏美尔语 ga-àr）与黄油一起作为神庙收支物资登记，有成批的数量记录。",
+     "en": "Cuneiform accounts of the Ur III period (c. 2100–2000 BC) list cheese (Sumerian ga-àr) alongside butter as temple income and outgoings, often in bulk quantities.",
+     "year": "约公元前 2100–2000 年",
+     "num": "",
+     "kind": "文献（楔形文字账目）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Paul S. Kindstedt, Cheese and Culture (2012), ch. 2",
+       "url": "https://www.chelseagreen.com/product/cheese-and-culture/",
+       "kind": "二手"
+      }
+     ]
+    },
+    {
+     "zh": "埃及萨卡拉的孟菲斯市长 Ptahmes 墓（第十九王朝，约公元前 13 世纪）出土的破罐中，有一团发白的固态物，蛋白质组学分析认定是用牛奶和绵羊/山羊奶混合做成的奶酪，被称为已知最古老的固态奶酪残留。该墓 1885 年首次发掘后被沙掩埋，2010 年重新找到。",
+     "en": "Broken jars in the Saqqara tomb of Ptahmes, mayor of Memphis (19th Dynasty, 13th century BC), held a whitish solid mass that proteomic analysis identified as cheese made from cow's milk mixed with sheep or goat milk, described as the oldest solid cheese residue known. The tomb, first dug in 1885, was lost to the sand and found again in 2010.",
+     "year": "约公元前 1200 年代（研究发表于 2018 年）",
+     "num": "约 3200 年前",
+     "kind": "实物残留 + 蛋白质组学",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Greco et al. 2018, Proteomic Analyses on an Ancient Egyptian Cheese and Biomolecular Evidence of Brucellosis, Analytical Chemistry, doi:10.1021/acs.analchem.8b02535",
+       "url": "https://pubs.acs.org/doi/10.1021/acs.analchem.8b02535",
+       "kind": "学术"
+      },
+      {
+       "title": "Phys.org: World's oldest cheese found in Egyptian tomb (2018-08)",
+       "url": "https://phys.org/news/2018-08-world-oldest-cheese-egyptian-tomb.html",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "同一份 Ptahmes 墓奶酪样品中还检出布鲁氏菌（Brucella melitensis）的肽段。布鲁氏菌病常由未经消毒的奶制品传播；若得到确认，这将是该病最早的生物分子证据，但作者称这仍是初步结果。",
+     "en": "The Ptahmes sample also yielded peptides of Brucella melitensis. Brucellosis is often spread through unpasteurised dairy; if confirmed, this would be the earliest biomolecular evidence of the disease, though the authors call it preliminary.",
+     "year": "2018",
+     "num": "",
+     "kind": "蛋白质组学（初步）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Greco et al. 2018, Analytical Chemistry",
+       "url": "https://pubs.acs.org/doi/10.1021/acs.analchem.8b02535",
+       "kind": "学术"
+      },
+      {
+       "title": "Phys.org (2018)",
+       "url": "https://phys.org/news/2018-08-world-oldest-cheese-egyptian-tomb.html",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "zh": "新疆罗布泊附近的小河墓地，木乃伊颈部和胸前随葬着块状奶酪。2014 年的蛋白质组学研究认为它是用乳酸菌与酵母（类似开菲尔粒）发酵而成，不用凝乳酶，最早样品约公元前 1615 年。",
+     "en": "At the Xiaohe cemetery near Lop Nur in Xinjiang, lumps of cheese were buried on the necks and chests of mummies. A 2014 proteomic study found it was set by lactic bacteria and yeasts, like kefir grains, without rennet; the oldest sample dates to about 1615 BC.",
+     "year": "约公元前 1615 年（研究发表于 2014 年）",
+     "num": "约 3600 年前",
+     "kind": "实物 + 蛋白质组学",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Yang et al. 2014, Proteomics evidence for kefir dairy in Early Bronze Age China, Journal of Archaeological Science 45:178–186, doi:10.1016/j.jas.2014.02.005",
+       "url": "https://ui.adsabs.harvard.edu/abs/2014JArSc..45..178Y",
+       "kind": "学术"
+      },
+      {
+       "title": "Max Planck Society: The mummy cheese",
+       "url": "https://www.mpg.de/8010087/Bronze-Age-cheese",
+       "kind": "官方"
+      }
+     ],
+     "note": "「前 1615 年」是原论文摘要的写法（凭记忆，ADS 页未显示摘要）；MPG 新闻稿只写「约 4000 年的木乃伊」。"
+    },
+    {
+     "zh": "2024 年中国科学院古脊椎所付巧妹团队在《Cell》发表小河奶酪的古 DNA 研究：三份样品里重建出开菲尔乳杆菌（Lactobacillus kefiranofaciens）和库德里阿兹威毕赤酵母的基因组，牛奶和山羊奶分批使用、不相混合。古菌株位于今天内陆东亚（含西藏）菌株分支的根部。",
+     "en": "In 2024 Fu Qiaomei's team at the Chinese Academy of Sciences published ancient DNA from three Xiaohe cheese samples in Cell, reconstructing genomes of Lactobacillus kefiranofaciens and the yeast Pichia kudriavzevii. Cow and goat milk were used in separate batches, not mixed. The ancient strains sit at the base of the branch of today's inland East Asian (including Tibetan) strains.",
+     "year": "2024-09-25",
+     "num": "3 份样品；约 3600 年前",
+     "kind": "古 DNA",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Liu et al. 2024, Bronze Age cheese reveals human-Lactobacillus interactions over evolutionary history, Cell, doi:10.1016/j.cell.2024.08.008",
+       "url": "https://doi.org/10.1016/j.cell.2024.08.008",
+       "kind": "学术"
+      },
+      {
+       "title": "AZoLifeSciences: Metagenomic Study Reveals the Most Ancient Dairy Remains Known to Date (2024-09-26)",
+       "url": "https://www.azolifesciences.com/news/20240926/Metagenomic-study-reveals-the-most-ancient-dairy-remains-known-to-date.aspx",
+       "kind": "媒体"
+      },
+      {
+       "title": "The Microbiologist: World's oldest cheese found with ancient mummies reveals origins of kefir",
+       "url": "https://www.the-microbiologist.com/news/worlds-oldest-cheese-found-with-ancient-mummies-reveals-origins-of-kefir/4127.article",
+       "kind": "媒体"
+      }
+     ],
+     "note": "媒体对样品年代写 3500 或 3600 年不一；奶源一处报道只写山羊，另一处写牛与山羊分批，取后者需核原文。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "Ptahmes 墓奶酪",
+     "name_en": "Ptahmes tomb cheese",
+     "origin": "埃及萨卡拉，约前 13 世纪",
+     "what_zh": "牛奶与绵羊/山羊奶混合制成的固态奶酪，盛在陶罐里随葬，罐口覆麻布。",
+     "what_en": "A solid cheese of mixed cow and sheep or goat milk, buried in a jar covered with linen."
+    },
+    {
+     "name_zh": "小河开菲尔奶酪",
+     "name_en": "Xiaohe kefir cheese",
+     "origin": "新疆小河墓地，约前 1600 年",
+     "what_zh": "用乳酸菌与酵母共生的「开菲尔粒」发酵凝固，不用凝乳酶，做成小块放在死者颈部和胸前。",
+     "what_en": "Set by a kefir-like culture of lactic bacteria and yeasts, no rennet, placed in lumps on the necks and chests of the dead."
+    }
+   ]
+  },
+  {
+   "id": "classical",
+   "era_zh": "希腊与罗马",
+   "era_en": "Greece and Rome",
+   "from": -800,
+   "to": 476,
+   "facts": [
+    {
+     "zh": "《奥德赛》第九卷里，独眼巨人波吕斐摩斯挤完绵羊和山羊的奶，把一半白奶凝结起来，收进柳条编的筐里存放，另一半盛在器皿里留着晚饭喝。这是西方文学里最早的做奶酪场景。",
+     "en": "In Book 9 of the Odyssey the Cyclops Polyphemus milks his ewes and goats, curdles half the white milk and lays it away in wicker baskets, and keeps the other half in vessels to drink with his supper, the earliest cheese-making scene in Western literature.",
+     "year": "约公元前 8 世纪（史诗成书年代）",
+     "num": "第 9 卷 244–249 行",
+     "kind": "文学文献",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Homer, Odyssey 9.244–249 (A. T. Murray tr., Perseus Digital Library)",
+       "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136:book=9:card=231",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "罗马学者瓦罗在《论农业》（公元前 37 年）里比较三种奶酪：牛奶酪最有营养但最难消化，绵羊奶酪次之，山羊奶酪营养最少而最易消化；他还认为野兔和小山羊的凝乳酶比羔羊的好。",
+     "en": "Varro's On Agriculture (37 BC) ranks cheeses: cow's milk cheese is the most nourishing and hardest to digest, sheep's next, goat's the least nourishing and easiest to digest. He also rates the rennet of hare and kid above that of lamb.",
+     "year": "公元前 37 年",
+     "num": "",
+     "kind": "农书文献",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Varro, De re rustica 2.11 (LacusCurtius)",
+       "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Varro/de_Re_Rustica/2*.html",
+       "kind": "官方"
+      }
+     ],
+     "note": "内容凭对原典的记忆，LacusCurtius 本次打不开，需对照 2.11.3–4 原文。"
+    },
+    {
+     "zh": "科卢梅拉《论农业》第七卷第八章（约公元 60–65 年）记载了完整的奶酪工艺：用羔羊或小山羊的凝乳酶使奶凝结，也可用野蓟花、红花籽或无花果树汁；凝块放进筐或模具沥乳清，压上重物，撒盐晾干。他说压得紧实、充分干燥的奶酪「甚至可以运过海去」。",
+     "en": "Columella's On Agriculture, Book 7, chapter 8 (c. AD 60–65) sets out the whole process: milk is set with the rennet of a lamb or kid, or with wild thistle flowers, safflower seed or fig sap; the curd drains in baskets or moulds, is pressed under weights, salted and dried. Cheese made firm and dry this way, he says, can even be shipped overseas.",
+     "year": "约公元 60–65 年",
+     "num": "第 7 卷第 8 章",
+     "kind": "农书文献",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Columella, De re rustica 7.8 (Latin text, The Latin Library)",
+       "url": "https://www.thelatinlibrary.com/columella/columella.rr7.shtml",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "科卢梅拉还写了两种变化：一种是「手压奶酪」，凝块切开后浇热水、用手捏成形；另一种是把奶酪挂起来用苹果木或麦秆烟熏上色。",
+     "en": "Columella also describes 'hand-pressed' cheese, where the curd is cut, scalded with hot water and shaped by hand, and cheese hung up to be coloured with smoke from apple wood or straw.",
+     "year": "约公元 60–65 年",
+     "num": "",
+     "kind": "农书文献",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Columella, De re rustica 7.8 (Latin text, The Latin Library)",
+       "url": "https://www.thelatinlibrary.com/columella/columella.rr7.shtml",
+       "kind": "官方"
+      }
+     ],
+     "note": "「手压」「烟熏」细节凭记忆，原文页已打开但只核了凝乳酶与「运过海」两句。"
+    },
+    {
+     "zh": "老普林尼《自然史》第十一卷（公元 77 年）列举罗马人心中的名奶酪：最受推崇的来自高卢尼姆（Nemausus）一带的 Lesura 与 Gabalis 村落，但只宜趁鲜吃；阿尔卑斯山、亚平宁山各有名产；伊特鲁里亚与利古里亚交界的卢纳（Luna）奶酪以个头大著称，一只可重达千磅；海外则以小亚细亚比提尼亚的最好。",
+     "en": "Pliny the Elder's Natural History, Book 11 (AD 77), lists the cheeses Rome prized most: those from the Nemausus (Nîmes) province, from the villages of Lesura and Gabalis, though only when fresh; cheeses of the Alps and Apennines; the huge cheeses of Luna on the Etruscan–Ligurian border, up to a thousand pounds each; and, overseas, the cheese of Bithynia.",
+     "year": "公元 77 年",
+     "num": "卢纳奶酪单只重达 1000 罗马磅（约 327 公斤）",
+     "kind": "百科文献",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Pliny the Elder, Natural History 11.97 (Bostock & Riley tr., Perseus Digital Library)",
+       "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0137:book=11:chapter=97",
+       "kind": "官方"
+      }
+     ],
+     "note": "Lesura 一般认作今洛泽尔（Lozère），Gabalis 即热沃当（Gévaudan），今 Roquefort 以东一带；1 罗马磅≈327 克。"
+    },
+    {
+     "zh": "奶酪是罗马士兵的日常口粮之一。据《罗马帝王纪·哈德良传》，哈德良皇帝在军营里与士兵同吃营中伙食，即腌肉、奶酪和掺水的酸酒（posca）。",
+     "en": "Cheese was a staple of the Roman soldier's diet. The Historia Augusta's life of Hadrian says the emperor gladly ate camp food in the open with his troops: bacon, cheese and posca, a sour wine-and-water drink.",
+     "year": "公元 2 世纪（哈德良在位 117–138；文献成书约 4 世纪末）",
+     "num": "",
+     "kind": "史传文献",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Historia Augusta, Life of Hadrian 10.2 (LacusCurtius)",
+       "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Historia_Augusta/Hadrian/1*.html",
+       "kind": "官方"
+      },
+      {
+       "title": "R. W. Davies, The Roman Military Diet, Britannia 2 (1971), cited in Gutteridge, UCSB Undergraduate Journal of History",
+       "url": "https://undergradjournal.history.ucsb.edu/?p=4182",
+       "kind": "二手"
+      }
+     ],
+     "note": "拉丁原句「larido caseo et posca」凭记忆；网上流传的「每名军团兵每天约 27 克奶酪」之类具体配给量未找到可靠出处，不建议上页面。"
+    }
+   ],
+   "cheeses": [
+    {
+     "name_zh": "卢纳奶酪",
+     "name_en": "Caseus Lunensis (Luna cheese)",
+     "origin": "意大利伊特鲁里亚与利古里亚交界的卢纳",
+     "what_zh": "普林尼记载的巨型奶酪，一只重达千磅；诗人马提亚尔（《隽语》13.30）说它印着卢纳城的月亮图样，够仆人吃一千顿午饭。",
+     "what_en": "The giant cheese Pliny describes, up to a thousand pounds; the poet Martial (Epigrams 13.30) says it was stamped with the moon of Luna and would feed your slaves a thousand lunches."
+    },
+    {
+     "name_zh": "尼姆—热沃当奶酪",
+     "name_en": "Cheese of Nemausus (Lesura, Gabalis)",
+     "origin": "高卢南部，今法国洛泽尔—热沃当",
+     "what_zh": "罗马市场上评价最高的高卢奶酪，宜鲜食；常被视作今天中央高原奶酪传统的前身。",
+     "what_en": "The Gaulish cheese most praised in Rome, best eaten fresh; often seen as a forerunner of the Massif Central cheese tradition."
+    },
+    {
+     "name_zh": "罗马绵羊奶酪（Pecorino Romano 的前身之说）",
+     "name_en": "Roman sheep's cheese (claimed ancestor of Pecorino Romano)",
+     "origin": "罗马周边拉齐奥",
+     "what_zh": "硬质咸味绵羊奶酪；今天的 Pecorino Romano 自称延续了这一传统，属于品牌叙事，没有连续的实物证据。",
+     "what_en": "A hard, salty sheep's cheese; today's Pecorino Romano claims to continue it, a heritage story rather than a documented line."
+    }
+   ]
+  },
+  {
+   "id": "medieval",
+   "era_zh": "中世纪：修道院、特许状与集市",
+   "era_en": "Middle Ages: monasteries, charters, markets",
+   "from": 500,
+   "to": 1500,
+   "facts": [],
+   "cheeses": []
+  },
+  {
+   "id": "early-modern",
+   "era_zh": "近世：荷兰贸易与阿尔卑斯合作社",
+   "era_en": "Early modern: Dutch trade and Alpine cooperatives",
+   "from": 1500,
+   "to": 1850,
+   "facts": [],
+   "cheeses": []
+  },
+  {
+   "id": "industrial",
+   "era_zh": "工业化：工厂、发酵剂与凝乳酶",
+   "era_en": "Industrialisation: factories, starters, rennet",
+   "from": 1850,
+   "to": 1939,
+   "facts": [],
+   "cheeses": []
+  },
+  {
+   "id": "war",
+   "era_zh": "战争与标准化",
+   "era_en": "War and standardisation",
+   "from": 1939,
+   "to": 1960,
+   "facts": [],
+   "cheeses": []
+  },
+  {
+   "id": "protection",
+   "era_zh": "原产地保护制度",
+   "era_en": "Protected origin",
+   "from": 1925,
+   "to": 2000,
+   "facts": [],
+   "cheeses": []
+  },
+  {
+   "id": "artisan",
+   "era_zh": "手工复兴与当代格局",
+   "era_en": "Artisan revival and today",
+   "from": 1980,
+   "to": 2026,
+   "facts": [],
+   "cheeses": []
+  }
+ ],
+ "asia": [],
+ "regs": [],
+ "quotes": []
+}

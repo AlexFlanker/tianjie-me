@@ -1,0 +1,1188 @@
+{
+ "items": [
+  {
+   "id": "qurut",
+   "name_zh": "库鲁特（晒干酸奶球）",
+   "name_en": "Qurut / Kurut",
+   "name_local": "qurut / құрт",
+   "region": "中亚（哈萨克斯坦、吉尔吉斯斯坦、乌兹别克斯坦等）",
+   "lat": 42.87,
+   "lon": 74.59,
+   "animal": "牛、羊、山羊",
+   "method": "脱水晒干",
+   "method_also": [
+    "发酵",
+    "加盐"
+   ],
+   "shelf_zh": "晒干后常温可存放一年以上（哈萨克传统做法口径）。",
+   "flavor_zh": "很咸、很酸、很硬，入口像一颗粉笔质感的咸酸奶球，慢慢含化；也用温水泡开煮汤或兑成饮料。",
+   "flavor_en": "Intensely salty, sour and hard, like a chalky ball of salted yogurt that dissolves slowly in the mouth; also crumbled into soups or whisked into a drink with warm water.",
+   "how_zh": "羊奶、山羊奶或牛奶加热后接种酸奶引子发酵，搅出黄油，剩下的酸酪浆（ayran）煮到析出白色凝块，用布包压干，按重量加 2–3% 盐，再捏成 30–40 克的小球或椭圆，日晒 10–15 天。",
+   "how_en": "Sheep, goat or cow milk is heated, soured with a yogurt starter and churned; the leftover sour buttermilk (ayran) is boiled until white curds rise, pressed in cloth, salted at 2–3% by weight, shaped into 30–40 g balls and sun-dried for 10–15 days.",
+   "history": [
+    {
+     "zh": "18 世纪俄国学者伊万·安德烈耶夫记载，哈萨克人用牛奶和羊奶做的 qurt「看上去像晒干的奶酪」；19 世纪的列夫申则记载吉尔吉斯（哈萨克）人把它装在鞍袋里当旅途干粮。",
+     "en": "The 18th-century Russian writer Ivan Andreev noted that Kazakh qurt made from cow and sheep milk 'looks like a dried cheese'; the 19th-century writer Levshin described it as a traveller's food carried in saddlebags.",
+     "year": "18—19 世纪",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Oskenbay M. Fermented Dairy Products in Central Asia: Methods for Making Kazakh Qurt and their Health Benefits. Crossroads 14 (2016) 205–218",
+       "url": "https://www.ostasien-verlag.de/zeitschriften/crossroads/cr/pdf/CR_14_2016_205-218_Oskenbay.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "2022 年一项研究测得发酵沥干后的库鲁特 pH 约 3.7–4.0，并引述其他研究给出的范围为 pH 3.6–4.9。",
+     "en": "A 2022 study measured strained kurut at about pH 3.7–4.0 and cited a reported range of pH 3.6–4.9.",
+     "year": 2022,
+     "num": "pH 3.6–4.9",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Tuganbay A., Yousefvand A., Saris P.E.J. Production of kurut (kurt) using probiotic Lacticaseibacillus rhamnosus GG… Frontiers in Food Science and Technology 2 (2022)",
+       "url": "https://www.frontiersin.org/articles/10.3389/frfst.2022.1045579",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "num": "盐 2–3%（按重量）；日晒 10–15 天；保存 >1 年",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Oskenbay M. Fermented Dairy Products in Central Asia: Methods for Making Kazakh Qurt and their Health Benefits. Crossroads 14 (2016) 205–218",
+     "url": "https://www.ostasien-verlag.de/zeitschriften/crossroads/cr/pdf/CR_14_2016_205-218_Oskenbay.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Tuganbay A., Yousefvand A., Saris P.E.J. Production of kurut (kurt) using probiotic Lacticaseibacillus rhamnosus GG… Frontiers in Food Science and Technology 2 (2022)",
+     "url": "https://www.frontiersin.org/articles/10.3389/frfst.2022.1045579",
+     "kind": "学术"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "aaruul",
+   "name_zh": "阿如勒（蒙古干奶酪块）",
+   "name_en": "Aaruul",
+   "name_local": "ааруул",
+   "region": "蒙古高原",
+   "lat": 47.92,
+   "lon": 106.92,
+   "animal": "牛（亦用牦牛、羊、骆驼）",
+   "method": "脱水晒干",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [
+    {
+     "zh": "鲁布鲁克（1253–1255）记载：蒙古人把牛奶尽量放酸后煮沸，凝块在日光下晒得「硬如铁渣」，装袋过冬；冬天缺奶时再把干凝块放入皮囊加水搅化，当奶喝。",
+     "en": "Rubruck (1253–55) recorded that the Mongols soured milk as far as possible, boiled it, and sun-dried the curd until it was 'as hard as iron slag', storing it in bags for winter; when milk ran short they churned it with water in a skin to drink.",
+     "year": "1253–1255",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
+       "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "同一记载：先撇出的黄油被熬到完全无水，不加盐装进羊胃里过冬——这与南亚 ghee 的原理相同。",
+     "en": "The same account says the skimmed butter was boiled down until completely dry and stored unsalted in sheep's paunches for winter — the same principle as South Asian ghee.",
+     "year": "1253–1255",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
+       "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+       "kind": "官方"
+      }
+     ]
+    }
+   ],
+   "num": "",
+   "conf": "",
+   "sources": [
+    {
+     "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
+     "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+     "kind": "官方"
+    }
+   ],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "airag",
+   "name_zh": "马奶酒（艾日格 / 忽迷思）",
+   "name_en": "Airag / Kumis",
+   "name_local": "айраг / қымыз",
+   "region": "蒙古、哈萨克草原",
+   "lat": 47.5,
+   "lon": 103.0,
+   "animal": "马",
+   "method": "发酵",
+   "method_also": [],
+   "shelf_zh": "传统上随挤随酿、边喝边续，夏秋季节饮用；不是长期储存品，作用是把夏季过剩的马奶转成可饮用、不易坏的酸性低度酒。",
+   "flavor_zh": "酸、微咸、带气泡与轻微酒感，有类似酸奶与青草的气味，口感比牛奶稀薄。",
+   "flavor_en": "Sour, faintly salty, lightly fizzy and boozy, with yogurt-like and grassy notes; thinner than cow's milk.",
+   "how_zh": "把鲜马奶倒入牛皮囊（khokhuur），加入上一批留下的酒底作引子，反复搅打数百次，让乳酸菌和酵母同时发酵，产生酸味、少量酒精和气泡。",
+   "how_en": "Fresh mare's milk is poured into a cowhide bag (khokhuur) holding a starter from the previous batch and churned hundreds of times, so lactic bacteria and yeasts ferment it together into a sour, lightly alcoholic, fizzy drink.",
+   "history": [
+    {
+     "zh": "1253–1255 年出使蒙古的方济各会士鲁布鲁克记载：蒙古人把马奶倒入大皮囊，用中空的棒子搅打，直到起泡、变酸、发酵，称之为 cosmos；贵族喝一种更清澈的「黑马奶」。",
+     "en": "The Franciscan William of Rubruck, travelling to the Mongols in 1253–55, described mare's milk poured into a large skin and churned with a hollow stick until it foamed, soured and fermented into 'cosmos'; nobles drank a clearer 'black cosmos'.",
+     "year": "1253–1255",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
+       "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "2019 年，蒙古「用牛皮囊制作艾日格的传统技艺及相关习俗」列入联合国教科文组织人类非物质文化遗产代表作名录；申报材料称需搅打 500 次以上。",
+     "en": "In 2019 Mongolia's 'Traditional technique of making Airag in Khokhuur and its associated customs' was inscribed on UNESCO's Representative List; the file says the milk is churned more than 500 times.",
+     "year": 2019,
+     "num": "搅打 >500 次",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "UNESCO ICH: Traditional technique of making Airag in Khokhuur and its associated customs (Mongolia, 14.COM, 2019)",
+       "url": "https://ich.unesco.org/en/RL/traditional-technique-of-making-airag-in-khokhuur-and-its-associated-customs-01172?RL=01172",
+       "kind": "官方"
+      }
+     ]
+    }
+   ],
+   "num": "酒精度约 1–3%（口径因做法而异）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "UNESCO ICH: Traditional technique of making Airag in Khokhuur and its associated customs (Mongolia, 14.COM, 2019)",
+     "url": "https://ich.unesco.org/en/RL/traditional-technique-of-making-airag-in-khokhuur-and-its-associated-customs-01172?RL=01172",
+     "kind": "官方"
+    },
+    {
+     "title": "William of Rubruck, The Journey of William of Rubruck to the Eastern Parts of the World, 1253–55 (tr. W. W. Rockhill, 1900), Silk Road Seattle text",
+     "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+     "kind": "官方"
+    }
+   ],
+   "note": "酒精度数待后续文献核实；Botai 马奶脂质证据另条补"
+  },
+  {
+   "id": "chhurpi",
+   "name_zh": "硬曲拉（喜马拉雅硬牦牛奶块）",
+   "name_en": "Hard chhurpi",
+   "name_local": "chhurpi / durkha",
+   "region": "喜马拉雅（尼泊尔东部、锡金、不丹）",
+   "lat": 27.33,
+   "lon": 88.61,
+   "animal": "牦牛、牦牛与黄牛杂交（犏牛）",
+   "method": "脱水晒干",
+   "method_also": [
+    "烟熏"
+   ],
+   "shelf_zh": "充分干燥的硬曲拉可常温放数月至数年；有媒体称装在牦牛皮袋中可存放近二十年（媒体口径，未见实测）。",
+   "flavor_zh": "几乎无水分、极硬，含在嘴里慢慢软化，淡淡奶甜与明显烟熏味，像嚼一块奶味的「石头」；一块可嚼两三个小时。",
+   "flavor_en": "Almost moisture-free and rock-hard; it softens slowly in the mouth, faintly milky-sweet and distinctly smoky. One piece can be chewed for two to three hours.",
+   "how_zh": "牦牛奶或犏牛奶先提出酥油，剩下的脱脂奶 / 酪浆加热凝固，凝块用布包裹挂起沥水、压实成块，切条后用绳串起，挂在灶火上方慢慢烘干熏干数周。",
+   "how_en": "After butter is churned out of yak or yak-cow (chauri) milk, the leftover buttermilk is heated to curdle; the curd is hung in cloth to drain, pressed into a block, cut into pieces, strung up and dried and smoked above the hearth for weeks.",
+   "history": [
+    {
+     "zh": "1986 年的一项尼泊尔研究（Karki）把硬曲拉描述为「立方块状的硬化奶酪，像嚼槟榔一样咬着或嚼着吃」；产区涵盖大吉岭山区、锡金、尼泊尔与不丹。",
+     "en": "A 1986 Nepalese study (Karki) described hard chhurpi as 'a hardened cheese in the form of cubes and consumed by biting or chewing as betel nut'; it is made in the Darjeeling hills, Sikkim, Nepal and Bhutan.",
+     "year": 1986,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "North Bengal University thesis, Chapter 1 (churpi in Darjeeling, Sikkim, Nepal, Bhutan; citing Karki 1986)",
+       "url": "https://ir.nbu.ac.in/bitstream/123456789/1085/5/05_chapter_01.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "今天硬曲拉大量出口到美国等地做狗咬胶；英国《卫报》报道尼泊尔至少有 30 家相关公司，2021–22 年产值约 2200 万美元。",
+     "en": "Hard chhurpi is now exported in bulk as a dog chew; The Guardian reported at least 30 Nepalese dog-chew companies generating about US$22 million in 2021–22.",
+     "year": "2021–22",
+     "num": "约 2200 万美元；≥30 家公司",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "The Better India: History and origin of chhurpi, world's hardest cheese (2023)",
+       "url": "https://www.thebetterindia.com/320476/history-and-origin-of-chhurpi-worlds-hardest-cheese-northeast-india/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "转引自 The Better India，未直接打开《卫报》原文"
+    }
+   ],
+   "num": "一块可嚼 2–3 小时",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "The Better India: History and origin of chhurpi, world's hardest cheese (2023)",
+     "url": "https://www.thebetterindia.com/320476/history-and-origin-of-chhurpi-worlds-hardest-cheese-northeast-india/",
+     "kind": "媒体"
+    },
+    {
+     "title": "North Bengal University thesis, Chapter 1 (churpi in Darjeeling, Sikkim, Nepal, Bhutan; citing Karki 1986)",
+     "url": "https://ir.nbu.ac.in/bitstream/123456789/1085/5/05_chapter_01.pdf",
+     "kind": "学术"
+    }
+   ],
+   "note": "BBC 原文被拦截；做法细节为综合描述，未找到实测水分 / pH 数据"
+  },
+  {
+   "id": "tibetan-butter",
+   "name_zh": "酥油与酥油茶",
+   "name_en": "Tibetan yak butter & butter tea",
+   "name_local": "མར mar / བོད་ཇ་ po cha",
+   "region": "青藏高原",
+   "lat": 29.65,
+   "lon": 91.13,
+   "animal": "牦牛（亦用犏牛）",
+   "method": "其他",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "labneh",
+   "name_zh": "拉布内（滤干酸奶）",
+   "name_en": "Labneh",
+   "name_local": "لبنة labneh",
+   "region": "黎凡特（黎巴嫩、叙利亚、约旦、巴勒斯坦）",
+   "lat": 33.89,
+   "lon": 35.5,
+   "animal": "牛、山羊、绵羊",
+   "method": "发酵",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "kashk",
+   "name_zh": "卡什克（伊朗乳清干）",
+   "name_en": "Kashk",
+   "name_local": "کشک kashk",
+   "region": "伊朗",
+   "lat": 35.69,
+   "lon": 51.39,
+   "animal": "绵羊、山羊、牛",
+   "method": "脱水晒干",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "jameed",
+   "name_zh": "贾米德（约旦盐渍干酸奶）",
+   "name_en": "Jameed",
+   "name_local": "جميد jameed",
+   "region": "约旦（卡拉克等南部地区）",
+   "lat": 31.18,
+   "lon": 35.7,
+   "animal": "绵羊、山羊",
+   "method": "加盐",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [
+    {
+     "zh": "2024 年 ICARDA 等机构对约旦传统 jameed 的检测：总固形物平均 84.57%（73–92%），盐平均 15.68%，酸度平均 6.79%；生产者用盐抑制晒干过程中的过度酸化。",
+     "en": "A 2024 survey of traditional Jordanian jameed by ICARDA and partners found mean total solids of 84.57% (range 73–92%), mean salt of 15.68% and mean acidity of 6.79%; producers rely on salt to keep acidity in check during drying.",
+     "year": 2024,
+     "num": "固形物 84.57%；盐 15.68%",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Hilali M. et al. Nutritional and Food Safety Characteristics of Jameed – A Traditional Dairy Product of Drylands. Applied Sciences 14(2) (2024)",
+       "url": "https://icarda.org/node/18607",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "num": "",
+   "conf": "",
+   "sources": [
+    {
+     "title": "Hilali M. et al. Nutritional and Food Safety Characteristics of Jameed – A Traditional Dairy Product of Drylands. Applied Sciences 14(2) (2024)",
+     "url": "https://icarda.org/node/18607",
+     "kind": "学术"
+    }
+   ],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "smen",
+   "name_zh": "斯门（摩洛哥陈年发酵黄油）",
+   "name_en": "Smen",
+   "name_local": "سمن smen",
+   "region": "摩洛哥及马格里布",
+   "lat": 34.03,
+   "lon": -5.0,
+   "animal": "牛、绵羊、山羊",
+   "method": "加盐",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "ghee",
+   "name_zh": "酥油 / 印度澄清黄油",
+   "name_en": "Ghee",
+   "name_local": "घी ghī",
+   "region": "南亚（印度、巴基斯坦、尼泊尔等）",
+   "lat": 28.61,
+   "lon": 77.21,
+   "animal": "牛、水牛",
+   "method": "澄清熬油",
+   "method_also": [],
+   "shelf_zh": "含水约 0.2%，密封避光常温可存放数月；主要限制是脂肪氧化酸败，而不是细菌。",
+   "flavor_zh": "坚果、焦糖、烤奶的香气，熬制温度越高香味越浓；冷却后呈颗粒状半固体。",
+   "flavor_en": "Nutty, toasty, caramelised-milk aroma that deepens with higher cooking temperatures; sets into a grainy semi-solid when cool.",
+   "how_zh": "传统做法先把牛奶或水牛奶发酵成 dahi（酸奶），搅打出黄油，再在敞口锅里慢火熬煮，蒸干水分；乳蛋白沉底微焦后滤掉，只留金黄透明的乳脂。",
+   "how_en": "Traditionally, cow or buffalo milk is set into dahi (yogurt) and churned into butter, which is simmered in an open pan until the water boils off; the milk solids settle and brown and are strained away, leaving clear golden butterfat.",
+   "history": [
+    {
+     "zh": "酥油（梵语 ghṛta）自吠陀时代起就是火祭（yajña、homa）中投入圣火的供品；《梨俱吠陀》中有专门赞颂酥油的颂诗。",
+     "en": "Ghee (Sanskrit ghṛta) has been the offering poured into the sacred fire in Vedic yajña and homa rituals since the Vedic period; the Rigveda contains a hymn in praise of ghee.",
+     "year": "约前1500—前500（吠陀时代）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Ghee (lead for composition and Vedic ritual use)",
+       "url": "https://en.wikipedia.org/wiki/Ghee",
+       "kind": "百科"
+      }
+     ],
+     "note": "Rigveda 4.58 原文页面未能打开"
+    },
+    {
+     "zh": "阿育吠陀把用草药熬制的酥油称为 ghṛta（药用酥油），作为药物载体；2014 年一项研究发现按传统阿育吠陀方法制得的酥油 DHA 含量显著更高。",
+     "en": "Ayurveda uses herb-infused ghee (ghṛta) as a vehicle for medicines; a 2014 study found significantly higher DHA in ghee made by the traditional Ayurvedic method.",
+     "year": 2014,
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Joshi K.S. Docosahexaenoic acid content is significantly higher in ghrita prepared by traditional Ayurvedic method. J Ayurveda Integr Med 5(2):85–88 (2014)",
+       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4061595",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "num": "含水约 0.2%；烟点约 250 °C",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Sserunjogi M.L., Abrahamsen R.K., Narvhus J. A review paper: current knowledge of ghee and related products. International Dairy Journal 8(8):677–688 (1998)",
+     "url": "https://doi.org/10.1016/S0958-6946(98)00106-X",
+     "kind": "学术"
+    },
+    {
+     "title": "Joshi K.S. Docosahexaenoic acid content is significantly higher in ghrita prepared by traditional Ayurvedic method. J Ayurveda Integr Med 5(2):85–88 (2014)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4061595",
+     "kind": "学术"
+    },
+    {
+     "title": "Wikipedia: Ghee (lead for composition and Vedic ritual use)",
+     "url": "https://en.wikipedia.org/wiki/Ghee",
+     "kind": "百科"
+    }
+   ],
+   "note": "常温保存期口径需看 Sserunjogi 综述原文"
+  },
+  {
+   "id": "khoa",
+   "name_zh": "奶膏（khoa / mawa）",
+   "name_en": "Khoa / Mawa",
+   "name_local": "खोया khoya / मावा mawa",
+   "region": "印度北部",
+   "lat": 27.49,
+   "lon": 77.67,
+   "animal": "水牛、牛",
+   "method": "浓缩加糖",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "skyr",
+   "name_zh": "斯基尔（冰岛）",
+   "name_en": "Skyr",
+   "name_local": "skyr",
+   "region": "冰岛",
+   "lat": 64.15,
+   "lon": -21.94,
+   "animal": "牛（古时也用绵羊）",
+   "method": "发酵",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "viili",
+   "name_zh": "维利与菲尔牛奶（北欧黏丝发酵奶）",
+   "name_en": "Viili & Filmjölk",
+   "name_local": "viili / filmjölk",
+   "region": "芬兰、瑞典",
+   "lat": 60.17,
+   "lon": 24.94,
+   "animal": "牛",
+   "method": "发酵",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "kefir",
+   "name_zh": "开菲尔（高加索）",
+   "name_en": "Kefir",
+   "name_local": "кефир kefir",
+   "region": "北高加索",
+   "lat": 43.35,
+   "lon": 42.44,
+   "animal": "牛、山羊、绵羊",
+   "method": "发酵",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "clotted-cream",
+   "name_zh": "凝脂奶油（英格兰西南）",
+   "name_en": "Clotted cream",
+   "name_local": "clotted cream",
+   "region": "英格兰康沃尔、德文",
+   "lat": 50.26,
+   "lon": -5.05,
+   "animal": "牛",
+   "method": "其他",
+   "method_also": [],
+   "shelf_zh": "冷藏约一至两周（商品口径）；历史上是把易酸的鲜奶油延长数天的办法。",
+   "flavor_zh": "浓厚、坚果般的熟奶香，表皮略带焦黄；质地介于黄油和打发奶油之间，配司康与果酱。",
+   "flavor_en": "Rich, nutty, cooked-milk flavour with a slightly caramelised crust; texture between butter and whipped cream, served with scones and jam.",
+   "how_zh": "全脂牛奶或浓奶油倒进浅盘，用蒸汽或热水浴慢慢加热，再长时间缓慢冷却，奶油浮到表面结成一层带金黄硬皮的厚脂；加热杀死大部分微生物，高脂低水让它比鲜奶油耐放。",
+   "how_en": "Whole milk or cream in shallow pans is heated slowly by steam or water bath, then cooled slowly for many hours; the fat rises into a thick layer with a golden crust. Heating kills most microbes, and the high-fat, low-water clot keeps longer than fresh cream.",
+   "history": [
+    {
+     "zh": "「康沃尔凝脂奶油」1998 年获欧盟原产地名称保护（PDO），要求使用康沃尔所产牛奶、乳脂不低于 55%；脱欧后转入英国本国保护体系。",
+     "en": "'Cornish clotted cream' gained EU Protected Designation of Origin status in 1998, requiring Cornish milk and at least 55% butterfat; after Brexit it moved to the UK scheme.",
+     "year": 1998,
+     "num": "乳脂 ≥55%",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "GOV.UK Protected food name: Cornish Clotted Cream (PDO)",
+       "url": "https://www.gov.uk/protected-food-drink-names/cornish-clotted-cream",
+       "kind": "官方"
+      },
+      {
+       "title": "Commission Regulation (EC) No 2088/98 (registration of Cornish clotted cream PDO)",
+       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31998R2088",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "1579 年斯宾塞的长诗《牧人月历》已提到 clouted cream，1658 年的食谱书《The Compleat Cook》收有做法。",
+     "en": "Edmund Spenser's The Shepheardes Calender (1579) mentions 'clouted cream', and the 1658 cookbook The Compleat Cook gives a recipe.",
+     "year": "1579；1658",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Wikipedia: Clotted cream (lead to Hawker 1881, Davidson Oxford Companion to Food)",
+       "url": "https://en.wikipedia.org/wiki/Clotted_cream",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "zh": "民间传说腓尼基商人来康沃尔贩锡时带来了这种做法——这是传说，并无文献证据。",
+     "en": "Folklore says Phoenician tin traders brought the method to Cornwall; this is legend, not documented history.",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "Wikipedia: Clotted cream (lead to Hawker 1881, Davidson Oxford Companion to Food)",
+       "url": "https://en.wikipedia.org/wiki/Clotted_cream",
+       "kind": "百科"
+      }
+     ],
+     "note": "传说"
+    }
+   ],
+   "num": "乳脂 ≥55%（PDO）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "GOV.UK Protected food name: Cornish Clotted Cream (PDO)",
+     "url": "https://www.gov.uk/protected-food-drink-names/cornish-clotted-cream",
+     "kind": "官方"
+    },
+    {
+     "title": "Commission Regulation (EC) No 2088/98 (registration of Cornish clotted cream PDO)",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31998R2088",
+     "kind": "官方"
+    },
+    {
+     "title": "Wikipedia: Clotted cream (lead to Hawker 1881, Davidson Oxford Companion to Food)",
+     "url": "https://en.wikipedia.org/wiki/Clotted_cream",
+     "kind": "百科"
+    }
+   ],
+   "note": "保存期为一般商品口径，未找到一手标准"
+  },
+  {
+   "id": "bog-butter",
+   "name_zh": "沼泽黄油（爱尔兰）",
+   "name_en": "Bog butter",
+   "name_local": "im portaigh",
+   "region": "爱尔兰（及苏格兰）",
+   "lat": 53.41,
+   "lon": -8.24,
+   "animal": "牛",
+   "method": "其他",
+   "method_also": [],
+   "shelf_zh": "考古出土者已在泥炭中存放数百至三千余年；放射性碳测年显示埋藏传统跨越约公元前1700年至17世纪。",
+   "flavor_zh": "出土物多已变成蜡状、发白的脂肪块，气味被描述为陈年奶酪般的强烈气味；并非供今日食用。",
+   "flavor_en": "Excavated lumps have turned into a pale, waxy fat with a strong, aged-cheese-like smell; not something eaten today.",
+   "how_zh": "把黄油装进木桶、木盒或用树皮、兽皮包裹，埋进泥炭沼泽。沼泽低温、缺氧、偏酸，微生物活动极慢，脂肪得以长期保存。",
+   "how_en": "Butter was packed into wooden kegs or boxes, or wrapped in bark or hide, and buried in peat bogs, whose cold, oxygen-poor, acidic conditions slow microbial activity to a crawl.",
+   "history": [
+    {
+     "zh": "2019 年都柏林大学、布里斯托大学等团队对 32 件爱尔兰沼泽黄油做同位素分析，首次确证其原料是乳脂（而非动物体脂）。",
+     "en": "In 2019 a team from UCD, the University of Bristol and others analysed 32 Irish bog butters and gave the first conclusive evidence that they are dairy fat rather than animal body fat.",
+     "year": 2019,
+     "num": "32 件样本",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Smyth J. et al. Four millennia of dairy surplus and deposition revealed through compound-specific stable isotope analysis and radiocarbon dating of Irish bog butters. Scientific Reports 9:4559 (2019)",
+       "url": "https://www.nature.com/articles/s41598-019-40975-y",
+       "kind": "学术"
+      },
+      {
+       "title": "UCD News: Irish bog butter proven to be 3,500 years past its best before date (2019-03-14)",
+       "url": "https://www.ucd.ie/newsandopinion/news/2019/march/14/irishbogbutterproventobe3500yearspastitsbestbeforedate",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "放射性碳测年显示，最早的一件（韦斯特米斯郡 Knockdrin）约为公元前1745–前1635年；埋藏传统至少延续约3500年，直到17世纪。",
+     "en": "Radiocarbon dating put the oldest sample (Knockdrin, Co. Westmeath) at about 1745–1635 BC, and showed the practice lasting at least 3,500 years, into the 17th century AD.",
+     "year": "约前1700—17世纪",
+     "num": "≥3500 年",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Smyth J. et al. Four millennia of dairy surplus and deposition revealed through compound-specific stable isotope analysis and radiocarbon dating of Irish bog butters. Scientific Reports 9:4559 (2019)",
+       "url": "https://www.nature.com/articles/s41598-019-40975-y",
+       "kind": "学术"
+      },
+      {
+       "title": "UCD News: Irish bog butter proven to be 3,500 years past its best before date (2019-03-14)",
+       "url": "https://www.ucd.ie/newsandopinion/news/2019/march/14/irishbogbutterproventobe3500yearspastitsbestbeforedate",
+       "kind": "官方"
+      }
+     ]
+    },
+    {
+     "zh": "研究者认为埋藏目的不止一种：既可能是储存和保护贵重的乳脂剩余，也可能带有供奉意味——黄油与金器都常见于沼泽埋藏。",
+     "en": "Researchers think there was no single reason: storage and protection of a valuable dairy surplus is likely, and a votive meaning is possible, since butter and gold are both commonly deposited in bogs.",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Smyth J. et al. Four millennia of dairy surplus and deposition revealed through compound-specific stable isotope analysis and radiocarbon dating of Irish bog butters. Scientific Reports 9:4559 (2019)",
+       "url": "https://www.nature.com/articles/s41598-019-40975-y",
+       "kind": "学术"
+      },
+      {
+       "title": "UCD News: Irish bog butter proven to be 3,500 years past its best before date (2019-03-14)",
+       "url": "https://www.ucd.ie/newsandopinion/news/2019/march/14/irishbogbutterproventobe3500yearspastitsbestbeforedate",
+       "kind": "官方"
+      }
+     ],
+     "alt": "储存说与祭祀说并存"
+    }
+   ],
+   "num": "基尔代尔郡 Rosberry 出土的一件重近 13.5 kg（测年约前360–前200年）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Smyth J. et al. Four millennia of dairy surplus and deposition revealed through compound-specific stable isotope analysis and radiocarbon dating of Irish bog butters. Scientific Reports 9:4559 (2019)",
+     "url": "https://www.nature.com/articles/s41598-019-40975-y",
+     "kind": "学术"
+    },
+    {
+     "title": "UCD News: Irish bog butter proven to be 3,500 years past its best before date (2019-03-14)",
+     "url": "https://www.ucd.ie/newsandopinion/news/2019/march/14/irishbogbutterproventobe3500yearspastitsbestbeforedate",
+     "kind": "官方"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": "brunost",
+   "name_zh": "棕奶酪 / 乳清焦糖奶酪（挪威）",
+   "name_en": "Brunost / Mysost",
+   "name_local": "brunost / mysost",
+   "region": "挪威古德布兰河谷",
+   "lat": 61.5,
+   "lon": 10.0,
+   "animal": "牛、山羊（乳清）",
+   "method": "浓缩加糖",
+   "method_also": [],
+   "shelf_zh": "块状棕奶酪水分低于 25%，冷藏可存放数月；可涂抹的 prim 水分在 30% 以上，保存期较短。",
+   "flavor_zh": "焦糖、太妃糖般的甜味，带微咸和乳酸的酸度，山羊乳清版有羊膻香；质地紧实带黏性，常用刨刀刨成薄片放在面包或华夫饼上。",
+   "flavor_en": "Sweet like caramel or fudge with a slight saltiness and tang; goat versions add a goaty note. Dense and slightly sticky, shaved thin with a cheese slicer onto bread or waffles.",
+   "how_zh": "把做奶酪剩下的乳清（常加入牛奶、奶油，山羊乳清版另加羊奶）长时间熬煮，蒸发掉约九成水分；乳清里的乳糖在接近 100 °C 时发生焦糖化 / 美拉德反应变成棕色，快速搅拌冷却后成块。",
+   "how_en": "Whey left over from cheesemaking, often with added milk and cream (goat's milk for geitost), is boiled down until about 90% of the water is gone; near 100 °C the lactose browns through caramelisation and Maillard reactions, and the mass is stirred and cooled quickly into blocks.",
+   "history": [
+    {
+     "zh": "挪威大百科称，棕奶酪类产品在 15 世纪的文献中已有记载。",
+     "en": "Store norske leksikon notes that brown whey products appear in sources from the 1400s.",
+     "year": "15 世纪",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Store norske leksikon: brunost",
+       "url": "https://www.snl.no/brunost",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "zh": "19 世纪 60 年代，古德布兰河谷的挤奶女工 Anne Hov（原姓 Solbrå，1846 年生）在熬乳清时加入奶油，做出更肥厚的「肥奶酪」，后来发展成今天的 Gudbrandsdalsost。",
+     "en": "In the 1860s Anne Hov (née Solbrå, b. 1846), a milkmaid in Gudbrandsdalen, added cream to boiling whey to make a richer 'fat cheese', the ancestor of today's Gudbrandsdalsost.",
+     "year": "1860 年代",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Store norske leksikon: brunost",
+       "url": "https://www.snl.no/brunost",
+       "kind": "百科"
+      },
+      {
+       "title": "Neverdal: Gudbrandsdalsosten og Anne Hov (Otta2000)",
+       "url": "https://www.otta2000.com/Diverse/Gudbrandsdalsost/Gudbrandsdalsost.htm",
+       "kind": "二手"
+      }
+     ],
+     "alt": "多数通俗来源写作 1863 年；挪威大百科只写 1860 年代"
+    },
+    {
+     "zh": "2013 年 1 月，一辆载有 27 吨棕奶酪的卡车在挪威 Tysfjord 的隧道内起火，奶酪中的脂肪和糖使火燃烧了数天。",
+     "en": "In January 2013 a lorry carrying 27 tonnes of brunost caught fire in a tunnel in Tysfjord, Norway; the fat and sugar kept the blaze going for days.",
+     "year": 2013,
+     "num": "27 吨",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "NPR: Burning Cheese Closes Norwegian Road For Days (2013-01-23)",
+       "url": "https://www.npr.org/blogs/thetwo-way/2013/01/23/170057690/burning-cheese-closes-norwegian-road-for-days",
+       "kind": "媒体"
+      }
+     ]
+    }
+   ],
+   "num": "干物质近一半是乳糖；块状水分 <25%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Store norske leksikon: brunost",
+     "url": "https://www.snl.no/brunost",
+     "kind": "百科"
+    },
+    {
+     "title": "Neverdal: Gudbrandsdalsosten og Anne Hov (Otta2000)",
+     "url": "https://www.otta2000.com/Diverse/Gudbrandsdalsost/Gudbrandsdalsost.htm",
+     "kind": "二手"
+    },
+    {
+     "title": "NPR: Burning Cheese Closes Norwegian Road For Days (2013-01-23)",
+     "url": "https://www.npr.org/blogs/thetwo-way/2013/01/23/170057690/burning-cheese-closes-norwegian-road-for-days",
+     "kind": "媒体"
+    }
+   ],
+   "note": "严格说是乳清制品而非凝乳奶酪；糖来自乳糖本身，不另加糖"
+  },
+  {
+   "id": "niter-kibbeh",
+   "name_zh": "尼特基贝（埃塞俄比亚香料澄清黄油）",
+   "name_en": "Niter kibbeh",
+   "name_local": "ንጥር ቅቤ niṭir ḳibē",
+   "region": "埃塞俄比亚",
+   "lat": 9.03,
+   "lon": 38.74,
+   "animal": "牛",
+   "method": "澄清熬油",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "kule-naoto",
+   "name_zh": "炭熏葫芦发酵奶（马赛人 kule naoto、卡伦金人 mursik）",
+   "name_en": "Charcoal-smoked gourd milk (Maasai kule naoto, Kalenjin mursik)",
+   "name_local": "kule naoto / mursik",
+   "region": "肯尼亚裂谷地区（马赛人、卡伦金人）",
+   "lat": 0.52,
+   "lon": 35.27,
+   "animal": "牛",
+   "method": "烟熏",
+   "method_also": [],
+   "shelf_zh": "一般发酵 3–5 天后饮用，可存放数周；有研究引述某些群体的处理奶可放至三个月，波科特人的一种制品据称可放一年以上。",
+   "flavor_zh": "酸、带明显烟熏与木炭味，常呈蓝灰色并夹有黑色炭屑。",
+   "flavor_en": "Sour with a distinct smoky, charcoal flavour, often bluish-grey and flecked with black ash.",
+   "how_zh": "葫芦容器先用特定树木燃烧的枝条熏烤、把炭灰擦在内壁，再倒入牛奶，盖严后在阴凉处自然发酵数天。炭层封住葫芦的孔隙，烟熏抑制杂菌，乳酸菌把奶变酸。",
+   "how_en": "A gourd is smoked with burning sticks of chosen trees and its inside rubbed with the charcoal; milk is then poured in, capped and left to ferment naturally for several days. The charcoal seals the gourd's pores, the smoke suppresses unwanted microbes, and lactic bacteria sour the milk.",
+   "history": [
+    {
+     "zh": "2004 年对 22 份马赛 kule naoto 样本的研究发现，乳酸菌占主导，其中植物乳杆菌约占 60%；15 份样本未检出肠杆菌，这些样本 pH 均低于 4.5。",
+     "en": "A 2004 study of 22 Maasai kule naoto samples found lactic acid bacteria dominant, with Lactobacillus plantarum about 60% of isolates; in 15 samples no Enterobacteriaceae were detected, all with pH below 4.5.",
+     "year": 2004,
+     "num": "22 份样本；植物乳杆菌约 60%；pH<4.5",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Mathara J.M. et al. Isolation, identification and characterisation of the dominant microorganisms of kule naoto: the Maasai traditional fermented milk in Kenya. Int. J. Food Microbiology 94 (2004) 269–278",
+       "url": "https://doi.org/10.1016/j.ijfoodmicro.2004.01.008",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "2000 年对肯尼亚特兰斯-恩佐亚 60 户农户的调查：最常用的熏葫芦树种是 Senna didymobotrya，其次为 Lippia kituiensis、非洲李（Prunus africana）、非洲油橄榄；73% 的受访者提到「保存」是用炭的目的，86% 提到风味。",
+     "en": "A 2000 survey of 60 farmers in Trans-Nzoia, Kenya ranked Senna didymobotrya first among trees used to treat gourds, followed by Lippia kituiensis, Prunus africana and African olive; 73% cited preservation and 86% flavour as reasons.",
+     "year": 2000,
+     "num": "60 户；保存 73%；风味 86%",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Mureithi W. et al. Management of Trees Used in Mursik (Fermented Milk) Production in Trans-Nzoia District, Kenya. Journal of Ethnobiology 20(1):75–91 (2000)",
+       "url": "http://ethnobiology.org/sites/default/files/pdfs/JoE/20-1/Mureithi.pdf",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "同一调查记录的口述史认为这一做法约有 300 年历史。",
+     "en": "Oral history recorded in the same survey dates the practice to about 300 years ago.",
+     "num": "约 300 年（口述）",
+     "conf": "低",
+     "sources": [
+      {
+       "title": "Mureithi W. et al. Management of Trees Used in Mursik (Fermented Milk) Production in Trans-Nzoia District, Kenya. Journal of Ethnobiology 20(1):75–91 (2000)",
+       "url": "http://ethnobiology.org/sites/default/files/pdfs/JoE/20-1/Mureithi.pdf",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "num": "pH<4.5",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Mathara J.M. et al. Isolation, identification and characterisation of the dominant microorganisms of kule naoto: the Maasai traditional fermented milk in Kenya. Int. J. Food Microbiology 94 (2004) 269–278",
+     "url": "https://doi.org/10.1016/j.ijfoodmicro.2004.01.008",
+     "kind": "学术"
+    },
+    {
+     "title": "Mureithi W. et al. Management of Trees Used in Mursik (Fermented Milk) Production in Trans-Nzoia District, Kenya. Journal of Ethnobiology 20(1):75–91 (2000)",
+     "url": "http://ethnobiology.org/sites/default/files/pdfs/JoE/20-1/Mureithi.pdf",
+     "kind": "学术"
+    }
+   ],
+   "note": "原候选为马赛 kule naoto；马赛葫芦炭熏的直接描述较少（Mureithi 文中仅引 Miyamoto 1985），故合并卡伦金 mursik 一起写；保存期口径来自农户自述"
+  },
+  {
+   "id": "dulce-de-leche",
+   "name_zh": "牛奶焦糖酱（dulce de leche / cajeta）",
+   "name_en": "Dulce de leche / Cajeta",
+   "name_local": "dulce de leche / cajeta",
+   "region": "阿根廷、乌拉圭；墨西哥（cajeta）",
+   "lat": -34.6,
+   "lon": -58.38,
+   "animal": "牛；山羊（cajeta）",
+   "method": "浓缩加糖",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "condensed-milk",
+   "name_zh": "炼乳（博登 1856 专利）",
+   "name_en": "Condensed milk",
+   "name_local": "condensed milk",
+   "region": "美国东北部",
+   "lat": 41.8,
+   "lon": -73.12,
+   "animal": "牛",
+   "method": "浓缩加糖",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "在真空锅中低温蒸发鲜奶的大部分水分，再装罐密封；后来普遍加入大量蔗糖做成甜炼乳，靠高糖把水分活度压低，开罐前可常温存放。",
+   "how_en": "Milk is evaporated at low temperature in a vacuum pan and sealed in cans; the later sweetened version adds a large dose of sugar, which lowers water activity enough to keep unopened cans at room temperature.",
+   "history": [
+    {
+     "zh": "1856 年 8 月 19 日，盖尔·博登获美国专利 15,553 号「牛奶浓缩的改进」，要点是在真空中蒸发牛奶、隔绝空气；专利声明产品「不掺糖或其他外来物」。",
+     "en": "On 19 August 1856 Gail Borden Jr. received US Patent 15,553, 'Improvement in Concentration of Milk', for evaporating milk in a vacuum away from air; the claim specifies the product has 'no sugar or other foreign matter mixed with it'.",
+     "year": 1856,
+     "num": "US 15,553",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Borden G. Jr., Improvement in Concentration of Milk, US Patent 15,553 (1856-08-19)",
+       "url": "https://patents.google.com/patent/US15553",
+       "kind": "官方"
+      },
+      {
+       "title": "Handbook of Texas Online: Borden, Gail, Jr.",
+       "url": "https://www.tshaonline.org/handbook/entries/borden-gail-jr",
+       "kind": "学术"
+      }
+     ]
+    },
+    {
+     "zh": "博登 1856、1857 年在康涅狄格开厂均失败，1858 年在纽约金融家杰里迈亚·米尔班克支持下重新开厂；南北战争带来的军需让炼乳生意站稳。",
+     "en": "Borden's Connecticut ventures failed in 1856 and 1857; a new factory backed by New York financier Jeremiah Milbank opened in 1858, and Civil War demand secured the business.",
+     "year": "1856–1865",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Borden G. Jr., Improvement in Concentration of Milk, US Patent 15,553 (1856-08-19)",
+       "url": "https://patents.google.com/patent/US15553",
+       "kind": "官方"
+      },
+      {
+       "title": "Handbook of Texas Online: Borden, Gail, Jr.",
+       "url": "https://www.tshaonline.org/handbook/entries/borden-gail-jr",
+       "kind": "学术"
+      }
+     ]
+    }
+   ],
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Borden G. Jr., Improvement in Concentration of Milk, US Patent 15,553 (1856-08-19)",
+     "url": "https://patents.google.com/patent/US15553",
+     "kind": "官方"
+    },
+    {
+     "title": "Handbook of Texas Online: Borden, Gail, Jr.",
+     "url": "https://www.tshaonline.org/handbook/entries/borden-gail-jr",
+     "kind": "学术"
+    }
+   ],
+   "note": "专利本身是无糖浓缩；甜炼乳加糖比例需另核"
+  },
+  {
+   "id": "milk-powder",
+   "name_zh": "奶粉",
+   "name_en": "Milk powder",
+   "name_local": "milk powder",
+   "region": "全球；最大出口地新西兰",
+   "lat": -37.79,
+   "lon": 175.28,
+   "animal": "牛",
+   "method": "脱水晒干",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "rushan",
+   "name_zh": "乳扇（云南大理）",
+   "name_en": "Rushan",
+   "name_local": "乳扇",
+   "region": "云南大理洱源一带",
+   "lat": 25.69,
+   "lon": 100.16,
+   "animal": "牛",
+   "method": "脱水晒干",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "",
+   "flavor_en": "",
+   "how_zh": "",
+   "how_en": "",
+   "history": [],
+   "num": "",
+   "conf": "",
+   "sources": [],
+   "note": "骨架，待填"
+  },
+  {
+   "id": "so",
+   "name_zh": "蘇（日本古代乳制品）",
+   "name_en": "So (ancient Japanese dairy)",
+   "name_local": "蘇 そ",
+   "region": "日本（奈良—平安时代宫廷）",
+   "lat": 34.69,
+   "lon": 135.8,
+   "animal": "牛",
+   "method": "浓缩加糖",
+   "method_also": [],
+   "shelf_zh": "",
+   "flavor_zh": "焦糖般的米褐色，带乳糖本身的甜味，质地像半干的奶糖或软奶酪。",
+   "flavor_en": "Caramel-coloured with the natural sweetness of lactose; texture somewhere between fudge and a firm cheese.",
+   "how_zh": "把牛奶用极小的火慢慢熬煮 7–8 小时，不让它焦糊，熬到原体积的约十分之一、变得黏稠，倒入木模冷却成块。",
+   "how_en": "Milk is simmered over very low heat for 7–8 hours without scorching until it shrinks to about a tenth of its volume and thickens, then set in a wooden mould.",
+   "history": [
+    {
+     "zh": "蘇最早见于平安时代的法典《延喜式》（927 年成书）和《政事要略》，记载了令各地造蘇、按轮次进贡宫廷的「贡蘇」制度。",
+     "en": "So first appears in the Heian-era law code Engishiki (completed 927) and the Seiji Yōryaku, which describe a 'kōso' system obliging provinces to make so and send it to court in rotation.",
+     "year": 927,
+     "conf": "高",
+     "sources": [
+      {
+       "title": "農林水産省「うちの郷土料理」蘇（奈良県）",
+       "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/so.html",
+       "kind": "官方"
+      },
+      {
+       "title": "J-milk 乳の歴史（日本における乳利用の歴史）",
+       "url": "https://www.j-milk.jp/digitalarchives/download/file/47history5.pdf",
+       "kind": "企业"
+      }
+     ]
+    },
+    {
+     "zh": "蘇是贵族与官人才能吃到的高级品，用于正月宫中佛事与宴会，也作滋补药用；平安末期以后乳利用在日本中断约四百年，直到明治时代才恢复。",
+     "en": "So was a luxury for nobles and officials, served at New Year Buddhist rites and banquets and taken as a restorative; after the late Heian period dairy use vanished from Japan for about four centuries, returning only in the Meiji era.",
+     "year": "8–12 世纪",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "農林水産省「うちの郷土料理」蘇（奈良県）",
+       "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/so.html",
+       "kind": "官方"
+      },
+      {
+       "title": "J-milk 乳の歴史（日本における乳利用の歴史）",
+       "url": "https://www.j-milk.jp/digitalarchives/download/file/47history5.pdf",
+       "kind": "企业"
+      }
+     ]
+    },
+    {
+     "zh": "1987 年奈良国立文化财研究所飞鸟资料馆依文献复原了蘇，此后奈良的牧场将其商品化。",
+     "en": "In 1987 the Asuka Historical Museum of the Nara National Research Institute for Cultural Properties reconstructed so from the texts; a Nara dairy farm later sold it commercially.",
+     "year": 1987,
+     "conf": "高",
+     "sources": [
+      {
+       "title": "農林水産省「うちの郷土料理」蘇（奈良県）",
+       "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/so.html",
+       "kind": "官方"
+      },
+      {
+       "title": "J-milk 乳の歴史（日本における乳利用の歴史）",
+       "url": "https://www.j-milk.jp/digitalarchives/download/file/47history5.pdf",
+       "kind": "企业"
+      }
+     ]
+    }
+   ],
+   "num": "约 10:1 浓缩（复原做法）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "農林水産省「うちの郷土料理」蘇（奈良県）",
+     "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/so.html",
+     "kind": "官方"
+    },
+    {
+     "title": "J-milk 乳の歴史（日本における乳利用の歴史）",
+     "url": "https://www.j-milk.jp/digitalarchives/download/file/47history5.pdf",
+     "kind": "企业"
+    }
+   ],
+   "note": "《续日本纪》700 年遣使造蘇的记载未经一手核实，暂不写入"
+  }
+ ],
+ "methods": [
+  {
+   "id": "acid",
+   "zh": "发酵降 pH",
+   "en": "Lactic acid fermentation",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  },
+  {
+   "id": "alcohol",
+   "zh": "酒精发酵",
+   "en": "Alcoholic fermentation",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  },
+  {
+   "id": "dry",
+   "zh": "脱水 / 晒干",
+   "en": "Drying",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  },
+  {
+   "id": "salt",
+   "zh": "加盐",
+   "en": "Salting",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  },
+  {
+   "id": "fat",
+   "zh": "澄清熬油 / 脂肪隔绝",
+   "en": "Rendering & fat sealing",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  },
+  {
+   "id": "sugar",
+   "zh": "浓缩加糖",
+   "en": "Concentration & sugar",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  },
+  {
+   "id": "smoke",
+   "zh": "烟熏",
+   "en": "Smoking",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  },
+  {
+   "id": "cold",
+   "zh": "低温与埋藏",
+   "en": "Cold & burial",
+   "principle_zh": "",
+   "principle_en": "",
+   "examples": [],
+   "sources": []
+  }
+ ]
+}

@@ -1,0 +1,804 @@
+{
+ "_meta": {
+  "researcher": "B",
+  "status": "in-progress",
+  "updated": "2026-11-08",
+  "note": "steps/styles 每条附 conf 与 sources；styles.process 的数字优先取 PDO/AOP 规范，规范未给的取教科书 / 大学推广资料 / 行业报道，并在 note 里标明。"
+ },
+ "steps": [
+  {
+   "id": "milk",
+   "zh": "选奶与标准化",
+   "en": "Milk selection & standardisation",
+   "what_zh": "选定牛、羊或水牛奶，按目标奶酪调整脂肪与蛋白比例（撇去部分奶油或混合脱脂奶）。切达常把蛋白/脂肪比调到约 0.80，马苏里拉约 1.46。",
+   "what_en": "Choose cow, sheep, goat or buffalo milk and adjust the fat-to-protein ratio (skimming or blending). Cheddar milk is typically standardised to a protein:fat ratio of about 0.80, Mozzarella to about 1.46.",
+   "science_zh": "牛奶约 87% 是水，奶酪主要留住其中的酪蛋白和脂肪。酪蛋白以直径约 100 纳米的胶束存在，由钙和磷酸钙微簇维系；脂肪球被困在凝乳网里，决定成品的脂肪含量与口感。",
+   "science_en": "Cheese concentrates milk's casein and fat. Casein exists as micelles about 100 nm across held together by calcium-phosphate nanoclusters; fat globules are trapped in the curd network and set final fat content and mouthfeel.",
+   "num": "切达奶：脂肪 4.24%、蛋白 3.38%、乳糖 4.85%（P/F 0.80）；马苏里拉奶：脂肪 2.37%、蛋白 3.47%",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "zh": "巴氏杀菌或生乳",
+   "en": "Pasteurisation — or raw milk",
+   "what_zh": "多数工业奶酪先做巴氏杀菌（72°C 保持 15 秒），杀死致病菌和大部分原生菌；不少原产地保护奶酪规定用生乳，例如诺曼底卡芒贝尔的乳不得加热超过 40°C，帕玛森用生乳。",
+   "what_en": "Most industrial cheese milk is pasteurised (72 °C for 15 s), killing pathogens and most native flora. Many PDO cheeses require raw milk: Camembert de Normandie milk may not be heated above 40 °C, Parmigiano Reggiano uses raw milk.",
+   "science_zh": "生乳里的本土乳酸菌和酶会参与熟成，带来更复杂、更有地域差异的风味；杀菌后需要靠添加的发酵剂和辅助菌补回。美国规定生乳奶酪须在不低于 1.7°C 下熟成至少 60 天才能销售。",
+   "science_en": "Native bacteria and enzymes in raw milk take part in ripening and give more complex, place-specific flavour; after pasteurisation that role falls to added starters and adjunct cultures. In the US, raw-milk cheese must be aged at least 60 days at no less than 1.7 °C (35 °F) before sale.",
+   "num": "巴氏杀菌 72°C×15 s（美 161°F×15 s）；Camembert de Normandie 乳加热上限 40°C；美国生乳奶酪 ≥60 天",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "21 CFR 133.3 (definition of pasteurized) & 133.113 Cheddar cheese (eCFR, US FDA)",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.113",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "starter",
+   "zh": "加发酵剂（酸化）",
+   "en": "Adding starter culture (acidification)",
+   "what_zh": "把奶温升到约 30–37°C，加入乳酸菌发酵剂，静置让奶慢慢变酸。中温菌（乳球菌）用于切达、高达、卡芒贝尔；耐热菌（嗜热链球菌、瑞士乳杆菌等）用于帕玛森、埃曼塔、马苏里拉。帕玛森用前一天的天然乳清作发酵剂。",
+   "what_en": "Warm the milk to about 30–37 °C and add lactic acid bacteria, letting the milk slowly acidify. Mesophilic Lactococcus is used for Cheddar, Gouda and Camembert; thermophilic Streptococcus thermophilus and Lactobacillus helveticus for Parmigiano, Emmental and Mozzarella. Parmigiano uses the previous day's naturally fermented whey as starter.",
+   "science_zh": "乳酸菌把乳糖发酵成乳酸，pH 从约 6.6 开始下降。酸度帮助凝乳、抑制杂菌、溶出胶束里的钙，从而决定凝乳的弹性与最终质地；乳糖在帕玛森里 48 小时内就被耗尽。",
+   "science_en": "Lactic acid bacteria ferment lactose to lactic acid and pH starts falling from about 6.6. Acidity aids coagulation, suppresses spoilage organisms and dissolves calcium out of the micelles, which governs curd elasticity and final texture. In Parmigiano Reggiano lactose is gone within the first 48 hours.",
+   "num": "起始 pH ≈6.6；马苏里拉：33°C 加 4% 发酵剂 65 分钟，pH 6.6→6.3",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano – Product guide glossary (Consorzio)",
+     "url": "https://www.parmigianoreggiano.com/product-guide-glossary",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "rennet",
+   "zh": "加凝乳酶",
+   "en": "Adding rennet",
+   "what_zh": "加入凝乳酶（小牛皱胃提取的凝乳酶 chymosin，或微生物 / 发酵生产的同种酶），30–40 分钟内整锅奶凝成像豆腐一样的凝块。",
+   "what_en": "Add rennet (chymosin from calf abomasum, or microbial / fermentation-produced chymosin). Within about 30–40 minutes the whole vat sets into a tofu-like gel.",
+   "science_zh": "凝乳酶专门切断 κ-酪蛋白第 105 位苯丙氨酸与第 106 位甲硫氨酸之间的肽键，切掉胶束表面带负电、起「毛刷」保护作用的糖巨肽。失去保护的副 κ-酪蛋白胶束在钙离子存在下（温度高于约 15°C）互相黏连，形成三维凝胶网。",
+   "science_en": "Chymosin specifically cleaves the Phe105–Met106 bond of κ-casein, shaving off the negatively charged caseinomacropeptide 'hairs' that keep micelles apart. The destabilised para-κ-casein micelles then stick together in the presence of calcium (above about 15 °C) to form a three-dimensional gel.",
+   "num": "切达：32°C，150 mL 凝乳酶 / 1000 L 奶，30–40 分钟；Camembert 规范：凝乳温度 ≤37°C",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "cut",
+   "zh": "凝乳与切割",
+   "en": "Cutting the curd",
+   "what_zh": "用刀架或「琴弦」把凝块切成小块，块越小、排出的乳清越多、奶酪越硬。卡芒贝尔几乎不切（规范最多两刀、间距不小于 2.5 厘米），切达切成约 9 毫米小方块，帕玛森用 spino 打碎到米粒大小。",
+   "what_en": "Cut the gel with knives or a wire harp. Smaller pieces release more whey and make harder cheese. Camembert de Normandie is barely cut (at most two passes, blades ≥2.5 cm apart); Cheddar curd is cut to about 9 mm cubes; Parmigiano curd is broken with the spino to rice-grain size.",
+   "science_zh": "切割增加凝块表面积，启动「脱水收缩」（syneresis）：蛋白网收紧，把水和乳清挤出来。切割大小是控制奶酪含水量的第一个旋钮。",
+   "science_en": "Cutting multiplies surface area and starts syneresis: the protein network contracts and squeezes out whey. Curd size is the first dial for final moisture.",
+   "num": "切达 ≈9 mm；Camembert ≥2.5 cm、最多 2 刀；帕玛森 米粒大",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "cook",
+   "zh": "加热与搅拌",
+   "en": "Cooking & stirring",
+   "what_zh": "一边搅拌一边慢慢加温，让凝乳粒继续出水、变结实。温度越高，奶酪越干越硬：切达约 38°C，高达约 36°C 并「洗凝乳」，埃曼塔约 52–54°C，帕玛森 51–55°C。",
+   "what_en": "Stir while slowly raising the temperature so curd grains keep expelling whey and firm up. Higher temperature means drier, harder cheese: Cheddar about 38 °C, Gouda about 36 °C with curd washing, Emmental about 52–54 °C, Parmigiano 51–55 °C.",
+   "science_zh": "热量与持续产酸共同加速脱水收缩；高温（>50°C）还会筛选掉中温菌、只留下耐热乳酸菌，并使部分凝乳酶失活，这也是超硬奶酪能熟成数年的原因之一。",
+   "science_en": "Heat and ongoing acid production accelerate syneresis. Scalding above about 50 °C selects for thermophilic bacteria and partly inactivates the coagulant, one reason cooked hard cheeses can age for years.",
+   "num": "切达 38°C；帕玛森 51–55°C（低于 60°C 仍算生乳）",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    },
+    {
+     "title": "How does the cheese get its holes? (Emmentaler Switzerland, interprofession)",
+     "url": "https://www.emmentaler.ch/en/how-does-the-cheese-get-its-holes",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "drain",
+   "zh": "排乳清",
+   "en": "Draining the whey",
+   "what_zh": "凝乳粒沉底后放出乳清。每 10 升奶大约只留下 1 公斤左右的奶酪，其余大部分成为乳清（帕玛森约 550 升奶出一只约 40 公斤的轮子）。",
+   "what_en": "Once the grains settle, the whey is run off. Roughly 10 L of milk yields about 1 kg of cheese; the rest leaves as whey (Parmigiano: about 550 L of milk per ~40 kg wheel).",
+   "science_zh": "乳清带走大部分乳糖、乳清蛋白和水溶性矿物质。放乳清时的 pH 决定凝乳里留多少钙：放得早（pH 高）钙多、质地有弹性（如埃曼塔、高达）；放得晚（pH 低）钙少、质地易碎或易拉伸（如切达、菲达）。",
+   "science_en": "Whey removes most lactose, whey proteins and soluble minerals. The pH at drainage sets how much calcium stays in the curd: early drainage (higher pH) leaves more calcium and an elastic body (Emmental, Gouda); late drainage (lower pH) leaves less, giving crumbly or stretchy curd (Cheddar, Feta).",
+   "num": "切达：凝乳进入排乳清带时含水 ≈65%→55%；帕玛森 550 L 奶 / 轮（≈13.8 L/kg）",
+   "conf": "中",
+   "alt": "出品率随品种差异很大：软质奶酪约 6–7 L/kg，帕玛森约 14 L/kg；「10 升出 1 公斤」只是硬质 / 半硬奶酪的常见近似。",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Parmigiano Reggiano – Product guide glossary (Consorzio)",
+     "url": "https://www.parmigianoreggiano.com/product-guide-glossary",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "form",
+   "zh": "成型、堆酿与压榨",
+   "en": "Moulding, cheddaring & pressing",
+   "what_zh": "把凝乳装模。软质奶酪靠自重自然沥水（卡芒贝尔用半球形勺分至少 5 次入模，每次间隔不少于 40 分钟，沥水至少 18 小时）；切达先做「堆酿」（cheddaring）——把凝乳块反复叠压翻面，再「碾碎」（milling）；硬质奶酪最后上压榨机。",
+   "what_en": "Curd goes into moulds. Soft cheeses drain under their own weight (Camembert de Normandie is ladled in at least 5 passes, ≥40 minutes apart, then drains ≥18 hours). Cheddar is first 'cheddared' — slabs stacked and turned — and then milled; hard cheeses are finally pressed.",
+   "science_zh": "堆酿时乳酸继续积累，pH 从约 6.2 降到 5.3–5.4，凝乳失钙后从颗粒状变成像熟鸡胸肉一样的纤维状；压榨把颗粒熔合成整体、挤出残余乳清、定出外形。",
+   "science_en": "During cheddaring acid keeps building, pH dropping from about 6.2 to 5.3–5.4; the demineralised curd turns from granular to fibrous, like cooked chicken breast. Pressing fuses the grains, expels residual whey and sets the shape.",
+   "num": "切达堆酿 pH 6.2→5.3–5.4、含水 55%→≈42%；Camembert 入模 ≥5 次、间隔 ≥40 分钟、沥水 ≥18 h",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "salt",
+   "zh": "加盐或泡盐水",
+   "en": "Salting or brining",
+   "what_zh": "三种方式：碾碎后的凝乳直接拌干盐（切达）、表面抹干盐（卡芒贝尔、洛克福）、整块泡在饱和盐水里（高达、帕玛森约 19–20 天、菲达直接在盐水中保存）。",
+   "what_en": "Three methods: dry-salting milled curd (Cheddar), rubbing salt on the surface (Camembert, Roquefort), or immersing whole cheeses in brine (Gouda; Parmigiano for about 19–20 days; Feta is even stored in brine).",
+   "science_zh": "盐降低水分活度、抑制杂菌、停住乳酸菌的发酵，并调节蛋白酶活性；同时把表层水分抽出，帮助形成外皮。",
+   "science_en": "Salt lowers water activity, controls unwanted microbes, halts starter activity and modulates proteolysis, while drawing moisture from the surface to help form a rind.",
+   "num": "帕玛森盐水约 19–20 天",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    },
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "ripen",
+   "zh": "熟成（翻面、刷洗、穿刺）",
+   "en": "Ripening (turning, washing, piercing)",
+   "what_zh": "在控温控湿的熟成室或洞穴里放置几周到几年，期间定期翻面；洗皮奶酪用盐水或酒反复刷洗，蓝纹奶酪用针穿刺让空气进入，瑞士类奶酪先在暖室里「发孔」。",
+   "what_en": "Cheeses rest for weeks to years in temperature- and humidity-controlled rooms or caves and are turned regularly. Washed-rind cheeses are rubbed with brine or spirits; blue cheeses are pierced to let air in; Swiss-type cheeses spend time in a warm room to form eyes.",
+   "science_zh": "熟成的三条化学主线：①糖酵解——残余乳糖与乳酸被继续代谢；②脂解——脂肪被切出短链脂肪酸，蓝纹里的青霉再把它们变成甲基酮；③蛋白水解——酪蛋白被切成肽和氨基酸，产生鲜味、苦味，久熟后酪氨酸析出成脆脆的白色结晶。",
+   "science_en": "Ripening runs on three pathways: glycolysis (residual lactose and lactate are metabolised), lipolysis (fats release short-chain fatty acids, which blue moulds turn into methyl ketones) and proteolysis (casein is broken into peptides and amino acids, giving savoury and bitter notes; in long-aged cheese tyrosine precipitates as crunchy white crystals).",
+   "num": "帕玛森 ≥12 个月，可见结晶约 18 个月起",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    }
+   ]
+  }
+ ],
+ "styles": [
+  {
+   "id": "parmigiano",
+   "name_zh": "帕玛森（帕尔马干酪）Parmigiano Reggiano",
+   "name_en": "Parmigiano Reggiano PDO",
+   "family": "extra-hard",
+   "origin": "意大利艾米利亚-罗马涅与伦巴第（帕尔马、雷焦艾米利亚、摩德纳、博洛尼亚以西、曼托瓦以南）",
+   "milk": "牛奶，生乳，部分脱脂（晚奶自然上浮撇脂后与早奶混合）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": ">=18（存放下限）",
+     "time": "挤奶后 2 小时内送达",
+     "ph": null,
+     "note_zh": "晚奶在开口钢槽里静置，奶油自然上浮后撇去，次晨与全脂早奶混合；乳不得冷到 18°C 以下。",
+     "note_en": "Evening milk rests in open vats so cream rises and is skimmed; it is mixed with whole morning milk. Milk may not be cooled below 18 °C."
+    },
+    {
+     "step": "heat",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "不杀菌（生乳）。煮凝乳最高约 55°C，仍低于巴氏杀菌温度。",
+     "note_en": "No pasteurisation (raw milk); the curd is cooked to about 55 °C, still below pasteurising conditions."
+    },
+    {
+     "step": "starter",
+     "temp_c": "36–37",
+     "time": null,
+     "ph": null,
+     "note_zh": "加入前一天天然发酵的乳清作发酵剂（siero-innesto），每锅约 27–30 升；规范禁止添加其他菌种。",
+     "note_en": "Starter is the previous day's naturally fermented whey (siero-innesto), about 27–30 L per vat; other cultures are banned."
+    },
+    {
+     "step": "rennet",
+     "temp_c": "36–37",
+     "time": "约 7–8 分钟成凝块",
+     "ph": null,
+     "note_zh": "只许用小牛凝乳酶，在倒钟形铜锅中进行，每锅约 1100 升奶。",
+     "note_en": "Calf rennet only, in inverted-bell copper vats holding about 1,100 L."
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "用 spino（带球头的打碎器）把凝块打碎成米粒大小。",
+     "note_en": "The curd is broken with the spino to rice-grain size."
+    },
+    {
+     "step": "cook",
+     "temp_c": "51–55",
+     "time": null,
+     "ph": null,
+     "note_zh": "边搅拌边加热，凝乳粒脱水收紧。",
+     "note_en": "Stirred and heated; the grains firm and expel whey."
+    },
+    {
+     "step": "drain",
+     "temp_c": null,
+     "time": "锅底静置约 1 小时",
+     "ph": null,
+     "note_zh": "凝乳粒沉到锅底聚成一团，用布兜起，一切为二，成为一对「双胞胎」（gemelle）。",
+     "note_en": "Grains settle into a mass at the bottom, are lifted in cloth and cut in two — the 'twins'."
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": "约 3 天",
+     "ph": null,
+     "note_zh": "先入直模 1 天、塑料印模 1 夜（压上产地点阵字样与编号），再入不锈钢模 2 天定形。",
+     "note_en": "One day in a straight mould, a night in a plastic matrix that imprints the dotted name and dairy number, then two days in steel moulds."
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": "约 19–20 天",
+     "ph": null,
+     "note_zh": "整轮浸泡在饱和盐水中。",
+     "note_en": "Whole wheels soak in saturated brine."
+    },
+    {
+     "step": "ripen",
+     "temp_c": ">=16（夏季库温下限）",
+     "time": "最少 12 个月（常见 24 个月）",
+     "ph": null,
+     "note_zh": "约每 10 天翻面一次；满 12 个月由协会专家用小锤敲击检验后打火印。18 月可得 Export、24 月可得 Premium 标识。",
+     "note_en": "Turned about every 10 days; at 12 months consortium experts test each wheel with a hammer before fire-branding. 'Export' from 18 months, 'Premium' from 24."
+    }
+   ],
+   "age": "最少 12 个月（规范，自成型起算）；常见 24 个月；协会描述口径：12–19 个月 delicato、约 20–26 个月 armonico、约 27–34 个月 aromatico、约 35–45 个月 intenso",
+   "moisture_pct": "≈30（成品常见值；规范只给擦碎产品 25–35%）",
+   "fat_pct": "脂肪占干物质 ≥32%（规范）；总脂肪 ≈26–29（常见值）",
+   "microbes_zh": "天然乳清发酵剂中的耐热乳杆菌（瑞士乳杆菌、德氏乳杆菌乳酸亚种等）与嗜热链球菌，熟成期非发酵剂乳杆菌",
+   "flavor_zh": "咸鲜、坚果、熟牛奶与黄油，久熟后带菠萝 / 干果香和肉汤味",
+   "flavor_en": "Savoury-salty, nutty, cooked milk and butter; with age, pineapple-like fruitiness, dried fruit and broth.",
+   "texture_zh": "致密、颗粒状，片状碎裂，内有酪氨酸等白色小结晶（约 18 个月起明显）",
+   "conf": "高",
+   "note": "铜锅形状：规范原文写「troncoconiche」（截锥形），通称倒钟形；温度、成型、盐水天数取自 FoodNavigator 对 Ciaolatte 乳品厂的报道（协会人员受访），规范未写具体温度与盐水天数。",
+   "sources": [
+    {
+     "title": "Disciplinare di produzione della DOP Parmigiano Reggiano (Consorzio del Formaggio Parmigiano Reggiano)",
+     "url": "https://backend.parmigianoreggiano.com/uploads/Disciplinare_Parmigiano_Reggiano_1a92c5e19a.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Parmigiano Reggiano – Product guide glossary (Consorzio)",
+     "url": "https://www.parmigianoreggiano.com/product-guide-glossary",
+     "kind": "官方"
+    },
+    {
+     "title": "Inside the dairy: How is 'king of cheeses' Parmigiano Reggiano made? (FoodNavigator, 2023-05-22)",
+     "url": "https://www.foodnavigator.com/Article/2023/05/22/How-is-Parmigiano-Reggiano-made-We-take-a-look-inside-the-dairy",
+     "kind": "媒体"
+    }
+   ]
+  },
+  {
+   "id": "camembert",
+   "name_zh": "诺曼底卡芒贝尔 Camembert de Normandie",
+   "name_en": "Camembert de Normandie PDO",
+   "family": "soft-bloomy",
+   "origin": "法国诺曼底",
+   "milk": "牛奶，生乳（加热不得超过 40°C），牧场至少一半为诺曼底种牛",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": "≤22（冷熟化）",
+     "time": "奶龄 ≤72 小时",
+     "ph": null,
+     "note_zh": "部分撇脂标准化；冷熟化 ≤24 小时、≤22°C，可再做 ≤2 小时、≤38°C 的二次熟化。",
+     "note_en": "Partly skimmed; cold maturation ≤24 h at ≤22 °C, optional second maturation ≤2 h at ≤38 °C."
+    },
+    {
+     "step": "heat",
+     "temp_c": "≤40",
+     "time": null,
+     "ph": null,
+     "note_zh": "禁止巴氏杀菌、离心除菌、超滤、微滤。",
+     "note_en": "Pasteurisation, bactofugation, ultrafiltration and microfiltration are banned."
+    },
+    {
+     "step": "starter",
+     "temp_c": "≤38",
+     "time": null,
+     "ph": null,
+     "note_zh": "加乳酸菌，奶在熟化期间慢慢变酸。",
+     "note_en": "Lactic cultures; milk acidifies during maturation."
+    },
+    {
+     "step": "rennet",
+     "temp_c": "≤37",
+     "time": null,
+     "ph": null,
+     "note_zh": "凝乳酶用量 ≤23 mL / 100 L（相当于 520 mg/L 凝乳酶标准）；凝乳锅 ≤330 升。",
+     "note_en": "Rennet ≤23 mL per 100 L; vats ≤330 L."
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "凝块可轻切，最多两道，刀距 ≥2.5 cm；入模前禁止先排乳清。",
+     "note_en": "Light cutting only: at most two passes, ≥2.5 cm apart; no whey drained before moulding."
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": "入模 ≥5 次，每次间隔 ≥40 分钟；沥水 ≥18 小时",
+     "ph": null,
+     "note_zh": "用半球形勺（cuilleron，俗称 louche）手工一层层舀进圆模；最多翻一次面，再压一块薄金属板。",
+     "note_en": "Ladled by hand with hemispherical ladles in at least five passes; turned at most once, then lightly weighted with a metal plate."
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "表面撒干盐。",
+     "note_en": "Dry-salted on the surface."
+    },
+    {
+     "step": "ripen",
+     "temp_c": "10–18（hâloir）",
+     "time": "≥13 天才能包装，≥22 天才能交到顾客",
+     "ph": null,
+     "note_zh": "白色表层霉菌 Penicillium candidum（= P. camemberti）长满表面；熟透时可出现亚麻短杆菌带来的红褐斑。",
+     "note_en": "White mould Penicillium candidum (= P. camemberti) covers the surface; when ripe, Brevibacterium linens may add reddish spots."
+    }
+   ],
+   "age": "规范：凝乳后第 13 天起可包装、第 17 天起可出厂、第 22 天起可交付消费者；规范第 9 节表格写「hâloir ≥12 天」，与第 5.6 节有出入",
+   "moisture_pct": "≤54（由每块干物质 ≥115 g、净重 ≥250 g 推算）；常见 ≈52",
+   "fat_pct": "干物质中脂肪 ≥45%（规范）；总脂肪 ≈22–24",
+   "microbes_zh": "中温乳酸菌；表面 Penicillium candidum / camemberti、Geotrichum candidum；可有 Brevibacterium linens",
+   "flavor_zh": "奶油、蘑菇、熟后带白菜 / 氨味与泥土气",
+   "flavor_en": "Cream, mushroom; when ripe, cabbage, ammonia and earthy notes.",
+   "texture_zh": "外皮绒毛白霉，内里从中心略带白芯到熟透时柔软流淌（由外向内熟成）",
+   "conf": "高",
+   "note": "所引规范为 INAO 未修订版（2008 年后版本）；2021 年起 AOP 已统一为生乳，仍保留勺子入模要求。pH 规范未给。",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'appellation d'origine « Camembert de Normandie » (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "cheddar",
+   "name_zh": "切达 Cheddar",
+   "name_en": "Cheddar",
+   "family": "hard-pressed",
+   "origin": "英国萨默塞特切达村；今日多产于英国、美国、加拿大、新西兰、澳大利亚",
+   "milk": "牛奶，多为巴氏杀菌（亦有生乳农场切达）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": null,
+     "time": null,
+     "ph": 6.6,
+     "note_zh": "蛋白 / 脂肪比标准化到约 0.80：脂肪 4.24%、蛋白 3.38%。",
+     "note_en": "Standardised to protein:fat ≈0.80 (4.24% fat, 3.38% protein)."
+    },
+    {
+     "step": "heat",
+     "temp_c": "72",
+     "time": "15 秒",
+     "ph": null,
+     "note_zh": "多数商业切达用巴氏杀菌奶；美国标准规定生乳切达须在 ≥1.7°C（35°F）熟成 ≥60 天。",
+     "note_en": "Usually pasteurised; under US standards raw-milk Cheddar must cure ≥60 days at ≥35 °F."
+    },
+    {
+     "step": "starter",
+     "temp_c": "32",
+     "time": null,
+     "ph": 6.6,
+     "note_zh": "中温乳球菌发酵剂，用量为奶的 1.25–2.0%。",
+     "note_en": "Mesophilic Lactococcus starter at 1.25–2.0% of the milk."
+    },
+    {
+     "step": "rennet",
+     "temp_c": "32",
+     "time": "30–40 分钟凝结",
+     "ph": null,
+     "note_zh": "凝乳酶 150 mL / 1000 L 奶。",
+     "note_en": "Rennet 150 mL per 1,000 L."
+    },
+    {
+     "step": "cut",
+     "temp_c": "32",
+     "time": null,
+     "ph": null,
+     "note_zh": "切成约 9 毫米小方块。",
+     "note_en": "Cut to about 9 mm cubes."
+    },
+    {
+     "step": "cook",
+     "temp_c": "38",
+     "time": null,
+     "ph": null,
+     "note_zh": "边搅拌边升温到 38°C。",
+     "note_en": "Stirred and scalded to 38 °C."
+    },
+    {
+     "step": "drain",
+     "temp_c": "38",
+     "time": "加凝乳酶后约 2.5 小时",
+     "ph": 6.2,
+     "note_zh": "移到排乳清带，含水从约 65% 降到 55%。",
+     "note_en": "Transferred to the draining belt; moisture falls from ~65% to 55%."
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": null,
+     "ph": "6.2→5.3–5.4",
+     "note_zh": "堆酿（cheddaring）：凝乳块熔成板、反复叠放翻面，含水降到约 42%，质地变得像鸡胸肉；随后碾碎（milling）成手指大小。",
+     "note_en": "Cheddaring: curd fuses into slabs that are stacked and turned, moisture falls to ~42% and texture becomes like cooked chicken breast; then milled into finger-sized pieces."
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": "5.3–5.4",
+     "note_zh": "碾碎后的凝乳直接拌干盐，再装模、真空压成约 20 公斤的块。",
+     "note_en": "Milled curd is dry-salted, then hooped and vacuum-pressed into ~20 kg blocks."
+    },
+    {
+     "step": "ripen",
+     "temp_c": "10（库温；24 小时内先降到 18）",
+     "time": "3 个月（mild）到 2 年以上（extra mature / vintage）",
+     "ph": null,
+     "note_zh": "传统农场切达用布包裹、刷猪油，熟成期更长。",
+     "note_en": "Traditional clothbound Cheddar is wrapped in lard-rubbed cloth and aged longer."
+    }
+   ],
+   "age": "无统一法定下限（生乳者美标 ≥60 天）；零售口径常见 mild ≈3 个月、mature ≈9–12 个月、extra mature / vintage ≥15 个月以上（各国零售口径不一）",
+   "moisture_pct": "≤39（美国标准上限）；常见 ≈37",
+   "fat_pct": "脂肪占固形物 ≥50%（美国标准）；总脂肪 ≈33",
+   "microbes_zh": "Lactococcus lactis 发酵剂；熟成期非发酵剂乳杆菌（如副干酪乳杆菌）",
+   "flavor_zh": "奶香、黄油、坚果，越熟越尖锐（sharp）带硫味、肉汤味",
+   "flavor_en": "Milky, buttery, nutty; sharper with age, with sulfur and brothy notes.",
+   "texture_zh": "致密、平滑到略易碎，久熟可见乳酸钙白色结晶",
+   "conf": "高",
+   "note": "NZIC 原文的成品组成字段读作「约 37% 脂肪、33% 水分」，与 USDA 常见值（水分 ≈37%、脂肪 ≈33%）正好相反，疑为原文或抽取顺序颠倒，此处取 USDA 口径。熟成分级口径为零售惯例，无统一法规，conf 中。",
+   "sources": [
+    {
+     "title": "Cheese Manufacture (Chemical Processes in New Zealand, NZ Institute of Chemistry, ch. 3D)",
+     "url": "https://www.nzic.org.nz/unsecure_files/book/3D.pdf",
+     "kind": "学术"
+    },
+    {
+     "title": "21 CFR 133.3 (definition of pasteurized) & 133.113 Cheddar cheese (eCFR, US FDA)",
+     "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.113",
+     "kind": "官方"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "roquefort",
+   "name_zh": "洛克福 Roquefort",
+   "name_en": "Roquefort PDO",
+   "family": "blue",
+   "origin": "法国阿韦龙省 Roquefort-sur-Soulzon（Combalou 山崩塌岩堆中的洞穴）",
+   "milk": "绵羊奶，生乳、全脂（Lacaune 种）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": "≤10（农场存放）",
+     "time": null,
+     "ph": null,
+     "note_zh": "挤奶后在农场 ≤10°C 存放；最早一次挤奶后 48 小时内必须加凝乳酶。",
+     "note_en": "Stored on farm at ≤10 °C; renneting within 48 h of the oldest milking."
+    },
+    {
+     "step": "heat",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "生乳、全脂；只允许把奶回温到凝乳温度。",
+     "note_en": "Raw whole milk; only rewarming to renneting temperature is allowed."
+    },
+    {
+     "step": "starter",
+     "temp_c": "28–34",
+     "time": null,
+     "ph": null,
+     "note_zh": "乳酸菌发酵剂；同时把 Penicillium roqueforti 孢子加入奶中（菌株须来自 Roquefort 洞穴传统菌株）。",
+     "note_en": "Lactic starter; Penicillium roqueforti spores, from traditional strains isolated in the Roquefort caves, are added to the milk."
+    },
+    {
+     "step": "rennet",
+     "temp_c": "28–34",
+     "time": null,
+     "ph": null,
+     "note_zh": "动物凝乳酶。",
+     "note_en": "Animal rennet."
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "切块、搅拌。",
+     "note_en": "Cut and stirred."
+    },
+    {
+     "step": "form",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "预沥后入模，不压榨，让凝乳粒之间留下缝隙供霉菌生长。",
+     "note_en": "Moulded after pre-draining and not pressed, leaving openings for mould to grow."
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "表面擦干盐。",
+     "note_en": "Dry-salted."
+    },
+    {
+     "step": "ripen",
+     "temp_c": "≥-5（熟成温度下限）",
+     "time": "合计 ≥90 天；在洞穴裸放 ≥2 周",
+     "ph": null,
+     "note_zh": "用针穿刺（piquage）让空气进入，穿刺后 2 天内入洞；洞穴由天然岩缝「fleurines」通风，凉爽潮湿；随后包锡箔低温延续熟成。",
+     "note_en": "Pierced (piquage) to let air in and taken to the caves within 2 days; the caves are ventilated by natural fissures (fleurines); later wrapped in foil for cold maturation."
+    }
+   ],
+   "age": "自制作日起最少 90 天（规范）；其中在 Combalou 洞穴不包裹熟成至少 2 周",
+   "moisture_pct": "≤45（由干物质 ≥55% 推算）；常见 ≈39",
+   "fat_pct": "干物质中脂肪 ≥52%（规范）；总脂肪 ≈31",
+   "microbes_zh": "乳酸菌发酵剂；Penicillium roqueforti（洞穴传统菌株）",
+   "flavor_zh": "辛辣刺鼻（甲基酮）、咸、羊奶的油润与甜感，回味带金属感",
+   "flavor_en": "Sharp and piquant (methyl ketones), salty, rich sweet ewe's-milk fat with a mineral finish.",
+   "texture_zh": "湿润、可涂抹到易碎，蓝绿色霉纹分布在缝隙中，无硬皮",
+   "conf": "高",
+   "note": "所引为 2025-11-19 提交国家异议程序的修订稿，数字可能在定稿时微调；旧版亦为 ≥90 天。洞穴温湿度规范未给数字。",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'AOP « Roquefort » – projet soumis à PNO, 2025-11-19 (INAO)",
+     "url": "https://extranet.inao.gouv.fr/fichier/CDCPNORoquefort-20251119.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "USDA FoodData Central (SR Legacy cheese composition)",
+     "url": "https://fdc.nal.usda.gov/",
+     "kind": "官方"
+    }
+   ]
+  },
+  {
+   "id": "comte",
+   "name_zh": "孔泰 Comté",
+   "name_en": "Comté PDO",
+   "family": "hard-pressed",
+   "origin": "法国汝拉山区（弗朗什-孔泰）",
+   "milk": "牛奶，生乳（Montbéliarde 或法国西门塔尔牛）",
+   "process": [
+    {
+     "step": "milk",
+     "temp_c": "10–18（一天一收时存放）",
+     "time": "挤奶到制作 ≤24 小时",
+     "ph": null,
+     "note_zh": "挤奶后立即冷到 18°C 以下；收奶圈直径 25 公里。",
+     "note_en": "Cooled below 18 °C after milking; collection within a 25 km-diameter circle."
+    },
+    {
+     "step": "heat",
+     "temp_c": "≤40",
+     "time": null,
+     "ph": null,
+     "note_zh": "凝乳前加热不得超过 40°C（生乳）。",
+     "note_en": "No heating above 40 °C before renneting (raw milk)."
+    },
+    {
+     "step": "starter",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "天然或选育的乳酸菌发酵剂（常含嗜热菌）。",
+     "note_en": "Natural or selected lactic starters (often thermophilic)."
+    },
+    {
+     "step": "rennet",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "只用小牛皱胃凝乳酶，凝乳酶含量 ≥520 mg/L，禁用牛胃蛋白酶。",
+     "note_en": "Calf rennet only (≥520 mg chymosin/L); bovine pepsin banned."
+    },
+    {
+     "step": "cut",
+     "temp_c": null,
+     "time": null,
+     "ph": null,
+     "note_zh": "切成小米粒大小。",
+     "note_en": "Cut fine."
+    },
+    {
+     "step": "cook",
+     "temp_c": "≥53",
+     "time": "≥30 分钟",
+     "ph": null,
+     "note_zh": "必须在铜锅中加热搅拌。",
+     "note_en": "Cooked and stirred in copper vats."
+    },
+    {
+     "step": "form",
+     "temp_c": "≥12（压榨室）",
+     "time": "≥6 小时",
+     "ph": null,
+     "note_zh": "压力 ≥100 g/cm²。",
+     "note_en": "Pressed at ≥100 g/cm²."
+    },
+    {
+     "step": "salt",
+     "temp_c": null,
+     "time": "脱模后 24 小时内；或泡盐水 ≤12 小时",
+     "ph": null,
+     "note_zh": "表面与外皮擦干盐，或短时盐水浸泡。",
+     "note_en": "Dry salt rubbed on surface and rind, or brief brining."
+    },
+    {
+     "step": "ripen",
+     "temp_c": "预熟成 10–15；之后 ≤19",
+     "time": "预熟成 ≥21 天；合计 ≥120 天",
+     "ph": null,
+     "note_zh": "放在云杉木板上，定期翻面、擦盐水；暖库湿度 ≥92%、冷库 ≥85%。",
+     "note_en": "Ripened on spruce boards, regularly turned and rubbed with brine; humidity ≥92% (warm cellar) or ≥85% (cold cellar)."
+    }
+   ],
+   "age": "最少 120 天 / 4 个月（规范，自凝乳至出窖）；常见 8–24 个月",
+   "moisture_pct": "≤38（由干物质 ≥62% 推算）",
+   "fat_pct": "干物质中脂肪 45–54%（规范）；总脂肪 ≈29–33（推算）",
+   "microbes_zh": "嗜热乳酸菌发酵剂；生乳本土乳杆菌；部分轮子内有丙酸菌产生零星小孔",
+   "flavor_zh": "榛子、烤坚果、黄油、熟牛奶、焦糖，久熟带肉汤与皮革",
+   "flavor_en": "Hazelnut, toasted nuts, butter, cooked milk and caramel; with age, broth and leather.",
+   "texture_zh": "紧实、柔韧有弹性，久熟后带结晶",
+   "conf": "高",
+   "note": "规范还要求质量评分 ≥14/20 才可称 Comté；轮重 32–45 kg、直径 55–75 cm。所引为 2013 年版规范，INAO 另有 2024-11 提交异议的修订稿。",
+   "sources": [
+    {
+     "title": "Cahier des charges de l'AOP « Comté » (INAO, version 2013)",
+     "url": "https://extranet.inao.gouv.fr/fichier/cdccomte.pdf",
+     "kind": "官方"
+    },
+    {
+     "title": "Fiche AOP Comté (DRAAF Bourgogne-Franche-Comté)",
+     "url": "https://draaf.bourgogne-franche-comte.agriculture.gouv.fr/IMG/pdf/FicheAOPComte_cle81fe31.pdf",
+     "kind": "官方"
+    }
+   ]
+  }
+ ],
+ "families": [],
+ "wheel": {
+  "source": null,
+  "axes": []
+ },
+ "spectrum": [],
+ "pairing": {
+  "principles": [],
+  "pairs": []
+ },
+ "tasting": []
+}

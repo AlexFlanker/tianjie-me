@@ -1,0 +1,716 @@
+{
+ "_meta": {
+  "researcher": "D",
+  "topic": "Whole Foods / Eataly 奶酪柜台导购",
+  "status": "in progress: local written",
+  "updated": "2026-11-08"
+ },
+ "stores": [
+  {
+   "id": "wholefoods",
+   "name": "Whole Foods Market",
+   "zh": "全食超市（Whole Foods Market）",
+   "en": "Whole Foods Market",
+   "facts": [
+    {
+     "id": "wf-basic",
+     "zh": "1980 年创立于得州奥斯汀，现属亚马逊旗下；2024 年 10 月官方新闻稿称在美国、加拿大、英国共有 530 多家门店。",
+     "en": "Founded in 1980 in Austin, Texas, now part of Amazon; an October 2024 press release counts more than 530 stores across the U.S., Canada and the U.K.",
+     "year": "1980 / 2024",
+     "num": ">530 家门店（2024-10 口径）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Whole Foods Market Elevates Cheese Expertise with 40 New Certified Cheese Professionals (Business Wire, 2024-10-24)",
+       "url": "https://www.businesswire.com/news/home/20241024433129/en/Whole-Foods-Market-Elevates-Cheese-Expertise-with-40-New-Certified-Cheese-Professionals%C2%AE",
+       "kind": "企业"
+      }
+     ],
+     "note": "奥斯汀创立地为常识，新闻稿只写了 1980 年创立。"
+    },
+    {
+     "id": "wf-ccp",
+     "zh": "奶酪部（Specialty）大量配备美国奶酪协会（ACS）认证的「Certified Cheese Professional」（CCP）。2024 年新增 40 名后，全食在全球 1,000 多名 CCP 中占 370 多名，自称全球雇用 CCP 最多的零售商，目标是每家店至少一名。",
+     "en": "The specialty cheese team is staffed with American Cheese Society Certified Cheese Professionals (CCPs). After adding 40 in 2024, Whole Foods employs more than 370 of the 1,000-plus CCPs worldwide and aims for at least one in every store.",
+     "year": "2024",
+     "num": ">370 名 CCP / 全球 >1,000 名；2024 年新增 40 名",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Business Wire 新闻稿 2024-10-24",
+       "url": "https://www.businesswire.com/news/home/20241024433129/en/Whole-Foods-Market-Elevates-Cheese-Expertise-with-40-New-Certified-Cheese-Professionals%C2%AE",
+       "kind": "企业"
+      },
+      {
+       "title": "How Whole Foods Market is Training the Next Generation of Cheese Experts (culture, 2025-03-07)",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "wf-ccp-program",
+     "zh": "全食自 2012 年起系统培养 CCP：13 周课程，含每周网课和在威斯康星州（Dairy Farmers of Wisconsin、威斯康星大学乳品研究中心）的一周实训；ACS 考试为 150 道选择题、覆盖 11 个领域。",
+     "en": "Since 2012 Whole Foods has run a CCP track: 13 weeks of webinars plus a week of hands-on training in Wisconsin with Dairy Farmers of Wisconsin and the UW Center for Dairy Research; the ACS exam has 150 multiple-choice questions across 11 domains.",
+     "year": "2012 起",
+     "num": "13 周；150 题 / 11 个领域",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "culture: How Whole Foods Market is Training the Next Generation of Cheese Experts (2025-03-07)",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "该文对 CCP 续证周期前后矛盾（正文 6 年、边栏 3 年），未采用。"
+    },
+    {
+     "id": "wf-standard",
+     "zh": "全食称其奶酪须符合自家质量标准：不含人工添加剂，不使用注射 rBST（重组牛生长激素）奶牛的奶。",
+     "en": "Whole Foods says every cheese it sells meets its quality standards: free from artificial additives and from milk of cows treated with rBST.",
+     "year": "2024–2025",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Business Wire 新闻稿 2024-10-24",
+       "url": "https://www.businesswire.com/news/home/20241024433129/en/Whole-Foods-Market-Elevates-Cheese-Expertise-with-40-New-Certified-Cheese-Professionals%C2%AE",
+       "kind": "企业"
+      },
+      {
+       "title": "culture 2025-03-07",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "wf-cut",
+     "zh": "柜台做法：CCP 按顾客要求的重量或厚度现切，并会主动请顾客试吃没尝过的奶酪；全食的 Parmigiano Reggiano 整轮都在店里用专用刀具开轮，选用熟成 24 个月的轮子。",
+     "en": "At the counter, CCPs cut to the weight or thickness you ask for and offer tastes of cheeses you have not tried; Whole Foods cracks every Parmigiano Reggiano wheel in store with traditional tools and buys 24-month wheels.",
+     "year": "2025",
+     "num": "Parmigiano Reggiano 24 个月",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "culture 2025-03-07",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      },
+      {
+       "title": "Whole Foods Reclaims Title for Most Cracked Wheels (Progressive Grocer, 2013)",
+       "url": "https://progressivegrocer.com:2087/whole-foods-reclaims-title-cracked-wheels",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "wf-crack-2008",
+     "zh": "「Crack Heard 'Round the World」是全食的年度帕玛森开轮活动，各店同一时刻一起开轮。2008 年首次创下吉尼斯「同时开轮最多 Parmigiano Reggiano」纪录：176 家店开了 300 多轮。",
+     "en": "\"The Crack Heard 'Round the World\" is Whole Foods' annual Parmigiano Reggiano event in which stores crack wheels at the same moment. In 2008 it set the Guinness record for most wheels cracked simultaneously: 300-plus wheels in 176 stores.",
+     "year": "2008",
+     "num": "176 家店，>300 轮",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "The World Record You Probably Didn't Know Whole Foods Held (The Daily Meal, 2022-10)",
+       "url": "https://www.thedailymeal.com/1073305/the-world-record-you-probably-didnt-know-whole-foods-held",
+       "kind": "媒体"
+      },
+      {
+       "title": "Craaaack Goes the Cheese at Whole Foods Market (Houston Press, 2012-03-13)",
+       "url": "https://www.houstonpress.com/restaurants/craaaack-goes-the-cheese-at-whole-foods-market-with-video-6428342",
+       "kind": "媒体"
+      },
+      {
+       "title": "The Crack Heard Around the World (Edible Brooklyn, 2014-03-13)",
+       "url": "https://ediblebrooklyn.com/?p=17606",
+       "kind": "媒体"
+      }
+     ],
+     "note": "2008 年的轮数只见于 Daily Meal（二手汇总）；未直接打开 Guinness 原页。"
+    },
+    {
+     "id": "wf-crack-2013",
+     "zh": "加拿大 Loblaw 在 2012 年以 200 家店 378 轮夺走纪录；2013 年 3 月 9 日全食在美、加、英门店开了 426 轮夺回（当年活动称「Parmeggedon」）。2014 年 3 月 8 日全美 373 家店各开一轮 85 磅的轮子。",
+     "en": "Canada's Loblaw took the record in 2012 with 378 wheels in 200 stores; on March 9, 2013 Whole Foods won it back with 426 wheels across the U.S., Canada and the U.K. (billed as \"Parmeggedon\"). On March 8, 2014 all 373 U.S. stores each cracked an 85-lb wheel.",
+     "year": "2012–2014",
+     "num": "2012：378 轮/200 店（Loblaw）；2013：426 轮；2014：373 店各一轮",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Progressive Grocer 2013",
+       "url": "https://progressivegrocer.com:2087/whole-foods-reclaims-title-cracked-wheels",
+       "kind": "媒体"
+      },
+      {
+       "title": "Perishable News 2013-02-19",
+       "url": "https://perishablenews.com/deli/whole-foods-attempting-to-wheel-home-parmigiano-reggiano-world-record/",
+       "kind": "媒体"
+      },
+      {
+       "title": "The Daily Meal 2022",
+       "url": "https://www.thedailymeal.com/1073305/the-world-record-you-probably-didnt-know-whole-foods-held",
+       "kind": "媒体"
+      },
+      {
+       "title": "Edible Brooklyn 2014-03-13",
+       "url": "https://ediblebrooklyn.com/?p=17606",
+       "kind": "媒体"
+      }
+     ],
+     "alt": "Progressive Grocer 写 2013 年打破的是「全食 2008 年的纪录」，没提 Loblaw 2012；Daily Meal 写 Loblaw 2012 年先破。Edible Brooklyn 称 2014 年又破自家纪录，但 373 少于 426，数字自相矛盾。"
+    },
+    {
+     "id": "wf-crack-now",
+     "zh": "这项吉尼斯纪录目前在加拿大：Loblaw 与 Parmigiano Reggiano 联盟 2014 年开了 1,209 轮，2025 年 6 月 14 日又在 452 家店同时开了 1,672 轮。",
+     "en": "The Guinness record now sits in Canada: Loblaw and the Parmigiano Reggiano Consortium cracked 1,209 wheels in 2014 and 1,672 wheels across 452 stores on June 14, 2025.",
+     "year": "2014 / 2025-06-14",
+     "num": "1,209 轮（2014）；1,672 轮 / 452 店（2025）",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Loblaw, Parmigiano Reggiano restore world record with cracking event (Strategy, 2025-06-26)",
+       "url": "https://strategyonline.ca/?p=324645",
+       "kind": "媒体"
+      },
+      {
+       "title": "Loblaw and Parmigiano Reggiano Aim for Cheese Record (Retail Insider, 2025-06)",
+       "url": "https://retail-insider.com/retail-insider/2025/06/loblaw-and-parmigiano-reggiano-aim-for-cheese-record/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "全食 2015 年后是否仍每年办开轮活动未查到 2025–2026 年的一手资料。"
+    },
+    {
+     "id": "wf-365",
+     "zh": "自有品牌 365 by Whole Foods Market 有预包装的块状、刨丝和切片奶酪（如 Parmigiano Reggiano 楔块、Cheddar、Mozzarella），一般在自选冷柜，比现切区便宜。",
+     "en": "The house brand 365 by Whole Foods Market covers pre-packed blocks, shreds and slices (Parmigiano Reggiano wedges, cheddar, mozzarella and more), usually in the grab-and-go case and cheaper than the cut-to-order counter.",
+     "year": "2025–2026",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Whole Foods Market 官网奶酪类目",
+       "url": "https://www.wholefoodsmarket.com/products/cheese",
+       "kind": "企业"
+      }
+     ],
+     "note": "未逐项核对 365 当前 SKU；价格见 cheeses 条目。"
+    },
+    {
+     "id": "wf-12days",
+     "zh": "每年 12 月的「12 Days of Cheese」：由全食的 CCP 选出一组获奖奶酪，12 天里每天特价一款。2025 年是 12 月 13–24 日，Prime 会员最多 7 折（30% off），非会员 78 折（22% off），共 13 款，包括 Jasper Hill Harbison、Keen's Cheddar、Kaltbach 洞穴熟成 Gruyère AOP、Papillon Roquefort、Ca de Ambros Taleggio、Humboldt Fog、Mt Tam 等。",
+     "en": "Every December, \"12 Days of Cheese\" puts one CCP-picked, award-winning cheese on sale each day. In 2025 it ran December 13–24 at up to 30% off for Prime members and 22% off for others, with 13 cheeses including Jasper Hill Harbison, Keen's Cheddar, Kaltbach cave-aged Le Gruyère AOP, Papillon Roquefort, Ca de Ambros Taleggio, Humboldt Fog and Mt Tam.",
+     "year": "2025-12-13 至 12-24",
+     "num": "Prime 最多 30% off；非会员 22% off；13 款",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "12 Days of Cheese Returns for a Season of Exceptional Taste at Whole Foods Market (2025-12-03)",
+       "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+       "kind": "企业"
+      }
+     ],
+     "note": "2026 年档期未公布（今天 2026-11-08），可写「往年 12 月中旬」。新闻稿还写每家店有「数百种」奶酪。"
+    },
+    {
+     "id": "wf-bayarea",
+     "zh": "湾区南湾 / 半岛的全食门店举例：圣何塞 The Alameda 店（2014 年 12 月 9 日开业，开业报道提到奶酪部会当场开一块给顾客试吃）、Cupertino（20955 Stevens Creek Blvd）、Los Altos（4800 El Camino Real）、Palo Alto（774 Emerson St）。官网门店页不列奶酪柜台；按全食「每店至少一名 CCP」的目标，多数门店设有专人现切的奶酪区，规模因店而异。",
+     "en": "Examples in the South Bay and Peninsula: San Jose's The Alameda store (opened December 9, 2014; opening coverage noted the cheese team would open a cheese on the spot for a taste), Cupertino (20955 Stevens Creek Blvd), Los Altos (4800 El Camino Real) and Palo Alto (774 Emerson St). Store pages do not list cheese counters; with a goal of at least one CCP per store, most stores have a staffed cut-to-order cheese area, though size varies.",
+     "year": "2014 / 2026",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Whole Foods San Jose Grand Opening Today (The San Jose Blog, 2014-12-09)",
+       "url": "https://www.thesanjoseblog.com/2014/12/whole-foods-san-jose-grand-opening-today.html",
+       "kind": "媒体"
+      },
+      {
+       "title": "Whole Foods Market Cupertino 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/cupertino",
+       "kind": "企业"
+      },
+      {
+       "title": "Whole Foods Market Los Altos 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/losaltos",
+       "kind": "企业"
+      },
+      {
+       "title": "Whole Foods Market Palo Alto 门店页",
+       "url": "https://www.wholefoodsmarket.com/stores/paloalto",
+       "kind": "企业"
+      },
+      {
+       "title": "culture 2025-03-07（每店至少一名 CCP 的目标）",
+       "url": "https://culturecheesemag.com/blog/whole-foods-market-cheese-experts/",
+       "kind": "媒体"
+      }
+     ],
+     "note": "口径：哪几家店柜台最全没有公开资料，逐店未核；The Alameda 门店页抓取失败。地址取自 2026-11 官网门店页。"
+    }
+   ]
+  },
+  {
+   "id": "eataly",
+   "name": "Eataly",
+   "zh": "Eataly（意大利美食市集）",
+   "en": "Eataly",
+   "facts": [
+    {
+     "id": "eataly-origin",
+     "zh": "Eataly 由 Oscar Farinetti 创办，2002 年 11 月起构想；2007 年 1 月 27 日首店在都灵 Lingotto 区一座旧苦艾酒（vermouth）工厂里开业，把「吃、买、学」放在同一屋檐下。",
+     "en": "Founded by Oscar Farinetti, who sketched the idea in November 2002, Eataly opened its first store on January 27, 2007 in a former vermouth factory in Turin's Lingotto district, putting eating, shopping and learning under one roof.",
+     "year": "2007-01-27",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Eataly: Our History",
+       "url": "https://www.eataly.com/us_en/about-eataly/eataly-history",
+       "kind": "官方"
+      },
+      {
+       "title": "Eataly (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Eataly",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "id": "eataly-nyc",
+     "zh": "美国首店 Eataly NYC Flatiron 于 2010 年 8 月 31 日开业，在麦迪逊广场公园旁的 Toy Center 大楼。",
+     "en": "The first U.S. store, Eataly NYC Flatiron, opened on August 31, 2010 in the Toy Center Building by Madison Square Park.",
+     "year": "2010-08-31",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Eataly (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Eataly",
+       "kind": "百科"
+      }
+     ]
+    },
+    {
+     "id": "eataly-scale",
+     "zh": "官网称在意大利和全球有 40 多家门店；2022 年 9 月，英国投资机构 Investindustrial 以 2 亿欧元取得 52% 控股权。",
+     "en": "Eataly says it has more than 40 locations in Italy and worldwide; in September 2022 Investindustrial bought a 52% majority stake for €200 million.",
+     "year": "2022 / 2026",
+     "num": ">40 家（官网口径）；52% / €2 亿",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Eataly: Our History",
+       "url": "https://www.eataly.com/us_en/about-eataly/eataly-history",
+       "kind": "官方"
+      },
+      {
+       "title": "Eataly (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Eataly",
+       "kind": "百科"
+      }
+     ],
+     "alt": "维基信息框写 59 家（未注明时点），与官网「40 多家」口径不同。"
+    },
+    {
+     "id": "eataly-sv",
+     "zh": "Eataly Silicon Valley 于 2022 年 6 月 16 日在圣克拉拉 Westfield Valley Fair 商场（2855 Stevens Creek Blvd.）开业，三层、约 45,000 平方英尺，是美国第 9 家、加州第 2 家（洛杉矶 Century City 之后）。原定 2020 年前后开业，因疫情推迟。",
+     "en": "Eataly Silicon Valley opened on June 16, 2022 at Westfield Valley Fair, 2855 Stevens Creek Blvd., Santa Clara: three floors, about 45,000 sq ft, Eataly's ninth U.S. store and second in California after Los Angeles.",
+     "year": "2022-06-16",
+     "num": "3 层，约 45,000 平方英尺；美国第 9 家",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Long-awaited Eataly Silicon Valley finally has its opening date (Palo Alto Online, 2022-05-17)",
+       "url": "https://n2v.paloaltoonline.com/blogs/p/2022/05/17/long-awaited-eataly-silicon-valley-finally-has-its-opening-date",
+       "kind": "媒体"
+      },
+      {
+       "title": "Eataly to open first Bay Area location (SFist, 2019-12-17)",
+       "url": "https://sfist.com/2019/12/17/eataly-to-open-first-bay-area-location-in-san-jose",
+       "kind": "媒体"
+      },
+      {
+       "title": "Hands-On: Mozzarella (Eataly Silicon Valley, Eventbrite)",
+       "url": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1990676399699",
+       "kind": "企业"
+      }
+     ],
+     "note": "「因疫情推迟」是据 2019 年宣布、2022 年开业推断，en 未写；页面若用请谨慎。商场地址邮编属圣克拉拉，部分媒体写成 San Jose。",
+     "alt": "Eataly 自家活动页（Eventbrite）把地址写作 2855 Stevens Creek Blvd, San Jose, CA 95128；当地媒体写圣克拉拉。Valley Fair 跨圣何塞 / 圣克拉拉两市。"
+    },
+    {
+     "id": "eataly-mozz",
+     "zh": "Eataly 的奶酪区通常与熟肉区合为「Salumi e Formaggi」现切柜台，旁边有现拉 mozzarella 的工作台（波士顿店叫 Mozzarella Lab），可以看师傅拉伸凝乳、当场试吃；另有预包装自选区。",
+     "en": "Eataly's cheese sits in a cut-to-order \"Salumi e Formaggi\" counter, usually beside a station where mozzarella is stretched by hand (Boston calls it the Mozzarella Lab) and you can watch and taste; a grab-and-go case holds pre-cut pieces.",
+     "year": "2016–2022",
+     "num": "",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "A Cheese Lover's Guide to Eataly Boston (culture, 2016-11-30)",
+       "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+       "kind": "媒体"
+      },
+      {
+       "title": "Stretching Mozzarella at Eataly (culture 视频)",
+       "url": "https://culturecheesemag.com/video/making-mozzarella-eataly/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "eataly-sv-mozz",
+     "zh": "硅谷店的 mozzarella 用牛奶在店内现做；那不勒斯披萨上的水牛 mozzarella 则从意大利进口，因为当地做不出来。",
+     "en": "At Eataly Silicon Valley fresh mozzarella is made in store from cow's milk; the buffalo mozzarella on the Neapolitan pizzas is imported from Italy because it cannot be replicated locally.",
+     "year": "2022",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "12 can't-miss items at Eataly Silicon Valley, according to an Italian food expert (RWC Pulse / Almanac, 2022-06-22)",
+       "url": "https://www.rwcpulse.com/food/2022/06/22/12-cant-miss-items-at-eataly-silicon-valley-according-to-an-italian-food-expert/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "eataly-la-mozz",
+     "zh": "洛杉矶店（2017 年 11 月开业）的做法可作参照：Pomona 的 Di Stefano 奶酪厂每天早上送来凝乳，两位奶酪师在店里拉制 mozzarella 和 burrata，起初每天约 60 磅。",
+     "en": "Eataly Los Angeles (opened November 2017) shows the model: Di Stefano Cheese in Pomona delivers curd each morning and two of its cheesemakers stretch mozzarella and burrata in store, about 60 lb a day at first.",
+     "year": "2017",
+     "num": "约 60 磅/天（开业初）",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Eataly's cheeses (LAist, 2017-10-31, archival)",
+       "url": "https://laist.com/news/food/eatalys-cheeses",
+       "kind": "媒体"
+      }
+     ],
+     "note": "硅谷店凝乳供应商未查到。"
+    },
+    {
+     "id": "eataly-italian",
+     "zh": "柜台以意大利奶酪为主，常见 Parmigiano Reggiano、Grana Padano、Pecorino Romano、Gorgonzola、Taleggio 等 DOP，也混入本地手工奶酪；Eataly 的店员会鼓励顾客先尝再买。",
+     "en": "The counter leans Italian (Parmigiano Reggiano, Grana Padano, Pecorino Romano, Gorgonzola, Taleggio and other DOP cheeses) alongside local artisan cheeses, and mongers encourage you to taste before you buy.",
+     "year": "2016–2017",
+     "num": "",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "LAist 2017",
+       "url": "https://laist.com/news/food/eatalys-cheeses",
+       "kind": "媒体"
+      },
+      {
+       "title": "culture: Eataly Boston",
+       "url": "https://culturecheesemag.com/blog/a-cheese-lovers-guide-to-eataly-boston/",
+       "kind": "媒体"
+      }
+     ]
+    },
+    {
+     "id": "eataly-sv-counter",
+     "zh": "硅谷店的 Salumi & Formaggi 柜台营业 8:30–21:00，官网称有多个年份的 Parmigiano Reggiano DOP、五种 DOP 火腿和不易买到的地方特产，也采购美国生产者的奶酪；mozzarella 每天店内现做。",
+     "en": "The Salumi & Formaggi counter at Eataly Silicon Valley is open 8:30 a.m.–9 p.m.; Eataly says it carries Parmigiano Reggiano DOP in several ages, five DOP prosciutti and hard-to-find regional specialties, plus cheese from U.S. producers, and makes mozzarella in house daily.",
+     "year": "2026",
+     "num": "8:30–21:00；多个熟成年份",
+     "conf": "高",
+     "sources": [
+      {
+       "title": "Eataly Silicon Valley: Market",
+       "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+       "kind": "官方"
+      }
+     ],
+     "note": "官网未写 mozzarella 现拉的固定时段，到店问柜台。"
+    },
+    {
+     "id": "eataly-sv-classes",
+     "zh": "硅谷店的烹饪学校（La Scuola）定期开课，2026 年有「Hands-On: Mozzarella」实操课（如 7 月 10 日周五 18:00–20:00，两小时，由主厨带着做 mozzarella），也有披萨、意面、提拉米苏等课和全店品鉴；私人课可经 ESV-Scuola@eataly.com 预约。未查到固定的帕玛森开轮日。",
+     "en": "Eataly Silicon Valley's cooking school runs regular classes; in 2026 these included a two-hour \"Hands-On: Mozzarella\" class (e.g. Friday, July 10, 6–8 p.m., led by a Scuola chef), along with pasta, pizza and tiramisù classes and storewide tastings. No fixed Parmigiano wheel-cracking day was found.",
+     "year": "2025–2026",
+     "num": "2 小时",
+     "conf": "中",
+     "sources": [
+      {
+       "title": "Hands-On: Mozzarella (Eventbrite, Eataly Silicon Valley)",
+       "url": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1990676399699",
+       "kind": "企业"
+      },
+      {
+       "title": "Eataly Silicon Valley Classes & Events (Visit Silicon Valley)",
+       "url": "https://visitsiliconvalley.org/events/eataly-silicon-valley-classes-events",
+       "kind": "官方"
+      }
+     ],
+     "note": "课价未显示；页面若写请让读者看 Eataly 官网 Classes & Events。"
+    }
+   ]
+  }
+ ],
+ "zones": [],
+ "cheeses": [],
+ "labels": [],
+ "buying": [],
+ "storage": [],
+ "boards": [],
+ "local": [
+  {
+   "id": "ca-goldrush",
+   "zh": "加州奶酪生意从淘金热后的旧金山码头起步：西马林（West Marin）的牧场把小块奶酪用马车运到 Petaluma，再坐汽船到旧金山，卖给码头上的欧洲装卸工。",
+   "en": "California cheese began with the post–Gold Rush San Francisco waterfront: West Marin ranches carted small cheeses to Petaluma and shipped them by steamboat to the city, where European dockworkers bought them.",
+   "year": "1849–1865 前后",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Heather Paxson (MIT), California entrepreneurs dream of cheese (The Conversation 2017-12-13, Brewminate 转载)",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "Marin French Cheese Company (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Marin_French_Cheese_Company",
+     "kind": "百科"
+    }
+   ]
+  },
+  {
+   "id": "marin-french",
+   "zh": "Marin French Cheese Company：1865 年由奶农 Jefferson Thompson 创办（最初叫 Thompson Brothers），在 Petaluma 西南约 11 英里的 Hicks Valley 牧场，自称美国持续经营最久的奶酪厂。汤普森家族经营 133 年，1998 年卖给 Boyce 家，2011 年由法国 Rians 家族收购。",
+   "en": "Marin French Cheese Company was founded in 1865 by dairyman Jefferson Thompson (first as Thompson Brothers) on a Hicks Valley ranch about 11 miles southwest of Petaluma, and claims to be the oldest continuously operating cheesemaker in the U.S. The Thompsons ran it for 133 years, sold it to the Boyce family in 1998, and France's Rians family bought it in 2011.",
+   "year": "1865 / 1998 / 2011",
+   "num": "约 11 英里；133 年",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Marin French Cheese Company (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Marin_French_Cheese_Company",
+     "kind": "百科"
+    },
+    {
+     "title": "Paxson, The Conversation / Brewminate",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    }
+   ],
+   "alt": "维基也记有更早的说法：1854 年已有前身、1857 年 Clara Steele 已在当地做奶酪，早期记录零散。「最老」是企业自述。"
+  },
+  {
+   "id": "marin-french-products",
+   "zh": "Marin French 最早的产品是小圆饼状的「早餐奶酪」（今名 Petite Breakfast），至今仍在做；品牌 1906–2013 年叫 Rouge et Noir。2005 年其 Triple Crème Brie 在伦敦世界奶酪大奖（World Cheese Awards）巴氏奶 Brie 组拿到该组唯一金牌。",
+   "en": "Marin French's first product, a small \"breakfast cheese\" (now Petite Breakfast), is still made; the brand was Rouge et Noir from 1906 to 2013. In 2005 its Triple Crème Brie won the only gold in the pasteurized-milk brie class at the World Cheese Awards in London.",
+   "year": "1906–2013 / 2005",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Marin French Cheese Company (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Marin_French_Cheese_Company",
+     "kind": "百科"
+    },
+    {
+     "title": "Paxson, The Conversation / Brewminate",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "vella",
+   "zh": "Vella Cheese Company（索诺马）：1931 年，一群奶农请西西里 Gela 来的 Gaetano「Tom」Vella 开奶酪厂、由他们供奶；1969 年起在离 Sonoma Plaza 几个街区、1904 年建成的石头老啤酒厂里手工做奶酪，至今未搬。儿子 Ignazio「Ig」Vella（2011 年去世）2006 年获美国奶酪协会终身成就奖。",
+   "en": "Vella Cheese Company in Sonoma began in 1931 when local dairymen asked Gaetano \"Tom\" Vella, from Gela in Sicily, to open a cheese plant they would supply. Since 1969 it has made cheese by hand in a 1904 stone former brewery a few blocks from Sonoma Plaza. His son Ignazio \"Ig\" Vella (d. 2011) received the American Cheese Society's Lifetime Achievement Award in 2006.",
+   "year": "1931 / 1969 / 2006",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Vella Cheese Company: History",
+     "url": "https://vellacheese.com/history.php",
+     "kind": "官方"
+    },
+    {
+     "title": "Vella Dry Jack Cheese from Sonoma (Zingerman's Deli, 2025-02)",
+     "url": "https://www.zingermansdeli.com/2025/02/vella-dry-jack/",
+     "kind": "企业"
+    }
+   ]
+  },
+  {
+   "id": "dry-jack",
+   "zh": "Dry Jack 的来历：一战期间旧金山意大利裔杂货商 DeBernardi 进不到意大利的陈年刨丝奶酪，发现一批被遗忘、意外放老了的 Monterey Jack 变硬变香，于是有了「干杰克」。如今只剩不到六家在做，已列入 Slow Food「味之方舟」（Ark of Taste）。",
+   "en": "Dry Jack's origin story: during World War I a San Francisco grocer named DeBernardi, cut off from aged Italian grating cheese, found a forgotten lot of Monterey Jack that had aged hard and nutty. Fewer than half a dozen makers still produce it, and it is on Slow Food's Ark of Taste.",
+   "year": "1914–1918",
+   "num": "<6 家在产",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Zingerman's Deli 2025-02",
+     "url": "https://www.zingermansdeli.com/2025/02/vella-dry-jack/",
+     "kind": "企业"
+    }
+   ],
+   "note": "DeBernardi 故事属行业流传说法，可在页面标「据说」。"
+  },
+  {
+   "id": "laura-chenel",
+   "zh": "Laura Chenel：1979 年从法国学艺回来，在索诺马县自家地下室做山羊奶酪，先在农夫市集卖；Chez Panisse 的 Alice Waters 尝到后每周订 50 磅，用在一道后来成为招牌的沙拉上。她被视为美国商业山羊奶酪的开创者之一。2006 年把奶酪厂卖给 Rians，自己保留约 500 头羊继续供奶。",
+   "en": "Laura Chenel returned from France in 1979 and began making goat cheese in her Sonoma County basement, selling at farmers' markets. Alice Waters of Chez Panisse tasted it and ordered 50 lb a week for a salad that became a house staple. She is counted among the pioneers of commercial American chèvre. In 2006 she sold the cheese business to Rians, keeping her herd of about 500 goats as a milk supplier.",
+   "year": "1979 / 1980–81 / 2006",
+   "num": "50 磅/周；约 500 头山羊",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Laura Chenel (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Laura_Chenel",
+     "kind": "百科"
+    },
+    {
+     "title": "The Goat Ladies Who Built American Chèvre (culture, 2026-04-17)",
+     "url": "https://culturecheesemag.com/stories/goat-ladies-american-goat-cheese-history/",
+     "kind": "媒体"
+    }
+   ],
+   "alt": "首次卖给 Chez Panisse 的年份：culture（2026）写 1980 年，维基写 1981 年在农夫市集被 Waters 尝到。「美国第一家商业山羊奶酪」是常见说法，维基未这样表述。"
+  },
+  {
+   "id": "cypress-grove",
+   "zh": "Cypress Grove（北加州海岸小城 Arcata）：Mary Keehn 1983 年没受过正规训练就开始做山羊奶酪；1992 年去法国品尝传统奶酪后，在回程飞机上梦到 Humboldt Fog 的样子——中间一道像 Morbier 那样的植物灰线。2010 年卖给瑞士 Emmi，她仍日常参与。",
+   "en": "Cypress Grove in Arcata on the North Coast: Mary Keehn started making goat cheese in 1983 with no formal training. After a 1992 tasting trip to France she dreamed up Humboldt Fog on the flight home, with a Morbier-like line of vegetable ash through the middle. She sold the company to Switzerland's Emmi in 2010 and stayed involved day to day.",
+   "year": "1983 / 1992 / 2010",
+   "num": "",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Paxson, The Conversation / Brewminate",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    },
+    {
+     "title": "culture 2026-04-17",
+     "url": "https://culturecheesemag.com/stories/goat-ladies-american-goat-cheese-history/",
+     "kind": "媒体"
+    }
+   ],
+   "note": "「梦里想到」是 Keehn 本人的说法。"
+  },
+  {
+   "id": "cowgirl",
+   "zh": "Cowgirl Creamery：Sue Conley 与 Peggy Smith 1976 年从田纳西大学毕业后来到旧金山，90 年代初先办 Tomales Bay Foods，把西马林的农产品批发给湾区餐厅，后在 Point Reyes Station 一座改造的干草仓里做奶酪，最早是 fromage blanc、crème fraîche。代表作 Mt Tam（以塔玛佩斯山命名的有机三倍奶油软质）和洗皮的 Red Hawk。2016 年交给瑞士 Emmi，现主要在 Petaluma 生产；旧金山渡轮大厦门店 2021 年 4 月关闭。",
+   "en": "Cowgirl Creamery: Sue Conley and Peggy Smith came to San Francisco in 1976 after the University of Tennessee, started Tomales Bay Foods in the early 1990s to wholesale West Marin farm products to Bay Area chefs, then made cheese in a converted hay barn in Point Reyes Station, starting with fromage blanc and crème fraîche. Best known for Mt Tam, an organic triple-cream named for Mount Tamalpais, and the washed-rind Red Hawk. Emmi took over in 2016; production is now mainly in Petaluma, and the Ferry Building shop closed in April 2021.",
+   "year": "1994 / 1997 / 2016 / 2021",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Cowgirl Creamery: The Cowgirl Story",
+     "url": "https://www.cowgirlcreamery.com/the-cowgirl-story",
+     "kind": "官方"
+    },
+    {
+     "title": "Cowgirl Creamery (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Cowgirl_Creamery",
+     "kind": "百科"
+    }
+   ],
+   "alt": "创办年份两说：维基写 1994 年（多与 Tomales Bay Foods 同年计）；业内常说 1997 年开始在 Point Reyes Station 做奶酪。官网未写年份。"
+  },
+  {
+   "id": "point-reyes",
+   "zh": "Point Reyes Farmstead Cheese Co.：Giacomini 家曾祖 1904 年从意大利北部移民加州；1959 年 Bob 与 Dean Giacomini 买下俯瞰 Tomales Bay 的 710 英亩牧场卖鲜奶。2000 年女儿们回家办奶酪厂，同年 8 月推出第一款 Original Blue——生乳、自家荷斯坦牛、熟成约三个半月，号称加州唯一的经典式蓝纹。2018 年在 Petaluma 开第二座奶酪厂，Original Blue 仍在牧场做。",
+   "en": "Point Reyes Farmstead Cheese Co.: the Giacomini great-grandfather emigrated from northern Italy in 1904; in 1959 Bob and Dean Giacomini bought 710 acres above Tomales Bay and sold milk. Their daughters came home in 2000 to start the cheese company, releasing the first Original Blue that August: raw milk from their own Holsteins, aged about three and a half months, billed as California's only classic-style blue. A second creamery opened in Petaluma in 2018; Original Blue is still made on the farm.",
+   "year": "1904 / 1959 / 2000-08 / 2018",
+   "num": "710 英亩；熟成约 3.5 个月",
+   "conf": "高",
+   "sources": [
+    {
+     "title": "Point Reyes Cheese: About Us",
+     "url": "https://pointreyescheese.com/pages/about-us",
+     "kind": "官方"
+    },
+    {
+     "title": "Original Blue (culture Cheese Library)",
+     "url": "https://culturecheesemag.com/cheese-library/original-blue",
+     "kind": "媒体"
+    }
+   ],
+   "note": "官网写「三姐妹」；早年报道多写四个女儿，未采用。"
+  },
+  {
+   "id": "ca-cheese-trail",
+   "zh": "2010 年起有「加州奶酪之路」（California Cheese Trail）地图，2017 年列了 72 家奶酪作坊；全美手工与特色奶酪生产者超过 900 家（美国奶酪协会口径）。",
+   "en": "The California Cheese Trail map, launched in 2010, listed 72 cheesemaking operations as of 2017; the American Cheese Society counts more than 900 artisan and specialty cheese operations nationwide.",
+   "year": "2010 / 2017",
+   "num": "72 家（加州）；>900 家（全美）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "Paxson, The Conversation / Brewminate (2017)",
+     "url": "https://brewminate.com/california-entrepreneurs-dream-of-cheese/",
+     "kind": "学术"
+    }
+   ]
+  },
+  {
+   "id": "ca-festival",
+   "zh": "California Artisan Cheese Festival：每年 3 月在索诺马县办的非营利奶酪节，创办人 Tom Birdsall，早年在 Petaluma 喜来登酒店外的大帐篷里办，有农场参观、讲座、品鉴市集。2025 年 3 月 21–23 日为第 20 届；官网列第 21 届为 2027 年 3 月 19–21 日，含 Sebastopol The Barlow 的 Cheese Crawl。",
+   "en": "The California Artisan Cheese Festival is a nonprofit festival held each March in Sonoma County, founded by Tom Birdsall and long staged in a tent outside the Sheraton in Petaluma, with farm tours, seminars and a tasting marketplace. The 20th edition ran March 21–23, 2025; the official site lists the 21st for March 19–21, 2027, including a Cheese Crawl at The Barlow in Sebastopol.",
+   "year": "2007 起 / 2025 / 2027",
+   "num": "100 多家参展（2027 官网口径）",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "California Artisan Cheese Festival 官网",
+     "url": "https://artisancheesefestival.com/",
+     "kind": "官方"
+    },
+    {
+     "title": "California Cheese Guild 活动页（2025）",
+     "url": "https://cacheeseguild.org/?p=6651",
+     "kind": "官方"
+    },
+    {
+     "title": "Visit Santa Rosa: 20th Annual California Artisan Cheese Festival",
+     "url": "https://www.visitsantarosa.com/events/20th-annual-california-artisan-cheese-festival",
+     "kind": "官方"
+    },
+    {
+     "title": "Artisan Cheese Festival in Petaluma marks 10 years (Petaluma Argus-Courier)",
+     "url": "https://www.petaluma360.com/news/5409230-181/artisan-cheese-festival-in-petaluma?artslide=0",
+     "kind": "媒体"
+    }
+   ],
+   "note": "创办年 2007 未在本轮打开的页面里直接看到；按届数倒推有出入（疫情年份是否计届不明）。2026 年似未办，官网直接跳到 2027。另有 SF Cheese Fest（2025-09-13）。"
+  },
+  {
+   "id": "ca-counter-list",
+   "zh": "在湾区全食和 Eataly 柜台上比较容易遇到的加州奶酪：Cowgirl Creamery 的 Mt Tam、Red Hawk；Point Reyes 的 Original Blue、Bay Blue、Toma、Tomarashi；Cypress Grove 的 Humboldt Fog；Marin French 的 Brie / Triple Crème / Petite Breakfast；Laura Chenel 的新鲜山羊奶酪；Vella 的 Dry Jack；Eataly 店内用牛奶现做的 mozzarella。全食 2025 年「12 Days of Cheese」就选了 Point Reyes Tomarashi、Humboldt Fog 和 Mt Tam。",
+   "en": "California cheeses you are likely to meet at Bay Area Whole Foods and Eataly counters: Cowgirl Creamery Mt Tam and Red Hawk; Point Reyes Original Blue, Bay Blue, Toma and Tomarashi; Cypress Grove Humboldt Fog; Marin French brie, triple crème and Petite Breakfast; Laura Chenel fresh chèvre; Vella Dry Jack; and Eataly's in-house cow's-milk mozzarella. Whole Foods' 2025 12 Days of Cheese featured Point Reyes Tomarashi, Humboldt Fog and Mt Tam.",
+   "year": "2025–2026",
+   "num": "",
+   "conf": "中",
+   "sources": [
+    {
+     "title": "12 Days of Cheese Returns… (Whole Foods Market, 2025-12-03)",
+     "url": "https://www.wholefoodsmarket.com/company-info/newsroom/news-releases/12-days-of-cheese-returns-for-a-season-of-exceptional-taste-at-whole-foods-market",
+     "kind": "企业"
+    },
+    {
+     "title": "Cowgirl Creamery Organic Mt Tam (Whole Foods 商品页)",
+     "url": "https://www.wholefoodsmarket.com/grocery/product/cowgirl-creamery-mt-tam-organic-triple-creme-cheese-b07yx4v45c",
+     "kind": "企业"
+    },
+    {
+     "title": "Eataly Silicon Valley Market 页（称也采购美国生产者的奶酪与熟肉）",
+     "url": "https://www.eataly.com/us_en/stores/silicon-valley/market",
+     "kind": "官方"
+    }
+   ],
+   "note": "全食 Mt Tam 有线上商品页、2025 年 12 Days 名单有三款加州奶酪，属已核；其余单品是否在某家门店有货未逐店核实，Eataly 硅谷店具体加州品牌未查到清单，页面宜写「常见」「到店问」。"
+  }
+ ]
+}

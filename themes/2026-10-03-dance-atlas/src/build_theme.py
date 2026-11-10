@@ -1,236 +1,292 @@
 #!/usr/bin/env python3
-"""第 3 题《舞从劳作来》：由 src/{template.html, content.json, map_data.json, dance-fig.js, app.js} 生成 ../index.html
+# -*- coding: utf-8 -*-
+"""第 3 题《舞从劳作来》v2 构建：content.json（事实）+ editorial2.py（新写的字与图片清单）+ images.json（授权）→ ../index.html
+  python3 src/build_theme.py
+事实一律来自 content.json；本脚本只排版，不改字。构建时做：图片存在性、授权字段、占位符、禁用词、命中断言。"""
+import os, re, json, html, sys
+HERE = os.path.dirname(os.path.abspath(__file__)); THEME = os.path.dirname(HERE)
+sys.path.insert(0, HERE)
+import editorial2 as E
 
-  python3 themes/2026-10-03-dance-atlas/src/make_content.py   # 研究底稿 → content.json（需要 research/ 目录）
-  python3 themes/2026-10-03-dance-atlas/src/build_theme.py    # 生成 index.html
-"""
-import json, os, html, re
+def rd(n): return open(os.path.join(HERE, n), encoding='utf-8').read()
+_c = rd('content.json')
+for _a, _b in E.FIXES:
+    _a, _b = json.dumps(_a, ensure_ascii=False)[1:-1], json.dumps(_b, ensure_ascii=False)[1:-1]
+    assert _c.count(_a) == 1, ('FIXES 命中次数', _a, _c.count(_a)); _c = _c.replace(_a, _b)
+C = json.loads(_c); MAP = json.loads(rd('map_data.json')); META = json.load(open(os.path.join(THEME, 'meta.json'), encoding='utf-8'))
+IMGS = {x['id']: x for x in json.loads(rd('images.json'))}
+esc = lambda s: html.escape(str(s), quote=True)
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), 'index.html')
-C = json.load(open(os.path.join(HERE, 'content.json'), encoding='utf-8'))
-MAP = json.load(open(os.path.join(HERE, 'map_data.json'), encoding='utf-8'))
-tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
-fig_js = open(os.path.join(HERE, 'dance-fig.js'), encoding='utf-8').read()
-app_js = open(os.path.join(HERE, 'app.js'), encoding='utf-8').read()
+# ---------- 小工具 ----------
+URL_RE = re.compile(r'https?://[^\s，；。）」、]+')
+def dom(u):
+    m = re.match(r'https?://([^/]+)', u); return m.group(1).replace('www.', '') if m else u
+def linkify(s):
+    """来源串里的裸 URL → 以域名为字的链接。"""
+    out, last = [], 0
+    for m in URL_RE.finditer(s):
+        out.append(esc(s[last:m.start()])); u = m.group(0)
+        out.append('<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(u), esc(dom(u)))); last = m.end()
+    out.append(esc(s[last:])); return ''.join(out)
+def conf(c, cls=''):
+    k, t = E.CONF[c]; return '<span class="conf %s %s" title="置信度：%s">置信 %s</span>' % (k, cls, t, t)
+used_imgs = []
+def credit(im): return '%s · %s · <a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(im['author']), esc(im['inst']), esc(im['licUrl']), esc(im['lic']))
+def fig(iid, cls='', eager=False, sizes=None):
+    im = IMGS[iid]; used_imgs.append(iid)
+    return ('<figure class="%s"><img src="%s" width="%d" height="%d" alt="%s"%s decoding="async"><figcaption><b>%s</b>%s<span class="cr">%s</span></figcaption></figure>'
+            % (cls, esc(im['file']), im['w'], im['h'], esc(im['title']), '' if eager else ' loading="lazy"', esc(im['title']), esc(im['cap']), credit(im)))
+def kv(pairs):
+    return '<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(k), v) for k, v in pairs if v) + '</dl>'
+def row(rid, cls, head, body):
+    return ('<div class="lrow" data-id="%s" id="n-%s"><button class="lhead" type="button" aria-expanded="false">%s<span class="lchev" aria-hidden="true"></span></button>'
+            '<div class="lmore"><div class="lmore-in">%s</div></div></div>' % (rid, rid, head, body))
+def lensbar(key, lenses, first):
+    b = ''.join('<button type="button" role="tab" data-lens="%s" aria-selected="%s">%s</button>' % (k, 'true' if k == first else 'false', esc(v)) for k, v in lenses)
+    return '<div class="lensbar"><span class="lensk">分组</span><div class="lens" id="lens-%s" role="tablist">%s</div><span class="lensnote" id="lensnote-%s"></span></div>' % (key, b, key)
+def groups_html(key, groups, rows_by_id):
+    s = ''
+    for g in groups:
+        s += '<div class="lgh" data-g="%s"><b>%s</b><small>%d 条</small></div>' % (esc(g['k']), esc(g['label']), len(g['ids']))
+        s += ''.join(rows_by_id[i] for i in g['ids'])
+    return s
+ARROW = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4"/></svg>'
 
-def esc(s): return html.escape(str(s if s is not None else ''), quote=True)
-def conf(c):
-    cls = {'高': 'h', '中': 'm', '低': 'l'}.get((c or '').strip()[:1], 'm')
-    return f'<span class="conf {cls}">置信 {esc(c or "中")}</span>'
-def link(t, u, cls=''):
-    t = esc(t)
-    return f'<a href="{esc(u)}" target="_blank" rel="noopener"{(" class=%s" % cls) if cls else ""}>{t}</a>' if u else t
+# ---------- 数据整理 ----------
+nodes = C['nodes']; decks = C['decks']
+def why_of(n):
+    v = [it['v'] for it in n['items'] if it['k'] == '为什么是它']
+    assert len(v) == 1, n['id']; return v[0]
+def lead_of(n):
+    s = n['summary']; i = s.find('为什么是它：'); return s[:i].strip()
+moves = []
+for d in decks:
+    for m in d['moves']:
+        mid = 'm%02d' % (len(moves) + 1); moves.append(dict(m, id=mid, deck=d['name'], dkey=d['key']))
+assert len(moves) == 14 and len(nodes) == 12 and len(C['works']) == 18 and len(C['quick']) == 10
+works = [dict(w, id='w%02d' % (i + 1)) for i, w in enumerate(C['works'])]
+quick = [dict(q, id='q%02d' % (i + 1)) for i, q in enumerate(C['quick'])]
+def qcat(q):
+    e = q['ethnic']
+    return 'aca' if '当代' in e else 'han' if e.startswith('汉族') else 'eth'
 
-def side(num, name):
-    return f'<div class="chap-side"><span class="vt">卷之{num}</span><span class="dot"></span><span class="vt small">{esc(name)}</span></div>'
+LENS = {
+    'moves': {
+        'deck': [dict(k=d['key'], label=d['name'], ids=[m['id'] for m in moves if m['dkey'] == d['key']]) for d in decks],
+        'conf': [dict(k=c, label='置信度 ' + c, ids=[m['id'] for m in moves if m['confidence'] == c]) for c in '高中低'],
+    },
+    'nodes': {
+        'era': [dict(k='e%d' % i, label=lab, ids=ids) for i, (lab, ids) in enumerate(E.NODES['era_groups'])],
+        'spread': [dict(k='s%d' % i, label=lab, ids=[n['id'] for n in nodes if lo <= len(n['map']['highlight']) <= hi]) for i, (lab, lo, hi) in enumerate(E.NODES['spread_groups'])],
+    },
+    'works': {
+        'genre': [dict(k='g%d' % i, label=g, ids=[w['id'] for w in works if w['genre'] == g]) for i, g in enumerate(dict.fromkeys(w['genre'] for w in works))],
+        'conf': [dict(k=c, label='置信度 ' + c, ids=[w['id'] for w in works if w['confidence'] == c]) for c in '高中低'],
+    },
+}
+for key in LENS:
+    for ln in LENS[key]:
+        LENS[key][ln] = [g for g in LENS[key][ln] if g['ids']]
+        n_all = {'moves': 14, 'nodes': 12, 'works': 18}[key]
+        assert sum(len(g['ids']) for g in LENS[key][ln]) == n_all, (key, ln)
+LENSNAME = {'moves': {'deck': '舞种', 'conf': '置信度'}, 'nodes': E.NODES['lens'], 'works': E.WATCH['lens']}
 
 # ---------- 卷首 ----------
-def hero():
-    steps = ''.join(f'<span><b>{"一二三"[i]}</b>{esc(s)}</span>' for i, s in enumerate(C['steps']))
-    return f'''
-<header class="hero wide" id="top">
-  <svg class="ribbons" viewBox="0 0 1000 220" aria-hidden="true" preserveAspectRatio="none">
-    <path class="ribbon" pathLength="1000" d="M-20 150 C 170 30, 300 240, 500 120 S 760 -10, 1030 140"></path>
-    <path class="ribbon thin" pathLength="1000" d="M-20 170 C 180 60, 300 250, 520 150 S 780 30, 1030 160"></path>
-  </svg>
-  <div class="eyebrow">一周一题 · 第三题 · 图谱</div>
-  <h1>{esc(C['title'])}</h1>
-  <p class="sub serif">{esc(C['subtitle'])}</p>
-  <p class="thesis serif"><span class="dot"></span>{esc(C['thesis'])}<span class="dot"></span></p>
-  <div class="steps">{steps}</div>
-  <div class="keyvis" id="keyvis">
-    <figure><svg viewBox="0 0 260 300" data-fig="shan" data-static="prep" role="img" aria-label="闪身步 · 蓄"></svg><figcaption>蓄</figcaption></figure>
-    <figure><svg viewBox="0 0 260 300" data-fig="shan" data-static="flash" role="img" aria-label="闪身步 · 闪"></svg><figcaption class="red">闪</figcaption></figure>
-    <figure><svg viewBox="0 0 260 300" data-fig="shan" data-static="stop" role="img" aria-label="闪身步 · 刹"></svg><figcaption>刹</figcaption></figure>
-    <figure><svg viewBox="0 0 260 300" data-fig="shan" role="img" aria-label="闪身步 · 动态演示，节奏来自教学原片"></svg><figcaption>原片节奏 · 3.3 秒一循环</figcaption></figure>
-    <figure><svg viewBox="0 0 260 300" data-fig="dou" role="img" aria-label="狗熊哆嗦毛 · 动态演示"></svg><figcaption>狗熊哆嗦毛</figcaption></figure>
-  </div>
-  <div class="note">卷首小人：二维骨架 × 原教学片段的骨架数据 · 扇与手巾、鼓与槌为道具 · 鼠标悬停图版可看原色</div>
-</header>'''
+H = E.HERO
+proof = H['proof'].format(N_NODES=len(nodes), N_MOVES=len(moves), N_WORKS=len(works), N_IMG=len(IMGS))
+B = []
+B.append('<header class="hero" id="top"><div class="wide"><div><div class="mast rise"><span>%s</span><span>%s</span></div><h1 class="rise">%s</h1><p class="hsub rise">%s</p><p class="hth rise">%s</p>'
+         '<div class="hact rise"><a class="btn" href="#stage">%s%s</a><span class="hproof">%s</span></div></div>%s</div></header>'
+         % (esc(H['mast'][0]), esc(H['mast'][1]), esc(H['h1']), esc(H['sub']), esc(H['th']), esc(H['btn']), ARROW, esc(proof), fig(H['img'], 'hfig rise', eager=True)))
+tl = ''
+for ln in E.TAGLINE:
+    tl += '<span class="ln">' + ''.join('<span class="w%s">%s</span>' % (' k' if w.startswith('*') else '', esc(w.lstrip('*'))) for w in ln) + '</span>'
+assert ''.join(w.lstrip('*') for ln in E.TAGLINE for w in ln) == C['thesis'], '论点须与 content.json 的 thesis 一字不差'
+B.append('<section class="tagsec" id="tagsec" aria-label="论点"><div class="tagstick"><div class="wide"><p class="tagl">%s</p><p class="tagrest">%s</p></div></div></section>' % (tl, esc(E.TAGREST)))
+B.append('<nav class="cnav" id="cnav" aria-label="章节"><div class="row">%s<button class="ntheme" id="theme-btn" type="button"></button><span class="prog" id="prog"></span></div></nav>'
+         % ''.join('<a href="#%s" data-nav="%s"><small>%s</small>%s</a>' % (i, i, esc(no), esc(t)) for i, no, t in E.NAV))
 
-# ---------- 导航 ----------
-def nav():
-    items = [('top', '卷首'), ('c1', '卷之一 · 爆梗现场'), ('c2', '卷之二 · 从劳作到艺术'), ('c3', '卷之三 · 动作教材'), ('c4', '卷之四 · 鉴赏对照'), ('c5', '卷之五 · 为什么是现在'), ('end', '卷末')]
-    row = ''.join(f'<a href="#{i}" data-nav="{i}"{" class=on" if i == "top" else ""}>{esc(t)}</a>' for i, t in items)
-    beats = [0, .54, 1.08, 1.44, 1.8, 2.16]
-    ticks = ''.join(('<span class="tick beat" style="animation-delay:%ss"></span>' % d) if i % 2 == 0 else '<span class="tick"></span><span class="tick"></span>' for i, d in enumerate(beats * 2))
-    return f'<nav class="nav" id="nav" aria-label="章节"><div class="row">{row}</div><div class="ticks" aria-hidden="true">{ticks}</div><div class="prog" id="prog"></div></nav>'
+# ---------- 序章 ----------
+S = E.STAGE
+stage_nodes = []
+for n in nodes:
+    iid = E.NODE_IMGS[n['id']][0]; im = IMGS[iid]; used_imgs.append(iid)
+    stage_nodes.append(dict(id=n['id'], era=n['era'], years=n['years'], title=n['title'], layer=n['map']['layer'], why=why_of(n), tick=S['ticks'][n['id']],
+                            img=im['file'], cap='%s · %s' % (im['title'], im['author']), hi=n['map']['highlight'], route=n['map'].get('route', []), labels=n['map'].get('labels', [])))
+    for c in n['map']['highlight']: assert c in MAP['prov'] and c != 'TW', (n['id'], c)
+ticks = ''.join('<span class="rtick%s" data-i="%d" style="left:calc(var(--gut) + 20px + (100%% - 2 * var(--gut) - 40px) * %.4f)"><i></i><b>%s</b></span>'
+                % (' last' if i == len(nodes) - 1 else '', i, i / (len(nodes) - 1), esc(sn['tick'])) for i, sn in enumerate(stage_nodes))
+B.append('<section class="stage" id="stage" aria-label="序章"><div class="stpin" id="stpin"><div class="ststage" id="ststage"><div class="stin">'
+         '<div class="stmap"><div class="stk">%s<span>%s</span></div><div id="stmap" class="map" style="height:100%%;display:flex;align-items:center;justify-content:center;width:100%%"></div></div>'
+         '<div class="stside" id="stside"><div class="stcard" aria-live="polite"><div class="stera"><b id="stera"></b><span id="styears"></span></div><h3 class="sttitle" id="sttitle"></h3><p class="stlayer" id="stlayer"></p><p class="stwhy" id="stwhy"></p><p class="stcap" id="stcap"></p>'
+         '<button class="sbtn" id="stopen" type="button">%s</button></div></div>'
+         '<div class="struler" id="struler" role="slider" tabindex="0" aria-label="时代" aria-valuemin="0" aria-valuemax="%d" aria-valuenow="0"><span class="rtrack"></span>%s<span class="rknob" id="stknob"></span></div>'
+         '</div></div></div></section>' % (esc(S['k']), esc(S['hint']), esc(S['open']), len(nodes) - 1, ticks))
 
-# ---------- 卷之一 ----------
-def chap1():
-    m = C['meme']
-    tl = ''.join(f'<li><span class="d">{esc(e["d"])}</span>{esc(e["t"])}<span class="s">{link(e["s"], e["u"])}</span></li>' for e in m['events'])
-    pair = ''
-    for p in m['pair']:
-        pair += f'''<article class="card"><h3>{esc(p['who'])}</h3><div class="what">{esc(p['what'])}</div>
-<dl><dt>身份</dt><dd>{esc(p['role'])}</dd><dt>教材</dt><dd>{esc(p['material'])}</dd><dt>非遗</dt><dd>{esc(p['heritage'])}</dd></dl>
-<blockquote>{esc(p['quote'])}</blockquote></article>'''
-    return f'''
-<section class="chap wide" id="c1"><div class="chap-head">{side('一', '爆梗现场')}<div class="chap-body fade">
-<h2>爆梗现场</h2><p class="lede">{esc(m['intro'])}</p>
-<ol class="tl">{tl}</ol>
-<div class="pair">{pair}</div>
-<p class="lede" style="margin-top:26px">要看懂这两个动作，得先回到舞蹈怎么来的——往下，是五千年。</p>
-</div></div></section>'''
+def chead(key):
+    c = E.CH[key]; im = IMGS[c['img']]; used_imgs.append(c['img'])
+    return ('<div class="chead"><div class="plate"><div class="ptext"><p class="cno">%s</p><h2>%s</h2><p class="lede">%s</p></div>%s</div></div>'
+            % (c['no'], esc(c['h2']), esc(c['lede']), fig(c['img'], 'pimg')))
 
-# ---------- 卷之二 ----------
-def node_html(n, i):
-    kv = ''.join(f'<dt>{esc(it["k"])}</dt><dd>{esc(it["v"])}</dd>' for it in n.get('items', []))
-    facts = ''.join(f'<li>{esc(f["text"])}{conf(f.get("confidence"))}<span class="src">{link(f.get("source", ""), f.get("url", ""))}</span></li>' for f in n.get('facts', []))
-    q = n.get('quote') or {}
-    quote = f'<blockquote>{esc(q.get("text"))}<cite>{esc(q.get("who"))}</cite></blockquote>' if q and q.get('text') else ''
-    im = n['image']
-    lic = link(im['license'], im.get('license_link')) if im.get('license_link') else esc(im['license'])
-    fig = f'''<figure class="plate" style="--ar:{im['w']}/{im['h']}"><div class="fr"><img src="{esc(im['src'])}" alt="{esc(im['title'])}" loading="lazy" width="{im['w']}" height="{im['h']}"></div>
-<figcaption><b>图 {i+1:02d} · {esc(im['title'])}</b> · {esc(im['caption'])}<br>{esc(im['author'])} · {lic} · <a href="{esc(im['page'])}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>'''
-    return f'''<article class="node" id="{n['id']}" data-node="{i}">
-<div class="kicker">节点 {i+1:02d} / 12 · {esc(n['years'])}</div>
-<h3>{esc(n['era'])} · {esc(n['title'])}</h3>
-<p class="sum">{esc(n['summary'])}</p>
-<dl class="kv">{kv}</dl>
-{quote}
-{fig}
-<details class="facts"><summary>资料与置信度（{len(n.get('facts', []))} 条）</summary><ul>{facts}</ul></details>
-</article>'''
+# ---------- 01 这一回的梗 ----------
+M = E.MEME; L = M['labels']
+evs = ''.join('<article class="ev"><div class="d">%s</div><p>%s</p><p class="src"><a href="%s" target="_blank" rel="noopener">%s</a></p></article>' % (esc(e['d']), esc(e['t']), esc(e['u']), esc(e['s'])) for e in C['meme']['events'])
+pair = ''.join('<article class="pcard"><div class="k">%s</div><h3>%s</h3><div class="what">%s</div><p>%s</p><p>%s</p><blockquote>%s</blockquote></article>'
+               % (esc(p['heritage']), esc(p['who']), esc(p['what']), esc(p['role']), esc(p['material']), esc(p['quote'])) for p in C['meme']['pair'])
+figmoves = [m for m in moves if m.get('fig')]
+assert [m['fig'] for m in figmoves] == ['shan', 'langzi', 'dou']
+tabs = ''.join('<button class="sbtn" type="button" data-move="%s" aria-pressed="%s">%s</button>' % (m['id'], 'true' if i == 0 else 'false', esc(m['name'])) for i, m in enumerate(figmoves))
+marks = ''.join('<button class="sbtn" type="button" data-mark="%s">%s</button>' % (k, esc(v)) for k, v in M['lab_marks'].items())
+lab = ('<div class="lab"><div><div class="labtabs" id="labtabs" role="group" aria-label="选动作">%s</div>'
+       '<div class="labstage paper" id="labstage"><svg id="labsvg" viewBox="0 0 260 300" role="img" aria-label="墨线小人示范动作"></svg><span class="labt" id="labt"></span></div>'
+       '<div class="labscrub"><input type="range" id="labscrub" min="0" max="1000" value="0" aria-label="逐帧"></div>'
+       '<div class="labctl"><button class="sbtn" type="button" id="labplay" aria-pressed="true">%s</button><span class="k">%s</span><span class="grp" id="labspeed">'
+       '<button class="sbtn" type="button" data-sp="1" aria-pressed="true">1×</button><button class="sbtn" type="button" data-sp="0.5" aria-pressed="false">½</button><button class="sbtn" type="button" data-sp="0.25" aria-pressed="false">¼</button></span>'
+       '<span class="k" id="labmarksk">%s</span><span class="grp" id="labmarks">%s</span></div></div>'
+       '<div class="labcard" id="labcard" aria-live="polite"></div></div>' % (tabs, esc(M['lab_pause']), esc(M['lab_speed']), esc(M['lab_marks_k']), marks))
+labor = '<div class="labor">' + ''.join(fig(i) for i in E.LABOR_IMGS) + '</div>'
+# 动作行
+mrows = {}
+for m in moves:
+    th = ('<span class="thumb paper"><svg viewBox="0 0 260 300" data-thumb="%s" aria-hidden="true"></svg></span>' % m['fig']) if m.get('fig') else '<span class="thumb" aria-hidden="true">—</span>'
+    cue = m['cue'] if m['cue'] not in ('——', '—', '') else ''
+    head = '%s<span class="lname"><b>%s</b><small>%s</small></span><span class="lcol">%s</span><span class="lconf">%s</span>' % (th, esc(m['name']), esc(cue or m['deck']), esc(m['life'] if len(m['life']) <= 44 else m['scene']), conf(m['confidence']))
+    see = ('<ul>' + ''.join('<li>%s</li>' % esc(x) for x in m['see']) + '</ul>') if m['see'] else ''
+    body = kv([(L['cue'], esc(cue)), (L['how'], esc(m['how'])), (L['life'], esc(m['life'])), (L['role'], esc(m['role'])), (L['scene'], esc(m['scene'])), (L['risk'], esc(m['risk'])), (L['see'], see)])
+    body += '<p class="src">%s　%s</p>' % (conf(m['confidence']), linkify(m['source']))
+    if m.get('fig'): body += '<div class="lacts"><button class="sbtn" type="button" data-tolab="%s">%s</button></div>' % (m['id'], esc(M['tolab']))
+    mrows[m['id']] = row(m['id'], 'mv', head, body)
+def deckmeta(d):
+    s = '<p><b>名录</b>　%s</p><p><b>流布</b>　%s</p>' % (esc(d['heritage']), esc(d['region']))
+    t = d['teacher']; s += '<p><b>教材</b>　%s：%s</p><p class="src">%s</p>' % (esc(t['name']), esc(t['material']), linkify(t['source']))
+    for key, lab in (('roles', '角色'), ('scenes', '场景')):
+        s += '<h4>%s</h4>' % lab + ''.join('<p><b>%s</b>　%s %s</p>' % (esc(x['name']), esc(x['desc']), conf(x['confidence'])) for x in d[key])
+    s += '<h4>流派与地域</h4>' + ''.join('<p><b>%s</b>　%s%s %s</p>' % (esc(x['name']), (esc(x['founder']) + '。') if x.get('founder') and x['founder'] != '——' else '', esc(x['trait']), conf(x['confidence'])) for x in d['schools'])
+    s += '<h4>传承人</h4>' + ''.join('<p><b>%s</b>　%s %s</p>' % (esc(x['name']), esc(x['note']), conf(x['confidence'])) for x in d['inheritors'])
+    s += '<h4>来源</h4><ul class="refs">' + ''.join('<li>%s</li>' % linkify(x) for x in d['sources']) + '</ul>'
+    chips = '<div class="chips">' + ''.join('<span class="chip">%s</span>' % esc(x) for x in d['names_only']) + '</div>'
+    return ('<details class="fold"><summary><h3>%s</h3><span class="small">%s</span></summary><div class="deckmeta">%s</div></details>'
+            '<p class="small" style="margin:16px 0 0">%s · %s（%d 个）</p>%s' % (esc(d['name']), esc(M['deck_more']), s, esc(d['name']), esc(M['names_k']), len(d['names_only']), chips))
+all_names = [m['name'] for m in moves] + [x for d in decks for x in d['names_only']]
+B.append('<main><section class="chap" id="meme"><div class="wide">' + chead('meme')
+         + '<div class="sec"><div class="sech"><h3>%s</h3><span class="small">%s</span></div><div class="evs" id="evs">%s</div></div>' % (esc(M['ev_h']), esc(M['ev_note']), evs)
+         + '<div class="sec"><div class="sech"><h3>%s</h3></div><div class="pair">%s</div></div>' % (esc(M['pair_h']), pair)
+         + '<div class="sec" id="lab"><div class="sech"><h3>%s</h3><span class="small">%s</span></div>%s</div>' % (esc(M['lab_h']), esc(M['lab_note']), lab)
+         + '<div class="sec"><div class="sech"><h3>%s</h3><span class="small">%s</span></div>%s</div>' % (esc(M['labor_h']), esc(M['labor_note']), labor)
+         + '<div class="sec" id="moves"><div class="sech"><h3>%s</h3><span class="small">%s</span></div>' % (esc(M['moves_h']), esc(M['moves_note']))
+         + '<div class="finder"><input id="finder-in" list="finder-list" type="search" placeholder="%s" aria-label="%s"><datalist id="finder-list">%s</datalist><button class="sbtn" type="button" id="finder-go">%s</button><button class="sbtn" type="button" id="finder-rand">%s</button></div><p class="finderout" id="finder-out" aria-live="polite"></p>'
+           % (esc(M['finder_ph']), esc(M['finder_h']), ''.join('<option value="%s">' % esc(x) for x in all_names), esc(M['finder_go']), esc(M['finder_rand']))
+         + lensbar('moves', [('deck', '舞种'), ('conf', '置信度')], 'deck') + '<div class="lgrid mv" id="lgrid-moves">%s</div>' % groups_html('moves', LENS['moves']['deck'], mrows)
+         + ''.join(deckmeta(d) for d in decks) + '</div></div></section>')
 
-def chap2():
-    nodes = ''.join(node_html(n, i) for i, n in enumerate(C['nodes']))
-    strip = ''.join(f'<button type="button" data-era="{i}"{" class=on" if i == 0 else ""}>{esc(n["era"])}</button>' for i, n in enumerate(C['nodes']))
-    return f'''
-<section class="chap wide" id="c2"><div class="chap-head">{side('二', '从劳作到艺术')}<div class="chap-body">
-<div class="fade"><h2>从劳作到艺术</h2>
-<p class="lede">十二个时代节点。左边的地图随你滚动换图层——高亮的是那个时代舞蹈的发生地，虚线是传播与迁徙的路线；右边的文字按时间往下走，左侧墨线逢节点打一个朱砂点。每个节点都列出代表物、它来自什么劳作或仪式、发生了什么交融，以及「为什么是它」。</p></div>
-<div class="atlas">
-  <div class="map-col fade">
-    <div class="map-wrap" id="mapwrap" aria-live="polite"></div>
-    <div class="map-layer"><b id="layer-name">{esc(C['nodes'][0]['map'].get('layer', ''))}</b><span id="layer-years">{esc(C['nodes'][0]['years'])}</span></div>
-    <div class="era-strip" id="era-strip">{strip}</div>
-  </div>
-  <div class="nodes" id="nodes"><div class="rail" aria-hidden="true"><i id="rail-fill"></i></div>{nodes}</div>
-</div>
-</div></div></section>'''
+# ---------- 02 十二个节点 ----------
+N = E.NODES
+nrows = {}
+for n in nodes:
+    head = '<span class="lyear">%s</span><span class="lname"><b>%s</b><small>%s</small></span><span class="lcol">%s</span><span class="lconf">%s</span>' % (esc(n['years']), esc(n['title']), esc(n['era']), esc(n['map']['layer']), conf(n['confidence']))
+    items = kv([(it['k'], esc(it['v'])) for it in n['items'] if not (it['k'] == '为什么是它' and '为什么是它：' in n['summary'])])
+    q = n.get('quote'); qh = '<blockquote class="lquote">%s<small>%s</small></blockquote>' % (esc(q['text']), esc(q['who'])) if q else ''
+    def fli(f): return '<li>%s<div class="src">%s<a href="%s" target="_blank" rel="noopener">%s</a></div></li>' % (esc(f['text']), conf(f['confidence']), esc(f['url']), esc(f['source']))
+    fs = n['facts']; top, rest = fs[:3], fs[3:]
+    facts = '<h4>%s</h4><ul class="facts">%s</ul>' % (esc(N['facts_k']), ''.join(fli(f) for f in top))
+    if rest: facts += '<details class="fold"><summary>%s</summary><ul class="facts">%s</ul></details>' % (esc(N['more_facts'].format(n=len(rest))), ''.join(fli(f) for f in rest))
+    left = '<div><p class="ltext">%s</p>%s%s%s<div class="lacts"><button class="sbtn" type="button" data-tomap="%s">%s</button></div></div>' % (esc(n['summary']), qh, items, facts, n['id'], esc(N['tomap']))
+    right = '<div class="figs">%s</div>' % ''.join(fig(i) for i in E.NODE_IMGS[n['id']])
+    nrows[n['id']] = row(n['id'], 'nd', head, '<div class="lbody">%s%s</div>' % (left, right))
+B.append('<section class="chap" id="nodes"><div class="wide">' + chead('nodes') + lensbar('nodes', list(N['lens'].items()), 'era')
+         + '<div class="lgrid nd" id="lgrid-nodes">%s</div></div></section>' % groups_html('nodes', LENS['nodes']['era'], nrows))
 
-# ---------- 卷之三 ----------
-def move_html(m, deck_key):
-    has_fig = bool(m.get('fig'))
-    cls = 'move hero-move' if has_fig else 'move'
-    figwrap = f'<div class="figwrap"><svg viewBox="0 0 260 300" data-fig="{m["fig"]}" role="img" aria-label="{esc(m["name"])} 动态演示"></svg><span class="cap">{esc(m.get("cue") or "")}</span></div>' if has_fig else ''
-    rows = []
-    for k, key in [('要领', 'how'), ('生活来源', 'life'), ('角色', 'role'), ('场景', 'scene'), ('提示', 'risk')]:
-        v = (m.get(key) or '').strip()
-        if v and not v.startswith('要领未') and not v.startswith('仅见'):
-            rows.append(f'<dt>{k}</dt><dd>{esc(v)}</dd>')
-    see = ''.join(f'<span>{esc(s)}</span>' for s in (m.get('see') or []) if s)
-    see_html = f'<div class="see">看哪里：{see}</div>' if see else ''
-    cue = f'<div class="cue"><span class="dot"></span>{esc(m["cue"])}</div>' if m.get('cue') and m['cue'] != '——' and not has_fig else ''
-    src = (m.get('source') or '')
-    srcs = ' · '.join(link(('来源 %d' % (j+1)) if len(re.findall(r'https?://\S+', src)) > 1 else '来源', u) for j, u in enumerate(re.findall(r'https?://[^\s;；，,）)]+', src)))
-    body = f'<div><h4>{esc(m["name"])}{conf(m.get("confidence"))}</h4>{cue}<dl>{"".join(rows)}</dl>{see_html}{("<div class=src>" + srcs + "</div>") if srcs else ""}</div>'
-    return f'<article class="{cls}" id="mv-{deck_key}-{esc(m["name"])}">{figwrap}{body}</article>'
-
-def deck_html(d):
-    roles = ''.join(f'<span class="chip"><b>{esc(r["name"])}</b> {esc(r.get("desc") or "")}</span>' for r in d.get('roles') or [])
-    scenes = ''.join(f'<span class="chip"><b>{esc(s["name"])}</b> {esc(s.get("desc") or "")}</span>' for s in d.get('scenes') or [])
-    schools = '、'.join(esc(s.get('name') or '') for s in d.get('schools') or [])
-    t = d.get('teacher') or {}
-    moves = ''.join(move_html(m, d['key']) for m in d['moves'])
-    names = ('<p class="names"><b>教材与文献里还有这些动作名</b>（本次只查到名字、未见要领，不编）：' + '、'.join(esc(x) for x in d['names_only']) + '。</p>') if d.get('names_only') else ''
-    inh = ''.join(f'<div class="card"><b>{esc(i["name"])}</b><p>{esc(i.get("note") or "")}</p></div>' for i in (d.get('inheritors') or []) if i.get('name') and not i['name'].startswith('（'))
-    img = ''
-    if d.get('image'):
-        im = d['image']; lic = link(im['license'], im.get('license_link')) if im.get('license_link') else esc(im['license'])
-        img = f'<figure class="plate" style="--ar:{im["w"]}/{im["h"]}"><div class="fr"><img src="{esc(im["src"])}" alt="{esc(im["title"])}" loading="lazy" width="{im["w"]}" height="{im["h"]}"></div><figcaption><b>{esc(im["title"])}</b> · {esc(im["caption"])}<br>{esc(im["author"])} · {lic} · <a href="{esc(im["page"])}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption></figure>'
-    return f'''<div class="deck fade" id="deck-{d['key']}">
-<div class="deck-head">
-  <div><h3>{esc(d['name'])}</h3><div class="meta">{esc(d.get('heritage') or '')}</div><p>{esc(d.get('region') or '')}</p>
-  <dl><dt>角色</dt><dd><span class="chips">{roles}</span></dd><dt>场景</dt><dd><span class="chips">{scenes}</span></dd><dt>流派</dt><dd>{schools}</dd>
-  <dt>老师</dt><dd><b>{esc(t.get('name') or '')}</b> · {esc(t.get('title') or '')}</dd><dt>教材</dt><dd>{esc(t.get('material') or '')}</dd></dl></div>
-  <div>{img}</div>
-</div>
-<div class="moves">{moves}</div>
-{names}
-<div class="inheritors">{inh}</div>
-</div>'''
-
-def chap3():
-    decks = ''.join(deck_html(d) for d in C['decks'])
-    return f'''
-<section class="chap wide" id="c3"><div class="chap-head">{side('三', '动作教材')}<div class="chap-body">
-<div class="fade"><h2>动作教材</h2>
-<p class="lede">两套卡组，来自两位老师的教学原片和北京舞蹈学院的公开教材。每张卡统一写口令、要领、生活来源、角色与原生场景；带小人的三张，动作数据直接取自原片的骨架。查不到要领的动作只列名字——这也是本题的态度：不编。</p></div>
-{decks}
-</div></div></section>'''
-
-# ---------- 卷之四 ----------
-def chap4():
-    rows = ''
-    for r in C['works']:
-        genre_key = 'hgd' if '花鼓灯' in (r.get('genre') or '') else ('gz' if '秧歌' in (r.get('genre') or '') else 'other')
-        work = f'<b>{esc(r["work"])}</b>' + (f'<span class="sub">{esc(r.get("troupe") or "")}{(" · " + esc(r["year"])) if r.get("year") else ""}</span>')
-        rows += f'<tr data-genre="{genre_key}" data-conf="{esc((r.get("confidence") or "中")[:1])}"><td>{esc(r["combo"])}</td><td>{esc(r.get("genre") or "")}</td><td>{work}</td><td>{esc(r.get("where") or "")}</td><td>{esc(r.get("look") or "")}</td><td>{conf(r.get("confidence"))}{(" " + link("官方", r["link"])) if r.get("link") else ""}</td></tr>'
-    quick = ''
-    for q in C['quick']:
-        wk = ''.join(f'<span>{link(w["title"], w.get("link"))} · {esc(w.get("who") or "")}{(" · " + esc(w["year"])) if w.get("year") else ""}{conf(w.get("confidence")) if (w.get("confidence") or "") != "高" else ""}</span>' for w in q.get('works') or [])
-        quick += f'<article class="card"><h4>{esc(q["genre"])}<small>{esc(q.get("ethnic") or "")} · {esc(q.get("region") or "")}</small></h4><div class="motif"><b>动律</b>{esc(q["motif"])}</div><div class="watch"><b style="color:var(--muted);font-weight:500">道具</b> {esc(q.get("props") or "")}<br><b style="color:var(--muted);font-weight:500">看什么</b> {esc(q["watch"])}</div><div class="wk">{wk}</div></article>'
-    genres = sorted({q['genre'] for q in C['quick']} | {'安徽花鼓灯', '山东鼓子秧歌'})
-    genre_opts = ''.join(f'<option>{esc(g)}</option>' for g in genres)
-    return f'''
-<section class="chap wide" id="c4"><div class="chap-head">{side('四', '鉴赏对照')}<div class="chap-body">
-<div class="fade"><h2>鉴赏对照</h2>
-<p class="lede">按「组合 / 场景」排的一张表：这个动作在哪部作品里能看到、看哪一段、看什么。只给官方渠道，不嵌第三方视频。表下是十个舞种的看点速查，带着去剧场或打开春晚回放就用得上。</p></div>
-<div class="tool fade" id="finder">
-  <div><h3>动作查找器</h3><p class="hint">输入或选一个梗名，跳到动作卡并列出能看到它的作品。</p>
-    <label for="finder-input">动作名</label><input id="finder-input" list="finder-list" placeholder="闪身步 / 狗熊哆嗦毛 / 浪子踢球 / 伞头领场 …"><datalist id="finder-list"></datalist>
-    <button type="button" class="btn" id="finder-go">查找</button> <button type="button" class="btn ghost" id="finder-rand">随便来一个</button></div>
-  <div class="out" id="finder-out">还没有查。试试「狗熊哆嗦毛」。</div>
-</div>
-<div class="filters" id="filters"><span class="lab">筛选</span><button type="button" data-f="all" class="on">全部</button><button type="button" data-f="hgd">安徽花鼓灯</button><button type="button" data-f="gz">山东鼓子秧歌</button><span class="lab" style="margin-left:10px">置信</span><button type="button" data-c="all" class="on">全部</button><button type="button" data-c="高">只看高</button></div>
-<div class="tbl"><table id="works"><thead><tr><th>组合 / 场景</th><th>舞种</th><th>作品</th><th>看哪一段</th><th>看什么</th><th>置信 · 渠道</th></tr></thead><tbody>{rows}</tbody></table></div>
-<h3 style="font-size:22px;letter-spacing:.1em;margin-top:38px" class="fade">其它舞种看点速查</h3>
-<div class="quick fade">{quick}</div>
-<div class="tool fade" id="checklist">
-  <div><h3>看点清单生成器</h3><p class="hint">选一个舞种，填上你要去看的作品，生成一页看点提示——截图带去剧场。</p>
-    <label for="cl-genre">舞种</label><select id="cl-genre">{genre_opts}</select>
-    <label for="cl-work">作品（可不填）</label><input id="cl-work" placeholder="例：《大染坊》谢幕 / 春晚某年的秧歌">
-    <button type="button" class="btn" id="cl-go">生成清单</button> <button type="button" class="btn ghost" id="cl-copy">复制文字</button></div>
-  <div class="out" id="cl-out">选好舞种点「生成清单」。</div>
-</div>
-</div></div></section>'''
-
-# ---------- 卷之五 ----------
-def chap5():
-    paras = ''.join(f'<p>{esc(p)}</p>' for p in C['why']['paras'])
-    return f'''
-<section class="chap wide" id="c5"><div class="chap-head">{side('五', '为什么是现在')}<div class="chap-body fade">
-<h2>为什么是现在</h2>
-<div class="essay">{paras}</div>
-</div></div></section>'''
+# ---------- 03 去哪儿看 ----------
+W = E.WATCH; WL = W['labels']
+qrows = {}
+for q in quick:
+    ims = E.QUICK_IMGS[q['genre']]
+    th = '<span class="qth">%s</span>' % (('<img src="%s" alt="" loading="lazy" decoding="async">' % esc(IMGS[ims[0]]['file'])) if ims else '—')
+    head = '%s<span class="lname"><b>%s</b><small>%s</small></span><span class="lcol">%s</span>' % (th, esc(q['genre']), esc(q['region']), esc(q['motif'] if len(q['motif']) <= 60 else q['motif'][:q['motif'].find('：')] if 0 < q['motif'].find('：') <= 60 else q['props']))
+    wl = '<ul>' + ''.join('<li>%s　%s%s %s%s</li>' % (esc(w['title']), esc(w['who']), ('，' + esc(w['year'])) if w.get('year') else '', conf(w['confidence']),
+                                                    (' <a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(w['link']), esc(dom(w['link'])))) if w.get('link') else '') for w in q['works']) + '</ul>'
+    left = '<div>' + kv([(WL['ethnic'], esc(q['ethnic'])), (WL['region'], esc(q['region'])), (WL['motif'], esc(q['motif'])), (WL['props'], esc(q['props'])), (WL['watch'], esc(q['watch'])), (WL['works'], wl)]) + '<p class="src">%s</p></div>' % linkify(q['source'])
+    right = ('<div class="figs">%s</div>' % ''.join(fig(i) for i in ims)) if ims else '<p class="small">%s</p>' % esc(W['noimg'])
+    qrows[q['id']] = row(q['id'], 'qk', head, '<div class="lbody">%s%s</div>' % (left, right))
+qgroups = [dict(k=k, label=lab, ids=[q['id'] for q in quick if qcat(q) == k]) for lab, k in W['quick_groups']]
+assert sum(len(g['ids']) for g in qgroups) == 10 and all(g['ids'] for g in qgroups)
+wrows = {}
+for w in works:
+    yshort = re.split(r'[（(]', w['year'])[0].strip()
+    head = '<span class="lg lcol">%s</span><span class="lname"><b>%s</b><small>%s</small></span><span class="lcol y">%s</span><span class="lconf">%s</span>' % (esc(w['genre']), esc(w['work']), esc(w['combo']), esc(yshort), conf(w['confidence']))
+    link = '<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(w['link']), esc(dom(w['link']))) if w['link'] else ''
+    body = kv([(WL['combo'], esc(w['combo'])), (WL['troupe'], esc(w['troupe'])), (WL['year'], esc(w['year'])), (WL['where'], esc(w['where'])), (WL['look'], esc(w['look'])), (WL['link'], link)]) + '<p class="src">%s　%s</p>' % (conf(w['confidence']), linkify(w['source']))
+    wrows[w['id']] = row(w['id'], 'wk', head, body)
+B.append('<section class="chap" id="watch"><div class="wide">' + chead('watch')
+         + '<div class="sec"><div class="sech"><h3>%s</h3><span class="small">%s</span></div><div class="lgrid qk" id="lgrid-quick">%s</div></div>' % (esc(W['quick_h']), esc(W['quick_note']), groups_html('quick', qgroups, qrows))
+         + '<div class="sec"><div class="sech"><h3>%s</h3></div>%s<div class="lgrid wk" id="lgrid-works">%s</div></div>' % (esc(W['works_h']), lensbar('works', list(W['lens'].items()), 'genre'), groups_html('works', LENS['works']['genre'], wrows))
+         + '</div></section></main>')
 
 # ---------- 卷末 ----------
-def end():
-    refs = ''
-    for k, items in C['refs'].items():
-        lis = ''.join(f'<li>{link(x["t"], x["u"])}</li>' for x in items)
-        refs += f'<details><summary>{esc(k)}（{len(items)}）</summary><ul>{lis}</ul></details>'
-    method = ''.join(f'<li>{esc(x)}</li>' for x in C['method']['items'])
-    todo = '、'.join(esc(x) for x in C['method']['todo'])
-    credits = ''.join(f'<li>{esc(v["title"])} — {esc(v["author"])}，{esc(v["license"])}，<a href="{esc(v["page"])}" target="_blank" rel="noopener">Commons</a></li>' for k, v in C['credits'].items())
-    return f'''
-<footer class="end wide" id="end">
-<div class="grid">
-  <div><h3>参考</h3>{refs}<details><summary>图片来源与许可证（{len(C['credits'])}）</summary><ul>{credits}</ul></details></div>
-  <div><h3>方法</h3><ol>{method}</ol><p class="todo"><b>仍待核：</b>{todo}。</p></div>
-</div>
-<div class="stamp"><div class="meta">一周一题 · 第 3 题 · 2026-10-03 · 图谱<br>文字与小人引擎：Claude（Fable 5.1）与天杰 · 骨架数据取自教学原片 · 地图按现行省级行政区划</div><div class="vt">一周一题 · 第三题 · 天杰</div></div>
-</footer>
-<button type="button" class="theme-btn" id="theme-btn" aria-label="切换深浅色" data-cover-hide>深 / 浅</button>'''
+X = E.END
+def fold(h, inner, note=''): return '<details class="fold"><summary><h3>%s</h3>%s</summary><div>%s</div></details>' % (esc(h), ('<span class="small">%s</span>' % esc(note)) if note else '', inner)
+refs = ''
+for chap, items in C['refs'].items():
+    seen = set(); lis = ''
+    for r in items:
+        key = (r['t'], r.get('u'))
+        if key in seen: continue
+        seen.add(key); lis += '<li>%s</li>' % (('<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(r['u']), esc(r['t']))) if r.get('u') else esc(r['t']))
+    refs += '<h4>%s</h4><ol class="refs">%s</ol>' % (esc(chap), lis)
+order = list(dict.fromkeys(used_imgs))
+assert set(order) == set(IMGS), ('图片清单与页面用图不一致', set(IMGS) ^ set(order))
+cred = '<p class="small">%s</p><div class="tblwrap"><table class="credits"><thead><tr><th>图</th><th>作者</th><th>机构 / 来源</th><th>年份</th><th>许可</th><th>来源页</th></tr></thead><tbody>' % esc(X['credits_note'].format(n=len(order)))
+for iid in order:
+    im = IMGS[iid]
+    cred += '<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s<br><a href="%s" target="_blank" rel="noopener">%s</a></td><td><a href="%s" target="_blank" rel="noopener">%s</a></td></tr>' % (
+        esc(im['title']), esc(im['author']), esc(im['inst']), esc(im['year']), esc(im['lic']), esc(im['licUrl']), esc(im['licUrl']), esc(im['page']), esc(dom(im['page'])))
+cred += '</tbody></table></div>'
+B.append('<footer class="endm" id="end"><div class="wide"><h2>%s</h2><p class="small">%s</p>' % (esc(X['h2']), esc(X['v2_note']))
+         + fold(X['why_h'], ''.join('<p>%s</p>' % esc(p) for p in C['why']['paras']))
+         + fold(X['method_h'], '<ul>%s</ul>' % ''.join('<li>%s</li>' % esc(x) for x in C['method']['items']))
+         + fold(X['todo_h'], '<ul>%s</ul>' % ''.join('<li>%s</li>' % esc(x) for x in C['method']['todo']))
+         + fold(X['refs_h'], refs) + fold(X['credits_h'], cred)
+         + '<div class="stamp">%s</div></div></footer>' % esc(X['stamp']))
 
-body = hero() + nav() + chap1() + chap2() + chap3() + chap4() + chap5() + end()
-desc = '从青海大通舞蹈纹彩陶盆到北舞教学视频里的「闪身步」：十二个时代节点 × 中国版图图层，讲舞蹈怎样从劳作、仪式与交融里沉淀成艺术；附安徽花鼓灯与山东鼓子秧歌两套动作教材、原片骨架驱动的墨线小人，以及一张「在哪部作品里看什么」的鉴赏对照表。'
-page = (tpl.replace('{{DESCRIPTION}}', esc(desc)).replace('{{BODY}}', body)
-        .replace('{{CONTENT_JSON}}', json.dumps({k: C[k] for k in ('nodes', 'decks', 'works', 'quick')}, ensure_ascii=False).replace('</', '<\\/'))
-        .replace('{{MAP_JSON}}', json.dumps(MAP, ensure_ascii=False).replace('</', '<\\/'))
-        .replace('{{DANCE_FIG_JS}}', fig_js).replace('{{APP_JS}}', app_js))
-open(OUT, 'w', encoding='utf-8').write(page)
-print('wrote', OUT, len(page) // 1024, 'KB')
+# ---------- 数据（给 app.js） ----------
+DATA = dict(
+    map=dict(w=MAP['w'], h=MAP['h'], jd=MAP['jd'], islands=MAP['islands'], inset=MAP['inset'], note=S['note'],
+             prov={c: dict(d=p['d'], c=p['c']) for c, p in MAP['prov'].items()}),  # 不带省名：页面只画形状，文字标注全部来自各节点的 labels
+    stage=stage_nodes, lens=LENS, lensName=LENSNAME,
+    moves=[dict(id=m['id'], name=m['name'], deck=m['deck'], fig=m.get('fig'), cue=m['cue'] if m['cue'] not in ('——', '—') else '', how=m['how'], life=m['life'], risk=m['risk']) for m in moves],
+    nameOnly=[dict(name=x, deck=d['name']) for d in decks for x in d['names_only']],
+    t=dict(play=M['lab_play'], pause=M['lab_pause'], open=M['lab_open'], nameonly=M['finder_nameonly'], none=M['finder_none'], labels={k: L[k] for k in ('how', 'life', 'risk')}),
+)
+body = '\n'.join(B)
+fig_js = rd('dance-fig.js')
+assert 'drawAt' in fig_js, 'dance-fig.js 需带 v2 加的 drawAt / T'
+out = rd('template.html')
+for k, v in (('{{TITLE}}', esc(META['title'])), ('{{DESCRIPTION}}', esc(META['summary'])), ('{{BODY}}', body),
+             ('{{DATA_JSON}}', json.dumps(DATA, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')), ('{{FIG_JS}}', fig_js), ('{{APP_JS}}', rd('app.js'))):
+    assert k in out, k; out = out.replace(k, v)
+
+# ---------- 检查 ----------
+def audit(doc):
+    errs = []
+    for bad in ('台湾', '臺灣', 'Taiwan', '台北', '{{', '{N_', 'TODO', 'FIXME', 'lorem', '占位', '车、表、球', '吃喝玩乐', '>None<', '>undefined<'):
+        if bad in doc: errs.append('禁用 / 泄漏：' + bad)
+    for m in re.finditer(r'(?:src|href)="(assets/[^"]+)"', doc):
+        if not os.path.exists(os.path.join(THEME, m.group(1))): errs.append('缺图：' + m.group(1))
+    for im in IMGS.values():
+        for f in ('author', 'inst', 'year', 'lic', 'licUrl', 'page', 'title', 'cap'):
+            if not im.get(f): errs.append('授权字段空：%s.%s' % (im['id'], f))
+        if not im['licUrl'].startswith('https://creativecommons.org/'): errs.append('许可 URL 非 CC / PDM：' + im['id'])
+    for f in os.listdir(os.path.join(THEME, 'assets')):
+        if ('assets/' + f) not in doc: errs.append('assets 里有没用到的文件：' + f)
+    if 'fonts.googleapis.com/css2?family=Noto+Serif+SC' not in doc: errs.append('字体')
+    for must in ('id="lgrid-moves"', 'id="lgrid-nodes"', 'id="lgrid-works"', 'id="lgrid-quick"', 'id="stpin"', 'id="labsvg"', 'class="credits"'):
+        if doc.count(must) != 1: errs.append('命中次数不为 1：' + must)
+    if doc.count('class="lrow"') != 14 + 12 + 18 + 10: errs.append('行数不对：%d' % doc.count('class="lrow"'))
+    return errs
+errs = audit(out)
+if errs:
+    print('\n'.join(errs)); sys.exit(1)
+open(os.path.join(THEME, 'index.html'), 'w', encoding='utf-8').write(out)
+text = re.sub(r'<(script|style)[\s\S]*?</\1>', '', out); text = re.sub(r'<[^>]+>', '', text)
+print('index.html %d KB · 可见文字约 %d 字 · 图 %d 张 · assets %d KB' % (len(out.encode()) // 1024, len(re.sub(r'\s+', '', text)), len(order),
+      sum(os.path.getsize(os.path.join(THEME, 'assets', f)) for f in os.listdir(os.path.join(THEME, 'assets'))) // 1024))

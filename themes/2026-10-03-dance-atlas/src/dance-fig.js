@@ -164,5 +164,7 @@ function mountDanceFig(svg, opts){
   var raf = 0, t0 = performance.now(), last = 0;
   if (rm) draw(move === 'shan' ? SHAN_MARKS.flash : 1.0);
   else (function loop(now){ if (now - last > 32){ last = now; draw((now - t0)/1000); } raf = requestAnimationFrame(loop); })(t0);
-  return { stop: function(){ if (raf) cancelAnimationFrame(raf); raf = 0; }, setTime: function(t){ if (raf) cancelAnimationFrame(raf); raf = 0; for (var i = 0; i < 40; i++) draw(t); } };
+  return { stop: function(){ if (raf) cancelAnimationFrame(raf); raf = 0; }, setTime: function(t){ if (raf) cancelAnimationFrame(raf); raf = 0; for (var i = 0; i < 40; i++) draw(t); } ,
+    // v2（2026-11）：drawAt = 只画一帧（由页面自己掌时钟，用于慢放 / 逐帧）；T = 这一循环的时长（秒）
+    drawAt: function(t){ if (raf) cancelAnimationFrame(raf); raf = 0; draw(t); }, T: seq.frames.length / seq.fps };
 }

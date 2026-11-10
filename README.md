@@ -6,6 +6,7 @@
 - `hub/` 首页模板与站点信息（含 podcast_home / podcast_episode 模板）
 - `podcast/episodes/` 播客每期一个文件夹（meta.json + notes.html + cover.png + audio/）→ 输出到 `/listen/`
 - `static/` 原样复制到站点根的独立小页面
+- `hub/person.json` 作者本人的事实：`/about/`、首页的 Person JSON-LD、`/llms.txt` 都从这一份生成；`hub/how.html` 是 `/how/` 制作说明
 - `build.py` 生成 `public/`（Cloudflare Pages 构建命令）
 - `queue.md` 选题池 · `WORKFLOW.md` 出题与发布流程
 

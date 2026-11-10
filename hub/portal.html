@@ -49,6 +49,7 @@ img{display:block;max-width:100%}
 .title{padding:48px 0 22px;border-bottom:1px solid var(--ink)}
 .title h1{font-family:var(--disp);font-weight:900;font-size:clamp(30px,5vw,40px);letter-spacing:.01em;line-height:1.2;margin:0}
 .title .en{font-size:13px;color:var(--mute);letter-spacing:.12em;margin-bottom:14px}
+.title .by{font-size:14px;color:var(--ink2);margin-top:12px}.title .by a{color:inherit;text-decoration:underline;text-decoration-color:var(--mute);text-underline-offset:4px;margin-left:.4em}.title .by a:hover{color:var(--ink)}
 .title p{font-size:16px;line-height:1.7;color:var(--ink2);margin:18px 0 0;max-width:40ch}
 
 /* 目录 */
@@ -119,6 +120,7 @@ footer .r{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
 <div class="page">
   <header class="title">
     <h1>tianjie.me</h1>
+    <div class="by">{{EN}}{{NAME_ZH}}做的。<a href="/about/">关于我 / About</a></div>
   </header>
 
   <section class="toc" aria-label="目录">
@@ -136,7 +138,7 @@ footer .r{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
   {{WAN}}
   {{ZOU}}
 
-  <footer><span>© {{YEAR}} {{EN}}</span><div class="r"><a href="/feed.xml">一周一题 RSS</a><a href="/listen/feed.xml">合读 RSS</a><a href="/sitemap.xml">Sitemap</a><button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></div></footer>
+  <footer><span>© {{YEAR}} <a href="/about/">{{EN}}</a></span><div class="r"><a href="/about/">关于</a><a href="/how/">制作说明</a><a href="/feed.xml">一周一题 RSS</a><a href="/listen/feed.xml">合读 RSS</a><a href="/sitemap.xml">Sitemap</a><button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></div></footer>
 </div>
 <script>
 (function(){var r=document.documentElement,b=document.getElementById('themebtn');if(!b)return;function L(){var t=r.getAttribute('data-theme');b.textContent=t==='dark'?'☀ 浅色':t==='light'?'☾ 深色':'◐ 深浅色'}

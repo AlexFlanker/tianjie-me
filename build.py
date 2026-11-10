@@ -165,13 +165,10 @@ if person:
     jsonld = {
         '@context': 'https://schema.org', '@type': 'Person',
         'name': person['name'], 'alternateName': [person.get('name_zh'), person.get('alias')],
-        'url': person['url'], 'jobTitle': 'Senior Software Engineer',
-        'worksFor': {'@type': 'Organization', 'name': 'hireEZ'},
+        'url': person['url'],   # 雇主、职位、学历不写进站里，工作经历看 LinkedIn（sameAs）
         'homeLocation': {'@type': 'Place', 'name': person['location']},
-        'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'Cornell University'},
-                     {'@type': 'CollegeOrUniversity', 'name': 'Northeastern University at Qinhuangdao'}],
         'description': person['persona'] + ' ' + person['lede'],
-        'knowsAbout': ['ATS integration', 'integration platforms', 'API design', 'AI agents', 'applicant tracking systems'],
+        'knowsAbout': ['integration platforms', 'API design', 'AI agents'],
         'sameAs': [l['url'] for l in person['links'] if l['url'].startswith('http')],
         'mainEntityOfPage': person['url'],
     }
@@ -463,6 +460,8 @@ if person:
     person['evidence'] = [e for e in person['evidence'] if e['desc']]
     updated = str(dt.date.today())
     atpl = open(os.path.join(HUB, 'about.html'), encoding='utf-8').read()
+    if not person.get('facts'):   # 没有 facts 就不出这一节
+        atpl = re.sub(r'\s*<section class="sec" id="facts">.*?</section>\n', '\n', atpl, flags=re.S)
     now_html = ''.join(f'<li>{esc(en)}<span class="zh">{esc(zh)}</span></li>' for en, zh in zip(person['now'], person.get('now_zh', person['now'])))
     facts_html = ''.join(f'<dt>{esc(f["k"])}</dt><dd>{esc(f["v"])}</dd>' for f in person['facts'])
     ev_html = ''.join(f'<a href="{esc(e["url"])}"><b>{esc(e["title"])}</b><span>{esc(e["desc"])}</span></a>' for e in person['evidence'])
@@ -479,7 +478,8 @@ if person:
     # llms.txt（llmstxt.org 约定）：给 AI 助手的事实源，站上四条线都列出来
     L = [f"# {person['name']}（{person.get('name_zh','')}）", '', f"> {person['persona']} {person['lede']}", '',
          f"Site: {BASE} — {PERSON.get('lead', site['tagline'])}", f"About page: {person['url']}", f"Location: {person['location']}", '', '## Now', '']
-    L += [f"- {n}" for n in person['now']] + ['', '## Facts', ''] + [f"- {f['k']}: {f['v']}" for f in person['facts']]
+    L += [f"- {n}" for n in person['now']]
+    if person.get('facts'): L += ['', '## Facts', ''] + [f"- {f['k']}: {f['v']}" for f in person['facts']]
     L += ['', f"## 看 · {site['name']}（weekly interactive explainers, {len(themes)} issues）", '']
     L += [f"- [{m['title']}]({BASE}{m['url']}) — {m['date']}" for m in reversed(themes)]
     L += [f"- [号外 · {m['title']}]({BASE}{m['url']}) — {m['date']}" for m in reversed(extras)]

@@ -6,38 +6,15 @@
   "location": "San Jose, California",
   "persona": "Integration-platform engineer for the agent era.",
   "persona_zh": "做集成平台的工程师，正在把它搬到 agent 时代。",
-  "lede": "I build the integration layer between recruiting software and the world's applicant-tracking systems — and I'm working out what that layer should look like when the clients are AI agents, not people clicking buttons.",
-  "lede_zh": "我做的是招聘软件和各家 ATS 之间的集成层；现在在想的问题是：当调用方从点按钮的人变成 AI agent，这一层该长成什么样。",
+  "lede": "I build integration platforms, the layer that connects one product to many other systems, and I'm working out what that layer should look like when the callers are AI agents, not people clicking buttons.",
+  "lede_zh": "我做集成平台，也就是把一个产品接到很多外部系统的那一层；现在在想的问题是：当调用方从点按钮的人变成 AI agent，这一层该长成什么样。",
   "now": [
-    "Tech lead of the ATS integration platform at hireEZ: one platform for many ATS / CRM / HCM vendors.",
-    "Running tianjie.me as a weekly, agent-assisted publishing pipeline — one research-backed interactive page every Saturday."
+    "Making tianjie.me: a weekly interactive explainer, a podcast that reads books together, small browser games and photo routes."
   ],
   "now_zh": [
-    "hireEZ ATS 集成平台 tech lead：一个平台对接多家 ATS / CRM / HCM 厂商。",
-    "把 tianjie.me 当成一条每周运转的、agent 辅助的出版流水线：每周六一个有出处的交互页面。"
+    "在做 tianjie.me：每周一题的交互页面、把几本书放到一起听的播客、能在浏览器里玩的小游戏，还有摄影路线。"
   ],
-  "facts": [
-    {
-      "k": "Role",
-      "v": "Senior Software Engineer, hireEZ (Apr 2021 – present); tech lead of the ATS-Squad"
-    },
-    {
-      "k": "Previously",
-      "v": "Backend Software Engineer, CrossCircles Inc. (Oct 2018 – Apr 2021)"
-    },
-    {
-      "k": "Education",
-      "v": "M.Eng. Electrical & Computer Engineering, Cornell University (2017); B.Eng. Measurement & Control Technology and Instrument, Northeastern University at Qinhuangdao (2016)"
-    },
-    {
-      "k": "Certification",
-      "v": "Claude Certified Architect – Professional (Anthropic, 2026)"
-    },
-    {
-      "k": "Based in",
-      "v": "San Jose, California"
-    }
-  ],
+  "facts": [],
   "evidence": [
     {
       "title": "一周一题 · {{ISSUES}} weeks, {{ISSUES}} pages",
@@ -77,13 +54,13 @@
     },
     {
       "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/tianjiesun/"
+      "url": "https://www.linkedin.com/in/tianjie-sun-280627126/"
     },
     {
       "label": "RSS",
       "url": "/feed.xml"
     }
   ],
-  "contact_note": "The fastest way to reach me is LinkedIn.",
-  "contact_note_zh": "找我最快的方式是 LinkedIn。"
+  "contact_note": "The fastest way to reach me is LinkedIn; my work background is there too.",
+  "contact_note_zh": "找我最快的方式是 LinkedIn，工作经历也在那里。"
 }

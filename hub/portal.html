@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>tianjie.me</title>
-<meta name="description" content="一周一题、合读、Game Studio、摄影导览">
+<meta name="description" content="一周一题、合读、Game Studio、摄影导览、梦工厂">
 <meta name="author" content="{{EN}}">
 <meta name="theme-color" content="#f3f5f4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#161a21" media="(prefers-color-scheme: dark)">
@@ -14,7 +14,7 @@
 <link rel="alternate" type="application/rss+xml" title="合读" href="/listen/feed.xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="tianjie.me">
-<meta property="og:description" content="一周一题、合读、Game Studio、摄影导览">
+<meta property="og:description" content="一周一题、合读、Game Studio、摄影导览、梦工厂">
 <meta property="og:url" content="{{BASE}}/">
 <meta property="og:image" content="{{OG_IMAGE}}">
 <meta property="og:locale" content="zh_CN">
@@ -42,7 +42,7 @@ img{display:block;max-width:100%}
 .tabs a{display:grid;place-items:center;width:52px;height:88px;background:var(--tab);color:var(--tabink);font-family:var(--disp);font-weight:900;font-size:30px;line-height:1;border-radius:8px 0 0 8px;box-shadow:-2px 2px 0 rgba(30,39,64,.18);transition:width .15s}
 .tabs a small{font-family:var(--sans);font-size:10px;letter-spacing:.1em;opacity:.75;margin-top:4px}
 .tabs a:hover{width:60px}
-@media (max-width:980px){.tabs{position:sticky;top:0;transform:none;grid-template-columns:repeat(4,1fr);gap:0;margin:0;width:100%;background:var(--tab)}.tabs a{width:auto;height:54px;border-radius:0;box-shadow:none;font-size:22px}.tabs a:hover{width:auto}.tabs a small{margin-top:2px}}
+@media (max-width:980px){.tabs{position:sticky;top:0;transform:none;grid-template-columns:repeat(5,1fr);gap:0;margin:0;width:100%;background:var(--tab)}.tabs a{width:auto;height:54px;border-radius:0;box-shadow:none;font-size:22px}.tabs a:hover{width:auto}.tabs a small{margin-top:2px}}
 @media (prefers-reduced-motion:reduce){.tabs a{transition:none}}
 
 /* 扉页 */
@@ -99,6 +99,7 @@ img{display:block;max-width:100%}
 .rows li span{color:var(--mute)}.rows li em{font-style:normal;color:var(--mute);font-size:13px}
 .week{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;font-size:14.5px;margin:4px 0 0}
 .week dt{color:var(--mute)}.week dd{margin:0}
+.scr{display:grid;place-items:center;aspect-ratio:1200/630;background:#08090b;border:1px solid var(--rule);color:#d9dde4;font-family:var(--disp);font-weight:900;font-size:20px;letter-spacing:.3em;padding-left:.3em}
 .route{border:1px solid var(--rule);width:100%;aspect-ratio:1200/630;background:var(--bg)}
 @media (max-width:1200px){.ch-sec .big{position:static;font-size:64px;display:inline-block;margin-right:14px;vertical-align:-8px}}
 @media (max-width:640px){.entry{grid-template-columns:1fr}.entry figure{max-width:280px}.rows li{grid-template-columns:56px 1fr}.rows li em{display:none}}
@@ -115,6 +116,7 @@ footer .r{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
   <a href="#ting">听<small>合读</small></a>
   <a href="#wan">玩<small>游戏</small></a>
   <a href="#zou">走<small>导览</small></a>
+  <a href="#meng">梦<small>梦工厂</small></a>
 </nav>
 
 <div class="page">
@@ -137,6 +139,7 @@ footer .r{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
   {{TING}}
   {{WAN}}
   {{ZOU}}
+  {{MENG}}
 
   <footer><span>© {{YEAR}} <a href="/about/">{{EN}}</a></span><div class="r"><a href="/about/">关于</a><a href="/how/">制作说明</a><a href="/feed.xml">一周一题 RSS</a><a href="/listen/feed.xml">合读 RSS</a><a href="/sitemap.xml">Sitemap</a><button class="theme-btn" id="themebtn" type="button" aria-label="切换深浅色">◐ 深浅色</button></div></footer>
 </div>

@@ -452,7 +452,7 @@ def film_media(f):
     poster = f.get('poster') if has(f.get('poster')) else ''
     if has(f.get('trailer')):
         return (f'<div class="screen"><video controls playsinline preload="metadata"{" poster="+chr(34)+poster+chr(34) if poster else ""} src="{f["trailer"]}"></video></div>'
-                f'<div class="cap">预告片，全部由 AI 生成</div>'), poster
+                f'<div class="cap">预告片 · 画面由 AI 生成，配乐和剪辑由 Claude 用代码完成</div>'), poster
     return (f'<div class="screen ph" role="img" aria-label="预告片制作中"><div><div class="t">{esc(f["title"])}</div><div class="s">预告片制作中</div></div></div>'
             f'<div class="cap">预告片还在生成，做好后放在这里</div>'), poster
 meng = ''

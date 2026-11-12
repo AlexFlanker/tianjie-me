@@ -83,6 +83,20 @@
       "log": "《死线》v0.6 · 围城",
       "log_sub": "「它们」从楼外来，同事是幸存者；五种语言",
       "caption": "作品 02，深夜的 17 层"
+    },
+    {
+      "no": 3,
+      "title": "三问成局",
+      "url": "https://tabletop.alexflankerucsd.workers.dev/",
+      "play": "https://tabletop.alexflankerucsd.workers.dev/",
+      "cover": "https://games.tianjie.me/tabletop/media/cover.png",
+      "date": "2026-11-11",
+      "version": "0.1",
+      "kicker": "桌游生成器，2–12 人联机，手机直接玩",
+      "desc": "回答三个问题，为这一桌人现做一款桌游。规则、身份和牌现场生成，房主确认后发个链接，大家进房间开局。",
+      "log": "《三问成局》上线",
+      "log_sub": "三个问题生成一款多人桌游，发链接开局",
+      "caption": "作品 03，三张问题卡"
     }
   ],
   "tour": {

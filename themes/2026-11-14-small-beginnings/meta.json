@@ -1,0 +1,26 @@
+{
+  "no": 9,
+  "slug": "small-beginnings",
+  "title": "起于微末：一件小事怎样牵动全世界",
+  "subtitle": "一条船、一间厂、一行代码、一块霉、一根藤、一次缺货——同样是一个很小的起点，有的卡住了世界，有的推了世界一把。",
+  "date": "2026-11-14",
+  "summary": "一条船横过来，苏伊士运河堵了六天；另一条船装上 58 个铁箱子，海运从此换了算法。序章把六对起点相似、走向相反的案例放在世界地图上一对一对走；然后是 32 个案例的涟漪图、一张「要等多久」的时间图，和一份可按走向、按「小在哪里」、按年代翻看的案例表。每条因果链只写来源明说的，传说与有争议处并列两说。",
+  "tags": [
+    "因果链",
+    "世界史",
+    "供应链",
+    "科学史",
+    "全球"
+  ],
+  "format": "图谱 · 序章舞台 · 涟漪图 · 时间轴 · 透镜列表",
+  "cover": "cover.png",
+  "cover_focus": "#top",
+  "cover_scheme": "dark",
+  "reading_time": "20 分钟",
+  "sources": [
+    "机构与官方：苏伊士运河管理局、欧洲空管组织、联合国贸发会议、国际电信联盟、世界卫生组织、美国疾控中心与食品药品监督管理局、美国农业部、美国能源信息署、CERN、CSIRO、Denso Wave、npm、微软、CrowdStrike、CIMMYT、美国国家公园管理局",
+    "论文与专著：Feyrer 论苏伊士关闭、Sheffi《The Resilient Enterprise》、Levinson《The Box》、Suri & Jack 2016（Science）、Yoshida 等 2013、Alves 等 2022（PNAS）、Wood《Tambora》、何炳棣 1956 与 1959、Deng 2013、Mahalanabis 等 1973、Brock & Freeze 1969、Chien 等 1976、Saiki 等 1988、Eng 等 1992",
+    "报道：路透社、《纽约时报》、《连线》、劳氏日报、IHS iSuppli、Cirium、Parametrix",
+    "图片：NASA、美国国会图书馆、美国地质调查局与国家公园管理局、美国疾控中心、美国农业部、Science History Institute、Wellcome Collection、澳大利亚国家档案馆、维基共享资源（CC BY / CC BY-SA）；逐张署名见页面卷末与 src/images.json"
+  ]
+}

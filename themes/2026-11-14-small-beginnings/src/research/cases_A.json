@@ -1,0 +1,817 @@
+[
+ {
+  "id": "ever-given",
+  "title_zh": "长赐号",
+  "kind": "block",
+  "small_zh": "一阵大风，一条 400 米长的船",
+  "big_zh": "苏伊士运河堵了六天，422 条船排队",
+  "origin": {
+   "year": 2021,
+   "date": "2021-03-23",
+   "place_zh": "埃及 苏伊士运河南段",
+   "lat": 30.02,
+   "lon": 32.58,
+   "text_zh": "2021 年 3 月 23 日清晨，400 米长的集装箱船长赐号（Ever Given）在大风中打横，斜卡在运河两岸之间，把河道堵死。"
+  },
+  "chain": [
+   {
+    "year": 2021,
+    "date": "2021-03-26",
+    "place_zh": "南非 好望角",
+    "lat": -34.4,
+    "lon": 18.5,
+    "text_zh": "地中海航运（MSC）通告客户，11 条船改绕好望角；马士基也改道，路透社称航程最多加两周。"
+   },
+   {
+    "year": 2021,
+    "place_zh": "埃及 苏伊士湾",
+    "lat": 29.7,
+    "lon": 32.5,
+    "text_zh": "运河南口外的苏伊士湾里停满等待的船，美国陆地卫星 8 号当天拍下了这片锚地。",
+    "date": "2021-03-27"
+   },
+   {
+    "year": 2021,
+    "place_zh": "埃及 苏伊士运河南段",
+    "lat": 30.02,
+    "lon": 32.58,
+    "text_zh": "拂晓时船身部分浮起，当晚趁涨潮由拖船拖正脱困；运河管理局说积压 422 条船。",
+    "date": "2021-03-29"
+   },
+   {
+    "year": 2021,
+    "place_zh": "埃及 大苦湖",
+    "lat": 30.3,
+    "lon": 32.4,
+    "text_zh": "长赐号被拖到大苦湖做第二次检查；管理局主席说，预计到 30 日清晨双向共放行 113 条船。",
+    "date": "2021-03-30"
+   },
+   {
+    "year": 2021,
+    "place_zh": "埃及 伊斯梅利亚（运河管理局）",
+    "lat": 30.6,
+    "lon": 32.3,
+    "text_zh": "最后 85 条船通过，422 条积压船全部放行；其间每天放行 80 至 90 条，平时约 50 条。",
+    "date": "2021-04-03"
+   },
+   {
+    "year": 2021,
+    "date": "2021-04-06",
+    "place_zh": "荷兰 鹿特丹港",
+    "lat": 51.95,
+    "lon": 4.14,
+    "text_zh": "运河放行后，约 60 条集装箱船同时驶向鹿特丹；港口称到港量「异常之高」，限制出口货提前进场。"
+   }
+  ],
+  "reach": {
+   "year": 2021,
+   "text_zh": "劳氏日报（Lloyd's List）估算每天拦下的货值超过 90 亿美元；埃及每天少收 1200 万至 1500 万美元。"
+  },
+  "lag": {
+   "days": 6,
+   "text_zh": "3 月 23 日搁浅到 29 日脱困，六天"
+  },
+  "facts": [
+   "长赐号长 400 米、22.4 万吨，2021 年 3 月 23 日搁浅，3 月 29 日脱困。",
+   "运河管理局主席拉比耶（Osama Rabie）说积压 422 条船，预计三天半清完。",
+   "积压在 4 月 3 日清完，最后一批是 85 条船。",
+   "劳氏日报估算每天受阻的货值超过 90 亿美元，这是货物价值，不是损失额。",
+   "埃及方面表示将索赔约 10 亿美元，用于通行费损失与救援费用。"
+  ],
+  "dispute": "劳氏日报的数字是按运河平日东西向货流估出的「被拦住的货值」，常被误读成每天损失；货物只是晚到，并未灭失。搁浅原因路透社当时写的是大风，本条未取得正式调查报告。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Traffic in Suez Canal Resumes After Stranded Ship Refloated (Reuters)",
+    "publisher": "Insurance Journal",
+    "url": "https://www.insurancejournal.com/news/international/2021/03/29/607392.htm",
+    "year": "2021"
+   },
+   {
+    "title": "Suez ship backlog cleared",
+    "publisher": "New Straits Times (PressReader)",
+    "url": "https://www.pressreader.com/malaysia/new-straits-times/20210405/281904480979820",
+    "year": "2021"
+   },
+   {
+    "title": "Global cargo backlog of 422 ships resumes moving through Suez Canal",
+    "publisher": "The Standard",
+    "url": "https://www.thestandard.com.hk/finance/article/168545/Global-cargo-backlog-of-422-ships-resumes-moving-through-Suez-Canal",
+    "year": "2021"
+   },
+   {
+    "title": "Traffic Jam on the Suez Canal",
+    "publisher": "NASA Earth Observatory",
+    "url": "https://science.nasa.gov/earth/earth-observatory/traffic-jam-on-the-suez-canal-148114/",
+    "year": "2021"
+   },
+   {
+    "title": "Suez Canal Blocked by Massive Ship Costs $9 Billion Every Day",
+    "publisher": "The Quint",
+    "url": "https://www.thequint.com/news/world/suez-canal-blocked-by-massive-ship-costs-9-billion-dollars-everyday",
+    "year": "2021"
+   },
+   {
+    "title": "Suez Canal blockage – update 1（客户通告）",
+    "publisher": "MSC",
+    "url": "https://www.msc.com/en/newsroom/customer-advisories/2021/march/suez-canal-blockage--update-1",
+    "year": "2021"
+   },
+   {
+    "title": "Calm before the storm: European ports await influx of ships impacted by Suez blockage",
+    "publisher": "gCaptain（转载 The Loadstar）",
+    "url": "https://gcaptain.com/calm-before-the-storm-european-ports-await-influx-of-ships-impacted-by-suez-blockage/",
+    "year": "2021"
+   }
+  ],
+  "verify": false,
+  "note": "常引的「每天 96 亿美元（西向 51 亿 + 东向 45 亿）」未能打开劳氏日报原文，只核到转述的「超过 90 亿美元」；运河管理局对事故原因的后续说法（不只是天气）未核，未写入。"
+ },
+ {
+  "id": "suez-closure",
+  "title_zh": "运河关八年",
+  "kind": "block",
+  "small_zh": "六天的战争，封了一条水道",
+  "big_zh": "14 条船困在大苦湖八年，油轮改绕好望角",
+  "origin": {
+   "year": 1967,
+   "date": "1967-06-05",
+   "place_zh": "埃及 苏伊士运河",
+   "lat": 30.6,
+   "lon": 32.3,
+   "text_zh": "1967 年 6 月第三次中东战争爆发，埃及以沉船和水雷封闭苏伊士运河。正在过河的船队停在了半路。"
+  },
+  "chain": [
+   {
+    "year": 1967,
+    "place_zh": "埃及 大苦湖",
+    "lat": 30.3,
+    "lon": 32.4,
+    "text_zh": "来自八个国家的 14 条货船被困在大苦湖，另有一条困在提姆萨赫湖。船身日久蒙上黄沙，得名「黄色舰队」。",
+    "date": "1967-06"
+   },
+   {
+    "year": 1967,
+    "place_zh": "南非 好望角",
+    "lat": -34.4,
+    "lon": 18.5,
+    "text_zh": "波斯湾到西欧的油轮改绕非洲，《纽约时报》当年估算多走约 4800 英里、多花 16 天；到 7 月下旬部分油轮运价翻倍。",
+    "date": "1967-07"
+   },
+   {
+    "year": 1974,
+    "place_zh": "埃及 苏伊士运河",
+    "lat": 30.0,
+    "lon": 32.6,
+    "text_zh": "据《海湾新闻》，1974 年美国牵头清除河道里的水雷和沉船残骸。"
+   },
+   {
+    "year": 1975,
+    "place_zh": "埃及 塞得港",
+    "lat": 31.3,
+    "lon": 32.3,
+    "text_zh": "关闭整整八年后运河重开。14 条船里只有两条德国船明斯特兰号与北风号靠自己的动力开了出来。",
+    "date": "1975-06-05"
+   }
+  ],
+  "reach": {
+   "year": 1975,
+   "text_zh": "经济学家费雷尔（James Feyrer）把这八年当作自然实验：海上距离变长，相关国家间的贸易减少，收入也受影响。"
+  },
+  "lag": {
+   "days": 50,
+   "text_zh": "封河不到两个月运价翻倍；关闭持续八年"
+  },
+  "facts": [
+   "运河 1967 年 6 月关闭，1975 年 6 月 5 日重开，前后八年。",
+   "14 条货船困在大苦湖，来自保、捷、法、波、瑞典、西德、英、美八国。",
+   "八年间先后约有 3000 名船员轮换上船看守。",
+   "波斯湾到西欧绕好望角，多走约 4800 英里、约 16 天（1967 年估算）。",
+   "据《纽约时报》1967 年的估算，1966 年每天约 50 条船过运河，一半是油轮。"
+  ],
+  "dispute": "封河日期有 6 月 5 日与 6 日两说；被困船数有 14 条（大苦湖）与 15 条（加提姆萨赫湖一条）两种算法。超大型油轮（VLCC）的兴起，有人归因于这次绕行，也有人追溯到 1956 年那次关闭后的投资，两说并存。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Distance, Trade, and Income – The 1967 to 1975 Closing of the Suez Canal as a Natural Experiment (Working Paper 15557)",
+    "publisher": "NBER / James Feyrer",
+    "url": "https://nber.org/papers/w15557",
+    "year": "2009"
+   },
+   {
+    "title": "The Suez Canal's worst stuck-ship fiasco lasted eight years",
+    "publisher": "Quartz",
+    "url": "https://qz.com/1988437/the-suez-canals-worst-stuck-ship-fiasco-lasted-eight-years",
+    "year": "2021"
+   },
+   {
+    "title": "How the (closure of the) Suez Canal changed the world",
+    "publisher": "The Gamming",
+    "url": "https://thegamming.org/2014/08/31/how-the-closure-of-the-suez-canal-changed-the-world/",
+    "year": "2014"
+   },
+   {
+    "title": "When the world's arteries close: From Suez's 8-year shutdown to the shadow blockade of Hormuz",
+    "publisher": "Gulf News",
+    "url": "https://gulfnews.com/world/mena/when-the-worlds-arteries-close-from-suezs-8-year-shutdown-to-the-shadow-blockade-of-hormuz-1.500491097",
+    "year": "2026"
+   }
+  ],
+  "verify": false,
+  "note": "VLCC 与绕行的因果只有二手媒体的概括（Gulf News 归于 1967 年后，The Gamming 归于 1956 年后），没有核到带吨位数字的一手研究，已放进 dispute；费雷尔论文只读了摘要，未取具体弹性数值。"
+ },
+ {
+  "id": "eyjafjallajokull",
+  "title_zh": "艾雅法拉火山灰",
+  "kind": "block",
+  "small_zh": "冰岛一座冰盖下的火山喷了灰",
+  "big_zh": "八天取消约 10.4 万个航班，约一千万人走不了",
+  "origin": {
+   "year": 2010,
+   "date": "2010-04-14",
+   "place_zh": "冰岛 艾雅法拉火山",
+   "lat": 63.6,
+   "lon": -19.6,
+   "text_zh": "2010 年 4 月 14 日，冰岛艾雅法拉火山（Eyjafjallajökull）喷发，火山灰升到客机巡航的高度，随风向东南飘往欧洲大陆。"
+  },
+  "chain": [
+   {
+    "year": 2010,
+    "place_zh": "英国 伦敦",
+    "lat": 51.5,
+    "lon": -0.1,
+    "text_zh": "欧洲北部各国陆续关闭空域。欧洲空管组织把 4 月 15 日至 22 日这八天算作主要危机期。",
+    "date": "2010-04-15"
+   },
+   {
+    "year": 2010,
+    "place_zh": "比利时 布鲁塞尔（欧洲空管组织）",
+    "lat": 50.9,
+    "lon": 4.5,
+    "text_zh": "取消率到顶：当天约八成航班没有起飞，全欧只飞了 5204 班，一周前同一天是 24965 班。",
+    "date": "2010-04-18"
+   },
+   {
+    "year": 2010,
+    "place_zh": "肯尼亚 内罗毕",
+    "lat": -1.3,
+    "lon": 36.9,
+    "text_zh": "肯尼亚每天约 1000 吨鲜花蔬菜靠夜航运往欧洲。出口商说四天损失 1200 万美元，最多 5000 名农场工人被通知停工。",
+    "date": "2010-04-19"
+   },
+   {
+    "year": 2010,
+    "place_zh": "爱尔兰与英国空域",
+    "lat": 53.3,
+    "lon": -6.3,
+    "text_zh": "5 月 4 日至 17 日火山灰间歇回来，又取消约 7000 个航班。",
+    "date": "2010-05-04"
+   }
+  ],
+  "reach": {
+   "year": 2010,
+   "text_zh": "欧洲空管组织估算八天取消约 10.4 万个航班、约 1000 万人次无法登机；国际航协估算航空公司少收 17 亿美元。"
+  },
+  "lag": {
+   "days": 4,
+   "text_zh": "4 月 14 日喷发，18 日取消率到八成"
+  },
+  "facts": [
+   "4 月 15–22 日约 10.4 万个航班取消，占应飞的 48%（欧洲空管组织）。",
+   "约 1000 万人次没能登机；往返都受影响的旅客被计了两次。",
+   "国际航协估算航空公司损失收入超过 17 亿美元，高峰三天每天约 4 亿美元。",
+   "肯尼亚花卉与蔬菜业每天损失约 300 万美元，四天销毁或送掉 1200 万美元的货。",
+   "欧盟出售的切花约三分之一产自肯尼亚（2010 年报道口径）。"
+  ],
+  "dispute": "当时航空公司与国际航协批评全面关闭空域过于保守；欧洲火山学会主席戈德吕（Henry Gaudru）回应说，那时没有可靠的火山灰浓度数据。取消数是「应飞减实飞」的估算，未扣除五千多班调机与接返航班。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Ash-cloud of April and May 2010: Impact on Air Traffic (STATFOR Doc394)",
+    "publisher": "EUROCONTROL",
+    "url": "https://www.eurocontrol.int/archive_download/all/node/10542",
+    "year": "2010"
+   },
+   {
+    "title": "Icelandic Volcano's Ash Cloud Impact, By The Numbers",
+    "publisher": "AVweb",
+    "url": "https://avweb.com/news/icelandic-volcanos-ash-cloud-impact-by-the-numbers/",
+    "year": "2010"
+   },
+   {
+    "title": "Airlines count volcano chaos cost",
+    "publisher": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2010/4/22/airlines-count-volcano-chaos-cost",
+    "year": "2010"
+   },
+   {
+    "title": "How the Iceland volcano ash cloud is crippling Kenya's flower industry",
+    "publisher": "The Christian Science Monitor",
+    "url": "https://proof.csmonitor.com/World/2010/0419/How-the-Iceland-volcano-ash-cloud-is-crippling-Kenya-s-flower-industry",
+    "year": "2010"
+   },
+   {
+    "title": "Kenya Losing Millions as Volcano Grounds Flights",
+    "publisher": "Voice of America",
+    "url": "https://www.voanews.com/amp/kenya-losing-millions-as-volcano-grounds-flights-91522474/154164.html",
+    "year": "2010"
+   },
+   {
+    "title": "Ash Plume across the North Atlantic",
+    "publisher": "NASA Earth Observatory",
+    "url": "https://science.nasa.gov/earth/earth-observatory/ash-plume-across-the-north-atlantic-43670/",
+    "year": "2010"
+   }
+  ],
+  "verify": false,
+  "note": "链上 5 月火山灰回潮的经纬度取爱尔兰一带示意，欧洲空管组织报告未在摘要里列出具体空域；4 月 15 日最先关闭的国家清单未逐一核。"
+ },
+ {
+  "id": "albuquerque-fire",
+  "title_zh": "十分钟的火",
+  "kind": "block",
+  "small_zh": "一道雷，一场十分钟的小火",
+  "big_zh": "爱立信少卖至少 4 亿美元，十个月后宣布不再自己造手机",
+  "origin": {
+   "year": 2000,
+   "date": "2000-03-17",
+   "place_zh": "美国 新墨西哥州 阿尔伯克基",
+   "lat": 35.1,
+   "lon": -106.6,
+   "text_zh": "2000 年 3 月 17 日，雷电击中输电线，飞利浦阿尔伯克基芯片厂 22 号车间起火。火约十分钟就灭了，烟尘和喷淋水却污染了洁净室。"
+  },
+  "chain": [
+   {
+    "year": 2000,
+    "place_zh": "芬兰 埃斯波（诺基亚）",
+    "lat": 60.2,
+    "lon": 24.7,
+    "text_zh": "诺基亚采购主管三天后从飞利浦得知火情，把相关芯片列入特别监控；两周内组成 30 人的小组，分头在欧、亚、美找货。",
+    "date": "2000-03-20"
+   },
+   {
+    "year": 2000,
+    "place_zh": "荷兰 埃因霍温（飞利浦）",
+    "lat": 51.4,
+    "lon": 5.5,
+    "text_zh": "诺基亚高层到阿姆斯特丹的飞利浦总部面见总裁布恩斯特拉（Cor Boonstra）。飞利浦在埃因霍温的工厂补出一千多万片芯片，上海的工厂也腾给诺基亚。",
+    "date": "2000-04"
+   },
+   {
+    "year": 2000,
+    "place_zh": "瑞典 斯德哥尔摩（爱立信）",
+    "lat": 59.3,
+    "lon": 18.1,
+    "text_zh": "爱立信没有别的货源，生产受阻数月，公司估计少卖至少 4 亿美元；官方史称少造约 700 万部手机。"
+   },
+   {
+    "year": 2001,
+    "place_zh": "瑞典 斯德哥尔摩（爱立信）",
+    "lat": 59.3,
+    "lon": 18.1,
+    "text_zh": "爱立信宣布不再自己生产手机，制造全部外包给伟创力（Flextronics）；4 月与索尼签约成立对半持股的合资公司。",
+    "date": "2001-01"
+   }
+  ],
+  "reach": {
+   "year": 2001,
+   "text_zh": "一年间诺基亚的手机份额从约 27% 升到约 30%，爱立信从约 12% 跌到 9%；索尼爱立信 2001 年 10 月成立。"
+  },
+  "lag": {
+   "days": 315,
+   "text_zh": "从起火到爱立信宣布退出手机制造，约十个月"
+  },
+  "facts": [
+   "火只烧了约十分钟，直接烧坏的是八盘硅片。",
+   "诺基亚与爱立信合计买走该厂约 40% 的射频芯片产量。",
+   "爱立信手机部门 2000 年亏损 162 亿瑞典克朗，公司称与元件短缺有关。",
+   "飞利浦自身损失约 4000 万美元，多数由保险覆盖（谢菲的说法）。",
+   "飞利浦最初说只耽误一周，3 月 31 日改口说还要多等数周。"
+  ],
+  "dispute": "这场火常被讲成爱立信手机业务衰落的唯一原因。爱立信官方史把 2000 年的巨亏同时归于产品与成本问题，亏损里约一半是重组费用；亏损额也有 162 亿与 240 亿克朗两种口径。火是诱因之一，不是全部。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Trial by Fire: A Blaze in Albuquerque Sets Off Major Crisis For Cell-Phone Giants (Almar Latour)",
+    "publisher": "The Wall Street Journal（麻省理工课程存档）",
+    "url": "https://stuff.mit.edu/afs/athena/course/15/15.795/WSJ_Nokia%20HandlesSupplyChainShock.pdf",
+    "year": "2001"
+   },
+   {
+    "title": "Building a Resilient Organization (Yossi Sheffi)",
+    "publisher": "MIT",
+    "url": "https://web.mit.edu/sheffi/www/selectedMedia/wpd_building_a_resilient_organization_rev20061226.pdf",
+    "year": "2006"
+   },
+   {
+    "title": "The problem with mobile phones",
+    "publisher": "Ericsson（公司史）",
+    "url": "https://www.ericsson.com/en/about-us/history/changing-the-world/big-bang/the-problem-with-mobile-phones",
+    "year": "—"
+   },
+   {
+    "title": "Managing Risk to Avoid Supply-Chain Breakdown",
+    "publisher": "MIT Sloan Management Review",
+    "url": "https://sloanreview.mit.edu/article/managing-risk-to-avoid-supplychain-breakdown",
+    "year": "2004"
+   }
+  ],
+  "verify": false,
+  "note": "索尼爱立信 2001-10-01 成立的日期来自维基百科 Sony Mobile 条目（线索级），4 月签约与对半持股来自谢菲。162 亿克朗的美元折算两处来源不同（WSJ 16.8 亿、谢菲 23.4 亿），正文只写克朗。爱立信披露损失的具体月份未核，链上该步未写日期。"
+ },
+ {
+  "id": "sumitomo-epoxy",
+  "title_zh": "新居滨爆炸",
+  "kind": "block",
+  "small_zh": "一间化工厂里的一只回收罐",
+  "big_zh": "约六成芯片封装树脂断供，内存条两周涨到两倍多",
+  "origin": {
+   "year": 1993,
+   "date": "1993-07-04",
+   "place_zh": "日本 爱媛县 新居滨",
+   "lat": 34.0,
+   "lon": 133.3,
+   "text_zh": "1993 年 7 月 4 日，住友化学在爱媛县新居滨的环氧树脂厂里，一只溶剂回收罐混入杂质后失控分解、爆炸起火，1 人死亡、3 人受伤。"
+  },
+  "chain": [
+   {
+    "year": 1993,
+    "place_zh": "日本 东京 秋叶原",
+    "lat": 35.7,
+    "lon": 139.8,
+    "text_zh": "这间厂的产品是封装芯片用的环氧树脂。消息传开后，东京秋叶原的内存条价格跳涨。",
+    "date": "1993-07"
+   },
+   {
+    "year": 1993,
+    "place_zh": "美国 加州 硅谷",
+    "lat": 37.4,
+    "lon": -122.0,
+    "text_zh": "美国市场上 1 兆字节内存条从约 30 美元涨到 80 美元以上，前后约两周。",
+    "date": "1993-07"
+   },
+   {
+    "year": 1993,
+    "place_zh": "德国 慕尼黑",
+    "lat": 48.1,
+    "lon": 11.6,
+    "text_zh": "德国批发价从约 60 马克涨到 140 马克以上。康柏、戴尔等厂商则表示库存充足，并有长期供货合同。",
+    "date": "1993-07"
+   },
+   {
+    "year": 1993,
+    "place_zh": "日本 东京",
+    "lat": 35.7,
+    "lon": 139.7,
+    "text_zh": "住友化学向其他日本厂商采购，补上平日产量的一半以上；日本化药、大日本油墨同意按住友的许可生产。",
+    "date": "1993-08"
+   }
+  ],
+  "reach": {
+   "year": 1993,
+   "text_zh": "《计算机商业评论》（Computer Business Review）1993 年 8 月 4 日报道，这间厂停产切断了全球约 60% 的该类环氧树脂产量；住友化学估计约 80% 的芯片要用到它。"
+  },
+  "lag": {
+   "days": 14,
+   "text_zh": "爆炸后约两周，欧美内存价格翻倍有余"
+  },
+  "facts": [
+   "爆炸发生在 1993 年 7 月 4 日，1 死 3 伤，方圆约 1.5 公里的民房门窗屋顶受损。",
+   "日本消防厅统计的直接经济损失为 15 亿日元。",
+   "这间厂约占全球半导体封装用环氧树脂产量的六成（1993 年《计算机商业评论》口径）。",
+   "美国 1 兆字节内存条约 30 美元涨到 80 美元以上；德国约 60 马克涨到 140 马克以上。",
+   "此前的价格战让同行纷纷退出，陶氏化学已在 1991 年关掉同类工厂。"
+  ],
+  "dispute": "「六成」指封装芯片用的特种环氧树脂，不是全部环氧树脂，当年报道有「超过 50%」「约 60%」两种写法。西门子当时说树脂并不缺，难在换料要重新验证，最坏不过 10、11 月生产遇到些困难；也有市场观察者怀疑经销商借机抬价。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Explosion and fire at an epoxy resin manufacturing plant（失败知识数据库 CC1200024）",
+    "publisher": "畑村创造工学研究所 失败学会",
+    "url": "https://shippai.org/fkd/en/cfen/CC1200024.html",
+    "year": "1993"
+   },
+   {
+    "title": "Chip panic to intensify as epoxy stocks dwindle",
+    "publisher": "Computer Business Review / Tech Monitor",
+    "url": "https://techmonitor.ai/?p=177417",
+    "year": "1993"
+   },
+   {
+    "title": "Feuer in japanischer Chemiefabrik löst Unruhe bei PC-Herstellern aus",
+    "publisher": "Computerwoche",
+    "url": "https://www.computerwoche.de/article/2800330/feuer-in-japanischer-chemiefabrik-loest-unruhe-bei-pc-herstellern-aus-vorschnelle-reaktion-verteuert-die-speicherbausteine-weltweit.html",
+    "year": "1993"
+   },
+   {
+    "title": "RAM Prices Increase",
+    "publisher": "TidBITS",
+    "url": "https://tidbits.com/1993/07/26/ram-prices-increase/",
+    "year": "1993"
+   }
+  ],
+  "verify": false,
+  "note": "失败知识数据库条目只写「S 化学 E 工厂」，公司名靠路透社与 Computerwoche 的同日期、同地点报道对上。Tech Monitor 的标题为按内容概括，原页标题未记下。合众社 1993-11-30 有一条「树脂短缺得以避免」的标题出现在搜索结果里，但页面打不开，未采用。秋叶原与美国涨价的确切日期来源只说「约两周内」，链上只写到月。"
+ },
+ {
+  "id": "thai-flood-hdd",
+  "title_zh": "泰国洪水",
+  "kind": "block",
+  "small_zh": "曼谷北面几个工业园进了水",
+  "big_zh": "全球硬盘一个季度少出近三成，均价涨 28%",
+  "origin": {
+   "year": 2011,
+   "date": "2011-10-09",
+   "place_zh": "泰国 大城府 洛加纳工业园",
+   "lat": 14.3,
+   "lon": 100.6,
+   "text_zh": "2011 年 10 月，泰国中部洪水漫进大城府的工业园。10 月 7 日至 9 日，洛加纳工业园里做硬盘马达和磁头部件的工厂先后进水停产。"
+  },
+  "chain": [
+   {
+    "year": 2011,
+    "place_zh": "泰国 大城府 邦芭茵工业园",
+    "lat": 14.2,
+    "lon": 100.6,
+    "text_zh": "10 月 15 日至 16 日的周末，洪水漫过邦芭茵工业园的防洪堤，西部数据的厂房被淹，部分设备泡在水里。西部数据约六成硬盘产自泰国。",
+    "date": "2011-10-15"
+   },
+   {
+    "year": 2011,
+    "place_zh": "泰国 巴吞他尼府 纳瓦纳空工业园",
+    "lat": 14.1,
+    "lon": 100.6,
+    "text_zh": "纳瓦纳空工业园的堤也破了，西部数据在那里的工厂告急，公司宣布延长泰国各厂的停产；东芝同样暂停了当地的硬盘生产。",
+    "date": "2011-10-17"
+   },
+   {
+    "year": 2011,
+    "place_zh": "美国 加州 尔湾（西部数据总部）",
+    "lat": 33.7,
+    "lon": -117.8,
+    "text_zh": "市场研究机构 IHS iSuppli 预计第四季度约三成硬盘产量泡汤，西部数据的出货排名将从第一掉到第三。",
+    "date": "2011-11-01"
+   },
+   {
+    "year": 2012,
+    "place_zh": "全球个人电脑市场",
+    "lat": 37.4,
+    "lon": -122.0,
+    "text_zh": "硬盘平均售价从 2011 年第三季度的 51 美元涨到 66 美元，并在这个价位停了两个季度。"
+   }
+  ],
+  "reach": {
+   "year": 2011,
+   "text_zh": "据 IHS iSuppli，2011 年第四季度全球硬盘出货比上季少 29%，均价涨 28%。"
+  },
+  "lag": {
+   "days": 83,
+   "text_zh": "从进水到季度出货少三成，不到三个月"
+  },
+  "facts": [
+   "泰国当时是仅次于中国的全球第二大硬盘生产国（IHS 口径）。",
+   "2011 年第四季度全球硬盘出货比上一季度少 29%，均价从 51 美元涨到 66 美元。",
+   "前两大硬盘厂的份额从 2011 年第三季度的 62% 升到 2012 年第一季度的 85%。",
+   "IHS 当时预计硬盘均价要到 2014 年才回到洪水前。"
+  ],
+  "dispute": "泰国占全球硬盘产量的份额说法不一，本条能核到的只有「全球第二大生产国」「约四分之一的硬盘组装厂在泰国」和「西部数据约六成产量在泰国」；涨幅是全行业均价，零售价的涨幅更大但没有统一口径。份额集中到前两大厂，同期还有行业并购的因素。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Thailand Floods to Significantly Impact HDD Industry",
+    "publisher": "StorageNewsletter",
+    "url": "https://www.storagenewsletter.com/2011/10/18/thailand-floods-to-significant-impact-wd",
+    "year": "2011"
+   },
+   {
+    "title": "Thai Flood Causes Worst HDD Downturn in 3 Years (IHS iSuppli)",
+    "publisher": "Circuits Assembly",
+    "url": "https://circuitsassembly.com/ca/editorial/menu-news/20421-thai-flood-causes-worst-hdd-downturn-in-3-years.html",
+    "year": "2011"
+   },
+   {
+    "title": "HDD Market Recovering After Devastating Thai Floods (IHS iSuppli)",
+    "publisher": "eWeek",
+    "url": "https://www.eweek.com/storage/hdd-market-recovering-after-devastating-thai-floods/",
+    "year": "2012"
+   },
+   {
+    "title": "Merck Resumes Xirallic Production in Japan",
+    "publisher": "CHEManager",
+    "url": "https://chemanager-online.com/en/news/merck-resumes-xirallic-production-in-japan",
+    "year": "2011"
+   },
+   {
+    "title": "In the aftermath of the Japanese quake",
+    "publisher": "Chemistry & Industry (SCI)",
+    "url": "https://www.soci.org/chemistry-and-industry/cni-data/2011/10/in-the-aftermath-of-the-japanese-quake",
+    "year": "2011"
+   }
+  ],
+  "verify": false,
+  "note": "常见的「泰国占全球硬盘产量约四成」未核到出处，未写。小名滨是否为当时全球唯一的 Xirallic 工厂：SCI 只说「日本唯一」，CHEManager 只是暗示，正文未写「唯一」；四家车厂为福特、克莱斯勒、丰田、通用。链上第四步的经纬度为示意（全球市场没有单一地点），页面如不需要可略去。lag 按 10 月 9 日到 12 月 31 日算。"
+ },
+ {
+  "id": "anchoveta-soy",
+  "title_zh": "秘鲁鳀鱼",
+  "kind": "block",
+  "small_zh": "秘鲁外海的小鱼突然少了",
+  "big_zh": "美国一度禁运大豆，日本转向巴西稀树草原",
+  "origin": {
+   "year": 1972,
+   "place_zh": "秘鲁 钦博特外海",
+   "lat": -9.1,
+   "lon": -78.6,
+   "text_zh": "1972 年，强厄尔尼诺让秘鲁外海的洪堡寒流变暖、养分减少，捕捞过度的秘鲁鳀（anchoveta）种群崩溃，当年渔获跌到约 440 万吨。"
+  },
+  "chain": [
+   {
+    "year": 1973,
+    "place_zh": "荷兰 鹿特丹",
+    "lat": 51.9,
+    "lon": 4.5,
+    "text_zh": "秘鲁是当时最大的鱼粉出口国，1960 年代荷兰猪和鸡吃的鱼粉约八成来自秘鲁。到 1973 年鱼粉涨了近 250%，荷兰的饲料改用豆粕。"
+   },
+   {
+    "year": 1973,
+    "place_zh": "美国 华盛顿",
+    "lat": 38.9,
+    "lon": -77.0,
+    "text_zh": "大豆价格这一年大致涨到三倍。尼克松政府下令即刻停止大豆和棉籽出口，已签的合同也被取消；当时美国约占全球大豆供应的七成。",
+    "date": "1973-06-27"
+   },
+   {
+    "year": 1973,
+    "place_zh": "日本 东京",
+    "lat": 35.7,
+    "lon": 139.7,
+    "text_zh": "禁令到 10 月 1 日前解除。日本的大豆 97% 靠进口、九成靠美国，事先未获知会，此后转而到南美另找货源。",
+    "date": "1973-10-01"
+   },
+   {
+    "year": 1974,
+    "place_zh": "巴西 塞拉多（Cerrado）",
+    "lat": -16.0,
+    "lon": -48.0,
+    "text_zh": "日本国际协力机构（JICA）1974 年起投资巴西塞拉多稀树草原，日巴农业开发合作计划（PRODECER）持续约二十年。"
+   }
+  ],
+  "reach": {
+   "year": 2025,
+   "text_zh": "巴西大豆面积从 1977 年的 1900 万英亩增到 1.17 亿英亩，六成以上产自塞拉多（2025 年口径）。"
+  },
+  "lag": {
+   "days": 540,
+   "text_zh": "从渔获崩溃到美国禁运，约一年半"
+  },
+  "facts": [
+   "秘鲁鳀渔获 1970 年约 1240 万吨，1972 年约 440 万吨。",
+   "1973 年鱼粉价格涨了近 250%，大豆价格大致涨到三倍。",
+   "1973 年 6 月 27 日美国禁止大豆出口，10 月 1 日前解除。",
+   "当时日本大豆 97% 靠进口，其中 90% 来自美国。",
+   "巴西大豆面积从 1977 年的 1900 万英亩增到 1.17 亿英亩，约为原来的六倍。"
+  ],
+  "dispute": "每一环都另有原因：渔业崩溃是厄尔尼诺加过度捕捞，美国禁运还为了压通胀。伊利诺伊大学的分析认为 PRODECER 对 1970 年代产量影响有限，巴西大豆扩张同样靠本国农牧研究公司（Embrapa）、国内移民和物流投资。渔获峰值也有几种数字。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Trade Conflicts and Long-Term Consequences: Are Soybeans Doomed to Repeat History?",
+    "publisher": "farmdoc daily（伊利诺伊大学）",
+    "url": "https://farmdocdaily.illinois.edu/2025/05/trade-conflicts-and-long-term-consequences-are-soybeans-doomed-to-repeat-history.html",
+    "year": "2025"
+   },
+   {
+    "title": "Boom and Bust, All at Once: The Fraught Modern History of Fish Meal",
+    "publisher": "Hakai Magazine",
+    "url": "https://hakaimagazine.com/?p=42940",
+    "year": "2023"
+   },
+   {
+    "title": "Richard Nixon's Anchovy Problem",
+    "publisher": "Andrew Leonard (Substack)",
+    "url": "https://andrewleonard.substack.com/p/richard-nixons-anchovy-problem",
+    "year": "2023"
+   },
+   {
+    "title": "1972 Peruvian anchoveta crisis（引 Brundenius 1973、NOAA Keith 1974）",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1972_Peruvian_anchoveta_crisis",
+    "year": "—"
+   }
+  ],
+  "verify": true,
+  "note": "渔获峰值有 1970 年 1240 万吨（Brundenius）、1120 万吨（Substack）与 1971 年约 1200 万吨（Hakai）三种数字。渔获数字只核到二手转引（维基引 Brundenius 1973 与 NOAA 1974），未打开 FAO / IMARPE 原始统计；1973 年渔获未核到。禁运日期 6 月 27 日来自转引的《纽约时报》1973-06-28 报道，farmdoc 只写「6 月」。PRODECER 的起止年份（通行说法 1979–2001）与投资额未核，正文只写「约二十年」。Hakai 与 Substack 两篇的年份为估计。起点只有年份没有确切日期，lag 为估算。"
+ },
+ {
+  "id": "container",
+  "title_zh": "Ideal X 号",
+  "kind": "boost",
+  "small_zh": "58 个铁箱子，一条旧油轮",
+  "big_zh": "2024 年全球港口装卸 9.2 亿标准箱",
+  "origin": {
+   "year": 1956,
+   "date": "1956-04-26",
+   "place_zh": "美国 新泽西州 纽瓦克港",
+   "lat": 40.7,
+   "lon": -74.15,
+   "text_zh": "1956 年 4 月 26 日，麦克莱恩（Malcom McLean）把 58 个卡车车厢吊上改装油轮 Ideal X 号，不到八小时装完，当天开航。"
+  },
+  "chain": [
+   {
+    "year": 1956,
+    "place_zh": "美国 得克萨斯州 休斯敦",
+    "lat": 29.7,
+    "lon": -95.3,
+    "text_zh": "船五天后到休斯敦，卡车直接把箱子接走，中间没有码头工人一件件搬货。",
+    "date": "1956-05-01"
+   },
+   {
+    "year": 1957,
+    "place_zh": "美国 新泽西州 纽瓦克港",
+    "lat": 40.7,
+    "lon": -74.15,
+    "text_zh": "专门改装的 Gateway City 号开航，箱子叠放在舱内格架里，一次装 226 个；两台吊车各自每小时吊 15 个。",
+    "date": "1957-10-04"
+   },
+   {
+    "year": 1965,
+    "place_zh": "美国 纽约（行业标准谈判）",
+    "lat": 40.7,
+    "lon": -74.0,
+    "text_zh": "标准之争拖了约十年。麦克莱恩最终同意同行免费使用海陆公司的专利，角件和 40 英尺的长度才统一下来。"
+   },
+   {
+    "year": 1966,
+    "place_zh": "荷兰 鹿特丹",
+    "lat": 51.9,
+    "lon": 4.5,
+    "text_zh": "海陆公司（Sea-Land）的 Fairland 号从纽瓦克开往欧洲，开通跨北大西洋的集装箱班轮。",
+    "date": "1966-04"
+   },
+   {
+    "year": 1967,
+    "place_zh": "越南 金兰湾",
+    "lat": 11.9,
+    "lon": 109.2,
+    "text_zh": "麦克莱恩拿到美国国防部的合同，用集装箱船向越南运送补给；回程空船绕道日本，1968 年起把电视机和音响运回美国。"
+   }
+  ],
+  "reach": {
+   "year": 2024,
+   "text_zh": "联合国贸发会议统计，2024 年全球港口共装卸 9.2 亿个标准箱（TEU），比上年增长 6.9%。"
+  },
+  "lag": {
+   "days": 3650,
+   "text_zh": "从第一船到跨大西洋航线，整整十年"
+  },
+  "facts": [
+   "Ideal X 号 1956 年 4 月 26 日离开纽瓦克，带 58 个箱子，五天后到休斯敦。",
+   "按麦克莱恩的测算，散件装船每吨 5.83 美元，装箱后每吨不到 16 美分。",
+   "1950 年代一条普通货船要装约 20 万件散货，海运费常占货值的 15% 到 20%。",
+   "世界集装箱船总运力 1965 年约 1.6 万标准箱，1970 年约 14 万标准箱。",
+   "2024 年全球港口集装箱吞吐量 9.2 亿标准箱（联合国贸发会议）。"
+  ],
+  "dispute": "每吨成本的对比出自麦克莱恩一方的测算，只算装船一步，常被引作 5.83 或 5.86 美元对 15.8 美分。最早的箱子有 33 与 35 英尺两种记载，抵达休斯敦有「五天后」「六天后」两说。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Malcom McLean and the shipping container（《史密森尼》杂志稿）",
+    "publisher": "Marc Levinson",
+    "url": "https://marclevinson.net/McLean%20Smithsonian%20061617.pdf",
+    "year": "2017"
+   },
+   {
+    "title": "First Containership, Ideal-X, 1956",
+    "publisher": "The Geography of Transport Systems（Jean-Paul Rodrigue）",
+    "url": "https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/idealx-first-containeriship-1956/",
+    "year": "—"
+   },
+   {
+    "title": "The Container Revolution (TR News 246)",
+    "publisher": "Transportation Research Board",
+    "url": "https://onlinepubs.trb.org/onlinepubs/trnews/trnews246containerrevolution.pdf",
+    "year": "2006"
+   },
+   {
+    "title": "Port Newark: How Malcom McLean's Box Changed the World",
+    "publisher": "Port Authority of New York and New Jersey",
+    "url": "https://portfolio.panynj.gov/2016/04/27/port-newarkmalcom-mcleans-box-changes-the-world/",
+    "year": "2016"
+   },
+   {
+    "title": "Container: the box that changed the world",
+    "publisher": "Australian National Maritime Museum",
+    "url": "https://www.anmm.gov.au/2017/11/01/container",
+    "year": "2017"
+   },
+   {
+    "title": "Maritime and other transport（UNCTADstat）",
+    "publisher": "UNCTAD",
+    "url": "https://unctadstat.unctad.org/insights/theme/41",
+    "year": "2025"
+   }
+  ],
+  "verify": true,
+  "note": "未核：(1) 莱文森《The Box》书中 5.86 美元 / 15.8 美分的原文与页码，只核到 transportgeography 与澳大利亚国家海事博物馆的 5.83 美元 / 不到 16 美分；(2) 麦克莱恩放开专利的确切年份与 ISO 标准的发布年份——莱文森只说「约十年谈判之后」，链上该步年份 1965 为占位，页面最好写成「1960 年代中期」；(3) 链上鹿特丹、金兰湾为示意落点，来源只写「欧洲海峡沿岸港口」「越南港口」。Levinson 稿与 TRB 稿的标题按内容记，年份 TRB 为估计。"
+ }
+]

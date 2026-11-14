@@ -1,0 +1,819 @@
+[
+ {
+  "id": "left-pad",
+  "title_zh": "left-pad",
+  "kind": "block",
+  "small_zh": "一个人撤下 11 行补空格的代码",
+  "big_zh": "数千个项目两个半小时装不上、构建不了",
+  "origin": {
+   "year": 2016,
+   "date": "2016-03-22",
+   "place_zh": "美国 加州 奥克兰（npm 注册表）",
+   "lat": 37.8,
+   "lon": -122.3,
+   "text_zh": "3 月 22 日下午，开发者科丘卢（Azer Koçulu）把自己在 npm 上的 273 个包全撤下，包括 11 行的 left-pad。"
+  },
+  "chain": [
+   {
+    "year": 2016,
+    "date": "2016-03",
+    "place_zh": "加拿大 滑铁卢（Kik 公司）",
+    "lat": 43.5,
+    "lon": -80.5,
+    "text_zh": "此前，聊天软件 Kik 的律师要他让出包名 kik，他拒绝；npm 按争议政策把名字判给了 Kik。"
+   },
+   {
+    "year": 2016,
+    "date": "2016-03-22",
+    "place_zh": "美国 加州 奥克兰",
+    "lat": 37.8,
+    "lon": -122.3,
+    "text_zh": "left-pad 一消失，依赖它的安装纷纷报错；The Register 说 Node、Babel 等数千个项目都依赖它。"
+   },
+   {
+    "year": 2016,
+    "date": "2016-03-22",
+    "place_zh": "美国 加州 奥克兰",
+    "lat": 37.8,
+    "lon": -122.3,
+    "text_zh": "十分钟内有人补发了功能相同的 1.0.0 版，但许多依赖指定要 0.0.3 版，报错没有停。"
+   },
+   {
+    "year": 2016,
+    "date": "2016-03-22",
+    "place_zh": "美国 加州 奥克兰",
+    "lat": 37.8,
+    "lon": -122.3,
+    "text_zh": "太平洋时间下午 4 点 55 分，npm 从备份恢复了原来的 0.0.3 版，称这是没有先例的做法。"
+   },
+   {
+    "year": 2016,
+    "date": "2016-03-29",
+    "place_zh": "美国 加州 奥克兰",
+    "lat": 37.8,
+    "lon": -122.3,
+    "text_zh": "一周后 npm 改了规则：发布超过 24 小时的包不能再自行撤下，要找客服，且不能弄坏别人的安装。"
+   }
+  ],
+  "reach": {
+   "year": 2016,
+   "text_zh": "npm 官方称「数千个项目」受影响，中断持续 2.5 小时；left-pad 此前一个月被下载约 249 万次。"
+  },
+  "lag": {
+   "days": 0,
+   "text_zh": "从撤包到全面恢复约两个半小时"
+  },
+  "facts": [
+   "left-pad 只做一件事：在字符串左边补空格或零，代码 11 行（连空行 17 行）。",
+   "科丘卢一次撤下 273 个包（npm 官方数字）。",
+   "事发前一个月，left-pad 在 npm 上被下载 2,486,696 次。",
+   "npm 承认自己「掉了链子」：没有防住任意撤包对用户的伤害。",
+   "新规则以 24 小时为界：之内可自行撤包，之后须经 npm 客服。"
+  ],
+  "dispute": "npm 说包名改判只是为多数用户做的「编辑选择」，不是法律裁决；科丘卢说这让他明白 npm 是「公司比个人更有力的私人领地」。Kik 事后承认律师的措辞「并不完美」。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "kik, left-pad, and npm",
+    "publisher": "npm 官方博客",
+    "url": "https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm",
+    "year": "2016"
+   },
+   {
+    "title": "How one developer just broke Node, Babel and thousands of projects in 11 lines of JavaScript",
+    "publisher": "The Register",
+    "url": "https://www.theregister.com/2016/03/23/npm_left_pad_chaos/?mt=1458771801504",
+    "year": "2016"
+   },
+   {
+    "title": "npm changes unpublish policy after left-pad",
+    "publisher": "The Register",
+    "url": "https://www.theregister.com/2016/03/29/npmgate_followup/",
+    "year": "2016"
+   }
+  ],
+  "verify": false,
+  "note": "The Register 两篇文章只说 Node、Babel、React「依赖」left-pad，没说它们本身停摆——正文按此措辞。第二篇 Register 的标题是凭内容概括的，原标题未逐字核。npm 公司在奥克兰属常识，未另核；科丘卢本人当时所在地未核，起点坐标用 npm 所在地。npm 官方博客另提到：有依赖方的包被撤后改放占位包。"
+ },
+ {
+  "id": "notpetya",
+  "title_zh": "NotPetya",
+  "kind": "block",
+  "small_zh": "一款乌克兰报税软件的一次更新",
+  "big_zh": "全球损失逾 100 亿美元，马士基重装 4.5 万台电脑",
+  "origin": {
+   "year": 2017,
+   "date": "2017-06-27",
+   "place_zh": "乌克兰 基辅",
+   "lat": 50.4,
+   "lon": 30.5,
+   "text_zh": "6 月 27 日，恶意程序 NotPetya 随乌克兰报税软件 M.E.Doc 的更新推送到用户电脑，再在内网自行扩散。"
+  },
+  "chain": [
+   {
+    "year": 2017,
+    "date": "2017-06-27",
+    "place_zh": "丹麦 哥本哈根（马士基总部）",
+    "lat": 55.7,
+    "lon": 12.6,
+    "text_zh": "当天，航运公司马士基（A.P. Møller-Maersk）总部的电脑成片黑屏，订舱和码头系统停用。"
+   },
+   {
+    "year": 2017,
+    "date": "2017-06",
+    "place_zh": "荷兰 鹿特丹等地的码头",
+    "lat": 51.9,
+    "lon": 4.1,
+    "text_zh": "马士基旗下 76 个码头中 17 个受扰，丹麦、印度、西班牙、美国、荷兰的港口出现拥堵。"
+   },
+   {
+    "year": 2017,
+    "date": "2017-06",
+    "place_zh": "加纳",
+    "lat": 5.6,
+    "lon": -0.2,
+    "text_zh": "公司的域控制器几乎全毁，只有加纳办公室一台因事发时离线而幸存，成了恢复的起点。"
+   },
+   {
+    "year": 2018,
+    "date": "2018-01",
+    "place_zh": "瑞士 达沃斯（世界经济论坛）",
+    "lat": 46.8,
+    "lon": 9.8,
+    "text_zh": "马士基董事长斯纳贝（Jim Hagemann Snabe）说：十天里重装了 4,000 台服务器、45,000 台电脑。"
+   },
+   {
+    "year": 2018,
+    "date": "2018-02-15",
+    "place_zh": "美国 华盛顿",
+    "lat": 38.9,
+    "lon": -77.0,
+    "text_zh": "2 月 15 日，英国、美国政府先后发表声明公开归因；白宫称其为「史上破坏性最大、代价最高的网络攻击」。"
+   }
+  ],
+  "reach": {
+   "year": 2018,
+   "text_zh": "《连线》2018 年引白宫评估：全球损失逾 100 亿美元；默克约 8.7 亿，马士基 2.5–3 亿。"
+  },
+  "lag": {
+   "days": 1,
+   "text_zh": "当天就从基辅传到哥本哈根和各大洲"
+  },
+  "facts": [
+   "「逾 100 亿美元」是白宫的评估，由前国土安全顾问博塞特向《连线》确认。",
+   "马士基 2017 年中报预计损失 2–3 亿美元；董事长后来说是 2.5–3 亿美元。",
+   "董事长口径：十天重装 4,000 台服务器、45,000 台电脑、2,500 个应用。",
+   "马士基 9 个业务单元里，集装箱航运、码头、货代 3 个停摆，其余 6 个照常。",
+   "默克报告损失约 8.7 亿美元，联邦快递的欧洲子公司 TNT 约 4 亿美元。"
+  ],
+  "dispute": "归因只见于政府声明：英国外交部称责任在「俄罗斯政府，具体是俄军」；白宫称俄军发动了这次「鲁莽而不分对象」的攻击。克里姆林宫发言人称指控「毫无根据」。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "The Untold Story of NotPetya, the Most Devastating Cyberattack in History（Andy Greenberg，WIRED 2018-08-22，Portside 转载全文）",
+    "publisher": "WIRED / Portside",
+    "url": "https://portside.org/node/18008/printable/print",
+    "year": "2018"
+   },
+   {
+    "title": "NotPetya attack cost up to $300m, says Maersk",
+    "publisher": "Computer Weekly",
+    "url": "https://www.computerweekly.com/news/450424559/NotPetya-attack-cost-up-to-300m-says-Maersk",
+    "year": "2017"
+   },
+   {
+    "title": "Maersk chair revealed its company reinstalled 45,000 PCs and 4,000 Servers after NotPetya Attack",
+    "publisher": "Security Affairs",
+    "url": "https://securityaffairs.com/68227/security/maersk-notpetya-attack.html",
+    "year": "2018"
+   },
+   {
+    "title": "UK names Russian military as source of NotPetya",
+    "publisher": "The Register",
+    "url": "https://www.theregister.com/2018/02/15/uk_names_russian_military_as_source_of_notpetya/",
+    "year": "2018"
+   },
+   {
+    "title": "Britain, U.S. blame Russia for NotPetya cyberattack",
+    "publisher": "RFE/RL",
+    "url": "https://www.rferl.org/a/britain-blames-russia-malicious-cyberattack-notpetya/29041360.html",
+    "year": "2018"
+   }
+  ],
+  "verify": false,
+  "note": "WIRED 原文未能直接打开，用的是 Portside 的全文转载；wired.com 原址未出现在搜索结果里。马士基中报与白宫声明均经二手媒体转引，未开到原件。「达沃斯」是按世界经济论坛年会地点写的，Security Affairs 只写 World Economic Forum。鹿特丹坐标代表「荷兰等地码头」，Computer Weekly 只列国名。归因段落只引声明原话。The Register、RFE/RL 两条标题为概括，未逐字核。"
+ },
+ {
+  "id": "crowdstrike",
+  "title_zh": "一次蓝屏更新",
+  "kind": "block",
+  "small_zh": "安全软件的一个配置文件多了一个字段",
+  "big_zh": "约 850 万台 Windows 设备蓝屏，航班大面积取消",
+  "origin": {
+   "year": 2024,
+   "date": "2024-07-19",
+   "place_zh": "美国 得克萨斯州 奥斯汀（CrowdStrike）",
+   "lat": 30.3,
+   "lon": -97.7,
+   "text_zh": "7 月 19 日 04:09（世界协调时），CrowdStrike 给 Windows 上的 Falcon 推了一个内容更新，电脑随即蓝屏。"
+  },
+  "chain": [
+   {
+    "year": 2024,
+    "date": "2024-07-19",
+    "place_zh": "美国 得克萨斯州 奥斯汀",
+    "lat": 30.3,
+    "lon": -97.7,
+    "text_zh": "05:27，公司撤回了这个文件，前后不到一个半小时；但已经蓝屏的机器要一台台处理。"
+   },
+   {
+    "year": 2024,
+    "date": "2024-07-19",
+    "place_zh": "美国 亚特兰大（达美航空）",
+    "lat": 33.6,
+    "lon": -84.4,
+    "text_zh": "航班大面积取消。Cirium 统计：72 小时内全球 411,009 个客运航班取消了 16,896 个，略高于 4%。"
+   },
+   {
+    "year": 2024,
+    "date": "2024-07-20",
+    "place_zh": "美国 华盛顿州 雷德蒙德（微软）",
+    "lat": 47.7,
+    "lon": -122.1,
+    "text_zh": "7 月 20 日，微软估计受影响的 Windows 设备约 850 万台，不到全部 Windows 机器的 1%。"
+   },
+   {
+    "year": 2024,
+    "date": "2024-08-06",
+    "place_zh": "美国 得克萨斯州 奥斯汀",
+    "lat": 30.3,
+    "lon": -97.7,
+    "text_zh": "8 月 6 日的根因报告：传感器预期 20 个输入字段，更新给了 21 个，造成内存越界读取。"
+   }
+  ],
+  "reach": {
+   "year": 2024,
+   "text_zh": "Parametrix 估算：美国财富 500 强（不含微软）直接损失 54 亿美元，四分之一的公司受影响。"
+  },
+  "lag": {
+   "days": 0,
+   "text_zh": "推送后几分钟内开始，当天波及全球"
+  },
+  "facts": [
+   "出错的文件时间戳是 2024-07-19 04:09 UTC，05:27 之后的版本已无问题。",
+   "微软口径：约 850 万台设备，占全部 Windows 机器不到 1%。",
+   "Parametrix：财富 500 强损失 54 亿美元，医疗占 19.4 亿、银行 11.5 亿。",
+   "同一估算认为，保险只能覆盖损失的一到两成（5.4–10.8 亿美元）。",
+   "Cirium：事发后 72 小时取消率略高于 4%，前一周是 1.9%。"
+  ],
+  "dispute": "达美航空称损失约 5 亿美元，并于 2024 年 10 月 25 日起诉；CrowdStrike 称按合同其责任上限不到 1,000 万美元。损失数字都是估算，口径只含美国财富 500 强。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Helping our customers through the CrowdStrike outage",
+    "publisher": "Microsoft 官方博客",
+    "url": "https://blogs.microsoft.com/blog/2024/07/20/helping-our-customers-through-the-crowdstrike-outage/",
+    "year": "2024"
+   },
+   {
+    "title": "Executive Summary: Root Cause Analysis, Channel File 291",
+    "publisher": "CrowdStrike",
+    "url": "https://crowdstrike.com/wp-content/uploads/2024/08/Executive-Summary_Root-Cause-Analysis_Channel-File-291.pdf",
+    "year": "2024"
+   },
+   {
+    "title": "CrowdStrike to cost Fortune 500 $5.4 billion",
+    "publisher": "Parametrix",
+    "url": "https://parametrixinsurance.com/in-the-news/crowdstrike-to-cost-fortune-500-5-4-billion-insured-loss-range-of-540-million-to-1-08-billion",
+    "year": "2024"
+   },
+   {
+    "title": "CrowdStrike IT outage: what does it mean for the airline industry",
+    "publisher": "Cirium",
+    "url": "https://www.cirium.com/thoughtcloud/crowdstrike-it-outage-what-does-it-mean-for-airline-industry/",
+    "year": "2024"
+   },
+   {
+    "title": "Explaining the largest IT outage in history and what's next",
+    "publisher": "TechTarget",
+    "url": "https://techtarget.com/whatis/feature/Explaining-the-largest-IT-outage-in-history-and-whats-next",
+    "year": "2024"
+   },
+   {
+    "title": "CrowdStrike Disruption: A Lesson in What Can Go Wrong with IT",
+    "publisher": "Society of Actuaries",
+    "url": "https://www.soa.org/publications/gi-insights/2024/december/gii-2024-12-cappelletti-crowdstrike/",
+    "year": "2024"
+   }
+  ],
+  "verify": false,
+  "note": "04:09 / 05:27 两个时间取自 TechTarget 转述的 CrowdStrike 公告（公司博客原页打不开），TechTarget 写「79 分钟内修复」。根因报告日期 8 月 6 日取自完整版 PDF 的文件名，摘要版 PDF 未写日期。Cirium 的 72 小时窗口未写明起止日；当天单日取消数未核到。CrowdStrike 总部在奥斯汀属常识，未另核。达美与 CrowdStrike 的说法出自 SOA 文章。"
+ },
+ {
+  "id": "sms",
+  "title_zh": "短信",
+  "kind": "boost",
+  "small_zh": "信令信道里的一点空余，160 个字符",
+  "big_zh": "2010 年全球发出 6.1 万亿条，每秒近 20 万条",
+  "origin": {
+   "year": 1985,
+   "place_zh": "德国 波恩",
+   "lat": 50.7,
+   "lon": 7.1,
+   "text_zh": "1985 年，希勒布兰德（Friedhelm Hillebrand）在家用打字机敲句子、数字符，几乎都不到 160 个，认定「完全够用」。"
+  },
+  "chain": [
+   {
+    "year": 1985,
+    "place_zh": "德国 波恩",
+    "lat": 50.7,
+    "lon": 7.1,
+    "text_zh": "短信不占通话信道，走的是本来只传来电通知和信号强度的那条辅助信道，所以每条必须很短。"
+   },
+   {
+    "year": 1992,
+    "date": "1992-12-03",
+    "place_zh": "英国 纽伯里（沃达丰）",
+    "lat": 51.4,
+    "lon": -1.3,
+    "text_zh": "12 月 3 日，帕普沃思（Neil Papworth）从电脑向沃达丰的贾维斯发出「Merry Christmas」。"
+   },
+   {
+    "year": 1995,
+    "place_zh": "英国",
+    "lat": 52.5,
+    "lon": -1.9,
+    "text_zh": "起初短信主要用来提醒语音留言，不收费；1995 年，用户平均两个半月才发一条。"
+   },
+   {
+    "year": 1999,
+    "place_zh": "英国",
+    "lat": 51.5,
+    "lon": -0.1,
+    "text_zh": "1999 年英国各运营商之间的短信互通；加上预付费和 T9 输入法，短信开始放量。"
+   }
+  ],
+  "reach": {
+   "year": 2010,
+   "text_zh": "国际电信联盟统计：全球短信发送量三年里增至三倍，2010 年达 6.1 万亿条，相当于每秒近 20 万条。"
+  },
+  "lag": {
+   "days": 9100,
+   "text_zh": "从定下 160 字符到 2010 年约 25 年"
+  },
+  "facts": [
+   "设想出自 1984 年法德合作的 GSM 项目，由希勒布兰德与吉耶贝尔牵头。",
+   "第一条短信收在一部 Orbitel 901 上，这部手机重 2.1 公斤，只能收不能回。",
+   "发信人帕普沃思当时 22 岁，在 Sema 集团为沃达丰开发短信中心软件。",
+   "爱立信的数据：2000 年全球发出 170 亿条短信，其后两年增长约 20 倍。",
+   "国际电信联盟：2010 年全球 6.1 万亿条，每秒近 20 万条。"
+  ],
+  "dispute": "短信的「发明人」有两说：一说是芬兰工程师马科宁（Matti Makkonen）1984 年在哥本哈根一家比萨店提出，一说归于希勒布兰德与吉耶贝尔（Bernard Ghillebaert）的法德提案。打字机的故事出自希勒布兰德多年后的回忆。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "How a Christmas greeting changed the world",
+    "publisher": "英国工程技术学会 IET",
+    "url": "https://engx.theiet.org/b/blogs/posts/how-a-christmas-greeting-changed-the-world",
+    "year": "2022"
+   },
+   {
+    "title": "Happy B-day SMS: txt msgs turn 20",
+    "publisher": "Computerworld",
+    "url": "https://www.computerworld.com/article/1402408/happy-bday-sms-txt-msgs-turn-20.html",
+    "year": "2012"
+   },
+   {
+    "title": "ITU sees 5 billion mobile subscriptions globally in 2010（新闻稿，2010-10-19）",
+    "publisher": "国际电信联盟 ITU",
+    "url": "https://itu.int/net/pressoffice/press_releases/2010/39.aspx",
+    "year": "2010"
+   },
+   {
+    "title": "How Text Messaging Took Over the Way We Talk",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/innovation/text-messaging-took-over-way-we-talk-180985964/",
+    "year": "2025"
+   },
+   {
+    "title": "Why SMS are 160 characters long（转述《洛杉矶时报》2009 年 5 月报道）",
+    "publisher": "3G4G Blog",
+    "url": "https://blog.3g4g.co.uk/2009/05/why-sms-are-160-characters-long.html",
+    "year": "2009"
+   }
+  ],
+  "verify": true,
+  "note": "未核：①全球短信量的「高峰年」与峰值——只核到 ITU 2010 年的 6.1 万亿条（当时仍在增长），峰值年份各家口径不一，正文未写「高峰」；②1985 年打字机一事只开到转述《洛杉矶时报》（Mark Milian，2009）的博客，原文未开到；③IET 文称诺基亚 1993 年推出首款可发短信的手机 Nokia 2010，年份与通行的 1994 年有出入，未写进正文；④「1999 年英国跨网互通」只有 IET 一个来源；⑤希勒布兰德估计常见短讯约 140 字符（IET）一条未写进正文；⑥ITU 新闻稿标题、IET 文年份为估写。帕普沃思「22 岁」据 IET「almost 23」。贾维斯的头衔各来源不一（董事 / 工程总监 / 总经理），正文写「董事」。"
+ },
+ {
+  "id": "www",
+  "title_zh": "万维网",
+  "kind": "boost",
+  "small_zh": "一份被批「含糊，但令人兴奋」的提案",
+  "big_zh": "不到六年后全球 1 万台服务器、1,000 万用户",
+  "origin": {
+   "year": 1989,
+   "date": "1989-03",
+   "place_zh": "瑞士 日内瓦 欧洲核子研究中心",
+   "lat": 46.2,
+   "lon": 6.0,
+   "text_zh": "1989 年 3 月，伯纳斯-李（Tim Berners-Lee）在 CERN 写了一份信息系统提案，上司批了一句「含糊，但令人兴奋」。"
+  },
+  "chain": [
+   {
+    "year": 1990,
+    "date": "1990-12",
+    "place_zh": "瑞士 日内瓦 欧洲核子研究中心",
+    "lat": 46.2,
+    "lon": 6.0,
+    "text_zh": "1990 年底，第一个网页服务器和浏览器在他的 NeXT 电脑上跑起来，机身贴着手写的「不要关机！！」。"
+   },
+   {
+    "year": 1991,
+    "date": "1991-08-06",
+    "place_zh": "瑞士 日内瓦 欧洲核子研究中心",
+    "lat": 46.2,
+    "lon": 6.0,
+    "text_zh": "8 月 6 日，他在新闻组 alt.hypertext 上第一次向外界公布万维网软件。"
+   },
+   {
+    "year": 1991,
+    "date": "1991-12",
+    "place_zh": "美国 加州 斯坦福直线加速器中心",
+    "lat": 37.4,
+    "lon": -122.2,
+    "text_zh": "12 月，美国第一台网页服务器在斯坦福直线加速器中心（SLAC）上线。"
+   },
+   {
+    "year": 1993,
+    "place_zh": "美国 伊利诺伊大学（NCSA）",
+    "lat": 40.1,
+    "lon": -88.2,
+    "text_zh": "1993 年初，伊利诺伊大学的超级计算应用中心发布 Mosaic 浏览器，随后有了 PC 和 Mac 版。"
+   },
+   {
+    "year": 1993,
+    "date": "1993-04-30",
+    "place_zh": "瑞士 日内瓦 欧洲核子研究中心",
+    "lat": 46.2,
+    "lon": 6.0,
+    "text_zh": "4 月 30 日，CERN 发表声明，把万维网软件放入公有领域，任何人可以免费使用。"
+   }
+  ],
+  "reach": {
+   "year": 1994,
+   "text_zh": "CERN 口径：1993 年底已知服务器 500 多台；1994 年底约 1 万台，用户 1,000 万。"
+  },
+  "lag": {
+   "days": 2100,
+   "text_zh": "从 1989 年 3 月的提案到 1994 年底不到六年"
+  },
+  "facts": [
+   "提案写于 1989 年 3 月，题为《信息管理：一份提案》。",
+   "批注的上司是森德尔（Mike Sendall），原话「Vague, but exciting」。",
+   "世界上第一个网站的地址是 info.cern.ch，内容就是介绍万维网项目本身。",
+   "1993-04-30 放入公有领域的是三样：行模式浏览器、基础服务器、公共代码库。",
+   "1994 年底：约 1 万台服务器、1,000 万用户（CERN 口径）。"
+  ],
+  "dispute": "",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "A short history of the Web",
+    "publisher": "CERN",
+    "url": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/",
+    "year": "2024"
+   },
+   {
+    "title": "Web History（Web@30）",
+    "publisher": "CERN",
+    "url": "https://web30.web.cern.ch/web-history.html",
+    "year": "2019"
+   },
+   {
+    "title": "Tim Berners-Lee's proposal",
+    "publisher": "CERN（info.cern.ch）",
+    "url": "https://info.cern.ch/Proposal.html",
+    "year": "2008"
+   },
+   {
+    "title": "Licensing the Web",
+    "publisher": "CERN",
+    "url": "https://home.cern/topics/birth-web/licensing-web",
+    "year": "2014"
+   },
+   {
+    "title": "The birth of the Web",
+    "publisher": "CERN",
+    "url": "https://home.cern/about/birth-web",
+    "year": "2024"
+   }
+  ],
+  "verify": false,
+  "note": "全部取自 CERN 自己的网页。「Vague but exciting」见 info.cern.ch 的提案页（页面写作 ‘Vague, but exciting’）。提案的英文原题《Information Management: A Proposal》按简报与 CDS 文件名 dd-89-001 写，未打开 PDF（CDS 有反爬验证）；维基共享资源上那张 NeXT 照片的说明记录了镜头里提案复印件上的同一题名。各 CERN 页面的发布年份为估写。short-history-web 的网址是从搜索结果 home.cern/?p=1329 跳转得到的。"
+ },
+ {
+  "id": "qr-code",
+  "title_zh": "二维码",
+  "kind": "boost",
+  "small_zh": "两个人，为工厂里的零件箱画的码",
+  "big_zh": "2016 年中国扫码支付超过 1.65 万亿美元",
+  "origin": {
+   "year": 1994,
+   "place_zh": "日本 爱知县 电装",
+   "lat": 35.0,
+   "lon": 137.0,
+   "text_zh": "1994 年，电装（Denso）的原昌宏（Masahiro Hara）和一名同事用一年半做出 QR 码：条码只能存 20 来个字符，不够用。"
+  },
+  "chain": [
+   {
+    "year": 1994,
+    "place_zh": "日本 爱知县 电装",
+    "lat": 35.0,
+    "lon": 137.0,
+    "text_zh": "公司保留专利，但宣布「不行使」，任何人都可以免费使用这种码。"
+   },
+   {
+    "year": 1997,
+    "place_zh": "日本 爱知县",
+    "lat": 35.2,
+    "lon": 136.9,
+    "text_zh": "QR 码先进了汽车业的电子看板，1997 年成为自动识别行业标准，1999 年成为日本工业标准。"
+   },
+   {
+    "year": 2000,
+    "place_zh": "瑞士 日内瓦（国际标准化组织）",
+    "lat": 46.2,
+    "lon": 6.1,
+    "text_zh": "2000 年，国际标准化组织把它批准为国际标准。"
+   },
+   {
+    "year": 2002,
+    "place_zh": "日本 东京",
+    "lat": 35.7,
+    "lon": 139.7,
+    "text_zh": "2002 年，日本出现带读码功能的手机，二维码从工厂走到普通人手里。"
+   },
+   {
+    "year": 2011,
+    "date": "2011-07",
+    "place_zh": "中国 杭州（支付宝）",
+    "lat": 30.3,
+    "lon": 120.2,
+    "text_zh": "2011 年 7 月，支付宝推出线下手机条码支付；CGAP 称，支付宝与微信支付自 2011 年起推出各自的二维码。"
+   }
+  ],
+  "reach": {
+   "year": 2016,
+   "text_zh": "设在世界银行的扶贫协商小组（CGAP）转引 CNN 2017 年的数字：2016 年中国经二维码完成的交易超过 1.65 万亿美元。"
+  },
+  "lag": {
+   "days": 8000,
+   "text_zh": "从 1994 年发布到扫码支付普及约 22 年"
+  },
+  "facts": [
+   "开发团队只有两个人，用了一年半。",
+   "QR 码可存约 7,000 个数字，还能存汉字；读取速度是当时其他码的 10 倍以上。",
+   "三个角上的定位图案，黑白宽度比是 1:1:3:1:1——印刷品上最少见的比例。",
+   "标准化三步：1997 年行业标准，1999 年日本工业标准，2000 年国际标准。",
+   "2020 年，QR 码被电气电子工程师学会（IEEE）列为里程碑。"
+  ],
+  "dispute": "",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "History of QR Code",
+    "publisher": "DENSO WAVE（qrcode.com）",
+    "url": "https://www.qrcode.com/en/history/",
+    "year": "2024"
+   },
+   {
+    "title": "DENSO receives IEEE Milestone for QR Code",
+    "publisher": "DENSO",
+    "url": "https://www.denso.com/global/en/newsroom/news/2020/201007-g01/",
+    "year": "2020"
+   },
+   {
+    "title": "China: A Digital Payments Revolution",
+    "publisher": "CGAP",
+    "url": "https://cgap.org/node/4026",
+    "year": "2019"
+   },
+   {
+    "title": "Barcode Pay: Alipay's new mobile payment solution（TechNode 报道日译）",
+    "publisher": "The Bridge",
+    "url": "https://thebridge.jp/2011/07/barcode-pay-alipays-new-mobile-payment-solution/",
+    "year": "2011"
+   }
+  ],
+  "verify": false,
+  "note": "电装部分取自 Denso Wave 官方历史页，可信度高；支付部分为二手：1.65 万亿美元是 CGAP 转引 CNN（2017）的数字，口径是「经二维码完成的交易」；2011 年支付宝那一步，The Bridge 的报道只写「条码」，CGAP 则写支付宝与微信支付 2011 年推出二维码（微信支付实际上线更晚，CGAP 表述不严，正文未采用）。ISO 标准号 ISO/IEC 18004 未在官方页上核到，正文未写编号。电装 1994 年所在地坐标取爱知县刈谷一带，未另核；第二人姓名未核。CGAP 隶属关系的表述（「世界银行旗下」）按通行说法，未另核，可删。"
+ },
+ {
+  "id": "mpesa",
+  "title_zh": "M-Pesa",
+  "kind": "boost",
+  "small_zh": "人们把话费转给亲戚，当钱用",
+  "big_zh": "据估算让肯尼亚约 19.4 万户脱贫，占全国家庭 2%",
+  "origin": {
+   "year": 2003,
+   "place_zh": "乌干达、博茨瓦纳、加纳等地",
+   "lat": 0.3,
+   "lon": 32.6,
+   "text_zh": "2001 年起，英国咨询机构 Gamos 与英联邦电信组织调查非洲人怎样用手机；2003 年的报告写到，三个国家的人都把话费余额转来转去，当作一种虚拟货币。"
+  },
+  "chain": [
+   {
+    "year": 2004,
+    "date": "2004-03",
+    "place_zh": "英国 伦敦",
+    "lat": 51.5,
+    "lon": -0.1,
+    "text_zh": "2004 年 3 月，英国国际发展部（DFID）把研究者介绍给沃达丰；4 月沃达丰牵头开研讨会，定下试点计划。"
+   },
+   {
+    "year": 2005,
+    "date": "2005-10-11",
+    "place_zh": "肯尼亚 锡卡",
+    "lat": -1.0,
+    "lon": 37.1,
+    "text_zh": "10 月 11 日试点开始，先后在内罗毕市中心、马萨雷和锡卡三地进行，本意是让小额信贷客户用手机还款；近 500 名用户却拿它互相汇款、付货款、存钱过夜。"
+   },
+   {
+    "year": 2007,
+    "date": "2007-03",
+    "place_zh": "肯尼亚 内罗毕",
+    "lat": -1.3,
+    "lon": 36.8,
+    "text_zh": "2007 年 3 月 M-Pesa 正式推出，主打「把钱寄回家」；第一个月就有两万多人注册。"
+   },
+   {
+    "year": 2016,
+    "date": "2016-12",
+    "place_zh": "美国 麻省理工学院",
+    "lat": 42.4,
+    "lon": -71.1,
+    "text_zh": "苏里（Tavneet Suri）与杰克（William Jack）在《科学》发文估算它让约 19.4 万户脱贫。"
+   }
+  ],
+  "reach": {
+   "year": 2021,
+   "text_zh": "沃达丰 2021 年 9 月公布：M-Pesa 在非洲 7 国的月活跃用户达 5,000 万，单季处理 45 亿笔交易。"
+  },
+  "lag": {
+   "days": 5800,
+   "text_zh": "从 2005 年试点到 5,000 万月活用户约 16 年"
+  },
+  "facts": [
+   "试点资金来自 DFID 的挑战基金：给沃达丰近 100 万英镑，沃达丰等额配套。",
+   "试点先后在内罗毕市中心、马萨雷和锡卡三地进行，约 500 名用户。",
+   "2007 年 3 月上线后第一个月，注册用户超过 2 万。",
+   "《科学》2016：约 19.4 万户（占肯尼亚家庭 2%）脱离贫困，女性当家的家庭受益更大。",
+   "2021 年：7 个国家、5,000 万月活跃用户，单季交易额 630 亿欧元。"
+  ],
+  "dispute": "19.4 万户脱贫是苏里与杰克根据追踪调查做的估算，不是直接统计；2019 年贝特曼（Milford Bateman）等三位学者在《非洲政治经济评论》撰文质疑其方法，认为高估了减贫效果，没有算进负债与小生意倒闭的代价。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "The long-run poverty and gender impacts of mobile money（Science 354:1288，DOI 10.1126/science.aah5309）",
+    "publisher": "Science / NASA ADS 摘要页",
+    "url": "https://ui.adsabs.harvard.edu/abs/2016Sci...354.1288S",
+    "year": "2016"
+   },
+   {
+    "title": "M-PESA: Mobile Money for the Unbanked — Turning Cellphones into 24-Hour Tellers in Kenya（Hughes & Lonie）",
+    "publisher": "Innovations（MIT Press）",
+    "url": "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20304/2007_Hughes_Lonie_M-PESA-%20Mobile%20Money%20for%20the%20Unbanked%20Turning%20Cellphones%20into%2024-Hour%20Tellers%20in%20Kenya.pdf",
+    "year": "2007"
+   },
+   {
+    "title": "Changing the Financial Landscape of Africa: An Unusual Story of Evidence-informed Innovation, Intentional Policy Influence and Private Sector Engagement（Simon Batchelor，IDS Bulletin 43(5)）",
+    "publisher": "Institute of Development Studies",
+    "url": "https://opendocs.ids.ac.uk/opendocs/bitstream/20.500.12413/7515/1/IDSB_43_5_10.1111-j.1759-5436.2012.00367.x.pdf",
+    "year": "2012"
+   },
+   {
+    "title": "M-Pesa celebrates reaching 50 million customers",
+    "publisher": "Vodafone",
+    "url": "https://www.vodafone.com/news/services/m-pesa-celebrates-reaching-50-million-customers",
+    "year": "2021"
+   }
+  ],
+  "verify": true,
+  "note": "未核：①「乌干达、博茨瓦纳、加纳」三个国名——IDS Bulletin 一文只说「三个国家」，国名来自简报与维基一级的说法，起点坐标取坎帕拉属示意；②对 Suri & Jack 的批评（Bateman、Duvendack、Loubere 2019 年发表于 Review of African Political Economy）是凭记忆写的，未开到原文，dispute 后半句需复核或删；③IDS Bulletin 那篇的作者与标题未核到（应为 Gamos 的 Simon Batchelor），sources 里的标题是描述性的；④锡卡是三个试点地中的第三个，试点起始日 10 月 11 日对应的首个地点应是内罗毕，坐标用锡卡是为地图分散；⑤麻省理工坐标对应苏里的任职单位，属示意（杰克在乔治城大学）。7 国为肯尼亚、坦桑尼亚、莫桑比克、刚果（金）、莱索托、加纳、埃及。"
+ },
+ {
+  "id": "wifi-csiro",
+  "title_zh": "找黑洞的副产品",
+  "kind": "boost",
+  "small_zh": "一次没找到黑洞的射电搜寻",
+  "big_zh": "专利用在 Wi-Fi 上，收回约 4.3 亿澳元许可费",
+  "origin": {
+   "year": 1977,
+   "place_zh": "荷兰",
+   "lat": 52.8,
+   "lon": 6.4,
+   "text_zh": "1970 年代，工程师奥沙利文（John O'Sullivan）在荷兰做射电天文，想找霍金预言的微型黑洞蒸发时的射电信号，没有找到。"
+  },
+  "chain": [
+   {
+    "year": 1983,
+    "place_zh": "澳大利亚 纳拉布赖",
+    "lat": -30.3,
+    "lon": 149.6,
+    "text_zh": "他为处理信号做过一种快速傅里叶变换芯片；1983 年回国，为 CSIRO 的澳大利亚望远镜做接收系统。"
+   },
+   {
+    "year": 1992,
+    "place_zh": "澳大利亚 悉尼（CSIRO 射电物理部）",
+    "lat": -33.8,
+    "lon": 151.1,
+    "text_zh": "1990 年他带五人小组攻室内无线联网：信号在墙和家具间反射互相干扰。他们用傅里叶变换解决，1992 年申请专利。"
+   },
+   {
+    "year": 1996,
+    "date": "1996-01-23",
+    "place_zh": "美国 华盛顿（专利商标局）",
+    "lat": 38.9,
+    "lon": -77.0,
+    "text_zh": "1 月 23 日，美国专利 5,487,069 获批；据 CSIRO，这项技术 1999 年起被 802.11a 等无线局域网标准采用。"
+   },
+   {
+    "year": 2005,
+    "place_zh": "美国 得克萨斯州东区联邦法院",
+    "lat": 32.5,
+    "lon": -94.4,
+    "text_zh": "厂商不肯付费，CSIRO 2005 年在得州东区法院起诉日本厂商巴法络（Buffalo）；官司后来对上 14 家大公司，2009 年惠普率先和解，其余 13 家跟进。"
+   },
+   {
+    "year": 2012,
+    "place_zh": "澳大利亚 堪培拉",
+    "lat": -35.3,
+    "lon": 149.1,
+    "text_zh": "2012 年又与美国三家运营商和解。至此 CSIRO 与 23 家公司签了许可，收入超过 4.3 亿澳元。"
+   }
+  ],
+  "reach": {
+   "year": 2012,
+   "text_zh": "CSIRO 口径：许可收入约 4.3 亿澳元，技术装进了全球 150 多亿台设备。"
+  },
+  "lag": {
+   "days": 12800,
+   "text_zh": "从 1970 年代的搜寻到 2012 年约 35 年"
+  },
+  "facts": [
+   "美国专利 5,487,069 于 1996 年 1 月 23 日获批，另在 18 个国家有对应专利。",
+   "小组五人：奥沙利文、珀西瓦尔、奥斯特里、丹尼尔斯、迪恩。",
+   "到 2012 年，签约的 23 家公司约占行业九成，许可收入超过 4.3 亿澳元。",
+   "据澳大利亚国家博物馆，到 2015 年 CSIRO 收到的和解金超过 4.5 亿元，其中 1.5 亿多元存入基金用于科研（原文未标币种）。"
+  ],
+  "dispute": "CSIRO 自称发明的是无线局域网技术，为后来的 Wi-Fi 打下基础。反方（Ars Technica 2012 年报道与被诉厂商）指出：802.11a 用的是朗讯与 NTT 的提案，CSIRO 没向标准组织提过案，专利各项技术均非它首创。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Wireless LAN",
+    "publisher": "CSIRO",
+    "url": "https://www.csiro.au/en/research/technology-space/it/wireless-lan",
+    "year": "2024"
+   },
+   {
+    "title": "Wireless LANs",
+    "publisher": "CSIROpedia",
+    "url": "https://csiropedia.csiro.au/wireless-lans",
+    "year": "2012"
+   },
+   {
+    "title": "Defining Moments: Wi-Fi",
+    "publisher": "National Museum of Australia",
+    "url": "https://www.nma.gov.au/defining-moments/resources/wi-fi",
+    "year": "2025"
+   },
+   {
+    "title": "Australian breakthroughs: the invention of wi-fi（Dr Karl Kruszelnicki）",
+    "publisher": "Australian Geographic",
+    "url": "https://australiangeographic.com.au/blogs/dr-karl-need-to-know/2016/06/australian-breakthroughs-the-invention-of-wi-fi",
+    "year": "2016"
+   },
+   {
+    "title": "How astronomy freed the computer from its chains",
+    "publisher": "Science in Public",
+    "url": "https://stories.scienceinpublic.com.au/2010/astronomy-computer/",
+    "year": "2009"
+   },
+   {
+    "title": "Five reasons why Ars Technica's savaging of CSIRO is wrong（内含对 Ars Technica 2012 年报道的逐条引述）",
+    "publisher": "Patentology",
+    "url": "https://blog.patentology.com.au/2012/04/five-reasons-why-ars-technicas-savaging.html",
+    "year": "2012"
+   },
+   {
+    "title": "CSIRO snatches $220m windfall in WiFi patent dispute with AT&T, T-Mobile and Verizon",
+    "publisher": "Engadget",
+    "url": "https://www.engadget.com/2012/04/02/csiro-snatches-220m-windfall-in-wifi-patent-dispute/",
+    "year": "2012"
+   }
+  ],
+  "verify": true,
+  "note": "未核：①黑洞搜寻的确切年份与地点——来源只说「1970 年代、在荷兰」（NMA）和「没找到」（Australian Geographic、Science in Public），origin.year 取 1977、地点取德温格洛是通行说法，凭记忆，需复核；②「黑洞搜寻的数学直接用到了无线局域网」是 Dr Karl 与 Science in Public 的讲法，CSIRO 官网只说得益于射电天文积累的傅里叶变换与电波知识，未提黑洞——正文链条按较保守的写法；③Ars Technica 原文未开到，反方观点经 Patentology 的反驳文转述；④金额币种：CSIRO 官网写 A$430 million，NMA 与 CSIROpedia 未标币种（2009 年 2.05 亿、2015 年 4.5 亿同），正文「2 亿多」「4.5 亿」未写币种；⑤Engadget 一条只在搜索结果里见到标题（2012 年 2.2 亿美元和解），未打开；⑥2012 年那一步的坐标取堪培拉属示意；小组成员中文译名为音译（Terry Percival、Diet Ostry、Graham Daniels、John Deane）。Radiata 被思科收购的金额两处来源不一（5.67 亿 / 2.95 亿美元），未写进正文。"
+ }
+]

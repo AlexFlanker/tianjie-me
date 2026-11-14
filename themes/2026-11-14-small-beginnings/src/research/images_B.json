@@ -1,0 +1,53 @@
+[
+ {
+  "id": "www",
+  "file": "www-1600.jpg",
+  "subject": "伯纳斯-李用作世界第一台网页服务器的 NeXT 电脑，2005 年陈列于 CERN 的 Microcosm 展厅；机箱上贴着「This machine is a server. DO NOT POWER IT DOWN!!」，键盘旁是 1989 年提案《Information Management: A Proposal》的复印件。",
+  "author": "Coolcaesar（英文维基百科用户）",
+  "author_short": "Coolcaesar",
+  "year": "2005",
+  "license": "Creative Commons Attribution-Share Alike 3.0 Unported（与 GFDL 双许可）；依据维基共享资源文件页的许可信息（API extmetadata：LicenseShortName = CC BY-SA 3.0，作者自摄）",
+  "license_short": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "source_url": "https://commons.wikimedia.org/wiki/File:First_Web_Server.jpg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/First_Web_Server.jpg/1920px-First_Web_Server.jpg",
+  "width": 1600,
+  "height": 1200,
+  "verify": false,
+  "note": "原图 2048×1536；原图直链被限流，下载的是共享资源的 1920 px 缩略图再缩到 1600。不是 CERN 官方图（CDS 有反爬验证，打不开许可页，未采用）。CC BY-SA 要求署名并以相同方式共享。"
+ },
+ {
+  "id": "sms",
+  "file": "sms-560.jpg",
+  "subject": "诺基亚 1011，最早量产的 GSM 手机之一（1992–1994 年生产）；屏幕显示德语「KARTE EINLEGEN」（请插卡）。",
+  "author": "Jkbw（维基共享资源用户）",
+  "author_short": "Jkbw",
+  "year": "2010",
+  "license": "Creative Commons Attribution 3.0 Unported（与 GFDL 双许可）；依据维基共享资源文件页的许可模板 {{self|GFDL|cc-by-3.0}}，作者自摄",
+  "license_short": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Nokia_1011.jpg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Nokia_1011.jpg/1920px-Nokia_1011.jpg",
+  "width": 560,
+  "height": 1600,
+  "verify": false,
+  "note": "竖长图（约 1:2.9）。这不是收到第一条短信的那部 Orbitel 901——Flickr 上两张 Orbitel 901 / 帕普沃思相关照片都是「保留所有权利」，未采用。图说不要写成「第一条短信的手机」。文件页说明写「Nokia 1011 (1993)」；生产年份 1992–1994 取自同类目另一文件引用的英国科学博物馆藏品说明，未另核。"
+ },
+ {
+  "id": "plate-code",
+  "file": "plate-code-1175.jpg",
+  "subject": "1941 年 7 月，华盛顿市立机场的电话接线员坐在交换机前，手里是一排排插线。",
+  "author": "Jack Delano，美国农业安全管理局（FSA）",
+  "author_short": "Jack Delano / FSA",
+  "year": "1941",
+  "license": "公有领域（美国联邦政府雇员职务作品）；国会图书馆 Rights Advisory：No known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs",
+  "license_short": "公有领域",
+  "license_url": "https://www.loc.gov/rr/print/res/071_fsab.html",
+  "source_url": "https://www.loc.gov/pictures/item/2017795320/",
+  "download_url": "https://tile.loc.gov/storage-services/master/pnp/fsa/8c06000/8c06200/8c06276u.tif",
+  "width": 1175,
+  "height": 1600,
+  "verify": false,
+  "note": "国会图书馆编号 LC-USF34-044933-D（底片扫描 fsa.8c06276）。从 10807×13869 的 TIFF 裁去底片黑边和手写编号后缩小。馆藏标题：Telephone operator at the airport switchboard. Municipal airport, Washington, D.C."
+ }
+]

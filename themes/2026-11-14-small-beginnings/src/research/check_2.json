@@ -1,0 +1,425 @@
+[
+ {
+  "id": "potato-blight",
+  "field": "chain.0.place_zh",
+  "sev": "疑",
+  "orig": "爱尔兰 都柏林",
+  "fix": "爱尔兰",
+  "why": "来源只说 9 月第二周病害已到爱尔兰，没有说先到都柏林；地点是底稿自己补的。",
+  "source": "https://www.irishtimes.com/news/a-meteorological-recipe-for-a-national-tragedy-1.334761"
+ },
+ {
+  "id": "potato-blight",
+  "field": "facts.2",
+  "sev": "疑",
+  "orig": "已消失的 HERB-1 株系",
+  "fix": "2013 年研究者测了 11 份 19 世纪标本，认定元凶是 HERB-1 株系；它在 20 世纪被 US-1 取代，可能已经灭绝。",
+  "why": "来源只说 HERB-1 被 US-1 取代，「也许已灭绝」是研究者的推测，不是定论。",
+  "source": "https://tsl.ac.uk/news/whodunnit-irish-potato-famine-solved"
+ },
+ {
+  "id": "potato-blight",
+  "field": "big_zh",
+  "sev": "文",
+  "orig": "另有百万人出走",
+  "fix": "爱尔兰约 100 万人死亡，另有一百多万人出走",
+  "why": "facts 第 1 条写约 125 万人离开，卷首数字与之对齐。",
+  "source": "https://www.rte.ie/history/the-great-irish-famine/2020/0629/1150367-the-great-irish-famine"
+ },
+ {
+  "id": "phylloxera",
+  "field": "chain.3.text_zh",
+  "sev": "疑",
+  "orig": "根瘤蚜到达香槟，这是法国最后一个沦陷的产区。",
+  "fix": "根瘤蚜最后才到香槟；按 OIV 综述，这是法国最后一个染疫的产区。",
+  "why": "底稿所列来源只说香槟是最后染疫的产区，没有给 1890 这个年份；这一步的 year 需另找来源，或在文字里不强调年份。",
+  "source": "https://ives-openscience.eu/oiv2024_224_ollat"
+ },
+ {
+  "id": "phylloxera",
+  "field": "reach.text_zh",
+  "sev": "文",
+  "orig": "葡萄园面积从 240 万公顷降到约 170 万公顷",
+  "fix": "到 1900 年法国所有产区都已染疫；葡萄园面积从 1874 年的 240 万公顷，20 年间降到约 170 万公顷。",
+  "why": "来源的口径是「1874 年 240 万公顷，20 年内降到 170 万」，不是到 1900 年；补上起止以免读成 1900 年的数字。",
+  "source": "https://ives-openscience.eu/oiv2024_224_ollat"
+ },
+ {
+  "id": "rabbits",
+  "field": "small_zh",
+  "sev": "文",
+  "orig": "一船英国野兔",
+  "fix": "圣诞节到港的一小批英国野兔",
+  "why": "来源写 13 只或 24 只，「一船」夸大了数量，也和 dispute 里的数字不合。",
+  "source": "https://www.cam.ac.uk/stories/dna-profiling-solves-australia-rabbit-plague-puzzle"
+ },
+ {
+  "id": "rabbits",
+  "field": "chain.3.text_zh",
+  "sev": "文",
+  "orig": "仍没拦住",
+  "fix": "西澳州 1901 年动工的防兔栅栏完工，南北长 3256 公里；可完工时兔子早已进了西澳。",
+  "why": "国家博物馆原文是「栅栏完工时兔子已经越境进入该州」，比「没拦住」更准确，也与上一步「1894 年进入西澳」相合。",
+  "source": "https://www.nma.gov.au/defining-moments/resources/rabbits-introduced"
+ },
+ {
+  "id": "rinderpest",
+  "field": "big_zh",
+  "sev": "文",
+  "orig": "十年内非洲 80%–90% 的牛死去",
+  "fix": "十年内撒哈拉以南非洲 80%–90% 的牛死去",
+  "why": "reach 写的是「撒哈拉以南非洲」，来源（Gavi 作 African sub-continent，艾奥瓦州立大学作 sub-Saharan Africa）也不是指全非洲；卷首与 reach 应一致。",
+  "source": "https://www.cfsph.iastate.edu/Factsheets/pdfs/rinderpest.pdf"
+ },
+ {
+  "id": "tambora",
+  "field": "big_zh",
+  "sev": "疑",
+  "orig": "欧洲夏季低了近 3 °C",
+  "fix": "次年北半球「无夏」，西欧夏季最多低了 3 °C",
+  "why": "来源原文是「西欧 1816 年夏季气温比常年最多低 3 °C（up to 3°C）」，是局部最大值，不是全欧洲平均「近 3 °C」。",
+  "source": "https://www.wunderground.com/blog/JeffMasters/200-years-ago-this-week-tamboras-eruption-causes-a-planetwide-clima.html"
+ },
+ {
+  "id": "tambora",
+  "field": "reach.text_zh",
+  "sev": "疑",
+  "orig": "1816 年欧洲夏季比常年低近 3 °C",
+  "fix": "此后一两年全球气温降了约 0.4–0.7 °C；1816 年西欧夏季比常年最多低 3 °C，欧洲和北美东北部大范围歉收。",
+  "why": "同上：来源写的是西欧、「最多 3 °C」。",
+  "source": "https://www.wunderground.com/blog/JeffMasters/200-years-ago-this-week-tamboras-eruption-causes-a-planetwide-clima.html"
+ },
+ {
+  "id": "tambora",
+  "field": "facts.0",
+  "sev": "文",
+  "orig": "喷发削掉了约 4000 米高的山顶",
+  "fix": "喷发前这座山估计高约 4000 米，山顶被整个削去，留下直径 6 公里、深 1100 米的火山口（NASA）。",
+  "why": "原句容易读成「削掉 4000 米」；NASA 的意思是原高约 4000 米的山峰失去了顶部（另一来源 Masters 说山矮了约 1.5 公里）。",
+  "source": "https://images-api.nasa.gov/search?nasa_id=iss020e006563"
+ },
+ {
+  "id": "tambora",
+  "field": "chain.4.text_zh",
+  "sev": "疑",
+  "orig": "季风连续两年失常之后，孟加拉暴发霍乱",
+  "fix": "季风连续两年失常；1817 年孟加拉暴发霍乱，伍德等学者认为两者有关。1819–1820 年霍乱传到缅甸和泰国。",
+  "why": "来源（伍德）自己也说这层联系是「间接的」；链上写成「之后……暴发」读起来是因果，应在这一步就标明是学者的论点，与 dispute 一致。",
+  "source": "https://theecologist.org/2014/jun/18/tambora-eruption-and-human-history"
+ },
+ {
+  "id": "penicillin",
+  "field": "facts.4",
+  "sev": "疑",
+  "orig": "由陆军运输部队从各地收集了数千份霉菌样本",
+  "fix": "为找高产菌株，美国陆军运输部队从英国、巴西、澳大利亚、印度等地带回土样，皮奥里亚的实验室前后筛了数百株青霉。",
+  "why": "来源写的是美国陆军运输部队帮忙取得各地「土样」，实验室共试了「数百株」青霉；「数千份霉菌样本」「盟军」来源没有。",
+  "source": "https://www.the-scientist.com/how-a-moldy-cantaloupe-took-fleming-s-penicillin-from-discovery-to-mass-production-72304"
+ },
+ {
+  "id": "penicillin",
+  "field": "chain.3.text_zh",
+  "sev": "疑",
+  "orig": "后来所有工业菌株都是它的后代",
+  "fix": "皮奥里亚市场上一只发霉的哈密瓜带来高产菌株 NRRL 1951，今天的工业生产菌株都由它选育而来。",
+  "why": "来源措辞是「今天商业菌株的亲本」；另外几份来源都没给哈密瓜的确切年份（只说 1940 年代初、或 1943 年亨特在实验室任职），这一步的 year=1943 属推定，文字里不要写死年份。",
+  "source": "https://www.the-scientist.com/how-a-moldy-cantaloupe-took-fleming-s-penicillin-from-discovery-to-mass-production-72304"
+ },
+ {
+  "id": "penicillin",
+  "field": "big_zh",
+  "sev": "文",
+  "orig": "够治 4 万名伤员",
+  "fix": "16 年后月产约 1000 亿单位，够治 4 万名病人",
+  "why": "chain 末步和来源都写「病人（patients）」，卷首写成「伤员」，前后不一。",
+  "source": "https://hekint.org/2024/03/21/propagating-penicillin-in-peoria-from-discovery-to-mass-production/"
+ },
+ {
+  "id": "sweet-potato",
+  "field": "origin.text_zh",
+  "sev": "疑",
+  "orig": "运回福州；据《金薯传习录》，当地不许此物出境",
+  "fix": "1593 年（明万历二十一年），在吕宋经商的福建人陈振龙把薯藤带上船运回福建；相传当地不许薯种出境，他是悄悄带出来的。",
+  "why": "底稿所列两份来源只说「带回福建」，没有说福州；「不许出境」一节来源里只见于陈益（安南）一线和通俗转述，未见《金薯传习录》原文，不宜直接挂在该书名下。本路未能找到《金薯传习录》原文核对。",
+  "source": "https://link.springer.com/chapter/10.1007/978-981-10-4053-5_4"
+ },
+ {
+  "id": "sweet-potato",
+  "field": "chain.0.text_zh",
+  "sev": "疑",
+  "orig": "陈振龙之子陈经纶把薯藤和种法献给福建巡抚金学曾",
+  "fix": "按《金薯传习录》所收陈氏禀帖的说法，陈振龙之子陈经纶把薯藤和种法献给福建巡抚金学曾，建议用来备荒。",
+  "why": "学术来源（Springer 章节）没有这一节，只说 1594 年饥荒后巡抚推广；献薯一事出自陈氏家传文献，且金学曾出任福建巡抚的年份通行职官记载晚于 1593 年（这一点本路没能在线核到原始记载），应标明出处，不作确凿史实。",
+  "source": "https://link.springer.com/chapter/10.1007/978-981-10-4053-5_4"
+ },
+ {
+  "id": "sweet-potato",
+  "field": "facts.3",
+  "sev": "疑",
+  "orig": "（Perkins 1969）",
+  "fix": "清代人均耕地从乾隆朝的三四亩降到道光朝的不足两亩。",
+  "why": "来源正文只说「经济史学者的研究」，Perkins 1969 只出现在文末书目里，这组数字是否出自该书无法确认。",
+  "source": "https://hungyichen.com/en/insights/sweet-potato-qing"
+ },
+ {
+  "id": "sweet-potato",
+  "field": "facts.1",
+  "sev": "文",
+  "orig": "同样的地，种番薯得到的热量约为小麦的两到三倍、稻米的一倍半（Mazumdar 1998）。",
+  "fix": "有估算说，同样的地，种番薯得到的热量约为小麦的两到三倍、稻米的一倍半（转引自 Mazumdar 1998）。",
+  "why": "来源原文以「据估计」引出，且是二手转引，未见 Mazumdar 原文。",
+  "source": "https://hungyichen.com/en/insights/sweet-potato-qing"
+ },
+ {
+  "id": "sweet-potato",
+  "field": "dispute",
+  "sev": "疑",
+  "orig": "（绞进汲水绳、夹在船舷等）",
+  "fix": "传入路线不止一条：广东东莞人陈益约 1580–1582 年从安南带回之说，证据还不够；电白林怀兰从交趾带回之说近于传说；何炳棣主张另有从印度、缅甸经陆路进云南的一线。薯藤怎样藏上船，各书说法不同。",
+  "why": "「绞进汲水绳」「夹在船舷」两种藏法在底稿所列来源里都没有出现（检索到的通俗说法另有「系在船网上涂泥」），未核到原书前不宜列举细节。",
+  "source": "https://link.springer.com/chapter/10.1007/978-981-10-4053-5_4"
+ },
+ {
+  "id": "champa-rice",
+  "field": "reach.text_zh",
+  "sev": "疑",
+  "orig": "缓解了粮食压力，带动人口向南方稻区迁移和增长",
+  "fix": "农业史学者巴克（R. Barker）的概括是：梯田开垦加上灌溉低地双季种植的扩大，缓解了粮食压力，也带动人口向南方稻区迁移和增长；这一判断有争议。",
+  "why": "这是 Barker 2011 一家的因果判断，dispute 里邓钢正是反驳这一点；reach 不应当作定论直述。",
+  "source": "https://link.springer.com/article/10.1007/s12284-011-9079-6"
+ },
+ {
+  "id": "champa-rice",
+  "field": "chain.2.text_zh",
+  "sev": "疑",
+  "orig": "一些地方由此能种两季",
+  "fix": "江南路同时推广；占城稻比当时中国已有的早稻熟得还快，能否因此普遍种两季，学者看法不一。",
+  "why": "来源（转引 Shaffer）只说它熟得更快；邓钢指出宋代一年一熟仍是常态，最早的双季稻试验记载在 1178 年，「由此能种两季」是底稿补的因果。",
+  "source": "https://www.lse.ac.uk/asset-library/information/wp178.pdf"
+ },
+ {
+  "id": "champa-rice",
+  "field": "facts.0",
+  "sev": "文",
+  "orig": "《宋史·食货志》：「遣使就福建取占城稻三万斛，分给三路为种，择民田高仰者莳之。」",
+  "fix": "《宋史·食货志》：「遣使就福建取占城稻三万斛，分给三路为种，择民田高仰者莳之。」事在大中祥符五年五月，见《宋史·真宗本纪》与《续资治通鉴长编》卷七十七。",
+  "why": "引文逐字无误（已对维基文库《宋史》卷一七三）。但《食货志》这段紧接在「大中祥符四年」诏书之后、自身不系年，容易被读成四年；本纪作「五年五月辛未，江、淮、两浙旱，给占城稻种，教民种之」，《长编》卷七十七也系于五年五月，补一句可免争议。1012 年、三万斛、江淮两浙三路均核对无误。",
+  "source": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7008"
+ },
+ {
+  "id": "gunpowder",
+  "field": "chain.1.text_zh",
+  "sev": "文",
+  "orig": "书里公开写下三个军用火药方",
+  "fix": "曾公亮、丁度等奉敕编成《武经总要》，书里记下三个军用火药方：毒药烟球、火砲火药、蒺藜火球。",
+  "why": "来源只说书中记载了三个配方，没有「公开」之意（这是奉敕编的官修兵书）。",
+  "source": "https://paper.people.com.cn/rmrbhwb/pc/content/202607/24/content_30170845.html"
+ },
+ {
+  "id": "mauve",
+  "field": "big_zh",
+  "sev": "文",
+  "orig": "18 个月后进了工厂",
+  "fix": "第一种商品化合成染料，约 20 个月后开始供货",
+  "why": "lag 和 chain 写的是 1856 年复活节到 1857 年 12 月供货，约 20 个月；卷首的「18 个月」与之不符，来源里也没有 18 个月这个数。",
+  "source": "https://collection.sciencemuseumgroup.org.uk/people/cp37617/william-henry-perkin"
+ },
+ {
+  "id": "mauve",
+  "field": "facts.2",
+  "sev": "疑",
+  "orig": "1853 年进皇家化学学院",
+  "fix": "珀金 1838 年生，十五六岁进皇家化学学院，1866 年当选皇家学会会员，1906 年封爵。",
+  "why": "底稿所列来源没有 1853 这个年份；科学博物馆写的是「16 岁入学」，与 1853 年（15 岁）对不上。",
+  "source": "https://collection.sciencemuseumgroup.org.uk/people/cp37617/william-henry-perkin"
+ },
+ {
+  "id": "mauve",
+  "field": "facts.3",
+  "sev": "疑",
+  "orig": "是珀金 1906 年送出的纪念品",
+  "fix": "美国国家历史博物馆藏有一条苯胺紫染布（馆方著录年份 1860），很可能是珀金 1906 年访美时送给染料商马西森的纪念品。",
+  "why": "馆方原文是「probably gave him this memento」；1860 只是著录里的一个年份栏，没有说明是染制年份。",
+  "source": "https://si.edu/object/perkin-mauve:nmah_2344"
+ },
+ {
+  "id": "borlaug-shuttle",
+  "field": "chain.1.text_zh",
+  "sev": "疑",
+  "orig": "博洛格从育种家沃格尔（Orville Vogel）那里拿到带日本「农林 10 号」矮秆基因的材料，开始与墨西哥小麦杂交。",
+  "fix": "1953 年前后，博洛格从育种家沃格尔（Orville Vogel）那里拿到带日本「农林 10 号」矮秆基因的材料；与墨西哥小麦的杂交从 1954 年做起。",
+  "why": "来源之间有出入：CIMMYT 说种子约在 1952–1953 年给到、1953 年首次杂交失败；诺奖演讲说系列杂交「始于 1954 年」。把「拿到」和「开始杂交」都系在 1954 年不稳。",
+  "source": "https://www.cimmyt.org/?p=34553"
+ },
+ {
+  "id": "borlaug-shuttle",
+  "field": "chain.2.text_zh",
+  "sev": "疑",
+  "orig": "此后一直自给",
+  "fix": "墨西哥第一次实现小麦自给；到 1970 年博洛格领奖时仍然自给。",
+  "why": "「此后一直自给」是博洛格 1970 年演讲里的话，只能管到 1970 年，不能当作至今的事实。",
+  "source": "https://nobelprize.org/prizes/peace/1970/borlaug/lecture"
+ },
+ {
+  "id": "borlaug-shuttle",
+  "field": "facts.4",
+  "sev": "文",
+  "orig": "「幸运公主」",
+  "fix": "博洛格自己的话：「塞伦迪普公主」（意思是意外的好运）对这次不合常规的穿梭育种笑了。",
+  "why": "原话是 The Princess of Serendip had smiled on our unorthodox shuttle-breeding effort（见 Hesser 书摘），典出「serendipity」；译成「幸运公主」丢了出处。这句话不在诺奖演讲里，不要与上一条 facts 混为同一来源。",
+  "source": "https://seedquest.com/forum/b/BorlaugNorman/shuttlebreeding.htm"
+ },
+ {
+  "id": "ors",
+  "field": "facts.1",
+  "sev": "疑",
+  "orig": "补液盐的成分只有葡萄糖、食盐和小苏打",
+  "fix": "难民营里用的配方只有葡萄糖、食盐和小苏打，分装成小包，一包兑一升水；后来的标准补液盐还加了钾盐。",
+  "why": "来源说的是马哈拉纳比斯在营地用的三样原料；写成「补液盐的成分只有」不准确，UNICEF 材料也说补液盐要补充钾。",
+  "source": "https://nmji.in/dilip-mahalanabis-12-november-193416-october-2022/"
+ },
+ {
+  "id": "ring-vaccination",
+  "field": "chain.0.text_zh",
+  "sev": "文",
+  "orig": "内战前后，东部各州全面改用",
+  "fix": "1967 年下半年，尼日利亚东部全面改用「监测—围堵」：5 个月内阻断传播，1,200 万人口里只接种了 75 万人。",
+  "why": "来源（Lane 2006）写的是 1967 年下半年改用；「内战前后」含糊，「东部各州」原文是一个州（东部地区）。",
+  "source": "https://link.springer.com/content/pdf/10.1007/3-540-36583-4_2.pdf"
+ },
+ {
+  "id": "taq-pcr",
+  "field": "lag.text_zh",
+  "sev": "文",
+  "orig": "到 1988 年 PCR 用上它",
+  "fix": "1966 年采样到 1988 年耐热酶 PCR 的论文发表，22 年",
+  "why": "1988 年是才木等人论文发表的年份；按底稿自己的 dispute，Cetus 在 1985 年秋已分离出这种酶并随即用于 PCR。",
+  "source": "https://www.news-medical.net/life-sciences/History-of-Polymerase-Chain-Reaction-(PCR).aspx"
+ },
+ {
+  "id": "taq-pcr",
+  "field": "small_zh",
+  "sev": "疑",
+  "orig": "一片黄色菌垫",
+  "fix": "热泉水道里取的一份样本",
+  "why": "底稿所列来源（公园管理局、地质调查局、怀俄明史学会、国家科学基金会）都只说「取样」，没有「黄色」也没有「菌垫」；origin.text_zh 里的「取了一片菌垫」同样建议改成「取了一份样本」。",
+  "source": "https://wyohistory.org/encyclopedia/yellowstone-microbe-changed-world"
+ },
+ {
+  "id": "gila-glp1",
+  "field": "title_zh",
+  "sev": "文",
+  "orig": "毒蜥的唾液",
+  "fix": "毒蜥的毒液",
+  "why": "small_zh、origin 和各来源都写「毒液（venom）」，标题写「唾液」前后不一。",
+  "source": "https://www.sciencecoalition.org/2013/07/30/dr-john-eng-to-receive-golden-goose-award/"
+ },
+ {
+  "id": "image:hero-iss-1159.jpg",
+  "field": "license",
+  "sev": "疑",
+  "orig": "公有领域：NASA 宇航员摄影",
+  "fix": "公有领域（NASA 宇航员摄影图库收录；图库页注明「Russian imagery」，即由俄方乘员拍摄，使用前请再确认权利状态）",
+  "why": "NASA 图库该帧的 Additional Information 一栏写「Russian imagery」，说明拍摄者可能是俄罗斯航天员而非 NASA 雇员，「美国联邦政府作品」这条理由未必成立；页面本身没有许可声明。author 里的「NASA / 国际空间站第 64 长期考察组」可保留。",
+  "source": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS064&roll=E&frame=48480"
+ },
+ {
+  "id": "image:ever-given-1108.jpg",
+  "field": "license",
+  "sev": "疑",
+  "orig": "公有领域：NASA 宇航员摄影",
+  "fix": "公有领域（NASA 宇航员摄影图库收录；图库页注明「Russian imagery」，即由俄方乘员拍摄，使用前请再确认权利状态）",
+  "why": "NASA 图库该帧的 Additional Information 一栏写「Russian imagery」，说明拍摄者可能是俄罗斯航天员而非 NASA 雇员，「美国联邦政府作品」这条理由未必成立；页面本身没有许可声明。author 里的「NASA / 国际空间站第 64 长期考察组」可保留。",
+  "source": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS064&roll=E&frame=48480"
+ },
+ {
+  "id": "image:hero-iss-1159.jpg",
+  "field": "subject",
+  "sev": "文",
+  "orig": "船尾一侧有拖船与挖泥作业搅起的浑水",
+  "fix": "2021 年 3 月 27 日从国际空间站拍到的长赐号：船身斜卡在苏伊士运河两岸之间，船尾一侧可见拖船和搅起的浑水（NASA 照片编号 ISS064-E-48480）",
+  "why": "来源页没有图说，「挖泥作业」是看图推断；画面里能确认的只有拖船和浑水。",
+  "source": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS064&roll=E&frame=48480"
+ },
+ {
+  "id": "image:hero-2400.jpg",
+  "field": "subject",
+  "sev": "疑",
+  "orig": "画面上缘是苏伊士城与运河入口，长赐号本身在画面以北，不在图内",
+  "fix": "2021 年 3 月 27 日长赐号堵住运河期间，苏伊士湾里等待通过的船只（陆地卫星 8 号 OLI）",
+  "why": "来源页只说这是 3 月 27 日 OLI 拍到的苏伊士湾候航船只，没有说画面上缘是哪里、长赐号在不在图内；这两句是底稿自己的判读，不宜进图注。",
+  "source": "https://science.nasa.gov/earth/earth-observatory/traffic-jam-on-the-suez-canal-148114/"
+ },
+ {
+  "id": "image:hero-1280.jpg",
+  "field": "subject",
+  "sev": "疑",
+  "orig": "画面上缘是苏伊士城与运河入口，长赐号本身在画面以北，不在图内",
+  "fix": "2021 年 3 月 27 日长赐号堵住运河期间，苏伊士湾里等待通过的船只（陆地卫星 8 号 OLI）",
+  "why": "来源页只说这是 3 月 27 日 OLI 拍到的苏伊士湾候航船只，没有说画面上缘是哪里、长赐号在不在图内；这两句是底稿自己的判读，不宜进图注。",
+  "source": "https://science.nasa.gov/earth/earth-observatory/traffic-jam-on-the-suez-canal-148114/"
+ },
+ {
+  "id": "image:eyjafjallajokull-1600.jpg",
+  "field": "subject",
+  "sev": "文",
+  "orig": "向东南飘过北大西洋",
+  "fix": "2010 年 4 月 15 日艾雅法拉火山的灰羽从冰岛向东南偏东飘过北大西洋（Terra 卫星 MODIS 真彩色影像）",
+  "why": "来源原文是 toward the east-southeast。",
+  "source": "https://science.nasa.gov/earth/earth-observatory/ash-plume-across-the-north-atlantic-43670/"
+ },
+ {
+  "id": "image:container-516.jpg",
+  "field": "year",
+  "sev": "疑",
+  "orig": "1957（一说 1960 年代中期）",
+  "fix": "1960 年代中期（文件名作 1957）",
+  "why": "共享资源文件描述写「Port Elizabeth, mid-1960s」，只有文件名写 1957；画面里集装箱上是 SEA-LAND 字样，而海陆公司 1960 年才改用这个名字，1957 年之说站不住。许可已核：文件页为 CC BY-SA 2.0，2013-08-09 通过 Flickr 审核机器人复核，合格。图注不写地点是对的。",
+  "source": "https://commons.wikimedia.org/wiki/File:Malcolm_McLean_at_railing,_Port_Newark,_1957_(7312751706).jpg"
+ },
+ {
+  "id": "image:potato-blight-1600.jpg",
+  "field": "subject",
+  "sev": "文",
+  "orig": "据科克画家 H. Smith 的速写刻版",
+  "fix": "《伦敦新闻画报》1847 年 1 月 30 日的版画《爱尔兰饥荒：斯基伯林的葬礼》，据科克的 H. Smith 先生的速写刻版",
+  "why": "原图题是 from a sketch by Mr. H. Smith, Cork，没有说他是画家。日期、刻工（Frederick James Smyth）、公有领域（PD-art-old-100）均核对无误。",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Famine_in_Ireland,_Funeral_at_Skibbereen_-_ILN_1847.jpg"
+ },
+ {
+  "id": "image:plate-life-1600.jpg",
+  "field": "year",
+  "sev": "疑",
+  "orig": "2016",
+  "fix": "",
+  "why": "Wellcome 目录没有给这张图的制作年份；2016 只是说明文字里「青霉素首次用于治疗 75 周年」的年份，不能当拍摄年。许可 CC BY 4.0、署名 Errin Johnson、画面宽约 150 微米均核对无误。",
+  "source": "https://wellcomecollection.org/works/fs4wzgmm"
+ },
+ {
+  "id": "image:gila-glp1-1600.jpg",
+  "field": "subject",
+  "sev": "疑",
+  "orig": "萨瓜罗国家公园",
+  "fix": "一只希拉毒蜥（Heloderma suspectum）趴在岩石下的沙地上（美国国家公园管理局照片，载于萨瓜罗国家公园网页）",
+  "why": "来源页只署「NPS photo」，没有说照片摄于萨瓜罗国家公园；拍摄地点是底稿推定的。",
+  "source": "https://www.nps.gov/sagu/learn/nature/gila-monster.htm"
+ },
+ {
+  "id": "image:mauve-1600.jpg",
+  "field": "license",
+  "sev": "错",
+  "orig": "Smithsonian Open Access，媒体使用标注 CC0",
+  "fix": "DELETE",
+  "why": "史密森尼该藏品页写明「There are restrictions for re-using this image」（图像再利用有限制），CC0 标的只是「Metadata Usage (text)」即文字著录，不是图片；这张不属于公有领域/CC0/CC BY/CC BY-SA，建议撤下，改用同案例的 mauve-1132.jpg（Science History Institute，Public Domain Mark 1.0，已核）。",
+  "source": "https://si.edu/object/perkin-mauve:nmah_2344"
+ },
+ {
+  "id": "image:mauve-1600.jpg",
+  "field": "subject",
+  "sev": "疑",
+  "orig": "装在黄铜盒里（1860 年制，珀金 1906 年赠给美国染料商马西森的纪念品）",
+  "fix": "珀金苯胺紫染的一条布样（馆方著录年份 1860；很可能是珀金 1906 年访美时送给染料商马西森的纪念品）",
+  "why": "馆方页面没有提到黄铜盒，只列了布条和盒子的尺寸；赠送一事原文是 probably；1860 未注明是染制年份。若按上一条撤图，此条可忽略。",
+  "source": "https://si.edu/object/perkin-mauve:nmah_2344"
+ }
+]

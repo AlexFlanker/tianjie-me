@@ -1,0 +1,106 @@
+{
+ "items": [
+  {
+   "id": "hormuz",
+   "date": "11 月 11–13 日",
+   "title_zh": "霍尔木兹：油轮接连爆炸",
+   "text_zh": "路透社 11 月 12 日报道：伊朗军方称两天内有四艘油轮在霍尔木兹海峡爆炸；伊朗革命卫队海军称，11 日的两艘超级油轮无视警告、驶入其所称的「未获许可航道」后触雷。13 日革命卫队海军又称一艘运液化天然气的船触雷爆炸。路透社称无法立即核实。据美国能源信息署，2024 年经海峡的石油日均约 2000 万桶，约为全球消费量的两成。",
+   "sources": [
+    {
+     "title": "Four tankers struck by explosions in Strait of Hormuz, Iran says (Reuters)",
+     "publisher": "93.3 The Drive（转载路透社）",
+     "url": "https://www.933thedrive.com/2026/11/12/four-tankers-struck-by-explosions-in-strait-of-hormuz-iran-says/",
+     "year": "2026"
+    },
+    {
+     "title": "Iran Says Tanker Carrying LNG Hit Mine, Suffered Explosion in Hormuz (Reuters)",
+     "publisher": "gCaptain（转载路透社）",
+     "url": "https://gcaptain.com/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-in-hormuz/",
+     "year": "2026"
+    },
+    {
+     "title": "Iran's military reports explosions on two oil tankers (AAP / Reuters)",
+     "publisher": "The Canberra Times",
+     "url": "https://www.canberratimes.com.au/story/9390187/irans-military-reports-explosions-on-two-oil-tankers/",
+     "year": "2026"
+    },
+    {
+     "title": "Hormuz shipping 'below normal, but not stalled': UKMTO",
+     "publisher": "Gulf News",
+     "url": "https://gulfnews.com/world/mena/hormuz-shipping-below-normal-but-not-stalled-1.500741839",
+     "year": "2026"
+    },
+    {
+     "title": "Amid regional conflict, the Strait of Hormuz remains critical oil chokepoint",
+     "publisher": "U.S. Energy Information Administration",
+     "url": "https://www.eia.gov/todayinenergy/detail.php?id=65504",
+     "year": "2025"
+    }
+   ],
+   "confidence": "中",
+   "verify": false,
+   "note": "说法来源：11 日两艘为伊朗革命卫队海军与伊朗官方媒体，12 日另两艘为伊朗军方经国家电视台；路透社原文「could not immediately verify the Iranian account」。报道里没有 LNG 船，只有油轮；另有英国海事贸易行动办公室（UKMTO）报告 11 日一艘船在哈伊马角西北 14 海里被不明抛射物击中，未写入正文。通行量：未找到 IMF PortWatch 的当周数字；可用的口径是 Gulf News 11 月 10 日报道「比冲突前低约 65%」（UKMTO 周报：出 170、进 155 艘次），以及标普全球统计 10 月共 750 艘次过峡。11 月 10 日当天的事件未单独核到。",
+   "by_zh": "伊朗军方与革命卫队（经路透社）"
+  },
+  {
+   "id": "ms365",
+   "date": "11 月 12–13 日",
+   "title_zh": "微软 365 中断近一天",
+   "text_zh": "微软 365 自 11 月 12 日 16 时许（协调世界时）起全球中断，Outlook 邮件受影响最重，Downdetector 峰值近 14 万条。微软 13 日称起因是此前一次网络扩容的问题，与网络攻击无关；近 24 小时后陆续恢复。",
+   "sources": [
+    {
+     "title": "Microsoft outage hits users worldwide, affecting Teams, Outlook and Copilot – as it happened",
+     "publisher": "ABC News (Australia)",
+     "url": "https://www.abc.net.au/news/2026-11-13/microsoft-outage-affects-users-worldwide/107381050",
+     "year": "2026"
+    },
+    {
+     "title": "Microsoft outage: What happened and what does it say about online services?",
+     "publisher": "The Irish Times",
+     "url": "https://www.irishtimes.com/technology/2026/11/13/microsoft-outage-what-happened-and-when-will-it-be-fixed/",
+     "year": "2026"
+    }
+   ],
+   "confidence": "中",
+   "verify": false,
+   "note": "起始时间：ABC 估计约澳东夏令时 13 日 3:15（即协调世界时 12 日 16:15），《爱尔兰时报》写周四约 18 时报告量激增。Downdetector 峰值两家分别写近 14 万与近 13 万。微软的说法均为媒体转述的状态更新，官方状态页与事后报告（PIR）没有打开；WIRED 的报道没有搜到，《华盛顿邮报》、BleepingComputer、NBC 的页面打不开。根因在截稿时微软尚未确认。「近 24 小时」出自澳大利亚广播公司直播收尾时的说法。",
+   "by_zh": "微软（经 TechRadar、澳大利亚广播公司、《爱尔兰时报》）"
+  },
+  {
+   "id": "faa",
+   "date": "11 月 13 日",
+   "title_zh": "美国全国地面停飞",
+   "text_zh": "11 月 13 日下午近 4 时（美东时间），美国联邦航空局以「临时性通信中断」为由叫停全国离港航班，为 2023 年 1 月以来首次。据 FlightAware，到 6 时取消 1913 班、延误 10494 班；当晚 7 时许仍未解除。",
+   "sources": [
+    {
+     "title": "FAA issues rare nationwide ground stop; no indication of 'nefarious attack'",
+     "publisher": "ABC News",
+     "url": "https://abcnews.com/US/nationwide-ground-stop-ordered-airports-faa/story?id=138121848",
+     "year": "2026"
+    },
+    {
+     "title": "FAA grounds all flights at U.S. airports due to air traffic control communications problems",
+     "publisher": "PBS NewsHour (AP)",
+     "url": "https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems",
+     "year": "2026"
+    },
+    {
+     "title": "FAA Orders Ground Stop For All Flights Across The U.S.",
+     "publisher": "The War Zone",
+     "url": "https://www.twz.com/air/faa-orders-ground-stop-for-all-flights-across-the-u-s",
+     "year": "2026"
+    },
+    {
+     "title": "Over 1,000 flights canceled and climbing: FlightAware（直播条目）",
+     "publisher": "ABC7 San Francisco",
+     "url": "https://abc7news.com/live-updates/faa-ground-stop-live-updates-what-know-nationwide-flights-are-grounded/20038887/entry/20039063/",
+     "year": "2026"
+    }
+   ],
+   "confidence": "中",
+   "verify": true,
+   "note": "未核到停飞令解除的时间与总时长：能打开的报道都停在 13 日傍晚（美东 18:35 前），当时仍未解除；CNN、NPR、CNBC 页面打不开。通告用语「due to extraordinary circumstances and for reasons of safety」未写入正文。FAA 声明原文（经 The War Zone 转引）：「issued a nationwide ground stop for all U.S. airports following communication issues impacting multiple Air Route Traffic Control Centers」。发布的确切时刻未核，最早报道的时间戳约为美东 15 时前后。上页面前需补解除时间，或把正文改成「截至当晚」。",
+   "by_zh": "美国联邦航空局、FlightAware"
+  }
+ ]
+}

@@ -1,0 +1,816 @@
+[
+ {
+  "id": "gunpowder",
+  "title_zh": "火药",
+  "kind": "boost",
+  "small_zh": "炼丹炉里一把烧起来的药",
+  "big_zh": "约四百年后，配方传到阿拉伯世界和欧洲",
+  "origin": {
+   "year": 850,
+   "place_zh": "中国（唐代，炼丹家的丹房，具体地点不详）",
+   "lat": 34.3,
+   "lon": 108.9,
+   "text_zh": "唐代炼丹家把硫黄、雄黄、硝石和蜜放在一起烧，火焰蹿起，烧了手脸，连屋子也烧掉。道书《真元妙道要略》把这件事记下来，告诫后人。"
+  },
+  "chain": [
+   {
+    "year": 904,
+    "place_zh": "豫章（今江西南昌）",
+    "lat": 28.7,
+    "lon": 115.9,
+    "text_zh": "唐末郑璠攻豫章，「发机飞火」烧毁龙沙门，常被当作火药用于战争的最早记录。"
+   },
+   {
+    "year": 1044,
+    "place_zh": "北宋 汴京（今河南开封）",
+    "lat": 34.8,
+    "lon": 114.3,
+    "text_zh": "曾公亮、丁度等奉敕编成《武经总要》，书里记下三个军用火药方：毒药烟球、火砲火药、蒺藜火球。"
+   },
+   {
+    "year": 1132,
+    "place_zh": "德安（今湖北安陆）",
+    "lat": 31.3,
+    "lon": 113.7,
+    "text_zh": "宋军守德安抵御金军时用上火枪，这是火枪第一次有确切记载的实战。"
+   },
+   {
+    "year": 1280,
+    "place_zh": "叙利亚一带",
+    "lat": 33.5,
+    "lon": 36.3,
+    "text_zh": "阿拉伯世界在 1240 至 1280 年间得到火药配方，哈桑·拉马赫（Hasan al-Rammah）的兵书里有记载。"
+   },
+   {
+    "year": 1326,
+    "place_zh": "英格兰 伦敦",
+    "lat": 51.5,
+    "lon": -0.1,
+    "text_zh": "瓦尔特·德·米勒梅特（Walter de Milemete）的手稿里画了一门炮，是欧洲已知最早的火炮图。"
+   }
+  ],
+  "reach": {
+   "year": 1326,
+   "text_zh": "从 9 世纪的丹房到 14 世纪的欧洲手稿，火药用了约四百多年传遍欧亚大陆，并从纵火药变成了发射药。"
+  },
+  "lag": {
+   "days": 152000,
+   "text_zh": "从约 850 年到 1267 年培根提到火药，约 420 年"
+  },
+  "facts": [
+   "808 年《太上圣祖金丹秘诀》「伏火矾法」：硫二两、硝二两、马兜铃三钱半。",
+   "《武经总要》火砲火药方的主料：焰硝二斤半、晋州硫黄十四两、窝黄七两。",
+   "1044 年的配方含硝约五成，不足以爆炸，主要用来纵火。",
+   "欧洲最早提到火药的文字，是罗吉尔·培根（Roger Bacon）1267 年的《大著作》。",
+   "《武经总要》1044 年原刻本已不存，今天能见到的最早本子刻于 1510 年。"
+  ],
+  "dispute": "年代有分歧：《真元妙道要略》成书有 9 世纪中叶与 9 至 10 世纪两说；808 年伏火矾法算不算火药、904 年「飞火」是不是火药箭，学者看法不一。西传是否由蒙古军带去，也缺少确证。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "人民日报海外版 2026 年 7 月 24 日火药起源与西传专文",
+    "publisher": "人民日报海外版",
+    "url": "https://paper.people.com.cn/rmrbhwb/pc/content/202607/24/content_30170845.html",
+    "year": "2026"
+   },
+   {
+    "title": "History of gunpowder（转引 Needham《中国科学技术史》第五卷第七分册、Andrade《The Gunpowder Age》）",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/History_of_gunpowder",
+    "year": "2026"
+   },
+   {
+    "title": "Wujing Zongyao",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Wujing_Zongyao",
+    "year": "2026"
+   }
+  ],
+  "verify": false,
+  "note": "origin.year 取通行的「9 世纪中叶」记作 850；人民日报海外版文章称《真元妙道要略》约成书于 9 至 10 世纪，维基称在 808 年之后约五十年。origin 经纬度以长安代表唐代中国，原书未记地点。李约瑟 SCC 第五卷第七分册与 Andrade 原书未直接打开，经维基条目转引；人民日报海外版该文的原标题未取到，sources 里用的是描述性题名。拉马赫为叙利亚人、其书约成于 1280 年前后，地点取大马士革一带。"
+ },
+ {
+  "id": "mauve",
+  "title_zh": "苯胺紫",
+  "kind": "boost",
+  "small_zh": "18 岁学生复活节假期的一次失败",
+  "big_zh": "第一种商品化合成染料，约 20 个月后开始供货",
+  "origin": {
+   "year": 1856,
+   "place_zh": "英国 伦敦东区 珀金家中",
+   "lat": 51.51,
+   "lon": -0.06,
+   "text_zh": "1856 年复活节假期，18 岁的珀金（William Henry Perkin）在家想合成奎宁，只得到黑色沉淀；用酒精一溶，把丝绸染紫了。"
+  },
+  "chain": [
+   {
+    "year": 1856,
+    "date": "1856-08-26",
+    "place_zh": "伦敦 专利局",
+    "lat": 51.52,
+    "lon": -0.11,
+    "text_zh": "8 月 26 日，专利局授予珀金紫色新染料的专利。他不顾老师霍夫曼（A. W. Hofmann）劝阻，决定自己办厂。"
+   },
+   {
+    "year": 1857,
+    "date": "1857-12",
+    "place_zh": "伦敦西郊 格林福德格林（Greenford Green）",
+    "lat": 51.54,
+    "lon": -0.34,
+    "text_zh": "父亲拿出积蓄在格林福德格林建厂；到 1857 年 12 月，珀金父子公司已向丝绸染坊供应苯胺紫。"
+   },
+   {
+    "year": 1874,
+    "place_zh": "伦敦西郊 格林福德格林",
+    "lat": 51.54,
+    "lon": -0.34,
+    "text_zh": "36 岁的珀金卖掉工厂，退出实业，回到家里专心做研究。"
+   },
+   {
+    "year": 1906,
+    "place_zh": "美国 纽约",
+    "lat": 40.7,
+    "lon": -74.0,
+    "text_zh": "煤焦油染料工业五十周年，纽约举行盛大庆祝；化学工业协会设立珀金奖章，第一枚颁给珀金本人。"
+   }
+  ],
+  "reach": {
+   "year": 1906,
+   "text_zh": "科学史研究所的评价是：这一发现奠定了一门新的化学工业，最终也成为制药工业的基础。"
+  },
+  "lag": {
+   "days": 600,
+   "text_zh": "1856 年复活节到 1857 年底供货，约 20 个月"
+  },
+  "facts": [
+   "苯胺紫的原料来自煤焦油，是第一种商品化的合成染料。",
+   "当时奎宁只能从金鸡纳树皮里提取，珀金原本想做的是这种抗疟药。",
+   "珀金 1838 年生，十五六岁进皇家化学学院，1866 年当选皇家学会会员，1906 年封爵。",
+   "美国国家历史博物馆藏有一条苯胺紫染布（馆方著录年份 1860），很可能是珀金 1906 年访美时送给染料商马西森的纪念品。"
+  ],
+  "dispute": "珀金最初想走的路线是把两分子烯丙基甲苯胺缩合成奎宁，这条路失败后才改用苯胺；按今天的化学知识，这条路线本来就走不通。「偶然」说的是结果，他认出这团紫色有用并办厂，则不是偶然。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "William Henry Perkin（Scientific Biographies）",
+    "publisher": "Science History Institute",
+    "url": "https://www.sciencehistory.org/education/scientific-biographies/william-henry-perkin/",
+    "year": "2025"
+   },
+   {
+    "title": "William Henry Perkin 1838–1907",
+    "publisher": "Science Museum Group",
+    "url": "https://collection.sciencemuseumgroup.org.uk/people/cp37617/william-henry-perkin",
+    "year": "2025"
+   },
+   {
+    "title": "A forgotten anniversary?",
+    "publisher": "Royal Society of Chemistry, Education in Chemistry",
+    "url": "https://edu.rsc.org/feature/a-forgotten-anniversary/2020083.article",
+    "year": "2006"
+   },
+   {
+    "title": "Perkin Mauve（CH.318499）",
+    "publisher": "Smithsonian National Museum of American History",
+    "url": "https://si.edu/object/perkin-mauve:nmah_2344",
+    "year": "1860"
+   },
+   {
+    "title": "World’s first synthetic dye",
+    "publisher": "Science and Industry Museum, Manchester",
+    "url": "https://blog.msimanchester.org.uk/worlds-first-synthetic-dye/",
+    "year": "2019"
+   }
+  ],
+  "verify": false,
+  "note": "未核到一手来源的内容没有写进正文：家庭实验室在沙德韦尔 Cable Street 的具体地址（origin 经纬度按伦敦东区沙德韦尔取，NMAH 只说「东伦敦家中阁楼」）；德国巴斯夫、拜耳、赫斯特的建厂年份与市场份额；阿司匹林 1899、磺胺 1930 年代与染料工业的因果。染料工业到制药工业这一步只引 Science History Institute 的原话，页面如要点名德国公司需另核。lag 取 1856 年 4 月到 1857 年 12 月的估算。dispute 里「路线本来走不通」是化学常识性判断，RSC 文章只说该次尝试失败。"
+ },
+ {
+  "id": "pacemaker",
+  "title_zh": "装错的电阻",
+  "kind": "boost",
+  "small_zh": "从零件盒里拿错的一只电阻",
+  "big_zh": "今天全世界每年装近一百万台起搏器",
+  "origin": {
+   "year": 1956,
+   "place_zh": "美国 纽约州 布法罗大学",
+   "lat": 42.95,
+   "lon": -78.82,
+   "text_zh": "1956 年，格雷特巴奇（Wilson Greatbatch）在布法罗大学做心音记录电路，拿错一只电阻，电路每秒发出一次 1.8 毫秒脉冲。"
+  },
+  "chain": [
+   {
+    "year": 1958,
+    "date": "1958-05-07",
+    "place_zh": "布法罗 退伍军人医院",
+    "lat": 42.95,
+    "lon": -78.81,
+    "text_zh": "5 月 7 日，外科医生查达克（William Chardack）把装置接到一条狗的心脏上，心跳跟着脉冲走了 4 小时。"
+   },
+   {
+    "year": 1960,
+    "date": "1960-04",
+    "place_zh": "布法罗 退伍军人医院",
+    "lat": 42.95,
+    "lon": -78.81,
+    "text_zh": "4 月，查达克给一位 77 岁的病人植入格雷特巴奇的起搏器，病人此后活了 18 个月；这一年共有 10 位病人植入。"
+   },
+   {
+    "year": 1961,
+    "place_zh": "美国 明尼阿波利斯",
+    "lat": 45.0,
+    "lon": -93.3,
+    "text_zh": "格雷特巴奇把专利许可卖给已在做体外起搏器的美敦力（Medtronic），此后多年担任公司顾问。"
+   },
+   {
+    "year": 1970,
+    "place_zh": "纽约州 克拉伦斯",
+    "lat": 43.0,
+    "lon": -78.6,
+    "text_zh": "他成立公司生产锂碘电池，把起搏器电池的平均寿命从两年延长到十年。"
+   }
+  ],
+  "reach": {
+   "year": 2014,
+   "text_zh": "美国国家工程院 2014 年的纪念文集写道：全世界每年植入近一百万台起搏器。"
+  },
+  "lag": {
+   "days": 1400,
+   "text_zh": "从 1956 年装错电阻到 1960 年 4 月植入，约四年"
+  },
+  "facts": [
+   "心律学会的说法是：本该用 10 千欧的电阻，他接上了 1 兆欧的。",
+   "1958 年 10 月 8 日，斯德哥尔摩已有首例植入，病人是拉尔松（Arne Larsson）。",
+   "拉尔松的第一台只工作了几个小时；他一生换过 26 台起搏器，活到 86 岁。",
+   "1960 年布法罗植入的 10 位病人里有两名儿童。",
+   "格雷特巴奇 2011 年 9 月 27 日去世，享年 92 岁。"
+  ],
+  "dispute": "格雷特巴奇做的是第一台在美国植入病人的起搏器，不是世界第一台：瑞典的埃尔姆奎斯特（Rune Elmqvist）与森宁（Åke Senning）1958 年已先植入，乌拉圭 1960 年 2 月有一例工作了九个多月。电阻的阻值只见于部分来源。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Wilson Greatbatch（40th Anniversary）",
+    "publisher": "Heart Rhythm Society",
+    "url": "https://hrsonline.org/40th-Anniversary/Wilson-Greatbatch",
+    "year": "2019"
+   },
+   {
+    "title": "Wilson Greatbatch, Memorial Tributes: Volume 18",
+    "publisher": "National Academy of Engineering / National Academies Press",
+    "url": "https://www.nationalacademies.org/read/18959/chapter/22",
+    "year": "2014"
+   },
+   {
+    "title": "History of Cardiology（起搏器史综述）",
+    "publisher": "Cardiology Journal (Via Medica)",
+    "url": "https://journals.viamedica.pl/cardiology_journal/article/download/21189/16793",
+    "year": ""
+   },
+   {
+    "title": "First pacemaker recipient dies at 86",
+    "publisher": "Deseret News / AP",
+    "url": "https://www.deseret.com/2002/1/15/19631621/first-pacemaker-recipient-dies-at-86",
+    "year": "2002"
+   },
+   {
+    "title": "Elema-Schönander and the very first human implants of a pacemaker in Sweden 1958 and Uruguay 1960",
+    "publisher": "implantable-device.com",
+    "url": "https://www.implantable-device.com/2012/01/23/elema-schoenander-and-the-very-first-human-implants-of-a-pacemaker-in-sweden-1958-and-uruguay-1960/",
+    "year": "2012"
+   },
+   {
+    "title": "Internal Pacemaker",
+    "publisher": "University at Buffalo, Jacobs School of Medicine",
+    "url": "https://medicine.buffalo.edu/research/research_highlights.host.html/content/shared/smbs/research_highlights/pacemaker.detail.html",
+    "year": ""
+   }
+  ],
+  "verify": false,
+  "note": "简报点名的 Lemelson-MIT、IEEE/ETHW、NIH 页面没有在搜索结果里出现，未能打开；改用心律学会、美国国家工程院、Cardiology Journal、布法罗大学。阻值「10 kΩ 误用 1 MΩ」只见于心律学会页面，工程院只说「拿错了尺寸」。首例病人植入日期 Cardiology Journal 记为 1960 年 4 月，也有来源记为 1960 年 6 月，未能二次核实。拉尔松第一台的工作时间各说不一（3 小时、5 小时、约 8 小时），正文写「几个小时」。「近一百万台」是 2014 年的口径，没有更新的全球统计。Cardiology Journal 该文的年份与作者未取到。"
+ },
+ {
+  "id": "ring-vaccination",
+  "title_zh": "疫苗不够用",
+  "kind": "boost",
+  "small_zh": "疫苗没运到，只够打病人身边的人",
+  "big_zh": "天花成为第一种被人类根除的传染病，用了约 13 年",
+  "origin": {
+   "year": 1966,
+   "date": "1966-12",
+   "place_zh": "尼日利亚东部 奥戈贾（Ogoja）一带",
+   "lat": 6.7,
+   "lon": 8.8,
+   "text_zh": "1966 年 12 月，尼日利亚东部暴发天花，疫苗还没运到。福奇（William Foege）靠传教士的电台摸清病村，只给病人周围的人打。"
+  },
+  "chain": [
+   {
+    "year": 1967,
+    "place_zh": "尼日利亚东部（埃努古一带）",
+    "lat": 6.4,
+    "lon": 7.5,
+    "text_zh": "1967 年下半年，尼日利亚东部全面改用「监测—围堵」：5 个月内阻断传播，1,200 万人口里只接种了 75 万人。"
+   },
+   {
+    "year": 1968,
+    "place_zh": "塞拉利昂",
+    "lat": 8.5,
+    "lon": -13.2,
+    "text_zh": "这套办法在塞拉利昂再试：接种率不到七成，天花在 9 个月内消失。世卫组织随后劝各国、尤其是亚洲国家采用。"
+   },
+   {
+    "year": 1974,
+    "place_zh": "印度 比哈尔邦",
+    "lat": 25.6,
+    "lon": 85.1,
+    "text_zh": "福奇到印度时，比哈尔邦一周报告 11,000 多例。坚持围堵之后病例回落，到 1975 年 5 月天花已在退却。"
+   },
+   {
+    "year": 1975,
+    "place_zh": "孟加拉国",
+    "lat": 22.7,
+    "lon": 90.6,
+    "text_zh": "拉希玛·巴努（Rahima Banu）成为最后一个自然感染重型天花的人；她家周围 1.5 英里内立即逐户接种。"
+   },
+   {
+    "year": 1977,
+    "date": "1977-10",
+    "place_zh": "索马里 梅尔卡",
+    "lat": 1.7,
+    "lon": 44.8,
+    "text_zh": "10 月，厨师阿里·马奥·马林（Ali Maow Maalin）确诊，是世界上最后一例自然感染的天花。他后来康复。"
+   }
+  ],
+  "reach": {
+   "year": 1980,
+   "text_zh": "1980 年 5 月 8 日，第 33 届世界卫生大会宣布全世界已没有天花。此前这种病平均每 10 个病人死 3 个。"
+  },
+  "lag": {
+   "days": 4900,
+   "text_zh": "1966 年 12 月到 1980 年 5 月，约十三年半"
+  },
+  "facts": [
+   "当时的共识是要给八成到十成人口接种；福奇那次不到五成就止住了疫情。",
+   "福奇的说法：四个星期后，那里就没有天花了，比大批疫苗运到还早几个月。",
+   "1968 年 1 月，西非 19 国项目在加纳打了第 2,500 万针天花疫苗。",
+   "印度的行动先后用掉 700 多万根分叉针。",
+   "1978 年 9 月 11 日，伯明翰摄影师帕克（Janet Parker）是最后一个死于天花的人。"
+  ],
+  "dispute": "起点日期有两说：福奇本人和拉斯克基金会说是 1966 年 12 月，疾控中心流行病学家莱恩（J. M. Lane）2006 年的综述写作 1967 年初。根除也不只靠这一招：分叉针、冻干疫苗和各国自己的接种队同样关键，大规模接种并未停止。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "History of Smallpox",
+    "publisher": "U.S. Centers for Disease Control and Prevention",
+    "url": "https://www.cdc.gov/smallpox/about/history.html",
+    "year": "2024"
+   },
+   {
+    "title": "Mass Vaccination and Surveillance/Containment in the Eradication of Smallpox（J. M. Lane）",
+    "publisher": "Current Topics in Microbiology and Immunology 304, Springer",
+    "url": "https://link.springer.com/content/pdf/10.1007/3-540-36583-4_2.pdf",
+    "year": "2006"
+   },
+   {
+    "title": "In Memoriam: William Foege",
+    "publisher": "Lasker Foundation",
+    "url": "https://laskerfoundation.org/in-memoriam-william-foege/",
+    "year": "2026"
+   },
+   {
+    "title": "Calling the shots: William Foege, ’61, honored for his role in eradicating smallpox",
+    "publisher": "University of Washington Magazine",
+    "url": "https://magazine.washington.edu/feature/william-foege-61-honored-for-his-role-in-eradicating-smallpox",
+    "year": ""
+   },
+   {
+    "title": "World mourns death of public health icon William Foege",
+    "publisher": "CIDRAP, University of Minnesota",
+    "url": "https://www.cidrap.umn.edu/public-health/world-mourns-death-public-health-icon-william-foege",
+    "year": "2026"
+   },
+   {
+    "title": "Smallpox（The Story of CDC）",
+    "publisher": "David J. Sencer CDC Museum",
+    "url": "https://cdc.gov/museum/online/story-of-cdc/smallpox/",
+    "year": ""
+   }
+  ],
+  "verify": false,
+  "note": "WHO《Smallpox and its Eradication》（Fenner 等 1988）与 Foege《House on Fire》原书未能打开，相关内容经 Lane 2006、华盛顿大学校刊（引福奇自述）、CIDRAP（引福奇书中原话）转引。「奥戈贾」见于 Lane 2006（Ogoja Province）；CIDRAP 引书称首个村子为 Ovirpua。塞拉利昂试点的年份来源未写明，1968 为按西非项目时间的估计，需核。孟加拉国巴努所在地（博拉岛）CDC 页面未写，经纬度按博拉岛取。马林的确诊日 CDC 页面写 10 月 30 日，常见说法为 10 月 26 日发疹，正文只写「10 月」。福奇 2026 年 1 月 24 日去世，享年 89 岁（CIDRAP）。"
+ },
+ {
+  "id": "ors",
+  "title_zh": "口服补液盐",
+  "kind": "boost",
+  "small_zh": "难民营里的静脉输液用完了",
+  "big_zh": "一包糖盐水，估计少死了 5,400 万人",
+  "origin": {
+   "year": 1971,
+   "place_zh": "印度 西孟加拉邦 邦冈（Bangaon）难民营",
+   "lat": 23.05,
+   "lon": 88.83,
+   "text_zh": "1971 年孟加拉独立战争，上千万难民涌入印度，营里霍乱流行，输液不够。马哈拉纳比斯（Dilip Mahalanabis）让家属喂病人糖盐水。"
+  },
+  "chain": [
+   {
+    "year": 1971,
+    "place_zh": "印度 加尔各答",
+    "lat": 22.6,
+    "lon": 88.4,
+    "text_zh": "他所在的约翰斯·霍普金斯研究中心团队用口服补液治了 3,700 名病人，病死率 3.6%；只靠输液的营地是两到三成。"
+   },
+   {
+    "year": 1971,
+    "place_zh": "瑞士 日内瓦 世界卫生组织",
+    "lat": 46.2,
+    "lon": 6.1,
+    "text_zh": "世卫组织细菌病部门负责人巴鲁阿（Dhiman Barua）到营地看过之后，开始推动把这个办法用于霍乱和儿童腹泻。"
+   },
+   {
+    "year": 1973,
+    "place_zh": "美国 巴尔的摩",
+    "lat": 39.3,
+    "lon": -76.6,
+    "text_zh": "论文被几家期刊退稿后，发表在《约翰斯·霍普金斯医学杂志》第 132 卷，题为《孟加拉难民霍乱的口服补液治疗》。"
+   },
+   {
+    "year": 1978,
+    "date": "1978-08-05",
+    "place_zh": "英国 伦敦",
+    "lat": 51.5,
+    "lon": -0.1,
+    "text_zh": "8 月 5 日《柳叶刀》社论称这一发现「可能是本世纪最重要的医学进展」。同年世卫组织设立腹泻病控制规划。"
+   }
+  ],
+  "reach": {
+   "year": 2007,
+   "text_zh": "《柳叶刀》2018 年的回顾文章引用估计：到 2007 年，仅口服补液一项就避免了 5,400 万例腹泻死亡。"
+  },
+  "lag": {
+   "days": 2600,
+   "text_zh": "从 1971 年难民营到 1978 年全球推广，约七年"
+  },
+  "facts": [
+   "科学基础来自 1960 年代达卡和加尔各答的霍乱研究；1968 年达卡的试验发表在《柳叶刀》。",
+   "难民营里用的配方只有葡萄糖、食盐和小苏打，分装成小包，一包兑一升水；后来的标准补液盐还加了钾盐。",
+   "5 岁以下儿童每年死于腹泻的人数：1980 年约 460 万，2018 年不到 50 万。",
+   "1994 年联合国儿童基金会的材料说，当时腹泻脱水的病人只有 38% 用上口服补液。",
+   "马哈拉纳比斯 2022 年 10 月 16 日在加尔各答去世，享年 87 岁。"
+  ],
+  "dispute": "《柳叶刀》那句话有两个流传版本：原文是「可能是本世纪最重要的医学进展」，常被转述成「20 世纪最重要的医学发现」。口服补液也不是马哈拉纳比斯一人发明的，他做的是在难民营里证明它可以大规模交给家属来做。腹泻死亡下降还有饮水、营养等原因。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Public Health Classics: Oral fluid therapy of cholera among Bangladesh refugees（评介 Mahalanabis et al. 1973, Johns Hopkins Med J 132:197–205）",
+    "publisher": "Bulletin of the World Health Organization 79(5)",
+    "url": "https://scielosp.org/article/bwho/2001.v79n5/471-472",
+    "year": "2001"
+   },
+   {
+    "title": "50 years of oral rehydration therapy: the solution is still simple（Nalin & Cash）",
+    "publisher": "The Lancet 392",
+    "url": "https://ppgsp.furg.br/images/artigos/50-years-of-ORT_Nalin--Cash-Lancet-2018.pdf",
+    "year": "2018"
+   },
+   {
+    "title": "Dilip Mahalanabis (12 November 1934–16 October 2022)",
+    "publisher": "The National Medical Journal of India",
+    "url": "https://nmji.in/dilip-mahalanabis-12-november-193416-october-2022/",
+    "year": "2023"
+   },
+   {
+    "title": "A Solution for Survival",
+    "publisher": "Rehydration Project（转载 UNICEF 1994 年材料）",
+    "url": "https://rehydrate.org/ors/solution-for-survival.htm",
+    "year": "1994"
+   }
+  ],
+  "verify": false,
+  "note": "「邦冈（Bangaon）」来自简报，本次打开的四个来源都只写「西孟加拉邦边境的难民营」，未点名邦冈（rehydrate.org 甚至写成「东巴基斯坦境内」），地名需再核一次。Mahalanabis 1973 原文与《柳叶刀》1978 年社论原文（Lancet 1978;2:300–301，题为 Water with sugar and salt）未直接打开，引文按 Nalin & Cash 2018 的转引；NMJI 讣告给出社论日期 1978 年 8 月 5 日。对照组病死率 WHO 公报写 20–30%，NMJI 写 30%。5,400 万的原始出处（Nalin & Cash 的参考文献 4）未取到。Lancet 2018 一文的标题为常见题名，取到的 PDF 未显示标题页，请核。"
+ },
+ {
+  "id": "borlaug-shuttle",
+  "title_zh": "穿梭育种",
+  "kind": "boost",
+  "small_zh": "想省时间，一年在两个地方种两季",
+  "big_zh": "印度小麦五年间从 1,230 万吨增到 2,000 万吨",
+  "origin": {
+   "year": 1945,
+   "place_zh": "墨西哥 索诺拉州 亚基河谷（奥夫雷贡城）",
+   "lat": 27.5,
+   "lon": -109.9,
+   "text_zh": "1945 年，博洛格（Norman Borlaug）为把育种时间减半，让小麦一年种两代：冬天种在近海平面的索诺拉，夏天种在墨西哥城附近高原。"
+  },
+  "chain": [
+   {
+    "year": 1946,
+    "place_zh": "墨西哥 托卢卡 / 查平戈高地",
+    "lat": 19.3,
+    "lon": -99.7,
+    "text_zh": "两地相隔近 2,000 公里、约 10 个纬度。只有在两头都长得好的麦子才留下来，结果选出了对日照长短不敏感的品种。"
+   },
+   {
+    "year": 1954,
+    "place_zh": "美国 华盛顿州 普尔曼",
+    "lat": 46.7,
+    "lon": -117.2,
+    "text_zh": "1953 年前后，博洛格从育种家沃格尔（Orville Vogel）那里拿到带日本「农林 10 号」矮秆基因的材料；与墨西哥小麦的杂交从 1954 年做起。"
+   },
+   {
+    "year": 1956,
+    "place_zh": "墨西哥 墨西哥城",
+    "lat": 19.4,
+    "lon": -99.1,
+    "text_zh": "墨西哥第一次实现小麦自给；到 1970 年博洛格领奖时仍然自给。"
+   },
+   {
+    "year": 1962,
+    "place_zh": "墨西哥 索诺拉州 奥夫雷贡城",
+    "lat": 27.5,
+    "lon": -109.9,
+    "text_zh": "半矮秆品种皮蒂克 62、彭哈莫 62 投入商业种植；两年后又有索诺拉 64 和莱尔马罗霍 64。"
+   },
+   {
+    "year": 1966,
+    "place_zh": "印度 新德里",
+    "lat": 28.6,
+    "lon": 77.2,
+    "text_zh": "印度从墨西哥进口 18,000 吨麦种，次年巴基斯坦进口 42,000 吨；前一年两国只要了几百吨试种。"
+   }
+  ],
+  "reach": {
+   "year": 1970,
+   "text_zh": "印度小麦从 1965 年的 1,230 万吨增到 1970 年 2,000 万吨，巴基斯坦从 460 万增到 840 万。"
+  },
+  "lag": {
+   "days": 9100,
+   "text_zh": "1945 年开始穿梭，1970 年获诺贝尔和平奖，25 年"
+  },
+  "facts": [
+   "博洛格诺奖演讲写的两处试验地：索诺拉北纬 28 度、近海平面；托卢卡海拔约 2,500 米。",
+   "「农林 10 号」1935 年由日本的稻冢权次郎育成，株高从 150 厘米降到 60–110 厘米。",
+   "矮秆品种把理想条件下的产量潜力从每公顷 4,500 公斤提高到 9,000 公斤。",
+   "1969–70 年度，墨西哥品种占巴基斯坦麦田的 55%、印度麦田的 35%。",
+   "博洛格自己的话：「塞伦迪普公主」（意思是意外的好运）对这次不合常规的穿梭育种笑了。"
+  ],
+  "dispute": "对日照不敏感并不是博洛格事先设计的目标，他要的只是一年两代；美国国家科学院的传记回忆录说当时「很多人反对」这种做法。绿色革命的增产还靠化肥、灌溉和收购价格；它带来的地下水、农药和贫富分化问题至今有争论。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Norman Borlaug – Nobel Lecture: The Green Revolution, Peace, and Humanity",
+    "publisher": "NobelPrize.org",
+    "url": "https://nobelprize.org/prizes/peace/1970/borlaug/lecture",
+    "year": "1970"
+   },
+   {
+    "title": "The Rockefeller Foundation’s Mexican Agriculture Program, 1943–1965",
+    "publisher": "Rockefeller Archive Center (REsource)",
+    "url": "https://resource.rockarch.org/?p=22032",
+    "year": ""
+   },
+   {
+    "title": "Norman E. Borlaug, Biographical Memoir",
+    "publisher": "National Academy of Sciences",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/borlaug-norman.pdf",
+    "year": ""
+   },
+   {
+    "title": "From east Asia to south Asia, via Mexico: how one gene changed the course of history",
+    "publisher": "CIMMYT",
+    "url": "https://www.cimmyt.org/?p=34553",
+    "year": "2016"
+   },
+   {
+    "title": "Second Innovation: Shuttle Breeding（摘自 Leon Hesser, The Man Who Fed the World）",
+    "publisher": "SeedQuest",
+    "url": "https://seedquest.com/forum/b/BorlaugNorman/shuttlebreeding.htm",
+    "year": "2006"
+   }
+  ],
+  "verify": false,
+  "note": "托卢卡试验地海拔各来源不一：诺奖演讲约 2,500 m，NAS 回忆录 2,090 m，Hesser 传记「8,000 英尺以上」（约 2,600 m，与简报一致）；正文用博洛格本人的数字。演讲把托卢卡写作北纬 18 度，实际约 19.3 度。开始杂交农林 10 号材料的年份：演讲写 1954，CIMMYT 写 1953。印度 18,000 吨的年份：演讲写 1966，CIMMYT 文章列在 1967。简报提到的「1946 年 S. C. Salmon 带回美国」年份与「上司反对、博洛格一度辞职」的细节，本次打开的来源都没有写明（CIMMYT 只写 Salmon 到访盛冈农业试验场后样本送往美国；NAS 只写很多人反对），所以没有写进正文。链上 1946 年一步的年份取自 Hesser（1946 年 5 月在高地整地播种亚基河谷带回的麦子）。稻冢权次郎的汉字写法按通行译名，CIMMYT 原文为 Gonjiro Inazuka。 reach 里印度的「1965 年」指 1964–65 年度（当时的历史最高）。"
+ },
+ {
+  "id": "taq-pcr",
+  "title_zh": "黄石热泉菌",
+  "kind": "boost",
+  "small_zh": "热泉水道里取的一份样本",
+  "big_zh": "2020 年美国一年做了 2.4 亿多次 PCR 新冠检测",
+  "origin": {
+   "year": 1966,
+   "place_zh": "美国 黄石国家公园 下间歇泉盆地 蘑菇泉",
+   "lat": 44.54,
+   "lon": -110.8,
+   "text_zh": "1966 年夏末，布洛克（Thomas Brock）的小组在蘑菇泉约 69 °C 的水道取了一片菌垫；秋天，学生弗里兹从中分离出一种细菌。"
+  },
+  "chain": [
+   {
+    "year": 1969,
+    "place_zh": "美国 印第安纳大学（布卢明顿）",
+    "lat": 39.2,
+    "lon": -86.5,
+    "text_zh": "布洛克和弗里兹在《细菌学杂志》发表新种水生栖热菌（Thermus aquaticus），菌种存入美国典型培养物保藏中心。"
+   },
+   {
+    "year": 1976,
+    "place_zh": "美国 辛辛那提",
+    "lat": 39.1,
+    "lon": -84.5,
+    "text_zh": "钱嘉韵（Alice Chien）等三人在《细菌学杂志》报告从这种菌纯化出耐热的 DNA 聚合酶，最适温度约 80 °C。"
+   },
+   {
+    "year": 1983,
+    "date": "1983-12-16",
+    "place_zh": "美国 加州 埃默里维尔 Cetus 公司",
+    "lat": 37.8,
+    "lon": -122.3,
+    "text_zh": "穆利斯（Kary Mullis）想出聚合酶链式反应（PCR），12 月 16 日第一次实验成功，公司奖了他 1 万美元。"
+   },
+   {
+    "year": 1988,
+    "place_zh": "美国 加州 埃默里维尔 Cetus 公司",
+    "lat": 37.8,
+    "lon": -122.3,
+    "text_zh": "才木（Randall Saiki）等在《科学》发表用耐热聚合酶做 PCR 的方法，不必每轮加新酶，反应可以自动循环。"
+   },
+   {
+    "year": 1993,
+    "place_zh": "瑞典 斯德哥尔摩",
+    "lat": 59.3,
+    "lon": 18.1,
+    "text_zh": "穆利斯因发明 PCR 获诺贝尔化学奖。此前 1989 年 12 月，《科学》把 Taq 聚合酶选为「年度分子」。"
+   }
+  ],
+  "reach": {
+   "year": 2020,
+   "text_zh": "美国疾控中心统计：截至 2020 年 12 月 29 日，全美实验室累计报告 2.42 亿次新冠 RT-PCR 检测。"
+  },
+  "lag": {
+   "days": 8000,
+   "text_zh": "1966 年采样到 1988 年耐热酶 PCR 的论文发表，22 年"
+  },
+  "facts": [
+   "布洛克 1964 年途经黄石时第一次注意到热泉里的生物，1965 至 1971 年连年去做野外工作。",
+   "这项工作靠国家科学基金会一笔三年期经费；弗里兹（Hudson Freeze）当时刚读完大二。",
+   "Cetus 后来把 PCR 专利卖给罗氏，成交价 3 亿美元。",
+   "罗氏 2022 年报告的 PCR 相关销售额是 54 亿美元；黄石公园没有从这株菌得到任何收益。",
+   "2013 年，布洛克和弗里兹获得表彰「看似无用」基础研究的金鹅奖。"
+  ],
+  "dispute": "谁把 Taq 酶带进 PCR，说法不一：公园管理局说穆利斯在菌种保藏中心找到这株菌，另有记述说是 Cetus 的斯托费尔与盖尔芬德 1985 年秋分离出酶；钱嘉韵等 1976 年已纯化过，诺贝尔奖未提及。泉名也有「蘑菇泉」「蘑菇池」两说。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Thermophile research in Yellowstone（Thomas Brock 访谈）",
+    "publisher": "U.S. National Park Service",
+    "url": "https://www.nps.gov/articles/thermophile-yell.htm",
+    "year": "2018"
+   },
+   {
+    "title": "Mushroom Pool: The subtle spring with the spectacular story",
+    "publisher": "USGS Yellowstone Volcano Observatory",
+    "url": "https://www.usgs.gov/observatories/yvo/news/mushroom-pool-subtle-spring-spectacular-story",
+    "year": "2026"
+   },
+   {
+    "title": "The Yellowstone Microbe that Changed the World",
+    "publisher": "WyoHistory.org (Wyoming Historical Society)",
+    "url": "https://wyohistory.org/encyclopedia/yellowstone-microbe-changed-world",
+    "year": ""
+   },
+   {
+    "title": "Polymerase chain reaction（NSF Impacts）",
+    "publisher": "U.S. National Science Foundation",
+    "url": "https://www.nsf.gov/impacts/polymerase-chain-reaction",
+    "year": "2024"
+   },
+   {
+    "title": "Saiki et al., Primer-directed enzymatic amplification of DNA with a thermostable DNA polymerase, Science 239:487–491",
+    "publisher": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2448875/",
+    "year": "1988"
+   },
+   {
+    "title": "Alice Chien Chang（含 Chien, Edgar & Trela 1976, J. Bacteriol. 127:1550–1557 书目）",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alice_Chien_Chang",
+    "year": "2026"
+   },
+   {
+    "title": "COVID Data Tracker: United States Laboratory Testing（2020-12-31 存档）",
+    "publisher": "U.S. CDC (CDC Stacks)",
+    "url": "https://stacks.cdc.gov/view/cdc/99732/cdc_99732_DS1.pdf",
+    "year": "2020"
+   },
+   {
+    "title": "History of Polymerase Chain Reaction (PCR)",
+    "publisher": "News-Medical",
+    "url": "https://www.news-medical.net/life-sciences/History-of-Polymerase-Chain-Reaction-(PCR).aspx",
+    "year": ""
+   }
+  ],
+  "verify": false,
+  "note": "采样水温 WyoHistory 写约 156 °F（约 69 °C），NSF 写约 160 °F（70 °C）。采样时间 WyoHistory 写「夏末」，USGS 写 1966 年 8 月。诺贝尔奖官网页面未在搜索结果中出现，未直接打开；1993 年获奖与分享者据 USGS、NPS、WyoHistory。PubMed 页面被验证码挡住，Saiki 1988 的卷页（Science 239:487–491）凭通行书目填写，题名在搜索结果中核对过；1988 年这一步的「不必每轮加酶、可自动循环」据维基 Alice Chien Chang 条目对该文的概述。Chien 等 1976 年的工作地点（辛辛那提大学）是通行说法，打开的页面只写钱嘉韵在该校取得硕士学位。CDC 数字 242,478,904 只含 RT-PCR，不含抗原与抗体检测，且是美国一国口径；没有找到可靠的全球总数。WyoHistory 文章年份未取到。big_zh 的「一年」指截至 2020-12-29 的累计。"
+ },
+ {
+  "id": "gila-glp1",
+  "title_zh": "毒蜥的毒液",
+  "kind": "boost",
+  "small_zh": "一种沙漠毒蜥毒液里的 39 个氨基酸",
+  "big_zh": "13 年后，成了第一种上市的 GLP-1 类药物",
+  "origin": {
+   "year": 1992,
+   "place_zh": "美国 纽约 布朗克斯退伍军人医院",
+   "lat": 40.87,
+   "lon": -73.91,
+   "text_zh": "1992 年，恩格（John Eng）在布朗克斯退伍军人医院从希拉毒蜥毒液里分离出 exendin-4：很像人体激素 GLP-1，却分解得慢。"
+  },
+  "chain": [
+   {
+    "year": 2005,
+    "date": "2005-04-28",
+    "place_zh": "美国 马里兰州 食品药品监督管理局",
+    "lat": 39.0,
+    "lon": -77.1,
+    "text_zh": "4 月 28 日，FDA 批准人工合成的 exendin-4——艾塞那肽（exenatide）用于 2 型糖尿病。"
+   },
+   {
+    "year": 2017,
+    "place_zh": "丹麦 诺和诺德",
+    "lat": 55.8,
+    "lon": 12.5,
+    "text_zh": "司美格鲁肽获批用于 2 型糖尿病。它是照着人自己的 GLP-1 改造的长效类似物，不是从毒蜥肽直接来的。"
+   },
+   {
+    "year": 2021,
+    "place_zh": "美国",
+    "lat": 38.9,
+    "lon": -77.0,
+    "text_zh": "司美格鲁肽获批用于肥胖。艾塞那肽上市后，病人体重小幅而稳定下降的现象早已被注意到。"
+   },
+   {
+    "year": 2024,
+    "place_zh": "美国 纽约",
+    "lat": 40.8,
+    "lon": -74.0,
+    "text_zh": "拉斯克临床医学奖颁给哈贝纳、莫伊索夫、克努森（Habener、Mojsov、Knudsen），表彰 GLP-1 药物。"
+   }
+  ],
+  "reach": {
+   "year": 2005,
+   "text_zh": "艾塞那肽是第一种模拟肠促胰素的新药，证明了 GLP-1 这条路走得通；后来的减重药则改自人的 GLP-1。"
+  },
+  "lag": {
+   "days": 4700,
+   "text_zh": "1992 年发现到 2005 年 4 月获批，约 13 年"
+  },
+  "facts": [
+   "exendin-4 有 39 个氨基酸，与人 GLP-1 的序列同源性是 53%。",
+   "艾塞那肽由 Amylin 与礼来两家公司开发，是第一种模拟肠促胰素的药。",
+   "人体自己的 GLP-1 在血液里的半衰期只有 1–2 分钟，会被二肽基肽酶-4 分解。",
+   "更早的线索在 1982 年：劳夫曼（J.-P. Raufman）等报告这种毒液会作用于豚鼠胰腺。",
+   "GLP-1 本身是 1980 年代由哈贝纳、莫伊索夫等人鉴定的，丹麦的霍尔斯特也独立做出发现。"
+  ],
+  "dispute": "「减重药来自毒蜥」是说过头了：司美格鲁肽等是人 GLP-1 的类似物，发现 GLP-1 的是另一条研究线。毒蜥肽的贡献是做成了第一种上市的药。GLP-1 的功劳归属也有争议，莫伊索夫多年未被列入重要奖项，2024 年才获拉斯克奖。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Dr. John Eng to Receive Golden Goose Award",
+    "publisher": "The Science Coalition",
+    "url": "https://www.sciencecoalition.org/2013/07/30/dr-john-eng-to-receive-golden-goose-award/",
+    "year": "2013"
+   },
+   {
+    "title": "Incretin Mimetics in the Treatment of Type 2 Diabetes Mellitus（J. J. Holst）",
+    "publisher": "European Endocrine Disease / touchENDOCRINOLOGY",
+    "url": "https://www.touchendocrinology.com/wp-content/uploads/sites/5/2015/06/holst.pdf",
+    "year": "2006"
+   },
+   {
+    "title": "Exenatide（Fresh from the Pipeline）",
+    "publisher": "Nature Reviews Drug Discovery",
+    "url": "https://www.nature.com/articles/nrd1828",
+    "year": "2005"
+   },
+   {
+    "title": "Exenatide human data",
+    "publisher": "Daniel J. Drucker Lab, glucagon.com",
+    "url": "https://glucagon.com/exenatidehumandata",
+    "year": ""
+   },
+   {
+    "title": "The Venomous Gila Monster Helped Spark the Discovery of Ozempic",
+    "publisher": "Discover Magazine",
+    "url": "https://www.discovermagazine.com/the-venomous-gila-monster-helped-spark-the-discovery-of-ozempic-showing-how-curiosity-can-lead-to-cures-48831",
+    "year": "2025"
+   },
+   {
+    "title": "Lasker Award 2024 goes to GLP-1 scientists Mojsov, Habener, Knudsen",
+    "publisher": "STAT News",
+    "url": "https://www.statnews.com/2024/09/19/lasker-award-2024-goes-to-glp-1-scientists-mojsov-habener-knudsen/",
+    "year": "2024"
+   }
+  ],
+  "verify": false,
+  "note": "Eng 等 1992 年原始论文（J Biol Chem 267:7402–7405）与 FDA 批准公告原文未能打开（PMC 被验证码挡住），1992 年据 Science Coalition，批准日期 2005-04-28 据 Drucker 实验室网站与 Holst 2006、Nature Rev Drug Discov 2005。利拉鲁肽（2010 年美国获批、与人 GLP-1 同源性 97%）的数字没有核到来源，未写进正文。Amylin 取得许可的年份（常说 1996）未核，未写。司美格鲁肽 2017、2021 两个年份据 Discover Magazine 单一来源，属通行事实但建议再核 FDA 公告。诺和诺德地点取巴格斯韦德总部；FDA 2005 年所在地取马里兰州。Holst 2006 称 exendin-4 取自毒蜥「唾液」，其他来源称「毒液」，正文两者都出现过，标题用了「唾液」，如需统一请改。 恩格的研究经费与 2013 年金鹅奖据 Science Coalition（因 facts 限 5 条未写入）。"
+ }
+]

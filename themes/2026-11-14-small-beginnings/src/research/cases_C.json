@@ -1,0 +1,761 @@
+[
+ {
+  "id": "potato-blight",
+  "title_zh": "马铃薯晚疫病",
+  "kind": "block",
+  "small_zh": "一种随薯块过海的霉",
+  "big_zh": "爱尔兰约 100 万人死亡，另有一百多万人出走",
+  "origin": {
+   "year": 1845,
+   "date": "1845-06",
+   "place_zh": "比利时",
+   "lat": 50.8,
+   "lon": 3.3,
+   "text_zh": "1845 年 6 月下旬，晚疫病（Phytophthora infestans）在比利时的马铃薯田里出现；两年前它已在美国东岸港口一带流行。"
+  },
+  "chain": [
+   {
+    "year": 1845,
+    "date": "1845-09",
+    "place_zh": "爱尔兰",
+    "lat": 53.4,
+    "lon": -6.3,
+    "text_zh": "9 月第二周，病害传到爱尔兰，当年马铃薯部分绝收。"
+   },
+   {
+    "year": 1846,
+    "date": "1846-08",
+    "place_zh": "爱尔兰西部",
+    "lat": 53.3,
+    "lon": -9.0,
+    "text_zh": "1846 年夏天又湿又暖，8 月病害卷土重来，毁掉了大部分收成。"
+   },
+   {
+    "year": 1847,
+    "date": "1847-01-30",
+    "place_zh": "爱尔兰 斯基伯林（Skibbereen）",
+    "lat": 51.6,
+    "lon": -9.3,
+    "text_zh": "1847 年 1 月，《伦敦新闻画报》刊出斯基伯林的葬礼版画，饥荒的画面传到英国读者眼前。"
+   },
+   {
+    "year": 1855,
+    "place_zh": "美国 纽约",
+    "lat": 40.7,
+    "lon": -74.0,
+    "text_zh": "1845 到 1855 年间，仅纽约一地就有 90 多万爱尔兰人上岸。"
+   }
+  ],
+  "reach": {
+   "year": 1851,
+   "text_zh": "爱尔兰人口从 1846 年年中的约 850 万降到 1851 年的 655 万，少了近四分之一。"
+  },
+  "lag": {
+   "days": 2100,
+   "text_zh": "从比利时发病到 1851 年人口普查，约六年"
+  },
+  "facts": [
+   "饥荒中死亡超过 100 万人，另有约 125 万人离开爱尔兰（科克大学 John Crowley）。",
+   "超过 20 万人死在济贫院里，饥荒年间有 50 多万人被逐出租地。",
+   "2013 年研究者测了 11 份 19 世纪标本，认定元凶是 HERB-1 株系；它在 20 世纪被 US-1 取代，可能已经灭绝。",
+   "HERB-1 与 20 世纪流行的 US-1 株系是近亲，但并不相同。",
+   "1846 年欧洲大陆和英国夏天干热，病害止住；爱尔兰却连着湿暖。"
+  ],
+  "dispute": "病菌怎样到欧洲没有定论：通行说法是随美洲来的带病薯块传入；起源地有墨西哥与南美两说，2013 年的基因组研究认为 HERB-1 可能出自墨西哥以外的次生种群。死亡人数是估算，常见口径为约 100 万。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "The rise and fall of the Phytophthora infestans lineage that triggered the Irish potato famine（Yoshida et al.）",
+    "publisher": "eLife",
+    "url": "https://cdn.elifesciences.org/articles/00731/elife-00731-v1.pdf",
+    "year": "2013"
+   },
+   {
+    "title": "“Whodunnit” of Irish potato famine solved",
+    "publisher": "The Sainsbury Laboratory",
+    "url": "https://tsl.ac.uk/news/whodunnit-irish-potato-famine-solved",
+    "year": "2013"
+   },
+   {
+    "title": "The Great Irish Famine（John Crowley）",
+    "publisher": "RTÉ History",
+    "url": "https://www.rte.ie/history/the-great-irish-famine/2020/0629/1150367-the-great-irish-famine",
+    "year": "2020"
+   },
+   {
+    "title": "A meteorological recipe for a national tragedy",
+    "publisher": "The Irish Times",
+    "url": "https://www.irishtimes.com/news/a-meteorological-recipe-for-a-national-tragedy-1.334761",
+    "year": ""
+   },
+   {
+    "title": "“What a Painfully Interesting Subject”: Charles Darwin's Studies of Potato Late Blight（Ristaino & Pfister）",
+    "publisher": "BioScience",
+    "url": "https://ristainolab.cals.ncsu.edu/files/2017/12/Ristaino-What-a-painfully-interesting-subject.pdf",
+    "year": "2016"
+   }
+  ],
+  "verify": false,
+  "note": "比利时首发的具体地点（常说科特赖克 Kortrijk 一带，出自 Bourke）本次未能打开一手来源，place 只写「比利时」，坐标取西佛兰德约值。1841 年普查人口（通行 817.5 万）未核，reach 用的是 Crowley 的 1846 年年中估计值 850 万（原文另注 870 万？）。斯基伯林版画日期 1847-01-30 据图像来源页（维基共享资源的 ILN 出处说明）。"
+ },
+ {
+  "id": "phylloxera",
+  "title_zh": "葡萄根瘤蚜",
+  "kind": "block",
+  "small_zh": "不到 1 毫米的蚜虫，附在美洲葡萄根上",
+  "big_zh": "法国 20 年毁掉 100 万公顷葡萄园",
+  "origin": {
+   "year": 1863,
+   "place_zh": "法国 加尔省 皮若（Pujaut）",
+   "lat": 44.0,
+   "lon": 4.8,
+   "text_zh": "1860 年代，根瘤蚜附在美洲葡萄的根上进入罗讷河谷；1863 年，加尔省皮若的欧洲种葡萄园里第一次记下成片枯死。"
+  },
+  "chain": [
+   {
+    "year": 1868,
+    "date": "1868-07-15",
+    "place_zh": "法国 罗讷河口省 拉戈瓦庄园",
+    "lat": 43.8,
+    "lon": 4.9,
+    "text_zh": "7 月 15 日，普朗雄（Jules-Émile Planchon）、巴齐耶和萨于在枯死葡萄的根上认出了这种虫。"
+   },
+   {
+    "year": 1877,
+    "place_zh": "法国 波尔多",
+    "lat": 44.8,
+    "lon": -0.6,
+    "text_zh": "从梅多克到苏玳，波尔多各产区都已有虫；1880 年全国 45 个省染疫。"
+   },
+   {
+    "year": 1881,
+    "place_zh": "法国南部 朗格多克",
+    "lat": 43.6,
+    "lon": 3.9,
+    "text_zh": "1880 年后，把法国葡萄嫁接到抗虫的美洲砧木上成了通行办法，疫区开办嫁接学校。"
+   },
+   {
+    "year": 1890,
+    "place_zh": "法国 香槟",
+    "lat": 49.0,
+    "lon": 4.0,
+    "text_zh": "根瘤蚜最后才到香槟；按 OIV 综述，这是法国最后一个染疫的产区。"
+   }
+  ],
+  "reach": {
+   "year": 1900,
+   "text_zh": "到 1900 年法国所有产区都已染疫；葡萄园面积从 1874 年的 240 万公顷，20 年间降到约 170 万公顷。"
+  },
+  "lag": {
+   "days": 13500,
+   "text_zh": "从 1863 年首见到 1900 年全法染疫，约 37 年"
+  },
+  "facts": [
+   "20 年里法国有 100 万公顷葡萄园被彻底毁掉，另有 60 万公顷染虫。",
+   "法国葡萄酒产量从 1875 年的 8380 万百升跌到 1889 年的 2320 万百升。",
+   "法国政府悬赏 30 万法郎征求实用的治法。",
+   "得州的芒森（T. V. Munson）因提供砧木获法国荣誉军团勋章。",
+   "今天全世界 80% 以上的葡萄园种的是嫁接苗。"
+  ],
+  "dispute": "最早出现的年份和地点说法不一：法国葡萄学界的综述记 1863 年加尔省皮若，也有通俗著述写 1867 年罗讷河谷南部；同在 1863 年，伦敦附近的温室里也记录到这种虫。产量数字各家略有出入（另一口径为 8450 万与 2340 万百升）。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Grapevine rootstocks: history, current use and prospects（Ollat et al.，OIV 2024）",
+    "publisher": "IVES Open Science",
+    "url": "https://ives-openscience.eu/oiv2024_224_ollat",
+    "year": "2024"
+   },
+   {
+    "title": "Sour Grapes（书评：Phylloxera: How Wine Was Saved for the World）",
+    "publisher": "PLoS Biology / PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1435410",
+    "year": "2005"
+   },
+   {
+    "title": "Wine Production for France（NBER Macrohistory Database，A01027FRA413NNBR）",
+    "publisher": "FRED, Federal Reserve Bank of St. Louis",
+    "url": "https://fred.stlouisfed.org/data/A01027FRA413NNBR",
+    "year": ""
+   },
+   {
+    "title": "The Great Wine Blight: how French winemakers learned to love America",
+    "publisher": "Mathew Lyons",
+    "url": "https://mathewlyons.co.uk/2022/05/24/the-great-wine-blight/",
+    "year": "2022"
+   }
+  ],
+  "verify": false,
+  "note": "未核：罗克莫尔（Roquemaure）酒商 Borty 1862 年种美洲苗的说法；悬赏的年份（通行说法 1870 年 2 万法郎、1874 年加到 30 万法郎，本次只核到 30 万这个数）；芒森受勋年份。1881 年一步的地点是概括性的（朗格多克），来源只说「疫区」与「1880 年后」。"
+ },
+ {
+  "id": "rabbits",
+  "title_zh": "澳洲野兔",
+  "kind": "block",
+  "small_zh": "圣诞节到港的一小批英国野兔",
+  "big_zh": "50 年占领大半个澳大利亚，高峰约 6 亿只",
+  "origin": {
+   "year": 1859,
+   "date": "1859-12-25",
+   "place_zh": "澳大利亚 维多利亚州 巴望庄园（Barwon Park）",
+   "lat": -38.2,
+   "lon": 144.0,
+   "text_zh": "1859 年圣诞节，牧场主托马斯·奥斯汀（Thomas Austin）收到兄弟从英国萨默塞特捉来、托「闪电号」运到的野兔，放进庄园供打猎。"
+  },
+  "chain": [
+   {
+    "year": 1866,
+    "place_zh": "维多利亚州 巴望庄园",
+    "lat": -38.2,
+    "lon": 144.0,
+    "text_zh": "仅七年后，猎人在巴望庄园一年就打了 1.4 万只兔子。"
+   },
+   {
+    "year": 1880,
+    "place_zh": "墨累河",
+    "lat": -36.0,
+    "lon": 145.0,
+    "text_zh": "兔子越过墨累河进入新南威尔士；1886 年到昆士兰。"
+   },
+   {
+    "year": 1894,
+    "place_zh": "纳拉伯平原",
+    "lat": -31.5,
+    "lon": 129.0,
+    "text_zh": "兔子穿过纳拉伯平原，进入西澳大利亚。"
+   },
+   {
+    "year": 1907,
+    "place_zh": "西澳大利亚",
+    "lat": -27.0,
+    "lon": 119.5,
+    "text_zh": "西澳州 1901 年动工的防兔栅栏完工，南北长 3256 公里；可完工时兔子早已进了西澳。"
+   }
+  ],
+  "reach": {
+   "year": 1950,
+   "text_zh": "1940 年代末全澳野兔约 6 亿只；1950 年释放粘液瘤病毒，当年 12 月雨后随蚊子迅速扩散。"
+  },
+  "lag": {
+   "days": 18000,
+   "text_zh": "从 1859 年放生到遍布大陆，约 50 年"
+  },
+  "facts": [
+   "兔群每年向外推进约 100 公里，是有记录以来引进哺乳动物最快的扩张。",
+   "2022 年的研究分析了 1865–2018 年采集的 187 只兔子，确认源头就是奥斯汀这一批。",
+   "1788 年第一舰队就带来 5 只家兔，1859 年前至少还有 90 次引进，都没有成灾。",
+   "1885–1890 年，防兔铁丝网的年需求从 1600 公里涨到 9600 公里。",
+   "澳大利亚如今仍有至少 1.5 亿只野兔，每年造成 2 亿多澳元损失。"
+  ],
+  "dispute": "这批兔子的数量有两说：澳大利亚国家博物馆写放生 13 只，剑桥大学与 2022 年《美国国家科学院院刊》的论文写运到 24 只。奥斯汀之前已有多次引进，为什么偏偏这一批成灾，论文认为与这批野兔的遗传特性有关。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Rabbits introduced（Defining Moments）",
+    "publisher": "National Museum of Australia",
+    "url": "https://www.nma.gov.au/defining-moments/resources/rabbits-introduced",
+    "year": ""
+   },
+   {
+    "title": "DNA profiling solves Australian rabbit plague puzzle",
+    "publisher": "University of Cambridge",
+    "url": "https://www.cam.ac.uk/stories/dna-profiling-solves-australia-rabbit-plague-puzzle",
+    "year": "2022"
+   },
+   {
+    "title": "A single introduction of wild rabbits triggered the biological invasion of Australia（Alves et al.）",
+    "publisher": "PNAS",
+    "url": "https://ui.adsabs.harvard.edu/abs/2022PNAS..11922734A",
+    "year": "2022"
+   }
+  ],
+  "verify": false,
+  "note": "CSIRO 的页面本次没有打开，粘液瘤病的致死率等数字因此未写；1950 年释放与扩散经过据澳大利亚国家博物馆。「13 只 / 24 只」两说并存，正文未取其一。"
+ },
+ {
+  "id": "rinderpest",
+  "title_zh": "非洲牛瘟",
+  "kind": "block",
+  "small_zh": "一船给军队运来的牛",
+  "big_zh": "十年内撒哈拉以南非洲 80%–90% 的牛死去",
+  "origin": {
+   "year": 1887,
+   "place_zh": "厄立特里亚 马萨瓦（Massawa）",
+   "lat": 15.6,
+   "lon": 39.5,
+   "text_zh": "1887 年，意大利军队向埃塞俄比亚推进期间，一条运牛的船在红海港口马萨瓦靠岸，牛身上带着牛瘟病毒。"
+  },
+  "chain": [
+   {
+    "year": 1888,
+    "place_zh": "埃塞俄比亚",
+    "lat": 9.0,
+    "lon": 38.7,
+    "text_zh": "牛瘟传遍埃塞俄比亚，九成以上的牛死去；又逢干旱与蝗灾，1888–1892 年大饥荒。"
+   },
+   {
+    "year": 1889,
+    "place_zh": "肯尼亚 图尔卡纳湖",
+    "lat": 3.5,
+    "lon": 36.0,
+    "text_zh": "病毒到达肯尼亚北部的图尔卡纳湖；次年旅行者记下野牛和大羚羊几乎绝迹。"
+   },
+   {
+    "year": 1892,
+    "place_zh": "塞内加尔 达喀尔",
+    "lat": 14.7,
+    "lon": -17.4,
+    "text_zh": "从红海上岸不到五年，牛瘟已到大西洋岸边的达喀尔。"
+   },
+   {
+    "year": 1896,
+    "date": "1896-12",
+    "place_zh": "南非 开普敦",
+    "lat": -33.9,
+    "lon": 18.4,
+    "text_zh": "12 月，科赫（Robert Koch）应邀到开普敦研制预防办法；奥兰治河沿线的围栏只挡了四个月左右。"
+   }
+  ],
+  "reach": {
+   "year": 1897,
+   "text_zh": "到 1897 年底，估计撒哈拉以南非洲 80%–90% 的牛已经死去，野牛、角马、长颈鹿也大批死亡。"
+  },
+  "lag": {
+   "days": 3650,
+   "text_zh": "从马萨瓦上岸到传至非洲南端，约十年"
+  },
+  "facts": [
+   "埃塞俄比亚皇帝孟尼利克二世一人就损失约 25 万头牛（同时代记载）。",
+   "有估计说到 1892 年埃塞俄比亚约三分之一人口死于饥荒，这是史家的估算。",
+   "1960 年普洛赖特（Walter Plowright）研制出组织培养疫苗，后获世界粮食奖。",
+   "最后一次已知疫情在 2001 年的肯尼亚。",
+   "2011 年 5 月 25 日世界动物卫生组织宣布牛瘟根除，6 月粮农组织大会通过决议。"
+  ],
+  "dispute": "上岸年份与牛的来源说法不一：多数著述写 1887 年、牛来自印度；美国艾奥瓦州立大学的资料写 1889 年；也有只说「意大利人带来」而不指来源的。兽医史综述另指出，19 世纪还有一次经埃及的传入，可能来自欧洲或美索不达米亚。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "How was rinderpest eradicated?（Maya Prabhu）",
+    "publisher": "Gavi VaccinesWork",
+    "url": "https://www.gavi.org/vaccineswork/how-was-rinderpest-eradicated",
+    "year": "2026"
+   },
+   {
+    "title": "The long journey: a brief review of the eradication of rinderpest（Njeumi et al.）",
+    "publisher": "Rev. sci. tech. Off. int. Epiz. 31(3)",
+    "url": "https://media.researcherslinks.com/uploads/articles/137166358801njeumi729746.pdf",
+    "year": "2012"
+   },
+   {
+    "title": "How rinderpest was eradicated",
+    "publisher": "Our World in Data",
+    "url": "https://ourworldindata.org/how-rinderpest-was-eradicated",
+    "year": ""
+   },
+   {
+    "title": "Rinderpest（Factsheet）",
+    "publisher": "Center for Food Security and Public Health, Iowa State University",
+    "url": "https://www.cfsph.iastate.edu/Factsheets/pdfs/rinderpest.pdf",
+    "year": ""
+   },
+   {
+    "title": "Rinderpest Pandemic in Africa",
+    "publisher": "Environment & Society Portal",
+    "url": "https://www.environmentandsociety.org/node/1798",
+    "year": ""
+   }
+  ],
+  "verify": true,
+  "note": "未核：简报提到的「来自俄国 / 黑海」一说，本次打开的来源里都没有出现（只见印度说，以及经埃及的另一次传入可能来自欧洲或美索不达米亚），dispute 里没有写俄国说。达喀尔一步的年份 1892 是按「上岸后五年内」推的约数。Our World in Data 把传入埃塞俄比亚写作 1880 年，与其他来源不合，未采用。"
+ },
+ {
+  "id": "tambora",
+  "title_zh": "坦博拉火山",
+  "kind": "block",
+  "small_zh": "松巴哇岛上一座火山的一夜",
+  "big_zh": "次年北半球「无夏」，西欧夏季最多低了 3 °C",
+  "origin": {
+   "year": 1815,
+   "date": "1815-04-10",
+   "place_zh": "印度尼西亚 松巴哇岛 坦博拉火山",
+   "lat": -8.2,
+   "lon": 118.0,
+   "text_zh": "1815 年 4 月 5 日坦博拉火山先喷发了约三小时，4 月 10 日进入高潮——有记录以来最大的一次喷发，火山爆发指数 7 级。"
+  },
+  "chain": [
+   {
+    "year": 1815,
+    "place_zh": "印度尼西亚 松巴哇岛与龙目岛",
+    "lat": -8.6,
+    "lon": 116.5,
+    "text_zh": "火山碎屑流吞没山脚村落约一万人，随后的饥荒和疫病在两岛夺走更多人命。"
+   },
+   {
+    "year": 1816,
+    "date": "1816-06",
+    "place_zh": "美国 新英格兰",
+    "lat": 43.5,
+    "lon": -72.5,
+    "text_zh": "6 月 5 日至 11 日寒潮南下，美国东北部积雪厚达一英尺；6、7、8 月都有杀霜，庄稼大面积绝收。"
+   },
+   {
+    "year": 1816,
+    "date": "1816-06",
+    "place_zh": "瑞士 日内瓦湖",
+    "lat": 46.2,
+    "lon": 6.2,
+    "text_zh": "这年夏天阴雨不断，玛丽·雪莱与雪莱、拜伦困在日内瓦湖边的屋里，她动笔写《弗兰肯斯坦》。"
+   },
+   {
+    "year": 1816,
+    "date": "1816-07",
+    "place_zh": "中国 云南",
+    "lat": 25.0,
+    "lon": 102.7,
+    "text_zh": "7 月云南下雪，冷风和淫雨毁了稻子，饥荒持续三年。"
+   },
+   {
+    "year": 1817,
+    "place_zh": "印度 孟加拉",
+    "lat": 22.6,
+    "lon": 88.4,
+    "text_zh": "季风连续两年失常；1817 年孟加拉暴发霍乱，伍德等学者认为两者有关。1819–1820 年霍乱传到缅甸和泰国。"
+   }
+  ],
+  "reach": {
+   "year": 1816,
+   "text_zh": "此后一两年全球气温降了约 0.4–0.7 °C；1816 年西欧夏季比常年最多低 3 °C，欧洲和北美东北部大范围歉收。"
+  },
+  "lag": {
+   "days": 420,
+   "text_zh": "从喷发到 1816 年 6 月飞雪，约 14 个月"
+  },
+  "facts": [
+   "喷发前这座山估计高约 4000 米，山顶被整个削去，留下直径 6 公里、深 1100 米的火山口（NASA）。",
+   "喷发声在 2000 多公里外都听得到。",
+   "当地死亡人数：至少 7.1 万（Oppenheimer 2003），另有约 6 万、9.2 万之说。",
+   "硫酸盐气溶胶在平流层停留了约两年。",
+   "1816 年 6 至 8 月印度季风中断，是有记录以来西南季风最长的一次间断。"
+  ],
+  "dispute": "死亡人数各家估算从约 6 万到约 10 万。把 1817 年孟加拉霍乱归因于坦博拉，是伍德（Gillen D'Arcy Wood）等人的论点，说季风失常改变了孟加拉湾的病原生态，属间接推论，并非定论。《弗兰肯斯坦》一节是文学史通行说法。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "ISS020-E-006563: Mount Tambora Volcano, Sumbawa Island, Indonesia",
+    "publisher": "NASA",
+    "url": "https://images-api.nasa.gov/search?nasa_id=iss020e006563",
+    "year": "2009"
+   },
+   {
+    "title": "200 Years After Tambora, Some Unusual Effects Linger",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/science-nature/200-years-after-tambora-volcano-eruption-unusual-effects-linger-180954918/?page=2",
+    "year": "2015"
+   },
+   {
+    "title": "The Tambora eruption and human history（Gillen D'Arcy Wood）",
+    "publisher": "The Ecologist",
+    "url": "https://theecologist.org/2014/jun/18/tambora-eruption-and-human-history",
+    "year": "2014"
+   },
+   {
+    "title": "200 Years Ago This Week: Tambora's Eruption Causes a Planet-wide Climate Emergency（Jeff Masters）",
+    "publisher": "Weather Underground",
+    "url": "https://www.wunderground.com/blog/JeffMasters/200-years-ago-this-week-tamboras-eruption-causes-a-planetwide-clima.html",
+    "year": "2015"
+   },
+   {
+    "title": "1815 eruption of Mount Tambora（仅作线索：转引 Oppenheimer 2003、Tanguy 1998、Petroeschevsky 1949 的死亡估计）",
+    "publisher": "Wikipedia（Wikiwand 镜像）",
+    "url": "https://www.wikiwand.com/en/articles/1815_eruption_of_Mount_Tambora",
+    "year": ""
+   },
+   {
+    "title": "Climatic, environmental and human consequences of the largest known historic eruption: Tambora volcano (Indonesia) 1815（Clive Oppenheimer）",
+    "publisher": "Progress in Physical Geography",
+    "url": "https://journals.sagepub.com/doi/10.1191/0309133303pp379ra",
+    "year": "2003"
+   }
+  ],
+  "verify": true,
+  "note": "未核：Oppenheimer 2003 原文打不开，「至少 7.1 万」及 Tanguy 1998（直接 1.1 万 + 饥荒疫病 4.9 万）、Petroeschevsky 1949（松巴哇 4.8 万 + 龙目 4.4 万）等数字转引自维基条目，需对原文。杨煜达等关于云南饥荒的论文未能找到可打开的来源，云南一步依据 Wood 与 Masters 的转述。喷出物体积各家不同（NASA 图说写 150 立方千米火山碎屑；另有约 41 立方千米致密岩当量之说），正文未写。"
+ },
+ {
+  "id": "penicillin",
+  "title_zh": "青霉素",
+  "kind": "boost",
+  "small_zh": "一只长了霉的培养皿",
+  "big_zh": "16 年后月产约 1000 亿单位，够治 4 万名病人",
+  "origin": {
+   "year": 1928,
+   "date": "1928-09",
+   "place_zh": "英国 伦敦 圣玛丽医院",
+   "lat": 51.5,
+   "lon": -0.2,
+   "text_zh": "1928 年 9 月，细菌学家弗莱明（Alexander Fleming）度假回到实验室，见一只葡萄球菌培养皿长了霉，霉斑周围的细菌不见了。"
+  },
+  "chain": [
+   {
+    "year": 1940,
+    "date": "1940-08-24",
+    "place_zh": "英国 牛津",
+    "lat": 51.8,
+    "lon": -1.3,
+    "text_zh": "弗洛里（Florey）、钱恩（Chain）、希特利（Heatley）提纯出青霉素，救活染菌小鼠，8 月发表于《柳叶刀》。"
+   },
+   {
+    "year": 1941,
+    "date": "1941-02-12",
+    "place_zh": "英国 牛津",
+    "lat": 51.8,
+    "lon": -1.3,
+    "text_zh": "2 月 12 日第一位病人用上青霉素，五天后药用完了，病人不到一个月去世。"
+   },
+   {
+    "year": 1941,
+    "date": "1941-07-14",
+    "place_zh": "美国 伊利诺伊州 皮奥里亚",
+    "lat": 40.7,
+    "lon": -89.6,
+    "text_zh": "7 月 14 日弗洛里和希特利带着菌种到美国农业部北方地区研究实验室，次日开工；玉米浆和深罐发酵让产量大增。"
+   },
+   {
+    "year": 1943,
+    "place_zh": "美国 伊利诺伊州 皮奥里亚",
+    "lat": 40.7,
+    "lon": -89.6,
+    "text_zh": "皮奥里亚市场上一只发霉的哈密瓜带来高产菌株 NRRL 1951，今天的工业生产菌株都由它选育而来。"
+   },
+   {
+    "year": 1944,
+    "date": "1944-06-06",
+    "place_zh": "法国 诺曼底",
+    "lat": 49.4,
+    "lon": -0.6,
+    "text_zh": "6 月盟军登陆时，美国月产青霉素约 1000 亿单位，够治 4 万名病人。"
+   }
+  ],
+  "reach": {
+   "year": 1945,
+   "text_zh": "1945 年弗莱明、弗洛里、钱恩同获诺贝尔生理学或医学奖；到 1951 年，美国月产已达 30 万亿单位。"
+  },
+  "lag": {
+   "days": 5750,
+   "text_zh": "1928 年 9 月到 1944 年 6 月，近 16 年"
+  },
+  "facts": [
+   "美国的累计产量：1943 年 6 月前 4 亿单位，到 1944 年 1 月已有 205 亿单位。",
+   "一剂青霉素 1943 年 7 月卖 20 美元，三年后降到 0.55 美元（美国农业部）。",
+   "弗莱明 1929 年发表论文；实验记录里最早提到这块霉是在 1928 年 10 月 30 日。",
+   "NRRL 1951 在 2021 年 8 月 17 日被定为伊利诺伊州的「州微生物」。",
+   "为找高产菌株，美国陆军运输部队从英国、巴西、澳大利亚、印度等地带回土样，皮奥里亚的实验室前后筛了数百株青霉。"
+  ],
+  "dispute": "霉从哪来说法不一：「窗口飘进来」出自 1945 年的访谈；黑尔（Ronald Hare）1970 年认为来自楼下的真菌实验室，且靠一场寒潮才显出抑菌圈。9 月 3 日是弗莱明自述。哈密瓜是否由技术员玛丽·亨特找到，美国农业部也说无法确定。",
+  "confidence": "高",
+  "sources": [
+   {
+    "title": "Penicillin: Opening the Era of Antibiotics",
+    "publisher": "USDA Agricultural Research Service（NCAUR, Peoria）",
+    "url": "https://www.ars.usda.gov/midwest-area/peoria-il/national-center-for-agricultural-utilization-research/docs/penicillin-opening-the-era-of-antibiotics/",
+    "year": "2024"
+   },
+   {
+    "title": "The Enduring Mystery of “Moldy Mary”",
+    "publisher": "USDA Agricultural Research Service",
+    "url": "https://scientificdiscoveries.ars.usda.gov/tellus/stories/articles/enduring-mystery-moldy-mary",
+    "year": ""
+   },
+   {
+    "title": "How a Moldy Cantaloupe Brought Fleming’s Penicillin to the World",
+    "publisher": "The Scientist",
+    "url": "https://www.the-scientist.com/how-a-moldy-cantaloupe-took-fleming-s-penicillin-from-discovery-to-mass-production-72304",
+    "year": ""
+   },
+   {
+    "title": "Propagating penicillin in Peoria: from discovery to mass production",
+    "publisher": "Hektoen International",
+    "url": "https://hekint.org/2024/03/21/propagating-penicillin-in-peoria-from-discovery-to-mass-production/",
+    "year": "2024"
+   },
+   {
+    "title": "The Penicillin Myth（Kevin Blake）",
+    "publisher": "Asimov Press",
+    "url": "https://press.asimov.com/articles/penicillin-myth",
+    "year": "2025"
+   },
+   {
+    "title": "Birth of modern medicine",
+    "publisher": "The Biomedical Scientist（IBMS）",
+    "url": "https://thebiomedicalscientist.net/science/birth-modern-medicine",
+    "year": ""
+   }
+  ],
+  "verify": true,
+  "note": "未核：美国化学会地标页（两次抓取都只返回空壳）、诺贝尔奖官网、Science Museum 本次没有读到正文。哈密瓜的年份：美国农业部只写照片「约 1943 年」、1944 年论文致谢亨特，The Scientist 写「1940 年代初」，chain 里的 1943 是通行年份。赴美时间：美国农业部与 Hektoen 写 7 月 14 日到皮奥里亚，The Scientist 写 6 月启程。第一位病人的姓名（Albert Alexander）来源之间有出入，正文未写名字。产量数字出自 Hektoen（其参考书为 Hobby 1985、Lax 2005），简报提到的「230 万剂」未见于已读来源。"
+ },
+ {
+  "id": "sweet-potato",
+  "title_zh": "番薯入华",
+  "kind": "boost",
+  "small_zh": "一截从吕宋带回的薯藤",
+  "big_zh": "一百多年后种遍南方各省，进入黄河流域",
+  "origin": {
+   "year": 1593,
+   "place_zh": "菲律宾 吕宋（Luzon）",
+   "lat": 14.6,
+   "lon": 121.0,
+   "text_zh": "1593 年（明万历二十一年），在吕宋经商的福建人陈振龙把薯藤带上船运回福建；相传当地不许薯种出境，他是悄悄带出来的。"
+  },
+  "chain": [
+   {
+    "year": 1593,
+    "place_zh": "福建 福州",
+    "lat": 26.1,
+    "lon": 119.3,
+    "text_zh": "按《金薯传习录》所收陈氏禀帖的说法，陈振龙之子陈经纶把薯藤和种法献给福建巡抚金学曾，建议用来备荒。"
+   },
+   {
+    "year": 1594,
+    "place_zh": "福建",
+    "lat": 25.9,
+    "lon": 118.3,
+    "text_zh": "福建闹饥荒，金学曾下令在全省推广种薯；学界通常把 1594 年算作番薯在中国立足之年。"
+   },
+   {
+    "year": 1690,
+    "place_zh": "江西、湖南、浙江、江苏",
+    "lat": 28.0,
+    "lon": 116.0,
+    "text_zh": "17 世纪下半叶，番薯传到江西、湖南、浙江和江苏。"
+   },
+   {
+    "year": 1750,
+    "place_zh": "黄河流域",
+    "lat": 35.0,
+    "lon": 114.0,
+    "text_zh": "18 世纪中叶，番薯已种遍南方各省，并进入黄河流域和北方。"
+   }
+  ],
+  "reach": {
+   "year": 1750,
+   "text_zh": "何炳棣把番薯、玉米等美洲作物列为清代人口增长的三大原因之一；人口从清初的 1 亿多增至 1850 年的约 4.3 亿。"
+  },
+  "lag": {
+   "days": 57000,
+   "text_zh": "从 1593 年上岸到遍及南北，一个半世纪上下"
+  },
+  "facts": [
+   "陈振龙一线是学界公认证据最足的传入路线，依据是陈氏后人辑于 1768 年的《金薯传习录》。",
+   "有估算说，同样的地，种番薯得到的热量约为小麦的两到三倍、稻米的一倍半（转引自 Mazumdar 1998）。",
+   "徐光启（1562–1633）是最早著文推广番薯的人之一，并把它与本土的薯蓣分开。",
+   "清代人均耕地从乾隆朝的三四亩降到道光朝的不足两亩。",
+   "自 Goodrich 1937 年的研究起，学界多以 1594 年为番薯传入之年。"
+  ],
+  "dispute": "传入路线不止一条：广东东莞人陈益约 1580–1582 年从安南带回之说，证据还不够；电白林怀兰从交趾带回之说近于传说；何炳棣主张另有从印度、缅甸经陆路进云南的一线。薯藤怎样藏上船，各书说法不同。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "Sweet potato in Chinese historiography（章节：The Origin of Sweet Potato in China）",
+    "publisher": "Springer",
+    "url": "https://link.springer.com/chapter/10.1007/978-981-10-4053-5_4",
+    "year": "2017"
+   },
+   {
+    "title": "Sweet potato and Qing population growth",
+    "publisher": "Hung-Yi Chen（个人研究笔记，转引《金薯传习录》、何乔远《闽书》、Ho 1959、曹树基 2000）",
+    "url": "https://hungyichen.com/en/insights/sweet-potato-qing",
+    "year": ""
+   }
+  ],
+  "verify": true,
+  "note": "未核：《金薯传习录》原文未能打开，「绞入汲水绳中」的原句与确切措辞没有对上原书，dispute 只并列了几种转述；《金薯传习录》的辑者（通行说法为陈世元）与成书年 1768 只见二手。来源仅两条且其一为个人笔记，需补一手。何炳棣关于番薯与人口、山地开垦的具体论述（1955 论文、1959《中国人口研究》）只读到二手转述；近年量化研究没有找到可打开的来源，未写。chain 中 1690、1750 是「17 世纪下半叶」「18 世纪中叶」的取整年份。Springer 章节的书名、作者页面上未显示，需补。"
+ },
+ {
+  "id": "champa-rice",
+  "title_zh": "占城稻",
+  "kind": "boost",
+  "small_zh": "一种耐旱早熟的稻种",
+  "big_zh": "宋真宗调三万斛稻种，分给江淮两浙三路",
+  "origin": {
+   "year": 1012,
+   "place_zh": "福建",
+   "lat": 26.1,
+   "lon": 119.3,
+   "text_zh": "1012 年（宋真宗大中祥符五年），江、淮、两浙一遇小旱水田就歉收，朝廷派人到福建取占城稻三万斛，分给三路作种。"
+  },
+  "chain": [
+   {
+    "year": 1012,
+    "place_zh": "淮南（今江苏、安徽中部）",
+    "lat": 32.4,
+    "lon": 119.4,
+    "text_zh": "稻种分到淮南路，官府让百姓挑地势高、灌不上水的田来种。"
+   },
+   {
+    "year": 1012,
+    "place_zh": "两浙（今浙江、苏南）",
+    "lat": 30.3,
+    "lon": 120.2,
+    "text_zh": "两浙路也得到稻种；占城稻耐旱，原有品种种不活的高田和梯田也能种。"
+   },
+   {
+    "year": 1012,
+    "place_zh": "江南（今江西、皖南）",
+    "lat": 28.7,
+    "lon": 115.9,
+    "text_zh": "江南路同时推广；占城稻比当时中国已有的早稻熟得还快，能否因此普遍种两季，学者看法不一。"
+   }
+  ],
+  "reach": {
+   "year": 1100,
+   "text_zh": "农业史学者巴克（R. Barker）的概括是：梯田开垦加上灌溉低地双季种植的扩大，缓解了粮食压力，也带动人口向南方稻区迁移和增长；这一判断有争议。"
+  },
+  "lag": {
+   "days": 36500,
+   "text_zh": "从 1012 年分种到在南方普遍见效，以百年计"
+  },
+  "facts": [
+   "《宋史·食货志》：「遣使就福建取占城稻三万斛，分给三路为种，择民田高仰者莳之。」事在大中祥符五年五月，见《宋史·真宗本纪》与《续资治通鉴长编》卷七十七。",
+   "占城在今越南中南部；那里的占城稻是不感光、约一百天成熟的品种。",
+   "江淮一带原有的稻种要 150 天左右才熟（《大英百科全书》）。",
+   "僧人文莹《湘山野录》另记：真宗以珍货向占城求种，「得种二十石」。",
+   "何炳棣 1956 年的论文把早熟稻视为宋以后中国粮食与人口增长的关键。"
+  ],
+  "dispute": "占城稻何时到福建无人确知，有说早在 8 世纪。它的作用也有分歧：何炳棣一派视之为宋代人口增长的关键；邓钢（Kent Deng）2013 年反驳说宋代一年一熟仍是常态，稻的双季种植要到明代才普遍，人口增长并不靠这一个稻种。",
+  "confidence": "中",
+  "sources": [
+   {
+    "title": "The Origin and Spread of Early-Ripening Champa Rice: It's Impact on Song Dynasty China（R. Barker）",
+    "publisher": "Rice 4: 184–186",
+    "url": "https://link.springer.com/article/10.1007/s12284-011-9079-6",
+    "year": "2011"
+   },
+   {
+    "title": "Champa rice",
+    "publisher": "Encyclopaedia Britannica",
+    "url": "https://www.britannica.com:443/plant/Champa-rice",
+    "year": ""
+   },
+   {
+    "title": "Demystifying growth and development in North Song China, 960–1127（Kent G. Deng，Working Paper 178/13）",
+    "publisher": "London School of Economics",
+    "url": "https://www.lse.ac.uk/asset-library/information/wp178.pdf",
+    "year": "2013"
+   },
+   {
+    "title": "古人吃「进口大米」始于何时（引《宋史·食货志上一》《湘山野录》原文）",
+    "publisher": "信阳晚报 旧闻版",
+    "url": "https://wanbao.xyxww.com.cn/html/16/2015-03/13/B7/20150313B7_pdf.pdf",
+    "year": "2015"
+   },
+   {
+    "title": "A champion rice going for a song in China",
+    "publisher": "Agricultural Biodiversity Weblog",
+    "url": "https://agro.biodiver.se/2022/03/a-champion-rice-going-for-a-song-in-china/",
+    "year": "2022"
+   }
+  ],
+  "verify": true,
+  "note": "未核：《宋史·食货志》《续资治通鉴长编》的原书页面（维基文库三个地址都打不开），《宋史》引文据报纸转引、与通行本一致；《长编》系于大中祥符五年五月的原文未对上。年份提醒：通行本《宋史·食货志》这段文字上文系于「大中祥符四年」，《长编》与本纪系于五年（1012），学界通用 1012，此点未能对原书。何炳棣 1956 原文未打开，只见 Barker 与 Deng 的引用。chain 三步是同一年分种的三路，坐标取各路中心约值；reach 年份 1100 与 lag 为示意性约数，来源没有给具体年份。"
+ }
+]

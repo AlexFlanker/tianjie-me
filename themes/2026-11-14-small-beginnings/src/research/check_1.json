@@ -1,0 +1,470 @@
+[
+ {
+  "id": "ever-given",
+  "field": "chain.2.text_zh",
+  "sev": "疑",
+  "orig": "管理局称头一夜双向放行 113 条船",
+  "fix": "长赐号被拖到大苦湖做第二次检查；管理局主席说，预计到 30 日清晨双向共放行 113 条船。",
+  "why": "路透社原文是「预计到周二清晨」放行 113 条，是预告不是已完成的统计。",
+  "source": "https://www.insurancejournal.com/news/international/2021/03/29/607392.htm"
+ },
+ {
+  "id": "ever-given",
+  "field": "chain.add",
+  "sev": "文",
+  "orig": "",
+  "fix": {
+   "year": 2021,
+   "date": "2021-03-26",
+   "place_zh": "南非 好望角",
+   "lat": -34.4,
+   "lon": 18.5,
+   "text_zh": "地中海航运（MSC）通告客户，11 条船改绕好望角；马士基也改道，路透社称航程最多加两周。",
+   "insert_after": "chain.0",
+   "source": "https://www.msc.com/en/newsroom/customer-advisories/2021/march/suez-canal-blockage--update-1"
+  },
+  "why": "补充任务(a)之一：MSC 2021-03-26 客户通告列出 11 条改绕好望角的船（含 MSC SINDY、MSC AMSTERDAM、MSC BILBAO、MAERSK ALGOL 等 2M 联盟船）；马士基改道与「最多两周」见路透社 3 月 29 日稿。另有 VesselsValue 口径：堵塞期间共 17 条亚欧 / 亚洲—美东航线的船改绕好望角（gCaptain 2021-04-06）。",
+  "source": "https://www.msc.com/en/newsroom/customer-advisories/2021/march/suez-canal-blockage--update-1 ; https://www.insurancejournal.com/news/international/2021/03/29/607392.htm"
+ },
+ {
+  "id": "ever-given",
+  "field": "chain.add",
+  "sev": "文",
+  "orig": "",
+  "fix": {
+   "year": 2021,
+   "date": "2021-04-06",
+   "place_zh": "荷兰 鹿特丹港",
+   "lat": 51.95,
+   "lon": 4.14,
+   "text_zh": "运河放行后，约 60 条集装箱船同时驶向鹿特丹；港口称到港量「异常之高」，限制出口货提前进场。",
+   "insert_after": "chain.3",
+   "source": "https://gcaptain.com/calm-before-the-storm-european-ports-await-influx-of-ships-impacted-by-suez-blockage/"
+  },
+  "why": "补充任务(a)之二：gCaptain 转载 The Loadstar 2021-04-06 稿，引鹿特丹港声明（exceptionally high influx of vessels and freight）与「约 60 条集装箱船驶向鹿特丹」。未找到可靠的事后拥堵统计（等泊天数、堆场占用率），所以只写到「集中到港」与港口的限制措施；运价涨幅未找到可直接引用的权威数字，未给。",
+  "source": "https://gcaptain.com/calm-before-the-storm-european-ports-await-influx-of-ships-impacted-by-suez-blockage/"
+ },
+ {
+  "id": "suez-closure",
+  "field": "facts.4",
+  "sev": "文",
+  "orig": "1966 年每天约 50 条船过运河，一半是油轮。",
+  "fix": "据《纽约时报》1967 年的估算，1966 年每天约 50 条船过运河，一半是油轮。",
+  "why": "来源（转引《纽约时报》）原句是「1966 年过运河的 50 条船里一半是油轮」，没有写「每天」；按全年约两万艘次推算应指日均，建议标明出处。",
+  "source": "https://thegamming.org/2014/08/31/how-the-closure-of-the-suez-canal-changed-the-world/"
+ },
+ {
+  "id": "suez-closure",
+  "field": "chain.2.text_zh",
+  "sev": "文",
+  "orig": "美国牵头清除河道里的水雷和沉船残骸。",
+  "fix": "据《海湾新闻》，1974 年美国牵头清除河道里的水雷和沉船残骸。",
+  "why": "「美国牵头」只有 Gulf News 一处来源，另两处来源未写由谁清理，建议带出处。",
+  "source": "https://gulfnews.com/world/mena/when-the-worlds-arteries-close-from-suezs-8-year-shutdown-to-the-shadow-blockade-of-hormuz-1.500491097"
+ },
+ {
+  "id": "eyjafjallajokull",
+  "field": "chain.2.text_zh",
+  "sev": "文",
+  "orig": "约 5000 名工人被通知停工",
+  "fix": "肯尼亚每天约 1000 吨鲜花蔬菜靠夜航运往欧洲。出口商说四天损失 1200 万美元，最多 5000 名农场工人被通知停工。",
+  "why": "来源写的是「up to 5,000」。",
+  "source": "https://proof.csmonitor.com/World/2010/0419/How-the-Iceland-volcano-ash-cloud-is-crippling-Kenya-s-flower-industry"
+ },
+ {
+  "id": "eyjafjallajokull",
+  "field": "dispute",
+  "sev": "文",
+  "orig": "欧洲火山学界的回应是，那时没有可靠的火山灰浓度数据",
+  "fix": "当时航空公司与国际航协批评全面关闭空域过于保守；欧洲火山学会主席戈德吕（Henry Gaudru）回应说，那时没有可靠的火山灰浓度数据。取消数是「应飞减实飞」的估算，未扣除五千多班调机与接返航班。",
+  "why": "来源里是一个人（欧洲火山学会主席）的说法，不宜写成「学界」。",
+  "source": "https://www.aljazeera.com/news/2010/4/22/airlines-count-volcano-chaos-cost"
+ },
+ {
+  "id": "albuquerque-fire",
+  "field": "big_zh",
+  "sev": "文",
+  "orig": "一年后不再自己造手机",
+  "fix": "爱立信少卖至少 4 亿美元，十个月后宣布不再自己造手机",
+  "why": "起火 2000-03-17，宣布外包 2001-01-26，相隔约十个月；与本条 lag「约十个半月」不一致。",
+  "source": "https://web.mit.edu/sheffi/www/selectedMedia/wpd_building_a_resilient_organization_rev20061226.pdf"
+ },
+ {
+  "id": "albuquerque-fire",
+  "field": "lag.days",
+  "sev": "文",
+  "orig": "318",
+  "fix": 315,
+  "why": "2000-03-17 到 2001-01-26 是 315 天。",
+  "source": "https://web.mit.edu/sheffi/www/selectedMedia/wpd_building_a_resilient_organization_rev20061226.pdf"
+ },
+ {
+  "id": "albuquerque-fire",
+  "field": "lag.text_zh",
+  "sev": "文",
+  "orig": "约十个半月",
+  "fix": "从起火到爱立信宣布退出手机制造，约十个月",
+  "why": "315 天约 10.3 个月；且 1 月 26 日是「宣布」。",
+  "source": "https://web.mit.edu/sheffi/www/selectedMedia/wpd_building_a_resilient_organization_rev20061226.pdf"
+ },
+ {
+  "id": "albuquerque-fire",
+  "field": "chain.1.text_zh",
+  "sev": "文",
+  "orig": "诺基亚高层到荷兰面见飞利浦总裁",
+  "fix": "诺基亚高层到阿姆斯特丹的飞利浦总部面见总裁布恩斯特拉（Cor Boonstra）。飞利浦在埃因霍温的工厂补出一千多万片芯片，上海的工厂也腾给诺基亚。",
+  "why": "《华尔街日报》写会面在阿姆斯特丹的飞利浦总部，本步落点是埃因霍温；写明地点免得读者以为会面在埃因霍温。",
+  "source": "https://stuff.mit.edu/afs/athena/course/15/15.795/WSJ_Nokia%20HandlesSupplyChainShock.pdf"
+ },
+ {
+  "id": "sumitomo-epoxy",
+  "field": "reach.text_zh",
+  "sev": "错",
+  "orig": "路透社当时报道",
+  "fix": "《计算机商业评论》（Computer Business Review）1993 年 8 月 4 日报道，这间厂停产切断了全球约 60% 的该类环氧树脂产量；住友化学估计约 80% 的芯片要用到它。",
+  "why": "该页是 CBR 自己的稿子（标题 CHIP PANIC TO INTENSIFY AS EPOXY STOCKS DWINDLE），只在一句里转引 Reuter 说住友找不到新货源；60% 与 80% 两个数不是标明出自路透社的。原句是「about 80% of all chips」。",
+  "source": "https://techmonitor.ai/?p=177417"
+ },
+ {
+  "id": "sumitomo-epoxy",
+  "field": "facts.2",
+  "sev": "错",
+  "orig": "（1993 年路透社口径）",
+  "fix": "这间厂约占全球半导体封装用环氧树脂产量的六成（1993 年《计算机商业评论》口径）。",
+  "why": "同上，出处不是路透社。",
+  "source": "https://techmonitor.ai/?p=177417"
+ },
+ {
+  "id": "sumitomo-epoxy",
+  "field": "sources.1.title",
+  "sev": "文",
+  "orig": "Sumitomo Chemical explosion threatens chip supplies (Reuters)",
+  "fix": "Chip panic to intensify as epoxy stocks dwindle",
+  "why": "原页标题如此，日期 1993-08-04，非路透社稿；来源列表会上页面。",
+  "source": "https://techmonitor.ai/?p=177417"
+ },
+ {
+  "id": "sumitomo-epoxy",
+  "field": "dispute",
+  "sev": "疑",
+  "orig": "工厂较快复产，实际影响有限。",
+  "fix": "「六成」指封装芯片用的特种环氧树脂，不是全部环氧树脂，当年报道有「超过 50%」「约 60%」两种写法。西门子当时说树脂并不缺，难在换料要重新验证，最坏不过 10、11 月生产遇到些困难；也有市场观察者怀疑经销商借机抬价。",
+  "why": "「较快复产、影响有限」在已开到的来源里没有：CBR 8 月 4 日写住友尚不知何时复产、此前估计至少半年；合众社 1993-11-30「树脂短缺得以避免」一稿页面打不开，只见标题。",
+  "source": "https://www.computerwoche.de/article/2800330/feuer-in-japanischer-chemiefabrik-loest-unruhe-bei-pc-herstellern-aus-vorschnelle-reaktion-verteuert-die-speicherbausteine-weltweit.html"
+ },
+ {
+  "id": "sumitomo-epoxy",
+  "field": "chain.2.date",
+  "sev": "疑",
+  "orig": "1993-08",
+  "fix": "1993-07",
+  "why": "Computerwoche（8 月 13 日刊）写德国批发价是火灾后「两周内」涨上去的，即 7 月；8 月是报道日期。与本条 lag「约两周」也才一致。",
+  "source": "https://www.computerwoche.de/article/2800330/feuer-in-japanischer-chemiefabrik-loest-unruhe-bei-pc-herstellern-aus-vorschnelle-reaktion-verteuert-die-speicherbausteine-weltweit.html"
+ },
+ {
+  "id": "thai-flood-hdd",
+  "field": "chain.1.text_zh",
+  "sev": "疑",
+  "orig": "西部数据在泰国的生产全部停下",
+  "fix": "纳瓦纳空工业园的堤也破了，西部数据在那里的工厂告急，公司宣布延长泰国各厂的停产；东芝同样暂停了当地的硬盘生产。",
+  "why": "来源写的是西部数据「延长」泰国业务的停产（此前已停），没有说 10 月 17 日这天才全部停下。",
+  "source": "https://www.storagenewsletter.com/2011/10/18/thailand-floods-to-significant-impact-wd"
+ },
+ {
+  "id": "thai-flood-hdd",
+  "field": "chain.0.text_zh",
+  "sev": "文",
+  "orig": "洪水冲破邦芭茵工业园的防洪堤",
+  "fix": "10 月 15 日至 16 日的周末，洪水漫过邦芭茵工业园的防洪堤，西部数据的厂房被淹，部分设备泡在水里。西部数据约六成硬盘产自泰国。",
+  "why": "来源只说「over the weekend」（15–16 日），本步 date 写死 15 日；正文带上「周末」更稳。",
+  "source": "https://www.storagenewsletter.com/2011/10/18/thailand-floods-to-significant-impact-wd"
+ },
+ {
+  "id": "thai-flood-hdd",
+  "field": "facts.4",
+  "sev": "文",
+  "orig": "同年日本地震后默克小名滨厂停产到 5 月 8 日，Xirallic 珠光颜料断供，四家车厂停接相关订单。",
+  "fix": "DELETE",
+  "why": "数字与来源相符（SCI：5 月 8 日复产，福特、克莱斯勒、丰田、通用停接该漆色订单），但这是另一件事（日本地震），放在泰国洪水的事实栏里与本条无关，读者会困惑。若保留须写明「另一例」。",
+  "source": "https://www.soci.org/chemistry-and-industry/cni-data/2011/10/in-the-aftermath-of-the-japanese-quake"
+ },
+ {
+  "id": "anchoveta-soy",
+  "field": "chain.0.text_zh",
+  "sev": "文",
+  "orig": "荷兰猪和鸡吃的鱼粉约八成来自秘鲁",
+  "fix": "秘鲁是当时最大的鱼粉出口国，1960 年代荷兰猪和鸡吃的鱼粉约八成来自秘鲁。到 1973 年鱼粉涨了近 250%，荷兰的饲料改用豆粕。",
+  "why": "Hakai 的「八成」说的是 1960 年代；改用豆粕说的也是荷兰养殖户。",
+  "source": "https://hakaimagazine.com/?p=42940"
+ },
+ {
+  "id": "anchoveta-soy",
+  "field": "chain.2.text_zh",
+  "sev": "疑",
+  "orig": "粮食安全从此进入政策议程",
+  "fix": "禁令到 10 月 1 日前解除。日本的大豆 97% 靠进口、九成靠美国，事先未获知会，此后转而到南美另找货源。",
+  "why": "「粮食安全从此进入政策议程」来源没有这句，是底稿自己的概括；来源写的是日本转而扶持巴西种大豆。",
+  "source": "https://farmdocdaily.illinois.edu/2025/05/trade-conflicts-and-long-term-consequences-are-soybeans-doomed-to-repeat-history.html"
+ },
+ {
+  "id": "anchoveta-soy",
+  "field": "facts.4",
+  "sev": "文",
+  "orig": "翻了六倍",
+  "fix": "巴西大豆面积从 1977 年的 1900 万英亩增到 1.17 亿英亩，约为原来的六倍。",
+  "why": "1.17 亿 ÷ 1900 万 ≈ 6.2，「翻了六倍」有歧义。",
+  "source": "https://farmdocdaily.illinois.edu/2025/05/trade-conflicts-and-long-term-consequences-are-soybeans-doomed-to-repeat-history.html"
+ },
+ {
+  "id": "container",
+  "field": "chain.3.text_zh",
+  "sev": "疑",
+  "orig": "集装箱第一次跨过北大西洋",
+  "fix": "海陆公司（Sea-Land）的 Fairland 号从纽瓦克开往欧洲，开通跨北大西洋的集装箱班轮。",
+  "why": "TRB 一文只写 Fairland 号 1966 年 4 月驶往「欧洲海峡沿岸港口」，没有「第一次」；同年 3 月已有别家公司载箱横渡大西洋的记载，「第一次」不稳。鹿特丹这个落点来源也没点名。",
+  "source": "https://onlinepubs.trb.org/onlinepubs/trnews/trnews246containerrevolution.pdf"
+ },
+ {
+  "id": "container",
+  "field": "chain.2",
+  "sev": "疑",
+  "orig": "瑞士 日内瓦（国际标准化组织）",
+  "fix": "year 保留 1965 仅作排序用，place_zh 改为「美国 纽约（行业标准谈判）」并去掉 lat/lon，或整步不上地图；text_zh 用 fixes.py 已改的「1960 年代中期」版本。",
+  "why": "莱文森稿没有给年份，也没有提 ISO 或日内瓦（只说麦克莱恩放开专利后角件与 40 英尺长度统一）；年份与落点都是底稿补的。",
+  "source": "https://marclevinson.net/McLean%20Smithsonian%20061617.pdf"
+ },
+ {
+  "id": "left-pad",
+  "field": "chain.1.text_zh",
+  "sev": "疑",
+  "orig": "Node、Babel、React 等项目的依赖链里都有它",
+  "fix": "left-pad 一消失，依赖它的安装纷纷报错；The Register 说 Node、Babel 等数千个项目都依赖它。",
+  "why": "The Register 首篇只点了 Node 与 Babel，npm 官方点的是 Babel 与 Atom，两处都没有 React；「全部报错」也改保守。",
+  "source": "https://www.theregister.com/2016/03/23/npm_left_pad_chaos/?mt=1458771801504"
+ },
+ {
+  "id": "left-pad",
+  "field": "chain.2.text_zh",
+  "sev": "文",
+  "orig": "约十分钟后",
+  "fix": "十分钟内有人补发了功能相同的 1.0.0 版，但许多依赖指定要 0.0.3 版，报错没有停。",
+  "why": "npm 原文是「within ten minutes」。",
+  "source": "https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm"
+ },
+ {
+  "id": "left-pad",
+  "field": "chain.3.text_zh",
+  "sev": "文",
+  "orig": "下午 4 点 55 分",
+  "fix": "太平洋时间下午 4 点 55 分，npm 从备份恢复了原来的 0.0.3 版，称这是没有先例的做法。",
+  "why": "时间要带时区（npm 博客用的是太平洋时间）。",
+  "source": "https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm"
+ },
+ {
+  "id": "crowdstrike",
+  "field": "chain.1.text_zh",
+  "sev": "疑",
+  "orig": "航空业最先停摆。",
+  "fix": "航班大面积取消。Cirium 统计：72 小时内全球 411,009 个客运航班取消了 16,896 个，略高于 4%。",
+  "why": "「最先」来源没有说；Cirium 只给了取消数。",
+  "source": "https://www.cirium.com/thoughtcloud/crowdstrike-it-outage-what-does-it-mean-for-airline-industry/"
+ },
+ {
+  "id": "crowdstrike",
+  "field": "dispute",
+  "sev": "文",
+  "orig": "并表示要起诉",
+  "fix": "达美航空称损失约 5 亿美元，并于 2024 年 10 月 25 日起诉；CrowdStrike 称按合同其责任上限不到 1,000 万美元。损失数字都是估算，口径只含美国财富 500 强。",
+  "why": "TechTarget 已写明达美 2024-10-25 正式起诉，「表示要起诉」过时。",
+  "source": "https://techtarget.com/whatis/feature/Explaining-the-largest-IT-outage-in-history-and-whats-next"
+ },
+ {
+  "id": "sms",
+  "field": "chain.2.text_zh",
+  "sev": "文",
+  "orig": "到 1995 年底",
+  "fix": "起初短信主要用来提醒语音留言，不收费；1995 年，用户平均两个半月才发一条。",
+  "why": "Computerworld 只写 1995 年，没有「年底」。",
+  "source": "https://www.computerworld.com/article/1402408/happy-bday-sms-txt-msgs-turn-20.html"
+ },
+ {
+  "id": "www",
+  "field": "big_zh",
+  "sev": "文",
+  "orig": "五年后",
+  "fix": "不到六年后全球 1 万台服务器、1,000 万用户",
+  "why": "1989 年 3 月到 1994 年底是五年九个月，与本条 lag「不到六年」统一。",
+  "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+ },
+ {
+  "id": "qr-code",
+  "field": "reach.text_zh",
+  "sev": "文",
+  "orig": "世界银行旗下扶贫协商小组（CGAP）引述",
+  "fix": "设在世界银行的扶贫协商小组（CGAP）转引 CNN 2017 年的数字：2016 年中国经二维码完成的交易超过 1.65 万亿美元。",
+  "why": "CGAP 是设在世界银行的多方合作机构，「旗下」不准；数字是转引 CNN，原文为「transactions」。",
+  "source": "https://cgap.org/node/4026"
+ },
+ {
+  "id": "qr-code",
+  "field": "chain.4.text_zh",
+  "sev": "疑",
+  "orig": "此后二维码成了中国移动支付的主要入口",
+  "fix": "2011 年 7 月，支付宝推出线下手机条码支付；CGAP 称，支付宝与微信支付自 2011 年起推出各自的二维码。",
+  "why": "后半句是底稿的概括，来源没有「主要入口」；The Bridge 的报道只写条码，二维码的说法出自 CGAP。",
+  "source": "https://cgap.org/node/4026"
+ },
+ {
+  "id": "mpesa",
+  "field": "origin.text_zh",
+  "sev": "文",
+  "orig": "2001 年起，英国咨询机构 Gamos 与英联邦电信组织调查非洲人怎样用手机，发现三个国家的人都把话费余额转来转去，当作一种虚拟货币。",
+  "fix": "2001 年起，英国咨询机构 Gamos 与英联邦电信组织调查非洲人怎样用手机；2003 年的报告写到，三个国家的人都把话费余额转来转去，当作一种虚拟货币。",
+  "why": "origin.year 是 2003，正文只写 2001，前后对不上；IDS 一文说研究 2001 年开始、报告为 McKemey 等 2003。三国国名来源未列（fixes.py 已把 place_zh 改掉），坐标仍落在坎帕拉，属底稿自选。",
+  "source": "https://opendocs.ids.ac.uk/opendocs/bitstream/20.500.12413/7515/1/IDSB_43_5_10.1111-j.1759-5436.2012.00367.x.pdf"
+ },
+ {
+  "id": "mpesa",
+  "field": "chain.0.text_zh",
+  "sev": "疑",
+  "orig": "4 月在肯尼亚定下与 Safaricom 的试点",
+  "fix": "2004 年 3 月，英国国际发展部（DFID）把研究者介绍给沃达丰；4 月沃达丰牵头开研讨会，定下试点计划。",
+  "why": "IDS 一文只说 2004 年 4 月沃达丰牵头的研讨会之后定下试点计划，没有说地点在肯尼亚。",
+  "source": "https://opendocs.ids.ac.uk/opendocs/bitstream/20.500.12413/7515/1/IDSB_43_5_10.1111-j.1759-5436.2012.00367.x.pdf"
+ },
+ {
+  "id": "mpesa",
+  "field": "chain.1.text_zh",
+  "sev": "疑",
+  "orig": "10 月 11 日试点开始，本意是",
+  "fix": "10 月 11 日试点开始，先后在内罗毕市中心、马萨雷和锡卡三地进行，本意是让小额信贷客户用手机还款；近 500 名用户却拿它互相汇款、付货款、存钱过夜。",
+  "why": "本步落点是锡卡，但 Hughes & Lonie 写试点依次在内罗毕市中心、马萨雷、锡卡展开，10 月 11 日开始的不是锡卡；正文写明三地，免得把日期安在锡卡头上。",
+  "source": "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20304/2007_Hughes_Lonie_M-PESA-%20Mobile%20Money%20for%20the%20Unbanked%20Turning%20Cellphones%20into%2024-Hour%20Tellers%20in%20Kenya.pdf"
+ },
+ {
+  "id": "mpesa",
+  "field": "big_zh",
+  "sev": "文",
+  "orig": "让肯尼亚约 19.4 万户脱贫，占全国家庭 2%",
+  "fix": "据估算让肯尼亚约 19.4 万户脱贫，占全国家庭 2%",
+  "why": "这是苏里与杰克的估算，且本条 dispute 写明有人质疑，标题句不宜写成既成事实。",
+  "source": "https://ui.adsabs.harvard.edu/abs/2016Sci...354.1288S"
+ },
+ {
+  "id": "mpesa",
+  "field": "dispute",
+  "sev": "文",
+  "orig": "后来有发展经济学者撰文质疑其方法，认为高估了减贫效果、低估了负债等代价。",
+  "fix": "19.4 万户脱贫是苏里与杰克根据追踪调查做的估算，不是直接统计；2019 年贝特曼（Milford Bateman）等三位学者在《非洲政治经济评论》撰文质疑其方法，认为高估了减贫效果，没有算进负债与小生意倒闭的代价。",
+  "why": "已核到：Bateman、Duvendack、Loubere 2019，Review of African Political Economy 46(161):480–495；原句属实，可补上出处（建议把该文加进 sources）。",
+  "source": "https://developingeconomics.org/2019/06/14/the-curious-case-of-m-pesas-miraculous-poverty-reduction-powers/"
+ },
+ {
+  "id": "mpesa",
+  "field": "sources.2.title",
+  "sev": "文",
+  "orig": "IDS Bulletin 43(5)：Gamos 研究与 M-Pesa 缘起的回顾",
+  "fix": "Changing the Financial Landscape of Africa: An Unusual Story of Evidence-informed Innovation, Intentional Policy Influence and Private Sector Engagement（Simon Batchelor，IDS Bulletin 43(5)）",
+  "why": "已核到作者与原题。",
+  "source": "https://opendocs.ids.ac.uk/opendocs/bitstream/20.500.12413/7515/1/IDSB_43_5_10.1111-j.1759-5436.2012.00367.x.pdf"
+ },
+ {
+  "id": "wifi-csiro",
+  "field": "origin.place_zh",
+  "sev": "疑",
+  "orig": "荷兰 德温格洛",
+  "fix": "荷兰",
+  "why": "来源只说「1970 年代、在荷兰做射电天文」，没有德温格洛，也没有 1977 年；地点改成国名，origin.year 仅作排序用，正文已写「1970 年代」。",
+  "source": "https://www.nma.gov.au/defining-moments/resources/wi-fi"
+ },
+ {
+  "id": "wifi-csiro",
+  "field": "chain.2.text_zh",
+  "sev": "文",
+  "orig": "1999 年起，这套办法进入 802.11a 等无线局域网标准",
+  "fix": "1 月 23 日，美国专利 5,487,069 获批；据 CSIRO，这项技术 1999 年起被 802.11a 等无线局域网标准采用。",
+  "why": "「进入标准」是 CSIRO 一方的说法，本条 dispute 里反方正是否认这一点，链上要带「据 CSIRO」。",
+  "source": "https://csiropedia.csiro.au/wireless-lans"
+ },
+ {
+  "id": "wifi-csiro",
+  "field": "chain.3.text_zh",
+  "sev": "疑",
+  "orig": "戴尔、英特尔、微软等反诉专利无效。2009 年 14 家公司和解。",
+  "fix": "厂商不肯付费，CSIRO 2005 年在得州东区法院起诉日本厂商巴法络（Buffalo）；官司后来对上 14 家大公司，2009 年惠普率先和解，其余 13 家跟进。",
+  "why": "「戴尔、英特尔、微软等反诉」在已开到的来源里没有找到；2005 年起诉对象（Buffalo）见 Patentology，「14 家、惠普率先和解」见澳大利亚国家博物馆。",
+  "source": "https://www.nma.gov.au/defining-moments/resources/wi-fi ; https://blog.patentology.com.au/2012/04/five-reasons-why-ars-technicas-savaging.html"
+ },
+ {
+  "id": "wifi-csiro",
+  "field": "facts.2",
+  "sev": "疑",
+  "orig": "当时的无线网络每秒 1–2 兆比特，小组的目标是 100 兆。",
+  "fix": "DELETE",
+  "why": "所列来源（CSIRO 官网、CSIROpedia、国家博物馆、Australian Geographic、Science in Public）里都没有找到这两个速率；找不到出处就删。",
+  "source": "https://csiropedia.csiro.au/wireless-lans"
+ },
+ {
+  "id": "wifi-csiro",
+  "field": "facts.4",
+  "sev": "文",
+  "orig": "超过 4.5 亿，其中 1.5 亿多",
+  "fix": "据澳大利亚国家博物馆，到 2015 年 CSIRO 收到的和解金超过 4.5 亿元，其中 1.5 亿多元存入基金用于科研（原文未标币种）。",
+  "why": "原句数字后面没有单位；来源只写「$」。",
+  "source": "https://www.nma.gov.au/defining-moments/resources/wi-fi"
+ },
+ {
+  "id": "week:hormuz",
+  "field": "text_zh",
+  "sev": "文",
+  "orig": "其中 11 日的两艘超级油轮是偏离指定航线后触雷",
+  "fix": "路透社 11 月 12 日报道：伊朗军方称两天内有四艘油轮在霍尔木兹海峡爆炸；伊朗革命卫队海军称，11 日的两艘超级油轮无视警告、驶入其所称的「未获许可航道」后触雷。13 日革命卫队海军又称一艘运液化天然气的船触雷爆炸。路透社称无法立即核实。据美国能源信息署，2024 年经海峡的石油日均约 2000 万桶，约为全球消费量的两成。",
+  "why": "「偏离指定航线」是伊朗一方的定性，要写成「其所称」并标明是革命卫队海军的说法；来源写的是「tanker carrying LNG」，船型不详。数字与日期核对无误。",
+  "source": "https://www.933thedrive.com/2026/11/12/four-tankers-struck-by-explosions-in-strait-of-hormuz-iran-says/ ; https://gcaptain.com/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-in-hormuz/"
+ },
+ {
+  "id": "week:faa",
+  "field": "text_zh",
+  "sev": "疑",
+  "orig": "对全国机场发布地面停飞令，为 2023 年 1 月以来首次。据 FlightAware，到当晚 6 时已取消 1913 班、延误 10494 班。",
+  "fix": "11 月 13 日下午近 4 时（美东时间），美国联邦航空局以「临时性通信中断」为由叫停全国离港航班，为 2023 年 1 月以来首次。据 FlightAware，到 6 时取消 1913 班、延误 10494 班；当晚 7 时许仍未解除。",
+  "why": "补充任务(b)：解除时间与总时长仍未核到——能打开的报道最晚到美东 13 日晚 7 时半前后（ABC 直播 00:29 GMT），FAA 当时说停飞令「仍然有效，各航路中心恢复后逐步放行」，旧金山、波士顿等已放行部分越洋及阿拉斯加、夏威夷航班；CNN、NBC、CNBC、Flightradar24 页面打不开，搜索未见「已解除」的报道。FAA 说法：通告称「due to extraordinary circumstances and for reasons of safety」，声明称「a temporary telecommunications outage」「out of an abundance of caution」（美联社）；运输部长达菲称影响全部 22 个航路管制中心（原文写「多个」，与 FAA 声明一致，可留）。发布时刻约 15:54（Yahoo / StockTitan 转述指挥中心通告）。停的是离港航班，已在空中的继续飞。上页面前若仍无解除时间，用这版「截至」写法。",
+  "source": "https://abc7news.com/live-updates/faa-ground-stop-live-updates-what-know-nationwide-flights-are-grounded/20038887/entry/20039203/ ; https://www.wral.com/news/ap/6aaa6-the-latest-faa-grounds-all-flights-nationwide-due-to-communications-problems/ ; https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems ; https://abc7news.com/live-updates/faa-ground-stop-live-updates-what-know-nationwide-flights-are-grounded/20038887/entry/20039063/"
+ },
+ {
+  "id": "week:ms365",
+  "field": "text_zh",
+  "sev": "疑",
+  "orig": "微软称没有网络攻击迹象，正在回退一项网络配置变更。近 24 小时后服务陆续恢复。",
+  "fix": "微软 365 自 11 月 12 日 16 时许（协调世界时）起全球中断，Outlook 邮件受影响最重，Downdetector 峰值近 14 万条。微软 13 日称起因是此前一次网络扩容的问题，与网络攻击无关；近 24 小时后陆续恢复。",
+  "why": "补充任务(b)：微软 11 月 13 日（约 16:40 UTC）在 X 上及事故通告 EX1550543 / MO1550821 中称「The incident was introduced by an issue during an earlier network capacity upgrade」「a technical issue not related to cyber or AI / agents」；正式事后报告（PIR）未发布，截至 13 日 22 时 UTC 两条事故单仍未关闭。原文「傍晚」与 16:15–16:17 UTC 的起始时间不合，改为「16 时许」。Teams 另有一条事故单（14:45–15:53 UTC），已先行恢复。微软原话经 TechRadar 直播与一家转述站核到，未开到微软状态页原件。",
+  "source": "https://www.techradar.com/news/live/outlook-outage-nov-2026 ; https://lifenewsagency.com/microsoft-says-365-outage-came-from-network-upgrade-issue-recovery-holds/ ; https://azureblog.co.uk/posts/microsoft-365-outage-12-november-2026/"
+ },
+ {
+  "id": "editorial",
+  "field": "NUMS.2.note",
+  "sev": "文",
+  "orig": "一年后爱立信不再自己造手机",
+  "fix": "2000 年阿尔伯克基芯片厂那场火烧的时间；十个月后爱立信宣布不再自己造手机",
+  "why": "起火 2000-03-17，宣布 2001-01-26，约十个月。",
+  "source": "https://web.mit.edu/sheffi/www/selectedMedia/wpd_building_a_resilient_organization_rev20061226.pdf"
+ },
+ {
+  "id": "editorial",
+  "field": "VERIFY.0",
+  "sev": "文",
+  "orig": "霍尔木兹的油轮与液化气船遇袭只有伊朗方面的说法，无独立证实；美国停飞令的解除时间与总时长未核到；微软的根因说明以其事后报告为准。",
+  "fix": "本周三件事：霍尔木兹油轮与液化天然气船的爆炸只有伊朗方面的说法（称是触雷），无独立证实；美国停飞令的解除时间与总时长未核到；微软称起因是早先一次网络扩容，完整事后报告尚未发布。",
+  "why": "「遇袭」与伊朗自己的说法（触雷）不符，也带了定性；微软部分按 13 日的说法更新。",
+  "source": "https://www.933thedrive.com/2026/11/12/four-tankers-struck-by-explosions-in-strait-of-hormuz-iran-says/"
+ },
+ {
+  "id": "editorial",
+  "field": "CHAPTERS.lag.lede",
+  "sev": "文",
+  "orig": "快的只要一个多小时",
+  "fix": "（可不改）从起点到牵动全球，快的只要一个多小时，慢的要四百年。卡住的多半来得快，推一把的多半要等。",
+  "why": "与数据相符：最短是 CrowdStrike 78 分钟（fixes.py 的 0.054 天），最长火药约 420 年；15 个卡住里 11 个不超过一年半，17 个推一把最短也要 20 个月。只提醒一点：78 分钟是「推送到撤回」，不是「起点到波及全球」，若要严格可把 crowdstrike 的 lag 说明写清。HERO.basis 的「15 个卡住、17 个推一把」与四份底稿计数相符。",
+  "source": ""
+ }
+]

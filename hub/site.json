@@ -97,6 +97,20 @@
       "log": "《三问成局》上线",
       "log_sub": "三个问题生成一款多人桌游，发链接开局",
       "caption": "作品 03，三张问题卡"
+    },
+    {
+      "no": 4,
+      "title": "云霄乐园",
+      "url": "https://games.tianjie.me/park/play/",
+      "play": "https://games.tianjie.me/park/play/",
+      "cover": "https://games.tianjie.me/park/media/cover.png",
+      "date": "2026-11-14",
+      "version": "0.13",
+      "kicker": "游乐场经营，2.5D，电脑或手机直接玩",
+      "desc": "从一片空地开始建一座游乐场：铺路、摆设施、亲手搭过山车，开小吃摊和文创店。樱花季、国庆、万圣夜按日历到来。",
+      "log": "《云霄乐园》上线",
+      "log_sub": "2.5D 游乐场经营，过山车自由建造，节庆与联名",
+      "caption": "作品 04，开园的游乐场"
     }
   ],
   "tour": {

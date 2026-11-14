@@ -34,6 +34,7 @@
 .eps .cv img{display:block;width:100%;height:100%;object-fit:cover}
 .eps h3{font-size:24px;line-height:32px}
 .eps p{margin:6px 0 0;font:400 15px/24px var(--sans);color:var(--ink-2);max-width:48em}
+.slead{margin:12px 0 0;max-width:40em;font:400 16px/28px var(--sans);color:var(--ink-2)}
 .eps .meta{margin:8px 0 0;font:400 13px/20px var(--sans);color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 16px}
 .about{max-width:48em;font:400 16px/28px var(--sans);color:var(--ink-2)}
 .about p{margin:0 0 12px}
@@ -59,7 +60,7 @@
 
 <nav class="cnav" aria-label="章节"><div class="row" id="cnav">
   <a href="#episodes"><small>0</small>全部节目</a>
-  <a href="#about"><small>1</small>关于</a>
+{{SERIES_NAV}}  <a href="#about"><small>{{ABOUT_NO}}</small>关于</a>
   <button class="ntheme" id="themebtn" type="button">白天读</button>
   <i class="prog" id="pageprog"></i>
 </div></nav>
@@ -71,7 +72,7 @@
     <ul class="eps">{{EPISODES}}</ul>
   </div>
 </section>
-<section class="endm" id="about">
+{{SERIES}}<section class="endm" id="about">
   <div class="wide">
     <h2>关于</h2>
     <div class="about">{{POD_ABOUT}}

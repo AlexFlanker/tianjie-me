@@ -298,8 +298,18 @@ if POD and os.path.isdir(PODDIR):
         img = f'{latest_e["url"]}hero.jpg' if os.path.exists(os.path.join(latest_e['dir'], 'hero.jpg')) else (f'{latest_e["url"]}cover.png' if latest_e['has_cover'] else '')
         hero_fig = f'<figure class="hfig rise"><a href="{latest_e["url"]}"><img src="{img}" alt="{esc(latest_e["title"])}"></a><figcaption>{esc(latest_e.get("hero_caption", latest_e["title"]))}</figcaption></figure>' if img else ''
     ptpl = open(os.path.join(HUB, 'podcast_home.html'), encoding='utf-8').read()
+    # 子系列（site.json podcast.series）：首页各列一节，节目按 meta.json 的 series 归组
+    series_nav = series_html = ''; sn = 0
+    for sd in POD.get('series', []):
+        seps = [e for e in eps if e.get('series') == sd['key']]
+        if not seps: continue
+        sn += 1
+        series_nav += f'  <a href="#s-{sd["key"]}"><small>{sn}</small>{esc(sd["name"])}</a>\n'
+        series_html += (f'<section class="chap" id="s-{sd["key"]}"><div class="wide"><div class="chead"><p class="cno">{sn:02d} · 系列<span class="trail"></span></p>'
+                        f'<h2>{esc(sd["name"])}</h2><p class="slead">{esc(sd.get("lead", ""))} 已出 {len(seps)} {esc(sd.get("unit", "期"))}。</p></div>'
+                        f'<ul class="eps">{"".join(ep_card(e) for e in reversed(seps))}</ul></div></section>\n')
     home_p = (ptpl.replace('{{SKIN}}', skin_css).replace('{{POD_NAME}}', esc(POD['name'])).replace('{{POD_TAGLINE}}', esc(POD['tagline'].split('。')[0] + '。')).replace('{{POD_ABOUT}}', POD['about'])
-              .replace('{{HERO}}', hero).replace('{{HERO_FIG}}', hero_fig).replace('{{EPISODES}}', ''.join(ep_card(e) for e in reversed(eps))).replace('{{COUNT}}', str(len(eps)))
+              .replace('{{SERIES_NAV}}', series_nav).replace('{{SERIES}}', series_html).replace('{{ABOUT_NO}}', str(sn + 1)).replace('{{HERO}}', hero).replace('{{HERO_FIG}}', hero_fig).replace('{{EPISODES}}', ''.join(ep_card(e) for e in reversed(eps))).replace('{{COUNT}}', str(len(eps)))
               .replace('{{BASE}}', BASE).replace('{{YEAR}}', str(dt.date.today().year))
               .replace('{{OG_IMAGE}}', f"{BASE}{latest_e['url']}cover.png" if latest_e and latest_e['has_cover'] else ''))
     open(os.path.join(pod_out, 'index.html'), 'w', encoding='utf-8').write(home_p)
